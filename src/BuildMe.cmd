@@ -1,6 +1,6 @@
 @echo off
 
-SET BUILDPATH="..\..\docs"
+SET BUILDPATH="..\docs"
 
 where /q hugo
 IF ERRORLEVEL 1 (
