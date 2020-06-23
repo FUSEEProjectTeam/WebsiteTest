@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug in FUSEE Player",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${env:FuseeRoot}bin/Debug/Player/Desktop/Fusee.Engine.Player.Desktop.exe",
+            "args": ["${workspaceRoot}/bin/Debug/Examples/RobotArmIK/RobotArm_Inverse_Kinematics.dll"],
+            "cwd": "${env:FuseeRoot}bin/Debug/Player/Desktop",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        }
+    ]
+}

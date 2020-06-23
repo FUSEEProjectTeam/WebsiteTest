@@ -21,6 +21,11 @@
           "api/**.yml",
           "api/index.md"
         ]
+      },      {
+        "files": [
+          "examples/rocket/**",
+	      "examples/picking/**"
+        ]
       },
       {
         "files": [
@@ -29,12 +34,45 @@
           "toc.yml",
           "*.md"
         ]
+      },
+	  {
+        "files": [
+          "wiki/**.md",
+          "wiki/toc.yml"
+        ]
+      },
+	  	  {
+        "files": [
+          "getting-started/**.md",
+          "getting-started/toc.yml"
+        ]
+      },
+	  	  	  {
+        "files": [
+          "examples/**.md",
+          "examples/toc.yml"
+        ]
       }
     ],
     "resource": [
       {
         "files": [
-          "images/**"
+          "getting-started/images/**"
+        ]
+      },
+	  {
+        "files": [
+          "examples/examples/**"
+        ]
+      },
+	  {
+        "files": [
+          "examples/rocket/**"
+        ]
+      },
+	  {
+        "files": [
+          "examples/picking/**"
         ]
       }
     ],
@@ -53,7 +91,8 @@
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "default"
+      "default",
+	  "templates/default"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",

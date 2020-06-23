@@ -1,0 +1,25 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
+  <PropertyGroup>
+    <TargetFramework>MonoAndroid81</TargetFramework>
+    <DefineConstants>$(DefineConstants);PLATFORM_ANDROID</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Description>Fusee Engine Imp Graphics Android</Description>
+    <OutputPath>$(BaseOutputPath)\Libraries</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(RootNamespace).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="$(FuseeEngineRoot)\src\Base\Core\Fusee.Base.Core.csproj">
+      <PrivateAssets>analyzers</PrivateAssets>
+    </ProjectReference>
+    <ProjectReference Include="$(FuseeEngineRoot)\src\Engine\Common\Fusee.Engine.Common.csproj">
+      <PrivateAssets>analyzers</PrivateAssets>
+    </ProjectReference>
+    <ProjectReference Include="$(FuseeEngineRoot)\src\Engine\Core\Fusee.Engine.Core.csproj">
+      <PrivateAssets>analyzers</PrivateAssets>
+    </ProjectReference>
+    <Reference Include="OpenTK-1.0" />
+  </ItemGroup>
+  
+  <Import Project="$(FuseeEngineRoot)\src\Engine\Imp\Graphics\Shared\Fusee.Engine.Imp.Graphics.Shared.projitems" Label="Shared" />
+</Project>
