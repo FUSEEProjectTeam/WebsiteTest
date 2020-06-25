@@ -1,0 +1,1095 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Jometri.BinarySearchTree`2
+  commentId: T:Fusee.Jometri.BinarySearchTree`2
+  id: BinarySearchTree`2
+  parent: Fusee.Jometri
+  children:
+  - Fusee.Jometri.BinarySearchTree`2._globalRoot
+  - Fusee.Jometri.BinarySearchTree`2.BalanceTree
+  - Fusee.Jometri.BinarySearchTree`2.DeleteNode(`0)
+  - Fusee.Jometri.BinarySearchTree`2.FindLargestSmallerThanInBalanced(`0)
+  - Fusee.Jometri.BinarySearchTree`2.FindMin
+  - Fusee.Jometri.BinarySearchTree`2.FindMin(Fusee.Jometri.Node{`0,`1})
+  - Fusee.Jometri.BinarySearchTree`2.FindNode(`0)
+  - Fusee.Jometri.BinarySearchTree`2.InOrderTraverseTree
+  - Fusee.Jometri.BinarySearchTree`2.InsertNode(`0,`1)
+  - Fusee.Jometri.BinarySearchTree`2.PreorderTraverseTreeKeys
+  - Fusee.Jometri.BinarySearchTree`2.PreorderTraverseTreeValues
+  langs:
+  - csharp
+  - vb
+  name: BinarySearchTree<TK, TV>
+  nameWithType: BinarySearchTree<TK, TV>
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: BinarySearchTree
+    path: src/Fusee/src/Jometri/BinarySearchTree.cs
+    startLine: 50
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nData structure that stores items and allows fast lookup, insertion and deletion.\n"
+  example: []
+  syntax:
+    content: >-
+      public class BinarySearchTree<TK, TV>
+
+          where TK : IComparable<TK>
+    typeParameters:
+    - id: TK
+      description: The type of the tree&apos;s key.
+    - id: TV
+      description: The type of the tree&apos;s value.
+    content.vb: Public Class BinarySearchTree(Of TK As IComparable(Of TK), TV)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: BinarySearchTree(Of TK, TV)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV)
+  name.vb: BinarySearchTree(Of TK, TV)
+- uid: Fusee.Jometri.BinarySearchTree`2._globalRoot
+  commentId: F:Fusee.Jometri.BinarySearchTree`2._globalRoot
+  id: _globalRoot
+  parent: Fusee.Jometri.BinarySearchTree`2
+  langs:
+  - csharp
+  - vb
+  name: _globalRoot
+  nameWithType: BinarySearchTree<TK, TV>._globalRoot
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>._globalRoot
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: _globalRoot
+    path: src/Fusee/src/Jometri/BinarySearchTree.cs
+    startLine: 55
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nThe root node of the tree.\n"
+  example: []
+  syntax:
+    content: protected Node<TK, TV> _globalRoot
+    return:
+      type: Fusee.Jometri.Node{{TK},{TV}}
+    content.vb: Protected _globalRoot As Node(Of TK, TV)
+  nameWithType.vb: BinarySearchTree(Of TK, TV)._globalRoot
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV)._globalRoot
+- uid: Fusee.Jometri.BinarySearchTree`2.InsertNode(`0,`1)
+  commentId: M:Fusee.Jometri.BinarySearchTree`2.InsertNode(`0,`1)
+  id: InsertNode(`0,`1)
+  parent: Fusee.Jometri.BinarySearchTree`2
+  langs:
+  - csharp
+  - vb
+  name: InsertNode(TK, TV)
+  nameWithType: BinarySearchTree<TK, TV>.InsertNode(TK, TV)
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.InsertNode(TK, TV)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InsertNode
+    path: src/Fusee/src/Jometri/BinarySearchTree.cs
+    startLine: 63
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nInserts a new node in a existing tree.\n"
+  example: []
+  syntax:
+    content: public void InsertNode(TK key, TV value)
+    parameters:
+    - id: key
+      type: '{TK}'
+      description: 'The key of the node. '
+    - id: value
+      type: '{TV}'
+      description: Value of the node to be inserted into the tree.
+    content.vb: Public Sub InsertNode(key As TK, value As TV)
+  overload: Fusee.Jometri.BinarySearchTree`2.InsertNode*
+  nameWithType.vb: BinarySearchTree(Of TK, TV).InsertNode(TK, TV)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).InsertNode(TK, TV)
+- uid: Fusee.Jometri.BinarySearchTree`2.PreorderTraverseTreeKeys
+  commentId: M:Fusee.Jometri.BinarySearchTree`2.PreorderTraverseTreeKeys
+  id: PreorderTraverseTreeKeys
+  parent: Fusee.Jometri.BinarySearchTree`2
+  langs:
+  - csharp
+  - vb
+  name: PreorderTraverseTreeKeys()
+  nameWithType: BinarySearchTree<TK, TV>.PreorderTraverseTreeKeys()
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.PreorderTraverseTreeKeys()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: PreorderTraverseTreeKeys
+    path: src/Fusee/src/Jometri/BinarySearchTree.cs
+    startLine: 100
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nPreorder traversal of the tree. Visits the root, then visits the left sub-tree, after that visits the right sub-tree.\nReturns the keys.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<TK> PreorderTraverseTreeKeys()
+    return:
+      type: System.Collections.Generic.IEnumerable{{TK}}
+      description: ''
+    content.vb: Public Function PreorderTraverseTreeKeys As IEnumerable(Of TK)
+  overload: Fusee.Jometri.BinarySearchTree`2.PreorderTraverseTreeKeys*
+  nameWithType.vb: BinarySearchTree(Of TK, TV).PreorderTraverseTreeKeys()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).PreorderTraverseTreeKeys()
+- uid: Fusee.Jometri.BinarySearchTree`2.PreorderTraverseTreeValues
+  commentId: M:Fusee.Jometri.BinarySearchTree`2.PreorderTraverseTreeValues
+  id: PreorderTraverseTreeValues
+  parent: Fusee.Jometri.BinarySearchTree`2
+  langs:
+  - csharp
+  - vb
+  name: PreorderTraverseTreeValues()
+  nameWithType: BinarySearchTree<TK, TV>.PreorderTraverseTreeValues()
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.PreorderTraverseTreeValues()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: PreorderTraverseTreeValues
+    path: src/Fusee/src/Jometri/BinarySearchTree.cs
+    startLine: 113
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nPreorder traversal of the tree. Visits the root, then visits the left sub-tree, after that visits the right sub-tree.\nReturns the values.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<TV> PreorderTraverseTreeValues()
+    return:
+      type: System.Collections.Generic.IEnumerable{{TV}}
+      description: ''
+    content.vb: Public Function PreorderTraverseTreeValues As IEnumerable(Of TV)
+  overload: Fusee.Jometri.BinarySearchTree`2.PreorderTraverseTreeValues*
+  nameWithType.vb: BinarySearchTree(Of TK, TV).PreorderTraverseTreeValues()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).PreorderTraverseTreeValues()
+- uid: Fusee.Jometri.BinarySearchTree`2.InOrderTraverseTree
+  commentId: M:Fusee.Jometri.BinarySearchTree`2.InOrderTraverseTree
+  id: InOrderTraverseTree
+  parent: Fusee.Jometri.BinarySearchTree`2
+  langs:
+  - csharp
+  - vb
+  name: InOrderTraverseTree()
+  nameWithType: BinarySearchTree<TK, TV>.InOrderTraverseTree()
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.InOrderTraverseTree()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InOrderTraverseTree
+    path: src/Fusee/src/Jometri/BinarySearchTree.cs
+    startLine: 148
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nInorder traversal of the tree.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<TK> InOrderTraverseTree()
+    return:
+      type: System.Collections.Generic.IEnumerable{{TK}}
+      description: ''
+    content.vb: Public Function InOrderTraverseTree As IEnumerable(Of TK)
+  overload: Fusee.Jometri.BinarySearchTree`2.InOrderTraverseTree*
+  nameWithType.vb: BinarySearchTree(Of TK, TV).InOrderTraverseTree()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).InOrderTraverseTree()
+- uid: Fusee.Jometri.BinarySearchTree`2.DeleteNode(`0)
+  commentId: M:Fusee.Jometri.BinarySearchTree`2.DeleteNode(`0)
+  id: DeleteNode(`0)
+  parent: Fusee.Jometri.BinarySearchTree`2
+  langs:
+  - csharp
+  - vb
+  name: DeleteNode(TK)
+  nameWithType: BinarySearchTree<TK, TV>.DeleteNode(TK)
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.DeleteNode(TK)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DeleteNode
+    path: src/Fusee/src/Jometri/BinarySearchTree.cs
+    startLine: 174
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nDeletes a node from the tree.\n"
+  example: []
+  syntax:
+    content: public void DeleteNode(TK key)
+    parameters:
+    - id: key
+      type: '{TK}'
+      description: Key of the node which is to be deleted.
+    content.vb: Public Sub DeleteNode(key As TK)
+  overload: Fusee.Jometri.BinarySearchTree`2.DeleteNode*
+  nameWithType.vb: BinarySearchTree(Of TK, TV).DeleteNode(TK)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).DeleteNode(TK)
+- uid: Fusee.Jometri.BinarySearchTree`2.FindNode(`0)
+  commentId: M:Fusee.Jometri.BinarySearchTree`2.FindNode(`0)
+  id: FindNode(`0)
+  parent: Fusee.Jometri.BinarySearchTree`2
+  langs:
+  - csharp
+  - vb
+  name: FindNode(TK)
+  nameWithType: BinarySearchTree<TK, TV>.FindNode(TK)
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.FindNode(TK)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FindNode
+    path: src/Fusee/src/Jometri/BinarySearchTree.cs
+    startLine: 216
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nTraverses the tree to find and return a node with a certain value.\n"
+  example: []
+  syntax:
+    content: public TV FindNode(TK key)
+    parameters:
+    - id: key
+      type: '{TK}'
+      description: The key to be searched for.
+    return:
+      type: '{TV}'
+      description: ''
+    content.vb: Public Function FindNode(key As TK) As TV
+  overload: Fusee.Jometri.BinarySearchTree`2.FindNode*
+  nameWithType.vb: BinarySearchTree(Of TK, TV).FindNode(TK)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).FindNode(TK)
+- uid: Fusee.Jometri.BinarySearchTree`2.FindMin
+  commentId: M:Fusee.Jometri.BinarySearchTree`2.FindMin
+  id: FindMin
+  parent: Fusee.Jometri.BinarySearchTree`2
+  langs:
+  - csharp
+  - vb
+  name: FindMin()
+  nameWithType: BinarySearchTree<TK, TV>.FindMin()
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.FindMin()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FindMin
+    path: src/Fusee/src/Jometri/BinarySearchTree.cs
+    startLine: 242
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nReturns the minimum value in the tree.\n"
+  example: []
+  syntax:
+    content: public TV FindMin()
+    return:
+      type: '{TV}'
+      description: ''
+    content.vb: Public Function FindMin As TV
+  overload: Fusee.Jometri.BinarySearchTree`2.FindMin*
+  nameWithType.vb: BinarySearchTree(Of TK, TV).FindMin()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).FindMin()
+- uid: Fusee.Jometri.BinarySearchTree`2.FindMin(Fusee.Jometri.Node{`0,`1})
+  commentId: M:Fusee.Jometri.BinarySearchTree`2.FindMin(Fusee.Jometri.Node{`0,`1})
+  id: FindMin(Fusee.Jometri.Node{`0,`1})
+  parent: Fusee.Jometri.BinarySearchTree`2
+  langs:
+  - csharp
+  - vb
+  name: FindMin(Node<TK, TV>)
+  nameWithType: BinarySearchTree<TK, TV>.FindMin(Node<TK, TV>)
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.FindMin(Fusee.Jometri.Node<TK, TV>)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FindMin
+    path: src/Fusee/src/Jometri/BinarySearchTree.cs
+    startLine: 252
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nReturns the minimum value in the tree, starting at the given node.\n"
+  example: []
+  syntax:
+    content: protected static Node<TK, TV> FindMin(Node<TK, TV> root)
+    parameters:
+    - id: root
+      type: Fusee.Jometri.Node{{TK},{TV}}
+      description: The node at which to start the search.
+    return:
+      type: Fusee.Jometri.Node{{TK},{TV}}
+      description: The node containing the minimum value.
+    content.vb: Protected Shared Function FindMin(root As Node(Of TK, TV)) As Node(Of TK, TV)
+  overload: Fusee.Jometri.BinarySearchTree`2.FindMin*
+  nameWithType.vb: BinarySearchTree(Of TK, TV).FindMin(Node(Of TK, TV))
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).FindMin(Fusee.Jometri.Node(Of TK, TV))
+  name.vb: FindMin(Node(Of TK, TV))
+- uid: Fusee.Jometri.BinarySearchTree`2.BalanceTree
+  commentId: M:Fusee.Jometri.BinarySearchTree`2.BalanceTree
+  id: BalanceTree
+  parent: Fusee.Jometri.BinarySearchTree`2
+  langs:
+  - csharp
+  - vb
+  name: BalanceTree()
+  nameWithType: BinarySearchTree<TK, TV>.BalanceTree()
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.BalanceTree()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: BalanceTree
+    path: src/Fusee/src/Jometri/BinarySearchTree.cs
+    startLine: 269
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nBalances a given tree.\n"
+  example: []
+  syntax:
+    content: public void BalanceTree()
+    content.vb: Public Sub BalanceTree
+  overload: Fusee.Jometri.BinarySearchTree`2.BalanceTree*
+  nameWithType.vb: BinarySearchTree(Of TK, TV).BalanceTree()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).BalanceTree()
+- uid: Fusee.Jometri.BinarySearchTree`2.FindLargestSmallerThanInBalanced(`0)
+  commentId: M:Fusee.Jometri.BinarySearchTree`2.FindLargestSmallerThanInBalanced(`0)
+  id: FindLargestSmallerThanInBalanced(`0)
+  parent: Fusee.Jometri.BinarySearchTree`2
+  langs:
+  - csharp
+  - vb
+  name: FindLargestSmallerThanInBalanced(TK)
+  nameWithType: BinarySearchTree<TK, TV>.FindLargestSmallerThanInBalanced(TK)
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.FindLargestSmallerThanInBalanced(TK)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/BinarySearchTree.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FindLargestSmallerThanInBalanced
+    path: src/Fusee/src/Jometri/BinarySearchTree.cs
+    startLine: 295
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nFinds the value of a node whose key is the largest, smaller than the given.\nOnly works with a balanced tree. It may be necessary to call BalanceTree before this method.\n"
+  example: []
+  syntax:
+    content: public TV FindLargestSmallerThanInBalanced(TK key)
+    parameters:
+    - id: key
+      type: '{TK}'
+      description: The key that is used as search parameter.
+    return:
+      type: '{TV}'
+      description: ''
+    content.vb: Public Function FindLargestSmallerThanInBalanced(key As TK) As TV
+  overload: Fusee.Jometri.BinarySearchTree`2.FindLargestSmallerThanInBalanced*
+  nameWithType.vb: BinarySearchTree(Of TK, TV).FindLargestSmallerThanInBalanced(TK)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).FindLargestSmallerThanInBalanced(TK)
+references:
+- uid: Fusee.Jometri
+  commentId: N:Fusee.Jometri
+  name: Fusee.Jometri
+  nameWithType: Fusee.Jometri
+  fullName: Fusee.Jometri
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Jometri.Node{{TK},{TV}}
+  commentId: T:Fusee.Jometri.Node{`0,`1}
+  parent: Fusee.Jometri
+  definition: Fusee.Jometri.Node`2
+  name: Node<TK, TV>
+  nameWithType: Node<TK, TV>
+  fullName: Fusee.Jometri.Node<TK, TV>
+  nameWithType.vb: Node(Of TK, TV)
+  fullName.vb: Fusee.Jometri.Node(Of TK, TV)
+  name.vb: Node(Of TK, TV)
+  spec.csharp:
+  - uid: Fusee.Jometri.Node`2
+    name: Node
+    nameWithType: Node
+    fullName: Fusee.Jometri.Node
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TK
+    nameWithType: TK
+    fullName: TK
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TV
+    nameWithType: TV
+    fullName: TV
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Jometri.Node`2
+    name: Node
+    nameWithType: Node
+    fullName: Fusee.Jometri.Node
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TK
+    nameWithType: TK
+    fullName: TK
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TV
+    nameWithType: TV
+    fullName: TV
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Node`2
+  commentId: T:Fusee.Jometri.Node`2
+  parent: Fusee.Jometri
+  name: Node<TK, TV>
+  nameWithType: Node<TK, TV>
+  fullName: Fusee.Jometri.Node<TK, TV>
+  nameWithType.vb: Node(Of TK, TV)
+  fullName.vb: Fusee.Jometri.Node(Of TK, TV)
+  name.vb: Node(Of TK, TV)
+  spec.csharp:
+  - uid: Fusee.Jometri.Node`2
+    name: Node
+    nameWithType: Node
+    fullName: Fusee.Jometri.Node
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TK
+    nameWithType: TK
+    fullName: TK
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TV
+    nameWithType: TV
+    fullName: TV
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Jometri.Node`2
+    name: Node
+    nameWithType: Node
+    fullName: Fusee.Jometri.Node
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TK
+    nameWithType: TK
+    fullName: TK
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TV
+    nameWithType: TV
+    fullName: TV
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.BinarySearchTree`2.InsertNode*
+  commentId: Overload:Fusee.Jometri.BinarySearchTree`2.InsertNode
+  name: InsertNode
+  nameWithType: BinarySearchTree<TK, TV>.InsertNode
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.InsertNode
+  nameWithType.vb: BinarySearchTree(Of TK, TV).InsertNode
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).InsertNode
+- uid: '{TK}'
+  commentId: '!:TK'
+  definition: TK
+  name: TK
+  nameWithType: TK
+  fullName: TK
+- uid: '{TV}'
+  commentId: '!:TV'
+  definition: TV
+  name: TV
+  nameWithType: TV
+  fullName: TV
+- uid: TK
+  name: TK
+  nameWithType: TK
+  fullName: TK
+- uid: TV
+  name: TV
+  nameWithType: TV
+  fullName: TV
+- uid: Fusee.Jometri.BinarySearchTree`2.PreorderTraverseTreeKeys*
+  commentId: Overload:Fusee.Jometri.BinarySearchTree`2.PreorderTraverseTreeKeys
+  name: PreorderTraverseTreeKeys
+  nameWithType: BinarySearchTree<TK, TV>.PreorderTraverseTreeKeys
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.PreorderTraverseTreeKeys
+  nameWithType.vb: BinarySearchTree(Of TK, TV).PreorderTraverseTreeKeys
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).PreorderTraverseTreeKeys
+- uid: System.Collections.Generic.IEnumerable{{TK}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<TK>
+  nameWithType: IEnumerable<TK>
+  fullName: System.Collections.Generic.IEnumerable<TK>
+  nameWithType.vb: IEnumerable(Of TK)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TK)
+  name.vb: IEnumerable(Of TK)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TK
+    nameWithType: TK
+    fullName: TK
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TK
+    nameWithType: TK
+    fullName: TK
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Fusee.Jometri.BinarySearchTree`2.PreorderTraverseTreeValues*
+  commentId: Overload:Fusee.Jometri.BinarySearchTree`2.PreorderTraverseTreeValues
+  name: PreorderTraverseTreeValues
+  nameWithType: BinarySearchTree<TK, TV>.PreorderTraverseTreeValues
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.PreorderTraverseTreeValues
+  nameWithType.vb: BinarySearchTree(Of TK, TV).PreorderTraverseTreeValues
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).PreorderTraverseTreeValues
+- uid: System.Collections.Generic.IEnumerable{{TV}}
+  commentId: T:System.Collections.Generic.IEnumerable{`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<TV>
+  nameWithType: IEnumerable<TV>
+  fullName: System.Collections.Generic.IEnumerable<TV>
+  nameWithType.vb: IEnumerable(Of TV)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TV)
+  name.vb: IEnumerable(Of TV)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TV
+    nameWithType: TV
+    fullName: TV
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TV
+    nameWithType: TV
+    fullName: TV
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.BinarySearchTree`2.InOrderTraverseTree*
+  commentId: Overload:Fusee.Jometri.BinarySearchTree`2.InOrderTraverseTree
+  name: InOrderTraverseTree
+  nameWithType: BinarySearchTree<TK, TV>.InOrderTraverseTree
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.InOrderTraverseTree
+  nameWithType.vb: BinarySearchTree(Of TK, TV).InOrderTraverseTree
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).InOrderTraverseTree
+- uid: Fusee.Jometri.BinarySearchTree`2.DeleteNode*
+  commentId: Overload:Fusee.Jometri.BinarySearchTree`2.DeleteNode
+  name: DeleteNode
+  nameWithType: BinarySearchTree<TK, TV>.DeleteNode
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.DeleteNode
+  nameWithType.vb: BinarySearchTree(Of TK, TV).DeleteNode
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).DeleteNode
+- uid: Fusee.Jometri.BinarySearchTree`2.FindNode*
+  commentId: Overload:Fusee.Jometri.BinarySearchTree`2.FindNode
+  name: FindNode
+  nameWithType: BinarySearchTree<TK, TV>.FindNode
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.FindNode
+  nameWithType.vb: BinarySearchTree(Of TK, TV).FindNode
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).FindNode
+- uid: Fusee.Jometri.BinarySearchTree`2.FindMin*
+  commentId: Overload:Fusee.Jometri.BinarySearchTree`2.FindMin
+  name: FindMin
+  nameWithType: BinarySearchTree<TK, TV>.FindMin
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.FindMin
+  nameWithType.vb: BinarySearchTree(Of TK, TV).FindMin
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).FindMin
+- uid: Fusee.Jometri.BinarySearchTree`2.BalanceTree*
+  commentId: Overload:Fusee.Jometri.BinarySearchTree`2.BalanceTree
+  name: BalanceTree
+  nameWithType: BinarySearchTree<TK, TV>.BalanceTree
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.BalanceTree
+  nameWithType.vb: BinarySearchTree(Of TK, TV).BalanceTree
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).BalanceTree
+- uid: Fusee.Jometri.BinarySearchTree`2.FindLargestSmallerThanInBalanced*
+  commentId: Overload:Fusee.Jometri.BinarySearchTree`2.FindLargestSmallerThanInBalanced
+  name: FindLargestSmallerThanInBalanced
+  nameWithType: BinarySearchTree<TK, TV>.FindLargestSmallerThanInBalanced
+  fullName: Fusee.Jometri.BinarySearchTree<TK, TV>.FindLargestSmallerThanInBalanced
+  nameWithType.vb: BinarySearchTree(Of TK, TV).FindLargestSmallerThanInBalanced
+  fullName.vb: Fusee.Jometri.BinarySearchTree(Of TK, TV).FindLargestSmallerThanInBalanced

@@ -1,0 +1,74 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Xirkit.ReceivedValueHandler
+  commentId: T:Fusee.Xirkit.ReceivedValueHandler
+  id: ReceivedValueHandler
+  parent: Fusee.Xirkit
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ReceivedValueHandler
+  nameWithType: ReceivedValueHandler
+  fullName: Fusee.Xirkit.ReceivedValueHandler
+  type: Delegate
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/IInPin.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ReceivedValueHandler
+    path: src/Fusee/src/Xirkit/IInPin.cs
+    startLine: 9
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nEvent handler type. Methods with this signature can be registered on the <xref href=\"Fusee.Xirkit.IInPin.ReceivedValue\" data-throw-if-not-resolved=\"false\"></xref> event.\n"
+  example: []
+  syntax:
+    content: public delegate void ReceivedValueHandler(IInPin inPin, EventArgs args);
+    parameters:
+    - id: inPin
+      type: Fusee.Xirkit.IInPin
+      description: The in-pin receiving a value.
+    - id: args
+      type: System.EventArgs
+      description: The <xref href="System.EventArgs" data-throw-if-not-resolved="false"></xref> instance containing the event data.
+    content.vb: Public Delegate Sub ReceivedValueHandler(inPin As IInPin, args As EventArgs)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Fusee.Xirkit.IInPin.ReceivedValue
+  commentId: E:Fusee.Xirkit.IInPin.ReceivedValue
+  parent: Fusee.Xirkit.IInPin
+  name: ReceivedValue
+  nameWithType: IInPin.ReceivedValue
+  fullName: Fusee.Xirkit.IInPin.ReceivedValue
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: Fusee.Xirkit
+  commentId: N:Fusee.Xirkit
+  name: Fusee.Xirkit
+  nameWithType: Fusee.Xirkit
+  fullName: Fusee.Xirkit
+- uid: Fusee.Xirkit.IInPin
+  commentId: T:Fusee.Xirkit.IInPin
+  parent: Fusee.Xirkit
+  name: IInPin
+  nameWithType: IInPin
+  fullName: Fusee.Xirkit.IInPin
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

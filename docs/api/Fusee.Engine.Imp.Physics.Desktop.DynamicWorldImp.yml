@@ -1,0 +1,4514 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  commentId: T:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  id: DynamicWorldImp
+  parent: Fusee.Engine.Imp.Physics.Desktop
+  children:
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape(Fusee.Math.Core.float3)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape(System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape(System.Single,System.Single,System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCapsuleShape(System.Single,System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCompoundShape(System.Boolean)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeShape(System.Single,System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConvexHullShape
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConvexHullShape(Fusee.Math.Core.float3[],System.Boolean)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape(Fusee.Math.Core.float3)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape(System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape(System.Single,System.Single,System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddEmptyShape
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGearConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGImpactMeshShape(System.Int32[],Fusee.Math.Core.float3[])
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddMultiSphereShape(Fusee.Math.Core.float3[],System.Single[])
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddRigidBody(System.Single,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Engine.Common.ICollisionShapeImp)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSphereShape(System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddStaticPlaneShape(Fusee.Math.Core.float3,System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.CheckCollisions
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.Dispose
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.GetRigidBody(System.Int32)
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.Gravity
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.NumberConstraints
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.NumberRigidBodies
+  - Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.StepSimulation(System.Single,System.Int32,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: DynamicWorldImp
+  nameWithType: DynamicWorldImp
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DynamicWorldImp
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 14
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nImplementation of the <xref href=\"Fusee.Engine.Common.IDynamicWorldImp\" data-throw-if-not-resolved=\"false\"></xref> interface using the bullet physics engine.\n"
+  example: []
+  syntax:
+    content: 'public class DynamicWorldImp : IDynamicWorldImp'
+    content.vb: >-
+      Public Class DynamicWorldImp
+
+          Implements IDynamicWorldImp
+  inheritance:
+  - System.Object
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.Gravity
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.Gravity
+  id: Gravity
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: Gravity
+  nameWithType: DynamicWorldImp.Gravity
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.Gravity
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Gravity
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 66
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets and sets the gravity.\n"
+  example: []
+  syntax:
+    content: public float3 Gravity { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+      description: "\nThe gravity.\n"
+    content.vb: Public Property Gravity As float3
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.Gravity*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.Gravity
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddRigidBody(System.Single,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Engine.Common.ICollisionShapeImp)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddRigidBody(System.Single,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Engine.Common.ICollisionShapeImp)
+  id: AddRigidBody(System.Single,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Engine.Common.ICollisionShapeImp)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddRigidBody(Single, float3, float3, ICollisionShapeImp)
+  nameWithType: DynamicWorldImp.AddRigidBody(Single, float3, float3, ICollisionShapeImp)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddRigidBody(System.Single, Fusee.Math.Core.float3, Fusee.Math.Core.float3, Fusee.Engine.Common.ICollisionShapeImp)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddRigidBody
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 180
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the rigid body.\n"
+  example: []
+  syntax:
+    content: public IRigidBodyImp AddRigidBody(float mass, float3 worldTransform, float3 orientation, ICollisionShapeImp colShape)
+    parameters:
+    - id: mass
+      type: System.Single
+      description: The mass.
+    - id: worldTransform
+      type: Fusee.Math.Core.float3
+      description: The world transform.
+    - id: orientation
+      type: Fusee.Math.Core.float3
+      description: The orientation.
+    - id: colShape
+      type: Fusee.Engine.Common.ICollisionShapeImp
+      description: The col shape.
+    return:
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: ''
+    content.vb: Public Function AddRigidBody(mass As Single, worldTransform As float3, orientation As float3, colShape As ICollisionShapeImp) As IRigidBodyImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddRigidBody*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddRigidBody(System.Single,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Engine.Common.ICollisionShapeImp)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.StepSimulation(System.Single,System.Int32,System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.StepSimulation(System.Single,System.Int32,System.Single)
+  id: StepSimulation(System.Single,System.Int32,System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: StepSimulation(Single, Int32, Single)
+  nameWithType: DynamicWorldImp.StepSimulation(Single, Int32, Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.StepSimulation(System.Single, System.Int32, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: StepSimulation
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 309
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nSteps the simulation.\n"
+  example: []
+  syntax:
+    content: public int StepSimulation(float timeSteps, int maxSubSteps, float fixedTimeSteps)
+    parameters:
+    - id: timeSteps
+      type: System.Single
+      description: The time steps.
+    - id: maxSubSteps
+      type: System.Int32
+      description: The maximum sub steps.
+    - id: fixedTimeSteps
+      type: System.Single
+      description: The fixed time steps.
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function StepSimulation(timeSteps As Single, maxSubSteps As Integer, fixedTimeSteps As Single) As Integer
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.StepSimulation*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.StepSimulation(System.Single,System.Int32,System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.CheckCollisions
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.CheckCollisions
+  id: CheckCollisions
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: CheckCollisions()
+  nameWithType: DynamicWorldImp.CheckCollisions()
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.CheckCollisions()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CheckCollisions
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 318
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nChecks the collisions.\n"
+  example: []
+  syntax:
+    content: public void CheckCollisions()
+    content.vb: Public Sub CheckCollisions
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.CheckCollisions*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.GetRigidBody(System.Int32)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.GetRigidBody(System.Int32)
+  id: GetRigidBody(System.Int32)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: GetRigidBody(Int32)
+  nameWithType: DynamicWorldImp.GetRigidBody(Int32)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.GetRigidBody(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetRigidBody
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 348
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the rigid body.\n"
+  example: []
+  syntax:
+    content: public IRigidBodyImp GetRigidBody(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The i.
+    return:
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: ''
+    content.vb: Public Function GetRigidBody(i As Integer) As IRigidBodyImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.GetRigidBody*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.GetRigidBody(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.NumberRigidBodies
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.NumberRigidBodies
+  id: NumberRigidBodies
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: NumberRigidBodies()
+  nameWithType: DynamicWorldImp.NumberRigidBodies()
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.NumberRigidBodies()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: NumberRigidBodies
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 359
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nNumbers the rigid bodies.\n"
+  example: []
+  syntax:
+    content: public int NumberRigidBodies()
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function NumberRigidBodies As Integer
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.NumberRigidBodies*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.NumberRigidBodies
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3)
+  id: AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddPoint2PointConstraint(IRigidBodyImp, float3)
+  nameWithType: DynamicWorldImp.AddPoint2PointConstraint(IRigidBodyImp, float3)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddPoint2PointConstraint
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 373
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the point2 point constraint.\n"
+  example: []
+  syntax:
+    content: public IPoint2PointConstraintImp AddPoint2PointConstraint(IRigidBodyImp rigidBodyA, float3 pivotInA)
+    parameters:
+    - id: rigidBodyA
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body a.
+    - id: pivotInA
+      type: Fusee.Math.Core.float3
+      description: The pivot in a.
+    return:
+      type: Fusee.Engine.Common.IPoint2PointConstraintImp
+      description: ''
+    content.vb: Public Function AddPoint2PointConstraint(rigidBodyA As IRigidBodyImp, pivotInA As float3) As IPoint2PointConstraintImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddPoint2PointConstraint*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  id: AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddPoint2PointConstraint(IRigidBodyImp, IRigidBodyImp, float3, float3)
+  nameWithType: DynamicWorldImp.AddPoint2PointConstraint(IRigidBodyImp, IRigidBodyImp, float3, float3)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float3, Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddPoint2PointConstraint
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 394
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the point2 point constraint.\n"
+  example: []
+  syntax:
+    content: public IPoint2PointConstraintImp AddPoint2PointConstraint(IRigidBodyImp rigidBodyA, IRigidBodyImp rigidBodyB, float3 pivotInA, float3 pivotInB)
+    parameters:
+    - id: rigidBodyA
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body a.
+    - id: rigidBodyB
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body b.
+    - id: pivotInA
+      type: Fusee.Math.Core.float3
+      description: The pivot in a.
+    - id: pivotInB
+      type: Fusee.Math.Core.float3
+      description: The pivot in b.
+    return:
+      type: Fusee.Engine.Common.IPoint2PointConstraintImp
+      description: ''
+    content.vb: Public Function AddPoint2PointConstraint(rigidBodyA As IRigidBodyImp, rigidBodyB As IRigidBodyImp, pivotInA As float3, pivotInB As float3) As IPoint2PointConstraintImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddPoint2PointConstraint*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  id: AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddHingeConstraint(IRigidBodyImp, float4x4, Boolean)
+  nameWithType: DynamicWorldImp.AddHingeConstraint(IRigidBodyImp, float4x4, Boolean)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float4x4, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddHingeConstraint
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 426
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the hinge constraint.\n"
+  example: []
+  syntax:
+    content: public IHingeConstraintImp AddHingeConstraint(IRigidBodyImp rigidBodyA, float4x4 frameInA, bool useReferenceFrameA)
+    parameters:
+    - id: rigidBodyA
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body a.
+    - id: frameInA
+      type: Fusee.Math.Core.float4x4
+      description: The frame in a.
+    - id: useReferenceFrameA
+      type: System.Boolean
+      description: if set to <code>true</code> [use reference frame a].
+    return:
+      type: Fusee.Engine.Common.IHingeConstraintImp
+      description: ''
+    content.vb: Public Function AddHingeConstraint(rigidBodyA As IRigidBodyImp, frameInA As float4x4, useReferenceFrameA As Boolean) As IHingeConstraintImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+  id: AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddHingeConstraint(IRigidBodyImp, float3, float3, Boolean)
+  nameWithType: DynamicWorldImp.AddHingeConstraint(IRigidBodyImp, float3, float3, Boolean)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float3, Fusee.Math.Core.float3, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddHingeConstraint
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 447
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the hinge constraint.\n"
+  example: []
+  syntax:
+    content: public IHingeConstraintImp AddHingeConstraint(IRigidBodyImp rigidBodyA, float3 pivotInA, float3 axisInA, bool useReferenceFrameA)
+    parameters:
+    - id: rigidBodyA
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body a.
+    - id: pivotInA
+      type: Fusee.Math.Core.float3
+      description: The pivot in a.
+    - id: axisInA
+      type: Fusee.Math.Core.float3
+      description: The axis in a.
+    - id: useReferenceFrameA
+      type: System.Boolean
+      description: if set to <code>true</code> [use reference frame a].
+    return:
+      type: Fusee.Engine.Common.IHingeConstraintImp
+      description: ''
+    content.vb: Public Function AddHingeConstraint(rigidBodyA As IRigidBodyImp, pivotInA As float3, axisInA As float3, useReferenceFrameA As Boolean) As IHingeConstraintImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+  id: AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddHingeConstraint(IRigidBodyImp, IRigidBodyImp, float3, float3, float3, float3, Boolean)
+  nameWithType: DynamicWorldImp.AddHingeConstraint(IRigidBodyImp, IRigidBodyImp, float3, float3, float3, float3, Boolean)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float3, Fusee.Math.Core.float3, Fusee.Math.Core.float3, Fusee.Math.Core.float3, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddHingeConstraint
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 471
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the hinge constraint.\n"
+  example: []
+  syntax:
+    content: public IHingeConstraintImp AddHingeConstraint(IRigidBodyImp rigidBodyA, IRigidBodyImp rigidBodyB, float3 pivotInA, float3 pivotInB, float3 axisInA, float3 AxisInB, bool useReferenceFrameA)
+    parameters:
+    - id: rigidBodyA
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body a.
+    - id: rigidBodyB
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body b.
+    - id: pivotInA
+      type: Fusee.Math.Core.float3
+      description: The pivot in a.
+    - id: pivotInB
+      type: Fusee.Math.Core.float3
+      description: The pivot in b.
+    - id: axisInA
+      type: Fusee.Math.Core.float3
+      description: The axis in a.
+    - id: AxisInB
+      type: Fusee.Math.Core.float3
+      description: The axis in b.
+    - id: useReferenceFrameA
+      type: System.Boolean
+      description: if set to <code>true</code> [use reference frame a].
+    return:
+      type: Fusee.Engine.Common.IHingeConstraintImp
+      description: ''
+    content.vb: Public Function AddHingeConstraint(rigidBodyA As IRigidBodyImp, rigidBodyB As IRigidBodyImp, pivotInA As float3, pivotInB As float3, axisInA As float3, AxisInB As float3, useReferenceFrameA As Boolean) As IHingeConstraintImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  id: AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddHingeConstraint(IRigidBodyImp, IRigidBodyImp, float4x4, float4x4, Boolean)
+  nameWithType: DynamicWorldImp.AddHingeConstraint(IRigidBodyImp, IRigidBodyImp, float4x4, float4x4, Boolean)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddHingeConstraint
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 496
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the hinge constraint.\n"
+  example: []
+  syntax:
+    content: public IHingeConstraintImp AddHingeConstraint(IRigidBodyImp rigidBodyA, IRigidBodyImp rigidBodyB, float4x4 brAFrame, float4x4 brBFrame, bool useReferenceFrameA)
+    parameters:
+    - id: rigidBodyA
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body a.
+    - id: rigidBodyB
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body b.
+    - id: brAFrame
+      type: Fusee.Math.Core.float4x4
+      description: The br a frame.
+    - id: brBFrame
+      type: Fusee.Math.Core.float4x4
+      description: The br b frame.
+    - id: useReferenceFrameA
+      type: System.Boolean
+      description: if set to <code>true</code> [use reference frame a].
+    return:
+      type: Fusee.Engine.Common.IHingeConstraintImp
+      description: ''
+    content.vb: Public Function AddHingeConstraint(rigidBodyA As IRigidBodyImp, rigidBodyB As IRigidBodyImp, brAFrame As float4x4, brBFrame As float4x4, useReferenceFrameA As Boolean) As IHingeConstraintImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  id: AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddSliderConstraint(IRigidBodyImp, IRigidBodyImp, float4x4, float4x4, Boolean)
+  nameWithType: DynamicWorldImp.AddSliderConstraint(IRigidBodyImp, IRigidBodyImp, float4x4, float4x4, Boolean)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddSliderConstraint
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 527
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the slider constraint.\n"
+  example: []
+  syntax:
+    content: public ISliderConstraintImp AddSliderConstraint(IRigidBodyImp rigidBodyA, IRigidBodyImp rigidBodyB, float4x4 frameInA, float4x4 frameInB, bool useLinearReferenceFrameA = false)
+    parameters:
+    - id: rigidBodyA
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body a.
+    - id: rigidBodyB
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body b.
+    - id: frameInA
+      type: Fusee.Math.Core.float4x4
+      description: The frame in a.
+    - id: frameInB
+      type: Fusee.Math.Core.float4x4
+      description: The frame in b.
+    - id: useLinearReferenceFrameA
+      type: System.Boolean
+      description: if set to <code>true</code> [use linear reference frame a].
+    return:
+      type: Fusee.Engine.Common.ISliderConstraintImp
+      description: ''
+    content.vb: Public Function AddSliderConstraint(rigidBodyA As IRigidBodyImp, rigidBodyB As IRigidBodyImp, frameInA As float4x4, frameInB As float4x4, useLinearReferenceFrameA As Boolean = False) As ISliderConstraintImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSliderConstraint*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  id: AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddSliderConstraint(IRigidBodyImp, float4x4, Boolean)
+  nameWithType: DynamicWorldImp.AddSliderConstraint(IRigidBodyImp, float4x4, Boolean)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float4x4, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddSliderConstraint
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 554
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the slider constraint.\n"
+  example: []
+  syntax:
+    content: public ISliderConstraintImp AddSliderConstraint(IRigidBodyImp rigidBodyA, float4x4 frameInA, bool useLinearReferenceFrameA)
+    parameters:
+    - id: rigidBodyA
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body a.
+    - id: frameInA
+      type: Fusee.Math.Core.float4x4
+      description: The frame in a.
+    - id: useLinearReferenceFrameA
+      type: System.Boolean
+      description: if set to <code>true</code> [use linear reference frame a].
+    return:
+      type: Fusee.Engine.Common.ISliderConstraintImp
+      description: ''
+    content.vb: Public Function AddSliderConstraint(rigidBodyA As IRigidBodyImp, frameInA As float4x4, useLinearReferenceFrameA As Boolean) As ISliderConstraintImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSliderConstraint*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGearConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGearConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single)
+  id: AddGearConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddGearConstraint(IRigidBodyImp, IRigidBodyImp, float3, float3, Single)
+  nameWithType: DynamicWorldImp.AddGearConstraint(IRigidBodyImp, IRigidBodyImp, float3, float3, Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGearConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float3, Fusee.Math.Core.float3, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddGearConstraint
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 578
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the gear constraint.\n"
+  example: []
+  syntax:
+    content: public IGearConstraintImp AddGearConstraint(IRigidBodyImp rigidBodyA, IRigidBodyImp rigidBodyB, float3 axisInA, float3 axisInB, float ratio)
+    parameters:
+    - id: rigidBodyA
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body a.
+    - id: rigidBodyB
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body b.
+    - id: axisInA
+      type: Fusee.Math.Core.float3
+      description: The axis in a.
+    - id: axisInB
+      type: Fusee.Math.Core.float3
+      description: The axis in b.
+    - id: ratio
+      type: System.Single
+      description: The ratio.
+    return:
+      type: Fusee.Engine.Common.IGearConstraintImp
+      description: ''
+    content.vb: Public Function AddGearConstraint(rigidBodyA As IRigidBodyImp, rigidBodyB As IRigidBodyImp, axisInA As float3, axisInB As float3, ratio As Single) As IGearConstraintImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGearConstraint*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddGearConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4)
+  id: AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddConeTwistConstraint(IRigidBodyImp, float4x4)
+  nameWithType: DynamicWorldImp.AddConeTwistConstraint(IRigidBodyImp, float4x4)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float4x4)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddConeTwistConstraint
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 606
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the cone twist constraint.\n"
+  example: []
+  syntax:
+    content: public IConeTwistConstraintImp AddConeTwistConstraint(IRigidBodyImp rigidBodyA, float4x4 rbAFrame)
+    parameters:
+    - id: rigidBodyA
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body a.
+    - id: rbAFrame
+      type: Fusee.Math.Core.float4x4
+      description: The rb a frame.
+    return:
+      type: Fusee.Engine.Common.IConeTwistConstraintImp
+      description: ''
+    content.vb: Public Function AddConeTwistConstraint(rigidBodyA As IRigidBodyImp, rbAFrame As float4x4) As IConeTwistConstraintImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeTwistConstraint*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  id: AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddConeTwistConstraint(IRigidBodyImp, IRigidBodyImp, float4x4, float4x4)
+  nameWithType: DynamicWorldImp.AddConeTwistConstraint(IRigidBodyImp, IRigidBodyImp, float4x4, float4x4)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddConeTwistConstraint
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 629
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the cone twist constraint.\n"
+  example: []
+  syntax:
+    content: public IConeTwistConstraintImp AddConeTwistConstraint(IRigidBodyImp rigidBodyA, IRigidBodyImp rigidBodyB, float4x4 rbAFrame, float4x4 rbBFrame)
+    parameters:
+    - id: rigidBodyA
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body a.
+    - id: rigidBodyB
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body b.
+    - id: rbAFrame
+      type: Fusee.Math.Core.float4x4
+      description: The rb a frame.
+    - id: rbBFrame
+      type: Fusee.Math.Core.float4x4
+      description: The rb b frame.
+    return:
+      type: Fusee.Engine.Common.IConeTwistConstraintImp
+      description: ''
+    content.vb: Public Function AddConeTwistConstraint(rigidBodyA As IRigidBodyImp, rigidBodyB As IRigidBodyImp, rbAFrame As float4x4, rbBFrame As float4x4) As IConeTwistConstraintImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeTwistConstraint*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  id: AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddGeneric6DofConstraint(IRigidBodyImp, float4x4, Boolean)
+  nameWithType: DynamicWorldImp.AddGeneric6DofConstraint(IRigidBodyImp, float4x4, Boolean)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float4x4, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddGeneric6DofConstraint
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 659
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the generic6 dof constraint.\n"
+  example: []
+  syntax:
+    content: public IGeneric6DofConstraintImp AddGeneric6DofConstraint(IRigidBodyImp rigidBodyA, float4x4 frameInA, bool useReferenceFrameA)
+    parameters:
+    - id: rigidBodyA
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body a.
+    - id: frameInA
+      type: Fusee.Math.Core.float4x4
+      description: The frame in a.
+    - id: useReferenceFrameA
+      type: System.Boolean
+      description: if set to <code>true</code> [use reference frame a].
+    return:
+      type: Fusee.Engine.Common.IGeneric6DofConstraintImp
+      description: ''
+    content.vb: Public Function AddGeneric6DofConstraint(rigidBodyA As IRigidBodyImp, frameInA As float4x4, useReferenceFrameA As Boolean) As IGeneric6DofConstraintImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGeneric6DofConstraint*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  id: AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddGeneric6DofConstraint(IRigidBodyImp, IRigidBodyImp, float4x4, float4x4, Boolean)
+  nameWithType: DynamicWorldImp.AddGeneric6DofConstraint(IRigidBodyImp, IRigidBodyImp, float4x4, float4x4, Boolean)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddGeneric6DofConstraint
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 681
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the generic6 dof constraint.\n"
+  example: []
+  syntax:
+    content: public IGeneric6DofConstraintImp AddGeneric6DofConstraint(IRigidBodyImp rigidBodyA, IRigidBodyImp rigidBodyB, float4x4 frameInA, float4x4 frameInB, bool useReferenceFrameA = false)
+    parameters:
+    - id: rigidBodyA
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body a.
+    - id: rigidBodyB
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: The rigid body b.
+    - id: frameInA
+      type: Fusee.Math.Core.float4x4
+      description: The frame in a.
+    - id: frameInB
+      type: Fusee.Math.Core.float4x4
+      description: The frame in b.
+    - id: useReferenceFrameA
+      type: System.Boolean
+      description: if set to <code>true</code> [use reference frame a].
+    return:
+      type: Fusee.Engine.Common.IGeneric6DofConstraintImp
+      description: ''
+    content.vb: Public Function AddGeneric6DofConstraint(rigidBodyA As IRigidBodyImp, rigidBodyB As IRigidBodyImp, frameInA As float4x4, frameInB As float4x4, useReferenceFrameA As Boolean = False) As IGeneric6DofConstraintImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGeneric6DofConstraint*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape(System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape(System.Single)
+  id: AddBoxShape(System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddBoxShape(Single)
+  nameWithType: DynamicWorldImp.AddBoxShape(Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddBoxShape
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 711
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the box shape.\n"
+  example: []
+  syntax:
+    content: public IBoxShapeImp AddBoxShape(float boxHalfExtents)
+    parameters:
+    - id: boxHalfExtents
+      type: System.Single
+      description: The box half extents.
+    return:
+      type: Fusee.Engine.Common.IBoxShapeImp
+      description: ''
+    content.vb: Public Function AddBoxShape(boxHalfExtents As Single) As IBoxShapeImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape(Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape(Fusee.Math.Core.float3)
+  id: AddBoxShape(Fusee.Math.Core.float3)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddBoxShape(float3)
+  nameWithType: DynamicWorldImp.AddBoxShape(float3)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape(Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddBoxShape
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 726
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the box shape.\n"
+  example: []
+  syntax:
+    content: public IBoxShapeImp AddBoxShape(float3 boxHalfExtents)
+    parameters:
+    - id: boxHalfExtents
+      type: Fusee.Math.Core.float3
+      description: The box half extents.
+    return:
+      type: Fusee.Engine.Common.IBoxShapeImp
+      description: ''
+    content.vb: Public Function AddBoxShape(boxHalfExtents As float3) As IBoxShapeImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(Fusee.Math.Core.float3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape(System.Single,System.Single,System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape(System.Single,System.Single,System.Single)
+  id: AddBoxShape(System.Single,System.Single,System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddBoxShape(Single, Single, Single)
+  nameWithType: DynamicWorldImp.AddBoxShape(Single, Single, Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape(System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddBoxShape
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 743
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the box shape.\n"
+  example: []
+  syntax:
+    content: public IBoxShapeImp AddBoxShape(float boxHalfExtentsX, float boxHalfExtentsY, float boxHalfExtentsZ)
+    parameters:
+    - id: boxHalfExtentsX
+      type: System.Single
+      description: The box half extents x.
+    - id: boxHalfExtentsY
+      type: System.Single
+      description: The box half extents y.
+    - id: boxHalfExtentsZ
+      type: System.Single
+      description: The box half extents z.
+    return:
+      type: Fusee.Engine.Common.IBoxShapeImp
+      description: ''
+    content.vb: Public Function AddBoxShape(boxHalfExtentsX As Single, boxHalfExtentsY As Single, boxHalfExtentsZ As Single) As IBoxShapeImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(System.Single,System.Single,System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSphereShape(System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSphereShape(System.Single)
+  id: AddSphereShape(System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddSphereShape(Single)
+  nameWithType: DynamicWorldImp.AddSphereShape(Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSphereShape(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddSphereShape
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 760
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the sphere shape.\n"
+  example: []
+  syntax:
+    content: public ISphereShapeImp AddSphereShape(float radius)
+    parameters:
+    - id: radius
+      type: System.Single
+      description: The radius.
+    return:
+      type: Fusee.Engine.Common.ISphereShapeImp
+      description: ''
+    content.vb: Public Function AddSphereShape(radius As Single) As ISphereShapeImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSphereShape*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddSphereShape(System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCapsuleShape(System.Single,System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCapsuleShape(System.Single,System.Single)
+  id: AddCapsuleShape(System.Single,System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddCapsuleShape(Single, Single)
+  nameWithType: DynamicWorldImp.AddCapsuleShape(Single, Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCapsuleShape(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddCapsuleShape
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 778
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the capsule shape.\n"
+  example: []
+  syntax:
+    content: public ICapsuleShapeImp AddCapsuleShape(float radius, float height)
+    parameters:
+    - id: radius
+      type: System.Single
+      description: The radius.
+    - id: height
+      type: System.Single
+      description: The height.
+    return:
+      type: Fusee.Engine.Common.ICapsuleShapeImp
+      description: ''
+    content.vb: Public Function AddCapsuleShape(radius As Single, height As Single) As ICapsuleShapeImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCapsuleShape*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddCapsuleShape(System.Single,System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape(System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape(System.Single)
+  id: AddCylinderShape(System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddCylinderShape(Single)
+  nameWithType: DynamicWorldImp.AddCylinderShape(Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddCylinderShape
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 795
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the cylinder shape.\n"
+  example: []
+  syntax:
+    content: public ICylinderShapeImp AddCylinderShape(float halfExtents)
+    parameters:
+    - id: halfExtents
+      type: System.Single
+      description: The half extents.
+    return:
+      type: Fusee.Engine.Common.ICylinderShapeImp
+      description: ''
+    content.vb: Public Function AddCylinderShape(halfExtents As Single) As ICylinderShapeImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape(Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape(Fusee.Math.Core.float3)
+  id: AddCylinderShape(Fusee.Math.Core.float3)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddCylinderShape(float3)
+  nameWithType: DynamicWorldImp.AddCylinderShape(float3)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape(Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddCylinderShape
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 810
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the cylinder shape.\n"
+  example: []
+  syntax:
+    content: public ICylinderShapeImp AddCylinderShape(float3 halfExtents)
+    parameters:
+    - id: halfExtents
+      type: Fusee.Math.Core.float3
+      description: The half extents.
+    return:
+      type: Fusee.Engine.Common.ICylinderShapeImp
+      description: ''
+    content.vb: Public Function AddCylinderShape(halfExtents As float3) As ICylinderShapeImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(Fusee.Math.Core.float3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape(System.Single,System.Single,System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape(System.Single,System.Single,System.Single)
+  id: AddCylinderShape(System.Single,System.Single,System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddCylinderShape(Single, Single, Single)
+  nameWithType: DynamicWorldImp.AddCylinderShape(Single, Single, Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape(System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddCylinderShape
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 827
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the cylinder shape.\n"
+  example: []
+  syntax:
+    content: public ICylinderShapeImp AddCylinderShape(float halfExtentsX, float halfExtentsY, float halfExtentsZ)
+    parameters:
+    - id: halfExtentsX
+      type: System.Single
+      description: The half extents x.
+    - id: halfExtentsY
+      type: System.Single
+      description: The half extents y.
+    - id: halfExtentsZ
+      type: System.Single
+      description: The half extents z.
+    return:
+      type: Fusee.Engine.Common.ICylinderShapeImp
+      description: ''
+    content.vb: Public Function AddCylinderShape(halfExtentsX As Single, halfExtentsY As Single, halfExtentsZ As Single) As ICylinderShapeImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(System.Single,System.Single,System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeShape(System.Single,System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeShape(System.Single,System.Single)
+  id: AddConeShape(System.Single,System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddConeShape(Single, Single)
+  nameWithType: DynamicWorldImp.AddConeShape(Single, Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeShape(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddConeShape
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 846
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the cone shape.\n"
+  example: []
+  syntax:
+    content: public IConeShapeImp AddConeShape(float radius, float height)
+    parameters:
+    - id: radius
+      type: System.Single
+      description: The radius.
+    - id: height
+      type: System.Single
+      description: The height.
+    return:
+      type: Fusee.Engine.Common.IConeShapeImp
+      description: ''
+    content.vb: Public Function AddConeShape(radius As Single, height As Single) As IConeShapeImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeShape*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddConeShape(System.Single,System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddMultiSphereShape(Fusee.Math.Core.float3[],System.Single[])
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddMultiSphereShape(Fusee.Math.Core.float3[],System.Single[])
+  id: AddMultiSphereShape(Fusee.Math.Core.float3[],System.Single[])
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddMultiSphereShape(float3[], Single[])
+  nameWithType: DynamicWorldImp.AddMultiSphereShape(float3[], Single[])
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddMultiSphereShape(Fusee.Math.Core.float3[], System.Single[])
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddMultiSphereShape
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 864
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the multi sphere shape.\n"
+  example: []
+  syntax:
+    content: public IMultiSphereShapeImp AddMultiSphereShape(float3[] positions, float[] radi)
+    parameters:
+    - id: positions
+      type: Fusee.Math.Core.float3[]
+      description: The positions.
+    - id: radi
+      type: System.Single[]
+      description: The radi.
+    return:
+      type: Fusee.Engine.Common.IMultiSphereShapeImp
+      description: ''
+    content.vb: Public Function AddMultiSphereShape(positions As float3(), radi As Single()) As IMultiSphereShapeImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddMultiSphereShape*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddMultiSphereShape(Fusee.Math.Core.float3[],System.Single[])
+  nameWithType.vb: DynamicWorldImp.AddMultiSphereShape(float3(), Single())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddMultiSphereShape(Fusee.Math.Core.float3(), System.Single())
+  name.vb: AddMultiSphereShape(float3(), Single())
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCompoundShape(System.Boolean)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCompoundShape(System.Boolean)
+  id: AddCompoundShape(System.Boolean)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddCompoundShape(Boolean)
+  nameWithType: DynamicWorldImp.AddCompoundShape(Boolean)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCompoundShape(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddCompoundShape
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 885
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the compound shape.\n"
+  example: []
+  syntax:
+    content: public ICompoundShapeImp AddCompoundShape(bool enableDynamicAabbTree)
+    parameters:
+    - id: enableDynamicAabbTree
+      type: System.Boolean
+      description: if set to <code>true</code> [enable dynamic aabb tree].
+    return:
+      type: Fusee.Engine.Common.ICompoundShapeImp
+      description: ''
+    content.vb: Public Function AddCompoundShape(enableDynamicAabbTree As Boolean) As ICompoundShapeImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCompoundShape*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddCompoundShape(System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddEmptyShape
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddEmptyShape
+  id: AddEmptyShape
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddEmptyShape()
+  nameWithType: DynamicWorldImp.AddEmptyShape()
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddEmptyShape()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddEmptyShape
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 900
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the empty shape.\n"
+  example: []
+  syntax:
+    content: public IEmptyShapeImp AddEmptyShape()
+    return:
+      type: Fusee.Engine.Common.IEmptyShapeImp
+      description: ''
+    content.vb: Public Function AddEmptyShape As IEmptyShapeImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddEmptyShape*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddEmptyShape
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConvexHullShape
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConvexHullShape
+  id: AddConvexHullShape
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddConvexHullShape()
+  nameWithType: DynamicWorldImp.AddConvexHullShape()
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConvexHullShape()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddConvexHullShape
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 915
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the convex hull shape.\n"
+  example: []
+  syntax:
+    content: public IConvexHullShapeImp AddConvexHullShape()
+    return:
+      type: Fusee.Engine.Common.IConvexHullShapeImp
+      description: ''
+    content.vb: Public Function AddConvexHullShape As IConvexHullShapeImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConvexHullShape*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConvexHullShape(Fusee.Math.Core.float3[],System.Boolean)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConvexHullShape(Fusee.Math.Core.float3[],System.Boolean)
+  id: AddConvexHullShape(Fusee.Math.Core.float3[],System.Boolean)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddConvexHullShape(float3[], Boolean)
+  nameWithType: DynamicWorldImp.AddConvexHullShape(float3[], Boolean)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConvexHullShape(Fusee.Math.Core.float3[], System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddConvexHullShape
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 932
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the convex hull shape.\n"
+  example: []
+  syntax:
+    content: public IConvexHullShapeImp AddConvexHullShape(float3[] points, bool optimized)
+    parameters:
+    - id: points
+      type: Fusee.Math.Core.float3[]
+      description: The points.
+    - id: optimized
+      type: System.Boolean
+      description: if set to <code>true</code> [optimized].
+    return:
+      type: Fusee.Engine.Common.IConvexHullShapeImp
+      description: ''
+    content.vb: Public Function AddConvexHullShape(points As float3(), optimized As Boolean) As IConvexHullShapeImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConvexHullShape*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape(Fusee.Math.Core.float3[],System.Boolean)
+  nameWithType.vb: DynamicWorldImp.AddConvexHullShape(float3(), Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConvexHullShape(Fusee.Math.Core.float3(), System.Boolean)
+  name.vb: AddConvexHullShape(float3(), Boolean)
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddStaticPlaneShape(Fusee.Math.Core.float3,System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddStaticPlaneShape(Fusee.Math.Core.float3,System.Single)
+  id: AddStaticPlaneShape(Fusee.Math.Core.float3,System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddStaticPlaneShape(float3, Single)
+  nameWithType: DynamicWorldImp.AddStaticPlaneShape(float3, Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddStaticPlaneShape(Fusee.Math.Core.float3, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddStaticPlaneShape
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 976
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the static plane shape.\n"
+  example: []
+  syntax:
+    content: public IStaticPlaneShapeImp AddStaticPlaneShape(float3 planeNormal, float planeConstant)
+    parameters:
+    - id: planeNormal
+      type: Fusee.Math.Core.float3
+      description: The plane normal.
+    - id: planeConstant
+      type: System.Single
+      description: The plane constant.
+    return:
+      type: Fusee.Engine.Common.IStaticPlaneShapeImp
+      description: ''
+    content.vb: Public Function AddStaticPlaneShape(planeNormal As float3, planeConstant As Single) As IStaticPlaneShapeImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddStaticPlaneShape*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddStaticPlaneShape(Fusee.Math.Core.float3,System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGImpactMeshShape(System.Int32[],Fusee.Math.Core.float3[])
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGImpactMeshShape(System.Int32[],Fusee.Math.Core.float3[])
+  id: AddGImpactMeshShape(System.Int32[],Fusee.Math.Core.float3[])
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: AddGImpactMeshShape(Int32[], float3[])
+  nameWithType: DynamicWorldImp.AddGImpactMeshShape(Int32[], float3[])
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGImpactMeshShape(System.Int32[], Fusee.Math.Core.float3[])
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddGImpactMeshShape
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 995
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nAdds the g impact mesh shape.\n"
+  example: []
+  syntax:
+    content: public IGImpactMeshShapeImp AddGImpactMeshShape(int[] meshTriangles, float3[] meshVertices)
+    parameters:
+    - id: meshTriangles
+      type: System.Int32[]
+      description: The mesh triangles.
+    - id: meshVertices
+      type: Fusee.Math.Core.float3[]
+      description: The mesh vertices.
+    return:
+      type: Fusee.Engine.Common.IGImpactMeshShapeImp
+      description: ''
+    content.vb: Public Function AddGImpactMeshShape(meshTriangles As Integer(), meshVertices As float3()) As IGImpactMeshShapeImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGImpactMeshShape*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.AddGImpactMeshShape(System.Int32[],Fusee.Math.Core.float3[])
+  nameWithType.vb: DynamicWorldImp.AddGImpactMeshShape(Int32(), float3())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGImpactMeshShape(System.Int32(), Fusee.Math.Core.float3())
+  name.vb: AddGImpactMeshShape(Int32(), float3())
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.NumberConstraints
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.NumberConstraints
+  id: NumberConstraints
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: NumberConstraints()
+  nameWithType: DynamicWorldImp.NumberConstraints()
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.NumberConstraints()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: NumberConstraints
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 1020
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nNumbers the constraints.\n"
+  example: []
+  syntax:
+    content: public int NumberConstraints()
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function NumberConstraints As Integer
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.NumberConstraints*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.NumberConstraints
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.Dispose
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.Dispose
+  id: Dispose
+  parent: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: DynamicWorldImp.Dispose()
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Dispose
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/DynamicWorldImp.cs
+    startLine: 1038
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nReleases unmanaged and - optionally - managed resources.\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.Dispose*
+  implements:
+  - Fusee.Engine.Common.IDynamicWorldImp.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Common.IDynamicWorldImp
+  commentId: T:Fusee.Engine.Common.IDynamicWorldImp
+  parent: Fusee.Engine.Common
+  name: IDynamicWorldImp
+  nameWithType: IDynamicWorldImp
+  fullName: Fusee.Engine.Common.IDynamicWorldImp
+- uid: Fusee.Engine.Imp.Physics.Desktop
+  commentId: N:Fusee.Engine.Imp.Physics.Desktop
+  name: Fusee.Engine.Imp.Physics.Desktop
+  nameWithType: Fusee.Engine.Imp.Physics.Desktop
+  fullName: Fusee.Engine.Imp.Physics.Desktop
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.Gravity*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.Gravity
+  name: Gravity
+  nameWithType: DynamicWorldImp.Gravity
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.Gravity
+- uid: Fusee.Engine.Common.IDynamicWorldImp.Gravity
+  commentId: P:Fusee.Engine.Common.IDynamicWorldImp.Gravity
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  name: Gravity
+  nameWithType: IDynamicWorldImp.Gravity
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.Gravity
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddRigidBody*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddRigidBody
+  name: AddRigidBody
+  nameWithType: DynamicWorldImp.AddRigidBody
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddRigidBody
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddRigidBody(System.Single,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Engine.Common.ICollisionShapeImp)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddRigidBody(System.Single,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Engine.Common.ICollisionShapeImp)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddRigidBody(Single, float3, float3, ICollisionShapeImp)
+  nameWithType: IDynamicWorldImp.AddRigidBody(Single, float3, float3, ICollisionShapeImp)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddRigidBody(System.Single, Fusee.Math.Core.float3, Fusee.Math.Core.float3, Fusee.Engine.Common.ICollisionShapeImp)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddRigidBody(System.Single,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Engine.Common.ICollisionShapeImp)
+    name: AddRigidBody
+    nameWithType: IDynamicWorldImp.AddRigidBody
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddRigidBody
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.ICollisionShapeImp
+    name: ICollisionShapeImp
+    nameWithType: ICollisionShapeImp
+    fullName: Fusee.Engine.Common.ICollisionShapeImp
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddRigidBody(System.Single,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Engine.Common.ICollisionShapeImp)
+    name: AddRigidBody
+    nameWithType: IDynamicWorldImp.AddRigidBody
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddRigidBody
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.ICollisionShapeImp
+    name: ICollisionShapeImp
+    nameWithType: ICollisionShapeImp
+    fullName: Fusee.Engine.Common.ICollisionShapeImp
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Engine.Common.ICollisionShapeImp
+  commentId: T:Fusee.Engine.Common.ICollisionShapeImp
+  parent: Fusee.Engine.Common
+  name: ICollisionShapeImp
+  nameWithType: ICollisionShapeImp
+  fullName: Fusee.Engine.Common.ICollisionShapeImp
+- uid: Fusee.Engine.Common.IRigidBodyImp
+  commentId: T:Fusee.Engine.Common.IRigidBodyImp
+  parent: Fusee.Engine.Common
+  name: IRigidBodyImp
+  nameWithType: IRigidBodyImp
+  fullName: Fusee.Engine.Common.IRigidBodyImp
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.StepSimulation*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.StepSimulation
+  name: StepSimulation
+  nameWithType: DynamicWorldImp.StepSimulation
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.StepSimulation
+- uid: Fusee.Engine.Common.IDynamicWorldImp.StepSimulation(System.Single,System.Int32,System.Single)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.StepSimulation(System.Single,System.Int32,System.Single)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: StepSimulation(Single, Int32, Single)
+  nameWithType: IDynamicWorldImp.StepSimulation(Single, Int32, Single)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.StepSimulation(System.Single, System.Int32, System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.StepSimulation(System.Single,System.Int32,System.Single)
+    name: StepSimulation
+    nameWithType: IDynamicWorldImp.StepSimulation
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.StepSimulation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.StepSimulation(System.Single,System.Int32,System.Single)
+    name: StepSimulation
+    nameWithType: IDynamicWorldImp.StepSimulation
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.StepSimulation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.CheckCollisions*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.CheckCollisions
+  name: CheckCollisions
+  nameWithType: DynamicWorldImp.CheckCollisions
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.CheckCollisions
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.GetRigidBody*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.GetRigidBody
+  name: GetRigidBody
+  nameWithType: DynamicWorldImp.GetRigidBody
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.GetRigidBody
+- uid: Fusee.Engine.Common.IDynamicWorldImp.GetRigidBody(System.Int32)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.GetRigidBody(System.Int32)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: GetRigidBody(Int32)
+  nameWithType: IDynamicWorldImp.GetRigidBody(Int32)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.GetRigidBody(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.GetRigidBody(System.Int32)
+    name: GetRigidBody
+    nameWithType: IDynamicWorldImp.GetRigidBody
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.GetRigidBody
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.GetRigidBody(System.Int32)
+    name: GetRigidBody
+    nameWithType: IDynamicWorldImp.GetRigidBody
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.GetRigidBody
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.NumberRigidBodies*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.NumberRigidBodies
+  name: NumberRigidBodies
+  nameWithType: DynamicWorldImp.NumberRigidBodies
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.NumberRigidBodies
+- uid: Fusee.Engine.Common.IDynamicWorldImp.NumberRigidBodies
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.NumberRigidBodies
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  name: NumberRigidBodies()
+  nameWithType: IDynamicWorldImp.NumberRigidBodies()
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.NumberRigidBodies()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.NumberRigidBodies
+    name: NumberRigidBodies
+    nameWithType: IDynamicWorldImp.NumberRigidBodies
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.NumberRigidBodies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.NumberRigidBodies
+    name: NumberRigidBodies
+    nameWithType: IDynamicWorldImp.NumberRigidBodies
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.NumberRigidBodies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddPoint2PointConstraint*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddPoint2PointConstraint
+  name: AddPoint2PointConstraint
+  nameWithType: DynamicWorldImp.AddPoint2PointConstraint
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddPoint2PointConstraint
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  name: AddPoint2PointConstraint(IRigidBodyImp, float3)
+  nameWithType: IDynamicWorldImp.AddPoint2PointConstraint(IRigidBodyImp, float3)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float3)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3)
+    name: AddPoint2PointConstraint
+    nameWithType: IDynamicWorldImp.AddPoint2PointConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddPoint2PointConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3)
+    name: AddPoint2PointConstraint
+    nameWithType: IDynamicWorldImp.AddPoint2PointConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddPoint2PointConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IPoint2PointConstraintImp
+  commentId: T:Fusee.Engine.Common.IPoint2PointConstraintImp
+  parent: Fusee.Engine.Common
+  name: IPoint2PointConstraintImp
+  nameWithType: IPoint2PointConstraintImp
+  fullName: Fusee.Engine.Common.IPoint2PointConstraintImp
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  name: AddPoint2PointConstraint(IRigidBodyImp, IRigidBodyImp, float3, float3)
+  nameWithType: IDynamicWorldImp.AddPoint2PointConstraint(IRigidBodyImp, IRigidBodyImp, float3, float3)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float3, Fusee.Math.Core.float3)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+    name: AddPoint2PointConstraint
+    nameWithType: IDynamicWorldImp.AddPoint2PointConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddPoint2PointConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddPoint2PointConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+    name: AddPoint2PointConstraint
+    nameWithType: IDynamicWorldImp.AddPoint2PointConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddPoint2PointConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint
+  name: AddHingeConstraint
+  nameWithType: DynamicWorldImp.AddHingeConstraint
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddHingeConstraint
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddHingeConstraint(IRigidBodyImp, float4x4, Boolean)
+  nameWithType: IDynamicWorldImp.AddHingeConstraint(IRigidBodyImp, float4x4, Boolean)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float4x4, System.Boolean)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+    name: AddHingeConstraint
+    nameWithType: IDynamicWorldImp.AddHingeConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+    name: AddHingeConstraint
+    nameWithType: IDynamicWorldImp.AddHingeConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.float4x4
+  commentId: T:Fusee.Math.Core.float4x4
+  parent: Fusee.Math.Core
+  name: float4x4
+  nameWithType: float4x4
+  fullName: Fusee.Math.Core.float4x4
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Engine.Common.IHingeConstraintImp
+  commentId: T:Fusee.Engine.Common.IHingeConstraintImp
+  parent: Fusee.Engine.Common
+  name: IHingeConstraintImp
+  nameWithType: IHingeConstraintImp
+  fullName: Fusee.Engine.Common.IHingeConstraintImp
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddHingeConstraint(IRigidBodyImp, float3, float3, Boolean)
+  nameWithType: IDynamicWorldImp.AddHingeConstraint(IRigidBodyImp, float3, float3, Boolean)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float3, Fusee.Math.Core.float3, System.Boolean)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+    name: AddHingeConstraint
+    nameWithType: IDynamicWorldImp.AddHingeConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+    name: AddHingeConstraint
+    nameWithType: IDynamicWorldImp.AddHingeConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddHingeConstraint(IRigidBodyImp, IRigidBodyImp, float3, float3, float3, float3, Boolean)
+  nameWithType: IDynamicWorldImp.AddHingeConstraint(IRigidBodyImp, IRigidBodyImp, float3, float3, float3, float3, Boolean)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float3, Fusee.Math.Core.float3, Fusee.Math.Core.float3, Fusee.Math.Core.float3, System.Boolean)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+    name: AddHingeConstraint
+    nameWithType: IDynamicWorldImp.AddHingeConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
+    name: AddHingeConstraint
+    nameWithType: IDynamicWorldImp.AddHingeConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddHingeConstraint(IRigidBodyImp, IRigidBodyImp, float4x4, float4x4, Boolean)
+  nameWithType: IDynamicWorldImp.AddHingeConstraint(IRigidBodyImp, IRigidBodyImp, float4x4, float4x4, Boolean)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4, System.Boolean)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+    name: AddHingeConstraint
+    nameWithType: IDynamicWorldImp.AddHingeConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+    name: AddHingeConstraint
+    nameWithType: IDynamicWorldImp.AddHingeConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddHingeConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSliderConstraint*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSliderConstraint
+  name: AddSliderConstraint
+  nameWithType: DynamicWorldImp.AddSliderConstraint
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSliderConstraint
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddSliderConstraint(IRigidBodyImp, IRigidBodyImp, float4x4, float4x4, Boolean)
+  nameWithType: IDynamicWorldImp.AddSliderConstraint(IRigidBodyImp, IRigidBodyImp, float4x4, float4x4, Boolean)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4, System.Boolean)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+    name: AddSliderConstraint
+    nameWithType: IDynamicWorldImp.AddSliderConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddSliderConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+    name: AddSliderConstraint
+    nameWithType: IDynamicWorldImp.AddSliderConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddSliderConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.ISliderConstraintImp
+  commentId: T:Fusee.Engine.Common.ISliderConstraintImp
+  parent: Fusee.Engine.Common
+  name: ISliderConstraintImp
+  nameWithType: ISliderConstraintImp
+  fullName: Fusee.Engine.Common.ISliderConstraintImp
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddSliderConstraint(IRigidBodyImp, float4x4, Boolean)
+  nameWithType: IDynamicWorldImp.AddSliderConstraint(IRigidBodyImp, float4x4, Boolean)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float4x4, System.Boolean)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+    name: AddSliderConstraint
+    nameWithType: IDynamicWorldImp.AddSliderConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddSliderConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddSliderConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+    name: AddSliderConstraint
+    nameWithType: IDynamicWorldImp.AddSliderConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddSliderConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGearConstraint*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGearConstraint
+  name: AddGearConstraint
+  nameWithType: DynamicWorldImp.AddGearConstraint
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGearConstraint
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddGearConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddGearConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddGearConstraint(IRigidBodyImp, IRigidBodyImp, float3, float3, Single)
+  nameWithType: IDynamicWorldImp.AddGearConstraint(IRigidBodyImp, IRigidBodyImp, float3, float3, Single)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddGearConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float3, Fusee.Math.Core.float3, System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddGearConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single)
+    name: AddGearConstraint
+    nameWithType: IDynamicWorldImp.AddGearConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddGearConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddGearConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single)
+    name: AddGearConstraint
+    nameWithType: IDynamicWorldImp.AddGearConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddGearConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IGearConstraintImp
+  commentId: T:Fusee.Engine.Common.IGearConstraintImp
+  parent: Fusee.Engine.Common
+  name: IGearConstraintImp
+  nameWithType: IGearConstraintImp
+  fullName: Fusee.Engine.Common.IGearConstraintImp
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeTwistConstraint*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeTwistConstraint
+  name: AddConeTwistConstraint
+  nameWithType: DynamicWorldImp.AddConeTwistConstraint
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeTwistConstraint
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  name: AddConeTwistConstraint(IRigidBodyImp, float4x4)
+  nameWithType: IDynamicWorldImp.AddConeTwistConstraint(IRigidBodyImp, float4x4)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float4x4)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4)
+    name: AddConeTwistConstraint
+    nameWithType: IDynamicWorldImp.AddConeTwistConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddConeTwistConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4)
+    name: AddConeTwistConstraint
+    nameWithType: IDynamicWorldImp.AddConeTwistConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddConeTwistConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp
+  commentId: T:Fusee.Engine.Common.IConeTwistConstraintImp
+  parent: Fusee.Engine.Common
+  name: IConeTwistConstraintImp
+  nameWithType: IConeTwistConstraintImp
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  name: AddConeTwistConstraint(IRigidBodyImp, IRigidBodyImp, float4x4, float4x4)
+  nameWithType: IDynamicWorldImp.AddConeTwistConstraint(IRigidBodyImp, IRigidBodyImp, float4x4, float4x4)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+    name: AddConeTwistConstraint
+    nameWithType: IDynamicWorldImp.AddConeTwistConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddConeTwistConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddConeTwistConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+    name: AddConeTwistConstraint
+    nameWithType: IDynamicWorldImp.AddConeTwistConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddConeTwistConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGeneric6DofConstraint*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGeneric6DofConstraint
+  name: AddGeneric6DofConstraint
+  nameWithType: DynamicWorldImp.AddGeneric6DofConstraint
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGeneric6DofConstraint
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddGeneric6DofConstraint(IRigidBodyImp, float4x4, Boolean)
+  nameWithType: IDynamicWorldImp.AddGeneric6DofConstraint(IRigidBodyImp, float4x4, Boolean)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float4x4, System.Boolean)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+    name: AddGeneric6DofConstraint
+    nameWithType: IDynamicWorldImp.AddGeneric6DofConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddGeneric6DofConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,System.Boolean)
+    name: AddGeneric6DofConstraint
+    nameWithType: IDynamicWorldImp.AddGeneric6DofConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddGeneric6DofConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  commentId: T:Fusee.Engine.Common.IGeneric6DofConstraintImp
+  parent: Fusee.Engine.Common
+  name: IGeneric6DofConstraintImp
+  nameWithType: IGeneric6DofConstraintImp
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddGeneric6DofConstraint(IRigidBodyImp, IRigidBodyImp, float4x4, float4x4, Boolean)
+  nameWithType: IDynamicWorldImp.AddGeneric6DofConstraint(IRigidBodyImp, IRigidBodyImp, float4x4, float4x4, Boolean)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp, Fusee.Engine.Common.IRigidBodyImp, Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4, System.Boolean)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+    name: AddGeneric6DofConstraint
+    nameWithType: IDynamicWorldImp.AddGeneric6DofConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddGeneric6DofConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddGeneric6DofConstraint(Fusee.Engine.Common.IRigidBodyImp,Fusee.Engine.Common.IRigidBodyImp,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,System.Boolean)
+    name: AddGeneric6DofConstraint
+    nameWithType: IDynamicWorldImp.AddGeneric6DofConstraint
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddGeneric6DofConstraint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.IRigidBodyImp
+    name: IRigidBodyImp
+    nameWithType: IRigidBodyImp
+    fullName: Fusee.Engine.Common.IRigidBodyImp
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape
+  name: AddBoxShape
+  nameWithType: DynamicWorldImp.AddBoxShape
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddBoxShape
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(System.Single)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(System.Single)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddBoxShape(Single)
+  nameWithType: IDynamicWorldImp.AddBoxShape(Single)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(System.Single)
+    name: AddBoxShape
+    nameWithType: IDynamicWorldImp.AddBoxShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(System.Single)
+    name: AddBoxShape
+    nameWithType: IDynamicWorldImp.AddBoxShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IBoxShapeImp
+  commentId: T:Fusee.Engine.Common.IBoxShapeImp
+  parent: Fusee.Engine.Common
+  name: IBoxShapeImp
+  nameWithType: IBoxShapeImp
+  fullName: Fusee.Engine.Common.IBoxShapeImp
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(Fusee.Math.Core.float3)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  name: AddBoxShape(float3)
+  nameWithType: IDynamicWorldImp.AddBoxShape(float3)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(Fusee.Math.Core.float3)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(Fusee.Math.Core.float3)
+    name: AddBoxShape
+    nameWithType: IDynamicWorldImp.AddBoxShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(Fusee.Math.Core.float3)
+    name: AddBoxShape
+    nameWithType: IDynamicWorldImp.AddBoxShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(System.Single,System.Single,System.Single)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(System.Single,System.Single,System.Single)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddBoxShape(Single, Single, Single)
+  nameWithType: IDynamicWorldImp.AddBoxShape(Single, Single, Single)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(System.Single, System.Single, System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(System.Single,System.Single,System.Single)
+    name: AddBoxShape
+    nameWithType: IDynamicWorldImp.AddBoxShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape(System.Single,System.Single,System.Single)
+    name: AddBoxShape
+    nameWithType: IDynamicWorldImp.AddBoxShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddBoxShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSphereShape*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSphereShape
+  name: AddSphereShape
+  nameWithType: DynamicWorldImp.AddSphereShape
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddSphereShape
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddSphereShape(System.Single)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddSphereShape(System.Single)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddSphereShape(Single)
+  nameWithType: IDynamicWorldImp.AddSphereShape(Single)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddSphereShape(System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddSphereShape(System.Single)
+    name: AddSphereShape
+    nameWithType: IDynamicWorldImp.AddSphereShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddSphereShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddSphereShape(System.Single)
+    name: AddSphereShape
+    nameWithType: IDynamicWorldImp.AddSphereShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddSphereShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.ISphereShapeImp
+  commentId: T:Fusee.Engine.Common.ISphereShapeImp
+  parent: Fusee.Engine.Common
+  name: ISphereShapeImp
+  nameWithType: ISphereShapeImp
+  fullName: Fusee.Engine.Common.ISphereShapeImp
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCapsuleShape*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCapsuleShape
+  name: AddCapsuleShape
+  nameWithType: DynamicWorldImp.AddCapsuleShape
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCapsuleShape
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddCapsuleShape(System.Single,System.Single)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddCapsuleShape(System.Single,System.Single)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddCapsuleShape(Single, Single)
+  nameWithType: IDynamicWorldImp.AddCapsuleShape(Single, Single)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddCapsuleShape(System.Single, System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddCapsuleShape(System.Single,System.Single)
+    name: AddCapsuleShape
+    nameWithType: IDynamicWorldImp.AddCapsuleShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddCapsuleShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddCapsuleShape(System.Single,System.Single)
+    name: AddCapsuleShape
+    nameWithType: IDynamicWorldImp.AddCapsuleShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddCapsuleShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.ICapsuleShapeImp
+  commentId: T:Fusee.Engine.Common.ICapsuleShapeImp
+  parent: Fusee.Engine.Common
+  name: ICapsuleShapeImp
+  nameWithType: ICapsuleShapeImp
+  fullName: Fusee.Engine.Common.ICapsuleShapeImp
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape
+  name: AddCylinderShape
+  nameWithType: DynamicWorldImp.AddCylinderShape
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCylinderShape
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(System.Single)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(System.Single)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddCylinderShape(Single)
+  nameWithType: IDynamicWorldImp.AddCylinderShape(Single)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(System.Single)
+    name: AddCylinderShape
+    nameWithType: IDynamicWorldImp.AddCylinderShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(System.Single)
+    name: AddCylinderShape
+    nameWithType: IDynamicWorldImp.AddCylinderShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.ICylinderShapeImp
+  commentId: T:Fusee.Engine.Common.ICylinderShapeImp
+  parent: Fusee.Engine.Common
+  name: ICylinderShapeImp
+  nameWithType: ICylinderShapeImp
+  fullName: Fusee.Engine.Common.ICylinderShapeImp
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(Fusee.Math.Core.float3)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  name: AddCylinderShape(float3)
+  nameWithType: IDynamicWorldImp.AddCylinderShape(float3)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(Fusee.Math.Core.float3)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(Fusee.Math.Core.float3)
+    name: AddCylinderShape
+    nameWithType: IDynamicWorldImp.AddCylinderShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(Fusee.Math.Core.float3)
+    name: AddCylinderShape
+    nameWithType: IDynamicWorldImp.AddCylinderShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(System.Single,System.Single,System.Single)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(System.Single,System.Single,System.Single)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddCylinderShape(Single, Single, Single)
+  nameWithType: IDynamicWorldImp.AddCylinderShape(Single, Single, Single)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(System.Single, System.Single, System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(System.Single,System.Single,System.Single)
+    name: AddCylinderShape
+    nameWithType: IDynamicWorldImp.AddCylinderShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape(System.Single,System.Single,System.Single)
+    name: AddCylinderShape
+    nameWithType: IDynamicWorldImp.AddCylinderShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddCylinderShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeShape*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeShape
+  name: AddConeShape
+  nameWithType: DynamicWorldImp.AddConeShape
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConeShape
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddConeShape(System.Single,System.Single)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddConeShape(System.Single,System.Single)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddConeShape(Single, Single)
+  nameWithType: IDynamicWorldImp.AddConeShape(Single, Single)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddConeShape(System.Single, System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddConeShape(System.Single,System.Single)
+    name: AddConeShape
+    nameWithType: IDynamicWorldImp.AddConeShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddConeShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddConeShape(System.Single,System.Single)
+    name: AddConeShape
+    nameWithType: IDynamicWorldImp.AddConeShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddConeShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IConeShapeImp
+  commentId: T:Fusee.Engine.Common.IConeShapeImp
+  parent: Fusee.Engine.Common
+  name: IConeShapeImp
+  nameWithType: IConeShapeImp
+  fullName: Fusee.Engine.Common.IConeShapeImp
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddMultiSphereShape*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddMultiSphereShape
+  name: AddMultiSphereShape
+  nameWithType: DynamicWorldImp.AddMultiSphereShape
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddMultiSphereShape
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddMultiSphereShape(Fusee.Math.Core.float3[],System.Single[])
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddMultiSphereShape(Fusee.Math.Core.float3[],System.Single[])
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddMultiSphereShape(float3[], Single[])
+  nameWithType: IDynamicWorldImp.AddMultiSphereShape(float3[], Single[])
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddMultiSphereShape(Fusee.Math.Core.float3[], System.Single[])
+  nameWithType.vb: IDynamicWorldImp.AddMultiSphereShape(float3(), Single())
+  fullName.vb: Fusee.Engine.Common.IDynamicWorldImp.AddMultiSphereShape(Fusee.Math.Core.float3(), System.Single())
+  name.vb: AddMultiSphereShape(float3(), Single())
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddMultiSphereShape(Fusee.Math.Core.float3[],System.Single[])
+    name: AddMultiSphereShape
+    nameWithType: IDynamicWorldImp.AddMultiSphereShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddMultiSphereShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddMultiSphereShape(Fusee.Math.Core.float3[],System.Single[])
+    name: AddMultiSphereShape
+    nameWithType: IDynamicWorldImp.AddMultiSphereShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddMultiSphereShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.float3[]
+  isExternal: true
+  name: float3[]
+  nameWithType: float3[]
+  fullName: Fusee.Math.Core.float3[]
+  nameWithType.vb: float3()
+  fullName.vb: Fusee.Math.Core.float3()
+  name.vb: float3()
+  spec.csharp:
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Fusee.Engine.Common.IMultiSphereShapeImp
+  commentId: T:Fusee.Engine.Common.IMultiSphereShapeImp
+  parent: Fusee.Engine.Common
+  name: IMultiSphereShapeImp
+  nameWithType: IMultiSphereShapeImp
+  fullName: Fusee.Engine.Common.IMultiSphereShapeImp
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCompoundShape*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCompoundShape
+  name: AddCompoundShape
+  nameWithType: DynamicWorldImp.AddCompoundShape
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddCompoundShape
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddCompoundShape(System.Boolean)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddCompoundShape(System.Boolean)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddCompoundShape(Boolean)
+  nameWithType: IDynamicWorldImp.AddCompoundShape(Boolean)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddCompoundShape(System.Boolean)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddCompoundShape(System.Boolean)
+    name: AddCompoundShape
+    nameWithType: IDynamicWorldImp.AddCompoundShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddCompoundShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddCompoundShape(System.Boolean)
+    name: AddCompoundShape
+    nameWithType: IDynamicWorldImp.AddCompoundShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddCompoundShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.ICompoundShapeImp
+  commentId: T:Fusee.Engine.Common.ICompoundShapeImp
+  parent: Fusee.Engine.Common
+  name: ICompoundShapeImp
+  nameWithType: ICompoundShapeImp
+  fullName: Fusee.Engine.Common.ICompoundShapeImp
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddEmptyShape*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddEmptyShape
+  name: AddEmptyShape
+  nameWithType: DynamicWorldImp.AddEmptyShape
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddEmptyShape
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddEmptyShape
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddEmptyShape
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  name: AddEmptyShape()
+  nameWithType: IDynamicWorldImp.AddEmptyShape()
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddEmptyShape()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddEmptyShape
+    name: AddEmptyShape
+    nameWithType: IDynamicWorldImp.AddEmptyShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddEmptyShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddEmptyShape
+    name: AddEmptyShape
+    nameWithType: IDynamicWorldImp.AddEmptyShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddEmptyShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IEmptyShapeImp
+  commentId: T:Fusee.Engine.Common.IEmptyShapeImp
+  parent: Fusee.Engine.Common
+  name: IEmptyShapeImp
+  nameWithType: IEmptyShapeImp
+  fullName: Fusee.Engine.Common.IEmptyShapeImp
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConvexHullShape*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConvexHullShape
+  name: AddConvexHullShape
+  nameWithType: DynamicWorldImp.AddConvexHullShape
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddConvexHullShape
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  name: AddConvexHullShape()
+  nameWithType: IDynamicWorldImp.AddConvexHullShape()
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape
+    name: AddConvexHullShape
+    nameWithType: IDynamicWorldImp.AddConvexHullShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape
+    name: AddConvexHullShape
+    nameWithType: IDynamicWorldImp.AddConvexHullShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IConvexHullShapeImp
+  commentId: T:Fusee.Engine.Common.IConvexHullShapeImp
+  parent: Fusee.Engine.Common
+  name: IConvexHullShapeImp
+  nameWithType: IConvexHullShapeImp
+  fullName: Fusee.Engine.Common.IConvexHullShapeImp
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape(Fusee.Math.Core.float3[],System.Boolean)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape(Fusee.Math.Core.float3[],System.Boolean)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddConvexHullShape(float3[], Boolean)
+  nameWithType: IDynamicWorldImp.AddConvexHullShape(float3[], Boolean)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape(Fusee.Math.Core.float3[], System.Boolean)
+  nameWithType.vb: IDynamicWorldImp.AddConvexHullShape(float3(), Boolean)
+  fullName.vb: Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape(Fusee.Math.Core.float3(), System.Boolean)
+  name.vb: AddConvexHullShape(float3(), Boolean)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape(Fusee.Math.Core.float3[],System.Boolean)
+    name: AddConvexHullShape
+    nameWithType: IDynamicWorldImp.AddConvexHullShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape(Fusee.Math.Core.float3[],System.Boolean)
+    name: AddConvexHullShape
+    nameWithType: IDynamicWorldImp.AddConvexHullShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddConvexHullShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddStaticPlaneShape*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddStaticPlaneShape
+  name: AddStaticPlaneShape
+  nameWithType: DynamicWorldImp.AddStaticPlaneShape
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddStaticPlaneShape
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddStaticPlaneShape(Fusee.Math.Core.float3,System.Single)
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddStaticPlaneShape(Fusee.Math.Core.float3,System.Single)
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddStaticPlaneShape(float3, Single)
+  nameWithType: IDynamicWorldImp.AddStaticPlaneShape(float3, Single)
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddStaticPlaneShape(Fusee.Math.Core.float3, System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddStaticPlaneShape(Fusee.Math.Core.float3,System.Single)
+    name: AddStaticPlaneShape
+    nameWithType: IDynamicWorldImp.AddStaticPlaneShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddStaticPlaneShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddStaticPlaneShape(Fusee.Math.Core.float3,System.Single)
+    name: AddStaticPlaneShape
+    nameWithType: IDynamicWorldImp.AddStaticPlaneShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddStaticPlaneShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IStaticPlaneShapeImp
+  commentId: T:Fusee.Engine.Common.IStaticPlaneShapeImp
+  parent: Fusee.Engine.Common
+  name: IStaticPlaneShapeImp
+  nameWithType: IStaticPlaneShapeImp
+  fullName: Fusee.Engine.Common.IStaticPlaneShapeImp
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGImpactMeshShape*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGImpactMeshShape
+  name: AddGImpactMeshShape
+  nameWithType: DynamicWorldImp.AddGImpactMeshShape
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.AddGImpactMeshShape
+- uid: Fusee.Engine.Common.IDynamicWorldImp.AddGImpactMeshShape(System.Int32[],Fusee.Math.Core.float3[])
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.AddGImpactMeshShape(System.Int32[],Fusee.Math.Core.float3[])
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  isExternal: true
+  name: AddGImpactMeshShape(Int32[], float3[])
+  nameWithType: IDynamicWorldImp.AddGImpactMeshShape(Int32[], float3[])
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.AddGImpactMeshShape(System.Int32[], Fusee.Math.Core.float3[])
+  nameWithType.vb: IDynamicWorldImp.AddGImpactMeshShape(Int32(), float3())
+  fullName.vb: Fusee.Engine.Common.IDynamicWorldImp.AddGImpactMeshShape(System.Int32(), Fusee.Math.Core.float3())
+  name.vb: AddGImpactMeshShape(Int32(), float3())
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddGImpactMeshShape(System.Int32[],Fusee.Math.Core.float3[])
+    name: AddGImpactMeshShape
+    nameWithType: IDynamicWorldImp.AddGImpactMeshShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddGImpactMeshShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.AddGImpactMeshShape(System.Int32[],Fusee.Math.Core.float3[])
+    name: AddGImpactMeshShape
+    nameWithType: IDynamicWorldImp.AddGImpactMeshShape
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.AddGImpactMeshShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Fusee.Engine.Common.IGImpactMeshShapeImp
+  commentId: T:Fusee.Engine.Common.IGImpactMeshShapeImp
+  parent: Fusee.Engine.Common
+  name: IGImpactMeshShapeImp
+  nameWithType: IGImpactMeshShapeImp
+  fullName: Fusee.Engine.Common.IGImpactMeshShapeImp
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.NumberConstraints*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.NumberConstraints
+  name: NumberConstraints
+  nameWithType: DynamicWorldImp.NumberConstraints
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.NumberConstraints
+- uid: Fusee.Engine.Common.IDynamicWorldImp.NumberConstraints
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.NumberConstraints
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  name: NumberConstraints()
+  nameWithType: IDynamicWorldImp.NumberConstraints()
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.NumberConstraints()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.NumberConstraints
+    name: NumberConstraints
+    nameWithType: IDynamicWorldImp.NumberConstraints
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.NumberConstraints
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.NumberConstraints
+    name: NumberConstraints
+    nameWithType: IDynamicWorldImp.NumberConstraints
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.NumberConstraints
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.Dispose*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.Dispose
+  name: Dispose
+  nameWithType: DynamicWorldImp.Dispose
+  fullName: Fusee.Engine.Imp.Physics.Desktop.DynamicWorldImp.Dispose
+- uid: Fusee.Engine.Common.IDynamicWorldImp.Dispose
+  commentId: M:Fusee.Engine.Common.IDynamicWorldImp.Dispose
+  parent: Fusee.Engine.Common.IDynamicWorldImp
+  name: Dispose()
+  nameWithType: IDynamicWorldImp.Dispose()
+  fullName: Fusee.Engine.Common.IDynamicWorldImp.Dispose()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.Dispose
+    name: Dispose
+    nameWithType: IDynamicWorldImp.Dispose
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IDynamicWorldImp.Dispose
+    name: Dispose
+    nameWithType: IDynamicWorldImp.Dispose
+    fullName: Fusee.Engine.Common.IDynamicWorldImp.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

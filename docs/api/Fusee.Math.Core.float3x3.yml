@@ -1,0 +1,2792 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Math.Core.float3x3
+  commentId: T:Fusee.Math.Core.float3x3
+  id: float3x3
+  parent: Fusee.Math.Core
+  children:
+  - Fusee.Math.Core.float3x3.#ctor(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  - Fusee.Math.Core.float3x3.#ctor(Fusee.Math.Core.float4x4)
+  - Fusee.Math.Core.float3x3.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Fusee.Math.Core.float3x3.Add(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  - Fusee.Math.Core.float3x3.Column0
+  - Fusee.Math.Core.float3x3.Column1
+  - Fusee.Math.Core.float3x3.Column2
+  - Fusee.Math.Core.float3x3.Determinant
+  - Fusee.Math.Core.float3x3.Equals(Fusee.Math.Core.float3x3)
+  - Fusee.Math.Core.float3x3.Equals(System.Object)
+  - Fusee.Math.Core.float3x3.GetHashCode
+  - Fusee.Math.Core.float3x3.Identity
+  - Fusee.Math.Core.float3x3.IsAffine
+  - Fusee.Math.Core.float3x3.M11
+  - Fusee.Math.Core.float3x3.M12
+  - Fusee.Math.Core.float3x3.M13
+  - Fusee.Math.Core.float3x3.M21
+  - Fusee.Math.Core.float3x3.M22
+  - Fusee.Math.Core.float3x3.M23
+  - Fusee.Math.Core.float3x3.M31
+  - Fusee.Math.Core.float3x3.M32
+  - Fusee.Math.Core.float3x3.M33
+  - Fusee.Math.Core.float3x3.Mult(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  - Fusee.Math.Core.float3x3.op_Addition(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  - Fusee.Math.Core.float3x3.op_Equality(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  - Fusee.Math.Core.float3x3.op_Inequality(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  - Fusee.Math.Core.float3x3.op_Multiply(Fusee.Math.Core.float2,Fusee.Math.Core.float3x3)
+  - Fusee.Math.Core.float3x3.op_Multiply(Fusee.Math.Core.float3,Fusee.Math.Core.float3x3)
+  - Fusee.Math.Core.float3x3.op_Multiply(Fusee.Math.Core.float3x3,Fusee.Math.Core.float2)
+  - Fusee.Math.Core.float3x3.op_Multiply(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3)
+  - Fusee.Math.Core.float3x3.op_Multiply(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  - Fusee.Math.Core.float3x3.op_Subtraction(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  - Fusee.Math.Core.float3x3.Parse(System.String,System.IFormatProvider)
+  - Fusee.Math.Core.float3x3.ParseConverter
+  - Fusee.Math.Core.float3x3.Row0
+  - Fusee.Math.Core.float3x3.Row1
+  - Fusee.Math.Core.float3x3.Row2
+  - Fusee.Math.Core.float3x3.Subtract(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  - Fusee.Math.Core.float3x3.ToArray
+  - Fusee.Math.Core.float3x3.ToString
+  - Fusee.Math.Core.float3x3.ToString(System.IFormatProvider)
+  - Fusee.Math.Core.float3x3.Transform(Fusee.Math.Core.float2,Fusee.Math.Core.float3x3)
+  - Fusee.Math.Core.float3x3.Transform(Fusee.Math.Core.float3,Fusee.Math.Core.float3x3)
+  - Fusee.Math.Core.float3x3.Transform(Fusee.Math.Core.float3x3,Fusee.Math.Core.float2)
+  - Fusee.Math.Core.float3x3.Transform(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3)
+  - Fusee.Math.Core.float3x3.Transpose
+  - Fusee.Math.Core.float3x3.Transpose(Fusee.Math.Core.float3x3)
+  - Fusee.Math.Core.float3x3.Zero
+  langs:
+  - csharp
+  - vb
+  name: float3x3
+  nameWithType: float3x3
+  fullName: Fusee.Math.Core.float3x3
+  type: Struct
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: float3x3
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 9
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nRepresents a 3x3 Matrix\n"
+  example: []
+  syntax:
+    content: 'public struct float3x3 : IEquatable<float3x3>'
+    content.vb: >-
+      Public Structure float3x3
+
+          Implements IEquatable(Of float3x3)
+  implements:
+  - System.IEquatable{Fusee.Math.Core.float3x3}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Fusee.Math.Core.float3x3.Row0
+  commentId: F:Fusee.Math.Core.float3x3.Row0
+  id: Row0
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Row0
+  nameWithType: float3x3.Row0
+  fullName: Fusee.Math.Core.float3x3.Row0
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Row0
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 17
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nTop row of the matrix\n"
+  example: []
+  syntax:
+    content: public float3 Row0
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Row0 As float3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.Row1
+  commentId: F:Fusee.Math.Core.float3x3.Row1
+  id: Row1
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Row1
+  nameWithType: float3x3.Row1
+  fullName: Fusee.Math.Core.float3x3.Row1
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Row1
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 22
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\n2nd row of the matrix\n"
+  example: []
+  syntax:
+    content: public float3 Row1
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Row1 As float3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.Row2
+  commentId: F:Fusee.Math.Core.float3x3.Row2
+  id: Row2
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Row2
+  nameWithType: float3x3.Row2
+  fullName: Fusee.Math.Core.float3x3.Row2
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Row2
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 27
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\n3rd row of the matrix\n"
+  example: []
+  syntax:
+    content: public float3 Row2
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Row2 As float3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.Identity
+  commentId: F:Fusee.Math.Core.float3x3.Identity
+  id: Identity
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Identity
+  nameWithType: float3x3.Identity
+  fullName: Fusee.Math.Core.float3x3.Identity
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Identity
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 32
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nThe identity matrix\n"
+  example: []
+  syntax:
+    content: public static float3x3 Identity
+    return:
+      type: Fusee.Math.Core.float3x3
+    content.vb: Public Shared Identity As float3x3
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.Zero
+  commentId: F:Fusee.Math.Core.float3x3.Zero
+  id: Zero
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: float3x3.Zero
+  fullName: Fusee.Math.Core.float3x3.Zero
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Zero
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 37
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nThe zero matrix\n"
+  example: []
+  syntax:
+    content: public static float3x3 Zero
+    return:
+      type: Fusee.Math.Core.float3x3
+    content.vb: Public Shared Zero As float3x3
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.#ctor(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Math.Core.float3x3.#ctor(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  id: '#ctor(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3)'
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: float3x3(float3, float3, float3)
+  nameWithType: float3x3.float3x3(float3, float3, float3)
+  fullName: Fusee.Math.Core.float3x3.float3x3(Fusee.Math.Core.float3, Fusee.Math.Core.float3, Fusee.Math.Core.float3)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 49
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConstructs a new instance.\n"
+  example: []
+  syntax:
+    content: public float3x3(float3 row0, float3 row1, float3 row2)
+    parameters:
+    - id: row0
+      type: Fusee.Math.Core.float3
+      description: Top row of the matrix
+    - id: row1
+      type: Fusee.Math.Core.float3
+      description: Second row of the matrix
+    - id: row2
+      type: Fusee.Math.Core.float3
+      description: Third row of the matrix
+    content.vb: Public Sub New(row0 As float3, row1 As float3, row2 As float3)
+  overload: Fusee.Math.Core.float3x3.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Fusee.Math.Core.float3x3.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)'
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: float3x3(Single, Single, Single, Single, Single, Single, Single, Single, Single)
+  nameWithType: float3x3.float3x3(Single, Single, Single, Single, Single, Single, Single, Single, Single)
+  fullName: Fusee.Math.Core.float3x3.float3x3(System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 68
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConstructs a new instance.\n"
+  example: []
+  syntax:
+    content: public float3x3(float m00, float m01, float m02, float m10, float m11, float m12, float m20, float m21, float m22)
+    parameters:
+    - id: m00
+      type: System.Single
+      description: First item of the first row of the matrix.
+    - id: m01
+      type: System.Single
+      description: Second item of the first row of the matrix.
+    - id: m02
+      type: System.Single
+      description: Third item of the first row of the matrix.
+    - id: m10
+      type: System.Single
+      description: First item of the second row of the matrix.
+    - id: m11
+      type: System.Single
+      description: Second item of the second row of the matrix.
+    - id: m12
+      type: System.Single
+      description: Third item of the second row of the matrix.
+    - id: m20
+      type: System.Single
+      description: First item of the third row of the matrix.
+    - id: m21
+      type: System.Single
+      description: Second item of the third row of the matrix.
+    - id: m22
+      type: System.Single
+      description: Third item of the third row of the matrix.
+    content.vb: Public Sub New(m00 As Single, m01 As Single, m02 As Single, m10 As Single, m11 As Single, m12 As Single, m20 As Single, m21 As Single, m22 As Single)
+  overload: Fusee.Math.Core.float3x3.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.#ctor(Fusee.Math.Core.float4x4)
+  commentId: M:Fusee.Math.Core.float3x3.#ctor(Fusee.Math.Core.float4x4)
+  id: '#ctor(Fusee.Math.Core.float4x4)'
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: float3x3(float4x4)
+  nameWithType: float3x3.float3x3(float4x4)
+  fullName: Fusee.Math.Core.float3x3.float3x3(Fusee.Math.Core.float4x4)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 82
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConstructs a new instance.\n"
+  example: []
+  syntax:
+    content: public float3x3(float4x4 mat4)
+    parameters:
+    - id: mat4
+      type: Fusee.Math.Core.float4x4
+      description: The incoming float4x4.
+    content.vb: Public Sub New(mat4 As float4x4)
+  overload: Fusee.Math.Core.float3x3.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.Determinant
+  commentId: P:Fusee.Math.Core.float3x3.Determinant
+  id: Determinant
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Determinant
+  nameWithType: float3x3.Determinant
+  fullName: Fusee.Math.Core.float3x3.Determinant
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Determinant
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 98
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nThe determinant of this matrix\n"
+  example: []
+  syntax:
+    content: public float Determinant { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Determinant As Single
+  overload: Fusee.Math.Core.float3x3.Determinant*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Math.Core.float3x3.Column0
+  commentId: P:Fusee.Math.Core.float3x3.Column0
+  id: Column0
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Column0
+  nameWithType: float3x3.Column0
+  fullName: Fusee.Math.Core.float3x3.Column0
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Column0
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 115
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nThe first column of this matrix\n"
+  example: []
+  syntax:
+    content: public float3 Column0 { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Property Column0 As float3
+  overload: Fusee.Math.Core.float3x3.Column0*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.Column1
+  commentId: P:Fusee.Math.Core.float3x3.Column1
+  id: Column1
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Column1
+  nameWithType: float3x3.Column1
+  fullName: Fusee.Math.Core.float3x3.Column1
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Column1
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 124
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nThe second column of this matrix\n"
+  example: []
+  syntax:
+    content: public float3 Column1 { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Property Column1 As float3
+  overload: Fusee.Math.Core.float3x3.Column1*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.Column2
+  commentId: P:Fusee.Math.Core.float3x3.Column2
+  id: Column2
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Column2
+  nameWithType: float3x3.Column2
+  fullName: Fusee.Math.Core.float3x3.Column2
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Column2
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 133
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nThe third column of this matrix\n"
+  example: []
+  syntax:
+    content: public float3 Column2 { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Property Column2 As float3
+  overload: Fusee.Math.Core.float3x3.Column2*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.M11
+  commentId: P:Fusee.Math.Core.float3x3.M11
+  id: M11
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: M11
+  nameWithType: float3x3.M11
+  fullName: Fusee.Math.Core.float3x3.M11
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: M11
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 142
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nGets and sets the value at row 1, column 1 of this instance.\n"
+  example: []
+  syntax:
+    content: public float M11 { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property M11 As Single
+  overload: Fusee.Math.Core.float3x3.M11*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.M12
+  commentId: P:Fusee.Math.Core.float3x3.M12
+  id: M12
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: M12
+  nameWithType: float3x3.M12
+  fullName: Fusee.Math.Core.float3x3.M12
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: M12
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 151
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nGets and sets the value at row 1, column 2 of this instance.\n"
+  example: []
+  syntax:
+    content: public float M12 { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property M12 As Single
+  overload: Fusee.Math.Core.float3x3.M12*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.M13
+  commentId: P:Fusee.Math.Core.float3x3.M13
+  id: M13
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: M13
+  nameWithType: float3x3.M13
+  fullName: Fusee.Math.Core.float3x3.M13
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: M13
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 160
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nGets and sets the value at row 1, column 3 of this instance.\n"
+  example: []
+  syntax:
+    content: public float M13 { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property M13 As Single
+  overload: Fusee.Math.Core.float3x3.M13*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.M21
+  commentId: P:Fusee.Math.Core.float3x3.M21
+  id: M21
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: M21
+  nameWithType: float3x3.M21
+  fullName: Fusee.Math.Core.float3x3.M21
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: M21
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 169
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nGets and sets the value at row 2, column 1 of this instance.\n"
+  example: []
+  syntax:
+    content: public float M21 { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property M21 As Single
+  overload: Fusee.Math.Core.float3x3.M21*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.M22
+  commentId: P:Fusee.Math.Core.float3x3.M22
+  id: M22
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: M22
+  nameWithType: float3x3.M22
+  fullName: Fusee.Math.Core.float3x3.M22
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: M22
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 178
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nGets and sets the value at row 2, column 2 of this instance.\n"
+  example: []
+  syntax:
+    content: public float M22 { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property M22 As Single
+  overload: Fusee.Math.Core.float3x3.M22*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.M23
+  commentId: P:Fusee.Math.Core.float3x3.M23
+  id: M23
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: M23
+  nameWithType: float3x3.M23
+  fullName: Fusee.Math.Core.float3x3.M23
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: M23
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 187
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nGets and sets the value at row 2, column 3 of this instance.\n"
+  example: []
+  syntax:
+    content: public float M23 { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property M23 As Single
+  overload: Fusee.Math.Core.float3x3.M23*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.M31
+  commentId: P:Fusee.Math.Core.float3x3.M31
+  id: M31
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: M31
+  nameWithType: float3x3.M31
+  fullName: Fusee.Math.Core.float3x3.M31
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: M31
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 196
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nGets and sets the value at row 3, column 1 of this instance.\n"
+  example: []
+  syntax:
+    content: public float M31 { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property M31 As Single
+  overload: Fusee.Math.Core.float3x3.M31*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.M32
+  commentId: P:Fusee.Math.Core.float3x3.M32
+  id: M32
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: M32
+  nameWithType: float3x3.M32
+  fullName: Fusee.Math.Core.float3x3.M32
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: M32
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 205
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nGets and sets the value at row 3, column 2 of this instance.\n"
+  example: []
+  syntax:
+    content: public float M32 { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property M32 As Single
+  overload: Fusee.Math.Core.float3x3.M32*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.M33
+  commentId: P:Fusee.Math.Core.float3x3.M33
+  id: M33
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: M33
+  nameWithType: float3x3.M33
+  fullName: Fusee.Math.Core.float3x3.M33
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: M33
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 214
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nGets and sets the value at row 3, column 3 of this instance.\n"
+  example: []
+  syntax:
+    content: public float M33 { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property M33 As Single
+  overload: Fusee.Math.Core.float3x3.M33*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.Transpose
+  commentId: M:Fusee.Math.Core.float3x3.Transpose
+  id: Transpose
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Transpose()
+  nameWithType: float3x3.Transpose()
+  fullName: Fusee.Math.Core.float3x3.Transpose()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Transpose
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 231
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns the transposes of this instance.\n"
+  example: []
+  syntax:
+    content: public float3x3 Transpose()
+    return:
+      type: Fusee.Math.Core.float3x3
+    content.vb: Public Function Transpose As float3x3
+  overload: Fusee.Math.Core.float3x3.Transpose*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.Add(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  commentId: M:Fusee.Math.Core.float3x3.Add(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  id: Add(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Add(float3x3, float3x3)
+  nameWithType: float3x3.Add(float3x3, float3x3)
+  fullName: Fusee.Math.Core.float3x3.Add(Fusee.Math.Core.float3x3, Fusee.Math.Core.float3x3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Add
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 250
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nAdds two instances.\n"
+  example: []
+  syntax:
+    content: public static float3x3 Add(float3x3 left, float3x3 right)
+    parameters:
+    - id: left
+      type: Fusee.Math.Core.float3x3
+      description: The left operand of the addition.
+    - id: right
+      type: Fusee.Math.Core.float3x3
+      description: The right operand of the addition.
+    return:
+      type: Fusee.Math.Core.float3x3
+      description: A new instance that is the result of the addition.
+    content.vb: Public Shared Function Add(left As float3x3, right As float3x3) As float3x3
+  overload: Fusee.Math.Core.float3x3.Add*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.Subtract(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  commentId: M:Fusee.Math.Core.float3x3.Subtract(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  id: Subtract(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Subtract(float3x3, float3x3)
+  nameWithType: float3x3.Subtract(float3x3, float3x3)
+  fullName: Fusee.Math.Core.float3x3.Subtract(Fusee.Math.Core.float3x3, Fusee.Math.Core.float3x3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Subtract
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 263
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nSubtracts the right instance from the left instance.\n"
+  example: []
+  syntax:
+    content: public static float3x3 Subtract(float3x3 left, float3x3 right)
+    parameters:
+    - id: left
+      type: Fusee.Math.Core.float3x3
+      description: The left operand of the subtraction.
+    - id: right
+      type: Fusee.Math.Core.float3x3
+      description: The right operand of the subtraction.
+    return:
+      type: Fusee.Math.Core.float3x3
+      description: A new instance that is the result of the subtraction.
+    content.vb: Public Shared Function Subtract(left As float3x3, right As float3x3) As float3x3
+  overload: Fusee.Math.Core.float3x3.Subtract*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.Mult(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  commentId: M:Fusee.Math.Core.float3x3.Mult(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  id: Mult(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Mult(float3x3, float3x3)
+  nameWithType: float3x3.Mult(float3x3, float3x3)
+  fullName: Fusee.Math.Core.float3x3.Mult(Fusee.Math.Core.float3x3, Fusee.Math.Core.float3x3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Mult
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 280
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nMultiplies two instances.\n"
+  example: []
+  syntax:
+    content: public static float3x3 Mult(float3x3 left, float3x3 right)
+    parameters:
+    - id: left
+      type: Fusee.Math.Core.float3x3
+      description: The left operand of the multiplication.
+    - id: right
+      type: Fusee.Math.Core.float3x3
+      description: The right operand of the multiplication.
+    return:
+      type: Fusee.Math.Core.float3x3
+      description: A new instance that is the result of the multiplication
+    content.vb: Public Shared Function Mult(left As float3x3, right As float3x3) As float3x3
+  overload: Fusee.Math.Core.float3x3.Mult*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.Transpose(Fusee.Math.Core.float3x3)
+  commentId: M:Fusee.Math.Core.float3x3.Transpose(Fusee.Math.Core.float3x3)
+  id: Transpose(Fusee.Math.Core.float3x3)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Transpose(float3x3)
+  nameWithType: float3x3.Transpose(float3x3)
+  fullName: Fusee.Math.Core.float3x3.Transpose(Fusee.Math.Core.float3x3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Transpose
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 309
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nCalculate the transpose of the given matrix\n"
+  example: []
+  syntax:
+    content: public static float3x3 Transpose(float3x3 mat)
+    parameters:
+    - id: mat
+      type: Fusee.Math.Core.float3x3
+      description: The matrix to transpose
+    return:
+      type: Fusee.Math.Core.float3x3
+      description: The transpose of the given matrix
+    content.vb: Public Shared Function Transpose(mat As float3x3) As float3x3
+  overload: Fusee.Math.Core.float3x3.Transpose*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.Transform(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Math.Core.float3x3.Transform(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3)
+  id: Transform(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Transform(float3x3, float3)
+  nameWithType: float3x3.Transform(float3x3, float3)
+  fullName: Fusee.Math.Core.float3x3.Transform(Fusee.Math.Core.float3x3, Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Transform
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 324
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nTransforms a given vector by a matrix via matrix*vector (post-multiplication of the vector).\n"
+  example: []
+  syntax:
+    content: public static float3 Transform(float3x3 matrix, float3 vector)
+    parameters:
+    - id: matrix
+      type: Fusee.Math.Core.float3x3
+      description: A <xref href="Fusee.Math.Core.float3x3" data-throw-if-not-resolved="false"></xref> instance.
+    - id: vector
+      type: Fusee.Math.Core.float3
+      description: A <xref href="Fusee.Math.Core.float3" data-throw-if-not-resolved="false"></xref> instance.
+    return:
+      type: Fusee.Math.Core.float3
+      description: A new <xref href="Fusee.Math.Core.float3" data-throw-if-not-resolved="false"></xref> instance containing the result.
+    content.vb: Public Shared Function Transform(matrix As float3x3, vector As float3) As float3
+  overload: Fusee.Math.Core.float3x3.Transform*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.Transform(Fusee.Math.Core.float3,Fusee.Math.Core.float3x3)
+  commentId: M:Fusee.Math.Core.float3x3.Transform(Fusee.Math.Core.float3,Fusee.Math.Core.float3x3)
+  id: Transform(Fusee.Math.Core.float3,Fusee.Math.Core.float3x3)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Transform(float3, float3x3)
+  nameWithType: float3x3.Transform(float3, float3x3)
+  fullName: Fusee.Math.Core.float3x3.Transform(Fusee.Math.Core.float3, Fusee.Math.Core.float3x3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Transform
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 341
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nTransforms a given vector by a matrix via vector*matrix (pre-multiplication of the vector).\n"
+  example: []
+  syntax:
+    content: public static float3 Transform(float3 vector, float3x3 matrix)
+    parameters:
+    - id: vector
+      type: Fusee.Math.Core.float3
+      description: A <xref href="Fusee.Math.Core.float3" data-throw-if-not-resolved="false"></xref> instance.
+    - id: matrix
+      type: Fusee.Math.Core.float3x3
+      description: A <xref href="Fusee.Math.Core.float3x3" data-throw-if-not-resolved="false"></xref> instance.
+    return:
+      type: Fusee.Math.Core.float3
+      description: A new <xref href="Fusee.Math.Core.float3" data-throw-if-not-resolved="false"></xref> instance containing the result.
+    content.vb: Public Shared Function Transform(vector As float3, matrix As float3x3) As float3
+  overload: Fusee.Math.Core.float3x3.Transform*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.Transform(Fusee.Math.Core.float3x3,Fusee.Math.Core.float2)
+  commentId: M:Fusee.Math.Core.float3x3.Transform(Fusee.Math.Core.float3x3,Fusee.Math.Core.float2)
+  id: Transform(Fusee.Math.Core.float3x3,Fusee.Math.Core.float2)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Transform(float3x3, float2)
+  nameWithType: float3x3.Transform(float3x3, float2)
+  fullName: Fusee.Math.Core.float3x3.Transform(Fusee.Math.Core.float3x3, Fusee.Math.Core.float2)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Transform
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 358
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nTransforms a given vector by a matrix via matrix*vector (post-multiplication of the vector).\n"
+  example: []
+  syntax:
+    content: public static float2 Transform(float3x3 matrix, float2 vector)
+    parameters:
+    - id: matrix
+      type: Fusee.Math.Core.float3x3
+      description: A <xref href="Fusee.Math.Core.float3x3" data-throw-if-not-resolved="false"></xref> instance.
+    - id: vector
+      type: Fusee.Math.Core.float2
+      description: A <xref href="Fusee.Math.Core.float2" data-throw-if-not-resolved="false"></xref> instance.
+    return:
+      type: Fusee.Math.Core.float2
+      description: A new <xref href="Fusee.Math.Core.float2" data-throw-if-not-resolved="false"></xref> instance containing the result.
+    content.vb: Public Shared Function Transform(matrix As float3x3, vector As float2) As float2
+  overload: Fusee.Math.Core.float3x3.Transform*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.Transform(Fusee.Math.Core.float2,Fusee.Math.Core.float3x3)
+  commentId: M:Fusee.Math.Core.float3x3.Transform(Fusee.Math.Core.float2,Fusee.Math.Core.float3x3)
+  id: Transform(Fusee.Math.Core.float2,Fusee.Math.Core.float3x3)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Transform(float2, float3x3)
+  nameWithType: float3x3.Transform(float2, float3x3)
+  fullName: Fusee.Math.Core.float3x3.Transform(Fusee.Math.Core.float2, Fusee.Math.Core.float3x3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Transform
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 374
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nTransforms a given vector by a matrix via matrix*vector (post-multiplication of the vector).\n"
+  example: []
+  syntax:
+    content: public static float2 Transform(float2 vector, float3x3 matrix)
+    parameters:
+    - id: vector
+      type: Fusee.Math.Core.float2
+      description: A <xref href="Fusee.Math.Core.float2" data-throw-if-not-resolved="false"></xref> instance.
+    - id: matrix
+      type: Fusee.Math.Core.float3x3
+      description: A <xref href="Fusee.Math.Core.float3x3" data-throw-if-not-resolved="false"></xref> instance.
+    return:
+      type: Fusee.Math.Core.float2
+      description: A new <xref href="Fusee.Math.Core.float2" data-throw-if-not-resolved="false"></xref> instance containing the result.
+    content.vb: Public Shared Function Transform(vector As float2, matrix As float3x3) As float2
+  overload: Fusee.Math.Core.float3x3.Transform*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.op_Addition(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  commentId: M:Fusee.Math.Core.float3x3.op_Addition(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  id: op_Addition(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Addition(float3x3, float3x3)
+  nameWithType: float3x3.Addition(float3x3, float3x3)
+  fullName: Fusee.Math.Core.float3x3.Addition(Fusee.Math.Core.float3x3, Fusee.Math.Core.float3x3)
+  type: Operator
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: op_Addition
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 396
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nMatrix addition\n"
+  example: []
+  syntax:
+    content: public static float3x3 operator +(float3x3 left, float3x3 right)
+    parameters:
+    - id: left
+      type: Fusee.Math.Core.float3x3
+      description: left-hand operand
+    - id: right
+      type: Fusee.Math.Core.float3x3
+      description: right-hand operand
+    return:
+      type: Fusee.Math.Core.float3x3
+      description: A new float3x3 which holds the result of the multiplication
+    content.vb: Public Shared Operator +(left As float3x3, right As float3x3) As float3x3
+  overload: Fusee.Math.Core.float3x3.op_Addition*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.op_Subtraction(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  commentId: M:Fusee.Math.Core.float3x3.op_Subtraction(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  id: op_Subtraction(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Subtraction(float3x3, float3x3)
+  nameWithType: float3x3.Subtraction(float3x3, float3x3)
+  fullName: Fusee.Math.Core.float3x3.Subtraction(Fusee.Math.Core.float3x3, Fusee.Math.Core.float3x3)
+  type: Operator
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: op_Subtraction
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 407
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nMatrix subtraction\n"
+  example: []
+  syntax:
+    content: public static float3x3 operator -(float3x3 left, float3x3 right)
+    parameters:
+    - id: left
+      type: Fusee.Math.Core.float3x3
+      description: left-hand operand
+    - id: right
+      type: Fusee.Math.Core.float3x3
+      description: right-hand operand
+    return:
+      type: Fusee.Math.Core.float3x3
+      description: A new float2x2 which holds the result of the multiplication
+    content.vb: Public Shared Operator -(left As float3x3, right As float3x3) As float3x3
+  overload: Fusee.Math.Core.float3x3.op_Subtraction*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.op_Multiply(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  commentId: M:Fusee.Math.Core.float3x3.op_Multiply(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  id: op_Multiply(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Multiply(float3x3, float3x3)
+  nameWithType: float3x3.Multiply(float3x3, float3x3)
+  fullName: Fusee.Math.Core.float3x3.Multiply(Fusee.Math.Core.float3x3, Fusee.Math.Core.float3x3)
+  type: Operator
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: op_Multiply
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 418
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nMatrix multiplication\n"
+  example: []
+  syntax:
+    content: public static float3x3 operator *(float3x3 left, float3x3 right)
+    parameters:
+    - id: left
+      type: Fusee.Math.Core.float3x3
+      description: left-hand operand
+    - id: right
+      type: Fusee.Math.Core.float3x3
+      description: right-hand operand
+    return:
+      type: Fusee.Math.Core.float3x3
+      description: A new Float3x3 which holds the result of the multiplication
+    content.vb: Public Shared Operator *(left As float3x3, right As float3x3) As float3x3
+  overload: Fusee.Math.Core.float3x3.op_Multiply*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.op_Multiply(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Math.Core.float3x3.op_Multiply(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3)
+  id: op_Multiply(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Multiply(float3x3, float3)
+  nameWithType: float3x3.Multiply(float3x3, float3)
+  fullName: Fusee.Math.Core.float3x3.Multiply(Fusee.Math.Core.float3x3, Fusee.Math.Core.float3)
+  type: Operator
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: op_Multiply
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 429
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nTransforms a given vector by a matrix via matrix*vector (post-multiplication of the vector).\n"
+  example: []
+  syntax:
+    content: public static float3 operator *(float3x3 matrix, float3 vector)
+    parameters:
+    - id: matrix
+      type: Fusee.Math.Core.float3x3
+      description: A <xref href="Fusee.Math.Core.float3x3" data-throw-if-not-resolved="false"></xref> instance.
+    - id: vector
+      type: Fusee.Math.Core.float3
+      description: A <xref href="Fusee.Math.Core.float3" data-throw-if-not-resolved="false"></xref> instance.
+    return:
+      type: Fusee.Math.Core.float3
+      description: A new <xref href="Fusee.Math.Core.float3" data-throw-if-not-resolved="false"></xref> instance containing the result.
+    content.vb: Public Shared Operator *(matrix As float3x3, vector As float3) As float3
+  overload: Fusee.Math.Core.float3x3.op_Multiply*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.op_Multiply(Fusee.Math.Core.float3,Fusee.Math.Core.float3x3)
+  commentId: M:Fusee.Math.Core.float3x3.op_Multiply(Fusee.Math.Core.float3,Fusee.Math.Core.float3x3)
+  id: op_Multiply(Fusee.Math.Core.float3,Fusee.Math.Core.float3x3)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Multiply(float3, float3x3)
+  nameWithType: float3x3.Multiply(float3, float3x3)
+  fullName: Fusee.Math.Core.float3x3.Multiply(Fusee.Math.Core.float3, Fusee.Math.Core.float3x3)
+  type: Operator
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: op_Multiply
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 440
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nTransforms a given vector by a matrix via vector*matrix (pre-multiplication of the vector).\n"
+  example: []
+  syntax:
+    content: public static float3 operator *(float3 vector, float3x3 matrix)
+    parameters:
+    - id: vector
+      type: Fusee.Math.Core.float3
+      description: A <xref href="Fusee.Math.Core.float3" data-throw-if-not-resolved="false"></xref> instance.
+    - id: matrix
+      type: Fusee.Math.Core.float3x3
+      description: A <xref href="Fusee.Math.Core.float3x3" data-throw-if-not-resolved="false"></xref> instance.
+    return:
+      type: Fusee.Math.Core.float3
+      description: A new <xref href="Fusee.Math.Core.float3" data-throw-if-not-resolved="false"></xref> instance containing the result.
+    content.vb: Public Shared Operator *(vector As float3, matrix As float3x3) As float3
+  overload: Fusee.Math.Core.float3x3.op_Multiply*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.op_Multiply(Fusee.Math.Core.float3x3,Fusee.Math.Core.float2)
+  commentId: M:Fusee.Math.Core.float3x3.op_Multiply(Fusee.Math.Core.float3x3,Fusee.Math.Core.float2)
+  id: op_Multiply(Fusee.Math.Core.float3x3,Fusee.Math.Core.float2)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Multiply(float3x3, float2)
+  nameWithType: float3x3.Multiply(float3x3, float2)
+  fullName: Fusee.Math.Core.float3x3.Multiply(Fusee.Math.Core.float3x3, Fusee.Math.Core.float2)
+  type: Operator
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: op_Multiply
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 451
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nTransforms a given vector by a matrix via matrix*vector (post-multiplication of the vector).\n"
+  example: []
+  syntax:
+    content: public static float2 operator *(float3x3 matrix, float2 vector)
+    parameters:
+    - id: matrix
+      type: Fusee.Math.Core.float3x3
+      description: A <xref href="Fusee.Math.Core.float3x3" data-throw-if-not-resolved="false"></xref> instance.
+    - id: vector
+      type: Fusee.Math.Core.float2
+      description: A <xref href="Fusee.Math.Core.float2" data-throw-if-not-resolved="false"></xref> instance.
+    return:
+      type: Fusee.Math.Core.float2
+      description: A new <xref href="Fusee.Math.Core.float2" data-throw-if-not-resolved="false"></xref> instance containing the result.
+    content.vb: Public Shared Operator *(matrix As float3x3, vector As float2) As float2
+  overload: Fusee.Math.Core.float3x3.op_Multiply*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.op_Multiply(Fusee.Math.Core.float2,Fusee.Math.Core.float3x3)
+  commentId: M:Fusee.Math.Core.float3x3.op_Multiply(Fusee.Math.Core.float2,Fusee.Math.Core.float3x3)
+  id: op_Multiply(Fusee.Math.Core.float2,Fusee.Math.Core.float3x3)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Multiply(float2, float3x3)
+  nameWithType: float3x3.Multiply(float2, float3x3)
+  fullName: Fusee.Math.Core.float3x3.Multiply(Fusee.Math.Core.float2, Fusee.Math.Core.float3x3)
+  type: Operator
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: op_Multiply
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 462
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nTransforms a given vector by a matrix via matrix*vector (post-multiplication of the vector).\n"
+  example: []
+  syntax:
+    content: public static float2 operator *(float2 vector, float3x3 matrix)
+    parameters:
+    - id: vector
+      type: Fusee.Math.Core.float2
+      description: A <xref href="Fusee.Math.Core.float2" data-throw-if-not-resolved="false"></xref> instance.
+    - id: matrix
+      type: Fusee.Math.Core.float3x3
+      description: A <xref href="Fusee.Math.Core.float3x3" data-throw-if-not-resolved="false"></xref> instance.
+    return:
+      type: Fusee.Math.Core.float2
+      description: A new <xref href="Fusee.Math.Core.float2" data-throw-if-not-resolved="false"></xref> instance containing the result.
+    content.vb: Public Shared Operator *(vector As float2, matrix As float3x3) As float2
+  overload: Fusee.Math.Core.float3x3.op_Multiply*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.op_Equality(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  commentId: M:Fusee.Math.Core.float3x3.op_Equality(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  id: op_Equality(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Equality(float3x3, float3x3)
+  nameWithType: float3x3.Equality(float3x3, float3x3)
+  fullName: Fusee.Math.Core.float3x3.Equality(Fusee.Math.Core.float3x3, Fusee.Math.Core.float3x3)
+  type: Operator
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: op_Equality
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 473
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nCompares two instances for equality.\n"
+  example: []
+  syntax:
+    content: public static bool operator ==(float3x3 left, float3x3 right)
+    parameters:
+    - id: left
+      type: Fusee.Math.Core.float3x3
+      description: The first instance.
+    - id: right
+      type: Fusee.Math.Core.float3x3
+      description: The second instance.
+    return:
+      type: System.Boolean
+      description: True, if left equals right; false otherwise.
+    content.vb: Public Shared Operator =(left As float3x3, right As float3x3) As Boolean
+  overload: Fusee.Math.Core.float3x3.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.op_Inequality(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  commentId: M:Fusee.Math.Core.float3x3.op_Inequality(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  id: op_Inequality(Fusee.Math.Core.float3x3,Fusee.Math.Core.float3x3)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Inequality(float3x3, float3x3)
+  nameWithType: float3x3.Inequality(float3x3, float3x3)
+  fullName: Fusee.Math.Core.float3x3.Inequality(Fusee.Math.Core.float3x3, Fusee.Math.Core.float3x3)
+  type: Operator
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: op_Inequality
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 484
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nCompares two instances for inequality.\n"
+  example: []
+  syntax:
+    content: public static bool operator !=(float3x3 left, float3x3 right)
+    parameters:
+    - id: left
+      type: Fusee.Math.Core.float3x3
+      description: The first instance.
+    - id: right
+      type: Fusee.Math.Core.float3x3
+      description: The second instance.
+    return:
+      type: System.Boolean
+      description: True, if left does not equal right; false otherwise.
+    content.vb: Public Shared Operator <>(left As float3x3, right As float3x3) As Boolean
+  overload: Fusee.Math.Core.float3x3.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.ToString
+  commentId: M:Fusee.Math.Core.float3x3.ToString
+  id: ToString
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: float3x3.ToString()
+  fullName: Fusee.Math.Core.float3x3.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ToString
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 499
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns a System.String that represents the current float3x3.\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string.
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: Fusee.Math.Core.float3x3.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Fusee.Math.Core.float3x3.ToString(System.IFormatProvider)
+  commentId: M:Fusee.Math.Core.float3x3.ToString(System.IFormatProvider)
+  id: ToString(System.IFormatProvider)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: ToString(IFormatProvider)
+  nameWithType: float3x3.ToString(IFormatProvider)
+  fullName: Fusee.Math.Core.float3x3.ToString(System.IFormatProvider)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ToString
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 511
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns a System.String that represents the current float3x3.\n"
+  example: []
+  syntax:
+    content: public string ToString(IFormatProvider provider)
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: Provides information about a specific culture.
+    return:
+      type: System.String
+      description: "\nA <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> that represents this instance.\n"
+    content.vb: Public Function ToString(provider As IFormatProvider) As String
+  overload: Fusee.Math.Core.float3x3.ToString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.GetHashCode
+  commentId: M:Fusee.Math.Core.float3x3.GetHashCode
+  id: GetHashCode
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: float3x3.GetHashCode()
+  fullName: Fusee.Math.Core.float3x3.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetHashCode
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 532
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns the hashcode for this instance.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A System.Int32 containing the unique hashcode for this instance.
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Fusee.Math.Core.float3x3.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Fusee.Math.Core.float3x3.Equals(System.Object)
+  commentId: M:Fusee.Math.Core.float3x3.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: float3x3.Equals(Object)
+  fullName: Fusee.Math.Core.float3x3.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Equals
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 546
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nIndicates whether this instance and a specified object are equal.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare tresult.
+    return:
+      type: System.Boolean
+      description: True if the instances are equal; false otherwise.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Fusee.Math.Core.float3x3.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Fusee.Math.Core.float3x3.ToArray
+  commentId: M:Fusee.Math.Core.float3x3.ToArray
+  id: ToArray
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: ToArray()
+  nameWithType: float3x3.ToArray()
+  fullName: Fusee.Math.Core.float3x3.ToArray()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ToArray
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 565
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns this matrix as an array\n"
+  example: []
+  syntax:
+    content: public float[] ToArray()
+    return:
+      type: System.Single[]
+    content.vb: Public Function ToArray As Single()
+  overload: Fusee.Math.Core.float3x3.ToArray*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.IsAffine
+  commentId: P:Fusee.Math.Core.float3x3.IsAffine
+  id: IsAffine
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: IsAffine
+  nameWithType: float3x3.IsAffine
+  fullName: Fusee.Math.Core.float3x3.IsAffine
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IsAffine
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 578
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nIndicates whether the current matrix represents an affine transformation.\n"
+  example: []
+  syntax:
+    content: public bool IsAffine { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the current matrix represents an affine transformation; otherwise, false.
+    content.vb: Public ReadOnly Property IsAffine As Boolean
+  overload: Fusee.Math.Core.float3x3.IsAffine*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Math.Core.float3x3.Equals(Fusee.Math.Core.float3x3)
+  commentId: M:Fusee.Math.Core.float3x3.Equals(Fusee.Math.Core.float3x3)
+  id: Equals(Fusee.Math.Core.float3x3)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Equals(float3x3)
+  nameWithType: float3x3.Equals(float3x3)
+  fullName: Fusee.Math.Core.float3x3.Equals(Fusee.Math.Core.float3x3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Equals
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 586
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: Indicates whether the current matrix is equal to another matrix.
+  example: []
+  syntax:
+    content: public bool Equals(float3x3 other)
+    parameters:
+    - id: other
+      type: Fusee.Math.Core.float3x3
+      description: A matrix to compare with this matrix.
+    return:
+      type: System.Boolean
+      description: true if the current matrix is equal to the matrix parameter; otherwise, false.
+    content.vb: Public Function Equals(other As float3x3) As Boolean
+  overload: Fusee.Math.Core.float3x3.Equals*
+  implements:
+  - System.IEquatable{Fusee.Math.Core.float3x3}.Equals(Fusee.Math.Core.float3x3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3x3.ParseConverter
+  commentId: P:Fusee.Math.Core.float3x3.ParseConverter
+  id: ParseConverter
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: ParseConverter
+  nameWithType: float3x3.ParseConverter
+  fullName: Fusee.Math.Core.float3x3.ParseConverter
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ParseConverter
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 602
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nGets and sets the Converter object. Has the ability to convert a string to a float3x3.\n"
+  example: []
+  syntax:
+    content: public static Converter<string, float3x3> ParseConverter { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.Converter{System.String,Fusee.Math.Core.float3x3}
+      description: "\nThe parse property.\n"
+    content.vb: Public Shared Property ParseConverter As Converter(Of String, float3x3)
+  overload: Fusee.Math.Core.float3x3.ParseConverter*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3x3.Parse(System.String,System.IFormatProvider)
+  commentId: M:Fusee.Math.Core.float3x3.Parse(System.String,System.IFormatProvider)
+  id: Parse(System.String,System.IFormatProvider)
+  parent: Fusee.Math.Core.float3x3
+  langs:
+  - csharp
+  - vb
+  name: Parse(String, IFormatProvider)
+  nameWithType: float3x3.Parse(String, IFormatProvider)
+  fullName: Fusee.Math.Core.float3x3.Parse(System.String, System.IFormatProvider)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3x3.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Parse
+    path: src/Fusee/src/Math/Core/float3x3.cs
+    startLine: 610
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nParses a string into a float3x3.\n"
+  example: []
+  syntax:
+    content: public static float3x3 Parse(string source, IFormatProvider provider = null)
+    parameters:
+    - id: source
+      type: System.String
+      description: ''
+    - id: provider
+      type: System.IFormatProvider
+      description: ''
+    return:
+      type: Fusee.Math.Core.float3x3
+      description: ''
+    content.vb: Public Shared Function Parse(source As String, provider As IFormatProvider = Nothing) As float3x3
+  overload: Fusee.Math.Core.float3x3.Parse*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: System.IEquatable{Fusee.Math.Core.float3x3}
+  commentId: T:System.IEquatable{Fusee.Math.Core.float3x3}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<float3x3>
+  nameWithType: IEquatable<float3x3>
+  fullName: System.IEquatable<Fusee.Math.Core.float3x3>
+  nameWithType.vb: IEquatable(Of float3x3)
+  fullName.vb: System.IEquatable(Of Fusee.Math.Core.float3x3)
+  name.vb: IEquatable(Of float3x3)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Math.Core.float3x3
+    name: float3x3
+    nameWithType: float3x3
+    fullName: Fusee.Math.Core.float3x3
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Math.Core.float3x3
+    name: float3x3
+    nameWithType: float3x3
+    fullName: Fusee.Math.Core.float3x3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Math.Core.float3x3
+  commentId: T:Fusee.Math.Core.float3x3
+  parent: Fusee.Math.Core
+  name: float3x3
+  nameWithType: float3x3
+  fullName: Fusee.Math.Core.float3x3
+- uid: Fusee.Math.Core.float3x3.#ctor*
+  commentId: Overload:Fusee.Math.Core.float3x3.#ctor
+  name: float3x3
+  nameWithType: float3x3.float3x3
+  fullName: Fusee.Math.Core.float3x3.float3x3
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Math.Core.float4x4
+  commentId: T:Fusee.Math.Core.float4x4
+  parent: Fusee.Math.Core
+  name: float4x4
+  nameWithType: float4x4
+  fullName: Fusee.Math.Core.float4x4
+- uid: Fusee.Math.Core.float3x3.Determinant*
+  commentId: Overload:Fusee.Math.Core.float3x3.Determinant
+  name: Determinant
+  nameWithType: float3x3.Determinant
+  fullName: Fusee.Math.Core.float3x3.Determinant
+- uid: Fusee.Math.Core.float3x3.Column0*
+  commentId: Overload:Fusee.Math.Core.float3x3.Column0
+  name: Column0
+  nameWithType: float3x3.Column0
+  fullName: Fusee.Math.Core.float3x3.Column0
+- uid: Fusee.Math.Core.float3x3.Column1*
+  commentId: Overload:Fusee.Math.Core.float3x3.Column1
+  name: Column1
+  nameWithType: float3x3.Column1
+  fullName: Fusee.Math.Core.float3x3.Column1
+- uid: Fusee.Math.Core.float3x3.Column2*
+  commentId: Overload:Fusee.Math.Core.float3x3.Column2
+  name: Column2
+  nameWithType: float3x3.Column2
+  fullName: Fusee.Math.Core.float3x3.Column2
+- uid: Fusee.Math.Core.float3x3.M11*
+  commentId: Overload:Fusee.Math.Core.float3x3.M11
+  name: M11
+  nameWithType: float3x3.M11
+  fullName: Fusee.Math.Core.float3x3.M11
+- uid: Fusee.Math.Core.float3x3.M12*
+  commentId: Overload:Fusee.Math.Core.float3x3.M12
+  name: M12
+  nameWithType: float3x3.M12
+  fullName: Fusee.Math.Core.float3x3.M12
+- uid: Fusee.Math.Core.float3x3.M13*
+  commentId: Overload:Fusee.Math.Core.float3x3.M13
+  name: M13
+  nameWithType: float3x3.M13
+  fullName: Fusee.Math.Core.float3x3.M13
+- uid: Fusee.Math.Core.float3x3.M21*
+  commentId: Overload:Fusee.Math.Core.float3x3.M21
+  name: M21
+  nameWithType: float3x3.M21
+  fullName: Fusee.Math.Core.float3x3.M21
+- uid: Fusee.Math.Core.float3x3.M22*
+  commentId: Overload:Fusee.Math.Core.float3x3.M22
+  name: M22
+  nameWithType: float3x3.M22
+  fullName: Fusee.Math.Core.float3x3.M22
+- uid: Fusee.Math.Core.float3x3.M23*
+  commentId: Overload:Fusee.Math.Core.float3x3.M23
+  name: M23
+  nameWithType: float3x3.M23
+  fullName: Fusee.Math.Core.float3x3.M23
+- uid: Fusee.Math.Core.float3x3.M31*
+  commentId: Overload:Fusee.Math.Core.float3x3.M31
+  name: M31
+  nameWithType: float3x3.M31
+  fullName: Fusee.Math.Core.float3x3.M31
+- uid: Fusee.Math.Core.float3x3.M32*
+  commentId: Overload:Fusee.Math.Core.float3x3.M32
+  name: M32
+  nameWithType: float3x3.M32
+  fullName: Fusee.Math.Core.float3x3.M32
+- uid: Fusee.Math.Core.float3x3.M33*
+  commentId: Overload:Fusee.Math.Core.float3x3.M33
+  name: M33
+  nameWithType: float3x3.M33
+  fullName: Fusee.Math.Core.float3x3.M33
+- uid: Fusee.Math.Core.float3x3.Transpose*
+  commentId: Overload:Fusee.Math.Core.float3x3.Transpose
+  name: Transpose
+  nameWithType: float3x3.Transpose
+  fullName: Fusee.Math.Core.float3x3.Transpose
+- uid: Fusee.Math.Core.float3x3.Add*
+  commentId: Overload:Fusee.Math.Core.float3x3.Add
+  name: Add
+  nameWithType: float3x3.Add
+  fullName: Fusee.Math.Core.float3x3.Add
+- uid: Fusee.Math.Core.float3x3.Subtract*
+  commentId: Overload:Fusee.Math.Core.float3x3.Subtract
+  name: Subtract
+  nameWithType: float3x3.Subtract
+  fullName: Fusee.Math.Core.float3x3.Subtract
+- uid: Fusee.Math.Core.float3x3.Mult*
+  commentId: Overload:Fusee.Math.Core.float3x3.Mult
+  name: Mult
+  nameWithType: float3x3.Mult
+  fullName: Fusee.Math.Core.float3x3.Mult
+- uid: Fusee.Math.Core.float3x3.Transform*
+  commentId: Overload:Fusee.Math.Core.float3x3.Transform
+  name: Transform
+  nameWithType: float3x3.Transform
+  fullName: Fusee.Math.Core.float3x3.Transform
+- uid: Fusee.Math.Core.float2
+  commentId: T:Fusee.Math.Core.float2
+  parent: Fusee.Math.Core
+  name: float2
+  nameWithType: float2
+  fullName: Fusee.Math.Core.float2
+- uid: Fusee.Math.Core.float3x3.op_Addition*
+  commentId: Overload:Fusee.Math.Core.float3x3.op_Addition
+  name: Addition
+  nameWithType: float3x3.Addition
+  fullName: Fusee.Math.Core.float3x3.Addition
+- uid: Fusee.Math.Core.float3x3.op_Subtraction*
+  commentId: Overload:Fusee.Math.Core.float3x3.op_Subtraction
+  name: Subtraction
+  nameWithType: float3x3.Subtraction
+  fullName: Fusee.Math.Core.float3x3.Subtraction
+- uid: Fusee.Math.Core.float3x3.op_Multiply*
+  commentId: Overload:Fusee.Math.Core.float3x3.op_Multiply
+  name: Multiply
+  nameWithType: float3x3.Multiply
+  fullName: Fusee.Math.Core.float3x3.Multiply
+- uid: Fusee.Math.Core.float3x3.op_Equality*
+  commentId: Overload:Fusee.Math.Core.float3x3.op_Equality
+  name: Equality
+  nameWithType: float3x3.Equality
+  fullName: Fusee.Math.Core.float3x3.Equality
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Math.Core.float3x3.op_Inequality*
+  commentId: Overload:Fusee.Math.Core.float3x3.op_Inequality
+  name: Inequality
+  nameWithType: float3x3.Inequality
+  fullName: Fusee.Math.Core.float3x3.Inequality
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.float3x3.ToString*
+  commentId: Overload:Fusee.Math.Core.float3x3.ToString
+  name: ToString
+  nameWithType: float3x3.ToString
+  fullName: Fusee.Math.Core.float3x3.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.IFormatProvider
+  commentId: T:System.IFormatProvider
+  parent: System
+  isExternal: true
+  name: IFormatProvider
+  nameWithType: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.float3x3.GetHashCode*
+  commentId: Overload:Fusee.Math.Core.float3x3.GetHashCode
+  name: GetHashCode
+  nameWithType: float3x3.GetHashCode
+  fullName: Fusee.Math.Core.float3x3.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.float3x3.Equals*
+  commentId: Overload:Fusee.Math.Core.float3x3.Equals
+  name: Equals
+  nameWithType: float3x3.Equals
+  fullName: Fusee.Math.Core.float3x3.Equals
+- uid: Fusee.Math.Core.float3x3.ToArray*
+  commentId: Overload:Fusee.Math.Core.float3x3.ToArray
+  name: ToArray
+  nameWithType: float3x3.ToArray
+  fullName: Fusee.Math.Core.float3x3.ToArray
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Fusee.Math.Core.float3x3.IsAffine*
+  commentId: Overload:Fusee.Math.Core.float3x3.IsAffine
+  name: IsAffine
+  nameWithType: float3x3.IsAffine
+  fullName: Fusee.Math.Core.float3x3.IsAffine
+- uid: System.IEquatable{Fusee.Math.Core.float3x3}.Equals(Fusee.Math.Core.float3x3)
+  commentId: M:System.IEquatable{Fusee.Math.Core.float3x3}.Equals(Fusee.Math.Core.float3x3)
+  parent: System.IEquatable{Fusee.Math.Core.float3x3}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(float3x3)
+  nameWithType: IEquatable<float3x3>.Equals(float3x3)
+  fullName: System.IEquatable<Fusee.Math.Core.float3x3>.Equals(Fusee.Math.Core.float3x3)
+  nameWithType.vb: IEquatable(Of float3x3).Equals(float3x3)
+  fullName.vb: System.IEquatable(Of Fusee.Math.Core.float3x3).Equals(Fusee.Math.Core.float3x3)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<float3x3>.Equals
+    fullName: System.IEquatable<Fusee.Math.Core.float3x3>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3x3
+    name: float3x3
+    nameWithType: float3x3
+    fullName: Fusee.Math.Core.float3x3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of float3x3).Equals
+    fullName: System.IEquatable(Of Fusee.Math.Core.float3x3).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3x3
+    name: float3x3
+    nameWithType: float3x3
+    fullName: Fusee.Math.Core.float3x3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.float3x3.ParseConverter*
+  commentId: Overload:Fusee.Math.Core.float3x3.ParseConverter
+  name: ParseConverter
+  nameWithType: float3x3.ParseConverter
+  fullName: Fusee.Math.Core.float3x3.ParseConverter
+- uid: Fusee.Math.Core.Converter{System.String,Fusee.Math.Core.float3x3}
+  commentId: T:Fusee.Math.Core.Converter{System.String,Fusee.Math.Core.float3x3}
+  parent: Fusee.Math.Core
+  definition: Fusee.Math.Core.Converter`2
+  name: Converter<String, float3x3>
+  nameWithType: Converter<String, float3x3>
+  fullName: Fusee.Math.Core.Converter<System.String, Fusee.Math.Core.float3x3>
+  nameWithType.vb: Converter(Of String, float3x3)
+  fullName.vb: Fusee.Math.Core.Converter(Of System.String, Fusee.Math.Core.float3x3)
+  name.vb: Converter(Of String, float3x3)
+  spec.csharp:
+  - uid: Fusee.Math.Core.Converter`2
+    name: Converter
+    nameWithType: Converter
+    fullName: Fusee.Math.Core.Converter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3x3
+    name: float3x3
+    nameWithType: float3x3
+    fullName: Fusee.Math.Core.float3x3
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Math.Core.Converter`2
+    name: Converter
+    nameWithType: Converter
+    fullName: Fusee.Math.Core.Converter
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3x3
+    name: float3x3
+    nameWithType: float3x3
+    fullName: Fusee.Math.Core.float3x3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.Converter`2
+  commentId: T:Fusee.Math.Core.Converter`2
+  name: Converter<TInput, TOutput>
+  nameWithType: Converter<TInput, TOutput>
+  fullName: Fusee.Math.Core.Converter<TInput, TOutput>
+  nameWithType.vb: Converter(Of TInput, TOutput)
+  fullName.vb: Fusee.Math.Core.Converter(Of TInput, TOutput)
+  name.vb: Converter(Of TInput, TOutput)
+  spec.csharp:
+  - uid: Fusee.Math.Core.Converter`2
+    name: Converter
+    nameWithType: Converter
+    fullName: Fusee.Math.Core.Converter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TInput
+    nameWithType: TInput
+    fullName: TInput
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TOutput
+    nameWithType: TOutput
+    fullName: TOutput
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Math.Core.Converter`2
+    name: Converter
+    nameWithType: Converter
+    fullName: Fusee.Math.Core.Converter
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    nameWithType: TInput
+    fullName: TInput
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TOutput
+    nameWithType: TOutput
+    fullName: TOutput
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.float3x3.Parse*
+  commentId: Overload:Fusee.Math.Core.float3x3.Parse
+  name: Parse
+  nameWithType: float3x3.Parse
+  fullName: Fusee.Math.Core.float3x3.Parse

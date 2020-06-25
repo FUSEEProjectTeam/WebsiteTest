@@ -1,0 +1,2990 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.RenderContext
+  commentId: T:Fusee.Engine.Core.RenderContext
+  id: RenderContext
+  parent: Fusee.Engine.Core
+  children:
+  - Fusee.Engine.Core.RenderContext.#ctor(Fusee.Engine.Common.IRenderContextImp)
+  - Fusee.Engine.Core.RenderContext.Bones
+  - Fusee.Engine.Core.RenderContext.Clear(Fusee.Engine.Common.ClearFlags)
+  - Fusee.Engine.Core.RenderContext.ClearColor
+  - Fusee.Engine.Core.RenderContext.ClearDepth
+  - Fusee.Engine.Core.RenderContext.CurrentRenderState
+  - Fusee.Engine.Core.RenderContext.DefaultState
+  - Fusee.Engine.Core.RenderContext.DisableDepthClamp
+  - Fusee.Engine.Core.RenderContext.EnableDepthClamp
+  - Fusee.Engine.Core.RenderContext.GetHardwareCapabilities(Fusee.Engine.Common.HardwareCapability)
+  - Fusee.Engine.Core.RenderContext.GetHardwareDescription
+  - Fusee.Engine.Core.RenderContext.GetRenderState(Fusee.Engine.Common.RenderState)
+  - Fusee.Engine.Core.RenderContext.InvModel
+  - Fusee.Engine.Core.RenderContext.InvModelView
+  - Fusee.Engine.Core.RenderContext.InvModelViewProjection
+  - Fusee.Engine.Core.RenderContext.InvProjection
+  - Fusee.Engine.Core.RenderContext.InvTransModel
+  - Fusee.Engine.Core.RenderContext.InvTransModelView
+  - Fusee.Engine.Core.RenderContext.InvTransModelViewProjection
+  - Fusee.Engine.Core.RenderContext.InvTransProjection
+  - Fusee.Engine.Core.RenderContext.InvTransView
+  - Fusee.Engine.Core.RenderContext.InvView
+  - Fusee.Engine.Core.RenderContext.LockedStates
+  - Fusee.Engine.Core.RenderContext.Model
+  - Fusee.Engine.Core.RenderContext.ModelView
+  - Fusee.Engine.Core.RenderContext.ModelViewProjection
+  - Fusee.Engine.Core.RenderContext.Projection
+  - Fusee.Engine.Core.RenderContext.RenderFrustum
+  - Fusee.Engine.Core.RenderContext.SetLineWidth(System.Single)
+  - Fusee.Engine.Core.RenderContext.SetRenderState(Fusee.Engine.Common.RenderState,System.UInt32,System.Boolean)
+  - Fusee.Engine.Core.RenderContext.SetRenderStateSet(Fusee.Engine.Core.RenderStateSet,System.Boolean)
+  - Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableCubeMap)
+  - Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableTexture)
+  - Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Core.RenderTarget)
+  - Fusee.Engine.Core.RenderContext.SetShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
+  - Fusee.Engine.Core.RenderContext.TransModel
+  - Fusee.Engine.Core.RenderContext.TransModelView
+  - Fusee.Engine.Core.RenderContext.TransModelViewProjection
+  - Fusee.Engine.Core.RenderContext.TransProjection
+  - Fusee.Engine.Core.RenderContext.TransView
+  - Fusee.Engine.Core.RenderContext.UnlockAllRenderStates(System.Boolean)
+  - Fusee.Engine.Core.RenderContext.UnlockRenderState(Fusee.Engine.Common.RenderState,System.Boolean)
+  - Fusee.Engine.Core.RenderContext.View
+  - Fusee.Engine.Core.RenderContext.Viewport(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Fusee.Engine.Core.RenderContext.ViewportHeight
+  - Fusee.Engine.Core.RenderContext.ViewportWidth
+  - Fusee.Engine.Core.RenderContext.ViewportXStart
+  - Fusee.Engine.Core.RenderContext.ViewportYStart
+  langs:
+  - csharp
+  - vb
+  name: RenderContext
+  nameWithType: RenderContext
+  fullName: Fusee.Engine.Core.RenderContext
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RenderContext
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 15
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe render context contains all functions necessary to manipulate the underlying rendering hardware. Use this class&apos; elements\nto render geometry to the RenderCanvas associated with this context. If you have worked with OpenGL or DirectX before you will find\nmany similarities in this class&apos; methods and properties.\n"
+  example: []
+  syntax:
+    content: public class RenderContext
+    content.vb: Public Class RenderContext
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Core.RenderContext.ClearColor
+  commentId: P:Fusee.Engine.Core.RenderContext.ClearColor
+  id: ClearColor
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: ClearColor
+  nameWithType: RenderContext.ClearColor
+  fullName: Fusee.Engine.Core.RenderContext.ClearColor
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ClearColor
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 28
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe color to use when clearing the color buffer.\n"
+  remarks: "\nThis is the color that will be copied to all pixels in the output color buffer when Clear is called on the render context.\n"
+  example: []
+  syntax:
+    content: public float4 ClearColor { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4
+      description: "\nThe color value is interpreted as a (Red, Green, Blue, Alpha) quadruple with\ncomponent values ranging from 0.0f to 1.0f.\n"
+    content.vb: Public Property ClearColor As float4
+  overload: Fusee.Engine.Core.RenderContext.ClearColor*
+  seealso:
+  - linkId: Fusee.Engine.Core.RenderContext.Clear(Fusee.Engine.Common.ClearFlags)
+    commentId: M:Fusee.Engine.Core.RenderContext.Clear(Fusee.Engine.Common.ClearFlags)
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.ClearDepth
+  commentId: P:Fusee.Engine.Core.RenderContext.ClearDepth
+  id: ClearDepth
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: ClearDepth
+  nameWithType: RenderContext.ClearDepth
+  fullName: Fusee.Engine.Core.RenderContext.ClearDepth
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ClearDepth
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 43
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe depth value to use when clearing the color buffer.\n"
+  remarks: "\nThis is the depth (z-) value that will be copied to all pixels in the depth (z-) buffer when Clear is called on the render context.\n"
+  example: []
+  syntax:
+    content: public float ClearDepth { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nTypically set to the highest possible depth value. Typically ranges between 0 and 1.\n"
+    content.vb: Public Property ClearDepth As Single
+  overload: Fusee.Engine.Core.RenderContext.ClearDepth*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.DefaultState
+  commentId: P:Fusee.Engine.Core.RenderContext.DefaultState
+  id: DefaultState
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: DefaultState
+  nameWithType: RenderContext.DefaultState
+  fullName: Fusee.Engine.Core.RenderContext.DefaultState
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DefaultState
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 52
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nContains the default state of the render context. can be used to reset this RenderContext to it&apos;s DefaultState.\n"
+  example: []
+  syntax:
+    content: public RenderContextDefaultState DefaultState { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Core.RenderContextDefaultState
+    content.vb: Public ReadOnly Property DefaultState As RenderContextDefaultState
+  overload: Fusee.Engine.Core.RenderContext.DefaultState*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.RenderFrustum
+  commentId: P:Fusee.Engine.Core.RenderContext.RenderFrustum
+  id: RenderFrustum
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: RenderFrustum
+  nameWithType: RenderContext.RenderFrustum
+  fullName: Fusee.Engine.Core.RenderContext.RenderFrustum
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RenderFrustum
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 57
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe world space frustum planes, derived from the current view-projection matrix.\n"
+  example: []
+  syntax:
+    content: public Frustum RenderFrustum { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.Frustum
+    content.vb: Public ReadOnly Property RenderFrustum As Frustum
+  overload: Fusee.Engine.Core.RenderContext.RenderFrustum*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.CurrentRenderState
+  commentId: P:Fusee.Engine.Core.RenderContext.CurrentRenderState
+  id: CurrentRenderState
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: CurrentRenderState
+  nameWithType: RenderContext.CurrentRenderState
+  fullName: Fusee.Engine.Core.RenderContext.CurrentRenderState
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CurrentRenderState
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 73
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nSaves the current RenderState.\n"
+  example: []
+  syntax:
+    content: public RenderStateSet CurrentRenderState { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Core.RenderStateSet
+    content.vb: Public ReadOnly Property CurrentRenderState As RenderStateSet
+  overload: Fusee.Engine.Core.RenderContext.CurrentRenderState*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.LockedStates
+  commentId: P:Fusee.Engine.Core.RenderContext.LockedStates
+  id: LockedStates
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: LockedStates
+  nameWithType: RenderContext.LockedStates
+  fullName: Fusee.Engine.Core.RenderContext.LockedStates
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: LockedStates
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 78
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nIf a state is forced it will remain the value currently set in <xref href=\"Fusee.Engine.Core.RenderContext.CurrentRenderState\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public Dictionary<RenderState, KeyValuePair<bool, uint>> LockedStates { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{Fusee.Engine.Common.RenderState,System.Collections.Generic.KeyValuePair{System.Boolean,System.UInt32}}
+    content.vb: Public ReadOnly Property LockedStates As Dictionary(Of RenderState, KeyValuePair(Of Boolean, UInteger))
+  overload: Fusee.Engine.Core.RenderContext.LockedStates*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.ViewportWidth
+  commentId: P:Fusee.Engine.Core.RenderContext.ViewportWidth
+  id: ViewportWidth
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: ViewportWidth
+  nameWithType: RenderContext.ViewportWidth
+  fullName: Fusee.Engine.Core.RenderContext.ViewportWidth
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ViewportWidth
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 87
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets and sets the viewport width.\n"
+  example: []
+  syntax:
+    content: public int ViewportWidth { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ViewportWidth As Integer
+  overload: Fusee.Engine.Core.RenderContext.ViewportWidth*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.ViewportHeight
+  commentId: P:Fusee.Engine.Core.RenderContext.ViewportHeight
+  id: ViewportHeight
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: ViewportHeight
+  nameWithType: RenderContext.ViewportHeight
+  fullName: Fusee.Engine.Core.RenderContext.ViewportHeight
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ViewportHeight
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 92
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets and sets the viewport height.\n"
+  example: []
+  syntax:
+    content: public int ViewportHeight { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ViewportHeight As Integer
+  overload: Fusee.Engine.Core.RenderContext.ViewportHeight*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.ViewportXStart
+  commentId: P:Fusee.Engine.Core.RenderContext.ViewportXStart
+  id: ViewportXStart
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: ViewportXStart
+  nameWithType: RenderContext.ViewportXStart
+  fullName: Fusee.Engine.Core.RenderContext.ViewportXStart
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ViewportXStart
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 97
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets and sets the x coordinate of viewport&apos;s lower left (starting) point.\n"
+  example: []
+  syntax:
+    content: public int ViewportXStart { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ViewportXStart As Integer
+  overload: Fusee.Engine.Core.RenderContext.ViewportXStart*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.ViewportYStart
+  commentId: P:Fusee.Engine.Core.RenderContext.ViewportYStart
+  id: ViewportYStart
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: ViewportYStart
+  nameWithType: RenderContext.ViewportYStart
+  fullName: Fusee.Engine.Core.RenderContext.ViewportYStart
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ViewportYStart
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 102
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets and sets the y coordinate of viewport&apos;s lower left (starting) point.\n"
+  example: []
+  syntax:
+    content: public int ViewportYStart { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ViewportYStart As Integer
+  overload: Fusee.Engine.Core.RenderContext.ViewportYStart*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.View
+  commentId: P:Fusee.Engine.Core.RenderContext.View
+  id: View
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: View
+  nameWithType: RenderContext.View
+  fullName: Fusee.Engine.Core.RenderContext.View
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: View
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 194
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe View matrix used by the rendering pipeline.\n"
+  remarks: "\nThis matrix is also referred often as the camera transformation(not the projection). \nIt describes the orientation of the view that is used to render a scene.\nYou can use <xref href=\"Fusee.Math.Core.float4x4.LookAt(Fusee.Math.Core.float3%2cFusee.Math.Core.float3%2cFusee.Math.Core.float3)\" data-throw-if-not-resolved=\"false\"></xref> to create a valid view matrix and analyze how it is build up.\n"
+  example: []
+  syntax:
+    content: public float4x4 View { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe view matrix.\n"
+    content.vb: Public Property View As float4x4
+  overload: Fusee.Engine.Core.RenderContext.View*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.Model
+  commentId: P:Fusee.Engine.Core.RenderContext.Model
+  id: Model
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: Model
+  nameWithType: RenderContext.Model
+  fullName: Fusee.Engine.Core.RenderContext.Model
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Model
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 247
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe Model matrix used by the rendering pipeline.\n"
+  remarks: "\nModel coordinates are the coordinates directly taken from the model (the mesh geometry - <xref href=\"Fusee.Engine.Core.Scene.Mesh\" data-throw-if-not-resolved=\"false\"></xref>).\n"
+  example: []
+  syntax:
+    content: public float4x4 Model { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe model matrix.\n"
+    content.vb: Public Property Model As float4x4
+  overload: Fusee.Engine.Core.RenderContext.Model*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.Projection
+  commentId: P:Fusee.Engine.Core.RenderContext.Projection
+  id: Projection
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: Projection
+  nameWithType: RenderContext.Projection
+  fullName: Fusee.Engine.Core.RenderContext.Projection
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Projection
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 300
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe projection matrix used by the rendering pipeline\n"
+  remarks: "\nView coordinates are the result of the ModelView matrix multiplied to the geometry (<xref href=\"Fusee.Engine.Core.RenderContext.ModelView\" data-throw-if-not-resolved=\"false\"></xref>).\nThe coordinate system of the view space has its origin in the camera center with the z axis aligned to the viewing direction, and the x- and\ny axes aligned to the viewing plane. Still, no projection from 3d space to the viewing plane has been performed. This is done by multiplying\nview coordinate geometry with the projection matrix. Typically, the projection matrix either performs a parallel projection or a perspective\nprojection.\n"
+  example: []
+  syntax:
+    content: public float4x4 Projection { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe 4x4 projection matrix applied to view coordinates yielding clip space coordinates.\n"
+    content.vb: Public Property Projection As float4x4
+  overload: Fusee.Engine.Core.RenderContext.Projection*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.ModelView
+  commentId: P:Fusee.Engine.Core.RenderContext.ModelView
+  id: ModelView
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: ModelView
+  nameWithType: RenderContext.ModelView
+  fullName: Fusee.Engine.Core.RenderContext.ModelView
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ModelView
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 338
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe ModelView matrix used by the rendering pipeline.\n"
+  remarks: "\nModel coordinates are the coordinates directly taken from the model (the mesh geometry - <xref href=\"Fusee.Engine.Core.Scene.Mesh\" data-throw-if-not-resolved=\"false\"></xref>). The rendering pipeline\ntransforms these coordinates into View coordinates. Further down the pipeline the coordinates will be transformed to screen coordinates to allow the\ngeometry to be rendered to pixel positions on the screen. The ModelView matrix defines the transformations performed on the original model coordinates\nto yield view coordinates. In most cases the matrix is a composition of several translations, rotations, and scale operations.\n"
+  example: []
+  syntax:
+    content: public float4x4 ModelView { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe 4x4 ModelView matrix defining the transformation applied to model coordinates yielding view coordinates.\n"
+    content.vb: Public ReadOnly Property ModelView As float4x4
+  overload: Fusee.Engine.Core.RenderContext.ModelView*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.ModelViewProjection
+  commentId: P:Fusee.Engine.Core.RenderContext.ModelViewProjection
+  id: ModelViewProjection
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: ModelViewProjection
+  nameWithType: RenderContext.ModelViewProjection
+  fullName: Fusee.Engine.Core.RenderContext.ModelViewProjection
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ModelViewProjection
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 361
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe combination of the ModelView and Projection matrices.\n"
+  remarks: "\n<xref href=\"Fusee.Engine.Core.RenderContext.ModelView\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Fusee.Engine.Core.RenderContext.Projection\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public float4x4 ModelViewProjection { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe 4x4 matrix resulting from the matrix multiplication of the ModelView and the Projection matrix.\n"
+    content.vb: Public ReadOnly Property ModelViewProjection As float4x4
+  overload: Fusee.Engine.Core.RenderContext.ModelViewProjection*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.InvView
+  commentId: P:Fusee.Engine.Core.RenderContext.InvView
+  id: InvView
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: InvView
+  nameWithType: RenderContext.InvView
+  fullName: Fusee.Engine.Core.RenderContext.InvView
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvView
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 387
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the inverted View matrix.\n"
+  remarks: "\nIf the View matrix is orthogonal (i.e. contains no scale component), its inverse matrix\nis equal to its transpose matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 InvView { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe inverted view matrix.\n"
+    content.vb: Public ReadOnly Property InvView As float4x4
+  overload: Fusee.Engine.Core.RenderContext.InvView*
+  seealso:
+  - linkId: Fusee.Engine.Core.RenderContext.View
+    commentId: P:Fusee.Engine.Core.RenderContext.View
+  - linkId: Fusee.Engine.Core.RenderContext.TransView
+    commentId: P:Fusee.Engine.Core.RenderContext.TransView
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.InvModel
+  commentId: P:Fusee.Engine.Core.RenderContext.InvModel
+  id: InvModel
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: InvModel
+  nameWithType: RenderContext.InvModel
+  fullName: Fusee.Engine.Core.RenderContext.InvModel
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvModel
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 412
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the inverted Model matrix.\n"
+  remarks: "\nIf the Model matrix is orthogonal (i.e. contains no scale component), its inverse matrix\nis equal to its transpose matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 InvModel { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe inverted Model matrix.\n"
+    content.vb: Public ReadOnly Property InvModel As float4x4
+  overload: Fusee.Engine.Core.RenderContext.InvModel*
+  seealso:
+  - linkId: Fusee.Engine.Core.RenderContext.Model
+    commentId: P:Fusee.Engine.Core.RenderContext.Model
+  - linkId: Fusee.Engine.Core.RenderContext.TransModel
+    commentId: P:Fusee.Engine.Core.RenderContext.TransModel
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.InvModelView
+  commentId: P:Fusee.Engine.Core.RenderContext.InvModelView
+  id: InvModelView
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: InvModelView
+  nameWithType: RenderContext.InvModelView
+  fullName: Fusee.Engine.Core.RenderContext.InvModelView
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvModelView
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 437
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe inverse of the ModelView matrix.\n"
+  remarks: "\nIf the ModelView matrix is orthogonal (i.e. contains no scale component), its inverse matrix\nis equal to its transpose matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 InvModelView { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe 4x4 matrix resulting from the matrix inversion applied to the ModelView matrix.\n"
+    content.vb: Public ReadOnly Property InvModelView As float4x4
+  overload: Fusee.Engine.Core.RenderContext.InvModelView*
+  seealso:
+  - linkId: Fusee.Engine.Core.RenderContext.ModelView
+    commentId: P:Fusee.Engine.Core.RenderContext.ModelView
+  - linkId: Fusee.Engine.Core.RenderContext.TransModelView
+    commentId: P:Fusee.Engine.Core.RenderContext.TransModelView
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.InvProjection
+  commentId: P:Fusee.Engine.Core.RenderContext.InvProjection
+  id: InvProjection
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: InvProjection
+  nameWithType: RenderContext.InvProjection
+  fullName: Fusee.Engine.Core.RenderContext.InvProjection
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvProjection
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 463
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe inverse of the Projection matrix.\n"
+  remarks: "\nIf the Projection matrix is orthogonal (i.e. contains no scale component), its inverse matrix\nis equal to its transpose matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 InvProjection { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe 4x4 matrix resulting from the matrix inversion applied to the Projection matrix.\n"
+    content.vb: Public ReadOnly Property InvProjection As float4x4
+  overload: Fusee.Engine.Core.RenderContext.InvProjection*
+  seealso:
+  - linkId: Fusee.Engine.Core.RenderContext.Projection
+    commentId: P:Fusee.Engine.Core.RenderContext.Projection
+  - linkId: Fusee.Engine.Core.RenderContext.TransProjection
+    commentId: P:Fusee.Engine.Core.RenderContext.TransProjection
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.InvModelViewProjection
+  commentId: P:Fusee.Engine.Core.RenderContext.InvModelViewProjection
+  id: InvModelViewProjection
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: InvModelViewProjection
+  nameWithType: RenderContext.InvModelViewProjection
+  fullName: Fusee.Engine.Core.RenderContext.InvModelViewProjection
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvModelViewProjection
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 489
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe inverse of the ModelViewProjection matrix.\n"
+  remarks: "\nIf the ModelViewProjection matrix is orthogonal (i.e. contains no scale component), its inverse matrix\nis equal to its transpose matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 InvModelViewProjection { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe 4x4 matrix resulting from the matrix inversion applied to the ModelViewProjection matrix.\n"
+    content.vb: Public ReadOnly Property InvModelViewProjection As float4x4
+  overload: Fusee.Engine.Core.RenderContext.InvModelViewProjection*
+  seealso:
+  - linkId: Fusee.Engine.Core.RenderContext.ModelViewProjection
+    commentId: P:Fusee.Engine.Core.RenderContext.ModelViewProjection
+  - linkId: Fusee.Engine.Core.RenderContext.TransModelViewProjection
+    commentId: P:Fusee.Engine.Core.RenderContext.TransModelViewProjection
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.TransView
+  commentId: P:Fusee.Engine.Core.RenderContext.TransView
+  id: TransView
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: TransView
+  nameWithType: RenderContext.TransView
+  fullName: Fusee.Engine.Core.RenderContext.TransView
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TransView
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 514
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe transpose of the View matrix.\n"
+  remarks: "\nIf the View matrix is orthogonal (i.e. contains no scale component), its transpose matrix\nis equal to its inverse matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 TransView { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe 4x4 matrix resulting from the matrix transpose applied to the View matrix.\n"
+    content.vb: Public ReadOnly Property TransView As float4x4
+  overload: Fusee.Engine.Core.RenderContext.TransView*
+  seealso:
+  - linkId: Fusee.Engine.Core.RenderContext.View
+    commentId: P:Fusee.Engine.Core.RenderContext.View
+  - linkId: Fusee.Engine.Core.RenderContext.InvView
+    commentId: P:Fusee.Engine.Core.RenderContext.InvView
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.TransModel
+  commentId: P:Fusee.Engine.Core.RenderContext.TransModel
+  id: TransModel
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: TransModel
+  nameWithType: RenderContext.TransModel
+  fullName: Fusee.Engine.Core.RenderContext.TransModel
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TransModel
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 539
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe transpose of the Model matrix.\n"
+  remarks: "\nIf the Model matrix is orthogonal (i.e. contains no scale component), its transpose matrix\nis equal to its inverse matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 TransModel { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe 4x4 matrix resulting from the matrix transpose applied to the Model matrix.\n"
+    content.vb: Public ReadOnly Property TransModel As float4x4
+  overload: Fusee.Engine.Core.RenderContext.TransModel*
+  seealso:
+  - linkId: Fusee.Engine.Core.RenderContext.Model
+    commentId: P:Fusee.Engine.Core.RenderContext.Model
+  - linkId: Fusee.Engine.Core.RenderContext.InvModel
+    commentId: P:Fusee.Engine.Core.RenderContext.InvModel
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.TransModelView
+  commentId: P:Fusee.Engine.Core.RenderContext.TransModelView
+  id: TransModelView
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: TransModelView
+  nameWithType: RenderContext.TransModelView
+  fullName: Fusee.Engine.Core.RenderContext.TransModelView
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TransModelView
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 564
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe transpose of the ModelView matrix.\n"
+  remarks: "\nIf the ModelView matrix is orthogonal (i.e. contains no scale component), its transpose matrix\nis equal to its inverse matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 TransModelView { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe 4x4 matrix resulting from the matrix transpose applied to the ModelView matrix.\n"
+    content.vb: Public ReadOnly Property TransModelView As float4x4
+  overload: Fusee.Engine.Core.RenderContext.TransModelView*
+  seealso:
+  - linkId: Fusee.Engine.Core.RenderContext.ModelView
+    commentId: P:Fusee.Engine.Core.RenderContext.ModelView
+  - linkId: Fusee.Engine.Core.RenderContext.InvModelView
+    commentId: P:Fusee.Engine.Core.RenderContext.InvModelView
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.TransProjection
+  commentId: P:Fusee.Engine.Core.RenderContext.TransProjection
+  id: TransProjection
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: TransProjection
+  nameWithType: RenderContext.TransProjection
+  fullName: Fusee.Engine.Core.RenderContext.TransProjection
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TransProjection
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 590
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe transpose of the Projection matrix.\n"
+  remarks: "\nIf the Projection matrix is orthogonal (i.e. contains no scale component), its transpose matrix\nis equal to its inverse matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 TransProjection { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe 4x4 matrix resulting from the matrix transpose applied to the Projection matrix.\n"
+    content.vb: Public ReadOnly Property TransProjection As float4x4
+  overload: Fusee.Engine.Core.RenderContext.TransProjection*
+  seealso:
+  - linkId: Fusee.Engine.Core.RenderContext.Projection
+    commentId: P:Fusee.Engine.Core.RenderContext.Projection
+  - linkId: Fusee.Engine.Core.RenderContext.InvProjection
+    commentId: P:Fusee.Engine.Core.RenderContext.InvProjection
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.TransModelViewProjection
+  commentId: P:Fusee.Engine.Core.RenderContext.TransModelViewProjection
+  id: TransModelViewProjection
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: TransModelViewProjection
+  nameWithType: RenderContext.TransModelViewProjection
+  fullName: Fusee.Engine.Core.RenderContext.TransModelViewProjection
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TransModelViewProjection
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 616
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe transpose of the ModelViewProjection matrix.\n"
+  remarks: "\nIf the ModelViewProjection matrix is orthogonal (i.e. contains no scale component), its transpose matrix\nis equal to its inverse matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 TransModelViewProjection { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe 4x4 matrix resulting from the matrix transpose applied to the ModelViewProjection matrix.\n"
+    content.vb: Public ReadOnly Property TransModelViewProjection As float4x4
+  overload: Fusee.Engine.Core.RenderContext.TransModelViewProjection*
+  seealso:
+  - linkId: Fusee.Engine.Core.RenderContext.ModelViewProjection
+    commentId: P:Fusee.Engine.Core.RenderContext.ModelViewProjection
+  - linkId: Fusee.Engine.Core.RenderContext.InvModelViewProjection
+    commentId: P:Fusee.Engine.Core.RenderContext.InvModelViewProjection
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.InvTransView
+  commentId: P:Fusee.Engine.Core.RenderContext.InvTransView
+  id: InvTransView
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: InvTransView
+  nameWithType: RenderContext.InvTransView
+  fullName: Fusee.Engine.Core.RenderContext.InvTransView
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvTransView
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 642
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe inverse transpose of the View matrix.\n"
+  remarks: "\nIf the View matrix is orthogonal (i.e. contains no scale component), its inverse transpose matrix\nis the same as the original View matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 InvTransView { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe 4x4 matrix resulting from the matrix inversion and transpose applied to the View matrix.\n"
+    content.vb: Public ReadOnly Property InvTransView As float4x4
+  overload: Fusee.Engine.Core.RenderContext.InvTransView*
+  seealso:
+  - linkId: Fusee.Engine.Core.RenderContext.View
+    commentId: P:Fusee.Engine.Core.RenderContext.View
+  - linkId: Fusee.Engine.Core.RenderContext.InvView
+    commentId: P:Fusee.Engine.Core.RenderContext.InvView
+  - linkId: Fusee.Engine.Core.RenderContext.TransView
+    commentId: P:Fusee.Engine.Core.RenderContext.TransView
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.InvTransModel
+  commentId: P:Fusee.Engine.Core.RenderContext.InvTransModel
+  id: InvTransModel
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: InvTransModel
+  nameWithType: RenderContext.InvTransModel
+  fullName: Fusee.Engine.Core.RenderContext.InvTransModel
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvTransModel
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 668
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe inverse transpose of the Model matrix.\n"
+  remarks: "\nIf the Model matrix is orthogonal (i.e. contains no scale component), its inverse transpose matrix\nis the same as the original Model matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 InvTransModel { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe 4x4 matrix resulting from the matrix inversion and transpose applied to the Model matrix.\n"
+    content.vb: Public ReadOnly Property InvTransModel As float4x4
+  overload: Fusee.Engine.Core.RenderContext.InvTransModel*
+  seealso:
+  - linkId: Fusee.Engine.Core.RenderContext.Model
+    commentId: P:Fusee.Engine.Core.RenderContext.Model
+  - linkId: Fusee.Engine.Core.RenderContext.InvModel
+    commentId: P:Fusee.Engine.Core.RenderContext.InvModel
+  - linkId: Fusee.Engine.Core.RenderContext.TransModel
+    commentId: P:Fusee.Engine.Core.RenderContext.TransModel
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.InvTransModelView
+  commentId: P:Fusee.Engine.Core.RenderContext.InvTransModelView
+  id: InvTransModelView
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: InvTransModelView
+  nameWithType: RenderContext.InvTransModelView
+  fullName: Fusee.Engine.Core.RenderContext.InvTransModelView
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvTransModelView
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 694
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe inverse transpose of the ModelView matrix.\n"
+  remarks: "\nIf the ModelView matrix is orthogonal (i.e. contains no scale component), its inverse transpose matrix\nis the same as the original ModelView matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 InvTransModelView { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe 4x4 matrix resulting from the matrix inversion and transpose applied to the ModelView matrix.\n"
+    content.vb: Public ReadOnly Property InvTransModelView As float4x4
+  overload: Fusee.Engine.Core.RenderContext.InvTransModelView*
+  seealso:
+  - linkId: Fusee.Engine.Core.RenderContext.ModelView
+    commentId: P:Fusee.Engine.Core.RenderContext.ModelView
+  - linkId: Fusee.Engine.Core.RenderContext.InvModelView
+    commentId: P:Fusee.Engine.Core.RenderContext.InvModelView
+  - linkId: Fusee.Engine.Core.RenderContext.TransModelView
+    commentId: P:Fusee.Engine.Core.RenderContext.TransModelView
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.InvTransProjection
+  commentId: P:Fusee.Engine.Core.RenderContext.InvTransProjection
+  id: InvTransProjection
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: InvTransProjection
+  nameWithType: RenderContext.InvTransProjection
+  fullName: Fusee.Engine.Core.RenderContext.InvTransProjection
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvTransProjection
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 721
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe inverse transpose of the Projection matrix.\n"
+  remarks: "\nIf the Projection matrix is orthogonal (i.e. contains no scale component), its inverse transpose matrix\nis the same as the original Projection matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 InvTransProjection { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe 4x4 matrix resulting from the matrix inversion and transpose applied to the Projection matrix.\n"
+    content.vb: Public ReadOnly Property InvTransProjection As float4x4
+  overload: Fusee.Engine.Core.RenderContext.InvTransProjection*
+  seealso:
+  - linkId: Fusee.Engine.Core.RenderContext.Projection
+    commentId: P:Fusee.Engine.Core.RenderContext.Projection
+  - linkId: Fusee.Engine.Core.RenderContext.InvProjection
+    commentId: P:Fusee.Engine.Core.RenderContext.InvProjection
+  - linkId: Fusee.Engine.Core.RenderContext.TransProjection
+    commentId: P:Fusee.Engine.Core.RenderContext.TransProjection
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.InvTransModelViewProjection
+  commentId: P:Fusee.Engine.Core.RenderContext.InvTransModelViewProjection
+  id: InvTransModelViewProjection
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: InvTransModelViewProjection
+  nameWithType: RenderContext.InvTransModelViewProjection
+  fullName: Fusee.Engine.Core.RenderContext.InvTransModelViewProjection
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvTransModelViewProjection
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 748
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe inverse transpose of the ModelViewProjection matrix.\n"
+  remarks: "\nIf the ModelViewProjection matrix is orthogonal (i.e. contains no scale component), its inverse transpose matrix\nis the same as the original ModelViewProjection matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 InvTransModelViewProjection { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe 4x4 matrix resulting from the matrix inversion and transpose applied to the ModelViewProjection matrix.\n"
+    content.vb: Public ReadOnly Property InvTransModelViewProjection As float4x4
+  overload: Fusee.Engine.Core.RenderContext.InvTransModelViewProjection*
+  seealso:
+  - linkId: Fusee.Engine.Core.RenderContext.ModelViewProjection
+    commentId: P:Fusee.Engine.Core.RenderContext.ModelViewProjection
+  - linkId: Fusee.Engine.Core.RenderContext.InvModelViewProjection
+    commentId: P:Fusee.Engine.Core.RenderContext.InvModelViewProjection
+  - linkId: Fusee.Engine.Core.RenderContext.TransModelViewProjection
+    commentId: P:Fusee.Engine.Core.RenderContext.TransModelViewProjection
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderContext.Bones
+  commentId: P:Fusee.Engine.Core.RenderContext.Bones
+  id: Bones
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: Bones
+  nameWithType: RenderContext.Bones
+  fullName: Fusee.Engine.Core.RenderContext.Bones
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Bones
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 766
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nArray of bone matrices.\n"
+  example: []
+  syntax:
+    content: public float4x4[] Bones { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4[]
+    content.vb: Public Property Bones As float4x4()
+  overload: Fusee.Engine.Core.RenderContext.Bones*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.#ctor(Fusee.Engine.Common.IRenderContextImp)
+  commentId: M:Fusee.Engine.Core.RenderContext.#ctor(Fusee.Engine.Common.IRenderContextImp)
+  id: '#ctor(Fusee.Engine.Common.IRenderContextImp)'
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: RenderContext(IRenderContextImp)
+  nameWithType: RenderContext.RenderContext(IRenderContextImp)
+  fullName: Fusee.Engine.Core.RenderContext.RenderContext(Fusee.Engine.Common.IRenderContextImp)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 780
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Engine.Core.RenderContext\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public RenderContext(IRenderContextImp rci)
+    parameters:
+    - id: rci
+      type: Fusee.Engine.Common.IRenderContextImp
+      description: The <xref href="Fusee.Engine.Common.IRenderContextImp" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub New(rci As IRenderContextImp)
+  overload: Fusee.Engine.Core.RenderContext.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.Clear(Fusee.Engine.Common.ClearFlags)
+  commentId: M:Fusee.Engine.Core.RenderContext.Clear(Fusee.Engine.Common.ClearFlags)
+  id: Clear(Fusee.Engine.Common.ClearFlags)
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: Clear(ClearFlags)
+  nameWithType: RenderContext.Clear(ClearFlags)
+  fullName: Fusee.Engine.Core.RenderContext.Clear(Fusee.Engine.Common.ClearFlags)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Clear
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 812
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nErases the contents of the specified rendering buffers.\n"
+  remarks: "\nCalling this method erases all contents of the rendering buffers. A typical use case for this method\nis to erase the contents of the color buffer and the depth buffer (z-buffer) before rendering starts\nat the beginning of a rendering loop. Thus, rendering the current frame starts with an empty color and\nz-buffer. <xref href=\"Fusee.Engine.Common.ClearFlags\" data-throw-if-not-resolved=\"false\"></xref> for a list of possible buffers to clear. Make sure to use the bitwise\nor-operator (|) to combine several buffers to clear.\n"
+  example: []
+  syntax:
+    content: public void Clear(ClearFlags flags)
+    parameters:
+    - id: flags
+      type: Fusee.Engine.Common.ClearFlags
+      description: A combination of flags specifying the rendering buffers to clear.
+    content.vb: Public Sub Clear(flags As ClearFlags)
+  overload: Fusee.Engine.Core.RenderContext.Clear*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.Viewport(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Fusee.Engine.Core.RenderContext.Viewport(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: Viewport(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: Viewport(Int32, Int32, Int32, Int32)
+  nameWithType: RenderContext.Viewport(Int32, Int32, Int32, Int32)
+  fullName: Fusee.Engine.Core.RenderContext.Viewport(System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Viewport
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 827
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nSets the rectangular output region within the output buffer(s).\n"
+  remarks: "\nSetting the Viewport limits the rendering output to the specified rectangular region.\n"
+  example: []
+  syntax:
+    content: public void Viewport(int x, int y, int width, int height)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: leftmost pixel of the rectangular output region within the output buffer.
+    - id: y
+      type: System.Int32
+      description: topmost pixel of the rectangular output region within the output buffer.
+    - id: width
+      type: System.Int32
+      description: horizontal size (in pixels) of the output region.
+    - id: height
+      type: System.Int32
+      description: vertical size (in pixels) of the output region.
+    content.vb: Public Sub Viewport(x As Integer, y As Integer, width As Integer, height As Integer)
+  overload: Fusee.Engine.Core.RenderContext.Viewport*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.SetShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
+  commentId: M:Fusee.Engine.Core.RenderContext.SetShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
+  id: SetShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: SetShaderEffect(ShaderEffect)
+  nameWithType: RenderContext.SetShaderEffect(ShaderEffect)
+  fullName: Fusee.Engine.Core.RenderContext.SetShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetShaderEffect
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 938
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nActivates the passed shader effect as the current shader for geometry rendering.\nWill compile a shader by calling <xref href=\"Fusee.Engine.Common.IRenderContextImp.CreateShaderProgram(System.String%2cSystem.String%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref> if it hasn&apos;t been compiled yet.\n"
+  remarks: >-
+    A ShaderEffect must be attached to a context before you can render geometry with it. The main
+
+    task performed in this method is compiling the provided shader source code and uploading the shaders to
+
+    the gpu.
+  example: []
+  syntax:
+    content: public void SetShaderEffect(ShaderEffect ef)
+    parameters:
+    - id: ef
+      type: Fusee.Engine.Core.Scene.ShaderEffect
+      description: The shader effect.
+    content.vb: Public Sub SetShaderEffect(ef As ShaderEffect)
+  overload: Fusee.Engine.Core.RenderContext.SetShaderEffect*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.EnableDepthClamp
+  commentId: M:Fusee.Engine.Core.RenderContext.EnableDepthClamp
+  id: EnableDepthClamp
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: EnableDepthClamp()
+  nameWithType: RenderContext.EnableDepthClamp()
+  fullName: Fusee.Engine.Core.RenderContext.EnableDepthClamp()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: EnableDepthClamp
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 1231
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe clipping behavior against the Z position of a vertex can be turned off by activating depth clamping. \nThis is done with glEnable(GL_DEPTH_CLAMP). This will cause the clip-space Z to remain unclipped by the front and rear viewing volume.\nSee: https://www.khronos.org/opengl/wiki/Vertex_Post-Processing#Depth_clamping\n"
+  example: []
+  syntax:
+    content: public void EnableDepthClamp()
+    content.vb: Public Sub EnableDepthClamp
+  overload: Fusee.Engine.Core.RenderContext.EnableDepthClamp*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.DisableDepthClamp
+  commentId: M:Fusee.Engine.Core.RenderContext.DisableDepthClamp
+  id: DisableDepthClamp
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: DisableDepthClamp()
+  nameWithType: RenderContext.DisableDepthClamp()
+  fullName: Fusee.Engine.Core.RenderContext.DisableDepthClamp()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DisableDepthClamp
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 1239
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nDisables depths clamping. <xref href=\"Fusee.Engine.Core.RenderContext.EnableDepthClamp\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public void DisableDepthClamp()
+    content.vb: Public Sub DisableDepthClamp
+  overload: Fusee.Engine.Core.RenderContext.DisableDepthClamp*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.GetHardwareCapabilities(Fusee.Engine.Common.HardwareCapability)
+  commentId: M:Fusee.Engine.Core.RenderContext.GetHardwareCapabilities(Fusee.Engine.Common.HardwareCapability)
+  id: GetHardwareCapabilities(Fusee.Engine.Common.HardwareCapability)
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: GetHardwareCapabilities(HardwareCapability)
+  nameWithType: RenderContext.GetHardwareCapabilities(HardwareCapability)
+  fullName: Fusee.Engine.Core.RenderContext.GetHardwareCapabilities(Fusee.Engine.Common.HardwareCapability)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetHardwareCapabilities
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 1249
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nReturns the hardware capabilities.\n"
+  example: []
+  syntax:
+    content: public uint GetHardwareCapabilities(HardwareCapability capability)
+    parameters:
+    - id: capability
+      type: Fusee.Engine.Common.HardwareCapability
+      description: ''
+    return:
+      type: System.UInt32
+      description: ''
+    content.vb: Public Function GetHardwareCapabilities(capability As HardwareCapability) As UInteger
+  overload: Fusee.Engine.Core.RenderContext.GetHardwareCapabilities*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.GetHardwareDescription
+  commentId: M:Fusee.Engine.Core.RenderContext.GetHardwareDescription
+  id: GetHardwareDescription
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: GetHardwareDescription()
+  nameWithType: RenderContext.GetHardwareDescription()
+  fullName: Fusee.Engine.Core.RenderContext.GetHardwareDescription()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetHardwareDescription
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 1258
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nReturns a human readable description of the underlying graphics hardware\n"
+  example: []
+  syntax:
+    content: public string GetHardwareDescription()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Function GetHardwareDescription As String
+  overload: Fusee.Engine.Core.RenderContext.GetHardwareDescription*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.UnlockRenderState(Fusee.Engine.Common.RenderState,System.Boolean)
+  commentId: M:Fusee.Engine.Core.RenderContext.UnlockRenderState(Fusee.Engine.Common.RenderState,System.Boolean)
+  id: UnlockRenderState(Fusee.Engine.Common.RenderState,System.Boolean)
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: UnlockRenderState(RenderState, Boolean)
+  nameWithType: RenderContext.UnlockRenderState(RenderState, Boolean)
+  fullName: Fusee.Engine.Core.RenderContext.UnlockRenderState(Fusee.Engine.Common.RenderState, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: UnlockRenderState
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 1269
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nUnlocks the given <xref href=\"Fusee.Engine.Common.RenderState\" data-throw-if-not-resolved=\"false\"></xref>. And sets it to the value it had before it was locked.\nAfter this call the state can be set to a new value again.\n"
+  example: []
+  syntax:
+    content: public void UnlockRenderState(RenderState state, bool resetValue = true)
+    parameters:
+    - id: state
+      type: Fusee.Engine.Common.RenderState
+      description: The state to unlock.
+    - id: resetValue
+      type: System.Boolean
+      description: True by default. Defines if the state gets reset to its pre-locked value.
+    content.vb: Public Sub UnlockRenderState(state As RenderState, resetValue As Boolean = True)
+  overload: Fusee.Engine.Core.RenderContext.UnlockRenderState*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.UnlockAllRenderStates(System.Boolean)
+  commentId: M:Fusee.Engine.Core.RenderContext.UnlockAllRenderStates(System.Boolean)
+  id: UnlockAllRenderStates(System.Boolean)
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: UnlockAllRenderStates(Boolean)
+  nameWithType: RenderContext.UnlockAllRenderStates(Boolean)
+  fullName: Fusee.Engine.Core.RenderContext.UnlockAllRenderStates(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: UnlockAllRenderStates
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 1285
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nUnlocks all previously locked <xref href=\"Fusee.Engine.Common.RenderState\" data-throw-if-not-resolved=\"false\"></xref>s.\n<param name=\"resetValue\">True by default. Defines if the states get reset to their pre-locked value.</param>\n"
+  example: []
+  syntax:
+    content: public void UnlockAllRenderStates(bool resetValue = true)
+    parameters:
+    - id: resetValue
+      type: System.Boolean
+    content.vb: Public Sub UnlockAllRenderStates(resetValue As Boolean = True)
+  overload: Fusee.Engine.Core.RenderContext.UnlockAllRenderStates*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.SetRenderState(Fusee.Engine.Common.RenderState,System.UInt32,System.Boolean)
+  commentId: M:Fusee.Engine.Core.RenderContext.SetRenderState(Fusee.Engine.Common.RenderState,System.UInt32,System.Boolean)
+  id: SetRenderState(Fusee.Engine.Common.RenderState,System.UInt32,System.Boolean)
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: SetRenderState(RenderState, UInt32, Boolean)
+  nameWithType: RenderContext.SetRenderState(RenderState, UInt32, Boolean)
+  fullName: Fusee.Engine.Core.RenderContext.SetRenderState(Fusee.Engine.Common.RenderState, System.UInt32, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetRenderState
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 1306
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nApply a single render state to the render context. All subsequent rendering will be\nperformed using the currently set state unless it is changed to a different value.\n"
+  remarks: "This method is close to the underlying implementation layer and might be awkward to use\ndue to the ambiguity of the value parameter type. If you want type-safe state values and also \nwant to set a couple of states at the same time, try the more \nelaborate <xref href=\"Fusee.Engine.Core.RenderContext.SetRenderStateSet(Fusee.Engine.Core.RenderStateSet%2cSystem.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> method."
+  example: []
+  syntax:
+    content: public void SetRenderState(RenderState renderState, uint value, bool doLockState = false)
+    parameters:
+    - id: renderState
+      type: Fusee.Engine.Common.RenderState
+      description: One of the <xref href="Fusee.Engine.Common.RenderState" data-throw-if-not-resolved="false"></xref> enumeration values.
+    - id: value
+      type: System.UInt32
+      description: "An unsigned integer value representing the value the state should be set to.\n Depending on the renderState, this value can be interpreted as an integer value, a float value, a\nboolean value, or even a color.  "
+    - id: doLockState
+      type: System.Boolean
+      description: Forces this state to have the given value and locks the state. Unlock it by calling <xref href="Fusee.Engine.Core.RenderContext.UnlockRenderState(Fusee.Engine.Common.RenderState%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub SetRenderState(renderState As RenderState, value As UInteger, doLockState As Boolean = False)
+  overload: Fusee.Engine.Core.RenderContext.SetRenderState*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.SetRenderStateSet(Fusee.Engine.Core.RenderStateSet,System.Boolean)
+  commentId: M:Fusee.Engine.Core.RenderContext.SetRenderStateSet(Fusee.Engine.Core.RenderStateSet,System.Boolean)
+  id: SetRenderStateSet(Fusee.Engine.Core.RenderStateSet,System.Boolean)
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: SetRenderStateSet(RenderStateSet, Boolean)
+  nameWithType: RenderContext.SetRenderStateSet(RenderStateSet, Boolean)
+  fullName: Fusee.Engine.Core.RenderContext.SetRenderStateSet(Fusee.Engine.Core.RenderStateSet, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetRenderStateSet
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 1350
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nApply a number of render states to this render context. All subsequent rendering will be\nperformed using the currently set state set unless one of its values it is changed. Use this \nmethod to change more than one render state at once. \n"
+  example: []
+  syntax:
+    content: public void SetRenderStateSet(RenderStateSet renderStateSet, bool doLockState = false)
+    parameters:
+    - id: renderStateSet
+      type: Fusee.Engine.Core.RenderStateSet
+      description: A set of render states with their respective values to be set.
+    - id: doLockState
+      type: System.Boolean
+      description: Forces all states that are set in this <xref href="Fusee.Engine.Core.RenderStateSet" data-throw-if-not-resolved="false"></xref> to have the given value and locks them. Unlock them by calling <xref href="Fusee.Engine.Core.RenderContext.UnlockRenderState(Fusee.Engine.Common.RenderState%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub SetRenderStateSet(renderStateSet As RenderStateSet, doLockState As Boolean = False)
+  overload: Fusee.Engine.Core.RenderContext.SetRenderStateSet*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.GetRenderState(Fusee.Engine.Common.RenderState)
+  commentId: M:Fusee.Engine.Core.RenderContext.GetRenderState(Fusee.Engine.Common.RenderState)
+  id: GetRenderState(Fusee.Engine.Common.RenderState)
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: GetRenderState(RenderState)
+  nameWithType: RenderContext.GetRenderState(RenderState)
+  fullName: Fusee.Engine.Core.RenderContext.GetRenderState(Fusee.Engine.Common.RenderState)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetRenderState
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 1363
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nReturns a current render state.\n"
+  example: []
+  syntax:
+    content: public uint GetRenderState(RenderState renderState)
+    parameters:
+    - id: renderState
+      type: Fusee.Engine.Common.RenderState
+      description: ''
+    return:
+      type: System.UInt32
+      description: ''
+    content.vb: Public Function GetRenderState(renderState As RenderState) As UInteger
+  overload: Fusee.Engine.Core.RenderContext.GetRenderState*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Core.RenderTarget)
+  commentId: M:Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Core.RenderTarget)
+  id: SetRenderTarget(Fusee.Engine.Core.RenderTarget)
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: SetRenderTarget(RenderTarget)
+  nameWithType: RenderContext.SetRenderTarget(RenderTarget)
+  fullName: Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Core.RenderTarget)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetRenderTarget
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 1377
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nSets the RenderTarget, if texture is null render target is the main screen, otherwise the picture will be rendered onto given texture\n"
+  example: []
+  syntax:
+    content: public void SetRenderTarget(RenderTarget renderTarget = null)
+    parameters:
+    - id: renderTarget
+      type: Fusee.Engine.Core.RenderTarget
+      description: The render target.
+    content.vb: Public Sub SetRenderTarget(renderTarget As RenderTarget = Nothing)
+  overload: Fusee.Engine.Core.RenderContext.SetRenderTarget*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableTexture)
+  commentId: M:Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableTexture)
+  id: SetRenderTarget(Fusee.Engine.Common.IWritableTexture)
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: SetRenderTarget(IWritableTexture)
+  nameWithType: RenderContext.SetRenderTarget(IWritableTexture)
+  fullName: Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableTexture)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetRenderTarget
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 1399
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRenders into the given texture.\n"
+  example: []
+  syntax:
+    content: public void SetRenderTarget(IWritableTexture tex)
+    parameters:
+    - id: tex
+      type: Fusee.Engine.Common.IWritableTexture
+      description: The render texture.
+    content.vb: Public Sub SetRenderTarget(tex As IWritableTexture)
+  overload: Fusee.Engine.Core.RenderContext.SetRenderTarget*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableCubeMap)
+  commentId: M:Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableCubeMap)
+  id: SetRenderTarget(Fusee.Engine.Common.IWritableCubeMap)
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: SetRenderTarget(IWritableCubeMap)
+  nameWithType: RenderContext.SetRenderTarget(IWritableCubeMap)
+  fullName: Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableCubeMap)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetRenderTarget
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 1409
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRenders into the given texture.\n"
+  example: []
+  syntax:
+    content: public void SetRenderTarget(IWritableCubeMap tex)
+    parameters:
+    - id: tex
+      type: Fusee.Engine.Common.IWritableCubeMap
+      description: The render texture.
+    content.vb: Public Sub SetRenderTarget(tex As IWritableCubeMap)
+  overload: Fusee.Engine.Core.RenderContext.SetRenderTarget*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.SetLineWidth(System.Single)
+  commentId: M:Fusee.Engine.Core.RenderContext.SetLineWidth(System.Single)
+  id: SetLineWidth(System.Single)
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: SetLineWidth(Single)
+  nameWithType: RenderContext.SetLineWidth(Single)
+  fullName: Fusee.Engine.Core.RenderContext.SetLineWidth(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderContext.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetLineWidth
+    path: src/Fusee/src/Engine/Core/RenderContext.cs
+    startLine: 1419
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nSpecifies the rasterized width of both aliased and antialiased lines.\n"
+  example: []
+  syntax:
+    content: public void SetLineWidth(float width)
+    parameters:
+    - id: width
+      type: System.Single
+      description: The width in pixel.
+    content.vb: Public Sub SetLineWidth(width As Single)
+  overload: Fusee.Engine.Core.RenderContext.SetLineWidth*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.RenderContext.Clear(Fusee.Engine.Common.ClearFlags)
+  commentId: M:Fusee.Engine.Core.RenderContext.Clear(Fusee.Engine.Common.ClearFlags)
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.ClearColor*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.ClearColor
+  name: ClearColor
+  nameWithType: RenderContext.ClearColor
+  fullName: Fusee.Engine.Core.RenderContext.ClearColor
+- uid: Fusee.Math.Core.float4
+  commentId: T:Fusee.Math.Core.float4
+  parent: Fusee.Math.Core
+  name: float4
+  nameWithType: float4
+  fullName: Fusee.Math.Core.float4
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Core.RenderContext.ClearDepth*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.ClearDepth
+  name: ClearDepth
+  nameWithType: RenderContext.ClearDepth
+  fullName: Fusee.Engine.Core.RenderContext.ClearDepth
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Engine.Core.RenderContext.DefaultState*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.DefaultState
+  name: DefaultState
+  nameWithType: RenderContext.DefaultState
+  fullName: Fusee.Engine.Core.RenderContext.DefaultState
+- uid: Fusee.Engine.Core.RenderContextDefaultState
+  commentId: T:Fusee.Engine.Core.RenderContextDefaultState
+  parent: Fusee.Engine.Core
+  name: RenderContextDefaultState
+  nameWithType: RenderContextDefaultState
+  fullName: Fusee.Engine.Core.RenderContextDefaultState
+- uid: Fusee.Engine.Core.RenderContext.RenderFrustum*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.RenderFrustum
+  name: RenderFrustum
+  nameWithType: RenderContext.RenderFrustum
+  fullName: Fusee.Engine.Core.RenderContext.RenderFrustum
+- uid: Fusee.Math.Core.Frustum
+  commentId: T:Fusee.Math.Core.Frustum
+  parent: Fusee.Math.Core
+  name: Frustum
+  nameWithType: Frustum
+  fullName: Fusee.Math.Core.Frustum
+- uid: Fusee.Engine.Core.RenderContext.CurrentRenderState*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.CurrentRenderState
+  name: CurrentRenderState
+  nameWithType: RenderContext.CurrentRenderState
+  fullName: Fusee.Engine.Core.RenderContext.CurrentRenderState
+- uid: Fusee.Engine.Core.RenderStateSet
+  commentId: T:Fusee.Engine.Core.RenderStateSet
+  parent: Fusee.Engine.Core
+  name: RenderStateSet
+  nameWithType: RenderStateSet
+  fullName: Fusee.Engine.Core.RenderStateSet
+- uid: Fusee.Engine.Core.RenderContext.CurrentRenderState
+  commentId: P:Fusee.Engine.Core.RenderContext.CurrentRenderState
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.LockedStates*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.LockedStates
+  name: LockedStates
+  nameWithType: RenderContext.LockedStates
+  fullName: Fusee.Engine.Core.RenderContext.LockedStates
+- uid: System.Collections.Generic.Dictionary{Fusee.Engine.Common.RenderState,System.Collections.Generic.KeyValuePair{System.Boolean,System.UInt32}}
+  commentId: T:System.Collections.Generic.Dictionary{Fusee.Engine.Common.RenderState,System.Collections.Generic.KeyValuePair{System.Boolean,System.UInt32}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<RenderState, KeyValuePair<Boolean, UInt32>>
+  nameWithType: Dictionary<RenderState, KeyValuePair<Boolean, UInt32>>
+  fullName: System.Collections.Generic.Dictionary<Fusee.Engine.Common.RenderState, System.Collections.Generic.KeyValuePair<System.Boolean, System.UInt32>>
+  nameWithType.vb: Dictionary(Of RenderState, KeyValuePair(Of Boolean, UInt32))
+  fullName.vb: System.Collections.Generic.Dictionary(Of Fusee.Engine.Common.RenderState, System.Collections.Generic.KeyValuePair(Of System.Boolean, System.UInt32))
+  name.vb: Dictionary(Of RenderState, KeyValuePair(Of Boolean, UInt32))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Common.RenderState
+    name: RenderState
+    nameWithType: RenderState
+    fullName: Fusee.Engine.Common.RenderState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.UInt32
+    name: UInt32
+    nameWithType: UInt32
+    fullName: System.UInt32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Common.RenderState
+    name: RenderState
+    nameWithType: RenderState
+    fullName: Fusee.Engine.Common.RenderState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.UInt32
+    name: UInt32
+    nameWithType: UInt32
+    fullName: System.UInt32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Fusee.Engine.Core.RenderContext.ViewportWidth*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.ViewportWidth
+  name: ViewportWidth
+  nameWithType: RenderContext.ViewportWidth
+  fullName: Fusee.Engine.Core.RenderContext.ViewportWidth
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Engine.Core.RenderContext.ViewportHeight*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.ViewportHeight
+  name: ViewportHeight
+  nameWithType: RenderContext.ViewportHeight
+  fullName: Fusee.Engine.Core.RenderContext.ViewportHeight
+- uid: Fusee.Engine.Core.RenderContext.ViewportXStart*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.ViewportXStart
+  name: ViewportXStart
+  nameWithType: RenderContext.ViewportXStart
+  fullName: Fusee.Engine.Core.RenderContext.ViewportXStart
+- uid: Fusee.Engine.Core.RenderContext.ViewportYStart*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.ViewportYStart
+  name: ViewportYStart
+  nameWithType: RenderContext.ViewportYStart
+  fullName: Fusee.Engine.Core.RenderContext.ViewportYStart
+- uid: Fusee.Math.Core.float4x4.LookAt(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Math.Core.float4x4.LookAt(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.View*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.View
+  name: View
+  nameWithType: RenderContext.View
+  fullName: Fusee.Engine.Core.RenderContext.View
+- uid: Fusee.Math.Core.float4x4
+  commentId: T:Fusee.Math.Core.float4x4
+  parent: Fusee.Math.Core
+  name: float4x4
+  nameWithType: float4x4
+  fullName: Fusee.Math.Core.float4x4
+- uid: Fusee.Engine.Core.Scene.Mesh
+  commentId: T:Fusee.Engine.Core.Scene.Mesh
+  parent: Fusee.Engine.Core.Scene
+  name: Mesh
+  nameWithType: Mesh
+  fullName: Fusee.Engine.Core.Scene.Mesh
+- uid: Fusee.Engine.Core.RenderContext.Model*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.Model
+  name: Model
+  nameWithType: RenderContext.Model
+  fullName: Fusee.Engine.Core.RenderContext.Model
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: Fusee.Engine.Core.RenderContext.ModelView
+  commentId: P:Fusee.Engine.Core.RenderContext.ModelView
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.Projection*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.Projection
+  name: Projection
+  nameWithType: RenderContext.Projection
+  fullName: Fusee.Engine.Core.RenderContext.Projection
+- uid: Fusee.Engine.Core.RenderContext.ModelView*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.ModelView
+  name: ModelView
+  nameWithType: RenderContext.ModelView
+  fullName: Fusee.Engine.Core.RenderContext.ModelView
+- uid: Fusee.Engine.Core.RenderContext.Projection
+  commentId: P:Fusee.Engine.Core.RenderContext.Projection
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.ModelViewProjection*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.ModelViewProjection
+  name: ModelViewProjection
+  nameWithType: RenderContext.ModelViewProjection
+  fullName: Fusee.Engine.Core.RenderContext.ModelViewProjection
+- uid: Fusee.Engine.Core.RenderContext.View
+  commentId: P:Fusee.Engine.Core.RenderContext.View
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.TransView
+  commentId: P:Fusee.Engine.Core.RenderContext.TransView
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.InvView*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.InvView
+  name: InvView
+  nameWithType: RenderContext.InvView
+  fullName: Fusee.Engine.Core.RenderContext.InvView
+- uid: Fusee.Engine.Core.RenderContext.Model
+  commentId: P:Fusee.Engine.Core.RenderContext.Model
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.TransModel
+  commentId: P:Fusee.Engine.Core.RenderContext.TransModel
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.InvModel*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.InvModel
+  name: InvModel
+  nameWithType: RenderContext.InvModel
+  fullName: Fusee.Engine.Core.RenderContext.InvModel
+- uid: Fusee.Engine.Core.RenderContext.TransModelView
+  commentId: P:Fusee.Engine.Core.RenderContext.TransModelView
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.InvModelView*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.InvModelView
+  name: InvModelView
+  nameWithType: RenderContext.InvModelView
+  fullName: Fusee.Engine.Core.RenderContext.InvModelView
+- uid: Fusee.Engine.Core.RenderContext.TransProjection
+  commentId: P:Fusee.Engine.Core.RenderContext.TransProjection
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.InvProjection*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.InvProjection
+  name: InvProjection
+  nameWithType: RenderContext.InvProjection
+  fullName: Fusee.Engine.Core.RenderContext.InvProjection
+- uid: Fusee.Engine.Core.RenderContext.ModelViewProjection
+  commentId: P:Fusee.Engine.Core.RenderContext.ModelViewProjection
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.TransModelViewProjection
+  commentId: P:Fusee.Engine.Core.RenderContext.TransModelViewProjection
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.InvModelViewProjection*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.InvModelViewProjection
+  name: InvModelViewProjection
+  nameWithType: RenderContext.InvModelViewProjection
+  fullName: Fusee.Engine.Core.RenderContext.InvModelViewProjection
+- uid: Fusee.Engine.Core.RenderContext.InvView
+  commentId: P:Fusee.Engine.Core.RenderContext.InvView
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.TransView*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.TransView
+  name: TransView
+  nameWithType: RenderContext.TransView
+  fullName: Fusee.Engine.Core.RenderContext.TransView
+- uid: Fusee.Engine.Core.RenderContext.InvModel
+  commentId: P:Fusee.Engine.Core.RenderContext.InvModel
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.TransModel*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.TransModel
+  name: TransModel
+  nameWithType: RenderContext.TransModel
+  fullName: Fusee.Engine.Core.RenderContext.TransModel
+- uid: Fusee.Engine.Core.RenderContext.InvModelView
+  commentId: P:Fusee.Engine.Core.RenderContext.InvModelView
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.TransModelView*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.TransModelView
+  name: TransModelView
+  nameWithType: RenderContext.TransModelView
+  fullName: Fusee.Engine.Core.RenderContext.TransModelView
+- uid: Fusee.Engine.Core.RenderContext.InvProjection
+  commentId: P:Fusee.Engine.Core.RenderContext.InvProjection
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.TransProjection*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.TransProjection
+  name: TransProjection
+  nameWithType: RenderContext.TransProjection
+  fullName: Fusee.Engine.Core.RenderContext.TransProjection
+- uid: Fusee.Engine.Core.RenderContext.InvModelViewProjection
+  commentId: P:Fusee.Engine.Core.RenderContext.InvModelViewProjection
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.TransModelViewProjection*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.TransModelViewProjection
+  name: TransModelViewProjection
+  nameWithType: RenderContext.TransModelViewProjection
+  fullName: Fusee.Engine.Core.RenderContext.TransModelViewProjection
+- uid: Fusee.Engine.Core.RenderContext.InvTransView*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.InvTransView
+  name: InvTransView
+  nameWithType: RenderContext.InvTransView
+  fullName: Fusee.Engine.Core.RenderContext.InvTransView
+- uid: Fusee.Engine.Core.RenderContext.InvTransModel*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.InvTransModel
+  name: InvTransModel
+  nameWithType: RenderContext.InvTransModel
+  fullName: Fusee.Engine.Core.RenderContext.InvTransModel
+- uid: Fusee.Engine.Core.RenderContext.InvTransModelView*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.InvTransModelView
+  name: InvTransModelView
+  nameWithType: RenderContext.InvTransModelView
+  fullName: Fusee.Engine.Core.RenderContext.InvTransModelView
+- uid: Fusee.Engine.Core.RenderContext.InvTransProjection*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.InvTransProjection
+  name: InvTransProjection
+  nameWithType: RenderContext.InvTransProjection
+  fullName: Fusee.Engine.Core.RenderContext.InvTransProjection
+- uid: Fusee.Engine.Core.RenderContext.InvTransModelViewProjection*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.InvTransModelViewProjection
+  name: InvTransModelViewProjection
+  nameWithType: RenderContext.InvTransModelViewProjection
+  fullName: Fusee.Engine.Core.RenderContext.InvTransModelViewProjection
+- uid: Fusee.Engine.Core.RenderContext.Bones*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.Bones
+  name: Bones
+  nameWithType: RenderContext.Bones
+  fullName: Fusee.Engine.Core.RenderContext.Bones
+- uid: Fusee.Math.Core.float4x4[]
+  isExternal: true
+  name: float4x4[]
+  nameWithType: float4x4[]
+  fullName: Fusee.Math.Core.float4x4[]
+  nameWithType.vb: float4x4()
+  fullName.vb: Fusee.Math.Core.float4x4()
+  name.vb: float4x4()
+  spec.csharp:
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Fusee.Engine.Core.RenderContext
+  commentId: T:Fusee.Engine.Core.RenderContext
+  parent: Fusee.Engine.Core
+  name: RenderContext
+  nameWithType: RenderContext
+  fullName: Fusee.Engine.Core.RenderContext
+- uid: Fusee.Engine.Common.IRenderContextImp
+  commentId: T:Fusee.Engine.Common.IRenderContextImp
+  parent: Fusee.Engine.Common
+  name: IRenderContextImp
+  nameWithType: IRenderContextImp
+  fullName: Fusee.Engine.Common.IRenderContextImp
+- uid: Fusee.Engine.Core.RenderContext.#ctor*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.#ctor
+  name: RenderContext
+  nameWithType: RenderContext.RenderContext
+  fullName: Fusee.Engine.Core.RenderContext.RenderContext
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Common.ClearFlags
+  commentId: T:Fusee.Engine.Common.ClearFlags
+  parent: Fusee.Engine.Common
+  name: ClearFlags
+  nameWithType: ClearFlags
+  fullName: Fusee.Engine.Common.ClearFlags
+- uid: Fusee.Engine.Core.RenderContext.Clear*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.Clear
+  name: Clear
+  nameWithType: RenderContext.Clear
+  fullName: Fusee.Engine.Core.RenderContext.Clear
+- uid: Fusee.Engine.Core.RenderContext.Viewport*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.Viewport
+  name: Viewport
+  nameWithType: RenderContext.Viewport
+  fullName: Fusee.Engine.Core.RenderContext.Viewport
+- uid: Fusee.Engine.Common.IRenderContextImp.CreateShaderProgram(System.String,System.String,System.String)
+  commentId: M:Fusee.Engine.Common.IRenderContextImp.CreateShaderProgram(System.String,System.String,System.String)
+  parent: Fusee.Engine.Common.IRenderContextImp
+  isExternal: true
+  name: CreateShaderProgram(String, String, String)
+  nameWithType: IRenderContextImp.CreateShaderProgram(String, String, String)
+  fullName: Fusee.Engine.Common.IRenderContextImp.CreateShaderProgram(System.String, System.String, System.String)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IRenderContextImp.CreateShaderProgram(System.String,System.String,System.String)
+    name: CreateShaderProgram
+    nameWithType: IRenderContextImp.CreateShaderProgram
+    fullName: Fusee.Engine.Common.IRenderContextImp.CreateShaderProgram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IRenderContextImp.CreateShaderProgram(System.String,System.String,System.String)
+    name: CreateShaderProgram
+    nameWithType: IRenderContextImp.CreateShaderProgram
+    fullName: Fusee.Engine.Common.IRenderContextImp.CreateShaderProgram
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.RenderContext.SetShaderEffect*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.SetShaderEffect
+  name: SetShaderEffect
+  nameWithType: RenderContext.SetShaderEffect
+  fullName: Fusee.Engine.Core.RenderContext.SetShaderEffect
+- uid: Fusee.Engine.Core.Scene.ShaderEffect
+  commentId: T:Fusee.Engine.Core.Scene.ShaderEffect
+  parent: Fusee.Engine.Core.Scene
+  name: ShaderEffect
+  nameWithType: ShaderEffect
+  fullName: Fusee.Engine.Core.Scene.ShaderEffect
+- uid: Fusee.Engine.Core.RenderContext.EnableDepthClamp*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.EnableDepthClamp
+  name: EnableDepthClamp
+  nameWithType: RenderContext.EnableDepthClamp
+  fullName: Fusee.Engine.Core.RenderContext.EnableDepthClamp
+- uid: Fusee.Engine.Core.RenderContext.EnableDepthClamp
+  commentId: M:Fusee.Engine.Core.RenderContext.EnableDepthClamp
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.DisableDepthClamp*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.DisableDepthClamp
+  name: DisableDepthClamp
+  nameWithType: RenderContext.DisableDepthClamp
+  fullName: Fusee.Engine.Core.RenderContext.DisableDepthClamp
+- uid: Fusee.Engine.Core.RenderContext.GetHardwareCapabilities*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.GetHardwareCapabilities
+  name: GetHardwareCapabilities
+  nameWithType: RenderContext.GetHardwareCapabilities
+  fullName: Fusee.Engine.Core.RenderContext.GetHardwareCapabilities
+- uid: Fusee.Engine.Common.HardwareCapability
+  commentId: T:Fusee.Engine.Common.HardwareCapability
+  parent: Fusee.Engine.Common
+  name: HardwareCapability
+  nameWithType: HardwareCapability
+  fullName: Fusee.Engine.Common.HardwareCapability
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: Fusee.Engine.Core.RenderContext.GetHardwareDescription*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.GetHardwareDescription
+  name: GetHardwareDescription
+  nameWithType: RenderContext.GetHardwareDescription
+  fullName: Fusee.Engine.Core.RenderContext.GetHardwareDescription
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Fusee.Engine.Common.RenderState
+  commentId: T:Fusee.Engine.Common.RenderState
+  parent: Fusee.Engine.Common
+  name: RenderState
+  nameWithType: RenderState
+  fullName: Fusee.Engine.Common.RenderState
+- uid: Fusee.Engine.Core.RenderContext.UnlockRenderState*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.UnlockRenderState
+  name: UnlockRenderState
+  nameWithType: RenderContext.UnlockRenderState
+  fullName: Fusee.Engine.Core.RenderContext.UnlockRenderState
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Engine.Core.RenderContext.UnlockAllRenderStates*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.UnlockAllRenderStates
+  name: UnlockAllRenderStates
+  nameWithType: RenderContext.UnlockAllRenderStates
+  fullName: Fusee.Engine.Core.RenderContext.UnlockAllRenderStates
+- uid: Fusee.Engine.Core.RenderContext.UnlockRenderState(Fusee.Engine.Common.RenderState,System.Boolean)
+  commentId: M:Fusee.Engine.Core.RenderContext.UnlockRenderState(Fusee.Engine.Common.RenderState,System.Boolean)
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.SetRenderStateSet(Fusee.Engine.Core.RenderStateSet,System.Boolean)
+  commentId: M:Fusee.Engine.Core.RenderContext.SetRenderStateSet(Fusee.Engine.Core.RenderStateSet,System.Boolean)
+  isExternal: true
+- uid: Fusee.Engine.Core.RenderContext.SetRenderState*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.SetRenderState
+  name: SetRenderState
+  nameWithType: RenderContext.SetRenderState
+  fullName: Fusee.Engine.Core.RenderContext.SetRenderState
+- uid: Fusee.Engine.Core.RenderContext.SetRenderStateSet*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.SetRenderStateSet
+  name: SetRenderStateSet
+  nameWithType: RenderContext.SetRenderStateSet
+  fullName: Fusee.Engine.Core.RenderContext.SetRenderStateSet
+- uid: Fusee.Engine.Core.RenderContext.GetRenderState*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.GetRenderState
+  name: GetRenderState
+  nameWithType: RenderContext.GetRenderState
+  fullName: Fusee.Engine.Core.RenderContext.GetRenderState
+- uid: Fusee.Engine.Core.RenderContext.SetRenderTarget*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.SetRenderTarget
+  name: SetRenderTarget
+  nameWithType: RenderContext.SetRenderTarget
+  fullName: Fusee.Engine.Core.RenderContext.SetRenderTarget
+- uid: Fusee.Engine.Core.RenderTarget
+  commentId: T:Fusee.Engine.Core.RenderTarget
+  parent: Fusee.Engine.Core
+  name: RenderTarget
+  nameWithType: RenderTarget
+  fullName: Fusee.Engine.Core.RenderTarget
+- uid: Fusee.Engine.Common.IWritableTexture
+  commentId: T:Fusee.Engine.Common.IWritableTexture
+  parent: Fusee.Engine.Common
+  name: IWritableTexture
+  nameWithType: IWritableTexture
+  fullName: Fusee.Engine.Common.IWritableTexture
+- uid: Fusee.Engine.Common.IWritableCubeMap
+  commentId: T:Fusee.Engine.Common.IWritableCubeMap
+  parent: Fusee.Engine.Common
+  name: IWritableCubeMap
+  nameWithType: IWritableCubeMap
+  fullName: Fusee.Engine.Common.IWritableCubeMap
+- uid: Fusee.Engine.Core.RenderContext.SetLineWidth*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.SetLineWidth
+  name: SetLineWidth
+  nameWithType: RenderContext.SetLineWidth
+  fullName: Fusee.Engine.Core.RenderContext.SetLineWidth

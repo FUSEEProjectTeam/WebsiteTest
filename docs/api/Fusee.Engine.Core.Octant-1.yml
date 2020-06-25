@@ -1,0 +1,903 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Octant`1
+  commentId: T:Fusee.Engine.Core.Octant`1
+  id: Octant`1
+  parent: Fusee.Engine.Core
+  children:
+  - Fusee.Engine.Core.Octant`1.#ctor
+  - Fusee.Engine.Core.Octant`1.#ctor(Fusee.Math.Core.double3,System.Double,Fusee.Engine.Core.Octant{`0}[])
+  - Fusee.Engine.Core.Octant`1.#ctor(Fusee.Math.Core.double3,System.Double,System.Collections.Generic.List{`0},Fusee.Engine.Core.Octant{`0}[])
+  - Fusee.Engine.Core.Octant`1.Children
+  - Fusee.Engine.Core.Octant`1.IsLeaf
+  - Fusee.Engine.Core.Octant`1.Level
+  - Fusee.Engine.Core.Octant`1.Payload
+  langs:
+  - csharp
+  - vb
+  name: Octant<T>
+  nameWithType: Octant<T>
+  fullName: Fusee.Engine.Core.Octant<T>
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Octant
+    path: src/Fusee/src/Engine/Core/Octant.cs
+    startLine: 11
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nNode for use in an octree.\n"
+  example: []
+  syntax:
+    content: 'public class Octant<T> : Bucket<T>'
+    typeParameters:
+    - id: T
+      description: Defines the type of the payload.
+    content.vb: >-
+      Public Class Octant(Of T)
+
+          Inherits Bucket(Of T)
+  inheritance:
+  - System.Object
+  - Fusee.Engine.Core.Bucket{{T}}
+  inheritedMembers:
+  - Fusee.Engine.Core.Bucket{{T}}.Center
+  - Fusee.Engine.Core.Bucket{{T}}.Size
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: Octant(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Fusee.Engine.Core.Octant(Of T)
+  name.vb: Octant(Of T)
+- uid: Fusee.Engine.Core.Octant`1.Children
+  commentId: F:Fusee.Engine.Core.Octant`1.Children
+  id: Children
+  parent: Fusee.Engine.Core.Octant`1
+  langs:
+  - csharp
+  - vb
+  name: Children
+  nameWithType: Octant<T>.Children
+  fullName: Fusee.Engine.Core.Octant<T>.Children
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Children
+    path: src/Fusee/src/Engine/Core/Octant.cs
+    startLine: 16
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nChildren of this Octant. Must contain eight or null (leaf node) children.\n"
+  example: []
+  syntax:
+    content: public Octant<T>[] Children
+    return:
+      type: Fusee.Engine.Core.Octant`1[]
+    content.vb: Public Children As Octant(Of T)()
+  nameWithType.vb: Octant(Of T).Children
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Engine.Core.Octant(Of T).Children
+- uid: Fusee.Engine.Core.Octant`1.Payload
+  commentId: F:Fusee.Engine.Core.Octant`1.Payload
+  id: Payload
+  parent: Fusee.Engine.Core.Octant`1
+  langs:
+  - csharp
+  - vb
+  name: Payload
+  nameWithType: Octant<T>.Payload
+  fullName: Fusee.Engine.Core.Octant<T>.Payload
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Payload
+    path: src/Fusee/src/Engine/Core/Octant.cs
+    startLine: 21
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe payload of this octant.\n"
+  example: []
+  syntax:
+    content: public List<T> Payload
+    return:
+      type: System.Collections.Generic.List{{T}}
+    content.vb: Public Payload As List(Of T)
+  nameWithType.vb: Octant(Of T).Payload
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Engine.Core.Octant(Of T).Payload
+- uid: Fusee.Engine.Core.Octant`1.Level
+  commentId: F:Fusee.Engine.Core.Octant`1.Level
+  id: Level
+  parent: Fusee.Engine.Core.Octant`1
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: Octant<T>.Level
+  fullName: Fusee.Engine.Core.Octant<T>.Level
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Level
+    path: src/Fusee/src/Engine/Core/Octant.cs
+    startLine: 26
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe level of the octant in the octree.\n"
+  example: []
+  syntax:
+    content: public int Level
+    return:
+      type: System.Int32
+    content.vb: Public Level As Integer
+  nameWithType.vb: Octant(Of T).Level
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Engine.Core.Octant(Of T).Level
+- uid: Fusee.Engine.Core.Octant`1.IsLeaf
+  commentId: F:Fusee.Engine.Core.Octant`1.IsLeaf
+  id: IsLeaf
+  parent: Fusee.Engine.Core.Octant`1
+  langs:
+  - csharp
+  - vb
+  name: IsLeaf
+  nameWithType: Octant<T>.IsLeaf
+  fullName: Fusee.Engine.Core.Octant<T>.IsLeaf
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IsLeaf
+    path: src/Fusee/src/Engine/Core/Octant.cs
+    startLine: 34
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets a value indicating whether this instance is a leaf node.\n"
+  example: []
+  syntax:
+    content: public bool IsLeaf
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this instance is leaf; otherwise, <code>false</code>.\n"
+    content.vb: Public IsLeaf As Boolean
+  nameWithType.vb: Octant(Of T).IsLeaf
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Engine.Core.Octant(Of T).IsLeaf
+- uid: Fusee.Engine.Core.Octant`1.#ctor(Fusee.Math.Core.double3,System.Double,System.Collections.Generic.List{`0},Fusee.Engine.Core.Octant{`0}[])
+  commentId: M:Fusee.Engine.Core.Octant`1.#ctor(Fusee.Math.Core.double3,System.Double,System.Collections.Generic.List{`0},Fusee.Engine.Core.Octant{`0}[])
+  id: '#ctor(Fusee.Math.Core.double3,System.Double,System.Collections.Generic.List{`0},Fusee.Engine.Core.Octant{`0}[])'
+  parent: Fusee.Engine.Core.Octant`1
+  langs:
+  - csharp
+  - vb
+  name: Octant(double3, Double, List<T>, Octant<T>[])
+  nameWithType: Octant<T>.Octant(double3, Double, List<T>, Octant<T>[])
+  fullName: Fusee.Engine.Core.Octant<T>.Octant(Fusee.Math.Core.double3, System.Double, System.Collections.Generic.List<T>, Fusee.Engine.Core.Octant<T>[])
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/Core/Octant.cs
+    startLine: 43
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nCreates a new instance of type Octant.\n"
+  example: []
+  syntax:
+    content: public Octant(double3 center, double size, List<T> payload, Octant<T>[] children = null)
+    parameters:
+    - id: center
+      type: Fusee.Math.Core.double3
+      description: ''
+    - id: size
+      type: System.Double
+      description: ''
+    - id: payload
+      type: System.Collections.Generic.List{{T}}
+      description: ''
+    - id: children
+      type: Fusee.Engine.Core.Octant`1[]
+      description: ''
+    content.vb: Public Sub New(center As double3, size As Double, payload As List(Of T), children As Octant(Of T)() = Nothing)
+  overload: Fusee.Engine.Core.Octant`1.#ctor*
+  nameWithType.vb: Octant(Of T).Octant(double3, Double, List(Of T), Octant(Of T)())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Engine.Core.Octant(Of T).Octant(Fusee.Math.Core.double3, System.Double, System.Collections.Generic.List(Of T), Fusee.Engine.Core.Octant(Of T)())
+  name.vb: Octant(double3, Double, List(Of T), Octant(Of T)())
+- uid: Fusee.Engine.Core.Octant`1.#ctor(Fusee.Math.Core.double3,System.Double,Fusee.Engine.Core.Octant{`0}[])
+  commentId: M:Fusee.Engine.Core.Octant`1.#ctor(Fusee.Math.Core.double3,System.Double,Fusee.Engine.Core.Octant{`0}[])
+  id: '#ctor(Fusee.Math.Core.double3,System.Double,Fusee.Engine.Core.Octant{`0}[])'
+  parent: Fusee.Engine.Core.Octant`1
+  langs:
+  - csharp
+  - vb
+  name: Octant(double3, Double, Octant<T>[])
+  nameWithType: Octant<T>.Octant(double3, Double, Octant<T>[])
+  fullName: Fusee.Engine.Core.Octant<T>.Octant(Fusee.Math.Core.double3, System.Double, Fusee.Engine.Core.Octant<T>[])
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/Core/Octant.cs
+    startLine: 62
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nCreate a new instance of type Octant.\n"
+  example: []
+  syntax:
+    content: public Octant(double3 center, double size, Octant<T>[] children = null)
+    parameters:
+    - id: center
+      type: Fusee.Math.Core.double3
+      description: ''
+    - id: size
+      type: System.Double
+      description: ''
+    - id: children
+      type: Fusee.Engine.Core.Octant`1[]
+      description: ''
+    content.vb: Public Sub New(center As double3, size As Double, children As Octant(Of T)() = Nothing)
+  overload: Fusee.Engine.Core.Octant`1.#ctor*
+  nameWithType.vb: Octant(Of T).Octant(double3, Double, Octant(Of T)())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Engine.Core.Octant(Of T).Octant(Fusee.Math.Core.double3, System.Double, Fusee.Engine.Core.Octant(Of T)())
+  name.vb: Octant(double3, Double, Octant(Of T)())
+- uid: Fusee.Engine.Core.Octant`1.#ctor
+  commentId: M:Fusee.Engine.Core.Octant`1.#ctor
+  id: '#ctor'
+  parent: Fusee.Engine.Core.Octant`1
+  langs:
+  - csharp
+  - vb
+  name: Octant()
+  nameWithType: Octant<T>.Octant()
+  fullName: Fusee.Engine.Core.Octant<T>.Octant()
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/Core/Octant.cs
+    startLine: 76
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nCreate a new instance of type Octant.\n"
+  example: []
+  syntax:
+    content: protected Octant()
+    content.vb: Protected Sub New
+  overload: Fusee.Engine.Core.Octant`1.#ctor*
+  nameWithType.vb: Octant(Of T).Octant()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Fusee.Engine.Core.Octant(Of T).Octant()
+references:
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Core.Bucket{{T}}
+  commentId: T:Fusee.Engine.Core.Bucket{`0}
+  parent: Fusee.Engine.Core
+  definition: Fusee.Engine.Core.Bucket`1
+  name: Bucket<T>
+  nameWithType: Bucket<T>
+  fullName: Fusee.Engine.Core.Bucket<T>
+  nameWithType.vb: Bucket(Of T)
+  fullName.vb: Fusee.Engine.Core.Bucket(Of T)
+  name.vb: Bucket(Of T)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Bucket`1
+    name: Bucket
+    nameWithType: Bucket
+    fullName: Fusee.Engine.Core.Bucket
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Engine.Core.Bucket`1
+    name: Bucket
+    nameWithType: Bucket
+    fullName: Fusee.Engine.Core.Bucket
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Bucket{{T}}.Center
+  commentId: P:Fusee.Engine.Core.Bucket{`0}.Center
+  parent: Fusee.Engine.Core.Bucket{{T}}
+  definition: Fusee.Engine.Core.Bucket`1.Center
+  name: Center
+  nameWithType: Bucket<T>.Center
+  fullName: Fusee.Engine.Core.Bucket<T>.Center
+  nameWithType.vb: Bucket(Of T).Center
+  fullName.vb: Fusee.Engine.Core.Bucket(Of T).Center
+- uid: Fusee.Engine.Core.Bucket{{T}}.Size
+  commentId: P:Fusee.Engine.Core.Bucket{`0}.Size
+  parent: Fusee.Engine.Core.Bucket{{T}}
+  definition: Fusee.Engine.Core.Bucket`1.Size
+  name: Size
+  nameWithType: Bucket<T>.Size
+  fullName: Fusee.Engine.Core.Bucket<T>.Size
+  nameWithType.vb: Bucket(Of T).Size
+  fullName.vb: Fusee.Engine.Core.Bucket(Of T).Size
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.Bucket`1
+  commentId: T:Fusee.Engine.Core.Bucket`1
+  name: Bucket<T>
+  nameWithType: Bucket<T>
+  fullName: Fusee.Engine.Core.Bucket<T>
+  nameWithType.vb: Bucket(Of T)
+  fullName.vb: Fusee.Engine.Core.Bucket(Of T)
+  name.vb: Bucket(Of T)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Bucket`1
+    name: Bucket
+    nameWithType: Bucket
+    fullName: Fusee.Engine.Core.Bucket
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Engine.Core.Bucket`1
+    name: Bucket
+    nameWithType: Bucket
+    fullName: Fusee.Engine.Core.Bucket
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Bucket`1.Center
+  commentId: P:Fusee.Engine.Core.Bucket`1.Center
+  name: Center
+  nameWithType: Bucket<T>.Center
+  fullName: Fusee.Engine.Core.Bucket<T>.Center
+  nameWithType.vb: Bucket(Of T).Center
+  fullName.vb: Fusee.Engine.Core.Bucket(Of T).Center
+- uid: Fusee.Engine.Core.Bucket`1.Size
+  commentId: P:Fusee.Engine.Core.Bucket`1.Size
+  name: Size
+  nameWithType: Bucket<T>.Size
+  fullName: Fusee.Engine.Core.Bucket<T>.Size
+  nameWithType.vb: Bucket(Of T).Size
+  fullName.vb: Fusee.Engine.Core.Bucket(Of T).Size
+- uid: Fusee.Engine.Core.Octant`1[]
+  isExternal: true
+  name: Octant<T>[]
+  nameWithType: Octant<T>[]
+  fullName: Fusee.Engine.Core.Octant<T>[]
+  nameWithType.vb: Octant(Of T)()
+  fullName.vb: Fusee.Engine.Core.Octant(Of T)()
+  name.vb: Octant(Of T)()
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Octant`1
+    name: Octant
+    nameWithType: Octant
+    fullName: Fusee.Engine.Core.Octant
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Fusee.Engine.Core.Octant`1
+    name: Octant
+    nameWithType: Octant
+    fullName: Fusee.Engine.Core.Octant
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Engine.Core.Octant`1.#ctor*
+  commentId: Overload:Fusee.Engine.Core.Octant`1.#ctor
+  name: Octant
+  nameWithType: Octant<T>.Octant
+  fullName: Fusee.Engine.Core.Octant<T>.Octant
+  nameWithType.vb: Octant(Of T).Octant
+  fullName.vb: Fusee.Engine.Core.Octant(Of T).Octant
+- uid: Fusee.Math.Core.double3
+  commentId: T:Fusee.Math.Core.double3
+  parent: Fusee.Math.Core
+  name: double3
+  nameWithType: double3
+  fullName: Fusee.Math.Core.double3
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core

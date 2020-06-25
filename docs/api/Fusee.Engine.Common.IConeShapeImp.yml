@@ -1,0 +1,218 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.IConeShapeImp
+  commentId: T:Fusee.Engine.Common.IConeShapeImp
+  id: IConeShapeImp
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.IConeShapeImp.ConeUpIndex
+  - Fusee.Engine.Common.IConeShapeImp.Height
+  - Fusee.Engine.Common.IConeShapeImp.Radius
+  langs:
+  - csharp
+  - vb
+  name: IConeShapeImp
+  nameWithType: IConeShapeImp
+  fullName: Fusee.Engine.Common.IConeShapeImp
+  type: Interface
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IConeShapeImp
+    path: src/Fusee/src/Engine/Common/IConeShapeImp.cs
+    startLine: 5
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nImplementation agnostic representation of a cone-shaped collision shape\n"
+  example: []
+  syntax:
+    content: 'public interface IConeShapeImp : ICollisionShapeImp'
+    content.vb: >-
+      Public Interface IConeShapeImp
+
+          Inherits ICollisionShapeImp
+  inheritedMembers:
+  - Fusee.Engine.Common.ICollisionShapeImp.Margin
+  - Fusee.Engine.Common.ICollisionShapeImp.LocalScaling
+  - Fusee.Engine.Common.ICollisionShapeImp.UserObject
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Fusee.Engine.Common.IConeShapeImp.ConeUpIndex
+  commentId: P:Fusee.Engine.Common.IConeShapeImp.ConeUpIndex
+  id: ConeUpIndex
+  parent: Fusee.Engine.Common.IConeShapeImp
+  langs:
+  - csharp
+  - vb
+  name: ConeUpIndex
+  nameWithType: IConeShapeImp.ConeUpIndex
+  fullName: Fusee.Engine.Common.IConeShapeImp.ConeUpIndex
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ConeUpIndex
+    path: src/Fusee/src/Engine/Common/IConeShapeImp.cs
+    startLine: 13
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets and sets the index of the cone up.\n"
+  example: []
+  syntax:
+    content: int ConeUpIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe index of the cone up.\n"
+    content.vb: Property ConeUpIndex As Integer
+  overload: Fusee.Engine.Common.IConeShapeImp.ConeUpIndex*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Fusee.Engine.Common.IConeShapeImp.Height
+  commentId: P:Fusee.Engine.Common.IConeShapeImp.Height
+  id: Height
+  parent: Fusee.Engine.Common.IConeShapeImp
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: IConeShapeImp.Height
+  fullName: Fusee.Engine.Common.IConeShapeImp.Height
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Height
+    path: src/Fusee/src/Engine/Common/IConeShapeImp.cs
+    startLine: 20
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nRetrieves the cone&apos; height.\n"
+  example: []
+  syntax:
+    content: float Height { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe height of the cone.\n"
+    content.vb: ReadOnly Property Height As Single
+  overload: Fusee.Engine.Common.IConeShapeImp.Height*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Fusee.Engine.Common.IConeShapeImp.Radius
+  commentId: P:Fusee.Engine.Common.IConeShapeImp.Radius
+  id: Radius
+  parent: Fusee.Engine.Common.IConeShapeImp
+  langs:
+  - csharp
+  - vb
+  name: Radius
+  nameWithType: IConeShapeImp.Radius
+  fullName: Fusee.Engine.Common.IConeShapeImp.Radius
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Radius
+    path: src/Fusee/src/Engine/Common/IConeShapeImp.cs
+    startLine: 27
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the cone&apos;s radius.\n"
+  example: []
+  syntax:
+    content: float Radius { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe radius of the cone.\n"
+    content.vb: ReadOnly Property Radius As Single
+  overload: Fusee.Engine.Common.IConeShapeImp.Radius*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Common.ICollisionShapeImp.Margin
+  commentId: P:Fusee.Engine.Common.ICollisionShapeImp.Margin
+  parent: Fusee.Engine.Common.ICollisionShapeImp
+  name: Margin
+  nameWithType: ICollisionShapeImp.Margin
+  fullName: Fusee.Engine.Common.ICollisionShapeImp.Margin
+- uid: Fusee.Engine.Common.ICollisionShapeImp.LocalScaling
+  commentId: P:Fusee.Engine.Common.ICollisionShapeImp.LocalScaling
+  parent: Fusee.Engine.Common.ICollisionShapeImp
+  name: LocalScaling
+  nameWithType: ICollisionShapeImp.LocalScaling
+  fullName: Fusee.Engine.Common.ICollisionShapeImp.LocalScaling
+- uid: Fusee.Engine.Common.ICollisionShapeImp.UserObject
+  commentId: P:Fusee.Engine.Common.ICollisionShapeImp.UserObject
+  parent: Fusee.Engine.Common.ICollisionShapeImp
+  name: UserObject
+  nameWithType: ICollisionShapeImp.UserObject
+  fullName: Fusee.Engine.Common.ICollisionShapeImp.UserObject
+- uid: Fusee.Engine.Common.ICollisionShapeImp
+  commentId: T:Fusee.Engine.Common.ICollisionShapeImp
+  parent: Fusee.Engine.Common
+  name: ICollisionShapeImp
+  nameWithType: ICollisionShapeImp
+  fullName: Fusee.Engine.Common.ICollisionShapeImp
+- uid: Fusee.Engine.Common.IConeShapeImp.ConeUpIndex*
+  commentId: Overload:Fusee.Engine.Common.IConeShapeImp.ConeUpIndex
+  name: ConeUpIndex
+  nameWithType: IConeShapeImp.ConeUpIndex
+  fullName: Fusee.Engine.Common.IConeShapeImp.ConeUpIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Common.IConeShapeImp.Height*
+  commentId: Overload:Fusee.Engine.Common.IConeShapeImp.Height
+  name: Height
+  nameWithType: IConeShapeImp.Height
+  fullName: Fusee.Engine.Common.IConeShapeImp.Height
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Engine.Common.IConeShapeImp.Radius*
+  commentId: Overload:Fusee.Engine.Common.IConeShapeImp.Radius
+  name: Radius
+  nameWithType: IConeShapeImp.Radius
+  fullName: Fusee.Engine.Common.IConeShapeImp.Radius

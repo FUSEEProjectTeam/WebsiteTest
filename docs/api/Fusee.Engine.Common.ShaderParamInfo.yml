@@ -1,0 +1,493 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.ShaderParamInfo
+  commentId: T:Fusee.Engine.Common.ShaderParamInfo
+  id: ShaderParamInfo
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.ShaderParamInfo.Handle
+  - Fusee.Engine.Common.ShaderParamInfo.Name
+  - Fusee.Engine.Common.ShaderParamInfo.Size
+  - Fusee.Engine.Common.ShaderParamInfo.Type
+  langs:
+  - csharp
+  - vb
+  name: ShaderParamInfo
+  nameWithType: ShaderParamInfo
+  fullName: Fusee.Engine.Common.ShaderParamInfo
+  type: Struct
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/ShaderParamInfo.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ShaderParamInfo
+    path: src/Fusee/src/Engine/Common/ShaderParamInfo.cs
+    startLine: 8
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nContains information about a shader parameter (<xref href=\"Fusee.Engine.Common.ShaderParamInfo.Size\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"Fusee.Engine.Common.ShaderParamInfo.Type\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"Fusee.Engine.Common.ShaderParamInfo.Name\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"Fusee.Engine.Common.ShaderParamInfo.Handle\" data-throw-if-not-resolved=\"false\"></xref>).\nDoes NOT contain the actual value of the shader parameter.\n"
+  example: []
+  syntax:
+    content: public struct ShaderParamInfo
+    content.vb: Public Structure ShaderParamInfo
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Fusee.Engine.Common.ShaderParamInfo.Size
+  commentId: F:Fusee.Engine.Common.ShaderParamInfo.Size
+  id: Size
+  parent: Fusee.Engine.Common.ShaderParamInfo
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: ShaderParamInfo.Size
+  fullName: Fusee.Engine.Common.ShaderParamInfo.Size
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/ShaderParamInfo.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Size
+    path: src/Fusee/src/Engine/Common/ShaderParamInfo.cs
+    startLine: 17
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nContains the number of items stored under this parameter name. Only differs from 1 if the parameter is a uniform array.\nIf Size > 1 this value represents the number of array entries.\n"
+  remarks: "\nSee also <a href=\"https://www.khronos.org/opengles/sdk/docs/man/xhtml/glGetActiveUniform.xml\">the Khronos group&apos;s documentation on glGetActiveUniform</a>.\n"
+  example: []
+  syntax:
+    content: public int Size
+    return:
+      type: System.Int32
+    content.vb: Public Size As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.ShaderParamInfo.Type
+  commentId: F:Fusee.Engine.Common.ShaderParamInfo.Type
+  id: Type
+  parent: Fusee.Engine.Common.ShaderParamInfo
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: ShaderParamInfo.Type
+  fullName: Fusee.Engine.Common.ShaderParamInfo.Type
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/ShaderParamInfo.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Type
+    path: src/Fusee/src/Engine/Common/ShaderParamInfo.cs
+    startLine: 22
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nContains the type of the shader parameter.\n"
+  example: []
+  syntax:
+    content: public Type Type
+    return:
+      type: System.Type
+    content.vb: Public Type As Type
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.ShaderParamInfo.Name
+  commentId: F:Fusee.Engine.Common.ShaderParamInfo.Name
+  id: Name
+  parent: Fusee.Engine.Common.ShaderParamInfo
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ShaderParamInfo.Name
+  fullName: Fusee.Engine.Common.ShaderParamInfo.Name
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/ShaderParamInfo.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Name
+    path: src/Fusee/src/Engine/Common/ShaderParamInfo.cs
+    startLine: 27
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nContains the name of the shader parameter.\n"
+  example: []
+  syntax:
+    content: public string Name
+    return:
+      type: System.String
+    content.vb: Public Name As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.ShaderParamInfo.Handle
+  commentId: F:Fusee.Engine.Common.ShaderParamInfo.Handle
+  id: Handle
+  parent: Fusee.Engine.Common.ShaderParamInfo
+  langs:
+  - csharp
+  - vb
+  name: Handle
+  nameWithType: ShaderParamInfo.Handle
+  fullName: Fusee.Engine.Common.ShaderParamInfo.Handle
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/ShaderParamInfo.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Handle
+    path: src/Fusee/src/Engine/Common/ShaderParamInfo.cs
+    startLine: 32
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe Handle to be used when setting or getting the parameter value from the shader.\n"
+  example: []
+  syntax:
+    content: public IShaderParam Handle
+    return:
+      type: Fusee.Engine.Common.IShaderParam
+    content.vb: Public Handle As IShaderParam
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Common.ShaderParamInfo.Size
+  commentId: F:Fusee.Engine.Common.ShaderParamInfo.Size
+  isExternal: true
+- uid: Fusee.Engine.Common.ShaderParamInfo.Type
+  commentId: F:Fusee.Engine.Common.ShaderParamInfo.Type
+  isExternal: true
+- uid: Fusee.Engine.Common.ShaderParamInfo.Name
+  commentId: F:Fusee.Engine.Common.ShaderParamInfo.Name
+  isExternal: true
+- uid: Fusee.Engine.Common.ShaderParamInfo.Handle
+  commentId: F:Fusee.Engine.Common.ShaderParamInfo.Handle
+  isExternal: true
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Fusee.Engine.Common.IShaderParam
+  commentId: T:Fusee.Engine.Common.IShaderParam
+  parent: Fusee.Engine.Common
+  name: IShaderParam
+  nameWithType: IShaderParam
+  fullName: Fusee.Engine.Common.IShaderParam

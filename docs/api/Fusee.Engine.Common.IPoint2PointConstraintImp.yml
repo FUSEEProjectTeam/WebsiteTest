@@ -1,0 +1,347 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.IPoint2PointConstraintImp
+  commentId: T:Fusee.Engine.Common.IPoint2PointConstraintImp
+  id: IPoint2PointConstraintImp
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.IPoint2PointConstraintImp.GetParam(Fusee.Engine.Common.PointToPointFlags,System.Int32)
+  - Fusee.Engine.Common.IPoint2PointConstraintImp.PivotInA
+  - Fusee.Engine.Common.IPoint2PointConstraintImp.PivotInB
+  - Fusee.Engine.Common.IPoint2PointConstraintImp.SetParam(Fusee.Engine.Common.PointToPointFlags,System.Single,System.Int32)
+  - Fusee.Engine.Common.IPoint2PointConstraintImp.UpdateRhs(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: IPoint2PointConstraintImp
+  nameWithType: IPoint2PointConstraintImp
+  fullName: Fusee.Engine.Common.IPoint2PointConstraintImp
+  type: Interface
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IPoint2PointConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IPoint2PointConstraintImp
+    path: src/Fusee/src/Engine/Common/IPoint2PointConstraintImp.cs
+    startLine: 20
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nImplementation agnostic representation of a point-to-point constraint.\n"
+  example: []
+  syntax:
+    content: 'public interface IPoint2PointConstraintImp : IConstraintImp'
+    content.vb: >-
+      Public Interface IPoint2PointConstraintImp
+
+          Inherits IConstraintImp
+  inheritedMembers:
+  - Fusee.Engine.Common.IConstraintImp.RigidBodyA
+  - Fusee.Engine.Common.IConstraintImp.RigidBodyB
+  - Fusee.Engine.Common.IConstraintImp.GetUid
+  - Fusee.Engine.Common.IConstraintImp.UserObject
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Fusee.Engine.Common.IPoint2PointConstraintImp.PivotInA
+  commentId: P:Fusee.Engine.Common.IPoint2PointConstraintImp.PivotInA
+  id: PivotInA
+  parent: Fusee.Engine.Common.IPoint2PointConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: PivotInA
+  nameWithType: IPoint2PointConstraintImp.PivotInA
+  fullName: Fusee.Engine.Common.IPoint2PointConstraintImp.PivotInA
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IPoint2PointConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: PivotInA
+    path: src/Fusee/src/Engine/Common/IPoint2PointConstraintImp.cs
+    startLine: 28
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets and sets the pivot in a.\n"
+  example: []
+  syntax:
+    content: float3 PivotInA { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+      description: "\nThe pivot in a.\n"
+    content.vb: Property PivotInA As float3
+  overload: Fusee.Engine.Common.IPoint2PointConstraintImp.PivotInA*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Fusee.Engine.Common.IPoint2PointConstraintImp.PivotInB
+  commentId: P:Fusee.Engine.Common.IPoint2PointConstraintImp.PivotInB
+  id: PivotInB
+  parent: Fusee.Engine.Common.IPoint2PointConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: PivotInB
+  nameWithType: IPoint2PointConstraintImp.PivotInB
+  fullName: Fusee.Engine.Common.IPoint2PointConstraintImp.PivotInB
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IPoint2PointConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: PivotInB
+    path: src/Fusee/src/Engine/Common/IPoint2PointConstraintImp.cs
+    startLine: 35
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets and sets the pivot in b.\n"
+  example: []
+  syntax:
+    content: float3 PivotInB { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+      description: "\nThe pivot in b.\n"
+    content.vb: Property PivotInB As float3
+  overload: Fusee.Engine.Common.IPoint2PointConstraintImp.PivotInB*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Fusee.Engine.Common.IPoint2PointConstraintImp.UpdateRhs(System.Single)
+  commentId: M:Fusee.Engine.Common.IPoint2PointConstraintImp.UpdateRhs(System.Single)
+  id: UpdateRhs(System.Single)
+  parent: Fusee.Engine.Common.IPoint2PointConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: UpdateRhs(Single)
+  nameWithType: IPoint2PointConstraintImp.UpdateRhs(Single)
+  fullName: Fusee.Engine.Common.IPoint2PointConstraintImp.UpdateRhs(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IPoint2PointConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: UpdateRhs
+    path: src/Fusee/src/Engine/Common/IPoint2PointConstraintImp.cs
+    startLine: 41
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nUpdates the RHS.\n"
+  example: []
+  syntax:
+    content: void UpdateRhs(float timeStep)
+    parameters:
+    - id: timeStep
+      type: System.Single
+      description: The time step.
+    content.vb: Sub UpdateRhs(timeStep As Single)
+  overload: Fusee.Engine.Common.IPoint2PointConstraintImp.UpdateRhs*
+- uid: Fusee.Engine.Common.IPoint2PointConstraintImp.SetParam(Fusee.Engine.Common.PointToPointFlags,System.Single,System.Int32)
+  commentId: M:Fusee.Engine.Common.IPoint2PointConstraintImp.SetParam(Fusee.Engine.Common.PointToPointFlags,System.Single,System.Int32)
+  id: SetParam(Fusee.Engine.Common.PointToPointFlags,System.Single,System.Int32)
+  parent: Fusee.Engine.Common.IPoint2PointConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetParam(PointToPointFlags, Single, Int32)
+  nameWithType: IPoint2PointConstraintImp.SetParam(PointToPointFlags, Single, Int32)
+  fullName: Fusee.Engine.Common.IPoint2PointConstraintImp.SetParam(Fusee.Engine.Common.PointToPointFlags, System.Single, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IPoint2PointConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetParam
+    path: src/Fusee/src/Engine/Common/IPoint2PointConstraintImp.cs
+    startLine: 49
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nSets the parameter.\n"
+  example: []
+  syntax:
+    content: void SetParam(PointToPointFlags constraintParameter, float value, int axis = -1)
+    parameters:
+    - id: constraintParameter
+      type: Fusee.Engine.Common.PointToPointFlags
+      description: The constraint parameter.
+    - id: value
+      type: System.Single
+      description: The value.
+    - id: axis
+      type: System.Int32
+      description: The axis.
+    content.vb: Sub SetParam(constraintParameter As PointToPointFlags, value As Single, axis As Integer = -1)
+  overload: Fusee.Engine.Common.IPoint2PointConstraintImp.SetParam*
+- uid: Fusee.Engine.Common.IPoint2PointConstraintImp.GetParam(Fusee.Engine.Common.PointToPointFlags,System.Int32)
+  commentId: M:Fusee.Engine.Common.IPoint2PointConstraintImp.GetParam(Fusee.Engine.Common.PointToPointFlags,System.Int32)
+  id: GetParam(Fusee.Engine.Common.PointToPointFlags,System.Int32)
+  parent: Fusee.Engine.Common.IPoint2PointConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: GetParam(PointToPointFlags, Int32)
+  nameWithType: IPoint2PointConstraintImp.GetParam(PointToPointFlags, Int32)
+  fullName: Fusee.Engine.Common.IPoint2PointConstraintImp.GetParam(Fusee.Engine.Common.PointToPointFlags, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IPoint2PointConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetParam
+    path: src/Fusee/src/Engine/Common/IPoint2PointConstraintImp.cs
+    startLine: 56
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the parameter.\n"
+  example: []
+  syntax:
+    content: float GetParam(PointToPointFlags param, int axis = -1)
+    parameters:
+    - id: param
+      type: Fusee.Engine.Common.PointToPointFlags
+      description: The parameter.
+    - id: axis
+      type: System.Int32
+      description: The axis.
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Function GetParam(param As PointToPointFlags, axis As Integer = -1) As Single
+  overload: Fusee.Engine.Common.IPoint2PointConstraintImp.GetParam*
+references:
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Common.IConstraintImp.RigidBodyA
+  commentId: P:Fusee.Engine.Common.IConstraintImp.RigidBodyA
+  parent: Fusee.Engine.Common.IConstraintImp
+  name: RigidBodyA
+  nameWithType: IConstraintImp.RigidBodyA
+  fullName: Fusee.Engine.Common.IConstraintImp.RigidBodyA
+- uid: Fusee.Engine.Common.IConstraintImp.RigidBodyB
+  commentId: P:Fusee.Engine.Common.IConstraintImp.RigidBodyB
+  parent: Fusee.Engine.Common.IConstraintImp
+  name: RigidBodyB
+  nameWithType: IConstraintImp.RigidBodyB
+  fullName: Fusee.Engine.Common.IConstraintImp.RigidBodyB
+- uid: Fusee.Engine.Common.IConstraintImp.GetUid
+  commentId: M:Fusee.Engine.Common.IConstraintImp.GetUid
+  parent: Fusee.Engine.Common.IConstraintImp
+  name: GetUid()
+  nameWithType: IConstraintImp.GetUid()
+  fullName: Fusee.Engine.Common.IConstraintImp.GetUid()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConstraintImp.GetUid
+    name: GetUid
+    nameWithType: IConstraintImp.GetUid
+    fullName: Fusee.Engine.Common.IConstraintImp.GetUid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConstraintImp.GetUid
+    name: GetUid
+    nameWithType: IConstraintImp.GetUid
+    fullName: Fusee.Engine.Common.IConstraintImp.GetUid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IConstraintImp.UserObject
+  commentId: P:Fusee.Engine.Common.IConstraintImp.UserObject
+  parent: Fusee.Engine.Common.IConstraintImp
+  name: UserObject
+  nameWithType: IConstraintImp.UserObject
+  fullName: Fusee.Engine.Common.IConstraintImp.UserObject
+- uid: Fusee.Engine.Common.IConstraintImp
+  commentId: T:Fusee.Engine.Common.IConstraintImp
+  parent: Fusee.Engine.Common
+  name: IConstraintImp
+  nameWithType: IConstraintImp
+  fullName: Fusee.Engine.Common.IConstraintImp
+- uid: Fusee.Engine.Common.IPoint2PointConstraintImp.PivotInA*
+  commentId: Overload:Fusee.Engine.Common.IPoint2PointConstraintImp.PivotInA
+  name: PivotInA
+  nameWithType: IPoint2PointConstraintImp.PivotInA
+  fullName: Fusee.Engine.Common.IPoint2PointConstraintImp.PivotInA
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Common.IPoint2PointConstraintImp.PivotInB*
+  commentId: Overload:Fusee.Engine.Common.IPoint2PointConstraintImp.PivotInB
+  name: PivotInB
+  nameWithType: IPoint2PointConstraintImp.PivotInB
+  fullName: Fusee.Engine.Common.IPoint2PointConstraintImp.PivotInB
+- uid: Fusee.Engine.Common.IPoint2PointConstraintImp.UpdateRhs*
+  commentId: Overload:Fusee.Engine.Common.IPoint2PointConstraintImp.UpdateRhs
+  name: UpdateRhs
+  nameWithType: IPoint2PointConstraintImp.UpdateRhs
+  fullName: Fusee.Engine.Common.IPoint2PointConstraintImp.UpdateRhs
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Common.IPoint2PointConstraintImp.SetParam*
+  commentId: Overload:Fusee.Engine.Common.IPoint2PointConstraintImp.SetParam
+  name: SetParam
+  nameWithType: IPoint2PointConstraintImp.SetParam
+  fullName: Fusee.Engine.Common.IPoint2PointConstraintImp.SetParam
+- uid: Fusee.Engine.Common.PointToPointFlags
+  commentId: T:Fusee.Engine.Common.PointToPointFlags
+  parent: Fusee.Engine.Common
+  name: PointToPointFlags
+  nameWithType: PointToPointFlags
+  fullName: Fusee.Engine.Common.PointToPointFlags
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Engine.Common.IPoint2PointConstraintImp.GetParam*
+  commentId: Overload:Fusee.Engine.Common.IPoint2PointConstraintImp.GetParam
+  name: GetParam
+  nameWithType: IPoint2PointConstraintImp.GetParam
+  fullName: Fusee.Engine.Common.IPoint2PointConstraintImp.GetParam

@@ -1,0 +1,3189 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Jometri.Geometry
+  commentId: T:Fusee.Jometri.Geometry
+  id: Geometry
+  parent: Fusee.Jometri
+  children:
+  - Fusee.Jometri.Geometry.#ctor(System.Collections.Generic.IEnumerable{Fusee.Jometri.PolyBoundary})
+  - Fusee.Jometri.Geometry.CloneGeometry
+  - Fusee.Jometri.Geometry.GetAllFaces
+  - Fusee.Jometri.Geometry.GetAllHalfEdges
+  - Fusee.Jometri.Geometry.GetAllVertices
+  - Fusee.Jometri.Geometry.GetFaceHalfEdges(System.Int32)
+  - Fusee.Jometri.Geometry.GetFaceOuterVertices(System.Int32)
+  - Fusee.Jometri.Geometry.GetFacesAdajacentToFace(System.Int32)
+  - Fusee.Jometri.Geometry.GetFaceVertices(System.Int32)
+  - Fusee.Jometri.Geometry.GetHalfEdgeLoop(System.Int32)
+  - Fusee.Jometri.Geometry.GetHalfEdgeLoopReverse(System.Int32)
+  - Fusee.Jometri.Geometry.GetVertexAdajacentFaces(System.Int32)
+  - Fusee.Jometri.Geometry.GetVertexAdjacentVertices(System.Int32)
+  - Fusee.Jometri.Geometry.GetVertexIncidentHalfEdges(System.Int32)
+  - Fusee.Jometri.Geometry.GetVertexStartingHalfEdges(System.Int32)
+  - Fusee.Jometri.Geometry.GetVertexTargetingHalfEdges(System.Int32)
+  - Fusee.Jometri.Geometry.SetFaceNormal(System.Collections.Generic.IList{Fusee.Jometri.Vertex},Fusee.Jometri.Face)
+  langs:
+  - csharp
+  - vb
+  name: Geometry
+  nameWithType: Geometry
+  fullName: Fusee.Jometri.Geometry
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Geometry
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 10
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nStores geometry in a DCEL (doubly connected (half) edge list).\n"
+  example: []
+  syntax:
+    content: public class Geometry
+    content.vb: Public Class Geometry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - Fusee.Jometri.Geometry.Fusee.Jometri.Extrude.Extrude2DPolygon(System.Single,System.Boolean)
+  - Fusee.Jometri.Geometry.Fusee.Jometri.Extrude.ExtrudeFace(System.Int32,System.Single)
+  - Fusee.Jometri.Geometry.Fusee.Jometri.Extrude.ExtrudeFace(System.Int32,System.Single,Fusee.Math.Core.float3)
+  - Fusee.Jometri.Geometry.Fusee.Jometri.GeomEditing.InsertVertex(System.Int32,System.Int32,Fusee.Math.Core.float3)
+  - Fusee.Jometri.Geometry.Fusee.Jometri.GeomEditing.InsertDiagonal(System.Int32,System.Int32)
+  - Fusee.Jometri.Geometry.Fusee.Jometri.GeomEditing.InsetFace(System.Int32,System.Single)
+  - Fusee.Jometri.Geometry.Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Face,Fusee.Jometri.Vertex)
+  - Fusee.Jometri.Geometry.Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Face,Fusee.Math.Core.float3)
+  - Fusee.Jometri.Geometry.Fusee.Jometri.GeometricOperations.IsAngleGreaterPi(Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+  - Fusee.Jometri.Geometry.Fusee.Jometri.GeometricOperations.IsAngleGreaterOrEqualPi(Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+  - Fusee.Jometri.Geometry.Fusee.Jometri.GeometricOperations.IsVertexAdjacentToVertex(System.Int32,System.Int32,Fusee.Jometri.HalfEdge,Fusee.Jometri.HalfEdge)
+  - Fusee.Jometri.Geometry.Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding(System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge})
+  - Fusee.Jometri.Geometry.Fusee.Jometri.Triangulation.Triangulate
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Jometri.Geometry.#ctor(System.Collections.Generic.IEnumerable{Fusee.Jometri.PolyBoundary})
+  commentId: M:Fusee.Jometri.Geometry.#ctor(System.Collections.Generic.IEnumerable{Fusee.Jometri.PolyBoundary})
+  id: '#ctor(System.Collections.Generic.IEnumerable{Fusee.Jometri.PolyBoundary})'
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: Geometry(IEnumerable<PolyBoundary>)
+  nameWithType: Geometry.Geometry(IEnumerable<PolyBoundary>)
+  fullName: Fusee.Jometri.Geometry.Geometry(System.Collections.Generic.IEnumerable<Fusee.Jometri.PolyBoundary>)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 62
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\n2D Geometry, stored in a DCEL (half edge data structure).\n"
+  example: []
+  syntax:
+    content: public Geometry(IEnumerable<PolyBoundary> outlines)
+    parameters:
+    - id: outlines
+      type: System.Collections.Generic.IEnumerable{Fusee.Jometri.PolyBoundary}
+      description: A collection of the geometry&apos;s outlines, each containing the geometric information as a list of float3 in ccw order.
+    content.vb: Public Sub New(outlines As IEnumerable(Of PolyBoundary))
+  overload: Fusee.Jometri.Geometry.#ctor*
+  nameWithType.vb: Geometry.Geometry(IEnumerable(Of PolyBoundary))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Jometri.Geometry.Geometry(System.Collections.Generic.IEnumerable(Of Fusee.Jometri.PolyBoundary))
+  name.vb: Geometry(IEnumerable(Of PolyBoundary))
+- uid: Fusee.Jometri.Geometry.CloneGeometry
+  commentId: M:Fusee.Jometri.Geometry.CloneGeometry
+  id: CloneGeometry
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: CloneGeometry()
+  nameWithType: Geometry.CloneGeometry()
+  fullName: Fusee.Jometri.Geometry.CloneGeometry()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CloneGeometry
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 83
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nCreates an exact copy of the given Geometry.\n"
+  example: []
+  syntax:
+    content: public Geometry CloneGeometry()
+    return:
+      type: Fusee.Jometri.Geometry
+      description: ''
+    content.vb: Public Function CloneGeometry As Geometry
+  overload: Fusee.Jometri.Geometry.CloneGeometry*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Jometri.Geometry.SetFaceNormal(System.Collections.Generic.IList{Fusee.Jometri.Vertex},Fusee.Jometri.Face)
+  commentId: M:Fusee.Jometri.Geometry.SetFaceNormal(System.Collections.Generic.IList{Fusee.Jometri.Vertex},Fusee.Jometri.Face)
+  id: SetFaceNormal(System.Collections.Generic.IList{Fusee.Jometri.Vertex},Fusee.Jometri.Face)
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: SetFaceNormal(IList<Vertex>, Face)
+  nameWithType: Geometry.SetFaceNormal(IList<Vertex>, Face)
+  fullName: Fusee.Jometri.Geometry.SetFaceNormal(System.Collections.Generic.IList<Fusee.Jometri.Vertex>, Fusee.Jometri.Face)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetFaceNormal
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 136
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nCalculates and saves the normal of the Face into its FaceData.\n"
+  example: []
+  syntax:
+    content: public void SetFaceNormal(IList<Vertex> faceOuterVertices, Face face)
+    parameters:
+    - id: faceOuterVertices
+      type: System.Collections.Generic.IList{Fusee.Jometri.Vertex}
+      description: All vertices of the outer boundary of the Face.
+    - id: face
+      type: Fusee.Jometri.Face
+      description: The Face the normal belongs to.
+    content.vb: Public Sub SetFaceNormal(faceOuterVertices As IList(Of Vertex), face As Face)
+  overload: Fusee.Jometri.Geometry.SetFaceNormal*
+  nameWithType.vb: Geometry.SetFaceNormal(IList(Of Vertex), Face)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Jometri.Geometry.SetFaceNormal(System.Collections.Generic.IList(Of Fusee.Jometri.Vertex), Fusee.Jometri.Face)
+  name.vb: SetFaceNormal(IList(Of Vertex), Face)
+- uid: Fusee.Jometri.Geometry.GetAllVertices
+  commentId: M:Fusee.Jometri.Geometry.GetAllVertices
+  id: GetAllVertices
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: GetAllVertices()
+  nameWithType: Geometry.GetAllVertices()
+  fullName: Fusee.Jometri.Geometry.GetAllVertices()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetAllVertices
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 191
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nReturns all Vertices of the Geometry.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Vertex> GetAllVertices()
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Jometri.Vertex}
+      description: ''
+    content.vb: Public Function GetAllVertices As IEnumerable(Of Vertex)
+  overload: Fusee.Jometri.Geometry.GetAllVertices*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Jometri.Geometry.GetAllHalfEdges
+  commentId: M:Fusee.Jometri.Geometry.GetAllHalfEdges
+  id: GetAllHalfEdges
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: GetAllHalfEdges()
+  nameWithType: Geometry.GetAllHalfEdges()
+  fullName: Fusee.Jometri.Geometry.GetAllHalfEdges()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetAllHalfEdges
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 203
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nReturns all HalfEdges of the Geometry.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<HalfEdge> GetAllHalfEdges()
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge}
+      description: ''
+    content.vb: Public Function GetAllHalfEdges As IEnumerable(Of HalfEdge)
+  overload: Fusee.Jometri.Geometry.GetAllHalfEdges*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Jometri.Geometry.GetAllFaces
+  commentId: M:Fusee.Jometri.Geometry.GetAllFaces
+  id: GetAllFaces
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: GetAllFaces()
+  nameWithType: Geometry.GetAllFaces()
+  fullName: Fusee.Jometri.Geometry.GetAllFaces()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetAllFaces
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 215
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nReturns all Faces of the Geometry.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Face> GetAllFaces()
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Jometri.Face}
+      description: ''
+    content.vb: Public Function GetAllFaces As IEnumerable(Of Face)
+  overload: Fusee.Jometri.Geometry.GetAllFaces*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Jometri.Geometry.GetVertexAdjacentVertices(System.Int32)
+  commentId: M:Fusee.Jometri.Geometry.GetVertexAdjacentVertices(System.Int32)
+  id: GetVertexAdjacentVertices(System.Int32)
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: GetVertexAdjacentVertices(Int32)
+  nameWithType: Geometry.GetVertexAdjacentVertices(Int32)
+  fullName: Fusee.Jometri.Geometry.GetVertexAdjacentVertices(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetVertexAdjacentVertices
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 232
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nThis collection contains all vertices neighboring a given Vertex.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Vertex> GetVertexAdjacentVertices(int vHandle)
+    parameters:
+    - id: vHandle
+      type: System.Int32
+      description: The reference of the Vertex.
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Jometri.Vertex}
+      description: ''
+    content.vb: Public Function GetVertexAdjacentVertices(vHandle As Integer) As IEnumerable(Of Vertex)
+  overload: Fusee.Jometri.Geometry.GetVertexAdjacentVertices*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Jometri.Geometry.GetVertexAdajacentFaces(System.Int32)
+  commentId: M:Fusee.Jometri.Geometry.GetVertexAdajacentFaces(System.Int32)
+  id: GetVertexAdajacentFaces(System.Int32)
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: GetVertexAdajacentFaces(Int32)
+  nameWithType: Geometry.GetVertexAdajacentFaces(Int32)
+  fullName: Fusee.Jometri.Geometry.GetVertexAdajacentFaces(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetVertexAdajacentFaces
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 254
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nThis collection contains all handles to Faces adjacent to a given Vertex.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Face> GetVertexAdajacentFaces(int vHandle)
+    parameters:
+    - id: vHandle
+      type: System.Int32
+      description: The reference of the Vertex.
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Jometri.Face}
+      description: ''
+    content.vb: Public Function GetVertexAdajacentFaces(vHandle As Integer) As IEnumerable(Of Face)
+  overload: Fusee.Jometri.Geometry.GetVertexAdajacentFaces*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Jometri.Geometry.GetVertexIncidentHalfEdges(System.Int32)
+  commentId: M:Fusee.Jometri.Geometry.GetVertexIncidentHalfEdges(System.Int32)
+  id: GetVertexIncidentHalfEdges(System.Int32)
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: GetVertexIncidentHalfEdges(Int32)
+  nameWithType: Geometry.GetVertexIncidentHalfEdges(Int32)
+  fullName: Fusee.Jometri.Geometry.GetVertexIncidentHalfEdges(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetVertexIncidentHalfEdges
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 274
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nThis collection contains all handles to HalfEdges starting at or targeting a given Vertex.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<HalfEdge> GetVertexIncidentHalfEdges(int vHandle)
+    parameters:
+    - id: vHandle
+      type: System.Int32
+      description: The reference of the Vertex.
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge}
+      description: ''
+    content.vb: Public Function GetVertexIncidentHalfEdges(vHandle As Integer) As IEnumerable(Of HalfEdge)
+  overload: Fusee.Jometri.Geometry.GetVertexIncidentHalfEdges*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Jometri.Geometry.GetVertexStartingHalfEdges(System.Int32)
+  commentId: M:Fusee.Jometri.Geometry.GetVertexStartingHalfEdges(System.Int32)
+  id: GetVertexStartingHalfEdges(System.Int32)
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: GetVertexStartingHalfEdges(Int32)
+  nameWithType: Geometry.GetVertexStartingHalfEdges(Int32)
+  fullName: Fusee.Jometri.Geometry.GetVertexStartingHalfEdges(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetVertexStartingHalfEdges
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 296
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nThis collection contains all handles to HalfEdges starting at a given Vertex.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<HalfEdge> GetVertexStartingHalfEdges(int vHandle)
+    parameters:
+    - id: vHandle
+      type: System.Int32
+      description: The reference of the Vertex.
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge}
+      description: ''
+    content.vb: Public Function GetVertexStartingHalfEdges(vHandle As Integer) As IEnumerable(Of HalfEdge)
+  overload: Fusee.Jometri.Geometry.GetVertexStartingHalfEdges*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Jometri.Geometry.GetVertexTargetingHalfEdges(System.Int32)
+  commentId: M:Fusee.Jometri.Geometry.GetVertexTargetingHalfEdges(System.Int32)
+  id: GetVertexTargetingHalfEdges(System.Int32)
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: GetVertexTargetingHalfEdges(Int32)
+  nameWithType: Geometry.GetVertexTargetingHalfEdges(Int32)
+  fullName: Fusee.Jometri.Geometry.GetVertexTargetingHalfEdges(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetVertexTargetingHalfEdges
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 316
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nThis collection contains all handles to HalfEdges ending at a given Vertex.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<HalfEdge> GetVertexTargetingHalfEdges(int vHandle)
+    parameters:
+    - id: vHandle
+      type: System.Int32
+      description: The reference of the Vertex.
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge}
+      description: ''
+    content.vb: Public Function GetVertexTargetingHalfEdges(vHandle As Integer) As IEnumerable(Of HalfEdge)
+  overload: Fusee.Jometri.Geometry.GetVertexTargetingHalfEdges*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Jometri.Geometry.GetHalfEdgeLoop(System.Int32)
+  commentId: M:Fusee.Jometri.Geometry.GetHalfEdgeLoop(System.Int32)
+  id: GetHalfEdgeLoop(System.Int32)
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: GetHalfEdgeLoop(Int32)
+  nameWithType: Geometry.GetHalfEdgeLoop(Int32)
+  fullName: Fusee.Jometri.Geometry.GetHalfEdgeLoop(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetHalfEdgeLoop
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 346
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nThis collection contains all handles to HalfEdges belonging to a closed loop.\nCollection is made by tracking the initial HalfEdge&apos;s successors.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<HalfEdge> GetHalfEdgeLoop(int heHandle)
+    parameters:
+    - id: heHandle
+      type: System.Int32
+      description: The reference to the HalfEdge with which the loop starts.
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge}
+      description: ''
+    content.vb: Public Function GetHalfEdgeLoop(heHandle As Integer) As IEnumerable(Of HalfEdge)
+  overload: Fusee.Jometri.Geometry.GetHalfEdgeLoop*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Jometri.Geometry.GetHalfEdgeLoopReverse(System.Int32)
+  commentId: M:Fusee.Jometri.Geometry.GetHalfEdgeLoopReverse(System.Int32)
+  id: GetHalfEdgeLoopReverse(System.Int32)
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: GetHalfEdgeLoopReverse(Int32)
+  nameWithType: Geometry.GetHalfEdgeLoopReverse(Int32)
+  fullName: Fusee.Jometri.Geometry.GetHalfEdgeLoopReverse(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetHalfEdgeLoopReverse
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 365
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nThis collection contains all handles to HalfEdges belonging to a closed loop.\nCalculation is made by tracking the initial HalfEdge&apos;s predecessors.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<HalfEdge> GetHalfEdgeLoopReverse(int heHandle)
+    parameters:
+    - id: heHandle
+      type: System.Int32
+      description: The reference to the HalfEdge with which the loop starts.
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge}
+      description: ''
+    content.vb: Public Function GetHalfEdgeLoopReverse(heHandle As Integer) As IEnumerable(Of HalfEdge)
+  overload: Fusee.Jometri.Geometry.GetHalfEdgeLoopReverse*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Jometri.Geometry.GetFacesAdajacentToFace(System.Int32)
+  commentId: M:Fusee.Jometri.Geometry.GetFacesAdajacentToFace(System.Int32)
+  id: GetFacesAdajacentToFace(System.Int32)
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: GetFacesAdajacentToFace(Int32)
+  nameWithType: Geometry.GetFacesAdajacentToFace(Int32)
+  fullName: Fusee.Jometri.Geometry.GetFacesAdajacentToFace(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetFacesAdajacentToFace
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 383
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nThis collection contains all Faces neighboring a given Face.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Face> GetFacesAdajacentToFace(int fHandle)
+    parameters:
+    - id: fHandle
+      type: System.Int32
+      description: The reference of the Face.
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Jometri.Face}
+      description: ''
+    content.vb: Public Function GetFacesAdajacentToFace(fHandle As Integer) As IEnumerable(Of Face)
+  overload: Fusee.Jometri.Geometry.GetFacesAdajacentToFace*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Jometri.Geometry.GetFaceVertices(System.Int32)
+  commentId: M:Fusee.Jometri.Geometry.GetFaceVertices(System.Int32)
+  id: GetFaceVertices(System.Int32)
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: GetFaceVertices(Int32)
+  nameWithType: Geometry.GetFaceVertices(Int32)
+  fullName: Fusee.Jometri.Geometry.GetFaceVertices(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetFaceVertices
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 414
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nThis collection contains all Vertices of a given Face.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Vertex> GetFaceVertices(int fHandle)
+    parameters:
+    - id: fHandle
+      type: System.Int32
+      description: The reference of the Face.
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Jometri.Vertex}
+      description: ''
+    content.vb: Public Function GetFaceVertices(fHandle As Integer) As IEnumerable(Of Vertex)
+  overload: Fusee.Jometri.Geometry.GetFaceVertices*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Jometri.Geometry.GetFaceOuterVertices(System.Int32)
+  commentId: M:Fusee.Jometri.Geometry.GetFaceOuterVertices(System.Int32)
+  id: GetFaceOuterVertices(System.Int32)
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: GetFaceOuterVertices(Int32)
+  nameWithType: Geometry.GetFaceOuterVertices(Int32)
+  fullName: Fusee.Jometri.Geometry.GetFaceOuterVertices(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetFaceOuterVertices
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 458
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nThis collection contains all Vertices of the outer boundary of a given Face.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Vertex> GetFaceOuterVertices(int fHandle)
+    parameters:
+    - id: fHandle
+      type: System.Int32
+      description: The reference of the Face.
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Jometri.Vertex}
+      description: ''
+    content.vb: Public Function GetFaceOuterVertices(fHandle As Integer) As IEnumerable(Of Vertex)
+  overload: Fusee.Jometri.Geometry.GetFaceOuterVertices*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Jometri.Geometry.GetFaceHalfEdges(System.Int32)
+  commentId: M:Fusee.Jometri.Geometry.GetFaceHalfEdges(System.Int32)
+  id: GetFaceHalfEdges(System.Int32)
+  parent: Fusee.Jometri.Geometry
+  langs:
+  - csharp
+  - vb
+  name: GetFaceHalfEdges(Int32)
+  nameWithType: Geometry.GetFaceHalfEdges(Int32)
+  fullName: Fusee.Jometri.Geometry.GetFaceHalfEdges(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Geometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetFaceHalfEdges
+    path: src/Fusee/src/Jometri/Geometry.cs
+    startLine: 479
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nThis collection contains all handles to HalfEdges of a given Face.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<HalfEdge> GetFaceHalfEdges(int fHandle)
+    parameters:
+    - id: fHandle
+      type: System.Int32
+      description: The reference of the Face.
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge}
+      description: ''
+    content.vb: Public Function GetFaceHalfEdges(fHandle As Integer) As IEnumerable(Of HalfEdge)
+  overload: Fusee.Jometri.Geometry.GetFaceHalfEdges*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Jometri
+  commentId: N:Fusee.Jometri
+  name: Fusee.Jometri
+  nameWithType: Fusee.Jometri
+  fullName: Fusee.Jometri
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.Fusee.Jometri.Extrude.Extrude2DPolygon(System.Single,System.Boolean)
+  commentId: M:Fusee.Jometri.Extrude.Extrude2DPolygon(Fusee.Jometri.Geometry,System.Single,System.Boolean)
+  parent: Fusee.Jometri.Extrude
+  definition: Fusee.Jometri.Extrude.Extrude2DPolygon(Fusee.Jometri.Geometry,System.Single,System.Boolean)
+  name: Extrude2DPolygon(Single, Boolean)
+  nameWithType: Extrude.Extrude2DPolygon(Single, Boolean)
+  fullName: Fusee.Jometri.Extrude.Extrude2DPolygon(System.Single, System.Boolean)
+  spec.csharp:
+  - uid: Fusee.Jometri.Extrude.Extrude2DPolygon(System.Single,System.Boolean)
+    name: Extrude2DPolygon
+    nameWithType: Extrude.Extrude2DPolygon
+    fullName: Fusee.Jometri.Extrude.Extrude2DPolygon
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.Extrude.Extrude2DPolygon(System.Single,System.Boolean)
+    name: Extrude2DPolygon
+    nameWithType: Extrude.Extrude2DPolygon
+    fullName: Fusee.Jometri.Extrude.Extrude2DPolygon
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.Fusee.Jometri.Extrude.ExtrudeFace(System.Int32,System.Single)
+  commentId: M:Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single)
+  parent: Fusee.Jometri.Extrude
+  definition: Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single)
+  name: ExtrudeFace(Int32, Single)
+  nameWithType: Extrude.ExtrudeFace(Int32, Single)
+  fullName: Fusee.Jometri.Extrude.ExtrudeFace(System.Int32, System.Single)
+  spec.csharp:
+  - uid: Fusee.Jometri.Extrude.ExtrudeFace(System.Int32,System.Single)
+    name: ExtrudeFace
+    nameWithType: Extrude.ExtrudeFace
+    fullName: Fusee.Jometri.Extrude.ExtrudeFace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.Extrude.ExtrudeFace(System.Int32,System.Single)
+    name: ExtrudeFace
+    nameWithType: Extrude.ExtrudeFace
+    fullName: Fusee.Jometri.Extrude.ExtrudeFace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.Fusee.Jometri.Extrude.ExtrudeFace(System.Int32,System.Single,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single,Fusee.Math.Core.float3)
+  parent: Fusee.Jometri.Extrude
+  definition: Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single,Fusee.Math.Core.float3)
+  name: ExtrudeFace(Int32, Single, float3)
+  nameWithType: Extrude.ExtrudeFace(Int32, Single, float3)
+  fullName: Fusee.Jometri.Extrude.ExtrudeFace(System.Int32, System.Single, Fusee.Math.Core.float3)
+  spec.csharp:
+  - uid: Fusee.Jometri.Extrude.ExtrudeFace(System.Int32,System.Single,Fusee.Math.Core.float3)
+    name: ExtrudeFace
+    nameWithType: Extrude.ExtrudeFace
+    fullName: Fusee.Jometri.Extrude.ExtrudeFace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.Extrude.ExtrudeFace(System.Int32,System.Single,Fusee.Math.Core.float3)
+    name: ExtrudeFace
+    nameWithType: Extrude.ExtrudeFace
+    fullName: Fusee.Jometri.Extrude.ExtrudeFace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.Fusee.Jometri.GeomEditing.InsertVertex(System.Int32,System.Int32,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Jometri.GeomEditing.InsertVertex(Fusee.Jometri.Geometry,System.Int32,System.Int32,Fusee.Math.Core.float3)
+  parent: Fusee.Jometri.GeomEditing
+  definition: Fusee.Jometri.GeomEditing.InsertVertex(Fusee.Jometri.Geometry,System.Int32,System.Int32,Fusee.Math.Core.float3)
+  name: InsertVertex(Int32, Int32, float3)
+  nameWithType: GeomEditing.InsertVertex(Int32, Int32, float3)
+  fullName: Fusee.Jometri.GeomEditing.InsertVertex(System.Int32, System.Int32, Fusee.Math.Core.float3)
+  spec.csharp:
+  - uid: Fusee.Jometri.GeomEditing.InsertVertex(System.Int32,System.Int32,Fusee.Math.Core.float3)
+    name: InsertVertex
+    nameWithType: GeomEditing.InsertVertex
+    fullName: Fusee.Jometri.GeomEditing.InsertVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeomEditing.InsertVertex(System.Int32,System.Int32,Fusee.Math.Core.float3)
+    name: InsertVertex
+    nameWithType: GeomEditing.InsertVertex
+    fullName: Fusee.Jometri.GeomEditing.InsertVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.Fusee.Jometri.GeomEditing.InsertDiagonal(System.Int32,System.Int32)
+  commentId: M:Fusee.Jometri.GeomEditing.InsertDiagonal(Fusee.Jometri.Geometry,System.Int32,System.Int32)
+  parent: Fusee.Jometri.GeomEditing
+  definition: Fusee.Jometri.GeomEditing.InsertDiagonal(Fusee.Jometri.Geometry,System.Int32,System.Int32)
+  name: InsertDiagonal(Int32, Int32)
+  nameWithType: GeomEditing.InsertDiagonal(Int32, Int32)
+  fullName: Fusee.Jometri.GeomEditing.InsertDiagonal(System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Fusee.Jometri.GeomEditing.InsertDiagonal(System.Int32,System.Int32)
+    name: InsertDiagonal
+    nameWithType: GeomEditing.InsertDiagonal
+    fullName: Fusee.Jometri.GeomEditing.InsertDiagonal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeomEditing.InsertDiagonal(System.Int32,System.Int32)
+    name: InsertDiagonal
+    nameWithType: GeomEditing.InsertDiagonal
+    fullName: Fusee.Jometri.GeomEditing.InsertDiagonal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.Fusee.Jometri.GeomEditing.InsetFace(System.Int32,System.Single)
+  commentId: M:Fusee.Jometri.GeomEditing.InsetFace(Fusee.Jometri.Geometry,System.Int32,System.Single)
+  parent: Fusee.Jometri.GeomEditing
+  definition: Fusee.Jometri.GeomEditing.InsetFace(Fusee.Jometri.Geometry,System.Int32,System.Single)
+  name: InsetFace(Int32, Single)
+  nameWithType: GeomEditing.InsetFace(Int32, Single)
+  fullName: Fusee.Jometri.GeomEditing.InsetFace(System.Int32, System.Single)
+  spec.csharp:
+  - uid: Fusee.Jometri.GeomEditing.InsetFace(System.Int32,System.Single)
+    name: InsetFace
+    nameWithType: GeomEditing.InsetFace
+    fullName: Fusee.Jometri.GeomEditing.InsetFace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeomEditing.InsetFace(System.Int32,System.Single)
+    name: InsetFace
+    nameWithType: GeomEditing.InsetFace
+    fullName: Fusee.Jometri.GeomEditing.InsetFace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Face,Fusee.Jometri.Vertex)
+  commentId: M:Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex)
+  parent: Fusee.Jometri.GeometricOperations
+  definition: Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex)
+  name: IsPointInPolygon(Face, Vertex)
+  nameWithType: GeometricOperations.IsPointInPolygon(Face, Vertex)
+  fullName: Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Face, Fusee.Jometri.Vertex)
+  spec.csharp:
+  - uid: Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Face,Fusee.Jometri.Vertex)
+    name: IsPointInPolygon
+    nameWithType: GeometricOperations.IsPointInPolygon
+    fullName: Fusee.Jometri.GeometricOperations.IsPointInPolygon
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Face,Fusee.Jometri.Vertex)
+    name: IsPointInPolygon
+    nameWithType: GeometricOperations.IsPointInPolygon
+    fullName: Fusee.Jometri.GeometricOperations.IsPointInPolygon
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Face,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Math.Core.float3)
+  parent: Fusee.Jometri.GeometricOperations
+  definition: Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Math.Core.float3)
+  name: IsPointInPolygon(Face, float3)
+  nameWithType: GeometricOperations.IsPointInPolygon(Face, float3)
+  fullName: Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Face, Fusee.Math.Core.float3)
+  spec.csharp:
+  - uid: Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Face,Fusee.Math.Core.float3)
+    name: IsPointInPolygon
+    nameWithType: GeometricOperations.IsPointInPolygon
+    fullName: Fusee.Jometri.GeometricOperations.IsPointInPolygon
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Face,Fusee.Math.Core.float3)
+    name: IsPointInPolygon
+    nameWithType: GeometricOperations.IsPointInPolygon
+    fullName: Fusee.Jometri.GeometricOperations.IsPointInPolygon
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.Fusee.Jometri.GeometricOperations.IsAngleGreaterPi(Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+  commentId: M:Fusee.Jometri.GeometricOperations.IsAngleGreaterPi(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+  parent: Fusee.Jometri.GeometricOperations
+  definition: Fusee.Jometri.GeometricOperations.IsAngleGreaterPi(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+  name: IsAngleGreaterPi(Face, Vertex, Vertex, Vertex)
+  nameWithType: GeometricOperations.IsAngleGreaterPi(Face, Vertex, Vertex, Vertex)
+  fullName: Fusee.Jometri.GeometricOperations.IsAngleGreaterPi(Fusee.Jometri.Face, Fusee.Jometri.Vertex, Fusee.Jometri.Vertex, Fusee.Jometri.Vertex)
+  spec.csharp:
+  - uid: Fusee.Jometri.GeometricOperations.IsAngleGreaterPi(Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+    name: IsAngleGreaterPi
+    nameWithType: GeometricOperations.IsAngleGreaterPi
+    fullName: Fusee.Jometri.GeometricOperations.IsAngleGreaterPi
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeometricOperations.IsAngleGreaterPi(Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+    name: IsAngleGreaterPi
+    nameWithType: GeometricOperations.IsAngleGreaterPi
+    fullName: Fusee.Jometri.GeometricOperations.IsAngleGreaterPi
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.Fusee.Jometri.GeometricOperations.IsAngleGreaterOrEqualPi(Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+  commentId: M:Fusee.Jometri.GeometricOperations.IsAngleGreaterOrEqualPi(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+  parent: Fusee.Jometri.GeometricOperations
+  definition: Fusee.Jometri.GeometricOperations.IsAngleGreaterOrEqualPi(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+  name: IsAngleGreaterOrEqualPi(Face, Vertex, Vertex, Vertex)
+  nameWithType: GeometricOperations.IsAngleGreaterOrEqualPi(Face, Vertex, Vertex, Vertex)
+  fullName: Fusee.Jometri.GeometricOperations.IsAngleGreaterOrEqualPi(Fusee.Jometri.Face, Fusee.Jometri.Vertex, Fusee.Jometri.Vertex, Fusee.Jometri.Vertex)
+  spec.csharp:
+  - uid: Fusee.Jometri.GeometricOperations.IsAngleGreaterOrEqualPi(Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+    name: IsAngleGreaterOrEqualPi
+    nameWithType: GeometricOperations.IsAngleGreaterOrEqualPi
+    fullName: Fusee.Jometri.GeometricOperations.IsAngleGreaterOrEqualPi
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeometricOperations.IsAngleGreaterOrEqualPi(Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+    name: IsAngleGreaterOrEqualPi
+    nameWithType: GeometricOperations.IsAngleGreaterOrEqualPi
+    fullName: Fusee.Jometri.GeometricOperations.IsAngleGreaterOrEqualPi
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.Fusee.Jometri.GeometricOperations.IsVertexAdjacentToVertex(System.Int32,System.Int32,Fusee.Jometri.HalfEdge,Fusee.Jometri.HalfEdge)
+  commentId: M:Fusee.Jometri.GeometricOperations.IsVertexAdjacentToVertex(Fusee.Jometri.Geometry,System.Int32,System.Int32,Fusee.Jometri.HalfEdge,Fusee.Jometri.HalfEdge)
+  parent: Fusee.Jometri.GeometricOperations
+  definition: Fusee.Jometri.GeometricOperations.IsVertexAdjacentToVertex(Fusee.Jometri.Geometry,System.Int32,System.Int32,Fusee.Jometri.HalfEdge,Fusee.Jometri.HalfEdge)
+  name: IsVertexAdjacentToVertex(Int32, Int32, HalfEdge, HalfEdge)
+  nameWithType: GeometricOperations.IsVertexAdjacentToVertex(Int32, Int32, HalfEdge, HalfEdge)
+  fullName: Fusee.Jometri.GeometricOperations.IsVertexAdjacentToVertex(System.Int32, System.Int32, Fusee.Jometri.HalfEdge, Fusee.Jometri.HalfEdge)
+  spec.csharp:
+  - uid: Fusee.Jometri.GeometricOperations.IsVertexAdjacentToVertex(System.Int32,System.Int32,Fusee.Jometri.HalfEdge,Fusee.Jometri.HalfEdge)
+    name: IsVertexAdjacentToVertex
+    nameWithType: GeometricOperations.IsVertexAdjacentToVertex
+    fullName: Fusee.Jometri.GeometricOperations.IsVertexAdjacentToVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.HalfEdge
+    name: HalfEdge
+    nameWithType: HalfEdge
+    fullName: Fusee.Jometri.HalfEdge
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.HalfEdge
+    name: HalfEdge
+    nameWithType: HalfEdge
+    fullName: Fusee.Jometri.HalfEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeometricOperations.IsVertexAdjacentToVertex(System.Int32,System.Int32,Fusee.Jometri.HalfEdge,Fusee.Jometri.HalfEdge)
+    name: IsVertexAdjacentToVertex
+    nameWithType: GeometricOperations.IsVertexAdjacentToVertex
+    fullName: Fusee.Jometri.GeometricOperations.IsVertexAdjacentToVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.HalfEdge
+    name: HalfEdge
+    nameWithType: HalfEdge
+    fullName: Fusee.Jometri.HalfEdge
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.HalfEdge
+    name: HalfEdge
+    nameWithType: HalfEdge
+    fullName: Fusee.Jometri.HalfEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding(System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge})
+  commentId: M:Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding(Fusee.Jometri.Geometry,System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge})
+  parent: Fusee.Jometri.GeometricOperations
+  definition: Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding(Fusee.Jometri.Geometry,System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge})
+  name: GetHalfEdgesWChangedWinding(IEnumerable<HalfEdge>)
+  nameWithType: GeometricOperations.GetHalfEdgesWChangedWinding(IEnumerable<HalfEdge>)
+  fullName: Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding(System.Collections.Generic.IEnumerable<Fusee.Jometri.HalfEdge>)
+  nameWithType.vb: GeometricOperations.GetHalfEdgesWChangedWinding(IEnumerable(Of HalfEdge))
+  fullName.vb: Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding(System.Collections.Generic.IEnumerable(Of Fusee.Jometri.HalfEdge))
+  name.vb: GetHalfEdgesWChangedWinding(IEnumerable(Of HalfEdge))
+  spec.csharp:
+  - uid: Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding(System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge})
+    name: GetHalfEdgesWChangedWinding
+    nameWithType: GeometricOperations.GetHalfEdgesWChangedWinding
+    fullName: Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Jometri.HalfEdge
+    name: HalfEdge
+    nameWithType: HalfEdge
+    fullName: Fusee.Jometri.HalfEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding(System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge})
+    name: GetHalfEdgesWChangedWinding
+    nameWithType: GeometricOperations.GetHalfEdgesWChangedWinding
+    fullName: Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Jometri.HalfEdge
+    name: HalfEdge
+    nameWithType: HalfEdge
+    fullName: Fusee.Jometri.HalfEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.Fusee.Jometri.Triangulation.Triangulate
+  commentId: M:Fusee.Jometri.Triangulation.Triangulate(Fusee.Jometri.Geometry)
+  parent: Fusee.Jometri.Triangulation
+  definition: Fusee.Jometri.Triangulation.Triangulate(Fusee.Jometri.Geometry)
+  name: Triangulate()
+  nameWithType: Triangulation.Triangulate()
+  fullName: Fusee.Jometri.Triangulation.Triangulate()
+  spec.csharp:
+  - uid: Fusee.Jometri.Triangulation.Triangulate
+    name: Triangulate
+    nameWithType: Triangulation.Triangulate
+    fullName: Fusee.Jometri.Triangulation.Triangulate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.Triangulation.Triangulate
+    name: Triangulate
+    nameWithType: Triangulation.Triangulate
+    fullName: Fusee.Jometri.Triangulation.Triangulate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Jometri.Extrude.Extrude2DPolygon(Fusee.Jometri.Geometry,System.Single,System.Boolean)
+  commentId: M:Fusee.Jometri.Extrude.Extrude2DPolygon(Fusee.Jometri.Geometry,System.Single,System.Boolean)
+  isExternal: true
+  name: Extrude2DPolygon(Geometry, Single, Boolean)
+  nameWithType: Extrude.Extrude2DPolygon(Geometry, Single, Boolean)
+  fullName: Fusee.Jometri.Extrude.Extrude2DPolygon(Fusee.Jometri.Geometry, System.Single, System.Boolean)
+  spec.csharp:
+  - uid: Fusee.Jometri.Extrude.Extrude2DPolygon(Fusee.Jometri.Geometry,System.Single,System.Boolean)
+    name: Extrude2DPolygon
+    nameWithType: Extrude.Extrude2DPolygon
+    fullName: Fusee.Jometri.Extrude.Extrude2DPolygon
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.Extrude.Extrude2DPolygon(Fusee.Jometri.Geometry,System.Single,System.Boolean)
+    name: Extrude2DPolygon
+    nameWithType: Extrude.Extrude2DPolygon
+    fullName: Fusee.Jometri.Extrude.Extrude2DPolygon
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Extrude
+  commentId: T:Fusee.Jometri.Extrude
+  parent: Fusee.Jometri
+  name: Extrude
+  nameWithType: Extrude
+  fullName: Fusee.Jometri.Extrude
+- uid: Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single)
+  commentId: M:Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single)
+  isExternal: true
+  name: ExtrudeFace(Geometry, Int32, Single)
+  nameWithType: Extrude.ExtrudeFace(Geometry, Int32, Single)
+  fullName: Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry, System.Int32, System.Single)
+  spec.csharp:
+  - uid: Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single)
+    name: ExtrudeFace
+    nameWithType: Extrude.ExtrudeFace
+    fullName: Fusee.Jometri.Extrude.ExtrudeFace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single)
+    name: ExtrudeFace
+    nameWithType: Extrude.ExtrudeFace
+    fullName: Fusee.Jometri.Extrude.ExtrudeFace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single,Fusee.Math.Core.float3)
+  isExternal: true
+  name: ExtrudeFace(Geometry, Int32, Single, float3)
+  nameWithType: Extrude.ExtrudeFace(Geometry, Int32, Single, float3)
+  fullName: Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry, System.Int32, System.Single, Fusee.Math.Core.float3)
+  spec.csharp:
+  - uid: Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single,Fusee.Math.Core.float3)
+    name: ExtrudeFace
+    nameWithType: Extrude.ExtrudeFace
+    fullName: Fusee.Jometri.Extrude.ExtrudeFace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single,Fusee.Math.Core.float3)
+    name: ExtrudeFace
+    nameWithType: Extrude.ExtrudeFace
+    fullName: Fusee.Jometri.Extrude.ExtrudeFace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.GeomEditing.InsertVertex(Fusee.Jometri.Geometry,System.Int32,System.Int32,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Jometri.GeomEditing.InsertVertex(Fusee.Jometri.Geometry,System.Int32,System.Int32,Fusee.Math.Core.float3)
+  isExternal: true
+  name: InsertVertex(Geometry, Int32, Int32, float3)
+  nameWithType: GeomEditing.InsertVertex(Geometry, Int32, Int32, float3)
+  fullName: Fusee.Jometri.GeomEditing.InsertVertex(Fusee.Jometri.Geometry, System.Int32, System.Int32, Fusee.Math.Core.float3)
+  spec.csharp:
+  - uid: Fusee.Jometri.GeomEditing.InsertVertex(Fusee.Jometri.Geometry,System.Int32,System.Int32,Fusee.Math.Core.float3)
+    name: InsertVertex
+    nameWithType: GeomEditing.InsertVertex
+    fullName: Fusee.Jometri.GeomEditing.InsertVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeomEditing.InsertVertex(Fusee.Jometri.Geometry,System.Int32,System.Int32,Fusee.Math.Core.float3)
+    name: InsertVertex
+    nameWithType: GeomEditing.InsertVertex
+    fullName: Fusee.Jometri.GeomEditing.InsertVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.GeomEditing
+  commentId: T:Fusee.Jometri.GeomEditing
+  parent: Fusee.Jometri
+  name: GeomEditing
+  nameWithType: GeomEditing
+  fullName: Fusee.Jometri.GeomEditing
+- uid: Fusee.Jometri.GeomEditing.InsertDiagonal(Fusee.Jometri.Geometry,System.Int32,System.Int32)
+  commentId: M:Fusee.Jometri.GeomEditing.InsertDiagonal(Fusee.Jometri.Geometry,System.Int32,System.Int32)
+  isExternal: true
+  name: InsertDiagonal(Geometry, Int32, Int32)
+  nameWithType: GeomEditing.InsertDiagonal(Geometry, Int32, Int32)
+  fullName: Fusee.Jometri.GeomEditing.InsertDiagonal(Fusee.Jometri.Geometry, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Fusee.Jometri.GeomEditing.InsertDiagonal(Fusee.Jometri.Geometry,System.Int32,System.Int32)
+    name: InsertDiagonal
+    nameWithType: GeomEditing.InsertDiagonal
+    fullName: Fusee.Jometri.GeomEditing.InsertDiagonal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeomEditing.InsertDiagonal(Fusee.Jometri.Geometry,System.Int32,System.Int32)
+    name: InsertDiagonal
+    nameWithType: GeomEditing.InsertDiagonal
+    fullName: Fusee.Jometri.GeomEditing.InsertDiagonal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.GeomEditing.InsetFace(Fusee.Jometri.Geometry,System.Int32,System.Single)
+  commentId: M:Fusee.Jometri.GeomEditing.InsetFace(Fusee.Jometri.Geometry,System.Int32,System.Single)
+  isExternal: true
+  name: InsetFace(Geometry, Int32, Single)
+  nameWithType: GeomEditing.InsetFace(Geometry, Int32, Single)
+  fullName: Fusee.Jometri.GeomEditing.InsetFace(Fusee.Jometri.Geometry, System.Int32, System.Single)
+  spec.csharp:
+  - uid: Fusee.Jometri.GeomEditing.InsetFace(Fusee.Jometri.Geometry,System.Int32,System.Single)
+    name: InsetFace
+    nameWithType: GeomEditing.InsetFace
+    fullName: Fusee.Jometri.GeomEditing.InsetFace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeomEditing.InsetFace(Fusee.Jometri.Geometry,System.Int32,System.Single)
+    name: InsetFace
+    nameWithType: GeomEditing.InsetFace
+    fullName: Fusee.Jometri.GeomEditing.InsetFace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex)
+  commentId: M:Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex)
+  name: IsPointInPolygon(Geometry, Face, Vertex)
+  nameWithType: GeometricOperations.IsPointInPolygon(Geometry, Face, Vertex)
+  fullName: Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Geometry, Fusee.Jometri.Face, Fusee.Jometri.Vertex)
+  spec.csharp:
+  - uid: Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex)
+    name: IsPointInPolygon
+    nameWithType: GeometricOperations.IsPointInPolygon
+    fullName: Fusee.Jometri.GeometricOperations.IsPointInPolygon
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex)
+    name: IsPointInPolygon
+    nameWithType: GeometricOperations.IsPointInPolygon
+    fullName: Fusee.Jometri.GeometricOperations.IsPointInPolygon
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.GeometricOperations
+  commentId: T:Fusee.Jometri.GeometricOperations
+  parent: Fusee.Jometri
+  name: GeometricOperations
+  nameWithType: GeometricOperations
+  fullName: Fusee.Jometri.GeometricOperations
+- uid: Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Math.Core.float3)
+  name: IsPointInPolygon(Geometry, Face, float3)
+  nameWithType: GeometricOperations.IsPointInPolygon(Geometry, Face, float3)
+  fullName: Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Geometry, Fusee.Jometri.Face, Fusee.Math.Core.float3)
+  spec.csharp:
+  - uid: Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Math.Core.float3)
+    name: IsPointInPolygon
+    nameWithType: GeometricOperations.IsPointInPolygon
+    fullName: Fusee.Jometri.GeometricOperations.IsPointInPolygon
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeometricOperations.IsPointInPolygon(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Math.Core.float3)
+    name: IsPointInPolygon
+    nameWithType: GeometricOperations.IsPointInPolygon
+    fullName: Fusee.Jometri.GeometricOperations.IsPointInPolygon
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.GeometricOperations.IsAngleGreaterPi(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+  commentId: M:Fusee.Jometri.GeometricOperations.IsAngleGreaterPi(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+  name: IsAngleGreaterPi(Geometry, Face, Vertex, Vertex, Vertex)
+  nameWithType: GeometricOperations.IsAngleGreaterPi(Geometry, Face, Vertex, Vertex, Vertex)
+  fullName: Fusee.Jometri.GeometricOperations.IsAngleGreaterPi(Fusee.Jometri.Geometry, Fusee.Jometri.Face, Fusee.Jometri.Vertex, Fusee.Jometri.Vertex, Fusee.Jometri.Vertex)
+  spec.csharp:
+  - uid: Fusee.Jometri.GeometricOperations.IsAngleGreaterPi(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+    name: IsAngleGreaterPi
+    nameWithType: GeometricOperations.IsAngleGreaterPi
+    fullName: Fusee.Jometri.GeometricOperations.IsAngleGreaterPi
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeometricOperations.IsAngleGreaterPi(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+    name: IsAngleGreaterPi
+    nameWithType: GeometricOperations.IsAngleGreaterPi
+    fullName: Fusee.Jometri.GeometricOperations.IsAngleGreaterPi
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.GeometricOperations.IsAngleGreaterOrEqualPi(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+  commentId: M:Fusee.Jometri.GeometricOperations.IsAngleGreaterOrEqualPi(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+  name: IsAngleGreaterOrEqualPi(Geometry, Face, Vertex, Vertex, Vertex)
+  nameWithType: GeometricOperations.IsAngleGreaterOrEqualPi(Geometry, Face, Vertex, Vertex, Vertex)
+  fullName: Fusee.Jometri.GeometricOperations.IsAngleGreaterOrEqualPi(Fusee.Jometri.Geometry, Fusee.Jometri.Face, Fusee.Jometri.Vertex, Fusee.Jometri.Vertex, Fusee.Jometri.Vertex)
+  spec.csharp:
+  - uid: Fusee.Jometri.GeometricOperations.IsAngleGreaterOrEqualPi(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+    name: IsAngleGreaterOrEqualPi
+    nameWithType: GeometricOperations.IsAngleGreaterOrEqualPi
+    fullName: Fusee.Jometri.GeometricOperations.IsAngleGreaterOrEqualPi
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeometricOperations.IsAngleGreaterOrEqualPi(Fusee.Jometri.Geometry,Fusee.Jometri.Face,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex,Fusee.Jometri.Vertex)
+    name: IsAngleGreaterOrEqualPi
+    nameWithType: GeometricOperations.IsAngleGreaterOrEqualPi
+    fullName: Fusee.Jometri.GeometricOperations.IsAngleGreaterOrEqualPi
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.GeometricOperations.IsVertexAdjacentToVertex(Fusee.Jometri.Geometry,System.Int32,System.Int32,Fusee.Jometri.HalfEdge,Fusee.Jometri.HalfEdge)
+  commentId: M:Fusee.Jometri.GeometricOperations.IsVertexAdjacentToVertex(Fusee.Jometri.Geometry,System.Int32,System.Int32,Fusee.Jometri.HalfEdge,Fusee.Jometri.HalfEdge)
+  isExternal: true
+  name: IsVertexAdjacentToVertex(Geometry, Int32, Int32, HalfEdge, HalfEdge)
+  nameWithType: GeometricOperations.IsVertexAdjacentToVertex(Geometry, Int32, Int32, HalfEdge, HalfEdge)
+  fullName: Fusee.Jometri.GeometricOperations.IsVertexAdjacentToVertex(Fusee.Jometri.Geometry, System.Int32, System.Int32, Fusee.Jometri.HalfEdge, Fusee.Jometri.HalfEdge)
+  spec.csharp:
+  - uid: Fusee.Jometri.GeometricOperations.IsVertexAdjacentToVertex(Fusee.Jometri.Geometry,System.Int32,System.Int32,Fusee.Jometri.HalfEdge,Fusee.Jometri.HalfEdge)
+    name: IsVertexAdjacentToVertex
+    nameWithType: GeometricOperations.IsVertexAdjacentToVertex
+    fullName: Fusee.Jometri.GeometricOperations.IsVertexAdjacentToVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.HalfEdge
+    name: HalfEdge
+    nameWithType: HalfEdge
+    fullName: Fusee.Jometri.HalfEdge
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.HalfEdge
+    name: HalfEdge
+    nameWithType: HalfEdge
+    fullName: Fusee.Jometri.HalfEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeometricOperations.IsVertexAdjacentToVertex(Fusee.Jometri.Geometry,System.Int32,System.Int32,Fusee.Jometri.HalfEdge,Fusee.Jometri.HalfEdge)
+    name: IsVertexAdjacentToVertex
+    nameWithType: GeometricOperations.IsVertexAdjacentToVertex
+    fullName: Fusee.Jometri.GeometricOperations.IsVertexAdjacentToVertex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.HalfEdge
+    name: HalfEdge
+    nameWithType: HalfEdge
+    fullName: Fusee.Jometri.HalfEdge
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Jometri.HalfEdge
+    name: HalfEdge
+    nameWithType: HalfEdge
+    fullName: Fusee.Jometri.HalfEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding(Fusee.Jometri.Geometry,System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge})
+  commentId: M:Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding(Fusee.Jometri.Geometry,System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge})
+  isExternal: true
+  name: GetHalfEdgesWChangedWinding(Geometry, IEnumerable<HalfEdge>)
+  nameWithType: GeometricOperations.GetHalfEdgesWChangedWinding(Geometry, IEnumerable<HalfEdge>)
+  fullName: Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding(Fusee.Jometri.Geometry, System.Collections.Generic.IEnumerable<Fusee.Jometri.HalfEdge>)
+  nameWithType.vb: GeometricOperations.GetHalfEdgesWChangedWinding(Geometry, IEnumerable(Of HalfEdge))
+  fullName.vb: Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding(Fusee.Jometri.Geometry, System.Collections.Generic.IEnumerable(Of Fusee.Jometri.HalfEdge))
+  name.vb: GetHalfEdgesWChangedWinding(Geometry, IEnumerable(Of HalfEdge))
+  spec.csharp:
+  - uid: Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding(Fusee.Jometri.Geometry,System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge})
+    name: GetHalfEdgesWChangedWinding
+    nameWithType: GeometricOperations.GetHalfEdgesWChangedWinding
+    fullName: Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Jometri.HalfEdge
+    name: HalfEdge
+    nameWithType: HalfEdge
+    fullName: Fusee.Jometri.HalfEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding(Fusee.Jometri.Geometry,System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge})
+    name: GetHalfEdgesWChangedWinding
+    nameWithType: GeometricOperations.GetHalfEdgesWChangedWinding
+    fullName: Fusee.Jometri.GeometricOperations.GetHalfEdgesWChangedWinding
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Jometri.HalfEdge
+    name: HalfEdge
+    nameWithType: HalfEdge
+    fullName: Fusee.Jometri.HalfEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Triangulation.Triangulate(Fusee.Jometri.Geometry)
+  commentId: M:Fusee.Jometri.Triangulation.Triangulate(Fusee.Jometri.Geometry)
+  name: Triangulate(Geometry)
+  nameWithType: Triangulation.Triangulate(Geometry)
+  fullName: Fusee.Jometri.Triangulation.Triangulate(Fusee.Jometri.Geometry)
+  spec.csharp:
+  - uid: Fusee.Jometri.Triangulation.Triangulate(Fusee.Jometri.Geometry)
+    name: Triangulate
+    nameWithType: Triangulation.Triangulate
+    fullName: Fusee.Jometri.Triangulation.Triangulate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Jometri.Triangulation.Triangulate(Fusee.Jometri.Geometry)
+    name: Triangulate
+    nameWithType: Triangulation.Triangulate
+    fullName: Fusee.Jometri.Triangulation.Triangulate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Jometri.Geometry
+    name: Geometry
+    nameWithType: Geometry
+    fullName: Fusee.Jometri.Geometry
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Triangulation
+  commentId: T:Fusee.Jometri.Triangulation
+  parent: Fusee.Jometri
+  name: Triangulation
+  nameWithType: Triangulation
+  fullName: Fusee.Jometri.Triangulation
+- uid: Fusee.Jometri.Geometry.#ctor*
+  commentId: Overload:Fusee.Jometri.Geometry.#ctor
+  name: Geometry
+  nameWithType: Geometry.Geometry
+  fullName: Fusee.Jometri.Geometry.Geometry
+- uid: System.Collections.Generic.IEnumerable{Fusee.Jometri.PolyBoundary}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Jometri.PolyBoundary}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<PolyBoundary>
+  nameWithType: IEnumerable<PolyBoundary>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Jometri.PolyBoundary>
+  nameWithType.vb: IEnumerable(Of PolyBoundary)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Jometri.PolyBoundary)
+  name.vb: IEnumerable(Of PolyBoundary)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Jometri.PolyBoundary
+    name: PolyBoundary
+    nameWithType: PolyBoundary
+    fullName: Fusee.Jometri.PolyBoundary
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Jometri.PolyBoundary
+    name: PolyBoundary
+    nameWithType: PolyBoundary
+    fullName: Fusee.Jometri.PolyBoundary
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Fusee.Jometri.Geometry.CloneGeometry*
+  commentId: Overload:Fusee.Jometri.Geometry.CloneGeometry
+  name: CloneGeometry
+  nameWithType: Geometry.CloneGeometry
+  fullName: Fusee.Jometri.Geometry.CloneGeometry
+- uid: Fusee.Jometri.Geometry
+  commentId: T:Fusee.Jometri.Geometry
+  parent: Fusee.Jometri
+  name: Geometry
+  nameWithType: Geometry
+  fullName: Fusee.Jometri.Geometry
+- uid: Fusee.Jometri.Geometry.SetFaceNormal*
+  commentId: Overload:Fusee.Jometri.Geometry.SetFaceNormal
+  name: SetFaceNormal
+  nameWithType: Geometry.SetFaceNormal
+  fullName: Fusee.Jometri.Geometry.SetFaceNormal
+- uid: System.Collections.Generic.IList{Fusee.Jometri.Vertex}
+  commentId: T:System.Collections.Generic.IList{Fusee.Jometri.Vertex}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<Vertex>
+  nameWithType: IList<Vertex>
+  fullName: System.Collections.Generic.IList<Fusee.Jometri.Vertex>
+  nameWithType.vb: IList(Of Vertex)
+  fullName.vb: System.Collections.Generic.IList(Of Fusee.Jometri.Vertex)
+  name.vb: IList(Of Vertex)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Face
+  commentId: T:Fusee.Jometri.Face
+  parent: Fusee.Jometri
+  name: Face
+  nameWithType: Face
+  fullName: Fusee.Jometri.Face
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.GetAllVertices*
+  commentId: Overload:Fusee.Jometri.Geometry.GetAllVertices
+  name: GetAllVertices
+  nameWithType: Geometry.GetAllVertices
+  fullName: Fusee.Jometri.Geometry.GetAllVertices
+- uid: System.Collections.Generic.IEnumerable{Fusee.Jometri.Vertex}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Jometri.Vertex}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Vertex>
+  nameWithType: IEnumerable<Vertex>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Jometri.Vertex>
+  nameWithType.vb: IEnumerable(Of Vertex)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Jometri.Vertex)
+  name.vb: IEnumerable(Of Vertex)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Jometri.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Fusee.Jometri.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.GetAllHalfEdges*
+  commentId: Overload:Fusee.Jometri.Geometry.GetAllHalfEdges
+  name: GetAllHalfEdges
+  nameWithType: Geometry.GetAllHalfEdges
+  fullName: Fusee.Jometri.Geometry.GetAllHalfEdges
+- uid: System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Jometri.HalfEdge}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<HalfEdge>
+  nameWithType: IEnumerable<HalfEdge>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Jometri.HalfEdge>
+  nameWithType.vb: IEnumerable(Of HalfEdge)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Jometri.HalfEdge)
+  name.vb: IEnumerable(Of HalfEdge)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Jometri.HalfEdge
+    name: HalfEdge
+    nameWithType: HalfEdge
+    fullName: Fusee.Jometri.HalfEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Jometri.HalfEdge
+    name: HalfEdge
+    nameWithType: HalfEdge
+    fullName: Fusee.Jometri.HalfEdge
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.GetAllFaces*
+  commentId: Overload:Fusee.Jometri.Geometry.GetAllFaces
+  name: GetAllFaces
+  nameWithType: Geometry.GetAllFaces
+  fullName: Fusee.Jometri.Geometry.GetAllFaces
+- uid: System.Collections.Generic.IEnumerable{Fusee.Jometri.Face}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Jometri.Face}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Face>
+  nameWithType: IEnumerable<Face>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Jometri.Face>
+  nameWithType.vb: IEnumerable(Of Face)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Jometri.Face)
+  name.vb: IEnumerable(Of Face)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Jometri.Face
+    name: Face
+    nameWithType: Face
+    fullName: Fusee.Jometri.Face
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Jometri.Geometry.GetVertexAdjacentVertices*
+  commentId: Overload:Fusee.Jometri.Geometry.GetVertexAdjacentVertices
+  name: GetVertexAdjacentVertices
+  nameWithType: Geometry.GetVertexAdjacentVertices
+  fullName: Fusee.Jometri.Geometry.GetVertexAdjacentVertices
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Jometri.Geometry.GetVertexAdajacentFaces*
+  commentId: Overload:Fusee.Jometri.Geometry.GetVertexAdajacentFaces
+  name: GetVertexAdajacentFaces
+  nameWithType: Geometry.GetVertexAdajacentFaces
+  fullName: Fusee.Jometri.Geometry.GetVertexAdajacentFaces
+- uid: Fusee.Jometri.Geometry.GetVertexIncidentHalfEdges*
+  commentId: Overload:Fusee.Jometri.Geometry.GetVertexIncidentHalfEdges
+  name: GetVertexIncidentHalfEdges
+  nameWithType: Geometry.GetVertexIncidentHalfEdges
+  fullName: Fusee.Jometri.Geometry.GetVertexIncidentHalfEdges
+- uid: Fusee.Jometri.Geometry.GetVertexStartingHalfEdges*
+  commentId: Overload:Fusee.Jometri.Geometry.GetVertexStartingHalfEdges
+  name: GetVertexStartingHalfEdges
+  nameWithType: Geometry.GetVertexStartingHalfEdges
+  fullName: Fusee.Jometri.Geometry.GetVertexStartingHalfEdges
+- uid: Fusee.Jometri.Geometry.GetVertexTargetingHalfEdges*
+  commentId: Overload:Fusee.Jometri.Geometry.GetVertexTargetingHalfEdges
+  name: GetVertexTargetingHalfEdges
+  nameWithType: Geometry.GetVertexTargetingHalfEdges
+  fullName: Fusee.Jometri.Geometry.GetVertexTargetingHalfEdges
+- uid: Fusee.Jometri.Geometry.GetHalfEdgeLoop*
+  commentId: Overload:Fusee.Jometri.Geometry.GetHalfEdgeLoop
+  name: GetHalfEdgeLoop
+  nameWithType: Geometry.GetHalfEdgeLoop
+  fullName: Fusee.Jometri.Geometry.GetHalfEdgeLoop
+- uid: Fusee.Jometri.Geometry.GetHalfEdgeLoopReverse*
+  commentId: Overload:Fusee.Jometri.Geometry.GetHalfEdgeLoopReverse
+  name: GetHalfEdgeLoopReverse
+  nameWithType: Geometry.GetHalfEdgeLoopReverse
+  fullName: Fusee.Jometri.Geometry.GetHalfEdgeLoopReverse
+- uid: Fusee.Jometri.Geometry.GetFacesAdajacentToFace*
+  commentId: Overload:Fusee.Jometri.Geometry.GetFacesAdajacentToFace
+  name: GetFacesAdajacentToFace
+  nameWithType: Geometry.GetFacesAdajacentToFace
+  fullName: Fusee.Jometri.Geometry.GetFacesAdajacentToFace
+- uid: Fusee.Jometri.Geometry.GetFaceVertices*
+  commentId: Overload:Fusee.Jometri.Geometry.GetFaceVertices
+  name: GetFaceVertices
+  nameWithType: Geometry.GetFaceVertices
+  fullName: Fusee.Jometri.Geometry.GetFaceVertices
+- uid: Fusee.Jometri.Geometry.GetFaceOuterVertices*
+  commentId: Overload:Fusee.Jometri.Geometry.GetFaceOuterVertices
+  name: GetFaceOuterVertices
+  nameWithType: Geometry.GetFaceOuterVertices
+  fullName: Fusee.Jometri.Geometry.GetFaceOuterVertices
+- uid: Fusee.Jometri.Geometry.GetFaceHalfEdges*
+  commentId: Overload:Fusee.Jometri.Geometry.GetFaceHalfEdges
+  name: GetFaceHalfEdges
+  nameWithType: Geometry.GetFaceHalfEdges
+  fullName: Fusee.Jometri.Geometry.GetFaceHalfEdges

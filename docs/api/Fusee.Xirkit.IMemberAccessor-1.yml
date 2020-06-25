@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Xirkit.IMemberAccessor`1
+  commentId: T:Fusee.Xirkit.IMemberAccessor`1
+  id: IMemberAccessor`1
+  parent: Fusee.Xirkit
+  children:
+  - Fusee.Xirkit.IMemberAccessor`1.Get(System.Object)
+  - Fusee.Xirkit.IMemberAccessor`1.Set(System.Object,`0)
+  langs:
+  - csharp
+  - vb
+  name: IMemberAccessor<T>
+  nameWithType: IMemberAccessor<T>
+  fullName: Fusee.Xirkit.IMemberAccessor<T>
+  type: Interface
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/IMemberAccessor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IMemberAccessor
+    path: src/Fusee/src/Xirkit/IMemberAccessor.cs
+    startLine: 9
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nBase interface for all accessors. An accessor implements the connections between the Pin \n(<xref href=\"Fusee.Xirkit.IInPin\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"Fusee.Xirkit.IOutPin\" data-throw-if-not-resolved=\"false\"></xref>) of a <xref href=\"Fusee.Xirkit.Node\" data-throw-if-not-resolved=\"false\"></xref> and a member\n(such as a Field or a Property) of the object &quot;hosted&quot; by the Node.\n"
+  example: []
+  syntax:
+    content: public interface IMemberAccessor<T>
+    typeParameters:
+    - id: T
+      description: >-
+        The type of the pin. This is not necessarily the exact type
+
+        of the member exposed by the object due to Xirkits ability to perform data conversions.
+    content.vb: Public Interface IMemberAccessor(Of T)
+  nameWithType.vb: IMemberAccessor(Of T)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Fusee.Xirkit.IMemberAccessor(Of T)
+  name.vb: IMemberAccessor(Of T)
+- uid: Fusee.Xirkit.IMemberAccessor`1.Set(System.Object,`0)
+  commentId: M:Fusee.Xirkit.IMemberAccessor`1.Set(System.Object,`0)
+  id: Set(System.Object,`0)
+  parent: Fusee.Xirkit.IMemberAccessor`1
+  langs:
+  - csharp
+  - vb
+  name: Set(Object, T)
+  nameWithType: IMemberAccessor<T>.Set(Object, T)
+  fullName: Fusee.Xirkit.IMemberAccessor<T>.Set(System.Object, T)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/IMemberAccessor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Set
+    path: src/Fusee/src/Xirkit/IMemberAccessor.cs
+    startLine: 17
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nSets the specified value to the given object. This instance holds information about which \nmember is to be filled with the value and how to perform this assignment.\n"
+  example: []
+  syntax:
+    content: void Set(object o, T val)
+    parameters:
+    - id: o
+      type: System.Object
+      description: The object on which the member identified with this instance&apos;s member accessor the given value is to be assigned to.
+    - id: val
+      type: '{T}'
+      description: The value that should be assigned.
+    content.vb: Sub Set(o As Object, val As T)
+  overload: Fusee.Xirkit.IMemberAccessor`1.Set*
+  nameWithType.vb: IMemberAccessor(Of T).Set(Object, T)
+  fullName.vb: Fusee.Xirkit.IMemberAccessor(Of T).Set(System.Object, T)
+- uid: Fusee.Xirkit.IMemberAccessor`1.Get(System.Object)
+  commentId: M:Fusee.Xirkit.IMemberAccessor`1.Get(System.Object)
+  id: Get(System.Object)
+  parent: Fusee.Xirkit.IMemberAccessor`1
+  langs:
+  - csharp
+  - vb
+  name: Get(Object)
+  nameWithType: IMemberAccessor<T>.Get(Object)
+  fullName: Fusee.Xirkit.IMemberAccessor<T>.Get(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/IMemberAccessor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Get
+    path: src/Fusee/src/Xirkit/IMemberAccessor.cs
+    startLine: 24
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nRetrieves the value currently stored in the object o. his instance holds information about which \nmember of o the value should be retrieved from and how to perform this retrieval.\n"
+  example: []
+  syntax:
+    content: T Get(object o)
+    parameters:
+    - id: o
+      type: System.Object
+      description: The object from which the member identified with this instance&apos;s member accessor the value is to be retrieved from.
+    return:
+      type: '{T}'
+      description: The value currently stored in o&apos;s member.
+    content.vb: Function Get(o As Object) As T
+  overload: Fusee.Xirkit.IMemberAccessor`1.Get*
+  nameWithType.vb: IMemberAccessor(Of T).Get(Object)
+  fullName.vb: Fusee.Xirkit.IMemberAccessor(Of T).Get(System.Object)
+references:
+- uid: Fusee.Xirkit.IInPin
+  commentId: T:Fusee.Xirkit.IInPin
+  parent: Fusee.Xirkit
+  name: IInPin
+  nameWithType: IInPin
+  fullName: Fusee.Xirkit.IInPin
+- uid: Fusee.Xirkit.IOutPin
+  commentId: T:Fusee.Xirkit.IOutPin
+  parent: Fusee.Xirkit
+  name: IOutPin
+  nameWithType: IOutPin
+  fullName: Fusee.Xirkit.IOutPin
+- uid: Fusee.Xirkit.Node
+  commentId: T:Fusee.Xirkit.Node
+  parent: Fusee.Xirkit
+  name: Node
+  nameWithType: Node
+  fullName: Fusee.Xirkit.Node
+- uid: Fusee.Xirkit
+  commentId: N:Fusee.Xirkit
+  name: Fusee.Xirkit
+  nameWithType: Fusee.Xirkit
+  fullName: Fusee.Xirkit
+- uid: Fusee.Xirkit.IMemberAccessor`1.Set*
+  commentId: Overload:Fusee.Xirkit.IMemberAccessor`1.Set
+  name: Set
+  nameWithType: IMemberAccessor<T>.Set
+  fullName: Fusee.Xirkit.IMemberAccessor<T>.Set
+  nameWithType.vb: IMemberAccessor(Of T).Set
+  fullName.vb: Fusee.Xirkit.IMemberAccessor(Of T).Set
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Fusee.Xirkit.IMemberAccessor`1.Get*
+  commentId: Overload:Fusee.Xirkit.IMemberAccessor`1.Get
+  name: Get
+  nameWithType: IMemberAccessor<T>.Get
+  fullName: Fusee.Xirkit.IMemberAccessor<T>.Get
+  nameWithType.vb: IMemberAccessor(Of T).Get
+  fullName.vb: Fusee.Xirkit.IMemberAccessor(Of T).Get

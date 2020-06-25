@@ -1,0 +1,1367 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.RenderTarget
+  commentId: T:Fusee.Engine.Core.RenderTarget
+  id: RenderTarget
+  parent: Fusee.Engine.Core
+  children:
+  - Fusee.Engine.Core.RenderTarget.#ctor(Fusee.Engine.Common.TexRes)
+  - Fusee.Engine.Core.RenderTarget.DeleteBuffers
+  - Fusee.Engine.Core.RenderTarget.DepthBufferHandle
+  - Fusee.Engine.Core.RenderTarget.Dispose
+  - Fusee.Engine.Core.RenderTarget.Dispose(System.Boolean)
+  - Fusee.Engine.Core.RenderTarget.Disposed
+  - Fusee.Engine.Core.RenderTarget.Finalize
+  - Fusee.Engine.Core.RenderTarget.GBufferHandle
+  - Fusee.Engine.Core.RenderTarget.IsDepthOnly
+  - Fusee.Engine.Core.RenderTarget.RenderTextures
+  - Fusee.Engine.Core.RenderTarget.SetAlbedoSpecularTex
+  - Fusee.Engine.Core.RenderTarget.SetDepthTex(Fusee.Engine.Common.TextureCompareMode,Fusee.Engine.Common.Compare)
+  - Fusee.Engine.Core.RenderTarget.SetNormalTex
+  - Fusee.Engine.Core.RenderTarget.SetPositionTex
+  - Fusee.Engine.Core.RenderTarget.SetSpecularTex
+  - Fusee.Engine.Core.RenderTarget.SetSSAOTex
+  - Fusee.Engine.Core.RenderTarget.SetTexture(Fusee.Engine.Core.WritableTexture,Fusee.Engine.Common.RenderTargetTextureTypes)
+  - Fusee.Engine.Core.RenderTarget.SetTextureFromRenderTarget(Fusee.Engine.Core.RenderTarget,Fusee.Engine.Common.RenderTargetTextureTypes)
+  - Fusee.Engine.Core.RenderTarget.TextureResolution
+  langs:
+  - csharp
+  - vb
+  name: RenderTarget
+  nameWithType: RenderTarget
+  fullName: Fusee.Engine.Core.RenderTarget
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RenderTarget
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 10
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nUse this if you want to render into buffer object, associated with one or more textures.\nIf only a single texture is needed, the usage of a <xref href=\"Fusee.Engine.Core.WritableTexture\" data-throw-if-not-resolved=\"false\"></xref> as a render target is preferred.\nUse the &quot;Create__Tex&quot;-Methods of this class to generate the textures you need. The order of the textures in the RenderTextures array is given by the <xref href=\"Fusee.Engine.Common.RenderTargetTextureTypes\" data-throw-if-not-resolved=\"false\"></xref> enum.\n"
+  example: []
+  syntax:
+    content: 'public class RenderTarget : IRenderTarget, IDisposable'
+    content.vb: >-
+      Public Class RenderTarget
+
+          Implements IRenderTarget, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Fusee.Engine.Common.IRenderTarget
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Core.RenderTarget.DeleteBuffers
+  commentId: E:Fusee.Engine.Core.RenderTarget.DeleteBuffers
+  id: DeleteBuffers
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: DeleteBuffers
+  nameWithType: RenderTarget.DeleteBuffers
+  fullName: Fusee.Engine.Core.RenderTarget.DeleteBuffers
+  type: Event
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DeleteBuffers
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 15
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nEvent that deletes unmanaged buffer objects.\n"
+  example: []
+  syntax:
+    content: public event EventHandler<EventArgs> DeleteBuffers
+    return:
+      type: System.EventHandler{System.EventArgs}
+    content.vb: Public Event DeleteBuffers As EventHandler(Of EventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderTarget.Disposed
+  commentId: P:Fusee.Engine.Core.RenderTarget.Disposed
+  id: Disposed
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: Disposed
+  nameWithType: RenderTarget.Disposed
+  fullName: Fusee.Engine.Core.RenderTarget.Disposed
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Disposed
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 18
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  example: []
+  syntax:
+    content: public bool Disposed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Disposed As Boolean
+  overload: Fusee.Engine.Core.RenderTarget.Disposed*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderTarget.RenderTextures
+  commentId: P:Fusee.Engine.Core.RenderTarget.RenderTextures
+  id: RenderTextures
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: RenderTextures
+  nameWithType: RenderTarget.RenderTextures
+  fullName: Fusee.Engine.Core.RenderTarget.RenderTextures
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RenderTextures
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 21
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  example: []
+  syntax:
+    content: public IWritableTexture[] RenderTextures { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.IWritableTexture[]
+    content.vb: Public ReadOnly Property RenderTextures As IWritableTexture()
+  overload: Fusee.Engine.Core.RenderTarget.RenderTextures*
+  implements:
+  - Fusee.Engine.Common.IRenderTarget.RenderTextures
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderTarget.GBufferHandle
+  commentId: P:Fusee.Engine.Core.RenderTarget.GBufferHandle
+  id: GBufferHandle
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: GBufferHandle
+  nameWithType: RenderTarget.GBufferHandle
+  fullName: Fusee.Engine.Core.RenderTarget.GBufferHandle
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GBufferHandle
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 26
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nHandle of the corresponding G-Buffer. Used to dispose the object if it isn&apos;t needed anymore.\n"
+  example: []
+  syntax:
+    content: public IBufferHandle GBufferHandle { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.IBufferHandle
+    content.vb: Public Property GBufferHandle As IBufferHandle
+  overload: Fusee.Engine.Core.RenderTarget.GBufferHandle*
+  implements:
+  - Fusee.Engine.Common.IRenderTarget.GBufferHandle
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderTarget.DepthBufferHandle
+  commentId: P:Fusee.Engine.Core.RenderTarget.DepthBufferHandle
+  id: DepthBufferHandle
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: DepthBufferHandle
+  nameWithType: RenderTarget.DepthBufferHandle
+  fullName: Fusee.Engine.Core.RenderTarget.DepthBufferHandle
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DepthBufferHandle
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 31
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nHandle of the corresponding Depth Buffer (as renderbuffer). Used to dispose the object if it isn&apos;t needed anymore.\n"
+  example: []
+  syntax:
+    content: public IBufferHandle DepthBufferHandle { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.IBufferHandle
+    content.vb: Public Property DepthBufferHandle As IBufferHandle
+  overload: Fusee.Engine.Core.RenderTarget.DepthBufferHandle*
+  implements:
+  - Fusee.Engine.Common.IRenderTarget.DepthBufferHandle
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderTarget.TextureResolution
+  commentId: P:Fusee.Engine.Core.RenderTarget.TextureResolution
+  id: TextureResolution
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: TextureResolution
+  nameWithType: RenderTarget.TextureResolution
+  fullName: Fusee.Engine.Core.RenderTarget.TextureResolution
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TextureResolution
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 36
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nSets the resolution of the render textures.\n"
+  example: []
+  syntax:
+    content: public TexRes TextureResolution { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.TexRes
+    content.vb: Public ReadOnly Property TextureResolution As TexRes
+  overload: Fusee.Engine.Core.RenderTarget.TextureResolution*
+  implements:
+  - Fusee.Engine.Common.IRenderTarget.TextureResolution
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.RenderTarget.IsDepthOnly
+  commentId: P:Fusee.Engine.Core.RenderTarget.IsDepthOnly
+  id: IsDepthOnly
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: IsDepthOnly
+  nameWithType: RenderTarget.IsDepthOnly
+  fullName: Fusee.Engine.Core.RenderTarget.IsDepthOnly
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IsDepthOnly
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 41
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nIf the RenderTarget only contains a depth texture or a depth cube map, there will be no draw buffers.\n"
+  example: []
+  syntax:
+    content: public bool IsDepthOnly { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsDepthOnly As Boolean
+  overload: Fusee.Engine.Core.RenderTarget.IsDepthOnly*
+  implements:
+  - Fusee.Engine.Common.IRenderTarget.IsDepthOnly
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderTarget.#ctor(Fusee.Engine.Common.TexRes)
+  commentId: M:Fusee.Engine.Core.RenderTarget.#ctor(Fusee.Engine.Common.TexRes)
+  id: '#ctor(Fusee.Engine.Common.TexRes)'
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: RenderTarget(TexRes)
+  nameWithType: RenderTarget.RenderTarget(TexRes)
+  fullName: Fusee.Engine.Core.RenderTarget.RenderTarget(Fusee.Engine.Common.TexRes)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 47
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nCreates a new instance of type &quot;RenderTarget&quot;.\n"
+  example: []
+  syntax:
+    content: public RenderTarget(TexRes texRes)
+    parameters:
+    - id: texRes
+      type: Fusee.Engine.Common.TexRes
+      description: Resolution of the created Textures.
+    content.vb: Public Sub New(texRes As TexRes)
+  overload: Fusee.Engine.Core.RenderTarget.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderTarget.SetTextureFromRenderTarget(Fusee.Engine.Core.RenderTarget,Fusee.Engine.Common.RenderTargetTextureTypes)
+  commentId: M:Fusee.Engine.Core.RenderTarget.SetTextureFromRenderTarget(Fusee.Engine.Core.RenderTarget,Fusee.Engine.Common.RenderTargetTextureTypes)
+  id: SetTextureFromRenderTarget(Fusee.Engine.Core.RenderTarget,Fusee.Engine.Common.RenderTargetTextureTypes)
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: SetTextureFromRenderTarget(RenderTarget, RenderTargetTextureTypes)
+  nameWithType: RenderTarget.SetTextureFromRenderTarget(RenderTarget, RenderTargetTextureTypes)
+  fullName: Fusee.Engine.Core.RenderTarget.SetTextureFromRenderTarget(Fusee.Engine.Core.RenderTarget, Fusee.Engine.Common.RenderTargetTextureTypes)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetTextureFromRenderTarget
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 59
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nSets a RenderTexture from another RenderTarget at the correct position in the RenderTexure array.\n"
+  example: []
+  syntax:
+    content: public void SetTextureFromRenderTarget(RenderTarget src, RenderTargetTextureTypes tex)
+    parameters:
+    - id: src
+      type: Fusee.Engine.Core.RenderTarget
+      description: The source RenderTarget.
+    - id: tex
+      type: Fusee.Engine.Common.RenderTargetTextureTypes
+      description: The type of the texture.
+    content.vb: Public Sub SetTextureFromRenderTarget(src As RenderTarget, tex As RenderTargetTextureTypes)
+  overload: Fusee.Engine.Core.RenderTarget.SetTextureFromRenderTarget*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderTarget.SetTexture(Fusee.Engine.Core.WritableTexture,Fusee.Engine.Common.RenderTargetTextureTypes)
+  commentId: M:Fusee.Engine.Core.RenderTarget.SetTexture(Fusee.Engine.Core.WritableTexture,Fusee.Engine.Common.RenderTargetTextureTypes)
+  id: SetTexture(Fusee.Engine.Core.WritableTexture,Fusee.Engine.Common.RenderTargetTextureTypes)
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: SetTexture(WritableTexture, RenderTargetTextureTypes)
+  nameWithType: RenderTarget.SetTexture(WritableTexture, RenderTargetTextureTypes)
+  fullName: Fusee.Engine.Core.RenderTarget.SetTexture(Fusee.Engine.Core.WritableTexture, Fusee.Engine.Common.RenderTargetTextureTypes)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetTexture
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 70
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nSets a RenderTexture into the correct position in the RederTexture array.\n"
+  example: []
+  syntax:
+    content: public void SetTexture(WritableTexture src, RenderTargetTextureTypes tex)
+    parameters:
+    - id: src
+      type: Fusee.Engine.Core.WritableTexture
+      description: The source RenderTexture.
+    - id: tex
+      type: Fusee.Engine.Common.RenderTargetTextureTypes
+      description: The type of the texture.
+    content.vb: Public Sub SetTexture(src As WritableTexture, tex As RenderTargetTextureTypes)
+  overload: Fusee.Engine.Core.RenderTarget.SetTexture*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderTarget.SetPositionTex
+  commentId: M:Fusee.Engine.Core.RenderTarget.SetPositionTex
+  id: SetPositionTex
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: SetPositionTex()
+  nameWithType: RenderTarget.SetPositionTex()
+  fullName: Fusee.Engine.Core.RenderTarget.SetPositionTex()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetPositionTex
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 78
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGenerates a position texture and sets it at the correct position in the RenderTextures Array.\n"
+  example: []
+  syntax:
+    content: public void SetPositionTex()
+    content.vb: Public Sub SetPositionTex
+  overload: Fusee.Engine.Core.RenderTarget.SetPositionTex*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderTarget.SetAlbedoSpecularTex
+  commentId: M:Fusee.Engine.Core.RenderTarget.SetAlbedoSpecularTex
+  id: SetAlbedoSpecularTex
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: SetAlbedoSpecularTex()
+  nameWithType: RenderTarget.SetAlbedoSpecularTex()
+  fullName: Fusee.Engine.Core.RenderTarget.SetAlbedoSpecularTex()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetAlbedoSpecularTex
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 86
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGenerates a albedo and specular (alpha channel) texture and sets it at the correct position in the RenderTextures Array.\n"
+  example: []
+  syntax:
+    content: public void SetAlbedoSpecularTex()
+    content.vb: Public Sub SetAlbedoSpecularTex
+  overload: Fusee.Engine.Core.RenderTarget.SetAlbedoSpecularTex*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderTarget.SetNormalTex
+  commentId: M:Fusee.Engine.Core.RenderTarget.SetNormalTex
+  id: SetNormalTex
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: SetNormalTex()
+  nameWithType: RenderTarget.SetNormalTex()
+  fullName: Fusee.Engine.Core.RenderTarget.SetNormalTex()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetNormalTex
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 94
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGenerates a normal texture and sets it at the correct position in the RenderTextures Array.\n"
+  example: []
+  syntax:
+    content: public void SetNormalTex()
+    content.vb: Public Sub SetNormalTex
+  overload: Fusee.Engine.Core.RenderTarget.SetNormalTex*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderTarget.SetDepthTex(Fusee.Engine.Common.TextureCompareMode,Fusee.Engine.Common.Compare)
+  commentId: M:Fusee.Engine.Core.RenderTarget.SetDepthTex(Fusee.Engine.Common.TextureCompareMode,Fusee.Engine.Common.Compare)
+  id: SetDepthTex(Fusee.Engine.Common.TextureCompareMode,Fusee.Engine.Common.Compare)
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: SetDepthTex(TextureCompareMode, Compare)
+  nameWithType: RenderTarget.SetDepthTex(TextureCompareMode, Compare)
+  fullName: Fusee.Engine.Core.RenderTarget.SetDepthTex(Fusee.Engine.Common.TextureCompareMode, Fusee.Engine.Common.Compare)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetDepthTex
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 102
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGenerates a depth texture and sets it at the correct position in the RenderTextures Array.\n"
+  example: []
+  syntax:
+    content: public void SetDepthTex(TextureCompareMode compareMode = TextureCompareMode.None, Compare compareFunc = Compare.Less)
+    parameters:
+    - id: compareMode
+      type: Fusee.Engine.Common.TextureCompareMode
+    - id: compareFunc
+      type: Fusee.Engine.Common.Compare
+    content.vb: Public Sub SetDepthTex(compareMode As TextureCompareMode = TextureCompareMode.None, compareFunc As Compare = Compare.Less)
+  overload: Fusee.Engine.Core.RenderTarget.SetDepthTex*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderTarget.SetSSAOTex
+  commentId: M:Fusee.Engine.Core.RenderTarget.SetSSAOTex
+  id: SetSSAOTex
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: SetSSAOTex()
+  nameWithType: RenderTarget.SetSSAOTex()
+  fullName: Fusee.Engine.Core.RenderTarget.SetSSAOTex()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetSSAOTex
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 110
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGenerates a SSAO texture and sets it at the correct position in the RenderTextures Array.\n"
+  example: []
+  syntax:
+    content: public void SetSSAOTex()
+    content.vb: Public Sub SetSSAOTex
+  overload: Fusee.Engine.Core.RenderTarget.SetSSAOTex*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderTarget.SetSpecularTex
+  commentId: M:Fusee.Engine.Core.RenderTarget.SetSpecularTex
+  id: SetSpecularTex
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: SetSpecularTex()
+  nameWithType: RenderTarget.SetSpecularTex()
+  fullName: Fusee.Engine.Core.RenderTarget.SetSpecularTex()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetSpecularTex
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 118
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGenerates a specular texture and sets it at the correct position in the RenderTextures Array.\n"
+  example: []
+  syntax:
+    content: public void SetSpecularTex()
+    content.vb: Public Sub SetSpecularTex
+  overload: Fusee.Engine.Core.RenderTarget.SetSpecularTex*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderTarget.Dispose
+  commentId: M:Fusee.Engine.Core.RenderTarget.Dispose
+  id: Dispose
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: RenderTarget.Dispose()
+  fullName: Fusee.Engine.Core.RenderTarget.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Dispose
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 126
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nPublic implementation of Dispose pattern callable by consumers.\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Fusee.Engine.Core.RenderTarget.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderTarget.Dispose(System.Boolean)
+  commentId: M:Fusee.Engine.Core.RenderTarget.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: Dispose(Boolean)
+  nameWithType: RenderTarget.Dispose(Boolean)
+  fullName: Fusee.Engine.Core.RenderTarget.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Dispose
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 136
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe protected implementation of Dispose pattern callable by consumers.\n"
+  example: []
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: ''
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: Fusee.Engine.Core.RenderTarget.Dispose*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Fusee.Engine.Core.RenderTarget.Finalize
+  commentId: M:Fusee.Engine.Core.RenderTarget.Finalize
+  id: Finalize
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: Finalize()
+  nameWithType: RenderTarget.Finalize()
+  fullName: Fusee.Engine.Core.RenderTarget.Finalize()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/RenderTarget.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Finalize
+    path: src/Fusee/src/Engine/Core/RenderTarget.cs
+    startLine: 153
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nDeconstruction of the render target.\n"
+  example: []
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
+  overload: Fusee.Engine.Core.RenderTarget.Finalize*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Fusee.Engine.Core.WritableTexture
+  commentId: T:Fusee.Engine.Core.WritableTexture
+  parent: Fusee.Engine.Core
+  name: WritableTexture
+  nameWithType: WritableTexture
+  fullName: Fusee.Engine.Core.WritableTexture
+- uid: Fusee.Engine.Common.RenderTargetTextureTypes
+  commentId: T:Fusee.Engine.Common.RenderTargetTextureTypes
+  parent: Fusee.Engine.Common
+  name: RenderTargetTextureTypes
+  nameWithType: RenderTargetTextureTypes
+  fullName: Fusee.Engine.Common.RenderTargetTextureTypes
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Common.IRenderTarget
+  commentId: T:Fusee.Engine.Common.IRenderTarget
+  parent: Fusee.Engine.Common
+  name: IRenderTarget
+  nameWithType: IRenderTarget
+  fullName: Fusee.Engine.Common.IRenderTarget
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.EventHandler{System.EventArgs}
+  commentId: T:System.EventHandler{System.EventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<EventArgs>
+  nameWithType: EventHandler<EventArgs>
+  fullName: System.EventHandler<System.EventArgs>
+  nameWithType.vb: EventHandler(Of EventArgs)
+  fullName.vb: System.EventHandler(Of System.EventArgs)
+  name.vb: EventHandler(Of EventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.EventArgs
+    name: EventArgs
+    nameWithType: EventArgs
+    fullName: System.EventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.RenderTarget.Disposed*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.Disposed
+  name: Disposed
+  nameWithType: RenderTarget.Disposed
+  fullName: Fusee.Engine.Core.RenderTarget.Disposed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Engine.Core.RenderTarget.RenderTextures*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.RenderTextures
+  name: RenderTextures
+  nameWithType: RenderTarget.RenderTextures
+  fullName: Fusee.Engine.Core.RenderTarget.RenderTextures
+- uid: Fusee.Engine.Common.IRenderTarget.RenderTextures
+  commentId: P:Fusee.Engine.Common.IRenderTarget.RenderTextures
+  parent: Fusee.Engine.Common.IRenderTarget
+  name: RenderTextures
+  nameWithType: IRenderTarget.RenderTextures
+  fullName: Fusee.Engine.Common.IRenderTarget.RenderTextures
+- uid: Fusee.Engine.Common.IWritableTexture[]
+  isExternal: true
+  name: IWritableTexture[]
+  nameWithType: IWritableTexture[]
+  fullName: Fusee.Engine.Common.IWritableTexture[]
+  nameWithType.vb: IWritableTexture()
+  fullName.vb: Fusee.Engine.Common.IWritableTexture()
+  name.vb: IWritableTexture()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IWritableTexture
+    name: IWritableTexture
+    nameWithType: IWritableTexture
+    fullName: Fusee.Engine.Common.IWritableTexture
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Fusee.Engine.Common.IWritableTexture
+    name: IWritableTexture
+    nameWithType: IWritableTexture
+    fullName: Fusee.Engine.Common.IWritableTexture
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Fusee.Engine.Core.RenderTarget.GBufferHandle*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.GBufferHandle
+  name: GBufferHandle
+  nameWithType: RenderTarget.GBufferHandle
+  fullName: Fusee.Engine.Core.RenderTarget.GBufferHandle
+- uid: Fusee.Engine.Common.IRenderTarget.GBufferHandle
+  commentId: P:Fusee.Engine.Common.IRenderTarget.GBufferHandle
+  parent: Fusee.Engine.Common.IRenderTarget
+  name: GBufferHandle
+  nameWithType: IRenderTarget.GBufferHandle
+  fullName: Fusee.Engine.Common.IRenderTarget.GBufferHandle
+- uid: Fusee.Engine.Common.IBufferHandle
+  commentId: T:Fusee.Engine.Common.IBufferHandle
+  parent: Fusee.Engine.Common
+  name: IBufferHandle
+  nameWithType: IBufferHandle
+  fullName: Fusee.Engine.Common.IBufferHandle
+- uid: Fusee.Engine.Core.RenderTarget.DepthBufferHandle*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.DepthBufferHandle
+  name: DepthBufferHandle
+  nameWithType: RenderTarget.DepthBufferHandle
+  fullName: Fusee.Engine.Core.RenderTarget.DepthBufferHandle
+- uid: Fusee.Engine.Common.IRenderTarget.DepthBufferHandle
+  commentId: P:Fusee.Engine.Common.IRenderTarget.DepthBufferHandle
+  parent: Fusee.Engine.Common.IRenderTarget
+  name: DepthBufferHandle
+  nameWithType: IRenderTarget.DepthBufferHandle
+  fullName: Fusee.Engine.Common.IRenderTarget.DepthBufferHandle
+- uid: Fusee.Engine.Core.RenderTarget.TextureResolution*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.TextureResolution
+  name: TextureResolution
+  nameWithType: RenderTarget.TextureResolution
+  fullName: Fusee.Engine.Core.RenderTarget.TextureResolution
+- uid: Fusee.Engine.Common.IRenderTarget.TextureResolution
+  commentId: P:Fusee.Engine.Common.IRenderTarget.TextureResolution
+  parent: Fusee.Engine.Common.IRenderTarget
+  name: TextureResolution
+  nameWithType: IRenderTarget.TextureResolution
+  fullName: Fusee.Engine.Common.IRenderTarget.TextureResolution
+- uid: Fusee.Engine.Common.TexRes
+  commentId: T:Fusee.Engine.Common.TexRes
+  parent: Fusee.Engine.Common
+  name: TexRes
+  nameWithType: TexRes
+  fullName: Fusee.Engine.Common.TexRes
+- uid: Fusee.Engine.Core.RenderTarget.IsDepthOnly*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.IsDepthOnly
+  name: IsDepthOnly
+  nameWithType: RenderTarget.IsDepthOnly
+  fullName: Fusee.Engine.Core.RenderTarget.IsDepthOnly
+- uid: Fusee.Engine.Common.IRenderTarget.IsDepthOnly
+  commentId: P:Fusee.Engine.Common.IRenderTarget.IsDepthOnly
+  parent: Fusee.Engine.Common.IRenderTarget
+  name: IsDepthOnly
+  nameWithType: IRenderTarget.IsDepthOnly
+  fullName: Fusee.Engine.Common.IRenderTarget.IsDepthOnly
+- uid: Fusee.Engine.Core.RenderTarget.#ctor*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.#ctor
+  name: RenderTarget
+  nameWithType: RenderTarget.RenderTarget
+  fullName: Fusee.Engine.Core.RenderTarget.RenderTarget
+- uid: Fusee.Engine.Core.RenderTarget.SetTextureFromRenderTarget*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.SetTextureFromRenderTarget
+  name: SetTextureFromRenderTarget
+  nameWithType: RenderTarget.SetTextureFromRenderTarget
+  fullName: Fusee.Engine.Core.RenderTarget.SetTextureFromRenderTarget
+- uid: Fusee.Engine.Core.RenderTarget
+  commentId: T:Fusee.Engine.Core.RenderTarget
+  parent: Fusee.Engine.Core
+  name: RenderTarget
+  nameWithType: RenderTarget
+  fullName: Fusee.Engine.Core.RenderTarget
+- uid: Fusee.Engine.Core.RenderTarget.SetTexture*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.SetTexture
+  name: SetTexture
+  nameWithType: RenderTarget.SetTexture
+  fullName: Fusee.Engine.Core.RenderTarget.SetTexture
+- uid: Fusee.Engine.Core.RenderTarget.SetPositionTex*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.SetPositionTex
+  name: SetPositionTex
+  nameWithType: RenderTarget.SetPositionTex
+  fullName: Fusee.Engine.Core.RenderTarget.SetPositionTex
+- uid: Fusee.Engine.Core.RenderTarget.SetAlbedoSpecularTex*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.SetAlbedoSpecularTex
+  name: SetAlbedoSpecularTex
+  nameWithType: RenderTarget.SetAlbedoSpecularTex
+  fullName: Fusee.Engine.Core.RenderTarget.SetAlbedoSpecularTex
+- uid: Fusee.Engine.Core.RenderTarget.SetNormalTex*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.SetNormalTex
+  name: SetNormalTex
+  nameWithType: RenderTarget.SetNormalTex
+  fullName: Fusee.Engine.Core.RenderTarget.SetNormalTex
+- uid: Fusee.Engine.Core.RenderTarget.SetDepthTex*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.SetDepthTex
+  name: SetDepthTex
+  nameWithType: RenderTarget.SetDepthTex
+  fullName: Fusee.Engine.Core.RenderTarget.SetDepthTex
+- uid: Fusee.Engine.Common.TextureCompareMode
+  commentId: T:Fusee.Engine.Common.TextureCompareMode
+  parent: Fusee.Engine.Common
+  name: TextureCompareMode
+  nameWithType: TextureCompareMode
+  fullName: Fusee.Engine.Common.TextureCompareMode
+- uid: Fusee.Engine.Common.Compare
+  commentId: T:Fusee.Engine.Common.Compare
+  parent: Fusee.Engine.Common
+  name: Compare
+  nameWithType: Compare
+  fullName: Fusee.Engine.Common.Compare
+- uid: Fusee.Engine.Core.RenderTarget.SetSSAOTex*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.SetSSAOTex
+  name: SetSSAOTex
+  nameWithType: RenderTarget.SetSSAOTex
+  fullName: Fusee.Engine.Core.RenderTarget.SetSSAOTex
+- uid: Fusee.Engine.Core.RenderTarget.SetSpecularTex*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.SetSpecularTex
+  name: SetSpecularTex
+  nameWithType: RenderTarget.SetSpecularTex
+  fullName: Fusee.Engine.Core.RenderTarget.SetSpecularTex
+- uid: Fusee.Engine.Core.RenderTarget.Dispose*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.Dispose
+  name: Dispose
+  nameWithType: RenderTarget.Dispose
+  fullName: Fusee.Engine.Core.RenderTarget.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.RenderTarget.Finalize*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.Finalize
+  name: Finalize
+  nameWithType: RenderTarget.Finalize
+  fullName: Fusee.Engine.Core.RenderTarget.Finalize

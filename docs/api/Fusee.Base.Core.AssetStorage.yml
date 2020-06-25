@@ -1,0 +1,882 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Base.Core.AssetStorage
+  commentId: T:Fusee.Base.Core.AssetStorage
+  id: AssetStorage
+  parent: Fusee.Base.Core
+  children:
+  - Fusee.Base.Core.AssetStorage.DeepCopy``1(``0)
+  - Fusee.Base.Core.AssetStorage.Get``1(System.String)
+  - Fusee.Base.Core.AssetStorage.GetAsset``1(System.String)
+  - Fusee.Base.Core.AssetStorage.GetAssetAsync``1(System.String)
+  - Fusee.Base.Core.AssetStorage.GetAsync``1(System.String)
+  - Fusee.Base.Core.AssetStorage.Instance
+  - Fusee.Base.Core.AssetStorage.RegisterAssetProvider(Fusee.Base.Common.IAssetProvider)
+  - Fusee.Base.Core.AssetStorage.RegisterProvider(Fusee.Base.Common.IAssetProvider)
+  langs:
+  - csharp
+  - vb
+  name: AssetStorage
+  nameWithType: AssetStorage
+  fullName: Fusee.Base.Core.AssetStorage
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AssetStorage.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AssetStorage
+    path: src/Fusee/src/Base/Core/AssetStorage.cs
+    startLine: 25
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nA class providing access to Assets. An asset is considered any content to be loaded, deserialized and converted during\nan application&apos;s lifetime. Often Assets should be loaded up-front and accessed during run-time with no perceivable delay.\nAssetStorage is a staticton (a singleton with an additional static interface).\n"
+  remarks: "\nThe existence of this class is a tribute to the Web-world where a lot of asset types (e.g. images) are JavaScript built-in\nfunctionality with no possibility to separate the many aspects of asset-access (like loading, deserialization, codec,\nasynchronicity). Decent programming environments allow to separate these aspects using streams. A decoder is implemented\nagainst a stream. Anything capable of providing streams, synchronously or asynchronously thus can act as an asset store.\nIf FUSEE had been designed without JavaScript X-compilation in mind, this class would probably not\nexist.\n"
+  example: []
+  syntax:
+    content: public sealed class AssetStorage
+    content.vb: Public NotInheritable Class AssetStorage
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Fusee.Base.Core.AssetStorage.Instance
+  commentId: P:Fusee.Base.Core.AssetStorage.Instance
+  id: Instance
+  parent: Fusee.Base.Core.AssetStorage
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: AssetStorage.Instance
+  fullName: Fusee.Base.Core.AssetStorage.Instance
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AssetStorage.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Instance
+    path: src/Fusee/src/Base/Core/AssetStorage.cs
+    startLine: 41
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nImplements the Singleton pattern.\n"
+  example: []
+  syntax:
+    content: public static AssetStorage Instance { get; }
+    parameters: []
+    return:
+      type: Fusee.Base.Core.AssetStorage
+      description: "\nThe (one-and-only) instance of AssetStorage.\n"
+    content.vb: Public Shared ReadOnly Property Instance As AssetStorage
+  overload: Fusee.Base.Core.AssetStorage.Instance*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Fusee.Base.Core.AssetStorage.Get``1(System.String)
+  commentId: M:Fusee.Base.Core.AssetStorage.Get``1(System.String)
+  id: Get``1(System.String)
+  parent: Fusee.Base.Core.AssetStorage
+  langs:
+  - csharp
+  - vb
+  name: Get<T>(String)
+  nameWithType: AssetStorage.Get<T>(String)
+  fullName: Fusee.Base.Core.AssetStorage.Get<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AssetStorage.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Get
+    path: src/Fusee/src/Base/Core/AssetStorage.cs
+    startLine: 49
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nStaticton implementation of <xref href=\"Fusee.Base.Core.AssetStorage.GetAsset%60%601(System.String)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static T Get<T>(string id)
+    parameters:
+    - id: id
+      type: System.String
+      description: The identifier.
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: '{T}'
+      description: ''
+    content.vb: Public Shared Function Get(Of T)(id As String) As T
+  overload: Fusee.Base.Core.AssetStorage.Get*
+  nameWithType.vb: AssetStorage.Get(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Base.Core.AssetStorage.Get(Of T)(System.String)
+  name.vb: Get(Of T)(String)
+- uid: Fusee.Base.Core.AssetStorage.GetAsync``1(System.String)
+  commentId: M:Fusee.Base.Core.AssetStorage.GetAsync``1(System.String)
+  id: GetAsync``1(System.String)
+  parent: Fusee.Base.Core.AssetStorage
+  langs:
+  - csharp
+  - vb
+  name: GetAsync<T>(String)
+  nameWithType: AssetStorage.GetAsync<T>(String)
+  fullName: Fusee.Base.Core.AssetStorage.GetAsync<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AssetStorage.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetAsync
+    path: src/Fusee/src/Base/Core/AssetStorage.cs
+    startLine: 57
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nStaticton implementation of <xref href=\"Fusee.Base.Core.AssetStorage.GetAsset%60%601(System.String)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static Task<T> GetAsync<T>(string id)
+    parameters:
+    - id: id
+      type: System.String
+      description: The identifier.
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: ''
+    content.vb: Public Shared Function GetAsync(Of T)(id As String) As Task(Of T)
+  overload: Fusee.Base.Core.AssetStorage.GetAsync*
+  nameWithType.vb: AssetStorage.GetAsync(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Base.Core.AssetStorage.GetAsync(Of T)(System.String)
+  name.vb: GetAsync(Of T)(String)
+- uid: Fusee.Base.Core.AssetStorage.GetAsset``1(System.String)
+  commentId: M:Fusee.Base.Core.AssetStorage.GetAsset``1(System.String)
+  id: GetAsset``1(System.String)
+  parent: Fusee.Base.Core.AssetStorage
+  langs:
+  - csharp
+  - vb
+  name: GetAsset<T>(String)
+  nameWithType: AssetStorage.GetAsset<T>(String)
+  fullName: Fusee.Base.Core.AssetStorage.GetAsset<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AssetStorage.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetAsset
+    path: src/Fusee/src/Base/Core/AssetStorage.cs
+    startLine: 69
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nRetrieves the asset identified by id.\n"
+  remarks: >
+    Internally, this method queries all of the registered asset providers (<xref href="Fusee.Base.Core.AssetStorage.RegisterAssetProvider(Fusee.Base.Common.IAssetProvider)" data-throw-if-not-resolved="false"></xref>.
+
+    The first asset provider capable of retrieving the asset &quot;wins&quot;. It&apos;s up to any application to guarantee
+
+    uniqueness of asset identifiers among all assets and asset providers.
+  example: []
+  syntax:
+    content: public T GetAsset<T>(string id)
+    parameters:
+    - id: id
+      type: System.String
+      description: The identifier.
+    typeParameters:
+    - id: T
+      description: The expected type of the asset to retrieve.
+    return:
+      type: '{T}'
+      description: The asset, if found. Otherwise null.
+    content.vb: Public Function GetAsset(Of T)(id As String) As T
+  overload: Fusee.Base.Core.AssetStorage.GetAsset*
+  nameWithType.vb: AssetStorage.GetAsset(Of T)(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Base.Core.AssetStorage.GetAsset(Of T)(System.String)
+  name.vb: GetAsset(Of T)(String)
+- uid: Fusee.Base.Core.AssetStorage.GetAssetAsync``1(System.String)
+  commentId: M:Fusee.Base.Core.AssetStorage.GetAssetAsync``1(System.String)
+  id: GetAssetAsync``1(System.String)
+  parent: Fusee.Base.Core.AssetStorage
+  langs:
+  - csharp
+  - vb
+  name: GetAssetAsync<T>(String)
+  nameWithType: AssetStorage.GetAssetAsync<T>(String)
+  fullName: Fusee.Base.Core.AssetStorage.GetAssetAsync<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AssetStorage.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetAssetAsync
+    path: src/Fusee/src/Base/Core/AssetStorage.cs
+    startLine: 91
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nRetrieves the asset identified by id.\n"
+  remarks: >
+    Internally, this method queries all of the registered asset providers (<xref href="Fusee.Base.Core.AssetStorage.RegisterAssetProvider(Fusee.Base.Common.IAssetProvider)" data-throw-if-not-resolved="false"></xref>.
+
+    The first asset provider capable of retrieving the asset &quot;wins&quot;. It&apos;s up to any application to guarantee
+
+    uniqueness of asset identifiers among all assets and asset providers.
+  example: []
+  syntax:
+    content: public Task<T> GetAssetAsync<T>(string id)
+    parameters:
+    - id: id
+      type: System.String
+      description: The identifier.
+    typeParameters:
+    - id: T
+      description: The expected type of the asset to retrieve.
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: The asset, if found. Otherwise null.
+    content.vb: Public Function GetAssetAsync(Of T)(id As String) As Task(Of T)
+  overload: Fusee.Base.Core.AssetStorage.GetAssetAsync*
+  nameWithType.vb: AssetStorage.GetAssetAsync(Of T)(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Base.Core.AssetStorage.GetAssetAsync(Of T)(System.String)
+  name.vb: GetAssetAsync(Of T)(String)
+- uid: Fusee.Base.Core.AssetStorage.RegisterProvider(Fusee.Base.Common.IAssetProvider)
+  commentId: M:Fusee.Base.Core.AssetStorage.RegisterProvider(Fusee.Base.Common.IAssetProvider)
+  id: RegisterProvider(Fusee.Base.Common.IAssetProvider)
+  parent: Fusee.Base.Core.AssetStorage
+  langs:
+  - csharp
+  - vb
+  name: RegisterProvider(IAssetProvider)
+  nameWithType: AssetStorage.RegisterProvider(IAssetProvider)
+  fullName: Fusee.Base.Core.AssetStorage.RegisterProvider(Fusee.Base.Common.IAssetProvider)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AssetStorage.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RegisterProvider
+    path: src/Fusee/src/Base/Core/AssetStorage.cs
+    startLine: 108
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nStaticton implementation of <xref href=\"Fusee.Base.Core.AssetStorage.RegisterAssetProvider(Fusee.Base.Common.IAssetProvider)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static void RegisterProvider(IAssetProvider assetProvider)
+    parameters:
+    - id: assetProvider
+      type: Fusee.Base.Common.IAssetProvider
+      description: The asset provider.
+    content.vb: Public Shared Sub RegisterProvider(assetProvider As IAssetProvider)
+  overload: Fusee.Base.Core.AssetStorage.RegisterProvider*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Base.Core.AssetStorage.RegisterAssetProvider(Fusee.Base.Common.IAssetProvider)
+  commentId: M:Fusee.Base.Core.AssetStorage.RegisterAssetProvider(Fusee.Base.Common.IAssetProvider)
+  id: RegisterAssetProvider(Fusee.Base.Common.IAssetProvider)
+  parent: Fusee.Base.Core.AssetStorage
+  langs:
+  - csharp
+  - vb
+  name: RegisterAssetProvider(IAssetProvider)
+  nameWithType: AssetStorage.RegisterAssetProvider(IAssetProvider)
+  fullName: Fusee.Base.Core.AssetStorage.RegisterAssetProvider(Fusee.Base.Common.IAssetProvider)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AssetStorage.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RegisterAssetProvider
+    path: src/Fusee/src/Base/Core/AssetStorage.cs
+    startLine: 116
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nRegisters the given asset provider. Use this method to register asset providers \nfor the platform (desktop, mobile, web) your main application should run on.\n"
+  example: []
+  syntax:
+    content: public void RegisterAssetProvider(IAssetProvider assetProvider)
+    parameters:
+    - id: assetProvider
+      type: Fusee.Base.Common.IAssetProvider
+      description: The asset provider to register.
+    content.vb: Public Sub RegisterAssetProvider(assetProvider As IAssetProvider)
+  overload: Fusee.Base.Core.AssetStorage.RegisterAssetProvider*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Base.Core.AssetStorage.DeepCopy``1(``0)
+  commentId: M:Fusee.Base.Core.AssetStorage.DeepCopy``1(``0)
+  id: DeepCopy``1(``0)
+  parent: Fusee.Base.Core.AssetStorage
+  langs:
+  - csharp
+  - vb
+  name: DeepCopy<T>(T)
+  nameWithType: AssetStorage.DeepCopy<T>(T)
+  fullName: Fusee.Base.Core.AssetStorage.DeepCopy<T>(T)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AssetStorage.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DeepCopy
+    path: src/Fusee/src/Base/Core/AssetStorage.cs
+    startLine: 133
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nCreates a deep copy of the source object. Only works for source objects with the \n<see cref=\"!:ProtoBuf.ProtoContractAttribute\"></see> defined on their class.\n"
+  example: []
+  syntax:
+    content: >-
+      public static T DeepCopy<T>(T source)
+
+          where T : class
+    parameters:
+    - id: source
+      type: '{T}'
+      description: The source object to clone.
+    typeParameters:
+    - id: T
+      description: "\nType of the source and object and the returned clone. Implicitly defined by the source parameter.\n"
+    return:
+      type: '{T}'
+      description: >-
+        A deep copy of the source object. All objects referenced directly and indirectly from the source
+         object are copied, too.
+    content.vb: Public Shared Function DeepCopy(Of T As Class)(source As T) As T
+  overload: Fusee.Base.Core.AssetStorage.DeepCopy*
+  nameWithType.vb: AssetStorage.DeepCopy(Of T)(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Base.Core.AssetStorage.DeepCopy(Of T)(T)
+  name.vb: DeepCopy(Of T)(T)
+references:
+- uid: Fusee.Base.Core
+  commentId: N:Fusee.Base.Core
+  name: Fusee.Base.Core
+  nameWithType: Fusee.Base.Core
+  fullName: Fusee.Base.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Base.Core.AssetStorage.Instance*
+  commentId: Overload:Fusee.Base.Core.AssetStorage.Instance
+  name: Instance
+  nameWithType: AssetStorage.Instance
+  fullName: Fusee.Base.Core.AssetStorage.Instance
+- uid: Fusee.Base.Core.AssetStorage
+  commentId: T:Fusee.Base.Core.AssetStorage
+  parent: Fusee.Base.Core
+  name: AssetStorage
+  nameWithType: AssetStorage
+  fullName: Fusee.Base.Core.AssetStorage
+- uid: Fusee.Base.Core.AssetStorage.GetAsset``1(System.String)
+  commentId: M:Fusee.Base.Core.AssetStorage.GetAsset``1(System.String)
+  isExternal: true
+- uid: Fusee.Base.Core.AssetStorage.Get*
+  commentId: Overload:Fusee.Base.Core.AssetStorage.Get
+  name: Get
+  nameWithType: AssetStorage.Get
+  fullName: Fusee.Base.Core.AssetStorage.Get
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Fusee.Base.Core.AssetStorage.GetAsync*
+  commentId: Overload:Fusee.Base.Core.AssetStorage.GetAsync
+  name: GetAsync
+  nameWithType: AssetStorage.GetAsync
+  fullName: Fusee.Base.Core.AssetStorage.GetAsync
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Fusee.Base.Core.AssetStorage.RegisterAssetProvider(Fusee.Base.Common.IAssetProvider)
+  commentId: M:Fusee.Base.Core.AssetStorage.RegisterAssetProvider(Fusee.Base.Common.IAssetProvider)
+  isExternal: true
+- uid: Fusee.Base.Core.AssetStorage.GetAsset*
+  commentId: Overload:Fusee.Base.Core.AssetStorage.GetAsset
+  name: GetAsset
+  nameWithType: AssetStorage.GetAsset
+  fullName: Fusee.Base.Core.AssetStorage.GetAsset
+- uid: Fusee.Base.Core.AssetStorage.GetAssetAsync*
+  commentId: Overload:Fusee.Base.Core.AssetStorage.GetAssetAsync
+  name: GetAssetAsync
+  nameWithType: AssetStorage.GetAssetAsync
+  fullName: Fusee.Base.Core.AssetStorage.GetAssetAsync
+- uid: Fusee.Base.Core.AssetStorage.RegisterProvider*
+  commentId: Overload:Fusee.Base.Core.AssetStorage.RegisterProvider
+  name: RegisterProvider
+  nameWithType: AssetStorage.RegisterProvider
+  fullName: Fusee.Base.Core.AssetStorage.RegisterProvider
+- uid: Fusee.Base.Common.IAssetProvider
+  commentId: T:Fusee.Base.Common.IAssetProvider
+  parent: Fusee.Base.Common
+  name: IAssetProvider
+  nameWithType: IAssetProvider
+  fullName: Fusee.Base.Common.IAssetProvider
+- uid: Fusee.Base.Common
+  commentId: N:Fusee.Base.Common
+  name: Fusee.Base.Common
+  nameWithType: Fusee.Base.Common
+  fullName: Fusee.Base.Common
+- uid: Fusee.Base.Core.AssetStorage.RegisterAssetProvider*
+  commentId: Overload:Fusee.Base.Core.AssetStorage.RegisterAssetProvider
+  name: RegisterAssetProvider
+  nameWithType: AssetStorage.RegisterAssetProvider
+  fullName: Fusee.Base.Core.AssetStorage.RegisterAssetProvider
+- uid: Fusee.Base.Core.AssetStorage.DeepCopy*
+  commentId: Overload:Fusee.Base.Core.AssetStorage.DeepCopy
+  name: DeepCopy
+  nameWithType: AssetStorage.DeepCopy
+  fullName: Fusee.Base.Core.AssetStorage.DeepCopy

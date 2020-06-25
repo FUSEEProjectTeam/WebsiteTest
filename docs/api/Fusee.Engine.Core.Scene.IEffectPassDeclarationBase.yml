@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase
+  commentId: T:Fusee.Engine.Core.Scene.IEffectPassDeclarationBase
+  id: IEffectPassDeclarationBase
+  parent: Fusee.Engine.Core.Scene
+  children:
+  - Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.GS
+  - Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.StateSet
+  - Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.VS
+  langs:
+  - csharp
+  - vb
+  name: IEffectPassDeclarationBase
+  nameWithType: IEffectPassDeclarationBase
+  fullName: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase
+  type: Interface
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/ShaderEffect.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IEffectPassDeclarationBase
+    path: src/Fusee/src/Engine/Core/Scene/ShaderEffect.cs
+    startLine: 16
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nAn effect pass declaration contains the relevant shader source code as well as a <xref href=\"Fusee.Engine.Core.RenderStateSet\" data-throw-if-not-resolved=\"false\"></xref>\ndeclaration for the rendering pass declared by this instance.\n"
+  example: []
+  syntax:
+    content: public interface IEffectPassDeclarationBase
+    content.vb: Public Interface IEffectPassDeclarationBase
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.StateSet
+  commentId: P:Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.StateSet
+  id: StateSet
+  parent: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase
+  langs:
+  - csharp
+  - vb
+  name: StateSet
+  nameWithType: IEffectPassDeclarationBase.StateSet
+  fullName: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.StateSet
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/ShaderEffect.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: StateSet
+    path: src/Fusee/src/Engine/Core/Scene/ShaderEffect.cs
+    startLine: 21
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nThe  <xref href=\"Fusee.Engine.Core.RenderStateSet\" data-throw-if-not-resolved=\"false\"></xref> of the current effect pass.  \n"
+  example: []
+  syntax:
+    content: RenderStateSet StateSet { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Core.RenderStateSet
+    content.vb: Property StateSet As RenderStateSet
+  overload: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.StateSet*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.VS
+  commentId: P:Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.VS
+  id: VS
+  parent: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase
+  langs:
+  - csharp
+  - vb
+  name: VS
+  nameWithType: IEffectPassDeclarationBase.VS
+  fullName: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.VS
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/ShaderEffect.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: VS
+    path: src/Fusee/src/Engine/Core/Scene/ShaderEffect.cs
+    startLine: 26
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nVertex shader as string\n"
+  example: []
+  syntax:
+    content: string VS { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property VS As String
+  overload: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.VS*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.GS
+  commentId: P:Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.GS
+  id: GS
+  parent: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase
+  langs:
+  - csharp
+  - vb
+  name: GS
+  nameWithType: IEffectPassDeclarationBase.GS
+  fullName: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.GS
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/ShaderEffect.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GS
+    path: src/Fusee/src/Engine/Core/Scene/ShaderEffect.cs
+    startLine: 31
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nGeometry-shader as string\n"
+  example: []
+  syntax:
+    content: string GS { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property GS As String
+  overload: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.GS*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: Fusee.Engine.Core.RenderStateSet
+  commentId: T:Fusee.Engine.Core.RenderStateSet
+  parent: Fusee.Engine.Core
+  name: RenderStateSet
+  nameWithType: RenderStateSet
+  fullName: Fusee.Engine.Core.RenderStateSet
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.StateSet*
+  commentId: Overload:Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.StateSet
+  name: StateSet
+  nameWithType: IEffectPassDeclarationBase.StateSet
+  fullName: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.StateSet
+- uid: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.VS*
+  commentId: Overload:Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.VS
+  name: VS
+  nameWithType: IEffectPassDeclarationBase.VS
+  fullName: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.VS
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.GS*
+  commentId: Overload:Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.GS
+  name: GS
+  nameWithType: IEffectPassDeclarationBase.GS
+  fullName: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.GS

@@ -1,0 +1,465 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.FusSceneConverter
+  commentId: T:Fusee.Engine.Core.FusSceneConverter
+  id: FusSceneConverter
+  parent: Fusee.Engine.Core
+  children:
+  - Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
+  - Fusee.Engine.Core.FusSceneConverter.ConvertTo(Fusee.Engine.Core.Scene.SceneContainer)
+  langs:
+  - csharp
+  - vb
+  name: FusSceneConverter
+  nameWithType: FusSceneConverter
+  fullName: Fusee.Engine.Core.FusSceneConverter
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/FusSceneConverter.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FusSceneConverter
+    path: src/Fusee/src/Engine/Core/FusSceneConverter.cs
+    startLine: 16
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nUse <xref href=\"Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Fusee.Engine.Core.FusSceneConverter.ConvertTo(Fusee.Engine.Core.Scene.SceneContainer)\" data-throw-if-not-resolved=\"false\"></xref>, to create new high/low level graph from a low/high level graph (made out of scene nodes and components)\nin order to have each visited element converted and/or split into its high/low level, render-ready/serialization-ready components.\n"
+  example: []
+  syntax:
+    content: public static class FusSceneConverter
+    content.vb: Public Module FusSceneConverter
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
+  commentId: M:Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
+  id: ConvertFrom(Fusee.Serialization.FusFile)
+  parent: Fusee.Engine.Core.FusSceneConverter
+  langs:
+  - csharp
+  - vb
+  name: ConvertFrom(FusFile)
+  nameWithType: FusSceneConverter.ConvertFrom(FusFile)
+  fullName: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/FusSceneConverter.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ConvertFrom
+    path: src/Fusee/src/Engine/Core/FusSceneConverter.cs
+    startLine: 22
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nTraverses the given SceneContainer and creates new high level graph <xref href=\"Fusee.Engine.Core.Scene\" data-throw-if-not-resolved=\"false\"></xref> by converting and/or splitting its components into the high level equivalents.\n"
+  example: []
+  syntax:
+    content: public static SceneContainer ConvertFrom(FusFile fus)
+    parameters:
+    - id: fus
+      type: Fusee.Serialization.FusFile
+      description: The FusFile to convert.
+    return:
+      type: Fusee.Engine.Core.Scene.SceneContainer
+    content.vb: Public Shared Function ConvertFrom(fus As FusFile) As SceneContainer
+  overload: Fusee.Engine.Core.FusSceneConverter.ConvertFrom*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.FusSceneConverter.ConvertTo(Fusee.Engine.Core.Scene.SceneContainer)
+  commentId: M:Fusee.Engine.Core.FusSceneConverter.ConvertTo(Fusee.Engine.Core.Scene.SceneContainer)
+  id: ConvertTo(Fusee.Engine.Core.Scene.SceneContainer)
+  parent: Fusee.Engine.Core.FusSceneConverter
+  langs:
+  - csharp
+  - vb
+  name: ConvertTo(SceneContainer)
+  nameWithType: FusSceneConverter.ConvertTo(SceneContainer)
+  fullName: Fusee.Engine.Core.FusSceneConverter.ConvertTo(Fusee.Engine.Core.Scene.SceneContainer)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/FusSceneConverter.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ConvertTo
+    path: src/Fusee/src/Engine/Core/FusSceneConverter.cs
+    startLine: 55
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nTraverses the given SceneContainer and creates new high low level graph <xref href=\"Fusee.Serialization.FusFile\" data-throw-if-not-resolved=\"false\"></xref> by converting and/or splitting its components into the low level equivalents.\n"
+  example: []
+  syntax:
+    content: public static FusFile ConvertTo(SceneContainer sc)
+    parameters:
+    - id: sc
+      type: Fusee.Engine.Core.Scene.SceneContainer
+      description: The Scene to convert.
+    return:
+      type: Fusee.Serialization.FusFile
+    content.vb: Public Shared Function ConvertTo(sc As SceneContainer) As FusFile
+  overload: Fusee.Engine.Core.FusSceneConverter.ConvertTo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
+  commentId: M:Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
+  isExternal: true
+- uid: Fusee.Engine.Core.FusSceneConverter.ConvertTo(Fusee.Engine.Core.Scene.SceneContainer)
+  commentId: M:Fusee.Engine.Core.FusSceneConverter.ConvertTo(Fusee.Engine.Core.Scene.SceneContainer)
+  isExternal: true
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: Fusee.Engine.Core.FusSceneConverter.ConvertFrom*
+  commentId: Overload:Fusee.Engine.Core.FusSceneConverter.ConvertFrom
+  name: ConvertFrom
+  nameWithType: FusSceneConverter.ConvertFrom
+  fullName: Fusee.Engine.Core.FusSceneConverter.ConvertFrom
+- uid: Fusee.Serialization.FusFile
+  commentId: T:Fusee.Serialization.FusFile
+  parent: Fusee.Serialization
+  name: FusFile
+  nameWithType: FusFile
+  fullName: Fusee.Serialization.FusFile
+- uid: Fusee.Engine.Core.Scene.SceneContainer
+  commentId: T:Fusee.Engine.Core.Scene.SceneContainer
+  parent: Fusee.Engine.Core.Scene
+  name: SceneContainer
+  nameWithType: SceneContainer
+  fullName: Fusee.Engine.Core.Scene.SceneContainer
+- uid: Fusee.Serialization
+  commentId: N:Fusee.Serialization
+  name: Fusee.Serialization
+  nameWithType: Fusee.Serialization
+  fullName: Fusee.Serialization
+- uid: Fusee.Engine.Core.FusSceneConverter.ConvertTo*
+  commentId: Overload:Fusee.Engine.Core.FusSceneConverter.ConvertTo
+  name: ConvertTo
+  nameWithType: FusSceneConverter.ConvertTo
+  fullName: Fusee.Engine.Core.FusSceneConverter.ConvertTo

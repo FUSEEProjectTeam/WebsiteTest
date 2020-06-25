@@ -1,0 +1,632 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Math.Core.MinMaxRect
+  commentId: T:Fusee.Math.Core.MinMaxRect
+  id: MinMaxRect
+  parent: Fusee.Math.Core
+  children:
+  - Fusee.Math.Core.MinMaxRect.Center
+  - Fusee.Math.Core.MinMaxRect.FromCenterSize(Fusee.Math.Core.float2,Fusee.Math.Core.float2)
+  - Fusee.Math.Core.MinMaxRect.Max
+  - Fusee.Math.Core.MinMaxRect.Min
+  - Fusee.Math.Core.MinMaxRect.Size
+  - Fusee.Math.Core.MinMaxRect.ToString
+  - Fusee.Math.Core.MinMaxRect.ToString(System.IFormatProvider)
+  langs:
+  - csharp
+  - vb
+  name: MinMaxRect
+  nameWithType: MinMaxRect
+  fullName: Fusee.Math.Core.MinMaxRect
+  type: Struct
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/MinMaxRect.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MinMaxRect
+    path: src/Fusee/src/Math/Core/MinMaxRect.cs
+    startLine: 11
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nClass containing an axis aligned (two-dimensional) rectangle specified by its minimum (lower-left) and maximum (upper-right)\npoints in 2d space.\n"
+  example: []
+  syntax:
+    content: public struct MinMaxRect
+    content.vb: Public Structure MinMaxRect
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Fusee.Math.Core.MinMaxRect.Min
+  commentId: F:Fusee.Math.Core.MinMaxRect.Min
+  id: Min
+  parent: Fusee.Math.Core.MinMaxRect
+  langs:
+  - csharp
+  - vb
+  name: Min
+  nameWithType: MinMaxRect.Min
+  fullName: Fusee.Math.Core.MinMaxRect.Min
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/MinMaxRect.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Min
+    path: src/Fusee/src/Math/Core/MinMaxRect.cs
+    startLine: 16
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns the minimum (lower-left corner) as a float2 vector.\n"
+  example: []
+  syntax:
+    content: public float2 Min
+    return:
+      type: Fusee.Math.Core.float2
+    content.vb: Public Min As float2
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.MinMaxRect.Max
+  commentId: F:Fusee.Math.Core.MinMaxRect.Max
+  id: Max
+  parent: Fusee.Math.Core.MinMaxRect
+  langs:
+  - csharp
+  - vb
+  name: Max
+  nameWithType: MinMaxRect.Max
+  fullName: Fusee.Math.Core.MinMaxRect.Max
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/MinMaxRect.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Max
+    path: src/Fusee/src/Math/Core/MinMaxRect.cs
+    startLine: 21
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns the maximum (upper-right corner) as a float2 vector.\n"
+  example: []
+  syntax:
+    content: public float2 Max
+    return:
+      type: Fusee.Math.Core.float2
+    content.vb: Public Max As float2
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.MinMaxRect.Center
+  commentId: P:Fusee.Math.Core.MinMaxRect.Center
+  id: Center
+  parent: Fusee.Math.Core.MinMaxRect
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: MinMaxRect.Center
+  fullName: Fusee.Math.Core.MinMaxRect.Center
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/MinMaxRect.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Center
+    path: src/Fusee/src/Math/Core/MinMaxRect.cs
+    startLine: 29
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nCalculates the center of this rectangle.\n"
+  example: []
+  syntax:
+    content: public float2 Center { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float2
+      description: "\nThe rectangle&apos;s center.\n"
+    content.vb: Public ReadOnly Property Center As float2
+  overload: Fusee.Math.Core.MinMaxRect.Center*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Math.Core.MinMaxRect.Size
+  commentId: P:Fusee.Math.Core.MinMaxRect.Size
+  id: Size
+  parent: Fusee.Math.Core.MinMaxRect
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: MinMaxRect.Size
+  fullName: Fusee.Math.Core.MinMaxRect.Size
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/MinMaxRect.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Size
+    path: src/Fusee/src/Math/Core/MinMaxRect.cs
+    startLine: 37
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nCalculates the size of this rectangle.\n"
+  example: []
+  syntax:
+    content: public float2 Size { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float2
+      description: "\nThe rectangle&apos;s size.\n"
+    content.vb: Public ReadOnly Property Size As float2
+  overload: Fusee.Math.Core.MinMaxRect.Size*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Math.Core.MinMaxRect.FromCenterSize(Fusee.Math.Core.float2,Fusee.Math.Core.float2)
+  commentId: M:Fusee.Math.Core.MinMaxRect.FromCenterSize(Fusee.Math.Core.float2,Fusee.Math.Core.float2)
+  id: FromCenterSize(Fusee.Math.Core.float2,Fusee.Math.Core.float2)
+  parent: Fusee.Math.Core.MinMaxRect
+  langs:
+  - csharp
+  - vb
+  name: FromCenterSize(float2, float2)
+  nameWithType: MinMaxRect.FromCenterSize(float2, float2)
+  fullName: Fusee.Math.Core.MinMaxRect.FromCenterSize(Fusee.Math.Core.float2, Fusee.Math.Core.float2)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/MinMaxRect.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FromCenterSize
+    path: src/Fusee/src/Math/Core/MinMaxRect.cs
+    startLine: 45
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nCreates a new MinMaxRect from the specified center and size.\n"
+  example: []
+  syntax:
+    content: public static MinMaxRect FromCenterSize(float2 center, float2 size)
+    parameters:
+    - id: center
+      type: Fusee.Math.Core.float2
+      description: The center of rect to be returned.
+    - id: size
+      type: Fusee.Math.Core.float2
+      description: The size of the rect to be returned.
+    return:
+      type: Fusee.Math.Core.MinMaxRect
+      description: A new MinMaxRect located at the specified center with the given size.
+    content.vb: Public Shared Function FromCenterSize(center As float2, size As float2) As MinMaxRect
+  overload: Fusee.Math.Core.MinMaxRect.FromCenterSize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.MinMaxRect.ToString
+  commentId: M:Fusee.Math.Core.MinMaxRect.ToString
+  id: ToString
+  parent: Fusee.Math.Core.MinMaxRect
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: MinMaxRect.ToString()
+  fullName: Fusee.Math.Core.MinMaxRect.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/MinMaxRect.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ToString
+    path: src/Fusee/src/Math/Core/MinMaxRect.cs
+    startLine: 59
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns a System.String that represents the current MinMaxRect.\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string.
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: Fusee.Math.Core.MinMaxRect.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Fusee.Math.Core.MinMaxRect.ToString(System.IFormatProvider)
+  commentId: M:Fusee.Math.Core.MinMaxRect.ToString(System.IFormatProvider)
+  id: ToString(System.IFormatProvider)
+  parent: Fusee.Math.Core.MinMaxRect
+  langs:
+  - csharp
+  - vb
+  name: ToString(IFormatProvider)
+  nameWithType: MinMaxRect.ToString(IFormatProvider)
+  fullName: Fusee.Math.Core.MinMaxRect.ToString(System.IFormatProvider)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/MinMaxRect.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ToString
+    path: src/Fusee/src/Math/Core/MinMaxRect.cs
+    startLine: 71
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns a System.String that represents the current MinMaxRect.\n"
+  example: []
+  syntax:
+    content: public string ToString(IFormatProvider provider)
+    parameters:
+    - id: provider
+      type: System.IFormatProvider
+      description: Provides information about a specific culture.
+    return:
+      type: System.String
+      description: "\nA <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> that represents this instance.\n"
+    content.vb: Public Function ToString(provider As IFormatProvider) As String
+  overload: Fusee.Math.Core.MinMaxRect.ToString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Math.Core.float2
+  commentId: T:Fusee.Math.Core.float2
+  parent: Fusee.Math.Core
+  name: float2
+  nameWithType: float2
+  fullName: Fusee.Math.Core.float2
+- uid: Fusee.Math.Core.MinMaxRect.Center*
+  commentId: Overload:Fusee.Math.Core.MinMaxRect.Center
+  name: Center
+  nameWithType: MinMaxRect.Center
+  fullName: Fusee.Math.Core.MinMaxRect.Center
+- uid: Fusee.Math.Core.MinMaxRect.Size*
+  commentId: Overload:Fusee.Math.Core.MinMaxRect.Size
+  name: Size
+  nameWithType: MinMaxRect.Size
+  fullName: Fusee.Math.Core.MinMaxRect.Size
+- uid: Fusee.Math.Core.MinMaxRect.FromCenterSize*
+  commentId: Overload:Fusee.Math.Core.MinMaxRect.FromCenterSize
+  name: FromCenterSize
+  nameWithType: MinMaxRect.FromCenterSize
+  fullName: Fusee.Math.Core.MinMaxRect.FromCenterSize
+- uid: Fusee.Math.Core.MinMaxRect
+  commentId: T:Fusee.Math.Core.MinMaxRect
+  parent: Fusee.Math.Core
+  name: MinMaxRect
+  nameWithType: MinMaxRect
+  fullName: Fusee.Math.Core.MinMaxRect
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.MinMaxRect.ToString*
+  commentId: Overload:Fusee.Math.Core.MinMaxRect.ToString
+  name: ToString
+  nameWithType: MinMaxRect.ToString
+  fullName: Fusee.Math.Core.MinMaxRect.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.IFormatProvider
+  commentId: T:System.IFormatProvider
+  parent: System
+  isExternal: true
+  name: IFormatProvider
+  nameWithType: IFormatProvider
+  fullName: System.IFormatProvider

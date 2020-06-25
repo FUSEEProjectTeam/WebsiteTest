@@ -1,0 +1,859 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Scene.Octant
+  commentId: T:Fusee.Engine.Core.Scene.Octant
+  id: Octant
+  parent: Fusee.Engine.Core.Scene
+  children:
+  - Fusee.Engine.Core.Scene.Octant.Center
+  - Fusee.Engine.Core.Scene.Octant.ComputeScreenProjectedSize(Fusee.Math.Core.double3,System.Int32,System.Single)
+  - Fusee.Engine.Core.Scene.Octant.Guid
+  - Fusee.Engine.Core.Scene.Octant.IsLeaf
+  - Fusee.Engine.Core.Scene.Octant.Level
+  - Fusee.Engine.Core.Scene.Octant.NumberOfPointsInNode
+  - Fusee.Engine.Core.Scene.Octant.PosInHierarchyTex
+  - Fusee.Engine.Core.Scene.Octant.PosInParent
+  - Fusee.Engine.Core.Scene.Octant.ProjectedScreenSize
+  - Fusee.Engine.Core.Scene.Octant.Size
+  - Fusee.Engine.Core.Scene.Octant.VisibleChildIndices
+  - Fusee.Engine.Core.Scene.Octant.WasLoaded
+  langs:
+  - csharp
+  - vb
+  name: Octant
+  nameWithType: Octant
+  fullName: Fusee.Engine.Core.Scene.Octant
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Octant
+    path: src/Fusee/src/Engine/Core/Scene/Octant.cs
+    startLine: 8
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nComponent that allows a SceneNode to save information usually associated with a &quot;PtOctant&quot;.\n"
+  example: []
+  syntax:
+    content: 'public class Octant : SceneComponent, IComponent'
+    content.vb: >-
+      Public Class Octant
+
+          Inherits SceneComponent
+
+          Implements IComponent
+  inheritance:
+  - System.Object
+  - Fusee.Engine.Core.Scene.SceneComponent
+  implements:
+  - Fusee.Xene.IComponent
+  inheritedMembers:
+  - Fusee.Engine.Core.Scene.SceneComponent.Name
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Core.Scene.Octant.PosInParent
+  commentId: F:Fusee.Engine.Core.Scene.Octant.PosInParent
+  id: PosInParent
+  parent: Fusee.Engine.Core.Scene.Octant
+  langs:
+  - csharp
+  - vb
+  name: PosInParent
+  nameWithType: Octant.PosInParent
+  fullName: Fusee.Engine.Core.Scene.Octant.PosInParent
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: PosInParent
+    path: src/Fusee/src/Engine/Core/Scene/Octant.cs
+    startLine: 13
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nDefines the position in the parent octant.\n"
+  example: []
+  syntax:
+    content: public int PosInParent
+    return:
+      type: System.Int32
+    content.vb: Public PosInParent As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.Octant.Level
+  commentId: F:Fusee.Engine.Core.Scene.Octant.Level
+  id: Level
+  parent: Fusee.Engine.Core.Scene.Octant
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: Octant.Level
+  fullName: Fusee.Engine.Core.Scene.Octant.Level
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Level
+    path: src/Fusee/src/Engine/Core/Scene/Octant.cs
+    startLine: 18
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nThe level of the octree the node lies in.\n"
+  example: []
+  syntax:
+    content: public int Level
+    return:
+      type: System.Int32
+    content.vb: Public Level As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.Octant.Guid
+  commentId: F:Fusee.Engine.Core.Scene.Octant.Guid
+  id: Guid
+  parent: Fusee.Engine.Core.Scene.Octant
+  langs:
+  - csharp
+  - vb
+  name: Guid
+  nameWithType: Octant.Guid
+  fullName: Fusee.Engine.Core.Scene.Octant.Guid
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Guid
+    path: src/Fusee/src/Engine/Core/Scene/Octant.cs
+    startLine: 23
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nUnique identifier of the node.\n"
+  example: []
+  syntax:
+    content: public Guid Guid
+    return:
+      type: System.Guid
+    content.vb: Public Guid As Guid
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.Octant.Center
+  commentId: F:Fusee.Engine.Core.Scene.Octant.Center
+  id: Center
+  parent: Fusee.Engine.Core.Scene.Octant
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: Octant.Center
+  fullName: Fusee.Engine.Core.Scene.Octant.Center
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Center
+    path: src/Fusee/src/Engine/Core/Scene/Octant.cs
+    startLine: 28
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nCenter in world space.\n"
+  example: []
+  syntax:
+    content: public double3 Center
+    return:
+      type: Fusee.Math.Core.double3
+    content.vb: Public Center As double3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.Octant.Size
+  commentId: F:Fusee.Engine.Core.Scene.Octant.Size
+  id: Size
+  parent: Fusee.Engine.Core.Scene.Octant
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: Octant.Size
+  fullName: Fusee.Engine.Core.Scene.Octant.Size
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Size
+    path: src/Fusee/src/Engine/Core/Scene/Octant.cs
+    startLine: 33
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nLength of on side of the cubical node.\n"
+  example: []
+  syntax:
+    content: public double Size
+    return:
+      type: System.Double
+    content.vb: Public Size As Double
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.Octant.IsLeaf
+  commentId: F:Fusee.Engine.Core.Scene.Octant.IsLeaf
+  id: IsLeaf
+  parent: Fusee.Engine.Core.Scene.Octant
+  langs:
+  - csharp
+  - vb
+  name: IsLeaf
+  nameWithType: Octant.IsLeaf
+  fullName: Fusee.Engine.Core.Scene.Octant.IsLeaf
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IsLeaf
+    path: src/Fusee/src/Engine/Core/Scene/Octant.cs
+    startLine: 38
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nDefines if the node is a leaf node.\n"
+  example: []
+  syntax:
+    content: public bool IsLeaf
+    return:
+      type: System.Boolean
+    content.vb: Public IsLeaf As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.Octant.WasLoaded
+  commentId: F:Fusee.Engine.Core.Scene.Octant.WasLoaded
+  id: WasLoaded
+  parent: Fusee.Engine.Core.Scene.Octant
+  langs:
+  - csharp
+  - vb
+  name: WasLoaded
+  nameWithType: Octant.WasLoaded
+  fullName: Fusee.Engine.Core.Scene.Octant.WasLoaded
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: WasLoaded
+    path: src/Fusee/src/Engine/Core/Scene/Octant.cs
+    startLine: 43
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nDefines if the node was loaded into memory.\n"
+  example: []
+  syntax:
+    content: public bool WasLoaded
+    return:
+      type: System.Boolean
+    content.vb: Public WasLoaded As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.Octant.NumberOfPointsInNode
+  commentId: F:Fusee.Engine.Core.Scene.Octant.NumberOfPointsInNode
+  id: NumberOfPointsInNode
+  parent: Fusee.Engine.Core.Scene.Octant
+  langs:
+  - csharp
+  - vb
+  name: NumberOfPointsInNode
+  nameWithType: Octant.NumberOfPointsInNode
+  fullName: Fusee.Engine.Core.Scene.Octant.NumberOfPointsInNode
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: NumberOfPointsInNode
+    path: src/Fusee/src/Engine/Core/Scene/Octant.cs
+    startLine: 48
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nNumber of point cloud points, this node holds.\n"
+  example: []
+  syntax:
+    content: public int NumberOfPointsInNode
+    return:
+      type: System.Int32
+    content.vb: Public NumberOfPointsInNode As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.Octant.ProjectedScreenSize
+  commentId: P:Fusee.Engine.Core.Scene.Octant.ProjectedScreenSize
+  id: ProjectedScreenSize
+  parent: Fusee.Engine.Core.Scene.Octant
+  langs:
+  - csharp
+  - vb
+  name: ProjectedScreenSize
+  nameWithType: Octant.ProjectedScreenSize
+  fullName: Fusee.Engine.Core.Scene.Octant.ProjectedScreenSize
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ProjectedScreenSize
+    path: src/Fusee/src/Engine/Core/Scene/Octant.cs
+    startLine: 53
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nThe size, projected into screen space. Set with <xref href=\"Fusee.Engine.Core.Scene.Octant.ComputeScreenProjectedSize(Fusee.Math.Core.double3%2cSystem.Int32%2cSystem.Single)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public double ProjectedScreenSize { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property ProjectedScreenSize As Double
+  overload: Fusee.Engine.Core.Scene.Octant.ProjectedScreenSize*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.Scene.Octant.PosInHierarchyTex
+  commentId: F:Fusee.Engine.Core.Scene.Octant.PosInHierarchyTex
+  id: PosInHierarchyTex
+  parent: Fusee.Engine.Core.Scene.Octant
+  langs:
+  - csharp
+  - vb
+  name: PosInHierarchyTex
+  nameWithType: Octant.PosInHierarchyTex
+  fullName: Fusee.Engine.Core.Scene.Octant.PosInHierarchyTex
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: PosInHierarchyTex
+    path: src/Fusee/src/Engine/Core/Scene/Octant.cs
+    startLine: 56
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: public int PosInHierarchyTex
+    return:
+      type: System.Int32
+    content.vb: Public PosInHierarchyTex As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.Octant.VisibleChildIndices
+  commentId: F:Fusee.Engine.Core.Scene.Octant.VisibleChildIndices
+  id: VisibleChildIndices
+  parent: Fusee.Engine.Core.Scene.Octant
+  langs:
+  - csharp
+  - vb
+  name: VisibleChildIndices
+  nameWithType: Octant.VisibleChildIndices
+  fullName: Fusee.Engine.Core.Scene.Octant.VisibleChildIndices
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: VisibleChildIndices
+    path: src/Fusee/src/Engine/Core/Scene/Octant.cs
+    startLine: 58
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: public byte VisibleChildIndices
+    return:
+      type: System.Byte
+    content.vb: Public VisibleChildIndices As Byte
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.Octant.ComputeScreenProjectedSize(Fusee.Math.Core.double3,System.Int32,System.Single)
+  commentId: M:Fusee.Engine.Core.Scene.Octant.ComputeScreenProjectedSize(Fusee.Math.Core.double3,System.Int32,System.Single)
+  id: ComputeScreenProjectedSize(Fusee.Math.Core.double3,System.Int32,System.Single)
+  parent: Fusee.Engine.Core.Scene.Octant
+  langs:
+  - csharp
+  - vb
+  name: ComputeScreenProjectedSize(double3, Int32, Single)
+  nameWithType: Octant.ComputeScreenProjectedSize(double3, Int32, Single)
+  fullName: Fusee.Engine.Core.Scene.Octant.ComputeScreenProjectedSize(Fusee.Math.Core.double3, System.Int32, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Octant.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ComputeScreenProjectedSize
+    path: src/Fusee/src/Engine/Core/Scene/Octant.cs
+    startLine: 66
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nCalculates the size, projected into screen space.\n"
+  example: []
+  syntax:
+    content: public void ComputeScreenProjectedSize(double3 camPos, int screenHeight, float fov)
+    parameters:
+    - id: camPos
+      type: Fusee.Math.Core.double3
+      description: Position of the camera.
+    - id: screenHeight
+      type: System.Int32
+      description: Hight of the canvas.
+    - id: fov
+      type: System.Single
+      description: Field of view.
+    content.vb: Public Sub ComputeScreenProjectedSize(camPos As double3, screenHeight As Integer, fov As Single)
+  overload: Fusee.Engine.Core.Scene.Octant.ComputeScreenProjectedSize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Core.Scene.SceneComponent
+  commentId: T:Fusee.Engine.Core.Scene.SceneComponent
+  parent: Fusee.Engine.Core.Scene
+  name: SceneComponent
+  nameWithType: SceneComponent
+  fullName: Fusee.Engine.Core.Scene.SceneComponent
+- uid: Fusee.Xene.IComponent
+  commentId: T:Fusee.Xene.IComponent
+  parent: Fusee.Xene
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Fusee.Xene.IComponent
+- uid: Fusee.Engine.Core.Scene.SceneComponent.Name
+  commentId: F:Fusee.Engine.Core.Scene.SceneComponent.Name
+  parent: Fusee.Engine.Core.Scene.SceneComponent
+  name: Name
+  nameWithType: SceneComponent.Name
+  fullName: Fusee.Engine.Core.Scene.SceneComponent.Name
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Xene
+  commentId: N:Fusee.Xene
+  name: Fusee.Xene
+  nameWithType: Fusee.Xene
+  fullName: Fusee.Xene
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Fusee.Math.Core.double3
+  commentId: T:Fusee.Math.Core.double3
+  parent: Fusee.Math.Core
+  name: double3
+  nameWithType: double3
+  fullName: Fusee.Math.Core.double3
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Engine.Core.Scene.Octant.ComputeScreenProjectedSize(Fusee.Math.Core.double3,System.Int32,System.Single)
+  commentId: M:Fusee.Engine.Core.Scene.Octant.ComputeScreenProjectedSize(Fusee.Math.Core.double3,System.Int32,System.Single)
+  isExternal: true
+- uid: Fusee.Engine.Core.Scene.Octant.ProjectedScreenSize*
+  commentId: Overload:Fusee.Engine.Core.Scene.Octant.ProjectedScreenSize
+  name: ProjectedScreenSize
+  nameWithType: Octant.ProjectedScreenSize
+  fullName: Fusee.Engine.Core.Scene.Octant.ProjectedScreenSize
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: Fusee.Engine.Core.Scene.Octant.ComputeScreenProjectedSize*
+  commentId: Overload:Fusee.Engine.Core.Scene.Octant.ComputeScreenProjectedSize
+  name: ComputeScreenProjectedSize
+  nameWithType: Octant.ComputeScreenProjectedSize
+  fullName: Fusee.Engine.Core.Scene.Octant.ComputeScreenProjectedSize
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

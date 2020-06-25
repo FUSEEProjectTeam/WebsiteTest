@@ -1,0 +1,1131 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Xene.INode
+  commentId: T:Fusee.Xene.INode
+  id: INode
+  parent: Fusee.Xene
+  children:
+  - Fusee.Xene.INode.EnumChildren
+  - Fusee.Xene.INode.EnumComponents
+  langs:
+  - csharp
+  - vb
+  name: INode
+  nameWithType: INode
+  fullName: Fusee.Xene.INode
+  type: Interface
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/INode.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: INode
+    path: src/Fusee/src/Xene/INode.cs
+    startLine: 7
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nInterface to be implemented by node types to be accessed by functionality in <xref href=\"Fusee.Xene\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public interface INode
+    content.vb: Public Interface INode
+  extensionMethods:
+  - Fusee.Xene.INode.Fusee.Xene.SceneFinderExtensions.FindNodes``1(System.Predicate{Fusee.Xene.INode})
+  - Fusee.Xene.INode.Fusee.Xene.SceneFinderExtensions.FindNodes``2(System.Predicate{{TNodeToFind}})
+  - Fusee.Xene.INode.Fusee.Xene.SceneFinderExtensions.FindComponents``2(System.Predicate{{TComponent}})
+  - Fusee.Xene.INode.Fusee.Xene.SceneFinderExtensions.FindComponents``3(System.Predicate{{TComponentToFind}})
+  - Fusee.Xene.INode.Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``2(System.Predicate{{TComponent}})
+  - Fusee.Xene.INode.Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``3(System.Predicate{{TComponentToFind}})
+  - Fusee.Xene.INode.Fusee.Xene.ViseratorExtensions.Viserate``4
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Fusee.Xene.INode.EnumChildren
+  commentId: P:Fusee.Xene.INode.EnumChildren
+  id: EnumChildren
+  parent: Fusee.Xene.INode
+  langs:
+  - csharp
+  - vb
+  name: EnumChildren
+  nameWithType: INode.EnumChildren
+  fullName: Fusee.Xene.INode.EnumChildren
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/INode.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: EnumChildren
+    path: src/Fusee/src/Xene/INode.cs
+    startLine: 15
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nRetrieves the child nodes of this instance.\n"
+  example: []
+  syntax:
+    content: IEnumerable<INode> EnumChildren { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Xene.INode}
+      description: "\nThe child nodes.\n"
+    content.vb: ReadOnly Property EnumChildren As IEnumerable(Of INode)
+  overload: Fusee.Xene.INode.EnumChildren*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Fusee.Xene.INode.EnumComponents
+  commentId: P:Fusee.Xene.INode.EnumComponents
+  id: EnumComponents
+  parent: Fusee.Xene.INode
+  langs:
+  - csharp
+  - vb
+  name: EnumComponents
+  nameWithType: INode.EnumComponents
+  fullName: Fusee.Xene.INode.EnumComponents
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/INode.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: EnumComponents
+    path: src/Fusee/src/Xene/INode.cs
+    startLine: 23
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nRetrieves the components making up this node.\n"
+  example: []
+  syntax:
+    content: IEnumerable<IComponent> EnumComponents { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Xene.IComponent}
+      description: "\nThe components.\n"
+    content.vb: ReadOnly Property EnumComponents As IEnumerable(Of IComponent)
+  overload: Fusee.Xene.INode.EnumComponents*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Fusee.Xene
+  commentId: N:Fusee.Xene
+  name: Fusee.Xene
+  nameWithType: Fusee.Xene
+  fullName: Fusee.Xene
+- uid: Fusee.Xene.INode.Fusee.Xene.SceneFinderExtensions.FindNodes``1(System.Predicate{Fusee.Xene.INode})
+  commentId: M:Fusee.Xene.SceneFinderExtensions.FindNodes``1(``0,System.Predicate{``0})
+  parent: Fusee.Xene.SceneFinderExtensions
+  definition: Fusee.Xene.SceneFinderExtensions.FindNodes``1(``0,System.Predicate{``0})
+  name: FindNodes<INode>(Predicate<INode>)
+  nameWithType: SceneFinderExtensions.FindNodes<INode>(Predicate<INode>)
+  fullName: Fusee.Xene.SceneFinderExtensions.FindNodes<Fusee.Xene.INode>(System.Predicate<Fusee.Xene.INode>)
+  nameWithType.vb: SceneFinderExtensions.FindNodes(Of INode)(Predicate(Of INode))
+  fullName.vb: Fusee.Xene.SceneFinderExtensions.FindNodes(Of Fusee.Xene.INode)(System.Predicate(Of Fusee.Xene.INode))
+  name.vb: FindNodes(Of INode)(Predicate(Of INode))
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindNodes``1(System.Predicate{``0})
+    name: FindNodes<INode>
+    nameWithType: SceneFinderExtensions.FindNodes<INode>
+    fullName: Fusee.Xene.SceneFinderExtensions.FindNodes<Fusee.Xene.INode>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Xene.INode
+    name: INode
+    nameWithType: INode
+    fullName: Fusee.Xene.INode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindNodes``1(System.Predicate{``0})
+    name: FindNodes(Of INode)
+    nameWithType: SceneFinderExtensions.FindNodes(Of INode)
+    fullName: Fusee.Xene.SceneFinderExtensions.FindNodes(Of Fusee.Xene.INode)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Xene.INode
+    name: INode
+    nameWithType: INode
+    fullName: Fusee.Xene.INode
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.INode.Fusee.Xene.SceneFinderExtensions.FindNodes``2(System.Predicate{{TNodeToFind}})
+  commentId: M:Fusee.Xene.SceneFinderExtensions.FindNodes``2(``1,System.Predicate{``0})
+  parent: Fusee.Xene.SceneFinderExtensions
+  definition: Fusee.Xene.SceneFinderExtensions.FindNodes``2(``1,System.Predicate{``0})
+  name: FindNodes<TNodeToFind, INode>(Predicate<TNodeToFind>)
+  nameWithType: SceneFinderExtensions.FindNodes<TNodeToFind, INode>(Predicate<TNodeToFind>)
+  fullName: Fusee.Xene.SceneFinderExtensions.FindNodes<TNodeToFind, Fusee.Xene.INode>(System.Predicate<TNodeToFind>)
+  nameWithType.vb: SceneFinderExtensions.FindNodes(Of TNodeToFind, INode)(Predicate(Of TNodeToFind))
+  fullName.vb: Fusee.Xene.SceneFinderExtensions.FindNodes(Of TNodeToFind, Fusee.Xene.INode)(System.Predicate(Of TNodeToFind))
+  name.vb: FindNodes(Of TNodeToFind, INode)(Predicate(Of TNodeToFind))
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindNodes``2(System.Predicate{``0})
+    name: FindNodes<TNodeToFind, INode>
+    nameWithType: SceneFinderExtensions.FindNodes<TNodeToFind, INode>
+    fullName: Fusee.Xene.SceneFinderExtensions.FindNodes<TNodeToFind, Fusee.Xene.INode>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNodeToFind
+    nameWithType: TNodeToFind
+    fullName: TNodeToFind
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindNodes``2(System.Predicate{``0})
+    name: FindNodes(Of TNodeToFind, INode)
+    nameWithType: SceneFinderExtensions.FindNodes(Of TNodeToFind, INode)
+    fullName: Fusee.Xene.SceneFinderExtensions.FindNodes(Of TNodeToFind, Fusee.Xene.INode)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNodeToFind
+    nameWithType: TNodeToFind
+    fullName: TNodeToFind
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.INode.Fusee.Xene.SceneFinderExtensions.FindComponents``2(System.Predicate{{TComponent}})
+  commentId: M:Fusee.Xene.SceneFinderExtensions.FindComponents``2(``0,System.Predicate{``1})
+  parent: Fusee.Xene.SceneFinderExtensions
+  definition: Fusee.Xene.SceneFinderExtensions.FindComponents``2(``0,System.Predicate{``1})
+  name: FindComponents<INode, TComponent>(Predicate<TComponent>)
+  nameWithType: SceneFinderExtensions.FindComponents<INode, TComponent>(Predicate<TComponent>)
+  fullName: Fusee.Xene.SceneFinderExtensions.FindComponents<Fusee.Xene.INode, TComponent>(System.Predicate<TComponent>)
+  nameWithType.vb: SceneFinderExtensions.FindComponents(Of INode, TComponent)(Predicate(Of TComponent))
+  fullName.vb: Fusee.Xene.SceneFinderExtensions.FindComponents(Of Fusee.Xene.INode, TComponent)(System.Predicate(Of TComponent))
+  name.vb: FindComponents(Of INode, TComponent)(Predicate(Of TComponent))
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindComponents``2(System.Predicate{``1})
+    name: FindComponents<INode, TComponent>
+    nameWithType: SceneFinderExtensions.FindComponents<INode, TComponent>
+    fullName: Fusee.Xene.SceneFinderExtensions.FindComponents<Fusee.Xene.INode, TComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindComponents``2(System.Predicate{``1})
+    name: FindComponents(Of INode, TComponent)
+    nameWithType: SceneFinderExtensions.FindComponents(Of INode, TComponent)
+    fullName: Fusee.Xene.SceneFinderExtensions.FindComponents(Of Fusee.Xene.INode, TComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.INode.Fusee.Xene.SceneFinderExtensions.FindComponents``3(System.Predicate{{TComponentToFind}})
+  commentId: M:Fusee.Xene.SceneFinderExtensions.FindComponents``3(``1,System.Predicate{``0})
+  parent: Fusee.Xene.SceneFinderExtensions
+  definition: Fusee.Xene.SceneFinderExtensions.FindComponents``3(``1,System.Predicate{``0})
+  name: FindComponents<TComponentToFind, INode, TComponent>(Predicate<TComponentToFind>)
+  nameWithType: SceneFinderExtensions.FindComponents<TComponentToFind, INode, TComponent>(Predicate<TComponentToFind>)
+  fullName: Fusee.Xene.SceneFinderExtensions.FindComponents<TComponentToFind, Fusee.Xene.INode, TComponent>(System.Predicate<TComponentToFind>)
+  nameWithType.vb: SceneFinderExtensions.FindComponents(Of TComponentToFind, INode, TComponent)(Predicate(Of TComponentToFind))
+  fullName.vb: Fusee.Xene.SceneFinderExtensions.FindComponents(Of TComponentToFind, Fusee.Xene.INode, TComponent)(System.Predicate(Of TComponentToFind))
+  name.vb: FindComponents(Of TComponentToFind, INode, TComponent)(Predicate(Of TComponentToFind))
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindComponents``3(System.Predicate{``0})
+    name: FindComponents<TComponentToFind, INode, TComponent>
+    nameWithType: SceneFinderExtensions.FindComponents<TComponentToFind, INode, TComponent>
+    fullName: Fusee.Xene.SceneFinderExtensions.FindComponents<TComponentToFind, Fusee.Xene.INode, TComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindComponents``3(System.Predicate{``0})
+    name: FindComponents(Of TComponentToFind, INode, TComponent)
+    nameWithType: SceneFinderExtensions.FindComponents(Of TComponentToFind, INode, TComponent)
+    fullName: Fusee.Xene.SceneFinderExtensions.FindComponents(Of TComponentToFind, Fusee.Xene.INode, TComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.INode.Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``2(System.Predicate{{TComponent}})
+  commentId: M:Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``2(``0,System.Predicate{``1})
+  parent: Fusee.Xene.SceneFinderExtensions
+  definition: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``2(``0,System.Predicate{``1})
+  name: FindNodesWhereComponent<INode, TComponent>(Predicate<TComponent>)
+  nameWithType: SceneFinderExtensions.FindNodesWhereComponent<INode, TComponent>(Predicate<TComponent>)
+  fullName: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent<Fusee.Xene.INode, TComponent>(System.Predicate<TComponent>)
+  nameWithType.vb: SceneFinderExtensions.FindNodesWhereComponent(Of INode, TComponent)(Predicate(Of TComponent))
+  fullName.vb: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent(Of Fusee.Xene.INode, TComponent)(System.Predicate(Of TComponent))
+  name.vb: FindNodesWhereComponent(Of INode, TComponent)(Predicate(Of TComponent))
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``2(System.Predicate{``1})
+    name: FindNodesWhereComponent<INode, TComponent>
+    nameWithType: SceneFinderExtensions.FindNodesWhereComponent<INode, TComponent>
+    fullName: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent<Fusee.Xene.INode, TComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``2(System.Predicate{``1})
+    name: FindNodesWhereComponent(Of INode, TComponent)
+    nameWithType: SceneFinderExtensions.FindNodesWhereComponent(Of INode, TComponent)
+    fullName: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent(Of Fusee.Xene.INode, TComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.INode.Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``3(System.Predicate{{TComponentToFind}})
+  commentId: M:Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``3(``1,System.Predicate{``0})
+  parent: Fusee.Xene.SceneFinderExtensions
+  definition: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``3(``1,System.Predicate{``0})
+  name: FindNodesWhereComponent<TComponentToFind, INode, TComponent>(Predicate<TComponentToFind>)
+  nameWithType: SceneFinderExtensions.FindNodesWhereComponent<TComponentToFind, INode, TComponent>(Predicate<TComponentToFind>)
+  fullName: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent<TComponentToFind, Fusee.Xene.INode, TComponent>(System.Predicate<TComponentToFind>)
+  nameWithType.vb: SceneFinderExtensions.FindNodesWhereComponent(Of TComponentToFind, INode, TComponent)(Predicate(Of TComponentToFind))
+  fullName.vb: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent(Of TComponentToFind, Fusee.Xene.INode, TComponent)(System.Predicate(Of TComponentToFind))
+  name.vb: FindNodesWhereComponent(Of TComponentToFind, INode, TComponent)(Predicate(Of TComponentToFind))
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``3(System.Predicate{``0})
+    name: FindNodesWhereComponent<TComponentToFind, INode, TComponent>
+    nameWithType: SceneFinderExtensions.FindNodesWhereComponent<TComponentToFind, INode, TComponent>
+    fullName: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent<TComponentToFind, Fusee.Xene.INode, TComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``3(System.Predicate{``0})
+    name: FindNodesWhereComponent(Of TComponentToFind, INode, TComponent)
+    nameWithType: SceneFinderExtensions.FindNodesWhereComponent(Of TComponentToFind, INode, TComponent)
+    fullName: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent(Of TComponentToFind, Fusee.Xene.INode, TComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.INode.Fusee.Xene.ViseratorExtensions.Viserate``4
+  commentId: M:Fusee.Xene.ViseratorExtensions.Viserate``4(``2)
+  parent: Fusee.Xene.ViseratorExtensions
+  definition: Fusee.Xene.ViseratorExtensions.Viserate``4(``2)
+  name: Viserate<TViserator, TResult, INode, TComponent>()
+  nameWithType: ViseratorExtensions.Viserate<TViserator, TResult, INode, TComponent>()
+  fullName: Fusee.Xene.ViseratorExtensions.Viserate<TViserator, TResult, Fusee.Xene.INode, TComponent>()
+  nameWithType.vb: ViseratorExtensions.Viserate(Of TViserator, TResult, INode, TComponent)()
+  fullName.vb: Fusee.Xene.ViseratorExtensions.Viserate(Of TViserator, TResult, Fusee.Xene.INode, TComponent)()
+  name.vb: Viserate(Of TViserator, TResult, INode, TComponent)()
+  spec.csharp:
+  - uid: Fusee.Xene.ViseratorExtensions.Viserate``4
+    name: Viserate<TViserator, TResult, INode, TComponent>
+    nameWithType: ViseratorExtensions.Viserate<TViserator, TResult, INode, TComponent>
+    fullName: Fusee.Xene.ViseratorExtensions.Viserate<TViserator, TResult, Fusee.Xene.INode, TComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.ViseratorExtensions.Viserate``4
+    name: Viserate(Of TViserator, TResult, INode, TComponent)
+    nameWithType: ViseratorExtensions.Viserate(Of TViserator, TResult, INode, TComponent)
+    fullName: Fusee.Xene.ViseratorExtensions.Viserate(Of TViserator, TResult, Fusee.Xene.INode, TComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.SceneFinderExtensions.FindNodes``1(``0,System.Predicate{``0})
+  commentId: M:Fusee.Xene.SceneFinderExtensions.FindNodes``1(``0,System.Predicate{``0})
+  isExternal: true
+  name: FindNodes<TNode>(TNode, Predicate<TNode>)
+  nameWithType: SceneFinderExtensions.FindNodes<TNode>(TNode, Predicate<TNode>)
+  fullName: Fusee.Xene.SceneFinderExtensions.FindNodes<TNode>(TNode, System.Predicate<TNode>)
+  nameWithType.vb: SceneFinderExtensions.FindNodes(Of TNode)(TNode, Predicate(Of TNode))
+  fullName.vb: Fusee.Xene.SceneFinderExtensions.FindNodes(Of TNode)(TNode, System.Predicate(Of TNode))
+  name.vb: FindNodes(Of TNode)(TNode, Predicate(Of TNode))
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindNodes``1(``0,System.Predicate{``0})
+    name: FindNodes<TNode>
+    nameWithType: SceneFinderExtensions.FindNodes<TNode>
+    fullName: Fusee.Xene.SceneFinderExtensions.FindNodes<TNode>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindNodes``1(``0,System.Predicate{``0})
+    name: FindNodes(Of TNode)
+    nameWithType: SceneFinderExtensions.FindNodes(Of TNode)
+    fullName: Fusee.Xene.SceneFinderExtensions.FindNodes(Of TNode)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.SceneFinderExtensions
+  commentId: T:Fusee.Xene.SceneFinderExtensions
+  parent: Fusee.Xene
+  name: SceneFinderExtensions
+  nameWithType: SceneFinderExtensions
+  fullName: Fusee.Xene.SceneFinderExtensions
+- uid: Fusee.Xene.SceneFinderExtensions.FindNodes``2(``1,System.Predicate{``0})
+  commentId: M:Fusee.Xene.SceneFinderExtensions.FindNodes``2(``1,System.Predicate{``0})
+  isExternal: true
+  name: FindNodes<TNodeToFind, TNode>(TNode, Predicate<TNodeToFind>)
+  nameWithType: SceneFinderExtensions.FindNodes<TNodeToFind, TNode>(TNode, Predicate<TNodeToFind>)
+  fullName: Fusee.Xene.SceneFinderExtensions.FindNodes<TNodeToFind, TNode>(TNode, System.Predicate<TNodeToFind>)
+  nameWithType.vb: SceneFinderExtensions.FindNodes(Of TNodeToFind, TNode)(TNode, Predicate(Of TNodeToFind))
+  fullName.vb: Fusee.Xene.SceneFinderExtensions.FindNodes(Of TNodeToFind, TNode)(TNode, System.Predicate(Of TNodeToFind))
+  name.vb: FindNodes(Of TNodeToFind, TNode)(TNode, Predicate(Of TNodeToFind))
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindNodes``2(``1,System.Predicate{``0})
+    name: FindNodes<TNodeToFind, TNode>
+    nameWithType: SceneFinderExtensions.FindNodes<TNodeToFind, TNode>
+    fullName: Fusee.Xene.SceneFinderExtensions.FindNodes<TNodeToFind, TNode>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNodeToFind
+    nameWithType: TNodeToFind
+    fullName: TNodeToFind
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindNodes``2(``1,System.Predicate{``0})
+    name: FindNodes(Of TNodeToFind, TNode)
+    nameWithType: SceneFinderExtensions.FindNodes(Of TNodeToFind, TNode)
+    fullName: Fusee.Xene.SceneFinderExtensions.FindNodes(Of TNodeToFind, TNode)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNodeToFind
+    nameWithType: TNodeToFind
+    fullName: TNodeToFind
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.SceneFinderExtensions.FindComponents``2(``0,System.Predicate{``1})
+  commentId: M:Fusee.Xene.SceneFinderExtensions.FindComponents``2(``0,System.Predicate{``1})
+  isExternal: true
+  name: FindComponents<TNode, TComponent>(TNode, Predicate<TComponent>)
+  nameWithType: SceneFinderExtensions.FindComponents<TNode, TComponent>(TNode, Predicate<TComponent>)
+  fullName: Fusee.Xene.SceneFinderExtensions.FindComponents<TNode, TComponent>(TNode, System.Predicate<TComponent>)
+  nameWithType.vb: SceneFinderExtensions.FindComponents(Of TNode, TComponent)(TNode, Predicate(Of TComponent))
+  fullName.vb: Fusee.Xene.SceneFinderExtensions.FindComponents(Of TNode, TComponent)(TNode, System.Predicate(Of TComponent))
+  name.vb: FindComponents(Of TNode, TComponent)(TNode, Predicate(Of TComponent))
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindComponents``2(``0,System.Predicate{``1})
+    name: FindComponents<TNode, TComponent>
+    nameWithType: SceneFinderExtensions.FindComponents<TNode, TComponent>
+    fullName: Fusee.Xene.SceneFinderExtensions.FindComponents<TNode, TComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindComponents``2(``0,System.Predicate{``1})
+    name: FindComponents(Of TNode, TComponent)
+    nameWithType: SceneFinderExtensions.FindComponents(Of TNode, TComponent)
+    fullName: Fusee.Xene.SceneFinderExtensions.FindComponents(Of TNode, TComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.SceneFinderExtensions.FindComponents``3(``1,System.Predicate{``0})
+  commentId: M:Fusee.Xene.SceneFinderExtensions.FindComponents``3(``1,System.Predicate{``0})
+  isExternal: true
+  name: FindComponents<TComponentToFind, TNode, TComponent>(TNode, Predicate<TComponentToFind>)
+  nameWithType: SceneFinderExtensions.FindComponents<TComponentToFind, TNode, TComponent>(TNode, Predicate<TComponentToFind>)
+  fullName: Fusee.Xene.SceneFinderExtensions.FindComponents<TComponentToFind, TNode, TComponent>(TNode, System.Predicate<TComponentToFind>)
+  nameWithType.vb: SceneFinderExtensions.FindComponents(Of TComponentToFind, TNode, TComponent)(TNode, Predicate(Of TComponentToFind))
+  fullName.vb: Fusee.Xene.SceneFinderExtensions.FindComponents(Of TComponentToFind, TNode, TComponent)(TNode, System.Predicate(Of TComponentToFind))
+  name.vb: FindComponents(Of TComponentToFind, TNode, TComponent)(TNode, Predicate(Of TComponentToFind))
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindComponents``3(``1,System.Predicate{``0})
+    name: FindComponents<TComponentToFind, TNode, TComponent>
+    nameWithType: SceneFinderExtensions.FindComponents<TComponentToFind, TNode, TComponent>
+    fullName: Fusee.Xene.SceneFinderExtensions.FindComponents<TComponentToFind, TNode, TComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindComponents``3(``1,System.Predicate{``0})
+    name: FindComponents(Of TComponentToFind, TNode, TComponent)
+    nameWithType: SceneFinderExtensions.FindComponents(Of TComponentToFind, TNode, TComponent)
+    fullName: Fusee.Xene.SceneFinderExtensions.FindComponents(Of TComponentToFind, TNode, TComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``2(``0,System.Predicate{``1})
+  commentId: M:Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``2(``0,System.Predicate{``1})
+  isExternal: true
+  name: FindNodesWhereComponent<TNode, TComponent>(TNode, Predicate<TComponent>)
+  nameWithType: SceneFinderExtensions.FindNodesWhereComponent<TNode, TComponent>(TNode, Predicate<TComponent>)
+  fullName: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent<TNode, TComponent>(TNode, System.Predicate<TComponent>)
+  nameWithType.vb: SceneFinderExtensions.FindNodesWhereComponent(Of TNode, TComponent)(TNode, Predicate(Of TComponent))
+  fullName.vb: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent(Of TNode, TComponent)(TNode, System.Predicate(Of TComponent))
+  name.vb: FindNodesWhereComponent(Of TNode, TComponent)(TNode, Predicate(Of TComponent))
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``2(``0,System.Predicate{``1})
+    name: FindNodesWhereComponent<TNode, TComponent>
+    nameWithType: SceneFinderExtensions.FindNodesWhereComponent<TNode, TComponent>
+    fullName: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent<TNode, TComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``2(``0,System.Predicate{``1})
+    name: FindNodesWhereComponent(Of TNode, TComponent)
+    nameWithType: SceneFinderExtensions.FindNodesWhereComponent(Of TNode, TComponent)
+    fullName: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent(Of TNode, TComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``3(``1,System.Predicate{``0})
+  commentId: M:Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``3(``1,System.Predicate{``0})
+  isExternal: true
+  name: FindNodesWhereComponent<TComponentToFind, TNode, TComponent>(TNode, Predicate<TComponentToFind>)
+  nameWithType: SceneFinderExtensions.FindNodesWhereComponent<TComponentToFind, TNode, TComponent>(TNode, Predicate<TComponentToFind>)
+  fullName: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent<TComponentToFind, TNode, TComponent>(TNode, System.Predicate<TComponentToFind>)
+  nameWithType.vb: SceneFinderExtensions.FindNodesWhereComponent(Of TComponentToFind, TNode, TComponent)(TNode, Predicate(Of TComponentToFind))
+  fullName.vb: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent(Of TComponentToFind, TNode, TComponent)(TNode, System.Predicate(Of TComponentToFind))
+  name.vb: FindNodesWhereComponent(Of TComponentToFind, TNode, TComponent)(TNode, Predicate(Of TComponentToFind))
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``3(``1,System.Predicate{``0})
+    name: FindNodesWhereComponent<TComponentToFind, TNode, TComponent>
+    nameWithType: SceneFinderExtensions.FindNodesWhereComponent<TComponentToFind, TNode, TComponent>
+    fullName: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent<TComponentToFind, TNode, TComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent``3(``1,System.Predicate{``0})
+    name: FindNodesWhereComponent(Of TComponentToFind, TNode, TComponent)
+    nameWithType: SceneFinderExtensions.FindNodesWhereComponent(Of TComponentToFind, TNode, TComponent)
+    fullName: Fusee.Xene.SceneFinderExtensions.FindNodesWhereComponent(Of TComponentToFind, TNode, TComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.ViseratorExtensions.Viserate``4(``2)
+  commentId: M:Fusee.Xene.ViseratorExtensions.Viserate``4(``2)
+  name: Viserate<TViserator, TResult, TNode, TComponent>(TNode)
+  nameWithType: ViseratorExtensions.Viserate<TViserator, TResult, TNode, TComponent>(TNode)
+  fullName: Fusee.Xene.ViseratorExtensions.Viserate<TViserator, TResult, TNode, TComponent>(TNode)
+  nameWithType.vb: ViseratorExtensions.Viserate(Of TViserator, TResult, TNode, TComponent)(TNode)
+  fullName.vb: Fusee.Xene.ViseratorExtensions.Viserate(Of TViserator, TResult, TNode, TComponent)(TNode)
+  name.vb: Viserate(Of TViserator, TResult, TNode, TComponent)(TNode)
+  spec.csharp:
+  - uid: Fusee.Xene.ViseratorExtensions.Viserate``4(``2)
+    name: Viserate<TViserator, TResult, TNode, TComponent>
+    nameWithType: ViseratorExtensions.Viserate<TViserator, TResult, TNode, TComponent>
+    fullName: Fusee.Xene.ViseratorExtensions.Viserate<TViserator, TResult, TNode, TComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.ViseratorExtensions.Viserate``4(``2)
+    name: Viserate(Of TViserator, TResult, TNode, TComponent)
+    nameWithType: ViseratorExtensions.Viserate(Of TViserator, TResult, TNode, TComponent)
+    fullName: Fusee.Xene.ViseratorExtensions.Viserate(Of TViserator, TResult, TNode, TComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.ViseratorExtensions
+  commentId: T:Fusee.Xene.ViseratorExtensions
+  parent: Fusee.Xene
+  name: ViseratorExtensions
+  nameWithType: ViseratorExtensions
+  fullName: Fusee.Xene.ViseratorExtensions
+- uid: Fusee.Xene.INode.EnumChildren*
+  commentId: Overload:Fusee.Xene.INode.EnumChildren
+  name: EnumChildren
+  nameWithType: INode.EnumChildren
+  fullName: Fusee.Xene.INode.EnumChildren
+- uid: System.Collections.Generic.IEnumerable{Fusee.Xene.INode}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Xene.INode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<INode>
+  nameWithType: IEnumerable<INode>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Xene.INode>
+  nameWithType.vb: IEnumerable(Of INode)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Xene.INode)
+  name.vb: IEnumerable(Of INode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Xene.INode
+    name: INode
+    nameWithType: INode
+    fullName: Fusee.Xene.INode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Xene.INode
+    name: INode
+    nameWithType: INode
+    fullName: Fusee.Xene.INode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Fusee.Xene.INode.EnumComponents*
+  commentId: Overload:Fusee.Xene.INode.EnumComponents
+  name: EnumComponents
+  nameWithType: INode.EnumComponents
+  fullName: Fusee.Xene.INode.EnumComponents
+- uid: System.Collections.Generic.IEnumerable{Fusee.Xene.IComponent}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Xene.IComponent}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<IComponent>
+  nameWithType: IEnumerable<IComponent>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Xene.IComponent>
+  nameWithType.vb: IEnumerable(Of IComponent)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Xene.IComponent)
+  name.vb: IEnumerable(Of IComponent)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Xene.IComponent
+    name: IComponent
+    nameWithType: IComponent
+    fullName: Fusee.Xene.IComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Xene.IComponent
+    name: IComponent
+    nameWithType: IComponent
+    fullName: Fusee.Xene.IComponent
+  - name: )
+    nameWithType: )
+    fullName: )

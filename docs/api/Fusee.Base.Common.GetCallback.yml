@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Base.Common.GetCallback
+  commentId: T:Fusee.Base.Common.GetCallback
+  id: GetCallback
+  parent: Fusee.Base.Common
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: GetCallback
+  nameWithType: GetCallback
+  fullName: Fusee.Base.Common.GetCallback
+  type: Delegate
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetCallback
+    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    startLine: 30
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nUsed for asynchronous handling. <xref href=\"Fusee.Base.Common.IAssetProvider.BeginGetAsset(System.String%2cFusee.Base.Common.GetCallback)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public delegate void GetCallback(GetCallbackState state, object o, Type type);
+    parameters:
+    - id: state
+      type: Fusee.Base.Common.GetCallbackState
+      description: The state.
+    - id: o
+      type: System.Object
+      description: The asset that was just retrieved.
+    - id: type
+      type: System.Type
+      description: The type of the asset.
+    content.vb: Public Delegate Sub GetCallback(state As GetCallbackState, o As Object, type As Type)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Fusee.Base.Common.IAssetProvider.BeginGetAsset(System.String,Fusee.Base.Common.GetCallback)
+  commentId: M:Fusee.Base.Common.IAssetProvider.BeginGetAsset(System.String,Fusee.Base.Common.GetCallback)
+  parent: Fusee.Base.Common.IAssetProvider
+  isExternal: true
+  name: BeginGetAsset(String, GetCallback)
+  nameWithType: IAssetProvider.BeginGetAsset(String, GetCallback)
+  fullName: Fusee.Base.Common.IAssetProvider.BeginGetAsset(System.String, Fusee.Base.Common.GetCallback)
+  spec.csharp:
+  - uid: Fusee.Base.Common.IAssetProvider.BeginGetAsset(System.String,Fusee.Base.Common.GetCallback)
+    name: BeginGetAsset
+    nameWithType: IAssetProvider.BeginGetAsset
+    fullName: Fusee.Base.Common.IAssetProvider.BeginGetAsset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Base.Common.GetCallback
+    name: GetCallback
+    nameWithType: GetCallback
+    fullName: Fusee.Base.Common.GetCallback
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Base.Common.IAssetProvider.BeginGetAsset(System.String,Fusee.Base.Common.GetCallback)
+    name: BeginGetAsset
+    nameWithType: IAssetProvider.BeginGetAsset
+    fullName: Fusee.Base.Common.IAssetProvider.BeginGetAsset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Base.Common.GetCallback
+    name: GetCallback
+    nameWithType: GetCallback
+    fullName: Fusee.Base.Common.GetCallback
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Base.Common
+  commentId: N:Fusee.Base.Common
+  name: Fusee.Base.Common
+  nameWithType: Fusee.Base.Common
+  fullName: Fusee.Base.Common
+- uid: Fusee.Base.Common.GetCallbackState
+  commentId: T:Fusee.Base.Common.GetCallbackState
+  parent: Fusee.Base.Common
+  name: GetCallbackState
+  nameWithType: GetCallbackState
+  fullName: Fusee.Base.Common.GetCallbackState
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Fusee.Base.Common.IAssetProvider
+  commentId: T:Fusee.Base.Common.IAssetProvider
+  parent: Fusee.Base.Common
+  name: IAssetProvider
+  nameWithType: IAssetProvider
+  fullName: Fusee.Base.Common.IAssetProvider
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

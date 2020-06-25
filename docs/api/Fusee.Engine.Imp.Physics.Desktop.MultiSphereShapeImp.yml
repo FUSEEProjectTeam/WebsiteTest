@@ -1,0 +1,700 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp
+  commentId: T:Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp
+  id: MultiSphereShapeImp
+  parent: Fusee.Engine.Imp.Physics.Desktop
+  children:
+  - Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.GetSpherePosition(System.Int32)
+  - Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.GetSphereRadius(System.Int32)
+  - Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.Margin
+  - Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.SphereCount
+  langs:
+  - csharp
+  - vb
+  name: MultiSphereShapeImp
+  nameWithType: MultiSphereShapeImp
+  fullName: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/MultiSphereShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MultiSphereShapeImp
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/MultiSphereShapeImp.cs
+    startLine: 9
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nImplementation of the <xref href=\"Fusee.Engine.Common.IMultiSphereShapeImp\" data-throw-if-not-resolved=\"false\"></xref> interface using the bullet physics engine.\n"
+  example: []
+  syntax:
+    content: 'public class MultiSphereShapeImp : CollisonShapeImp, IMultiSphereShapeImp, ICollisionShapeImp'
+    content.vb: >-
+      Public Class MultiSphereShapeImp
+
+          Inherits CollisonShapeImp
+
+          Implements IMultiSphereShapeImp, ICollisionShapeImp
+  inheritance:
+  - System.Object
+  - Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp
+  implements:
+  - Fusee.Engine.Common.IMultiSphereShapeImp
+  - Fusee.Engine.Common.ICollisionShapeImp
+  inheritedMembers:
+  - Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp.LocalScaling
+  - Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp.UserObject
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.Margin
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.Margin
+  id: Margin
+  parent: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp
+  langs:
+  - csharp
+  - vb
+  name: Margin
+  nameWithType: MultiSphereShapeImp.Margin
+  fullName: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.Margin
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/MultiSphereShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Margin
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/MultiSphereShapeImp.cs
+    startLine: 19
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets and sets the margin.\n"
+  example: []
+  syntax:
+    content: public override float Margin { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe margin.\n"
+    content.vb: Public Overrides Property Margin As Single
+  overridden: Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp.Margin
+  overload: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.Margin*
+  implements:
+  - Fusee.Engine.Common.ICollisionShapeImp.Margin
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.GetSpherePosition(System.Int32)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.GetSpherePosition(System.Int32)
+  id: GetSpherePosition(System.Int32)
+  parent: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp
+  langs:
+  - csharp
+  - vb
+  name: GetSpherePosition(Int32)
+  nameWithType: MultiSphereShapeImp.GetSpherePosition(Int32)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.GetSpherePosition(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/MultiSphereShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetSpherePosition
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/MultiSphereShapeImp.cs
+    startLine: 39
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the sphere position.\n"
+  example: []
+  syntax:
+    content: public float3 GetSpherePosition(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index.
+    return:
+      type: Fusee.Math.Core.float3
+      description: ''
+    content.vb: Public Function GetSpherePosition(index As Integer) As float3
+  overload: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.GetSpherePosition*
+  implements:
+  - Fusee.Engine.Common.IMultiSphereShapeImp.GetSpherePosition(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.GetSphereRadius(System.Int32)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.GetSphereRadius(System.Int32)
+  id: GetSphereRadius(System.Int32)
+  parent: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp
+  langs:
+  - csharp
+  - vb
+  name: GetSphereRadius(Int32)
+  nameWithType: MultiSphereShapeImp.GetSphereRadius(Int32)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.GetSphereRadius(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/MultiSphereShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetSphereRadius
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/MultiSphereShapeImp.cs
+    startLine: 50
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the sphere radius.\n"
+  example: []
+  syntax:
+    content: public float GetSphereRadius(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index.
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetSphereRadius(index As Integer) As Single
+  overload: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.GetSphereRadius*
+  implements:
+  - Fusee.Engine.Common.IMultiSphereShapeImp.GetSphereRadius(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.SphereCount
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.SphereCount
+  id: SphereCount
+  parent: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp
+  langs:
+  - csharp
+  - vb
+  name: SphereCount
+  nameWithType: MultiSphereShapeImp.SphereCount
+  fullName: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.SphereCount
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/MultiSphereShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SphereCount
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/MultiSphereShapeImp.cs
+    startLine: 62
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the sphere count.\n"
+  example: []
+  syntax:
+    content: public int SphereCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe sphere count.\n"
+    content.vb: Public ReadOnly Property SphereCount As Integer
+  overload: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.SphereCount*
+  implements:
+  - Fusee.Engine.Common.IMultiSphereShapeImp.SphereCount
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Fusee.Engine.Common.IMultiSphereShapeImp
+  commentId: T:Fusee.Engine.Common.IMultiSphereShapeImp
+  parent: Fusee.Engine.Common
+  name: IMultiSphereShapeImp
+  nameWithType: IMultiSphereShapeImp
+  fullName: Fusee.Engine.Common.IMultiSphereShapeImp
+- uid: Fusee.Engine.Imp.Physics.Desktop
+  commentId: N:Fusee.Engine.Imp.Physics.Desktop
+  name: Fusee.Engine.Imp.Physics.Desktop
+  nameWithType: Fusee.Engine.Imp.Physics.Desktop
+  fullName: Fusee.Engine.Imp.Physics.Desktop
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp
+  commentId: T:Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp
+  parent: Fusee.Engine.Imp.Physics.Desktop
+  name: CollisonShapeImp
+  nameWithType: CollisonShapeImp
+  fullName: Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp
+- uid: Fusee.Engine.Common.ICollisionShapeImp
+  commentId: T:Fusee.Engine.Common.ICollisionShapeImp
+  parent: Fusee.Engine.Common
+  name: ICollisionShapeImp
+  nameWithType: ICollisionShapeImp
+  fullName: Fusee.Engine.Common.ICollisionShapeImp
+- uid: Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp.LocalScaling
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp.LocalScaling
+  parent: Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp
+  name: LocalScaling
+  nameWithType: CollisonShapeImp.LocalScaling
+  fullName: Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp.LocalScaling
+- uid: Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp.UserObject
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp.UserObject
+  parent: Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp
+  name: UserObject
+  nameWithType: CollisonShapeImp.UserObject
+  fullName: Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp.UserObject
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp.Margin
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp.Margin
+  parent: Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp
+  name: Margin
+  nameWithType: CollisonShapeImp.Margin
+  fullName: Fusee.Engine.Imp.Physics.Desktop.CollisonShapeImp.Margin
+- uid: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.Margin*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.Margin
+  name: Margin
+  nameWithType: MultiSphereShapeImp.Margin
+  fullName: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.Margin
+- uid: Fusee.Engine.Common.ICollisionShapeImp.Margin
+  commentId: P:Fusee.Engine.Common.ICollisionShapeImp.Margin
+  parent: Fusee.Engine.Common.ICollisionShapeImp
+  name: Margin
+  nameWithType: ICollisionShapeImp.Margin
+  fullName: Fusee.Engine.Common.ICollisionShapeImp.Margin
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.GetSpherePosition*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.GetSpherePosition
+  name: GetSpherePosition
+  nameWithType: MultiSphereShapeImp.GetSpherePosition
+  fullName: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.GetSpherePosition
+- uid: Fusee.Engine.Common.IMultiSphereShapeImp.GetSpherePosition(System.Int32)
+  commentId: M:Fusee.Engine.Common.IMultiSphereShapeImp.GetSpherePosition(System.Int32)
+  parent: Fusee.Engine.Common.IMultiSphereShapeImp
+  isExternal: true
+  name: GetSpherePosition(Int32)
+  nameWithType: IMultiSphereShapeImp.GetSpherePosition(Int32)
+  fullName: Fusee.Engine.Common.IMultiSphereShapeImp.GetSpherePosition(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IMultiSphereShapeImp.GetSpherePosition(System.Int32)
+    name: GetSpherePosition
+    nameWithType: IMultiSphereShapeImp.GetSpherePosition
+    fullName: Fusee.Engine.Common.IMultiSphereShapeImp.GetSpherePosition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IMultiSphereShapeImp.GetSpherePosition(System.Int32)
+    name: GetSpherePosition
+    nameWithType: IMultiSphereShapeImp.GetSpherePosition
+    fullName: Fusee.Engine.Common.IMultiSphereShapeImp.GetSpherePosition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.GetSphereRadius*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.GetSphereRadius
+  name: GetSphereRadius
+  nameWithType: MultiSphereShapeImp.GetSphereRadius
+  fullName: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.GetSphereRadius
+- uid: Fusee.Engine.Common.IMultiSphereShapeImp.GetSphereRadius(System.Int32)
+  commentId: M:Fusee.Engine.Common.IMultiSphereShapeImp.GetSphereRadius(System.Int32)
+  parent: Fusee.Engine.Common.IMultiSphereShapeImp
+  isExternal: true
+  name: GetSphereRadius(Int32)
+  nameWithType: IMultiSphereShapeImp.GetSphereRadius(Int32)
+  fullName: Fusee.Engine.Common.IMultiSphereShapeImp.GetSphereRadius(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IMultiSphereShapeImp.GetSphereRadius(System.Int32)
+    name: GetSphereRadius
+    nameWithType: IMultiSphereShapeImp.GetSphereRadius
+    fullName: Fusee.Engine.Common.IMultiSphereShapeImp.GetSphereRadius
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IMultiSphereShapeImp.GetSphereRadius(System.Int32)
+    name: GetSphereRadius
+    nameWithType: IMultiSphereShapeImp.GetSphereRadius
+    fullName: Fusee.Engine.Common.IMultiSphereShapeImp.GetSphereRadius
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.SphereCount*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.SphereCount
+  name: SphereCount
+  nameWithType: MultiSphereShapeImp.SphereCount
+  fullName: Fusee.Engine.Imp.Physics.Desktop.MultiSphereShapeImp.SphereCount
+- uid: Fusee.Engine.Common.IMultiSphereShapeImp.SphereCount
+  commentId: P:Fusee.Engine.Common.IMultiSphereShapeImp.SphereCount
+  parent: Fusee.Engine.Common.IMultiSphereShapeImp
+  name: SphereCount
+  nameWithType: IMultiSphereShapeImp.SphereCount
+  fullName: Fusee.Engine.Common.IMultiSphereShapeImp.SphereCount

@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Xirkit.Channel`1.SetChanelValue
+  commentId: T:Fusee.Xirkit.Channel`1.SetChanelValue
+  id: Channel`1.SetChanelValue
+  parent: Fusee.Xirkit
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: Channel<TValue>.SetChanelValue
+  nameWithType: Channel<TValue>.SetChanelValue
+  fullName: Fusee.Xirkit.Channel<TValue>.SetChanelValue
+  type: Delegate
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Channel.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetChanelValue
+    path: src/Fusee/src/Xirkit/Channel.cs
+    startLine: 25
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nA delegate function for setting a value.\n"
+  example: []
+  syntax:
+    content: public delegate void SetChanelValue(TValue val);
+    parameters:
+    - id: val
+      type: '{TValue}'
+      description: The value that will be set.
+    content.vb: Public Delegate Sub SetChanelValue(val As TValue)
+  nameWithType.vb: Channel(Of TValue).SetChanelValue
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).SetChanelValue
+  name.vb: Channel(Of TValue).SetChanelValue
+references:
+- uid: Fusee.Xirkit
+  commentId: N:Fusee.Xirkit
+  name: Fusee.Xirkit
+  nameWithType: Fusee.Xirkit
+  fullName: Fusee.Xirkit
+- uid: '{TValue}'
+  commentId: '!:TValue'
+  definition: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue

@@ -1,0 +1,948 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase
+  commentId: T:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase
+  id: RenderCanvasImpBase
+  parent: Fusee.Engine.Imp.Graphics.Desktop
+  children:
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseHeight
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseLeft
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseTop
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseWidth
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoInit
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoRender
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoResize(System.Int32,System.Int32)
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoUnLoad
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.Init
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.Render
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.Resize
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.UnLoad
+  langs:
+  - csharp
+  - vb
+  name: RenderCanvasImpBase
+  nameWithType: RenderCanvasImpBase
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RenderCanvasImpBase
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+    startLine: 690
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nOpenTK implementation of RenderCanvas for the window output.\n"
+  example: []
+  syntax:
+    content: public class RenderCanvasImpBase
+    content.vb: Public Class RenderCanvasImpBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasWindowImp
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseWidth
+  commentId: F:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseWidth
+  id: BaseWidth
+  parent: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase
+  langs:
+  - csharp
+  - vb
+  name: BaseWidth
+  nameWithType: RenderCanvasImpBase.BaseWidth
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseWidth
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: BaseWidth
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+    startLine: 697
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nThe Width\n"
+  example: []
+  syntax:
+    content: protected int BaseWidth
+    return:
+      type: System.Int32
+    content.vb: Protected BaseWidth As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseHeight
+  commentId: F:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseHeight
+  id: BaseHeight
+  parent: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase
+  langs:
+  - csharp
+  - vb
+  name: BaseHeight
+  nameWithType: RenderCanvasImpBase.BaseHeight
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseHeight
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: BaseHeight
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+    startLine: 702
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nThe Height\n"
+  example: []
+  syntax:
+    content: protected int BaseHeight
+    return:
+      type: System.Int32
+    content.vb: Protected BaseHeight As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseTop
+  commentId: F:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseTop
+  id: BaseTop
+  parent: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase
+  langs:
+  - csharp
+  - vb
+  name: BaseTop
+  nameWithType: RenderCanvasImpBase.BaseTop
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseTop
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: BaseTop
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+    startLine: 707
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nThe Top Position\n"
+  example: []
+  syntax:
+    content: protected int BaseTop
+    return:
+      type: System.Int32
+    content.vb: Protected BaseTop As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseLeft
+  commentId: F:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseLeft
+  id: BaseLeft
+  parent: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase
+  langs:
+  - csharp
+  - vb
+  name: BaseLeft
+  nameWithType: RenderCanvasImpBase.BaseLeft
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseLeft
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: BaseLeft
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+    startLine: 712
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nThe Left Position\n"
+  example: []
+  syntax:
+    content: protected int BaseLeft
+    return:
+      type: System.Int32
+    content.vb: Protected BaseLeft As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.Init
+  commentId: E:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.Init
+  id: Init
+  parent: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase
+  langs:
+  - csharp
+  - vb
+  name: Init
+  nameWithType: RenderCanvasImpBase.Init
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.Init
+  type: Event
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Init
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+    startLine: 720
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nOccurs when [initialize].\n"
+  example: []
+  syntax:
+    content: public event EventHandler<InitEventArgs> Init
+    return:
+      type: System.EventHandler{Fusee.Engine.Common.InitEventArgs}
+    content.vb: Public Event Init As EventHandler(Of InitEventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.UnLoad
+  commentId: E:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.UnLoad
+  id: UnLoad
+  parent: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase
+  langs:
+  - csharp
+  - vb
+  name: UnLoad
+  nameWithType: RenderCanvasImpBase.UnLoad
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.UnLoad
+  type: Event
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: UnLoad
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+    startLine: 724
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nOccurs when [unload].\n"
+  example: []
+  syntax:
+    content: public event EventHandler<InitEventArgs> UnLoad
+    return:
+      type: System.EventHandler{Fusee.Engine.Common.InitEventArgs}
+    content.vb: Public Event UnLoad As EventHandler(Of InitEventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.Render
+  commentId: E:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.Render
+  id: Render
+  parent: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase
+  langs:
+  - csharp
+  - vb
+  name: Render
+  nameWithType: RenderCanvasImpBase.Render
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.Render
+  type: Event
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Render
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+    startLine: 728
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nOccurs when [render].\n"
+  example: []
+  syntax:
+    content: public event EventHandler<RenderEventArgs> Render
+    return:
+      type: System.EventHandler{Fusee.Engine.Common.RenderEventArgs}
+    content.vb: Public Event Render As EventHandler(Of RenderEventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.Resize
+  commentId: E:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.Resize
+  id: Resize
+  parent: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase
+  langs:
+  - csharp
+  - vb
+  name: Resize
+  nameWithType: RenderCanvasImpBase.Resize
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.Resize
+  type: Event
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Resize
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+    startLine: 732
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nOccurs when [resize].\n"
+  example: []
+  syntax:
+    content: public event EventHandler<ResizeEventArgs> Resize
+    return:
+      type: System.EventHandler{Fusee.Engine.Common.ResizeEventArgs}
+    content.vb: Public Event Resize As EventHandler(Of ResizeEventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoInit
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoInit
+  id: DoInit
+  parent: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase
+  langs:
+  - csharp
+  - vb
+  name: DoInit()
+  nameWithType: RenderCanvasImpBase.DoInit()
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoInit()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DoInit
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+    startLine: 741
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nDoes the initialize of this instance.\n"
+  example: []
+  syntax:
+    content: protected void DoInit()
+    content.vb: Protected Sub DoInit
+  overload: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoInit*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoUnLoad
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoUnLoad
+  id: DoUnLoad
+  parent: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase
+  langs:
+  - csharp
+  - vb
+  name: DoUnLoad()
+  nameWithType: RenderCanvasImpBase.DoUnLoad()
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoUnLoad()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DoUnLoad
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+    startLine: 750
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nDoes the unload of this instance. \n"
+  example: []
+  syntax:
+    content: protected void DoUnLoad()
+    content.vb: Protected Sub DoUnLoad
+  overload: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoUnLoad*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoRender
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoRender
+  id: DoRender
+  parent: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase
+  langs:
+  - csharp
+  - vb
+  name: DoRender()
+  nameWithType: RenderCanvasImpBase.DoRender()
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoRender()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DoRender
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+    startLine: 759
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nDoes the render of this instance.\n"
+  example: []
+  syntax:
+    content: protected void DoRender()
+    content.vb: Protected Sub DoRender
+  overload: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoRender*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoResize(System.Int32,System.Int32)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoResize(System.Int32,System.Int32)
+  id: DoResize(System.Int32,System.Int32)
+  parent: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase
+  langs:
+  - csharp
+  - vb
+  name: DoResize(Int32, Int32)
+  nameWithType: RenderCanvasImpBase.DoResize(Int32, Int32)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoResize(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DoResize
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/RenderCanvasImp.cs
+    startLine: 768
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nDoes the resize on this instance.\n"
+  example: []
+  syntax:
+    content: protected void DoResize(int width, int height)
+    parameters:
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    content.vb: Protected Sub DoResize(width As Integer, height As Integer)
+  overload: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoResize*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Fusee.Engine.Imp.Graphics.Desktop
+  commentId: N:Fusee.Engine.Imp.Graphics.Desktop
+  name: Fusee.Engine.Imp.Graphics.Desktop
+  nameWithType: Fusee.Engine.Imp.Graphics.Desktop
+  fullName: Fusee.Engine.Imp.Graphics.Desktop
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.EventHandler{Fusee.Engine.Common.InitEventArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Common.InitEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<InitEventArgs>
+  nameWithType: EventHandler<InitEventArgs>
+  fullName: System.EventHandler<Fusee.Engine.Common.InitEventArgs>
+  nameWithType.vb: EventHandler(Of InitEventArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Common.InitEventArgs)
+  name.vb: EventHandler(Of InitEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Common.InitEventArgs
+    name: InitEventArgs
+    nameWithType: InitEventArgs
+    fullName: Fusee.Engine.Common.InitEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Common.InitEventArgs
+    name: InitEventArgs
+    nameWithType: InitEventArgs
+    fullName: Fusee.Engine.Common.InitEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler{Fusee.Engine.Common.RenderEventArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Common.RenderEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<RenderEventArgs>
+  nameWithType: EventHandler<RenderEventArgs>
+  fullName: System.EventHandler<Fusee.Engine.Common.RenderEventArgs>
+  nameWithType.vb: EventHandler(Of RenderEventArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Common.RenderEventArgs)
+  name.vb: EventHandler(Of RenderEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Common.RenderEventArgs
+    name: RenderEventArgs
+    nameWithType: RenderEventArgs
+    fullName: Fusee.Engine.Common.RenderEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Common.RenderEventArgs
+    name: RenderEventArgs
+    nameWithType: RenderEventArgs
+    fullName: Fusee.Engine.Common.RenderEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler{Fusee.Engine.Common.ResizeEventArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Common.ResizeEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<ResizeEventArgs>
+  nameWithType: EventHandler<ResizeEventArgs>
+  fullName: System.EventHandler<Fusee.Engine.Common.ResizeEventArgs>
+  nameWithType.vb: EventHandler(Of ResizeEventArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Common.ResizeEventArgs)
+  name.vb: EventHandler(Of ResizeEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Common.ResizeEventArgs
+    name: ResizeEventArgs
+    nameWithType: ResizeEventArgs
+    fullName: Fusee.Engine.Common.ResizeEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Common.ResizeEventArgs
+    name: ResizeEventArgs
+    nameWithType: ResizeEventArgs
+    fullName: Fusee.Engine.Common.ResizeEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoInit*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoInit
+  name: DoInit
+  nameWithType: RenderCanvasImpBase.DoInit
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoInit
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoUnLoad*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoUnLoad
+  name: DoUnLoad
+  nameWithType: RenderCanvasImpBase.DoUnLoad
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoUnLoad
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoRender*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoRender
+  name: DoRender
+  nameWithType: RenderCanvasImpBase.DoRender
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoRender
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoResize*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoResize
+  name: DoResize
+  nameWithType: RenderCanvasImpBase.DoResize
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoResize

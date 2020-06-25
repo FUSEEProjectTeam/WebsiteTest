@@ -1,0 +1,550 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Bucket`1
+  commentId: T:Fusee.Engine.Core.Bucket`1
+  id: Bucket`1
+  parent: Fusee.Engine.Core
+  children:
+  - Fusee.Engine.Core.Bucket`1.#ctor
+  - Fusee.Engine.Core.Bucket`1.#ctor(Fusee.Math.Core.double3,System.Double)
+  - Fusee.Engine.Core.Bucket`1.Center
+  - Fusee.Engine.Core.Bucket`1.Size
+  langs:
+  - csharp
+  - vb
+  name: Bucket<T>
+  nameWithType: Bucket<T>
+  fullName: Fusee.Engine.Core.Bucket<T>
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Bucket.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Bucket
+    path: src/Fusee/src/Engine/Core/Bucket.cs
+    startLine: 8
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nNode for use in an Grid-like structure.\n"
+  example: []
+  syntax:
+    content: public class Bucket<T>
+    typeParameters:
+    - id: T
+      description: Defines the type of the payload.
+    content.vb: Public Class Bucket(Of T)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Fusee.Engine.Core.Octant`1
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: Bucket(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Fusee.Engine.Core.Bucket(Of T)
+  name.vb: Bucket(Of T)
+- uid: Fusee.Engine.Core.Bucket`1.Center
+  commentId: P:Fusee.Engine.Core.Bucket`1.Center
+  id: Center
+  parent: Fusee.Engine.Core.Bucket`1
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: Bucket<T>.Center
+  fullName: Fusee.Engine.Core.Bucket<T>.Center
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Bucket.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Center
+    path: src/Fusee/src/Engine/Core/Bucket.cs
+    startLine: 13
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nCenter of this Bucket in world space coordinates.\n"
+  example: []
+  syntax:
+    content: public double3 Center { get; protected set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.double3
+    content.vb: Public Property Center As double3
+  overload: Fusee.Engine.Core.Bucket`1.Center*
+  nameWithType.vb: Bucket(Of T).Center
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+  fullName.vb: Fusee.Engine.Core.Bucket(Of T).Center
+- uid: Fusee.Engine.Core.Bucket`1.Size
+  commentId: P:Fusee.Engine.Core.Bucket`1.Size
+  id: Size
+  parent: Fusee.Engine.Core.Bucket`1
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: Bucket<T>.Size
+  fullName: Fusee.Engine.Core.Bucket<T>.Size
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Bucket.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Size
+    path: src/Fusee/src/Engine/Core/Bucket.cs
+    startLine: 18
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nLength, width and height of this Octant.\n"
+  example: []
+  syntax:
+    content: public double Size { get; protected set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Size As Double
+  overload: Fusee.Engine.Core.Bucket`1.Size*
+  nameWithType.vb: Bucket(Of T).Size
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+  fullName.vb: Fusee.Engine.Core.Bucket(Of T).Size
+- uid: Fusee.Engine.Core.Bucket`1.#ctor
+  commentId: M:Fusee.Engine.Core.Bucket`1.#ctor
+  id: '#ctor'
+  parent: Fusee.Engine.Core.Bucket`1
+  langs:
+  - csharp
+  - vb
+  name: Bucket()
+  nameWithType: Bucket<T>.Bucket()
+  fullName: Fusee.Engine.Core.Bucket<T>.Bucket()
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Bucket.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/Core/Bucket.cs
+    startLine: 24
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nCreates a new instance of type Bucket.\n"
+  example: []
+  syntax:
+    content: protected Bucket()
+    content.vb: Protected Sub New
+  overload: Fusee.Engine.Core.Bucket`1.#ctor*
+  nameWithType.vb: Bucket(Of T).Bucket()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Fusee.Engine.Core.Bucket(Of T).Bucket()
+- uid: Fusee.Engine.Core.Bucket`1.#ctor(Fusee.Math.Core.double3,System.Double)
+  commentId: M:Fusee.Engine.Core.Bucket`1.#ctor(Fusee.Math.Core.double3,System.Double)
+  id: '#ctor(Fusee.Math.Core.double3,System.Double)'
+  parent: Fusee.Engine.Core.Bucket`1
+  langs:
+  - csharp
+  - vb
+  name: Bucket(double3, Double)
+  nameWithType: Bucket<T>.Bucket(double3, Double)
+  fullName: Fusee.Engine.Core.Bucket<T>.Bucket(Fusee.Math.Core.double3, System.Double)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Bucket.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/Core/Bucket.cs
+    startLine: 29
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nCreates a new instance of type Bucket.\n"
+  example: []
+  syntax:
+    content: public Bucket(double3 center, double size)
+    parameters:
+    - id: center
+      type: Fusee.Math.Core.double3
+    - id: size
+      type: System.Double
+    content.vb: Public Sub New(center As double3, size As Double)
+  overload: Fusee.Engine.Core.Bucket`1.#ctor*
+  nameWithType.vb: Bucket(Of T).Bucket(double3, Double)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Engine.Core.Bucket(Of T).Bucket(Fusee.Math.Core.double3, System.Double)
+references:
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.Bucket`1.Center*
+  commentId: Overload:Fusee.Engine.Core.Bucket`1.Center
+  name: Center
+  nameWithType: Bucket<T>.Center
+  fullName: Fusee.Engine.Core.Bucket<T>.Center
+  nameWithType.vb: Bucket(Of T).Center
+  fullName.vb: Fusee.Engine.Core.Bucket(Of T).Center
+- uid: Fusee.Math.Core.double3
+  commentId: T:Fusee.Math.Core.double3
+  parent: Fusee.Math.Core
+  name: double3
+  nameWithType: double3
+  fullName: Fusee.Math.Core.double3
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Core.Bucket`1.Size*
+  commentId: Overload:Fusee.Engine.Core.Bucket`1.Size
+  name: Size
+  nameWithType: Bucket<T>.Size
+  fullName: Fusee.Engine.Core.Bucket<T>.Size
+  nameWithType.vb: Bucket(Of T).Size
+  fullName.vb: Fusee.Engine.Core.Bucket(Of T).Size
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Fusee.Engine.Core.Bucket`1.#ctor*
+  commentId: Overload:Fusee.Engine.Core.Bucket`1.#ctor
+  name: Bucket
+  nameWithType: Bucket<T>.Bucket
+  fullName: Fusee.Engine.Core.Bucket<T>.Bucket
+  nameWithType.vb: Bucket(Of T).Bucket
+  fullName.vb: Fusee.Engine.Core.Bucket(Of T).Bucket

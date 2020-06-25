@@ -1,0 +1,2047 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Xene.SceneComponentFinder`3
+  commentId: T:Fusee.Xene.SceneComponentFinder`3
+  id: SceneComponentFinder`3
+  parent: Fusee.Xene
+  children:
+  - Fusee.Xene.SceneComponentFinder`3.#ctor(System.Collections.Generic.IEnumerator{`1},System.Predicate{`0})
+  - Fusee.Xene.SceneComponentFinder`3.Current
+  - Fusee.Xene.SceneComponentFinder`3.MatchComponent(`0)
+  - Fusee.Xene.SceneComponentFinder`3.MoveNext
+  - Fusee.Xene.SceneComponentFinder`3.System#Collections#IEnumerator#Current
+  langs:
+  - csharp
+  - vb
+  name: SceneComponentFinder<TComponentToFind, TNode, TComponent>
+  nameWithType: SceneComponentFinder<TComponentToFind, TNode, TComponent>
+  fullName: Fusee.Xene.SceneComponentFinder<TComponentToFind, TNode, TComponent>
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/SceneFinder.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SceneComponentFinder
+    path: src/Fusee/src/Xene/SceneFinder.cs
+    startLine: 313
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nAllows various searches over scene graphs. \nThis class can be used directly but will be more commonly used by calling one \nof the Find extension methods declared in <xref href=\"Fusee.Xene.SceneFinderExtensions\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  remarks: "\nSearch criteria can be passed as (lambda) predicates matching scene components.\nResults are returned as enumerator. Instead of directly using this class, users should use one of the FindNodes or\nFindComponents extension methods. \n"
+  example: []
+  syntax:
+    content: 'public class SceneComponentFinder<TComponentToFind, TNode, TComponent> : SceneFinderBase<TComponentToFind, TNode, TComponent>, IEnumerator<TComponentToFind>, IEnumerator, IDisposable where TComponentToFind : TComponent where TNode : class, INode where TComponent : class, IComponent'
+    typeParameters:
+    - id: TComponentToFind
+      description: The concrete type of the components to look for.
+    - id: TNode
+      description: The concrete base type of nodes used as building blocks for scene graphs.
+    - id: TComponent
+      description: The concrete base type of components used as building blocks for scene graphs.
+    content.vb: >-
+      Public Class SceneComponentFinder(Of TComponentToFind As TComponent, TNode As {Class, INode}, TComponent As {Class, IComponent})
+
+          Inherits SceneFinderBase(Of TComponentToFind, TNode, TComponent)
+
+          Implements IEnumerator(Of TComponentToFind), IEnumerator, IDisposable
+  inheritance:
+  - System.Object
+  - Fusee.Xene.Visitor{{TNode},{TComponent}}
+  - Fusee.Xene.SceneFinderBase{{TComponentToFind},{TNode},{TComponent}}
+  implements:
+  - System.Collections.Generic.IEnumerator{{TComponentToFind}}
+  - System.Collections.IEnumerator
+  - System.IDisposable
+  inheritedMembers:
+  - Fusee.Xene.SceneFinderBase{{TComponentToFind},{TNode},{TComponent}}._rootList
+  - Fusee.Xene.SceneFinderBase{{TComponentToFind},{TNode},{TComponent}}._match
+  - Fusee.Xene.SceneFinderBase{{TComponentToFind},{TNode},{TComponent}}.Dispose
+  - Fusee.Xene.SceneFinderBase{{TComponentToFind},{TNode},{TComponent}}.Reset
+  - Fusee.Xene.Visitor{{TNode},{TComponent}}.Traverse({TNode})
+  - Fusee.Xene.Visitor{{TNode},{TComponent}}.Traverse(System.Collections.Generic.IEnumerable{{TNode}})
+  - Fusee.Xene.Visitor{{TNode},{TComponent}}.InitState
+  - Fusee.Xene.Visitor{{TNode},{TComponent}}.PushState
+  - Fusee.Xene.Visitor{{TNode},{TComponent}}.PopState
+  - Fusee.Xene.Visitor{{TNode},{TComponent}}.CurrentNode
+  - Fusee.Xene.Visitor{{TNode},{TComponent}}.CurrentComponent
+  - Fusee.Xene.Visitor{{TNode},{TComponent}}.YieldOnCurrentNode
+  - Fusee.Xene.Visitor{{TNode},{TComponent}}.YieldOnCurrentComponent
+  - Fusee.Xene.Visitor{{TNode},{TComponent}}.YieldEnumeration
+  - Fusee.Xene.Visitor{{TNode},{TComponent}}.EnumInit(System.Collections.Generic.IEnumerator{{TNode}})
+  - Fusee.Xene.Visitor{{TNode},{TComponent}}.EnumMoveNext
+  - Fusee.Xene.Visitor{{TNode},{TComponent}}.EnumMoveNextNoComponent
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: SceneComponentFinder(Of TComponentToFind, TNode, TComponent)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Fusee.Xene.SceneComponentFinder(Of TComponentToFind, TNode, TComponent)
+  name.vb: SceneComponentFinder(Of TComponentToFind, TNode, TComponent)
+- uid: Fusee.Xene.SceneComponentFinder`3.#ctor(System.Collections.Generic.IEnumerator{`1},System.Predicate{`0})
+  commentId: M:Fusee.Xene.SceneComponentFinder`3.#ctor(System.Collections.Generic.IEnumerator{`1},System.Predicate{`0})
+  id: '#ctor(System.Collections.Generic.IEnumerator{`1},System.Predicate{`0})'
+  parent: Fusee.Xene.SceneComponentFinder`3
+  langs:
+  - csharp
+  - vb
+  name: SceneComponentFinder(IEnumerator<TNode>, Predicate<TComponentToFind>)
+  nameWithType: SceneComponentFinder<TComponentToFind, TNode, TComponent>.SceneComponentFinder(IEnumerator<TNode>, Predicate<TComponentToFind>)
+  fullName: Fusee.Xene.SceneComponentFinder<TComponentToFind, TNode, TComponent>.SceneComponentFinder(System.Collections.Generic.IEnumerator<TNode>, System.Predicate<TComponentToFind>)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/SceneFinder.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Xene/SceneFinder.cs
+    startLine: 323
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Xene.SceneComponentFinder%603\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public SceneComponentFinder(IEnumerator<TNode> rootList, Predicate<TComponentToFind> match)
+    parameters:
+    - id: rootList
+      type: System.Collections.Generic.IEnumerator{{TNode}}
+      description: The root list.
+    - id: match
+      type: System.Predicate{{TComponentToFind}}
+      description: The match.
+    content.vb: Public Sub New(rootList As IEnumerator(Of TNode), match As Predicate(Of TComponentToFind))
+  overload: Fusee.Xene.SceneComponentFinder`3.#ctor*
+  nameWithType.vb: SceneComponentFinder(Of TComponentToFind, TNode, TComponent).SceneComponentFinder(IEnumerator(Of TNode), Predicate(Of TComponentToFind))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xene.SceneComponentFinder(Of TComponentToFind, TNode, TComponent).SceneComponentFinder(System.Collections.Generic.IEnumerator(Of TNode), System.Predicate(Of TComponentToFind))
+  name.vb: SceneComponentFinder(IEnumerator(Of TNode), Predicate(Of TComponentToFind))
+- uid: Fusee.Xene.SceneComponentFinder`3.MoveNext
+  commentId: M:Fusee.Xene.SceneComponentFinder`3.MoveNext
+  id: MoveNext
+  parent: Fusee.Xene.SceneComponentFinder`3
+  langs:
+  - csharp
+  - vb
+  name: MoveNext()
+  nameWithType: SceneComponentFinder<TComponentToFind, TNode, TComponent>.MoveNext()
+  fullName: Fusee.Xene.SceneComponentFinder<TComponentToFind, TNode, TComponent>.MoveNext()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/SceneFinder.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MoveNext
+    path: src/Fusee/src/Xene/SceneFinder.cs
+    startLine: 331
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nAdvances the enumerator to the next element of the collection.\n"
+  example: []
+  syntax:
+    content: public bool MoveNext()
+    return:
+      type: System.Boolean
+      description: "\ntrue if the enumerator was successfully advanced to the next element; false if the enumerator has passed the end of the collection.\n"
+    content.vb: Public Function MoveNext As Boolean
+  overload: Fusee.Xene.SceneComponentFinder`3.MoveNext*
+  implements:
+  - System.Collections.IEnumerator.MoveNext
+  nameWithType.vb: SceneComponentFinder(Of TComponentToFind, TNode, TComponent).MoveNext()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xene.SceneComponentFinder(Of TComponentToFind, TNode, TComponent).MoveNext()
+- uid: Fusee.Xene.SceneComponentFinder`3.Current
+  commentId: P:Fusee.Xene.SceneComponentFinder`3.Current
+  id: Current
+  parent: Fusee.Xene.SceneComponentFinder`3
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: SceneComponentFinder<TComponentToFind, TNode, TComponent>.Current
+  fullName: Fusee.Xene.SceneComponentFinder<TComponentToFind, TNode, TComponent>.Current
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/SceneFinder.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Current
+    path: src/Fusee/src/Xene/SceneFinder.cs
+    startLine: 336
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nGets the element in the collection at the current position of the enumerator.\n"
+  example: []
+  syntax:
+    content: public TComponentToFind Current { get; }
+    parameters: []
+    return:
+      type: '{TComponentToFind}'
+    content.vb: Public ReadOnly Property Current As TComponentToFind
+  overload: Fusee.Xene.SceneComponentFinder`3.Current*
+  implements:
+  - System.Collections.Generic.IEnumerator{{TComponentToFind}}.Current
+  nameWithType.vb: SceneComponentFinder(Of TComponentToFind, TNode, TComponent).Current
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Fusee.Xene.SceneComponentFinder(Of TComponentToFind, TNode, TComponent).Current
+- uid: Fusee.Xene.SceneComponentFinder`3.System#Collections#IEnumerator#Current
+  commentId: P:Fusee.Xene.SceneComponentFinder`3.System#Collections#IEnumerator#Current
+  id: System#Collections#IEnumerator#Current
+  isEii: true
+  parent: Fusee.Xene.SceneComponentFinder`3
+  langs:
+  - csharp
+  - vb
+  name: IEnumerator.Current
+  nameWithType: SceneComponentFinder<TComponentToFind, TNode, TComponent>.IEnumerator.Current
+  fullName: Fusee.Xene.SceneComponentFinder<TComponentToFind, TNode, TComponent>.System.Collections.IEnumerator.Current
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/SceneFinder.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: System.Collections.IEnumerator.Current
+    path: src/Fusee/src/Xene/SceneFinder.cs
+    startLine: 337
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  syntax:
+    content: object IEnumerator.Current { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: ReadOnly WriteOnly Property System.Collections.IEnumerator.Current As Object Implements IEnumerator.Current
+  overload: Fusee.Xene.SceneComponentFinder`3.System#Collections#IEnumerator#Current*
+  implements:
+  - System.Collections.IEnumerator.Current
+  nameWithType.vb: SceneComponentFinder(Of TComponentToFind, TNode, TComponent).System.Collections.IEnumerator.Current
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: Fusee.Xene.SceneComponentFinder(Of TComponentToFind, TNode, TComponent).System.Collections.IEnumerator.Current
+  name.vb: System.Collections.IEnumerator.Current
+- uid: Fusee.Xene.SceneComponentFinder`3.MatchComponent(`0)
+  commentId: M:Fusee.Xene.SceneComponentFinder`3.MatchComponent(`0)
+  id: MatchComponent(`0)
+  parent: Fusee.Xene.SceneComponentFinder`3
+  langs:
+  - csharp
+  - vb
+  name: MatchComponent(TComponentToFind)
+  nameWithType: SceneComponentFinder<TComponentToFind, TNode, TComponent>.MatchComponent(TComponentToFind)
+  fullName: Fusee.Xene.SceneComponentFinder<TComponentToFind, TNode, TComponent>.MatchComponent(TComponentToFind)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/SceneFinder.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MatchComponent
+    path: src/Fusee/src/Xene/SceneFinder.cs
+    startLine: 343
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nReflected Viserator Callback. Performs the match test on the specified component.\n"
+  example: []
+  syntax:
+    content: protected void MatchComponent(TComponentToFind component)
+    parameters:
+    - id: component
+      type: '{TComponentToFind}'
+      description: The component to check for the match.
+    content.vb: Protected Sub MatchComponent(component As TComponentToFind)
+  overload: Fusee.Xene.SceneComponentFinder`3.MatchComponent*
+  nameWithType.vb: SceneComponentFinder(Of TComponentToFind, TNode, TComponent).MatchComponent(TComponentToFind)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Fusee.Xene.SceneComponentFinder(Of TComponentToFind, TNode, TComponent).MatchComponent(TComponentToFind)
+references:
+- uid: Fusee.Xene.SceneFinderExtensions
+  commentId: T:Fusee.Xene.SceneFinderExtensions
+  parent: Fusee.Xene
+  name: SceneFinderExtensions
+  nameWithType: SceneFinderExtensions
+  fullName: Fusee.Xene.SceneFinderExtensions
+- uid: Fusee.Xene
+  commentId: N:Fusee.Xene
+  name: Fusee.Xene
+  nameWithType: Fusee.Xene
+  fullName: Fusee.Xene
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Xene.Visitor{{TNode},{TComponent}}
+  commentId: T:Fusee.Xene.Visitor{`1,`2}
+  parent: Fusee.Xene
+  definition: Fusee.Xene.Visitor`2
+  name: Visitor<TNode, TComponent>
+  nameWithType: Visitor<TNode, TComponent>
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>
+  nameWithType.vb: Visitor(Of TNode, TComponent)
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent)
+  name.vb: Visitor(Of TNode, TComponent)
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2
+    name: Visitor
+    nameWithType: Visitor
+    fullName: Fusee.Xene.Visitor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2
+    name: Visitor
+    nameWithType: Visitor
+    fullName: Fusee.Xene.Visitor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.SceneFinderBase{{TComponentToFind},{TNode},{TComponent}}
+  commentId: T:Fusee.Xene.SceneFinderBase{`0,`1,`2}
+  parent: Fusee.Xene
+  definition: Fusee.Xene.SceneFinderBase`3
+  name: SceneFinderBase<TComponentToFind, TNode, TComponent>
+  nameWithType: SceneFinderBase<TComponentToFind, TNode, TComponent>
+  fullName: Fusee.Xene.SceneFinderBase<TComponentToFind, TNode, TComponent>
+  nameWithType.vb: SceneFinderBase(Of TComponentToFind, TNode, TComponent)
+  fullName.vb: Fusee.Xene.SceneFinderBase(Of TComponentToFind, TNode, TComponent)
+  name.vb: SceneFinderBase(Of TComponentToFind, TNode, TComponent)
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderBase`3
+    name: SceneFinderBase
+    nameWithType: SceneFinderBase
+    fullName: Fusee.Xene.SceneFinderBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderBase`3
+    name: SceneFinderBase
+    nameWithType: SceneFinderBase
+    fullName: Fusee.Xene.SceneFinderBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{{TComponentToFind}}
+  commentId: T:System.Collections.Generic.IEnumerator{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<TComponentToFind>
+  nameWithType: IEnumerator<TComponentToFind>
+  fullName: System.Collections.Generic.IEnumerator<TComponentToFind>
+  nameWithType.vb: IEnumerator(Of TComponentToFind)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of TComponentToFind)
+  name.vb: IEnumerator(Of TComponentToFind)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Fusee.Xene.SceneFinderBase{{TComponentToFind},{TNode},{TComponent}}._rootList
+  commentId: F:Fusee.Xene.SceneFinderBase{`0,`1,`2}._rootList
+  parent: Fusee.Xene.SceneFinderBase{{TComponentToFind},{TNode},{TComponent}}
+  definition: Fusee.Xene.SceneFinderBase`3._rootList
+  name: _rootList
+  nameWithType: SceneFinderBase<TComponentToFind, TNode, TComponent>._rootList
+  fullName: Fusee.Xene.SceneFinderBase<TComponentToFind, TNode, TComponent>._rootList
+  nameWithType.vb: SceneFinderBase(Of TComponentToFind, TNode, TComponent)._rootList
+  fullName.vb: Fusee.Xene.SceneFinderBase(Of TComponentToFind, TNode, TComponent)._rootList
+- uid: Fusee.Xene.SceneFinderBase{{TComponentToFind},{TNode},{TComponent}}._match
+  commentId: F:Fusee.Xene.SceneFinderBase{`0,`1,`2}._match
+  parent: Fusee.Xene.SceneFinderBase{{TComponentToFind},{TNode},{TComponent}}
+  definition: Fusee.Xene.SceneFinderBase`3._match
+  name: _match
+  nameWithType: SceneFinderBase<TComponentToFind, TNode, TComponent>._match
+  fullName: Fusee.Xene.SceneFinderBase<TComponentToFind, TNode, TComponent>._match
+  nameWithType.vb: SceneFinderBase(Of TComponentToFind, TNode, TComponent)._match
+  fullName.vb: Fusee.Xene.SceneFinderBase(Of TComponentToFind, TNode, TComponent)._match
+- uid: Fusee.Xene.SceneFinderBase{{TComponentToFind},{TNode},{TComponent}}.Dispose
+  commentId: M:Fusee.Xene.SceneFinderBase{`0,`1,`2}.Dispose
+  parent: Fusee.Xene.SceneFinderBase{{TComponentToFind},{TNode},{TComponent}}
+  definition: Fusee.Xene.SceneFinderBase`3.Dispose
+  name: Dispose()
+  nameWithType: SceneFinderBase<TComponentToFind, TNode, TComponent>.Dispose()
+  fullName: Fusee.Xene.SceneFinderBase<TComponentToFind, TNode, TComponent>.Dispose()
+  nameWithType.vb: SceneFinderBase(Of TComponentToFind, TNode, TComponent).Dispose()
+  fullName.vb: Fusee.Xene.SceneFinderBase(Of TComponentToFind, TNode, TComponent).Dispose()
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderBase`3.Dispose
+    name: Dispose
+    nameWithType: SceneFinderBase<TComponentToFind, TNode, TComponent>.Dispose
+    fullName: Fusee.Xene.SceneFinderBase<TComponentToFind, TNode, TComponent>.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderBase`3.Dispose
+    name: Dispose
+    nameWithType: SceneFinderBase(Of TComponentToFind, TNode, TComponent).Dispose
+    fullName: Fusee.Xene.SceneFinderBase(Of TComponentToFind, TNode, TComponent).Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.SceneFinderBase{{TComponentToFind},{TNode},{TComponent}}.Reset
+  commentId: M:Fusee.Xene.SceneFinderBase{`0,`1,`2}.Reset
+  parent: Fusee.Xene.SceneFinderBase{{TComponentToFind},{TNode},{TComponent}}
+  definition: Fusee.Xene.SceneFinderBase`3.Reset
+  name: Reset()
+  nameWithType: SceneFinderBase<TComponentToFind, TNode, TComponent>.Reset()
+  fullName: Fusee.Xene.SceneFinderBase<TComponentToFind, TNode, TComponent>.Reset()
+  nameWithType.vb: SceneFinderBase(Of TComponentToFind, TNode, TComponent).Reset()
+  fullName.vb: Fusee.Xene.SceneFinderBase(Of TComponentToFind, TNode, TComponent).Reset()
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderBase`3.Reset
+    name: Reset
+    nameWithType: SceneFinderBase<TComponentToFind, TNode, TComponent>.Reset
+    fullName: Fusee.Xene.SceneFinderBase<TComponentToFind, TNode, TComponent>.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderBase`3.Reset
+    name: Reset
+    nameWithType: SceneFinderBase(Of TComponentToFind, TNode, TComponent).Reset
+    fullName: Fusee.Xene.SceneFinderBase(Of TComponentToFind, TNode, TComponent).Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor{{TNode},{TComponent}}.Traverse({TNode})
+  commentId: M:Fusee.Xene.Visitor{`1,`2}.Traverse(`1)
+  parent: Fusee.Xene.Visitor{{TNode},{TComponent}}
+  definition: Fusee.Xene.Visitor`2.Traverse(`0)
+  name: Traverse(TNode)
+  nameWithType: Visitor<TNode, TComponent>.Traverse(TNode)
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.Traverse(TNode)
+  nameWithType.vb: Visitor(Of TNode, TComponent).Traverse(TNode)
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).Traverse(TNode)
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.Traverse(`0)
+    name: Traverse
+    nameWithType: Visitor<TNode, TComponent>.Traverse
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.Traverse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.Traverse(`0)
+    name: Traverse
+    nameWithType: Visitor(Of TNode, TComponent).Traverse
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).Traverse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor{{TNode},{TComponent}}.Traverse(System.Collections.Generic.IEnumerable{{TNode}})
+  commentId: M:Fusee.Xene.Visitor{`1,`2}.Traverse(System.Collections.Generic.IEnumerable{`1})
+  parent: Fusee.Xene.Visitor{{TNode},{TComponent}}
+  definition: Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+  name: Traverse(IEnumerable<TNode>)
+  nameWithType: Visitor<TNode, TComponent>.Traverse(IEnumerable<TNode>)
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.Traverse(System.Collections.Generic.IEnumerable<TNode>)
+  nameWithType.vb: Visitor(Of TNode, TComponent).Traverse(IEnumerable(Of TNode))
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).Traverse(System.Collections.Generic.IEnumerable(Of TNode))
+  name.vb: Traverse(IEnumerable(Of TNode))
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+    name: Traverse
+    nameWithType: Visitor<TNode, TComponent>.Traverse
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.Traverse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+    name: Traverse
+    nameWithType: Visitor(Of TNode, TComponent).Traverse
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).Traverse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor{{TNode},{TComponent}}.InitState
+  commentId: M:Fusee.Xene.Visitor{`1,`2}.InitState
+  parent: Fusee.Xene.Visitor{{TNode},{TComponent}}
+  definition: Fusee.Xene.Visitor`2.InitState
+  name: InitState()
+  nameWithType: Visitor<TNode, TComponent>.InitState()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.InitState()
+  nameWithType.vb: Visitor(Of TNode, TComponent).InitState()
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).InitState()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.InitState
+    name: InitState
+    nameWithType: Visitor<TNode, TComponent>.InitState
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.InitState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.InitState
+    name: InitState
+    nameWithType: Visitor(Of TNode, TComponent).InitState
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).InitState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor{{TNode},{TComponent}}.PushState
+  commentId: M:Fusee.Xene.Visitor{`1,`2}.PushState
+  parent: Fusee.Xene.Visitor{{TNode},{TComponent}}
+  definition: Fusee.Xene.Visitor`2.PushState
+  name: PushState()
+  nameWithType: Visitor<TNode, TComponent>.PushState()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.PushState()
+  nameWithType.vb: Visitor(Of TNode, TComponent).PushState()
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).PushState()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.PushState
+    name: PushState
+    nameWithType: Visitor<TNode, TComponent>.PushState
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.PushState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.PushState
+    name: PushState
+    nameWithType: Visitor(Of TNode, TComponent).PushState
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).PushState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor{{TNode},{TComponent}}.PopState
+  commentId: M:Fusee.Xene.Visitor{`1,`2}.PopState
+  parent: Fusee.Xene.Visitor{{TNode},{TComponent}}
+  definition: Fusee.Xene.Visitor`2.PopState
+  name: PopState()
+  nameWithType: Visitor<TNode, TComponent>.PopState()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.PopState()
+  nameWithType.vb: Visitor(Of TNode, TComponent).PopState()
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).PopState()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.PopState
+    name: PopState
+    nameWithType: Visitor<TNode, TComponent>.PopState
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.PopState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.PopState
+    name: PopState
+    nameWithType: Visitor(Of TNode, TComponent).PopState
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).PopState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor{{TNode},{TComponent}}.CurrentNode
+  commentId: P:Fusee.Xene.Visitor{`1,`2}.CurrentNode
+  parent: Fusee.Xene.Visitor{{TNode},{TComponent}}
+  definition: Fusee.Xene.Visitor`2.CurrentNode
+  name: CurrentNode
+  nameWithType: Visitor<TNode, TComponent>.CurrentNode
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.CurrentNode
+  nameWithType.vb: Visitor(Of TNode, TComponent).CurrentNode
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).CurrentNode
+- uid: Fusee.Xene.Visitor{{TNode},{TComponent}}.CurrentComponent
+  commentId: P:Fusee.Xene.Visitor{`1,`2}.CurrentComponent
+  parent: Fusee.Xene.Visitor{{TNode},{TComponent}}
+  definition: Fusee.Xene.Visitor`2.CurrentComponent
+  name: CurrentComponent
+  nameWithType: Visitor<TNode, TComponent>.CurrentComponent
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.CurrentComponent
+  nameWithType.vb: Visitor(Of TNode, TComponent).CurrentComponent
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).CurrentComponent
+- uid: Fusee.Xene.Visitor{{TNode},{TComponent}}.YieldOnCurrentNode
+  commentId: P:Fusee.Xene.Visitor{`1,`2}.YieldOnCurrentNode
+  parent: Fusee.Xene.Visitor{{TNode},{TComponent}}
+  definition: Fusee.Xene.Visitor`2.YieldOnCurrentNode
+  name: YieldOnCurrentNode
+  nameWithType: Visitor<TNode, TComponent>.YieldOnCurrentNode
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldOnCurrentNode
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldOnCurrentNode
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldOnCurrentNode
+- uid: Fusee.Xene.Visitor{{TNode},{TComponent}}.YieldOnCurrentComponent
+  commentId: P:Fusee.Xene.Visitor{`1,`2}.YieldOnCurrentComponent
+  parent: Fusee.Xene.Visitor{{TNode},{TComponent}}
+  definition: Fusee.Xene.Visitor`2.YieldOnCurrentComponent
+  name: YieldOnCurrentComponent
+  nameWithType: Visitor<TNode, TComponent>.YieldOnCurrentComponent
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldOnCurrentComponent
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldOnCurrentComponent
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldOnCurrentComponent
+- uid: Fusee.Xene.Visitor{{TNode},{TComponent}}.YieldEnumeration
+  commentId: P:Fusee.Xene.Visitor{`1,`2}.YieldEnumeration
+  parent: Fusee.Xene.Visitor{{TNode},{TComponent}}
+  definition: Fusee.Xene.Visitor`2.YieldEnumeration
+  name: YieldEnumeration
+  nameWithType: Visitor<TNode, TComponent>.YieldEnumeration
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldEnumeration
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldEnumeration
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldEnumeration
+- uid: Fusee.Xene.Visitor{{TNode},{TComponent}}.EnumInit(System.Collections.Generic.IEnumerator{{TNode}})
+  commentId: M:Fusee.Xene.Visitor{`1,`2}.EnumInit(System.Collections.Generic.IEnumerator{`1})
+  parent: Fusee.Xene.Visitor{{TNode},{TComponent}}
+  definition: Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+  name: EnumInit(IEnumerator<TNode>)
+  nameWithType: Visitor<TNode, TComponent>.EnumInit(IEnumerator<TNode>)
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumInit(System.Collections.Generic.IEnumerator<TNode>)
+  nameWithType.vb: Visitor(Of TNode, TComponent).EnumInit(IEnumerator(Of TNode))
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).EnumInit(System.Collections.Generic.IEnumerator(Of TNode))
+  name.vb: EnumInit(IEnumerator(Of TNode))
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+    name: EnumInit
+    nameWithType: Visitor<TNode, TComponent>.EnumInit
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumInit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+    name: EnumInit
+    nameWithType: Visitor(Of TNode, TComponent).EnumInit
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).EnumInit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor{{TNode},{TComponent}}.EnumMoveNext
+  commentId: M:Fusee.Xene.Visitor{`1,`2}.EnumMoveNext
+  parent: Fusee.Xene.Visitor{{TNode},{TComponent}}
+  definition: Fusee.Xene.Visitor`2.EnumMoveNext
+  name: EnumMoveNext()
+  nameWithType: Visitor<TNode, TComponent>.EnumMoveNext()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumMoveNext()
+  nameWithType.vb: Visitor(Of TNode, TComponent).EnumMoveNext()
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).EnumMoveNext()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.EnumMoveNext
+    name: EnumMoveNext
+    nameWithType: Visitor<TNode, TComponent>.EnumMoveNext
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumMoveNext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.EnumMoveNext
+    name: EnumMoveNext
+    nameWithType: Visitor(Of TNode, TComponent).EnumMoveNext
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).EnumMoveNext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor{{TNode},{TComponent}}.EnumMoveNextNoComponent
+  commentId: M:Fusee.Xene.Visitor{`1,`2}.EnumMoveNextNoComponent
+  parent: Fusee.Xene.Visitor{{TNode},{TComponent}}
+  definition: Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+  name: EnumMoveNextNoComponent()
+  nameWithType: Visitor<TNode, TComponent>.EnumMoveNextNoComponent()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumMoveNextNoComponent()
+  nameWithType.vb: Visitor(Of TNode, TComponent).EnumMoveNextNoComponent()
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).EnumMoveNextNoComponent()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+    name: EnumMoveNextNoComponent
+    nameWithType: Visitor<TNode, TComponent>.EnumMoveNextNoComponent
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumMoveNextNoComponent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+    name: EnumMoveNextNoComponent
+    nameWithType: Visitor(Of TNode, TComponent).EnumMoveNextNoComponent
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).EnumMoveNextNoComponent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Xene.Visitor`2
+  commentId: T:Fusee.Xene.Visitor`2
+  name: Visitor<TNode, TComponent>
+  nameWithType: Visitor<TNode, TComponent>
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>
+  nameWithType.vb: Visitor(Of TNode, TComponent)
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent)
+  name.vb: Visitor(Of TNode, TComponent)
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2
+    name: Visitor
+    nameWithType: Visitor
+    fullName: Fusee.Xene.Visitor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2
+    name: Visitor
+    nameWithType: Visitor
+    fullName: Fusee.Xene.Visitor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.SceneFinderBase`3
+  commentId: T:Fusee.Xene.SceneFinderBase`3
+  name: SceneFinderBase<TSceneElementType, TNode, TComponent>
+  nameWithType: SceneFinderBase<TSceneElementType, TNode, TComponent>
+  fullName: Fusee.Xene.SceneFinderBase<TSceneElementType, TNode, TComponent>
+  nameWithType.vb: SceneFinderBase(Of TSceneElementType, TNode, TComponent)
+  fullName.vb: Fusee.Xene.SceneFinderBase(Of TSceneElementType, TNode, TComponent)
+  name.vb: SceneFinderBase(Of TSceneElementType, TNode, TComponent)
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderBase`3
+    name: SceneFinderBase
+    nameWithType: SceneFinderBase
+    fullName: Fusee.Xene.SceneFinderBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSceneElementType
+    nameWithType: TSceneElementType
+    fullName: TSceneElementType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderBase`3
+    name: SceneFinderBase
+    nameWithType: SceneFinderBase
+    fullName: Fusee.Xene.SceneFinderBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSceneElementType
+    nameWithType: TSceneElementType
+    fullName: TSceneElementType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: Fusee.Xene.SceneFinderBase`3._rootList
+  commentId: F:Fusee.Xene.SceneFinderBase`3._rootList
+  name: _rootList
+  nameWithType: SceneFinderBase<TSceneElementType, TNode, TComponent>._rootList
+  fullName: Fusee.Xene.SceneFinderBase<TSceneElementType, TNode, TComponent>._rootList
+  nameWithType.vb: SceneFinderBase(Of TSceneElementType, TNode, TComponent)._rootList
+  fullName.vb: Fusee.Xene.SceneFinderBase(Of TSceneElementType, TNode, TComponent)._rootList
+- uid: Fusee.Xene.SceneFinderBase`3._match
+  commentId: F:Fusee.Xene.SceneFinderBase`3._match
+  name: _match
+  nameWithType: SceneFinderBase<TSceneElementType, TNode, TComponent>._match
+  fullName: Fusee.Xene.SceneFinderBase<TSceneElementType, TNode, TComponent>._match
+  nameWithType.vb: SceneFinderBase(Of TSceneElementType, TNode, TComponent)._match
+  fullName.vb: Fusee.Xene.SceneFinderBase(Of TSceneElementType, TNode, TComponent)._match
+- uid: Fusee.Xene.SceneFinderBase`3.Dispose
+  commentId: M:Fusee.Xene.SceneFinderBase`3.Dispose
+  name: Dispose()
+  nameWithType: SceneFinderBase<TSceneElementType, TNode, TComponent>.Dispose()
+  fullName: Fusee.Xene.SceneFinderBase<TSceneElementType, TNode, TComponent>.Dispose()
+  nameWithType.vb: SceneFinderBase(Of TSceneElementType, TNode, TComponent).Dispose()
+  fullName.vb: Fusee.Xene.SceneFinderBase(Of TSceneElementType, TNode, TComponent).Dispose()
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderBase`3.Dispose
+    name: Dispose
+    nameWithType: SceneFinderBase<TSceneElementType, TNode, TComponent>.Dispose
+    fullName: Fusee.Xene.SceneFinderBase<TSceneElementType, TNode, TComponent>.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderBase`3.Dispose
+    name: Dispose
+    nameWithType: SceneFinderBase(Of TSceneElementType, TNode, TComponent).Dispose
+    fullName: Fusee.Xene.SceneFinderBase(Of TSceneElementType, TNode, TComponent).Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.SceneFinderBase`3.Reset
+  commentId: M:Fusee.Xene.SceneFinderBase`3.Reset
+  name: Reset()
+  nameWithType: SceneFinderBase<TSceneElementType, TNode, TComponent>.Reset()
+  fullName: Fusee.Xene.SceneFinderBase<TSceneElementType, TNode, TComponent>.Reset()
+  nameWithType.vb: SceneFinderBase(Of TSceneElementType, TNode, TComponent).Reset()
+  fullName.vb: Fusee.Xene.SceneFinderBase(Of TSceneElementType, TNode, TComponent).Reset()
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderBase`3.Reset
+    name: Reset
+    nameWithType: SceneFinderBase<TSceneElementType, TNode, TComponent>.Reset
+    fullName: Fusee.Xene.SceneFinderBase<TSceneElementType, TNode, TComponent>.Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderBase`3.Reset
+    name: Reset
+    nameWithType: SceneFinderBase(Of TSceneElementType, TNode, TComponent).Reset
+    fullName: Fusee.Xene.SceneFinderBase(Of TSceneElementType, TNode, TComponent).Reset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor`2.Traverse(`0)
+  commentId: M:Fusee.Xene.Visitor`2.Traverse(`0)
+  name: Traverse(TNode)
+  nameWithType: Visitor<TNode, TComponent>.Traverse(TNode)
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.Traverse(TNode)
+  nameWithType.vb: Visitor(Of TNode, TComponent).Traverse(TNode)
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).Traverse(TNode)
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.Traverse(`0)
+    name: Traverse
+    nameWithType: Visitor<TNode, TComponent>.Traverse
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.Traverse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.Traverse(`0)
+    name: Traverse
+    nameWithType: Visitor(Of TNode, TComponent).Traverse
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).Traverse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  name: Traverse(IEnumerable<TNode>)
+  nameWithType: Visitor<TNode, TComponent>.Traverse(IEnumerable<TNode>)
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.Traverse(System.Collections.Generic.IEnumerable<TNode>)
+  nameWithType.vb: Visitor(Of TNode, TComponent).Traverse(IEnumerable(Of TNode))
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).Traverse(System.Collections.Generic.IEnumerable(Of TNode))
+  name.vb: Traverse(IEnumerable(Of TNode))
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+    name: Traverse
+    nameWithType: Visitor<TNode, TComponent>.Traverse
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.Traverse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+    name: Traverse
+    nameWithType: Visitor(Of TNode, TComponent).Traverse
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).Traverse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor`2.InitState
+  commentId: M:Fusee.Xene.Visitor`2.InitState
+  name: InitState()
+  nameWithType: Visitor<TNode, TComponent>.InitState()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.InitState()
+  nameWithType.vb: Visitor(Of TNode, TComponent).InitState()
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).InitState()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.InitState
+    name: InitState
+    nameWithType: Visitor<TNode, TComponent>.InitState
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.InitState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.InitState
+    name: InitState
+    nameWithType: Visitor(Of TNode, TComponent).InitState
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).InitState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor`2.PushState
+  commentId: M:Fusee.Xene.Visitor`2.PushState
+  name: PushState()
+  nameWithType: Visitor<TNode, TComponent>.PushState()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.PushState()
+  nameWithType.vb: Visitor(Of TNode, TComponent).PushState()
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).PushState()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.PushState
+    name: PushState
+    nameWithType: Visitor<TNode, TComponent>.PushState
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.PushState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.PushState
+    name: PushState
+    nameWithType: Visitor(Of TNode, TComponent).PushState
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).PushState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor`2.PopState
+  commentId: M:Fusee.Xene.Visitor`2.PopState
+  name: PopState()
+  nameWithType: Visitor<TNode, TComponent>.PopState()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.PopState()
+  nameWithType.vb: Visitor(Of TNode, TComponent).PopState()
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).PopState()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.PopState
+    name: PopState
+    nameWithType: Visitor<TNode, TComponent>.PopState
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.PopState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.PopState
+    name: PopState
+    nameWithType: Visitor(Of TNode, TComponent).PopState
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).PopState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor`2.CurrentNode
+  commentId: P:Fusee.Xene.Visitor`2.CurrentNode
+  name: CurrentNode
+  nameWithType: Visitor<TNode, TComponent>.CurrentNode
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.CurrentNode
+  nameWithType.vb: Visitor(Of TNode, TComponent).CurrentNode
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).CurrentNode
+- uid: Fusee.Xene.Visitor`2.CurrentComponent
+  commentId: P:Fusee.Xene.Visitor`2.CurrentComponent
+  name: CurrentComponent
+  nameWithType: Visitor<TNode, TComponent>.CurrentComponent
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.CurrentComponent
+  nameWithType.vb: Visitor(Of TNode, TComponent).CurrentComponent
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).CurrentComponent
+- uid: Fusee.Xene.Visitor`2.YieldOnCurrentNode
+  commentId: P:Fusee.Xene.Visitor`2.YieldOnCurrentNode
+  name: YieldOnCurrentNode
+  nameWithType: Visitor<TNode, TComponent>.YieldOnCurrentNode
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldOnCurrentNode
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldOnCurrentNode
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldOnCurrentNode
+- uid: Fusee.Xene.Visitor`2.YieldOnCurrentComponent
+  commentId: P:Fusee.Xene.Visitor`2.YieldOnCurrentComponent
+  name: YieldOnCurrentComponent
+  nameWithType: Visitor<TNode, TComponent>.YieldOnCurrentComponent
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldOnCurrentComponent
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldOnCurrentComponent
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldOnCurrentComponent
+- uid: Fusee.Xene.Visitor`2.YieldEnumeration
+  commentId: P:Fusee.Xene.Visitor`2.YieldEnumeration
+  name: YieldEnumeration
+  nameWithType: Visitor<TNode, TComponent>.YieldEnumeration
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldEnumeration
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldEnumeration
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldEnumeration
+- uid: Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+  commentId: M:Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+  isExternal: true
+  name: EnumInit(IEnumerator<TNode>)
+  nameWithType: Visitor<TNode, TComponent>.EnumInit(IEnumerator<TNode>)
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumInit(System.Collections.Generic.IEnumerator<TNode>)
+  nameWithType.vb: Visitor(Of TNode, TComponent).EnumInit(IEnumerator(Of TNode))
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).EnumInit(System.Collections.Generic.IEnumerator(Of TNode))
+  name.vb: EnumInit(IEnumerator(Of TNode))
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+    name: EnumInit
+    nameWithType: Visitor<TNode, TComponent>.EnumInit
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumInit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+    name: EnumInit
+    nameWithType: Visitor(Of TNode, TComponent).EnumInit
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).EnumInit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor`2.EnumMoveNext
+  commentId: M:Fusee.Xene.Visitor`2.EnumMoveNext
+  name: EnumMoveNext()
+  nameWithType: Visitor<TNode, TComponent>.EnumMoveNext()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumMoveNext()
+  nameWithType.vb: Visitor(Of TNode, TComponent).EnumMoveNext()
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).EnumMoveNext()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.EnumMoveNext
+    name: EnumMoveNext
+    nameWithType: Visitor<TNode, TComponent>.EnumMoveNext
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumMoveNext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.EnumMoveNext
+    name: EnumMoveNext
+    nameWithType: Visitor(Of TNode, TComponent).EnumMoveNext
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).EnumMoveNext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+  commentId: M:Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+  name: EnumMoveNextNoComponent()
+  nameWithType: Visitor<TNode, TComponent>.EnumMoveNextNoComponent()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumMoveNextNoComponent()
+  nameWithType.vb: Visitor(Of TNode, TComponent).EnumMoveNextNoComponent()
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).EnumMoveNextNoComponent()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+    name: EnumMoveNextNoComponent
+    nameWithType: Visitor<TNode, TComponent>.EnumMoveNextNoComponent
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumMoveNextNoComponent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+    name: EnumMoveNextNoComponent
+    nameWithType: Visitor(Of TNode, TComponent).EnumMoveNextNoComponent
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).EnumMoveNextNoComponent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.SceneComponentFinder`3
+  commentId: T:Fusee.Xene.SceneComponentFinder`3
+  name: SceneComponentFinder<TComponentToFind, TNode, TComponent>
+  nameWithType: SceneComponentFinder<TComponentToFind, TNode, TComponent>
+  fullName: Fusee.Xene.SceneComponentFinder<TComponentToFind, TNode, TComponent>
+  nameWithType.vb: SceneComponentFinder(Of TComponentToFind, TNode, TComponent)
+  fullName.vb: Fusee.Xene.SceneComponentFinder(Of TComponentToFind, TNode, TComponent)
+  name.vb: SceneComponentFinder(Of TComponentToFind, TNode, TComponent)
+  spec.csharp:
+  - uid: Fusee.Xene.SceneComponentFinder`3
+    name: SceneComponentFinder
+    nameWithType: SceneComponentFinder
+    fullName: Fusee.Xene.SceneComponentFinder
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.SceneComponentFinder`3
+    name: SceneComponentFinder
+    nameWithType: SceneComponentFinder
+    fullName: Fusee.Xene.SceneComponentFinder
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.SceneComponentFinder`3.#ctor*
+  commentId: Overload:Fusee.Xene.SceneComponentFinder`3.#ctor
+  name: SceneComponentFinder
+  nameWithType: SceneComponentFinder<TComponentToFind, TNode, TComponent>.SceneComponentFinder
+  fullName: Fusee.Xene.SceneComponentFinder<TComponentToFind, TNode, TComponent>.SceneComponentFinder
+  nameWithType.vb: SceneComponentFinder(Of TComponentToFind, TNode, TComponent).SceneComponentFinder
+  fullName.vb: Fusee.Xene.SceneComponentFinder(Of TComponentToFind, TNode, TComponent).SceneComponentFinder
+- uid: System.Collections.Generic.IEnumerator{{TNode}}
+  commentId: T:System.Collections.Generic.IEnumerator{`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<TNode>
+  nameWithType: IEnumerator<TNode>
+  fullName: System.Collections.Generic.IEnumerator<TNode>
+  nameWithType.vb: IEnumerator(Of TNode)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of TNode)
+  name.vb: IEnumerator(Of TNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Predicate{{TComponentToFind}}
+  commentId: T:System.Predicate{``0}
+  parent: System
+  definition: System.Predicate`1
+  name: Predicate<TComponentToFind>
+  nameWithType: Predicate<TComponentToFind>
+  fullName: System.Predicate<TComponentToFind>
+  nameWithType.vb: Predicate(Of TComponentToFind)
+  fullName.vb: System.Predicate(Of TComponentToFind)
+  name.vb: Predicate(Of TComponentToFind)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Predicate`1
+  commentId: T:System.Predicate`1
+  isExternal: true
+  name: Predicate<T>
+  nameWithType: Predicate<T>
+  fullName: System.Predicate<T>
+  nameWithType.vb: Predicate(Of T)
+  fullName.vb: System.Predicate(Of T)
+  name.vb: Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.SceneComponentFinder`3.MoveNext*
+  commentId: Overload:Fusee.Xene.SceneComponentFinder`3.MoveNext
+  name: MoveNext
+  nameWithType: SceneComponentFinder<TComponentToFind, TNode, TComponent>.MoveNext
+  fullName: Fusee.Xene.SceneComponentFinder<TComponentToFind, TNode, TComponent>.MoveNext
+  nameWithType.vb: SceneComponentFinder(Of TComponentToFind, TNode, TComponent).MoveNext
+  fullName.vb: Fusee.Xene.SceneComponentFinder(Of TComponentToFind, TNode, TComponent).MoveNext
+- uid: System.Collections.IEnumerator.MoveNext
+  commentId: M:System.Collections.IEnumerator.MoveNext
+  parent: System.Collections.IEnumerator
+  isExternal: true
+  name: MoveNext()
+  nameWithType: IEnumerator.MoveNext()
+  fullName: System.Collections.IEnumerator.MoveNext()
+  spec.csharp:
+  - uid: System.Collections.IEnumerator.MoveNext
+    name: MoveNext
+    nameWithType: IEnumerator.MoveNext
+    fullName: System.Collections.IEnumerator.MoveNext
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerator.MoveNext
+    name: MoveNext
+    nameWithType: IEnumerator.MoveNext
+    fullName: System.Collections.IEnumerator.MoveNext
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Xene.SceneComponentFinder`3.Current*
+  commentId: Overload:Fusee.Xene.SceneComponentFinder`3.Current
+  name: Current
+  nameWithType: SceneComponentFinder<TComponentToFind, TNode, TComponent>.Current
+  fullName: Fusee.Xene.SceneComponentFinder<TComponentToFind, TNode, TComponent>.Current
+  nameWithType.vb: SceneComponentFinder(Of TComponentToFind, TNode, TComponent).Current
+  fullName.vb: Fusee.Xene.SceneComponentFinder(Of TComponentToFind, TNode, TComponent).Current
+- uid: System.Collections.Generic.IEnumerator{{TComponentToFind}}.Current
+  commentId: P:System.Collections.Generic.IEnumerator{`0}.Current
+  parent: System.Collections.Generic.IEnumerator{{TComponentToFind}}
+  definition: System.Collections.Generic.IEnumerator`1.Current
+  name: Current
+  nameWithType: IEnumerator<TComponentToFind>.Current
+  fullName: System.Collections.Generic.IEnumerator<TComponentToFind>.Current
+  nameWithType.vb: IEnumerator(Of TComponentToFind).Current
+  fullName.vb: System.Collections.Generic.IEnumerator(Of TComponentToFind).Current
+- uid: '{TComponentToFind}'
+  commentId: '!:TComponentToFind'
+  definition: TComponentToFind
+  name: TComponentToFind
+  nameWithType: TComponentToFind
+  fullName: TComponentToFind
+- uid: System.Collections.Generic.IEnumerator`1.Current
+  commentId: P:System.Collections.Generic.IEnumerator`1.Current
+  isExternal: true
+  name: Current
+  nameWithType: IEnumerator<T>.Current
+  fullName: System.Collections.Generic.IEnumerator<T>.Current
+  nameWithType.vb: IEnumerator(Of T).Current
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T).Current
+- uid: TComponentToFind
+  name: TComponentToFind
+  nameWithType: TComponentToFind
+  fullName: TComponentToFind
+- uid: Fusee.Xene.SceneComponentFinder`3.System#Collections#IEnumerator#Current*
+  commentId: Overload:Fusee.Xene.SceneComponentFinder`3.System#Collections#IEnumerator#Current
+  name: IEnumerator.Current
+  nameWithType: SceneComponentFinder<TComponentToFind, TNode, TComponent>.IEnumerator.Current
+  fullName: Fusee.Xene.SceneComponentFinder<TComponentToFind, TNode, TComponent>.System.Collections.IEnumerator.Current
+  nameWithType.vb: SceneComponentFinder(Of TComponentToFind, TNode, TComponent).System.Collections.IEnumerator.Current
+  fullName.vb: Fusee.Xene.SceneComponentFinder(Of TComponentToFind, TNode, TComponent).System.Collections.IEnumerator.Current
+  name.vb: System.Collections.IEnumerator.Current
+- uid: System.Collections.IEnumerator.Current
+  commentId: P:System.Collections.IEnumerator.Current
+  parent: System.Collections.IEnumerator
+  isExternal: true
+  name: Current
+  nameWithType: IEnumerator.Current
+  fullName: System.Collections.IEnumerator.Current
+- uid: Fusee.Xene.SceneComponentFinder`3.MatchComponent*
+  commentId: Overload:Fusee.Xene.SceneComponentFinder`3.MatchComponent
+  name: MatchComponent
+  nameWithType: SceneComponentFinder<TComponentToFind, TNode, TComponent>.MatchComponent
+  fullName: Fusee.Xene.SceneComponentFinder<TComponentToFind, TNode, TComponent>.MatchComponent
+  nameWithType.vb: SceneComponentFinder(Of TComponentToFind, TNode, TComponent).MatchComponent
+  fullName.vb: Fusee.Xene.SceneComponentFinder(Of TComponentToFind, TNode, TComponent).MatchComponent

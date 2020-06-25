@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.TwoPointAction
+  commentId: T:Fusee.Engine.Core.TwoPointAction
+  id: TwoPointAction
+  parent: Fusee.Engine.Core
+  children:
+  - Fusee.Engine.Core.TwoPointAction.Move
+  - Fusee.Engine.Core.TwoPointAction.None
+  - Fusee.Engine.Core.TwoPointAction.Pinch
+  - Fusee.Engine.Core.TwoPointAction.Rotate
+  langs:
+  - csharp
+  - vb
+  name: TwoPointAction
+  nameWithType: TwoPointAction
+  fullName: Fusee.Engine.Core.TwoPointAction
+  type: Enum
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/TouchDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TwoPointAction
+    path: src/Fusee/src/Engine/Core/TouchDevice.cs
+    startLine: 8
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nSymbolic value describing the double-touchpoint action with the highest intensity performed by a user with the first two touchpoints.\n"
+  example: []
+  syntax:
+    content: public enum TwoPointAction
+    content.vb: Public Enum TwoPointAction
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Fusee.Engine.Core.TwoPointAction.None
+  commentId: F:Fusee.Engine.Core.TwoPointAction.None
+  id: None
+  parent: Fusee.Engine.Core.TwoPointAction
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: TwoPointAction.None
+  fullName: Fusee.Engine.Core.TwoPointAction.None
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/TouchDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: None
+    path: src/Fusee/src/Engine/Core/TouchDevice.cs
+    startLine: 14
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe user currently performs no action (no two touchpoints are active or the user\ncurrently does not move the two touchpoints).\n"
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Fusee.Engine.Core.TwoPointAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.TwoPointAction.Pinch
+  commentId: F:Fusee.Engine.Core.TwoPointAction.Pinch
+  id: Pinch
+  parent: Fusee.Engine.Core.TwoPointAction
+  langs:
+  - csharp
+  - vb
+  name: Pinch
+  nameWithType: TwoPointAction.Pinch
+  fullName: Fusee.Engine.Core.TwoPointAction.Pinch
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/TouchDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Pinch
+    path: src/Fusee/src/Engine/Core/TouchDevice.cs
+    startLine: 20
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe user performs a pinch action, e.g. moves the two touchpoints toward each others or moves them into opposite\ndirections. Use <xref href=\"Fusee.Engine.Core.TouchDevice.TwoPointDistance\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"Fusee.Engine.Core.TouchDevice.TwoPointDistanceVel\" data-throw-if-not-resolved=\"false\"></xref> to retrieve\nvalues for derived actions based on pinch gestures.\n"
+  example: []
+  syntax:
+    content: Pinch = 1
+    return:
+      type: Fusee.Engine.Core.TwoPointAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.TwoPointAction.Move
+  commentId: F:Fusee.Engine.Core.TwoPointAction.Move
+  id: Move
+  parent: Fusee.Engine.Core.TwoPointAction
+  langs:
+  - csharp
+  - vb
+  name: Move
+  nameWithType: TwoPointAction.Move
+  fullName: Fusee.Engine.Core.TwoPointAction.Move
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/TouchDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Move
+    path: src/Fusee/src/Engine/Core/TouchDevice.cs
+    startLine: 26
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe user moves the first two active touchpoints into similar directions maintaining their distance and relative position. \nUse <xref href=\"Fusee.Engine.Core.TouchDevice.TwoPointMidPoint\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"Fusee.Engine.Core.TouchDevice.TwoPointMidPointVel\" data-throw-if-not-resolved=\"false\"></xref> to retrieve\nvalues for derived actions based on two-point move-gestures.     \n"
+  example: []
+  syntax:
+    content: Move = 2
+    return:
+      type: Fusee.Engine.Core.TwoPointAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.TwoPointAction.Rotate
+  commentId: F:Fusee.Engine.Core.TwoPointAction.Rotate
+  id: Rotate
+  parent: Fusee.Engine.Core.TwoPointAction
+  langs:
+  - csharp
+  - vb
+  name: Rotate
+  nameWithType: TwoPointAction.Rotate
+  fullName: Fusee.Engine.Core.TwoPointAction.Rotate
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/TouchDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Rotate
+    path: src/Fusee/src/Engine/Core/TouchDevice.cs
+    startLine: 32
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe user rotates the first two active touchpoints around a common rotation center while maintaining their distance.\nUse <xref href=\"Fusee.Engine.Core.TouchDevice.TwoPointAngle\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"Fusee.Engine.Core.TouchDevice.TwoPointAngleVel\" data-throw-if-not-resolved=\"false\"></xref> to retrieve\nvalues for derived actions based on rotation gestures.     \n"
+  example: []
+  syntax:
+    content: Rotate = 3
+    return:
+      type: Fusee.Engine.Core.TwoPointAction
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: Fusee.Engine.Core.TwoPointAction
+  commentId: T:Fusee.Engine.Core.TwoPointAction
+  parent: Fusee.Engine.Core
+  name: TwoPointAction
+  nameWithType: TwoPointAction
+  fullName: Fusee.Engine.Core.TwoPointAction
+- uid: Fusee.Engine.Core.TouchDevice.TwoPointDistance
+  commentId: P:Fusee.Engine.Core.TouchDevice.TwoPointDistance
+  isExternal: true
+- uid: Fusee.Engine.Core.TouchDevice.TwoPointDistanceVel
+  commentId: P:Fusee.Engine.Core.TouchDevice.TwoPointDistanceVel
+  isExternal: true
+- uid: Fusee.Engine.Core.TouchDevice.TwoPointMidPoint
+  commentId: P:Fusee.Engine.Core.TouchDevice.TwoPointMidPoint
+  isExternal: true
+- uid: Fusee.Engine.Core.TouchDevice.TwoPointMidPointVel
+  commentId: P:Fusee.Engine.Core.TouchDevice.TwoPointMidPointVel
+  isExternal: true
+- uid: Fusee.Engine.Core.TouchDevice.TwoPointAngle
+  commentId: P:Fusee.Engine.Core.TouchDevice.TwoPointAngle
+  isExternal: true
+- uid: Fusee.Engine.Core.TouchDevice.TwoPointAngleVel
+  commentId: P:Fusee.Engine.Core.TouchDevice.TwoPointAngleVel
+  isExternal: true

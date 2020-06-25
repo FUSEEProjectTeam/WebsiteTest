@@ -1,0 +1,936 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Math.Core.CurveSegment
+  commentId: T:Fusee.Math.Core.CurveSegment
+  id: CurveSegment
+  parent: Fusee.Math.Core
+  children:
+  - Fusee.Math.Core.CurveSegment.CalcAdaptivePolylineWAngle(Fusee.Math.Core.float3,System.Int32,System.Int32)
+  - Fusee.Math.Core.CurveSegment.CalcAdaptivePolylineWArcreage(Fusee.Math.Core.float3,System.Single,System.Int32)
+  - Fusee.Math.Core.CurveSegment.CalcPoint(System.Single,Fusee.Math.Core.float3[])
+  - Fusee.Math.Core.CurveSegment.CalcUniformPolyline(Fusee.Math.Core.float3,System.Int32,System.Int32)
+  - Fusee.Math.Core.CurveSegment.SplitCurve(System.Single,Fusee.Math.Core.float3[],System.Collections.Generic.List{Fusee.Math.Core.float3}@,System.Collections.Generic.List{Fusee.Math.Core.float3}@)
+  - Fusee.Math.Core.CurveSegment.Vertices
+  langs:
+  - csharp
+  - vb
+  name: CurveSegment
+  nameWithType: CurveSegment
+  fullName: Fusee.Math.Core.CurveSegment
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/Curve.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CurveSegment
+    path: src/Fusee/src/Math/Core/Curve.cs
+    startLine: 227
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nThe base class for CurveSegments.\nA CurveSgment does not know its own start point. For the first CurveSegment in a sequence the start point is saved in the CurvePart belonging to the segment.\nThe start point for the CurveSegment with index i is the last vertex in the CurveSegent[i-1]&apos;s list of vertices.\n"
+  example: []
+  syntax:
+    content: public abstract class CurveSegment
+    content.vb: Public MustInherit Class CurveSegment
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Fusee.Math.Core.BezierConicSegment
+  - Fusee.Math.Core.BezierCubicSegment
+  - Fusee.Math.Core.LinearSegment
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Fusee.Math.Core.CurveSegment.Vertices
+  commentId: F:Fusee.Math.Core.CurveSegment.Vertices
+  id: Vertices
+  parent: Fusee.Math.Core.CurveSegment
+  langs:
+  - csharp
+  - vb
+  name: Vertices
+  nameWithType: CurveSegment.Vertices
+  fullName: Fusee.Math.Core.CurveSegment.Vertices
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/Curve.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Vertices
+    path: src/Fusee/src/Math/Core/Curve.cs
+    startLine: 232
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nThe vertices of a CurveSegment represented by float3s.\n"
+  example: []
+  syntax:
+    content: public IList<float3> Vertices
+    return:
+      type: System.Collections.Generic.IList{Fusee.Math.Core.float3}
+    content.vb: Public Vertices As IList(Of float3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.CurveSegment.CalcPoint(System.Single,Fusee.Math.Core.float3[])
+  commentId: M:Fusee.Math.Core.CurveSegment.CalcPoint(System.Single,Fusee.Math.Core.float3[])
+  id: CalcPoint(System.Single,Fusee.Math.Core.float3[])
+  parent: Fusee.Math.Core.CurveSegment
+  langs:
+  - csharp
+  - vb
+  name: CalcPoint(Single, float3[])
+  nameWithType: CurveSegment.CalcPoint(Single, float3[])
+  fullName: Fusee.Math.Core.CurveSegment.CalcPoint(System.Single, Fusee.Math.Core.float3[])
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/Curve.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CalcPoint
+    path: src/Fusee/src/Math/Core/Curve.cs
+    startLine: 240
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nCalculates a point on a bézier curve using De Casteljau&apos;s algorithm.\n"
+  example: []
+  syntax:
+    content: public float3 CalcPoint(float t, float3[] vertices)
+    parameters:
+    - id: t
+      type: System.Single
+      description: Bézier curves are polynominals of t. t is element of [0, 1]
+    - id: vertices
+      type: Fusee.Math.Core.float3[]
+      description: All control points that represent the curve, incl. start and end point
+    return:
+      type: Fusee.Math.Core.float3
+      description: ''
+    content.vb: Public Function CalcPoint(t As Single, vertices As float3()) As float3
+  overload: Fusee.Math.Core.CurveSegment.CalcPoint*
+  nameWithType.vb: CurveSegment.CalcPoint(Single, float3())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Math.Core.CurveSegment.CalcPoint(System.Single, Fusee.Math.Core.float3())
+  name.vb: CalcPoint(Single, float3())
+- uid: Fusee.Math.Core.CurveSegment.SplitCurve(System.Single,Fusee.Math.Core.float3[],System.Collections.Generic.List{Fusee.Math.Core.float3}@,System.Collections.Generic.List{Fusee.Math.Core.float3}@)
+  commentId: M:Fusee.Math.Core.CurveSegment.SplitCurve(System.Single,Fusee.Math.Core.float3[],System.Collections.Generic.List{Fusee.Math.Core.float3}@,System.Collections.Generic.List{Fusee.Math.Core.float3}@)
+  id: SplitCurve(System.Single,Fusee.Math.Core.float3[],System.Collections.Generic.List{Fusee.Math.Core.float3}@,System.Collections.Generic.List{Fusee.Math.Core.float3}@)
+  parent: Fusee.Math.Core.CurveSegment
+  langs:
+  - csharp
+  - vb
+  name: SplitCurve(Single, float3[], ref List<float3>, ref List<float3>)
+  nameWithType: CurveSegment.SplitCurve(Single, float3[], ref List<float3>, ref List<float3>)
+  fullName: Fusee.Math.Core.CurveSegment.SplitCurve(System.Single, Fusee.Math.Core.float3[], ref System.Collections.Generic.List<Fusee.Math.Core.float3>, ref System.Collections.Generic.List<Fusee.Math.Core.float3>)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/Curve.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SplitCurve
+    path: src/Fusee/src/Math/Core/Curve.cs
+    startLine: 263
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nSplits a curve using De Casteljau&apos;s algorithm.\n"
+  example: []
+  syntax:
+    content: public void SplitCurve(float t, float3[] vertices, ref List<float3> leftCurve, ref List<float3> rightCurve)
+    parameters:
+    - id: t
+      type: System.Single
+      description: Bézier curves are polynominals of t. t is element of [0, 1].
+    - id: vertices
+      type: Fusee.Math.Core.float3[]
+      description: All control points that represent the curve, incl. start and end point.
+    - id: leftCurve
+      type: System.Collections.Generic.List{Fusee.Math.Core.float3}
+      description: The left new curve.
+    - id: rightCurve
+      type: System.Collections.Generic.List{Fusee.Math.Core.float3}
+      description: The right new curve.
+    content.vb: Public Sub SplitCurve(t As Single, vertices As float3(), ByRef leftCurve As List(Of float3), ByRef rightCurve As List(Of float3))
+  overload: Fusee.Math.Core.CurveSegment.SplitCurve*
+  nameWithType.vb: CurveSegment.SplitCurve(Single, float3(), ByRef List(Of float3), ByRef List(Of float3))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Math.Core.CurveSegment.SplitCurve(System.Single, Fusee.Math.Core.float3(), ByRef System.Collections.Generic.List(Of Fusee.Math.Core.float3), ByRef System.Collections.Generic.List(Of Fusee.Math.Core.float3))
+  name.vb: SplitCurve(Single, float3(), ByRef List(Of float3), ByRef List(Of float3))
+- uid: Fusee.Math.Core.CurveSegment.CalcUniformPolyline(Fusee.Math.Core.float3,System.Int32,System.Int32)
+  commentId: M:Fusee.Math.Core.CurveSegment.CalcUniformPolyline(Fusee.Math.Core.float3,System.Int32,System.Int32)
+  id: CalcUniformPolyline(Fusee.Math.Core.float3,System.Int32,System.Int32)
+  parent: Fusee.Math.Core.CurveSegment
+  langs:
+  - csharp
+  - vb
+  name: CalcUniformPolyline(float3, Int32, Int32)
+  nameWithType: CurveSegment.CalcUniformPolyline(float3, Int32, Int32)
+  fullName: Fusee.Math.Core.CurveSegment.CalcUniformPolyline(Fusee.Math.Core.float3, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/Curve.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CalcUniformPolyline
+    path: src/Fusee/src/Math/Core/Curve.cs
+    startLine: 299
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns a polygonal chain, representing the curve segment. Intermediate points are calculated with uniform values of t.\n"
+  example: []
+  syntax:
+    content: public virtual IEnumerable<float3> CalcUniformPolyline(float3 startPoint, int segmentsPerCurve, int degree)
+    parameters:
+    - id: startPoint
+      type: Fusee.Math.Core.float3
+      description: The segment&apos;s starting point.
+    - id: segmentsPerCurve
+      type: System.Int32
+      description: The number of segments per curve.
+    - id: degree
+      type: System.Int32
+      description: 'The degree of the curve: 1 for linear, 2 for conic, 3 for cubic.'
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Math.Core.float3}
+    content.vb: Public Overridable Function CalcUniformPolyline(startPoint As float3, segmentsPerCurve As Integer, degree As Integer) As IEnumerable(Of float3)
+  overload: Fusee.Math.Core.CurveSegment.CalcUniformPolyline*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Fusee.Math.Core.CurveSegment.CalcAdaptivePolylineWAngle(Fusee.Math.Core.float3,System.Int32,System.Int32)
+  commentId: M:Fusee.Math.Core.CurveSegment.CalcAdaptivePolylineWAngle(Fusee.Math.Core.float3,System.Int32,System.Int32)
+  id: CalcAdaptivePolylineWAngle(Fusee.Math.Core.float3,System.Int32,System.Int32)
+  parent: Fusee.Math.Core.CurveSegment
+  langs:
+  - csharp
+  - vb
+  name: CalcAdaptivePolylineWAngle(float3, Int32, Int32)
+  nameWithType: CurveSegment.CalcAdaptivePolylineWAngle(float3, Int32, Int32)
+  fullName: Fusee.Math.Core.CurveSegment.CalcAdaptivePolylineWAngle(Fusee.Math.Core.float3, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/Curve.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CalcAdaptivePolylineWAngle
+    path: src/Fusee/src/Math/Core/Curve.cs
+    startLine: 336
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns a polygonal chain, representing the curve segment. Intermediate points are calculated adaptively.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<float3> CalcAdaptivePolylineWAngle(float3 startPoint, int angle, int degree)
+    parameters:
+    - id: startPoint
+      type: Fusee.Math.Core.float3
+      description: The segment&apos;s starting point
+    - id: angle
+      type: System.Int32
+      description: Determines how far the angle between the two vectors(start point, random point and end point) may vary from 180°
+    - id: degree
+      type: System.Int32
+      description: 'The degree of the curve: 1 for linear, 2 for conic, 3 for cubic'
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Math.Core.float3}
+      description: ''
+    content.vb: Public Function CalcAdaptivePolylineWAngle(startPoint As float3, angle As Integer, degree As Integer) As IEnumerable(Of float3)
+  overload: Fusee.Math.Core.CurveSegment.CalcAdaptivePolylineWAngle*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.CurveSegment.CalcAdaptivePolylineWArcreage(Fusee.Math.Core.float3,System.Single,System.Int32)
+  commentId: M:Fusee.Math.Core.CurveSegment.CalcAdaptivePolylineWArcreage(Fusee.Math.Core.float3,System.Single,System.Int32)
+  id: CalcAdaptivePolylineWArcreage(Fusee.Math.Core.float3,System.Single,System.Int32)
+  parent: Fusee.Math.Core.CurveSegment
+  langs:
+  - csharp
+  - vb
+  name: CalcAdaptivePolylineWArcreage(float3, Single, Int32)
+  nameWithType: CurveSegment.CalcAdaptivePolylineWArcreage(float3, Single, Int32)
+  fullName: Fusee.Math.Core.CurveSegment.CalcAdaptivePolylineWArcreage(Fusee.Math.Core.float3, System.Single, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/Curve.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CalcAdaptivePolylineWArcreage
+    path: src/Fusee/src/Math/Core/Curve.cs
+    startLine: 371
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns a polygonal chain, representing the curve segment. Intermediate points are calculated adaptively.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<float3> CalcAdaptivePolylineWArcreage(float3 startPoint, float acreage, int degree)
+    parameters:
+    - id: startPoint
+      type: Fusee.Math.Core.float3
+      description: The segment&apos;s starting point
+    - id: acreage
+      type: System.Single
+      description: Determines a maximal acreage for the triangle created from start point random point and end point.
+    - id: degree
+      type: System.Int32
+      description: 'The degree of the curve: 1 for linear, 2 for conic, 3 for cubic'
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Math.Core.float3}
+      description: ''
+    content.vb: Public Function CalcAdaptivePolylineWArcreage(startPoint As float3, acreage As Single, degree As Integer) As IEnumerable(Of float3)
+  overload: Fusee.Math.Core.CurveSegment.CalcAdaptivePolylineWArcreage*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IList{Fusee.Math.Core.float3}
+  commentId: T:System.Collections.Generic.IList{Fusee.Math.Core.float3}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<float3>
+  nameWithType: IList<float3>
+  fullName: System.Collections.Generic.IList<Fusee.Math.Core.float3>
+  nameWithType.vb: IList(Of float3)
+  fullName.vb: System.Collections.Generic.IList(Of Fusee.Math.Core.float3)
+  name.vb: IList(Of float3)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Fusee.Math.Core.CurveSegment.CalcPoint*
+  commentId: Overload:Fusee.Math.Core.CurveSegment.CalcPoint
+  name: CalcPoint
+  nameWithType: CurveSegment.CalcPoint
+  fullName: Fusee.Math.Core.CurveSegment.CalcPoint
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Math.Core.float3[]
+  isExternal: true
+  name: float3[]
+  nameWithType: float3[]
+  fullName: Fusee.Math.Core.float3[]
+  nameWithType.vb: float3()
+  fullName.vb: Fusee.Math.Core.float3()
+  name.vb: float3()
+  spec.csharp:
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Math.Core.CurveSegment.SplitCurve*
+  commentId: Overload:Fusee.Math.Core.CurveSegment.SplitCurve
+  name: SplitCurve
+  nameWithType: CurveSegment.SplitCurve
+  fullName: Fusee.Math.Core.CurveSegment.SplitCurve
+- uid: System.Collections.Generic.List{Fusee.Math.Core.float3}
+  commentId: T:System.Collections.Generic.List{Fusee.Math.Core.float3}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<float3>
+  nameWithType: List<float3>
+  fullName: System.Collections.Generic.List<Fusee.Math.Core.float3>
+  nameWithType.vb: List(Of float3)
+  fullName.vb: System.Collections.Generic.List(Of Fusee.Math.Core.float3)
+  name.vb: List(Of float3)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.CurveSegment.CalcUniformPolyline*
+  commentId: Overload:Fusee.Math.Core.CurveSegment.CalcUniformPolyline
+  name: CalcUniformPolyline
+  nameWithType: CurveSegment.CalcUniformPolyline
+  fullName: Fusee.Math.Core.CurveSegment.CalcUniformPolyline
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.IEnumerable{Fusee.Math.Core.float3}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Math.Core.float3}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<float3>
+  nameWithType: IEnumerable<float3>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Math.Core.float3>
+  nameWithType.vb: IEnumerable(Of float3)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Math.Core.float3)
+  name.vb: IEnumerable(Of float3)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.CurveSegment.CalcAdaptivePolylineWAngle*
+  commentId: Overload:Fusee.Math.Core.CurveSegment.CalcAdaptivePolylineWAngle
+  name: CalcAdaptivePolylineWAngle
+  nameWithType: CurveSegment.CalcAdaptivePolylineWAngle
+  fullName: Fusee.Math.Core.CurveSegment.CalcAdaptivePolylineWAngle
+- uid: Fusee.Math.Core.CurveSegment.CalcAdaptivePolylineWArcreage*
+  commentId: Overload:Fusee.Math.Core.CurveSegment.CalcAdaptivePolylineWArcreage
+  name: CalcAdaptivePolylineWArcreage
+  nameWithType: CurveSegment.CalcAdaptivePolylineWArcreage
+  fullName: Fusee.Math.Core.CurveSegment.CalcAdaptivePolylineWArcreage

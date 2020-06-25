@@ -1,0 +1,614 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.NetworkMsgType
+  commentId: T:Fusee.Engine.Common.NetworkMsgType
+  id: NetworkMsgType
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.NetworkMsgType.MsgChannel
+  - Fusee.Engine.Common.NetworkMsgType.MsgDelivery
+  - Fusee.Engine.Common.NetworkMsgType.MsgType
+  - Fusee.Engine.Common.NetworkMsgType.ReadBytes
+  - Fusee.Engine.Common.NetworkMsgType.ReadFloat
+  - Fusee.Engine.Common.NetworkMsgType.ReadInt
+  - Fusee.Engine.Common.NetworkMsgType.ReadString
+  langs:
+  - csharp
+  - vb
+  name: NetworkMsgType
+  nameWithType: NetworkMsgType
+  fullName: Fusee.Engine.Common.NetworkMsgType
+  type: Struct
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/INetworkMsg.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: NetworkMsgType
+    path: src/Fusee/src/Engine/Common/INetworkMsg.cs
+    startLine: 167
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nMessage type container struct. (= Packet container) \n"
+  example: []
+  syntax:
+    content: public struct NetworkMsgType
+    content.vb: Public Structure NetworkMsgType
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Fusee.Engine.Common.NetworkMsgType.MsgType
+  commentId: F:Fusee.Engine.Common.NetworkMsgType.MsgType
+  id: MsgType
+  parent: Fusee.Engine.Common.NetworkMsgType
+  langs:
+  - csharp
+  - vb
+  name: MsgType
+  nameWithType: NetworkMsgType.MsgType
+  fullName: Fusee.Engine.Common.NetworkMsgType.MsgType
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/INetworkMsg.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MsgType
+    path: src/Fusee/src/Engine/Common/INetworkMsg.cs
+    startLine: 172
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe Message&apos;s data type (object, int, bytes, float, string).\n"
+  example: []
+  syntax:
+    content: public MsgDataTypes MsgType
+    return:
+      type: Fusee.Engine.Common.MsgDataTypes
+    content.vb: Public MsgType As MsgDataTypes
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.NetworkMsgType.MsgDelivery
+  commentId: F:Fusee.Engine.Common.NetworkMsgType.MsgDelivery
+  id: MsgDelivery
+  parent: Fusee.Engine.Common.NetworkMsgType
+  langs:
+  - csharp
+  - vb
+  name: MsgDelivery
+  nameWithType: NetworkMsgType.MsgDelivery
+  fullName: Fusee.Engine.Common.NetworkMsgType.MsgDelivery
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/INetworkMsg.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MsgDelivery
+    path: src/Fusee/src/Engine/Common/INetworkMsg.cs
+    startLine: 176
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe Message&apos;s transmission type.\n"
+  example: []
+  syntax:
+    content: public MessageDelivery MsgDelivery
+    return:
+      type: Fusee.Engine.Common.MessageDelivery
+    content.vb: Public MsgDelivery As MessageDelivery
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.NetworkMsgType.MsgChannel
+  commentId: F:Fusee.Engine.Common.NetworkMsgType.MsgChannel
+  id: MsgChannel
+  parent: Fusee.Engine.Common.NetworkMsgType
+  langs:
+  - csharp
+  - vb
+  name: MsgChannel
+  nameWithType: NetworkMsgType.MsgChannel
+  fullName: Fusee.Engine.Common.NetworkMsgType.MsgChannel
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/INetworkMsg.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MsgChannel
+    path: src/Fusee/src/Engine/Common/INetworkMsg.cs
+    startLine: 180
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe Message&apos;s channel.\n"
+  example: []
+  syntax:
+    content: public int MsgChannel
+    return:
+      type: System.Int32
+    content.vb: Public MsgChannel As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.NetworkMsgType.ReadBytes
+  commentId: F:Fusee.Engine.Common.NetworkMsgType.ReadBytes
+  id: ReadBytes
+  parent: Fusee.Engine.Common.NetworkMsgType
+  langs:
+  - csharp
+  - vb
+  name: ReadBytes
+  nameWithType: NetworkMsgType.ReadBytes
+  fullName: Fusee.Engine.Common.NetworkMsgType.ReadBytes
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/INetworkMsg.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ReadBytes
+    path: src/Fusee/src/Engine/Common/INetworkMsg.cs
+    startLine: 185
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe read bytes.\n"
+  example: []
+  syntax:
+    content: public byte[] ReadBytes
+    return:
+      type: System.Byte[]
+    content.vb: Public ReadBytes As Byte()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.NetworkMsgType.ReadInt
+  commentId: F:Fusee.Engine.Common.NetworkMsgType.ReadInt
+  id: ReadInt
+  parent: Fusee.Engine.Common.NetworkMsgType
+  langs:
+  - csharp
+  - vb
+  name: ReadInt
+  nameWithType: NetworkMsgType.ReadInt
+  fullName: Fusee.Engine.Common.NetworkMsgType.ReadInt
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/INetworkMsg.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ReadInt
+    path: src/Fusee/src/Engine/Common/INetworkMsg.cs
+    startLine: 189
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe read int.\n"
+  example: []
+  syntax:
+    content: public int ReadInt
+    return:
+      type: System.Int32
+    content.vb: Public ReadInt As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.NetworkMsgType.ReadFloat
+  commentId: F:Fusee.Engine.Common.NetworkMsgType.ReadFloat
+  id: ReadFloat
+  parent: Fusee.Engine.Common.NetworkMsgType
+  langs:
+  - csharp
+  - vb
+  name: ReadFloat
+  nameWithType: NetworkMsgType.ReadFloat
+  fullName: Fusee.Engine.Common.NetworkMsgType.ReadFloat
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/INetworkMsg.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ReadFloat
+    path: src/Fusee/src/Engine/Common/INetworkMsg.cs
+    startLine: 193
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe read float.\n"
+  example: []
+  syntax:
+    content: public float ReadFloat
+    return:
+      type: System.Single
+    content.vb: Public ReadFloat As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.NetworkMsgType.ReadString
+  commentId: F:Fusee.Engine.Common.NetworkMsgType.ReadString
+  id: ReadString
+  parent: Fusee.Engine.Common.NetworkMsgType
+  langs:
+  - csharp
+  - vb
+  name: ReadString
+  nameWithType: NetworkMsgType.ReadString
+  fullName: Fusee.Engine.Common.NetworkMsgType.ReadString
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/INetworkMsg.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ReadString
+    path: src/Fusee/src/Engine/Common/INetworkMsg.cs
+    startLine: 197
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe read string.\n"
+  example: []
+  syntax:
+    content: public string ReadString
+    return:
+      type: System.String
+    content.vb: Public ReadString As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Common.MsgDataTypes
+  commentId: T:Fusee.Engine.Common.MsgDataTypes
+  parent: Fusee.Engine.Common
+  name: MsgDataTypes
+  nameWithType: MsgDataTypes
+  fullName: Fusee.Engine.Common.MsgDataTypes
+- uid: Fusee.Engine.Common.MessageDelivery
+  commentId: T:Fusee.Engine.Common.MessageDelivery
+  parent: Fusee.Engine.Common
+  name: MessageDelivery
+  nameWithType: MessageDelivery
+  fullName: Fusee.Engine.Common.MessageDelivery
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

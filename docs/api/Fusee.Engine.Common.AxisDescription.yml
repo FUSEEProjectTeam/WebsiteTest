@@ -1,0 +1,643 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.AxisDescription
+  commentId: T:Fusee.Engine.Common.AxisDescription
+  id: AxisDescription
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.AxisDescription.Bounded
+  - Fusee.Engine.Common.AxisDescription.Deadzone
+  - Fusee.Engine.Common.AxisDescription.Direction
+  - Fusee.Engine.Common.AxisDescription.Id
+  - Fusee.Engine.Common.AxisDescription.MaxValueOrAxis
+  - Fusee.Engine.Common.AxisDescription.MinValueOrAxis
+  - Fusee.Engine.Common.AxisDescription.Name
+  - Fusee.Engine.Common.AxisDescription.Nature
+  langs:
+  - csharp
+  - vb
+  name: AxisDescription
+  nameWithType: AxisDescription
+  fullName: Fusee.Engine.Common.AxisDescription
+  type: Struct
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AxisDescription
+    path: src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+    startLine: 115
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nA structure describing an input device&apos;s axis.\n"
+  example: []
+  syntax:
+    content: public struct AxisDescription
+    content.vb: Public Structure AxisDescription
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Fusee.Engine.Common.AxisDescription.Name
+  commentId: F:Fusee.Engine.Common.AxisDescription.Name
+  id: Name
+  parent: Fusee.Engine.Common.AxisDescription
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: AxisDescription.Name
+  fullName: Fusee.Engine.Common.AxisDescription.Name
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Name
+    path: src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+    startLine: 120
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe human readable name of the axis.\n"
+  example: []
+  syntax:
+    content: public string Name
+    return:
+      type: System.String
+    content.vb: Public Name As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.AxisDescription.Id
+  commentId: F:Fusee.Engine.Common.AxisDescription.Id
+  id: Id
+  parent: Fusee.Engine.Common.AxisDescription
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: AxisDescription.Id
+  fullName: Fusee.Engine.Common.AxisDescription.Id
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Id
+    path: src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+    startLine: 126
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe identifier of the axis. Use this identifier to query values.\nAn axis&apos; Id might be different than the order of occurrence (index) of the axis\nwhen enumerated from the device.\n"
+  example: []
+  syntax:
+    content: public int Id
+    return:
+      type: System.Int32
+    content.vb: Public Id As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.AxisDescription.Direction
+  commentId: F:Fusee.Engine.Common.AxisDescription.Direction
+  id: Direction
+  parent: Fusee.Engine.Common.AxisDescription
+  langs:
+  - csharp
+  - vb
+  name: Direction
+  nameWithType: AxisDescription.Direction
+  fullName: Fusee.Engine.Common.AxisDescription.Direction
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Direction
+    path: src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+    startLine: 130
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe direction of the axis (used with devices exhibiting two- or more-dimensional input such as joysticks on gamepads, mouse, etc).\n"
+  example: []
+  syntax:
+    content: public AxisDirection Direction
+    return:
+      type: Fusee.Engine.Common.AxisDirection
+    content.vb: Public Direction As AxisDirection
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.AxisDescription.Nature
+  commentId: F:Fusee.Engine.Common.AxisDescription.Nature
+  id: Nature
+  parent: Fusee.Engine.Common.AxisDescription
+  langs:
+  - csharp
+  - vb
+  name: Nature
+  nameWithType: AxisDescription.Nature
+  fullName: Fusee.Engine.Common.AxisDescription.Nature
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Nature
+    path: src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+    startLine: 134
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe nature of the axis.\n"
+  example: []
+  syntax:
+    content: public AxisNature Nature
+    return:
+      type: Fusee.Engine.Common.AxisNature
+    content.vb: Public Nature As AxisNature
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.AxisDescription.Bounded
+  commentId: F:Fusee.Engine.Common.AxisDescription.Bounded
+  id: Bounded
+  parent: Fusee.Engine.Common.AxisDescription
+  langs:
+  - csharp
+  - vb
+  name: Bounded
+  nameWithType: AxisDescription.Bounded
+  fullName: Fusee.Engine.Common.AxisDescription.Bounded
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Bounded
+    path: src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+    startLine: 140
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nIndicating if the axis&apos; values are within a defined range. Depending on this value \n<xref href=\"Fusee.Engine.Common.AxisDescription.MinValueOrAxis\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Fusee.Engine.Common.AxisDescription.MaxValueOrAxis\" data-throw-if-not-resolved=\"false\"></xref> contain either constant range bounds \nor other axes&apos; Ids delivering the (possibly changing) range values.\n"
+  example: []
+  syntax:
+    content: public AxisBoundedType Bounded
+    return:
+      type: Fusee.Engine.Common.AxisBoundedType
+    content.vb: Public Bounded As AxisBoundedType
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.AxisDescription.MinValueOrAxis
+  commentId: F:Fusee.Engine.Common.AxisDescription.MinValueOrAxis
+  id: MinValueOrAxis
+  parent: Fusee.Engine.Common.AxisDescription
+  langs:
+  - csharp
+  - vb
+  name: MinValueOrAxis
+  nameWithType: AxisDescription.MinValueOrAxis
+  fullName: Fusee.Engine.Common.AxisDescription.MinValueOrAxis
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MinValueOrAxis
+    path: src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+    startLine: 146
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe minimum value returned by the axis. If <xref href=\"Fusee.Engine.Common.AxisDescription.Bounded\" data-throw-if-not-resolved=\"false\"></xref> is <xref href=\"Fusee.Engine.Common.AxisBoundedType.Constant\" data-throw-if-not-resolved=\"false\"></xref> this field contains constant value.\nIf <xref href=\"Fusee.Engine.Common.AxisDescription.Bounded\" data-throw-if-not-resolved=\"false\"></xref> is <xref href=\"Fusee.Engine.Common.AxisBoundedType.OtherAxis\" data-throw-if-not-resolved=\"false\"></xref> this field contains the Id of the axis keeping the (possibly changing) minimum value.\nIn this case cast this value to integer before passing it to InputDevice methods.\n"
+  example: []
+  syntax:
+    content: public float MinValueOrAxis
+    return:
+      type: System.Single
+    content.vb: Public MinValueOrAxis As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.AxisDescription.MaxValueOrAxis
+  commentId: F:Fusee.Engine.Common.AxisDescription.MaxValueOrAxis
+  id: MaxValueOrAxis
+  parent: Fusee.Engine.Common.AxisDescription
+  langs:
+  - csharp
+  - vb
+  name: MaxValueOrAxis
+  nameWithType: AxisDescription.MaxValueOrAxis
+  fullName: Fusee.Engine.Common.AxisDescription.MaxValueOrAxis
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MaxValueOrAxis
+    path: src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+    startLine: 152
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe maximum value returned by the axis. If <xref href=\"Fusee.Engine.Common.AxisDescription.Bounded\" data-throw-if-not-resolved=\"false\"></xref> is <xref href=\"Fusee.Engine.Common.AxisBoundedType.Constant\" data-throw-if-not-resolved=\"false\"></xref> this field contains constant value.\nIf <xref href=\"Fusee.Engine.Common.AxisDescription.Bounded\" data-throw-if-not-resolved=\"false\"></xref> is <xref href=\"Fusee.Engine.Common.AxisBoundedType.OtherAxis\" data-throw-if-not-resolved=\"false\"></xref> this field contains the Id of the axis keeping the (possibly changing) maximum value.\nIn this case cast this value to integer before passing it to InputDevice methods.\n"
+  example: []
+  syntax:
+    content: public float MaxValueOrAxis
+    return:
+      type: System.Single
+    content.vb: Public MaxValueOrAxis As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.AxisDescription.Deadzone
+  commentId: F:Fusee.Engine.Common.AxisDescription.Deadzone
+  id: Deadzone
+  parent: Fusee.Engine.Common.AxisDescription
+  langs:
+  - csharp
+  - vb
+  name: Deadzone
+  nameWithType: AxisDescription.Deadzone
+  fullName: Fusee.Engine.Common.AxisDescription.Deadzone
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Deadzone
+    path: src/Fusee/src/Engine/Common/IInputDeviceImp.cs
+    startLine: 156
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe value at which the axis is assumed to be zero.\n"
+  example: []
+  syntax:
+    content: public float Deadzone
+    return:
+      type: System.Single
+    content.vb: Public Deadzone As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Engine.Common.AxisDirection
+  commentId: T:Fusee.Engine.Common.AxisDirection
+  parent: Fusee.Engine.Common
+  name: AxisDirection
+  nameWithType: AxisDirection
+  fullName: Fusee.Engine.Common.AxisDirection
+- uid: Fusee.Engine.Common.AxisNature
+  commentId: T:Fusee.Engine.Common.AxisNature
+  parent: Fusee.Engine.Common
+  name: AxisNature
+  nameWithType: AxisNature
+  fullName: Fusee.Engine.Common.AxisNature
+- uid: Fusee.Engine.Common.AxisDescription.MinValueOrAxis
+  commentId: F:Fusee.Engine.Common.AxisDescription.MinValueOrAxis
+  isExternal: true
+- uid: Fusee.Engine.Common.AxisDescription.MaxValueOrAxis
+  commentId: F:Fusee.Engine.Common.AxisDescription.MaxValueOrAxis
+  isExternal: true
+- uid: Fusee.Engine.Common.AxisBoundedType
+  commentId: T:Fusee.Engine.Common.AxisBoundedType
+  parent: Fusee.Engine.Common
+  name: AxisBoundedType
+  nameWithType: AxisBoundedType
+  fullName: Fusee.Engine.Common.AxisBoundedType
+- uid: Fusee.Engine.Common.AxisDescription.Bounded
+  commentId: F:Fusee.Engine.Common.AxisDescription.Bounded
+  isExternal: true
+- uid: Fusee.Engine.Common.AxisBoundedType.Constant
+  commentId: F:Fusee.Engine.Common.AxisBoundedType.Constant
+  isExternal: true
+- uid: Fusee.Engine.Common.AxisBoundedType.OtherAxis
+  commentId: F:Fusee.Engine.Common.AxisBoundedType.OtherAxis
+  isExternal: true
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

@@ -1,0 +1,1250 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Xene.Visitor`2
+  commentId: T:Fusee.Xene.Visitor`2
+  id: Visitor`2
+  parent: Fusee.Xene
+  children:
+  - Fusee.Xene.Visitor`2.CurrentComponent
+  - Fusee.Xene.Visitor`2.CurrentNode
+  - Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+  - Fusee.Xene.Visitor`2.EnumMoveNext
+  - Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+  - Fusee.Xene.Visitor`2.InitState
+  - Fusee.Xene.Visitor`2.PopState
+  - Fusee.Xene.Visitor`2.PushState
+  - Fusee.Xene.Visitor`2.Traverse(`0)
+  - Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+  - Fusee.Xene.Visitor`2.YieldEnumeration
+  - Fusee.Xene.Visitor`2.YieldOnCurrentComponent
+  - Fusee.Xene.Visitor`2.YieldOnCurrentNode
+  langs:
+  - csharp
+  - vb
+  name: Visitor<TNode, TComponent>
+  nameWithType: Visitor<TNode, TComponent>
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Visitor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Visitor
+    path: src/Fusee/src/Xene/Visitor.cs
+    startLine: 79
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nThis class tries to serve three goals\n<ol><li></li><li></li><li></li></ol>\n\nVisitors derived from this class may implement\ntheir own Visit methods for all kinds of scene graph elements. Visitor methods can be defined for scene nodes (although many implementations\nwill most likely NOT have a very big inheritance tree for nodes) as well as for scene components.\nA Visitor method can be any instance method (not static) taking one parameter either derived from <xref href=\"Fusee.Xene.INode\" data-throw-if-not-resolved=\"false\"></xref> or derived from\n<xref href=\"Fusee.Xene.IComponent\" data-throw-if-not-resolved=\"false\"></xref>. To mark such a method as a Visitor method it needs to be decorated with the <xref href=\"Fusee.Xene.VisitMethodAttribute\" data-throw-if-not-resolved=\"false\"></xref> \nattribute. Visitor methods can have arbitrary names and don&apos;t necessarily need to be virtual. \n"
+  example: []
+  syntax:
+    content: >-
+      public class Visitor<TNode, TComponent>
+
+          where TNode : class, INode where TComponent : class, IComponent
+    typeParameters:
+    - id: TNode
+    - id: TComponent
+    content.vb: Public Class Visitor(Of TNode As {Class, INode}, TComponent As {Class, IComponent})
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Fusee.Engine.Core.AABBCalculator
+  - Fusee.Engine.Core.OBBCalculator
+  - Fusee.Engine.Core.SceneRendererForward
+  - Fusee.Engine.GUI.SceneInteractionHandler
+  - Fusee.Xene.SceneFinderBase`3
+  - Fusee.Xene.ViseratorBase`3
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: Visitor(Of TNode, TComponent)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent)
+  name.vb: Visitor(Of TNode, TComponent)
+- uid: Fusee.Xene.Visitor`2.Traverse(`0)
+  commentId: M:Fusee.Xene.Visitor`2.Traverse(`0)
+  id: Traverse(`0)
+  parent: Fusee.Xene.Visitor`2
+  langs:
+  - csharp
+  - vb
+  name: Traverse(TNode)
+  nameWithType: Visitor<TNode, TComponent>.Traverse(TNode)
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.Traverse(TNode)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Visitor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Traverse
+    path: src/Fusee/src/Xene/Visitor.cs
+    startLine: 103
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nStart traversing a scene graph starting with the given root node. Performs a recursive depth-first \ntraversal from the specified root.\n"
+  example: []
+  syntax:
+    content: public void Traverse(TNode rootNode)
+    parameters:
+    - id: rootNode
+      type: '{TNode}'
+      description: The root node where to start the traversal.
+    content.vb: Public Sub Traverse(rootNode As TNode)
+  overload: Fusee.Xene.Visitor`2.Traverse*
+  nameWithType.vb: Visitor(Of TNode, TComponent).Traverse(TNode)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).Traverse(TNode)
+- uid: Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+  id: Traverse(System.Collections.Generic.IEnumerable{`0})
+  parent: Fusee.Xene.Visitor`2
+  langs:
+  - csharp
+  - vb
+  name: Traverse(IEnumerable<TNode>)
+  nameWithType: Visitor<TNode, TComponent>.Traverse(IEnumerable<TNode>)
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.Traverse(System.Collections.Generic.IEnumerable<TNode>)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Visitor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Traverse
+    path: src/Fusee/src/Xene/Visitor.cs
+    startLine: 122
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nStart traversing a list of nodes. Performs a recursive depth-first traversal \nover the list starting with the first node in the list.\n"
+  example: []
+  syntax:
+    content: public void Traverse(IEnumerable<TNode> children)
+    parameters:
+    - id: children
+      type: System.Collections.Generic.IEnumerable{{TNode}}
+      description: The list of nodes to traverse over.
+    content.vb: Public Sub Traverse(children As IEnumerable(Of TNode))
+  overload: Fusee.Xene.Visitor`2.Traverse*
+  nameWithType.vb: Visitor(Of TNode, TComponent).Traverse(IEnumerable(Of TNode))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).Traverse(System.Collections.Generic.IEnumerable(Of TNode))
+  name.vb: Traverse(IEnumerable(Of TNode))
+- uid: Fusee.Xene.Visitor`2.InitState
+  commentId: M:Fusee.Xene.Visitor`2.InitState
+  id: InitState
+  parent: Fusee.Xene.Visitor`2
+  langs:
+  - csharp
+  - vb
+  name: InitState()
+  nameWithType: Visitor<TNode, TComponent>.InitState()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.InitState()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Visitor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InitState
+    path: src/Fusee/src/Xene/Visitor.cs
+    startLine: 152
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nMethod is called when traversal starts to initialize the traversal state. Override this method in derived classes to initialize any state.\n"
+  example: []
+  syntax:
+    content: protected virtual void InitState()
+    content.vb: Protected Overridable Sub InitState
+  overload: Fusee.Xene.Visitor`2.InitState*
+  nameWithType.vb: Visitor(Of TNode, TComponent).InitState()
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).InitState()
+- uid: Fusee.Xene.Visitor`2.PushState
+  commentId: M:Fusee.Xene.Visitor`2.PushState
+  id: PushState
+  parent: Fusee.Xene.Visitor`2
+  langs:
+  - csharp
+  - vb
+  name: PushState()
+  nameWithType: Visitor<TNode, TComponent>.PushState()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.PushState()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Visitor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: PushState
+    path: src/Fusee/src/Xene/Visitor.cs
+    startLine: 160
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nMethod is called when going down one hierarchy level while traversing. Override this method to push any self-defined state.\n"
+  example: []
+  syntax:
+    content: protected virtual void PushState()
+    content.vb: Protected Overridable Sub PushState
+  overload: Fusee.Xene.Visitor`2.PushState*
+  nameWithType.vb: Visitor(Of TNode, TComponent).PushState()
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).PushState()
+- uid: Fusee.Xene.Visitor`2.PopState
+  commentId: M:Fusee.Xene.Visitor`2.PopState
+  id: PopState
+  parent: Fusee.Xene.Visitor`2
+  langs:
+  - csharp
+  - vb
+  name: PopState()
+  nameWithType: Visitor<TNode, TComponent>.PopState()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.PopState()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Visitor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: PopState
+    path: src/Fusee/src/Xene/Visitor.cs
+    startLine: 168
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nMethod is called when going up one hierarchy level while traversing. Override this method to perform pop on any self-defined state.\n"
+  example: []
+  syntax:
+    content: protected virtual void PopState()
+    content.vb: Protected Overridable Sub PopState
+  overload: Fusee.Xene.Visitor`2.PopState*
+  nameWithType.vb: Visitor(Of TNode, TComponent).PopState()
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).PopState()
+- uid: Fusee.Xene.Visitor`2.CurrentNode
+  commentId: P:Fusee.Xene.Visitor`2.CurrentNode
+  id: CurrentNode
+  parent: Fusee.Xene.Visitor`2
+  langs:
+  - csharp
+  - vb
+  name: CurrentNode
+  nameWithType: Visitor<TNode, TComponent>.CurrentNode
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.CurrentNode
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Visitor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CurrentNode
+    path: src/Fusee/src/Xene/Visitor.cs
+    startLine: 179
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nReturns currently visited node during a traversal.\n"
+  example: []
+  syntax:
+    content: protected TNode CurrentNode { get; }
+    parameters: []
+    return:
+      type: '{TNode}'
+      description: "\nThe current node.\n"
+    content.vb: Protected ReadOnly Property CurrentNode As TNode
+  overload: Fusee.Xene.Visitor`2.CurrentNode*
+  nameWithType.vb: Visitor(Of TNode, TComponent).CurrentNode
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).CurrentNode
+- uid: Fusee.Xene.Visitor`2.CurrentComponent
+  commentId: P:Fusee.Xene.Visitor`2.CurrentComponent
+  id: CurrentComponent
+  parent: Fusee.Xene.Visitor`2
+  langs:
+  - csharp
+  - vb
+  name: CurrentComponent
+  nameWithType: Visitor<TNode, TComponent>.CurrentComponent
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.CurrentComponent
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Visitor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CurrentComponent
+    path: src/Fusee/src/Xene/Visitor.cs
+    startLine: 187
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nReturns the currently visited component during a traversal.\n"
+  example: []
+  syntax:
+    content: protected TComponent CurrentComponent { get; }
+    parameters: []
+    return:
+      type: '{TComponent}'
+      description: "\nThe current component.\n"
+    content.vb: Protected ReadOnly Property CurrentComponent As TComponent
+  overload: Fusee.Xene.Visitor`2.CurrentComponent*
+  nameWithType.vb: Visitor(Of TNode, TComponent).CurrentComponent
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).CurrentComponent
+- uid: Fusee.Xene.Visitor`2.YieldOnCurrentNode
+  commentId: P:Fusee.Xene.Visitor`2.YieldOnCurrentNode
+  id: YieldOnCurrentNode
+  parent: Fusee.Xene.Visitor`2
+  langs:
+  - csharp
+  - vb
+  name: YieldOnCurrentNode
+  nameWithType: Visitor<TNode, TComponent>.YieldOnCurrentNode
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldOnCurrentNode
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Visitor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: YieldOnCurrentNode
+    path: src/Fusee/src/Xene/Visitor.cs
+    startLine: 198
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nCan be called in derived visitors. Set this property to true during traversals to make the visitor yield the current node when used as an enumerator.\n"
+  example: []
+  syntax:
+    content: protected bool YieldOnCurrentNode { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if the enumeration should yield the current node; otherwise, <code>false</code>.\n"
+    content.vb: Protected Property YieldOnCurrentNode As Boolean
+  overload: Fusee.Xene.Visitor`2.YieldOnCurrentNode*
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldOnCurrentNode
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldOnCurrentNode
+- uid: Fusee.Xene.Visitor`2.YieldOnCurrentComponent
+  commentId: P:Fusee.Xene.Visitor`2.YieldOnCurrentComponent
+  id: YieldOnCurrentComponent
+  parent: Fusee.Xene.Visitor`2
+  langs:
+  - csharp
+  - vb
+  name: YieldOnCurrentComponent
+  nameWithType: Visitor<TNode, TComponent>.YieldOnCurrentComponent
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldOnCurrentComponent
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Visitor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: YieldOnCurrentComponent
+    path: src/Fusee/src/Xene/Visitor.cs
+    startLine: 206
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nCan be called in derived visitors. Set this property to true during traversals to make the visitor yield the current component when used as an enumerator.\n"
+  example: []
+  syntax:
+    content: protected bool YieldOnCurrentComponent { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if the enumeration should yield the current component; otherwise, <code>false</code>.\n"
+    content.vb: Protected Property YieldOnCurrentComponent As Boolean
+  overload: Fusee.Xene.Visitor`2.YieldOnCurrentComponent*
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldOnCurrentComponent
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldOnCurrentComponent
+- uid: Fusee.Xene.Visitor`2.YieldEnumeration
+  commentId: P:Fusee.Xene.Visitor`2.YieldEnumeration
+  id: YieldEnumeration
+  parent: Fusee.Xene.Visitor`2
+  langs:
+  - csharp
+  - vb
+  name: YieldEnumeration
+  nameWithType: Visitor<TNode, TComponent>.YieldEnumeration
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldEnumeration
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Visitor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: YieldEnumeration
+    path: src/Fusee/src/Xene/Visitor.cs
+    startLine: 214
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nGets a value indicating whether the current enumeration should yield.\n"
+  example: []
+  syntax:
+    content: protected bool YieldEnumeration { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if the current enumeration should yield; otherwise, <code>false</code>.\n"
+    content.vb: Protected ReadOnly Property YieldEnumeration As Boolean
+  overload: Fusee.Xene.Visitor`2.YieldEnumeration*
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldEnumeration
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldEnumeration
+- uid: Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+  commentId: M:Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+  id: EnumInit(System.Collections.Generic.IEnumerator{`0})
+  parent: Fusee.Xene.Visitor`2
+  langs:
+  - csharp
+  - vb
+  name: EnumInit(IEnumerator<TNode>)
+  nameWithType: Visitor<TNode, TComponent>.EnumInit(IEnumerator<TNode>)
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumInit(System.Collections.Generic.IEnumerator<TNode>)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Visitor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: EnumInit
+    path: src/Fusee/src/Xene/Visitor.cs
+    startLine: 225
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nEnumerator Building Block to be called in derived Visitors acting as enumerators. Use this to \ninitialize the traversing enumeration on a list of (root) nodes.\n"
+  example: []
+  syntax:
+    content: protected void EnumInit(IEnumerator<TNode> nodes)
+    parameters:
+    - id: nodes
+      type: System.Collections.Generic.IEnumerator{{TNode}}
+      description: The list of nodes.
+    content.vb: Protected Sub EnumInit(nodes As IEnumerator(Of TNode))
+  overload: Fusee.Xene.Visitor`2.EnumInit*
+  nameWithType.vb: Visitor(Of TNode, TComponent).EnumInit(IEnumerator(Of TNode))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).EnumInit(System.Collections.Generic.IEnumerator(Of TNode))
+  name.vb: EnumInit(IEnumerator(Of TNode))
+- uid: Fusee.Xene.Visitor`2.EnumMoveNext
+  commentId: M:Fusee.Xene.Visitor`2.EnumMoveNext
+  id: EnumMoveNext
+  parent: Fusee.Xene.Visitor`2
+  langs:
+  - csharp
+  - vb
+  name: EnumMoveNext()
+  nameWithType: Visitor<TNode, TComponent>.EnumMoveNext()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumMoveNext()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Visitor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: EnumMoveNext
+    path: src/Fusee/src/Xene/Visitor.cs
+    startLine: 255
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nThis method implements a re-entrant (in terms of yield, not multi-threading) non-recursive traversal over combined node and component trees.\nCall this method in derived classes implementing enumerators, like in the various find extension methods or the <xref href=\"Fusee.Xene.Viserator%604\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: protected bool EnumMoveNext()
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the enumerator was successfully advanced to the next element; <code>false</code> if the enumerator has passed the end of node-component-tree.
+    content.vb: Protected Function EnumMoveNext As Boolean
+  overload: Fusee.Xene.Visitor`2.EnumMoveNext*
+  nameWithType.vb: Visitor(Of TNode, TComponent).EnumMoveNext()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).EnumMoveNext()
+- uid: Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+  commentId: M:Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+  id: EnumMoveNextNoComponent
+  parent: Fusee.Xene.Visitor`2
+  langs:
+  - csharp
+  - vb
+  name: EnumMoveNextNoComponent()
+  nameWithType: Visitor<TNode, TComponent>.EnumMoveNextNoComponent()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumMoveNextNoComponent()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Visitor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: EnumMoveNextNoComponent
+    path: src/Fusee/src/Xene/Visitor.cs
+    startLine: 339
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nContinue a currently active enumeration. Call all registered Visit methods. Visitor methods may set <xref href=\"Fusee.Xene.Visitor%602.YieldOnCurrentComponent\" data-throw-if-not-resolved=\"false\"></xref>\nor <xref href=\"Fusee.Xene.Visitor%602.YieldOnCurrentNode\" data-throw-if-not-resolved=\"false\"></xref> to true to signal the enumeration to yield.\n"
+  example: []
+  syntax:
+    content: protected bool EnumMoveNextNoComponent()
+    return:
+      type: System.Boolean
+      description: true if the enumeration is not finished yet (i.e. if components/nodes are still unvisited). false otherwise.
+    content.vb: Protected Function EnumMoveNextNoComponent As Boolean
+  overload: Fusee.Xene.Visitor`2.EnumMoveNextNoComponent*
+  nameWithType.vb: Visitor(Of TNode, TComponent).EnumMoveNextNoComponent()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).EnumMoveNextNoComponent()
+references:
+- uid: Fusee.Xene.INode
+  commentId: T:Fusee.Xene.INode
+  parent: Fusee.Xene
+  name: INode
+  nameWithType: INode
+  fullName: Fusee.Xene.INode
+- uid: Fusee.Xene.IComponent
+  commentId: T:Fusee.Xene.IComponent
+  parent: Fusee.Xene
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Fusee.Xene.IComponent
+- uid: Fusee.Xene.VisitMethodAttribute
+  commentId: T:Fusee.Xene.VisitMethodAttribute
+  name: VisitMethodAttribute
+  nameWithType: VisitMethodAttribute
+  fullName: Fusee.Xene.VisitMethodAttribute
+- uid: Fusee.Xene
+  commentId: N:Fusee.Xene
+  name: Fusee.Xene
+  nameWithType: Fusee.Xene
+  fullName: Fusee.Xene
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Xene.Visitor`2.Traverse*
+  commentId: Overload:Fusee.Xene.Visitor`2.Traverse
+  name: Traverse
+  nameWithType: Visitor<TNode, TComponent>.Traverse
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.Traverse
+  nameWithType.vb: Visitor(Of TNode, TComponent).Traverse
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).Traverse
+- uid: '{TNode}'
+  commentId: '!:TNode'
+  definition: TNode
+  name: TNode
+  nameWithType: TNode
+  fullName: TNode
+- uid: TNode
+  name: TNode
+  nameWithType: TNode
+  fullName: TNode
+- uid: System.Collections.Generic.IEnumerable{{TNode}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<TNode>
+  nameWithType: IEnumerable<TNode>
+  fullName: System.Collections.Generic.IEnumerable<TNode>
+  nameWithType.vb: IEnumerable(Of TNode)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TNode)
+  name.vb: IEnumerable(Of TNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Fusee.Xene.Visitor`2.InitState*
+  commentId: Overload:Fusee.Xene.Visitor`2.InitState
+  name: InitState
+  nameWithType: Visitor<TNode, TComponent>.InitState
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.InitState
+  nameWithType.vb: Visitor(Of TNode, TComponent).InitState
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).InitState
+- uid: Fusee.Xene.Visitor`2.PushState*
+  commentId: Overload:Fusee.Xene.Visitor`2.PushState
+  name: PushState
+  nameWithType: Visitor<TNode, TComponent>.PushState
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.PushState
+  nameWithType.vb: Visitor(Of TNode, TComponent).PushState
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).PushState
+- uid: Fusee.Xene.Visitor`2.PopState*
+  commentId: Overload:Fusee.Xene.Visitor`2.PopState
+  name: PopState
+  nameWithType: Visitor<TNode, TComponent>.PopState
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.PopState
+  nameWithType.vb: Visitor(Of TNode, TComponent).PopState
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).PopState
+- uid: Fusee.Xene.Visitor`2.CurrentNode*
+  commentId: Overload:Fusee.Xene.Visitor`2.CurrentNode
+  name: CurrentNode
+  nameWithType: Visitor<TNode, TComponent>.CurrentNode
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.CurrentNode
+  nameWithType.vb: Visitor(Of TNode, TComponent).CurrentNode
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).CurrentNode
+- uid: Fusee.Xene.Visitor`2.CurrentComponent*
+  commentId: Overload:Fusee.Xene.Visitor`2.CurrentComponent
+  name: CurrentComponent
+  nameWithType: Visitor<TNode, TComponent>.CurrentComponent
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.CurrentComponent
+  nameWithType.vb: Visitor(Of TNode, TComponent).CurrentComponent
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).CurrentComponent
+- uid: '{TComponent}'
+  commentId: '!:TComponent'
+  definition: TComponent
+  name: TComponent
+  nameWithType: TComponent
+  fullName: TComponent
+- uid: TComponent
+  commentId: '!:TComponent'
+  name: TComponent
+  nameWithType: TComponent
+  fullName: TComponent
+- uid: Fusee.Xene.Visitor`2.YieldOnCurrentNode*
+  commentId: Overload:Fusee.Xene.Visitor`2.YieldOnCurrentNode
+  name: YieldOnCurrentNode
+  nameWithType: Visitor<TNode, TComponent>.YieldOnCurrentNode
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldOnCurrentNode
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldOnCurrentNode
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldOnCurrentNode
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Xene.Visitor`2.YieldOnCurrentComponent*
+  commentId: Overload:Fusee.Xene.Visitor`2.YieldOnCurrentComponent
+  name: YieldOnCurrentComponent
+  nameWithType: Visitor<TNode, TComponent>.YieldOnCurrentComponent
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldOnCurrentComponent
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldOnCurrentComponent
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldOnCurrentComponent
+- uid: Fusee.Xene.Visitor`2.YieldEnumeration*
+  commentId: Overload:Fusee.Xene.Visitor`2.YieldEnumeration
+  name: YieldEnumeration
+  nameWithType: Visitor<TNode, TComponent>.YieldEnumeration
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldEnumeration
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldEnumeration
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldEnumeration
+- uid: Fusee.Xene.Visitor`2.EnumInit*
+  commentId: Overload:Fusee.Xene.Visitor`2.EnumInit
+  name: EnumInit
+  nameWithType: Visitor<TNode, TComponent>.EnumInit
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumInit
+  nameWithType.vb: Visitor(Of TNode, TComponent).EnumInit
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).EnumInit
+- uid: System.Collections.Generic.IEnumerator{{TNode}}
+  commentId: T:System.Collections.Generic.IEnumerator{`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<TNode>
+  nameWithType: IEnumerator<TNode>
+  fullName: System.Collections.Generic.IEnumerator<TNode>
+  nameWithType.vb: IEnumerator(Of TNode)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of TNode)
+  name.vb: IEnumerator(Of TNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Viserator`4
+  commentId: T:Fusee.Xene.Viserator`4
+  name: Viserator<TItem, TState, TNode, TComponent>
+  nameWithType: Viserator<TItem, TState, TNode, TComponent>
+  fullName: Fusee.Xene.Viserator<TItem, TState, TNode, TComponent>
+  nameWithType.vb: Viserator(Of TItem, TState, TNode, TComponent)
+  fullName.vb: Fusee.Xene.Viserator(Of TItem, TState, TNode, TComponent)
+  name.vb: Viserator(Of TItem, TState, TNode, TComponent)
+  spec.csharp:
+  - uid: Fusee.Xene.Viserator`4
+    name: Viserator
+    nameWithType: Viserator
+    fullName: Fusee.Xene.Viserator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TItem
+    nameWithType: TItem
+    fullName: TItem
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TState
+    nameWithType: TState
+    fullName: TState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.Viserator`4
+    name: Viserator
+    nameWithType: Viserator
+    fullName: Fusee.Xene.Viserator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TItem
+    nameWithType: TItem
+    fullName: TItem
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TState
+    nameWithType: TState
+    fullName: TState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor`2.EnumMoveNext*
+  commentId: Overload:Fusee.Xene.Visitor`2.EnumMoveNext
+  name: EnumMoveNext
+  nameWithType: Visitor<TNode, TComponent>.EnumMoveNext
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumMoveNext
+  nameWithType.vb: Visitor(Of TNode, TComponent).EnumMoveNext
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).EnumMoveNext
+- uid: Fusee.Xene.Visitor`2.YieldOnCurrentComponent
+  commentId: P:Fusee.Xene.Visitor`2.YieldOnCurrentComponent
+  name: YieldOnCurrentComponent
+  nameWithType: Visitor<TNode, TComponent>.YieldOnCurrentComponent
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldOnCurrentComponent
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldOnCurrentComponent
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldOnCurrentComponent
+- uid: Fusee.Xene.Visitor`2.YieldOnCurrentNode
+  commentId: P:Fusee.Xene.Visitor`2.YieldOnCurrentNode
+  name: YieldOnCurrentNode
+  nameWithType: Visitor<TNode, TComponent>.YieldOnCurrentNode
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldOnCurrentNode
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldOnCurrentNode
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldOnCurrentNode
+- uid: Fusee.Xene.Visitor`2.EnumMoveNextNoComponent*
+  commentId: Overload:Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+  name: EnumMoveNextNoComponent
+  nameWithType: Visitor<TNode, TComponent>.EnumMoveNextNoComponent
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumMoveNextNoComponent
+  nameWithType.vb: Visitor(Of TNode, TComponent).EnumMoveNextNoComponent
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).EnumMoveNextNoComponent

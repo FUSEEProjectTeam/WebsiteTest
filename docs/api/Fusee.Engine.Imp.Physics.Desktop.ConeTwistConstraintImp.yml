@@ -1,0 +1,2557 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  commentId: T:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  id: ConeTwistConstraintImp
+  parent: Fusee.Engine.Imp.Physics.Desktop
+  children:
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.AFrame
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.BFrame
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.CalcAngleInfo
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.CalcAngleInfo2(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.EnableMotor(System.Boolean)
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FixThresh
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FrameOffsetA
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FrameOffsetB
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.GetPointForAngle(System.Single,System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.GetUid
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.IsPastSwingLimit
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.RigidBodyA
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.RigidBodyB
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetAngularOnly(System.Boolean)
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetDamping(System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetLimit(System.Int32,System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetLimit(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMaxMotorImpulse(System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMaxMotorImpulseNormalized(System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMotorTarget(Fusee.Math.Core.Quaternion)
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Fusee.Math.Core.Quaternion)
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SolveSwingLimit
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SolveTwistLimit
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SwingSpan1
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SwingSpan2
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistAngle
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistLimitSign
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistSpan
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.UpdateRhs(System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.UserObject
+  langs:
+  - csharp
+  - vb
+  name: ConeTwistConstraintImp
+  nameWithType: ConeTwistConstraintImp
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ConeTwistConstraintImp
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 10
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nImplementation of the <xref href=\"Fusee.Engine.Common.IConeTwistConstraintImp\" data-throw-if-not-resolved=\"false\"></xref> interface using the bullet physics engine.\n"
+  example: []
+  syntax:
+    content: 'public class ConeTwistConstraintImp : IConeTwistConstraintImp, IConstraintImp'
+    content.vb: >-
+      Public Class ConeTwistConstraintImp
+
+          Implements IConeTwistConstraintImp, IConstraintImp
+  inheritance:
+  - System.Object
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp
+  - Fusee.Engine.Common.IConstraintImp
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.AFrame
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.AFrame
+  id: AFrame
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: AFrame
+  nameWithType: ConeTwistConstraintImp.AFrame
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.AFrame
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AFrame
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 20
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets a frame.\n"
+  example: []
+  syntax:
+    content: public float4x4 AFrame { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\na frame.\n"
+    content.vb: Public ReadOnly Property AFrame As float4x4
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.AFrame*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.AFrame
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.BFrame
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.BFrame
+  id: BFrame
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: BFrame
+  nameWithType: ConeTwistConstraintImp.BFrame
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.BFrame
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: BFrame
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 34
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the b frame.\n"
+  example: []
+  syntax:
+    content: public float4x4 BFrame { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe b frame.\n"
+    content.vb: Public ReadOnly Property BFrame As float4x4
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.BFrame*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.BFrame
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.CalcAngleInfo
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.CalcAngleInfo
+  id: CalcAngleInfo
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: CalcAngleInfo()
+  nameWithType: ConeTwistConstraintImp.CalcAngleInfo()
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.CalcAngleInfo()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CalcAngleInfo
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 46
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nCalculates the angle information.\n"
+  example: []
+  syntax:
+    content: public void CalcAngleInfo()
+    content.vb: Public Sub CalcAngleInfo
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.CalcAngleInfo*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.CalcAngleInfo2(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.CalcAngleInfo2(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  id: CalcAngleInfo2(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: CalcAngleInfo2(float4x4, float4x4, float4x4, float4x4)
+  nameWithType: ConeTwistConstraintImp.CalcAngleInfo2(float4x4, float4x4, float4x4, float4x4)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.CalcAngleInfo2(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CalcAngleInfo2
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 57
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nCalculates the angle info2.\n"
+  example: []
+  syntax:
+    content: public void CalcAngleInfo2(float4x4 transA, float4x4 transB, float4x4 invInertiaWorldA, float4x4 invInertiaWorldB)
+    parameters:
+    - id: transA
+      type: Fusee.Math.Core.float4x4
+      description: The trans a.
+    - id: transB
+      type: Fusee.Math.Core.float4x4
+      description: The trans b.
+    - id: invInertiaWorldA
+      type: Fusee.Math.Core.float4x4
+      description: The invert inertia world a.
+    - id: invInertiaWorldB
+      type: Fusee.Math.Core.float4x4
+      description: The invert inertia world b.
+    content.vb: Public Sub CalcAngleInfo2(transA As float4x4, transB As float4x4, invInertiaWorldA As float4x4, invInertiaWorldB As float4x4)
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.CalcAngleInfo2*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.EnableMotor(System.Boolean)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.EnableMotor(System.Boolean)
+  id: EnableMotor(System.Boolean)
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: EnableMotor(Boolean)
+  nameWithType: ConeTwistConstraintImp.EnableMotor(Boolean)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.EnableMotor(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: EnableMotor
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 66
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nEnables the motor.\n"
+  example: []
+  syntax:
+    content: public void EnableMotor(bool b)
+    parameters:
+    - id: b
+      type: System.Boolean
+      description: if set to <code>true</code> [b].
+    content.vb: Public Sub EnableMotor(b As Boolean)
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.EnableMotor*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor(System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FixThresh
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FixThresh
+  id: FixThresh
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: FixThresh
+  nameWithType: ConeTwistConstraintImp.FixThresh
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FixThresh
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FixThresh
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 77
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets and sets the fix thresh.\n"
+  example: []
+  syntax:
+    content: public float FixThresh { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe fix thresh.\n"
+    content.vb: Public Property FixThresh As Single
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FixThresh*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.FixThresh
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FrameOffsetA
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FrameOffsetA
+  id: FrameOffsetA
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: FrameOffsetA
+  nameWithType: ConeTwistConstraintImp.FrameOffsetA
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FrameOffsetA
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FrameOffsetA
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 97
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the frame offset a.\n"
+  example: []
+  syntax:
+    content: public float4x4 FrameOffsetA { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe frame offset a.\n"
+    content.vb: Public ReadOnly Property FrameOffsetA As float4x4
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FrameOffsetA*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetA
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FrameOffsetB
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FrameOffsetB
+  id: FrameOffsetB
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: FrameOffsetB
+  nameWithType: ConeTwistConstraintImp.FrameOffsetB
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FrameOffsetB
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FrameOffsetB
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 111
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the frame offset b.\n"
+  example: []
+  syntax:
+    content: public float4x4 FrameOffsetB { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe frame offset b.\n"
+    content.vb: Public ReadOnly Property FrameOffsetB As float4x4
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FrameOffsetB*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetB
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.GetPointForAngle(System.Single,System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.GetPointForAngle(System.Single,System.Single)
+  id: GetPointForAngle(System.Single,System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: GetPointForAngle(Single, Single)
+  nameWithType: ConeTwistConstraintImp.GetPointForAngle(Single, Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.GetPointForAngle(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetPointForAngle
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 126
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the point for angle.\n"
+  example: []
+  syntax:
+    content: public float3 GetPointForAngle(float fAngleInRadius, float fLength)
+    parameters:
+    - id: fAngleInRadius
+      type: System.Single
+      description: The f angle in radius.
+    - id: fLength
+      type: System.Single
+      description: Length of the f.
+    return:
+      type: Fusee.Math.Core.float3
+      description: ''
+    content.vb: Public Function GetPointForAngle(fAngleInRadius As Single, fLength As Single) As float3
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.GetPointForAngle*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.GetPointForAngle(System.Single,System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.IsPastSwingLimit
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.IsPastSwingLimit
+  id: IsPastSwingLimit
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: IsPastSwingLimit
+  nameWithType: ConeTwistConstraintImp.IsPastSwingLimit
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.IsPastSwingLimit
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IsPastSwingLimit
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 138
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets a value indicating whether this instance is past swing limit.\n"
+  example: []
+  syntax:
+    content: public bool IsPastSwingLimit { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this instance is past swing limit; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property IsPastSwingLimit As Boolean
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.IsPastSwingLimit*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.IsPastSwingLimit
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetAngularOnly(System.Boolean)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetAngularOnly(System.Boolean)
+  id: SetAngularOnly(System.Boolean)
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetAngularOnly(Boolean)
+  nameWithType: ConeTwistConstraintImp.SetAngularOnly(Boolean)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetAngularOnly(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetAngularOnly
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 151
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nSets the angular only.\n"
+  example: []
+  syntax:
+    content: public void SetAngularOnly(bool angularOnly)
+    parameters:
+    - id: angularOnly
+      type: System.Boolean
+      description: if set to <code>true</code> [angular only].
+    content.vb: Public Sub SetAngularOnly(angularOnly As Boolean)
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetAngularOnly*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SetAngularOnly(System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetDamping(System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetDamping(System.Single)
+  id: SetDamping(System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetDamping(Single)
+  nameWithType: ConeTwistConstraintImp.SetDamping(Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetDamping(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetDamping
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 159
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nSets the damping.\n"
+  example: []
+  syntax:
+    content: public void SetDamping(float damping)
+    parameters:
+    - id: damping
+      type: System.Single
+      description: The damping.
+    content.vb: Public Sub SetDamping(damping As Single)
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetDamping*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SetDamping(System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetLimit(System.Int32,System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetLimit(System.Int32,System.Single)
+  id: SetLimit(System.Int32,System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetLimit(Int32, Single)
+  nameWithType: ConeTwistConstraintImp.SetLimit(Int32, Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetLimit(System.Int32, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetLimit
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 168
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nSets the limit.\n"
+  example: []
+  syntax:
+    content: public void SetLimit(int limitIndex, float limitValue)
+    parameters:
+    - id: limitIndex
+      type: System.Int32
+      description: Index of the limit.
+    - id: limitValue
+      type: System.Single
+      description: The limit value.
+    content.vb: Public Sub SetLimit(limitIndex As Integer, limitValue As Single)
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetLimit*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Int32,System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetLimit(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetLimit(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: SetLimit(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetLimit(Single, Single, Single, Single, Single, Single)
+  nameWithType: ConeTwistConstraintImp.SetLimit(Single, Single, Single, Single, Single, Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetLimit(System.Single, System.Single, System.Single, System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetLimit
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 181
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nSets the limit.\n"
+  example: []
+  syntax:
+    content: public void SetLimit(float swingSpan1, float swingSpan2, float twistSpan, float softness, float biasFactor, float relaxationFactor)
+    parameters:
+    - id: swingSpan1
+      type: System.Single
+      description: The swing span1.
+    - id: swingSpan2
+      type: System.Single
+      description: The swing span2.
+    - id: twistSpan
+      type: System.Single
+      description: The twist span.
+    - id: softness
+      type: System.Single
+      description: The softness.
+    - id: biasFactor
+      type: System.Single
+      description: The bias factor.
+    - id: relaxationFactor
+      type: System.Single
+      description: The relaxation factor.
+    content.vb: Public Sub SetLimit(swingSpan1 As Single, swingSpan2 As Single, twistSpan As Single, softness As Single, biasFactor As Single, relaxationFactor As Single)
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetLimit*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMaxMotorImpulse(System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMaxMotorImpulse(System.Single)
+  id: SetMaxMotorImpulse(System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetMaxMotorImpulse(Single)
+  nameWithType: ConeTwistConstraintImp.SetMaxMotorImpulse(Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMaxMotorImpulse(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetMaxMotorImpulse
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 190
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nSets the maximum motor impulse.\n"
+  example: []
+  syntax:
+    content: public void SetMaxMotorImpulse(float maxMotorImpulse)
+    parameters:
+    - id: maxMotorImpulse
+      type: System.Single
+      description: The maximum motor impulse.
+    content.vb: Public Sub SetMaxMotorImpulse(maxMotorImpulse As Single)
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMaxMotorImpulse*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulse(System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMaxMotorImpulseNormalized(System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMaxMotorImpulseNormalized(System.Single)
+  id: SetMaxMotorImpulseNormalized(System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetMaxMotorImpulseNormalized(Single)
+  nameWithType: ConeTwistConstraintImp.SetMaxMotorImpulseNormalized(Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMaxMotorImpulseNormalized(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetMaxMotorImpulseNormalized
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 198
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nSets the maximum motor impulse normalized.\n"
+  example: []
+  syntax:
+    content: public void SetMaxMotorImpulseNormalized(float maxMotorImpulse)
+    parameters:
+    - id: maxMotorImpulse
+      type: System.Single
+      description: The maximum motor impulse.
+    content.vb: Public Sub SetMaxMotorImpulseNormalized(maxMotorImpulse As Single)
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMaxMotorImpulseNormalized*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulseNormalized(System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMotorTarget(Fusee.Math.Core.Quaternion)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMotorTarget(Fusee.Math.Core.Quaternion)
+  id: SetMotorTarget(Fusee.Math.Core.Quaternion)
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetMotorTarget(Quaternion)
+  nameWithType: ConeTwistConstraintImp.SetMotorTarget(Quaternion)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMotorTarget(Fusee.Math.Core.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetMotorTarget
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 207
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nSets the motor target.\n"
+  example: []
+  syntax:
+    content: public void SetMotorTarget(Quaternion q)
+    parameters:
+    - id: q
+      type: Fusee.Math.Core.Quaternion
+      description: The q.
+    content.vb: Public Sub SetMotorTarget(q As Quaternion)
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMotorTarget*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTarget(Fusee.Math.Core.Quaternion)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Fusee.Math.Core.Quaternion)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Fusee.Math.Core.Quaternion)
+  id: SetMotorTargetInConstraintSpace(Fusee.Math.Core.Quaternion)
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetMotorTargetInConstraintSpace(Quaternion)
+  nameWithType: ConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Quaternion)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Fusee.Math.Core.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetMotorTargetInConstraintSpace
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 215
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nSets the motor target in constraint space.\n"
+  example: []
+  syntax:
+    content: public void SetMotorTargetInConstraintSpace(Quaternion q)
+    parameters:
+    - id: q
+      type: Fusee.Math.Core.Quaternion
+      description: The q.
+    content.vb: Public Sub SetMotorTargetInConstraintSpace(q As Quaternion)
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMotorTargetInConstraintSpace*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Fusee.Math.Core.Quaternion)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SolveSwingLimit
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SolveSwingLimit
+  id: SolveSwingLimit
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SolveSwingLimit
+  nameWithType: ConeTwistConstraintImp.SolveSwingLimit
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SolveSwingLimit
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SolveSwingLimit
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 226
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the solve swing limit.\n"
+  example: []
+  syntax:
+    content: public int SolveSwingLimit { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe solve swing limit.\n"
+    content.vb: Public ReadOnly Property SolveSwingLimit As Integer
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SolveSwingLimit*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SolveSwingLimit
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SolveTwistLimit
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SolveTwistLimit
+  id: SolveTwistLimit
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SolveTwistLimit
+  nameWithType: ConeTwistConstraintImp.SolveTwistLimit
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SolveTwistLimit
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SolveTwistLimit
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 240
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the solve twist limit.\n"
+  example: []
+  syntax:
+    content: public int SolveTwistLimit { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe solve twist limit.\n"
+    content.vb: Public ReadOnly Property SolveTwistLimit As Integer
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SolveTwistLimit*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SolveTwistLimit
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SwingSpan1
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SwingSpan1
+  id: SwingSpan1
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SwingSpan1
+  nameWithType: ConeTwistConstraintImp.SwingSpan1
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SwingSpan1
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SwingSpan1
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 255
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the swing span1.\n"
+  example: []
+  syntax:
+    content: public float SwingSpan1 { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe swing span1.\n"
+    content.vb: Public ReadOnly Property SwingSpan1 As Single
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SwingSpan1*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan1
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SwingSpan2
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SwingSpan2
+  id: SwingSpan2
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SwingSpan2
+  nameWithType: ConeTwistConstraintImp.SwingSpan2
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SwingSpan2
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SwingSpan2
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 269
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the swing span2.\n"
+  example: []
+  syntax:
+    content: public float SwingSpan2 { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe swing span2.\n"
+    content.vb: Public ReadOnly Property SwingSpan2 As Single
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SwingSpan2*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan2
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistAngle
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistAngle
+  id: TwistAngle
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: TwistAngle
+  nameWithType: ConeTwistConstraintImp.TwistAngle
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistAngle
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TwistAngle
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 284
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the twist angle.\n"
+  example: []
+  syntax:
+    content: public float TwistAngle { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe twist angle.\n"
+    content.vb: Public ReadOnly Property TwistAngle As Single
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistAngle*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.TwistAngle
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistLimitSign
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistLimitSign
+  id: TwistLimitSign
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: TwistLimitSign
+  nameWithType: ConeTwistConstraintImp.TwistLimitSign
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistLimitSign
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TwistLimitSign
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 298
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the twist limit sign.\n"
+  example: []
+  syntax:
+    content: public float TwistLimitSign { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe twist limit sign.\n"
+    content.vb: Public ReadOnly Property TwistLimitSign As Single
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistLimitSign*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.TwistLimitSign
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistSpan
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistSpan
+  id: TwistSpan
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: TwistSpan
+  nameWithType: ConeTwistConstraintImp.TwistSpan
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistSpan
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TwistSpan
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 312
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the twist span.\n"
+  example: []
+  syntax:
+    content: public float TwistSpan { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe twist span.\n"
+    content.vb: Public ReadOnly Property TwistSpan As Single
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistSpan*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.TwistSpan
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.UpdateRhs(System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.UpdateRhs(System.Single)
+  id: UpdateRhs(System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: UpdateRhs(Single)
+  nameWithType: ConeTwistConstraintImp.UpdateRhs(Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.UpdateRhs(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: UpdateRhs
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 325
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nUpdates the RHS.\n"
+  example: []
+  syntax:
+    content: public void UpdateRhs(float timeStep)
+    parameters:
+    - id: timeStep
+      type: System.Single
+      description: The time step.
+    content.vb: Public Sub UpdateRhs(timeStep As Single)
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.UpdateRhs*
+  implements:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.UpdateRhs(System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.RigidBodyA
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.RigidBodyA
+  id: RigidBodyA
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: RigidBodyA
+  nameWithType: ConeTwistConstraintImp.RigidBodyA
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.RigidBodyA
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RigidBodyA
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 337
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the rigid body a.\n"
+  example: []
+  syntax:
+    content: public IRigidBodyImp RigidBodyA { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: "\nThe rigid body a.\n"
+    content.vb: Public ReadOnly Property RigidBodyA As IRigidBodyImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.RigidBodyA*
+  implements:
+  - Fusee.Engine.Common.IConstraintImp.RigidBodyA
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.RigidBodyB
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.RigidBodyB
+  id: RigidBodyB
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: RigidBodyB
+  nameWithType: ConeTwistConstraintImp.RigidBodyB
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.RigidBodyB
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RigidBodyB
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 351
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the rigid body b.\n"
+  example: []
+  syntax:
+    content: public IRigidBodyImp RigidBodyB { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: "\nThe rigid body b.\n"
+    content.vb: Public ReadOnly Property RigidBodyB As IRigidBodyImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.RigidBodyB*
+  implements:
+  - Fusee.Engine.Common.IConstraintImp.RigidBodyB
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.GetUid
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.GetUid
+  id: GetUid
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: GetUid()
+  nameWithType: ConeTwistConstraintImp.GetUid()
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.GetUid()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetUid
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 363
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the uid.\n"
+  example: []
+  syntax:
+    content: public int GetUid()
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function GetUid As Integer
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.GetUid*
+  implements:
+  - Fusee.Engine.Common.IConstraintImp.GetUid
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.UserObject
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.UserObject
+  id: UserObject
+  parent: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: UserObject
+  nameWithType: ConeTwistConstraintImp.UserObject
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.UserObject
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: UserObject
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/ConeTwistConstraintImp.cs
+    startLine: 376
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets and sets the user object.\n"
+  example: []
+  syntax:
+    content: public object UserObject { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+      description: "\nThe user object.\n"
+    content.vb: Public Property UserObject As Object
+  overload: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.UserObject*
+  implements:
+  - Fusee.Engine.Common.IConstraintImp.UserObject
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp
+  commentId: T:Fusee.Engine.Common.IConeTwistConstraintImp
+  parent: Fusee.Engine.Common
+  name: IConeTwistConstraintImp
+  nameWithType: IConeTwistConstraintImp
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp
+- uid: Fusee.Engine.Imp.Physics.Desktop
+  commentId: N:Fusee.Engine.Imp.Physics.Desktop
+  name: Fusee.Engine.Imp.Physics.Desktop
+  nameWithType: Fusee.Engine.Imp.Physics.Desktop
+  fullName: Fusee.Engine.Imp.Physics.Desktop
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Common.IConstraintImp
+  commentId: T:Fusee.Engine.Common.IConstraintImp
+  parent: Fusee.Engine.Common
+  name: IConstraintImp
+  nameWithType: IConstraintImp
+  fullName: Fusee.Engine.Common.IConstraintImp
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.AFrame*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.AFrame
+  name: AFrame
+  nameWithType: ConeTwistConstraintImp.AFrame
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.AFrame
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.AFrame
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.AFrame
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: AFrame
+  nameWithType: IConeTwistConstraintImp.AFrame
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.AFrame
+- uid: Fusee.Math.Core.float4x4
+  commentId: T:Fusee.Math.Core.float4x4
+  parent: Fusee.Math.Core
+  name: float4x4
+  nameWithType: float4x4
+  fullName: Fusee.Math.Core.float4x4
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.BFrame*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.BFrame
+  name: BFrame
+  nameWithType: ConeTwistConstraintImp.BFrame
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.BFrame
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.BFrame
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.BFrame
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: BFrame
+  nameWithType: IConeTwistConstraintImp.BFrame
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.BFrame
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.CalcAngleInfo*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.CalcAngleInfo
+  name: CalcAngleInfo
+  nameWithType: ConeTwistConstraintImp.CalcAngleInfo
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.CalcAngleInfo
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: CalcAngleInfo()
+  nameWithType: IConeTwistConstraintImp.CalcAngleInfo()
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo
+    name: CalcAngleInfo
+    nameWithType: IConeTwistConstraintImp.CalcAngleInfo
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo
+    name: CalcAngleInfo
+    nameWithType: IConeTwistConstraintImp.CalcAngleInfo
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.CalcAngleInfo2*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.CalcAngleInfo2
+  name: CalcAngleInfo2
+  nameWithType: ConeTwistConstraintImp.CalcAngleInfo2
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.CalcAngleInfo2
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: CalcAngleInfo2(float4x4, float4x4, float4x4, float4x4)
+  nameWithType: IConeTwistConstraintImp.CalcAngleInfo2(float4x4, float4x4, float4x4, float4x4)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+    name: CalcAngleInfo2
+    nameWithType: IConeTwistConstraintImp.CalcAngleInfo2
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+    name: CalcAngleInfo2
+    nameWithType: IConeTwistConstraintImp.CalcAngleInfo2
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.EnableMotor*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.EnableMotor
+  name: EnableMotor
+  nameWithType: ConeTwistConstraintImp.EnableMotor
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.EnableMotor
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor(System.Boolean)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor(System.Boolean)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  isExternal: true
+  name: EnableMotor(Boolean)
+  nameWithType: IConeTwistConstraintImp.EnableMotor(Boolean)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor(System.Boolean)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor(System.Boolean)
+    name: EnableMotor
+    nameWithType: IConeTwistConstraintImp.EnableMotor
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor(System.Boolean)
+    name: EnableMotor
+    nameWithType: IConeTwistConstraintImp.EnableMotor
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FixThresh*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FixThresh
+  name: FixThresh
+  nameWithType: ConeTwistConstraintImp.FixThresh
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FixThresh
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.FixThresh
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.FixThresh
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: FixThresh
+  nameWithType: IConeTwistConstraintImp.FixThresh
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.FixThresh
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FrameOffsetA*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FrameOffsetA
+  name: FrameOffsetA
+  nameWithType: ConeTwistConstraintImp.FrameOffsetA
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FrameOffsetA
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetA
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetA
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: FrameOffsetA
+  nameWithType: IConeTwistConstraintImp.FrameOffsetA
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetA
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FrameOffsetB*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FrameOffsetB
+  name: FrameOffsetB
+  nameWithType: ConeTwistConstraintImp.FrameOffsetB
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.FrameOffsetB
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetB
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetB
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: FrameOffsetB
+  nameWithType: IConeTwistConstraintImp.FrameOffsetB
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetB
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.GetPointForAngle*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.GetPointForAngle
+  name: GetPointForAngle
+  nameWithType: ConeTwistConstraintImp.GetPointForAngle
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.GetPointForAngle
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.GetPointForAngle(System.Single,System.Single)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.GetPointForAngle(System.Single,System.Single)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  isExternal: true
+  name: GetPointForAngle(Single, Single)
+  nameWithType: IConeTwistConstraintImp.GetPointForAngle(Single, Single)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.GetPointForAngle(System.Single, System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.GetPointForAngle(System.Single,System.Single)
+    name: GetPointForAngle
+    nameWithType: IConeTwistConstraintImp.GetPointForAngle
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.GetPointForAngle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.GetPointForAngle(System.Single,System.Single)
+    name: GetPointForAngle
+    nameWithType: IConeTwistConstraintImp.GetPointForAngle
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.GetPointForAngle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.IsPastSwingLimit*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.IsPastSwingLimit
+  name: IsPastSwingLimit
+  nameWithType: ConeTwistConstraintImp.IsPastSwingLimit
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.IsPastSwingLimit
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.IsPastSwingLimit
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.IsPastSwingLimit
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: IsPastSwingLimit
+  nameWithType: IConeTwistConstraintImp.IsPastSwingLimit
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.IsPastSwingLimit
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetAngularOnly*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetAngularOnly
+  name: SetAngularOnly
+  nameWithType: ConeTwistConstraintImp.SetAngularOnly
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetAngularOnly
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetAngularOnly(System.Boolean)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.SetAngularOnly(System.Boolean)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  isExternal: true
+  name: SetAngularOnly(Boolean)
+  nameWithType: IConeTwistConstraintImp.SetAngularOnly(Boolean)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetAngularOnly(System.Boolean)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetAngularOnly(System.Boolean)
+    name: SetAngularOnly
+    nameWithType: IConeTwistConstraintImp.SetAngularOnly
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetAngularOnly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetAngularOnly(System.Boolean)
+    name: SetAngularOnly
+    nameWithType: IConeTwistConstraintImp.SetAngularOnly
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetAngularOnly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetDamping*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetDamping
+  name: SetDamping
+  nameWithType: ConeTwistConstraintImp.SetDamping
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetDamping
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetDamping(System.Single)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.SetDamping(System.Single)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  isExternal: true
+  name: SetDamping(Single)
+  nameWithType: IConeTwistConstraintImp.SetDamping(Single)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetDamping(System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetDamping(System.Single)
+    name: SetDamping
+    nameWithType: IConeTwistConstraintImp.SetDamping
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetDamping
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetDamping(System.Single)
+    name: SetDamping
+    nameWithType: IConeTwistConstraintImp.SetDamping
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetDamping
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetLimit*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetLimit
+  name: SetLimit
+  nameWithType: ConeTwistConstraintImp.SetLimit
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetLimit
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Int32,System.Single)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Int32,System.Single)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  isExternal: true
+  name: SetLimit(Int32, Single)
+  nameWithType: IConeTwistConstraintImp.SetLimit(Int32, Single)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Int32, System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Int32,System.Single)
+    name: SetLimit
+    nameWithType: IConeTwistConstraintImp.SetLimit
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Int32,System.Single)
+    name: SetLimit
+    nameWithType: IConeTwistConstraintImp.SetLimit
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  isExternal: true
+  name: SetLimit(Single, Single, Single, Single, Single, Single)
+  nameWithType: IConeTwistConstraintImp.SetLimit(Single, Single, Single, Single, Single, Single)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Single, System.Single, System.Single, System.Single, System.Single, System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+    name: SetLimit
+    nameWithType: IConeTwistConstraintImp.SetLimit
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+    name: SetLimit
+    nameWithType: IConeTwistConstraintImp.SetLimit
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMaxMotorImpulse*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMaxMotorImpulse
+  name: SetMaxMotorImpulse
+  nameWithType: ConeTwistConstraintImp.SetMaxMotorImpulse
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMaxMotorImpulse
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulse(System.Single)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulse(System.Single)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  isExternal: true
+  name: SetMaxMotorImpulse(Single)
+  nameWithType: IConeTwistConstraintImp.SetMaxMotorImpulse(Single)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulse(System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulse(System.Single)
+    name: SetMaxMotorImpulse
+    nameWithType: IConeTwistConstraintImp.SetMaxMotorImpulse
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulse(System.Single)
+    name: SetMaxMotorImpulse
+    nameWithType: IConeTwistConstraintImp.SetMaxMotorImpulse
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMaxMotorImpulseNormalized*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMaxMotorImpulseNormalized
+  name: SetMaxMotorImpulseNormalized
+  nameWithType: ConeTwistConstraintImp.SetMaxMotorImpulseNormalized
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMaxMotorImpulseNormalized
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulseNormalized(System.Single)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulseNormalized(System.Single)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  isExternal: true
+  name: SetMaxMotorImpulseNormalized(Single)
+  nameWithType: IConeTwistConstraintImp.SetMaxMotorImpulseNormalized(Single)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulseNormalized(System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulseNormalized(System.Single)
+    name: SetMaxMotorImpulseNormalized
+    nameWithType: IConeTwistConstraintImp.SetMaxMotorImpulseNormalized
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulseNormalized
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulseNormalized(System.Single)
+    name: SetMaxMotorImpulseNormalized
+    nameWithType: IConeTwistConstraintImp.SetMaxMotorImpulseNormalized
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulseNormalized
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMotorTarget*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMotorTarget
+  name: SetMotorTarget
+  nameWithType: ConeTwistConstraintImp.SetMotorTarget
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMotorTarget
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTarget(Fusee.Math.Core.Quaternion)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTarget(Fusee.Math.Core.Quaternion)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: SetMotorTarget(Quaternion)
+  nameWithType: IConeTwistConstraintImp.SetMotorTarget(Quaternion)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTarget(Fusee.Math.Core.Quaternion)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTarget(Fusee.Math.Core.Quaternion)
+    name: SetMotorTarget
+    nameWithType: IConeTwistConstraintImp.SetMotorTarget
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTarget
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: Fusee.Math.Core.Quaternion
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTarget(Fusee.Math.Core.Quaternion)
+    name: SetMotorTarget
+    nameWithType: IConeTwistConstraintImp.SetMotorTarget
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTarget
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: Fusee.Math.Core.Quaternion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.Quaternion
+  commentId: T:Fusee.Math.Core.Quaternion
+  parent: Fusee.Math.Core
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: Fusee.Math.Core.Quaternion
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMotorTargetInConstraintSpace*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMotorTargetInConstraintSpace
+  name: SetMotorTargetInConstraintSpace
+  nameWithType: ConeTwistConstraintImp.SetMotorTargetInConstraintSpace
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SetMotorTargetInConstraintSpace
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Fusee.Math.Core.Quaternion)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Fusee.Math.Core.Quaternion)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: SetMotorTargetInConstraintSpace(Quaternion)
+  nameWithType: IConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Quaternion)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Fusee.Math.Core.Quaternion)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Fusee.Math.Core.Quaternion)
+    name: SetMotorTargetInConstraintSpace
+    nameWithType: IConeTwistConstraintImp.SetMotorTargetInConstraintSpace
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTargetInConstraintSpace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: Fusee.Math.Core.Quaternion
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Fusee.Math.Core.Quaternion)
+    name: SetMotorTargetInConstraintSpace
+    nameWithType: IConeTwistConstraintImp.SetMotorTargetInConstraintSpace
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTargetInConstraintSpace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: Fusee.Math.Core.Quaternion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SolveSwingLimit*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SolveSwingLimit
+  name: SolveSwingLimit
+  nameWithType: ConeTwistConstraintImp.SolveSwingLimit
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SolveSwingLimit
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SolveSwingLimit
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.SolveSwingLimit
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: SolveSwingLimit
+  nameWithType: IConeTwistConstraintImp.SolveSwingLimit
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SolveSwingLimit
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SolveTwistLimit*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SolveTwistLimit
+  name: SolveTwistLimit
+  nameWithType: ConeTwistConstraintImp.SolveTwistLimit
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SolveTwistLimit
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SolveTwistLimit
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.SolveTwistLimit
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: SolveTwistLimit
+  nameWithType: IConeTwistConstraintImp.SolveTwistLimit
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SolveTwistLimit
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SwingSpan1*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SwingSpan1
+  name: SwingSpan1
+  nameWithType: ConeTwistConstraintImp.SwingSpan1
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SwingSpan1
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan1
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan1
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: SwingSpan1
+  nameWithType: IConeTwistConstraintImp.SwingSpan1
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan1
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SwingSpan2*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SwingSpan2
+  name: SwingSpan2
+  nameWithType: ConeTwistConstraintImp.SwingSpan2
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.SwingSpan2
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan2
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan2
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: SwingSpan2
+  nameWithType: IConeTwistConstraintImp.SwingSpan2
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan2
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistAngle*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistAngle
+  name: TwistAngle
+  nameWithType: ConeTwistConstraintImp.TwistAngle
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistAngle
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.TwistAngle
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.TwistAngle
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: TwistAngle
+  nameWithType: IConeTwistConstraintImp.TwistAngle
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.TwistAngle
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistLimitSign*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistLimitSign
+  name: TwistLimitSign
+  nameWithType: ConeTwistConstraintImp.TwistLimitSign
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistLimitSign
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.TwistLimitSign
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.TwistLimitSign
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: TwistLimitSign
+  nameWithType: IConeTwistConstraintImp.TwistLimitSign
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.TwistLimitSign
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistSpan*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistSpan
+  name: TwistSpan
+  nameWithType: ConeTwistConstraintImp.TwistSpan
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.TwistSpan
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.TwistSpan
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.TwistSpan
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  name: TwistSpan
+  nameWithType: IConeTwistConstraintImp.TwistSpan
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.TwistSpan
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.UpdateRhs*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.UpdateRhs
+  name: UpdateRhs
+  nameWithType: ConeTwistConstraintImp.UpdateRhs
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.UpdateRhs
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.UpdateRhs(System.Single)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.UpdateRhs(System.Single)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  isExternal: true
+  name: UpdateRhs(Single)
+  nameWithType: IConeTwistConstraintImp.UpdateRhs(Single)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.UpdateRhs(System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.UpdateRhs(System.Single)
+    name: UpdateRhs
+    nameWithType: IConeTwistConstraintImp.UpdateRhs
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.UpdateRhs
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConeTwistConstraintImp.UpdateRhs(System.Single)
+    name: UpdateRhs
+    nameWithType: IConeTwistConstraintImp.UpdateRhs
+    fullName: Fusee.Engine.Common.IConeTwistConstraintImp.UpdateRhs
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.RigidBodyA*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.RigidBodyA
+  name: RigidBodyA
+  nameWithType: ConeTwistConstraintImp.RigidBodyA
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.RigidBodyA
+- uid: Fusee.Engine.Common.IConstraintImp.RigidBodyA
+  commentId: P:Fusee.Engine.Common.IConstraintImp.RigidBodyA
+  parent: Fusee.Engine.Common.IConstraintImp
+  name: RigidBodyA
+  nameWithType: IConstraintImp.RigidBodyA
+  fullName: Fusee.Engine.Common.IConstraintImp.RigidBodyA
+- uid: Fusee.Engine.Common.IRigidBodyImp
+  commentId: T:Fusee.Engine.Common.IRigidBodyImp
+  parent: Fusee.Engine.Common
+  name: IRigidBodyImp
+  nameWithType: IRigidBodyImp
+  fullName: Fusee.Engine.Common.IRigidBodyImp
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.RigidBodyB*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.RigidBodyB
+  name: RigidBodyB
+  nameWithType: ConeTwistConstraintImp.RigidBodyB
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.RigidBodyB
+- uid: Fusee.Engine.Common.IConstraintImp.RigidBodyB
+  commentId: P:Fusee.Engine.Common.IConstraintImp.RigidBodyB
+  parent: Fusee.Engine.Common.IConstraintImp
+  name: RigidBodyB
+  nameWithType: IConstraintImp.RigidBodyB
+  fullName: Fusee.Engine.Common.IConstraintImp.RigidBodyB
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.GetUid*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.GetUid
+  name: GetUid
+  nameWithType: ConeTwistConstraintImp.GetUid
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.GetUid
+- uid: Fusee.Engine.Common.IConstraintImp.GetUid
+  commentId: M:Fusee.Engine.Common.IConstraintImp.GetUid
+  parent: Fusee.Engine.Common.IConstraintImp
+  name: GetUid()
+  nameWithType: IConstraintImp.GetUid()
+  fullName: Fusee.Engine.Common.IConstraintImp.GetUid()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConstraintImp.GetUid
+    name: GetUid
+    nameWithType: IConstraintImp.GetUid
+    fullName: Fusee.Engine.Common.IConstraintImp.GetUid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConstraintImp.GetUid
+    name: GetUid
+    nameWithType: IConstraintImp.GetUid
+    fullName: Fusee.Engine.Common.IConstraintImp.GetUid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.UserObject*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.UserObject
+  name: UserObject
+  nameWithType: ConeTwistConstraintImp.UserObject
+  fullName: Fusee.Engine.Imp.Physics.Desktop.ConeTwistConstraintImp.UserObject
+- uid: Fusee.Engine.Common.IConstraintImp.UserObject
+  commentId: P:Fusee.Engine.Common.IConstraintImp.UserObject
+  parent: Fusee.Engine.Common.IConstraintImp
+  name: UserObject
+  nameWithType: IConstraintImp.UserObject
+  fullName: Fusee.Engine.Common.IConstraintImp.UserObject

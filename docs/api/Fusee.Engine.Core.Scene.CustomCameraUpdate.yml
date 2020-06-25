@@ -1,0 +1,169 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Scene.CustomCameraUpdate
+  commentId: T:Fusee.Engine.Core.Scene.CustomCameraUpdate
+  id: CustomCameraUpdate
+  parent: Fusee.Engine.Core.Scene
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CustomCameraUpdate
+  nameWithType: CustomCameraUpdate
+  fullName: Fusee.Engine.Core.Scene.CustomCameraUpdate
+  type: Delegate
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Camera.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CustomCameraUpdate
+    path: src/Fusee/src/Engine/Core/Scene/Camera.cs
+    startLine: 26
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nDelegate that allows a user to give a custom projection calculation to a <xref href=\"Fusee.Engine.Core.Scene.Camera\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public delegate void CustomCameraUpdate(out float4 viewport, out float4x4 projection);
+    parameters:
+    - id: viewport
+      type: Fusee.Math.Core.float4
+      description: The viewport that gets rendered with the resulting projection matrix. Given in pixel. This is used in lower levels to set <xref href="Fusee.Engine.Common.IRenderContextImp.Viewport(System.Int32%2cSystem.Int32%2cSystem.Int32%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref>
+    - id: projection
+      type: Fusee.Math.Core.float4x4
+      description: The given method needs to calculate the projection matrix.
+    content.vb: Public Delegate Sub CustomCameraUpdate(ByRef viewport As float4, ByRef projection As float4x4)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Fusee.Engine.Core.Scene.Camera
+  commentId: T:Fusee.Engine.Core.Scene.Camera
+  name: Camera
+  nameWithType: Camera
+  fullName: Fusee.Engine.Core.Scene.Camera
+- uid: Fusee.Engine.Common.IRenderContextImp.Viewport(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Fusee.Engine.Common.IRenderContextImp.Viewport(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Fusee.Engine.Common.IRenderContextImp
+  isExternal: true
+  name: Viewport(Int32, Int32, Int32, Int32)
+  nameWithType: IRenderContextImp.Viewport(Int32, Int32, Int32, Int32)
+  fullName: Fusee.Engine.Common.IRenderContextImp.Viewport(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IRenderContextImp.Viewport(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Viewport
+    nameWithType: IRenderContextImp.Viewport
+    fullName: Fusee.Engine.Common.IRenderContextImp.Viewport
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IRenderContextImp.Viewport(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Viewport
+    nameWithType: IRenderContextImp.Viewport
+    fullName: Fusee.Engine.Common.IRenderContextImp.Viewport
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: Fusee.Math.Core.float4
+  commentId: T:Fusee.Math.Core.float4
+  parent: Fusee.Math.Core
+  name: float4
+  nameWithType: float4
+  fullName: Fusee.Math.Core.float4
+- uid: Fusee.Math.Core.float4x4
+  commentId: T:Fusee.Math.Core.float4x4
+  parent: Fusee.Math.Core
+  name: float4x4
+  nameWithType: float4x4
+  fullName: Fusee.Math.Core.float4x4
+- uid: Fusee.Engine.Common.IRenderContextImp
+  commentId: T:Fusee.Engine.Common.IRenderContextImp
+  parent: Fusee.Engine.Common
+  name: IRenderContextImp
+  nameWithType: IRenderContextImp
+  fullName: Fusee.Engine.Common.IRenderContextImp
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common

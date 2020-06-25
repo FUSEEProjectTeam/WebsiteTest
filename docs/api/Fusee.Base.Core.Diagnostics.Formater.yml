@@ -1,0 +1,125 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Base.Core.Diagnostics.Formater
+  commentId: T:Fusee.Base.Core.Diagnostics.Formater
+  id: Diagnostics.Formater
+  parent: Fusee.Base.Core
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: Diagnostics.Formater
+  nameWithType: Diagnostics.Formater
+  fullName: Fusee.Base.Core.Diagnostics.Formater
+  type: Delegate
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/Diagnostics.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Formater
+    path: src/Fusee/src/Base/Core/Diagnostics.cs
+    startLine: 64
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nThe methods used for formating messages\n"
+  example: []
+  syntax:
+    content: public delegate string Formater(string callingMethod, int lineNumber, string sourceFilePath, Diagnostics.SeverityLevel lvl, string msg, Exception ex = null, object[] args = null);
+    parameters:
+    - id: callingMethod
+      type: System.String
+      description: The calling method
+    - id: lineNumber
+      type: System.Int32
+      description: The line number of the calling file
+    - id: sourceFilePath
+      type: System.String
+      description: The calling file
+    - id: lvl
+      type: Fusee.Base.Core.Diagnostics.SeverityLevel
+      description: The severity level
+    - id: msg
+      type: System.String
+      description: The message
+    - id: ex
+      type: System.Exception
+      description: A possible exception
+    - id: args
+      type: System.Object[]
+      description: Possible arguments
+    return:
+      type: System.String
+    content.vb: Public Delegate Function Formater(callingMethod As String, lineNumber As Integer, sourceFilePath As String, lvl As Diagnostics.SeverityLevel, msg As String, ex As Exception = Nothing, args As Object() = Nothing) As String
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Fusee.Base.Core
+  commentId: N:Fusee.Base.Core
+  name: Fusee.Base.Core
+  nameWithType: Fusee.Base.Core
+  fullName: Fusee.Base.Core
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Base.Core.Diagnostics.SeverityLevel
+  commentId: T:Fusee.Base.Core.Diagnostics.SeverityLevel
+  parent: Fusee.Base.Core
+  name: Diagnostics.SeverityLevel
+  nameWithType: Diagnostics.SeverityLevel
+  fullName: Fusee.Base.Core.Diagnostics.SeverityLevel
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

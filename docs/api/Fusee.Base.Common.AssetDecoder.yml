@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Base.Common.AssetDecoder
+  commentId: T:Fusee.Base.Common.AssetDecoder
+  id: AssetDecoder
+  parent: Fusee.Base.Common
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: AssetDecoder
+  nameWithType: AssetDecoder
+  fullName: Fusee.Base.Common.AssetDecoder
+  type: Delegate
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AssetDecoder
+    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    startLine: 39
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nType used in <xref href=\"Fusee.Base.Common.IAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public delegate object AssetDecoder(string id, object storage);
+    parameters:
+    - id: id
+      type: System.String
+      description: The identifier.
+    - id: storage
+      type: System.Object
+      description: >-
+        An opaque object containing the data. The actual type of the storage depends on the AssetProvider.
+
+        Many providers use a stream.
+    return:
+      type: System.Object
+      description: The asset cast to <xref href="System.Object" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Delegate Function AssetDecoder(id As String, storage As Object) As Object
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Fusee.Base.Common.IAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
+  commentId: M:Fusee.Base.Common.IAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
+  parent: Fusee.Base.Common.IAssetProvider
+  name: RegisterTypeHandler(AssetHandler)
+  nameWithType: IAssetProvider.RegisterTypeHandler(AssetHandler)
+  fullName: Fusee.Base.Common.IAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
+  spec.csharp:
+  - uid: Fusee.Base.Common.IAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
+    name: RegisterTypeHandler
+    nameWithType: IAssetProvider.RegisterTypeHandler
+    fullName: Fusee.Base.Common.IAssetProvider.RegisterTypeHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Base.Common.AssetHandler
+    name: AssetHandler
+    nameWithType: AssetHandler
+    fullName: Fusee.Base.Common.AssetHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Base.Common.IAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
+    name: RegisterTypeHandler
+    nameWithType: IAssetProvider.RegisterTypeHandler
+    fullName: Fusee.Base.Common.IAssetProvider.RegisterTypeHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Base.Common.AssetHandler
+    name: AssetHandler
+    nameWithType: AssetHandler
+    fullName: Fusee.Base.Common.AssetHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Base.Common
+  commentId: N:Fusee.Base.Common
+  name: Fusee.Base.Common
+  nameWithType: Fusee.Base.Common
+  fullName: Fusee.Base.Common
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Fusee.Base.Common.IAssetProvider
+  commentId: T:Fusee.Base.Common.IAssetProvider
+  parent: Fusee.Base.Common
+  name: IAssetProvider
+  nameWithType: IAssetProvider
+  fullName: Fusee.Base.Common.IAssetProvider
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

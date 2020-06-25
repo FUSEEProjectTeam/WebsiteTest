@@ -1,0 +1,642 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.RenderState
+  commentId: T:Fusee.Engine.Common.RenderState
+  id: RenderState
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.RenderState.AlphaBlendEnable
+  - Fusee.Engine.Common.RenderState.BlendFactor
+  - Fusee.Engine.Common.RenderState.BlendOperation
+  - Fusee.Engine.Common.RenderState.BlendOperationAlpha
+  - Fusee.Engine.Common.RenderState.Clipping
+  - Fusee.Engine.Common.RenderState.CullMode
+  - Fusee.Engine.Common.RenderState.DestinationBlend
+  - Fusee.Engine.Common.RenderState.DestinationBlendAlpha
+  - Fusee.Engine.Common.RenderState.FillMode
+  - Fusee.Engine.Common.RenderState.SourceBlend
+  - Fusee.Engine.Common.RenderState.SourceBlendAlpha
+  - Fusee.Engine.Common.RenderState.Wrap0
+  - Fusee.Engine.Common.RenderState.Wrap1
+  - Fusee.Engine.Common.RenderState.Wrap2
+  - Fusee.Engine.Common.RenderState.Wrap3
+  - Fusee.Engine.Common.RenderState.ZEnable
+  - Fusee.Engine.Common.RenderState.ZFunc
+  - Fusee.Engine.Common.RenderState.ZWriteEnable
+  langs:
+  - csharp
+  - vb
+  name: RenderState
+  nameWithType: RenderState
+  fullName: Fusee.Engine.Common.RenderState
+  type: Enum
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RenderState
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 8
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe render state enumeration. This is used in render context implementations to identify the render state to set.\nKeep this binary compatible with DirectX version 9.\n"
+  example: []
+  syntax:
+    content: public enum RenderState
+    content.vb: Public Enum RenderState
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Fusee.Engine.Common.RenderState.FillMode
+  commentId: F:Fusee.Engine.Common.RenderState.FillMode
+  id: FillMode
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: FillMode
+  nameWithType: RenderState.FillMode
+  fullName: Fusee.Engine.Common.RenderState.FillMode
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FillMode
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 12
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: FillMode = 8
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.CullMode
+  commentId: F:Fusee.Engine.Common.RenderState.CullMode
+  id: CullMode
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: CullMode
+  nameWithType: RenderState.CullMode
+  fullName: Fusee.Engine.Common.RenderState.CullMode
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CullMode
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 13
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: CullMode = 22
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.Clipping
+  commentId: F:Fusee.Engine.Common.RenderState.Clipping
+  id: Clipping
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: Clipping
+  nameWithType: RenderState.Clipping
+  fullName: Fusee.Engine.Common.RenderState.Clipping
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Clipping
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 14
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: Clipping = 136
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.ZFunc
+  commentId: F:Fusee.Engine.Common.RenderState.ZFunc
+  id: ZFunc
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: ZFunc
+  nameWithType: RenderState.ZFunc
+  fullName: Fusee.Engine.Common.RenderState.ZFunc
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ZFunc
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 17
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: ZFunc = 23
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.ZEnable
+  commentId: F:Fusee.Engine.Common.RenderState.ZEnable
+  id: ZEnable
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: ZEnable
+  nameWithType: RenderState.ZEnable
+  fullName: Fusee.Engine.Common.RenderState.ZEnable
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ZEnable
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 18
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: ZEnable = 7
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.ZWriteEnable
+  commentId: F:Fusee.Engine.Common.RenderState.ZWriteEnable
+  id: ZWriteEnable
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: ZWriteEnable
+  nameWithType: RenderState.ZWriteEnable
+  fullName: Fusee.Engine.Common.RenderState.ZWriteEnable
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ZWriteEnable
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 19
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: ZWriteEnable = 14
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.AlphaBlendEnable
+  commentId: F:Fusee.Engine.Common.RenderState.AlphaBlendEnable
+  id: AlphaBlendEnable
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: AlphaBlendEnable
+  nameWithType: RenderState.AlphaBlendEnable
+  fullName: Fusee.Engine.Common.RenderState.AlphaBlendEnable
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AlphaBlendEnable
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 28
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: AlphaBlendEnable = 27
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.BlendOperation
+  commentId: F:Fusee.Engine.Common.RenderState.BlendOperation
+  id: BlendOperation
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: BlendOperation
+  nameWithType: RenderState.BlendOperation
+  fullName: Fusee.Engine.Common.RenderState.BlendOperation
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: BlendOperation
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 29
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: BlendOperation = 171
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.BlendOperationAlpha
+  commentId: F:Fusee.Engine.Common.RenderState.BlendOperationAlpha
+  id: BlendOperationAlpha
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: BlendOperationAlpha
+  nameWithType: RenderState.BlendOperationAlpha
+  fullName: Fusee.Engine.Common.RenderState.BlendOperationAlpha
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: BlendOperationAlpha
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 30
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: BlendOperationAlpha = 209
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.SourceBlend
+  commentId: F:Fusee.Engine.Common.RenderState.SourceBlend
+  id: SourceBlend
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: SourceBlend
+  nameWithType: RenderState.SourceBlend
+  fullName: Fusee.Engine.Common.RenderState.SourceBlend
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SourceBlend
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 31
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: SourceBlend = 19
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.DestinationBlend
+  commentId: F:Fusee.Engine.Common.RenderState.DestinationBlend
+  id: DestinationBlend
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: DestinationBlend
+  nameWithType: RenderState.DestinationBlend
+  fullName: Fusee.Engine.Common.RenderState.DestinationBlend
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DestinationBlend
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 32
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: DestinationBlend = 20
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.SourceBlendAlpha
+  commentId: F:Fusee.Engine.Common.RenderState.SourceBlendAlpha
+  id: SourceBlendAlpha
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: SourceBlendAlpha
+  nameWithType: RenderState.SourceBlendAlpha
+  fullName: Fusee.Engine.Common.RenderState.SourceBlendAlpha
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SourceBlendAlpha
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 33
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: SourceBlendAlpha = 207
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.DestinationBlendAlpha
+  commentId: F:Fusee.Engine.Common.RenderState.DestinationBlendAlpha
+  id: DestinationBlendAlpha
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: DestinationBlendAlpha
+  nameWithType: RenderState.DestinationBlendAlpha
+  fullName: Fusee.Engine.Common.RenderState.DestinationBlendAlpha
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DestinationBlendAlpha
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 34
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: DestinationBlendAlpha = 208
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.BlendFactor
+  commentId: F:Fusee.Engine.Common.RenderState.BlendFactor
+  id: BlendFactor
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: BlendFactor
+  nameWithType: RenderState.BlendFactor
+  fullName: Fusee.Engine.Common.RenderState.BlendFactor
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: BlendFactor
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 35
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: BlendFactor = 193
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.Wrap0
+  commentId: F:Fusee.Engine.Common.RenderState.Wrap0
+  id: Wrap0
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: Wrap0
+  nameWithType: RenderState.Wrap0
+  fullName: Fusee.Engine.Common.RenderState.Wrap0
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Wrap0
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 37
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: Wrap0 = 128
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.Wrap1
+  commentId: F:Fusee.Engine.Common.RenderState.Wrap1
+  id: Wrap1
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: Wrap1
+  nameWithType: RenderState.Wrap1
+  fullName: Fusee.Engine.Common.RenderState.Wrap1
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Wrap1
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 38
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: Wrap1 = 129
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.Wrap2
+  commentId: F:Fusee.Engine.Common.RenderState.Wrap2
+  id: Wrap2
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: Wrap2
+  nameWithType: RenderState.Wrap2
+  fullName: Fusee.Engine.Common.RenderState.Wrap2
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Wrap2
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 39
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: Wrap2 = 130
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderState.Wrap3
+  commentId: F:Fusee.Engine.Common.RenderState.Wrap3
+  id: Wrap3
+  parent: Fusee.Engine.Common.RenderState
+  langs:
+  - csharp
+  - vb
+  name: Wrap3
+  nameWithType: RenderState.Wrap3
+  fullName: Fusee.Engine.Common.RenderState.Wrap3
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Wrap3
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 40
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: Wrap3 = 131
+    return:
+      type: Fusee.Engine.Common.RenderState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Common.RenderState
+  commentId: T:Fusee.Engine.Common.RenderState
+  parent: Fusee.Engine.Common
+  name: RenderState
+  nameWithType: RenderState
+  fullName: Fusee.Engine.Common.RenderState

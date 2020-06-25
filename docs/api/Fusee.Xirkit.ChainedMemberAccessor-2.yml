@@ -1,0 +1,1009 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Xirkit.ChainedMemberAccessor`2
+  commentId: T:Fusee.Xirkit.ChainedMemberAccessor`2
+  id: ChainedMemberAccessor`2
+  parent: Fusee.Xirkit
+  children:
+  - Fusee.Xirkit.ChainedMemberAccessor`2.#ctor(System.Reflection.MemberInfo[],Fusee.Math.Core.Converter{`0,`1},Fusee.Math.Core.Converter{`1,`0})
+  - Fusee.Xirkit.ChainedMemberAccessor`2.Get(System.Object)
+  - Fusee.Xirkit.ChainedMemberAccessor`2.Set(System.Object,`0)
+  langs:
+  - csharp
+  - vb
+  name: ChainedMemberAccessor<TPin, TObj>
+  nameWithType: ChainedMemberAccessor<TPin, TObj>
+  fullName: Fusee.Xirkit.ChainedMemberAccessor<TPin, TObj>
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/ChainedMemberAccessor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ChainedMemberAccessor
+    path: src/Fusee/src/Xirkit/ChainedMemberAccessor.cs
+    startLine: 12
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nClass used inside Xirkit to access (read and write) nested members that are referenced\nby a chain of properties/fields separated by the object-access operator &apos;.&apos; (dot).\n"
+  example: []
+  syntax:
+    content: 'public class ChainedMemberAccessor<TPin, TObj> : IMemberAccessor<TPin>'
+    typeParameters:
+    - id: TPin
+      description: The type of the pin (the type to the outside world).
+    - id: TObj
+      description: The type of the object referenced by the innermost member of the access chain.
+    content.vb: >-
+      Public Class ChainedMemberAccessor(Of TPin, TObj)
+
+          Implements IMemberAccessor(Of TPin)
+  inheritance:
+  - System.Object
+  implements:
+  - Fusee.Xirkit.IMemberAccessor{{TPin}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: ChainedMemberAccessor(Of TPin, TObj)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Fusee.Xirkit.ChainedMemberAccessor(Of TPin, TObj)
+  name.vb: ChainedMemberAccessor(Of TPin, TObj)
+- uid: Fusee.Xirkit.ChainedMemberAccessor`2.#ctor(System.Reflection.MemberInfo[],Fusee.Math.Core.Converter{`0,`1},Fusee.Math.Core.Converter{`1,`0})
+  commentId: M:Fusee.Xirkit.ChainedMemberAccessor`2.#ctor(System.Reflection.MemberInfo[],Fusee.Math.Core.Converter{`0,`1},Fusee.Math.Core.Converter{`1,`0})
+  id: '#ctor(System.Reflection.MemberInfo[],Fusee.Math.Core.Converter{`0,`1},Fusee.Math.Core.Converter{`1,`0})'
+  parent: Fusee.Xirkit.ChainedMemberAccessor`2
+  langs:
+  - csharp
+  - vb
+  name: ChainedMemberAccessor(MemberInfo[], Converter<TPin, TObj>, Converter<TObj, TPin>)
+  nameWithType: ChainedMemberAccessor<TPin, TObj>.ChainedMemberAccessor(MemberInfo[], Converter<TPin, TObj>, Converter<TObj, TPin>)
+  fullName: Fusee.Xirkit.ChainedMemberAccessor<TPin, TObj>.ChainedMemberAccessor(System.Reflection.MemberInfo[], Fusee.Math.Core.Converter<TPin, TObj>, Fusee.Math.Core.Converter<TObj, TPin>)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/ChainedMemberAccessor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Xirkit/ChainedMemberAccessor.cs
+    startLine: 32
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Xirkit.ChainedMemberAccessor%602\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public ChainedMemberAccessor(MemberInfo[] miList, Converter<TPin, TObj> p2o, Converter<TObj, TPin> o2p)
+    parameters:
+    - id: miList
+      type: System.Reflection.MemberInfo[]
+      description: A list of member info objects (sorted from outermost to innermost member along the access chain).
+    - id: p2o
+      type: Fusee.Math.Core.Converter{{TPin},{TObj}}
+      description: A converter converting from the pin type to and from the original type accessed by the pin.
+    - id: o2p
+      type: Fusee.Math.Core.Converter{{TObj},{TPin}}
+      description: A converter converting from the innermost type referenced by access chain to the outside pin type.
+    content.vb: Public Sub New(miList As MemberInfo(), p2o As Converter(Of TPin, TObj), o2p As Converter(Of TObj, TPin))
+  overload: Fusee.Xirkit.ChainedMemberAccessor`2.#ctor*
+  nameWithType.vb: ChainedMemberAccessor(Of TPin, TObj).ChainedMemberAccessor(MemberInfo(), Converter(Of TPin, TObj), Converter(Of TObj, TPin))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.ChainedMemberAccessor(Of TPin, TObj).ChainedMemberAccessor(System.Reflection.MemberInfo(), Fusee.Math.Core.Converter(Of TPin, TObj), Fusee.Math.Core.Converter(Of TObj, TPin))
+  name.vb: ChainedMemberAccessor(MemberInfo(), Converter(Of TPin, TObj), Converter(Of TObj, TPin))
+- uid: Fusee.Xirkit.ChainedMemberAccessor`2.Set(System.Object,`0)
+  commentId: M:Fusee.Xirkit.ChainedMemberAccessor`2.Set(System.Object,`0)
+  id: Set(System.Object,`0)
+  parent: Fusee.Xirkit.ChainedMemberAccessor`2
+  langs:
+  - csharp
+  - vb
+  name: Set(Object, TPin)
+  nameWithType: ChainedMemberAccessor<TPin, TObj>.Set(Object, TPin)
+  fullName: Fusee.Xirkit.ChainedMemberAccessor<TPin, TObj>.Set(System.Object, TPin)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/ChainedMemberAccessor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Set
+    path: src/Fusee/src/Xirkit/ChainedMemberAccessor.cs
+    startLine: 64
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nAssigns the value given in val to the object accessed by this member accessor.\n"
+  example: []
+  syntax:
+    content: public void Set(object o, TPin val)
+    parameters:
+    - id: o
+      type: System.Object
+      description: The object to which the access chain belongs to.
+    - id: val
+      type: '{TPin}'
+      description: The value to be written to the end of the access chain starting in o.
+    content.vb: Public Sub Set(o As Object, val As TPin)
+  overload: Fusee.Xirkit.ChainedMemberAccessor`2.Set*
+  implements:
+  - Fusee.Xirkit.IMemberAccessor{{TPin}}.Set(System.Object,{TPin})
+  nameWithType.vb: ChainedMemberAccessor(Of TPin, TObj).Set(Object, TPin)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.ChainedMemberAccessor(Of TPin, TObj).Set(System.Object, TPin)
+- uid: Fusee.Xirkit.ChainedMemberAccessor`2.Get(System.Object)
+  commentId: M:Fusee.Xirkit.ChainedMemberAccessor`2.Get(System.Object)
+  id: Get(System.Object)
+  parent: Fusee.Xirkit.ChainedMemberAccessor`2
+  langs:
+  - csharp
+  - vb
+  name: Get(Object)
+  nameWithType: ChainedMemberAccessor<TPin, TObj>.Get(Object)
+  fullName: Fusee.Xirkit.ChainedMemberAccessor<TPin, TObj>.Get(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/ChainedMemberAccessor.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Get
+    path: src/Fusee/src/Xirkit/ChainedMemberAccessor.cs
+    startLine: 80
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nRetrieves the value of the innermost member along the access chain from the specified object.\n"
+  example: []
+  syntax:
+    content: public TPin Get(object o)
+    parameters:
+    - id: o
+      type: System.Object
+      description: The object to retrieve a value from.
+    return:
+      type: '{TPin}'
+      description: The value contained in the given object at the end of the access chain starting in o.
+    content.vb: Public Function Get(o As Object) As TPin
+  overload: Fusee.Xirkit.ChainedMemberAccessor`2.Get*
+  implements:
+  - Fusee.Xirkit.IMemberAccessor{{TPin}}.Get(System.Object)
+  nameWithType.vb: ChainedMemberAccessor(Of TPin, TObj).Get(Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.ChainedMemberAccessor(Of TPin, TObj).Get(System.Object)
+references:
+- uid: Fusee.Xirkit
+  commentId: N:Fusee.Xirkit
+  name: Fusee.Xirkit
+  nameWithType: Fusee.Xirkit
+  fullName: Fusee.Xirkit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Xirkit.IMemberAccessor{{TPin}}
+  commentId: T:Fusee.Xirkit.IMemberAccessor{`0}
+  parent: Fusee.Xirkit
+  definition: Fusee.Xirkit.IMemberAccessor`1
+  name: IMemberAccessor<TPin>
+  nameWithType: IMemberAccessor<TPin>
+  fullName: Fusee.Xirkit.IMemberAccessor<TPin>
+  nameWithType.vb: IMemberAccessor(Of TPin)
+  fullName.vb: Fusee.Xirkit.IMemberAccessor(Of TPin)
+  name.vb: IMemberAccessor(Of TPin)
+  spec.csharp:
+  - uid: Fusee.Xirkit.IMemberAccessor`1
+    name: IMemberAccessor
+    nameWithType: IMemberAccessor
+    fullName: Fusee.Xirkit.IMemberAccessor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TPin
+    nameWithType: TPin
+    fullName: TPin
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xirkit.IMemberAccessor`1
+    name: IMemberAccessor
+    nameWithType: IMemberAccessor
+    fullName: Fusee.Xirkit.IMemberAccessor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TPin
+    nameWithType: TPin
+    fullName: TPin
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Xirkit.IMemberAccessor`1
+  commentId: T:Fusee.Xirkit.IMemberAccessor`1
+  name: IMemberAccessor<T>
+  nameWithType: IMemberAccessor<T>
+  fullName: Fusee.Xirkit.IMemberAccessor<T>
+  nameWithType.vb: IMemberAccessor(Of T)
+  fullName.vb: Fusee.Xirkit.IMemberAccessor(Of T)
+  name.vb: IMemberAccessor(Of T)
+  spec.csharp:
+  - uid: Fusee.Xirkit.IMemberAccessor`1
+    name: IMemberAccessor
+    nameWithType: IMemberAccessor
+    fullName: Fusee.Xirkit.IMemberAccessor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xirkit.IMemberAccessor`1
+    name: IMemberAccessor
+    nameWithType: IMemberAccessor
+    fullName: Fusee.Xirkit.IMemberAccessor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xirkit.ChainedMemberAccessor`2
+  commentId: T:Fusee.Xirkit.ChainedMemberAccessor`2
+  name: ChainedMemberAccessor<TPin, TObj>
+  nameWithType: ChainedMemberAccessor<TPin, TObj>
+  fullName: Fusee.Xirkit.ChainedMemberAccessor<TPin, TObj>
+  nameWithType.vb: ChainedMemberAccessor(Of TPin, TObj)
+  fullName.vb: Fusee.Xirkit.ChainedMemberAccessor(Of TPin, TObj)
+  name.vb: ChainedMemberAccessor(Of TPin, TObj)
+  spec.csharp:
+  - uid: Fusee.Xirkit.ChainedMemberAccessor`2
+    name: ChainedMemberAccessor
+    nameWithType: ChainedMemberAccessor
+    fullName: Fusee.Xirkit.ChainedMemberAccessor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TPin
+    nameWithType: TPin
+    fullName: TPin
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TObj
+    nameWithType: TObj
+    fullName: TObj
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xirkit.ChainedMemberAccessor`2
+    name: ChainedMemberAccessor
+    nameWithType: ChainedMemberAccessor
+    fullName: Fusee.Xirkit.ChainedMemberAccessor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TPin
+    nameWithType: TPin
+    fullName: TPin
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TObj
+    nameWithType: TObj
+    fullName: TObj
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xirkit.ChainedMemberAccessor`2.#ctor*
+  commentId: Overload:Fusee.Xirkit.ChainedMemberAccessor`2.#ctor
+  name: ChainedMemberAccessor
+  nameWithType: ChainedMemberAccessor<TPin, TObj>.ChainedMemberAccessor
+  fullName: Fusee.Xirkit.ChainedMemberAccessor<TPin, TObj>.ChainedMemberAccessor
+  nameWithType.vb: ChainedMemberAccessor(Of TPin, TObj).ChainedMemberAccessor
+  fullName.vb: Fusee.Xirkit.ChainedMemberAccessor(Of TPin, TObj).ChainedMemberAccessor
+- uid: System.Reflection.MemberInfo[]
+  isExternal: true
+  name: MemberInfo[]
+  nameWithType: MemberInfo[]
+  fullName: System.Reflection.MemberInfo[]
+  nameWithType.vb: MemberInfo()
+  fullName.vb: System.Reflection.MemberInfo()
+  name.vb: MemberInfo()
+  spec.csharp:
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    nameWithType: MemberInfo
+    fullName: System.Reflection.MemberInfo
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.MemberInfo
+    name: MemberInfo
+    nameWithType: MemberInfo
+    fullName: System.Reflection.MemberInfo
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Fusee.Math.Core.Converter{{TPin},{TObj}}
+  commentId: T:Fusee.Math.Core.Converter{`0,`1}
+  parent: Fusee.Math.Core
+  definition: Fusee.Math.Core.Converter`2
+  name: Converter<TPin, TObj>
+  nameWithType: Converter<TPin, TObj>
+  fullName: Fusee.Math.Core.Converter<TPin, TObj>
+  nameWithType.vb: Converter(Of TPin, TObj)
+  fullName.vb: Fusee.Math.Core.Converter(Of TPin, TObj)
+  name.vb: Converter(Of TPin, TObj)
+  spec.csharp:
+  - uid: Fusee.Math.Core.Converter`2
+    name: Converter
+    nameWithType: Converter
+    fullName: Fusee.Math.Core.Converter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TPin
+    nameWithType: TPin
+    fullName: TPin
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TObj
+    nameWithType: TObj
+    fullName: TObj
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Math.Core.Converter`2
+    name: Converter
+    nameWithType: Converter
+    fullName: Fusee.Math.Core.Converter
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TPin
+    nameWithType: TPin
+    fullName: TPin
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TObj
+    nameWithType: TObj
+    fullName: TObj
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.Converter{{TObj},{TPin}}
+  commentId: T:Fusee.Math.Core.Converter{`1,`0}
+  parent: Fusee.Math.Core
+  definition: Fusee.Math.Core.Converter`2
+  name: Converter<TObj, TPin>
+  nameWithType: Converter<TObj, TPin>
+  fullName: Fusee.Math.Core.Converter<TObj, TPin>
+  nameWithType.vb: Converter(Of TObj, TPin)
+  fullName.vb: Fusee.Math.Core.Converter(Of TObj, TPin)
+  name.vb: Converter(Of TObj, TPin)
+  spec.csharp:
+  - uid: Fusee.Math.Core.Converter`2
+    name: Converter
+    nameWithType: Converter
+    fullName: Fusee.Math.Core.Converter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TObj
+    nameWithType: TObj
+    fullName: TObj
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPin
+    nameWithType: TPin
+    fullName: TPin
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Math.Core.Converter`2
+    name: Converter
+    nameWithType: Converter
+    fullName: Fusee.Math.Core.Converter
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TObj
+    nameWithType: TObj
+    fullName: TObj
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPin
+    nameWithType: TPin
+    fullName: TPin
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.Converter`2
+  commentId: T:Fusee.Math.Core.Converter`2
+  name: Converter<TInput, TOutput>
+  nameWithType: Converter<TInput, TOutput>
+  fullName: Fusee.Math.Core.Converter<TInput, TOutput>
+  nameWithType.vb: Converter(Of TInput, TOutput)
+  fullName.vb: Fusee.Math.Core.Converter(Of TInput, TOutput)
+  name.vb: Converter(Of TInput, TOutput)
+  spec.csharp:
+  - uid: Fusee.Math.Core.Converter`2
+    name: Converter
+    nameWithType: Converter
+    fullName: Fusee.Math.Core.Converter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TInput
+    nameWithType: TInput
+    fullName: TInput
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TOutput
+    nameWithType: TOutput
+    fullName: TOutput
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Math.Core.Converter`2
+    name: Converter
+    nameWithType: Converter
+    fullName: Fusee.Math.Core.Converter
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TInput
+    nameWithType: TInput
+    fullName: TInput
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TOutput
+    nameWithType: TOutput
+    fullName: TOutput
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Xirkit.ChainedMemberAccessor`2.Set*
+  commentId: Overload:Fusee.Xirkit.ChainedMemberAccessor`2.Set
+  name: Set
+  nameWithType: ChainedMemberAccessor<TPin, TObj>.Set
+  fullName: Fusee.Xirkit.ChainedMemberAccessor<TPin, TObj>.Set
+  nameWithType.vb: ChainedMemberAccessor(Of TPin, TObj).Set
+  fullName.vb: Fusee.Xirkit.ChainedMemberAccessor(Of TPin, TObj).Set
+- uid: Fusee.Xirkit.IMemberAccessor{{TPin}}.Set(System.Object,{TPin})
+  commentId: M:Fusee.Xirkit.IMemberAccessor{`0}.Set(System.Object,`0)
+  parent: Fusee.Xirkit.IMemberAccessor{{TPin}}
+  definition: Fusee.Xirkit.IMemberAccessor`1.Set(System.Object,`0)
+  name: Set(Object, TPin)
+  nameWithType: IMemberAccessor<TPin>.Set(Object, TPin)
+  fullName: Fusee.Xirkit.IMemberAccessor<TPin>.Set(System.Object, TPin)
+  nameWithType.vb: IMemberAccessor(Of TPin).Set(Object, TPin)
+  fullName.vb: Fusee.Xirkit.IMemberAccessor(Of TPin).Set(System.Object, TPin)
+  spec.csharp:
+  - uid: Fusee.Xirkit.IMemberAccessor`1.Set(System.Object,`0)
+    name: Set
+    nameWithType: IMemberAccessor<TPin>.Set
+    fullName: Fusee.Xirkit.IMemberAccessor<TPin>.Set
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPin
+    nameWithType: TPin
+    fullName: TPin
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xirkit.IMemberAccessor`1.Set(System.Object,`0)
+    name: Set
+    nameWithType: IMemberAccessor(Of TPin).Set
+    fullName: Fusee.Xirkit.IMemberAccessor(Of TPin).Set
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPin
+    nameWithType: TPin
+    fullName: TPin
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TPin}'
+  commentId: '!:TPin'
+  definition: TPin
+  name: TPin
+  nameWithType: TPin
+  fullName: TPin
+- uid: Fusee.Xirkit.IMemberAccessor`1.Set(System.Object,`0)
+  commentId: M:Fusee.Xirkit.IMemberAccessor`1.Set(System.Object,`0)
+  isExternal: true
+  name: Set(Object, T)
+  nameWithType: IMemberAccessor<T>.Set(Object, T)
+  fullName: Fusee.Xirkit.IMemberAccessor<T>.Set(System.Object, T)
+  nameWithType.vb: IMemberAccessor(Of T).Set(Object, T)
+  fullName.vb: Fusee.Xirkit.IMemberAccessor(Of T).Set(System.Object, T)
+  spec.csharp:
+  - uid: Fusee.Xirkit.IMemberAccessor`1.Set(System.Object,`0)
+    name: Set
+    nameWithType: IMemberAccessor<T>.Set
+    fullName: Fusee.Xirkit.IMemberAccessor<T>.Set
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xirkit.IMemberAccessor`1.Set(System.Object,`0)
+    name: Set
+    nameWithType: IMemberAccessor(Of T).Set
+    fullName: Fusee.Xirkit.IMemberAccessor(Of T).Set
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TPin
+  name: TPin
+  nameWithType: TPin
+  fullName: TPin
+- uid: Fusee.Xirkit.ChainedMemberAccessor`2.Get*
+  commentId: Overload:Fusee.Xirkit.ChainedMemberAccessor`2.Get
+  name: Get
+  nameWithType: ChainedMemberAccessor<TPin, TObj>.Get
+  fullName: Fusee.Xirkit.ChainedMemberAccessor<TPin, TObj>.Get
+  nameWithType.vb: ChainedMemberAccessor(Of TPin, TObj).Get
+  fullName.vb: Fusee.Xirkit.ChainedMemberAccessor(Of TPin, TObj).Get
+- uid: Fusee.Xirkit.IMemberAccessor{{TPin}}.Get(System.Object)
+  commentId: M:Fusee.Xirkit.IMemberAccessor{`0}.Get(System.Object)
+  parent: Fusee.Xirkit.IMemberAccessor{{TPin}}
+  definition: Fusee.Xirkit.IMemberAccessor`1.Get(System.Object)
+  name: Get(Object)
+  nameWithType: IMemberAccessor<TPin>.Get(Object)
+  fullName: Fusee.Xirkit.IMemberAccessor<TPin>.Get(System.Object)
+  nameWithType.vb: IMemberAccessor(Of TPin).Get(Object)
+  fullName.vb: Fusee.Xirkit.IMemberAccessor(Of TPin).Get(System.Object)
+  spec.csharp:
+  - uid: Fusee.Xirkit.IMemberAccessor`1.Get(System.Object)
+    name: Get
+    nameWithType: IMemberAccessor<TPin>.Get
+    fullName: Fusee.Xirkit.IMemberAccessor<TPin>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xirkit.IMemberAccessor`1.Get(System.Object)
+    name: Get
+    nameWithType: IMemberAccessor(Of TPin).Get
+    fullName: Fusee.Xirkit.IMemberAccessor(Of TPin).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xirkit.IMemberAccessor`1.Get(System.Object)
+  commentId: M:Fusee.Xirkit.IMemberAccessor`1.Get(System.Object)
+  isExternal: true
+  name: Get(Object)
+  nameWithType: IMemberAccessor<T>.Get(Object)
+  fullName: Fusee.Xirkit.IMemberAccessor<T>.Get(System.Object)
+  nameWithType.vb: IMemberAccessor(Of T).Get(Object)
+  fullName.vb: Fusee.Xirkit.IMemberAccessor(Of T).Get(System.Object)
+  spec.csharp:
+  - uid: Fusee.Xirkit.IMemberAccessor`1.Get(System.Object)
+    name: Get
+    nameWithType: IMemberAccessor<T>.Get
+    fullName: Fusee.Xirkit.IMemberAccessor<T>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xirkit.IMemberAccessor`1.Get(System.Object)
+    name: Get
+    nameWithType: IMemberAccessor(Of T).Get
+    fullName: Fusee.Xirkit.IMemberAccessor(Of T).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.FillMode
+  commentId: T:Fusee.Engine.Common.FillMode
+  id: FillMode
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.FillMode.Point
+  - Fusee.Engine.Common.FillMode.Solid
+  - Fusee.Engine.Common.FillMode.Wireframe
+  langs:
+  - csharp
+  - vb
+  name: FillMode
+  nameWithType: FillMode
+  fullName: Fusee.Engine.Common.FillMode
+  type: Enum
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FillMode
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 209
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nSpecifies the fill mode to use by the rasterizer. Options are Point (renders vertices as single pixels), Wireframe (renders only triangles&apos; edges as lines), or Solid (fills all pixels covered by triangles).\n"
+  example: []
+  syntax:
+    content: public enum FillMode
+    content.vb: Public Enum FillMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Fusee.Engine.Common.FillMode.Point
+  commentId: F:Fusee.Engine.Common.FillMode.Point
+  id: Point
+  parent: Fusee.Engine.Common.FillMode
+  langs:
+  - csharp
+  - vb
+  name: Point
+  nameWithType: FillMode.Point
+  fullName: Fusee.Engine.Common.FillMode.Point
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Point
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 212
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: Point = 1
+    return:
+      type: Fusee.Engine.Common.FillMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.FillMode.Wireframe
+  commentId: F:Fusee.Engine.Common.FillMode.Wireframe
+  id: Wireframe
+  parent: Fusee.Engine.Common.FillMode
+  langs:
+  - csharp
+  - vb
+  name: Wireframe
+  nameWithType: FillMode.Wireframe
+  fullName: Fusee.Engine.Common.FillMode.Wireframe
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Wireframe
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 214
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: Wireframe = 2
+    return:
+      type: Fusee.Engine.Common.FillMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.FillMode.Solid
+  commentId: F:Fusee.Engine.Common.FillMode.Solid
+  id: Solid
+  parent: Fusee.Engine.Common.FillMode
+  langs:
+  - csharp
+  - vb
+  name: Solid
+  nameWithType: FillMode.Solid
+  fullName: Fusee.Engine.Common.FillMode.Solid
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Solid
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 215
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: Solid = 3
+    return:
+      type: Fusee.Engine.Common.FillMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Common.FillMode
+  commentId: T:Fusee.Engine.Common.FillMode
+  parent: Fusee.Engine.Common
+  name: FillMode
+  nameWithType: FillMode
+  fullName: Fusee.Engine.Common.FillMode

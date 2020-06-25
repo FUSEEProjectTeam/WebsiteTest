@@ -1,0 +1,568 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.NetConfigValues
+  commentId: T:Fusee.Engine.Common.NetConfigValues
+  id: NetConfigValues
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.NetConfigValues.ConnectOnDiscovery
+  - Fusee.Engine.Common.NetConfigValues.DefaultPort
+  - Fusee.Engine.Common.NetConfigValues.Discovery
+  - Fusee.Engine.Common.NetConfigValues.DiscoveryTimeout
+  - Fusee.Engine.Common.NetConfigValues.RedirectPackets
+  - Fusee.Engine.Common.NetConfigValues.SysType
+  langs:
+  - csharp
+  - vb
+  name: NetConfigValues
+  nameWithType: NetConfigValues
+  fullName: Fusee.Engine.Common.NetConfigValues
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/INetworkImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: NetConfigValues
+    path: src/Fusee/src/Engine/Common/INetworkImp.cs
+    startLine: 7
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nNetwork configuration object.\n"
+  example: []
+  syntax:
+    content: public class NetConfigValues
+    content.vb: Public Class NetConfigValues
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Common.NetConfigValues.SysType
+  commentId: F:Fusee.Engine.Common.NetConfigValues.SysType
+  id: SysType
+  parent: Fusee.Engine.Common.NetConfigValues
+  langs:
+  - csharp
+  - vb
+  name: SysType
+  nameWithType: NetConfigValues.SysType
+  fullName: Fusee.Engine.Common.NetConfigValues.SysType
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/INetworkImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SysType
+    path: src/Fusee/src/Engine/Common/INetworkImp.cs
+    startLine: 12
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe system type. (Client, Server, Peer) \n"
+  example: []
+  syntax:
+    content: public SysType SysType
+    return:
+      type: Fusee.Engine.Common.SysType
+    content.vb: Public SysType As SysType
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.NetConfigValues.DefaultPort
+  commentId: F:Fusee.Engine.Common.NetConfigValues.DefaultPort
+  id: DefaultPort
+  parent: Fusee.Engine.Common.NetConfigValues
+  langs:
+  - csharp
+  - vb
+  name: DefaultPort
+  nameWithType: NetConfigValues.DefaultPort
+  fullName: Fusee.Engine.Common.NetConfigValues.DefaultPort
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/INetworkImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DefaultPort
+    path: src/Fusee/src/Engine/Common/INetworkImp.cs
+    startLine: 16
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe default port (default: 14242)\n"
+  example: []
+  syntax:
+    content: public int DefaultPort
+    return:
+      type: System.Int32
+    content.vb: Public DefaultPort As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.NetConfigValues.Discovery
+  commentId: F:Fusee.Engine.Common.NetConfigValues.Discovery
+  id: Discovery
+  parent: Fusee.Engine.Common.NetConfigValues
+  langs:
+  - csharp
+  - vb
+  name: Discovery
+  nameWithType: NetConfigValues.Discovery
+  fullName: Fusee.Engine.Common.NetConfigValues.Discovery
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/INetworkImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Discovery
+    path: src/Fusee/src/Engine/Common/INetworkImp.cs
+    startLine: 20
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe automatic discovery in net (default: false)\n"
+  example: []
+  syntax:
+    content: public bool Discovery
+    return:
+      type: System.Boolean
+    content.vb: Public Discovery As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.NetConfigValues.ConnectOnDiscovery
+  commentId: F:Fusee.Engine.Common.NetConfigValues.ConnectOnDiscovery
+  id: ConnectOnDiscovery
+  parent: Fusee.Engine.Common.NetConfigValues
+  langs:
+  - csharp
+  - vb
+  name: ConnectOnDiscovery
+  nameWithType: NetConfigValues.ConnectOnDiscovery
+  fullName: Fusee.Engine.Common.NetConfigValues.ConnectOnDiscovery
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/INetworkImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ConnectOnDiscovery
+    path: src/Fusee/src/Engine/Common/INetworkImp.cs
+    startLine: 24
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe automatic connect on discovery. (default: false)\n"
+  example: []
+  syntax:
+    content: public bool ConnectOnDiscovery
+    return:
+      type: System.Boolean
+    content.vb: Public ConnectOnDiscovery As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.NetConfigValues.DiscoveryTimeout
+  commentId: F:Fusee.Engine.Common.NetConfigValues.DiscoveryTimeout
+  id: DiscoveryTimeout
+  parent: Fusee.Engine.Common.NetConfigValues
+  langs:
+  - csharp
+  - vb
+  name: DiscoveryTimeout
+  nameWithType: NetConfigValues.DiscoveryTimeout
+  fullName: Fusee.Engine.Common.NetConfigValues.DiscoveryTimeout
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/INetworkImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DiscoveryTimeout
+    path: src/Fusee/src/Engine/Common/INetworkImp.cs
+    startLine: 28
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe discovery timeout. (default: 5000 ms)\n"
+  example: []
+  syntax:
+    content: public int DiscoveryTimeout
+    return:
+      type: System.Int32
+    content.vb: Public DiscoveryTimeout As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Common.NetConfigValues.RedirectPackets
+  commentId: F:Fusee.Engine.Common.NetConfigValues.RedirectPackets
+  id: RedirectPackets
+  parent: Fusee.Engine.Common.NetConfigValues
+  langs:
+  - csharp
+  - vb
+  name: RedirectPackets
+  nameWithType: NetConfigValues.RedirectPackets
+  fullName: Fusee.Engine.Common.NetConfigValues.RedirectPackets
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/INetworkImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RedirectPackets
+    path: src/Fusee/src/Engine/Common/INetworkImp.cs
+    startLine: 32
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe redirect packets. Currently this is not used. (default: false)\n"
+  example: []
+  syntax:
+    content: public bool RedirectPackets
+    return:
+      type: System.Boolean
+    content.vb: Public RedirectPackets As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Common.SysType
+  commentId: T:Fusee.Engine.Common.SysType
+  parent: Fusee.Engine.Common
+  name: SysType
+  nameWithType: SysType
+  fullName: Fusee.Engine.Common.SysType
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

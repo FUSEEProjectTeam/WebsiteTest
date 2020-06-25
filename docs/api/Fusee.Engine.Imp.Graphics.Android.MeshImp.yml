@@ -1,0 +1,1441 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  commentId: T:Fusee.Engine.Imp.Graphics.Android.MeshImp
+  id: MeshImp
+  parent: Fusee.Engine.Imp.Graphics.Android
+  children:
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.BiTangentsSet
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.BoneIndicesSet
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.BoneWeightsSet
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.ColorsSet
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBiTangents
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBoneIndices
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBoneWeights
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateColors
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateNormals
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateTangents
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateTriangles
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateUVs
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateVertices
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.MeshType
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.NormalsSet
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.TangentsSet
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.TrianglesSet
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.UVsSet
+  - Fusee.Engine.Imp.Graphics.Android.MeshImp.VerticesSet
+  langs:
+  - csharp
+  - vb
+  name: MeshImp
+  nameWithType: MeshImp
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MeshImp
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 22
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nThis is the implementation of the <xref href=\"Fusee.Engine.Common.IMeshImp\" data-throw-if-not-resolved=\"false\"></xref> interface.\nIt is used to check the status of the informations of a mesh and flush informations if required.\n"
+  example: []
+  syntax:
+    content: 'public class MeshImp : IMeshImp'
+    content.vb: >-
+      Public Class MeshImp
+          Implements IMeshImp
+  inheritance:
+  - System.Object
+  implements:
+  - Fusee.Engine.Common.IMeshImp
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateVertices
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateVertices
+  id: InvalidateVertices
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: InvalidateVertices()
+  nameWithType: MeshImp.InvalidateVertices()
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateVertices()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvalidateVertices
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 44
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nInvalidates the vertices.\n"
+  example: []
+  syntax:
+    content: public void InvalidateVertices()
+    content.vb: Public Sub InvalidateVertices
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateVertices*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.InvalidateVertices
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.VerticesSet
+  commentId: P:Fusee.Engine.Imp.Graphics.Android.MeshImp.VerticesSet
+  id: VerticesSet
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: VerticesSet
+  nameWithType: MeshImp.VerticesSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.VerticesSet
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: VerticesSet
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 54
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nGets a value indicating whether [vertices set].\n"
+  example: []
+  syntax:
+    content: public bool VerticesSet { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if [vertices set]; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property VerticesSet As Boolean
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.VerticesSet*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.VerticesSet
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateNormals
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateNormals
+  id: InvalidateNormals
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: InvalidateNormals()
+  nameWithType: MeshImp.InvalidateNormals()
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateNormals()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvalidateNormals
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 59
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nInvalidates the normals.\n"
+  example: []
+  syntax:
+    content: public void InvalidateNormals()
+    content.vb: Public Sub InvalidateNormals
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateNormals*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.InvalidateNormals
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.NormalsSet
+  commentId: P:Fusee.Engine.Imp.Graphics.Android.MeshImp.NormalsSet
+  id: NormalsSet
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: NormalsSet
+  nameWithType: MeshImp.NormalsSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.NormalsSet
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: NormalsSet
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 69
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nGets a value indicating whether [normals set].\n"
+  example: []
+  syntax:
+    content: public bool NormalsSet { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if [normals set]; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property NormalsSet As Boolean
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.NormalsSet*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.NormalsSet
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateColors
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateColors
+  id: InvalidateColors
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: InvalidateColors()
+  nameWithType: MeshImp.InvalidateColors()
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateColors()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvalidateColors
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 74
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nImplementation Tasks: Invalidates the colors, e.g. reset the ColorBufferObject of this instance by setting it to 0.\n"
+  example: []
+  syntax:
+    content: public void InvalidateColors()
+    content.vb: Public Sub InvalidateColors
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateColors*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.InvalidateColors
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.ColorsSet
+  commentId: P:Fusee.Engine.Imp.Graphics.Android.MeshImp.ColorsSet
+  id: ColorsSet
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: ColorsSet
+  nameWithType: MeshImp.ColorsSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.ColorsSet
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ColorsSet
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 84
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nGets a value indicating whether [colors set].\n"
+  example: []
+  syntax:
+    content: public bool ColorsSet { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if [colors set]; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property ColorsSet As Boolean
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.ColorsSet*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.ColorsSet
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.UVsSet
+  commentId: P:Fusee.Engine.Imp.Graphics.Android.MeshImp.UVsSet
+  id: UVsSet
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: UVsSet
+  nameWithType: MeshImp.UVsSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.UVsSet
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: UVsSet
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 92
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nGets a value indicating whether [u vs set].\n"
+  example: []
+  syntax:
+    content: public bool UVsSet { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if [u vs set]; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property UVsSet As Boolean
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.UVsSet*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.UVsSet
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateUVs
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateUVs
+  id: InvalidateUVs
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: InvalidateUVs()
+  nameWithType: MeshImp.InvalidateUVs()
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateUVs()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvalidateUVs
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 97
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nInvalidates the UV&apos;s.\n"
+  example: []
+  syntax:
+    content: public void InvalidateUVs()
+    content.vb: Public Sub InvalidateUVs
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateUVs*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.InvalidateUVs
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.BoneIndicesSet
+  commentId: P:Fusee.Engine.Imp.Graphics.Android.MeshImp.BoneIndicesSet
+  id: BoneIndicesSet
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: BoneIndicesSet
+  nameWithType: MeshImp.BoneIndicesSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.BoneIndicesSet
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: BoneIndicesSet
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 108
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nGets a value indicating whether [boneindices set].\n"
+  example: []
+  syntax:
+    content: public bool BoneIndicesSet { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if [boneindices set]; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property BoneIndicesSet As Boolean
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.BoneIndicesSet*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.BoneIndicesSet
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.TangentsSet
+  commentId: P:Fusee.Engine.Imp.Graphics.Android.MeshImp.TangentsSet
+  id: TangentsSet
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: TangentsSet
+  nameWithType: MeshImp.TangentsSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.TangentsSet
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TangentsSet
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 112
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nReturns wether the tangents have been set.\n"
+  example: []
+  syntax:
+    content: public bool TangentsSet { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property TangentsSet As Boolean
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.TangentsSet*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.TangentsSet
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.BiTangentsSet
+  commentId: P:Fusee.Engine.Imp.Graphics.Android.MeshImp.BiTangentsSet
+  id: BiTangentsSet
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: BiTangentsSet
+  nameWithType: MeshImp.BiTangentsSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.BiTangentsSet
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: BiTangentsSet
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 116
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nReturns wether be bitangents have been set.\n"
+  example: []
+  syntax:
+    content: public bool BiTangentsSet { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property BiTangentsSet As Boolean
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.BiTangentsSet*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.BiTangentsSet
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBoneIndices
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBoneIndices
+  id: InvalidateBoneIndices
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: InvalidateBoneIndices()
+  nameWithType: MeshImp.InvalidateBoneIndices()
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBoneIndices()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvalidateBoneIndices
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 121
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nInvalidates the BoneIndices.\n"
+  example: []
+  syntax:
+    content: public void InvalidateBoneIndices()
+    content.vb: Public Sub InvalidateBoneIndices
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBoneIndices*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.InvalidateBoneIndices
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateTangents
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateTangents
+  id: InvalidateTangents
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: InvalidateTangents()
+  nameWithType: MeshImp.InvalidateTangents()
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateTangents()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvalidateTangents
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 129
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nInvalidates the Tangents.\n"
+  example: []
+  syntax:
+    content: public void InvalidateTangents()
+    content.vb: Public Sub InvalidateTangents
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateTangents*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBiTangents
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBiTangents
+  id: InvalidateBiTangents
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: InvalidateBiTangents()
+  nameWithType: MeshImp.InvalidateBiTangents()
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBiTangents()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvalidateBiTangents
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 137
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nInvalidates the BiTangents.\n"
+  example: []
+  syntax:
+    content: public void InvalidateBiTangents()
+    content.vb: Public Sub InvalidateBiTangents
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBiTangents*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.BoneWeightsSet
+  commentId: P:Fusee.Engine.Imp.Graphics.Android.MeshImp.BoneWeightsSet
+  id: BoneWeightsSet
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: BoneWeightsSet
+  nameWithType: MeshImp.BoneWeightsSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.BoneWeightsSet
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: BoneWeightsSet
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 148
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nGets a value indicating whether [boneweights set].\n"
+  example: []
+  syntax:
+    content: public bool BoneWeightsSet { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if [boneweights set]; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property BoneWeightsSet As Boolean
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.BoneWeightsSet*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.BoneWeightsSet
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBoneWeights
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBoneWeights
+  id: InvalidateBoneWeights
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: InvalidateBoneWeights()
+  nameWithType: MeshImp.InvalidateBoneWeights()
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBoneWeights()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvalidateBoneWeights
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 153
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nInvalidates the BoneWeight&apos;s.\n"
+  example: []
+  syntax:
+    content: public void InvalidateBoneWeights()
+    content.vb: Public Sub InvalidateBoneWeights
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBoneWeights*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.InvalidateBoneWeights
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateTriangles
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateTriangles
+  id: InvalidateTriangles
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: InvalidateTriangles()
+  nameWithType: MeshImp.InvalidateTriangles()
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateTriangles()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InvalidateTriangles
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 160
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nInvalidates the triangles.\n"
+  example: []
+  syntax:
+    content: public void InvalidateTriangles()
+    content.vb: Public Sub InvalidateTriangles
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateTriangles*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.InvalidateTriangles
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.TrianglesSet
+  commentId: P:Fusee.Engine.Imp.Graphics.Android.MeshImp.TrianglesSet
+  id: TrianglesSet
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: TrianglesSet
+  nameWithType: MeshImp.TrianglesSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.TrianglesSet
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TrianglesSet
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 171
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nGets a value indicating whether [triangles set].\n"
+  example: []
+  syntax:
+    content: public bool TrianglesSet { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if [triangles set]; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property TrianglesSet As Boolean
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.TrianglesSet*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.TrianglesSet
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.MeshType
+  commentId: P:Fusee.Engine.Imp.Graphics.Android.MeshImp.MeshType
+  id: MeshType
+  parent: Fusee.Engine.Imp.Graphics.Android.MeshImp
+  langs:
+  - csharp
+  - vb
+  name: MeshType
+  nameWithType: MeshImp.MeshType
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.MeshType
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MeshType
+    path: src/Fusee/src/Engine/Imp/Graphics/Shared/MeshImp.cs
+    startLine: 176
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nType of data of this mesh (e.g. Triangles, Points, Lines, etc.)\n"
+  example: []
+  syntax:
+    content: public OpenGLPrimitiveType MeshType { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.OpenGLPrimitiveType
+    content.vb: Public Property MeshType As OpenGLPrimitiveType
+  overload: Fusee.Engine.Imp.Graphics.Android.MeshImp.MeshType*
+  implements:
+  - Fusee.Engine.Common.IMeshImp.MeshType
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Common.IMeshImp
+  commentId: T:Fusee.Engine.Common.IMeshImp
+  parent: Fusee.Engine.Common
+  name: IMeshImp
+  nameWithType: IMeshImp
+  fullName: Fusee.Engine.Common.IMeshImp
+- uid: Fusee.Engine.Imp.Graphics.Android
+  commentId: N:Fusee.Engine.Imp.Graphics.Android
+  name: Fusee.Engine.Imp.Graphics.Android
+  nameWithType: Fusee.Engine.Imp.Graphics.Android
+  fullName: Fusee.Engine.Imp.Graphics.Android
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateVertices*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateVertices
+  name: InvalidateVertices
+  nameWithType: MeshImp.InvalidateVertices
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateVertices
+- uid: Fusee.Engine.Common.IMeshImp.InvalidateVertices
+  commentId: M:Fusee.Engine.Common.IMeshImp.InvalidateVertices
+  parent: Fusee.Engine.Common.IMeshImp
+  name: InvalidateVertices()
+  nameWithType: IMeshImp.InvalidateVertices()
+  fullName: Fusee.Engine.Common.IMeshImp.InvalidateVertices()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IMeshImp.InvalidateVertices
+    name: InvalidateVertices
+    nameWithType: IMeshImp.InvalidateVertices
+    fullName: Fusee.Engine.Common.IMeshImp.InvalidateVertices
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IMeshImp.InvalidateVertices
+    name: InvalidateVertices
+    nameWithType: IMeshImp.InvalidateVertices
+    fullName: Fusee.Engine.Common.IMeshImp.InvalidateVertices
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.VerticesSet*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.VerticesSet
+  name: VerticesSet
+  nameWithType: MeshImp.VerticesSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.VerticesSet
+- uid: Fusee.Engine.Common.IMeshImp.VerticesSet
+  commentId: P:Fusee.Engine.Common.IMeshImp.VerticesSet
+  parent: Fusee.Engine.Common.IMeshImp
+  name: VerticesSet
+  nameWithType: IMeshImp.VerticesSet
+  fullName: Fusee.Engine.Common.IMeshImp.VerticesSet
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateNormals*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateNormals
+  name: InvalidateNormals
+  nameWithType: MeshImp.InvalidateNormals
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateNormals
+- uid: Fusee.Engine.Common.IMeshImp.InvalidateNormals
+  commentId: M:Fusee.Engine.Common.IMeshImp.InvalidateNormals
+  parent: Fusee.Engine.Common.IMeshImp
+  name: InvalidateNormals()
+  nameWithType: IMeshImp.InvalidateNormals()
+  fullName: Fusee.Engine.Common.IMeshImp.InvalidateNormals()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IMeshImp.InvalidateNormals
+    name: InvalidateNormals
+    nameWithType: IMeshImp.InvalidateNormals
+    fullName: Fusee.Engine.Common.IMeshImp.InvalidateNormals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IMeshImp.InvalidateNormals
+    name: InvalidateNormals
+    nameWithType: IMeshImp.InvalidateNormals
+    fullName: Fusee.Engine.Common.IMeshImp.InvalidateNormals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.NormalsSet*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.NormalsSet
+  name: NormalsSet
+  nameWithType: MeshImp.NormalsSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.NormalsSet
+- uid: Fusee.Engine.Common.IMeshImp.NormalsSet
+  commentId: P:Fusee.Engine.Common.IMeshImp.NormalsSet
+  parent: Fusee.Engine.Common.IMeshImp
+  name: NormalsSet
+  nameWithType: IMeshImp.NormalsSet
+  fullName: Fusee.Engine.Common.IMeshImp.NormalsSet
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateColors*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateColors
+  name: InvalidateColors
+  nameWithType: MeshImp.InvalidateColors
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateColors
+- uid: Fusee.Engine.Common.IMeshImp.InvalidateColors
+  commentId: M:Fusee.Engine.Common.IMeshImp.InvalidateColors
+  parent: Fusee.Engine.Common.IMeshImp
+  name: InvalidateColors()
+  nameWithType: IMeshImp.InvalidateColors()
+  fullName: Fusee.Engine.Common.IMeshImp.InvalidateColors()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IMeshImp.InvalidateColors
+    name: InvalidateColors
+    nameWithType: IMeshImp.InvalidateColors
+    fullName: Fusee.Engine.Common.IMeshImp.InvalidateColors
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IMeshImp.InvalidateColors
+    name: InvalidateColors
+    nameWithType: IMeshImp.InvalidateColors
+    fullName: Fusee.Engine.Common.IMeshImp.InvalidateColors
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.ColorsSet*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.ColorsSet
+  name: ColorsSet
+  nameWithType: MeshImp.ColorsSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.ColorsSet
+- uid: Fusee.Engine.Common.IMeshImp.ColorsSet
+  commentId: P:Fusee.Engine.Common.IMeshImp.ColorsSet
+  parent: Fusee.Engine.Common.IMeshImp
+  name: ColorsSet
+  nameWithType: IMeshImp.ColorsSet
+  fullName: Fusee.Engine.Common.IMeshImp.ColorsSet
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.UVsSet*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.UVsSet
+  name: UVsSet
+  nameWithType: MeshImp.UVsSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.UVsSet
+- uid: Fusee.Engine.Common.IMeshImp.UVsSet
+  commentId: P:Fusee.Engine.Common.IMeshImp.UVsSet
+  parent: Fusee.Engine.Common.IMeshImp
+  name: UVsSet
+  nameWithType: IMeshImp.UVsSet
+  fullName: Fusee.Engine.Common.IMeshImp.UVsSet
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateUVs*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateUVs
+  name: InvalidateUVs
+  nameWithType: MeshImp.InvalidateUVs
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateUVs
+- uid: Fusee.Engine.Common.IMeshImp.InvalidateUVs
+  commentId: M:Fusee.Engine.Common.IMeshImp.InvalidateUVs
+  parent: Fusee.Engine.Common.IMeshImp
+  name: InvalidateUVs()
+  nameWithType: IMeshImp.InvalidateUVs()
+  fullName: Fusee.Engine.Common.IMeshImp.InvalidateUVs()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IMeshImp.InvalidateUVs
+    name: InvalidateUVs
+    nameWithType: IMeshImp.InvalidateUVs
+    fullName: Fusee.Engine.Common.IMeshImp.InvalidateUVs
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IMeshImp.InvalidateUVs
+    name: InvalidateUVs
+    nameWithType: IMeshImp.InvalidateUVs
+    fullName: Fusee.Engine.Common.IMeshImp.InvalidateUVs
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.BoneIndicesSet*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.BoneIndicesSet
+  name: BoneIndicesSet
+  nameWithType: MeshImp.BoneIndicesSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.BoneIndicesSet
+- uid: Fusee.Engine.Common.IMeshImp.BoneIndicesSet
+  commentId: P:Fusee.Engine.Common.IMeshImp.BoneIndicesSet
+  parent: Fusee.Engine.Common.IMeshImp
+  name: BoneIndicesSet
+  nameWithType: IMeshImp.BoneIndicesSet
+  fullName: Fusee.Engine.Common.IMeshImp.BoneIndicesSet
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.TangentsSet*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.TangentsSet
+  name: TangentsSet
+  nameWithType: MeshImp.TangentsSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.TangentsSet
+- uid: Fusee.Engine.Common.IMeshImp.TangentsSet
+  commentId: P:Fusee.Engine.Common.IMeshImp.TangentsSet
+  parent: Fusee.Engine.Common.IMeshImp
+  name: TangentsSet
+  nameWithType: IMeshImp.TangentsSet
+  fullName: Fusee.Engine.Common.IMeshImp.TangentsSet
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.BiTangentsSet*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.BiTangentsSet
+  name: BiTangentsSet
+  nameWithType: MeshImp.BiTangentsSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.BiTangentsSet
+- uid: Fusee.Engine.Common.IMeshImp.BiTangentsSet
+  commentId: P:Fusee.Engine.Common.IMeshImp.BiTangentsSet
+  parent: Fusee.Engine.Common.IMeshImp
+  name: BiTangentsSet
+  nameWithType: IMeshImp.BiTangentsSet
+  fullName: Fusee.Engine.Common.IMeshImp.BiTangentsSet
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBoneIndices*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBoneIndices
+  name: InvalidateBoneIndices
+  nameWithType: MeshImp.InvalidateBoneIndices
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBoneIndices
+- uid: Fusee.Engine.Common.IMeshImp.InvalidateBoneIndices
+  commentId: M:Fusee.Engine.Common.IMeshImp.InvalidateBoneIndices
+  parent: Fusee.Engine.Common.IMeshImp
+  name: InvalidateBoneIndices()
+  nameWithType: IMeshImp.InvalidateBoneIndices()
+  fullName: Fusee.Engine.Common.IMeshImp.InvalidateBoneIndices()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IMeshImp.InvalidateBoneIndices
+    name: InvalidateBoneIndices
+    nameWithType: IMeshImp.InvalidateBoneIndices
+    fullName: Fusee.Engine.Common.IMeshImp.InvalidateBoneIndices
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IMeshImp.InvalidateBoneIndices
+    name: InvalidateBoneIndices
+    nameWithType: IMeshImp.InvalidateBoneIndices
+    fullName: Fusee.Engine.Common.IMeshImp.InvalidateBoneIndices
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateTangents*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateTangents
+  name: InvalidateTangents
+  nameWithType: MeshImp.InvalidateTangents
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateTangents
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBiTangents*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBiTangents
+  name: InvalidateBiTangents
+  nameWithType: MeshImp.InvalidateBiTangents
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBiTangents
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.BoneWeightsSet*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.BoneWeightsSet
+  name: BoneWeightsSet
+  nameWithType: MeshImp.BoneWeightsSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.BoneWeightsSet
+- uid: Fusee.Engine.Common.IMeshImp.BoneWeightsSet
+  commentId: P:Fusee.Engine.Common.IMeshImp.BoneWeightsSet
+  parent: Fusee.Engine.Common.IMeshImp
+  name: BoneWeightsSet
+  nameWithType: IMeshImp.BoneWeightsSet
+  fullName: Fusee.Engine.Common.IMeshImp.BoneWeightsSet
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBoneWeights*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBoneWeights
+  name: InvalidateBoneWeights
+  nameWithType: MeshImp.InvalidateBoneWeights
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateBoneWeights
+- uid: Fusee.Engine.Common.IMeshImp.InvalidateBoneWeights
+  commentId: M:Fusee.Engine.Common.IMeshImp.InvalidateBoneWeights
+  parent: Fusee.Engine.Common.IMeshImp
+  name: InvalidateBoneWeights()
+  nameWithType: IMeshImp.InvalidateBoneWeights()
+  fullName: Fusee.Engine.Common.IMeshImp.InvalidateBoneWeights()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IMeshImp.InvalidateBoneWeights
+    name: InvalidateBoneWeights
+    nameWithType: IMeshImp.InvalidateBoneWeights
+    fullName: Fusee.Engine.Common.IMeshImp.InvalidateBoneWeights
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IMeshImp.InvalidateBoneWeights
+    name: InvalidateBoneWeights
+    nameWithType: IMeshImp.InvalidateBoneWeights
+    fullName: Fusee.Engine.Common.IMeshImp.InvalidateBoneWeights
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateTriangles*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateTriangles
+  name: InvalidateTriangles
+  nameWithType: MeshImp.InvalidateTriangles
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.InvalidateTriangles
+- uid: Fusee.Engine.Common.IMeshImp.InvalidateTriangles
+  commentId: M:Fusee.Engine.Common.IMeshImp.InvalidateTriangles
+  parent: Fusee.Engine.Common.IMeshImp
+  name: InvalidateTriangles()
+  nameWithType: IMeshImp.InvalidateTriangles()
+  fullName: Fusee.Engine.Common.IMeshImp.InvalidateTriangles()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IMeshImp.InvalidateTriangles
+    name: InvalidateTriangles
+    nameWithType: IMeshImp.InvalidateTriangles
+    fullName: Fusee.Engine.Common.IMeshImp.InvalidateTriangles
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IMeshImp.InvalidateTriangles
+    name: InvalidateTriangles
+    nameWithType: IMeshImp.InvalidateTriangles
+    fullName: Fusee.Engine.Common.IMeshImp.InvalidateTriangles
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.TrianglesSet*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.TrianglesSet
+  name: TrianglesSet
+  nameWithType: MeshImp.TrianglesSet
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.TrianglesSet
+- uid: Fusee.Engine.Common.IMeshImp.TrianglesSet
+  commentId: P:Fusee.Engine.Common.IMeshImp.TrianglesSet
+  parent: Fusee.Engine.Common.IMeshImp
+  name: TrianglesSet
+  nameWithType: IMeshImp.TrianglesSet
+  fullName: Fusee.Engine.Common.IMeshImp.TrianglesSet
+- uid: Fusee.Engine.Imp.Graphics.Android.MeshImp.MeshType*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Android.MeshImp.MeshType
+  name: MeshType
+  nameWithType: MeshImp.MeshType
+  fullName: Fusee.Engine.Imp.Graphics.Android.MeshImp.MeshType
+- uid: Fusee.Engine.Common.IMeshImp.MeshType
+  commentId: P:Fusee.Engine.Common.IMeshImp.MeshType
+  parent: Fusee.Engine.Common.IMeshImp
+  name: MeshType
+  nameWithType: IMeshImp.MeshType
+  fullName: Fusee.Engine.Common.IMeshImp.MeshType
+- uid: Fusee.Engine.Common.OpenGLPrimitiveType
+  commentId: T:Fusee.Engine.Common.OpenGLPrimitiveType
+  parent: Fusee.Engine.Common
+  name: OpenGLPrimitiveType
+  nameWithType: OpenGLPrimitiveType
+  fullName: Fusee.Engine.Common.OpenGLPrimitiveType

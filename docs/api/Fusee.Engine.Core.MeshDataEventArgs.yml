@@ -1,0 +1,514 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.MeshDataEventArgs
+  commentId: T:Fusee.Engine.Core.MeshDataEventArgs
+  id: MeshDataEventArgs
+  parent: Fusee.Engine.Core
+  children:
+  - Fusee.Engine.Core.MeshDataEventArgs.#ctor(Fusee.Engine.Core.Scene.Mesh,Fusee.Engine.Core.MeshChangedEnum)
+  - Fusee.Engine.Core.MeshDataEventArgs.ChangedEnum
+  - Fusee.Engine.Core.MeshDataEventArgs.Mesh
+  langs:
+  - csharp
+  - vb
+  name: MeshDataEventArgs
+  nameWithType: MeshDataEventArgs
+  fullName: Fusee.Engine.Core.MeshDataEventArgs
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MeshDataEventArgs.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MeshDataEventArgs
+    path: src/Fusee/src/Engine/Core/MeshDataEventArgs.cs
+    startLine: 8
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nEventArgs to propagate changes of a <xref href=\"Fusee.Engine.Core.MeshDataEventArgs.Mesh\" data-throw-if-not-resolved=\"false\"></xref> object&apos;s life cycle and property changes.\n"
+  example: []
+  syntax:
+    content: 'public class MeshDataEventArgs : EventArgs'
+    content.vb: >-
+      Public Class MeshDataEventArgs
+
+          Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Core.MeshDataEventArgs.Mesh
+  commentId: P:Fusee.Engine.Core.MeshDataEventArgs.Mesh
+  id: Mesh
+  parent: Fusee.Engine.Core.MeshDataEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Mesh
+  nameWithType: MeshDataEventArgs.Mesh
+  fullName: Fusee.Engine.Core.MeshDataEventArgs.Mesh
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MeshDataEventArgs.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Mesh
+    path: src/Fusee/src/Engine/Core/MeshDataEventArgs.cs
+    startLine: 13
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe <xref href=\"Fusee.Engine.Core.MeshDataEventArgs.Mesh\" data-throw-if-not-resolved=\"false\"></xref> that triggered the event.\n"
+  example: []
+  syntax:
+    content: public Mesh Mesh { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Core.Scene.Mesh
+    content.vb: Public ReadOnly Property Mesh As Mesh
+  overload: Fusee.Engine.Core.MeshDataEventArgs.Mesh*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MeshDataEventArgs.ChangedEnum
+  commentId: P:Fusee.Engine.Core.MeshDataEventArgs.ChangedEnum
+  id: ChangedEnum
+  parent: Fusee.Engine.Core.MeshDataEventArgs
+  langs:
+  - csharp
+  - vb
+  name: ChangedEnum
+  nameWithType: MeshDataEventArgs.ChangedEnum
+  fullName: Fusee.Engine.Core.MeshDataEventArgs.ChangedEnum
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MeshDataEventArgs.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ChangedEnum
+    path: src/Fusee/src/Engine/Core/MeshDataEventArgs.cs
+    startLine: 18
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nDescription enum providing details about what property of the Mesh changed.\n"
+  example: []
+  syntax:
+    content: public MeshChangedEnum ChangedEnum { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Core.MeshChangedEnum
+    content.vb: Public ReadOnly Property ChangedEnum As MeshChangedEnum
+  overload: Fusee.Engine.Core.MeshDataEventArgs.ChangedEnum*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MeshDataEventArgs.#ctor(Fusee.Engine.Core.Scene.Mesh,Fusee.Engine.Core.MeshChangedEnum)
+  commentId: M:Fusee.Engine.Core.MeshDataEventArgs.#ctor(Fusee.Engine.Core.Scene.Mesh,Fusee.Engine.Core.MeshChangedEnum)
+  id: '#ctor(Fusee.Engine.Core.Scene.Mesh,Fusee.Engine.Core.MeshChangedEnum)'
+  parent: Fusee.Engine.Core.MeshDataEventArgs
+  langs:
+  - csharp
+  - vb
+  name: MeshDataEventArgs(Mesh, MeshChangedEnum)
+  nameWithType: MeshDataEventArgs.MeshDataEventArgs(Mesh, MeshChangedEnum)
+  fullName: Fusee.Engine.Core.MeshDataEventArgs.MeshDataEventArgs(Fusee.Engine.Core.Scene.Mesh, Fusee.Engine.Core.MeshChangedEnum)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MeshDataEventArgs.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/Core/MeshDataEventArgs.cs
+    startLine: 25
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nConstructor takes a Mesh and a description which property of the mesh changed.\n"
+  example: []
+  syntax:
+    content: public MeshDataEventArgs(Mesh mesh, MeshChangedEnum meshChangedEnum)
+    parameters:
+    - id: mesh
+      type: Fusee.Engine.Core.Scene.Mesh
+      description: The Mesh which property of life cycle has changed.
+    - id: meshChangedEnum
+      type: Fusee.Engine.Core.MeshChangedEnum
+      description: The <xref href="Fusee.Engine.Core.MeshChangedEnum" data-throw-if-not-resolved="false"></xref> describing which property of the Mesh changed.
+    content.vb: Public Sub New(mesh As Mesh, meshChangedEnum As MeshChangedEnum)
+  overload: Fusee.Engine.Core.MeshDataEventArgs.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Core.MeshDataEventArgs.Mesh
+  commentId: P:Fusee.Engine.Core.MeshDataEventArgs.Mesh
+  isExternal: true
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  commentId: F:System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  nameWithType: EventArgs.Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.MeshDataEventArgs.Mesh*
+  commentId: Overload:Fusee.Engine.Core.MeshDataEventArgs.Mesh
+  name: Mesh
+  nameWithType: MeshDataEventArgs.Mesh
+  fullName: Fusee.Engine.Core.MeshDataEventArgs.Mesh
+- uid: Fusee.Engine.Core.Scene.Mesh
+  commentId: T:Fusee.Engine.Core.Scene.Mesh
+  parent: Fusee.Engine.Core.Scene
+  name: Mesh
+  nameWithType: Mesh
+  fullName: Fusee.Engine.Core.Scene.Mesh
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: Fusee.Engine.Core.MeshDataEventArgs.ChangedEnum*
+  commentId: Overload:Fusee.Engine.Core.MeshDataEventArgs.ChangedEnum
+  name: ChangedEnum
+  nameWithType: MeshDataEventArgs.ChangedEnum
+  fullName: Fusee.Engine.Core.MeshDataEventArgs.ChangedEnum
+- uid: Fusee.Engine.Core.MeshChangedEnum
+  commentId: T:Fusee.Engine.Core.MeshChangedEnum
+  parent: Fusee.Engine.Core
+  name: MeshChangedEnum
+  nameWithType: MeshChangedEnum
+  fullName: Fusee.Engine.Core.MeshChangedEnum
+- uid: Fusee.Engine.Core.MeshDataEventArgs.#ctor*
+  commentId: Overload:Fusee.Engine.Core.MeshDataEventArgs.#ctor
+  name: MeshDataEventArgs
+  nameWithType: MeshDataEventArgs.MeshDataEventArgs
+  fullName: Fusee.Engine.Core.MeshDataEventArgs.MeshDataEventArgs

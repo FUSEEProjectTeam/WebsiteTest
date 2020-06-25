@@ -1,0 +1,478 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.ITexture
+  commentId: T:Fusee.Engine.Common.ITexture
+  id: ITexture
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.ITexture.PixelData
+  langs:
+  - csharp
+  - vb
+  name: ITexture
+  nameWithType: ITexture
+  fullName: Fusee.Engine.Common.ITexture
+  type: Interface
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/ITexture.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ITexture
+    path: src/Fusee/src/Engine/Common/ITexture.cs
+    startLine: 8
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nCross platform abstraction for Textures.\nImplements <xref href=\"Fusee.Base.Common.IImageData\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Fusee.Engine.Common.ITextureBase\" data-throw-if-not-resolved=\"false\"></xref>and offers access to internal <xref href=\"Fusee.Engine.Common.ITexture.PixelData\" data-throw-if-not-resolved=\"false\"></xref> for GPU upload.\n"
+  example: []
+  syntax:
+    content: 'public interface ITexture : IImageData, ITextureBase, IImageBase, IDisposable'
+    content.vb: >-
+      Public Interface ITexture
+
+          Inherits IImageData, ITextureBase
+  inheritedMembers:
+  - Fusee.Base.Common.IImageData.Blt(System.Int32,System.Int32,Fusee.Base.Common.IImageData,System.Int32,System.Int32,System.Int32,System.Int32)
+  - Fusee.Base.Common.IImageData.ScanLines(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Fusee.Base.Common.IImageData.IsEmpty
+  - Fusee.Engine.Common.ITextureBase.TextureChanged
+  - Fusee.Engine.Common.ITextureBase.SessionUniqueIdentifier
+  - Fusee.Engine.Common.ITextureBase.DoGenerateMipMaps
+  - Fusee.Engine.Common.ITextureBase.WrapMode
+  - Fusee.Engine.Common.ITextureBase.FilterMode
+  - Fusee.Base.Common.IImageBase.Width
+  - Fusee.Base.Common.IImageBase.Height
+  - Fusee.Base.Common.IImageBase.PixelFormat
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Fusee.Engine.Common.ITexture.PixelData
+  commentId: P:Fusee.Engine.Common.ITexture.PixelData
+  id: PixelData
+  parent: Fusee.Engine.Common.ITexture
+  langs:
+  - csharp
+  - vb
+  name: PixelData
+  nameWithType: ITexture.PixelData
+  fullName: Fusee.Engine.Common.ITexture.PixelData
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/ITexture.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: PixelData
+    path: src/Fusee/src/Engine/Common/ITexture.cs
+    startLine: 13
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe byte buffer that makes up the <xref href=\"Fusee.Engine.Common.ITexture\" data-throw-if-not-resolved=\"false\"></xref> instance.\n"
+  example: []
+  syntax:
+    content: byte[] PixelData { get; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: ReadOnly Property PixelData As Byte()
+  overload: Fusee.Engine.Common.ITexture.PixelData*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Fusee.Base.Common.IImageData
+  commentId: T:Fusee.Base.Common.IImageData
+  parent: Fusee.Base.Common
+  name: IImageData
+  nameWithType: IImageData
+  fullName: Fusee.Base.Common.IImageData
+- uid: Fusee.Engine.Common.ITextureBase
+  commentId: T:Fusee.Engine.Common.ITextureBase
+  parent: Fusee.Engine.Common
+  name: ITextureBase
+  nameWithType: ITextureBase
+  fullName: Fusee.Engine.Common.ITextureBase
+- uid: Fusee.Engine.Common.ITexture.PixelData
+  commentId: P:Fusee.Engine.Common.ITexture.PixelData
+  parent: Fusee.Engine.Common.ITexture
+  name: PixelData
+  nameWithType: ITexture.PixelData
+  fullName: Fusee.Engine.Common.ITexture.PixelData
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Base.Common.IImageData.Blt(System.Int32,System.Int32,Fusee.Base.Common.IImageData,System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Fusee.Base.Common.IImageData.Blt(System.Int32,System.Int32,Fusee.Base.Common.IImageData,System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Fusee.Base.Common.IImageData
+  isExternal: true
+  name: Blt(Int32, Int32, IImageData, Int32, Int32, Int32, Int32)
+  nameWithType: IImageData.Blt(Int32, Int32, IImageData, Int32, Int32, Int32, Int32)
+  fullName: Fusee.Base.Common.IImageData.Blt(System.Int32, System.Int32, Fusee.Base.Common.IImageData, System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Fusee.Base.Common.IImageData.Blt(System.Int32,System.Int32,Fusee.Base.Common.IImageData,System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Blt
+    nameWithType: IImageData.Blt
+    fullName: Fusee.Base.Common.IImageData.Blt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Base.Common.IImageData
+    name: IImageData
+    nameWithType: IImageData
+    fullName: Fusee.Base.Common.IImageData
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Base.Common.IImageData.Blt(System.Int32,System.Int32,Fusee.Base.Common.IImageData,System.Int32,System.Int32,System.Int32,System.Int32)
+    name: Blt
+    nameWithType: IImageData.Blt
+    fullName: Fusee.Base.Common.IImageData.Blt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Base.Common.IImageData
+    name: IImageData
+    nameWithType: IImageData
+    fullName: Fusee.Base.Common.IImageData
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Base.Common.IImageData.ScanLines(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Fusee.Base.Common.IImageData.ScanLines(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Fusee.Base.Common.IImageData
+  isExternal: true
+  name: ScanLines(Int32, Int32, Int32, Int32)
+  nameWithType: IImageData.ScanLines(Int32, Int32, Int32, Int32)
+  fullName: Fusee.Base.Common.IImageData.ScanLines(System.Int32, System.Int32, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Fusee.Base.Common.IImageData.ScanLines(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: ScanLines
+    nameWithType: IImageData.ScanLines
+    fullName: Fusee.Base.Common.IImageData.ScanLines
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Base.Common.IImageData.ScanLines(System.Int32,System.Int32,System.Int32,System.Int32)
+    name: ScanLines
+    nameWithType: IImageData.ScanLines
+    fullName: Fusee.Base.Common.IImageData.ScanLines
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Base.Common.IImageData.IsEmpty
+  commentId: P:Fusee.Base.Common.IImageData.IsEmpty
+  parent: Fusee.Base.Common.IImageData
+  name: IsEmpty
+  nameWithType: IImageData.IsEmpty
+  fullName: Fusee.Base.Common.IImageData.IsEmpty
+- uid: Fusee.Engine.Common.ITextureBase.TextureChanged
+  commentId: E:Fusee.Engine.Common.ITextureBase.TextureChanged
+  parent: Fusee.Engine.Common.ITextureBase
+  name: TextureChanged
+  nameWithType: ITextureBase.TextureChanged
+  fullName: Fusee.Engine.Common.ITextureBase.TextureChanged
+- uid: Fusee.Engine.Common.ITextureBase.SessionUniqueIdentifier
+  commentId: P:Fusee.Engine.Common.ITextureBase.SessionUniqueIdentifier
+  parent: Fusee.Engine.Common.ITextureBase
+  name: SessionUniqueIdentifier
+  nameWithType: ITextureBase.SessionUniqueIdentifier
+  fullName: Fusee.Engine.Common.ITextureBase.SessionUniqueIdentifier
+- uid: Fusee.Engine.Common.ITextureBase.DoGenerateMipMaps
+  commentId: P:Fusee.Engine.Common.ITextureBase.DoGenerateMipMaps
+  parent: Fusee.Engine.Common.ITextureBase
+  name: DoGenerateMipMaps
+  nameWithType: ITextureBase.DoGenerateMipMaps
+  fullName: Fusee.Engine.Common.ITextureBase.DoGenerateMipMaps
+- uid: Fusee.Engine.Common.ITextureBase.WrapMode
+  commentId: P:Fusee.Engine.Common.ITextureBase.WrapMode
+  parent: Fusee.Engine.Common.ITextureBase
+  name: WrapMode
+  nameWithType: ITextureBase.WrapMode
+  fullName: Fusee.Engine.Common.ITextureBase.WrapMode
+- uid: Fusee.Engine.Common.ITextureBase.FilterMode
+  commentId: P:Fusee.Engine.Common.ITextureBase.FilterMode
+  parent: Fusee.Engine.Common.ITextureBase
+  name: FilterMode
+  nameWithType: ITextureBase.FilterMode
+  fullName: Fusee.Engine.Common.ITextureBase.FilterMode
+- uid: Fusee.Base.Common.IImageBase.Width
+  commentId: P:Fusee.Base.Common.IImageBase.Width
+  parent: Fusee.Base.Common.IImageBase
+  name: Width
+  nameWithType: IImageBase.Width
+  fullName: Fusee.Base.Common.IImageBase.Width
+- uid: Fusee.Base.Common.IImageBase.Height
+  commentId: P:Fusee.Base.Common.IImageBase.Height
+  parent: Fusee.Base.Common.IImageBase
+  name: Height
+  nameWithType: IImageBase.Height
+  fullName: Fusee.Base.Common.IImageBase.Height
+- uid: Fusee.Base.Common.IImageBase.PixelFormat
+  commentId: P:Fusee.Base.Common.IImageBase.PixelFormat
+  parent: Fusee.Base.Common.IImageBase
+  name: PixelFormat
+  nameWithType: IImageBase.PixelFormat
+  fullName: Fusee.Base.Common.IImageBase.PixelFormat
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Base.Common
+  commentId: N:Fusee.Base.Common
+  name: Fusee.Base.Common
+  nameWithType: Fusee.Base.Common
+  fullName: Fusee.Base.Common
+- uid: Fusee.Engine.Common.ITexture
+  commentId: T:Fusee.Engine.Common.ITexture
+  parent: Fusee.Engine.Common
+  name: ITexture
+  nameWithType: ITexture
+  fullName: Fusee.Engine.Common.ITexture
+- uid: Fusee.Base.Common.IImageBase
+  commentId: T:Fusee.Base.Common.IImageBase
+  parent: Fusee.Base.Common
+  name: IImageBase
+  nameWithType: IImageBase
+  fullName: Fusee.Base.Common.IImageBase
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Common.ITexture.PixelData*
+  commentId: Overload:Fusee.Engine.Common.ITexture.PixelData
+  name: PixelData
+  nameWithType: ITexture.PixelData
+  fullName: Fusee.Engine.Common.ITexture.PixelData
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

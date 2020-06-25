@@ -1,0 +1,181 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.IStaticPlaneShapeImp
+  commentId: T:Fusee.Engine.Common.IStaticPlaneShapeImp
+  id: IStaticPlaneShapeImp
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.IStaticPlaneShapeImp.PlaneConstant
+  - Fusee.Engine.Common.IStaticPlaneShapeImp.PlaneNormal
+  langs:
+  - csharp
+  - vb
+  name: IStaticPlaneShapeImp
+  nameWithType: IStaticPlaneShapeImp
+  fullName: Fusee.Engine.Common.IStaticPlaneShapeImp
+  type: Interface
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IStaticPlaneShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IStaticPlaneShapeImp
+    path: src/Fusee/src/Engine/Common/IStaticPlaneShapeImp.cs
+    startLine: 7
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nImplementation agnostic representation of a plane shaped collision shape.\n"
+  example: []
+  syntax:
+    content: 'public interface IStaticPlaneShapeImp : ICollisionShapeImp'
+    content.vb: >-
+      Public Interface IStaticPlaneShapeImp
+
+          Inherits ICollisionShapeImp
+  inheritedMembers:
+  - Fusee.Engine.Common.ICollisionShapeImp.Margin
+  - Fusee.Engine.Common.ICollisionShapeImp.LocalScaling
+  - Fusee.Engine.Common.ICollisionShapeImp.UserObject
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Fusee.Engine.Common.IStaticPlaneShapeImp.PlaneConstant
+  commentId: P:Fusee.Engine.Common.IStaticPlaneShapeImp.PlaneConstant
+  id: PlaneConstant
+  parent: Fusee.Engine.Common.IStaticPlaneShapeImp
+  langs:
+  - csharp
+  - vb
+  name: PlaneConstant
+  nameWithType: IStaticPlaneShapeImp.PlaneConstant
+  fullName: Fusee.Engine.Common.IStaticPlaneShapeImp.PlaneConstant
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IStaticPlaneShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: PlaneConstant
+    path: src/Fusee/src/Engine/Common/IStaticPlaneShapeImp.cs
+    startLine: 15
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the plane constant.\n"
+  example: []
+  syntax:
+    content: float PlaneConstant { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe plane constant.\n"
+    content.vb: ReadOnly Property PlaneConstant As Single
+  overload: Fusee.Engine.Common.IStaticPlaneShapeImp.PlaneConstant*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Fusee.Engine.Common.IStaticPlaneShapeImp.PlaneNormal
+  commentId: P:Fusee.Engine.Common.IStaticPlaneShapeImp.PlaneNormal
+  id: PlaneNormal
+  parent: Fusee.Engine.Common.IStaticPlaneShapeImp
+  langs:
+  - csharp
+  - vb
+  name: PlaneNormal
+  nameWithType: IStaticPlaneShapeImp.PlaneNormal
+  fullName: Fusee.Engine.Common.IStaticPlaneShapeImp.PlaneNormal
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IStaticPlaneShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: PlaneNormal
+    path: src/Fusee/src/Engine/Common/IStaticPlaneShapeImp.cs
+    startLine: 22
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the plane normal.\n"
+  example: []
+  syntax:
+    content: float3 PlaneNormal { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+      description: "\nThe plane normal.\n"
+    content.vb: ReadOnly Property PlaneNormal As float3
+  overload: Fusee.Engine.Common.IStaticPlaneShapeImp.PlaneNormal*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Common.ICollisionShapeImp.Margin
+  commentId: P:Fusee.Engine.Common.ICollisionShapeImp.Margin
+  parent: Fusee.Engine.Common.ICollisionShapeImp
+  name: Margin
+  nameWithType: ICollisionShapeImp.Margin
+  fullName: Fusee.Engine.Common.ICollisionShapeImp.Margin
+- uid: Fusee.Engine.Common.ICollisionShapeImp.LocalScaling
+  commentId: P:Fusee.Engine.Common.ICollisionShapeImp.LocalScaling
+  parent: Fusee.Engine.Common.ICollisionShapeImp
+  name: LocalScaling
+  nameWithType: ICollisionShapeImp.LocalScaling
+  fullName: Fusee.Engine.Common.ICollisionShapeImp.LocalScaling
+- uid: Fusee.Engine.Common.ICollisionShapeImp.UserObject
+  commentId: P:Fusee.Engine.Common.ICollisionShapeImp.UserObject
+  parent: Fusee.Engine.Common.ICollisionShapeImp
+  name: UserObject
+  nameWithType: ICollisionShapeImp.UserObject
+  fullName: Fusee.Engine.Common.ICollisionShapeImp.UserObject
+- uid: Fusee.Engine.Common.ICollisionShapeImp
+  commentId: T:Fusee.Engine.Common.ICollisionShapeImp
+  parent: Fusee.Engine.Common
+  name: ICollisionShapeImp
+  nameWithType: ICollisionShapeImp
+  fullName: Fusee.Engine.Common.ICollisionShapeImp
+- uid: Fusee.Engine.Common.IStaticPlaneShapeImp.PlaneConstant*
+  commentId: Overload:Fusee.Engine.Common.IStaticPlaneShapeImp.PlaneConstant
+  name: PlaneConstant
+  nameWithType: IStaticPlaneShapeImp.PlaneConstant
+  fullName: Fusee.Engine.Common.IStaticPlaneShapeImp.PlaneConstant
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Common.IStaticPlaneShapeImp.PlaneNormal*
+  commentId: Overload:Fusee.Engine.Common.IStaticPlaneShapeImp.PlaneNormal
+  name: PlaneNormal
+  nameWithType: IStaticPlaneShapeImp.PlaneNormal
+  fullName: Fusee.Engine.Common.IStaticPlaneShapeImp.PlaneNormal
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core

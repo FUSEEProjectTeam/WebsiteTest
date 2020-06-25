@@ -1,0 +1,588 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Xene
+  commentId: N:Fusee.Xene
+  id: Fusee.Xene
+  children:
+  - Fusee.Xene.CollapsingStateStack`1
+  - Fusee.Xene.EmptyState
+  - Fusee.Xene.IComponent
+  - Fusee.Xene.INode
+  - Fusee.Xene.IStateStack
+  - Fusee.Xene.SceneComponentFinder`3
+  - Fusee.Xene.SceneFinderBase`3
+  - Fusee.Xene.SceneFinderExtensions
+  - Fusee.Xene.SceneNodeFinder`3
+  - Fusee.Xene.SceneNodeWhereComponentFinder`3
+  - Fusee.Xene.StandardState
+  - Fusee.Xene.StateStack`1
+  - Fusee.Xene.Viserator`4
+  - Fusee.Xene.ViseratorBase`3
+  - Fusee.Xene.ViseratorExtensions
+  - Fusee.Xene.VisitMethodAttribute
+  - Fusee.Xene.Visitor`2
+  - Fusee.Xene.VisitorHelpers
+  - Fusee.Xene.VisitorState
+  langs:
+  - csharp
+  - vb
+  name: Fusee.Xene
+  nameWithType: Fusee.Xene
+  fullName: Fusee.Xene
+  type: Namespace
+  assemblies:
+  - Fusee.Xene
+references:
+- uid: Fusee.Xene.IComponent
+  commentId: T:Fusee.Xene.IComponent
+  parent: Fusee.Xene
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Fusee.Xene.IComponent
+- uid: Fusee.Xene.INode
+  commentId: T:Fusee.Xene.INode
+  parent: Fusee.Xene
+  name: INode
+  nameWithType: INode
+  fullName: Fusee.Xene.INode
+- uid: Fusee.Xene.SceneFinderExtensions
+  commentId: T:Fusee.Xene.SceneFinderExtensions
+  parent: Fusee.Xene
+  name: SceneFinderExtensions
+  nameWithType: SceneFinderExtensions
+  fullName: Fusee.Xene.SceneFinderExtensions
+- uid: Fusee.Xene.SceneNodeFinder`3
+  commentId: T:Fusee.Xene.SceneNodeFinder`3
+  name: SceneNodeFinder<TNodeToFind, TNode, TComponent>
+  nameWithType: SceneNodeFinder<TNodeToFind, TNode, TComponent>
+  fullName: Fusee.Xene.SceneNodeFinder<TNodeToFind, TNode, TComponent>
+  nameWithType.vb: SceneNodeFinder(Of TNodeToFind, TNode, TComponent)
+  fullName.vb: Fusee.Xene.SceneNodeFinder(Of TNodeToFind, TNode, TComponent)
+  name.vb: SceneNodeFinder(Of TNodeToFind, TNode, TComponent)
+  spec.csharp:
+  - uid: Fusee.Xene.SceneNodeFinder`3
+    name: SceneNodeFinder
+    nameWithType: SceneNodeFinder
+    fullName: Fusee.Xene.SceneNodeFinder
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNodeToFind
+    nameWithType: TNodeToFind
+    fullName: TNodeToFind
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.SceneNodeFinder`3
+    name: SceneNodeFinder
+    nameWithType: SceneNodeFinder
+    fullName: Fusee.Xene.SceneNodeFinder
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNodeToFind
+    nameWithType: TNodeToFind
+    fullName: TNodeToFind
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.SceneComponentFinder`3
+  commentId: T:Fusee.Xene.SceneComponentFinder`3
+  name: SceneComponentFinder<TComponentToFind, TNode, TComponent>
+  nameWithType: SceneComponentFinder<TComponentToFind, TNode, TComponent>
+  fullName: Fusee.Xene.SceneComponentFinder<TComponentToFind, TNode, TComponent>
+  nameWithType.vb: SceneComponentFinder(Of TComponentToFind, TNode, TComponent)
+  fullName.vb: Fusee.Xene.SceneComponentFinder(Of TComponentToFind, TNode, TComponent)
+  name.vb: SceneComponentFinder(Of TComponentToFind, TNode, TComponent)
+  spec.csharp:
+  - uid: Fusee.Xene.SceneComponentFinder`3
+    name: SceneComponentFinder
+    nameWithType: SceneComponentFinder
+    fullName: Fusee.Xene.SceneComponentFinder
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.SceneComponentFinder`3
+    name: SceneComponentFinder
+    nameWithType: SceneComponentFinder
+    fullName: Fusee.Xene.SceneComponentFinder
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.SceneNodeWhereComponentFinder`3
+  commentId: T:Fusee.Xene.SceneNodeWhereComponentFinder`3
+  name: SceneNodeWhereComponentFinder<TComponentToFind, TNode, TComponent>
+  nameWithType: SceneNodeWhereComponentFinder<TComponentToFind, TNode, TComponent>
+  fullName: Fusee.Xene.SceneNodeWhereComponentFinder<TComponentToFind, TNode, TComponent>
+  nameWithType.vb: SceneNodeWhereComponentFinder(Of TComponentToFind, TNode, TComponent)
+  fullName.vb: Fusee.Xene.SceneNodeWhereComponentFinder(Of TComponentToFind, TNode, TComponent)
+  name.vb: SceneNodeWhereComponentFinder(Of TComponentToFind, TNode, TComponent)
+  spec.csharp:
+  - uid: Fusee.Xene.SceneNodeWhereComponentFinder`3
+    name: SceneNodeWhereComponentFinder
+    nameWithType: SceneNodeWhereComponentFinder
+    fullName: Fusee.Xene.SceneNodeWhereComponentFinder
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.SceneNodeWhereComponentFinder`3
+    name: SceneNodeWhereComponentFinder
+    nameWithType: SceneNodeWhereComponentFinder
+    fullName: Fusee.Xene.SceneNodeWhereComponentFinder
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.SceneFinderBase`3
+  commentId: T:Fusee.Xene.SceneFinderBase`3
+  name: SceneFinderBase<TSceneElementType, TNode, TComponent>
+  nameWithType: SceneFinderBase<TSceneElementType, TNode, TComponent>
+  fullName: Fusee.Xene.SceneFinderBase<TSceneElementType, TNode, TComponent>
+  nameWithType.vb: SceneFinderBase(Of TSceneElementType, TNode, TComponent)
+  fullName.vb: Fusee.Xene.SceneFinderBase(Of TSceneElementType, TNode, TComponent)
+  name.vb: SceneFinderBase(Of TSceneElementType, TNode, TComponent)
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderBase`3
+    name: SceneFinderBase
+    nameWithType: SceneFinderBase
+    fullName: Fusee.Xene.SceneFinderBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSceneElementType
+    nameWithType: TSceneElementType
+    fullName: TSceneElementType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderBase`3
+    name: SceneFinderBase
+    nameWithType: SceneFinderBase
+    fullName: Fusee.Xene.SceneFinderBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSceneElementType
+    nameWithType: TSceneElementType
+    fullName: TSceneElementType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.ViseratorExtensions
+  commentId: T:Fusee.Xene.ViseratorExtensions
+  parent: Fusee.Xene
+  name: ViseratorExtensions
+  nameWithType: ViseratorExtensions
+  fullName: Fusee.Xene.ViseratorExtensions
+- uid: Fusee.Xene.ViseratorBase`3
+  commentId: T:Fusee.Xene.ViseratorBase`3
+  name: ViseratorBase<TItem, TNode, TComponent>
+  nameWithType: ViseratorBase<TItem, TNode, TComponent>
+  fullName: Fusee.Xene.ViseratorBase<TItem, TNode, TComponent>
+  nameWithType.vb: ViseratorBase(Of TItem, TNode, TComponent)
+  fullName.vb: Fusee.Xene.ViseratorBase(Of TItem, TNode, TComponent)
+  name.vb: ViseratorBase(Of TItem, TNode, TComponent)
+  spec.csharp:
+  - uid: Fusee.Xene.ViseratorBase`3
+    name: ViseratorBase
+    nameWithType: ViseratorBase
+    fullName: Fusee.Xene.ViseratorBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TItem
+    nameWithType: TItem
+    fullName: TItem
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.ViseratorBase`3
+    name: ViseratorBase
+    nameWithType: ViseratorBase
+    fullName: Fusee.Xene.ViseratorBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TItem
+    nameWithType: TItem
+    fullName: TItem
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Viserator`4
+  commentId: T:Fusee.Xene.Viserator`4
+  name: Viserator<TItem, TState, TNode, TComponent>
+  nameWithType: Viserator<TItem, TState, TNode, TComponent>
+  fullName: Fusee.Xene.Viserator<TItem, TState, TNode, TComponent>
+  nameWithType.vb: Viserator(Of TItem, TState, TNode, TComponent)
+  fullName.vb: Fusee.Xene.Viserator(Of TItem, TState, TNode, TComponent)
+  name.vb: Viserator(Of TItem, TState, TNode, TComponent)
+  spec.csharp:
+  - uid: Fusee.Xene.Viserator`4
+    name: Viserator
+    nameWithType: Viserator
+    fullName: Fusee.Xene.Viserator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TItem
+    nameWithType: TItem
+    fullName: TItem
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TState
+    nameWithType: TState
+    fullName: TState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.Viserator`4
+    name: Viserator
+    nameWithType: Viserator
+    fullName: Fusee.Xene.Viserator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TItem
+    nameWithType: TItem
+    fullName: TItem
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TState
+    nameWithType: TState
+    fullName: TState
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.VisitMethodAttribute
+  commentId: T:Fusee.Xene.VisitMethodAttribute
+  name: VisitMethodAttribute
+  nameWithType: VisitMethodAttribute
+  fullName: Fusee.Xene.VisitMethodAttribute
+- uid: Fusee.Xene.VisitorHelpers
+  commentId: T:Fusee.Xene.VisitorHelpers
+  name: VisitorHelpers
+  nameWithType: VisitorHelpers
+  fullName: Fusee.Xene.VisitorHelpers
+- uid: Fusee.Xene.Visitor`2
+  commentId: T:Fusee.Xene.Visitor`2
+  name: Visitor<TNode, TComponent>
+  nameWithType: Visitor<TNode, TComponent>
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>
+  nameWithType.vb: Visitor(Of TNode, TComponent)
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent)
+  name.vb: Visitor(Of TNode, TComponent)
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2
+    name: Visitor
+    nameWithType: Visitor
+    fullName: Fusee.Xene.Visitor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2
+    name: Visitor
+    nameWithType: Visitor
+    fullName: Fusee.Xene.Visitor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.IStateStack
+  commentId: T:Fusee.Xene.IStateStack
+  parent: Fusee.Xene
+  name: IStateStack
+  nameWithType: IStateStack
+  fullName: Fusee.Xene.IStateStack
+- uid: Fusee.Xene.StateStack`1
+  commentId: T:Fusee.Xene.StateStack`1
+  name: StateStack<T>
+  nameWithType: StateStack<T>
+  fullName: Fusee.Xene.StateStack<T>
+  nameWithType.vb: StateStack(Of T)
+  fullName.vb: Fusee.Xene.StateStack(Of T)
+  name.vb: StateStack(Of T)
+  spec.csharp:
+  - uid: Fusee.Xene.StateStack`1
+    name: StateStack
+    nameWithType: StateStack
+    fullName: Fusee.Xene.StateStack
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.StateStack`1
+    name: StateStack
+    nameWithType: StateStack
+    fullName: Fusee.Xene.StateStack
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.CollapsingStateStack`1
+  commentId: T:Fusee.Xene.CollapsingStateStack`1
+  name: CollapsingStateStack<T>
+  nameWithType: CollapsingStateStack<T>
+  fullName: Fusee.Xene.CollapsingStateStack<T>
+  nameWithType.vb: CollapsingStateStack(Of T)
+  fullName.vb: Fusee.Xene.CollapsingStateStack(Of T)
+  name.vb: CollapsingStateStack(Of T)
+  spec.csharp:
+  - uid: Fusee.Xene.CollapsingStateStack`1
+    name: CollapsingStateStack
+    nameWithType: CollapsingStateStack
+    fullName: Fusee.Xene.CollapsingStateStack
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.CollapsingStateStack`1
+    name: CollapsingStateStack
+    nameWithType: CollapsingStateStack
+    fullName: Fusee.Xene.CollapsingStateStack
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.EmptyState
+  commentId: T:Fusee.Xene.EmptyState
+  name: EmptyState
+  nameWithType: EmptyState
+  fullName: Fusee.Xene.EmptyState
+- uid: Fusee.Xene.VisitorState
+  commentId: T:Fusee.Xene.VisitorState
+  parent: Fusee.Xene
+  name: VisitorState
+  nameWithType: VisitorState
+  fullName: Fusee.Xene.VisitorState
+- uid: Fusee.Xene.StandardState
+  commentId: T:Fusee.Xene.StandardState
+  name: StandardState
+  nameWithType: StandardState
+  fullName: Fusee.Xene.StandardState
+- uid: Fusee.Xene
+  commentId: N:Fusee.Xene
+  name: Fusee.Xene
+  nameWithType: Fusee.Xene
+  fullName: Fusee.Xene

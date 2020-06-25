@@ -1,0 +1,2331 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.MouseDevice
+  commentId: T:Fusee.Engine.Core.MouseDevice
+  id: MouseDevice
+  parent: Fusee.Engine.Core
+  children:
+  - Fusee.Engine.Core.MouseDevice.#ctor(Fusee.Engine.Common.IInputDeviceImp)
+  - Fusee.Engine.Core.MouseDevice.LeftButton
+  - Fusee.Engine.Core.MouseDevice.LeftButtonDesc
+  - Fusee.Engine.Core.MouseDevice.MiddleButton
+  - Fusee.Engine.Core.MouseDevice.MiddleButtonDesc
+  - Fusee.Engine.Core.MouseDevice.Position
+  - Fusee.Engine.Core.MouseDevice.PositionInt
+  - Fusee.Engine.Core.MouseDevice.RightButton
+  - Fusee.Engine.Core.MouseDevice.RightButtonDesc
+  - Fusee.Engine.Core.MouseDevice.Velocity
+  - Fusee.Engine.Core.MouseDevice.VelocityInt
+  - Fusee.Engine.Core.MouseDevice.Wheel
+  - Fusee.Engine.Core.MouseDevice.WheelDesc
+  - Fusee.Engine.Core.MouseDevice.WheelVel
+  - Fusee.Engine.Core.MouseDevice.WheelVelDesc
+  - Fusee.Engine.Core.MouseDevice.X
+  - Fusee.Engine.Core.MouseDevice.XDesc
+  - Fusee.Engine.Core.MouseDevice.XVel
+  - Fusee.Engine.Core.MouseDevice.XVelDesc
+  - Fusee.Engine.Core.MouseDevice.Y
+  - Fusee.Engine.Core.MouseDevice.YDesc
+  - Fusee.Engine.Core.MouseDevice.YVel
+  - Fusee.Engine.Core.MouseDevice.YVelDesc
+  langs:
+  - csharp
+  - vb
+  name: MouseDevice
+  nameWithType: MouseDevice
+  fullName: Fusee.Engine.Core.MouseDevice
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MouseDevice
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 10
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nSpecial case of an <xref href=\"Fusee.Engine.Core.InputDevice\" data-throw-if-not-resolved=\"false\"></xref> identifying itself as a <xref href=\"Fusee.Engine.Common.DeviceCategory.Mouse\" data-throw-if-not-resolved=\"false\"></xref>.\nDefines convenience methods to access the typical mouse axes and buttons. Registers\nthe mouse velocity derived axes.\n"
+  example: []
+  syntax:
+    content: 'public class MouseDevice : InputDevice'
+    content.vb: >-
+      Public Class MouseDevice
+
+          Inherits InputDevice
+  inheritance:
+  - System.Object
+  - Fusee.Engine.Core.InputDevice
+  inheritedMembers:
+  - Fusee.Engine.Core.InputDevice.NewAxisID
+  - Fusee.Engine.Core.InputDevice.IsConnected
+  - Fusee.Engine.Core.InputDevice.Id
+  - Fusee.Engine.Core.InputDevice.Desc
+  - Fusee.Engine.Core.InputDevice.Category
+  - Fusee.Engine.Core.InputDevice.AxesCount
+  - Fusee.Engine.Core.InputDevice.AxisDesc
+  - Fusee.Engine.Core.InputDevice.GetAxisDescription(System.Int32)
+  - Fusee.Engine.Core.InputDevice.GetAxis(System.Int32)
+  - Fusee.Engine.Core.InputDevice.GetAxisRaw(System.Int32)
+  - Fusee.Engine.Core.InputDevice.SetAxisDeadzone(System.Int32,System.Single)
+  - Fusee.Engine.Core.InputDevice.GetAxisDeadzone(System.Int32)
+  - Fusee.Engine.Core.InputDevice.AxisValueChanged
+  - Fusee.Engine.Core.InputDevice.ButtonCount
+  - Fusee.Engine.Core.InputDevice.ButtonDesc
+  - Fusee.Engine.Core.InputDevice.GetButtonDescription(System.Int32)
+  - Fusee.Engine.Core.InputDevice.GetButton(System.Int32)
+  - Fusee.Engine.Core.InputDevice.IsButtonDown(System.Int32)
+  - Fusee.Engine.Core.InputDevice.IsButtonUp(System.Int32)
+  - Fusee.Engine.Core.InputDevice.ButtonValueChanged
+  - Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription,Fusee.Engine.Core.InputDevice.AxisValueCalculator,System.Single)
+  - Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32,System.Int32,System.Int32,System.String,Fusee.Engine.Common.AxisDirection)
+  - Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  - Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32,System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  - Fusee.Engine.Core.InputDevice.PostRender
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Core.MouseDevice.#ctor(Fusee.Engine.Common.IInputDeviceImp)
+  commentId: M:Fusee.Engine.Core.MouseDevice.#ctor(Fusee.Engine.Common.IInputDeviceImp)
+  id: '#ctor(Fusee.Engine.Common.IInputDeviceImp)'
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: MouseDevice(IInputDeviceImp)
+  nameWithType: MouseDevice.MouseDevice(IInputDeviceImp)
+  fullName: Fusee.Engine.Core.MouseDevice.MouseDevice(Fusee.Engine.Common.IInputDeviceImp)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 20
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Engine.Core.MouseDevice\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public MouseDevice(IInputDeviceImp inpDeviceImp)
+    parameters:
+    - id: inpDeviceImp
+      type: Fusee.Engine.Common.IInputDeviceImp
+      description: The platform dependent connector to the underlying physical device.
+    content.vb: Public Sub New(inpDeviceImp As IInputDeviceImp)
+  overload: Fusee.Engine.Core.MouseDevice.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.MouseDevice.PositionInt
+  commentId: P:Fusee.Engine.Core.MouseDevice.PositionInt
+  id: PositionInt
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: PositionInt
+  nameWithType: MouseDevice.PositionInt
+  fullName: Fusee.Engine.Core.MouseDevice.PositionInt
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: PositionInt
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 34
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the current position relative to the upper left corner of the rendering window.\nThe returned values are integers.\n"
+  example: []
+  syntax:
+    content: public Point PositionInt { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.Point
+      description: "\nThe mouse position. z contains the wheel&apos;s value.\n"
+    content.vb: Public ReadOnly Property PositionInt As Point
+  overload: Fusee.Engine.Core.MouseDevice.PositionInt*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.Position
+  commentId: P:Fusee.Engine.Core.MouseDevice.Position
+  id: Position
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: MouseDevice.Position
+  fullName: Fusee.Engine.Core.MouseDevice.Position
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Position
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 49
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the current position relative to the upper left corner of the rendering window.\n"
+  example: []
+  syntax:
+    content: public float2 Position { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float2
+      description: "\nThe current position of the mouse.\n"
+    content.vb: Public ReadOnly Property Position As float2
+  overload: Fusee.Engine.Core.MouseDevice.Position*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.X
+  commentId: P:Fusee.Engine.Core.MouseDevice.X
+  id: X
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: MouseDevice.X
+  fullName: Fusee.Engine.Core.MouseDevice.X
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: X
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 57
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the mouse&apos;s x value.\n"
+  example: []
+  syntax:
+    content: public float X { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nNumber of pixels from the left border of the rendering window to the current mouse position.\n"
+    content.vb: Public ReadOnly Property X As Single
+  overload: Fusee.Engine.Core.MouseDevice.X*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.Y
+  commentId: P:Fusee.Engine.Core.MouseDevice.Y
+  id: Y
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: MouseDevice.Y
+  fullName: Fusee.Engine.Core.MouseDevice.Y
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Y
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 65
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the mouse&apos;s y value.\n"
+  example: []
+  syntax:
+    content: public float Y { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nNumber of pixels from the upper border of the rendering window to the current mouse position.\n"
+    content.vb: Public ReadOnly Property Y As Single
+  overload: Fusee.Engine.Core.MouseDevice.Y*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.Wheel
+  commentId: P:Fusee.Engine.Core.MouseDevice.Wheel
+  id: Wheel
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: Wheel
+  nameWithType: MouseDevice.Wheel
+  fullName: Fusee.Engine.Core.MouseDevice.Wheel
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Wheel
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 73
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the current wheel value.\n"
+  example: []
+  syntax:
+    content: public float Wheel { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe wheel value.\n"
+    content.vb: Public ReadOnly Property Wheel As Single
+  overload: Fusee.Engine.Core.MouseDevice.Wheel*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.VelocityInt
+  commentId: P:Fusee.Engine.Core.MouseDevice.VelocityInt
+  id: VelocityInt
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: VelocityInt
+  nameWithType: MouseDevice.VelocityInt
+  fullName: Fusee.Engine.Core.MouseDevice.VelocityInt
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: VelocityInt
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 83
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves the current mouse velocity (speed) on screen in pixels/second.\nReturn values are integers. \n"
+  example: []
+  syntax:
+    content: public Point VelocityInt { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.Point
+      description: "\nThe mouse velocity. \nz contains the wheel velocity.\n"
+    content.vb: Public ReadOnly Property VelocityInt As Point
+  overload: Fusee.Engine.Core.MouseDevice.VelocityInt*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.Velocity
+  commentId: P:Fusee.Engine.Core.MouseDevice.Velocity
+  id: Velocity
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: Velocity
+  nameWithType: MouseDevice.Velocity
+  fullName: Fusee.Engine.Core.MouseDevice.Velocity
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Velocity
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 98
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves the current mouse velocity (speed) on screen in pixels/second.\n"
+  example: []
+  syntax:
+    content: public float2 Velocity { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float2
+      description: "\nThe mouse velocity. \n"
+    content.vb: Public ReadOnly Property Velocity As float2
+  overload: Fusee.Engine.Core.MouseDevice.Velocity*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.XVel
+  commentId: P:Fusee.Engine.Core.MouseDevice.XVel
+  id: XVel
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: XVel
+  nameWithType: MouseDevice.XVel
+  fullName: Fusee.Engine.Core.MouseDevice.XVel
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: XVel
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 106
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves the current mouse velocity in x direction. \n"
+  example: []
+  syntax:
+    content: public float XVel { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe x velocity.\n"
+    content.vb: Public ReadOnly Property XVel As Single
+  overload: Fusee.Engine.Core.MouseDevice.XVel*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.YVel
+  commentId: P:Fusee.Engine.Core.MouseDevice.YVel
+  id: YVel
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: YVel
+  nameWithType: MouseDevice.YVel
+  fullName: Fusee.Engine.Core.MouseDevice.YVel
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: YVel
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 113
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves the current mouse velocity in y direction. \n"
+  example: []
+  syntax:
+    content: public float YVel { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe y velocity.\n"
+    content.vb: Public ReadOnly Property YVel As Single
+  overload: Fusee.Engine.Core.MouseDevice.YVel*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.WheelVel
+  commentId: P:Fusee.Engine.Core.MouseDevice.WheelVel
+  id: WheelVel
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: WheelVel
+  nameWithType: MouseDevice.WheelVel
+  fullName: Fusee.Engine.Core.MouseDevice.WheelVel
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: WheelVel
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 120
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves the current mouse wheel velocity. \n"
+  example: []
+  syntax:
+    content: public float WheelVel { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe velocity of the mouse wheel.\n"
+    content.vb: Public ReadOnly Property WheelVel As Single
+  overload: Fusee.Engine.Core.MouseDevice.WheelVel*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.XDesc
+  commentId: P:Fusee.Engine.Core.MouseDevice.XDesc
+  id: XDesc
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: XDesc
+  nameWithType: MouseDevice.XDesc
+  fullName: Fusee.Engine.Core.MouseDevice.XDesc
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: XDesc
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 129
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves information about the x axis.\n"
+  example: []
+  syntax:
+    content: public AxisDescription XDesc { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.AxisDescription
+      description: "\nThe description for the x axis.\n"
+    content.vb: Public ReadOnly Property XDesc As AxisDescription
+  overload: Fusee.Engine.Core.MouseDevice.XDesc*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.YDesc
+  commentId: P:Fusee.Engine.Core.MouseDevice.YDesc
+  id: YDesc
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: YDesc
+  nameWithType: MouseDevice.YDesc
+  fullName: Fusee.Engine.Core.MouseDevice.YDesc
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: YDesc
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 136
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves information about the y axis.\n"
+  example: []
+  syntax:
+    content: public AxisDescription YDesc { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.AxisDescription
+      description: "\nThe description for the y axis.\n"
+    content.vb: Public ReadOnly Property YDesc As AxisDescription
+  overload: Fusee.Engine.Core.MouseDevice.YDesc*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.WheelDesc
+  commentId: P:Fusee.Engine.Core.MouseDevice.WheelDesc
+  id: WheelDesc
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: WheelDesc
+  nameWithType: MouseDevice.WheelDesc
+  fullName: Fusee.Engine.Core.MouseDevice.WheelDesc
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: WheelDesc
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 143
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves information about the mouse wheel axis.\n"
+  example: []
+  syntax:
+    content: public AxisDescription WheelDesc { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.AxisDescription
+      description: "\nThe description for the mouse wheel axis.\n"
+    content.vb: Public ReadOnly Property WheelDesc As AxisDescription
+  overload: Fusee.Engine.Core.MouseDevice.WheelDesc*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.XVelDesc
+  commentId: P:Fusee.Engine.Core.MouseDevice.XVelDesc
+  id: XVelDesc
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: XVelDesc
+  nameWithType: MouseDevice.XVelDesc
+  fullName: Fusee.Engine.Core.MouseDevice.XVelDesc
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: XVelDesc
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 151
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves information about the x velocity axis.\n"
+  example: []
+  syntax:
+    content: public AxisDescription XVelDesc { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.AxisDescription
+      description: "\nThe description for the x velocity axis.\n"
+    content.vb: Public ReadOnly Property XVelDesc As AxisDescription
+  overload: Fusee.Engine.Core.MouseDevice.XVelDesc*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.YVelDesc
+  commentId: P:Fusee.Engine.Core.MouseDevice.YVelDesc
+  id: YVelDesc
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: YVelDesc
+  nameWithType: MouseDevice.YVelDesc
+  fullName: Fusee.Engine.Core.MouseDevice.YVelDesc
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: YVelDesc
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 158
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves information about the y velocity axis.\n"
+  example: []
+  syntax:
+    content: public AxisDescription YVelDesc { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.AxisDescription
+      description: "\nThe description for the y velocity  axis.\n"
+    content.vb: Public ReadOnly Property YVelDesc As AxisDescription
+  overload: Fusee.Engine.Core.MouseDevice.YVelDesc*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.WheelVelDesc
+  commentId: P:Fusee.Engine.Core.MouseDevice.WheelVelDesc
+  id: WheelVelDesc
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: WheelVelDesc
+  nameWithType: MouseDevice.WheelVelDesc
+  fullName: Fusee.Engine.Core.MouseDevice.WheelVelDesc
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: WheelVelDesc
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 165
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves information about the mouse wheel velocity axis.\n"
+  example: []
+  syntax:
+    content: public AxisDescription WheelVelDesc { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.AxisDescription
+      description: "\nThe description for the mouse wheel velocity axis.\n"
+    content.vb: Public ReadOnly Property WheelVelDesc As AxisDescription
+  overload: Fusee.Engine.Core.MouseDevice.WheelVelDesc*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.LeftButton
+  commentId: P:Fusee.Engine.Core.MouseDevice.LeftButton
+  id: LeftButton
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: LeftButton
+  nameWithType: MouseDevice.LeftButton
+  fullName: Fusee.Engine.Core.MouseDevice.LeftButton
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: LeftButton
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 173
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves the current state of the left mouse button.\n"
+  example: []
+  syntax:
+    content: public bool LeftButton { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if the left mouse button is currently pressed; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property LeftButton As Boolean
+  overload: Fusee.Engine.Core.MouseDevice.LeftButton*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.MiddleButton
+  commentId: P:Fusee.Engine.Core.MouseDevice.MiddleButton
+  id: MiddleButton
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: MiddleButton
+  nameWithType: MouseDevice.MiddleButton
+  fullName: Fusee.Engine.Core.MouseDevice.MiddleButton
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MiddleButton
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 180
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves the current state of the middle mouse button.\n"
+  example: []
+  syntax:
+    content: public bool MiddleButton { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if the left middle button is currently pressed; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property MiddleButton As Boolean
+  overload: Fusee.Engine.Core.MouseDevice.MiddleButton*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.RightButton
+  commentId: P:Fusee.Engine.Core.MouseDevice.RightButton
+  id: RightButton
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: RightButton
+  nameWithType: MouseDevice.RightButton
+  fullName: Fusee.Engine.Core.MouseDevice.RightButton
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RightButton
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 187
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves the current state of the right mouse button.\n"
+  example: []
+  syntax:
+    content: public bool RightButton { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if the left right button is currently pressed; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property RightButton As Boolean
+  overload: Fusee.Engine.Core.MouseDevice.RightButton*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.LeftButtonDesc
+  commentId: P:Fusee.Engine.Core.MouseDevice.LeftButtonDesc
+  id: LeftButtonDesc
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: LeftButtonDesc
+  nameWithType: MouseDevice.LeftButtonDesc
+  fullName: Fusee.Engine.Core.MouseDevice.LeftButtonDesc
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: LeftButtonDesc
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 195
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves information about the left mouse button.\n"
+  example: []
+  syntax:
+    content: public ButtonDescription LeftButtonDesc { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.ButtonDescription
+      description: "\nThe description for the left mouse button.\n"
+    content.vb: Public ReadOnly Property LeftButtonDesc As ButtonDescription
+  overload: Fusee.Engine.Core.MouseDevice.LeftButtonDesc*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.MiddleButtonDesc
+  commentId: P:Fusee.Engine.Core.MouseDevice.MiddleButtonDesc
+  id: MiddleButtonDesc
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: MiddleButtonDesc
+  nameWithType: MouseDevice.MiddleButtonDesc
+  fullName: Fusee.Engine.Core.MouseDevice.MiddleButtonDesc
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MiddleButtonDesc
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 202
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves information about the middle mouse button.\n"
+  example: []
+  syntax:
+    content: public ButtonDescription MiddleButtonDesc { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.ButtonDescription
+      description: "\nThe description for the middle mouse button.\n"
+    content.vb: Public ReadOnly Property MiddleButtonDesc As ButtonDescription
+  overload: Fusee.Engine.Core.MouseDevice.MiddleButtonDesc*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.MouseDevice.RightButtonDesc
+  commentId: P:Fusee.Engine.Core.MouseDevice.RightButtonDesc
+  id: RightButtonDesc
+  parent: Fusee.Engine.Core.MouseDevice
+  langs:
+  - csharp
+  - vb
+  name: RightButtonDesc
+  nameWithType: MouseDevice.RightButtonDesc
+  fullName: Fusee.Engine.Core.MouseDevice.RightButtonDesc
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/MouseDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RightButtonDesc
+    path: src/Fusee/src/Engine/Core/MouseDevice.cs
+    startLine: 209
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves information about the right mouse button.\n"
+  example: []
+  syntax:
+    content: public ButtonDescription RightButtonDesc { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.ButtonDescription
+      description: "\nThe description for the right mouse button.\n"
+    content.vb: Public ReadOnly Property RightButtonDesc As ButtonDescription
+  overload: Fusee.Engine.Core.MouseDevice.RightButtonDesc*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Fusee.Engine.Core.InputDevice
+  commentId: T:Fusee.Engine.Core.InputDevice
+  parent: Fusee.Engine.Core
+  name: InputDevice
+  nameWithType: InputDevice
+  fullName: Fusee.Engine.Core.InputDevice
+- uid: Fusee.Engine.Common.DeviceCategory.Mouse
+  commentId: F:Fusee.Engine.Common.DeviceCategory.Mouse
+  isExternal: true
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Core.InputDevice.NewAxisID
+  commentId: P:Fusee.Engine.Core.InputDevice.NewAxisID
+  parent: Fusee.Engine.Core.InputDevice
+  name: NewAxisID
+  nameWithType: InputDevice.NewAxisID
+  fullName: Fusee.Engine.Core.InputDevice.NewAxisID
+- uid: Fusee.Engine.Core.InputDevice.IsConnected
+  commentId: P:Fusee.Engine.Core.InputDevice.IsConnected
+  parent: Fusee.Engine.Core.InputDevice
+  name: IsConnected
+  nameWithType: InputDevice.IsConnected
+  fullName: Fusee.Engine.Core.InputDevice.IsConnected
+- uid: Fusee.Engine.Core.InputDevice.Id
+  commentId: P:Fusee.Engine.Core.InputDevice.Id
+  parent: Fusee.Engine.Core.InputDevice
+  name: Id
+  nameWithType: InputDevice.Id
+  fullName: Fusee.Engine.Core.InputDevice.Id
+- uid: Fusee.Engine.Core.InputDevice.Desc
+  commentId: P:Fusee.Engine.Core.InputDevice.Desc
+  parent: Fusee.Engine.Core.InputDevice
+  name: Desc
+  nameWithType: InputDevice.Desc
+  fullName: Fusee.Engine.Core.InputDevice.Desc
+- uid: Fusee.Engine.Core.InputDevice.Category
+  commentId: P:Fusee.Engine.Core.InputDevice.Category
+  parent: Fusee.Engine.Core.InputDevice
+  name: Category
+  nameWithType: InputDevice.Category
+  fullName: Fusee.Engine.Core.InputDevice.Category
+- uid: Fusee.Engine.Core.InputDevice.AxesCount
+  commentId: P:Fusee.Engine.Core.InputDevice.AxesCount
+  parent: Fusee.Engine.Core.InputDevice
+  name: AxesCount
+  nameWithType: InputDevice.AxesCount
+  fullName: Fusee.Engine.Core.InputDevice.AxesCount
+- uid: Fusee.Engine.Core.InputDevice.AxisDesc
+  commentId: P:Fusee.Engine.Core.InputDevice.AxisDesc
+  parent: Fusee.Engine.Core.InputDevice
+  name: AxisDesc
+  nameWithType: InputDevice.AxisDesc
+  fullName: Fusee.Engine.Core.InputDevice.AxisDesc
+- uid: Fusee.Engine.Core.InputDevice.GetAxisDescription(System.Int32)
+  commentId: M:Fusee.Engine.Core.InputDevice.GetAxisDescription(System.Int32)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: GetAxisDescription(Int32)
+  nameWithType: InputDevice.GetAxisDescription(Int32)
+  fullName: Fusee.Engine.Core.InputDevice.GetAxisDescription(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.GetAxisDescription(System.Int32)
+    name: GetAxisDescription
+    nameWithType: InputDevice.GetAxisDescription
+    fullName: Fusee.Engine.Core.InputDevice.GetAxisDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.GetAxisDescription(System.Int32)
+    name: GetAxisDescription
+    nameWithType: InputDevice.GetAxisDescription
+    fullName: Fusee.Engine.Core.InputDevice.GetAxisDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.GetAxis(System.Int32)
+  commentId: M:Fusee.Engine.Core.InputDevice.GetAxis(System.Int32)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: GetAxis(Int32)
+  nameWithType: InputDevice.GetAxis(Int32)
+  fullName: Fusee.Engine.Core.InputDevice.GetAxis(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.GetAxis(System.Int32)
+    name: GetAxis
+    nameWithType: InputDevice.GetAxis
+    fullName: Fusee.Engine.Core.InputDevice.GetAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.GetAxis(System.Int32)
+    name: GetAxis
+    nameWithType: InputDevice.GetAxis
+    fullName: Fusee.Engine.Core.InputDevice.GetAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.GetAxisRaw(System.Int32)
+  commentId: M:Fusee.Engine.Core.InputDevice.GetAxisRaw(System.Int32)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: GetAxisRaw(Int32)
+  nameWithType: InputDevice.GetAxisRaw(Int32)
+  fullName: Fusee.Engine.Core.InputDevice.GetAxisRaw(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.GetAxisRaw(System.Int32)
+    name: GetAxisRaw
+    nameWithType: InputDevice.GetAxisRaw
+    fullName: Fusee.Engine.Core.InputDevice.GetAxisRaw
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.GetAxisRaw(System.Int32)
+    name: GetAxisRaw
+    nameWithType: InputDevice.GetAxisRaw
+    fullName: Fusee.Engine.Core.InputDevice.GetAxisRaw
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.SetAxisDeadzone(System.Int32,System.Single)
+  commentId: M:Fusee.Engine.Core.InputDevice.SetAxisDeadzone(System.Int32,System.Single)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: SetAxisDeadzone(Int32, Single)
+  nameWithType: InputDevice.SetAxisDeadzone(Int32, Single)
+  fullName: Fusee.Engine.Core.InputDevice.SetAxisDeadzone(System.Int32, System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.SetAxisDeadzone(System.Int32,System.Single)
+    name: SetAxisDeadzone
+    nameWithType: InputDevice.SetAxisDeadzone
+    fullName: Fusee.Engine.Core.InputDevice.SetAxisDeadzone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.SetAxisDeadzone(System.Int32,System.Single)
+    name: SetAxisDeadzone
+    nameWithType: InputDevice.SetAxisDeadzone
+    fullName: Fusee.Engine.Core.InputDevice.SetAxisDeadzone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.GetAxisDeadzone(System.Int32)
+  commentId: M:Fusee.Engine.Core.InputDevice.GetAxisDeadzone(System.Int32)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: GetAxisDeadzone(Int32)
+  nameWithType: InputDevice.GetAxisDeadzone(Int32)
+  fullName: Fusee.Engine.Core.InputDevice.GetAxisDeadzone(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.GetAxisDeadzone(System.Int32)
+    name: GetAxisDeadzone
+    nameWithType: InputDevice.GetAxisDeadzone
+    fullName: Fusee.Engine.Core.InputDevice.GetAxisDeadzone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.GetAxisDeadzone(System.Int32)
+    name: GetAxisDeadzone
+    nameWithType: InputDevice.GetAxisDeadzone
+    fullName: Fusee.Engine.Core.InputDevice.GetAxisDeadzone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.AxisValueChanged
+  commentId: E:Fusee.Engine.Core.InputDevice.AxisValueChanged
+  parent: Fusee.Engine.Core.InputDevice
+  name: AxisValueChanged
+  nameWithType: InputDevice.AxisValueChanged
+  fullName: Fusee.Engine.Core.InputDevice.AxisValueChanged
+- uid: Fusee.Engine.Core.InputDevice.ButtonCount
+  commentId: P:Fusee.Engine.Core.InputDevice.ButtonCount
+  parent: Fusee.Engine.Core.InputDevice
+  name: ButtonCount
+  nameWithType: InputDevice.ButtonCount
+  fullName: Fusee.Engine.Core.InputDevice.ButtonCount
+- uid: Fusee.Engine.Core.InputDevice.ButtonDesc
+  commentId: P:Fusee.Engine.Core.InputDevice.ButtonDesc
+  parent: Fusee.Engine.Core.InputDevice
+  name: ButtonDesc
+  nameWithType: InputDevice.ButtonDesc
+  fullName: Fusee.Engine.Core.InputDevice.ButtonDesc
+- uid: Fusee.Engine.Core.InputDevice.GetButtonDescription(System.Int32)
+  commentId: M:Fusee.Engine.Core.InputDevice.GetButtonDescription(System.Int32)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: GetButtonDescription(Int32)
+  nameWithType: InputDevice.GetButtonDescription(Int32)
+  fullName: Fusee.Engine.Core.InputDevice.GetButtonDescription(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.GetButtonDescription(System.Int32)
+    name: GetButtonDescription
+    nameWithType: InputDevice.GetButtonDescription
+    fullName: Fusee.Engine.Core.InputDevice.GetButtonDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.GetButtonDescription(System.Int32)
+    name: GetButtonDescription
+    nameWithType: InputDevice.GetButtonDescription
+    fullName: Fusee.Engine.Core.InputDevice.GetButtonDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.GetButton(System.Int32)
+  commentId: M:Fusee.Engine.Core.InputDevice.GetButton(System.Int32)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: GetButton(Int32)
+  nameWithType: InputDevice.GetButton(Int32)
+  fullName: Fusee.Engine.Core.InputDevice.GetButton(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.GetButton(System.Int32)
+    name: GetButton
+    nameWithType: InputDevice.GetButton
+    fullName: Fusee.Engine.Core.InputDevice.GetButton
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.GetButton(System.Int32)
+    name: GetButton
+    nameWithType: InputDevice.GetButton
+    fullName: Fusee.Engine.Core.InputDevice.GetButton
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.IsButtonDown(System.Int32)
+  commentId: M:Fusee.Engine.Core.InputDevice.IsButtonDown(System.Int32)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: IsButtonDown(Int32)
+  nameWithType: InputDevice.IsButtonDown(Int32)
+  fullName: Fusee.Engine.Core.InputDevice.IsButtonDown(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.IsButtonDown(System.Int32)
+    name: IsButtonDown
+    nameWithType: InputDevice.IsButtonDown
+    fullName: Fusee.Engine.Core.InputDevice.IsButtonDown
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.IsButtonDown(System.Int32)
+    name: IsButtonDown
+    nameWithType: InputDevice.IsButtonDown
+    fullName: Fusee.Engine.Core.InputDevice.IsButtonDown
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.IsButtonUp(System.Int32)
+  commentId: M:Fusee.Engine.Core.InputDevice.IsButtonUp(System.Int32)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: IsButtonUp(Int32)
+  nameWithType: InputDevice.IsButtonUp(Int32)
+  fullName: Fusee.Engine.Core.InputDevice.IsButtonUp(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.IsButtonUp(System.Int32)
+    name: IsButtonUp
+    nameWithType: InputDevice.IsButtonUp
+    fullName: Fusee.Engine.Core.InputDevice.IsButtonUp
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.IsButtonUp(System.Int32)
+    name: IsButtonUp
+    nameWithType: InputDevice.IsButtonUp
+    fullName: Fusee.Engine.Core.InputDevice.IsButtonUp
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.ButtonValueChanged
+  commentId: E:Fusee.Engine.Core.InputDevice.ButtonValueChanged
+  parent: Fusee.Engine.Core.InputDevice
+  name: ButtonValueChanged
+  nameWithType: InputDevice.ButtonValueChanged
+  fullName: Fusee.Engine.Core.InputDevice.ButtonValueChanged
+- uid: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription,Fusee.Engine.Core.InputDevice.AxisValueCalculator,System.Single)
+  commentId: M:Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription,Fusee.Engine.Core.InputDevice.AxisValueCalculator,System.Single)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: RegisterCalculatedAxis(AxisDescription, InputDevice.AxisValueCalculator, Single)
+  nameWithType: InputDevice.RegisterCalculatedAxis(AxisDescription, InputDevice.AxisValueCalculator, Single)
+  fullName: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription, Fusee.Engine.Core.InputDevice.AxisValueCalculator, System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription,Fusee.Engine.Core.InputDevice.AxisValueCalculator,System.Single)
+    name: RegisterCalculatedAxis
+    nameWithType: InputDevice.RegisterCalculatedAxis
+    fullName: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.AxisDescription
+    name: AxisDescription
+    nameWithType: AxisDescription
+    fullName: Fusee.Engine.Common.AxisDescription
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.InputDevice.AxisValueCalculator
+    name: InputDevice.AxisValueCalculator
+    nameWithType: InputDevice.AxisValueCalculator
+    fullName: Fusee.Engine.Core.InputDevice.AxisValueCalculator
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription,Fusee.Engine.Core.InputDevice.AxisValueCalculator,System.Single)
+    name: RegisterCalculatedAxis
+    nameWithType: InputDevice.RegisterCalculatedAxis
+    fullName: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.AxisDescription
+    name: AxisDescription
+    nameWithType: AxisDescription
+    fullName: Fusee.Engine.Common.AxisDescription
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.InputDevice.AxisValueCalculator
+    name: InputDevice.AxisValueCalculator
+    nameWithType: InputDevice.AxisValueCalculator
+    fullName: Fusee.Engine.Core.InputDevice.AxisValueCalculator
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32,System.Int32,System.Int32,System.String,Fusee.Engine.Common.AxisDirection)
+  commentId: M:Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32,System.Int32,System.Int32,System.String,Fusee.Engine.Common.AxisDirection)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: RegisterVelocityAxis(Int32, Int32, Int32, String, AxisDirection)
+  nameWithType: InputDevice.RegisterVelocityAxis(Int32, Int32, Int32, String, AxisDirection)
+  fullName: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32, System.Int32, System.Int32, System.String, Fusee.Engine.Common.AxisDirection)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32,System.Int32,System.Int32,System.String,Fusee.Engine.Common.AxisDirection)
+    name: RegisterVelocityAxis
+    nameWithType: InputDevice.RegisterVelocityAxis
+    fullName: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.AxisDirection
+    name: AxisDirection
+    nameWithType: AxisDirection
+    fullName: Fusee.Engine.Common.AxisDirection
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32,System.Int32,System.Int32,System.String,Fusee.Engine.Common.AxisDirection)
+    name: RegisterVelocityAxis
+    nameWithType: InputDevice.RegisterVelocityAxis
+    fullName: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.AxisDirection
+    name: AxisDirection
+    nameWithType: AxisDirection
+    fullName: Fusee.Engine.Common.AxisDirection
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  commentId: M:Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: RegisterSingleButtonAxis(Int32, AxisDirection, Single, Single, Int32, String)
+  nameWithType: InputDevice.RegisterSingleButtonAxis(Int32, AxisDirection, Single, Single, Int32, String)
+  fullName: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32, Fusee.Engine.Common.AxisDirection, System.Single, System.Single, System.Int32, System.String)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+    name: RegisterSingleButtonAxis
+    nameWithType: InputDevice.RegisterSingleButtonAxis
+    fullName: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.AxisDirection
+    name: AxisDirection
+    nameWithType: AxisDirection
+    fullName: Fusee.Engine.Common.AxisDirection
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+    name: RegisterSingleButtonAxis
+    nameWithType: InputDevice.RegisterSingleButtonAxis
+    fullName: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.AxisDirection
+    name: AxisDirection
+    nameWithType: AxisDirection
+    fullName: Fusee.Engine.Common.AxisDirection
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32,System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  commentId: M:Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32,System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: RegisterTwoButtonAxis(Int32, Int32, AxisDirection, Single, Single, Int32, String)
+  nameWithType: InputDevice.RegisterTwoButtonAxis(Int32, Int32, AxisDirection, Single, Single, Int32, String)
+  fullName: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32, System.Int32, Fusee.Engine.Common.AxisDirection, System.Single, System.Single, System.Int32, System.String)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32,System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+    name: RegisterTwoButtonAxis
+    nameWithType: InputDevice.RegisterTwoButtonAxis
+    fullName: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.AxisDirection
+    name: AxisDirection
+    nameWithType: AxisDirection
+    fullName: Fusee.Engine.Common.AxisDirection
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32,System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+    name: RegisterTwoButtonAxis
+    nameWithType: InputDevice.RegisterTwoButtonAxis
+    fullName: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.AxisDirection
+    name: AxisDirection
+    nameWithType: AxisDirection
+    fullName: Fusee.Engine.Common.AxisDirection
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.PostRender
+  commentId: M:Fusee.Engine.Core.InputDevice.PostRender
+  parent: Fusee.Engine.Core.InputDevice
+  name: PostRender()
+  nameWithType: InputDevice.PostRender()
+  fullName: Fusee.Engine.Core.InputDevice.PostRender()
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.PostRender
+    name: PostRender
+    nameWithType: InputDevice.PostRender
+    fullName: Fusee.Engine.Core.InputDevice.PostRender
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.PostRender
+    name: PostRender
+    nameWithType: InputDevice.PostRender
+    fullName: Fusee.Engine.Core.InputDevice.PostRender
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.MouseDevice
+  commentId: T:Fusee.Engine.Core.MouseDevice
+  parent: Fusee.Engine.Core
+  name: MouseDevice
+  nameWithType: MouseDevice
+  fullName: Fusee.Engine.Core.MouseDevice
+- uid: Fusee.Engine.Core.MouseDevice.#ctor*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.#ctor
+  name: MouseDevice
+  nameWithType: MouseDevice.MouseDevice
+  fullName: Fusee.Engine.Core.MouseDevice.MouseDevice
+- uid: Fusee.Engine.Common.IInputDeviceImp
+  commentId: T:Fusee.Engine.Common.IInputDeviceImp
+  parent: Fusee.Engine.Common
+  name: IInputDeviceImp
+  nameWithType: IInputDeviceImp
+  fullName: Fusee.Engine.Common.IInputDeviceImp
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Core.MouseDevice.PositionInt*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.PositionInt
+  name: PositionInt
+  nameWithType: MouseDevice.PositionInt
+  fullName: Fusee.Engine.Core.MouseDevice.PositionInt
+- uid: Fusee.Engine.Common.Point
+  commentId: T:Fusee.Engine.Common.Point
+  parent: Fusee.Engine.Common
+  name: Point
+  nameWithType: Point
+  fullName: Fusee.Engine.Common.Point
+- uid: Fusee.Engine.Core.MouseDevice.Position*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.Position
+  name: Position
+  nameWithType: MouseDevice.Position
+  fullName: Fusee.Engine.Core.MouseDevice.Position
+- uid: Fusee.Math.Core.float2
+  commentId: T:Fusee.Math.Core.float2
+  parent: Fusee.Math.Core
+  name: float2
+  nameWithType: float2
+  fullName: Fusee.Math.Core.float2
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Core.MouseDevice.X*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.X
+  name: X
+  nameWithType: MouseDevice.X
+  fullName: Fusee.Engine.Core.MouseDevice.X
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Engine.Core.MouseDevice.Y*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.Y
+  name: Y
+  nameWithType: MouseDevice.Y
+  fullName: Fusee.Engine.Core.MouseDevice.Y
+- uid: Fusee.Engine.Core.MouseDevice.Wheel*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.Wheel
+  name: Wheel
+  nameWithType: MouseDevice.Wheel
+  fullName: Fusee.Engine.Core.MouseDevice.Wheel
+- uid: Fusee.Engine.Core.MouseDevice.VelocityInt*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.VelocityInt
+  name: VelocityInt
+  nameWithType: MouseDevice.VelocityInt
+  fullName: Fusee.Engine.Core.MouseDevice.VelocityInt
+- uid: Fusee.Engine.Core.MouseDevice.Velocity*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.Velocity
+  name: Velocity
+  nameWithType: MouseDevice.Velocity
+  fullName: Fusee.Engine.Core.MouseDevice.Velocity
+- uid: Fusee.Engine.Core.MouseDevice.XVel*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.XVel
+  name: XVel
+  nameWithType: MouseDevice.XVel
+  fullName: Fusee.Engine.Core.MouseDevice.XVel
+- uid: Fusee.Engine.Core.MouseDevice.YVel*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.YVel
+  name: YVel
+  nameWithType: MouseDevice.YVel
+  fullName: Fusee.Engine.Core.MouseDevice.YVel
+- uid: Fusee.Engine.Core.MouseDevice.WheelVel*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.WheelVel
+  name: WheelVel
+  nameWithType: MouseDevice.WheelVel
+  fullName: Fusee.Engine.Core.MouseDevice.WheelVel
+- uid: Fusee.Engine.Core.MouseDevice.XDesc*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.XDesc
+  name: XDesc
+  nameWithType: MouseDevice.XDesc
+  fullName: Fusee.Engine.Core.MouseDevice.XDesc
+- uid: Fusee.Engine.Common.AxisDescription
+  commentId: T:Fusee.Engine.Common.AxisDescription
+  parent: Fusee.Engine.Common
+  name: AxisDescription
+  nameWithType: AxisDescription
+  fullName: Fusee.Engine.Common.AxisDescription
+- uid: Fusee.Engine.Core.MouseDevice.YDesc*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.YDesc
+  name: YDesc
+  nameWithType: MouseDevice.YDesc
+  fullName: Fusee.Engine.Core.MouseDevice.YDesc
+- uid: Fusee.Engine.Core.MouseDevice.WheelDesc*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.WheelDesc
+  name: WheelDesc
+  nameWithType: MouseDevice.WheelDesc
+  fullName: Fusee.Engine.Core.MouseDevice.WheelDesc
+- uid: Fusee.Engine.Core.MouseDevice.XVelDesc*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.XVelDesc
+  name: XVelDesc
+  nameWithType: MouseDevice.XVelDesc
+  fullName: Fusee.Engine.Core.MouseDevice.XVelDesc
+- uid: Fusee.Engine.Core.MouseDevice.YVelDesc*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.YVelDesc
+  name: YVelDesc
+  nameWithType: MouseDevice.YVelDesc
+  fullName: Fusee.Engine.Core.MouseDevice.YVelDesc
+- uid: Fusee.Engine.Core.MouseDevice.WheelVelDesc*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.WheelVelDesc
+  name: WheelVelDesc
+  nameWithType: MouseDevice.WheelVelDesc
+  fullName: Fusee.Engine.Core.MouseDevice.WheelVelDesc
+- uid: Fusee.Engine.Core.MouseDevice.LeftButton*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.LeftButton
+  name: LeftButton
+  nameWithType: MouseDevice.LeftButton
+  fullName: Fusee.Engine.Core.MouseDevice.LeftButton
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Engine.Core.MouseDevice.MiddleButton*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.MiddleButton
+  name: MiddleButton
+  nameWithType: MouseDevice.MiddleButton
+  fullName: Fusee.Engine.Core.MouseDevice.MiddleButton
+- uid: Fusee.Engine.Core.MouseDevice.RightButton*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.RightButton
+  name: RightButton
+  nameWithType: MouseDevice.RightButton
+  fullName: Fusee.Engine.Core.MouseDevice.RightButton
+- uid: Fusee.Engine.Core.MouseDevice.LeftButtonDesc*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.LeftButtonDesc
+  name: LeftButtonDesc
+  nameWithType: MouseDevice.LeftButtonDesc
+  fullName: Fusee.Engine.Core.MouseDevice.LeftButtonDesc
+- uid: Fusee.Engine.Common.ButtonDescription
+  commentId: T:Fusee.Engine.Common.ButtonDescription
+  parent: Fusee.Engine.Common
+  name: ButtonDescription
+  nameWithType: ButtonDescription
+  fullName: Fusee.Engine.Common.ButtonDescription
+- uid: Fusee.Engine.Core.MouseDevice.MiddleButtonDesc*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.MiddleButtonDesc
+  name: MiddleButtonDesc
+  nameWithType: MouseDevice.MiddleButtonDesc
+  fullName: Fusee.Engine.Core.MouseDevice.MiddleButtonDesc
+- uid: Fusee.Engine.Core.MouseDevice.RightButtonDesc*
+  commentId: Overload:Fusee.Engine.Core.MouseDevice.RightButtonDesc
+  name: RightButtonDesc
+  nameWithType: MouseDevice.RightButtonDesc
+  fullName: Fusee.Engine.Core.MouseDevice.RightButtonDesc

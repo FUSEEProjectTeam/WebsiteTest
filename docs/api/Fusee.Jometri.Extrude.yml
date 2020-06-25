@@ -1,0 +1,552 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Jometri.Extrude
+  commentId: T:Fusee.Jometri.Extrude
+  id: Extrude
+  parent: Fusee.Jometri
+  children:
+  - Fusee.Jometri.Extrude.Extrude2DPolygon(Fusee.Jometri.Geometry,System.Single,System.Boolean)
+  - Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single)
+  - Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single,Fusee.Math.Core.float3)
+  langs:
+  - csharp
+  - vb
+  name: Extrude
+  nameWithType: Extrude
+  fullName: Fusee.Jometri.Extrude
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Extrude.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Extrude
+    path: src/Fusee/src/Jometri/Extrude.cs
+    startLine: 9
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nProvides extrusion functionality for geometries.\n"
+  example: []
+  syntax:
+    content: public static class Extrude
+    content.vb: Public Module Extrude
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Fusee.Jometri.Extrude.Extrude2DPolygon(Fusee.Jometri.Geometry,System.Single,System.Boolean)
+  commentId: M:Fusee.Jometri.Extrude.Extrude2DPolygon(Fusee.Jometri.Geometry,System.Single,System.Boolean)
+  id: Extrude2DPolygon(Fusee.Jometri.Geometry,System.Single,System.Boolean)
+  isExtensionMethod: true
+  parent: Fusee.Jometri.Extrude
+  langs:
+  - csharp
+  - vb
+  name: Extrude2DPolygon(Geometry, Single, Boolean)
+  nameWithType: Extrude.Extrude2DPolygon(Geometry, Single, Boolean)
+  fullName: Fusee.Jometri.Extrude.Extrude2DPolygon(Fusee.Jometri.Geometry, System.Single, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Extrude.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Extrude2DPolygon
+    path: src/Fusee/src/Jometri/Extrude.cs
+    startLine: 18
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nExtrudes a complete planar geometry.\n"
+  example: []
+  syntax:
+    content: public static Geometry Extrude2DPolygon(this Geometry geometry, float offset, bool extrudeAlongNormal)
+    parameters:
+    - id: geometry
+      type: Fusee.Jometri.Geometry
+      description: The geometry to be extruded.
+    - id: offset
+      type: System.Single
+      description: zOffset will be used to create the new vertices.
+    - id: extrudeAlongNormal
+      type: System.Boolean
+      description: Pass &apos;true&apos; if you want do extrude the polygon along its normal and &apos;false&apos; if you want to extrude along the worlds z axis.
+    return:
+      type: Fusee.Jometri.Geometry
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Extrude2DPolygon(geometry As Geometry, offset As Single, extrudeAlongNormal As Boolean) As Geometry
+  overload: Fusee.Jometri.Extrude.Extrude2DPolygon*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single)
+  commentId: M:Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single)
+  id: ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single)
+  isExtensionMethod: true
+  parent: Fusee.Jometri.Extrude
+  langs:
+  - csharp
+  - vb
+  name: ExtrudeFace(Geometry, Int32, Single)
+  nameWithType: Extrude.ExtrudeFace(Geometry, Int32, Single)
+  fullName: Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry, System.Int32, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Extrude.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ExtrudeFace
+    path: src/Fusee/src/Jometri/Extrude.cs
+    startLine: 43
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nExtrudes a given Face by a given offset along its normal vector.\n"
+  example: []
+  syntax:
+    content: public static Geometry ExtrudeFace(this Geometry geometry, int faceHandle, float offset)
+    parameters:
+    - id: geometry
+      type: Fusee.Jometri.Geometry
+      description: The geometry.
+    - id: faceHandle
+      type: System.Int32
+      description: The handle of the face to extrude.
+    - id: offset
+      type: System.Single
+      description: How far the face should get extruded.
+    return:
+      type: Fusee.Jometri.Geometry
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ExtrudeFace(geometry As Geometry, faceHandle As Integer, offset As Single) As Geometry
+  overload: Fusee.Jometri.Extrude.ExtrudeFace*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single,Fusee.Math.Core.float3)
+  id: ExtrudeFace(Fusee.Jometri.Geometry,System.Int32,System.Single,Fusee.Math.Core.float3)
+  isExtensionMethod: true
+  parent: Fusee.Jometri.Extrude
+  langs:
+  - csharp
+  - vb
+  name: ExtrudeFace(Geometry, Int32, Single, float3)
+  nameWithType: Extrude.ExtrudeFace(Geometry, Int32, Single, float3)
+  fullName: Fusee.Jometri.Extrude.ExtrudeFace(Fusee.Jometri.Geometry, System.Int32, System.Single, Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/Extrude.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ExtrudeFace
+    path: src/Fusee/src/Jometri/Extrude.cs
+    startLine: 57
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nExtrudes a given Face along a specified Vector.\n"
+  example: []
+  syntax:
+    content: public static Geometry ExtrudeFace(this Geometry geometry, int faceHandle, float offset, float3 extrusionVector)
+    parameters:
+    - id: geometry
+      type: Fusee.Jometri.Geometry
+      description: ''
+    - id: faceHandle
+      type: System.Int32
+      description: ''
+    - id: offset
+      type: System.Single
+      description: ''
+    - id: extrusionVector
+      type: Fusee.Math.Core.float3
+      description: ''
+    return:
+      type: Fusee.Jometri.Geometry
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ExtrudeFace(geometry As Geometry, faceHandle As Integer, offset As Single, extrusionVector As float3) As Geometry
+  overload: Fusee.Jometri.Extrude.ExtrudeFace*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Fusee.Jometri
+  commentId: N:Fusee.Jometri
+  name: Fusee.Jometri
+  nameWithType: Fusee.Jometri
+  fullName: Fusee.Jometri
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Jometri.Extrude.Extrude2DPolygon*
+  commentId: Overload:Fusee.Jometri.Extrude.Extrude2DPolygon
+  name: Extrude2DPolygon
+  nameWithType: Extrude.Extrude2DPolygon
+  fullName: Fusee.Jometri.Extrude.Extrude2DPolygon
+- uid: Fusee.Jometri.Geometry
+  commentId: T:Fusee.Jometri.Geometry
+  parent: Fusee.Jometri
+  name: Geometry
+  nameWithType: Geometry
+  fullName: Fusee.Jometri.Geometry
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Jometri.Extrude.ExtrudeFace*
+  commentId: Overload:Fusee.Jometri.Extrude.ExtrudeFace
+  name: ExtrudeFace
+  nameWithType: Extrude.ExtrudeFace
+  fullName: Fusee.Jometri.Extrude.ExtrudeFace
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core

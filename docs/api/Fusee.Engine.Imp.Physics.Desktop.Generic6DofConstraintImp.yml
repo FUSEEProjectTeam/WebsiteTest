@@ -1,0 +1,2162 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  commentId: T:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  id: Generic6DofConstraintImp
+  parent: Fusee.Engine.Imp.Physics.Desktop
+  children:
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.AngularLowerLimit
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.AngularUpperLimit
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalcAnchorPos
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculatedTransformA
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculatedTransformB
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculateTransforms
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculateTransforms(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.FrameOffsetA
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.FrameOffsetB
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetAngle(System.Int32)
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetAxis(System.Int32)
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetRelativePivotPosition(System.Int32)
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetUid
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.IsLimited(System.Int32)
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.LinearLowerLimit
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.LinearUpperLimit
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.RigidBodyA
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.RigidBodyB
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetAxis(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetFrames(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetLimit(System.Int32,System.Single,System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.TestAngularLimitMotor(System.Int32)
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UpdateRhs(System.Single)
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UseFrameOffset
+  - Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UserObject
+  langs:
+  - csharp
+  - vb
+  name: Generic6DofConstraintImp
+  nameWithType: Generic6DofConstraintImp
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Generic6DofConstraintImp
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 9
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nImplementation of the <xref href=\"Fusee.Engine.Common.IGeneric6DofConstraintImp\" data-throw-if-not-resolved=\"false\"></xref> interface using the bullet physics engine.\n"
+  example: []
+  syntax:
+    content: 'public class Generic6DofConstraintImp : IGeneric6DofConstraintImp, IConstraintImp'
+    content.vb: >-
+      Public Class Generic6DofConstraintImp
+
+          Implements IGeneric6DofConstraintImp, IConstraintImp
+  inheritance:
+  - System.Object
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp
+  - Fusee.Engine.Common.IConstraintImp
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.AngularLowerLimit
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.AngularLowerLimit
+  id: AngularLowerLimit
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: AngularLowerLimit
+  nameWithType: Generic6DofConstraintImp.AngularLowerLimit
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.AngularLowerLimit
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AngularLowerLimit
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 19
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets and sets the angular lower limit.\n"
+  example: []
+  syntax:
+    content: public float3 AngularLowerLimit { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+      description: "\nThe angular lower limit.\n"
+    content.vb: Public Property AngularLowerLimit As float3
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.AngularLowerLimit*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.AngularLowerLimit
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.AngularUpperLimit
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.AngularUpperLimit
+  id: AngularUpperLimit
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: AngularUpperLimit
+  nameWithType: Generic6DofConstraintImp.AngularUpperLimit
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.AngularUpperLimit
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AngularUpperLimit
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 38
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets and sets the angular upper limit.\n"
+  example: []
+  syntax:
+    content: public float3 AngularUpperLimit { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+      description: "\nThe angular upper limit.\n"
+    content.vb: Public Property AngularUpperLimit As float3
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.AngularUpperLimit*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.AngularUpperLimit
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalcAnchorPos
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalcAnchorPos
+  id: CalcAnchorPos
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: CalcAnchorPos()
+  nameWithType: Generic6DofConstraintImp.CalcAnchorPos()
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalcAnchorPos()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CalcAnchorPos
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 55
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nCalculates the anchor position.\n"
+  example: []
+  syntax:
+    content: public void CalcAnchorPos()
+    content.vb: Public Sub CalcAnchorPos
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalcAnchorPos*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.CalcAnchorPos
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculateTransforms
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculateTransforms
+  id: CalculateTransforms
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: CalculateTransforms()
+  nameWithType: Generic6DofConstraintImp.CalculateTransforms()
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculateTransforms()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CalculateTransforms
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 63
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nCalculates the transforms.\n"
+  example: []
+  syntax:
+    content: public void CalculateTransforms()
+    content.vb: Public Sub CalculateTransforms
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculateTransforms*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculateTransforms
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculateTransforms(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculateTransforms(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  id: CalculateTransforms(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: CalculateTransforms(float4x4, float4x4)
+  nameWithType: Generic6DofConstraintImp.CalculateTransforms(float4x4, float4x4)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculateTransforms(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CalculateTransforms
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 72
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nCalculates the transforms.\n"
+  example: []
+  syntax:
+    content: public void CalculateTransforms(float4x4 transA, float4x4 transB)
+    parameters:
+    - id: transA
+      type: Fusee.Math.Core.float4x4
+      description: The trans a.
+    - id: transB
+      type: Fusee.Math.Core.float4x4
+      description: The trans b.
+    content.vb: Public Sub CalculateTransforms(transA As float4x4, transB As float4x4)
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculateTransforms*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculateTransforms(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculatedTransformA
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculatedTransformA
+  id: CalculatedTransformA
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: CalculatedTransformA
+  nameWithType: Generic6DofConstraintImp.CalculatedTransformA
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculatedTransformA
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CalculatedTransformA
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 82
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the calculated transform a.\n"
+  example: []
+  syntax:
+    content: public float4x4 CalculatedTransformA { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe calculated transform a.\n"
+    content.vb: Public ReadOnly Property CalculatedTransformA As float4x4
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculatedTransformA*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculatedTransformA
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculatedTransformB
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculatedTransformB
+  id: CalculatedTransformB
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: CalculatedTransformB
+  nameWithType: Generic6DofConstraintImp.CalculatedTransformB
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculatedTransformB
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CalculatedTransformB
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 96
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the calculated transform b.\n"
+  example: []
+  syntax:
+    content: public float4x4 CalculatedTransformB { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe calculated transform b.\n"
+    content.vb: Public ReadOnly Property CalculatedTransformB As float4x4
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculatedTransformB*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculatedTransformB
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.FrameOffsetA
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.FrameOffsetA
+  id: FrameOffsetA
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: FrameOffsetA
+  nameWithType: Generic6DofConstraintImp.FrameOffsetA
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.FrameOffsetA
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FrameOffsetA
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 111
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets and sets the frame offset a.\n"
+  example: []
+  syntax:
+    content: public float4x4 FrameOffsetA { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe frame offset a.\n"
+    content.vb: Public Property FrameOffsetA As float4x4
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.FrameOffsetA*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.FrameOffsetA
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.FrameOffsetB
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.FrameOffsetB
+  id: FrameOffsetB
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: FrameOffsetB
+  nameWithType: Generic6DofConstraintImp.FrameOffsetB
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.FrameOffsetB
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FrameOffsetB
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 130
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets and sets the frame offset b.\n"
+  example: []
+  syntax:
+    content: public float4x4 FrameOffsetB { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe frame offset b.\n"
+    content.vb: Public Property FrameOffsetB As float4x4
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.FrameOffsetB*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.FrameOffsetB
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetAngle(System.Int32)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetAngle(System.Int32)
+  id: GetAngle(System.Int32)
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: GetAngle(Int32)
+  nameWithType: Generic6DofConstraintImp.GetAngle(Int32)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetAngle(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetAngle
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 149
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the angle.\n"
+  example: []
+  syntax:
+    content: public float GetAngle(int axisIndex)
+    parameters:
+    - id: axisIndex
+      type: System.Int32
+      description: Index of the axis.
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetAngle(axisIndex As Integer) As Single
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetAngle*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.GetAngle(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetAxis(System.Int32)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetAxis(System.Int32)
+  id: GetAxis(System.Int32)
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: GetAxis(Int32)
+  nameWithType: Generic6DofConstraintImp.GetAxis(Int32)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetAxis(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetAxis
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 159
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the axis.\n"
+  example: []
+  syntax:
+    content: public float3 GetAxis(int axisIndex)
+    parameters:
+    - id: axisIndex
+      type: System.Int32
+      description: Index of the axis.
+    return:
+      type: Fusee.Math.Core.float3
+      description: ''
+    content.vb: Public Function GetAxis(axisIndex As Integer) As float3
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetAxis*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.GetAxis(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetRelativePivotPosition(System.Int32)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetRelativePivotPosition(System.Int32)
+  id: GetRelativePivotPosition(System.Int32)
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: GetRelativePivotPosition(Int32)
+  nameWithType: Generic6DofConstraintImp.GetRelativePivotPosition(Int32)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetRelativePivotPosition(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetRelativePivotPosition
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 170
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the relative pivot position.\n"
+  example: []
+  syntax:
+    content: public float GetRelativePivotPosition(int axisIndex)
+    parameters:
+    - id: axisIndex
+      type: System.Int32
+      description: Index of the axis.
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetRelativePivotPosition(axisIndex As Integer) As Single
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetRelativePivotPosition*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.GetRelativePivotPosition(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.IsLimited(System.Int32)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.IsLimited(System.Int32)
+  id: IsLimited(System.Int32)
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: IsLimited(Int32)
+  nameWithType: Generic6DofConstraintImp.IsLimited(Int32)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.IsLimited(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IsLimited
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 181
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nDetermines whether the specified limit index is limited.\n"
+  example: []
+  syntax:
+    content: public bool IsLimited(int limitIndex)
+    parameters:
+    - id: limitIndex
+      type: System.Int32
+      description: Index of the limit.
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function IsLimited(limitIndex As Integer) As Boolean
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.IsLimited*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.IsLimited(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.LinearLowerLimit
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.LinearLowerLimit
+  id: LinearLowerLimit
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: LinearLowerLimit
+  nameWithType: Generic6DofConstraintImp.LinearLowerLimit
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.LinearLowerLimit
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: LinearLowerLimit
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 192
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets and sets the linear lower limit.\n"
+  example: []
+  syntax:
+    content: public float3 LinearLowerLimit { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+      description: "\nThe linear lower limit.\n"
+    content.vb: Public Property LinearLowerLimit As float3
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.LinearLowerLimit*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.LinearLowerLimit
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.LinearUpperLimit
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.LinearUpperLimit
+  id: LinearUpperLimit
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: LinearUpperLimit
+  nameWithType: Generic6DofConstraintImp.LinearUpperLimit
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.LinearUpperLimit
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: LinearUpperLimit
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 211
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets and sets the linear upper limit.\n"
+  example: []
+  syntax:
+    content: public float3 LinearUpperLimit { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+      description: "\nThe linear upper limit.\n"
+    content.vb: Public Property LinearUpperLimit As float3
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.LinearUpperLimit*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.LinearUpperLimit
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetAxis(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetAxis(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  id: SetAxis(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetAxis(float3, float3)
+  nameWithType: Generic6DofConstraintImp.SetAxis(float3, float3)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetAxis(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetAxis
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 230
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nSets the axis.\n"
+  example: []
+  syntax:
+    content: public void SetAxis(float3 axis1, float3 axis2)
+    parameters:
+    - id: axis1
+      type: Fusee.Math.Core.float3
+      description: The axis1.
+    - id: axis2
+      type: Fusee.Math.Core.float3
+      description: The axis2.
+    content.vb: Public Sub SetAxis(axis1 As float3, axis2 As float3)
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetAxis*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.SetAxis(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetFrames(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetFrames(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  id: SetFrames(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetFrames(float4x4, float4x4)
+  nameWithType: Generic6DofConstraintImp.SetFrames(float4x4, float4x4)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetFrames(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetFrames
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 239
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nSets the frames.\n"
+  example: []
+  syntax:
+    content: public void SetFrames(float4x4 frameA, float4x4 frameB)
+    parameters:
+    - id: frameA
+      type: Fusee.Math.Core.float4x4
+      description: The frame a.
+    - id: frameB
+      type: Fusee.Math.Core.float4x4
+      description: The frame b.
+    content.vb: Public Sub SetFrames(frameA As float4x4, frameB As float4x4)
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetFrames*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.SetFrames(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetLimit(System.Int32,System.Single,System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetLimit(System.Int32,System.Single,System.Single)
+  id: SetLimit(System.Int32,System.Single,System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetLimit(Int32, Single, Single)
+  nameWithType: Generic6DofConstraintImp.SetLimit(Int32, Single, Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetLimit(System.Int32, System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetLimit
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 249
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nSets the limit.\n"
+  example: []
+  syntax:
+    content: public void SetLimit(int axis, float lo, float hi)
+    parameters:
+    - id: axis
+      type: System.Int32
+      description: The axis.
+    - id: lo
+      type: System.Single
+      description: The lo.
+    - id: hi
+      type: System.Single
+      description: The hi.
+    content.vb: Public Sub SetLimit(axis As Integer, lo As Single, hi As Single)
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetLimit*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.SetLimit(System.Int32,System.Single,System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.TestAngularLimitMotor(System.Int32)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.TestAngularLimitMotor(System.Int32)
+  id: TestAngularLimitMotor(System.Int32)
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: TestAngularLimitMotor(Int32)
+  nameWithType: Generic6DofConstraintImp.TestAngularLimitMotor(Int32)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.TestAngularLimitMotor(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TestAngularLimitMotor
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 259
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nTests the angular limit motor.\n"
+  example: []
+  syntax:
+    content: public bool TestAngularLimitMotor(int axisIndex)
+    parameters:
+    - id: axisIndex
+      type: System.Int32
+      description: Index of the axis.
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function TestAngularLimitMotor(axisIndex As Integer) As Boolean
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.TestAngularLimitMotor*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.TestAngularLimitMotor(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UseFrameOffset
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UseFrameOffset
+  id: UseFrameOffset
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: UseFrameOffset
+  nameWithType: Generic6DofConstraintImp.UseFrameOffset
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UseFrameOffset
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: UseFrameOffset
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 271
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets and sets a value indicating whether [use frame offset].\n"
+  example: []
+  syntax:
+    content: public bool UseFrameOffset { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if [use frame offset]; otherwise, <code>false</code>.\n"
+    content.vb: Public Property UseFrameOffset As Boolean
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UseFrameOffset*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.UseFrameOffset
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UpdateRhs(System.Single)
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UpdateRhs(System.Single)
+  id: UpdateRhs(System.Single)
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: UpdateRhs(Single)
+  nameWithType: Generic6DofConstraintImp.UpdateRhs(Single)
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UpdateRhs(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: UpdateRhs
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 289
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nUpdates the RHS.\n"
+  example: []
+  syntax:
+    content: public void UpdateRhs(float timeStep)
+    parameters:
+    - id: timeStep
+      type: System.Single
+      description: The time step.
+    content.vb: Public Sub UpdateRhs(timeStep As Single)
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UpdateRhs*
+  implements:
+  - Fusee.Engine.Common.IGeneric6DofConstraintImp.UpdateRhs(System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.RigidBodyA
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.RigidBodyA
+  id: RigidBodyA
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: RigidBodyA
+  nameWithType: Generic6DofConstraintImp.RigidBodyA
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.RigidBodyA
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RigidBodyA
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 301
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the rigid body a.\n"
+  example: []
+  syntax:
+    content: public IRigidBodyImp RigidBodyA { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: "\nThe rigid body a.\n"
+    content.vb: Public ReadOnly Property RigidBodyA As IRigidBodyImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.RigidBodyA*
+  implements:
+  - Fusee.Engine.Common.IConstraintImp.RigidBodyA
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.RigidBodyB
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.RigidBodyB
+  id: RigidBodyB
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: RigidBodyB
+  nameWithType: Generic6DofConstraintImp.RigidBodyB
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.RigidBodyB
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RigidBodyB
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 315
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the rigid body b.\n"
+  example: []
+  syntax:
+    content: public IRigidBodyImp RigidBodyB { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.IRigidBodyImp
+      description: "\nThe rigid body b.\n"
+    content.vb: Public ReadOnly Property RigidBodyB As IRigidBodyImp
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.RigidBodyB*
+  implements:
+  - Fusee.Engine.Common.IConstraintImp.RigidBodyB
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetUid
+  commentId: M:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetUid
+  id: GetUid
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: GetUid()
+  nameWithType: Generic6DofConstraintImp.GetUid()
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetUid()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetUid
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 327
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets the uid.\n"
+  example: []
+  syntax:
+    content: public int GetUid()
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function GetUid As Integer
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetUid*
+  implements:
+  - Fusee.Engine.Common.IConstraintImp.GetUid
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UserObject
+  commentId: P:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UserObject
+  id: UserObject
+  parent: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: UserObject
+  nameWithType: Generic6DofConstraintImp.UserObject
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UserObject
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: UserObject
+    path: src/Fusee/src/Engine/Imp/Physics/Desktop/Generic6DofConstraintImp.cs
+    startLine: 339
+  assemblies:
+  - Fusee.Engine.Imp.Physics.Desktop
+  namespace: Fusee.Engine.Imp.Physics.Desktop
+  summary: "\nGets and sets the user object.\n"
+  example: []
+  syntax:
+    content: public object UserObject { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+      description: "\nThe user object.\n"
+    content.vb: Public Property UserObject As Object
+  overload: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UserObject*
+  implements:
+  - Fusee.Engine.Common.IConstraintImp.UserObject
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  commentId: T:Fusee.Engine.Common.IGeneric6DofConstraintImp
+  parent: Fusee.Engine.Common
+  name: IGeneric6DofConstraintImp
+  nameWithType: IGeneric6DofConstraintImp
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp
+- uid: Fusee.Engine.Imp.Physics.Desktop
+  commentId: N:Fusee.Engine.Imp.Physics.Desktop
+  name: Fusee.Engine.Imp.Physics.Desktop
+  nameWithType: Fusee.Engine.Imp.Physics.Desktop
+  fullName: Fusee.Engine.Imp.Physics.Desktop
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Common.IConstraintImp
+  commentId: T:Fusee.Engine.Common.IConstraintImp
+  parent: Fusee.Engine.Common
+  name: IConstraintImp
+  nameWithType: IConstraintImp
+  fullName: Fusee.Engine.Common.IConstraintImp
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.AngularLowerLimit*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.AngularLowerLimit
+  name: AngularLowerLimit
+  nameWithType: Generic6DofConstraintImp.AngularLowerLimit
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.AngularLowerLimit
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.AngularLowerLimit
+  commentId: P:Fusee.Engine.Common.IGeneric6DofConstraintImp.AngularLowerLimit
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  name: AngularLowerLimit
+  nameWithType: IGeneric6DofConstraintImp.AngularLowerLimit
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.AngularLowerLimit
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.AngularUpperLimit*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.AngularUpperLimit
+  name: AngularUpperLimit
+  nameWithType: Generic6DofConstraintImp.AngularUpperLimit
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.AngularUpperLimit
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.AngularUpperLimit
+  commentId: P:Fusee.Engine.Common.IGeneric6DofConstraintImp.AngularUpperLimit
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  name: AngularUpperLimit
+  nameWithType: IGeneric6DofConstraintImp.AngularUpperLimit
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.AngularUpperLimit
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalcAnchorPos*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalcAnchorPos
+  name: CalcAnchorPos
+  nameWithType: Generic6DofConstraintImp.CalcAnchorPos
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalcAnchorPos
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalcAnchorPos
+  commentId: M:Fusee.Engine.Common.IGeneric6DofConstraintImp.CalcAnchorPos
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  name: CalcAnchorPos()
+  nameWithType: IGeneric6DofConstraintImp.CalcAnchorPos()
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalcAnchorPos()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalcAnchorPos
+    name: CalcAnchorPos
+    nameWithType: IGeneric6DofConstraintImp.CalcAnchorPos
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalcAnchorPos
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalcAnchorPos
+    name: CalcAnchorPos
+    nameWithType: IGeneric6DofConstraintImp.CalcAnchorPos
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalcAnchorPos
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculateTransforms*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculateTransforms
+  name: CalculateTransforms
+  nameWithType: Generic6DofConstraintImp.CalculateTransforms
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculateTransforms
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculateTransforms
+  commentId: M:Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculateTransforms
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  name: CalculateTransforms()
+  nameWithType: IGeneric6DofConstraintImp.CalculateTransforms()
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculateTransforms()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculateTransforms
+    name: CalculateTransforms
+    nameWithType: IGeneric6DofConstraintImp.CalculateTransforms
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculateTransforms
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculateTransforms
+    name: CalculateTransforms
+    nameWithType: IGeneric6DofConstraintImp.CalculateTransforms
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculateTransforms
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculateTransforms(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  commentId: M:Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculateTransforms(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  name: CalculateTransforms(float4x4, float4x4)
+  nameWithType: IGeneric6DofConstraintImp.CalculateTransforms(float4x4, float4x4)
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculateTransforms(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculateTransforms(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+    name: CalculateTransforms
+    nameWithType: IGeneric6DofConstraintImp.CalculateTransforms
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculateTransforms
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculateTransforms(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+    name: CalculateTransforms
+    nameWithType: IGeneric6DofConstraintImp.CalculateTransforms
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculateTransforms
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.float4x4
+  commentId: T:Fusee.Math.Core.float4x4
+  parent: Fusee.Math.Core
+  name: float4x4
+  nameWithType: float4x4
+  fullName: Fusee.Math.Core.float4x4
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculatedTransformA*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculatedTransformA
+  name: CalculatedTransformA
+  nameWithType: Generic6DofConstraintImp.CalculatedTransformA
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculatedTransformA
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculatedTransformA
+  commentId: P:Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculatedTransformA
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  name: CalculatedTransformA
+  nameWithType: IGeneric6DofConstraintImp.CalculatedTransformA
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculatedTransformA
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculatedTransformB*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculatedTransformB
+  name: CalculatedTransformB
+  nameWithType: Generic6DofConstraintImp.CalculatedTransformB
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.CalculatedTransformB
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculatedTransformB
+  commentId: P:Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculatedTransformB
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  name: CalculatedTransformB
+  nameWithType: IGeneric6DofConstraintImp.CalculatedTransformB
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.CalculatedTransformB
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.FrameOffsetA*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.FrameOffsetA
+  name: FrameOffsetA
+  nameWithType: Generic6DofConstraintImp.FrameOffsetA
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.FrameOffsetA
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.FrameOffsetA
+  commentId: P:Fusee.Engine.Common.IGeneric6DofConstraintImp.FrameOffsetA
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  name: FrameOffsetA
+  nameWithType: IGeneric6DofConstraintImp.FrameOffsetA
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.FrameOffsetA
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.FrameOffsetB*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.FrameOffsetB
+  name: FrameOffsetB
+  nameWithType: Generic6DofConstraintImp.FrameOffsetB
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.FrameOffsetB
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.FrameOffsetB
+  commentId: P:Fusee.Engine.Common.IGeneric6DofConstraintImp.FrameOffsetB
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  name: FrameOffsetB
+  nameWithType: IGeneric6DofConstraintImp.FrameOffsetB
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.FrameOffsetB
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetAngle*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetAngle
+  name: GetAngle
+  nameWithType: Generic6DofConstraintImp.GetAngle
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetAngle
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetAngle(System.Int32)
+  commentId: M:Fusee.Engine.Common.IGeneric6DofConstraintImp.GetAngle(System.Int32)
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  isExternal: true
+  name: GetAngle(Int32)
+  nameWithType: IGeneric6DofConstraintImp.GetAngle(Int32)
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetAngle(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetAngle(System.Int32)
+    name: GetAngle
+    nameWithType: IGeneric6DofConstraintImp.GetAngle
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetAngle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetAngle(System.Int32)
+    name: GetAngle
+    nameWithType: IGeneric6DofConstraintImp.GetAngle
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetAngle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetAxis*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetAxis
+  name: GetAxis
+  nameWithType: Generic6DofConstraintImp.GetAxis
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetAxis
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetAxis(System.Int32)
+  commentId: M:Fusee.Engine.Common.IGeneric6DofConstraintImp.GetAxis(System.Int32)
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  isExternal: true
+  name: GetAxis(Int32)
+  nameWithType: IGeneric6DofConstraintImp.GetAxis(Int32)
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetAxis(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetAxis(System.Int32)
+    name: GetAxis
+    nameWithType: IGeneric6DofConstraintImp.GetAxis
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetAxis(System.Int32)
+    name: GetAxis
+    nameWithType: IGeneric6DofConstraintImp.GetAxis
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetRelativePivotPosition*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetRelativePivotPosition
+  name: GetRelativePivotPosition
+  nameWithType: Generic6DofConstraintImp.GetRelativePivotPosition
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetRelativePivotPosition
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetRelativePivotPosition(System.Int32)
+  commentId: M:Fusee.Engine.Common.IGeneric6DofConstraintImp.GetRelativePivotPosition(System.Int32)
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  isExternal: true
+  name: GetRelativePivotPosition(Int32)
+  nameWithType: IGeneric6DofConstraintImp.GetRelativePivotPosition(Int32)
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetRelativePivotPosition(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetRelativePivotPosition(System.Int32)
+    name: GetRelativePivotPosition
+    nameWithType: IGeneric6DofConstraintImp.GetRelativePivotPosition
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetRelativePivotPosition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetRelativePivotPosition(System.Int32)
+    name: GetRelativePivotPosition
+    nameWithType: IGeneric6DofConstraintImp.GetRelativePivotPosition
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.GetRelativePivotPosition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.IsLimited*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.IsLimited
+  name: IsLimited
+  nameWithType: Generic6DofConstraintImp.IsLimited
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.IsLimited
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.IsLimited(System.Int32)
+  commentId: M:Fusee.Engine.Common.IGeneric6DofConstraintImp.IsLimited(System.Int32)
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  isExternal: true
+  name: IsLimited(Int32)
+  nameWithType: IGeneric6DofConstraintImp.IsLimited(Int32)
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.IsLimited(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.IsLimited(System.Int32)
+    name: IsLimited
+    nameWithType: IGeneric6DofConstraintImp.IsLimited
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.IsLimited
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.IsLimited(System.Int32)
+    name: IsLimited
+    nameWithType: IGeneric6DofConstraintImp.IsLimited
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.IsLimited
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.LinearLowerLimit*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.LinearLowerLimit
+  name: LinearLowerLimit
+  nameWithType: Generic6DofConstraintImp.LinearLowerLimit
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.LinearLowerLimit
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.LinearLowerLimit
+  commentId: P:Fusee.Engine.Common.IGeneric6DofConstraintImp.LinearLowerLimit
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  name: LinearLowerLimit
+  nameWithType: IGeneric6DofConstraintImp.LinearLowerLimit
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.LinearLowerLimit
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.LinearUpperLimit*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.LinearUpperLimit
+  name: LinearUpperLimit
+  nameWithType: Generic6DofConstraintImp.LinearUpperLimit
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.LinearUpperLimit
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.LinearUpperLimit
+  commentId: P:Fusee.Engine.Common.IGeneric6DofConstraintImp.LinearUpperLimit
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  name: LinearUpperLimit
+  nameWithType: IGeneric6DofConstraintImp.LinearUpperLimit
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.LinearUpperLimit
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetAxis*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetAxis
+  name: SetAxis
+  nameWithType: Generic6DofConstraintImp.SetAxis
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetAxis
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetAxis(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Common.IGeneric6DofConstraintImp.SetAxis(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  name: SetAxis(float3, float3)
+  nameWithType: IGeneric6DofConstraintImp.SetAxis(float3, float3)
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetAxis(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetAxis(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+    name: SetAxis
+    nameWithType: IGeneric6DofConstraintImp.SetAxis
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetAxis(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+    name: SetAxis
+    nameWithType: IGeneric6DofConstraintImp.SetAxis
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetFrames*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetFrames
+  name: SetFrames
+  nameWithType: Generic6DofConstraintImp.SetFrames
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetFrames
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetFrames(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  commentId: M:Fusee.Engine.Common.IGeneric6DofConstraintImp.SetFrames(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  name: SetFrames(float4x4, float4x4)
+  nameWithType: IGeneric6DofConstraintImp.SetFrames(float4x4, float4x4)
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetFrames(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetFrames(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+    name: SetFrames
+    nameWithType: IGeneric6DofConstraintImp.SetFrames
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetFrames
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetFrames(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+    name: SetFrames
+    nameWithType: IGeneric6DofConstraintImp.SetFrames
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetFrames
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetLimit*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetLimit
+  name: SetLimit
+  nameWithType: Generic6DofConstraintImp.SetLimit
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.SetLimit
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetLimit(System.Int32,System.Single,System.Single)
+  commentId: M:Fusee.Engine.Common.IGeneric6DofConstraintImp.SetLimit(System.Int32,System.Single,System.Single)
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  isExternal: true
+  name: SetLimit(Int32, Single, Single)
+  nameWithType: IGeneric6DofConstraintImp.SetLimit(Int32, Single, Single)
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetLimit(System.Int32, System.Single, System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetLimit(System.Int32,System.Single,System.Single)
+    name: SetLimit
+    nameWithType: IGeneric6DofConstraintImp.SetLimit
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetLimit(System.Int32,System.Single,System.Single)
+    name: SetLimit
+    nameWithType: IGeneric6DofConstraintImp.SetLimit
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.SetLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.TestAngularLimitMotor*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.TestAngularLimitMotor
+  name: TestAngularLimitMotor
+  nameWithType: Generic6DofConstraintImp.TestAngularLimitMotor
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.TestAngularLimitMotor
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.TestAngularLimitMotor(System.Int32)
+  commentId: M:Fusee.Engine.Common.IGeneric6DofConstraintImp.TestAngularLimitMotor(System.Int32)
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  isExternal: true
+  name: TestAngularLimitMotor(Int32)
+  nameWithType: IGeneric6DofConstraintImp.TestAngularLimitMotor(Int32)
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.TestAngularLimitMotor(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.TestAngularLimitMotor(System.Int32)
+    name: TestAngularLimitMotor
+    nameWithType: IGeneric6DofConstraintImp.TestAngularLimitMotor
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.TestAngularLimitMotor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.TestAngularLimitMotor(System.Int32)
+    name: TestAngularLimitMotor
+    nameWithType: IGeneric6DofConstraintImp.TestAngularLimitMotor
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.TestAngularLimitMotor
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UseFrameOffset*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UseFrameOffset
+  name: UseFrameOffset
+  nameWithType: Generic6DofConstraintImp.UseFrameOffset
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UseFrameOffset
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.UseFrameOffset
+  commentId: P:Fusee.Engine.Common.IGeneric6DofConstraintImp.UseFrameOffset
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  name: UseFrameOffset
+  nameWithType: IGeneric6DofConstraintImp.UseFrameOffset
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.UseFrameOffset
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UpdateRhs*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UpdateRhs
+  name: UpdateRhs
+  nameWithType: Generic6DofConstraintImp.UpdateRhs
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UpdateRhs
+- uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.UpdateRhs(System.Single)
+  commentId: M:Fusee.Engine.Common.IGeneric6DofConstraintImp.UpdateRhs(System.Single)
+  parent: Fusee.Engine.Common.IGeneric6DofConstraintImp
+  isExternal: true
+  name: UpdateRhs(Single)
+  nameWithType: IGeneric6DofConstraintImp.UpdateRhs(Single)
+  fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.UpdateRhs(System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.UpdateRhs(System.Single)
+    name: UpdateRhs
+    nameWithType: IGeneric6DofConstraintImp.UpdateRhs
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.UpdateRhs
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IGeneric6DofConstraintImp.UpdateRhs(System.Single)
+    name: UpdateRhs
+    nameWithType: IGeneric6DofConstraintImp.UpdateRhs
+    fullName: Fusee.Engine.Common.IGeneric6DofConstraintImp.UpdateRhs
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.RigidBodyA*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.RigidBodyA
+  name: RigidBodyA
+  nameWithType: Generic6DofConstraintImp.RigidBodyA
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.RigidBodyA
+- uid: Fusee.Engine.Common.IConstraintImp.RigidBodyA
+  commentId: P:Fusee.Engine.Common.IConstraintImp.RigidBodyA
+  parent: Fusee.Engine.Common.IConstraintImp
+  name: RigidBodyA
+  nameWithType: IConstraintImp.RigidBodyA
+  fullName: Fusee.Engine.Common.IConstraintImp.RigidBodyA
+- uid: Fusee.Engine.Common.IRigidBodyImp
+  commentId: T:Fusee.Engine.Common.IRigidBodyImp
+  parent: Fusee.Engine.Common
+  name: IRigidBodyImp
+  nameWithType: IRigidBodyImp
+  fullName: Fusee.Engine.Common.IRigidBodyImp
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.RigidBodyB*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.RigidBodyB
+  name: RigidBodyB
+  nameWithType: Generic6DofConstraintImp.RigidBodyB
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.RigidBodyB
+- uid: Fusee.Engine.Common.IConstraintImp.RigidBodyB
+  commentId: P:Fusee.Engine.Common.IConstraintImp.RigidBodyB
+  parent: Fusee.Engine.Common.IConstraintImp
+  name: RigidBodyB
+  nameWithType: IConstraintImp.RigidBodyB
+  fullName: Fusee.Engine.Common.IConstraintImp.RigidBodyB
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetUid*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetUid
+  name: GetUid
+  nameWithType: Generic6DofConstraintImp.GetUid
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.GetUid
+- uid: Fusee.Engine.Common.IConstraintImp.GetUid
+  commentId: M:Fusee.Engine.Common.IConstraintImp.GetUid
+  parent: Fusee.Engine.Common.IConstraintImp
+  name: GetUid()
+  nameWithType: IConstraintImp.GetUid()
+  fullName: Fusee.Engine.Common.IConstraintImp.GetUid()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConstraintImp.GetUid
+    name: GetUid
+    nameWithType: IConstraintImp.GetUid
+    fullName: Fusee.Engine.Common.IConstraintImp.GetUid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConstraintImp.GetUid
+    name: GetUid
+    nameWithType: IConstraintImp.GetUid
+    fullName: Fusee.Engine.Common.IConstraintImp.GetUid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UserObject*
+  commentId: Overload:Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UserObject
+  name: UserObject
+  nameWithType: Generic6DofConstraintImp.UserObject
+  fullName: Fusee.Engine.Imp.Physics.Desktop.Generic6DofConstraintImp.UserObject
+- uid: Fusee.Engine.Common.IConstraintImp.UserObject
+  commentId: P:Fusee.Engine.Common.IConstraintImp.UserObject
+  parent: Fusee.Engine.Common.IConstraintImp
+  name: UserObject
+  nameWithType: IConstraintImp.UserObject
+  fullName: Fusee.Engine.Common.IConstraintImp.UserObject

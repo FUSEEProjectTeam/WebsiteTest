@@ -1,0 +1,274 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.IConvexHullShapeImp
+  commentId: T:Fusee.Engine.Common.IConvexHullShapeImp
+  id: IConvexHullShapeImp
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.IConvexHullShapeImp.AddPoint(Fusee.Math.Core.float3)
+  - Fusee.Engine.Common.IConvexHullShapeImp.GetNumPoints
+  - Fusee.Engine.Common.IConvexHullShapeImp.GetScaledPoint(System.Int32)
+  - Fusee.Engine.Common.IConvexHullShapeImp.GetUnscaledPoints
+  langs:
+  - csharp
+  - vb
+  name: IConvexHullShapeImp
+  nameWithType: IConvexHullShapeImp
+  fullName: Fusee.Engine.Common.IConvexHullShapeImp
+  type: Interface
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConvexHullShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IConvexHullShapeImp
+    path: src/Fusee/src/Engine/Common/IConvexHullShapeImp.cs
+    startLine: 7
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nImplementation agnostic representation of a convex hull shape.\n"
+  example: []
+  syntax:
+    content: 'public interface IConvexHullShapeImp : ICollisionShapeImp'
+    content.vb: >-
+      Public Interface IConvexHullShapeImp
+
+          Inherits ICollisionShapeImp
+  inheritedMembers:
+  - Fusee.Engine.Common.ICollisionShapeImp.Margin
+  - Fusee.Engine.Common.ICollisionShapeImp.LocalScaling
+  - Fusee.Engine.Common.ICollisionShapeImp.UserObject
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Fusee.Engine.Common.IConvexHullShapeImp.AddPoint(Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Common.IConvexHullShapeImp.AddPoint(Fusee.Math.Core.float3)
+  id: AddPoint(Fusee.Math.Core.float3)
+  parent: Fusee.Engine.Common.IConvexHullShapeImp
+  langs:
+  - csharp
+  - vb
+  name: AddPoint(float3)
+  nameWithType: IConvexHullShapeImp.AddPoint(float3)
+  fullName: Fusee.Engine.Common.IConvexHullShapeImp.AddPoint(Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConvexHullShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddPoint
+    path: src/Fusee/src/Engine/Common/IConvexHullShapeImp.cs
+    startLine: 13
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nAdds the point.\n"
+  example: []
+  syntax:
+    content: void AddPoint(float3 point)
+    parameters:
+    - id: point
+      type: Fusee.Math.Core.float3
+      description: The point.
+    content.vb: Sub AddPoint(point As float3)
+  overload: Fusee.Engine.Common.IConvexHullShapeImp.AddPoint*
+- uid: Fusee.Engine.Common.IConvexHullShapeImp.GetScaledPoint(System.Int32)
+  commentId: M:Fusee.Engine.Common.IConvexHullShapeImp.GetScaledPoint(System.Int32)
+  id: GetScaledPoint(System.Int32)
+  parent: Fusee.Engine.Common.IConvexHullShapeImp
+  langs:
+  - csharp
+  - vb
+  name: GetScaledPoint(Int32)
+  nameWithType: IConvexHullShapeImp.GetScaledPoint(Int32)
+  fullName: Fusee.Engine.Common.IConvexHullShapeImp.GetScaledPoint(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConvexHullShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetScaledPoint
+    path: src/Fusee/src/Engine/Common/IConvexHullShapeImp.cs
+    startLine: 19
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the scaled point.\n"
+  example: []
+  syntax:
+    content: float3 GetScaledPoint(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index.
+    return:
+      type: Fusee.Math.Core.float3
+      description: ''
+    content.vb: Function GetScaledPoint(index As Integer) As float3
+  overload: Fusee.Engine.Common.IConvexHullShapeImp.GetScaledPoint*
+- uid: Fusee.Engine.Common.IConvexHullShapeImp.GetUnscaledPoints
+  commentId: M:Fusee.Engine.Common.IConvexHullShapeImp.GetUnscaledPoints
+  id: GetUnscaledPoints
+  parent: Fusee.Engine.Common.IConvexHullShapeImp
+  langs:
+  - csharp
+  - vb
+  name: GetUnscaledPoints()
+  nameWithType: IConvexHullShapeImp.GetUnscaledPoints()
+  fullName: Fusee.Engine.Common.IConvexHullShapeImp.GetUnscaledPoints()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConvexHullShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetUnscaledPoints
+    path: src/Fusee/src/Engine/Common/IConvexHullShapeImp.cs
+    startLine: 24
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the unscaled points.\n"
+  example: []
+  syntax:
+    content: float3[] GetUnscaledPoints()
+    return:
+      type: Fusee.Math.Core.float3[]
+      description: An array of unscaled vertices.
+    content.vb: Function GetUnscaledPoints As float3()
+  overload: Fusee.Engine.Common.IConvexHullShapeImp.GetUnscaledPoints*
+- uid: Fusee.Engine.Common.IConvexHullShapeImp.GetNumPoints
+  commentId: M:Fusee.Engine.Common.IConvexHullShapeImp.GetNumPoints
+  id: GetNumPoints
+  parent: Fusee.Engine.Common.IConvexHullShapeImp
+  langs:
+  - csharp
+  - vb
+  name: GetNumPoints()
+  nameWithType: IConvexHullShapeImp.GetNumPoints()
+  fullName: Fusee.Engine.Common.IConvexHullShapeImp.GetNumPoints()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConvexHullShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetNumPoints
+    path: src/Fusee/src/Engine/Common/IConvexHullShapeImp.cs
+    startLine: 29
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the number of points.\n"
+  example: []
+  syntax:
+    content: int GetNumPoints()
+    return:
+      type: System.Int32
+      description: The number of points.
+    content.vb: Function GetNumPoints As Integer
+  overload: Fusee.Engine.Common.IConvexHullShapeImp.GetNumPoints*
+references:
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Common.ICollisionShapeImp.Margin
+  commentId: P:Fusee.Engine.Common.ICollisionShapeImp.Margin
+  parent: Fusee.Engine.Common.ICollisionShapeImp
+  name: Margin
+  nameWithType: ICollisionShapeImp.Margin
+  fullName: Fusee.Engine.Common.ICollisionShapeImp.Margin
+- uid: Fusee.Engine.Common.ICollisionShapeImp.LocalScaling
+  commentId: P:Fusee.Engine.Common.ICollisionShapeImp.LocalScaling
+  parent: Fusee.Engine.Common.ICollisionShapeImp
+  name: LocalScaling
+  nameWithType: ICollisionShapeImp.LocalScaling
+  fullName: Fusee.Engine.Common.ICollisionShapeImp.LocalScaling
+- uid: Fusee.Engine.Common.ICollisionShapeImp.UserObject
+  commentId: P:Fusee.Engine.Common.ICollisionShapeImp.UserObject
+  parent: Fusee.Engine.Common.ICollisionShapeImp
+  name: UserObject
+  nameWithType: ICollisionShapeImp.UserObject
+  fullName: Fusee.Engine.Common.ICollisionShapeImp.UserObject
+- uid: Fusee.Engine.Common.ICollisionShapeImp
+  commentId: T:Fusee.Engine.Common.ICollisionShapeImp
+  parent: Fusee.Engine.Common
+  name: ICollisionShapeImp
+  nameWithType: ICollisionShapeImp
+  fullName: Fusee.Engine.Common.ICollisionShapeImp
+- uid: Fusee.Engine.Common.IConvexHullShapeImp.AddPoint*
+  commentId: Overload:Fusee.Engine.Common.IConvexHullShapeImp.AddPoint
+  name: AddPoint
+  nameWithType: IConvexHullShapeImp.AddPoint
+  fullName: Fusee.Engine.Common.IConvexHullShapeImp.AddPoint
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Common.IConvexHullShapeImp.GetScaledPoint*
+  commentId: Overload:Fusee.Engine.Common.IConvexHullShapeImp.GetScaledPoint
+  name: GetScaledPoint
+  nameWithType: IConvexHullShapeImp.GetScaledPoint
+  fullName: Fusee.Engine.Common.IConvexHullShapeImp.GetScaledPoint
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Common.IConvexHullShapeImp.GetUnscaledPoints*
+  commentId: Overload:Fusee.Engine.Common.IConvexHullShapeImp.GetUnscaledPoints
+  name: GetUnscaledPoints
+  nameWithType: IConvexHullShapeImp.GetUnscaledPoints
+  fullName: Fusee.Engine.Common.IConvexHullShapeImp.GetUnscaledPoints
+- uid: Fusee.Math.Core.float3[]
+  isExternal: true
+  name: float3[]
+  nameWithType: float3[]
+  fullName: Fusee.Math.Core.float3[]
+  nameWithType.vb: float3()
+  fullName.vb: Fusee.Math.Core.float3()
+  name.vb: float3()
+  spec.csharp:
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Fusee.Engine.Common.IConvexHullShapeImp.GetNumPoints*
+  commentId: Overload:Fusee.Engine.Common.IConvexHullShapeImp.GetNumPoints
+  name: GetNumPoints
+  nameWithType: IConvexHullShapeImp.GetNumPoints
+  fullName: Fusee.Engine.Common.IConvexHullShapeImp.GetNumPoints

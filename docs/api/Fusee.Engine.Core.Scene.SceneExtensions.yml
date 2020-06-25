@@ -1,0 +1,2810 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Scene.SceneExtensions
+  commentId: T:Fusee.Engine.Core.Scene.SceneExtensions
+  id: SceneExtensions
+  parent: Fusee.Engine.Core.Scene
+  children:
+  - Fusee.Engine.Core.Scene.SceneExtensions.AddComponent(Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent)
+  - Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  - Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  - Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{``0})
+  - Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{``0})
+  - Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  - Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  - Fusee.Engine.Core.Scene.SceneExtensions.FpsView(Fusee.Engine.Core.Scene.Transform,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Fusee.Engine.Core.Scene.SceneExtensions.GetComponent(Fusee.Engine.Core.Scene.SceneNode,System.Type,System.Int32)
+  - Fusee.Engine.Core.Scene.SceneExtensions.GetComponent``1(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  - Fusee.Engine.Core.Scene.SceneExtensions.GetComponents(Fusee.Engine.Core.Scene.SceneNode,System.Type)
+  - Fusee.Engine.Core.Scene.SceneExtensions.GetComponents``1(Fusee.Engine.Core.Scene.SceneNode)
+  - Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren(Fusee.Engine.Core.Scene.SceneNode,System.Type)
+  - Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren``1(Fusee.Engine.Core.Scene.SceneNode)
+  - Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalRotation(Fusee.Engine.Core.Scene.SceneNode)
+  - Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalScale(Fusee.Engine.Core.Scene.SceneNode)
+  - Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTransformation(Fusee.Engine.Core.Scene.SceneNode)
+  - Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTranslation(Fusee.Engine.Core.Scene.SceneNode)
+  - Fusee.Engine.Core.Scene.SceneExtensions.GetLight(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  - Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation(Fusee.Engine.Core.Scene.Transform)
+  - Fusee.Engine.Core.Scene.SceneExtensions.GetMesh(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  - Fusee.Engine.Core.Scene.SceneExtensions.GetTransform(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  - Fusee.Engine.Core.Scene.SceneExtensions.GetWeights(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  - Fusee.Engine.Core.Scene.SceneExtensions.Matrix(Fusee.Engine.Core.Scene.Transform)
+  - Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent(Fusee.Engine.Core.Scene.SceneNode,System.Type,System.Int32)
+  - Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent``1(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  - Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren(Fusee.Engine.Core.Scene.SceneNode,System.Type)
+  - Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren``1(Fusee.Engine.Core.Scene.SceneNode)
+  - Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  - Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  - Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.Quaternion,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  - Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  - Fusee.Engine.Core.Scene.SceneExtensions.ToScene(Fusee.Engine.Core.Scene.SceneNode)
+  - Fusee.Engine.Core.Scene.SceneExtensions.ToSceneNode(Fusee.Engine.Core.Scene.SceneContainer)
+  - Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3)
+  - Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4)
+  langs:
+  - csharp
+  - vb
+  name: SceneExtensions
+  nameWithType: SceneExtensions
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SceneExtensions
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 12
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nStatic extension methods on <xref href=\"Fusee.Engine.Core.Scene.SceneNode\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Fusee.Engine.Core.Scene.SceneComponent\" data-throw-if-not-resolved=\"false\"></xref> instances (or enumerations)\nfor various purposes.\n"
+  example: []
+  syntax:
+    content: public static class SceneExtensions
+    content.vb: Public Module SceneExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  id: FindComponents(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: FindComponents(SceneNode, Predicate<SceneComponent>)
+  nameWithType: SceneExtensions.FindComponents(SceneNode, Predicate<SceneComponent>)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Fusee.Engine.Core.Scene.SceneNode, System.Predicate<Fusee.Engine.Core.Scene.SceneComponent>)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FindComponents
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 24
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nFinds all components matching a given search predicate within the given node.\n"
+  remarks: "\nNarrows the generic parameters of <xref href=\"Fusee.Xene.SceneFinderExtensions.FindComponents%60%602(%60%600%2cSystem.Predicate%7b%60%601%7d)\" data-throw-if-not-resolved=\"false\"></xref> \nto the concrete Types <xref href=\"Fusee.Engine.Core.Scene.SceneNode\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Fusee.Engine.Core.Scene.SceneComponent\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<SceneComponent> FindComponents(this SceneNode root, Predicate<SceneComponent> match)
+    parameters:
+    - id: root
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: The root node where to start the traversal.
+    - id: match
+      type: System.Predicate{Fusee.Engine.Core.Scene.SceneComponent}
+      description: The matching predicate. Enumeration will yield on every matching node.
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneComponent}
+      description: An enumerable that can be used in foreach statements.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FindComponents(root As SceneNode, match As Predicate(Of SceneComponent)) As IEnumerable(Of SceneComponent)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents*
+  nameWithType.vb: SceneExtensions.FindComponents(SceneNode, Predicate(Of SceneComponent))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Fusee.Engine.Core.Scene.SceneNode, System.Predicate(Of Fusee.Engine.Core.Scene.SceneComponent))
+  name.vb: FindComponents(SceneNode, Predicate(Of SceneComponent))
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  id: FindComponents(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: FindComponents(IEnumerable<SceneNode>, Predicate<SceneComponent>)
+  nameWithType: SceneExtensions.FindComponents(IEnumerable<SceneNode>, Predicate<SceneComponent>)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Collections.Generic.IEnumerable<Fusee.Engine.Core.Scene.SceneNode>, System.Predicate<Fusee.Engine.Core.Scene.SceneComponent>)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FindComponents
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 35
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nFinds all components matching a given search predicate within the given list of nodes.\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<SceneComponent> FindComponents(this IEnumerable<SceneNode> roots, Predicate<SceneComponent> match)
+    parameters:
+    - id: roots
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}
+      description: ''
+    - id: match
+      type: System.Predicate{Fusee.Engine.Core.Scene.SceneComponent}
+      description: ''
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneComponent}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FindComponents(roots As IEnumerable(Of SceneNode), match As Predicate(Of SceneComponent)) As IEnumerable(Of SceneComponent)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents*
+  nameWithType.vb: SceneExtensions.FindComponents(IEnumerable(Of SceneNode), Predicate(Of SceneComponent))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Collections.Generic.IEnumerable(Of Fusee.Engine.Core.Scene.SceneNode), System.Predicate(Of Fusee.Engine.Core.Scene.SceneComponent))
+  name.vb: FindComponents(IEnumerable(Of SceneNode), Predicate(Of SceneComponent))
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{``0})
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{``0})
+  id: FindComponents``1(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{``0})
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: FindComponents<TComponentToFind>(SceneNode, Predicate<TComponentToFind>)
+  nameWithType: SceneExtensions.FindComponents<TComponentToFind>(SceneNode, Predicate<TComponentToFind>)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents<TComponentToFind>(Fusee.Engine.Core.Scene.SceneNode, System.Predicate<TComponentToFind>)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FindComponents
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 50
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nFinds all components of a certain type matching a given search predicate within the given node.\n"
+  remarks: "\nNarrows the generic parameters of <xref href=\"Fusee.Xene.SceneFinderExtensions.FindComponents%60%602(%60%600%2cSystem.Predicate%7b%60%601%7d)\" data-throw-if-not-resolved=\"false\"></xref> \nto the concrete Types <xref href=\"Fusee.Engine.Core.Scene.SceneNode\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Fusee.Engine.Core.Scene.SceneComponent\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: >-
+      public static IEnumerable<TComponentToFind> FindComponents<TComponentToFind>(this SceneNode root, Predicate<TComponentToFind> match)
+
+          where TComponentToFind : SceneComponent
+    parameters:
+    - id: root
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: The root node where to start the traversal.
+    - id: match
+      type: System.Predicate{{TComponentToFind}}
+      description: The matching predicate. Enumeration will yield on every matching node.
+    typeParameters:
+    - id: TComponentToFind
+    return:
+      type: System.Collections.Generic.IEnumerable{{TComponentToFind}}
+      description: An enumerable that can be used in foreach statements.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FindComponents(Of TComponentToFind As SceneComponent)(root As SceneNode, match As Predicate(Of TComponentToFind)) As IEnumerable(Of TComponentToFind)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents*
+  nameWithType.vb: SceneExtensions.FindComponents(Of TComponentToFind)(SceneNode, Predicate(Of TComponentToFind))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Of TComponentToFind)(Fusee.Engine.Core.Scene.SceneNode, System.Predicate(Of TComponentToFind))
+  name.vb: FindComponents(Of TComponentToFind)(SceneNode, Predicate(Of TComponentToFind))
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{``0})
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{``0})
+  id: FindComponents``1(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{``0})
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: FindComponents<TComponentToFind>(IEnumerable<SceneNode>, Predicate<TComponentToFind>)
+  nameWithType: SceneExtensions.FindComponents<TComponentToFind>(IEnumerable<SceneNode>, Predicate<TComponentToFind>)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents<TComponentToFind>(System.Collections.Generic.IEnumerable<Fusee.Engine.Core.Scene.SceneNode>, System.Predicate<TComponentToFind>)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FindComponents
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 62
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nFinds all components of a certain type matching a given search predicate within the given list of nodes.\n"
+  example: []
+  syntax:
+    content: >-
+      public static IEnumerable<TComponentToFind> FindComponents<TComponentToFind>(this IEnumerable<SceneNode> roots, Predicate<TComponentToFind> match)
+
+          where TComponentToFind : SceneComponent
+    parameters:
+    - id: roots
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}
+      description: ''
+    - id: match
+      type: System.Predicate{{TComponentToFind}}
+      description: ''
+    typeParameters:
+    - id: TComponentToFind
+    return:
+      type: System.Collections.Generic.IEnumerable{{TComponentToFind}}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FindComponents(Of TComponentToFind As SceneComponent)(roots As IEnumerable(Of SceneNode), match As Predicate(Of TComponentToFind)) As IEnumerable(Of TComponentToFind)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents*
+  nameWithType.vb: SceneExtensions.FindComponents(Of TComponentToFind)(IEnumerable(Of SceneNode), Predicate(Of TComponentToFind))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Of TComponentToFind)(System.Collections.Generic.IEnumerable(Of Fusee.Engine.Core.Scene.SceneNode), System.Predicate(Of TComponentToFind))
+  name.vb: FindComponents(Of TComponentToFind)(IEnumerable(Of SceneNode), Predicate(Of TComponentToFind))
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  id: FindNodesWhereComponent(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: FindNodesWhereComponent(SceneNode, Predicate<SceneComponent>)
+  nameWithType: SceneExtensions.FindNodesWhereComponent(SceneNode, Predicate<SceneComponent>)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(Fusee.Engine.Core.Scene.SceneNode, System.Predicate<Fusee.Engine.Core.Scene.SceneComponent>)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FindNodesWhereComponent
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 74
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nFinds all components matching a given search predicate within the given node.\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<SceneNode> FindNodesWhereComponent(this SceneNode root, Predicate<SceneComponent> match)
+    parameters:
+    - id: root
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: ''
+    - id: match
+      type: System.Predicate{Fusee.Engine.Core.Scene.SceneComponent}
+      description: ''
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FindNodesWhereComponent(root As SceneNode, match As Predicate(Of SceneComponent)) As IEnumerable(Of SceneNode)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent*
+  nameWithType.vb: SceneExtensions.FindNodesWhereComponent(SceneNode, Predicate(Of SceneComponent))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(Fusee.Engine.Core.Scene.SceneNode, System.Predicate(Of Fusee.Engine.Core.Scene.SceneComponent))
+  name.vb: FindNodesWhereComponent(SceneNode, Predicate(Of SceneComponent))
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  id: FindNodesWhereComponent(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: FindNodesWhereComponent(IEnumerable<SceneNode>, Predicate<SceneComponent>)
+  nameWithType: SceneExtensions.FindNodesWhereComponent(IEnumerable<SceneNode>, Predicate<SceneComponent>)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Collections.Generic.IEnumerable<Fusee.Engine.Core.Scene.SceneNode>, System.Predicate<Fusee.Engine.Core.Scene.SceneComponent>)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FindNodesWhereComponent
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 85
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nFinds all components matching a given search predicate within the given node.\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<SceneNode> FindNodesWhereComponent(this IEnumerable<SceneNode> roots, Predicate<SceneComponent> match)
+    parameters:
+    - id: roots
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}
+      description: ''
+    - id: match
+      type: System.Predicate{Fusee.Engine.Core.Scene.SceneComponent}
+      description: ''
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FindNodesWhereComponent(roots As IEnumerable(Of SceneNode), match As Predicate(Of SceneComponent)) As IEnumerable(Of SceneNode)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent*
+  nameWithType.vb: SceneExtensions.FindNodesWhereComponent(IEnumerable(Of SceneNode), Predicate(Of SceneComponent))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Collections.Generic.IEnumerable(Of Fusee.Engine.Core.Scene.SceneNode), System.Predicate(Of Fusee.Engine.Core.Scene.SceneComponent))
+  name.vb: FindNodesWhereComponent(IEnumerable(Of SceneNode), Predicate(Of SceneComponent))
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.Matrix(Fusee.Engine.Core.Scene.Transform)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Matrix(Fusee.Engine.Core.Scene.Transform)
+  id: Matrix(Fusee.Engine.Core.Scene.Transform)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: Matrix(Transform)
+  nameWithType: SceneExtensions.Matrix(Transform)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Matrix(Fusee.Engine.Core.Scene.Transform)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Matrix
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 95
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nCalculates a transformation matrix from this transform component.\n"
+  example: []
+  syntax:
+    content: public static float4x4 Matrix(this Transform transformThis)
+    parameters:
+    - id: transformThis
+      type: Fusee.Engine.Core.Scene.Transform
+      description: This transform component.
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: The transform component&apos;s translation, rotation and scale combined in a single matrix.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Matrix(transformThis As Transform) As float4x4
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.Matrix*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTransformation(Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTransformation(Fusee.Engine.Core.Scene.SceneNode)
+  id: GetGlobalTransformation(Fusee.Engine.Core.Scene.SceneNode)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetGlobalTransformation(SceneNode)
+  nameWithType: SceneExtensions.GetGlobalTransformation(SceneNode)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTransformation(Fusee.Engine.Core.Scene.SceneNode)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetGlobalTransformation
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 105
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nReturns the global transformation matrix as the product of all transformations along the scene graph branch this SceneNode is a part of. \n"
+  example: []
+  syntax:
+    content: public static float4x4 GetGlobalTransformation(this SceneNode snThis)
+    parameters:
+    - id: snThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+    return:
+      type: Fusee.Math.Core.float4x4
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetGlobalTransformation(snThis As SceneNode) As float4x4
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTransformation*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalRotation(Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalRotation(Fusee.Engine.Core.Scene.SceneNode)
+  id: GetGlobalRotation(Fusee.Engine.Core.Scene.SceneNode)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetGlobalRotation(SceneNode)
+  nameWithType: SceneExtensions.GetGlobalRotation(SceneNode)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalRotation(Fusee.Engine.Core.Scene.SceneNode)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetGlobalRotation
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 118
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nReturns the global rotation matrix as the product of all rotations along the scene graph branch this SceneNode is a part of. \n"
+  example: []
+  syntax:
+    content: public static float4x4 GetGlobalRotation(this SceneNode snThis)
+    parameters:
+    - id: snThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+    return:
+      type: Fusee.Math.Core.float4x4
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetGlobalRotation(snThis As SceneNode) As float4x4
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalRotation*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTranslation(Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTranslation(Fusee.Engine.Core.Scene.SceneNode)
+  id: GetGlobalTranslation(Fusee.Engine.Core.Scene.SceneNode)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetGlobalTranslation(SceneNode)
+  nameWithType: SceneExtensions.GetGlobalTranslation(SceneNode)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTranslation(Fusee.Engine.Core.Scene.SceneNode)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetGlobalTranslation
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 127
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nReturns the global translation as the product of all translations along the scene graph branch this SceneNode is a part of. \n"
+  example: []
+  syntax:
+    content: public static float3 GetGlobalTranslation(this SceneNode snThis)
+    parameters:
+    - id: snThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetGlobalTranslation(snThis As SceneNode) As float3
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTranslation*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalScale(Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalScale(Fusee.Engine.Core.Scene.SceneNode)
+  id: GetGlobalScale(Fusee.Engine.Core.Scene.SceneNode)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetGlobalScale(SceneNode)
+  nameWithType: SceneExtensions.GetGlobalScale(SceneNode)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalScale(Fusee.Engine.Core.Scene.SceneNode)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetGlobalScale
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 136
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nReturns the global scale as the product of all scaling along the scene graph branch this SceneNode is a part of. \n"
+  example: []
+  syntax:
+    content: public static float3 GetGlobalScale(this SceneNode snThis)
+    parameters:
+    - id: snThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetGlobalScale(snThis As SceneNode) As float3
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalScale*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation(Fusee.Engine.Core.Scene.Transform)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation(Fusee.Engine.Core.Scene.Transform)
+  id: GetLocalTransformation(Fusee.Engine.Core.Scene.Transform)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetLocalTransformation(Transform)
+  nameWithType: SceneExtensions.GetLocalTransformation(Transform)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation(Fusee.Engine.Core.Scene.Transform)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetLocalTransformation
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 167
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nGet the local transformation matrix from this TransformationComponent. \n"
+  example: []
+  syntax:
+    content: public static float4x4 GetLocalTransformation(this Transform tansThis)
+    parameters:
+    - id: tansThis
+      type: Fusee.Engine.Core.Scene.Transform
+    return:
+      type: Fusee.Math.Core.float4x4
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetLocalTransformation(tansThis As Transform) As float4x4
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren(Fusee.Engine.Core.Scene.SceneNode,System.Type)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren(Fusee.Engine.Core.Scene.SceneNode,System.Type)
+  id: RemoveComponentsInChildren(Fusee.Engine.Core.Scene.SceneNode,System.Type)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemoveComponentsInChildren(SceneNode, Type)
+  nameWithType: SceneExtensions.RemoveComponentsInChildren(SceneNode, Type)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren(Fusee.Engine.Core.Scene.SceneNode, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RemoveComponentsInChildren
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 178
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nRemoves the components with the specified type and the sub-types in the children of this scene node container.\n"
+  example: []
+  syntax:
+    content: public static void RemoveComponentsInChildren(this SceneNode snThisThis, Type type)
+    parameters:
+    - id: snThisThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: This scene node container.
+    - id: type
+      type: System.Type
+      description: The type of the components to look for.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub RemoveComponentsInChildren(snThisThis As SceneNode, type As Type)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren``1(Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren``1(Fusee.Engine.Core.Scene.SceneNode)
+  id: RemoveComponentsInChildren``1(Fusee.Engine.Core.Scene.SceneNode)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemoveComponentsInChildren<TComp>(SceneNode)
+  nameWithType: SceneExtensions.RemoveComponentsInChildren<TComp>(SceneNode)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren<TComp>(Fusee.Engine.Core.Scene.SceneNode)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RemoveComponentsInChildren
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 202
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nRemoves components with the specified type in the children of this scene node container.\n"
+  example: []
+  syntax:
+    content: >-
+      public static void RemoveComponentsInChildren<TComp>(this SceneNode snThisThis)
+
+          where TComp : SceneComponent
+    parameters:
+    - id: snThisThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: This scene node container.
+    typeParameters:
+    - id: TComp
+      description: The type of the components to look for.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub RemoveComponentsInChildren(Of TComp As SceneComponent)(snThisThis As SceneNode)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren*
+  nameWithType.vb: SceneExtensions.RemoveComponentsInChildren(Of TComp)(SceneNode)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren(Of TComp)(Fusee.Engine.Core.Scene.SceneNode)
+  name.vb: RemoveComponentsInChildren(Of TComp)(SceneNode)
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren(Fusee.Engine.Core.Scene.SceneNode,System.Type)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren(Fusee.Engine.Core.Scene.SceneNode,System.Type)
+  id: GetComponentsInChildren(Fusee.Engine.Core.Scene.SceneNode,System.Type)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetComponentsInChildren(SceneNode, Type)
+  nameWithType: SceneExtensions.GetComponentsInChildren(SceneNode, Type)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren(Fusee.Engine.Core.Scene.SceneNode, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetComponentsInChildren
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 214
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nFinds the components with the specified type and the sub-types in the children of this scene node container.\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<SceneComponent> GetComponentsInChildren(this SceneNode snThisThis, Type type)
+    parameters:
+    - id: snThisThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: This scene node container.
+    - id: type
+      type: System.Type
+      description: The type of the components to look for.
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneComponent}
+      description: A List of components of the specified type, if contained within the given container.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetComponentsInChildren(snThisThis As SceneNode, type As Type) As IEnumerable(Of SceneComponent)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren``1(Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren``1(Fusee.Engine.Core.Scene.SceneNode)
+  id: GetComponentsInChildren``1(Fusee.Engine.Core.Scene.SceneNode)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetComponentsInChildren<TComp>(SceneNode)
+  nameWithType: SceneExtensions.GetComponentsInChildren<TComp>(SceneNode)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren<TComp>(Fusee.Engine.Core.Scene.SceneNode)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetComponentsInChildren
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 238
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nFinds the components with the specified type in the children of this scene node container.\n"
+  example: []
+  syntax:
+    content: >-
+      public static IEnumerable<TComp> GetComponentsInChildren<TComp>(this SceneNode snThisThis)
+
+          where TComp : SceneComponent
+    parameters:
+    - id: snThisThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: This scene node container.
+    typeParameters:
+    - id: TComp
+      description: The type of the components to look for.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TComp}}
+      description: A List of components of the specified type, if contained within the given container.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetComponentsInChildren(Of TComp As SceneComponent)(snThisThis As SceneNode) As IEnumerable(Of TComp)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren*
+  nameWithType.vb: SceneExtensions.GetComponentsInChildren(Of TComp)(SceneNode)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren(Of TComp)(Fusee.Engine.Core.Scene.SceneNode)
+  name.vb: GetComponentsInChildren(Of TComp)(SceneNode)
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetComponent(Fusee.Engine.Core.Scene.SceneNode,System.Type,System.Int32)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetComponent(Fusee.Engine.Core.Scene.SceneNode,System.Type,System.Int32)
+  id: GetComponent(Fusee.Engine.Core.Scene.SceneNode,System.Type,System.Int32)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetComponent(SceneNode, Type, Int32)
+  nameWithType: SceneExtensions.GetComponent(SceneNode, Type, Int32)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetComponent(Fusee.Engine.Core.Scene.SceneNode, System.Type, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetComponent
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 251
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nFinds the component with the specified type in this scene node container.\n"
+  example: []
+  syntax:
+    content: public static SceneComponent GetComponent(this SceneNode snThisThis, Type type, int inx = 0)
+    parameters:
+    - id: snThisThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: This scene node container.
+    - id: type
+      type: System.Type
+      description: The type of the component to look for.
+    - id: inx
+      type: System.Int32
+      description: specifies the n&apos;th component if more than component of the given type exists.
+    return:
+      type: Fusee.Engine.Core.Scene.SceneComponent
+      description: A component of the specified type, if contained within the given container, null otherwise.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetComponent(snThisThis As SceneNode, type As Type, inx As Integer = 0) As SceneComponent
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.GetComponent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent(Fusee.Engine.Core.Scene.SceneNode,System.Type,System.Int32)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent(Fusee.Engine.Core.Scene.SceneNode,System.Type,System.Int32)
+  id: RemoveComponent(Fusee.Engine.Core.Scene.SceneNode,System.Type,System.Int32)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemoveComponent(SceneNode, Type, Int32)
+  nameWithType: SceneExtensions.RemoveComponent(SceneNode, Type, Int32)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent(Fusee.Engine.Core.Scene.SceneNode, System.Type, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RemoveComponent
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 275
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nRemoves the component with the specified type in this scene node container.\n"
+  example: []
+  syntax:
+    content: public static void RemoveComponent(this SceneNode snThisThis, Type type, int inx = 0)
+    parameters:
+    - id: snThisThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: This scene node container.
+    - id: type
+      type: System.Type
+      description: The type of the component to look for.
+    - id: inx
+      type: System.Int32
+      description: specifies the n&apos;th component if more than component of the given type exists.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub RemoveComponent(snThisThis As SceneNode, type As Type, inx As Integer = 0)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetComponents``1(Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetComponents``1(Fusee.Engine.Core.Scene.SceneNode)
+  id: GetComponents``1(Fusee.Engine.Core.Scene.SceneNode)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetComponents<TComp>(SceneNode)
+  nameWithType: SceneExtensions.GetComponents<TComp>(SceneNode)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetComponents<TComp>(Fusee.Engine.Core.Scene.SceneNode)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetComponents
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 299
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nFinds the components with the specified type in this scene node container.\n"
+  example: []
+  syntax:
+    content: >-
+      public static IEnumerable<TComp> GetComponents<TComp>(this SceneNode snThisThis)
+
+          where TComp : SceneComponent
+    parameters:
+    - id: snThisThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: This scene node container.
+    typeParameters:
+    - id: TComp
+    return:
+      type: System.Collections.Generic.IEnumerable{{TComp}}
+      description: A component of the specified type, if contained within the given container, null otherwise.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetComponents(Of TComp As SceneComponent)(snThisThis As SceneNode) As IEnumerable(Of TComp)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.GetComponents*
+  nameWithType.vb: SceneExtensions.GetComponents(Of TComp)(SceneNode)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.GetComponents(Of TComp)(Fusee.Engine.Core.Scene.SceneNode)
+  name.vb: GetComponents(Of TComp)(SceneNode)
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetComponents(Fusee.Engine.Core.Scene.SceneNode,System.Type)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetComponents(Fusee.Engine.Core.Scene.SceneNode,System.Type)
+  id: GetComponents(Fusee.Engine.Core.Scene.SceneNode,System.Type)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetComponents(SceneNode, Type)
+  nameWithType: SceneExtensions.GetComponents(SceneNode, Type)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetComponents(Fusee.Engine.Core.Scene.SceneNode, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetComponents
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 309
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nFinds the components with the specified type in this scene node container.\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<SceneComponent> GetComponents(this SceneNode snThisThis, Type type)
+    parameters:
+    - id: snThisThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: This scene node container.
+    - id: type
+      type: System.Type
+      description: The type of the component to look for.
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneComponent}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetComponents(snThisThis As SceneNode, type As Type) As IEnumerable(Of SceneComponent)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.GetComponents*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetComponent``1(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetComponent``1(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  id: GetComponent``1(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetComponent<TComp>(SceneNode, Int32)
+  nameWithType: SceneExtensions.GetComponent<TComp>(SceneNode, Int32)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetComponent<TComp>(Fusee.Engine.Core.Scene.SceneNode, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetComponent
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 327
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nFinds the component with the specified type in this scene node container.\n"
+  example: []
+  syntax:
+    content: >-
+      public static TComp GetComponent<TComp>(this SceneNode snThisThis, int inx = 0)
+
+          where TComp : SceneComponent
+    parameters:
+    - id: snThisThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: This scene node container.
+    - id: inx
+      type: System.Int32
+      description: specifies the n&apos;th component if more than component of the given type exists.
+    typeParameters:
+    - id: TComp
+      description: The type of the component to look for.
+    return:
+      type: '{TComp}'
+      description: A component of the specified type, if contained within this container, null otherwise.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetComponent(Of TComp As SceneComponent)(snThisThis As SceneNode, inx As Integer = 0) As TComp
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.GetComponent*
+  nameWithType.vb: SceneExtensions.GetComponent(Of TComp)(SceneNode, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.GetComponent(Of TComp)(Fusee.Engine.Core.Scene.SceneNode, System.Int32)
+  name.vb: GetComponent(Of TComp)(SceneNode, Int32)
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent``1(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent``1(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  id: RemoveComponent``1(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemoveComponent<TComp>(SceneNode, Int32)
+  nameWithType: SceneExtensions.RemoveComponent<TComp>(SceneNode, Int32)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent<TComp>(Fusee.Engine.Core.Scene.SceneNode, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RemoveComponent
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 340
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nRemoves the component with the specified type in this scene node container.\n"
+  example: []
+  syntax:
+    content: >-
+      public static void RemoveComponent<TComp>(this SceneNode snThisThis, int inx = 0)
+
+          where TComp : SceneComponent
+    parameters:
+    - id: snThisThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: This scene node container.
+    - id: inx
+      type: System.Int32
+      description: specifies the n&apos;th component if more than component of the given type exists.
+    typeParameters:
+    - id: TComp
+      description: The type of the component to look for.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub RemoveComponent(Of TComp As SceneComponent)(snThisThis As SceneNode, inx As Integer = 0)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent*
+  nameWithType.vb: SceneExtensions.RemoveComponent(Of TComp)(SceneNode, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent(Of TComp)(Fusee.Engine.Core.Scene.SceneNode, System.Int32)
+  name.vb: RemoveComponent(Of TComp)(SceneNode, Int32)
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetMesh(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetMesh(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  id: GetMesh(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMesh(SceneNode, Int32)
+  nameWithType: SceneExtensions.GetMesh(SceneNode, Int32)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetMesh(Fusee.Engine.Core.Scene.SceneNode, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetMesh
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 352
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nShortcut for <pre><code>GetComponent&lt;Mesh>(snThisThis, inx);</code></pre>. See <xref href=\"Fusee.Engine.Core.Scene.SceneExtensions.GetComponent%60%601(Fusee.Engine.Core.Scene.SceneNode%2cSystem.Int32)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static Mesh GetMesh(this SceneNode snThisThis, int inx = 0)
+    parameters:
+    - id: snThisThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: This scene node container.
+    - id: inx
+      type: System.Int32
+      description: specifies the n&apos;th component if more than component of the given type exists.
+    return:
+      type: Fusee.Engine.Core.Scene.Mesh
+      description: A mesh if contained within this container.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetMesh(snThisThis As SceneNode, inx As Integer = 0) As Mesh
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.GetMesh*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetLight(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetLight(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  id: GetLight(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetLight(SceneNode, Int32)
+  nameWithType: SceneExtensions.GetLight(SceneNode, Int32)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetLight(Fusee.Engine.Core.Scene.SceneNode, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetLight
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 363
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nShortcut for <pre><code>GetComponent&lt;Light>(snThisThis, inx);</code></pre>. See <xref href=\"Fusee.Engine.Core.Scene.SceneExtensions.GetComponent%60%601(Fusee.Engine.Core.Scene.SceneNode%2cSystem.Int32)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static Light GetLight(this SceneNode snThisThis, int inx = 0)
+    parameters:
+    - id: snThisThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: This scene node container.
+    - id: inx
+      type: System.Int32
+      description: specifies the n&apos;th component if more than component of the given type exists.
+    return:
+      type: Fusee.Engine.Core.Scene.Light
+      description: A light if contained within this container.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetLight(snThisThis As SceneNode, inx As Integer = 0) As Light
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.GetLight*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetWeights(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetWeights(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  id: GetWeights(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetWeights(SceneNode, Int32)
+  nameWithType: SceneExtensions.GetWeights(SceneNode, Int32)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetWeights(Fusee.Engine.Core.Scene.SceneNode, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetWeights
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 374
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nShortcut for <pre><code>GetComponent&lt;Weight>(snThisThis, inx);</code></pre>. See <xref href=\"Fusee.Engine.Core.Scene.SceneExtensions.GetComponent%60%601(Fusee.Engine.Core.Scene.SceneNode%2cSystem.Int32)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static Weight GetWeights(this SceneNode snThisThis, int inx = 0)
+    parameters:
+    - id: snThisThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: This scene node container.
+    - id: inx
+      type: System.Int32
+      description: specifies the n&apos;th component if more than component of the given type exists.
+    return:
+      type: Fusee.Engine.Core.Scene.Weight
+      description: A weight component if contained within this container.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetWeights(snThisThis As SceneNode, inx As Integer = 0) As Weight
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.GetWeights*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetTransform(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetTransform(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  id: GetTransform(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetTransform(SceneNode, Int32)
+  nameWithType: SceneExtensions.GetTransform(SceneNode, Int32)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetTransform(Fusee.Engine.Core.Scene.SceneNode, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetTransform
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 385
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nShortcut for <pre><code>GetComponent&lt;Transform>(snThisThis, inx);</code></pre>. See <xref href=\"Fusee.Engine.Core.Scene.SceneExtensions.GetComponent%60%601(Fusee.Engine.Core.Scene.SceneNode%2cSystem.Int32)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static Transform GetTransform(this SceneNode snThisThis, int inx = 0)
+    parameters:
+    - id: snThisThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: This scene node container.
+    - id: inx
+      type: System.Int32
+      description: specifies the n&apos;th component if more than component of the given type exists.
+    return:
+      type: Fusee.Engine.Core.Scene.Transform
+      description: A transform if contained within this container.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetTransform(snThisThis As SceneNode, inx As Integer = 0) As Transform
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.GetTransform*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.AddComponent(Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.AddComponent(Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent)
+  id: AddComponent(Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddComponent(SceneNode, SceneComponent)
+  nameWithType: SceneExtensions.AddComponent(SceneNode, SceneComponent)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.AddComponent(Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddComponent
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 395
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nAdds the given component into this container&apos;s list of components.\n"
+  example: []
+  syntax:
+    content: public static void AddComponent(this SceneNode snThisThis, SceneComponent scc)
+    parameters:
+    - id: snThisThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: This node.
+    - id: scc
+      type: Fusee.Engine.Core.Scene.SceneComponent
+      description: The component to add.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddComponent(snThisThis As SceneNode, scc As SceneComponent)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.AddComponent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.ToSceneNode(Fusee.Engine.Core.Scene.SceneContainer)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.ToSceneNode(Fusee.Engine.Core.Scene.SceneContainer)
+  id: ToSceneNode(Fusee.Engine.Core.Scene.SceneContainer)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToSceneNode(SceneContainer)
+  nameWithType: SceneExtensions.ToSceneNode(SceneContainer)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.ToSceneNode(Fusee.Engine.Core.Scene.SceneContainer)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ToSceneNode
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 406
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nConverts the Scene to a SceneNode with a separate Transform\n"
+  example: []
+  syntax:
+    content: public static SceneNode ToSceneNode(this SceneContainer sc)
+    parameters:
+    - id: sc
+      type: Fusee.Engine.Core.Scene.SceneContainer
+      description: this node.
+    return:
+      type: Fusee.Engine.Core.Scene.SceneNode
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToSceneNode(sc As SceneContainer) As SceneNode
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.ToSceneNode*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.ToScene(Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.ToScene(Fusee.Engine.Core.Scene.SceneNode)
+  id: ToScene(Fusee.Engine.Core.Scene.SceneNode)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToScene(SceneNode)
+  nameWithType: SceneExtensions.ToScene(SceneNode)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.ToScene(Fusee.Engine.Core.Scene.SceneNode)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ToScene
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 423
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nConverts the SceneNode to a Scene\n"
+  example: []
+  syntax:
+    content: public static SceneContainer ToScene(this SceneNode snThis)
+    parameters:
+    - id: snThis
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: this node.
+    return:
+      type: Fusee.Engine.Core.Scene.SceneContainer
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToScene(snThis As SceneNode) As SceneContainer
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.ToScene*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3)
+  id: Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: Translate(Transform, float3)
+  nameWithType: SceneExtensions.Translate(Transform, float3)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform, Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Translate
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 440
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nTranslate this node.\n"
+  example: []
+  syntax:
+    content: public static void Translate(this Transform tc, float3 xyz)
+    parameters:
+    - id: tc
+      type: Fusee.Engine.Core.Scene.Transform
+      description: ''
+    - id: xyz
+      type: Fusee.Math.Core.float3
+      description: Translation amount as float3.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Translate(tc As Transform, xyz As float3)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.Translate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4)
+  id: Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: Translate(Transform, float4x4)
+  nameWithType: SceneExtensions.Translate(Transform, float4x4)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform, Fusee.Math.Core.float4x4)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Translate
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 450
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nTranslates a transform component with a specified float4x4 translation matrix\n"
+  example: []
+  syntax:
+    content: public static void Translate(this Transform tc, float4x4 translationMtx)
+    parameters:
+    - id: tc
+      type: Fusee.Engine.Core.Scene.Transform
+      description: ''
+    - id: translationMtx
+      type: Fusee.Math.Core.float4x4
+      description: Translation amount as represented in float4x4.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Translate(tc As Transform, translationMtx As float4x4)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.Translate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  id: Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: Rotate(Transform, float3, SceneExtensions.Space)
+  nameWithType: SceneExtensions.Rotate(Transform, float3, SceneExtensions.Space)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform, Fusee.Math.Core.float3, Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Rotate
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 461
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nRotates this node.\n"
+  example: []
+  syntax:
+    content: public static void Rotate(this Transform tc, float3 xyz, SceneExtensions.Space space = SceneExtensions.Space.Model)
+    parameters:
+    - id: tc
+      type: Fusee.Engine.Core.Scene.Transform
+      description: ''
+    - id: xyz
+      type: Fusee.Math.Core.float3
+      description: Rotation amount as float3.
+    - id: space
+      type: Fusee.Engine.Core.Scene.SceneExtensions.Space
+      description: Rotation in reference to model or world space.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Rotate(tc As Transform, xyz As float3, space As SceneExtensions.Space = SceneExtensions.Space.Model)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.Rotate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.Quaternion,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.Quaternion,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  id: Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.Quaternion,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: Rotate(Transform, Quaternion, SceneExtensions.Space)
+  nameWithType: SceneExtensions.Rotate(Transform, Quaternion, SceneExtensions.Space)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform, Fusee.Math.Core.Quaternion, Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Rotate
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 472
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nRotates this node.\n"
+  example: []
+  syntax:
+    content: public static void Rotate(this Transform tc, Quaternion quaternion, SceneExtensions.Space space = SceneExtensions.Space.Model)
+    parameters:
+    - id: tc
+      type: Fusee.Engine.Core.Scene.Transform
+      description: ''
+    - id: quaternion
+      type: Fusee.Math.Core.Quaternion
+      description: Rotation amount in Quaternion.
+    - id: space
+      type: Fusee.Engine.Core.Scene.SceneExtensions.Space
+      description: Rotation in reference to model or world space.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Rotate(tc As Transform, quaternion As Quaternion, space As SceneExtensions.Space = SceneExtensions.Space.Model)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.Rotate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  id: RotateAround(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: RotateAround(Transform, float3, float3)
+  nameWithType: SceneExtensions.RotateAround(Transform, float3, float3)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Engine.Core.Scene.Transform, Fusee.Math.Core.float3, Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RotateAround
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 483
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nRoates around a given center and angle\n"
+  example: []
+  syntax:
+    content: public static void RotateAround(this Transform tc, float3 center, float3 angles)
+    parameters:
+    - id: tc
+      type: Fusee.Engine.Core.Scene.Transform
+      description: ''
+    - id: center
+      type: Fusee.Math.Core.float3
+      description: ''
+    - id: angles
+      type: Fusee.Math.Core.float3
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub RotateAround(tc As Transform, center As float3, angles As float3)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  id: Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: Rotate(Transform, float4x4, SceneExtensions.Space)
+  nameWithType: SceneExtensions.Rotate(Transform, float4x4, SceneExtensions.Space)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform, Fusee.Math.Core.float4x4, Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Rotate
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 503
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nRotates this node.\n"
+  example: []
+  syntax:
+    content: public static void Rotate(this Transform tc, float4x4 rotationMtx, SceneExtensions.Space space = SceneExtensions.Space.Model)
+    parameters:
+    - id: tc
+      type: Fusee.Engine.Core.Scene.Transform
+      description: ''
+    - id: rotationMtx
+      type: Fusee.Math.Core.float4x4
+      description: Rotation amount as represented in float4x4.
+    - id: space
+      type: Fusee.Engine.Core.Scene.SceneExtensions.Space
+      description: Rotation in reference to model or world space.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Rotate(tc As Transform, rotationMtx As float4x4, space As SceneExtensions.Space = SceneExtensions.Space.Model)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.Rotate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.FpsView(Fusee.Engine.Core.Scene.Transform,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FpsView(Fusee.Engine.Core.Scene.Transform,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: FpsView(Fusee.Engine.Core.Scene.Transform,System.Single,System.Single,System.Single,System.Single,System.Single)
+  isExtensionMethod: true
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  langs:
+  - csharp
+  - vb
+  name: FpsView(Transform, Single, Single, Single, Single, Single)
+  nameWithType: SceneExtensions.FpsView(Transform, Single, Single, Single, Single, Single)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FpsView(Fusee.Engine.Core.Scene.Transform, System.Single, System.Single, System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FpsView
+    path: src/Fusee/src/Engine/Core/Scene/SceneExtensions.cs
+    startLine: 529
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nUse this if the TransformComponent is part of a camera and you want to achieve a first person behavior.\n"
+  example: []
+  syntax:
+    content: public static void FpsView(this Transform tc, float angleHorz, float angleVert, float inputWSAxis, float inputADAxis, float speed)
+    parameters:
+    - id: tc
+      type: Fusee.Engine.Core.Scene.Transform
+      description: This TransformComponent
+    - id: angleHorz
+      type: System.Single
+      description: The horizontal rotation angle in rad. Should probably come from Mouse input.
+    - id: angleVert
+      type: System.Single
+      description: The vertical rotation angle in rad. Should probably come from Mouse input.
+    - id: inputWSAxis
+      type: System.Single
+      description: The value we want to translate the camera when pressing the W or S key.
+    - id: inputADAxis
+      type: System.Single
+      description: The value we want to translate the camera when pressing the A or D key.
+    - id: speed
+      type: System.Single
+      description: Changes the speed of the camera movement.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub FpsView(tc As Transform, angleHorz As Single, angleVert As Single, inputWSAxis As Single, inputADAxis As Single, speed As Single)
+  overload: Fusee.Engine.Core.Scene.SceneExtensions.FpsView*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Fusee.Engine.Core.Scene.SceneNode
+  commentId: T:Fusee.Engine.Core.Scene.SceneNode
+  parent: Fusee.Engine.Core.Scene
+  name: SceneNode
+  nameWithType: SceneNode
+  fullName: Fusee.Engine.Core.Scene.SceneNode
+- uid: Fusee.Engine.Core.Scene.SceneComponent
+  commentId: T:Fusee.Engine.Core.Scene.SceneComponent
+  parent: Fusee.Engine.Core.Scene
+  name: SceneComponent
+  nameWithType: SceneComponent
+  fullName: Fusee.Engine.Core.Scene.SceneComponent
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Xene.SceneFinderExtensions.FindComponents``2(``0,System.Predicate{``1})
+  commentId: M:Fusee.Xene.SceneFinderExtensions.FindComponents``2(``0,System.Predicate{``1})
+  isExternal: true
+  name: FindComponents<TNode, TComponent>(TNode, Predicate<TComponent>)
+  nameWithType: SceneFinderExtensions.FindComponents<TNode, TComponent>(TNode, Predicate<TComponent>)
+  fullName: Fusee.Xene.SceneFinderExtensions.FindComponents<TNode, TComponent>(TNode, System.Predicate<TComponent>)
+  nameWithType.vb: SceneFinderExtensions.FindComponents(Of TNode, TComponent)(TNode, Predicate(Of TComponent))
+  fullName.vb: Fusee.Xene.SceneFinderExtensions.FindComponents(Of TNode, TComponent)(TNode, System.Predicate(Of TComponent))
+  name.vb: FindComponents(Of TNode, TComponent)(TNode, Predicate(Of TComponent))
+  spec.csharp:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindComponents``2(``0,System.Predicate{``1})
+    name: FindComponents<TNode, TComponent>
+    nameWithType: SceneFinderExtensions.FindComponents<TNode, TComponent>
+    fullName: Fusee.Xene.SceneFinderExtensions.FindComponents<TNode, TComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.SceneFinderExtensions.FindComponents``2(``0,System.Predicate{``1})
+    name: FindComponents(Of TNode, TComponent)
+    nameWithType: SceneFinderExtensions.FindComponents(Of TNode, TComponent)
+    fullName: Fusee.Xene.SceneFinderExtensions.FindComponents(Of TNode, TComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.FindComponents
+  name: FindComponents
+  nameWithType: SceneExtensions.FindComponents
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents
+- uid: System.Predicate{Fusee.Engine.Core.Scene.SceneComponent}
+  commentId: T:System.Predicate{Fusee.Engine.Core.Scene.SceneComponent}
+  parent: System
+  definition: System.Predicate`1
+  name: Predicate<SceneComponent>
+  nameWithType: Predicate<SceneComponent>
+  fullName: System.Predicate<Fusee.Engine.Core.Scene.SceneComponent>
+  nameWithType.vb: Predicate(Of SceneComponent)
+  fullName.vb: System.Predicate(Of Fusee.Engine.Core.Scene.SceneComponent)
+  name.vb: Predicate(Of SceneComponent)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneComponent
+    name: SceneComponent
+    nameWithType: SceneComponent
+    fullName: Fusee.Engine.Core.Scene.SceneComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneComponent
+    name: SceneComponent
+    nameWithType: SceneComponent
+    fullName: Fusee.Engine.Core.Scene.SceneComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneComponent}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneComponent}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<SceneComponent>
+  nameWithType: IEnumerable<SceneComponent>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Engine.Core.Scene.SceneComponent>
+  nameWithType.vb: IEnumerable(Of SceneComponent)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Engine.Core.Scene.SceneComponent)
+  name.vb: IEnumerable(Of SceneComponent)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneComponent
+    name: SceneComponent
+    nameWithType: SceneComponent
+    fullName: Fusee.Engine.Core.Scene.SceneComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneComponent
+    name: SceneComponent
+    nameWithType: SceneComponent
+    fullName: Fusee.Engine.Core.Scene.SceneComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Predicate`1
+  commentId: T:System.Predicate`1
+  isExternal: true
+  name: Predicate<T>
+  nameWithType: Predicate<T>
+  fullName: System.Predicate<T>
+  nameWithType.vb: Predicate(Of T)
+  fullName.vb: System.Predicate(Of T)
+  name.vb: Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<SceneNode>
+  nameWithType: IEnumerable<SceneNode>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Engine.Core.Scene.SceneNode>
+  nameWithType.vb: IEnumerable(Of SceneNode)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Engine.Core.Scene.SceneNode)
+  name.vb: IEnumerable(Of SceneNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Predicate{{TComponentToFind}}
+  commentId: T:System.Predicate{``0}
+  parent: System
+  definition: System.Predicate`1
+  name: Predicate<TComponentToFind>
+  nameWithType: Predicate<TComponentToFind>
+  fullName: System.Predicate<TComponentToFind>
+  nameWithType.vb: Predicate(Of TComponentToFind)
+  fullName.vb: System.Predicate(Of TComponentToFind)
+  name.vb: Predicate(Of TComponentToFind)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{TComponentToFind}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<TComponentToFind>
+  nameWithType: IEnumerable<TComponentToFind>
+  fullName: System.Collections.Generic.IEnumerable<TComponentToFind>
+  nameWithType.vb: IEnumerable(Of TComponentToFind)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TComponentToFind)
+  name.vb: IEnumerable(Of TComponentToFind)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent
+  name: FindNodesWhereComponent
+  nameWithType: SceneExtensions.FindNodesWhereComponent
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.Matrix*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.Matrix
+  name: Matrix
+  nameWithType: SceneExtensions.Matrix
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Matrix
+- uid: Fusee.Engine.Core.Scene.Transform
+  commentId: T:Fusee.Engine.Core.Scene.Transform
+  parent: Fusee.Engine.Core.Scene
+  name: Transform
+  nameWithType: Transform
+  fullName: Fusee.Engine.Core.Scene.Transform
+- uid: Fusee.Math.Core.float4x4
+  commentId: T:Fusee.Math.Core.float4x4
+  parent: Fusee.Math.Core
+  name: float4x4
+  nameWithType: float4x4
+  fullName: Fusee.Math.Core.float4x4
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTransformation*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTransformation
+  name: GetGlobalTransformation
+  nameWithType: SceneExtensions.GetGlobalTransformation
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTransformation
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalRotation*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalRotation
+  name: GetGlobalRotation
+  nameWithType: SceneExtensions.GetGlobalRotation
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalRotation
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTranslation*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTranslation
+  name: GetGlobalTranslation
+  nameWithType: SceneExtensions.GetGlobalTranslation
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTranslation
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalScale*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalScale
+  name: GetGlobalScale
+  nameWithType: SceneExtensions.GetGlobalScale
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalScale
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation
+  name: GetLocalTransformation
+  nameWithType: SceneExtensions.GetLocalTransformation
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren
+  name: RemoveComponentsInChildren
+  nameWithType: SceneExtensions.RemoveComponentsInChildren
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren
+  name: GetComponentsInChildren
+  nameWithType: SceneExtensions.GetComponentsInChildren
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren
+- uid: System.Collections.Generic.IEnumerable{{TComp}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<TComp>
+  nameWithType: IEnumerable<TComp>
+  fullName: System.Collections.Generic.IEnumerable<TComp>
+  nameWithType.vb: IEnumerable(Of TComp)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TComp)
+  name.vb: IEnumerable(Of TComp)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComp
+    nameWithType: TComp
+    fullName: TComp
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComp
+    nameWithType: TComp
+    fullName: TComp
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetComponent*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.GetComponent
+  name: GetComponent
+  nameWithType: SceneExtensions.GetComponent
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetComponent
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent
+  name: RemoveComponent
+  nameWithType: SceneExtensions.RemoveComponent
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetComponents*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.GetComponents
+  name: GetComponents
+  nameWithType: SceneExtensions.GetComponents
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetComponents
+- uid: '{TComp}'
+  commentId: '!:TComp'
+  definition: TComp
+  name: TComp
+  nameWithType: TComp
+  fullName: TComp
+- uid: TComp
+  commentId: '!:TComp'
+  name: TComp
+  nameWithType: TComp
+  fullName: TComp
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetComponent``1(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetComponent``1(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+  isExternal: true
+  name: GetComponent<TComp>(SceneNode, Int32)
+  nameWithType: SceneExtensions.GetComponent<TComp>(SceneNode, Int32)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetComponent<TComp>(Fusee.Engine.Core.Scene.SceneNode, System.Int32)
+  nameWithType.vb: SceneExtensions.GetComponent(Of TComp)(SceneNode, Int32)
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.GetComponent(Of TComp)(Fusee.Engine.Core.Scene.SceneNode, System.Int32)
+  name.vb: GetComponent(Of TComp)(SceneNode, Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.GetComponent``1(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+    name: GetComponent<TComp>
+    nameWithType: SceneExtensions.GetComponent<TComp>
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetComponent<TComp>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.GetComponent``1(Fusee.Engine.Core.Scene.SceneNode,System.Int32)
+    name: GetComponent(Of TComp)
+    nameWithType: SceneExtensions.GetComponent(Of TComp)
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetComponent(Of TComp)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetMesh*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.GetMesh
+  name: GetMesh
+  nameWithType: SceneExtensions.GetMesh
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetMesh
+- uid: Fusee.Engine.Core.Scene.Mesh
+  commentId: T:Fusee.Engine.Core.Scene.Mesh
+  parent: Fusee.Engine.Core.Scene
+  name: Mesh
+  nameWithType: Mesh
+  fullName: Fusee.Engine.Core.Scene.Mesh
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetLight*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.GetLight
+  name: GetLight
+  nameWithType: SceneExtensions.GetLight
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetLight
+- uid: Fusee.Engine.Core.Scene.Light
+  commentId: T:Fusee.Engine.Core.Scene.Light
+  parent: Fusee.Engine.Core.Scene
+  name: Light
+  nameWithType: Light
+  fullName: Fusee.Engine.Core.Scene.Light
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetWeights*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.GetWeights
+  name: GetWeights
+  nameWithType: SceneExtensions.GetWeights
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetWeights
+- uid: Fusee.Engine.Core.Scene.Weight
+  commentId: T:Fusee.Engine.Core.Scene.Weight
+  parent: Fusee.Engine.Core.Scene
+  name: Weight
+  nameWithType: Weight
+  fullName: Fusee.Engine.Core.Scene.Weight
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetTransform*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.GetTransform
+  name: GetTransform
+  nameWithType: SceneExtensions.GetTransform
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetTransform
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.AddComponent*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.AddComponent
+  name: AddComponent
+  nameWithType: SceneExtensions.AddComponent
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.AddComponent
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.ToSceneNode*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.ToSceneNode
+  name: ToSceneNode
+  nameWithType: SceneExtensions.ToSceneNode
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.ToSceneNode
+- uid: Fusee.Engine.Core.Scene.SceneContainer
+  commentId: T:Fusee.Engine.Core.Scene.SceneContainer
+  parent: Fusee.Engine.Core.Scene
+  name: SceneContainer
+  nameWithType: SceneContainer
+  fullName: Fusee.Engine.Core.Scene.SceneContainer
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.ToScene*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.ToScene
+  name: ToScene
+  nameWithType: SceneExtensions.ToScene
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.ToScene
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.Translate*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.Translate
+  name: Translate
+  nameWithType: SceneExtensions.Translate
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Translate
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.Rotate
+  name: Rotate
+  nameWithType: SceneExtensions.Rotate
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.Space
+  commentId: T:Fusee.Engine.Core.Scene.SceneExtensions.Space
+  parent: Fusee.Engine.Core.Scene
+  name: SceneExtensions.Space
+  nameWithType: SceneExtensions.Space
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Space
+- uid: Fusee.Math.Core.Quaternion
+  commentId: T:Fusee.Math.Core.Quaternion
+  parent: Fusee.Math.Core
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: Fusee.Math.Core.Quaternion
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.RotateAround
+  name: RotateAround
+  nameWithType: SceneExtensions.RotateAround
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.FpsView*
+  commentId: Overload:Fusee.Engine.Core.Scene.SceneExtensions.FpsView
+  name: FpsView
+  nameWithType: SceneExtensions.FpsView
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FpsView
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
