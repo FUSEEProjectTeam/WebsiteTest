@@ -45,9 +45,7 @@ items:
       description: The base type of the components the tree is made up of.
     content.vb: >-
       Public MustInherit Class ViseratorBase(Of TItem, TNode As {Class, INode}, TComponent As {Class, IComponent})
-
           Inherits Visitor(Of TNode, TComponent)
-
           Implements IEnumerator(Of TItem), IEnumerator, IDisposable
   inheritance:
   - System.Object

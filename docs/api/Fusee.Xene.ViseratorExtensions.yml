@@ -75,9 +75,7 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TResult> Viserate<TViserator, TResult, TNode, TComponent>(this TNode root)
-
           where TViserator : ViseratorBase<TResult, TNode, TComponent>, new()
-
           where TNode : class, INode where TComponent : class, IComponent
     parameters:
     - id: root
@@ -137,9 +135,7 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TResult> Viserate<TViserator, TResult, TNode, TComponent>(this IEnumerable<TNode> rootList)
-
           where TViserator : ViseratorBase<TResult, TNode, TComponent>, new()
-
           where TNode : class, INode where TComponent : class, IComponent
     parameters:
     - id: rootList

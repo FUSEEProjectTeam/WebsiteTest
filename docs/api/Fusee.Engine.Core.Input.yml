@@ -290,7 +290,6 @@ items:
   syntax:
     content: >-
       public IEnumerable<TDevice> GetInputDevices<TDevice>()
-
           where TDevice : InputDevice
     typeParameters:
     - id: TDevice
@@ -335,7 +334,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TDevice> GetDevices<TDevice>()
-
           where TDevice : InputDevice
     typeParameters:
     - id: TDevice
@@ -382,7 +380,6 @@ items:
   syntax:
     content: >-
       public TDevice GetInputDevice<TDevice>(int id = 0)
-
           where TDevice : InputDevice
     parameters:
     - id: id
@@ -430,7 +427,6 @@ items:
   syntax:
     content: >-
       public static TDevice GetDevice<TDevice>(int deviceid = 0)
-
           where TDevice : InputDevice
     parameters:
     - id: deviceid

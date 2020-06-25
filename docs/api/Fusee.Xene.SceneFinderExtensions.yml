@@ -85,7 +85,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TNode> FindNodes<TNode>(this TNode root, Predicate<TNode> match)
-
           where TNode : class, INode
     parameters:
     - id: root
@@ -142,7 +141,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TNodeToFind> FindNodes<TNodeToFind, TNode>(this TNode root, Predicate<TNodeToFind> match)
-
           where TNodeToFind : TNode where TNode : class, INode
     parameters:
     - id: root
@@ -201,7 +199,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TNode> FindNodes<TNode>(this IEnumerable<TNode> rootList, Predicate<TNode> match)
-
           where TNode : class, INode
     parameters:
     - id: rootList
@@ -258,7 +255,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TNodeToFind> FindNodes<TNodeToFind, TNode>(this IEnumerable<TNode> rootList, Predicate<TNodeToFind> match)
-
           where TNodeToFind : TNode where TNode : class, INode
     parameters:
     - id: rootList
@@ -317,7 +313,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TComponent> FindComponents<TNode, TComponent>(this TNode root, Predicate<TComponent> match)
-
           where TNode : class, INode where TComponent : class, IComponent
     parameters:
     - id: root
@@ -376,7 +371,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TComponent> FindComponents<TNode, TComponent>(this IEnumerable<TNode> rootList, Predicate<TComponent> match)
-
           where TNode : class, INode where TComponent : class, IComponent
     parameters:
     - id: rootList
@@ -435,7 +429,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TComponentToFind> FindComponents<TComponentToFind, TNode, TComponent>(this TNode root, Predicate<TComponentToFind> match)
-
           where TComponentToFind : class, TComponent where TNode : class, INode where TComponent : class, IComponent
     parameters:
     - id: root
@@ -496,7 +489,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TComponentToFind> FindComponents<TComponentToFind, TNode, TComponent>(this IEnumerable<TNode> rootList, Predicate<TComponentToFind> match)
-
           where TComponentToFind : class, TComponent where TNode : class, INode where TComponent : class, IComponent
     parameters:
     - id: rootList
@@ -557,7 +549,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TNode> FindNodesWhereComponent<TNode, TComponent>(this TNode root, Predicate<TComponent> match)
-
           where TNode : class, INode where TComponent : class, IComponent
     parameters:
     - id: root
@@ -616,7 +607,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TNode> FindNodesWhereComponent<TNode, TComponent>(this IEnumerable<TNode> rootList, Predicate<TComponent> match)
-
           where TNode : class, INode where TComponent : class, IComponent
     parameters:
     - id: rootList
@@ -675,7 +665,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TNode> FindNodesWhereComponent<TComponentToFind, TNode, TComponent>(this TNode root, Predicate<TComponentToFind> match)
-
           where TComponentToFind : class, TComponent where TNode : class, INode where TComponent : class, IComponent
     parameters:
     - id: root
@@ -736,7 +725,6 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TNode> FindNodesWhereComponent<TComponentToFind, TNode, TComponent>(this IEnumerable<TNode> rootList, Predicate<TComponentToFind> match)
-
           where TComponentToFind : class, TComponent where TNode : class, INode where TComponent : class, IComponent
     parameters:
     - id: rootList

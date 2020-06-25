@@ -41,9 +41,7 @@ items:
     content: 'public class ScenePicker : Viserator<PickResult, ScenePicker.PickerState, SceneNode, SceneComponent>, IEnumerator<PickResult>, IEnumerator, IDisposable'
     content.vb: >-
       Public Class ScenePicker
-
           Inherits Viserator(Of PickResult, ScenePicker.PickerState, SceneNode, SceneComponent)
-
           Implements IEnumerator(Of PickResult), IEnumerator, IDisposable
   inheritance:
   - System.Object
