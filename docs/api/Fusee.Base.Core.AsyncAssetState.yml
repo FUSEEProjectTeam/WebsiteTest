@@ -1,0 +1,328 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Base.Core.AsyncAssetState
+  commentId: T:Fusee.Base.Core.AsyncAssetState
+  id: AsyncAssetState
+  parent: Fusee.Base.Core
+  children:
+  - Fusee.Base.Core.AsyncAssetState.Done
+  - Fusee.Base.Core.AsyncAssetState.Downloading
+  - Fusee.Base.Core.AsyncAssetState.Failed
+  - Fusee.Base.Core.AsyncAssetState.None
+  - Fusee.Base.Core.AsyncAssetState.Processing
+  - Fusee.Base.Core.AsyncAssetState.UserState1
+  - Fusee.Base.Core.AsyncAssetState.UserState2
+  - Fusee.Base.Core.AsyncAssetState.UserState3
+  langs:
+  - csharp
+  - vb
+  name: AsyncAssetState
+  nameWithType: AsyncAssetState
+  fullName: Fusee.Base.Core.AsyncAssetState
+  type: Enum
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AsyncAssetState
+    path: src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+    startLine: 194
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nThe states an asset can inhibit.\n"
+  example: []
+  syntax:
+    content: public enum AsyncAssetState
+    content.vb: Public Enum AsyncAssetState
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Fusee.Base.Core.AsyncAssetState.None
+  commentId: F:Fusee.Base.Core.AsyncAssetState.None
+  id: None
+  parent: Fusee.Base.Core.AsyncAssetState
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: AsyncAssetState.None
+  fullName: Fusee.Base.Core.AsyncAssetState.None
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: None
+    path: src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+    startLine: 199
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nNo available state.\n"
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Fusee.Base.Core.AsyncAssetState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Base.Core.AsyncAssetState.Downloading
+  commentId: F:Fusee.Base.Core.AsyncAssetState.Downloading
+  id: Downloading
+  parent: Fusee.Base.Core.AsyncAssetState
+  langs:
+  - csharp
+  - vb
+  name: Downloading
+  nameWithType: AsyncAssetState.Downloading
+  fullName: Fusee.Base.Core.AsyncAssetState.Downloading
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Downloading
+    path: src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+    startLine: 203
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nAsset is being downloaded.\n"
+  example: []
+  syntax:
+    content: Downloading = 1
+    return:
+      type: Fusee.Base.Core.AsyncAssetState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Base.Core.AsyncAssetState.Processing
+  commentId: F:Fusee.Base.Core.AsyncAssetState.Processing
+  id: Processing
+  parent: Fusee.Base.Core.AsyncAssetState
+  langs:
+  - csharp
+  - vb
+  name: Processing
+  nameWithType: AsyncAssetState.Processing
+  fullName: Fusee.Base.Core.AsyncAssetState.Processing
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Processing
+    path: src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+    startLine: 207
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nAsset is being processed.\n"
+  example: []
+  syntax:
+    content: Processing = 2
+    return:
+      type: Fusee.Base.Core.AsyncAssetState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Base.Core.AsyncAssetState.Done
+  commentId: F:Fusee.Base.Core.AsyncAssetState.Done
+  id: Done
+  parent: Fusee.Base.Core.AsyncAssetState
+  langs:
+  - csharp
+  - vb
+  name: Done
+  nameWithType: AsyncAssetState.Done
+  fullName: Fusee.Base.Core.AsyncAssetState.Done
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Done
+    path: src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+    startLine: 211
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nState: done.\n"
+  example: []
+  syntax:
+    content: Done = 3
+    return:
+      type: Fusee.Base.Core.AsyncAssetState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Base.Core.AsyncAssetState.Failed
+  commentId: F:Fusee.Base.Core.AsyncAssetState.Failed
+  id: Failed
+  parent: Fusee.Base.Core.AsyncAssetState
+  langs:
+  - csharp
+  - vb
+  name: Failed
+  nameWithType: AsyncAssetState.Failed
+  fullName: Fusee.Base.Core.AsyncAssetState.Failed
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Failed
+    path: src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+    startLine: 215
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nState: failed.\n"
+  example: []
+  syntax:
+    content: Failed = 4
+    return:
+      type: Fusee.Base.Core.AsyncAssetState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Base.Core.AsyncAssetState.UserState1
+  commentId: F:Fusee.Base.Core.AsyncAssetState.UserState1
+  id: UserState1
+  parent: Fusee.Base.Core.AsyncAssetState
+  langs:
+  - csharp
+  - vb
+  name: UserState1
+  nameWithType: AsyncAssetState.UserState1
+  fullName: Fusee.Base.Core.AsyncAssetState.UserState1
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: UserState1
+    path: src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+    startLine: 219
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nState: defined by User.\n"
+  example: []
+  syntax:
+    content: UserState1 = 5
+    return:
+      type: Fusee.Base.Core.AsyncAssetState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Base.Core.AsyncAssetState.UserState2
+  commentId: F:Fusee.Base.Core.AsyncAssetState.UserState2
+  id: UserState2
+  parent: Fusee.Base.Core.AsyncAssetState
+  langs:
+  - csharp
+  - vb
+  name: UserState2
+  nameWithType: AsyncAssetState.UserState2
+  fullName: Fusee.Base.Core.AsyncAssetState.UserState2
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: UserState2
+    path: src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+    startLine: 223
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nState: defined by User.\n"
+  example: []
+  syntax:
+    content: UserState2 = 6
+    return:
+      type: Fusee.Base.Core.AsyncAssetState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Base.Core.AsyncAssetState.UserState3
+  commentId: F:Fusee.Base.Core.AsyncAssetState.UserState3
+  id: UserState3
+  parent: Fusee.Base.Core.AsyncAssetState
+  langs:
+  - csharp
+  - vb
+  name: UserState3
+  nameWithType: AsyncAssetState.UserState3
+  fullName: Fusee.Base.Core.AsyncAssetState.UserState3
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: UserState3
+    path: src/Fusee/src/Base/Core/AsyncHttpAsset.cs
+    startLine: 227
+  assemblies:
+  - Fusee.Base.Core
+  namespace: Fusee.Base.Core
+  summary: "\nState: defined by User.\n"
+  example: []
+  syntax:
+    content: UserState3 = 7
+    return:
+      type: Fusee.Base.Core.AsyncAssetState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Fusee.Base.Core
+  commentId: N:Fusee.Base.Core
+  name: Fusee.Base.Core
+  nameWithType: Fusee.Base.Core
+  fullName: Fusee.Base.Core
+- uid: Fusee.Base.Core.AsyncAssetState
+  commentId: T:Fusee.Base.Core.AsyncAssetState
+  parent: Fusee.Base.Core
+  name: AsyncAssetState
+  nameWithType: AsyncAssetState
+  fullName: Fusee.Base.Core.AsyncAssetState

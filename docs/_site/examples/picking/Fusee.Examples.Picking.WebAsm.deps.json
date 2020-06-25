@@ -1,0 +1,503 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "Fusee.Examples.Picking.WebAsm/1.0.0": {
+        "dependencies": {
+          "Fusee.Base.Common": "0.7.0",
+          "Fusee.Base.Core": "0.7.0",
+          "Fusee.Base.Imp.WebAsm": "0.7.0",
+          "Fusee.Engine.Common": "0.7.0",
+          "Fusee.Engine.Core": "0.7.0",
+          "Fusee.Engine.Imp.Graphics.WebAsm": "0.7.0",
+          "Fusee.Examples.Picking.Core": "1.0.0",
+          "Fusee.Math.Core": "0.7.0",
+          "Mono.WebAssembly.Build": "0.2.0",
+          "Mono.WebAssembly.Framework": "0.2.0",
+          "Mono.WebAssembly.Runtime": "0.2.0",
+          "NETStandard.Library": "2.0.3",
+          "System.Drawing.Common": "4.6.0-preview8.19405.3",
+          "System.Memory": "4.5.3",
+          "WebAssembly.Bindings": "0.2.0",
+          "WebAssembly.Net.Http": "0.2.0",
+          "WebAssembly.Net.WebSockets": "0.2.0",
+          "Fusee.SerializationSerializer": "0.0.0.0",
+          "protobuf-net": "2.0.0.668",
+          "SkiaSharp.Wasm": "0.0.0.0"
+        },
+        "runtime": {
+          "Fusee.Examples.Picking.WebAsm.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "Microsoft.NETCore.Targets/1.1.0": {},
+      "Mono.WebAssembly.Build/0.2.0": {},
+      "Mono.WebAssembly.Framework/0.2.0": {},
+      "Mono.WebAssembly.Runtime/0.2.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        }
+      },
+      "System.Drawing.Common/4.6.0-preview8.19405.3": {
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        }
+      },
+      "System.Memory/4.5.3": {
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.6.0-preview5.19224.8",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {
+            "assemblyVersion": "4.0.1.1",
+            "fileVersion": "4.6.27617.2"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.6.0-preview5.19224.8": {
+        "runtime": {
+          "lib/netstandard2.0/System.Numerics.Vectors.dll": {
+            "assemblyVersion": "4.1.5.0",
+            "fileVersion": "4.700.19.22408"
+          }
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0"
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.4.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        }
+      },
+      "System.Threading.Tasks/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "WebAssembly.Bindings/0.2.0": {
+        "runtime": {
+          "lib/netstandard2.0/WebAssembly.Bindings.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "WebAssembly.Net.Http/0.2.0": {
+        "dependencies": {
+          "WebAssembly.Bindings": "0.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebAssembly.Net.Http.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "WebAssembly.Net.WebSockets/0.2.0": {
+        "dependencies": {
+          "WebAssembly.Bindings": "0.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebAssembly.Net.WebSockets.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "Fusee.Base.Common/0.7.0": {
+        "dependencies": {
+          "Fusee.Math.Core": "0.7.0",
+          "System.Threading.Tasks": "4.3.0"
+        },
+        "runtime": {
+          "Fusee.Base.Common.dll": {}
+        }
+      },
+      "Fusee.Base.Core/0.7.0": {
+        "dependencies": {
+          "Fusee.Base.Common": "0.7.0",
+          "Fusee.Math.Core": "0.7.0",
+          "Fusee.Serialization": "0.7.0"
+        },
+        "runtime": {
+          "Fusee.Base.Core.dll": {}
+        }
+      },
+      "Fusee.Base.Imp.WebAsm/0.7.0": {
+        "dependencies": {
+          "Fusee.Base.Common": "0.7.0",
+          "Fusee.Base.Core": "0.7.0",
+          "Fusee.Engine.Common": "0.7.0",
+          "Fusee.Engine.Imp.Graphics.WebAsm": "0.7.0",
+          "Fusee.Math.Core": "0.7.0",
+          "System.Numerics.Vectors": "4.6.0-preview5.19224.8",
+          "WebAssembly.Bindings": "0.2.0",
+          "WebAssembly.Net.Http": "0.2.0",
+          "WebAssembly.Net.WebSockets": "0.2.0",
+          "SharpFont_mngd": "0.7.0.0"
+        },
+        "runtime": {
+          "Fusee.Base.Imp.WebAsm.dll": {}
+        }
+      },
+      "Fusee.Engine.Common/0.7.0": {
+        "dependencies": {
+          "Fusee.Base.Common": "0.7.0",
+          "Fusee.Math.Core": "0.7.0",
+          "Fusee.Serialization": "0.7.0"
+        },
+        "runtime": {
+          "Fusee.Engine.Common.dll": {}
+        }
+      },
+      "Fusee.Engine.Core/0.7.0": {
+        "dependencies": {
+          "Fusee.Base.Common": "0.7.0",
+          "Fusee.Base.Core": "0.7.0",
+          "Fusee.Engine.Common": "0.7.0",
+          "Fusee.Jometri": "0.7.0",
+          "Fusee.Math.Core": "0.7.0",
+          "Fusee.Serialization": "0.7.0",
+          "Fusee.Xene": "0.7.0",
+          "Fusee.Xirkit": "0.7.0"
+        },
+        "runtime": {
+          "Fusee.Engine.Core.dll": {}
+        }
+      },
+      "Fusee.Engine.Imp.Graphics.WebAsm/0.7.0": {
+        "dependencies": {
+          "Fusee.Base.Common": "0.7.0",
+          "Fusee.Base.Core": "0.7.0",
+          "Fusee.Engine.Common": "0.7.0",
+          "Fusee.Math.Core": "0.7.0",
+          "System.Memory": "4.5.3",
+          "WebAssembly.Bindings": "0.2.0"
+        },
+        "runtime": {
+          "Fusee.Engine.Imp.Graphics.WebAsm.dll": {}
+        }
+      },
+      "Fusee.Examples.Picking.Core/1.0.0": {
+        "dependencies": {
+          "Fusee.Engine.GUI": "0.7.0.0"
+        },
+        "runtime": {
+          "Fusee.Examples.Picking.Core.dll": {}
+        }
+      },
+      "Fusee.Jometri/0.7.0": {
+        "dependencies": {
+          "Fusee.Base.Common": "0.7.0",
+          "Fusee.Math.Core": "0.7.0",
+          "Fusee.Serialization": "0.7.0"
+        },
+        "runtime": {
+          "Fusee.Jometri.dll": {}
+        }
+      },
+      "Fusee.Math.Core/0.7.0": {
+        "runtime": {
+          "Fusee.Math.Core.dll": {}
+        }
+      },
+      "Fusee.Serialization/0.7.0": {
+        "dependencies": {
+          "Fusee.Math.Core": "0.7.0"
+        },
+        "runtime": {
+          "Fusee.Serialization.dll": {}
+        }
+      },
+      "Fusee.Xene/0.7.0": {
+        "dependencies": {
+          "Fusee.Math.Core": "0.7.0",
+          "Fusee.Serialization": "0.7.0"
+        },
+        "runtime": {
+          "Fusee.Xene.dll": {}
+        }
+      },
+      "Fusee.Xirkit/0.7.0": {
+        "dependencies": {
+          "Fusee.Math.Core": "0.7.0"
+        },
+        "runtime": {
+          "Fusee.Xirkit.dll": {}
+        }
+      },
+      "Fusee.SerializationSerializer/0.0.0.0": {
+        "runtime": {
+          "Fusee.SerializationSerializer.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "protobuf-net/2.0.0.668": {
+        "runtime": {
+          "protobuf-net.dll": {
+            "assemblyVersion": "2.0.0.668",
+            "fileVersion": "2.0.0.668"
+          }
+        }
+      },
+      "SkiaSharp.Wasm/0.0.0.0": {
+        "runtime": {
+          "SkiaSharp.Wasm.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SharpFont_mngd.Reference/0.7.0.0": {
+        "runtime": {
+          "SharpFont_mngd.dll": {
+            "assemblyVersion": "0.7.0.0",
+            "fileVersion": "0.7.0.0"
+          }
+        }
+      },
+      "Fusee.Engine.GUI.Reference/0.7.0.0": {
+        "runtime": {
+          "Fusee.Engine.GUI.dll": {
+            "assemblyVersion": "0.7.0.0",
+            "fileVersion": "0.7.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Fusee.Examples.Picking.WebAsm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
+      "path": "microsoft.netcore.targets/1.1.0",
+      "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "Mono.WebAssembly.Build/0.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kHDcZCWH2EjZzZjaFDum7RW12XYyHoDNK0Ck9ExeV9PvXKi5wGIEsTm8aa7E08QSNNOl+yO8NioKJrRHibu+MQ==",
+      "path": "mono.webassembly.build/0.2.0",
+      "hashPath": "mono.webassembly.build.0.2.0.nupkg.sha512"
+    },
+    "Mono.WebAssembly.Framework/0.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DejfzDXnZSZGekY2G2kyW6vVegewXv9FHyUaOczUZt9auw7AJYttjenEROdwsMO94l3oJlUWLZlW68gSU6gTww==",
+      "path": "mono.webassembly.framework/0.2.0",
+      "hashPath": "mono.webassembly.framework.0.2.0.nupkg.sha512"
+    },
+    "Mono.WebAssembly.Runtime/0.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-np3kGEXWYiv3XycVBoAk1d1VCZo6DWtl4dWhYMWrN9b3SoEnfcYkdJEovVrCVDrxER1B6JJck0IPXPhW3eiZLQ==",
+      "path": "mono.webassembly.runtime/0.2.0",
+      "hashPath": "mono.webassembly.runtime.0.2.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "System.Buffers/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
+      "path": "system.buffers/4.4.0",
+      "hashPath": "system.buffers.4.4.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/4.6.0-preview8.19405.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-l1h1Gq4V2Qbsivcj94+dwC78LzwJyZTqc1wljvBqKpFxuh/ZRVB1ssbSN1ZJ1/Ue2ViDAvMWbJXi3szlFczT5g==",
+      "path": "system.drawing.common/4.6.0-preview8.19405.3",
+      "hashPath": "system.drawing.common.4.6.0-preview8.19405.3.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.6.0-preview5.19224.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W3rBTrGme5c2Eh4cgn0N7pQCV3Rn8+tX4VDPnXj8X9ZMVD4dVaNytnsovrJ1EVN+OWtyRfHq5nCTI84xqnYt5g==",
+      "path": "system.numerics.vectors/4.6.0-preview5.19224.8",
+      "hashPath": "system.numerics.vectors.4.6.0-preview5.19224.8.nupkg.sha512"
+    },
+    "System.Runtime/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "path": "system.runtime/4.3.0",
+      "hashPath": "system.runtime.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+    },
+    "System.Threading.Tasks/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
+      "path": "system.threading.tasks/4.3.0",
+      "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
+    },
+    "WebAssembly.Bindings/0.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CNRbdxxBqUl0or5INYxJn94NXqhAVoC3731Kx3T2DTbaO0xo12t82it2xAYgNNxxA3ct4fYSAj5wkHKkFUmGGQ==",
+      "path": "webassembly.bindings/0.2.0",
+      "hashPath": "webassembly.bindings.0.2.0.nupkg.sha512"
+    },
+    "WebAssembly.Net.Http/0.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JXCogcmaYskNwGo2UQ8g1k0S0Oaiim7Qjf3tWl456QWINZJQ+4w4X9XT2lx3r2qMf++iABENIU1AdqkuhEQEcQ==",
+      "path": "webassembly.net.http/0.2.0",
+      "hashPath": "webassembly.net.http.0.2.0.nupkg.sha512"
+    },
+    "WebAssembly.Net.WebSockets/0.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-khFOxqxZ7KN0KbTQ+2IJMBQk72+0I1LoAK6XHMpSbPn16CsZWmx35XnhvqOOcNfhj7udBusxtigrHL0l3o9aaA==",
+      "path": "webassembly.net.websockets/0.2.0",
+      "hashPath": "webassembly.net.websockets.0.2.0.nupkg.sha512"
+    },
+    "Fusee.Base.Common/0.7.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fusee.Base.Core/0.7.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fusee.Base.Imp.WebAsm/0.7.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fusee.Engine.Common/0.7.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fusee.Engine.Core/0.7.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fusee.Engine.Imp.Graphics.WebAsm/0.7.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fusee.Examples.Picking.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fusee.Jometri/0.7.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fusee.Math.Core/0.7.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fusee.Serialization/0.7.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fusee.Xene/0.7.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fusee.Xirkit/0.7.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fusee.SerializationSerializer/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "protobuf-net/2.0.0.668": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SkiaSharp.Wasm/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharpFont_mngd.Reference/0.7.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fusee.Engine.GUI.Reference/0.7.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

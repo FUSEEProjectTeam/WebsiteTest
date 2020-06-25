@@ -1,0 +1,654 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Math.Core.OBBf
+  commentId: T:Fusee.Math.Core.OBBf
+  id: OBBf
+  parent: Fusee.Math.Core
+  children:
+  - Fusee.Math.Core.OBBf.#ctor(Fusee.Math.Core.float3[])
+  - Fusee.Math.Core.OBBf.Center
+  - Fusee.Math.Core.OBBf.EulerRotation
+  - Fusee.Math.Core.OBBf.Max
+  - Fusee.Math.Core.OBBf.Min
+  - Fusee.Math.Core.OBBf.Rotation
+  - Fusee.Math.Core.OBBf.Size
+  - Fusee.Math.Core.OBBf.Translation
+  langs:
+  - csharp
+  - vb
+  name: OBBf
+  nameWithType: OBBf
+  fullName: Fusee.Math.Core.OBBf
+  type: Struct
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/OBBf.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: OBBf
+    path: src/Fusee/src/Math/Core/OBBf.cs
+    startLine: 10
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nRepresents an oriented bounding box.\n"
+  example: []
+  syntax:
+    content: public struct OBBf
+    content.vb: Public Structure OBBf
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Fusee.Math.Core.OBBf.Min
+  commentId: F:Fusee.Math.Core.OBBf.Min
+  id: Min
+  parent: Fusee.Math.Core.OBBf
+  langs:
+  - csharp
+  - vb
+  name: Min
+  nameWithType: OBBf.Min
+  fullName: Fusee.Math.Core.OBBf.Min
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/OBBf.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Min
+    path: src/Fusee/src/Math/Core/OBBf.cs
+    startLine: 17
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nThe minimum values of the oriented bounding box in x, y and z direction\n"
+  example: []
+  syntax:
+    content: public float3 Min
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Min As float3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.OBBf.Max
+  commentId: F:Fusee.Math.Core.OBBf.Max
+  id: Max
+  parent: Fusee.Math.Core.OBBf
+  langs:
+  - csharp
+  - vb
+  name: Max
+  nameWithType: OBBf.Max
+  fullName: Fusee.Math.Core.OBBf.Max
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/OBBf.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Max
+    path: src/Fusee/src/Math/Core/OBBf.cs
+    startLine: 22
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nThe maximum values of the oriented bounding box in x, y and z direction\n"
+  example: []
+  syntax:
+    content: public float3 Max
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Max As float3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.OBBf.Rotation
+  commentId: F:Fusee.Math.Core.OBBf.Rotation
+  id: Rotation
+  parent: Fusee.Math.Core.OBBf
+  langs:
+  - csharp
+  - vb
+  name: Rotation
+  nameWithType: OBBf.Rotation
+  fullName: Fusee.Math.Core.OBBf.Rotation
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/OBBf.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Rotation
+    path: src/Fusee/src/Math/Core/OBBf.cs
+    startLine: 27
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nThe rotation of the oriented bounding box\n"
+  example: []
+  syntax:
+    content: public float4x4 Rotation
+    return:
+      type: Fusee.Math.Core.float4x4
+    content.vb: Public Rotation As float4x4
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.OBBf.Translation
+  commentId: F:Fusee.Math.Core.OBBf.Translation
+  id: Translation
+  parent: Fusee.Math.Core.OBBf
+  langs:
+  - csharp
+  - vb
+  name: Translation
+  nameWithType: OBBf.Translation
+  fullName: Fusee.Math.Core.OBBf.Translation
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/OBBf.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Translation
+    path: src/Fusee/src/Math/Core/OBBf.cs
+    startLine: 32
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nThe translation of the oriented bounding box\n"
+  example: []
+  syntax:
+    content: public float3 Translation
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Translation As float3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.OBBf.Size
+  commentId: F:Fusee.Math.Core.OBBf.Size
+  id: Size
+  parent: Fusee.Math.Core.OBBf
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: OBBf.Size
+  fullName: Fusee.Math.Core.OBBf.Size
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/OBBf.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Size
+    path: src/Fusee/src/Math/Core/OBBf.cs
+    startLine: 37
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns the with, height and depth of the box in x, y and z\n"
+  example: []
+  syntax:
+    content: public float3 Size
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Size As float3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.OBBf.Center
+  commentId: P:Fusee.Math.Core.OBBf.Center
+  id: Center
+  parent: Fusee.Math.Core.OBBf
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: OBBf.Center
+  fullName: Fusee.Math.Core.OBBf.Center
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/OBBf.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Center
+    path: src/Fusee/src/Math/Core/OBBf.cs
+    startLine: 42
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns the center of the bounding box\n"
+  example: []
+  syntax:
+    content: public float3 Center { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public ReadOnly Property Center As float3
+  overload: Fusee.Math.Core.OBBf.Center*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Math.Core.OBBf.EulerRotation
+  commentId: P:Fusee.Math.Core.OBBf.EulerRotation
+  id: EulerRotation
+  parent: Fusee.Math.Core.OBBf
+  langs:
+  - csharp
+  - vb
+  name: EulerRotation
+  nameWithType: OBBf.EulerRotation
+  fullName: Fusee.Math.Core.OBBf.EulerRotation
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/OBBf.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: EulerRotation
+    path: src/Fusee/src/Math/Core/OBBf.cs
+    startLine: 47
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns the rotation as euler angles\n"
+  example: []
+  syntax:
+    content: public float3 EulerRotation { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public ReadOnly Property EulerRotation As float3
+  overload: Fusee.Math.Core.OBBf.EulerRotation*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Math.Core.OBBf.#ctor(Fusee.Math.Core.float3[])
+  commentId: M:Fusee.Math.Core.OBBf.#ctor(Fusee.Math.Core.float3[])
+  id: '#ctor(Fusee.Math.Core.float3[])'
+  parent: Fusee.Math.Core.OBBf
+  langs:
+  - csharp
+  - vb
+  name: OBBf(float3[])
+  nameWithType: OBBf.OBBf(float3[])
+  fullName: Fusee.Math.Core.OBBf.OBBf(Fusee.Math.Core.float3[])
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/OBBf.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Math/Core/OBBf.cs
+    startLine: 53
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nGenerates a new  oriented bounding box from a given set of vertices or points\n"
+  example: []
+  syntax:
+    content: public OBBf(float3[] vertices)
+    parameters:
+    - id: vertices
+      type: Fusee.Math.Core.float3[]
+      description: The vertices, e.g. from a mesh.
+    content.vb: Public Sub New(vertices As float3())
+  overload: Fusee.Math.Core.OBBf.#ctor*
+  nameWithType.vb: OBBf.OBBf(float3())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Math.Core.OBBf.OBBf(Fusee.Math.Core.float3())
+  name.vb: OBBf(float3())
+references:
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Math.Core.float4x4
+  commentId: T:Fusee.Math.Core.float4x4
+  parent: Fusee.Math.Core
+  name: float4x4
+  nameWithType: float4x4
+  fullName: Fusee.Math.Core.float4x4
+- uid: Fusee.Math.Core.OBBf.Center*
+  commentId: Overload:Fusee.Math.Core.OBBf.Center
+  name: Center
+  nameWithType: OBBf.Center
+  fullName: Fusee.Math.Core.OBBf.Center
+- uid: Fusee.Math.Core.OBBf.EulerRotation*
+  commentId: Overload:Fusee.Math.Core.OBBf.EulerRotation
+  name: EulerRotation
+  nameWithType: OBBf.EulerRotation
+  fullName: Fusee.Math.Core.OBBf.EulerRotation
+- uid: Fusee.Math.Core.OBBf.#ctor*
+  commentId: Overload:Fusee.Math.Core.OBBf.#ctor
+  name: OBBf
+  nameWithType: OBBf.OBBf
+  fullName: Fusee.Math.Core.OBBf.OBBf
+- uid: Fusee.Math.Core.float3[]
+  isExternal: true
+  name: float3[]
+  nameWithType: float3[]
+  fullName: Fusee.Math.Core.float3[]
+  nameWithType.vb: float3()
+  fullName.vb: Fusee.Math.Core.float3()
+  name.vb: float3()
+  spec.csharp:
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ()
+    nameWithType: ()
+    fullName: ()

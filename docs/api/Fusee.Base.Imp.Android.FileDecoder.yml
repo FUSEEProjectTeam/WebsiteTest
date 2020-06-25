@@ -1,0 +1,550 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Base.Imp.Android.FileDecoder
+  commentId: T:Fusee.Base.Imp.Android.FileDecoder
+  id: FileDecoder
+  parent: Fusee.Base.Imp.Android
+  children:
+  - Fusee.Base.Imp.Android.FileDecoder.LoadImage(System.IO.Stream)
+  - Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync(System.IO.Stream)
+  langs:
+  - csharp
+  - vb
+  name: FileDecoder
+  nameWithType: FileDecoder
+  fullName: Fusee.Base.Imp.Android.FileDecoder
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Imp/Android/FileDecoder.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FileDecoder
+    path: src/Fusee/src/Base/Imp/Android/FileDecoder.cs
+    startLine: 12
+  assemblies:
+  - Fusee.Base.Imp.Android
+  namespace: Fusee.Base.Imp.Android
+  summary: "\nProvides methods for platform specific conversions of file content.\n"
+  example: []
+  syntax:
+    content: public static class FileDecoder
+    content.vb: Public Module FileDecoder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync(System.IO.Stream)
+  commentId: M:Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync(System.IO.Stream)
+  id: LoadImageAsync(System.IO.Stream)
+  parent: Fusee.Base.Imp.Android.FileDecoder
+  langs:
+  - csharp
+  - vb
+  name: LoadImageAsync(Stream)
+  nameWithType: FileDecoder.LoadImageAsync(Stream)
+  fullName: Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Imp/Android/FileDecoder.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: LoadImageAsync
+    path: src/Fusee/src/Base/Imp/Android/FileDecoder.cs
+    startLine: 23
+  assemblies:
+  - Fusee.Base.Imp.Android
+  namespace: Fusee.Base.Imp.Android
+  summary: "\nCreates a new Bitmap-Object from an image file,\nlocks the bits in the memory and makes them available\nfor further action (e.g. creating a texture).\nMethod must be called before creating a texture to get the necessary\nImageData struct.\n"
+  example: []
+  syntax:
+    content: public static Task<ImageData> LoadImageAsync(Stream file)
+    parameters:
+    - id: file
+      type: System.IO.Stream
+      description: Stream containing the image in a supported format (png, jpg).
+    return:
+      type: System.Threading.Tasks.Task{Fusee.Base.Core.ImageData}
+      description: An ImageData object with all necessary information for the texture-binding process.
+    content.vb: Public Shared Function LoadImageAsync(file As Stream) As Task(Of ImageData)
+  overload: Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Base.Imp.Android.FileDecoder.LoadImage(System.IO.Stream)
+  commentId: M:Fusee.Base.Imp.Android.FileDecoder.LoadImage(System.IO.Stream)
+  id: LoadImage(System.IO.Stream)
+  parent: Fusee.Base.Imp.Android.FileDecoder
+  langs:
+  - csharp
+  - vb
+  name: LoadImage(Stream)
+  nameWithType: FileDecoder.LoadImage(Stream)
+  fullName: Fusee.Base.Imp.Android.FileDecoder.LoadImage(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Imp/Android/FileDecoder.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: LoadImage
+    path: src/Fusee/src/Base/Imp/Android/FileDecoder.cs
+    startLine: 37
+  assemblies:
+  - Fusee.Base.Imp.Android
+  namespace: Fusee.Base.Imp.Android
+  summary: "\nCreates a new Bitmap-Object from an image file,\nlocks the bits in the memory and makes them available\nfor further action (e.g. creating a texture).\nMethod must be called before creating a texture to get the necessary\nImageData struct.\n"
+  example: []
+  syntax:
+    content: public static ImageData LoadImage(Stream file)
+    parameters:
+    - id: file
+      type: System.IO.Stream
+      description: Stream containing the image in a supported format (png, jpg).
+    return:
+      type: Fusee.Base.Core.ImageData
+      description: An ImageData object with all necessary information for the texture-binding process.
+    content.vb: Public Shared Function LoadImage(file As Stream) As ImageData
+  overload: Fusee.Base.Imp.Android.FileDecoder.LoadImage*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Fusee.Base.Imp.Android
+  commentId: N:Fusee.Base.Imp.Android
+  name: Fusee.Base.Imp.Android
+  nameWithType: Fusee.Base.Imp.Android
+  fullName: Fusee.Base.Imp.Android
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync*
+  commentId: Overload:Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync
+  name: LoadImageAsync
+  nameWithType: FileDecoder.LoadImageAsync
+  fullName: Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.Threading.Tasks.Task{Fusee.Base.Core.ImageData}
+  commentId: T:System.Threading.Tasks.Task{Fusee.Base.Core.ImageData}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ImageData>
+  nameWithType: Task<ImageData>
+  fullName: System.Threading.Tasks.Task<Fusee.Base.Core.ImageData>
+  nameWithType.vb: Task(Of ImageData)
+  fullName.vb: System.Threading.Tasks.Task(Of Fusee.Base.Core.ImageData)
+  name.vb: Task(Of ImageData)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Base.Core.ImageData
+    name: ImageData
+    nameWithType: ImageData
+    fullName: Fusee.Base.Core.ImageData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Base.Core.ImageData
+    name: ImageData
+    nameWithType: ImageData
+    fullName: Fusee.Base.Core.ImageData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Fusee.Base.Imp.Android.FileDecoder.LoadImage*
+  commentId: Overload:Fusee.Base.Imp.Android.FileDecoder.LoadImage
+  name: LoadImage
+  nameWithType: FileDecoder.LoadImage
+  fullName: Fusee.Base.Imp.Android.FileDecoder.LoadImage
+- uid: Fusee.Base.Core.ImageData
+  commentId: T:Fusee.Base.Core.ImageData
+  parent: Fusee.Base.Core
+  name: ImageData
+  nameWithType: ImageData
+  fullName: Fusee.Base.Core.ImageData
+- uid: Fusee.Base.Core
+  commentId: N:Fusee.Base.Core
+  name: Fusee.Base.Core
+  nameWithType: Fusee.Base.Core
+  fullName: Fusee.Base.Core

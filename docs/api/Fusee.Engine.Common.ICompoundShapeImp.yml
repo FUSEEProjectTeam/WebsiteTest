@@ -1,0 +1,461 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.ICompoundShapeImp
+  commentId: T:Fusee.Engine.Common.ICompoundShapeImp
+  id: ICompoundShapeImp
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.IBoxShapeImp)
+  - Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.ICapsuleShapeImp)
+  - Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.IConeShapeImp)
+  - Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.ICylinderShapeImp)
+  - Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.IEmptyShapeImp)
+  - Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.IMultiSphereShapeImp)
+  - Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.ISphereShapeImp)
+  - Fusee.Engine.Common.ICompoundShapeImp.CalculatePrincipalAxisTransform(System.Single[],Fusee.Math.Core.float4x4,Fusee.Math.Core.float3)
+  langs:
+  - csharp
+  - vb
+  name: ICompoundShapeImp
+  nameWithType: ICompoundShapeImp
+  fullName: Fusee.Engine.Common.ICompoundShapeImp
+  type: Interface
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ICompoundShapeImp
+    path: src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+    startLine: 7
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nImplementation agnostic interface for a collision shape made up of one or more other shapes.\n"
+  example: []
+  syntax:
+    content: 'public interface ICompoundShapeImp : ICollisionShapeImp'
+    content.vb: >-
+      Public Interface ICompoundShapeImp
+          Inherits ICollisionShapeImp
+  inheritedMembers:
+  - Fusee.Engine.Common.ICollisionShapeImp.Margin
+  - Fusee.Engine.Common.ICollisionShapeImp.LocalScaling
+  - Fusee.Engine.Common.ICollisionShapeImp.UserObject
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.IBoxShapeImp)
+  commentId: M:Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.IBoxShapeImp)
+  id: AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.IBoxShapeImp)
+  parent: Fusee.Engine.Common.ICompoundShapeImp
+  langs:
+  - csharp
+  - vb
+  name: AddChildShape(float4x4, IBoxShapeImp)
+  nameWithType: ICompoundShapeImp.AddChildShape(float4x4, IBoxShapeImp)
+  fullName: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4, Fusee.Engine.Common.IBoxShapeImp)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddChildShape
+    path: src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+    startLine: 14
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nAdds a child shape.\n"
+  example: []
+  syntax:
+    content: void AddChildShape(float4x4 localTransform, IBoxShapeImp shape)
+    parameters:
+    - id: localTransform
+      type: Fusee.Math.Core.float4x4
+      description: The local transform.
+    - id: shape
+      type: Fusee.Engine.Common.IBoxShapeImp
+      description: The child shape.
+    content.vb: Sub AddChildShape(localTransform As float4x4, shape As IBoxShapeImp)
+  overload: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape*
+- uid: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.ISphereShapeImp)
+  commentId: M:Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.ISphereShapeImp)
+  id: AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.ISphereShapeImp)
+  parent: Fusee.Engine.Common.ICompoundShapeImp
+  langs:
+  - csharp
+  - vb
+  name: AddChildShape(float4x4, ISphereShapeImp)
+  nameWithType: ICompoundShapeImp.AddChildShape(float4x4, ISphereShapeImp)
+  fullName: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4, Fusee.Engine.Common.ISphereShapeImp)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddChildShape
+    path: src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+    startLine: 20
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nAdds a child shape.\n"
+  example: []
+  syntax:
+    content: void AddChildShape(float4x4 localTransform, ISphereShapeImp shape)
+    parameters:
+    - id: localTransform
+      type: Fusee.Math.Core.float4x4
+      description: The local transform.
+    - id: shape
+      type: Fusee.Engine.Common.ISphereShapeImp
+      description: The child shape.
+    content.vb: Sub AddChildShape(localTransform As float4x4, shape As ISphereShapeImp)
+  overload: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape*
+- uid: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.ICapsuleShapeImp)
+  commentId: M:Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.ICapsuleShapeImp)
+  id: AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.ICapsuleShapeImp)
+  parent: Fusee.Engine.Common.ICompoundShapeImp
+  langs:
+  - csharp
+  - vb
+  name: AddChildShape(float4x4, ICapsuleShapeImp)
+  nameWithType: ICompoundShapeImp.AddChildShape(float4x4, ICapsuleShapeImp)
+  fullName: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4, Fusee.Engine.Common.ICapsuleShapeImp)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddChildShape
+    path: src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+    startLine: 26
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nAdds a child shape.\n"
+  example: []
+  syntax:
+    content: void AddChildShape(float4x4 localTransform, ICapsuleShapeImp shape)
+    parameters:
+    - id: localTransform
+      type: Fusee.Math.Core.float4x4
+      description: The local transform.
+    - id: shape
+      type: Fusee.Engine.Common.ICapsuleShapeImp
+      description: The child shape.
+    content.vb: Sub AddChildShape(localTransform As float4x4, shape As ICapsuleShapeImp)
+  overload: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape*
+- uid: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.IConeShapeImp)
+  commentId: M:Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.IConeShapeImp)
+  id: AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.IConeShapeImp)
+  parent: Fusee.Engine.Common.ICompoundShapeImp
+  langs:
+  - csharp
+  - vb
+  name: AddChildShape(float4x4, IConeShapeImp)
+  nameWithType: ICompoundShapeImp.AddChildShape(float4x4, IConeShapeImp)
+  fullName: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4, Fusee.Engine.Common.IConeShapeImp)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddChildShape
+    path: src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+    startLine: 32
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nAdds a child shape.\n"
+  example: []
+  syntax:
+    content: void AddChildShape(float4x4 localTransform, IConeShapeImp shape)
+    parameters:
+    - id: localTransform
+      type: Fusee.Math.Core.float4x4
+      description: The local transform.
+    - id: shape
+      type: Fusee.Engine.Common.IConeShapeImp
+      description: The child shape.
+    content.vb: Sub AddChildShape(localTransform As float4x4, shape As IConeShapeImp)
+  overload: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape*
+- uid: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.ICylinderShapeImp)
+  commentId: M:Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.ICylinderShapeImp)
+  id: AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.ICylinderShapeImp)
+  parent: Fusee.Engine.Common.ICompoundShapeImp
+  langs:
+  - csharp
+  - vb
+  name: AddChildShape(float4x4, ICylinderShapeImp)
+  nameWithType: ICompoundShapeImp.AddChildShape(float4x4, ICylinderShapeImp)
+  fullName: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4, Fusee.Engine.Common.ICylinderShapeImp)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddChildShape
+    path: src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+    startLine: 38
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nAdds a child shape.\n"
+  example: []
+  syntax:
+    content: void AddChildShape(float4x4 localTransform, ICylinderShapeImp shape)
+    parameters:
+    - id: localTransform
+      type: Fusee.Math.Core.float4x4
+      description: The local transform.
+    - id: shape
+      type: Fusee.Engine.Common.ICylinderShapeImp
+      description: The child shape.
+    content.vb: Sub AddChildShape(localTransform As float4x4, shape As ICylinderShapeImp)
+  overload: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape*
+- uid: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.IMultiSphereShapeImp)
+  commentId: M:Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.IMultiSphereShapeImp)
+  id: AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.IMultiSphereShapeImp)
+  parent: Fusee.Engine.Common.ICompoundShapeImp
+  langs:
+  - csharp
+  - vb
+  name: AddChildShape(float4x4, IMultiSphereShapeImp)
+  nameWithType: ICompoundShapeImp.AddChildShape(float4x4, IMultiSphereShapeImp)
+  fullName: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4, Fusee.Engine.Common.IMultiSphereShapeImp)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddChildShape
+    path: src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+    startLine: 44
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nAdds a child shape.\n"
+  example: []
+  syntax:
+    content: void AddChildShape(float4x4 localTransform, IMultiSphereShapeImp shape)
+    parameters:
+    - id: localTransform
+      type: Fusee.Math.Core.float4x4
+      description: The local transform.
+    - id: shape
+      type: Fusee.Engine.Common.IMultiSphereShapeImp
+      description: The child shape.
+    content.vb: Sub AddChildShape(localTransform As float4x4, shape As IMultiSphereShapeImp)
+  overload: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape*
+- uid: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.IEmptyShapeImp)
+  commentId: M:Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.IEmptyShapeImp)
+  id: AddChildShape(Fusee.Math.Core.float4x4,Fusee.Engine.Common.IEmptyShapeImp)
+  parent: Fusee.Engine.Common.ICompoundShapeImp
+  langs:
+  - csharp
+  - vb
+  name: AddChildShape(float4x4, IEmptyShapeImp)
+  nameWithType: ICompoundShapeImp.AddChildShape(float4x4, IEmptyShapeImp)
+  fullName: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape(Fusee.Math.Core.float4x4, Fusee.Engine.Common.IEmptyShapeImp)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddChildShape
+    path: src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+    startLine: 50
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nAdds a child shape.\n"
+  example: []
+  syntax:
+    content: void AddChildShape(float4x4 localTransform, IEmptyShapeImp shape)
+    parameters:
+    - id: localTransform
+      type: Fusee.Math.Core.float4x4
+      description: The local transform.
+    - id: shape
+      type: Fusee.Engine.Common.IEmptyShapeImp
+      description: The child shape.
+    content.vb: Sub AddChildShape(localTransform As float4x4, shape As IEmptyShapeImp)
+  overload: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape*
+- uid: Fusee.Engine.Common.ICompoundShapeImp.CalculatePrincipalAxisTransform(System.Single[],Fusee.Math.Core.float4x4,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Common.ICompoundShapeImp.CalculatePrincipalAxisTransform(System.Single[],Fusee.Math.Core.float4x4,Fusee.Math.Core.float3)
+  id: CalculatePrincipalAxisTransform(System.Single[],Fusee.Math.Core.float4x4,Fusee.Math.Core.float3)
+  parent: Fusee.Engine.Common.ICompoundShapeImp
+  langs:
+  - csharp
+  - vb
+  name: CalculatePrincipalAxisTransform(Single[], float4x4, float3)
+  nameWithType: ICompoundShapeImp.CalculatePrincipalAxisTransform(Single[], float4x4, float3)
+  fullName: Fusee.Engine.Common.ICompoundShapeImp.CalculatePrincipalAxisTransform(System.Single[], Fusee.Math.Core.float4x4, Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CalculatePrincipalAxisTransform
+    path: src/Fusee/src/Engine/Common/ICompoundShapeImp.cs
+    startLine: 57
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nCalculates the principal axis transform.\n"
+  example: []
+  syntax:
+    content: void CalculatePrincipalAxisTransform(float[] masses, float4x4 principal, float3 inertia)
+    parameters:
+    - id: masses
+      type: System.Single[]
+      description: The masses.
+    - id: principal
+      type: Fusee.Math.Core.float4x4
+      description: The principal.
+    - id: inertia
+      type: Fusee.Math.Core.float3
+      description: The inertia.
+    content.vb: Sub CalculatePrincipalAxisTransform(masses As Single(), principal As float4x4, inertia As float3)
+  overload: Fusee.Engine.Common.ICompoundShapeImp.CalculatePrincipalAxisTransform*
+  nameWithType.vb: ICompoundShapeImp.CalculatePrincipalAxisTransform(Single(), float4x4, float3)
+  fullName.vb: Fusee.Engine.Common.ICompoundShapeImp.CalculatePrincipalAxisTransform(System.Single(), Fusee.Math.Core.float4x4, Fusee.Math.Core.float3)
+  name.vb: CalculatePrincipalAxisTransform(Single(), float4x4, float3)
+references:
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Common.ICollisionShapeImp.Margin
+  commentId: P:Fusee.Engine.Common.ICollisionShapeImp.Margin
+  parent: Fusee.Engine.Common.ICollisionShapeImp
+  name: Margin
+  nameWithType: ICollisionShapeImp.Margin
+  fullName: Fusee.Engine.Common.ICollisionShapeImp.Margin
+- uid: Fusee.Engine.Common.ICollisionShapeImp.LocalScaling
+  commentId: P:Fusee.Engine.Common.ICollisionShapeImp.LocalScaling
+  parent: Fusee.Engine.Common.ICollisionShapeImp
+  name: LocalScaling
+  nameWithType: ICollisionShapeImp.LocalScaling
+  fullName: Fusee.Engine.Common.ICollisionShapeImp.LocalScaling
+- uid: Fusee.Engine.Common.ICollisionShapeImp.UserObject
+  commentId: P:Fusee.Engine.Common.ICollisionShapeImp.UserObject
+  parent: Fusee.Engine.Common.ICollisionShapeImp
+  name: UserObject
+  nameWithType: ICollisionShapeImp.UserObject
+  fullName: Fusee.Engine.Common.ICollisionShapeImp.UserObject
+- uid: Fusee.Engine.Common.ICollisionShapeImp
+  commentId: T:Fusee.Engine.Common.ICollisionShapeImp
+  parent: Fusee.Engine.Common
+  name: ICollisionShapeImp
+  nameWithType: ICollisionShapeImp
+  fullName: Fusee.Engine.Common.ICollisionShapeImp
+- uid: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape*
+  commentId: Overload:Fusee.Engine.Common.ICompoundShapeImp.AddChildShape
+  name: AddChildShape
+  nameWithType: ICompoundShapeImp.AddChildShape
+  fullName: Fusee.Engine.Common.ICompoundShapeImp.AddChildShape
+- uid: Fusee.Math.Core.float4x4
+  commentId: T:Fusee.Math.Core.float4x4
+  parent: Fusee.Math.Core
+  name: float4x4
+  nameWithType: float4x4
+  fullName: Fusee.Math.Core.float4x4
+- uid: Fusee.Engine.Common.IBoxShapeImp
+  commentId: T:Fusee.Engine.Common.IBoxShapeImp
+  parent: Fusee.Engine.Common
+  name: IBoxShapeImp
+  nameWithType: IBoxShapeImp
+  fullName: Fusee.Engine.Common.IBoxShapeImp
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Common.ISphereShapeImp
+  commentId: T:Fusee.Engine.Common.ISphereShapeImp
+  parent: Fusee.Engine.Common
+  name: ISphereShapeImp
+  nameWithType: ISphereShapeImp
+  fullName: Fusee.Engine.Common.ISphereShapeImp
+- uid: Fusee.Engine.Common.ICapsuleShapeImp
+  commentId: T:Fusee.Engine.Common.ICapsuleShapeImp
+  parent: Fusee.Engine.Common
+  name: ICapsuleShapeImp
+  nameWithType: ICapsuleShapeImp
+  fullName: Fusee.Engine.Common.ICapsuleShapeImp
+- uid: Fusee.Engine.Common.IConeShapeImp
+  commentId: T:Fusee.Engine.Common.IConeShapeImp
+  parent: Fusee.Engine.Common
+  name: IConeShapeImp
+  nameWithType: IConeShapeImp
+  fullName: Fusee.Engine.Common.IConeShapeImp
+- uid: Fusee.Engine.Common.ICylinderShapeImp
+  commentId: T:Fusee.Engine.Common.ICylinderShapeImp
+  parent: Fusee.Engine.Common
+  name: ICylinderShapeImp
+  nameWithType: ICylinderShapeImp
+  fullName: Fusee.Engine.Common.ICylinderShapeImp
+- uid: Fusee.Engine.Common.IMultiSphereShapeImp
+  commentId: T:Fusee.Engine.Common.IMultiSphereShapeImp
+  parent: Fusee.Engine.Common
+  name: IMultiSphereShapeImp
+  nameWithType: IMultiSphereShapeImp
+  fullName: Fusee.Engine.Common.IMultiSphereShapeImp
+- uid: Fusee.Engine.Common.IEmptyShapeImp
+  commentId: T:Fusee.Engine.Common.IEmptyShapeImp
+  parent: Fusee.Engine.Common
+  name: IEmptyShapeImp
+  nameWithType: IEmptyShapeImp
+  fullName: Fusee.Engine.Common.IEmptyShapeImp
+- uid: Fusee.Engine.Common.ICompoundShapeImp.CalculatePrincipalAxisTransform*
+  commentId: Overload:Fusee.Engine.Common.ICompoundShapeImp.CalculatePrincipalAxisTransform
+  name: CalculatePrincipalAxisTransform
+  nameWithType: ICompoundShapeImp.CalculatePrincipalAxisTransform
+  fullName: Fusee.Engine.Common.ICompoundShapeImp.CalculatePrincipalAxisTransform
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3

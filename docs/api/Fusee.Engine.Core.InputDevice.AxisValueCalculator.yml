@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.InputDevice.AxisValueCalculator
+  commentId: T:Fusee.Engine.Core.InputDevice.AxisValueCalculator
+  id: InputDevice.AxisValueCalculator
+  parent: Fusee.Engine.Core
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: InputDevice.AxisValueCalculator
+  nameWithType: InputDevice.AxisValueCalculator
+  fullName: Fusee.Engine.Core.InputDevice.AxisValueCalculator
+  type: Delegate
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AxisValueCalculator
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 453
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nA delegate for functions that calculate the value of an axis.\n"
+  example: []
+  syntax:
+    content: public delegate float AxisValueCalculator(float time);
+    parameters:
+    - id: time
+      type: System.Single
+      description: The time at which to calculate the value of the axis.
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Delegate Function AxisValueCalculator(time As Single) As Single
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

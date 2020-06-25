@@ -1,0 +1,699 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.TextureEventArgs
+  commentId: T:Fusee.Engine.Common.TextureEventArgs
+  id: TextureEventArgs
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.TextureEventArgs.#ctor(Fusee.Engine.Common.ITextureBase,Fusee.Engine.Common.TextureChangedEnum,System.Int32,System.Int32,System.Int32,System.Int32)
+  - Fusee.Engine.Common.TextureEventArgs.ChangedEnum
+  - Fusee.Engine.Common.TextureEventArgs.Height
+  - Fusee.Engine.Common.TextureEventArgs.Texture
+  - Fusee.Engine.Common.TextureEventArgs.Width
+  - Fusee.Engine.Common.TextureEventArgs.XStart
+  - Fusee.Engine.Common.TextureEventArgs.YStart
+  langs:
+  - csharp
+  - vb
+  name: TextureEventArgs
+  nameWithType: TextureEventArgs
+  fullName: Fusee.Engine.Common.TextureEventArgs
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/TextureEventArgs.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TextureEventArgs
+    path: src/Fusee/src/Engine/Common/TextureEventArgs.cs
+    startLine: 23
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nEventArgs to propagate changes of a <xref href=\"Fusee.Engine.Common.ITextureBase\" data-throw-if-not-resolved=\"false\"></xref> object&apos;s life cycle and property changes.\nUsed inside the TextureManager./>.\n"
+  example: []
+  syntax:
+    content: 'public class TextureEventArgs : EventArgs'
+    content.vb: >-
+      Public Class TextureEventArgs
+          Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Common.TextureEventArgs.Texture
+  commentId: P:Fusee.Engine.Common.TextureEventArgs.Texture
+  id: Texture
+  parent: Fusee.Engine.Common.TextureEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Texture
+  nameWithType: TextureEventArgs.Texture
+  fullName: Fusee.Engine.Common.TextureEventArgs.Texture
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/TextureEventArgs.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Texture
+    path: src/Fusee/src/Engine/Common/TextureEventArgs.cs
+    startLine: 28
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nThe <xref href=\"Fusee.Engine.Common.TextureEventArgs.Texture\" data-throw-if-not-resolved=\"false\"></xref> that triggered the event.\n"
+  example: []
+  syntax:
+    content: public ITextureBase Texture { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.ITextureBase
+    content.vb: Public ReadOnly Property Texture As ITextureBase
+  overload: Fusee.Engine.Common.TextureEventArgs.Texture*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Common.TextureEventArgs.ChangedEnum
+  commentId: P:Fusee.Engine.Common.TextureEventArgs.ChangedEnum
+  id: ChangedEnum
+  parent: Fusee.Engine.Common.TextureEventArgs
+  langs:
+  - csharp
+  - vb
+  name: ChangedEnum
+  nameWithType: TextureEventArgs.ChangedEnum
+  fullName: Fusee.Engine.Common.TextureEventArgs.ChangedEnum
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/TextureEventArgs.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ChangedEnum
+    path: src/Fusee/src/Engine/Common/TextureEventArgs.cs
+    startLine: 33
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nDescription enum providing details about what property of the Texture changed.\n"
+  example: []
+  syntax:
+    content: public TextureChangedEnum ChangedEnum { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.TextureChangedEnum
+    content.vb: Public ReadOnly Property ChangedEnum As TextureChangedEnum
+  overload: Fusee.Engine.Common.TextureEventArgs.ChangedEnum*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Common.TextureEventArgs.XStart
+  commentId: P:Fusee.Engine.Common.TextureEventArgs.XStart
+  id: XStart
+  parent: Fusee.Engine.Common.TextureEventArgs
+  langs:
+  - csharp
+  - vb
+  name: XStart
+  nameWithType: TextureEventArgs.XStart
+  fullName: Fusee.Engine.Common.TextureEventArgs.XStart
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/TextureEventArgs.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: XStart
+    path: src/Fusee/src/Engine/Common/TextureEventArgs.cs
+    startLine: 38
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nx offset -> where does the changed region start along x (from left to right)?\n"
+  example: []
+  syntax:
+    content: public int XStart { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property XStart As Integer
+  overload: Fusee.Engine.Common.TextureEventArgs.XStart*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Common.TextureEventArgs.YStart
+  commentId: P:Fusee.Engine.Common.TextureEventArgs.YStart
+  id: YStart
+  parent: Fusee.Engine.Common.TextureEventArgs
+  langs:
+  - csharp
+  - vb
+  name: YStart
+  nameWithType: TextureEventArgs.YStart
+  fullName: Fusee.Engine.Common.TextureEventArgs.YStart
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/TextureEventArgs.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: YStart
+    path: src/Fusee/src/Engine/Common/TextureEventArgs.cs
+    startLine: 43
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\ny offset -> where does the changed region start along y (from top to bottom)?\n"
+  example: []
+  syntax:
+    content: public int YStart { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property YStart As Integer
+  overload: Fusee.Engine.Common.TextureEventArgs.YStart*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Common.TextureEventArgs.Width
+  commentId: P:Fusee.Engine.Common.TextureEventArgs.Width
+  id: Width
+  parent: Fusee.Engine.Common.TextureEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: TextureEventArgs.Width
+  fullName: Fusee.Engine.Common.TextureEventArgs.Width
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/TextureEventArgs.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Width
+    path: src/Fusee/src/Engine/Common/TextureEventArgs.cs
+    startLine: 48
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nWidth in pixels.\n"
+  example: []
+  syntax:
+    content: public int Width { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Width As Integer
+  overload: Fusee.Engine.Common.TextureEventArgs.Width*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Common.TextureEventArgs.Height
+  commentId: P:Fusee.Engine.Common.TextureEventArgs.Height
+  id: Height
+  parent: Fusee.Engine.Common.TextureEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: TextureEventArgs.Height
+  fullName: Fusee.Engine.Common.TextureEventArgs.Height
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/TextureEventArgs.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Height
+    path: src/Fusee/src/Engine/Common/TextureEventArgs.cs
+    startLine: 53
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nHeight in pixels.\n"
+  example: []
+  syntax:
+    content: public int Height { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Height As Integer
+  overload: Fusee.Engine.Common.TextureEventArgs.Height*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Common.TextureEventArgs.#ctor(Fusee.Engine.Common.ITextureBase,Fusee.Engine.Common.TextureChangedEnum,System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Fusee.Engine.Common.TextureEventArgs.#ctor(Fusee.Engine.Common.ITextureBase,Fusee.Engine.Common.TextureChangedEnum,System.Int32,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(Fusee.Engine.Common.ITextureBase,Fusee.Engine.Common.TextureChangedEnum,System.Int32,System.Int32,System.Int32,System.Int32)'
+  parent: Fusee.Engine.Common.TextureEventArgs
+  langs:
+  - csharp
+  - vb
+  name: TextureEventArgs(ITextureBase, TextureChangedEnum, Int32, Int32, Int32, Int32)
+  nameWithType: TextureEventArgs.TextureEventArgs(ITextureBase, TextureChangedEnum, Int32, Int32, Int32, Int32)
+  fullName: Fusee.Engine.Common.TextureEventArgs.TextureEventArgs(Fusee.Engine.Common.ITextureBase, Fusee.Engine.Common.TextureChangedEnum, System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/TextureEventArgs.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/Common/TextureEventArgs.cs
+    startLine: 64
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nConstructor takes a Texture and a description which property of the Texture changed.\n"
+  example: []
+  syntax:
+    content: public TextureEventArgs(ITextureBase texture, TextureChangedEnum textureChangedEnum, int xStart = 0, int yStart = 0, int width = 0, int height = 0)
+    parameters:
+    - id: texture
+      type: Fusee.Engine.Common.ITextureBase
+      description: The Texture which property of life cycle has changed.
+    - id: textureChangedEnum
+      type: Fusee.Engine.Common.TextureChangedEnum
+      description: The <xref href="Fusee.Engine.Common.TextureChangedEnum" data-throw-if-not-resolved="false"></xref> describing which property of the Texture changed.
+    - id: xStart
+      type: System.Int32
+      description: (optional) x offset -> where does the changed region start along x (from left to right)?
+    - id: yStart
+      type: System.Int32
+      description: (optional) y offset -> where does the changed region start along y (from top to bottom)?
+    - id: width
+      type: System.Int32
+      description: Width in pixels.
+    - id: height
+      type: System.Int32
+      description: Height in pixels.
+    content.vb: Public Sub New(texture As ITextureBase, textureChangedEnum As TextureChangedEnum, xStart As Integer = 0, yStart As Integer = 0, width As Integer = 0, height As Integer = 0)
+  overload: Fusee.Engine.Common.TextureEventArgs.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Common.ITextureBase
+  commentId: T:Fusee.Engine.Common.ITextureBase
+  parent: Fusee.Engine.Common
+  name: ITextureBase
+  nameWithType: ITextureBase
+  fullName: Fusee.Engine.Common.ITextureBase
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  commentId: F:System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  nameWithType: EventArgs.Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Common.TextureEventArgs.Texture
+  commentId: P:Fusee.Engine.Common.TextureEventArgs.Texture
+  isExternal: true
+- uid: Fusee.Engine.Common.TextureEventArgs.Texture*
+  commentId: Overload:Fusee.Engine.Common.TextureEventArgs.Texture
+  name: Texture
+  nameWithType: TextureEventArgs.Texture
+  fullName: Fusee.Engine.Common.TextureEventArgs.Texture
+- uid: Fusee.Engine.Common.TextureEventArgs.ChangedEnum*
+  commentId: Overload:Fusee.Engine.Common.TextureEventArgs.ChangedEnum
+  name: ChangedEnum
+  nameWithType: TextureEventArgs.ChangedEnum
+  fullName: Fusee.Engine.Common.TextureEventArgs.ChangedEnum
+- uid: Fusee.Engine.Common.TextureChangedEnum
+  commentId: T:Fusee.Engine.Common.TextureChangedEnum
+  parent: Fusee.Engine.Common
+  name: TextureChangedEnum
+  nameWithType: TextureChangedEnum
+  fullName: Fusee.Engine.Common.TextureChangedEnum
+- uid: Fusee.Engine.Common.TextureEventArgs.XStart*
+  commentId: Overload:Fusee.Engine.Common.TextureEventArgs.XStart
+  name: XStart
+  nameWithType: TextureEventArgs.XStart
+  fullName: Fusee.Engine.Common.TextureEventArgs.XStart
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Engine.Common.TextureEventArgs.YStart*
+  commentId: Overload:Fusee.Engine.Common.TextureEventArgs.YStart
+  name: YStart
+  nameWithType: TextureEventArgs.YStart
+  fullName: Fusee.Engine.Common.TextureEventArgs.YStart
+- uid: Fusee.Engine.Common.TextureEventArgs.Width*
+  commentId: Overload:Fusee.Engine.Common.TextureEventArgs.Width
+  name: Width
+  nameWithType: TextureEventArgs.Width
+  fullName: Fusee.Engine.Common.TextureEventArgs.Width
+- uid: Fusee.Engine.Common.TextureEventArgs.Height*
+  commentId: Overload:Fusee.Engine.Common.TextureEventArgs.Height
+  name: Height
+  nameWithType: TextureEventArgs.Height
+  fullName: Fusee.Engine.Common.TextureEventArgs.Height
+- uid: Fusee.Engine.Common.TextureEventArgs.#ctor*
+  commentId: Overload:Fusee.Engine.Common.TextureEventArgs.#ctor
+  name: TextureEventArgs
+  nameWithType: TextureEventArgs.TextureEventArgs
+  fullName: Fusee.Engine.Common.TextureEventArgs.TextureEventArgs

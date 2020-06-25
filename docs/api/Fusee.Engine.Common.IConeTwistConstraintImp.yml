@@ -1,0 +1,1214 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp
+  commentId: T:Fusee.Engine.Common.IConeTwistConstraintImp
+  id: IConeTwistConstraintImp
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.IConeTwistConstraintImp.AFrame
+  - Fusee.Engine.Common.IConeTwistConstraintImp.BFrame
+  - Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo
+  - Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  - Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor(System.Boolean)
+  - Fusee.Engine.Common.IConeTwistConstraintImp.FixThresh
+  - Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetA
+  - Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetB
+  - Fusee.Engine.Common.IConeTwistConstraintImp.GetPointForAngle(System.Single,System.Single)
+  - Fusee.Engine.Common.IConeTwistConstraintImp.IsPastSwingLimit
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SetAngularOnly(System.Boolean)
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SetDamping(System.Single)
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Int32,System.Single)
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulse(System.Single)
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulseNormalized(System.Single)
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTarget(Fusee.Math.Core.Quaternion)
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Fusee.Math.Core.Quaternion)
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SolveSwingLimit
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SolveTwistLimit
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan1
+  - Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan2
+  - Fusee.Engine.Common.IConeTwistConstraintImp.TwistAngle
+  - Fusee.Engine.Common.IConeTwistConstraintImp.TwistLimitSign
+  - Fusee.Engine.Common.IConeTwistConstraintImp.TwistSpan
+  - Fusee.Engine.Common.IConeTwistConstraintImp.UpdateRhs(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: IConeTwistConstraintImp
+  nameWithType: IConeTwistConstraintImp
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp
+  type: Interface
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IConeTwistConstraintImp
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 7
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nImplementation agnostic representation of a cone twist constraint (a shoulder joint with arbitrary arm roll).\n"
+  example: []
+  syntax:
+    content: 'public interface IConeTwistConstraintImp : IConstraintImp'
+    content.vb: >-
+      Public Interface IConeTwistConstraintImp
+          Inherits IConstraintImp
+  inheritedMembers:
+  - Fusee.Engine.Common.IConstraintImp.RigidBodyA
+  - Fusee.Engine.Common.IConstraintImp.RigidBodyB
+  - Fusee.Engine.Common.IConstraintImp.GetUid
+  - Fusee.Engine.Common.IConstraintImp.UserObject
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.AFrame
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.AFrame
+  id: AFrame
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: AFrame
+  nameWithType: IConeTwistConstraintImp.AFrame
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.AFrame
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AFrame
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 15
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the A frame.\n"
+  example: []
+  syntax:
+    content: float4x4 AFrame { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe A frame.\n"
+    content.vb: ReadOnly Property AFrame As float4x4
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.AFrame*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.BFrame
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.BFrame
+  id: BFrame
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: BFrame
+  nameWithType: IConeTwistConstraintImp.BFrame
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.BFrame
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: BFrame
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 22
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the B frame.\n"
+  example: []
+  syntax:
+    content: float4x4 BFrame { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe B frame.\n"
+    content.vb: ReadOnly Property BFrame As float4x4
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.BFrame*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo
+  id: CalcAngleInfo
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: CalcAngleInfo()
+  nameWithType: IConeTwistConstraintImp.CalcAngleInfo()
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CalcAngleInfo
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 27
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nCalculates the angle information.\n"
+  example: []
+  syntax:
+    content: void CalcAngleInfo()
+    content.vb: Sub CalcAngleInfo
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo*
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  id: CalcAngleInfo2(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: CalcAngleInfo2(float4x4, float4x4, float4x4, float4x4)
+  nameWithType: IConeTwistConstraintImp.CalcAngleInfo2(float4x4, float4x4, float4x4, float4x4)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CalcAngleInfo2
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 35
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nAlternative angle info calculation.\n"
+  example: []
+  syntax:
+    content: void CalcAngleInfo2(float4x4 transA, float4x4 transB, float4x4 invInertiaWorldA, float4x4 invInertiaWorldB)
+    parameters:
+    - id: transA
+      type: Fusee.Math.Core.float4x4
+      description: The trans a.
+    - id: transB
+      type: Fusee.Math.Core.float4x4
+      description: The trans b.
+    - id: invInertiaWorldA
+      type: Fusee.Math.Core.float4x4
+      description: The inverted inertia world a.
+    - id: invInertiaWorldB
+      type: Fusee.Math.Core.float4x4
+      description: The derived inertia world b.
+    content.vb: Sub CalcAngleInfo2(transA As float4x4, transB As float4x4, invInertiaWorldA As float4x4, invInertiaWorldB As float4x4)
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2*
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor(System.Boolean)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor(System.Boolean)
+  id: EnableMotor(System.Boolean)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: EnableMotor(Boolean)
+  nameWithType: IConeTwistConstraintImp.EnableMotor(Boolean)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: EnableMotor
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 40
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nEnables the motor.\n"
+  example: []
+  syntax:
+    content: void EnableMotor(bool b)
+    parameters:
+    - id: b
+      type: System.Boolean
+      description: if set to <code>true</code> [b].
+    content.vb: Sub EnableMotor(b As Boolean)
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor*
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.FixThresh
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.FixThresh
+  id: FixThresh
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: FixThresh
+  nameWithType: IConeTwistConstraintImp.FixThresh
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.FixThresh
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FixThresh
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 47
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets and sets the fix threshold.\n"
+  example: []
+  syntax:
+    content: float FixThresh { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe fix threshold.\n"
+    content.vb: Property FixThresh As Single
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.FixThresh*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetA
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetA
+  id: FrameOffsetA
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: FrameOffsetA
+  nameWithType: IConeTwistConstraintImp.FrameOffsetA
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetA
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FrameOffsetA
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 54
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the frame offset a.\n"
+  example: []
+  syntax:
+    content: float4x4 FrameOffsetA { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe frame offset a.\n"
+    content.vb: ReadOnly Property FrameOffsetA As float4x4
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetA*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetB
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetB
+  id: FrameOffsetB
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: FrameOffsetB
+  nameWithType: IConeTwistConstraintImp.FrameOffsetB
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetB
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FrameOffsetB
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 61
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the frame offset b.\n"
+  example: []
+  syntax:
+    content: float4x4 FrameOffsetB { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe frame offset b.\n"
+    content.vb: ReadOnly Property FrameOffsetB As float4x4
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetB*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.GetPointForAngle(System.Single,System.Single)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.GetPointForAngle(System.Single,System.Single)
+  id: GetPointForAngle(System.Single,System.Single)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: GetPointForAngle(Single, Single)
+  nameWithType: IConeTwistConstraintImp.GetPointForAngle(Single, Single)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.GetPointForAngle(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetPointForAngle
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 68
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the point for angle.\n"
+  example: []
+  syntax:
+    content: float3 GetPointForAngle(float fAngleInRadius, float fLength)
+    parameters:
+    - id: fAngleInRadius
+      type: System.Single
+      description: The f angle in radius.
+    - id: fLength
+      type: System.Single
+      description: Length of the f.
+    return:
+      type: Fusee.Math.Core.float3
+      description: ''
+    content.vb: Function GetPointForAngle(fAngleInRadius As Single, fLength As Single) As float3
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.GetPointForAngle*
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.IsPastSwingLimit
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.IsPastSwingLimit
+  id: IsPastSwingLimit
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: IsPastSwingLimit
+  nameWithType: IConeTwistConstraintImp.IsPastSwingLimit
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.IsPastSwingLimit
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IsPastSwingLimit
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 75
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets a value indicating whether this constraint/joint is past the swing limit.\n"
+  example: []
+  syntax:
+    content: bool IsPastSwingLimit { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this constraint is past swing limit; otherwise, <code>false</code>.\n"
+    content.vb: ReadOnly Property IsPastSwingLimit As Boolean
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.IsPastSwingLimit*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetAngularOnly(System.Boolean)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.SetAngularOnly(System.Boolean)
+  id: SetAngularOnly(System.Boolean)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetAngularOnly(Boolean)
+  nameWithType: IConeTwistConstraintImp.SetAngularOnly(Boolean)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetAngularOnly(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetAngularOnly
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 80
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nSet the angular only mode.\n"
+  example: []
+  syntax:
+    content: void SetAngularOnly(bool angularOnly)
+    parameters:
+    - id: angularOnly
+      type: System.Boolean
+      description: if set to <code>true</code> only angular constraint is effective.
+    content.vb: Sub SetAngularOnly(angularOnly As Boolean)
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.SetAngularOnly*
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetDamping(System.Single)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.SetDamping(System.Single)
+  id: SetDamping(System.Single)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetDamping(Single)
+  nameWithType: IConeTwistConstraintImp.SetDamping(Single)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetDamping(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetDamping
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 85
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nSets the damping.\n"
+  example: []
+  syntax:
+    content: void SetDamping(float damping)
+    parameters:
+    - id: damping
+      type: System.Single
+      description: The damping.
+    content.vb: Sub SetDamping(damping As Single)
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.SetDamping*
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Int32,System.Single)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Int32,System.Single)
+  id: SetLimit(System.Int32,System.Single)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetLimit(Int32, Single)
+  nameWithType: IConeTwistConstraintImp.SetLimit(Int32, Single)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Int32, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetLimit
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 91
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nSets the limit.\n"
+  example: []
+  syntax:
+    content: void SetLimit(int limitIndex, float limitValue)
+    parameters:
+    - id: limitIndex
+      type: System.Int32
+      description: Index of the limit.
+    - id: limitValue
+      type: System.Single
+      description: The limit value.
+    content.vb: Sub SetLimit(limitIndex As Integer, limitValue As Single)
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit*
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: SetLimit(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetLimit(Single, Single, Single, Single, Single, Single)
+  nameWithType: IConeTwistConstraintImp.SetLimit(Single, Single, Single, Single, Single, Single)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit(System.Single, System.Single, System.Single, System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetLimit
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 101
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nSets the limit.\n"
+  example: []
+  syntax:
+    content: void SetLimit(float swingSpan1, float swingSpan2, float twistSpan, float softness, float biasFactor, float relaxationFactor)
+    parameters:
+    - id: swingSpan1
+      type: System.Single
+      description: The swing span1.
+    - id: swingSpan2
+      type: System.Single
+      description: The swing span2.
+    - id: twistSpan
+      type: System.Single
+      description: The twist span.
+    - id: softness
+      type: System.Single
+      description: The softness.
+    - id: biasFactor
+      type: System.Single
+      description: The bias factor.
+    - id: relaxationFactor
+      type: System.Single
+      description: The relaxation factor.
+    content.vb: Sub SetLimit(swingSpan1 As Single, swingSpan2 As Single, twistSpan As Single, softness As Single, biasFactor As Single, relaxationFactor As Single)
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit*
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulse(System.Single)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulse(System.Single)
+  id: SetMaxMotorImpulse(System.Single)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetMaxMotorImpulse(Single)
+  nameWithType: IConeTwistConstraintImp.SetMaxMotorImpulse(Single)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulse(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetMaxMotorImpulse
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 107
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nSets the maximum motor impulse.\n"
+  example: []
+  syntax:
+    content: void SetMaxMotorImpulse(float maxMotorImpulse)
+    parameters:
+    - id: maxMotorImpulse
+      type: System.Single
+      description: The maximum motor impulse.
+    content.vb: Sub SetMaxMotorImpulse(maxMotorImpulse As Single)
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulse*
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulseNormalized(System.Single)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulseNormalized(System.Single)
+  id: SetMaxMotorImpulseNormalized(System.Single)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetMaxMotorImpulseNormalized(Single)
+  nameWithType: IConeTwistConstraintImp.SetMaxMotorImpulseNormalized(Single)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulseNormalized(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetMaxMotorImpulseNormalized
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 112
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nSets the normalized maximum motor impulse.\n"
+  example: []
+  syntax:
+    content: void SetMaxMotorImpulseNormalized(float maxMotorImpulse)
+    parameters:
+    - id: maxMotorImpulse
+      type: System.Single
+      description: The maximum motor impulse.
+    content.vb: Sub SetMaxMotorImpulseNormalized(maxMotorImpulse As Single)
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulseNormalized*
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTarget(Fusee.Math.Core.Quaternion)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTarget(Fusee.Math.Core.Quaternion)
+  id: SetMotorTarget(Fusee.Math.Core.Quaternion)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetMotorTarget(Quaternion)
+  nameWithType: IConeTwistConstraintImp.SetMotorTarget(Quaternion)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTarget(Fusee.Math.Core.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetMotorTarget
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 118
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nSets the motor target.\n"
+  example: []
+  syntax:
+    content: void SetMotorTarget(Quaternion q)
+    parameters:
+    - id: q
+      type: Fusee.Math.Core.Quaternion
+      description: Quaternion (orientation) of the target.
+    content.vb: Sub SetMotorTarget(q As Quaternion)
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTarget*
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Fusee.Math.Core.Quaternion)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Fusee.Math.Core.Quaternion)
+  id: SetMotorTargetInConstraintSpace(Fusee.Math.Core.Quaternion)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SetMotorTargetInConstraintSpace(Quaternion)
+  nameWithType: IConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Quaternion)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTargetInConstraintSpace(Fusee.Math.Core.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetMotorTargetInConstraintSpace
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 123
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nSets the motor target in constraint space.\n"
+  example: []
+  syntax:
+    content: void SetMotorTargetInConstraintSpace(Quaternion q)
+    parameters:
+    - id: q
+      type: Fusee.Math.Core.Quaternion
+      description: Quaternion (orientation) of the target in constraint space.
+    content.vb: Sub SetMotorTargetInConstraintSpace(q As Quaternion)
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTargetInConstraintSpace*
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SolveSwingLimit
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.SolveSwingLimit
+  id: SolveSwingLimit
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SolveSwingLimit
+  nameWithType: IConeTwistConstraintImp.SolveSwingLimit
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SolveSwingLimit
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SolveSwingLimit
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 131
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the solve swing limit.\n"
+  example: []
+  syntax:
+    content: int SolveSwingLimit { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe solve swing limit.\n"
+    content.vb: ReadOnly Property SolveSwingLimit As Integer
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.SolveSwingLimit*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SolveTwistLimit
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.SolveTwistLimit
+  id: SolveTwistLimit
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SolveTwistLimit
+  nameWithType: IConeTwistConstraintImp.SolveTwistLimit
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SolveTwistLimit
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SolveTwistLimit
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 138
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the solve twist limit.\n"
+  example: []
+  syntax:
+    content: int SolveTwistLimit { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe solve twist limit.\n"
+    content.vb: ReadOnly Property SolveTwistLimit As Integer
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.SolveTwistLimit*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan1
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan1
+  id: SwingSpan1
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SwingSpan1
+  nameWithType: IConeTwistConstraintImp.SwingSpan1
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan1
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SwingSpan1
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 146
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the swing span1.\n"
+  example: []
+  syntax:
+    content: float SwingSpan1 { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe swing span1.\n"
+    content.vb: ReadOnly Property SwingSpan1 As Single
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan1*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan2
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan2
+  id: SwingSpan2
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: SwingSpan2
+  nameWithType: IConeTwistConstraintImp.SwingSpan2
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan2
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SwingSpan2
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 153
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the swing span2.\n"
+  example: []
+  syntax:
+    content: float SwingSpan2 { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe swing span2.\n"
+    content.vb: ReadOnly Property SwingSpan2 As Single
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan2*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.TwistAngle
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.TwistAngle
+  id: TwistAngle
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: TwistAngle
+  nameWithType: IConeTwistConstraintImp.TwistAngle
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.TwistAngle
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TwistAngle
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 161
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the twist angle.\n"
+  example: []
+  syntax:
+    content: float TwistAngle { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe twist angle.\n"
+    content.vb: ReadOnly Property TwistAngle As Single
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.TwistAngle*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.TwistLimitSign
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.TwistLimitSign
+  id: TwistLimitSign
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: TwistLimitSign
+  nameWithType: IConeTwistConstraintImp.TwistLimitSign
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.TwistLimitSign
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TwistLimitSign
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 168
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the twist limit sign.\n"
+  example: []
+  syntax:
+    content: float TwistLimitSign { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe twist limit sign.\n"
+    content.vb: ReadOnly Property TwistLimitSign As Single
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.TwistLimitSign*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.TwistSpan
+  commentId: P:Fusee.Engine.Common.IConeTwistConstraintImp.TwistSpan
+  id: TwistSpan
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: TwistSpan
+  nameWithType: IConeTwistConstraintImp.TwistSpan
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.TwistSpan
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TwistSpan
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 175
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets the twist span.\n"
+  example: []
+  syntax:
+    content: float TwistSpan { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe twist span.\n"
+    content.vb: ReadOnly Property TwistSpan As Single
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.TwistSpan*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.UpdateRhs(System.Single)
+  commentId: M:Fusee.Engine.Common.IConeTwistConstraintImp.UpdateRhs(System.Single)
+  id: UpdateRhs(System.Single)
+  parent: Fusee.Engine.Common.IConeTwistConstraintImp
+  langs:
+  - csharp
+  - vb
+  name: UpdateRhs(Single)
+  nameWithType: IConeTwistConstraintImp.UpdateRhs(Single)
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.UpdateRhs(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: UpdateRhs
+    path: src/Fusee/src/Engine/Common/IConeTwistConstraintImp.cs
+    startLine: 181
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nUpdates the RHS.\n"
+  example: []
+  syntax:
+    content: void UpdateRhs(float timeStep)
+    parameters:
+    - id: timeStep
+      type: System.Single
+      description: The time step.
+    content.vb: Sub UpdateRhs(timeStep As Single)
+  overload: Fusee.Engine.Common.IConeTwistConstraintImp.UpdateRhs*
+references:
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Common.IConstraintImp.RigidBodyA
+  commentId: P:Fusee.Engine.Common.IConstraintImp.RigidBodyA
+  parent: Fusee.Engine.Common.IConstraintImp
+  name: RigidBodyA
+  nameWithType: IConstraintImp.RigidBodyA
+  fullName: Fusee.Engine.Common.IConstraintImp.RigidBodyA
+- uid: Fusee.Engine.Common.IConstraintImp.RigidBodyB
+  commentId: P:Fusee.Engine.Common.IConstraintImp.RigidBodyB
+  parent: Fusee.Engine.Common.IConstraintImp
+  name: RigidBodyB
+  nameWithType: IConstraintImp.RigidBodyB
+  fullName: Fusee.Engine.Common.IConstraintImp.RigidBodyB
+- uid: Fusee.Engine.Common.IConstraintImp.GetUid
+  commentId: M:Fusee.Engine.Common.IConstraintImp.GetUid
+  parent: Fusee.Engine.Common.IConstraintImp
+  name: GetUid()
+  nameWithType: IConstraintImp.GetUid()
+  fullName: Fusee.Engine.Common.IConstraintImp.GetUid()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IConstraintImp.GetUid
+    name: GetUid
+    nameWithType: IConstraintImp.GetUid
+    fullName: Fusee.Engine.Common.IConstraintImp.GetUid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IConstraintImp.GetUid
+    name: GetUid
+    nameWithType: IConstraintImp.GetUid
+    fullName: Fusee.Engine.Common.IConstraintImp.GetUid
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IConstraintImp.UserObject
+  commentId: P:Fusee.Engine.Common.IConstraintImp.UserObject
+  parent: Fusee.Engine.Common.IConstraintImp
+  name: UserObject
+  nameWithType: IConstraintImp.UserObject
+  fullName: Fusee.Engine.Common.IConstraintImp.UserObject
+- uid: Fusee.Engine.Common.IConstraintImp
+  commentId: T:Fusee.Engine.Common.IConstraintImp
+  parent: Fusee.Engine.Common
+  name: IConstraintImp
+  nameWithType: IConstraintImp
+  fullName: Fusee.Engine.Common.IConstraintImp
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.AFrame*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.AFrame
+  name: AFrame
+  nameWithType: IConeTwistConstraintImp.AFrame
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.AFrame
+- uid: Fusee.Math.Core.float4x4
+  commentId: T:Fusee.Math.Core.float4x4
+  parent: Fusee.Math.Core
+  name: float4x4
+  nameWithType: float4x4
+  fullName: Fusee.Math.Core.float4x4
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.BFrame*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.BFrame
+  name: BFrame
+  nameWithType: IConeTwistConstraintImp.BFrame
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.BFrame
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo
+  name: CalcAngleInfo
+  nameWithType: IConeTwistConstraintImp.CalcAngleInfo
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2
+  name: CalcAngleInfo2
+  nameWithType: IConeTwistConstraintImp.CalcAngleInfo2
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor
+  name: EnableMotor
+  nameWithType: IConeTwistConstraintImp.EnableMotor
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.FixThresh*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.FixThresh
+  name: FixThresh
+  nameWithType: IConeTwistConstraintImp.FixThresh
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.FixThresh
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetA*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetA
+  name: FrameOffsetA
+  nameWithType: IConeTwistConstraintImp.FrameOffsetA
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetA
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetB*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetB
+  name: FrameOffsetB
+  nameWithType: IConeTwistConstraintImp.FrameOffsetB
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.FrameOffsetB
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.GetPointForAngle*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.GetPointForAngle
+  name: GetPointForAngle
+  nameWithType: IConeTwistConstraintImp.GetPointForAngle
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.GetPointForAngle
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.IsPastSwingLimit*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.IsPastSwingLimit
+  name: IsPastSwingLimit
+  nameWithType: IConeTwistConstraintImp.IsPastSwingLimit
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.IsPastSwingLimit
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetAngularOnly*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.SetAngularOnly
+  name: SetAngularOnly
+  nameWithType: IConeTwistConstraintImp.SetAngularOnly
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetAngularOnly
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetDamping*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.SetDamping
+  name: SetDamping
+  nameWithType: IConeTwistConstraintImp.SetDamping
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetDamping
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit
+  name: SetLimit
+  nameWithType: IConeTwistConstraintImp.SetLimit
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetLimit
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulse*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulse
+  name: SetMaxMotorImpulse
+  nameWithType: IConeTwistConstraintImp.SetMaxMotorImpulse
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulse
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulseNormalized*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulseNormalized
+  name: SetMaxMotorImpulseNormalized
+  nameWithType: IConeTwistConstraintImp.SetMaxMotorImpulseNormalized
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMaxMotorImpulseNormalized
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTarget*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTarget
+  name: SetMotorTarget
+  nameWithType: IConeTwistConstraintImp.SetMotorTarget
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTarget
+- uid: Fusee.Math.Core.Quaternion
+  commentId: T:Fusee.Math.Core.Quaternion
+  parent: Fusee.Math.Core
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: Fusee.Math.Core.Quaternion
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTargetInConstraintSpace*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTargetInConstraintSpace
+  name: SetMotorTargetInConstraintSpace
+  nameWithType: IConeTwistConstraintImp.SetMotorTargetInConstraintSpace
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SetMotorTargetInConstraintSpace
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SolveSwingLimit*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.SolveSwingLimit
+  name: SolveSwingLimit
+  nameWithType: IConeTwistConstraintImp.SolveSwingLimit
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SolveSwingLimit
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SolveTwistLimit*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.SolveTwistLimit
+  name: SolveTwistLimit
+  nameWithType: IConeTwistConstraintImp.SolveTwistLimit
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SolveTwistLimit
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan1*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan1
+  name: SwingSpan1
+  nameWithType: IConeTwistConstraintImp.SwingSpan1
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan1
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan2*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan2
+  name: SwingSpan2
+  nameWithType: IConeTwistConstraintImp.SwingSpan2
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.SwingSpan2
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.TwistAngle*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.TwistAngle
+  name: TwistAngle
+  nameWithType: IConeTwistConstraintImp.TwistAngle
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.TwistAngle
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.TwistLimitSign*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.TwistLimitSign
+  name: TwistLimitSign
+  nameWithType: IConeTwistConstraintImp.TwistLimitSign
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.TwistLimitSign
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.TwistSpan*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.TwistSpan
+  name: TwistSpan
+  nameWithType: IConeTwistConstraintImp.TwistSpan
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.TwistSpan
+- uid: Fusee.Engine.Common.IConeTwistConstraintImp.UpdateRhs*
+  commentId: Overload:Fusee.Engine.Common.IConeTwistConstraintImp.UpdateRhs
+  name: UpdateRhs
+  nameWithType: IConeTwistConstraintImp.UpdateRhs
+  fullName: Fusee.Engine.Common.IConeTwistConstraintImp.UpdateRhs

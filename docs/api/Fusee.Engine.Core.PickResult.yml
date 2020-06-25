@@ -1,0 +1,1110 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.PickResult
+  commentId: T:Fusee.Engine.Core.PickResult
+  id: PickResult
+  parent: Fusee.Engine.Core
+  children:
+  - Fusee.Engine.Core.PickResult.CameraPos
+  - Fusee.Engine.Core.PickResult.ClipPos
+  - Fusee.Engine.Core.PickResult.GetNormals(Fusee.Math.Core.float3@,Fusee.Math.Core.float3@,Fusee.Math.Core.float3@)
+  - Fusee.Engine.Core.PickResult.GetTriangle(Fusee.Math.Core.float3@,Fusee.Math.Core.float3@,Fusee.Math.Core.float3@)
+  - Fusee.Engine.Core.PickResult.Mesh
+  - Fusee.Engine.Core.PickResult.Model
+  - Fusee.Engine.Core.PickResult.ModelPos
+  - Fusee.Engine.Core.PickResult.Node
+  - Fusee.Engine.Core.PickResult.NormalBarycentric
+  - Fusee.Engine.Core.PickResult.NormalCenter
+  - Fusee.Engine.Core.PickResult.Projection
+  - Fusee.Engine.Core.PickResult.Triangle
+  - Fusee.Engine.Core.PickResult.TriangleBarycentric
+  - Fusee.Engine.Core.PickResult.TriangleCenter
+  - Fusee.Engine.Core.PickResult.U
+  - Fusee.Engine.Core.PickResult.V
+  - Fusee.Engine.Core.PickResult.View
+  - Fusee.Engine.Core.PickResult.WorldPos
+  langs:
+  - csharp
+  - vb
+  name: PickResult
+  nameWithType: PickResult
+  fullName: Fusee.Engine.Core.PickResult
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: PickResult
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 11
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThis class contains information about the scene of the picked point.\n"
+  example: []
+  syntax:
+    content: public class PickResult
+    content.vb: Public Class PickResult
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Core.PickResult.Node
+  commentId: F:Fusee.Engine.Core.PickResult.Node
+  id: Node
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: Node
+  nameWithType: PickResult.Node
+  fullName: Fusee.Engine.Core.PickResult.Node
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Node
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 17
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe scene code container.\n"
+  example: []
+  syntax:
+    content: public SceneNode Node
+    return:
+      type: Fusee.Engine.Core.Scene.SceneNode
+    content.vb: Public Node As SceneNode
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.PickResult.Mesh
+  commentId: F:Fusee.Engine.Core.PickResult.Mesh
+  id: Mesh
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: Mesh
+  nameWithType: PickResult.Mesh
+  fullName: Fusee.Engine.Core.PickResult.Mesh
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Mesh
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 22
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe mesh.\n"
+  example: []
+  syntax:
+    content: public Mesh Mesh
+    return:
+      type: Fusee.Engine.Core.Scene.Mesh
+    content.vb: Public Mesh As Mesh
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.PickResult.Triangle
+  commentId: F:Fusee.Engine.Core.PickResult.Triangle
+  id: Triangle
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: Triangle
+  nameWithType: PickResult.Triangle
+  fullName: Fusee.Engine.Core.PickResult.Triangle
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Triangle
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 27
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe index of the triangle that was picked.\n"
+  example: []
+  syntax:
+    content: public int Triangle
+    return:
+      type: System.Int32
+    content.vb: Public Triangle As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.PickResult.U
+  commentId: F:Fusee.Engine.Core.PickResult.U
+  id: U
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: U
+  nameWithType: PickResult.U
+  fullName: Fusee.Engine.Core.PickResult.U
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: U
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 32
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe u, v coordinates.\n"
+  example: []
+  syntax:
+    content: public float U
+    return:
+      type: System.Single
+    content.vb: Public U As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.PickResult.V
+  commentId: F:Fusee.Engine.Core.PickResult.V
+  id: V
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: V
+  nameWithType: PickResult.V
+  fullName: Fusee.Engine.Core.PickResult.V
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: V
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 32
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe u, v coordinates.\n"
+  example: []
+  syntax:
+    content: public float V
+    return:
+      type: System.Single
+    content.vb: Public V As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.PickResult.Model
+  commentId: F:Fusee.Engine.Core.PickResult.Model
+  id: Model
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: Model
+  nameWithType: PickResult.Model
+  fullName: Fusee.Engine.Core.PickResult.Model
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Model
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 37
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe model matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 Model
+    return:
+      type: Fusee.Math.Core.float4x4
+    content.vb: Public Model As float4x4
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.PickResult.View
+  commentId: F:Fusee.Engine.Core.PickResult.View
+  id: View
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: View
+  nameWithType: PickResult.View
+  fullName: Fusee.Engine.Core.PickResult.View
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: View
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 42
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe view matrix\n"
+  example: []
+  syntax:
+    content: public float4x4 View
+    return:
+      type: Fusee.Math.Core.float4x4
+    content.vb: Public View As float4x4
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.PickResult.Projection
+  commentId: F:Fusee.Engine.Core.PickResult.Projection
+  id: Projection
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: Projection
+  nameWithType: PickResult.Projection
+  fullName: Fusee.Engine.Core.PickResult.Projection
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Projection
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 47
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe projection matrix.\n"
+  example: []
+  syntax:
+    content: public float4x4 Projection
+    return:
+      type: Fusee.Math.Core.float4x4
+    content.vb: Public Projection As float4x4
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.PickResult.GetTriangle(Fusee.Math.Core.float3@,Fusee.Math.Core.float3@,Fusee.Math.Core.float3@)
+  commentId: M:Fusee.Engine.Core.PickResult.GetTriangle(Fusee.Math.Core.float3@,Fusee.Math.Core.float3@,Fusee.Math.Core.float3@)
+  id: GetTriangle(Fusee.Math.Core.float3@,Fusee.Math.Core.float3@,Fusee.Math.Core.float3@)
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: GetTriangle(out float3, out float3, out float3)
+  nameWithType: PickResult.GetTriangle(out float3, out float3, out float3)
+  fullName: Fusee.Engine.Core.PickResult.GetTriangle(out Fusee.Math.Core.float3, out Fusee.Math.Core.float3, out Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetTriangle
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 56
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the triangles of the picked mesh.\n"
+  example: []
+  syntax:
+    content: public void GetTriangle(out float3 a, out float3 b, out float3 c)
+    parameters:
+    - id: a
+      type: Fusee.Math.Core.float3
+      description: ''
+    - id: b
+      type: Fusee.Math.Core.float3
+      description: ''
+    - id: c
+      type: Fusee.Math.Core.float3
+      description: ''
+    content.vb: Public Sub GetTriangle(ByRef a As float3, ByRef b As float3, ByRef c As float3)
+  overload: Fusee.Engine.Core.PickResult.GetTriangle*
+  nameWithType.vb: PickResult.GetTriangle(ByRef float3, ByRef float3, ByRef float3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Engine.Core.PickResult.GetTriangle(ByRef Fusee.Math.Core.float3, ByRef Fusee.Math.Core.float3, ByRef Fusee.Math.Core.float3)
+  name.vb: GetTriangle(ByRef float3, ByRef float3, ByRef float3)
+- uid: Fusee.Engine.Core.PickResult.TriangleCenter
+  commentId: P:Fusee.Engine.Core.PickResult.TriangleCenter
+  id: TriangleCenter
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: TriangleCenter
+  nameWithType: PickResult.TriangleCenter
+  fullName: Fusee.Engine.Core.PickResult.TriangleCenter
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TriangleCenter
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 65
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nReturns the center of the picked triangle.\n"
+  example: []
+  syntax:
+    content: public float3 TriangleCenter { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public ReadOnly Property TriangleCenter As float3
+  overload: Fusee.Engine.Core.PickResult.TriangleCenter*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.PickResult.TriangleBarycentric
+  commentId: P:Fusee.Engine.Core.PickResult.TriangleBarycentric
+  id: TriangleBarycentric
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: TriangleBarycentric
+  nameWithType: PickResult.TriangleBarycentric
+  fullName: Fusee.Engine.Core.PickResult.TriangleBarycentric
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TriangleBarycentric
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 76
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nReturns the barycentric triangle coordinates.\n"
+  example: []
+  syntax:
+    content: public float3 TriangleBarycentric { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public ReadOnly Property TriangleBarycentric As float3
+  overload: Fusee.Engine.Core.PickResult.TriangleBarycentric*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.PickResult.GetNormals(Fusee.Math.Core.float3@,Fusee.Math.Core.float3@,Fusee.Math.Core.float3@)
+  commentId: M:Fusee.Engine.Core.PickResult.GetNormals(Fusee.Math.Core.float3@,Fusee.Math.Core.float3@,Fusee.Math.Core.float3@)
+  id: GetNormals(Fusee.Math.Core.float3@,Fusee.Math.Core.float3@,Fusee.Math.Core.float3@)
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: GetNormals(out float3, out float3, out float3)
+  nameWithType: PickResult.GetNormals(out float3, out float3, out float3)
+  fullName: Fusee.Engine.Core.PickResult.GetNormals(out Fusee.Math.Core.float3, out Fusee.Math.Core.float3, out Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetNormals
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 90
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the normals at the picked triangle.\n"
+  example: []
+  syntax:
+    content: public void GetNormals(out float3 a, out float3 b, out float3 c)
+    parameters:
+    - id: a
+      type: Fusee.Math.Core.float3
+      description: ''
+    - id: b
+      type: Fusee.Math.Core.float3
+      description: ''
+    - id: c
+      type: Fusee.Math.Core.float3
+      description: ''
+    content.vb: Public Sub GetNormals(ByRef a As float3, ByRef b As float3, ByRef c As float3)
+  overload: Fusee.Engine.Core.PickResult.GetNormals*
+  nameWithType.vb: PickResult.GetNormals(ByRef float3, ByRef float3, ByRef float3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Engine.Core.PickResult.GetNormals(ByRef Fusee.Math.Core.float3, ByRef Fusee.Math.Core.float3, ByRef Fusee.Math.Core.float3)
+  name.vb: GetNormals(ByRef float3, ByRef float3, ByRef float3)
+- uid: Fusee.Engine.Core.PickResult.NormalCenter
+  commentId: P:Fusee.Engine.Core.PickResult.NormalCenter
+  id: NormalCenter
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: NormalCenter
+  nameWithType: PickResult.NormalCenter
+  fullName: Fusee.Engine.Core.PickResult.NormalCenter
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: NormalCenter
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 99
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nReturns the normal at the center of the picked triangle.\n"
+  example: []
+  syntax:
+    content: public float3 NormalCenter { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public ReadOnly Property NormalCenter As float3
+  overload: Fusee.Engine.Core.PickResult.NormalCenter*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.PickResult.NormalBarycentric
+  commentId: P:Fusee.Engine.Core.PickResult.NormalBarycentric
+  id: NormalBarycentric
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: NormalBarycentric
+  nameWithType: PickResult.NormalBarycentric
+  fullName: Fusee.Engine.Core.PickResult.NormalBarycentric
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: NormalBarycentric
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 110
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nReturns the barycentric normal coordinates.\n"
+  example: []
+  syntax:
+    content: public float3 NormalBarycentric { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public ReadOnly Property NormalBarycentric As float3
+  overload: Fusee.Engine.Core.PickResult.NormalBarycentric*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.PickResult.ModelPos
+  commentId: P:Fusee.Engine.Core.PickResult.ModelPos
+  id: ModelPos
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: ModelPos
+  nameWithType: PickResult.ModelPos
+  fullName: Fusee.Engine.Core.PickResult.ModelPos
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ModelPos
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 121
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nReturns the model position.\n"
+  example: []
+  syntax:
+    content: public float3 ModelPos { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public ReadOnly Property ModelPos As float3
+  overload: Fusee.Engine.Core.PickResult.ModelPos*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.PickResult.ClipPos
+  commentId: P:Fusee.Engine.Core.PickResult.ClipPos
+  id: ClipPos
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: ClipPos
+  nameWithType: PickResult.ClipPos
+  fullName: Fusee.Engine.Core.PickResult.ClipPos
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ClipPos
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 125
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nReturns the clipping position of the model.\n"
+  example: []
+  syntax:
+    content: public float3 ClipPos { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public ReadOnly Property ClipPos As float3
+  overload: Fusee.Engine.Core.PickResult.ClipPos*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.PickResult.WorldPos
+  commentId: P:Fusee.Engine.Core.PickResult.WorldPos
+  id: WorldPos
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: WorldPos
+  nameWithType: PickResult.WorldPos
+  fullName: Fusee.Engine.Core.PickResult.WorldPos
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: WorldPos
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 136
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nReturns the world position of the model.\n"
+  example: []
+  syntax:
+    content: public float3 WorldPos { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public ReadOnly Property WorldPos As float3
+  overload: Fusee.Engine.Core.PickResult.WorldPos*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.PickResult.CameraPos
+  commentId: P:Fusee.Engine.Core.PickResult.CameraPos
+  id: CameraPos
+  parent: Fusee.Engine.Core.PickResult
+  langs:
+  - csharp
+  - vb
+  name: CameraPos
+  nameWithType: PickResult.CameraPos
+  fullName: Fusee.Engine.Core.PickResult.CameraPos
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ScenePicker.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CameraPos
+    path: src/Fusee/src/Engine/Core/ScenePicker.cs
+    startLine: 140
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nReturns the camera position.\n"
+  example: []
+  syntax:
+    content: public float3 CameraPos { get; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public ReadOnly Property CameraPos As float3
+  overload: Fusee.Engine.Core.PickResult.CameraPos*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.Scene.SceneNode
+  commentId: T:Fusee.Engine.Core.Scene.SceneNode
+  parent: Fusee.Engine.Core.Scene
+  name: SceneNode
+  nameWithType: SceneNode
+  fullName: Fusee.Engine.Core.Scene.SceneNode
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: Fusee.Engine.Core.Scene.Mesh
+  commentId: T:Fusee.Engine.Core.Scene.Mesh
+  parent: Fusee.Engine.Core.Scene
+  name: Mesh
+  nameWithType: Mesh
+  fullName: Fusee.Engine.Core.Scene.Mesh
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Math.Core.float4x4
+  commentId: T:Fusee.Math.Core.float4x4
+  parent: Fusee.Math.Core
+  name: float4x4
+  nameWithType: float4x4
+  fullName: Fusee.Math.Core.float4x4
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Core.PickResult.GetTriangle*
+  commentId: Overload:Fusee.Engine.Core.PickResult.GetTriangle
+  name: GetTriangle
+  nameWithType: PickResult.GetTriangle
+  fullName: Fusee.Engine.Core.PickResult.GetTriangle
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Engine.Core.PickResult.TriangleCenter*
+  commentId: Overload:Fusee.Engine.Core.PickResult.TriangleCenter
+  name: TriangleCenter
+  nameWithType: PickResult.TriangleCenter
+  fullName: Fusee.Engine.Core.PickResult.TriangleCenter
+- uid: Fusee.Engine.Core.PickResult.TriangleBarycentric*
+  commentId: Overload:Fusee.Engine.Core.PickResult.TriangleBarycentric
+  name: TriangleBarycentric
+  nameWithType: PickResult.TriangleBarycentric
+  fullName: Fusee.Engine.Core.PickResult.TriangleBarycentric
+- uid: Fusee.Engine.Core.PickResult.GetNormals*
+  commentId: Overload:Fusee.Engine.Core.PickResult.GetNormals
+  name: GetNormals
+  nameWithType: PickResult.GetNormals
+  fullName: Fusee.Engine.Core.PickResult.GetNormals
+- uid: Fusee.Engine.Core.PickResult.NormalCenter*
+  commentId: Overload:Fusee.Engine.Core.PickResult.NormalCenter
+  name: NormalCenter
+  nameWithType: PickResult.NormalCenter
+  fullName: Fusee.Engine.Core.PickResult.NormalCenter
+- uid: Fusee.Engine.Core.PickResult.NormalBarycentric*
+  commentId: Overload:Fusee.Engine.Core.PickResult.NormalBarycentric
+  name: NormalBarycentric
+  nameWithType: PickResult.NormalBarycentric
+  fullName: Fusee.Engine.Core.PickResult.NormalBarycentric
+- uid: Fusee.Engine.Core.PickResult.ModelPos*
+  commentId: Overload:Fusee.Engine.Core.PickResult.ModelPos
+  name: ModelPos
+  nameWithType: PickResult.ModelPos
+  fullName: Fusee.Engine.Core.PickResult.ModelPos
+- uid: Fusee.Engine.Core.PickResult.ClipPos*
+  commentId: Overload:Fusee.Engine.Core.PickResult.ClipPos
+  name: ClipPos
+  nameWithType: PickResult.ClipPos
+  fullName: Fusee.Engine.Core.PickResult.ClipPos
+- uid: Fusee.Engine.Core.PickResult.WorldPos*
+  commentId: Overload:Fusee.Engine.Core.PickResult.WorldPos
+  name: WorldPos
+  nameWithType: PickResult.WorldPos
+  fullName: Fusee.Engine.Core.PickResult.WorldPos
+- uid: Fusee.Engine.Core.PickResult.CameraPos*
+  commentId: Overload:Fusee.Engine.Core.PickResult.CameraPos
+  name: CameraPos
+  nameWithType: PickResult.CameraPos
+  fullName: Fusee.Engine.Core.PickResult.CameraPos

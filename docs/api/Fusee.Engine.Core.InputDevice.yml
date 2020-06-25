@@ -1,0 +1,2251 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.InputDevice
+  commentId: T:Fusee.Engine.Core.InputDevice
+  id: InputDevice
+  parent: Fusee.Engine.Core
+  children:
+  - Fusee.Engine.Core.InputDevice.AxesCount
+  - Fusee.Engine.Core.InputDevice.AxisDesc
+  - Fusee.Engine.Core.InputDevice.AxisValueChanged
+  - Fusee.Engine.Core.InputDevice.ButtonCount
+  - Fusee.Engine.Core.InputDevice.ButtonDesc
+  - Fusee.Engine.Core.InputDevice.ButtonValueChanged
+  - Fusee.Engine.Core.InputDevice.Category
+  - Fusee.Engine.Core.InputDevice.Desc
+  - Fusee.Engine.Core.InputDevice.GetAxis(System.Int32)
+  - Fusee.Engine.Core.InputDevice.GetAxisDeadzone(System.Int32)
+  - Fusee.Engine.Core.InputDevice.GetAxisDescription(System.Int32)
+  - Fusee.Engine.Core.InputDevice.GetAxisRaw(System.Int32)
+  - Fusee.Engine.Core.InputDevice.GetButton(System.Int32)
+  - Fusee.Engine.Core.InputDevice.GetButtonDescription(System.Int32)
+  - Fusee.Engine.Core.InputDevice.Id
+  - Fusee.Engine.Core.InputDevice.IsButtonDown(System.Int32)
+  - Fusee.Engine.Core.InputDevice.IsButtonUp(System.Int32)
+  - Fusee.Engine.Core.InputDevice.IsConnected
+  - Fusee.Engine.Core.InputDevice.NewAxisID
+  - Fusee.Engine.Core.InputDevice.PostRender
+  - Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription,Fusee.Engine.Core.InputDevice.AxisValueCalculator,System.Single)
+  - Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  - Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32,System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  - Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32,System.Int32,System.Int32,System.String,Fusee.Engine.Common.AxisDirection)
+  - Fusee.Engine.Core.InputDevice.SetAxisDeadzone(System.Int32,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: InputDevice
+  nameWithType: InputDevice
+  fullName: Fusee.Engine.Core.InputDevice
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InputDevice
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 15
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nInput device instances expose access to underlying physical input devices such as mouse, keyboard, game pads etc.\nUsers can either poll axis values or button state from an Input device or add event listeners reacting\non value or state changes, no matter how the underlying physical device provides axis or button data.\nAdditionally users can define their own axes by specifying calculation rules how to generate values from \nexisting axes or buttons.\n"
+  example: []
+  syntax:
+    content: public class InputDevice
+    content.vb: Public Class InputDevice
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Fusee.Engine.Core.GamePadDevice
+  - Fusee.Engine.Core.KeyboardDevice
+  - Fusee.Engine.Core.MouseDevice
+  - Fusee.Engine.Core.SixDOFDevice
+  - Fusee.Engine.Core.TouchDevice
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Core.InputDevice.NewAxisID
+  commentId: P:Fusee.Engine.Core.InputDevice.NewAxisID
+  id: NewAxisID
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: NewAxisID
+  nameWithType: InputDevice.NewAxisID
+  fullName: Fusee.Engine.Core.InputDevice.NewAxisID
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: NewAxisID
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 105
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the new next possible new axis identifier. Use this when calling <xref href=\"Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription%2cFusee.Engine.Core.InputDevice.AxisValueCalculator%2cSystem.Single)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public int NewAxisID { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe new axis identifier.\n"
+    content.vb: Public ReadOnly Property NewAxisID As Integer
+  overload: Fusee.Engine.Core.InputDevice.NewAxisID*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.InputDevice.IsConnected
+  commentId: P:Fusee.Engine.Core.InputDevice.IsConnected
+  id: IsConnected
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: IsConnected
+  nameWithType: InputDevice.IsConnected
+  fullName: Fusee.Engine.Core.InputDevice.IsConnected
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IsConnected
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 189
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets and sets a value indicating whether this device is connected.\n"
+  example: []
+  syntax:
+    content: public bool IsConnected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this device is connected; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property IsConnected As Boolean
+  overload: Fusee.Engine.Core.InputDevice.IsConnected*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.InputDevice.Id
+  commentId: P:Fusee.Engine.Core.InputDevice.Id
+  id: Id
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: InputDevice.Id
+  fullName: Fusee.Engine.Core.InputDevice.Id
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Id
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 198
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets an identifier. Implementors take care that this\nid is unique across all devices managed by a driver.\n"
+  example: []
+  syntax:
+    content: public string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe identifier.\n"
+    content.vb: Public ReadOnly Property Id As String
+  overload: Fusee.Engine.Core.InputDevice.Id*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.InputDevice.Desc
+  commentId: P:Fusee.Engine.Core.InputDevice.Desc
+  id: Desc
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: Desc
+  nameWithType: InputDevice.Desc
+  fullName: Fusee.Engine.Core.InputDevice.Desc
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Desc
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 207
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the human readable description of this device. This\nparameter can be used in user dialogs to identify devices.\n"
+  example: []
+  syntax:
+    content: public string Desc { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe device description.\n"
+    content.vb: Public ReadOnly Property Desc As String
+  overload: Fusee.Engine.Core.InputDevice.Desc*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.InputDevice.Category
+  commentId: P:Fusee.Engine.Core.InputDevice.Category
+  id: Category
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: Category
+  nameWithType: InputDevice.Category
+  fullName: Fusee.Engine.Core.InputDevice.Category
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Category
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 217
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the category of this device. Device categories define a minimal common\nset of buttons and axes which are identical across all devices sharing the same\ncategory.\n"
+  example: []
+  syntax:
+    content: public DeviceCategory Category { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.DeviceCategory
+      description: "\nThe device category.\n"
+    content.vb: Public ReadOnly Property Category As DeviceCategory
+  overload: Fusee.Engine.Core.InputDevice.Category*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.InputDevice.AxesCount
+  commentId: P:Fusee.Engine.Core.InputDevice.AxesCount
+  id: AxesCount
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: AxesCount
+  nameWithType: InputDevice.AxesCount
+  fullName: Fusee.Engine.Core.InputDevice.AxesCount
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AxesCount
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 225
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets number of axes supported by this device.\n"
+  example: []
+  syntax:
+    content: public int AxesCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe axes count.\n"
+    content.vb: Public ReadOnly Property AxesCount As Integer
+  overload: Fusee.Engine.Core.InputDevice.AxesCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.InputDevice.AxisDesc
+  commentId: P:Fusee.Engine.Core.InputDevice.AxisDesc
+  id: AxisDesc
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: AxisDesc
+  nameWithType: InputDevice.AxisDesc
+  fullName: Fusee.Engine.Core.InputDevice.AxisDesc
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AxisDesc
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 234
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets a description of the axis. This value can be used in user setup-dialogs or \nto match axes of devices of different categories.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<AxisDescription> AxisDesc { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.AxisDescription}
+      description: "\nThe description of the axis.\n"
+    content.vb: Public ReadOnly Property AxisDesc As IEnumerable(Of AxisDescription)
+  overload: Fusee.Engine.Core.InputDevice.AxisDesc*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.InputDevice.GetAxisDescription(System.Int32)
+  commentId: M:Fusee.Engine.Core.InputDevice.GetAxisDescription(System.Int32)
+  id: GetAxisDescription(System.Int32)
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: GetAxisDescription(Int32)
+  nameWithType: InputDevice.GetAxisDescription(Int32)
+  fullName: Fusee.Engine.Core.InputDevice.GetAxisDescription(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetAxisDescription
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 241
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves a description for the given axis\n"
+  example: []
+  syntax:
+    content: public AxisDescription GetAxisDescription(int axisId)
+    parameters:
+    - id: axisId
+      type: System.Int32
+      description: The axis identifier.
+    return:
+      type: Fusee.Engine.Common.AxisDescription
+      description: A description of the axis.
+    content.vb: Public Function GetAxisDescription(axisId As Integer) As AxisDescription
+  overload: Fusee.Engine.Core.InputDevice.GetAxisDescription*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.InputDevice.GetAxis(System.Int32)
+  commentId: M:Fusee.Engine.Core.InputDevice.GetAxis(System.Int32)
+  id: GetAxis(System.Int32)
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: GetAxis(Int32)
+  nameWithType: InputDevice.GetAxis(Int32)
+  fullName: Fusee.Engine.Core.InputDevice.GetAxis(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetAxis
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 259
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the value currently present at the given axis. In respect to the axis deadzone.\n"
+  remarks: "\nSee <xref href=\"Fusee.Engine.Common.AxisDescription\" data-throw-if-not-resolved=\"false\"></xref> to get information about how to interpret the\nvalues returned by a given axis.\n"
+  example: []
+  syntax:
+    content: public float GetAxis(int axisId)
+    parameters:
+    - id: axisId
+      type: System.Int32
+      description: The axis&apos; Id as specified in <xref href="Fusee.Engine.Core.InputDevice.AxisDesc" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Single
+      description: The value currently set on the axis.
+    content.vb: Public Function GetAxis(axisId As Integer) As Single
+  overload: Fusee.Engine.Core.InputDevice.GetAxis*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.InputDevice.GetAxisRaw(System.Int32)
+  commentId: M:Fusee.Engine.Core.InputDevice.GetAxisRaw(System.Int32)
+  id: GetAxisRaw(System.Int32)
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: GetAxisRaw(Int32)
+  nameWithType: InputDevice.GetAxisRaw(Int32)
+  fullName: Fusee.Engine.Core.InputDevice.GetAxisRaw(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetAxisRaw
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 287
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the value currently present at the given axis. Without considering the deadzone.\n"
+  remarks: "\nSee <xref href=\"Fusee.Engine.Common.AxisDescription\" data-throw-if-not-resolved=\"false\"></xref> to get information about how to interpret the\nvalues returned by a given axis.\n"
+  example: []
+  syntax:
+    content: public float GetAxisRaw(int axisId)
+    parameters:
+    - id: axisId
+      type: System.Int32
+      description: The axis&apos; Id as specified in <xref href="Fusee.Engine.Core.InputDevice.AxisDesc" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Single
+      description: The value currently set on the axis.
+    content.vb: Public Function GetAxisRaw(axisId As Integer) As Single
+  overload: Fusee.Engine.Core.InputDevice.GetAxisRaw*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.InputDevice.SetAxisDeadzone(System.Int32,System.Single)
+  commentId: M:Fusee.Engine.Core.InputDevice.SetAxisDeadzone(System.Int32,System.Single)
+  id: SetAxisDeadzone(System.Int32,System.Single)
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: SetAxisDeadzone(Int32, Single)
+  nameWithType: InputDevice.SetAxisDeadzone(Int32, Single)
+  fullName: Fusee.Engine.Core.InputDevice.SetAxisDeadzone(System.Int32, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetAxisDeadzone
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 308
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nSets the deadzone for the given axis.\n"
+  example: []
+  syntax:
+    content: public void SetAxisDeadzone(int axisId, float value)
+    parameters:
+    - id: axisId
+      type: System.Int32
+      description: The axis&apos; Id as specified in <xref href="Fusee.Engine.Core.InputDevice.AxisDesc" data-throw-if-not-resolved="false"></xref>.
+    - id: value
+      type: System.Single
+      description: ''
+    content.vb: Public Sub SetAxisDeadzone(axisId As Integer, value As Single)
+  overload: Fusee.Engine.Core.InputDevice.SetAxisDeadzone*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.InputDevice.GetAxisDeadzone(System.Int32)
+  commentId: M:Fusee.Engine.Core.InputDevice.GetAxisDeadzone(System.Int32)
+  id: GetAxisDeadzone(System.Int32)
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: GetAxisDeadzone(Int32)
+  nameWithType: InputDevice.GetAxisDeadzone(Int32)
+  fullName: Fusee.Engine.Core.InputDevice.GetAxisDeadzone(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetAxisDeadzone
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 320
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the value currently set for the axis deadzone.\n"
+  example: []
+  syntax:
+    content: public float GetAxisDeadzone(int axisId)
+    parameters:
+    - id: axisId
+      type: System.Int32
+      description: The axis&apos; Id as specified in <xref href="Fusee.Engine.Core.InputDevice.AxisDesc" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetAxisDeadzone(axisId As Integer) As Single
+  overload: Fusee.Engine.Core.InputDevice.GetAxisDeadzone*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.InputDevice.AxisValueChanged
+  commentId: E:Fusee.Engine.Core.InputDevice.AxisValueChanged
+  id: AxisValueChanged
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: AxisValueChanged
+  nameWithType: InputDevice.AxisValueChanged
+  fullName: Fusee.Engine.Core.InputDevice.AxisValueChanged
+  type: Event
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AxisValueChanged
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 349
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nOccurs when the value of a given axis has changed.\n"
+  example: []
+  syntax:
+    content: public event EventHandler<AxisValueChangedArgs> AxisValueChanged
+    return:
+      type: System.EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}
+    content.vb: Public Event AxisValueChanged As EventHandler(Of AxisValueChangedArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.InputDevice.ButtonCount
+  commentId: P:Fusee.Engine.Core.InputDevice.ButtonCount
+  id: ButtonCount
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: ButtonCount
+  nameWithType: InputDevice.ButtonCount
+  fullName: Fusee.Engine.Core.InputDevice.ButtonCount
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ButtonCount
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 357
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the number of buttons supported by this device.\n"
+  example: []
+  syntax:
+    content: public int ButtonCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe button count.\n"
+    content.vb: Public ReadOnly Property ButtonCount As Integer
+  overload: Fusee.Engine.Core.InputDevice.ButtonCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.InputDevice.ButtonDesc
+  commentId: P:Fusee.Engine.Core.InputDevice.ButtonDesc
+  id: ButtonDesc
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: ButtonDesc
+  nameWithType: InputDevice.ButtonDesc
+  fullName: Fusee.Engine.Core.InputDevice.ButtonDesc
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ButtonDesc
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 366
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the name of the button. This value can be used in user setup-dialogs or \nto match buttons of devices of different categories.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<ButtonDescription> ButtonDesc { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.ButtonDescription}
+      description: "\nThe name of the button.\n"
+    content.vb: Public ReadOnly Property ButtonDesc As IEnumerable(Of ButtonDescription)
+  overload: Fusee.Engine.Core.InputDevice.ButtonDesc*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.InputDevice.GetButtonDescription(System.Int32)
+  commentId: M:Fusee.Engine.Core.InputDevice.GetButtonDescription(System.Int32)
+  id: GetButtonDescription(System.Int32)
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: GetButtonDescription(Int32)
+  nameWithType: InputDevice.GetButtonDescription(Int32)
+  fullName: Fusee.Engine.Core.InputDevice.GetButtonDescription(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetButtonDescription
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 373
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves a description for the given button.\n"
+  example: []
+  syntax:
+    content: public ButtonDescription GetButtonDescription(int buttonId)
+    parameters:
+    - id: buttonId
+      type: System.Int32
+      description: The axis identifier.
+    return:
+      type: Fusee.Engine.Common.ButtonDescription
+      description: A description of the axis.
+    content.vb: Public Function GetButtonDescription(buttonId As Integer) As ButtonDescription
+  overload: Fusee.Engine.Core.InputDevice.GetButtonDescription*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.InputDevice.GetButton(System.Int32)
+  commentId: M:Fusee.Engine.Core.InputDevice.GetButton(System.Int32)
+  id: GetButton(System.Int32)
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: GetButton(Int32)
+  nameWithType: InputDevice.GetButton(Int32)
+  fullName: Fusee.Engine.Core.InputDevice.GetButton(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetButton
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 387
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the current state of the given button.\n"
+  example: []
+  syntax:
+    content: public bool GetButton(int buttonId)
+    parameters:
+    - id: buttonId
+      type: System.Int32
+      description: The buttonId of the button as specified in <xref href="Fusee.Engine.Core.InputDevice.ButtonDesc" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: true if the button is currently pressed. false, if the button is currently released.
+    content.vb: Public Function GetButton(buttonId As Integer) As Boolean
+  overload: Fusee.Engine.Core.InputDevice.GetButton*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.InputDevice.IsButtonDown(System.Int32)
+  commentId: M:Fusee.Engine.Core.InputDevice.IsButtonDown(System.Int32)
+  id: IsButtonDown(System.Int32)
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: IsButtonDown(Int32)
+  nameWithType: InputDevice.IsButtonDown(Int32)
+  fullName: Fusee.Engine.Core.InputDevice.IsButtonDown(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IsButtonDown
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 415
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nDetermines whether the button was pressed down right before or during the current frame.\nThis value is true only for one frame even if the button is pressed longer than one frame.\n"
+  example: []
+  syntax:
+    content: public bool IsButtonDown(int buttonId)
+    parameters:
+    - id: buttonId
+      type: System.Int32
+      description: The button identifier.
+    return:
+      type: System.Boolean
+      description: "\ntrue if the button was pressed during this frame and is still pressed down. false, if the button is released \nor if it was pressed some frames ago.\n"
+    content.vb: Public Function IsButtonDown(buttonId As Integer) As Boolean
+  overload: Fusee.Engine.Core.InputDevice.IsButtonDown*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.InputDevice.IsButtonUp(System.Int32)
+  commentId: M:Fusee.Engine.Core.InputDevice.IsButtonUp(System.Int32)
+  id: IsButtonUp(System.Int32)
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: IsButtonUp(Int32)
+  nameWithType: InputDevice.IsButtonUp(Int32)
+  fullName: Fusee.Engine.Core.InputDevice.IsButtonUp(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IsButtonUp
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 431
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nDetermines whether the button was released right before or during the current frame.\nThis value is true only for one frame even if the button is released longer than one frame.\n"
+  example: []
+  syntax:
+    content: public bool IsButtonUp(int buttonId)
+    parameters:
+    - id: buttonId
+      type: System.Int32
+      description: The button identifier.
+    return:
+      type: System.Boolean
+      description: "\ntrue if the button was released during this frame and is still released. false, if the button is pressed \nor if it was released some frames ago.\n"
+    content.vb: Public Function IsButtonUp(buttonId As Integer) As Boolean
+  overload: Fusee.Engine.Core.InputDevice.IsButtonUp*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.InputDevice.ButtonValueChanged
+  commentId: E:Fusee.Engine.Core.InputDevice.ButtonValueChanged
+  id: ButtonValueChanged
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: ButtonValueChanged
+  nameWithType: InputDevice.ButtonValueChanged
+  fullName: Fusee.Engine.Core.InputDevice.ButtonValueChanged
+  type: Event
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ButtonValueChanged
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 441
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nOccurs when the value of a given button has changed.\n"
+  example: []
+  syntax:
+    content: public event EventHandler<ButtonValueChangedArgs> ButtonValueChanged
+    return:
+      type: System.EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}
+    content.vb: Public Event ButtonValueChanged As EventHandler(Of ButtonValueChangedArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription,Fusee.Engine.Core.InputDevice.AxisValueCalculator,System.Single)
+  commentId: M:Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription,Fusee.Engine.Core.InputDevice.AxisValueCalculator,System.Single)
+  id: RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription,Fusee.Engine.Core.InputDevice.AxisValueCalculator,System.Single)
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: RegisterCalculatedAxis(AxisDescription, InputDevice.AxisValueCalculator, Single)
+  nameWithType: InputDevice.RegisterCalculatedAxis(AxisDescription, InputDevice.AxisValueCalculator, Single)
+  fullName: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription, Fusee.Engine.Core.InputDevice.AxisValueCalculator, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RegisterCalculatedAxis
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 482
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRegisters a calculated axis. Calculated axes behave like axes exposed by the underlying\nhardware device but can be calculated from one or more existing axes or buttons.\n"
+  remarks: "\nTo register your own axis you need to provide a working <xref href=\"Fusee.Engine.Core.InputDevice.AxisValueCalculator\" data-throw-if-not-resolved=\"false\"></xref>. This method\nis called whenever the axis value needs to be present.\nAny state the calculation depends upon should be queried from existing axes presented by the input device \nor &quot;statically&quot; stored in the closure around the calculator. The methods\n<ul></ul>\n<item><xref href=\"Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32%2cFusee.Engine.Common.AxisDirection%2cSystem.Single%2cSystem.Single%2cSystem.Int32%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref></item>\n<item><xref href=\"Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32%2cSystem.Int32%2cFusee.Engine.Common.AxisDirection%2cSystem.Single%2cSystem.Single%2cSystem.Int32%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref></item>\n<item><xref href=\"Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32%2cSystem.Int32%2cSystem.Int32%2cSystem.String%2cFusee.Engine.Common.AxisDirection)\" data-throw-if-not-resolved=\"false\"></xref></item>\n"
+  example: []
+  syntax:
+    content: public void RegisterCalculatedAxis(AxisDescription calculatedAxisDescription, InputDevice.AxisValueCalculator calculator, float initialValue = 0F)
+    parameters:
+    - id: calculatedAxisDescription
+      type: Fusee.Engine.Common.AxisDescription
+      description: The axis description for the new calculated axis.
+    - id: calculator
+      type: Fusee.Engine.Core.InputDevice.AxisValueCalculator
+      description: The calculator method performing the calculation once per frame.
+    - id: initialValue
+      type: System.Single
+      description: The initial value for the new axis.
+    content.vb: Public Sub RegisterCalculatedAxis(calculatedAxisDescription As AxisDescription, calculator As InputDevice.AxisValueCalculator, initialValue As Single = 0F)
+  overload: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32,System.Int32,System.Int32,System.String,Fusee.Engine.Common.AxisDirection)
+  commentId: M:Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32,System.Int32,System.Int32,System.String,Fusee.Engine.Common.AxisDirection)
+  id: RegisterVelocityAxis(System.Int32,System.Int32,System.Int32,System.String,Fusee.Engine.Common.AxisDirection)
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: RegisterVelocityAxis(Int32, Int32, Int32, String, AxisDirection)
+  nameWithType: InputDevice.RegisterVelocityAxis(Int32, Int32, Int32, String, AxisDirection)
+  fullName: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32, System.Int32, System.Int32, System.String, Fusee.Engine.Common.AxisDirection)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RegisterVelocityAxis
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 525
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRegisters a calculated axis exhibiting the derivative after the time (Velocity) of the value on the specified original axis.\n"
+  remarks: "\nA derived axis is helpful if you have a device delivering absolute positional values but you need the current\nspeed of the axis. Imagine a mouse where the speed of the mouse over the screen is important rather than the absolute\nposition.\n"
+  example: []
+  syntax:
+    content: public AxisDescription RegisterVelocityAxis(int origAxisId, int triggerButtonId = 0, int velocityAxisId = 0, string name = null, AxisDirection direction = AxisDirection.Unknown)
+    parameters:
+    - id: origAxisId
+      type: System.Int32
+      description: The original axis identifier.
+    - id: triggerButtonId
+      type: System.Int32
+      description: "If a valid id is passed, the derived axis only produces values if the specified button is pressed. The velocity is only\ncalculated based on the axis value when the trigger button is pressed. This allows touch velocities to always start with a speed of zero when the touch starts (e.g. the \nbutton identifying that a touchpoint has contact). Otherwise touch velocities would become huge between two click-like touches on different screen locations. \nIf this parameter is 0 (zero), the derived axis will always be calculated based on the original axis only."
+    - id: velocityAxisId
+      type: System.Int32
+      description: >-
+        The derived axis identifier. Note this value must be bigger than all existing axis Ids. Leave this value
+
+        zero to have a new identifier calculated automatically.
+    - id: name
+      type: System.String
+      description: The name of the new axis.
+    - id: direction
+      type: Fusee.Engine.Common.AxisDirection
+      description: The direction of the new axis.
+    return:
+      type: Fusee.Engine.Common.AxisDescription
+      description: "\nThe axis description of the newly created calculated axis.\n"
+    content.vb: Public Function RegisterVelocityAxis(origAxisId As Integer, triggerButtonId As Integer = 0, velocityAxisId As Integer = 0, name As String = Nothing, direction As AxisDirection = AxisDirection.Unknown) As AxisDescription
+  overload: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  commentId: M:Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  id: RegisterSingleButtonAxis(System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: RegisterSingleButtonAxis(Int32, AxisDirection, Single, Single, Int32, String)
+  nameWithType: InputDevice.RegisterSingleButtonAxis(Int32, AxisDirection, Single, Single, Int32, String)
+  fullName: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32, Fusee.Engine.Common.AxisDirection, System.Single, System.Single, System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RegisterSingleButtonAxis
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 630
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRegisters a calculated axis from a button. The axis&apos; value changes between 0 and 1 as the user hits the button or releases it.\nThe time it takes to change the value can be set.\n"
+  remarks: "\nButton axes are useful to simulate a trigger or thrust panel with the help of individual buttons. There is a user-definable acceleration and \ndeceleration period, so a simulation resulting on this input delivers a feeling of inertance.\n"
+  example: []
+  syntax:
+    content: public AxisDescription RegisterSingleButtonAxis(int origButtonId, AxisDirection direction = AxisDirection.Unknown, float rampUpTime = 0.2F, float rampDownTime = 0.2F, int buttonAxisId = 0, string name = null)
+    parameters:
+    - id: origButtonId
+      type: System.Int32
+      description: The original button identifier.
+    - id: direction
+      type: Fusee.Engine.Common.AxisDirection
+      description: The direction the new axis is heading towards.
+    - id: rampUpTime
+      type: System.Single
+      description: The time it takes to change the value from 0 to 1 (in seconds).
+    - id: rampDownTime
+      type: System.Single
+      description: The time it takes to change the value from 1 to 0 (in seconds).
+    - id: buttonAxisId
+      type: System.Int32
+      description: >-
+        The new identifier of the button axis. Note this value must be bigger than all existing axis Ids. Leave this value
+
+        zero to have a new identifier calculated automatically.
+    - id: name
+      type: System.String
+      description: The name of the new axis.
+    return:
+      type: Fusee.Engine.Common.AxisDescription
+      description: The axis description of the newly created calculated axis.
+    content.vb: Public Function RegisterSingleButtonAxis(origButtonId As Integer, direction As AxisDirection = AxisDirection.Unknown, rampUpTime As Single = 0.2F, rampDownTime As Single = 0.2F, buttonAxisId As Integer = 0, name As String = Nothing) As AxisDescription
+  overload: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32,System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  commentId: M:Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32,System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  id: RegisterTwoButtonAxis(System.Int32,System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: RegisterTwoButtonAxis(Int32, Int32, AxisDirection, Single, Single, Int32, String)
+  nameWithType: InputDevice.RegisterTwoButtonAxis(Int32, Int32, AxisDirection, Single, Single, Int32, String)
+  fullName: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32, System.Int32, Fusee.Engine.Common.AxisDirection, System.Single, System.Single, System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RegisterTwoButtonAxis
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 726
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRegisters a calculated axis from two buttons. The axis&apos; value changes between -1 and 1 as the user hits the button or releases it.\nThe time it takes to change the value can be set.\n"
+  remarks: "\nButton axes are useful to simulate one axis of a joypad or a joystick with the help of two individual buttons. One button acts as pushing the \njoystick into the positive direction along the given axis by animating the axis&apos; value to 1 and the a second button acts as pushing the joystick \ninto the negative direction by animating the value to -1. Releasing both buttons will animate the value to 0. Pushing both buttons simultaneously\nwill stop the animation and keep the value at its current amount.\nThere is a user-definable acceleration and deceleration period, so a simulation resulting on this input delivers a feeling of inertance.\n"
+  example: []
+  syntax:
+    content: public AxisDescription RegisterTwoButtonAxis(int origButtonIdNegative, int origButtonIdPositive, AxisDirection direction = AxisDirection.Unknown, float rampUpTime = 0.15F, float rampDownTime = 0.35F, int buttonAxisId = 0, string name = null)
+    parameters:
+    - id: origButtonIdNegative
+      type: System.Int32
+      description: The original button identifier for negative movements.
+    - id: origButtonIdPositive
+      type: System.Int32
+      description: The original button identifier for positive movements.
+    - id: direction
+      type: Fusee.Engine.Common.AxisDirection
+      description: The direction the new axis is heading towards.
+    - id: rampUpTime
+      type: System.Single
+      description: The time it takes to change the value from 0 to 1 (or -1) (in seconds) when one of the buttons is pushed.
+    - id: rampDownTime
+      type: System.Single
+      description: The time it takes to change the value from -1 of 1 back to 0 (in seconds) when a pushed button is released.
+    - id: buttonAxisId
+      type: System.Int32
+      description: >-
+        The new identifier of the button axis. Note this value must be bigger than all existing axis Ids. Leave this value
+
+        zero to have a new identifier calculated automatically.
+    - id: name
+      type: System.String
+      description: The name of the new axis.
+    return:
+      type: Fusee.Engine.Common.AxisDescription
+      description: "\nThe axis description of the newly created calculated axis.\n"
+    content.vb: Public Function RegisterTwoButtonAxis(origButtonIdNegative As Integer, origButtonIdPositive As Integer, direction As AxisDirection = AxisDirection.Unknown, rampUpTime As Single = 0.15F, rampDownTime As Single = 0.35F, buttonAxisId As Integer = 0, name As String = Nothing) As AxisDescription
+  overload: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.InputDevice.PostRender
+  commentId: M:Fusee.Engine.Core.InputDevice.PostRender
+  id: PostRender
+  parent: Fusee.Engine.Core.InputDevice
+  langs:
+  - csharp
+  - vb
+  name: PostRender()
+  nameWithType: InputDevice.PostRender()
+  fullName: Fusee.Engine.Core.InputDevice.PostRender()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/InputDevice.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: PostRender
+    path: src/Fusee/src/Engine/Core/InputDevice.cs
+    startLine: 892
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nClears the button presses after rendering an image.\n"
+  example: []
+  syntax:
+    content: public void PostRender()
+    content.vb: Public Sub PostRender
+  overload: Fusee.Engine.Core.InputDevice.PostRender*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription,Fusee.Engine.Core.InputDevice.AxisValueCalculator,System.Single)
+  commentId: M:Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription,Fusee.Engine.Core.InputDevice.AxisValueCalculator,System.Single)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: RegisterCalculatedAxis(AxisDescription, InputDevice.AxisValueCalculator, Single)
+  nameWithType: InputDevice.RegisterCalculatedAxis(AxisDescription, InputDevice.AxisValueCalculator, Single)
+  fullName: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription, Fusee.Engine.Core.InputDevice.AxisValueCalculator, System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription,Fusee.Engine.Core.InputDevice.AxisValueCalculator,System.Single)
+    name: RegisterCalculatedAxis
+    nameWithType: InputDevice.RegisterCalculatedAxis
+    fullName: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.AxisDescription
+    name: AxisDescription
+    nameWithType: AxisDescription
+    fullName: Fusee.Engine.Common.AxisDescription
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.InputDevice.AxisValueCalculator
+    name: InputDevice.AxisValueCalculator
+    nameWithType: InputDevice.AxisValueCalculator
+    fullName: Fusee.Engine.Core.InputDevice.AxisValueCalculator
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis(Fusee.Engine.Common.AxisDescription,Fusee.Engine.Core.InputDevice.AxisValueCalculator,System.Single)
+    name: RegisterCalculatedAxis
+    nameWithType: InputDevice.RegisterCalculatedAxis
+    fullName: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.AxisDescription
+    name: AxisDescription
+    nameWithType: AxisDescription
+    fullName: Fusee.Engine.Common.AxisDescription
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.InputDevice.AxisValueCalculator
+    name: InputDevice.AxisValueCalculator
+    nameWithType: InputDevice.AxisValueCalculator
+    fullName: Fusee.Engine.Core.InputDevice.AxisValueCalculator
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.NewAxisID*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.NewAxisID
+  name: NewAxisID
+  nameWithType: InputDevice.NewAxisID
+  fullName: Fusee.Engine.Core.InputDevice.NewAxisID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Engine.Core.InputDevice
+  commentId: T:Fusee.Engine.Core.InputDevice
+  parent: Fusee.Engine.Core
+  name: InputDevice
+  nameWithType: InputDevice
+  fullName: Fusee.Engine.Core.InputDevice
+- uid: Fusee.Engine.Core.InputDevice.IsConnected*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.IsConnected
+  name: IsConnected
+  nameWithType: InputDevice.IsConnected
+  fullName: Fusee.Engine.Core.InputDevice.IsConnected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Engine.Core.InputDevice.Id*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.Id
+  name: Id
+  nameWithType: InputDevice.Id
+  fullName: Fusee.Engine.Core.InputDevice.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Fusee.Engine.Core.InputDevice.Desc*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.Desc
+  name: Desc
+  nameWithType: InputDevice.Desc
+  fullName: Fusee.Engine.Core.InputDevice.Desc
+- uid: Fusee.Engine.Core.InputDevice.Category*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.Category
+  name: Category
+  nameWithType: InputDevice.Category
+  fullName: Fusee.Engine.Core.InputDevice.Category
+- uid: Fusee.Engine.Common.DeviceCategory
+  commentId: T:Fusee.Engine.Common.DeviceCategory
+  parent: Fusee.Engine.Common
+  name: DeviceCategory
+  nameWithType: DeviceCategory
+  fullName: Fusee.Engine.Common.DeviceCategory
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Core.InputDevice.AxesCount*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.AxesCount
+  name: AxesCount
+  nameWithType: InputDevice.AxesCount
+  fullName: Fusee.Engine.Core.InputDevice.AxesCount
+- uid: Fusee.Engine.Core.InputDevice.AxisDesc*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.AxisDesc
+  name: AxisDesc
+  nameWithType: InputDevice.AxisDesc
+  fullName: Fusee.Engine.Core.InputDevice.AxisDesc
+- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.AxisDescription}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Engine.Common.AxisDescription}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<AxisDescription>
+  nameWithType: IEnumerable<AxisDescription>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Engine.Common.AxisDescription>
+  nameWithType.vb: IEnumerable(Of AxisDescription)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Engine.Common.AxisDescription)
+  name.vb: IEnumerable(Of AxisDescription)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Common.AxisDescription
+    name: AxisDescription
+    nameWithType: AxisDescription
+    fullName: Fusee.Engine.Common.AxisDescription
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Common.AxisDescription
+    name: AxisDescription
+    nameWithType: AxisDescription
+    fullName: Fusee.Engine.Common.AxisDescription
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Fusee.Engine.Core.InputDevice.GetAxisDescription*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.GetAxisDescription
+  name: GetAxisDescription
+  nameWithType: InputDevice.GetAxisDescription
+  fullName: Fusee.Engine.Core.InputDevice.GetAxisDescription
+- uid: Fusee.Engine.Common.AxisDescription
+  commentId: T:Fusee.Engine.Common.AxisDescription
+  parent: Fusee.Engine.Common
+  name: AxisDescription
+  nameWithType: AxisDescription
+  fullName: Fusee.Engine.Common.AxisDescription
+- uid: Fusee.Engine.Core.InputDevice.AxisDesc
+  commentId: P:Fusee.Engine.Core.InputDevice.AxisDesc
+  parent: Fusee.Engine.Core.InputDevice
+  name: AxisDesc
+  nameWithType: InputDevice.AxisDesc
+  fullName: Fusee.Engine.Core.InputDevice.AxisDesc
+- uid: Fusee.Engine.Core.InputDevice.GetAxis*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.GetAxis
+  name: GetAxis
+  nameWithType: InputDevice.GetAxis
+  fullName: Fusee.Engine.Core.InputDevice.GetAxis
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Engine.Core.InputDevice.GetAxisRaw*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.GetAxisRaw
+  name: GetAxisRaw
+  nameWithType: InputDevice.GetAxisRaw
+  fullName: Fusee.Engine.Core.InputDevice.GetAxisRaw
+- uid: Fusee.Engine.Core.InputDevice.SetAxisDeadzone*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.SetAxisDeadzone
+  name: SetAxisDeadzone
+  nameWithType: InputDevice.SetAxisDeadzone
+  fullName: Fusee.Engine.Core.InputDevice.SetAxisDeadzone
+- uid: Fusee.Engine.Core.InputDevice.GetAxisDeadzone*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.GetAxisDeadzone
+  name: GetAxisDeadzone
+  nameWithType: InputDevice.GetAxisDeadzone
+  fullName: Fusee.Engine.Core.InputDevice.GetAxisDeadzone
+- uid: System.EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<AxisValueChangedArgs>
+  nameWithType: EventHandler<AxisValueChangedArgs>
+  fullName: System.EventHandler<Fusee.Engine.Common.AxisValueChangedArgs>
+  nameWithType.vb: EventHandler(Of AxisValueChangedArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Common.AxisValueChangedArgs)
+  name.vb: EventHandler(Of AxisValueChangedArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Common.AxisValueChangedArgs
+    name: AxisValueChangedArgs
+    nameWithType: AxisValueChangedArgs
+    fullName: Fusee.Engine.Common.AxisValueChangedArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Common.AxisValueChangedArgs
+    name: AxisValueChangedArgs
+    nameWithType: AxisValueChangedArgs
+    fullName: Fusee.Engine.Common.AxisValueChangedArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.ButtonCount*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.ButtonCount
+  name: ButtonCount
+  nameWithType: InputDevice.ButtonCount
+  fullName: Fusee.Engine.Core.InputDevice.ButtonCount
+- uid: Fusee.Engine.Core.InputDevice.ButtonDesc*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.ButtonDesc
+  name: ButtonDesc
+  nameWithType: InputDevice.ButtonDesc
+  fullName: Fusee.Engine.Core.InputDevice.ButtonDesc
+- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.ButtonDescription}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Engine.Common.ButtonDescription}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<ButtonDescription>
+  nameWithType: IEnumerable<ButtonDescription>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Engine.Common.ButtonDescription>
+  nameWithType.vb: IEnumerable(Of ButtonDescription)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Engine.Common.ButtonDescription)
+  name.vb: IEnumerable(Of ButtonDescription)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Common.ButtonDescription
+    name: ButtonDescription
+    nameWithType: ButtonDescription
+    fullName: Fusee.Engine.Common.ButtonDescription
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Common.ButtonDescription
+    name: ButtonDescription
+    nameWithType: ButtonDescription
+    fullName: Fusee.Engine.Common.ButtonDescription
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.GetButtonDescription*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.GetButtonDescription
+  name: GetButtonDescription
+  nameWithType: InputDevice.GetButtonDescription
+  fullName: Fusee.Engine.Core.InputDevice.GetButtonDescription
+- uid: Fusee.Engine.Common.ButtonDescription
+  commentId: T:Fusee.Engine.Common.ButtonDescription
+  parent: Fusee.Engine.Common
+  name: ButtonDescription
+  nameWithType: ButtonDescription
+  fullName: Fusee.Engine.Common.ButtonDescription
+- uid: Fusee.Engine.Core.InputDevice.ButtonDesc
+  commentId: P:Fusee.Engine.Core.InputDevice.ButtonDesc
+  parent: Fusee.Engine.Core.InputDevice
+  name: ButtonDesc
+  nameWithType: InputDevice.ButtonDesc
+  fullName: Fusee.Engine.Core.InputDevice.ButtonDesc
+- uid: Fusee.Engine.Core.InputDevice.GetButton*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.GetButton
+  name: GetButton
+  nameWithType: InputDevice.GetButton
+  fullName: Fusee.Engine.Core.InputDevice.GetButton
+- uid: Fusee.Engine.Core.InputDevice.IsButtonDown*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.IsButtonDown
+  name: IsButtonDown
+  nameWithType: InputDevice.IsButtonDown
+  fullName: Fusee.Engine.Core.InputDevice.IsButtonDown
+- uid: Fusee.Engine.Core.InputDevice.IsButtonUp*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.IsButtonUp
+  name: IsButtonUp
+  nameWithType: InputDevice.IsButtonUp
+  fullName: Fusee.Engine.Core.InputDevice.IsButtonUp
+- uid: System.EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<ButtonValueChangedArgs>
+  nameWithType: EventHandler<ButtonValueChangedArgs>
+  fullName: System.EventHandler<Fusee.Engine.Common.ButtonValueChangedArgs>
+  nameWithType.vb: EventHandler(Of ButtonValueChangedArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Common.ButtonValueChangedArgs)
+  name.vb: EventHandler(Of ButtonValueChangedArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Common.ButtonValueChangedArgs
+    name: ButtonValueChangedArgs
+    nameWithType: ButtonValueChangedArgs
+    fullName: Fusee.Engine.Common.ButtonValueChangedArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Common.ButtonValueChangedArgs
+    name: ButtonValueChangedArgs
+    nameWithType: ButtonValueChangedArgs
+    fullName: Fusee.Engine.Common.ButtonValueChangedArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.AxisValueCalculator
+  commentId: T:Fusee.Engine.Core.InputDevice.AxisValueCalculator
+  parent: Fusee.Engine.Core
+  name: InputDevice.AxisValueCalculator
+  nameWithType: InputDevice.AxisValueCalculator
+  fullName: Fusee.Engine.Core.InputDevice.AxisValueCalculator
+- uid: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  commentId: M:Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: RegisterSingleButtonAxis(Int32, AxisDirection, Single, Single, Int32, String)
+  nameWithType: InputDevice.RegisterSingleButtonAxis(Int32, AxisDirection, Single, Single, Int32, String)
+  fullName: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32, Fusee.Engine.Common.AxisDirection, System.Single, System.Single, System.Int32, System.String)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+    name: RegisterSingleButtonAxis
+    nameWithType: InputDevice.RegisterSingleButtonAxis
+    fullName: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.AxisDirection
+    name: AxisDirection
+    nameWithType: AxisDirection
+    fullName: Fusee.Engine.Common.AxisDirection
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+    name: RegisterSingleButtonAxis
+    nameWithType: InputDevice.RegisterSingleButtonAxis
+    fullName: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.AxisDirection
+    name: AxisDirection
+    nameWithType: AxisDirection
+    fullName: Fusee.Engine.Common.AxisDirection
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32,System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  commentId: M:Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32,System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: RegisterTwoButtonAxis(Int32, Int32, AxisDirection, Single, Single, Int32, String)
+  nameWithType: InputDevice.RegisterTwoButtonAxis(Int32, Int32, AxisDirection, Single, Single, Int32, String)
+  fullName: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32, System.Int32, Fusee.Engine.Common.AxisDirection, System.Single, System.Single, System.Int32, System.String)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32,System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+    name: RegisterTwoButtonAxis
+    nameWithType: InputDevice.RegisterTwoButtonAxis
+    fullName: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.AxisDirection
+    name: AxisDirection
+    nameWithType: AxisDirection
+    fullName: Fusee.Engine.Common.AxisDirection
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32,System.Int32,Fusee.Engine.Common.AxisDirection,System.Single,System.Single,System.Int32,System.String)
+    name: RegisterTwoButtonAxis
+    nameWithType: InputDevice.RegisterTwoButtonAxis
+    fullName: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.AxisDirection
+    name: AxisDirection
+    nameWithType: AxisDirection
+    fullName: Fusee.Engine.Common.AxisDirection
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32,System.Int32,System.Int32,System.String,Fusee.Engine.Common.AxisDirection)
+  commentId: M:Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32,System.Int32,System.Int32,System.String,Fusee.Engine.Common.AxisDirection)
+  parent: Fusee.Engine.Core.InputDevice
+  isExternal: true
+  name: RegisterVelocityAxis(Int32, Int32, Int32, String, AxisDirection)
+  nameWithType: InputDevice.RegisterVelocityAxis(Int32, Int32, Int32, String, AxisDirection)
+  fullName: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32, System.Int32, System.Int32, System.String, Fusee.Engine.Common.AxisDirection)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32,System.Int32,System.Int32,System.String,Fusee.Engine.Common.AxisDirection)
+    name: RegisterVelocityAxis
+    nameWithType: InputDevice.RegisterVelocityAxis
+    fullName: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.AxisDirection
+    name: AxisDirection
+    nameWithType: AxisDirection
+    fullName: Fusee.Engine.Common.AxisDirection
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32,System.Int32,System.Int32,System.String,Fusee.Engine.Common.AxisDirection)
+    name: RegisterVelocityAxis
+    nameWithType: InputDevice.RegisterVelocityAxis
+    fullName: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.AxisDirection
+    name: AxisDirection
+    nameWithType: AxisDirection
+    fullName: Fusee.Engine.Common.AxisDirection
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis
+  name: RegisterCalculatedAxis
+  nameWithType: InputDevice.RegisterCalculatedAxis
+  fullName: Fusee.Engine.Core.InputDevice.RegisterCalculatedAxis
+- uid: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.RegisterVelocityAxis
+  name: RegisterVelocityAxis
+  nameWithType: InputDevice.RegisterVelocityAxis
+  fullName: Fusee.Engine.Core.InputDevice.RegisterVelocityAxis
+- uid: Fusee.Engine.Common.AxisDirection
+  commentId: T:Fusee.Engine.Common.AxisDirection
+  parent: Fusee.Engine.Common
+  name: AxisDirection
+  nameWithType: AxisDirection
+  fullName: Fusee.Engine.Common.AxisDirection
+- uid: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis
+  name: RegisterSingleButtonAxis
+  nameWithType: InputDevice.RegisterSingleButtonAxis
+  fullName: Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis
+- uid: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis
+  name: RegisterTwoButtonAxis
+  nameWithType: InputDevice.RegisterTwoButtonAxis
+  fullName: Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis
+- uid: Fusee.Engine.Core.InputDevice.PostRender*
+  commentId: Overload:Fusee.Engine.Core.InputDevice.PostRender
+  name: PostRender
+  nameWithType: InputDevice.PostRender
+  fullName: Fusee.Engine.Core.InputDevice.PostRender

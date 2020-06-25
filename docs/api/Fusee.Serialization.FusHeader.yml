@@ -1,0 +1,467 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Serialization.FusHeader
+  commentId: T:Fusee.Serialization.FusHeader
+  id: FusHeader
+  parent: Fusee.Serialization
+  children:
+  - Fusee.Serialization.FusHeader.CreatedBy
+  - Fusee.Serialization.FusHeader.CreationDate
+  - Fusee.Serialization.FusHeader.FileVersion
+  - Fusee.Serialization.FusHeader.Generator
+  langs:
+  - csharp
+  - vb
+  name: FusHeader
+  nameWithType: FusHeader
+  fullName: Fusee.Serialization.FusHeader
+  type: Struct
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FusHeader
+    path: src/Fusee/src/Serialization/FusFile.cs
+    startLine: 10
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization
+  summary: "\nThe header of a FUSEE file.\n"
+  example: []
+  syntax:
+    content: public struct FusHeader
+    content.vb: Public Structure FusHeader
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Fusee.Serialization.FusHeader.FileVersion
+  commentId: F:Fusee.Serialization.FusHeader.FileVersion
+  id: FileVersion
+  parent: Fusee.Serialization.FusHeader
+  langs:
+  - csharp
+  - vb
+  name: FileVersion
+  nameWithType: FusHeader.FileVersion
+  fullName: Fusee.Serialization.FusHeader.FileVersion
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FileVersion
+    path: src/Fusee/src/Serialization/FusFile.cs
+    startLine: 17
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization
+  summary: "\nThe file version number of this fus file.\n"
+  example: []
+  syntax:
+    content: public int FileVersion
+    return:
+      type: System.Int32
+    content.vb: Public FileVersion As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Serialization.FusHeader.Generator
+  commentId: F:Fusee.Serialization.FusHeader.Generator
+  id: Generator
+  parent: Fusee.Serialization.FusHeader
+  langs:
+  - csharp
+  - vb
+  name: Generator
+  nameWithType: FusHeader.Generator
+  fullName: Fusee.Serialization.FusHeader.Generator
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Generator
+    path: src/Fusee/src/Serialization/FusFile.cs
+    startLine: 23
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization
+  summary: "\nThe generator used to create this fus file.\n"
+  example: []
+  syntax:
+    content: public string Generator
+    return:
+      type: System.String
+    content.vb: Public Generator As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Serialization.FusHeader.CreatedBy
+  commentId: F:Fusee.Serialization.FusHeader.CreatedBy
+  id: CreatedBy
+  parent: Fusee.Serialization.FusHeader
+  langs:
+  - csharp
+  - vb
+  name: CreatedBy
+  nameWithType: FusHeader.CreatedBy
+  fullName: Fusee.Serialization.FusHeader.CreatedBy
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CreatedBy
+    path: src/Fusee/src/Serialization/FusFile.cs
+    startLine: 29
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization
+  summary: "\nThe user who created this fus file.\n"
+  example: []
+  syntax:
+    content: public string CreatedBy
+    return:
+      type: System.String
+    content.vb: Public CreatedBy As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Serialization.FusHeader.CreationDate
+  commentId: F:Fusee.Serialization.FusHeader.CreationDate
+  id: CreationDate
+  parent: Fusee.Serialization.FusHeader
+  langs:
+  - csharp
+  - vb
+  name: CreationDate
+  nameWithType: FusHeader.CreationDate
+  fullName: Fusee.Serialization.FusHeader.CreationDate
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CreationDate
+    path: src/Fusee/src/Serialization/FusFile.cs
+    startLine: 35
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization
+  summary: "\nThe creation date of the file.\n"
+  example: []
+  syntax:
+    content: public string CreationDate
+    return:
+      type: System.String
+    content.vb: Public CreationDate As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Serialization
+  commentId: N:Fusee.Serialization
+  name: Fusee.Serialization
+  nameWithType: Fusee.Serialization
+  fullName: Fusee.Serialization
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,609 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.CapsuleShape
+  commentId: T:Fusee.Engine.Core.CapsuleShape
+  id: CapsuleShape
+  parent: Fusee.Engine.Core
+  children:
+  - Fusee.Engine.Core.CapsuleShape.HalfHeight
+  - Fusee.Engine.Core.CapsuleShape.LocalScaling
+  - Fusee.Engine.Core.CapsuleShape.Margin
+  - Fusee.Engine.Core.CapsuleShape.Radius
+  - Fusee.Engine.Core.CapsuleShape.UpAxis
+  langs:
+  - csharp
+  - vb
+  name: CapsuleShape
+  nameWithType: CapsuleShape
+  fullName: Fusee.Engine.Core.CapsuleShape
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/CapsuleShape.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CapsuleShape
+    path: src/Fusee/src/Engine/Core/CapsuleShape.cs
+    startLine: 8
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nA capsule shaped collision object.\n"
+  example: []
+  syntax:
+    content: 'public class CapsuleShape : CollisionShape'
+    content.vb: >-
+      Public Class CapsuleShape
+          Inherits CollisionShape
+  inheritance:
+  - System.Object
+  - Fusee.Engine.Core.CollisionShape
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Core.CapsuleShape.Margin
+  commentId: P:Fusee.Engine.Core.CapsuleShape.Margin
+  id: Margin
+  parent: Fusee.Engine.Core.CapsuleShape
+  langs:
+  - csharp
+  - vb
+  name: Margin
+  nameWithType: CapsuleShape.Margin
+  fullName: Fusee.Engine.Core.CapsuleShape.Margin
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/CapsuleShape.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Margin
+    path: src/Fusee/src/Engine/Core/CapsuleShape.cs
+    startLine: 18
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves or sets the margin.\n"
+  example: []
+  syntax:
+    content: public override float Margin { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe size of the collision shape&apos;s margin.\n"
+    content.vb: Public Overrides Property Margin As Single
+  overridden: Fusee.Engine.Core.CollisionShape.Margin
+  overload: Fusee.Engine.Core.CapsuleShape.Margin*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Fusee.Engine.Core.CapsuleShape.LocalScaling
+  commentId: P:Fusee.Engine.Core.CapsuleShape.LocalScaling
+  id: LocalScaling
+  parent: Fusee.Engine.Core.CapsuleShape
+  langs:
+  - csharp
+  - vb
+  name: LocalScaling
+  nameWithType: CapsuleShape.LocalScaling
+  fullName: Fusee.Engine.Core.CapsuleShape.LocalScaling
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/CapsuleShape.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: LocalScaling
+    path: src/Fusee/src/Engine/Core/CapsuleShape.cs
+    startLine: 38
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves or sets the local scaling.\n"
+  example: []
+  syntax:
+    content: public override float3 LocalScaling { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+      description: "\nThe local scaling.\n"
+    content.vb: Public Overrides Property LocalScaling As float3
+  overridden: Fusee.Engine.Core.CollisionShape.LocalScaling
+  overload: Fusee.Engine.Core.CapsuleShape.LocalScaling*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Fusee.Engine.Core.CapsuleShape.HalfHeight
+  commentId: P:Fusee.Engine.Core.CapsuleShape.HalfHeight
+  id: HalfHeight
+  parent: Fusee.Engine.Core.CapsuleShape
+  langs:
+  - csharp
+  - vb
+  name: HalfHeight
+  nameWithType: CapsuleShape.HalfHeight
+  fullName: Fusee.Engine.Core.CapsuleShape.HalfHeight
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/CapsuleShape.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: HalfHeight
+    path: src/Fusee/src/Engine/Core/CapsuleShape.cs
+    startLine: 58
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the half of this capsule&apos;s height.\n"
+  example: []
+  syntax:
+    content: public float HalfHeight { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nHalf of the height.\n"
+    content.vb: Public ReadOnly Property HalfHeight As Single
+  overload: Fusee.Engine.Core.CapsuleShape.HalfHeight*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.CapsuleShape.Radius
+  commentId: P:Fusee.Engine.Core.CapsuleShape.Radius
+  id: Radius
+  parent: Fusee.Engine.Core.CapsuleShape
+  langs:
+  - csharp
+  - vb
+  name: Radius
+  nameWithType: CapsuleShape.Radius
+  fullName: Fusee.Engine.Core.CapsuleShape.Radius
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/CapsuleShape.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Radius
+    path: src/Fusee/src/Engine/Core/CapsuleShape.cs
+    startLine: 73
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets this capsules radius.\n"
+  example: []
+  syntax:
+    content: public float Radius { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe radius.\n"
+    content.vb: Public ReadOnly Property Radius As Single
+  overload: Fusee.Engine.Core.CapsuleShape.Radius*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.CapsuleShape.UpAxis
+  commentId: P:Fusee.Engine.Core.CapsuleShape.UpAxis
+  id: UpAxis
+  parent: Fusee.Engine.Core.CapsuleShape
+  langs:
+  - csharp
+  - vb
+  name: UpAxis
+  nameWithType: CapsuleShape.UpAxis
+  fullName: Fusee.Engine.Core.CapsuleShape.UpAxis
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/CapsuleShape.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: UpAxis
+    path: src/Fusee/src/Engine/Core/CapsuleShape.cs
+    startLine: 88
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the up axis of the capsule.\n"
+  example: []
+  syntax:
+    content: public float UpAxis { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe up axis.\n"
+    content.vb: Public ReadOnly Property UpAxis As Single
+  overload: Fusee.Engine.Core.CapsuleShape.UpAxis*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Core.CollisionShape
+  commentId: T:Fusee.Engine.Core.CollisionShape
+  parent: Fusee.Engine.Core
+  name: CollisionShape
+  nameWithType: CollisionShape
+  fullName: Fusee.Engine.Core.CollisionShape
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.CollisionShape.Margin
+  commentId: P:Fusee.Engine.Core.CollisionShape.Margin
+  parent: Fusee.Engine.Core.CollisionShape
+  name: Margin
+  nameWithType: CollisionShape.Margin
+  fullName: Fusee.Engine.Core.CollisionShape.Margin
+- uid: Fusee.Engine.Core.CapsuleShape.Margin*
+  commentId: Overload:Fusee.Engine.Core.CapsuleShape.Margin
+  name: Margin
+  nameWithType: CapsuleShape.Margin
+  fullName: Fusee.Engine.Core.CapsuleShape.Margin
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Engine.Core.CollisionShape.LocalScaling
+  commentId: P:Fusee.Engine.Core.CollisionShape.LocalScaling
+  parent: Fusee.Engine.Core.CollisionShape
+  name: LocalScaling
+  nameWithType: CollisionShape.LocalScaling
+  fullName: Fusee.Engine.Core.CollisionShape.LocalScaling
+- uid: Fusee.Engine.Core.CapsuleShape.LocalScaling*
+  commentId: Overload:Fusee.Engine.Core.CapsuleShape.LocalScaling
+  name: LocalScaling
+  nameWithType: CapsuleShape.LocalScaling
+  fullName: Fusee.Engine.Core.CapsuleShape.LocalScaling
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Core.CapsuleShape.HalfHeight*
+  commentId: Overload:Fusee.Engine.Core.CapsuleShape.HalfHeight
+  name: HalfHeight
+  nameWithType: CapsuleShape.HalfHeight
+  fullName: Fusee.Engine.Core.CapsuleShape.HalfHeight
+- uid: Fusee.Engine.Core.CapsuleShape.Radius*
+  commentId: Overload:Fusee.Engine.Core.CapsuleShape.Radius
+  name: Radius
+  nameWithType: CapsuleShape.Radius
+  fullName: Fusee.Engine.Core.CapsuleShape.Radius
+- uid: Fusee.Engine.Core.CapsuleShape.UpAxis*
+  commentId: Overload:Fusee.Engine.Core.CapsuleShape.UpAxis
+  name: UpAxis
+  nameWithType: CapsuleShape.UpAxis
+  fullName: Fusee.Engine.Core.CapsuleShape.UpAxis

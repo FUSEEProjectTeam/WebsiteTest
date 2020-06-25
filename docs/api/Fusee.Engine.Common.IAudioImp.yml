@@ -1,0 +1,334 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.IAudioImp
+  commentId: T:Fusee.Engine.Common.IAudioImp
+  id: IAudioImp
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.IAudioImp.CloseDevice
+  - Fusee.Engine.Common.IAudioImp.GetVolume
+  - Fusee.Engine.Common.IAudioImp.LoadFile(System.String,System.Boolean)
+  - Fusee.Engine.Common.IAudioImp.OpenDevice
+  - Fusee.Engine.Common.IAudioImp.SetPanning(System.Single)
+  - Fusee.Engine.Common.IAudioImp.SetVolume(System.Single)
+  - Fusee.Engine.Common.IAudioImp.Stop
+  langs:
+  - csharp
+  - vb
+  name: IAudioImp
+  nameWithType: IAudioImp
+  fullName: Fusee.Engine.Common.IAudioImp
+  type: Interface
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IAudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: IAudioImp
+    path: src/Fusee/src/Engine/Common/IAudioImp.cs
+    startLine: 6
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nInterface for the Audio implementation. The implementation of this interface is responsible for management of all <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> instances.\nThis is used as a container for all the <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> and handles Sound functions globally.\n"
+  example: []
+  syntax:
+    content: public interface IAudioImp
+    content.vb: Public Interface IAudioImp
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Fusee.Engine.Common.IAudioImp.OpenDevice
+  commentId: M:Fusee.Engine.Common.IAudioImp.OpenDevice
+  id: OpenDevice
+  parent: Fusee.Engine.Common.IAudioImp
+  langs:
+  - csharp
+  - vb
+  name: OpenDevice()
+  nameWithType: IAudioImp.OpenDevice()
+  fullName: Fusee.Engine.Common.IAudioImp.OpenDevice()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IAudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: OpenDevice
+    path: src/Fusee/src/Engine/Common/IAudioImp.cs
+    startLine: 12
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nImplementation Tasks: Opens the device. All <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> derivate instances have to be wiped and the global volume of a Listener(if 3D Sound is intended) can be set to maximum.\n"
+  example: []
+  syntax:
+    content: void OpenDevice()
+    content.vb: Sub OpenDevice
+  overload: Fusee.Engine.Common.IAudioImp.OpenDevice*
+- uid: Fusee.Engine.Common.IAudioImp.CloseDevice
+  commentId: M:Fusee.Engine.Common.IAudioImp.CloseDevice
+  id: CloseDevice
+  parent: Fusee.Engine.Common.IAudioImp
+  langs:
+  - csharp
+  - vb
+  name: CloseDevice()
+  nameWithType: IAudioImp.CloseDevice()
+  fullName: Fusee.Engine.Common.IAudioImp.CloseDevice()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IAudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CloseDevice
+    path: src/Fusee/src/Engine/Common/IAudioImp.cs
+    startLine: 17
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nImplementation Tasks: Closes the device. All instances of <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> derivate have to be disposed in order to free up memory.\n"
+  example: []
+  syntax:
+    content: void CloseDevice()
+    content.vb: Sub CloseDevice
+  overload: Fusee.Engine.Common.IAudioImp.CloseDevice*
+- uid: Fusee.Engine.Common.IAudioImp.LoadFile(System.String,System.Boolean)
+  commentId: M:Fusee.Engine.Common.IAudioImp.LoadFile(System.String,System.Boolean)
+  id: LoadFile(System.String,System.Boolean)
+  parent: Fusee.Engine.Common.IAudioImp
+  langs:
+  - csharp
+  - vb
+  name: LoadFile(String, Boolean)
+  nameWithType: IAudioImp.LoadFile(String, Boolean)
+  fullName: Fusee.Engine.Common.IAudioImp.LoadFile(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IAudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: LoadFile
+    path: src/Fusee/src/Engine/Common/IAudioImp.cs
+    startLine: 25
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nImplementation Tasks: Loads the specified file from an external source (examples: hard drive, network, etc) into memory for usage inside of the application.\n"
+  example: []
+  syntax:
+    content: IAudioStreamImp LoadFile(string fileName, bool streaming)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: Name of the file that should include the file type ending and a absolute or relative path, e.g. C:\sound.ogg .
+    - id: streaming
+      type: System.Boolean
+      description: if set to <code>true</code> [streaming].
+    return:
+      type: Fusee.Engine.Common.IAudioStreamImp
+      description: A derivate of <xref href="Fusee.Engine.Common.IAudioStreamImp" data-throw-if-not-resolved="false"></xref> should be returned upon successful file path resolution.
+    content.vb: Function LoadFile(fileName As String, streaming As Boolean) As IAudioStreamImp
+  overload: Fusee.Engine.Common.IAudioImp.LoadFile*
+- uid: Fusee.Engine.Common.IAudioImp.Stop
+  commentId: M:Fusee.Engine.Common.IAudioImp.Stop
+  id: Stop
+  parent: Fusee.Engine.Common.IAudioImp
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: IAudioImp.Stop()
+  fullName: Fusee.Engine.Common.IAudioImp.Stop()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IAudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Stop
+    path: src/Fusee/src/Engine/Common/IAudioImp.cs
+    startLine: 30
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nImplementation Tasks: Stops all <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> derived playbacks that this instance is responsible for.\n"
+  example: []
+  syntax:
+    content: void Stop()
+    content.vb: Sub Stop
+  overload: Fusee.Engine.Common.IAudioImp.Stop*
+- uid: Fusee.Engine.Common.IAudioImp.SetVolume(System.Single)
+  commentId: M:Fusee.Engine.Common.IAudioImp.SetVolume(System.Single)
+  id: SetVolume(System.Single)
+  parent: Fusee.Engine.Common.IAudioImp
+  langs:
+  - csharp
+  - vb
+  name: SetVolume(Single)
+  nameWithType: IAudioImp.SetVolume(Single)
+  fullName: Fusee.Engine.Common.IAudioImp.SetVolume(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IAudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetVolume
+    path: src/Fusee/src/Engine/Common/IAudioImp.cs
+    startLine: 37
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nImplementation Tasks: Sets the global volume of the application. In 3D Sound usually a Listener is used to accomplish this task. \nIn 2D Sound a simple iteration through all <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> derived that this instance is responsible for is sufficient.\n"
+  example: []
+  syntax:
+    content: void SetVolume(float val)
+    parameters:
+    - id: val
+      type: System.Single
+      description: The val.
+    content.vb: Sub SetVolume(val As Single)
+  overload: Fusee.Engine.Common.IAudioImp.SetVolume*
+- uid: Fusee.Engine.Common.IAudioImp.GetVolume
+  commentId: M:Fusee.Engine.Common.IAudioImp.GetVolume
+  id: GetVolume
+  parent: Fusee.Engine.Common.IAudioImp
+  langs:
+  - csharp
+  - vb
+  name: GetVolume()
+  nameWithType: IAudioImp.GetVolume()
+  fullName: Fusee.Engine.Common.IAudioImp.GetVolume()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IAudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetVolume
+    path: src/Fusee/src/Engine/Common/IAudioImp.cs
+    startLine: 44
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nImplementation Tasks: Gets the global volume of the application. In 3D Sound a Listener is usually used to accomplish this task.\nIn 2D Sound an internal master volume property can be implemented that handles all <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> derived volumes that this instance is responsible for.\n"
+  example: []
+  syntax:
+    content: float GetVolume()
+    return:
+      type: System.Single
+      description: A number in float precision.
+    content.vb: Function GetVolume As Single
+  overload: Fusee.Engine.Common.IAudioImp.GetVolume*
+- uid: Fusee.Engine.Common.IAudioImp.SetPanning(System.Single)
+  commentId: M:Fusee.Engine.Common.IAudioImp.SetPanning(System.Single)
+  id: SetPanning(System.Single)
+  parent: Fusee.Engine.Common.IAudioImp
+  langs:
+  - csharp
+  - vb
+  name: SetPanning(Single)
+  nameWithType: IAudioImp.SetPanning(Single)
+  fullName: Fusee.Engine.Common.IAudioImp.SetPanning(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/IAudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetPanning
+    path: src/Fusee/src/Engine/Common/IAudioImp.cs
+    startLine: 50
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nImplementation Tasks: Sets the panning for all <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> derived that this instance is responsible for.\n"
+  example: []
+  syntax:
+    content: void SetPanning(float val)
+    parameters:
+    - id: val
+      type: System.Single
+      description: The panning value.
+    content.vb: Sub SetPanning(val As Single)
+  overload: Fusee.Engine.Common.IAudioImp.SetPanning*
+references:
+- uid: Fusee.Engine.Common.IAudioStreamImp
+  commentId: T:Fusee.Engine.Common.IAudioStreamImp
+  parent: Fusee.Engine.Common
+  name: IAudioStreamImp
+  nameWithType: IAudioStreamImp
+  fullName: Fusee.Engine.Common.IAudioStreamImp
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Common.IAudioImp.OpenDevice*
+  commentId: Overload:Fusee.Engine.Common.IAudioImp.OpenDevice
+  name: OpenDevice
+  nameWithType: IAudioImp.OpenDevice
+  fullName: Fusee.Engine.Common.IAudioImp.OpenDevice
+- uid: Fusee.Engine.Common.IAudioImp.CloseDevice*
+  commentId: Overload:Fusee.Engine.Common.IAudioImp.CloseDevice
+  name: CloseDevice
+  nameWithType: IAudioImp.CloseDevice
+  fullName: Fusee.Engine.Common.IAudioImp.CloseDevice
+- uid: Fusee.Engine.Common.IAudioImp.LoadFile*
+  commentId: Overload:Fusee.Engine.Common.IAudioImp.LoadFile
+  name: LoadFile
+  nameWithType: IAudioImp.LoadFile
+  fullName: Fusee.Engine.Common.IAudioImp.LoadFile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Common.IAudioImp.Stop*
+  commentId: Overload:Fusee.Engine.Common.IAudioImp.Stop
+  name: Stop
+  nameWithType: IAudioImp.Stop
+  fullName: Fusee.Engine.Common.IAudioImp.Stop
+- uid: Fusee.Engine.Common.IAudioImp.SetVolume*
+  commentId: Overload:Fusee.Engine.Common.IAudioImp.SetVolume
+  name: SetVolume
+  nameWithType: IAudioImp.SetVolume
+  fullName: Fusee.Engine.Common.IAudioImp.SetVolume
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Engine.Common.IAudioImp.GetVolume*
+  commentId: Overload:Fusee.Engine.Common.IAudioImp.GetVolume
+  name: GetVolume
+  nameWithType: IAudioImp.GetVolume
+  fullName: Fusee.Engine.Common.IAudioImp.GetVolume
+- uid: Fusee.Engine.Common.IAudioImp.SetPanning*
+  commentId: Overload:Fusee.Engine.Common.IAudioImp.SetPanning
+  name: SetPanning
+  nameWithType: IAudioImp.SetPanning
+  fullName: Fusee.Engine.Common.IAudioImp.SetPanning

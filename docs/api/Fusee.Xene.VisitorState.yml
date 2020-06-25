@@ -1,0 +1,737 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Xene.VisitorState
+  commentId: T:Fusee.Xene.VisitorState
+  id: VisitorState
+  parent: Fusee.Xene
+  children:
+  - Fusee.Xene.VisitorState.#ctor
+  - Fusee.Xene.VisitorState.Clear
+  - Fusee.Xene.VisitorState.Depth
+  - Fusee.Xene.VisitorState.Pop
+  - Fusee.Xene.VisitorState.Push
+  - Fusee.Xene.VisitorState.RegisterState(Fusee.Xene.IStateStack)
+  langs:
+  - csharp
+  - vb
+  name: VisitorState
+  nameWithType: VisitorState
+  fullName: Fusee.Xene.VisitorState
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/VisitorState.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: VisitorState
+    path: src/Fusee/src/Xene/VisitorState.cs
+    startLine: 293
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nUse this as a base class for defining your own state for arbitrary Visitors. \n"
+  remarks: "\nA state is always a list of individual\nvalues that can be altered during traversal. To restore state along hierarchy levels the values are kept in <xref href=\"Fusee.Xene.IStateStack\" data-throw-if-not-resolved=\"false\"></xref>objects - one stack\nper tracked value. \nThe VisitorState itself represents an <xref href=\"Fusee.Xene.IStateStack\" data-throw-if-not-resolved=\"false\"></xref>. It delegates all interface methods to the individual value stacks registered.\n"
+  example:
+  - >
+    Here&apos;s an example of a VisitorState containing an integer and a string value:
+
+    <pre><code>class TestState : VisitorState
+
+    {
+        private CollapsingStateStack&lt;string> _stringState = new CollapsingStateStack&lt;string>();
+        private CollapsingStateStack&lt;int> _intState = new CollapsingStateStack&lt;int>();
+
+        public string StringState
+        {
+             get { return _stringState.Tos; }
+             set { _stringState.Tos = value; }
+        }
+
+        public string IntState
+        {
+             get { return _intState.Tos; }
+             set { _intState.Tos = value; }
+        }
+
+        TestState() : base()
+        {
+           RegisterState(_stringState);
+           RegisterState(_intState);
+        }
+    }</code></pre>
+  syntax:
+    content: 'public class VisitorState : IStateStack'
+    content.vb: >-
+      Public Class VisitorState
+          Implements IStateStack
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Fusee.Engine.Core.AABBCalculator.AABBState
+  - Fusee.Engine.Core.OBBCalculator.OBBState
+  - Fusee.Engine.Core.RendererState
+  - Fusee.Engine.Core.ScenePicker.PickerState
+  - Fusee.Xene.StandardState
+  implements:
+  - Fusee.Xene.IStateStack
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Xene.VisitorState.#ctor
+  commentId: M:Fusee.Xene.VisitorState.#ctor
+  id: '#ctor'
+  parent: Fusee.Xene.VisitorState
+  langs:
+  - csharp
+  - vb
+  name: VisitorState()
+  nameWithType: VisitorState.VisitorState()
+  fullName: Fusee.Xene.VisitorState.VisitorState()
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/VisitorState.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Xene/VisitorState.cs
+    startLine: 300
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Xene.VisitorState\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public VisitorState()
+    content.vb: Public Sub New
+  overload: Fusee.Xene.VisitorState.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Xene.VisitorState.RegisterState(Fusee.Xene.IStateStack)
+  commentId: M:Fusee.Xene.VisitorState.RegisterState(Fusee.Xene.IStateStack)
+  id: RegisterState(Fusee.Xene.IStateStack)
+  parent: Fusee.Xene.VisitorState
+  langs:
+  - csharp
+  - vb
+  name: RegisterState(IStateStack)
+  nameWithType: VisitorState.RegisterState(IStateStack)
+  fullName: Fusee.Xene.VisitorState.RegisterState(Fusee.Xene.IStateStack)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/VisitorState.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RegisterState
+    path: src/Fusee/src/Xene/VisitorState.cs
+    startLine: 309
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nRegisters a state stack. State stacks need to be registered to be notified when the entire state is pushed or popped.\n"
+  example: []
+  syntax:
+    content: protected void RegisterState(IStateStack stack)
+    parameters:
+    - id: stack
+      type: Fusee.Xene.IStateStack
+      description: The state stack to register.
+    content.vb: Protected Sub RegisterState(stack As IStateStack)
+  overload: Fusee.Xene.VisitorState.RegisterState*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Fusee.Xene.VisitorState.Push
+  commentId: M:Fusee.Xene.VisitorState.Push
+  id: Push
+  parent: Fusee.Xene.VisitorState
+  langs:
+  - csharp
+  - vb
+  name: Push()
+  nameWithType: VisitorState.Push()
+  fullName: Fusee.Xene.VisitorState.Push()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/VisitorState.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Push
+    path: src/Fusee/src/Xene/VisitorState.cs
+    startLine: 317
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nThe visitor state&apos;s Push operation. Pushes all registered state stacks.\n"
+  example: []
+  syntax:
+    content: public void Push()
+    content.vb: Public Sub Push
+  overload: Fusee.Xene.VisitorState.Push*
+  implements:
+  - Fusee.Xene.IStateStack.Push
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Xene.VisitorState.Pop
+  commentId: M:Fusee.Xene.VisitorState.Pop
+  id: Pop
+  parent: Fusee.Xene.VisitorState
+  langs:
+  - csharp
+  - vb
+  name: Pop()
+  nameWithType: VisitorState.Pop()
+  fullName: Fusee.Xene.VisitorState.Pop()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/VisitorState.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Pop
+    path: src/Fusee/src/Xene/VisitorState.cs
+    startLine: 328
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nThe visitor state&apos;s Pop operation. Pops all registered state stacks.\n"
+  example: []
+  syntax:
+    content: public void Pop()
+    content.vb: Public Sub Pop
+  overload: Fusee.Xene.VisitorState.Pop*
+  implements:
+  - Fusee.Xene.IStateStack.Pop
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Xene.VisitorState.Clear
+  commentId: M:Fusee.Xene.VisitorState.Clear
+  id: Clear
+  parent: Fusee.Xene.VisitorState
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: VisitorState.Clear()
+  fullName: Fusee.Xene.VisitorState.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/VisitorState.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Clear
+    path: src/Fusee/src/Xene/VisitorState.cs
+    startLine: 339
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nClears all registered state stacks. The Depth will be reset to zero.\n"
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: Fusee.Xene.VisitorState.Clear*
+  implements:
+  - Fusee.Xene.IStateStack.Clear
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Xene.VisitorState.Depth
+  commentId: P:Fusee.Xene.VisitorState.Depth
+  id: Depth
+  parent: Fusee.Xene.VisitorState
+  langs:
+  - csharp
+  - vb
+  name: Depth
+  nameWithType: VisitorState.Depth
+  fullName: Fusee.Xene.VisitorState.Depth
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/VisitorState.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Depth
+    path: src/Fusee/src/Xene/VisitorState.cs
+    startLine: 353
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nRetrieves the state&apos;s overall depth.\n"
+  example: []
+  syntax:
+    content: public int Depth { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe current depth of the visitor state.\n"
+    content.vb: Public ReadOnly Property Depth As Integer
+  overload: Fusee.Xene.VisitorState.Depth*
+  implements:
+  - Fusee.Xene.IStateStack.Depth
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Fusee.Xene.IStateStack
+  commentId: T:Fusee.Xene.IStateStack
+  parent: Fusee.Xene
+  name: IStateStack
+  nameWithType: IStateStack
+  fullName: Fusee.Xene.IStateStack
+- uid: Fusee.Xene
+  commentId: N:Fusee.Xene
+  name: Fusee.Xene
+  nameWithType: Fusee.Xene
+  fullName: Fusee.Xene
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Xene.VisitorState
+  commentId: T:Fusee.Xene.VisitorState
+  parent: Fusee.Xene
+  name: VisitorState
+  nameWithType: VisitorState
+  fullName: Fusee.Xene.VisitorState
+- uid: Fusee.Xene.VisitorState.#ctor*
+  commentId: Overload:Fusee.Xene.VisitorState.#ctor
+  name: VisitorState
+  nameWithType: VisitorState.VisitorState
+  fullName: Fusee.Xene.VisitorState.VisitorState
+- uid: Fusee.Xene.VisitorState.RegisterState*
+  commentId: Overload:Fusee.Xene.VisitorState.RegisterState
+  name: RegisterState
+  nameWithType: VisitorState.RegisterState
+  fullName: Fusee.Xene.VisitorState.RegisterState
+- uid: Fusee.Xene.VisitorState.Push*
+  commentId: Overload:Fusee.Xene.VisitorState.Push
+  name: Push
+  nameWithType: VisitorState.Push
+  fullName: Fusee.Xene.VisitorState.Push
+- uid: Fusee.Xene.IStateStack.Push
+  commentId: M:Fusee.Xene.IStateStack.Push
+  parent: Fusee.Xene.IStateStack
+  name: Push()
+  nameWithType: IStateStack.Push()
+  fullName: Fusee.Xene.IStateStack.Push()
+  spec.csharp:
+  - uid: Fusee.Xene.IStateStack.Push
+    name: Push
+    nameWithType: IStateStack.Push
+    fullName: Fusee.Xene.IStateStack.Push
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.IStateStack.Push
+    name: Push
+    nameWithType: IStateStack.Push
+    fullName: Fusee.Xene.IStateStack.Push
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.VisitorState.Pop*
+  commentId: Overload:Fusee.Xene.VisitorState.Pop
+  name: Pop
+  nameWithType: VisitorState.Pop
+  fullName: Fusee.Xene.VisitorState.Pop
+- uid: Fusee.Xene.IStateStack.Pop
+  commentId: M:Fusee.Xene.IStateStack.Pop
+  parent: Fusee.Xene.IStateStack
+  name: Pop()
+  nameWithType: IStateStack.Pop()
+  fullName: Fusee.Xene.IStateStack.Pop()
+  spec.csharp:
+  - uid: Fusee.Xene.IStateStack.Pop
+    name: Pop
+    nameWithType: IStateStack.Pop
+    fullName: Fusee.Xene.IStateStack.Pop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.IStateStack.Pop
+    name: Pop
+    nameWithType: IStateStack.Pop
+    fullName: Fusee.Xene.IStateStack.Pop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.VisitorState.Clear*
+  commentId: Overload:Fusee.Xene.VisitorState.Clear
+  name: Clear
+  nameWithType: VisitorState.Clear
+  fullName: Fusee.Xene.VisitorState.Clear
+- uid: Fusee.Xene.IStateStack.Clear
+  commentId: M:Fusee.Xene.IStateStack.Clear
+  parent: Fusee.Xene.IStateStack
+  name: Clear()
+  nameWithType: IStateStack.Clear()
+  fullName: Fusee.Xene.IStateStack.Clear()
+  spec.csharp:
+  - uid: Fusee.Xene.IStateStack.Clear
+    name: Clear
+    nameWithType: IStateStack.Clear
+    fullName: Fusee.Xene.IStateStack.Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.IStateStack.Clear
+    name: Clear
+    nameWithType: IStateStack.Clear
+    fullName: Fusee.Xene.IStateStack.Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.VisitorState.Depth*
+  commentId: Overload:Fusee.Xene.VisitorState.Depth
+  name: Depth
+  nameWithType: VisitorState.Depth
+  fullName: Fusee.Xene.VisitorState.Depth
+- uid: Fusee.Xene.IStateStack.Depth
+  commentId: P:Fusee.Xene.IStateStack.Depth
+  parent: Fusee.Xene.IStateStack
+  name: Depth
+  nameWithType: IStateStack.Depth
+  fullName: Fusee.Xene.IStateStack.Depth
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

@@ -1,0 +1,602 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.Suid
+  commentId: T:Fusee.Engine.Common.Suid
+  id: Suid
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.Suid.Empty
+  - Fusee.Engine.Common.Suid.Equals(System.Object)
+  - Fusee.Engine.Common.Suid.GenerateSuid
+  - Fusee.Engine.Common.Suid.GetHashCode
+  - Fusee.Engine.Common.Suid.op_Equality(Fusee.Engine.Common.Suid,Fusee.Engine.Common.Suid)
+  - Fusee.Engine.Common.Suid.op_Inequality(Fusee.Engine.Common.Suid,Fusee.Engine.Common.Suid)
+  langs:
+  - csharp
+  - vb
+  name: Suid
+  nameWithType: Suid
+  fullName: Fusee.Engine.Common.Suid
+  type: Struct
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/Suid.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Suid
+    path: src/Fusee/src/Engine/Common/Suid.cs
+    startLine: 9
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nSession unique Id.\n"
+  example: []
+  syntax:
+    content: public struct Suid
+    content.vb: Public Structure Suid
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Fusee.Engine.Common.Suid.GenerateSuid
+  commentId: M:Fusee.Engine.Common.Suid.GenerateSuid
+  id: GenerateSuid
+  parent: Fusee.Engine.Common.Suid
+  langs:
+  - csharp
+  - vb
+  name: GenerateSuid()
+  nameWithType: Suid.GenerateSuid()
+  fullName: Fusee.Engine.Common.Suid.GenerateSuid()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/Suid.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GenerateSuid
+    path: src/Fusee/src/Engine/Common/Suid.cs
+    startLine: 23
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGenerate a new session unique Id.\n"
+  example: []
+  syntax:
+    content: public static Suid GenerateSuid()
+    return:
+      type: Fusee.Engine.Common.Suid
+    content.vb: Public Shared Function GenerateSuid As Suid
+  overload: Fusee.Engine.Common.Suid.GenerateSuid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Common.Suid.Empty
+  commentId: F:Fusee.Engine.Common.Suid.Empty
+  id: Empty
+  parent: Fusee.Engine.Common.Suid
+  langs:
+  - csharp
+  - vb
+  name: Empty
+  nameWithType: Suid.Empty
+  fullName: Fusee.Engine.Common.Suid.Empty
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/Suid.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Empty
+    path: src/Fusee/src/Engine/Common/Suid.cs
+    startLine: 36
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nAn Empty Suid. Can be used to compare whether a Suid is Empty / default.\n"
+  example: []
+  syntax:
+    content: public static readonly Suid Empty
+    return:
+      type: Fusee.Engine.Common.Suid
+    content.vb: Public Shared ReadOnly Empty As Suid
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Fusee.Engine.Common.Suid.Equals(System.Object)
+  commentId: M:Fusee.Engine.Common.Suid.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Fusee.Engine.Common.Suid
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Suid.Equals(Object)
+  fullName: Fusee.Engine.Common.Suid.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/Suid.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Equals
+    path: src/Fusee/src/Engine/Common/Suid.cs
+    startLine: 41
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nChecks if two suids are equal\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Fusee.Engine.Common.Suid.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Fusee.Engine.Common.Suid.GetHashCode
+  commentId: M:Fusee.Engine.Common.Suid.GetHashCode
+  id: GetHashCode
+  parent: Fusee.Engine.Common.Suid
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Suid.GetHashCode()
+  fullName: Fusee.Engine.Common.Suid.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/Suid.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetHashCode
+    path: src/Fusee/src/Engine/Common/Suid.cs
+    startLine: 46
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nGets hash code        \n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Fusee.Engine.Common.Suid.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Fusee.Engine.Common.Suid.op_Equality(Fusee.Engine.Common.Suid,Fusee.Engine.Common.Suid)
+  commentId: M:Fusee.Engine.Common.Suid.op_Equality(Fusee.Engine.Common.Suid,Fusee.Engine.Common.Suid)
+  id: op_Equality(Fusee.Engine.Common.Suid,Fusee.Engine.Common.Suid)
+  parent: Fusee.Engine.Common.Suid
+  langs:
+  - csharp
+  - vb
+  name: Equality(Suid, Suid)
+  nameWithType: Suid.Equality(Suid, Suid)
+  fullName: Fusee.Engine.Common.Suid.Equality(Fusee.Engine.Common.Suid, Fusee.Engine.Common.Suid)
+  type: Operator
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/Suid.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: op_Equality
+    path: src/Fusee/src/Engine/Common/Suid.cs
+    startLine: 53
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nChecks if two suids are equal\n"
+  example: []
+  syntax:
+    content: public static bool operator ==(Suid left, Suid right)
+    parameters:
+    - id: left
+      type: Fusee.Engine.Common.Suid
+      description: ''
+    - id: right
+      type: Fusee.Engine.Common.Suid
+      description: ''
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Suid, right As Suid) As Boolean
+  overload: Fusee.Engine.Common.Suid.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Common.Suid.op_Inequality(Fusee.Engine.Common.Suid,Fusee.Engine.Common.Suid)
+  commentId: M:Fusee.Engine.Common.Suid.op_Inequality(Fusee.Engine.Common.Suid,Fusee.Engine.Common.Suid)
+  id: op_Inequality(Fusee.Engine.Common.Suid,Fusee.Engine.Common.Suid)
+  parent: Fusee.Engine.Common.Suid
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Suid, Suid)
+  nameWithType: Suid.Inequality(Suid, Suid)
+  fullName: Fusee.Engine.Common.Suid.Inequality(Fusee.Engine.Common.Suid, Fusee.Engine.Common.Suid)
+  type: Operator
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/Suid.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: op_Inequality
+    path: src/Fusee/src/Engine/Common/Suid.cs
+    startLine: 60
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nChecks if two suids are equal\n"
+  example: []
+  syntax:
+    content: public static bool operator !=(Suid left, Suid right)
+    parameters:
+    - id: left
+      type: Fusee.Engine.Common.Suid
+      description: ''
+    - id: right
+      type: Fusee.Engine.Common.Suid
+      description: ''
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Suid, right As Suid) As Boolean
+  overload: Fusee.Engine.Common.Suid.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Common.Suid.GenerateSuid*
+  commentId: Overload:Fusee.Engine.Common.Suid.GenerateSuid
+  name: GenerateSuid
+  nameWithType: Suid.GenerateSuid
+  fullName: Fusee.Engine.Common.Suid.GenerateSuid
+- uid: Fusee.Engine.Common.Suid
+  commentId: T:Fusee.Engine.Common.Suid
+  parent: Fusee.Engine.Common
+  name: Suid
+  nameWithType: Suid
+  fullName: Fusee.Engine.Common.Suid
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.Suid.Equals*
+  commentId: Overload:Fusee.Engine.Common.Suid.Equals
+  name: Equals
+  nameWithType: Suid.Equals
+  fullName: Fusee.Engine.Common.Suid.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.Suid.GetHashCode*
+  commentId: Overload:Fusee.Engine.Common.Suid.GetHashCode
+  name: GetHashCode
+  nameWithType: Suid.GetHashCode
+  fullName: Fusee.Engine.Common.Suid.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Engine.Common.Suid.op_Equality*
+  commentId: Overload:Fusee.Engine.Common.Suid.op_Equality
+  name: Equality
+  nameWithType: Suid.Equality
+  fullName: Fusee.Engine.Common.Suid.Equality
+- uid: Fusee.Engine.Common.Suid.op_Inequality*
+  commentId: Overload:Fusee.Engine.Common.Suid.op_Inequality
+  name: Inequality
+  nameWithType: Suid.Inequality
+  fullName: Fusee.Engine.Common.Suid.Inequality

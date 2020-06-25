@@ -1,0 +1,593 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Xirkit.Pin
+  commentId: T:Fusee.Xirkit.Pin
+  id: Pin
+  parent: Fusee.Xirkit
+  children:
+  - Fusee.Xirkit.Pin.#ctor(Fusee.Xirkit.Node,System.String)
+  - Fusee.Xirkit.Pin.Member
+  - Fusee.Xirkit.Pin.N
+  langs:
+  - csharp
+  - vb
+  name: Pin
+  nameWithType: Pin
+  fullName: Fusee.Xirkit.Pin
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Pin.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Pin
+    path: src/Fusee/src/Xirkit/Pin.cs
+    startLine: 18
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nA pin is a connection point where <xref href=\"Fusee.Xirkit.Node\" data-throw-if-not-resolved=\"false\"></xref> instances can be connected to each others.\nPin connections carry values of certain types. There are <xref href=\"Fusee.Xirkit.InPin%601\" data-throw-if-not-resolved=\"false\"></xref>s and <xref href=\"Fusee.Xirkit.OutPin%601\" data-throw-if-not-resolved=\"false\"></xref>s. One out-pin\ncan be connected to one or more in-pins but each in-pin can only be connected to one out-pin.\n"
+  remarks: "\nThis class contains base implementations similar on all pin types, no matter which type \nits value is or whether it&apos;s an in- or an out-pin. It is a building block to create various \npin types used within Xirkit.\n"
+  example: []
+  syntax:
+    content: public class Pin
+    content.vb: Public Class Pin
+  seealso:
+  - linkId: Fusee.Xirkit.InPin`1
+    commentId: T:Fusee.Xirkit.InPin`1
+  - linkId: Fusee.Xirkit.OutPin`1
+    commentId: T:Fusee.Xirkit.OutPin`1
+  - linkId: Fusee.Xirkit.IInPin
+    commentId: T:Fusee.Xirkit.IInPin
+  - linkId: Fusee.Xirkit.IOutPin
+    commentId: T:Fusee.Xirkit.IOutPin
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Fusee.Xirkit.InPin`1
+  - Fusee.Xirkit.OutPin`1
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Xirkit.Pin.N
+  commentId: P:Fusee.Xirkit.Pin.N
+  id: N
+  parent: Fusee.Xirkit.Pin
+  langs:
+  - csharp
+  - vb
+  name: N
+  nameWithType: Pin.N
+  fullName: Fusee.Xirkit.Pin.N
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Pin.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: N
+    path: src/Fusee/src/Xirkit/Pin.cs
+    startLine: 28
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nGets the Node this pin is accessing.\n"
+  example: []
+  syntax:
+    content: public Node N { get; }
+    parameters: []
+    return:
+      type: Fusee.Xirkit.Node
+      description: "\nThe Node.\n"
+    content.vb: Public ReadOnly Property N As Node
+  overload: Fusee.Xirkit.Pin.N*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Xirkit.Pin.Member
+  commentId: P:Fusee.Xirkit.Pin.Member
+  id: Member
+  parent: Fusee.Xirkit.Pin
+  langs:
+  - csharp
+  - vb
+  name: Member
+  nameWithType: Pin.Member
+  fullName: Fusee.Xirkit.Pin.Member
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Pin.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Member
+    path: src/Fusee/src/Xirkit/Pin.cs
+    startLine: 40
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nGets the name of the member or the member chain.\n"
+  example: []
+  syntax:
+    content: public string Member { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe member&apos; name.\n"
+    content.vb: Public ReadOnly Property Member As String
+  overload: Fusee.Xirkit.Pin.Member*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Xirkit.Pin.#ctor(Fusee.Xirkit.Node,System.String)
+  commentId: M:Fusee.Xirkit.Pin.#ctor(Fusee.Xirkit.Node,System.String)
+  id: '#ctor(Fusee.Xirkit.Node,System.String)'
+  parent: Fusee.Xirkit.Pin
+  langs:
+  - csharp
+  - vb
+  name: Pin(Node, String)
+  nameWithType: Pin.Pin(Node, String)
+  fullName: Fusee.Xirkit.Pin.Pin(Fusee.Xirkit.Node, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Pin.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Xirkit/Pin.cs
+    startLine: 50
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Xirkit.Pin\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public Pin(Node n, string member)
+    parameters:
+    - id: n
+      type: Fusee.Xirkit.Node
+      description: The node this pin should belong to.
+    - id: member
+      type: System.String
+      description: The name of the member or the member chain within the object hosted by the node n.
+    content.vb: Public Sub New(n As Node, member As String)
+  overload: Fusee.Xirkit.Pin.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Xirkit.Node
+  commentId: T:Fusee.Xirkit.Node
+  parent: Fusee.Xirkit
+  name: Node
+  nameWithType: Node
+  fullName: Fusee.Xirkit.Node
+- uid: Fusee.Xirkit.InPin`1
+  commentId: T:Fusee.Xirkit.InPin`1
+  name: InPin<T>
+  nameWithType: InPin<T>
+  fullName: Fusee.Xirkit.InPin<T>
+  nameWithType.vb: InPin(Of T)
+  fullName.vb: Fusee.Xirkit.InPin(Of T)
+  name.vb: InPin(Of T)
+  spec.csharp:
+  - uid: Fusee.Xirkit.InPin`1
+    name: InPin
+    nameWithType: InPin
+    fullName: Fusee.Xirkit.InPin
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xirkit.InPin`1
+    name: InPin
+    nameWithType: InPin
+    fullName: Fusee.Xirkit.InPin
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xirkit.OutPin`1
+  commentId: T:Fusee.Xirkit.OutPin`1
+  name: OutPin<T>
+  nameWithType: OutPin<T>
+  fullName: Fusee.Xirkit.OutPin<T>
+  nameWithType.vb: OutPin(Of T)
+  fullName.vb: Fusee.Xirkit.OutPin(Of T)
+  name.vb: OutPin(Of T)
+  spec.csharp:
+  - uid: Fusee.Xirkit.OutPin`1
+    name: OutPin
+    nameWithType: OutPin
+    fullName: Fusee.Xirkit.OutPin
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xirkit.OutPin`1
+    name: OutPin
+    nameWithType: OutPin
+    fullName: Fusee.Xirkit.OutPin
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xirkit.IInPin
+  commentId: T:Fusee.Xirkit.IInPin
+  parent: Fusee.Xirkit
+  name: IInPin
+  nameWithType: IInPin
+  fullName: Fusee.Xirkit.IInPin
+- uid: Fusee.Xirkit.IOutPin
+  commentId: T:Fusee.Xirkit.IOutPin
+  parent: Fusee.Xirkit
+  name: IOutPin
+  nameWithType: IOutPin
+  fullName: Fusee.Xirkit.IOutPin
+- uid: Fusee.Xirkit
+  commentId: N:Fusee.Xirkit
+  name: Fusee.Xirkit
+  nameWithType: Fusee.Xirkit
+  fullName: Fusee.Xirkit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Xirkit.Pin.N*
+  commentId: Overload:Fusee.Xirkit.Pin.N
+  name: N
+  nameWithType: Pin.N
+  fullName: Fusee.Xirkit.Pin.N
+- uid: Fusee.Xirkit.Pin.Member*
+  commentId: Overload:Fusee.Xirkit.Pin.Member
+  name: Member
+  nameWithType: Pin.Member
+  fullName: Fusee.Xirkit.Pin.Member
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Fusee.Xirkit.Pin
+  commentId: T:Fusee.Xirkit.Pin
+  parent: Fusee.Xirkit
+  name: Pin
+  nameWithType: Pin
+  fullName: Fusee.Xirkit.Pin
+- uid: Fusee.Xirkit.Pin.#ctor*
+  commentId: Overload:Fusee.Xirkit.Pin.#ctor
+  name: Pin
+  nameWithType: Pin.Pin
+  fullName: Fusee.Xirkit.Pin.Pin

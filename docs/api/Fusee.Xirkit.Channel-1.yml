@@ -1,0 +1,1099 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Xirkit.Channel`1
+  commentId: T:Fusee.Xirkit.Channel`1
+  id: Channel`1
+  parent: Fusee.Xirkit
+  children:
+  - Fusee.Xirkit.Channel`1.#ctor(Fusee.Xirkit.Channel{`0}.LerpFunc)
+  - Fusee.Xirkit.Channel`1.#ctor(Fusee.Xirkit.Channel{`0}.LerpFunc,`0)
+  - Fusee.Xirkit.Channel`1.#ctor(Fusee.Xirkit.Channel{`0}.SetChanelValue,Fusee.Xirkit.Channel{`0}.LerpFunc)
+  - Fusee.Xirkit.Channel`1.AddKeyframe(Fusee.Xirkit.Keyframe{`0})
+  - Fusee.Xirkit.Channel`1.AddKeyframe(System.Single,`0)
+  - Fusee.Xirkit.Channel`1.Duration
+  - Fusee.Xirkit.Channel`1.GetValueAt(System.Single)
+  - Fusee.Xirkit.Channel`1.RemoveKeyframe(System.Single)
+  - Fusee.Xirkit.Channel`1.SetTick(System.Single)
+  - Fusee.Xirkit.Channel`1.TimeChanged
+  - Fusee.Xirkit.Channel`1.Value
+  langs:
+  - csharp
+  - vb
+  name: Channel<TValue>
+  nameWithType: Channel<TValue>
+  fullName: Fusee.Xirkit.Channel<TValue>
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Channel.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Channel
+    path: src/Fusee/src/Xirkit/Channel.cs
+    startLine: 9
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nGeneric Channel implementation capable of storing keyframes of the given Type.\n"
+  example: []
+  syntax:
+    content: 'public class Channel<TValue> : ChannelBase'
+    typeParameters:
+    - id: TValue
+      description: The type of keyframes&apos; values that the channel should store.
+    content.vb: >-
+      Public Class Channel(Of TValue)
+          Inherits ChannelBase
+  inheritance:
+  - System.Object
+  - Fusee.Xirkit.ChannelBase
+  inheritedMembers:
+  - Fusee.Xirkit.ChannelBase.Time
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: Channel(Of TValue)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue)
+  name.vb: Channel(Of TValue)
+- uid: Fusee.Xirkit.Channel`1.TimeChanged
+  commentId: E:Fusee.Xirkit.Channel`1.TimeChanged
+  id: TimeChanged
+  parent: Fusee.Xirkit.Channel`1
+  langs:
+  - csharp
+  - vb
+  name: TimeChanged
+  nameWithType: Channel<TValue>.TimeChanged
+  fullName: Fusee.Xirkit.Channel<TValue>.TimeChanged
+  type: Event
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Channel.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TimeChanged
+    path: src/Fusee/src/Xirkit/Channel.cs
+    startLine: 29
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nOccurs when the channel time changed.\n"
+  example: []
+  syntax:
+    content: public event Channel<TValue>.SetChanelValue TimeChanged
+    return:
+      type: Fusee.Xirkit.Channel`1.SetChanelValue
+    content.vb: Public Event TimeChanged As Channel(Of TValue).SetChanelValue
+  nameWithType.vb: Channel(Of TValue).TimeChanged
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).TimeChanged
+- uid: Fusee.Xirkit.Channel`1.#ctor(Fusee.Xirkit.Channel{`0}.SetChanelValue,Fusee.Xirkit.Channel{`0}.LerpFunc)
+  commentId: M:Fusee.Xirkit.Channel`1.#ctor(Fusee.Xirkit.Channel{`0}.SetChanelValue,Fusee.Xirkit.Channel{`0}.LerpFunc)
+  id: '#ctor(Fusee.Xirkit.Channel{`0}.SetChanelValue,Fusee.Xirkit.Channel{`0}.LerpFunc)'
+  parent: Fusee.Xirkit.Channel`1
+  langs:
+  - csharp
+  - vb
+  name: Channel(Channel<TValue>.SetChanelValue, Channel<TValue>.LerpFunc)
+  nameWithType: Channel<TValue>.Channel(Channel<TValue>.SetChanelValue, Channel<TValue>.LerpFunc)
+  fullName: Fusee.Xirkit.Channel<TValue>.Channel(Fusee.Xirkit.Channel<TValue>.SetChanelValue, Fusee.Xirkit.Channel<TValue>.LerpFunc)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Channel.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Xirkit/Channel.cs
+    startLine: 48
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Xirkit.Channel%601\" data-throw-if-not-resolved=\"false\"></xref> class. Adds one default Keyframe and the right Lerpfunction.\n"
+  example: []
+  syntax:
+    content: public Channel(Channel<TValue>.SetChanelValue timeChanged, Channel<TValue>.LerpFunc lerpFunc)
+    parameters:
+    - id: timeChanged
+      type: Fusee.Xirkit.Channel`1.SetChanelValue
+      description: The time changed.
+    - id: lerpFunc
+      type: Fusee.Xirkit.Channel`1.LerpFunc
+      description: The lerp function.
+    content.vb: Public Sub New(timeChanged As Channel(Of TValue).SetChanelValue, lerpFunc As Channel(Of TValue).LerpFunc)
+  overload: Fusee.Xirkit.Channel`1.#ctor*
+  nameWithType.vb: Channel(Of TValue).Channel(Channel(Of TValue).SetChanelValue, Channel(Of TValue).LerpFunc)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).Channel(Fusee.Xirkit.Channel(Of TValue).SetChanelValue, Fusee.Xirkit.Channel(Of TValue).LerpFunc)
+  name.vb: Channel(Channel(Of TValue).SetChanelValue, Channel(Of TValue).LerpFunc)
+- uid: Fusee.Xirkit.Channel`1.#ctor(Fusee.Xirkit.Channel{`0}.LerpFunc)
+  commentId: M:Fusee.Xirkit.Channel`1.#ctor(Fusee.Xirkit.Channel{`0}.LerpFunc)
+  id: '#ctor(Fusee.Xirkit.Channel{`0}.LerpFunc)'
+  parent: Fusee.Xirkit.Channel`1
+  langs:
+  - csharp
+  - vb
+  name: Channel(Channel<TValue>.LerpFunc)
+  nameWithType: Channel<TValue>.Channel(Channel<TValue>.LerpFunc)
+  fullName: Fusee.Xirkit.Channel<TValue>.Channel(Fusee.Xirkit.Channel<TValue>.LerpFunc)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Channel.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Xirkit/Channel.cs
+    startLine: 59
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Xirkit.Channel%601\" data-throw-if-not-resolved=\"false\"></xref> class. Adds the right Lerpfunction.\n"
+  example: []
+  syntax:
+    content: public Channel(Channel<TValue>.LerpFunc lerpFunc)
+    parameters:
+    - id: lerpFunc
+      type: Fusee.Xirkit.Channel`1.LerpFunc
+      description: The right lerpfunction.
+    content.vb: Public Sub New(lerpFunc As Channel(Of TValue).LerpFunc)
+  overload: Fusee.Xirkit.Channel`1.#ctor*
+  nameWithType.vb: Channel(Of TValue).Channel(Channel(Of TValue).LerpFunc)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).Channel(Fusee.Xirkit.Channel(Of TValue).LerpFunc)
+  name.vb: Channel(Channel(Of TValue).LerpFunc)
+- uid: Fusee.Xirkit.Channel`1.#ctor(Fusee.Xirkit.Channel{`0}.LerpFunc,`0)
+  commentId: M:Fusee.Xirkit.Channel`1.#ctor(Fusee.Xirkit.Channel{`0}.LerpFunc,`0)
+  id: '#ctor(Fusee.Xirkit.Channel{`0}.LerpFunc,`0)'
+  parent: Fusee.Xirkit.Channel`1
+  langs:
+  - csharp
+  - vb
+  name: Channel(Channel<TValue>.LerpFunc, TValue)
+  nameWithType: Channel<TValue>.Channel(Channel<TValue>.LerpFunc, TValue)
+  fullName: Fusee.Xirkit.Channel<TValue>.Channel(Fusee.Xirkit.Channel<TValue>.LerpFunc, TValue)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Channel.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Xirkit/Channel.cs
+    startLine: 69
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Xirkit.Channel%601\" data-throw-if-not-resolved=\"false\"></xref> class. Adds a Keyframe with a specific value and the right lerpFunction.\n"
+  example: []
+  syntax:
+    content: public Channel(Channel<TValue>.LerpFunc lerpFunc, TValue value)
+    parameters:
+    - id: lerpFunc
+      type: Fusee.Xirkit.Channel`1.LerpFunc
+      description: The right lerpfunction.
+    - id: value
+      type: '{TValue}'
+      description: The value of the firs keyframe.
+    content.vb: Public Sub New(lerpFunc As Channel(Of TValue).LerpFunc, value As TValue)
+  overload: Fusee.Xirkit.Channel`1.#ctor*
+  nameWithType.vb: Channel(Of TValue).Channel(Channel(Of TValue).LerpFunc, TValue)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).Channel(Fusee.Xirkit.Channel(Of TValue).LerpFunc, TValue)
+  name.vb: Channel(Channel(Of TValue).LerpFunc, TValue)
+- uid: Fusee.Xirkit.Channel`1.SetTick(System.Single)
+  commentId: M:Fusee.Xirkit.Channel`1.SetTick(System.Single)
+  id: SetTick(System.Single)
+  parent: Fusee.Xirkit.Channel`1
+  langs:
+  - csharp
+  - vb
+  name: SetTick(Single)
+  nameWithType: Channel<TValue>.SetTick(Single)
+  fullName: Fusee.Xirkit.Channel<TValue>.SetTick(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Channel.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetTick
+    path: src/Fusee/src/Xirkit/Channel.cs
+    startLine: 79
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nIncrements the current time and advances between the best fitting keyframes.\n"
+  example: []
+  syntax:
+    content: public override void SetTick(float time)
+    parameters:
+    - id: time
+      type: System.Single
+      description: The time to advance this channel about.
+    content.vb: Public Overrides Sub SetTick(time As Single)
+  overridden: Fusee.Xirkit.ChannelBase.SetTick(System.Single)
+  overload: Fusee.Xirkit.Channel`1.SetTick*
+  nameWithType.vb: Channel(Of TValue).SetTick(Single)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).SetTick(System.Single)
+- uid: Fusee.Xirkit.Channel`1.Duration
+  commentId: P:Fusee.Xirkit.Channel`1.Duration
+  id: Duration
+  parent: Fusee.Xirkit.Channel`1
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: Channel<TValue>.Duration
+  fullName: Fusee.Xirkit.Channel<TValue>.Duration
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Channel.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Duration
+    path: src/Fusee/src/Xirkit/Channel.cs
+    startLine: 95
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nRetrieves the overall duration of this channel.\n"
+  example: []
+  syntax:
+    content: public override float Duration { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Overrides ReadOnly Property Duration As Single
+  overridden: Fusee.Xirkit.ChannelBase.Duration
+  overload: Fusee.Xirkit.Channel`1.Duration*
+  nameWithType.vb: Channel(Of TValue).Duration
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).Duration
+- uid: Fusee.Xirkit.Channel`1.AddKeyframe(Fusee.Xirkit.Keyframe{`0})
+  commentId: M:Fusee.Xirkit.Channel`1.AddKeyframe(Fusee.Xirkit.Keyframe{`0})
+  id: AddKeyframe(Fusee.Xirkit.Keyframe{`0})
+  parent: Fusee.Xirkit.Channel`1
+  langs:
+  - csharp
+  - vb
+  name: AddKeyframe(Keyframe<TValue>)
+  nameWithType: Channel<TValue>.AddKeyframe(Keyframe<TValue>)
+  fullName: Fusee.Xirkit.Channel<TValue>.AddKeyframe(Fusee.Xirkit.Keyframe<TValue>)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Channel.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddKeyframe
+    path: src/Fusee/src/Xirkit/Channel.cs
+    startLine: 107
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nAdds a keyframe to this channel.\n"
+  example: []
+  syntax:
+    content: public void AddKeyframe(Keyframe<TValue> keyframe)
+    parameters:
+    - id: keyframe
+      type: Fusee.Xirkit.Keyframe{{TValue}}
+      description: The keyframe.
+    content.vb: Public Sub AddKeyframe(keyframe As Keyframe(Of TValue))
+  overload: Fusee.Xirkit.Channel`1.AddKeyframe*
+  nameWithType.vb: Channel(Of TValue).AddKeyframe(Keyframe(Of TValue))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).AddKeyframe(Fusee.Xirkit.Keyframe(Of TValue))
+  name.vb: AddKeyframe(Keyframe(Of TValue))
+- uid: Fusee.Xirkit.Channel`1.AddKeyframe(System.Single,`0)
+  commentId: M:Fusee.Xirkit.Channel`1.AddKeyframe(System.Single,`0)
+  id: AddKeyframe(System.Single,`0)
+  parent: Fusee.Xirkit.Channel`1
+  langs:
+  - csharp
+  - vb
+  name: AddKeyframe(Single, TValue)
+  nameWithType: Channel<TValue>.AddKeyframe(Single, TValue)
+  fullName: Fusee.Xirkit.Channel<TValue>.AddKeyframe(System.Single, TValue)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Channel.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddKeyframe
+    path: src/Fusee/src/Xirkit/Channel.cs
+    startLine: 123
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nCreates a new Keyframe and add&apos;s him to the channel.\n"
+  example: []
+  syntax:
+    content: public void AddKeyframe(float time, TValue value)
+    parameters:
+    - id: time
+      type: System.Single
+      description: The time of the new keyframe.
+    - id: value
+      type: '{TValue}'
+      description: The value of the new keyframe.
+    content.vb: Public Sub AddKeyframe(time As Single, value As TValue)
+  overload: Fusee.Xirkit.Channel`1.AddKeyframe*
+  nameWithType.vb: Channel(Of TValue).AddKeyframe(Single, TValue)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).AddKeyframe(System.Single, TValue)
+- uid: Fusee.Xirkit.Channel`1.RemoveKeyframe(System.Single)
+  commentId: M:Fusee.Xirkit.Channel`1.RemoveKeyframe(System.Single)
+  id: RemoveKeyframe(System.Single)
+  parent: Fusee.Xirkit.Channel`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveKeyframe(Single)
+  nameWithType: Channel<TValue>.RemoveKeyframe(Single)
+  fullName: Fusee.Xirkit.Channel<TValue>.RemoveKeyframe(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Channel.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RemoveKeyframe
+    path: src/Fusee/src/Xirkit/Channel.cs
+    startLine: 139
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nRemoves a keyframe at a specific time (time = key).\n"
+  example: []
+  syntax:
+    content: public void RemoveKeyframe(float time)
+    parameters:
+    - id: time
+      type: System.Single
+      description: The time of the keyframe that has to be removed.
+    content.vb: Public Sub RemoveKeyframe(time As Single)
+  overload: Fusee.Xirkit.Channel`1.RemoveKeyframe*
+  nameWithType.vb: Channel(Of TValue).RemoveKeyframe(Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).RemoveKeyframe(System.Single)
+- uid: Fusee.Xirkit.Channel`1.GetValueAt(System.Single)
+  commentId: M:Fusee.Xirkit.Channel`1.GetValueAt(System.Single)
+  id: GetValueAt(System.Single)
+  parent: Fusee.Xirkit.Channel`1
+  langs:
+  - csharp
+  - vb
+  name: GetValueAt(Single)
+  nameWithType: Channel<TValue>.GetValueAt(Single)
+  fullName: Fusee.Xirkit.Channel<TValue>.GetValueAt(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Channel.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetValueAt
+    path: src/Fusee/src/Xirkit/Channel.cs
+    startLine: 155
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nReturns the value of a keyframe at a specific time.\n"
+  example: []
+  syntax:
+    content: public TValue GetValueAt(float time)
+    parameters:
+    - id: time
+      type: System.Single
+      description: The time.
+    return:
+      type: '{TValue}'
+      description: The calculated value
+    content.vb: Public Function GetValueAt(time As Single) As TValue
+  overload: Fusee.Xirkit.Channel`1.GetValueAt*
+  nameWithType.vb: Channel(Of TValue).GetValueAt(Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).GetValueAt(System.Single)
+- uid: Fusee.Xirkit.Channel`1.Value
+  commentId: P:Fusee.Xirkit.Channel`1.Value
+  id: Value
+  parent: Fusee.Xirkit.Channel`1
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: Channel<TValue>.Value
+  fullName: Fusee.Xirkit.Channel<TValue>.Value
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Channel.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Value
+    path: src/Fusee/src/Xirkit/Channel.cs
+    startLine: 211
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nGets the last calculated value.\n"
+  example: []
+  syntax:
+    content: public TValue Value { get; }
+    parameters: []
+    return:
+      type: '{TValue}'
+    content.vb: Public ReadOnly Property Value As TValue
+  overload: Fusee.Xirkit.Channel`1.Value*
+  nameWithType.vb: Channel(Of TValue).Value
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).Value
+references:
+- uid: Fusee.Xirkit
+  commentId: N:Fusee.Xirkit
+  name: Fusee.Xirkit
+  nameWithType: Fusee.Xirkit
+  fullName: Fusee.Xirkit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Xirkit.ChannelBase
+  commentId: T:Fusee.Xirkit.ChannelBase
+  parent: Fusee.Xirkit
+  name: ChannelBase
+  nameWithType: ChannelBase
+  fullName: Fusee.Xirkit.ChannelBase
+- uid: Fusee.Xirkit.ChannelBase.Time
+  commentId: P:Fusee.Xirkit.ChannelBase.Time
+  parent: Fusee.Xirkit.ChannelBase
+  name: Time
+  nameWithType: ChannelBase.Time
+  fullName: Fusee.Xirkit.ChannelBase.Time
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Xirkit.Channel`1.SetChanelValue
+  commentId: T:Fusee.Xirkit.Channel`1.SetChanelValue
+  parent: Fusee.Xirkit
+  name: Channel.SetChanelValue<>
+  nameWithType: Channel.SetChanelValue<>
+  fullName: Fusee.Xirkit.Channel.SetChanelValue<>
+  nameWithType.vb: Channel.SetChanelValue(Of )
+  fullName.vb: Fusee.Xirkit.Channel.SetChanelValue(Of )
+  name.vb: Channel.SetChanelValue(Of )
+  spec.csharp:
+  - uid: Fusee.Xirkit.Channel`1.SetChanelValue
+    name: Channel.SetChanelValue
+    nameWithType: Channel.SetChanelValue
+    fullName: Fusee.Xirkit.Channel.SetChanelValue
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xirkit.Channel`1.SetChanelValue
+    name: Channel.SetChanelValue
+    nameWithType: Channel.SetChanelValue
+    fullName: Fusee.Xirkit.Channel.SetChanelValue
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xirkit.Channel`1
+  commentId: T:Fusee.Xirkit.Channel`1
+  name: Channel<TValue>
+  nameWithType: Channel<TValue>
+  fullName: Fusee.Xirkit.Channel<TValue>
+  nameWithType.vb: Channel(Of TValue)
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue)
+  name.vb: Channel(Of TValue)
+  spec.csharp:
+  - uid: Fusee.Xirkit.Channel`1
+    name: Channel
+    nameWithType: Channel
+    fullName: Fusee.Xirkit.Channel
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xirkit.Channel`1
+    name: Channel
+    nameWithType: Channel
+    fullName: Fusee.Xirkit.Channel
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xirkit.Channel`1.#ctor*
+  commentId: Overload:Fusee.Xirkit.Channel`1.#ctor
+  name: Channel
+  nameWithType: Channel<TValue>.Channel
+  fullName: Fusee.Xirkit.Channel<TValue>.Channel
+  nameWithType.vb: Channel(Of TValue).Channel
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).Channel
+- uid: Fusee.Xirkit.Channel`1.LerpFunc
+  commentId: T:Fusee.Xirkit.Channel`1.LerpFunc
+  parent: Fusee.Xirkit
+  name: Channel.LerpFunc<>
+  nameWithType: Channel.LerpFunc<>
+  fullName: Fusee.Xirkit.Channel.LerpFunc<>
+  nameWithType.vb: Channel.LerpFunc(Of )
+  fullName.vb: Fusee.Xirkit.Channel.LerpFunc(Of )
+  name.vb: Channel.LerpFunc(Of )
+  spec.csharp:
+  - uid: Fusee.Xirkit.Channel`1.LerpFunc
+    name: Channel.LerpFunc
+    nameWithType: Channel.LerpFunc
+    fullName: Fusee.Xirkit.Channel.LerpFunc
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xirkit.Channel`1.LerpFunc
+    name: Channel.LerpFunc
+    nameWithType: Channel.LerpFunc
+    fullName: Fusee.Xirkit.Channel.LerpFunc
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TValue}'
+  commentId: '!:TValue'
+  definition: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: Fusee.Xirkit.ChannelBase.SetTick(System.Single)
+  commentId: M:Fusee.Xirkit.ChannelBase.SetTick(System.Single)
+  parent: Fusee.Xirkit.ChannelBase
+  isExternal: true
+  name: SetTick(Single)
+  nameWithType: ChannelBase.SetTick(Single)
+  fullName: Fusee.Xirkit.ChannelBase.SetTick(System.Single)
+  spec.csharp:
+  - uid: Fusee.Xirkit.ChannelBase.SetTick(System.Single)
+    name: SetTick
+    nameWithType: ChannelBase.SetTick
+    fullName: Fusee.Xirkit.ChannelBase.SetTick
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xirkit.ChannelBase.SetTick(System.Single)
+    name: SetTick
+    nameWithType: ChannelBase.SetTick
+    fullName: Fusee.Xirkit.ChannelBase.SetTick
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xirkit.Channel`1.SetTick*
+  commentId: Overload:Fusee.Xirkit.Channel`1.SetTick
+  name: SetTick
+  nameWithType: Channel<TValue>.SetTick
+  fullName: Fusee.Xirkit.Channel<TValue>.SetTick
+  nameWithType.vb: Channel(Of TValue).SetTick
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).SetTick
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Xirkit.ChannelBase.Duration
+  commentId: P:Fusee.Xirkit.ChannelBase.Duration
+  parent: Fusee.Xirkit.ChannelBase
+  name: Duration
+  nameWithType: ChannelBase.Duration
+  fullName: Fusee.Xirkit.ChannelBase.Duration
+- uid: Fusee.Xirkit.Channel`1.Duration*
+  commentId: Overload:Fusee.Xirkit.Channel`1.Duration
+  name: Duration
+  nameWithType: Channel<TValue>.Duration
+  fullName: Fusee.Xirkit.Channel<TValue>.Duration
+  nameWithType.vb: Channel(Of TValue).Duration
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).Duration
+- uid: Fusee.Xirkit.Channel`1.AddKeyframe*
+  commentId: Overload:Fusee.Xirkit.Channel`1.AddKeyframe
+  name: AddKeyframe
+  nameWithType: Channel<TValue>.AddKeyframe
+  fullName: Fusee.Xirkit.Channel<TValue>.AddKeyframe
+  nameWithType.vb: Channel(Of TValue).AddKeyframe
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).AddKeyframe
+- uid: Fusee.Xirkit.Keyframe{{TValue}}
+  commentId: T:Fusee.Xirkit.Keyframe{`0}
+  parent: Fusee.Xirkit
+  definition: Fusee.Xirkit.Keyframe`1
+  name: Keyframe<TValue>
+  nameWithType: Keyframe<TValue>
+  fullName: Fusee.Xirkit.Keyframe<TValue>
+  nameWithType.vb: Keyframe(Of TValue)
+  fullName.vb: Fusee.Xirkit.Keyframe(Of TValue)
+  name.vb: Keyframe(Of TValue)
+  spec.csharp:
+  - uid: Fusee.Xirkit.Keyframe`1
+    name: Keyframe
+    nameWithType: Keyframe
+    fullName: Fusee.Xirkit.Keyframe
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xirkit.Keyframe`1
+    name: Keyframe
+    nameWithType: Keyframe
+    fullName: Fusee.Xirkit.Keyframe
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xirkit.Keyframe`1
+  commentId: T:Fusee.Xirkit.Keyframe`1
+  name: Keyframe<TValue>
+  nameWithType: Keyframe<TValue>
+  fullName: Fusee.Xirkit.Keyframe<TValue>
+  nameWithType.vb: Keyframe(Of TValue)
+  fullName.vb: Fusee.Xirkit.Keyframe(Of TValue)
+  name.vb: Keyframe(Of TValue)
+  spec.csharp:
+  - uid: Fusee.Xirkit.Keyframe`1
+    name: Keyframe
+    nameWithType: Keyframe
+    fullName: Fusee.Xirkit.Keyframe
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xirkit.Keyframe`1
+    name: Keyframe
+    nameWithType: Keyframe
+    fullName: Fusee.Xirkit.Keyframe
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xirkit.Channel`1.RemoveKeyframe*
+  commentId: Overload:Fusee.Xirkit.Channel`1.RemoveKeyframe
+  name: RemoveKeyframe
+  nameWithType: Channel<TValue>.RemoveKeyframe
+  fullName: Fusee.Xirkit.Channel<TValue>.RemoveKeyframe
+  nameWithType.vb: Channel(Of TValue).RemoveKeyframe
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).RemoveKeyframe
+- uid: Fusee.Xirkit.Channel`1.GetValueAt*
+  commentId: Overload:Fusee.Xirkit.Channel`1.GetValueAt
+  name: GetValueAt
+  nameWithType: Channel<TValue>.GetValueAt
+  fullName: Fusee.Xirkit.Channel<TValue>.GetValueAt
+  nameWithType.vb: Channel(Of TValue).GetValueAt
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).GetValueAt
+- uid: Fusee.Xirkit.Channel`1.Value*
+  commentId: Overload:Fusee.Xirkit.Channel`1.Value
+  name: Value
+  nameWithType: Channel<TValue>.Value
+  fullName: Fusee.Xirkit.Channel<TValue>.Value
+  nameWithType.vb: Channel(Of TValue).Value
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue).Value

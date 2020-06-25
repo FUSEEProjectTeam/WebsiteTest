@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.TexRes
+  commentId: T:Fusee.Engine.Common.TexRes
+  id: TexRes
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.TexRes.High
+  - Fusee.Engine.Common.TexRes.Low
+  - Fusee.Engine.Common.TexRes.Middle
+  langs:
+  - csharp
+  - vb
+  name: TexRes
+  nameWithType: TexRes
+  fullName: Fusee.Engine.Common.TexRes
+  type: Enum
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/MultipassEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: TexRes
+    path: src/Fusee/src/Engine/Common/MultipassEnums.cs
+    startLine: 41
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nCommon texture resolutions for render textures. The value is given in px.\n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum TexRes
+    content.vb: >-
+      <Flags>
+
+      Public Enum TexRes
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Fusee.Engine.Common.TexRes.Low
+  commentId: F:Fusee.Engine.Common.TexRes.Low
+  id: Low
+  parent: Fusee.Engine.Common.TexRes
+  langs:
+  - csharp
+  - vb
+  name: Low
+  nameWithType: TexRes.Low
+  fullName: Fusee.Engine.Common.TexRes.Low
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/MultipassEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Low
+    path: src/Fusee/src/Engine/Common/MultipassEnums.cs
+    startLine: 47
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nCreate textures in low resolution.\n"
+  example: []
+  syntax:
+    content: Low = 1024
+    return:
+      type: Fusee.Engine.Common.TexRes
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.TexRes.Middle
+  commentId: F:Fusee.Engine.Common.TexRes.Middle
+  id: Middle
+  parent: Fusee.Engine.Common.TexRes
+  langs:
+  - csharp
+  - vb
+  name: Middle
+  nameWithType: TexRes.Middle
+  fullName: Fusee.Engine.Common.TexRes.Middle
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/MultipassEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Middle
+    path: src/Fusee/src/Engine/Common/MultipassEnums.cs
+    startLine: 51
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nCreate textures in middle resolution.\n"
+  example: []
+  syntax:
+    content: Middle = 2048
+    return:
+      type: Fusee.Engine.Common.TexRes
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.TexRes.High
+  commentId: F:Fusee.Engine.Common.TexRes.High
+  id: High
+  parent: Fusee.Engine.Common.TexRes
+  langs:
+  - csharp
+  - vb
+  name: High
+  nameWithType: TexRes.High
+  fullName: Fusee.Engine.Common.TexRes.High
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/MultipassEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: High
+    path: src/Fusee/src/Engine/Common/MultipassEnums.cs
+    startLine: 55
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nCreate textures in high resolution.\n"
+  example: []
+  syntax:
+    content: High = 4096
+    return:
+      type: Fusee.Engine.Common.TexRes
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Common.TexRes
+  commentId: T:Fusee.Engine.Common.TexRes
+  parent: Fusee.Engine.Common
+  name: TexRes
+  nameWithType: TexRes
+  fullName: Fusee.Engine.Common.TexRes

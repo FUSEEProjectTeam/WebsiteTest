@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>WebAssembly </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="WebAssembly ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<blockquote>
+<p>⚠️ <strong>Pre-Release Content</strong></p>
+</blockquote>
+<h1 id="webassembly">WebAssembly</h1>
+<h2 id="introduction">Introduction</h2>
+<p>WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable target for compilation of high-level languages like C/C++/Rust, enabling deployment on the web for client and server applications. (see: <a href="https://webassembly.org/">webassembly.org</a>).</p>
+<p>The Mono project managed to compile the dotnet runtime to Wasm (see: <a href="https://github.com/mono/mono/tree/master/sdks/wasm">github.com/mono/sdks/wasm</a>). Therefore it's possible to run native C# DLLs within the browser.</p>
+<p>Furthermore, Wave Engine (<a href="https://waveengine.net/">waveengine.net</a>) developers are providing their implementation of .NET bindings for WebGL through WebAssembly <a href="https://github.com/WaveEngine/WebGL.NET">WebGL.NET</a> to the public.</p>
+<p>These tools enable Fusee to compile web applications without relying on <a href="http://www.jsil.org/">JSIL</a> cross compilation anymore (from v0.8 onward).</p>
+<h2 id="usage">Usage</h2>
+<p>A minimal Fusee Wasm project needs, besides the actual Fusee core application, at least, the following two user generated files:</p>
+<h3 id="1-indexhtml">1) index.html</h3>
+<p>The following <code>*.js</code> files needs to be included within <code>&lt;head&gt;</code>:</p>
+<pre><code class="lang-javascript">&lt;script src=&quot;runtime.js&quot;&gt;&lt;/script&gt;
+&lt;script defer src=&quot;Scripts/mono_support.js&quot;&gt;&lt;/script&gt;
+&lt;script defer src=&quot;Scripts/SkiaSharp.js&quot;&gt;&lt;/script&gt;
+&lt;script defer src=&quot;canvaskit.js&quot;&gt;&lt;/script&gt;
+&lt;script defer src=&quot;dotnet.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>The following javascript snippet starts the C# program inside <code>&lt;body&gt;</code>:</p>
+<pre><code class="lang-javascript">        var App = {
+            init: function () {
+
+                BINDING.call_static_method(&quot;[Fusee.NAMESPACE] Fusee.NAMESPACE.CLASS_NAME:METHOD_NAME&quot;, []);
+            },
+        };
+</code></pre>
+<h3 id="2-a-c-class-with-this-or-a-similar-content-replace-namespace-and-class_name-accordingly">2) A C# class with this or a similar content (replace <em>NAMESPACE</em> and <em>CLASS_NAME</em> accordingly)</h3>
+<pre><code class="lang-csharp">
+namespace Fusee.NAMESPACE
+{
+    internal static class CLASS_NAME
+    {
+        public static void METHOD_NAME()
+        {
+            // This method takes care of everything
+            WebAsmProgram.Start(new MyWasmImpl());
+        }
+    }
+
+    public class MyWasmImpl : WebAsmBase
+    {
+        private RenderCanvasImp _canvasImp;
+        private Core.MyFuseeApp _app;
+
+        public override void Run()
+        {
+            base.Run();
+            // Inject Fusee.Engine.Base InjectMe dependencies
+            IO.IOImp = new Fusee.Base.Imp.WebAsm.IOImp();
+
+            // AssetProvider
+            // ...
+            //
+
+            // create an instance of the actual Fusee core application
+            // which can be found in another project
+            _app = new Core.MyFuseeApp();
+
+            // Inject Fusee.Engine InjectMe dependencies (hard coded)
+            _canvasImp = new RenderCanvasImp(canvas, gl, canvasWidth, canvasHeight);
+            _app.CanvasImplementor = _canvasImp;
+            _app.ContextImplementor = new RenderContextImp(_app.CanvasImplementor);
+            Input.AddDriverImp(new RenderCanvasInputDriverImp(_app.CanvasImplementor));
+
+            // Start the app
+            _app.Run();
+        }
+
+        public override void Update(double elapsedMilliseconds)
+        {
+            if (_canvasImp != null)
+                _canvasImp.DeltaTime = (float)(elapsedMilliseconds / 1000.0);
+        }
+
+        public override void Draw()
+        {
+            _canvasImp?.DoRender();
+        }
+
+        public override void Resize(int width, int height)
+        {
+            base.Resize(width, height);
+            _canvasImp.DoResize(width, height);
+        }
+    }
+}
+</code></pre>
+<p>Furthermore one needs the following files which can be copied from any example project:</p>
+<ul>
+<li>canvaskit.js</li>
+<li>canvaskit.wasm</li>
+<li>Scripts/mono_support.js</li>
+<li>Scripts/SkiaSharp.js</li>
+</ul>
+<p>Anything else will be added/copied during compilation.</p>
+<p>Please make sure to include the <code>FuseeWasmCopyInheritedAssets</code> target within your <code>*.csproj</code> file, as well as the <code>WebAssembly.*</code> references and the <code>MonoWasmLinkSkip</code> property. The easiest way is to just copy an example project <code>*.csproj</code> and modify it to your needs.</p>
+<h2 id="-engine-developer">👷 Engine Developer</h2>
+<h2 id="short-implementation-overview-of-webassembly-in-fusee">Short implementation overview of WebAssembly in Fusee</h2>
+<p>As written above, Fusee utilizes mono's dotnet for Wasm implementation on the one hand, on the other hand, WebGL.NET bindings generated by the WaveEngine team.</p>
+<p>The architecture of Fusee allows separate implementations for arbitrary renderer and build targets. To implement the new WebGL Wasm backend, one needs to implement the <code>RenderContextImp</code> which implements the <code>IRenderContextImp</code> interface, which anon represents the methods within the non platform specific <code>RenderContext</code>. This implementation (and the WebGL.NET bindings) can be found within <code>Base.Engine.Imp.Graphics.WebAsm</code>. This implementation relies upon the Mono WebAssembly bindings which are currently under development and therefore not available via NuGet. The file <code>$(FuseeRoot)\NuGet.config</code> therefore adds a new package source <code>wasm</code> and the corresponding source folder <code>$(FuseeRoot)\packages\*.*</code> in which the Mono bindings can be found.</p>
+<p>This suffices for VS 2019 and the corresponding *.csproj files to find and obtain the correct packages (as of today: <code>WebAssembly.Bindings</code>, <code>WebAssembly.Net.Http</code> and <code>WebAssembly.Net.WebSockets</code>).</p>
+<p>Futhermore it contains the new build task <code>Mono.WebAssembly.Sdk</code> as a usable NuGet package.</p>
+<h3 id="build-via-monowebassemblysdk">Build via <code>Mono.WebAssembly.Sdk</code></h3>
+<p>The build task gathers all used C# DLLs in a first step and tries to slim and optimize the code with the help of <a href="https://github.com/mono/linker">mono linker</a>. This little tool steps through the generated IL code and tries to optimize.</p>
+<p>Unfortunately the linker crashes while traversing <code>System.ServiceModel</code> and <code>System.ServiceModel.Primitives</code>. Therefore these dependencies are removed from our protobuf-net-fusee version.</p>
+<p>Beyond that, it also needs a package reference to <code>System.Collections.Immutable</code> within the <code>*.csproj</code> file, as this dependency isn't gathered automatically during traversal.</p>
+<p>In addition, we need to make sure, that the linking process skips the namespaces <code>Fusee.Engine.Core</code>, <code>Fusee.Serialization</code>, <code>Fusee.Math.Core</code> and <code>protobuf-net.Core</code>. This is done inside the <code>*.csproj</code> file via <code>&lt;MonoWasmLinkMode&gt;Full&lt;/MonoWasmLinkMode&gt;</code> in combination with <code>&lt;MonoWasmLinkSkip&gt;Fusee.Engine.Core;Fusee.Serialization;...&lt;/MonoWasmLinkSkip&gt;</code>. Otherwise the optimization process removes (empty) classes or (base) methods / attributes which are needed for de-serialization.</p>
+<p>The C# DLLs are being copied to <code>output_folder/managed</code> after that, and all other necessary files (dotnet.wasm, etc.) are added, too.</p>
+<p>The resulting build folder is self-contained.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/WebsiteTest/blob/master/src/DocFX/wiki/WebAssembly.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

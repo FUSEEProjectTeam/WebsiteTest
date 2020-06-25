@@ -1,0 +1,576 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Jometri.CreatePrimitiveGeometry
+  commentId: T:Fusee.Jometri.CreatePrimitiveGeometry
+  id: CreatePrimitiveGeometry
+  parent: Fusee.Jometri
+  children:
+  - Fusee.Jometri.CreatePrimitiveGeometry.CreateConeGeometry(System.Single,System.Single,System.Int32)
+  - Fusee.Jometri.CreatePrimitiveGeometry.CreateCuboidGeometry(System.Single,System.Single,System.Single)
+  - Fusee.Jometri.CreatePrimitiveGeometry.CreatePyramidGeometry(System.Single,System.Single,System.Single)
+  - Fusee.Jometri.CreatePrimitiveGeometry.CreateSpehreGeometry(System.Single,System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: CreatePrimitiveGeometry
+  nameWithType: CreatePrimitiveGeometry
+  fullName: Fusee.Jometri.CreatePrimitiveGeometry
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/CreatePrimitiveGeometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CreatePrimitiveGeometry
+    path: src/Fusee/src/Jometri/CreatePrimitiveGeometry.cs
+    startLine: 10
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nThis class provides public methods to create primitive geometry from scratch. The Geometry is stored in DCEL\n"
+  example: []
+  syntax:
+    content: public class CreatePrimitiveGeometry
+    content.vb: Public Class CreatePrimitiveGeometry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Jometri.CreatePrimitiveGeometry.CreateCuboidGeometry(System.Single,System.Single,System.Single)
+  commentId: M:Fusee.Jometri.CreatePrimitiveGeometry.CreateCuboidGeometry(System.Single,System.Single,System.Single)
+  id: CreateCuboidGeometry(System.Single,System.Single,System.Single)
+  parent: Fusee.Jometri.CreatePrimitiveGeometry
+  langs:
+  - csharp
+  - vb
+  name: CreateCuboidGeometry(Single, Single, Single)
+  nameWithType: CreatePrimitiveGeometry.CreateCuboidGeometry(Single, Single, Single)
+  fullName: Fusee.Jometri.CreatePrimitiveGeometry.CreateCuboidGeometry(System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/CreatePrimitiveGeometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CreateCuboidGeometry
+    path: src/Fusee/src/Jometri/CreatePrimitiveGeometry.cs
+    startLine: 21
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nCreates and returns a Cuboid as DCEL with the given dimensions, centered in the world coordinate system.\n"
+  example: []
+  syntax:
+    content: public static Geometry CreateCuboidGeometry(float dimensionX, float dimensionY, float dimensionZ)
+    parameters:
+    - id: dimensionX
+      type: System.Single
+      description: Width in X-dimension.
+    - id: dimensionY
+      type: System.Single
+      description: Height in Y-dimension.
+    - id: dimensionZ
+      type: System.Single
+      description: Depth in Z-dimension.
+    return:
+      type: Fusee.Jometri.Geometry
+      description: ''
+    content.vb: Public Shared Function CreateCuboidGeometry(dimensionX As Single, dimensionY As Single, dimensionZ As Single) As Geometry
+  overload: Fusee.Jometri.CreatePrimitiveGeometry.CreateCuboidGeometry*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Jometri.CreatePrimitiveGeometry.CreateSpehreGeometry(System.Single,System.Int32,System.Int32)
+  commentId: M:Fusee.Jometri.CreatePrimitiveGeometry.CreateSpehreGeometry(System.Single,System.Int32,System.Int32)
+  id: CreateSpehreGeometry(System.Single,System.Int32,System.Int32)
+  parent: Fusee.Jometri.CreatePrimitiveGeometry
+  langs:
+  - csharp
+  - vb
+  name: CreateSpehreGeometry(Single, Int32, Int32)
+  nameWithType: CreatePrimitiveGeometry.CreateSpehreGeometry(Single, Int32, Int32)
+  fullName: Fusee.Jometri.CreatePrimitiveGeometry.CreateSpehreGeometry(System.Single, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/CreatePrimitiveGeometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CreateSpehreGeometry
+    path: src/Fusee/src/Jometri/CreatePrimitiveGeometry.cs
+    startLine: 56
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nCreates and returns a UV-Sphere as a DCEL with the specified dimensions centered in the worlds coordinate system.\n"
+  example: []
+  syntax:
+    content: public static Geometry CreateSpehreGeometry(float radius, int horizontalResolution, int verticalResolution)
+    parameters:
+    - id: radius
+      type: System.Single
+      description: Radius of the sphere.
+    - id: horizontalResolution
+      type: System.Int32
+      description: Lines of latitude, smallest value is 3.
+    - id: verticalResolution
+      type: System.Int32
+      description: Lines of longitude, smallest value is 3.
+    return:
+      type: Fusee.Jometri.Geometry
+      description: A UV-Sphere centered in the world coordinate system as a DCEL.
+    content.vb: Public Shared Function CreateSpehreGeometry(radius As Single, horizontalResolution As Integer, verticalResolution As Integer) As Geometry
+  overload: Fusee.Jometri.CreatePrimitiveGeometry.CreateSpehreGeometry*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Jometri.CreatePrimitiveGeometry.CreateConeGeometry(System.Single,System.Single,System.Int32)
+  commentId: M:Fusee.Jometri.CreatePrimitiveGeometry.CreateConeGeometry(System.Single,System.Single,System.Int32)
+  id: CreateConeGeometry(System.Single,System.Single,System.Int32)
+  parent: Fusee.Jometri.CreatePrimitiveGeometry
+  langs:
+  - csharp
+  - vb
+  name: CreateConeGeometry(Single, Single, Int32)
+  nameWithType: CreatePrimitiveGeometry.CreateConeGeometry(Single, Single, Int32)
+  fullName: Fusee.Jometri.CreatePrimitiveGeometry.CreateConeGeometry(System.Single, System.Single, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/CreatePrimitiveGeometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CreateConeGeometry
+    path: src/Fusee/src/Jometri/CreatePrimitiveGeometry.cs
+    startLine: 300
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nCreates and returns a cone with the given dimensions.\n"
+  example: []
+  syntax:
+    content: public static Geometry CreateConeGeometry(float baseRadius, float dimensionY, int sliceCount)
+    parameters:
+    - id: baseRadius
+      type: System.Single
+      description: The radius of the base circle.
+    - id: dimensionY
+      type: System.Single
+      description: The height of the cone.
+    - id: sliceCount
+      type: System.Int32
+      description: The horizontal resolution of the base circle. Min value is 3. For a basic cone 15.
+    return:
+      type: Fusee.Jometri.Geometry
+      description: ''
+    content.vb: Public Shared Function CreateConeGeometry(baseRadius As Single, dimensionY As Single, sliceCount As Integer) As Geometry
+  overload: Fusee.Jometri.CreatePrimitiveGeometry.CreateConeGeometry*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Jometri.CreatePrimitiveGeometry.CreatePyramidGeometry(System.Single,System.Single,System.Single)
+  commentId: M:Fusee.Jometri.CreatePrimitiveGeometry.CreatePyramidGeometry(System.Single,System.Single,System.Single)
+  id: CreatePyramidGeometry(System.Single,System.Single,System.Single)
+  parent: Fusee.Jometri.CreatePrimitiveGeometry
+  langs:
+  - csharp
+  - vb
+  name: CreatePyramidGeometry(Single, Single, Single)
+  nameWithType: CreatePrimitiveGeometry.CreatePyramidGeometry(Single, Single, Single)
+  fullName: Fusee.Jometri.CreatePrimitiveGeometry.CreatePyramidGeometry(System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Jometri/CreatePrimitiveGeometry.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CreatePyramidGeometry
+    path: src/Fusee/src/Jometri/CreatePrimitiveGeometry.cs
+    startLine: 482
+  assemblies:
+  - Fusee.Jometri
+  namespace: Fusee.Jometri
+  summary: "\nCreates and returns a Pyramid as a DCEL with the specified dimensions centered in the worlds coordinate system.\n"
+  example: []
+  syntax:
+    content: public static Geometry CreatePyramidGeometry(float dimensionX, float dimensionY, float dimensionZ)
+    parameters:
+    - id: dimensionX
+      type: System.Single
+      description: Width of the Pyramid in X-dimension
+    - id: dimensionY
+      type: System.Single
+      description: Height of the Pyramid in Y-dimension.
+    - id: dimensionZ
+      type: System.Single
+      description: Depth of the Pyramid in Z-dimension.
+    return:
+      type: Fusee.Jometri.Geometry
+      description: ''
+    content.vb: Public Shared Function CreatePyramidGeometry(dimensionX As Single, dimensionY As Single, dimensionZ As Single) As Geometry
+  overload: Fusee.Jometri.CreatePrimitiveGeometry.CreatePyramidGeometry*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Fusee.Jometri
+  commentId: N:Fusee.Jometri
+  name: Fusee.Jometri
+  nameWithType: Fusee.Jometri
+  fullName: Fusee.Jometri
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Jometri.CreatePrimitiveGeometry.CreateCuboidGeometry*
+  commentId: Overload:Fusee.Jometri.CreatePrimitiveGeometry.CreateCuboidGeometry
+  name: CreateCuboidGeometry
+  nameWithType: CreatePrimitiveGeometry.CreateCuboidGeometry
+  fullName: Fusee.Jometri.CreatePrimitiveGeometry.CreateCuboidGeometry
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Jometri.Geometry
+  commentId: T:Fusee.Jometri.Geometry
+  parent: Fusee.Jometri
+  name: Geometry
+  nameWithType: Geometry
+  fullName: Fusee.Jometri.Geometry
+- uid: Fusee.Jometri.CreatePrimitiveGeometry.CreateSpehreGeometry*
+  commentId: Overload:Fusee.Jometri.CreatePrimitiveGeometry.CreateSpehreGeometry
+  name: CreateSpehreGeometry
+  nameWithType: CreatePrimitiveGeometry.CreateSpehreGeometry
+  fullName: Fusee.Jometri.CreatePrimitiveGeometry.CreateSpehreGeometry
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Jometri.CreatePrimitiveGeometry.CreateConeGeometry*
+  commentId: Overload:Fusee.Jometri.CreatePrimitiveGeometry.CreateConeGeometry
+  name: CreateConeGeometry
+  nameWithType: CreatePrimitiveGeometry.CreateConeGeometry
+  fullName: Fusee.Jometri.CreatePrimitiveGeometry.CreateConeGeometry
+- uid: Fusee.Jometri.CreatePrimitiveGeometry.CreatePyramidGeometry*
+  commentId: Overload:Fusee.Jometri.CreatePrimitiveGeometry.CreatePyramidGeometry
+  name: CreatePyramidGeometry
+  nameWithType: CreatePrimitiveGeometry.CreatePyramidGeometry
+  fullName: Fusee.Jometri.CreatePrimitiveGeometry.CreatePyramidGeometry

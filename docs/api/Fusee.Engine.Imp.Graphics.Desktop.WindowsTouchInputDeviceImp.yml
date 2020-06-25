@@ -1,0 +1,1325 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  commentId: T:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  id: WindowsTouchInputDeviceImp
+  parent: Fusee.Engine.Imp.Graphics.Desktop
+  children:
+  - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(GameWindow)
+  - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxesCount
+  - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxisImpDesc
+  - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxisValueChanged
+  - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonCount
+  - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonImpDesc
+  - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonValueChanged
+  - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Category
+  - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Desc
+  - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.GetAxis(System.Int32)
+  - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.GetButton(System.Int32)
+  - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Id
+  langs:
+  - csharp
+  - vb
+  name: WindowsTouchInputDeviceImp
+  nameWithType: WindowsTouchInputDeviceImp
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: WindowsTouchInputDeviceImp
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+    startLine: 136
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nTouch input device implementation for the Windows platform. This implementation directly\nsniffles at the render window&apos;s message pump (identified by the <see cref=\"!:GameWindow\"></see> parameter passed\nto the constructor) to receive \n<a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/hh454904(v=vs.85).aspx\">WM_POINTER</a> messages.\n"
+  example: []
+  syntax:
+    content: 'public class WindowsTouchInputDeviceImp : IInputDeviceImp'
+    content.vb: >-
+      Public Class WindowsTouchInputDeviceImp
+          Implements IInputDeviceImp
+  inheritance:
+  - System.Object
+  implements:
+  - Fusee.Engine.Common.IInputDeviceImp
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(GameWindow)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(GameWindow)
+  id: '#ctor(GameWindow)'
+  parent: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  langs:
+  - csharp
+  - vb
+  name: WindowsTouchInputDeviceImp(GameWindow)
+  nameWithType: WindowsTouchInputDeviceImp.WindowsTouchInputDeviceImp(GameWindow)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.WindowsTouchInputDeviceImp(GameWindow)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+    startLine: 432
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public WindowsTouchInputDeviceImp(GameWindow gameWindow)
+    parameters:
+    - id: gameWindow
+      type: GameWindow
+      description: "The game window to hook on to receive \n<a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/hh454904(v=vs.85).aspx\">WM_POINTER</a> messages."
+    content.vb: Public Sub New(gameWindow As GameWindow)
+  overload: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Desc
+  commentId: P:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Desc
+  id: Desc
+  parent: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  langs:
+  - csharp
+  - vb
+  name: Desc
+  nameWithType: WindowsTouchInputDeviceImp.Desc
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Desc
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Desc
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+    startLine: 562
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nShort description string for this device to be used in dialogs.\n"
+  example: []
+  syntax:
+    content: public string Desc { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Desc As String
+  overload: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Desc*
+  implements:
+  - Fusee.Engine.Common.IInputDeviceImp.Desc
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Id
+  commentId: P:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Id
+  id: Id
+  parent: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: WindowsTouchInputDeviceImp.Id
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Id
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Id
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+    startLine: 568
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nReturns a (hopefully) unique ID for this driver. Uniqueness is granted by using the \nfull class name (including namespace).\n"
+  example: []
+  syntax:
+    content: public string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Id As String
+  overload: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Id*
+  implements:
+  - Fusee.Engine.Common.IInputDeviceImp.Id
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxisValueChanged
+  commentId: E:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxisValueChanged
+  id: AxisValueChanged
+  parent: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  langs:
+  - csharp
+  - vb
+  name: AxisValueChanged
+  nameWithType: WindowsTouchInputDeviceImp.AxisValueChanged
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxisValueChanged
+  type: Event
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AxisValueChanged
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+    startLine: 574
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nOccurs on value changes of axes exhibited by this device.\nOnly applies for axes where the <xref href=\"Fusee.Engine.Common.AxisImpDescription.PollAxis\" data-throw-if-not-resolved=\"false\"></xref> is set to false.\n"
+  example: []
+  syntax:
+    content: public event EventHandler<AxisValueChangedArgs> AxisValueChanged
+    return:
+      type: System.EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}
+    content.vb: Public Event AxisValueChanged As EventHandler(Of AxisValueChangedArgs)
+  implements:
+  - Fusee.Engine.Common.IInputDeviceImp.AxisValueChanged
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonValueChanged
+  commentId: E:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonValueChanged
+  id: ButtonValueChanged
+  parent: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  langs:
+  - csharp
+  - vb
+  name: ButtonValueChanged
+  nameWithType: WindowsTouchInputDeviceImp.ButtonValueChanged
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonValueChanged
+  type: Event
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ButtonValueChanged
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+    startLine: 578
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: A touchpoints&apos;s contact state is communicated by a button.
+  example: []
+  syntax:
+    content: public event EventHandler<ButtonValueChangedArgs> ButtonValueChanged
+    return:
+      type: System.EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}
+    content.vb: Public Event ButtonValueChanged As EventHandler(Of ButtonValueChangedArgs)
+  see:
+  - linkId: Fusee.Engine.Common.ButtonImpDescription.PollButton
+    commentId: F:Fusee.Engine.Common.ButtonImpDescription.PollButton
+  implements:
+  - Fusee.Engine.Common.IInputDeviceImp.ButtonValueChanged
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Category
+  commentId: P:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Category
+  id: Category
+  parent: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  langs:
+  - csharp
+  - vb
+  name: Category
+  nameWithType: WindowsTouchInputDeviceImp.Category
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Category
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Category
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+    startLine: 584
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nReturns <xref href=\"Fusee.Engine.Common.DeviceCategory.Touch\" data-throw-if-not-resolved=\"false\"></xref>, just because it&apos;s a touch device :-).\n"
+  example: []
+  syntax:
+    content: public DeviceCategory Category { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.DeviceCategory
+    content.vb: Public ReadOnly Property Category As DeviceCategory
+  overload: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Category*
+  implements:
+  - Fusee.Engine.Common.IInputDeviceImp.Category
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxesCount
+  commentId: P:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxesCount
+  id: AxesCount
+  parent: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  langs:
+  - csharp
+  - vb
+  name: AxesCount
+  nameWithType: WindowsTouchInputDeviceImp.AxesCount
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxesCount
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AxesCount
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+    startLine: 593
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nReturns the number of axes. Up to five touchpoints (with two axes (X and Y) per Touchpoint plus \none axis carrying the number of currently touched touchpoints plus four axes describing the minimum and\nmaximum X and Y values.\n"
+  example: []
+  syntax:
+    content: public int AxesCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe axes count.\n"
+    content.vb: Public ReadOnly Property AxesCount As Integer
+  overload: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxesCount*
+  implements:
+  - Fusee.Engine.Common.IInputDeviceImp.AxesCount
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxisImpDesc
+  commentId: P:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxisImpDesc
+  id: AxisImpDesc
+  parent: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  langs:
+  - csharp
+  - vb
+  name: AxisImpDesc
+  nameWithType: WindowsTouchInputDeviceImp.AxisImpDesc
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxisImpDesc
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AxisImpDesc
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+    startLine: 598
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nReturns description information for all axes.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<AxisImpDescription> AxisImpDesc { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.AxisImpDescription}
+    content.vb: Public ReadOnly Property AxisImpDesc As IEnumerable(Of AxisImpDescription)
+  overload: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxisImpDesc*
+  implements:
+  - Fusee.Engine.Common.IInputDeviceImp.AxisImpDesc
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.GetAxis(System.Int32)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.GetAxis(System.Int32)
+  id: GetAxis(System.Int32)
+  parent: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  langs:
+  - csharp
+  - vb
+  name: GetAxis(Int32)
+  nameWithType: WindowsTouchInputDeviceImp.GetAxis(Int32)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.GetAxis(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetAxis
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+    startLine: 606
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nRetrieves values for the number of currently active touchpoints and the touches min and max values. The touchpoint X and Y axes themselves are event-based axes.\nDo not query them here.\n"
+  example: []
+  syntax:
+    content: public float GetAxis(int iAxisId)
+    parameters:
+    - id: iAxisId
+      type: System.Int32
+      description: The axis to retrieve information for.
+    return:
+      type: System.Single
+      description: The value at the given axis.
+    content.vb: Public Function GetAxis(iAxisId As Integer) As Single
+  overload: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.GetAxis*
+  implements:
+  - Fusee.Engine.Common.IInputDeviceImp.GetAxis(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonCount
+  commentId: P:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonCount
+  id: ButtonCount
+  parent: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  langs:
+  - csharp
+  - vb
+  name: ButtonCount
+  nameWithType: WindowsTouchInputDeviceImp.ButtonCount
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonCount
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ButtonCount
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+    startLine: 630
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nRetrieves the button count. One button for each of the up to five supported touchpoints signaling that the touchpoint currently has contact.\n"
+  example: []
+  syntax:
+    content: public int ButtonCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe button count.\n"
+    content.vb: Public ReadOnly Property ButtonCount As Integer
+  overload: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonCount*
+  implements:
+  - Fusee.Engine.Common.IInputDeviceImp.ButtonCount
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonImpDesc
+  commentId: P:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonImpDesc
+  id: ButtonImpDesc
+  parent: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  langs:
+  - csharp
+  - vb
+  name: ButtonImpDesc
+  nameWithType: WindowsTouchInputDeviceImp.ButtonImpDesc
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonImpDesc
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ButtonImpDesc
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+    startLine: 638
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nRetrieve a description for each button.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<ButtonImpDescription> ButtonImpDesc { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.ButtonImpDescription}
+      description: "\nThe button imp description.\n"
+    content.vb: Public ReadOnly Property ButtonImpDesc As IEnumerable(Of ButtonImpDescription)
+  overload: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonImpDesc*
+  implements:
+  - Fusee.Engine.Common.IInputDeviceImp.ButtonImpDesc
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.GetButton(System.Int32)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.GetButton(System.Int32)
+  id: GetButton(System.Int32)
+  parent: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  langs:
+  - csharp
+  - vb
+  name: GetButton(Int32)
+  nameWithType: WindowsTouchInputDeviceImp.GetButton(Int32)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.GetButton(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetButton
+    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsTouchDeviceImp.cs
+    startLine: 645
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nGets the button state. This device&apos;s buttons signal that a finger (nose, elbow, knee...) currently has contact with the scree surface.\n"
+  example: []
+  syntax:
+    content: public bool GetButton(int iButtonId)
+    parameters:
+    - id: iButtonId
+      type: System.Int32
+      description: The button identifier.
+    return:
+      type: System.Boolean
+      description: true if the button is hit, else false
+    content.vb: Public Function GetButton(iButtonId As Integer) As Boolean
+  overload: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.GetButton*
+  implements:
+  - Fusee.Engine.Common.IInputDeviceImp.GetButton(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Imp.Graphics.Desktop
+  commentId: N:Fusee.Engine.Imp.Graphics.Desktop
+  name: Fusee.Engine.Imp.Graphics.Desktop
+  nameWithType: Fusee.Engine.Imp.Graphics.Desktop
+  fullName: Fusee.Engine.Imp.Graphics.Desktop
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Common.IInputDeviceImp
+  commentId: T:Fusee.Engine.Common.IInputDeviceImp
+  parent: Fusee.Engine.Common
+  name: IInputDeviceImp
+  nameWithType: IInputDeviceImp
+  fullName: Fusee.Engine.Common.IInputDeviceImp
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  commentId: T:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+  name: WindowsTouchInputDeviceImp
+  nameWithType: WindowsTouchInputDeviceImp
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor
+  name: WindowsTouchInputDeviceImp
+  nameWithType: WindowsTouchInputDeviceImp.WindowsTouchInputDeviceImp
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.WindowsTouchInputDeviceImp
+- uid: GameWindow
+  isExternal: true
+  name: GameWindow
+  nameWithType: GameWindow
+  fullName: GameWindow
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Desc*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Desc
+  name: Desc
+  nameWithType: WindowsTouchInputDeviceImp.Desc
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Desc
+- uid: Fusee.Engine.Common.IInputDeviceImp.Desc
+  commentId: P:Fusee.Engine.Common.IInputDeviceImp.Desc
+  parent: Fusee.Engine.Common.IInputDeviceImp
+  name: Desc
+  nameWithType: IInputDeviceImp.Desc
+  fullName: Fusee.Engine.Common.IInputDeviceImp.Desc
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Id*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Id
+  name: Id
+  nameWithType: WindowsTouchInputDeviceImp.Id
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Id
+- uid: Fusee.Engine.Common.IInputDeviceImp.Id
+  commentId: P:Fusee.Engine.Common.IInputDeviceImp.Id
+  parent: Fusee.Engine.Common.IInputDeviceImp
+  name: Id
+  nameWithType: IInputDeviceImp.Id
+  fullName: Fusee.Engine.Common.IInputDeviceImp.Id
+- uid: Fusee.Engine.Common.AxisImpDescription.PollAxis
+  commentId: F:Fusee.Engine.Common.AxisImpDescription.PollAxis
+  isExternal: true
+- uid: Fusee.Engine.Common.IInputDeviceImp.AxisValueChanged
+  commentId: E:Fusee.Engine.Common.IInputDeviceImp.AxisValueChanged
+  parent: Fusee.Engine.Common.IInputDeviceImp
+  name: AxisValueChanged
+  nameWithType: IInputDeviceImp.AxisValueChanged
+  fullName: Fusee.Engine.Common.IInputDeviceImp.AxisValueChanged
+- uid: System.EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<AxisValueChangedArgs>
+  nameWithType: EventHandler<AxisValueChangedArgs>
+  fullName: System.EventHandler<Fusee.Engine.Common.AxisValueChangedArgs>
+  nameWithType.vb: EventHandler(Of AxisValueChangedArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Common.AxisValueChangedArgs)
+  name.vb: EventHandler(Of AxisValueChangedArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Common.AxisValueChangedArgs
+    name: AxisValueChangedArgs
+    nameWithType: AxisValueChangedArgs
+    fullName: Fusee.Engine.Common.AxisValueChangedArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Common.AxisValueChangedArgs
+    name: AxisValueChangedArgs
+    nameWithType: AxisValueChangedArgs
+    fullName: Fusee.Engine.Common.AxisValueChangedArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.ButtonImpDescription.PollButton
+  commentId: F:Fusee.Engine.Common.ButtonImpDescription.PollButton
+  isExternal: true
+- uid: Fusee.Engine.Common.IInputDeviceImp.ButtonValueChanged
+  commentId: E:Fusee.Engine.Common.IInputDeviceImp.ButtonValueChanged
+  parent: Fusee.Engine.Common.IInputDeviceImp
+  name: ButtonValueChanged
+  nameWithType: IInputDeviceImp.ButtonValueChanged
+  fullName: Fusee.Engine.Common.IInputDeviceImp.ButtonValueChanged
+- uid: System.EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<ButtonValueChangedArgs>
+  nameWithType: EventHandler<ButtonValueChangedArgs>
+  fullName: System.EventHandler<Fusee.Engine.Common.ButtonValueChangedArgs>
+  nameWithType.vb: EventHandler(Of ButtonValueChangedArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Common.ButtonValueChangedArgs)
+  name.vb: EventHandler(Of ButtonValueChangedArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Common.ButtonValueChangedArgs
+    name: ButtonValueChangedArgs
+    nameWithType: ButtonValueChangedArgs
+    fullName: Fusee.Engine.Common.ButtonValueChangedArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Common.ButtonValueChangedArgs
+    name: ButtonValueChangedArgs
+    nameWithType: ButtonValueChangedArgs
+    fullName: Fusee.Engine.Common.ButtonValueChangedArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.DeviceCategory.Touch
+  commentId: F:Fusee.Engine.Common.DeviceCategory.Touch
+  isExternal: true
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Category*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Category
+  name: Category
+  nameWithType: WindowsTouchInputDeviceImp.Category
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Category
+- uid: Fusee.Engine.Common.IInputDeviceImp.Category
+  commentId: P:Fusee.Engine.Common.IInputDeviceImp.Category
+  parent: Fusee.Engine.Common.IInputDeviceImp
+  name: Category
+  nameWithType: IInputDeviceImp.Category
+  fullName: Fusee.Engine.Common.IInputDeviceImp.Category
+- uid: Fusee.Engine.Common.DeviceCategory
+  commentId: T:Fusee.Engine.Common.DeviceCategory
+  parent: Fusee.Engine.Common
+  name: DeviceCategory
+  nameWithType: DeviceCategory
+  fullName: Fusee.Engine.Common.DeviceCategory
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxesCount*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxesCount
+  name: AxesCount
+  nameWithType: WindowsTouchInputDeviceImp.AxesCount
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxesCount
+- uid: Fusee.Engine.Common.IInputDeviceImp.AxesCount
+  commentId: P:Fusee.Engine.Common.IInputDeviceImp.AxesCount
+  parent: Fusee.Engine.Common.IInputDeviceImp
+  name: AxesCount
+  nameWithType: IInputDeviceImp.AxesCount
+  fullName: Fusee.Engine.Common.IInputDeviceImp.AxesCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxisImpDesc*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxisImpDesc
+  name: AxisImpDesc
+  nameWithType: WindowsTouchInputDeviceImp.AxisImpDesc
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxisImpDesc
+- uid: Fusee.Engine.Common.IInputDeviceImp.AxisImpDesc
+  commentId: P:Fusee.Engine.Common.IInputDeviceImp.AxisImpDesc
+  parent: Fusee.Engine.Common.IInputDeviceImp
+  name: AxisImpDesc
+  nameWithType: IInputDeviceImp.AxisImpDesc
+  fullName: Fusee.Engine.Common.IInputDeviceImp.AxisImpDesc
+- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.AxisImpDescription}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Engine.Common.AxisImpDescription}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<AxisImpDescription>
+  nameWithType: IEnumerable<AxisImpDescription>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Engine.Common.AxisImpDescription>
+  nameWithType.vb: IEnumerable(Of AxisImpDescription)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Engine.Common.AxisImpDescription)
+  name.vb: IEnumerable(Of AxisImpDescription)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Common.AxisImpDescription
+    name: AxisImpDescription
+    nameWithType: AxisImpDescription
+    fullName: Fusee.Engine.Common.AxisImpDescription
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Common.AxisImpDescription
+    name: AxisImpDescription
+    nameWithType: AxisImpDescription
+    fullName: Fusee.Engine.Common.AxisImpDescription
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.GetAxis*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.GetAxis
+  name: GetAxis
+  nameWithType: WindowsTouchInputDeviceImp.GetAxis
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.GetAxis
+- uid: Fusee.Engine.Common.IInputDeviceImp.GetAxis(System.Int32)
+  commentId: M:Fusee.Engine.Common.IInputDeviceImp.GetAxis(System.Int32)
+  parent: Fusee.Engine.Common.IInputDeviceImp
+  isExternal: true
+  name: GetAxis(Int32)
+  nameWithType: IInputDeviceImp.GetAxis(Int32)
+  fullName: Fusee.Engine.Common.IInputDeviceImp.GetAxis(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IInputDeviceImp.GetAxis(System.Int32)
+    name: GetAxis
+    nameWithType: IInputDeviceImp.GetAxis
+    fullName: Fusee.Engine.Common.IInputDeviceImp.GetAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IInputDeviceImp.GetAxis(System.Int32)
+    name: GetAxis
+    nameWithType: IInputDeviceImp.GetAxis
+    fullName: Fusee.Engine.Common.IInputDeviceImp.GetAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonCount*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonCount
+  name: ButtonCount
+  nameWithType: WindowsTouchInputDeviceImp.ButtonCount
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonCount
+- uid: Fusee.Engine.Common.IInputDeviceImp.ButtonCount
+  commentId: P:Fusee.Engine.Common.IInputDeviceImp.ButtonCount
+  parent: Fusee.Engine.Common.IInputDeviceImp
+  name: ButtonCount
+  nameWithType: IInputDeviceImp.ButtonCount
+  fullName: Fusee.Engine.Common.IInputDeviceImp.ButtonCount
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonImpDesc*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonImpDesc
+  name: ButtonImpDesc
+  nameWithType: WindowsTouchInputDeviceImp.ButtonImpDesc
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonImpDesc
+- uid: Fusee.Engine.Common.IInputDeviceImp.ButtonImpDesc
+  commentId: P:Fusee.Engine.Common.IInputDeviceImp.ButtonImpDesc
+  parent: Fusee.Engine.Common.IInputDeviceImp
+  name: ButtonImpDesc
+  nameWithType: IInputDeviceImp.ButtonImpDesc
+  fullName: Fusee.Engine.Common.IInputDeviceImp.ButtonImpDesc
+- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.ButtonImpDescription}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Engine.Common.ButtonImpDescription}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<ButtonImpDescription>
+  nameWithType: IEnumerable<ButtonImpDescription>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Engine.Common.ButtonImpDescription>
+  nameWithType.vb: IEnumerable(Of ButtonImpDescription)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Engine.Common.ButtonImpDescription)
+  name.vb: IEnumerable(Of ButtonImpDescription)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Common.ButtonImpDescription
+    name: ButtonImpDescription
+    nameWithType: ButtonImpDescription
+    fullName: Fusee.Engine.Common.ButtonImpDescription
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Common.ButtonImpDescription
+    name: ButtonImpDescription
+    nameWithType: ButtonImpDescription
+    fullName: Fusee.Engine.Common.ButtonImpDescription
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.GetButton*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.GetButton
+  name: GetButton
+  nameWithType: WindowsTouchInputDeviceImp.GetButton
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.GetButton
+- uid: Fusee.Engine.Common.IInputDeviceImp.GetButton(System.Int32)
+  commentId: M:Fusee.Engine.Common.IInputDeviceImp.GetButton(System.Int32)
+  parent: Fusee.Engine.Common.IInputDeviceImp
+  isExternal: true
+  name: GetButton(Int32)
+  nameWithType: IInputDeviceImp.GetButton(Int32)
+  fullName: Fusee.Engine.Common.IInputDeviceImp.GetButton(System.Int32)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IInputDeviceImp.GetButton(System.Int32)
+    name: GetButton
+    nameWithType: IInputDeviceImp.GetButton
+    fullName: Fusee.Engine.Common.IInputDeviceImp.GetButton
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IInputDeviceImp.GetButton(System.Int32)
+    name: GetButton
+    nameWithType: IInputDeviceImp.GetButton
+    fullName: Fusee.Engine.Common.IInputDeviceImp.GetButton
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

@@ -1,0 +1,3969 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Scene.ChildList
+  commentId: T:Fusee.Engine.Core.Scene.ChildList
+  id: ChildList
+  parent: Fusee.Engine.Core.Scene
+  children:
+  - Fusee.Engine.Core.Scene.ChildList.InsertItem(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  - Fusee.Engine.Core.Scene.ChildList.OnAdd
+  - Fusee.Engine.Core.Scene.ChildList.RemoveItem(System.Int32)
+  - Fusee.Engine.Core.Scene.ChildList.SetItem(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  langs:
+  - csharp
+  - vb
+  name: ChildList
+  nameWithType: ChildList
+  fullName: Fusee.Engine.Core.Scene.ChildList
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/ChildList.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ChildList
+    path: src/Fusee/src/Engine/Core/Scene/ChildList.cs
+    startLine: 10
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nList of child nodes used in <xref href=\"Fusee.Engine.Core.Scene.SceneNode\" data-throw-if-not-resolved=\"false\"></xref> instances. In addition to normal collection operations\nthis type keeps track of each object&apos;s <xref href=\"Fusee.Engine.Core.Scene.SceneNode.Parent\" data-throw-if-not-resolved=\"false\"></xref> property when added or removed to a\nnode.\n"
+  example: []
+  syntax:
+    content: 'public class ChildList : Collection<SceneNode>, IList<SceneNode>, ICollection<SceneNode>, IReadOnlyList<SceneNode>, IReadOnlyCollection<SceneNode>, IEnumerable<SceneNode>, IList, ICollection, IEnumerable'
+    content.vb: >-
+      Public Class ChildList
+          Inherits Collection(Of SceneNode)
+          Implements IList(Of SceneNode), ICollection(Of SceneNode), IReadOnlyList(Of SceneNode), IReadOnlyCollection(Of SceneNode), IEnumerable(Of SceneNode), IList, ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  implements:
+  - System.Collections.Generic.IList{Fusee.Engine.Core.Scene.SceneNode}
+  - System.Collections.Generic.ICollection{Fusee.Engine.Core.Scene.SceneNode}
+  - System.Collections.Generic.IReadOnlyList{Fusee.Engine.Core.Scene.SceneNode}
+  - System.Collections.Generic.IReadOnlyCollection{Fusee.Engine.Core.Scene.SceneNode}
+  - System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}
+  - System.Collections.IList
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#get_Item(System.Int32)
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#set_Item(System.Int32,System.Object)
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Add(Fusee.Engine.Core.Scene.SceneNode)
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Clear
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.ClearItems
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Contains(Fusee.Engine.Core.Scene.SceneNode)
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.CopyTo(Fusee.Engine.Core.Scene.SceneNode[],System.Int32)
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.GetEnumerator
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.IndexOf(Fusee.Engine.Core.Scene.SceneNode)
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Insert(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Remove(Fusee.Engine.Core.Scene.SceneNode)
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.RemoveAt(System.Int32)
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IEnumerable#GetEnumerator
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#Add(System.Object)
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#Contains(System.Object)
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#IndexOf(System.Object)
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#Insert(System.Int32,System.Object)
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#Remove(System.Object)
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Count
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Item(System.Int32)
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Items
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#Generic#ICollection{T}#IsReadOnly
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#ICollection#IsSynchronized
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#ICollection#SyncRoot
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#IsFixedSize
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#IsReadOnly
+  - System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#Item(System.Int32)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}.Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  - System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}.Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(System.Predicate{{TComponentToFind}})
+  - System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}.Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Core.Scene.ChildList.OnAdd
+  commentId: E:Fusee.Engine.Core.Scene.ChildList.OnAdd
+  id: OnAdd
+  parent: Fusee.Engine.Core.Scene.ChildList
+  langs:
+  - csharp
+  - vb
+  name: OnAdd
+  nameWithType: ChildList.OnAdd
+  fullName: Fusee.Engine.Core.Scene.ChildList.OnAdd
+  type: Event
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/ChildList.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: OnAdd
+    path: src/Fusee/src/Engine/Core/Scene/ChildList.cs
+    startLine: 15
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nEvent handler for adding additional behavior to Add(). E.g. to add the parent for the element that was added to the child list.\n"
+  example: []
+  syntax:
+    content: public event EventHandler<AddChildEventArgs> OnAdd
+    return:
+      type: System.EventHandler{Fusee.Engine.Core.Scene.AddChildEventArgs}
+    content.vb: Public Event OnAdd As EventHandler(Of AddChildEventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.ChildList.InsertItem(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:Fusee.Engine.Core.Scene.ChildList.InsertItem(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  id: InsertItem(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  parent: Fusee.Engine.Core.Scene.ChildList
+  langs:
+  - csharp
+  - vb
+  name: InsertItem(Int32, SceneNode)
+  nameWithType: ChildList.InsertItem(Int32, SceneNode)
+  fullName: Fusee.Engine.Core.Scene.ChildList.InsertItem(System.Int32, Fusee.Engine.Core.Scene.SceneNode)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/ChildList.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InsertItem
+    path: src/Fusee/src/Engine/Core/Scene/ChildList.cs
+    startLine: 22
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nInserts the item at the given index.\n"
+  example: []
+  syntax:
+    content: protected override void InsertItem(int index, SceneNode sn)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index.
+    - id: sn
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: The scene node to insert.
+    content.vb: Protected Overrides Sub InsertItem(index As Integer, sn As SceneNode)
+  overridden: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.InsertItem(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  overload: Fusee.Engine.Core.Scene.ChildList.InsertItem*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Fusee.Engine.Core.Scene.ChildList.SetItem(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:Fusee.Engine.Core.Scene.ChildList.SetItem(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  id: SetItem(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  parent: Fusee.Engine.Core.Scene.ChildList
+  langs:
+  - csharp
+  - vb
+  name: SetItem(Int32, SceneNode)
+  nameWithType: ChildList.SetItem(Int32, SceneNode)
+  fullName: Fusee.Engine.Core.Scene.ChildList.SetItem(System.Int32, Fusee.Engine.Core.Scene.SceneNode)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/ChildList.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetItem
+    path: src/Fusee/src/Engine/Core/Scene/ChildList.cs
+    startLine: 33
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nSets the item at the given index.\n"
+  example: []
+  syntax:
+    content: protected override void SetItem(int index, SceneNode sn)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index.
+    - id: sn
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: The scene node to add.
+    content.vb: Protected Overrides Sub SetItem(index As Integer, sn As SceneNode)
+  overridden: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.SetItem(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  overload: Fusee.Engine.Core.Scene.ChildList.SetItem*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Fusee.Engine.Core.Scene.ChildList.RemoveItem(System.Int32)
+  commentId: M:Fusee.Engine.Core.Scene.ChildList.RemoveItem(System.Int32)
+  id: RemoveItem(System.Int32)
+  parent: Fusee.Engine.Core.Scene.ChildList
+  langs:
+  - csharp
+  - vb
+  name: RemoveItem(Int32)
+  nameWithType: ChildList.RemoveItem(Int32)
+  fullName: Fusee.Engine.Core.Scene.ChildList.RemoveItem(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/ChildList.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RemoveItem
+    path: src/Fusee/src/Engine/Core/Scene/ChildList.cs
+    startLine: 43
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nRemoves the element at the specified index of the <xref href=\"System.Collections.ObjectModel.Collection%601\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: protected override void RemoveItem(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the element to remove.
+    content.vb: Protected Overrides Sub RemoveItem(index As Integer)
+  overridden: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.RemoveItem(System.Int32)
+  overload: Fusee.Engine.Core.Scene.ChildList.RemoveItem*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Fusee.Engine.Core.Scene.SceneNode
+  commentId: T:Fusee.Engine.Core.Scene.SceneNode
+  parent: Fusee.Engine.Core.Scene
+  name: SceneNode
+  nameWithType: SceneNode
+  fullName: Fusee.Engine.Core.Scene.SceneNode
+- uid: Fusee.Engine.Core.Scene.SceneNode.Parent
+  commentId: F:Fusee.Engine.Core.Scene.SceneNode.Parent
+  parent: Fusee.Engine.Core.Scene.SceneNode
+  name: Parent
+  nameWithType: SceneNode.Parent
+  fullName: Fusee.Engine.Core.Scene.SceneNode.Parent
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  commentId: T:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.Collection`1
+  name: Collection<SceneNode>
+  nameWithType: Collection<SceneNode>
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>
+  nameWithType.vb: Collection(Of SceneNode)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode)
+  name.vb: Collection(Of SceneNode)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    nameWithType: Collection
+    fullName: System.Collections.ObjectModel.Collection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    nameWithType: Collection
+    fullName: System.Collections.ObjectModel.Collection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList{Fusee.Engine.Core.Scene.SceneNode}
+  commentId: T:System.Collections.Generic.IList{Fusee.Engine.Core.Scene.SceneNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<SceneNode>
+  nameWithType: IList<SceneNode>
+  fullName: System.Collections.Generic.IList<Fusee.Engine.Core.Scene.SceneNode>
+  nameWithType.vb: IList(Of SceneNode)
+  fullName.vb: System.Collections.Generic.IList(Of Fusee.Engine.Core.Scene.SceneNode)
+  name.vb: IList(Of SceneNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{Fusee.Engine.Core.Scene.SceneNode}
+  commentId: T:System.Collections.Generic.ICollection{Fusee.Engine.Core.Scene.SceneNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<SceneNode>
+  nameWithType: ICollection<SceneNode>
+  fullName: System.Collections.Generic.ICollection<Fusee.Engine.Core.Scene.SceneNode>
+  nameWithType.vb: ICollection(Of SceneNode)
+  fullName.vb: System.Collections.Generic.ICollection(Of Fusee.Engine.Core.Scene.SceneNode)
+  name.vb: ICollection(Of SceneNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyList{Fusee.Engine.Core.Scene.SceneNode}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Fusee.Engine.Core.Scene.SceneNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  name: IReadOnlyList<SceneNode>
+  nameWithType: IReadOnlyList<SceneNode>
+  fullName: System.Collections.Generic.IReadOnlyList<Fusee.Engine.Core.Scene.SceneNode>
+  nameWithType.vb: IReadOnlyList(Of SceneNode)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Fusee.Engine.Core.Scene.SceneNode)
+  name.vb: IReadOnlyList(Of SceneNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyCollection{Fusee.Engine.Core.Scene.SceneNode}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{Fusee.Engine.Core.Scene.SceneNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  name: IReadOnlyCollection<SceneNode>
+  nameWithType: IReadOnlyCollection<SceneNode>
+  fullName: System.Collections.Generic.IReadOnlyCollection<Fusee.Engine.Core.Scene.SceneNode>
+  nameWithType.vb: IReadOnlyCollection(Of SceneNode)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Fusee.Engine.Core.Scene.SceneNode)
+  name.vb: IReadOnlyCollection(Of SceneNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<SceneNode>
+  nameWithType: IEnumerable<SceneNode>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Engine.Core.Scene.SceneNode>
+  nameWithType.vb: IEnumerable(Of SceneNode)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Engine.Core.Scene.SceneNode)
+  name.vb: IEnumerable(Of SceneNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IList
+  commentId: T:System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.IList
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#get_Item(System.Int32)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#get_Item(System.Int32)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#get_Item(System.Int32)
+  name: IList.get_Item(Int32)
+  nameWithType: Collection<SceneNode>.IList.get_Item(Int32)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.get_Item(System.Int32)
+  nameWithType.vb: Collection(Of SceneNode).System.Collections.IList.get_Item(Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.get_Item(System.Int32)
+  name.vb: System.Collections.IList.get_Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#get_Item(System.Int32)
+    name: IList.get_Item
+    nameWithType: Collection<SceneNode>.IList.get_Item
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.get_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#get_Item(System.Int32)
+    name: System.Collections.IList.get_Item
+    nameWithType: Collection(Of SceneNode).System.Collections.IList.get_Item
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.get_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#set_Item(System.Int32,System.Object)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#set_Item(System.Int32,System.Object)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+  name: IList.set_Item(Int32, Object)
+  nameWithType: Collection<SceneNode>.IList.set_Item(Int32, Object)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.set_Item(System.Int32, System.Object)
+  nameWithType.vb: Collection(Of SceneNode).System.Collections.IList.set_Item(Int32, Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.set_Item(System.Int32, System.Object)
+  name.vb: System.Collections.IList.set_Item(Int32, Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+    name: IList.set_Item
+    nameWithType: Collection<SceneNode>.IList.set_Item
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.set_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+    name: System.Collections.IList.set_Item
+    nameWithType: Collection(Of SceneNode).System.Collections.IList.set_Item
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.set_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Add(Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Add(Fusee.Engine.Core.Scene.SceneNode)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.Add(`0)
+  name: Add(SceneNode)
+  nameWithType: Collection<SceneNode>.Add(SceneNode)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.Add(Fusee.Engine.Core.Scene.SceneNode)
+  nameWithType.vb: Collection(Of SceneNode).Add(SceneNode)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).Add(Fusee.Engine.Core.Scene.SceneNode)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Add(`0)
+    name: Add
+    nameWithType: Collection<SceneNode>.Add
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Add(`0)
+    name: Add
+    nameWithType: Collection(Of SceneNode).Add
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Clear
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Clear
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.Clear
+  name: Clear()
+  nameWithType: Collection<SceneNode>.Clear()
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.Clear()
+  nameWithType.vb: Collection(Of SceneNode).Clear()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).Clear()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Clear
+    name: Clear
+    nameWithType: Collection<SceneNode>.Clear
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Clear
+    name: Clear
+    nameWithType: Collection(Of SceneNode).Clear
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.ClearItems
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.ClearItems
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.ClearItems
+  name: ClearItems()
+  nameWithType: Collection<SceneNode>.ClearItems()
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.ClearItems()
+  nameWithType.vb: Collection(Of SceneNode).ClearItems()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).ClearItems()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.ClearItems
+    name: ClearItems
+    nameWithType: Collection<SceneNode>.ClearItems
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.ClearItems
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.ClearItems
+    name: ClearItems
+    nameWithType: Collection(Of SceneNode).ClearItems
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).ClearItems
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Contains(Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Contains(Fusee.Engine.Core.Scene.SceneNode)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.Contains(`0)
+  name: Contains(SceneNode)
+  nameWithType: Collection<SceneNode>.Contains(SceneNode)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.Contains(Fusee.Engine.Core.Scene.SceneNode)
+  nameWithType.vb: Collection(Of SceneNode).Contains(SceneNode)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).Contains(Fusee.Engine.Core.Scene.SceneNode)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Contains(`0)
+    name: Contains
+    nameWithType: Collection<SceneNode>.Contains
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Contains(`0)
+    name: Contains
+    nameWithType: Collection(Of SceneNode).Contains
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.CopyTo(Fusee.Engine.Core.Scene.SceneNode[],System.Int32)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.CopyTo(Fusee.Engine.Core.Scene.SceneNode[],System.Int32)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(SceneNode[], Int32)
+  nameWithType: Collection<SceneNode>.CopyTo(SceneNode[], Int32)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.CopyTo(Fusee.Engine.Core.Scene.SceneNode[], System.Int32)
+  nameWithType.vb: Collection(Of SceneNode).CopyTo(SceneNode(), Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).CopyTo(Fusee.Engine.Core.Scene.SceneNode(), System.Int32)
+  name.vb: CopyTo(SceneNode(), Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: Collection<SceneNode>.CopyTo
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: Collection(Of SceneNode).CopyTo
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.GetEnumerator
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.GetEnumerator
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: Collection<SceneNode>.GetEnumerator()
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.GetEnumerator()
+  nameWithType.vb: Collection(Of SceneNode).GetEnumerator()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: Collection<SceneNode>.GetEnumerator
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: Collection(Of SceneNode).GetEnumerator
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.IndexOf(Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.IndexOf(Fusee.Engine.Core.Scene.SceneNode)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.IndexOf(`0)
+  name: IndexOf(SceneNode)
+  nameWithType: Collection<SceneNode>.IndexOf(SceneNode)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.IndexOf(Fusee.Engine.Core.Scene.SceneNode)
+  nameWithType.vb: Collection(Of SceneNode).IndexOf(SceneNode)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).IndexOf(Fusee.Engine.Core.Scene.SceneNode)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: Collection<SceneNode>.IndexOf
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: Collection(Of SceneNode).IndexOf
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Insert(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Insert(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.Insert(System.Int32,`0)
+  name: Insert(Int32, SceneNode)
+  nameWithType: Collection<SceneNode>.Insert(Int32, SceneNode)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.Insert(System.Int32, Fusee.Engine.Core.Scene.SceneNode)
+  nameWithType.vb: Collection(Of SceneNode).Insert(Int32, SceneNode)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).Insert(System.Int32, Fusee.Engine.Core.Scene.SceneNode)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Insert(System.Int32,`0)
+    name: Insert
+    nameWithType: Collection<SceneNode>.Insert
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Insert(System.Int32,`0)
+    name: Insert
+    nameWithType: Collection(Of SceneNode).Insert
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Remove(Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Remove(Fusee.Engine.Core.Scene.SceneNode)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.Remove(`0)
+  name: Remove(SceneNode)
+  nameWithType: Collection<SceneNode>.Remove(SceneNode)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.Remove(Fusee.Engine.Core.Scene.SceneNode)
+  nameWithType.vb: Collection(Of SceneNode).Remove(SceneNode)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).Remove(Fusee.Engine.Core.Scene.SceneNode)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Remove(`0)
+    name: Remove
+    nameWithType: Collection<SceneNode>.Remove
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Remove(`0)
+    name: Remove
+    nameWithType: Collection(Of SceneNode).Remove
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.RemoveAt(System.Int32)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.RemoveAt(System.Int32)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+  name: RemoveAt(Int32)
+  nameWithType: Collection<SceneNode>.RemoveAt(Int32)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.RemoveAt(System.Int32)
+  nameWithType.vb: Collection(Of SceneNode).RemoveAt(Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: Collection<SceneNode>.RemoveAt
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: Collection(Of SceneNode).RemoveAt
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  name: ICollection.CopyTo(Array, Int32)
+  nameWithType: Collection<SceneNode>.ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  nameWithType.vb: Collection(Of SceneNode).System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+    name: ICollection.CopyTo
+    nameWithType: Collection<SceneNode>.ICollection.CopyTo
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    nameWithType: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+    name: System.Collections.ICollection.CopyTo
+    nameWithType: Collection(Of SceneNode).System.Collections.ICollection.CopyTo
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    nameWithType: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IEnumerable#GetEnumerator
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  nameWithType: Collection<SceneNode>.IEnumerable.GetEnumerator()
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType.vb: Collection(Of SceneNode).System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    nameWithType: Collection<SceneNode>.IEnumerable.GetEnumerator
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    nameWithType: Collection(Of SceneNode).System.Collections.IEnumerable.GetEnumerator
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#Add(System.Object)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#Add(System.Object)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Add(System.Object)
+  name: IList.Add(Object)
+  nameWithType: Collection<SceneNode>.IList.Add(Object)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.Add(System.Object)
+  nameWithType.vb: Collection(Of SceneNode).System.Collections.IList.Add(Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.Add(System.Object)
+  name.vb: System.Collections.IList.Add(Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Add(System.Object)
+    name: IList.Add
+    nameWithType: Collection<SceneNode>.IList.Add
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Add(System.Object)
+    name: System.Collections.IList.Add
+    nameWithType: Collection(Of SceneNode).System.Collections.IList.Add
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#Contains(System.Object)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#Contains(System.Object)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Contains(System.Object)
+  name: IList.Contains(Object)
+  nameWithType: Collection<SceneNode>.IList.Contains(Object)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.Contains(System.Object)
+  nameWithType.vb: Collection(Of SceneNode).System.Collections.IList.Contains(Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.Contains(System.Object)
+  name.vb: System.Collections.IList.Contains(Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Contains(System.Object)
+    name: IList.Contains
+    nameWithType: Collection<SceneNode>.IList.Contains
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Contains(System.Object)
+    name: System.Collections.IList.Contains
+    nameWithType: Collection(Of SceneNode).System.Collections.IList.Contains
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#IndexOf(System.Object)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#IndexOf(System.Object)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IndexOf(System.Object)
+  name: IList.IndexOf(Object)
+  nameWithType: Collection<SceneNode>.IList.IndexOf(Object)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.IndexOf(System.Object)
+  nameWithType.vb: Collection(Of SceneNode).System.Collections.IList.IndexOf(Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.IndexOf(System.Object)
+  name.vb: System.Collections.IList.IndexOf(Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IndexOf(System.Object)
+    name: IList.IndexOf
+    nameWithType: Collection<SceneNode>.IList.IndexOf
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IndexOf(System.Object)
+    name: System.Collections.IList.IndexOf
+    nameWithType: Collection(Of SceneNode).System.Collections.IList.IndexOf
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#Insert(System.Int32,System.Object)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#Insert(System.Int32,System.Object)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+  name: IList.Insert(Int32, Object)
+  nameWithType: Collection<SceneNode>.IList.Insert(Int32, Object)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.Insert(System.Int32, System.Object)
+  nameWithType.vb: Collection(Of SceneNode).System.Collections.IList.Insert(Int32, Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.Insert(System.Int32, System.Object)
+  name.vb: System.Collections.IList.Insert(Int32, Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+    name: IList.Insert
+    nameWithType: Collection<SceneNode>.IList.Insert
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+    name: System.Collections.IList.Insert
+    nameWithType: Collection(Of SceneNode).System.Collections.IList.Insert
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#Remove(System.Object)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#Remove(System.Object)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Remove(System.Object)
+  name: IList.Remove(Object)
+  nameWithType: Collection<SceneNode>.IList.Remove(Object)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.Remove(System.Object)
+  nameWithType.vb: Collection(Of SceneNode).System.Collections.IList.Remove(Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.Remove(System.Object)
+  name.vb: System.Collections.IList.Remove(Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Remove(System.Object)
+    name: IList.Remove
+    nameWithType: Collection<SceneNode>.IList.Remove
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Remove(System.Object)
+    name: System.Collections.IList.Remove
+    nameWithType: Collection(Of SceneNode).System.Collections.IList.Remove
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Count
+  commentId: P:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Count
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.Count
+  name: Count
+  nameWithType: Collection<SceneNode>.Count
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.Count
+  nameWithType.vb: Collection(Of SceneNode).Count
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).Count
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Item(System.Int32)
+  commentId: P:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Item(System.Int32)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+  name: Item[Int32]
+  nameWithType: Collection<SceneNode>.Item[Int32]
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.Item[System.Int32]
+  nameWithType.vb: Collection(Of SceneNode).Item(Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+    name: Item
+    nameWithType: Collection<SceneNode>.Item
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+    name: Item
+    nameWithType: Collection(Of SceneNode).Item
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Items
+  commentId: P:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.Items
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.Items
+  name: Items
+  nameWithType: Collection<SceneNode>.Items
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.Items
+  nameWithType.vb: Collection(Of SceneNode).Items
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).Items
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#Generic#ICollection{T}#IsReadOnly
+  commentId: P:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#Generic#ICollection{T}#IsReadOnly
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  name: ICollection<SceneNode>.IsReadOnly
+  nameWithType: Collection<SceneNode>.ICollection<SceneNode>.IsReadOnly
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.Generic.ICollection<Fusee.Engine.Core.Scene.SceneNode>.IsReadOnly
+  nameWithType.vb: Collection(Of SceneNode).System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.Generic.ICollection<T>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<T>.IsReadOnly
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#ICollection#IsSynchronized
+  commentId: P:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#ICollection#IsSynchronized
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#IsSynchronized
+  name: ICollection.IsSynchronized
+  nameWithType: Collection<SceneNode>.ICollection.IsSynchronized
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.ICollection.IsSynchronized
+  nameWithType.vb: Collection(Of SceneNode).System.Collections.ICollection.IsSynchronized
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#ICollection#SyncRoot
+  commentId: P:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#ICollection#SyncRoot
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#SyncRoot
+  name: ICollection.SyncRoot
+  nameWithType: Collection<SceneNode>.ICollection.SyncRoot
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.ICollection.SyncRoot
+  nameWithType.vb: Collection(Of SceneNode).System.Collections.ICollection.SyncRoot
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#IsFixedSize
+  commentId: P:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#IsFixedSize
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IsFixedSize
+  name: IList.IsFixedSize
+  nameWithType: Collection<SceneNode>.IList.IsFixedSize
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.IsFixedSize
+  nameWithType.vb: Collection(Of SceneNode).System.Collections.IList.IsFixedSize
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.IsFixedSize
+  name.vb: System.Collections.IList.IsFixedSize
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#IsReadOnly
+  commentId: P:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#IsReadOnly
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IsReadOnly
+  name: IList.IsReadOnly
+  nameWithType: Collection<SceneNode>.IList.IsReadOnly
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.IsReadOnly
+  nameWithType.vb: Collection(Of SceneNode).System.Collections.IList.IsReadOnly
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.IsReadOnly
+  name.vb: System.Collections.IList.IsReadOnly
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#Item(System.Int32)
+  commentId: P:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.System#Collections#IList#Item(System.Int32)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Item(System.Int32)
+  name: IList.Item[Int32]
+  nameWithType: Collection<SceneNode>.IList.Item[Int32]
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.Item[System.Int32]
+  nameWithType.vb: Collection(Of SceneNode).System.Collections.IList.Item(Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.Item(System.Int32)
+  name.vb: System.Collections.IList.Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Item(System.Int32)
+    name: IList.Item
+    nameWithType: Collection<SceneNode>.IList.Item
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.System.Collections.IList.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Item(System.Int32)
+    name: System.Collections.IList.Item
+    nameWithType: Collection(Of SceneNode).System.Collections.IList.Item
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).System.Collections.IList.Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}.Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  definition: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  name: FindComponents(Predicate<SceneComponent>)
+  nameWithType: SceneExtensions.FindComponents(Predicate<SceneComponent>)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Predicate<Fusee.Engine.Core.Scene.SceneComponent>)
+  nameWithType.vb: SceneExtensions.FindComponents(Predicate(Of SceneComponent))
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Predicate(Of Fusee.Engine.Core.Scene.SceneComponent))
+  name.vb: FindComponents(Predicate(Of SceneComponent))
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+    name: FindComponents
+    nameWithType: SceneExtensions.FindComponents
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneComponent
+    name: SceneComponent
+    nameWithType: SceneComponent
+    fullName: Fusee.Engine.Core.Scene.SceneComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+    name: FindComponents
+    nameWithType: SceneExtensions.FindComponents
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneComponent
+    name: SceneComponent
+    nameWithType: SceneComponent
+    fullName: Fusee.Engine.Core.Scene.SceneComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}.Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(System.Predicate{{TComponentToFind}})
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{``0})
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  definition: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{``0})
+  name: FindComponents<TComponentToFind>(Predicate<TComponentToFind>)
+  nameWithType: SceneExtensions.FindComponents<TComponentToFind>(Predicate<TComponentToFind>)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents<TComponentToFind>(System.Predicate<TComponentToFind>)
+  nameWithType.vb: SceneExtensions.FindComponents(Of TComponentToFind)(Predicate(Of TComponentToFind))
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Of TComponentToFind)(System.Predicate(Of TComponentToFind))
+  name.vb: FindComponents(Of TComponentToFind)(Predicate(Of TComponentToFind))
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(System.Predicate{``0})
+    name: FindComponents<TComponentToFind>
+    nameWithType: SceneExtensions.FindComponents<TComponentToFind>
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents<TComponentToFind>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(System.Predicate{``0})
+    name: FindComponents(Of TComponentToFind)
+    nameWithType: SceneExtensions.FindComponents(Of TComponentToFind)
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Of TComponentToFind)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}.Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  definition: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  name: FindNodesWhereComponent(Predicate<SceneComponent>)
+  nameWithType: SceneExtensions.FindNodesWhereComponent(Predicate<SceneComponent>)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Predicate<Fusee.Engine.Core.Scene.SceneComponent>)
+  nameWithType.vb: SceneExtensions.FindNodesWhereComponent(Predicate(Of SceneComponent))
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Predicate(Of Fusee.Engine.Core.Scene.SceneComponent))
+  name.vb: FindNodesWhereComponent(Predicate(Of SceneComponent))
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+    name: FindNodesWhereComponent
+    nameWithType: SceneExtensions.FindNodesWhereComponent
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneComponent
+    name: SceneComponent
+    nameWithType: SceneComponent
+    fullName: Fusee.Engine.Core.Scene.SceneComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+    name: FindNodesWhereComponent
+    nameWithType: SceneExtensions.FindNodesWhereComponent
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneComponent
+    name: SceneComponent
+    nameWithType: SceneComponent
+    fullName: Fusee.Engine.Core.Scene.SceneComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.ObjectModel.Collection`1
+  commentId: T:System.Collections.ObjectModel.Collection`1
+  isExternal: true
+  name: Collection<T>
+  nameWithType: Collection<T>
+  fullName: System.Collections.ObjectModel.Collection<T>
+  nameWithType.vb: Collection(Of T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T)
+  name.vb: Collection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    nameWithType: Collection
+    fullName: System.Collections.ObjectModel.Collection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1
+    name: Collection
+    nameWithType: Collection
+    fullName: System.Collections.ObjectModel.Collection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#get_Item(System.Int32)
+  commentId: M:System.Collections.ObjectModel.Collection`1.System#Collections#IList#get_Item(System.Int32)
+  isExternal: true
+  name: IList.get_Item(Int32)
+  nameWithType: Collection<T>.IList.get_Item(Int32)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.get_Item(System.Int32)
+  nameWithType.vb: Collection(Of T).System.Collections.IList.get_Item(Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.get_Item(System.Int32)
+  name.vb: System.Collections.IList.get_Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#get_Item(System.Int32)
+    name: IList.get_Item
+    nameWithType: Collection<T>.IList.get_Item
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.get_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#get_Item(System.Int32)
+    name: System.Collections.IList.get_Item
+    nameWithType: Collection(Of T).System.Collections.IList.get_Item
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.get_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+  commentId: M:System.Collections.ObjectModel.Collection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+  isExternal: true
+  name: IList.set_Item(Int32, Object)
+  nameWithType: Collection<T>.IList.set_Item(Int32, Object)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.set_Item(System.Int32, System.Object)
+  nameWithType.vb: Collection(Of T).System.Collections.IList.set_Item(Int32, Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.set_Item(System.Int32, System.Object)
+  name.vb: System.Collections.IList.set_Item(Int32, Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+    name: IList.set_Item
+    nameWithType: Collection<T>.IList.set_Item
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.set_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#set_Item(System.Int32,System.Object)
+    name: System.Collections.IList.set_Item
+    nameWithType: Collection(Of T).System.Collections.IList.set_Item
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.set_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.Add(`0)
+  commentId: M:System.Collections.ObjectModel.Collection`1.Add(`0)
+  isExternal: true
+  name: Add(T)
+  nameWithType: Collection<T>.Add(T)
+  fullName: System.Collections.ObjectModel.Collection<T>.Add(T)
+  nameWithType.vb: Collection(Of T).Add(T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Add(`0)
+    name: Add
+    nameWithType: Collection<T>.Add
+    fullName: System.Collections.ObjectModel.Collection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Add(`0)
+    name: Add
+    nameWithType: Collection(Of T).Add
+    fullName: System.Collections.ObjectModel.Collection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.Clear
+  commentId: M:System.Collections.ObjectModel.Collection`1.Clear
+  isExternal: true
+  name: Clear()
+  nameWithType: Collection<T>.Clear()
+  fullName: System.Collections.ObjectModel.Collection<T>.Clear()
+  nameWithType.vb: Collection(Of T).Clear()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Clear
+    name: Clear
+    nameWithType: Collection<T>.Clear
+    fullName: System.Collections.ObjectModel.Collection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Clear
+    name: Clear
+    nameWithType: Collection(Of T).Clear
+    fullName: System.Collections.ObjectModel.Collection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.ClearItems
+  commentId: M:System.Collections.ObjectModel.Collection`1.ClearItems
+  isExternal: true
+  name: ClearItems()
+  nameWithType: Collection<T>.ClearItems()
+  fullName: System.Collections.ObjectModel.Collection<T>.ClearItems()
+  nameWithType.vb: Collection(Of T).ClearItems()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).ClearItems()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.ClearItems
+    name: ClearItems
+    nameWithType: Collection<T>.ClearItems
+    fullName: System.Collections.ObjectModel.Collection<T>.ClearItems
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.ClearItems
+    name: ClearItems
+    nameWithType: Collection(Of T).ClearItems
+    fullName: System.Collections.ObjectModel.Collection(Of T).ClearItems
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.Contains(`0)
+  commentId: M:System.Collections.ObjectModel.Collection`1.Contains(`0)
+  isExternal: true
+  name: Contains(T)
+  nameWithType: Collection<T>.Contains(T)
+  fullName: System.Collections.ObjectModel.Collection<T>.Contains(T)
+  nameWithType.vb: Collection(Of T).Contains(T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Contains(`0)
+    name: Contains
+    nameWithType: Collection<T>.Contains
+    fullName: System.Collections.ObjectModel.Collection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Contains(`0)
+    name: Contains
+    nameWithType: Collection(Of T).Contains
+    fullName: System.Collections.ObjectModel.Collection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  name: CopyTo(T[], Int32)
+  nameWithType: Collection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.ObjectModel.Collection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: Collection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: Collection<T>.CopyTo
+    fullName: System.Collections.ObjectModel.Collection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: Collection(Of T).CopyTo
+    fullName: System.Collections.ObjectModel.Collection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.GetEnumerator
+  commentId: M:System.Collections.ObjectModel.Collection`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: Collection<T>.GetEnumerator()
+  fullName: System.Collections.ObjectModel.Collection<T>.GetEnumerator()
+  nameWithType.vb: Collection(Of T).GetEnumerator()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: Collection<T>.GetEnumerator
+    fullName: System.Collections.ObjectModel.Collection<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: Collection(Of T).GetEnumerator
+    fullName: System.Collections.ObjectModel.Collection(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.IndexOf(`0)
+  commentId: M:System.Collections.ObjectModel.Collection`1.IndexOf(`0)
+  isExternal: true
+  name: IndexOf(T)
+  nameWithType: Collection<T>.IndexOf(T)
+  fullName: System.Collections.ObjectModel.Collection<T>.IndexOf(T)
+  nameWithType.vb: Collection(Of T).IndexOf(T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: Collection<T>.IndexOf
+    fullName: System.Collections.ObjectModel.Collection<T>.IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: Collection(Of T).IndexOf
+    fullName: System.Collections.ObjectModel.Collection(Of T).IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.Insert(System.Int32,`0)
+  commentId: M:System.Collections.ObjectModel.Collection`1.Insert(System.Int32,`0)
+  isExternal: true
+  name: Insert(Int32, T)
+  nameWithType: Collection<T>.Insert(Int32, T)
+  fullName: System.Collections.ObjectModel.Collection<T>.Insert(System.Int32, T)
+  nameWithType.vb: Collection(Of T).Insert(Int32, T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Insert(System.Int32, T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Insert(System.Int32,`0)
+    name: Insert
+    nameWithType: Collection<T>.Insert
+    fullName: System.Collections.ObjectModel.Collection<T>.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Insert(System.Int32,`0)
+    name: Insert
+    nameWithType: Collection(Of T).Insert
+    fullName: System.Collections.ObjectModel.Collection(Of T).Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.Remove(`0)
+  commentId: M:System.Collections.ObjectModel.Collection`1.Remove(`0)
+  isExternal: true
+  name: Remove(T)
+  nameWithType: Collection<T>.Remove(T)
+  fullName: System.Collections.ObjectModel.Collection<T>.Remove(T)
+  nameWithType.vb: Collection(Of T).Remove(T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Remove(`0)
+    name: Remove
+    nameWithType: Collection<T>.Remove
+    fullName: System.Collections.ObjectModel.Collection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Remove(`0)
+    name: Remove
+    nameWithType: Collection(Of T).Remove
+    fullName: System.Collections.ObjectModel.Collection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+  commentId: M:System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+  isExternal: true
+  name: RemoveAt(Int32)
+  nameWithType: Collection<T>.RemoveAt(Int32)
+  fullName: System.Collections.ObjectModel.Collection<T>.RemoveAt(System.Int32)
+  nameWithType.vb: Collection(Of T).RemoveAt(Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: Collection<T>.RemoveAt
+    fullName: System.Collections.ObjectModel.Collection<T>.RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: Collection(Of T).RemoveAt
+    fullName: System.Collections.ObjectModel.Collection(Of T).RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  commentId: M:System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  isExternal: true
+  name: ICollection.CopyTo(Array, Int32)
+  nameWithType: Collection<T>.ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  nameWithType.vb: Collection(Of T).System.Collections.ICollection.CopyTo(Array, Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+    name: ICollection.CopyTo
+    nameWithType: Collection<T>.ICollection.CopyTo
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    nameWithType: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+    name: System.Collections.ICollection.CopyTo
+    nameWithType: Collection(Of T).System.Collections.ICollection.CopyTo
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    nameWithType: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:System.Collections.ObjectModel.Collection`1.System#Collections#IEnumerable#GetEnumerator
+  isExternal: true
+  name: IEnumerable.GetEnumerator()
+  nameWithType: Collection<T>.IEnumerable.GetEnumerator()
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType.vb: Collection(Of T).System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    nameWithType: Collection<T>.IEnumerable.GetEnumerator
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    nameWithType: Collection(Of T).System.Collections.IEnumerable.GetEnumerator
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Add(System.Object)
+  commentId: M:System.Collections.ObjectModel.Collection`1.System#Collections#IList#Add(System.Object)
+  isExternal: true
+  name: IList.Add(Object)
+  nameWithType: Collection<T>.IList.Add(Object)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Add(System.Object)
+  nameWithType.vb: Collection(Of T).System.Collections.IList.Add(Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Add(System.Object)
+  name.vb: System.Collections.IList.Add(Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Add(System.Object)
+    name: IList.Add
+    nameWithType: Collection<T>.IList.Add
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Add(System.Object)
+    name: System.Collections.IList.Add
+    nameWithType: Collection(Of T).System.Collections.IList.Add
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Contains(System.Object)
+  commentId: M:System.Collections.ObjectModel.Collection`1.System#Collections#IList#Contains(System.Object)
+  isExternal: true
+  name: IList.Contains(Object)
+  nameWithType: Collection<T>.IList.Contains(Object)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Contains(System.Object)
+  nameWithType.vb: Collection(Of T).System.Collections.IList.Contains(Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Contains(System.Object)
+  name.vb: System.Collections.IList.Contains(Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Contains(System.Object)
+    name: IList.Contains
+    nameWithType: Collection<T>.IList.Contains
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Contains(System.Object)
+    name: System.Collections.IList.Contains
+    nameWithType: Collection(Of T).System.Collections.IList.Contains
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IndexOf(System.Object)
+  commentId: M:System.Collections.ObjectModel.Collection`1.System#Collections#IList#IndexOf(System.Object)
+  isExternal: true
+  name: IList.IndexOf(Object)
+  nameWithType: Collection<T>.IList.IndexOf(Object)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.IndexOf(System.Object)
+  nameWithType.vb: Collection(Of T).System.Collections.IList.IndexOf(Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.IndexOf(System.Object)
+  name.vb: System.Collections.IList.IndexOf(Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IndexOf(System.Object)
+    name: IList.IndexOf
+    nameWithType: Collection<T>.IList.IndexOf
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IndexOf(System.Object)
+    name: System.Collections.IList.IndexOf
+    nameWithType: Collection(Of T).System.Collections.IList.IndexOf
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+  commentId: M:System.Collections.ObjectModel.Collection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+  isExternal: true
+  name: IList.Insert(Int32, Object)
+  nameWithType: Collection<T>.IList.Insert(Int32, Object)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Insert(System.Int32, System.Object)
+  nameWithType.vb: Collection(Of T).System.Collections.IList.Insert(Int32, Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Insert(System.Int32, System.Object)
+  name.vb: System.Collections.IList.Insert(Int32, Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+    name: IList.Insert
+    nameWithType: Collection<T>.IList.Insert
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Insert(System.Int32,System.Object)
+    name: System.Collections.IList.Insert
+    nameWithType: Collection(Of T).System.Collections.IList.Insert
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Remove(System.Object)
+  commentId: M:System.Collections.ObjectModel.Collection`1.System#Collections#IList#Remove(System.Object)
+  isExternal: true
+  name: IList.Remove(Object)
+  nameWithType: Collection<T>.IList.Remove(Object)
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Remove(System.Object)
+  nameWithType.vb: Collection(Of T).System.Collections.IList.Remove(Object)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Remove(System.Object)
+  name.vb: System.Collections.IList.Remove(Object)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Remove(System.Object)
+    name: IList.Remove
+    nameWithType: Collection<T>.IList.Remove
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Remove(System.Object)
+    name: System.Collections.IList.Remove
+    nameWithType: Collection(Of T).System.Collections.IList.Remove
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.Count
+  commentId: P:System.Collections.ObjectModel.Collection`1.Count
+  isExternal: true
+  name: Count
+  nameWithType: Collection<T>.Count
+  fullName: System.Collections.ObjectModel.Collection<T>.Count
+  nameWithType.vb: Collection(Of T).Count
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Count
+- uid: System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+  commentId: P:System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+  isExternal: true
+  name: Item[Int32]
+  nameWithType: Collection<T>.Item[Int32]
+  fullName: System.Collections.ObjectModel.Collection<T>.Item[System.Int32]
+  nameWithType.vb: Collection(Of T).Item(Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+    name: Item
+    nameWithType: Collection<T>.Item
+    fullName: System.Collections.ObjectModel.Collection<T>.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.Item(System.Int32)
+    name: Item
+    nameWithType: Collection(Of T).Item
+    fullName: System.Collections.ObjectModel.Collection(Of T).Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection`1.Items
+  commentId: P:System.Collections.ObjectModel.Collection`1.Items
+  isExternal: true
+  name: Items
+  nameWithType: Collection<T>.Items
+  fullName: System.Collections.ObjectModel.Collection<T>.Items
+  nameWithType.vb: Collection(Of T).Items
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).Items
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  commentId: P:System.Collections.ObjectModel.Collection`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  isExternal: true
+  name: ICollection<T>.IsReadOnly
+  nameWithType: Collection<T>.ICollection<T>.IsReadOnly
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: Collection(Of T).System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.Generic.ICollection<T>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<T>.IsReadOnly
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#IsSynchronized
+  commentId: P:System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#IsSynchronized
+  isExternal: true
+  name: ICollection.IsSynchronized
+  nameWithType: Collection<T>.ICollection.IsSynchronized
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.ICollection.IsSynchronized
+  nameWithType.vb: Collection(Of T).System.Collections.ICollection.IsSynchronized
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.ICollection.IsSynchronized
+  name.vb: System.Collections.ICollection.IsSynchronized
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#SyncRoot
+  commentId: P:System.Collections.ObjectModel.Collection`1.System#Collections#ICollection#SyncRoot
+  isExternal: true
+  name: ICollection.SyncRoot
+  nameWithType: Collection<T>.ICollection.SyncRoot
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.ICollection.SyncRoot
+  nameWithType.vb: Collection(Of T).System.Collections.ICollection.SyncRoot
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.ICollection.SyncRoot
+  name.vb: System.Collections.ICollection.SyncRoot
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IsFixedSize
+  commentId: P:System.Collections.ObjectModel.Collection`1.System#Collections#IList#IsFixedSize
+  isExternal: true
+  name: IList.IsFixedSize
+  nameWithType: Collection<T>.IList.IsFixedSize
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.IsFixedSize
+  nameWithType.vb: Collection(Of T).System.Collections.IList.IsFixedSize
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.IsFixedSize
+  name.vb: System.Collections.IList.IsFixedSize
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#IsReadOnly
+  commentId: P:System.Collections.ObjectModel.Collection`1.System#Collections#IList#IsReadOnly
+  isExternal: true
+  name: IList.IsReadOnly
+  nameWithType: Collection<T>.IList.IsReadOnly
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.IsReadOnly
+  nameWithType.vb: Collection(Of T).System.Collections.IList.IsReadOnly
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.IsReadOnly
+  name.vb: System.Collections.IList.IsReadOnly
+- uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Item(System.Int32)
+  commentId: P:System.Collections.ObjectModel.Collection`1.System#Collections#IList#Item(System.Int32)
+  isExternal: true
+  name: IList.Item[Int32]
+  nameWithType: Collection<T>.IList.Item[Int32]
+  fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Item[System.Int32]
+  nameWithType.vb: Collection(Of T).System.Collections.IList.Item(Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Item(System.Int32)
+  name.vb: System.Collections.IList.Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Item(System.Int32)
+    name: IList.Item
+    nameWithType: Collection<T>.IList.Item
+    fullName: System.Collections.ObjectModel.Collection<T>.System.Collections.IList.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.System#Collections#IList#Item(System.Int32)
+    name: System.Collections.IList.Item
+    nameWithType: Collection(Of T).System.Collections.IList.Item
+    fullName: System.Collections.ObjectModel.Collection(Of T).System.Collections.IList.Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  isExternal: true
+  name: FindComponents(IEnumerable<SceneNode>, Predicate<SceneComponent>)
+  nameWithType: SceneExtensions.FindComponents(IEnumerable<SceneNode>, Predicate<SceneComponent>)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Collections.Generic.IEnumerable<Fusee.Engine.Core.Scene.SceneNode>, System.Predicate<Fusee.Engine.Core.Scene.SceneComponent>)
+  nameWithType.vb: SceneExtensions.FindComponents(IEnumerable(Of SceneNode), Predicate(Of SceneComponent))
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Collections.Generic.IEnumerable(Of Fusee.Engine.Core.Scene.SceneNode), System.Predicate(Of Fusee.Engine.Core.Scene.SceneComponent))
+  name.vb: FindComponents(IEnumerable(Of SceneNode), Predicate(Of SceneComponent))
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+    name: FindComponents
+    nameWithType: SceneExtensions.FindComponents
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneComponent
+    name: SceneComponent
+    nameWithType: SceneComponent
+    fullName: Fusee.Engine.Core.Scene.SceneComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+    name: FindComponents
+    nameWithType: SceneExtensions.FindComponents
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneComponent
+    name: SceneComponent
+    nameWithType: SceneComponent
+    fullName: Fusee.Engine.Core.Scene.SceneComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.SceneExtensions
+  commentId: T:Fusee.Engine.Core.Scene.SceneExtensions
+  parent: Fusee.Engine.Core.Scene
+  name: SceneExtensions
+  nameWithType: SceneExtensions
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{``0})
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{``0})
+  isExternal: true
+  name: FindComponents<TComponentToFind>(IEnumerable<SceneNode>, Predicate<TComponentToFind>)
+  nameWithType: SceneExtensions.FindComponents<TComponentToFind>(IEnumerable<SceneNode>, Predicate<TComponentToFind>)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents<TComponentToFind>(System.Collections.Generic.IEnumerable<Fusee.Engine.Core.Scene.SceneNode>, System.Predicate<TComponentToFind>)
+  nameWithType.vb: SceneExtensions.FindComponents(Of TComponentToFind)(IEnumerable(Of SceneNode), Predicate(Of TComponentToFind))
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Of TComponentToFind)(System.Collections.Generic.IEnumerable(Of Fusee.Engine.Core.Scene.SceneNode), System.Predicate(Of TComponentToFind))
+  name.vb: FindComponents(Of TComponentToFind)(IEnumerable(Of SceneNode), Predicate(Of TComponentToFind))
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{``0})
+    name: FindComponents<TComponentToFind>
+    nameWithType: SceneExtensions.FindComponents<TComponentToFind>
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents<TComponentToFind>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{``0})
+    name: FindComponents(Of TComponentToFind)
+    nameWithType: SceneExtensions.FindComponents(Of TComponentToFind)
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Of TComponentToFind)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TComponentToFind
+    nameWithType: TComponentToFind
+    fullName: TComponentToFind
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  isExternal: true
+  name: FindNodesWhereComponent(IEnumerable<SceneNode>, Predicate<SceneComponent>)
+  nameWithType: SceneExtensions.FindNodesWhereComponent(IEnumerable<SceneNode>, Predicate<SceneComponent>)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Collections.Generic.IEnumerable<Fusee.Engine.Core.Scene.SceneNode>, System.Predicate<Fusee.Engine.Core.Scene.SceneComponent>)
+  nameWithType.vb: SceneExtensions.FindNodesWhereComponent(IEnumerable(Of SceneNode), Predicate(Of SceneComponent))
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Collections.Generic.IEnumerable(Of Fusee.Engine.Core.Scene.SceneNode), System.Predicate(Of Fusee.Engine.Core.Scene.SceneComponent))
+  name.vb: FindNodesWhereComponent(IEnumerable(Of SceneNode), Predicate(Of SceneComponent))
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+    name: FindNodesWhereComponent
+    nameWithType: SceneExtensions.FindNodesWhereComponent
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneComponent
+    name: SceneComponent
+    nameWithType: SceneComponent
+    fullName: Fusee.Engine.Core.Scene.SceneComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+    name: FindNodesWhereComponent
+    nameWithType: SceneExtensions.FindNodesWhereComponent
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneComponent
+    name: SceneComponent
+    nameWithType: SceneComponent
+    fullName: Fusee.Engine.Core.Scene.SceneComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler{Fusee.Engine.Core.Scene.AddChildEventArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Core.Scene.AddChildEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<AddChildEventArgs>
+  nameWithType: EventHandler<AddChildEventArgs>
+  fullName: System.EventHandler<Fusee.Engine.Core.Scene.AddChildEventArgs>
+  nameWithType.vb: EventHandler(Of AddChildEventArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Core.Scene.AddChildEventArgs)
+  name.vb: EventHandler(Of AddChildEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.AddChildEventArgs
+    name: AddChildEventArgs
+    nameWithType: AddChildEventArgs
+    fullName: Fusee.Engine.Core.Scene.AddChildEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.AddChildEventArgs
+    name: AddChildEventArgs
+    nameWithType: AddChildEventArgs
+    fullName: Fusee.Engine.Core.Scene.AddChildEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.InsertItem(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.InsertItem(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.InsertItem(System.Int32,`0)
+  name: InsertItem(Int32, SceneNode)
+  nameWithType: Collection<SceneNode>.InsertItem(Int32, SceneNode)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.InsertItem(System.Int32, Fusee.Engine.Core.Scene.SceneNode)
+  nameWithType.vb: Collection(Of SceneNode).InsertItem(Int32, SceneNode)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).InsertItem(System.Int32, Fusee.Engine.Core.Scene.SceneNode)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.InsertItem(System.Int32,`0)
+    name: InsertItem
+    nameWithType: Collection<SceneNode>.InsertItem
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.InsertItem
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.InsertItem(System.Int32,`0)
+    name: InsertItem
+    nameWithType: Collection(Of SceneNode).InsertItem
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).InsertItem
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.ChildList.InsertItem*
+  commentId: Overload:Fusee.Engine.Core.Scene.ChildList.InsertItem
+  name: InsertItem
+  nameWithType: ChildList.InsertItem
+  fullName: Fusee.Engine.Core.Scene.ChildList.InsertItem
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.ObjectModel.Collection`1.InsertItem(System.Int32,`0)
+  commentId: M:System.Collections.ObjectModel.Collection`1.InsertItem(System.Int32,`0)
+  isExternal: true
+  name: InsertItem(Int32, T)
+  nameWithType: Collection<T>.InsertItem(Int32, T)
+  fullName: System.Collections.ObjectModel.Collection<T>.InsertItem(System.Int32, T)
+  nameWithType.vb: Collection(Of T).InsertItem(Int32, T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).InsertItem(System.Int32, T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.InsertItem(System.Int32,`0)
+    name: InsertItem
+    nameWithType: Collection<T>.InsertItem
+    fullName: System.Collections.ObjectModel.Collection<T>.InsertItem
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.InsertItem(System.Int32,`0)
+    name: InsertItem
+    nameWithType: Collection(Of T).InsertItem
+    fullName: System.Collections.ObjectModel.Collection(Of T).InsertItem
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.SetItem(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.SetItem(System.Int32,Fusee.Engine.Core.Scene.SceneNode)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.SetItem(System.Int32,`0)
+  name: SetItem(Int32, SceneNode)
+  nameWithType: Collection<SceneNode>.SetItem(Int32, SceneNode)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.SetItem(System.Int32, Fusee.Engine.Core.Scene.SceneNode)
+  nameWithType.vb: Collection(Of SceneNode).SetItem(Int32, SceneNode)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).SetItem(System.Int32, Fusee.Engine.Core.Scene.SceneNode)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.SetItem(System.Int32,`0)
+    name: SetItem
+    nameWithType: Collection<SceneNode>.SetItem
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.SetItem
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.SetItem(System.Int32,`0)
+    name: SetItem
+    nameWithType: Collection(Of SceneNode).SetItem
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).SetItem
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.ChildList.SetItem*
+  commentId: Overload:Fusee.Engine.Core.Scene.ChildList.SetItem
+  name: SetItem
+  nameWithType: ChildList.SetItem
+  fullName: Fusee.Engine.Core.Scene.ChildList.SetItem
+- uid: System.Collections.ObjectModel.Collection`1.SetItem(System.Int32,`0)
+  commentId: M:System.Collections.ObjectModel.Collection`1.SetItem(System.Int32,`0)
+  isExternal: true
+  name: SetItem(Int32, T)
+  nameWithType: Collection<T>.SetItem(Int32, T)
+  fullName: System.Collections.ObjectModel.Collection<T>.SetItem(System.Int32, T)
+  nameWithType.vb: Collection(Of T).SetItem(Int32, T)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).SetItem(System.Int32, T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.SetItem(System.Int32,`0)
+    name: SetItem
+    nameWithType: Collection<T>.SetItem
+    fullName: System.Collections.ObjectModel.Collection<T>.SetItem
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.SetItem(System.Int32,`0)
+    name: SetItem
+    nameWithType: Collection(Of T).SetItem
+    fullName: System.Collections.ObjectModel.Collection(Of T).SetItem
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.RemoveItem(System.Int32)
+  commentId: M:System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}.RemoveItem(System.Int32)
+  parent: System.Collections.ObjectModel.Collection{Fusee.Engine.Core.Scene.SceneNode}
+  definition: System.Collections.ObjectModel.Collection`1.RemoveItem(System.Int32)
+  name: RemoveItem(Int32)
+  nameWithType: Collection<SceneNode>.RemoveItem(Int32)
+  fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.RemoveItem(System.Int32)
+  nameWithType.vb: Collection(Of SceneNode).RemoveItem(Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).RemoveItem(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveItem(System.Int32)
+    name: RemoveItem
+    nameWithType: Collection<SceneNode>.RemoveItem
+    fullName: System.Collections.ObjectModel.Collection<Fusee.Engine.Core.Scene.SceneNode>.RemoveItem
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveItem(System.Int32)
+    name: RemoveItem
+    nameWithType: Collection(Of SceneNode).RemoveItem
+    fullName: System.Collections.ObjectModel.Collection(Of Fusee.Engine.Core.Scene.SceneNode).RemoveItem
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.ChildList.RemoveItem*
+  commentId: Overload:Fusee.Engine.Core.Scene.ChildList.RemoveItem
+  name: RemoveItem
+  nameWithType: ChildList.RemoveItem
+  fullName: Fusee.Engine.Core.Scene.ChildList.RemoveItem
+- uid: System.Collections.ObjectModel.Collection`1.RemoveItem(System.Int32)
+  commentId: M:System.Collections.ObjectModel.Collection`1.RemoveItem(System.Int32)
+  isExternal: true
+  name: RemoveItem(Int32)
+  nameWithType: Collection<T>.RemoveItem(Int32)
+  fullName: System.Collections.ObjectModel.Collection<T>.RemoveItem(System.Int32)
+  nameWithType.vb: Collection(Of T).RemoveItem(Int32)
+  fullName.vb: System.Collections.ObjectModel.Collection(Of T).RemoveItem(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveItem(System.Int32)
+    name: RemoveItem
+    nameWithType: Collection<T>.RemoveItem
+    fullName: System.Collections.ObjectModel.Collection<T>.RemoveItem
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.Collection`1.RemoveItem(System.Int32)
+    name: RemoveItem
+    nameWithType: Collection(Of T).RemoveItem
+    fullName: System.Collections.ObjectModel.Collection(Of T).RemoveItem
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

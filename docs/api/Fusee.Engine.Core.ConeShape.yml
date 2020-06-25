@@ -1,0 +1,616 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.ConeShape
+  commentId: T:Fusee.Engine.Core.ConeShape
+  id: ConeShape
+  parent: Fusee.Engine.Core
+  children:
+  - Fusee.Engine.Core.ConeShape.ConeUpIndex
+  - Fusee.Engine.Core.ConeShape.Height
+  - Fusee.Engine.Core.ConeShape.LocalScaling
+  - Fusee.Engine.Core.ConeShape.Margin
+  - Fusee.Engine.Core.ConeShape.Radius
+  langs:
+  - csharp
+  - vb
+  name: ConeShape
+  nameWithType: ConeShape
+  fullName: Fusee.Engine.Core.ConeShape
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ConeShape.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ConeShape
+    path: src/Fusee/src/Engine/Core/ConeShape.cs
+    startLine: 8
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nDefines a cone-shaped collision object\n"
+  example: []
+  syntax:
+    content: 'public class ConeShape : CollisionShape'
+    content.vb: >-
+      Public Class ConeShape
+          Inherits CollisionShape
+  inheritance:
+  - System.Object
+  - Fusee.Engine.Core.CollisionShape
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Core.ConeShape.Margin
+  commentId: P:Fusee.Engine.Core.ConeShape.Margin
+  id: Margin
+  parent: Fusee.Engine.Core.ConeShape
+  langs:
+  - csharp
+  - vb
+  name: Margin
+  nameWithType: ConeShape.Margin
+  fullName: Fusee.Engine.Core.ConeShape.Margin
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ConeShape.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Margin
+    path: src/Fusee/src/Engine/Core/ConeShape.cs
+    startLine: 18
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves or sets the margin.\n"
+  example: []
+  syntax:
+    content: public override float Margin { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe size of the collision shape&apos;s margin.\n"
+    content.vb: Public Overrides Property Margin As Single
+  overridden: Fusee.Engine.Core.CollisionShape.Margin
+  overload: Fusee.Engine.Core.ConeShape.Margin*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Fusee.Engine.Core.ConeShape.LocalScaling
+  commentId: P:Fusee.Engine.Core.ConeShape.LocalScaling
+  id: LocalScaling
+  parent: Fusee.Engine.Core.ConeShape
+  langs:
+  - csharp
+  - vb
+  name: LocalScaling
+  nameWithType: ConeShape.LocalScaling
+  fullName: Fusee.Engine.Core.ConeShape.LocalScaling
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ConeShape.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: LocalScaling
+    path: src/Fusee/src/Engine/Core/ConeShape.cs
+    startLine: 38
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRetrieves or sets the local scaling.\n"
+  example: []
+  syntax:
+    content: public override float3 LocalScaling { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float3
+      description: "\nThe local scaling.\n"
+    content.vb: Public Overrides Property LocalScaling As float3
+  overridden: Fusee.Engine.Core.CollisionShape.LocalScaling
+  overload: Fusee.Engine.Core.ConeShape.LocalScaling*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Fusee.Engine.Core.ConeShape.ConeUpIndex
+  commentId: P:Fusee.Engine.Core.ConeShape.ConeUpIndex
+  id: ConeUpIndex
+  parent: Fusee.Engine.Core.ConeShape
+  langs:
+  - csharp
+  - vb
+  name: ConeUpIndex
+  nameWithType: ConeShape.ConeUpIndex
+  fullName: Fusee.Engine.Core.ConeShape.ConeUpIndex
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ConeShape.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ConeUpIndex
+    path: src/Fusee/src/Engine/Core/ConeShape.cs
+    startLine: 58
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets and sets the index of the cone&apos;s up axis\n"
+  example: []
+  syntax:
+    content: public int ConeUpIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe index of cone&apos;s up axis.\n"
+    content.vb: Public Property ConeUpIndex As Integer
+  overload: Fusee.Engine.Core.ConeShape.ConeUpIndex*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ConeShape.Height
+  commentId: P:Fusee.Engine.Core.ConeShape.Height
+  id: Height
+  parent: Fusee.Engine.Core.ConeShape
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: ConeShape.Height
+  fullName: Fusee.Engine.Core.ConeShape.Height
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ConeShape.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Height
+    path: src/Fusee/src/Engine/Core/ConeShape.cs
+    startLine: 78
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the cone&apos;s height along the up axis.\n"
+  example: []
+  syntax:
+    content: public float Height { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe height.\n"
+    content.vb: Public ReadOnly Property Height As Single
+  overload: Fusee.Engine.Core.ConeShape.Height*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.ConeShape.Radius
+  commentId: P:Fusee.Engine.Core.ConeShape.Radius
+  id: Radius
+  parent: Fusee.Engine.Core.ConeShape
+  langs:
+  - csharp
+  - vb
+  name: Radius
+  nameWithType: ConeShape.Radius
+  fullName: Fusee.Engine.Core.ConeShape.Radius
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ConeShape.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Radius
+    path: src/Fusee/src/Engine/Core/ConeShape.cs
+    startLine: 93
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets the cone&apos;s radius.\n"
+  example: []
+  syntax:
+    content: public float Radius { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe radius.\n"
+    content.vb: Public ReadOnly Property Radius As Single
+  overload: Fusee.Engine.Core.ConeShape.Radius*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Core.CollisionShape
+  commentId: T:Fusee.Engine.Core.CollisionShape
+  parent: Fusee.Engine.Core
+  name: CollisionShape
+  nameWithType: CollisionShape
+  fullName: Fusee.Engine.Core.CollisionShape
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.CollisionShape.Margin
+  commentId: P:Fusee.Engine.Core.CollisionShape.Margin
+  parent: Fusee.Engine.Core.CollisionShape
+  name: Margin
+  nameWithType: CollisionShape.Margin
+  fullName: Fusee.Engine.Core.CollisionShape.Margin
+- uid: Fusee.Engine.Core.ConeShape.Margin*
+  commentId: Overload:Fusee.Engine.Core.ConeShape.Margin
+  name: Margin
+  nameWithType: ConeShape.Margin
+  fullName: Fusee.Engine.Core.ConeShape.Margin
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Engine.Core.CollisionShape.LocalScaling
+  commentId: P:Fusee.Engine.Core.CollisionShape.LocalScaling
+  parent: Fusee.Engine.Core.CollisionShape
+  name: LocalScaling
+  nameWithType: CollisionShape.LocalScaling
+  fullName: Fusee.Engine.Core.CollisionShape.LocalScaling
+- uid: Fusee.Engine.Core.ConeShape.LocalScaling*
+  commentId: Overload:Fusee.Engine.Core.ConeShape.LocalScaling
+  name: LocalScaling
+  nameWithType: ConeShape.LocalScaling
+  fullName: Fusee.Engine.Core.ConeShape.LocalScaling
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Core.ConeShape.ConeUpIndex*
+  commentId: Overload:Fusee.Engine.Core.ConeShape.ConeUpIndex
+  name: ConeUpIndex
+  nameWithType: ConeShape.ConeUpIndex
+  fullName: Fusee.Engine.Core.ConeShape.ConeUpIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Engine.Core.ConeShape.Height*
+  commentId: Overload:Fusee.Engine.Core.ConeShape.Height
+  name: Height
+  nameWithType: ConeShape.Height
+  fullName: Fusee.Engine.Core.ConeShape.Height
+- uid: Fusee.Engine.Core.ConeShape.Radius*
+  commentId: Overload:Fusee.Engine.Core.ConeShape.Radius
+  name: Radius
+  nameWithType: ConeShape.Radius
+  fullName: Fusee.Engine.Core.ConeShape.Radius

@@ -1,0 +1,1732 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.AABBCalculator
+  commentId: T:Fusee.Engine.Core.AABBCalculator
+  id: AABBCalculator
+  parent: Fusee.Engine.Core
+  children:
+  - Fusee.Engine.Core.AABBCalculator.#ctor(Fusee.Engine.Core.Scene.SceneContainer)
+  - Fusee.Engine.Core.AABBCalculator.#ctor(Fusee.Engine.Core.Scene.SceneNode)
+  - Fusee.Engine.Core.AABBCalculator.#ctor(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode})
+  - Fusee.Engine.Core.AABBCalculator.GetBox
+  - Fusee.Engine.Core.AABBCalculator.InitState
+  - Fusee.Engine.Core.AABBCalculator.OnMesh(Fusee.Engine.Core.Scene.Mesh)
+  - Fusee.Engine.Core.AABBCalculator.OnTransform(Fusee.Engine.Core.Scene.Transform)
+  - Fusee.Engine.Core.AABBCalculator.PopState
+  - Fusee.Engine.Core.AABBCalculator.PushState
+  langs:
+  - csharp
+  - vb
+  name: AABBCalculator
+  nameWithType: AABBCalculator
+  fullName: Fusee.Engine.Core.AABBCalculator
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AABBCalculator
+    path: src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+    startLine: 146
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nAxis-Aligned Bounding Box Calculator. Use instances of this class to calculate axis-aligned bounding boxes\non scenes, list of scene nodes or individual scene nodes. Calculations always include any child nodes.\n"
+  example: []
+  syntax:
+    content: 'public class AABBCalculator : Visitor<SceneNode, SceneComponent>'
+    content.vb: >-
+      Public Class AABBCalculator
+          Inherits Visitor(Of SceneNode, SceneComponent)
+  inheritance:
+  - System.Object
+  - Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}
+  inheritedMembers:
+  - Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.Traverse(Fusee.Engine.Core.Scene.SceneNode)
+  - Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.Traverse(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode})
+  - Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.InitState
+  - Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.PushState
+  - Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.PopState
+  - Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.CurrentNode
+  - Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.CurrentComponent
+  - Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.YieldOnCurrentNode
+  - Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.YieldOnCurrentComponent
+  - Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.YieldEnumeration
+  - Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.EnumInit(System.Collections.Generic.IEnumerator{Fusee.Engine.Core.Scene.SceneNode})
+  - Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.EnumMoveNext
+  - Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.EnumMoveNextNoComponent
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Core.AABBCalculator.#ctor(Fusee.Engine.Core.Scene.SceneContainer)
+  commentId: M:Fusee.Engine.Core.AABBCalculator.#ctor(Fusee.Engine.Core.Scene.SceneContainer)
+  id: '#ctor(Fusee.Engine.Core.Scene.SceneContainer)'
+  parent: Fusee.Engine.Core.AABBCalculator
+  langs:
+  - csharp
+  - vb
+  name: AABBCalculator(SceneContainer)
+  nameWithType: AABBCalculator.AABBCalculator(SceneContainer)
+  fullName: Fusee.Engine.Core.AABBCalculator.AABBCalculator(Fusee.Engine.Core.Scene.SceneContainer)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+    startLine: 183
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Engine.Core.AABBCalculator\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public AABBCalculator(SceneContainer sc)
+    parameters:
+    - id: sc
+      type: Fusee.Engine.Core.Scene.SceneContainer
+      description: The scene container to calculate an axis-aligned bounding box for.
+    content.vb: Public Sub New(sc As SceneContainer)
+  overload: Fusee.Engine.Core.AABBCalculator.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.AABBCalculator.#ctor(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode})
+  commentId: M:Fusee.Engine.Core.AABBCalculator.#ctor(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode})
+  id: '#ctor(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode})'
+  parent: Fusee.Engine.Core.AABBCalculator
+  langs:
+  - csharp
+  - vb
+  name: AABBCalculator(IEnumerable<SceneNode>)
+  nameWithType: AABBCalculator.AABBCalculator(IEnumerable<SceneNode>)
+  fullName: Fusee.Engine.Core.AABBCalculator.AABBCalculator(System.Collections.Generic.IEnumerable<Fusee.Engine.Core.Scene.SceneNode>)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+    startLine: 192
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Engine.Core.AABBCalculator\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public AABBCalculator(IEnumerable<SceneNode> sncList)
+    parameters:
+    - id: sncList
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}
+      description: The list of scene nodes to calculate an axis-aligned bounding box for.
+    content.vb: Public Sub New(sncList As IEnumerable(Of SceneNode))
+  overload: Fusee.Engine.Core.AABBCalculator.#ctor*
+  nameWithType.vb: AABBCalculator.AABBCalculator(IEnumerable(Of SceneNode))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Engine.Core.AABBCalculator.AABBCalculator(System.Collections.Generic.IEnumerable(Of Fusee.Engine.Core.Scene.SceneNode))
+  name.vb: AABBCalculator(IEnumerable(Of SceneNode))
+- uid: Fusee.Engine.Core.AABBCalculator.#ctor(Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:Fusee.Engine.Core.AABBCalculator.#ctor(Fusee.Engine.Core.Scene.SceneNode)
+  id: '#ctor(Fusee.Engine.Core.Scene.SceneNode)'
+  parent: Fusee.Engine.Core.AABBCalculator
+  langs:
+  - csharp
+  - vb
+  name: AABBCalculator(SceneNode)
+  nameWithType: AABBCalculator.AABBCalculator(SceneNode)
+  fullName: Fusee.Engine.Core.AABBCalculator.AABBCalculator(Fusee.Engine.Core.Scene.SceneNode)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+    startLine: 201
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Engine.Core.AABBCalculator\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public AABBCalculator(SceneNode snc)
+    parameters:
+    - id: snc
+      type: Fusee.Engine.Core.Scene.SceneNode
+      description: A single scene node to calculate an axis-aligned bounding box for.
+    content.vb: Public Sub New(snc As SceneNode)
+  overload: Fusee.Engine.Core.AABBCalculator.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.AABBCalculator.GetBox
+  commentId: M:Fusee.Engine.Core.AABBCalculator.GetBox
+  id: GetBox
+  parent: Fusee.Engine.Core.AABBCalculator
+  langs:
+  - csharp
+  - vb
+  name: GetBox()
+  nameWithType: AABBCalculator.GetBox()
+  fullName: Fusee.Engine.Core.AABBCalculator.GetBox()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetBox
+    path: src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+    startLine: 211
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nPerforms the calculation and returns the resulting box on the object(s) passed in the constructor. Any calculation\nalways includes a full traversal over all child nodes.\n"
+  example: []
+  syntax:
+    content: public AABBf? GetBox()
+    return:
+      type: System.Nullable{Fusee.Math.Core.AABBf}
+      description: The resulting axis-aligned bounding box.
+    content.vb: Public Function GetBox As AABBf?
+  overload: Fusee.Engine.Core.AABBCalculator.GetBox*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.AABBCalculator.OnTransform(Fusee.Engine.Core.Scene.Transform)
+  commentId: M:Fusee.Engine.Core.AABBCalculator.OnTransform(Fusee.Engine.Core.Scene.Transform)
+  id: OnTransform(Fusee.Engine.Core.Scene.Transform)
+  parent: Fusee.Engine.Core.AABBCalculator
+  langs:
+  - csharp
+  - vb
+  name: OnTransform(Transform)
+  nameWithType: AABBCalculator.OnTransform(Transform)
+  fullName: Fusee.Engine.Core.AABBCalculator.OnTransform(Fusee.Engine.Core.Scene.Transform)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: OnTransform
+    path: src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+    startLine: 225
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nDo not call. Used for internal traversal purposes only\n"
+  example: []
+  syntax:
+    content: public void OnTransform(Transform transform)
+    parameters:
+    - id: transform
+      type: Fusee.Engine.Core.Scene.Transform
+      description: The transform component.
+    content.vb: Public Sub OnTransform(transform As Transform)
+  overload: Fusee.Engine.Core.AABBCalculator.OnTransform*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.AABBCalculator.OnMesh(Fusee.Engine.Core.Scene.Mesh)
+  commentId: M:Fusee.Engine.Core.AABBCalculator.OnMesh(Fusee.Engine.Core.Scene.Mesh)
+  id: OnMesh(Fusee.Engine.Core.Scene.Mesh)
+  parent: Fusee.Engine.Core.AABBCalculator
+  langs:
+  - csharp
+  - vb
+  name: OnMesh(Mesh)
+  nameWithType: AABBCalculator.OnMesh(Mesh)
+  fullName: Fusee.Engine.Core.AABBCalculator.OnMesh(Fusee.Engine.Core.Scene.Mesh)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: OnMesh
+    path: src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+    startLine: 235
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nDo not call. Used for internal traversal purposes only\n"
+  example: []
+  syntax:
+    content: public void OnMesh(Mesh mesh)
+    parameters:
+    - id: mesh
+      type: Fusee.Engine.Core.Scene.Mesh
+      description: The mesh component.
+    content.vb: Public Sub OnMesh(mesh As Mesh)
+  overload: Fusee.Engine.Core.AABBCalculator.OnMesh*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.AABBCalculator.InitState
+  commentId: M:Fusee.Engine.Core.AABBCalculator.InitState
+  id: InitState
+  parent: Fusee.Engine.Core.AABBCalculator
+  langs:
+  - csharp
+  - vb
+  name: InitState()
+  nameWithType: AABBCalculator.InitState()
+  fullName: Fusee.Engine.Core.AABBCalculator.InitState()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InitState
+    path: src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+    startLine: 257
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nMethod is called when traversal starts to initialize the traversal state.\n"
+  example: []
+  syntax:
+    content: protected override void InitState()
+    content.vb: Protected Overrides Sub InitState
+  overridden: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.InitState
+  overload: Fusee.Engine.Core.AABBCalculator.InitState*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Fusee.Engine.Core.AABBCalculator.PushState
+  commentId: M:Fusee.Engine.Core.AABBCalculator.PushState
+  id: PushState
+  parent: Fusee.Engine.Core.AABBCalculator
+  langs:
+  - csharp
+  - vb
+  name: PushState()
+  nameWithType: AABBCalculator.PushState()
+  fullName: Fusee.Engine.Core.AABBCalculator.PushState()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: PushState
+    path: src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+    startLine: 267
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nMethod is called when going down one hierarchy level while traversing.\n"
+  example: []
+  syntax:
+    content: protected override void PushState()
+    content.vb: Protected Overrides Sub PushState
+  overridden: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.PushState
+  overload: Fusee.Engine.Core.AABBCalculator.PushState*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Fusee.Engine.Core.AABBCalculator.PopState
+  commentId: M:Fusee.Engine.Core.AABBCalculator.PopState
+  id: PopState
+  parent: Fusee.Engine.Core.AABBCalculator
+  langs:
+  - csharp
+  - vb
+  name: PopState()
+  nameWithType: AABBCalculator.PopState()
+  fullName: Fusee.Engine.Core.AABBCalculator.PopState()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: PopState
+    path: src/Fusee/src/Engine/Core/BoundingBoxCalculators.cs
+    startLine: 275
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nMethod is called when going up one hierarchy level while traversing.\n"
+  example: []
+  syntax:
+    content: protected override void PopState()
+    content.vb: Protected Overrides Sub PopState
+  overridden: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.PopState
+  overload: Fusee.Engine.Core.AABBCalculator.PopState*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}
+  commentId: T:Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}
+  parent: Fusee.Xene
+  definition: Fusee.Xene.Visitor`2
+  name: Visitor<SceneNode, SceneComponent>
+  nameWithType: Visitor<SceneNode, SceneComponent>
+  fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>
+  nameWithType.vb: Visitor(Of SceneNode, SceneComponent)
+  fullName.vb: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent)
+  name.vb: Visitor(Of SceneNode, SceneComponent)
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2
+    name: Visitor
+    nameWithType: Visitor
+    fullName: Fusee.Xene.Visitor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneComponent
+    name: SceneComponent
+    nameWithType: SceneComponent
+    fullName: Fusee.Engine.Core.Scene.SceneComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2
+    name: Visitor
+    nameWithType: Visitor
+    fullName: Fusee.Xene.Visitor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneComponent
+    name: SceneComponent
+    nameWithType: SceneComponent
+    fullName: Fusee.Engine.Core.Scene.SceneComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.Traverse(Fusee.Engine.Core.Scene.SceneNode)
+  commentId: M:Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.Traverse(Fusee.Engine.Core.Scene.SceneNode)
+  parent: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}
+  definition: Fusee.Xene.Visitor`2.Traverse(`0)
+  name: Traverse(SceneNode)
+  nameWithType: Visitor<SceneNode, SceneComponent>.Traverse(SceneNode)
+  fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.Traverse(Fusee.Engine.Core.Scene.SceneNode)
+  nameWithType.vb: Visitor(Of SceneNode, SceneComponent).Traverse(SceneNode)
+  fullName.vb: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).Traverse(Fusee.Engine.Core.Scene.SceneNode)
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.Traverse(`0)
+    name: Traverse
+    nameWithType: Visitor<SceneNode, SceneComponent>.Traverse
+    fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.Traverse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.Traverse(`0)
+    name: Traverse
+    nameWithType: Visitor(Of SceneNode, SceneComponent).Traverse
+    fullName: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).Traverse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.Traverse(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode})
+  commentId: M:Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.Traverse(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode})
+  parent: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}
+  definition: Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+  name: Traverse(IEnumerable<SceneNode>)
+  nameWithType: Visitor<SceneNode, SceneComponent>.Traverse(IEnumerable<SceneNode>)
+  fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.Traverse(System.Collections.Generic.IEnumerable<Fusee.Engine.Core.Scene.SceneNode>)
+  nameWithType.vb: Visitor(Of SceneNode, SceneComponent).Traverse(IEnumerable(Of SceneNode))
+  fullName.vb: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).Traverse(System.Collections.Generic.IEnumerable(Of Fusee.Engine.Core.Scene.SceneNode))
+  name.vb: Traverse(IEnumerable(Of SceneNode))
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+    name: Traverse
+    nameWithType: Visitor<SceneNode, SceneComponent>.Traverse
+    fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.Traverse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+    name: Traverse
+    nameWithType: Visitor(Of SceneNode, SceneComponent).Traverse
+    fullName: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).Traverse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.InitState
+  commentId: M:Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.InitState
+  parent: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}
+  definition: Fusee.Xene.Visitor`2.InitState
+  name: InitState()
+  nameWithType: Visitor<SceneNode, SceneComponent>.InitState()
+  fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.InitState()
+  nameWithType.vb: Visitor(Of SceneNode, SceneComponent).InitState()
+  fullName.vb: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).InitState()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.InitState
+    name: InitState
+    nameWithType: Visitor<SceneNode, SceneComponent>.InitState
+    fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.InitState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.InitState
+    name: InitState
+    nameWithType: Visitor(Of SceneNode, SceneComponent).InitState
+    fullName: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).InitState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.PushState
+  commentId: M:Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.PushState
+  parent: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}
+  definition: Fusee.Xene.Visitor`2.PushState
+  name: PushState()
+  nameWithType: Visitor<SceneNode, SceneComponent>.PushState()
+  fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.PushState()
+  nameWithType.vb: Visitor(Of SceneNode, SceneComponent).PushState()
+  fullName.vb: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).PushState()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.PushState
+    name: PushState
+    nameWithType: Visitor<SceneNode, SceneComponent>.PushState
+    fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.PushState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.PushState
+    name: PushState
+    nameWithType: Visitor(Of SceneNode, SceneComponent).PushState
+    fullName: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).PushState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.PopState
+  commentId: M:Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.PopState
+  parent: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}
+  definition: Fusee.Xene.Visitor`2.PopState
+  name: PopState()
+  nameWithType: Visitor<SceneNode, SceneComponent>.PopState()
+  fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.PopState()
+  nameWithType.vb: Visitor(Of SceneNode, SceneComponent).PopState()
+  fullName.vb: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).PopState()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.PopState
+    name: PopState
+    nameWithType: Visitor<SceneNode, SceneComponent>.PopState
+    fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.PopState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.PopState
+    name: PopState
+    nameWithType: Visitor(Of SceneNode, SceneComponent).PopState
+    fullName: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).PopState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.CurrentNode
+  commentId: P:Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.CurrentNode
+  parent: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}
+  definition: Fusee.Xene.Visitor`2.CurrentNode
+  name: CurrentNode
+  nameWithType: Visitor<SceneNode, SceneComponent>.CurrentNode
+  fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.CurrentNode
+  nameWithType.vb: Visitor(Of SceneNode, SceneComponent).CurrentNode
+  fullName.vb: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).CurrentNode
+- uid: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.CurrentComponent
+  commentId: P:Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.CurrentComponent
+  parent: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}
+  definition: Fusee.Xene.Visitor`2.CurrentComponent
+  name: CurrentComponent
+  nameWithType: Visitor<SceneNode, SceneComponent>.CurrentComponent
+  fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.CurrentComponent
+  nameWithType.vb: Visitor(Of SceneNode, SceneComponent).CurrentComponent
+  fullName.vb: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).CurrentComponent
+- uid: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.YieldOnCurrentNode
+  commentId: P:Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.YieldOnCurrentNode
+  parent: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}
+  definition: Fusee.Xene.Visitor`2.YieldOnCurrentNode
+  name: YieldOnCurrentNode
+  nameWithType: Visitor<SceneNode, SceneComponent>.YieldOnCurrentNode
+  fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.YieldOnCurrentNode
+  nameWithType.vb: Visitor(Of SceneNode, SceneComponent).YieldOnCurrentNode
+  fullName.vb: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).YieldOnCurrentNode
+- uid: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.YieldOnCurrentComponent
+  commentId: P:Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.YieldOnCurrentComponent
+  parent: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}
+  definition: Fusee.Xene.Visitor`2.YieldOnCurrentComponent
+  name: YieldOnCurrentComponent
+  nameWithType: Visitor<SceneNode, SceneComponent>.YieldOnCurrentComponent
+  fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.YieldOnCurrentComponent
+  nameWithType.vb: Visitor(Of SceneNode, SceneComponent).YieldOnCurrentComponent
+  fullName.vb: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).YieldOnCurrentComponent
+- uid: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.YieldEnumeration
+  commentId: P:Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.YieldEnumeration
+  parent: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}
+  definition: Fusee.Xene.Visitor`2.YieldEnumeration
+  name: YieldEnumeration
+  nameWithType: Visitor<SceneNode, SceneComponent>.YieldEnumeration
+  fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.YieldEnumeration
+  nameWithType.vb: Visitor(Of SceneNode, SceneComponent).YieldEnumeration
+  fullName.vb: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).YieldEnumeration
+- uid: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.EnumInit(System.Collections.Generic.IEnumerator{Fusee.Engine.Core.Scene.SceneNode})
+  commentId: M:Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.EnumInit(System.Collections.Generic.IEnumerator{Fusee.Engine.Core.Scene.SceneNode})
+  parent: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}
+  definition: Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+  name: EnumInit(IEnumerator<SceneNode>)
+  nameWithType: Visitor<SceneNode, SceneComponent>.EnumInit(IEnumerator<SceneNode>)
+  fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.EnumInit(System.Collections.Generic.IEnumerator<Fusee.Engine.Core.Scene.SceneNode>)
+  nameWithType.vb: Visitor(Of SceneNode, SceneComponent).EnumInit(IEnumerator(Of SceneNode))
+  fullName.vb: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).EnumInit(System.Collections.Generic.IEnumerator(Of Fusee.Engine.Core.Scene.SceneNode))
+  name.vb: EnumInit(IEnumerator(Of SceneNode))
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+    name: EnumInit
+    nameWithType: Visitor<SceneNode, SceneComponent>.EnumInit
+    fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.EnumInit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+    name: EnumInit
+    nameWithType: Visitor(Of SceneNode, SceneComponent).EnumInit
+    fullName: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).EnumInit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.EnumMoveNext
+  commentId: M:Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.EnumMoveNext
+  parent: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}
+  definition: Fusee.Xene.Visitor`2.EnumMoveNext
+  name: EnumMoveNext()
+  nameWithType: Visitor<SceneNode, SceneComponent>.EnumMoveNext()
+  fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.EnumMoveNext()
+  nameWithType.vb: Visitor(Of SceneNode, SceneComponent).EnumMoveNext()
+  fullName.vb: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).EnumMoveNext()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.EnumMoveNext
+    name: EnumMoveNext
+    nameWithType: Visitor<SceneNode, SceneComponent>.EnumMoveNext
+    fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.EnumMoveNext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.EnumMoveNext
+    name: EnumMoveNext
+    nameWithType: Visitor(Of SceneNode, SceneComponent).EnumMoveNext
+    fullName: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).EnumMoveNext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.EnumMoveNextNoComponent
+  commentId: M:Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.EnumMoveNextNoComponent
+  parent: Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}
+  definition: Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+  name: EnumMoveNextNoComponent()
+  nameWithType: Visitor<SceneNode, SceneComponent>.EnumMoveNextNoComponent()
+  fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.EnumMoveNextNoComponent()
+  nameWithType.vb: Visitor(Of SceneNode, SceneComponent).EnumMoveNextNoComponent()
+  fullName.vb: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).EnumMoveNextNoComponent()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+    name: EnumMoveNextNoComponent
+    nameWithType: Visitor<SceneNode, SceneComponent>.EnumMoveNextNoComponent
+    fullName: Fusee.Xene.Visitor<Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent>.EnumMoveNextNoComponent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+    name: EnumMoveNextNoComponent
+    nameWithType: Visitor(Of SceneNode, SceneComponent).EnumMoveNextNoComponent
+    fullName: Fusee.Xene.Visitor(Of Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent).EnumMoveNextNoComponent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Xene.Visitor`2
+  commentId: T:Fusee.Xene.Visitor`2
+  name: Visitor<TNode, TComponent>
+  nameWithType: Visitor<TNode, TComponent>
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>
+  nameWithType.vb: Visitor(Of TNode, TComponent)
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent)
+  name.vb: Visitor(Of TNode, TComponent)
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2
+    name: Visitor
+    nameWithType: Visitor
+    fullName: Fusee.Xene.Visitor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2
+    name: Visitor
+    nameWithType: Visitor
+    fullName: Fusee.Xene.Visitor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TComponent
+    nameWithType: TComponent
+    fullName: TComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene
+  commentId: N:Fusee.Xene
+  name: Fusee.Xene
+  nameWithType: Fusee.Xene
+  fullName: Fusee.Xene
+- uid: Fusee.Xene.Visitor`2.Traverse(`0)
+  commentId: M:Fusee.Xene.Visitor`2.Traverse(`0)
+  name: Traverse(TNode)
+  nameWithType: Visitor<TNode, TComponent>.Traverse(TNode)
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.Traverse(TNode)
+  nameWithType.vb: Visitor(Of TNode, TComponent).Traverse(TNode)
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).Traverse(TNode)
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.Traverse(`0)
+    name: Traverse
+    nameWithType: Visitor<TNode, TComponent>.Traverse
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.Traverse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.Traverse(`0)
+    name: Traverse
+    nameWithType: Visitor(Of TNode, TComponent).Traverse
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).Traverse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  name: Traverse(IEnumerable<TNode>)
+  nameWithType: Visitor<TNode, TComponent>.Traverse(IEnumerable<TNode>)
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.Traverse(System.Collections.Generic.IEnumerable<TNode>)
+  nameWithType.vb: Visitor(Of TNode, TComponent).Traverse(IEnumerable(Of TNode))
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).Traverse(System.Collections.Generic.IEnumerable(Of TNode))
+  name.vb: Traverse(IEnumerable(Of TNode))
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+    name: Traverse
+    nameWithType: Visitor<TNode, TComponent>.Traverse
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.Traverse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.Traverse(System.Collections.Generic.IEnumerable{`0})
+    name: Traverse
+    nameWithType: Visitor(Of TNode, TComponent).Traverse
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).Traverse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor`2.InitState
+  commentId: M:Fusee.Xene.Visitor`2.InitState
+  name: InitState()
+  nameWithType: Visitor<TNode, TComponent>.InitState()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.InitState()
+  nameWithType.vb: Visitor(Of TNode, TComponent).InitState()
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).InitState()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.InitState
+    name: InitState
+    nameWithType: Visitor<TNode, TComponent>.InitState
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.InitState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.InitState
+    name: InitState
+    nameWithType: Visitor(Of TNode, TComponent).InitState
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).InitState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor`2.PushState
+  commentId: M:Fusee.Xene.Visitor`2.PushState
+  name: PushState()
+  nameWithType: Visitor<TNode, TComponent>.PushState()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.PushState()
+  nameWithType.vb: Visitor(Of TNode, TComponent).PushState()
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).PushState()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.PushState
+    name: PushState
+    nameWithType: Visitor<TNode, TComponent>.PushState
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.PushState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.PushState
+    name: PushState
+    nameWithType: Visitor(Of TNode, TComponent).PushState
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).PushState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor`2.PopState
+  commentId: M:Fusee.Xene.Visitor`2.PopState
+  name: PopState()
+  nameWithType: Visitor<TNode, TComponent>.PopState()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.PopState()
+  nameWithType.vb: Visitor(Of TNode, TComponent).PopState()
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).PopState()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.PopState
+    name: PopState
+    nameWithType: Visitor<TNode, TComponent>.PopState
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.PopState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.PopState
+    name: PopState
+    nameWithType: Visitor(Of TNode, TComponent).PopState
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).PopState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor`2.CurrentNode
+  commentId: P:Fusee.Xene.Visitor`2.CurrentNode
+  name: CurrentNode
+  nameWithType: Visitor<TNode, TComponent>.CurrentNode
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.CurrentNode
+  nameWithType.vb: Visitor(Of TNode, TComponent).CurrentNode
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).CurrentNode
+- uid: Fusee.Xene.Visitor`2.CurrentComponent
+  commentId: P:Fusee.Xene.Visitor`2.CurrentComponent
+  name: CurrentComponent
+  nameWithType: Visitor<TNode, TComponent>.CurrentComponent
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.CurrentComponent
+  nameWithType.vb: Visitor(Of TNode, TComponent).CurrentComponent
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).CurrentComponent
+- uid: Fusee.Xene.Visitor`2.YieldOnCurrentNode
+  commentId: P:Fusee.Xene.Visitor`2.YieldOnCurrentNode
+  name: YieldOnCurrentNode
+  nameWithType: Visitor<TNode, TComponent>.YieldOnCurrentNode
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldOnCurrentNode
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldOnCurrentNode
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldOnCurrentNode
+- uid: Fusee.Xene.Visitor`2.YieldOnCurrentComponent
+  commentId: P:Fusee.Xene.Visitor`2.YieldOnCurrentComponent
+  name: YieldOnCurrentComponent
+  nameWithType: Visitor<TNode, TComponent>.YieldOnCurrentComponent
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldOnCurrentComponent
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldOnCurrentComponent
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldOnCurrentComponent
+- uid: Fusee.Xene.Visitor`2.YieldEnumeration
+  commentId: P:Fusee.Xene.Visitor`2.YieldEnumeration
+  name: YieldEnumeration
+  nameWithType: Visitor<TNode, TComponent>.YieldEnumeration
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.YieldEnumeration
+  nameWithType.vb: Visitor(Of TNode, TComponent).YieldEnumeration
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).YieldEnumeration
+- uid: Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+  commentId: M:Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+  isExternal: true
+  name: EnumInit(IEnumerator<TNode>)
+  nameWithType: Visitor<TNode, TComponent>.EnumInit(IEnumerator<TNode>)
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumInit(System.Collections.Generic.IEnumerator<TNode>)
+  nameWithType.vb: Visitor(Of TNode, TComponent).EnumInit(IEnumerator(Of TNode))
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).EnumInit(System.Collections.Generic.IEnumerator(Of TNode))
+  name.vb: EnumInit(IEnumerator(Of TNode))
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+    name: EnumInit
+    nameWithType: Visitor<TNode, TComponent>.EnumInit
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumInit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.EnumInit(System.Collections.Generic.IEnumerator{`0})
+    name: EnumInit
+    nameWithType: Visitor(Of TNode, TComponent).EnumInit
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).EnumInit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TNode
+    nameWithType: TNode
+    fullName: TNode
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor`2.EnumMoveNext
+  commentId: M:Fusee.Xene.Visitor`2.EnumMoveNext
+  name: EnumMoveNext()
+  nameWithType: Visitor<TNode, TComponent>.EnumMoveNext()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumMoveNext()
+  nameWithType.vb: Visitor(Of TNode, TComponent).EnumMoveNext()
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).EnumMoveNext()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.EnumMoveNext
+    name: EnumMoveNext
+    nameWithType: Visitor<TNode, TComponent>.EnumMoveNext
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumMoveNext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.EnumMoveNext
+    name: EnumMoveNext
+    nameWithType: Visitor(Of TNode, TComponent).EnumMoveNext
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).EnumMoveNext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+  commentId: M:Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+  name: EnumMoveNextNoComponent()
+  nameWithType: Visitor<TNode, TComponent>.EnumMoveNextNoComponent()
+  fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumMoveNextNoComponent()
+  nameWithType.vb: Visitor(Of TNode, TComponent).EnumMoveNextNoComponent()
+  fullName.vb: Fusee.Xene.Visitor(Of TNode, TComponent).EnumMoveNextNoComponent()
+  spec.csharp:
+  - uid: Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+    name: EnumMoveNextNoComponent
+    nameWithType: Visitor<TNode, TComponent>.EnumMoveNextNoComponent
+    fullName: Fusee.Xene.Visitor<TNode, TComponent>.EnumMoveNextNoComponent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.Visitor`2.EnumMoveNextNoComponent
+    name: EnumMoveNextNoComponent
+    nameWithType: Visitor(Of TNode, TComponent).EnumMoveNextNoComponent
+    fullName: Fusee.Xene.Visitor(Of TNode, TComponent).EnumMoveNextNoComponent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.AABBCalculator
+  commentId: T:Fusee.Engine.Core.AABBCalculator
+  name: AABBCalculator
+  nameWithType: AABBCalculator
+  fullName: Fusee.Engine.Core.AABBCalculator
+- uid: Fusee.Engine.Core.AABBCalculator.#ctor*
+  commentId: Overload:Fusee.Engine.Core.AABBCalculator.#ctor
+  name: AABBCalculator
+  nameWithType: AABBCalculator.AABBCalculator
+  fullName: Fusee.Engine.Core.AABBCalculator.AABBCalculator
+- uid: Fusee.Engine.Core.Scene.SceneContainer
+  commentId: T:Fusee.Engine.Core.Scene.SceneContainer
+  parent: Fusee.Engine.Core.Scene
+  name: SceneContainer
+  nameWithType: SceneContainer
+  fullName: Fusee.Engine.Core.Scene.SceneContainer
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<SceneNode>
+  nameWithType: IEnumerable<SceneNode>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Engine.Core.Scene.SceneNode>
+  nameWithType.vb: IEnumerable(Of SceneNode)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Engine.Core.Scene.SceneNode)
+  name.vb: IEnumerable(Of SceneNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Fusee.Engine.Core.Scene.SceneNode
+  commentId: T:Fusee.Engine.Core.Scene.SceneNode
+  parent: Fusee.Engine.Core.Scene
+  name: SceneNode
+  nameWithType: SceneNode
+  fullName: Fusee.Engine.Core.Scene.SceneNode
+- uid: Fusee.Engine.Core.AABBCalculator.GetBox*
+  commentId: Overload:Fusee.Engine.Core.AABBCalculator.GetBox
+  name: GetBox
+  nameWithType: AABBCalculator.GetBox
+  fullName: Fusee.Engine.Core.AABBCalculator.GetBox
+- uid: System.Nullable{Fusee.Math.Core.AABBf}
+  commentId: T:System.Nullable{Fusee.Math.Core.AABBf}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<AABBf>
+  nameWithType: Nullable<AABBf>
+  fullName: System.Nullable<Fusee.Math.Core.AABBf>
+  nameWithType.vb: Nullable(Of AABBf)
+  fullName.vb: System.Nullable(Of Fusee.Math.Core.AABBf)
+  name.vb: Nullable(Of AABBf)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Math.Core.AABBf
+    name: AABBf
+    nameWithType: AABBf
+    fullName: Fusee.Math.Core.AABBf
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Math.Core.AABBf
+    name: AABBf
+    nameWithType: AABBf
+    fullName: Fusee.Math.Core.AABBf
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.AABBCalculator.OnTransform*
+  commentId: Overload:Fusee.Engine.Core.AABBCalculator.OnTransform
+  name: OnTransform
+  nameWithType: AABBCalculator.OnTransform
+  fullName: Fusee.Engine.Core.AABBCalculator.OnTransform
+- uid: Fusee.Engine.Core.Scene.Transform
+  commentId: T:Fusee.Engine.Core.Scene.Transform
+  parent: Fusee.Engine.Core.Scene
+  name: Transform
+  nameWithType: Transform
+  fullName: Fusee.Engine.Core.Scene.Transform
+- uid: Fusee.Engine.Core.AABBCalculator.OnMesh*
+  commentId: Overload:Fusee.Engine.Core.AABBCalculator.OnMesh
+  name: OnMesh
+  nameWithType: AABBCalculator.OnMesh
+  fullName: Fusee.Engine.Core.AABBCalculator.OnMesh
+- uid: Fusee.Engine.Core.Scene.Mesh
+  commentId: T:Fusee.Engine.Core.Scene.Mesh
+  parent: Fusee.Engine.Core.Scene
+  name: Mesh
+  nameWithType: Mesh
+  fullName: Fusee.Engine.Core.Scene.Mesh
+- uid: Fusee.Engine.Core.AABBCalculator.InitState*
+  commentId: Overload:Fusee.Engine.Core.AABBCalculator.InitState
+  name: InitState
+  nameWithType: AABBCalculator.InitState
+  fullName: Fusee.Engine.Core.AABBCalculator.InitState
+- uid: Fusee.Engine.Core.AABBCalculator.PushState*
+  commentId: Overload:Fusee.Engine.Core.AABBCalculator.PushState
+  name: PushState
+  nameWithType: AABBCalculator.PushState
+  fullName: Fusee.Engine.Core.AABBCalculator.PushState
+- uid: Fusee.Engine.Core.AABBCalculator.PopState*
+  commentId: Overload:Fusee.Engine.Core.AABBCalculator.PopState
+  name: PopState
+  nameWithType: AABBCalculator.PopState
+  fullName: Fusee.Engine.Core.AABBCalculator.PopState

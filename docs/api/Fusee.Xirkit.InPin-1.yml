@@ -1,0 +1,802 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Xirkit.InPin`1
+  commentId: T:Fusee.Xirkit.InPin`1
+  id: InPin`1
+  parent: Fusee.Xirkit
+  children:
+  - Fusee.Xirkit.InPin`1.#ctor(Fusee.Xirkit.Node,System.String,Fusee.Xirkit.IMemberAccessor{`0})
+  - Fusee.Xirkit.InPin`1.GetPinType
+  - Fusee.Xirkit.InPin`1.MemberAccessor
+  - Fusee.Xirkit.InPin`1.ReceivedValue
+  - Fusee.Xirkit.InPin`1.SetValue(`0)
+  langs:
+  - csharp
+  - vb
+  name: InPin<T>
+  nameWithType: InPin<T>
+  fullName: Fusee.Xirkit.InPin<T>
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/InPin.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: InPin
+    path: src/Fusee/src/Xirkit/InPin.cs
+    startLine: 9
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nClass representing incoming pins to nodes. \n"
+  example: []
+  syntax:
+    content: 'public class InPin<T> : Pin, IInPin'
+    typeParameters:
+    - id: T
+      description: The type of the values transmitted over this pin.
+    content.vb: >-
+      Public Class InPin(Of T)
+          Inherits Pin
+          Implements IInPin
+  seealso:
+  - linkId: Fusee.Xirkit.IInPin
+    commentId: T:Fusee.Xirkit.IInPin
+  - linkId: Fusee.Xirkit.Pin
+    commentId: T:Fusee.Xirkit.Pin
+  inheritance:
+  - System.Object
+  - Fusee.Xirkit.Pin
+  implements:
+  - Fusee.Xirkit.IInPin
+  inheritedMembers:
+  - Fusee.Xirkit.Pin.N
+  - Fusee.Xirkit.Pin.Member
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: InPin(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Fusee.Xirkit.InPin(Of T)
+  name.vb: InPin(Of T)
+- uid: Fusee.Xirkit.InPin`1.MemberAccessor
+  commentId: P:Fusee.Xirkit.InPin`1.MemberAccessor
+  id: MemberAccessor
+  parent: Fusee.Xirkit.InPin`1
+  langs:
+  - csharp
+  - vb
+  name: MemberAccessor
+  nameWithType: InPin<T>.MemberAccessor
+  fullName: Fusee.Xirkit.InPin<T>.MemberAccessor
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/InPin.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MemberAccessor
+    path: src/Fusee/src/Xirkit/InPin.cs
+    startLine: 18
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nGets and sets the member accessor.\n"
+  example: []
+  syntax:
+    content: public IMemberAccessor<T> MemberAccessor { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Xirkit.IMemberAccessor{{T}}
+      description: "\nThe member accessor.\n"
+    content.vb: Public Property MemberAccessor As IMemberAccessor(Of T)
+  overload: Fusee.Xirkit.InPin`1.MemberAccessor*
+  nameWithType.vb: InPin(Of T).MemberAccessor
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.InPin(Of T).MemberAccessor
+- uid: Fusee.Xirkit.InPin`1.#ctor(Fusee.Xirkit.Node,System.String,Fusee.Xirkit.IMemberAccessor{`0})
+  commentId: M:Fusee.Xirkit.InPin`1.#ctor(Fusee.Xirkit.Node,System.String,Fusee.Xirkit.IMemberAccessor{`0})
+  id: '#ctor(Fusee.Xirkit.Node,System.String,Fusee.Xirkit.IMemberAccessor{`0})'
+  parent: Fusee.Xirkit.InPin`1
+  langs:
+  - csharp
+  - vb
+  name: InPin(Node, String, IMemberAccessor<T>)
+  nameWithType: InPin<T>.InPin(Node, String, IMemberAccessor<T>)
+  fullName: Fusee.Xirkit.InPin<T>.InPin(Fusee.Xirkit.Node, System.String, Fusee.Xirkit.IMemberAccessor<T>)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/InPin.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Xirkit/InPin.cs
+    startLine: 30
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Xirkit.InPin%601\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public InPin(Node n, string member, IMemberAccessor<T> memberAccessor)
+    parameters:
+    - id: n
+      type: Fusee.Xirkit.Node
+      description: The node this pin should belong to.
+    - id: member
+      type: System.String
+      description: The name of the member or the member chain within the object hosted by the node n.
+    - id: memberAccessor
+      type: Fusee.Xirkit.IMemberAccessor{{T}}
+      description: The member accessor used to deliver incoming values from the in-pin to the specified member of the node.
+    content.vb: Public Sub New(n As Node, member As String, memberAccessor As IMemberAccessor(Of T))
+  overload: Fusee.Xirkit.InPin`1.#ctor*
+  nameWithType.vb: InPin(Of T).InPin(Node, String, IMemberAccessor(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.InPin(Of T).InPin(Fusee.Xirkit.Node, System.String, Fusee.Xirkit.IMemberAccessor(Of T))
+  name.vb: InPin(Node, String, IMemberAccessor(Of T))
+- uid: Fusee.Xirkit.InPin`1.SetValue(`0)
+  commentId: M:Fusee.Xirkit.InPin`1.SetValue(`0)
+  id: SetValue(`0)
+  parent: Fusee.Xirkit.InPin`1
+  langs:
+  - csharp
+  - vb
+  name: SetValue(T)
+  nameWithType: InPin<T>.SetValue(T)
+  fullName: Fusee.Xirkit.InPin<T>.SetValue(T)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/InPin.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetValue
+    path: src/Fusee/src/Xirkit/InPin.cs
+    startLine: 41
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nSets the value. Triggers the <xref href=\"Fusee.Xirkit.InPin%601.ReceivedValue\" data-throw-if-not-resolved=\"false\"></xref> event.\n"
+  example: []
+  syntax:
+    content: public void SetValue(T value)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The value.
+    content.vb: Public Sub SetValue(value As T)
+  overload: Fusee.Xirkit.InPin`1.SetValue*
+  nameWithType.vb: InPin(Of T).SetValue(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.InPin(Of T).SetValue(T)
+- uid: Fusee.Xirkit.InPin`1.GetPinType
+  commentId: M:Fusee.Xirkit.InPin`1.GetPinType
+  id: GetPinType
+  parent: Fusee.Xirkit.InPin`1
+  langs:
+  - csharp
+  - vb
+  name: GetPinType()
+  nameWithType: InPin<T>.GetPinType()
+  fullName: Fusee.Xirkit.InPin<T>.GetPinType()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/InPin.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetPinType
+    path: src/Fusee/src/Xirkit/InPin.cs
+    startLine: 54
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nRetrieves the type description of the pin.\n"
+  example: []
+  syntax:
+    content: public Type GetPinType()
+    return:
+      type: System.Type
+      description: "\nThe pin&apos;s type\n"
+    content.vb: Public Function GetPinType As Type
+  overload: Fusee.Xirkit.InPin`1.GetPinType*
+  implements:
+  - Fusee.Xirkit.IInPin.GetPinType
+  nameWithType.vb: InPin(Of T).GetPinType()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.InPin(Of T).GetPinType()
+- uid: Fusee.Xirkit.InPin`1.ReceivedValue
+  commentId: E:Fusee.Xirkit.InPin`1.ReceivedValue
+  id: ReceivedValue
+  parent: Fusee.Xirkit.InPin`1
+  langs:
+  - csharp
+  - vb
+  name: ReceivedValue
+  nameWithType: InPin<T>.ReceivedValue
+  fullName: Fusee.Xirkit.InPin<T>.ReceivedValue
+  type: Event
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/InPin.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ReceivedValue
+    path: src/Fusee/src/Xirkit/InPin.cs
+    startLine: 62
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nOccurs when this pin received a value.\n"
+  example: []
+  syntax:
+    content: public event ReceivedValueHandler ReceivedValue
+    return:
+      type: Fusee.Xirkit.ReceivedValueHandler
+    content.vb: Public Event ReceivedValue As ReceivedValueHandler
+  implements:
+  - Fusee.Xirkit.IInPin.ReceivedValue
+  nameWithType.vb: InPin(Of T).ReceivedValue
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.InPin(Of T).ReceivedValue
+references:
+- uid: Fusee.Xirkit.IInPin
+  commentId: T:Fusee.Xirkit.IInPin
+  parent: Fusee.Xirkit
+  name: IInPin
+  nameWithType: IInPin
+  fullName: Fusee.Xirkit.IInPin
+- uid: Fusee.Xirkit.Pin
+  commentId: T:Fusee.Xirkit.Pin
+  parent: Fusee.Xirkit
+  name: Pin
+  nameWithType: Pin
+  fullName: Fusee.Xirkit.Pin
+- uid: Fusee.Xirkit
+  commentId: N:Fusee.Xirkit
+  name: Fusee.Xirkit
+  nameWithType: Fusee.Xirkit
+  fullName: Fusee.Xirkit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Xirkit.Pin.N
+  commentId: P:Fusee.Xirkit.Pin.N
+  parent: Fusee.Xirkit.Pin
+  name: N
+  nameWithType: Pin.N
+  fullName: Fusee.Xirkit.Pin.N
+- uid: Fusee.Xirkit.Pin.Member
+  commentId: P:Fusee.Xirkit.Pin.Member
+  parent: Fusee.Xirkit.Pin
+  name: Member
+  nameWithType: Pin.Member
+  fullName: Fusee.Xirkit.Pin.Member
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Xirkit.InPin`1.MemberAccessor*
+  commentId: Overload:Fusee.Xirkit.InPin`1.MemberAccessor
+  name: MemberAccessor
+  nameWithType: InPin<T>.MemberAccessor
+  fullName: Fusee.Xirkit.InPin<T>.MemberAccessor
+  nameWithType.vb: InPin(Of T).MemberAccessor
+  fullName.vb: Fusee.Xirkit.InPin(Of T).MemberAccessor
+- uid: Fusee.Xirkit.IMemberAccessor{{T}}
+  commentId: T:Fusee.Xirkit.IMemberAccessor{`0}
+  parent: Fusee.Xirkit
+  definition: Fusee.Xirkit.IMemberAccessor`1
+  name: IMemberAccessor<T>
+  nameWithType: IMemberAccessor<T>
+  fullName: Fusee.Xirkit.IMemberAccessor<T>
+  nameWithType.vb: IMemberAccessor(Of T)
+  fullName.vb: Fusee.Xirkit.IMemberAccessor(Of T)
+  name.vb: IMemberAccessor(Of T)
+  spec.csharp:
+  - uid: Fusee.Xirkit.IMemberAccessor`1
+    name: IMemberAccessor
+    nameWithType: IMemberAccessor
+    fullName: Fusee.Xirkit.IMemberAccessor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xirkit.IMemberAccessor`1
+    name: IMemberAccessor
+    nameWithType: IMemberAccessor
+    fullName: Fusee.Xirkit.IMemberAccessor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xirkit.IMemberAccessor`1
+  commentId: T:Fusee.Xirkit.IMemberAccessor`1
+  name: IMemberAccessor<T>
+  nameWithType: IMemberAccessor<T>
+  fullName: Fusee.Xirkit.IMemberAccessor<T>
+  nameWithType.vb: IMemberAccessor(Of T)
+  fullName.vb: Fusee.Xirkit.IMemberAccessor(Of T)
+  name.vb: IMemberAccessor(Of T)
+  spec.csharp:
+  - uid: Fusee.Xirkit.IMemberAccessor`1
+    name: IMemberAccessor
+    nameWithType: IMemberAccessor
+    fullName: Fusee.Xirkit.IMemberAccessor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xirkit.IMemberAccessor`1
+    name: IMemberAccessor
+    nameWithType: IMemberAccessor
+    fullName: Fusee.Xirkit.IMemberAccessor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xirkit.InPin`1
+  commentId: T:Fusee.Xirkit.InPin`1
+  name: InPin<T>
+  nameWithType: InPin<T>
+  fullName: Fusee.Xirkit.InPin<T>
+  nameWithType.vb: InPin(Of T)
+  fullName.vb: Fusee.Xirkit.InPin(Of T)
+  name.vb: InPin(Of T)
+  spec.csharp:
+  - uid: Fusee.Xirkit.InPin`1
+    name: InPin
+    nameWithType: InPin
+    fullName: Fusee.Xirkit.InPin
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xirkit.InPin`1
+    name: InPin
+    nameWithType: InPin
+    fullName: Fusee.Xirkit.InPin
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xirkit.InPin`1.#ctor*
+  commentId: Overload:Fusee.Xirkit.InPin`1.#ctor
+  name: InPin
+  nameWithType: InPin<T>.InPin
+  fullName: Fusee.Xirkit.InPin<T>.InPin
+  nameWithType.vb: InPin(Of T).InPin
+  fullName.vb: Fusee.Xirkit.InPin(Of T).InPin
+- uid: Fusee.Xirkit.Node
+  commentId: T:Fusee.Xirkit.Node
+  parent: Fusee.Xirkit
+  name: Node
+  nameWithType: Node
+  fullName: Fusee.Xirkit.Node
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Fusee.Xirkit.InPin`1.ReceivedValue
+  commentId: E:Fusee.Xirkit.InPin`1.ReceivedValue
+  isExternal: true
+- uid: Fusee.Xirkit.InPin`1.SetValue*
+  commentId: Overload:Fusee.Xirkit.InPin`1.SetValue
+  name: SetValue
+  nameWithType: InPin<T>.SetValue
+  fullName: Fusee.Xirkit.InPin<T>.SetValue
+  nameWithType.vb: InPin(Of T).SetValue
+  fullName.vb: Fusee.Xirkit.InPin(Of T).SetValue
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Fusee.Xirkit.InPin`1.GetPinType*
+  commentId: Overload:Fusee.Xirkit.InPin`1.GetPinType
+  name: GetPinType
+  nameWithType: InPin<T>.GetPinType
+  fullName: Fusee.Xirkit.InPin<T>.GetPinType
+  nameWithType.vb: InPin(Of T).GetPinType
+  fullName.vb: Fusee.Xirkit.InPin(Of T).GetPinType
+- uid: Fusee.Xirkit.IInPin.GetPinType
+  commentId: M:Fusee.Xirkit.IInPin.GetPinType
+  parent: Fusee.Xirkit.IInPin
+  name: GetPinType()
+  nameWithType: IInPin.GetPinType()
+  fullName: Fusee.Xirkit.IInPin.GetPinType()
+  spec.csharp:
+  - uid: Fusee.Xirkit.IInPin.GetPinType
+    name: GetPinType
+    nameWithType: IInPin.GetPinType
+    fullName: Fusee.Xirkit.IInPin.GetPinType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xirkit.IInPin.GetPinType
+    name: GetPinType
+    nameWithType: IInPin.GetPinType
+    fullName: Fusee.Xirkit.IInPin.GetPinType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Fusee.Xirkit.IInPin.ReceivedValue
+  commentId: E:Fusee.Xirkit.IInPin.ReceivedValue
+  parent: Fusee.Xirkit.IInPin
+  name: ReceivedValue
+  nameWithType: IInPin.ReceivedValue
+  fullName: Fusee.Xirkit.IInPin.ReceivedValue
+- uid: Fusee.Xirkit.ReceivedValueHandler
+  commentId: T:Fusee.Xirkit.ReceivedValueHandler
+  parent: Fusee.Xirkit
+  name: ReceivedValueHandler
+  nameWithType: ReceivedValueHandler
+  fullName: Fusee.Xirkit.ReceivedValueHandler

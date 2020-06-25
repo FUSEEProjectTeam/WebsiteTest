@@ -1,0 +1,581 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Scene.CanvasTransform
+  commentId: T:Fusee.Engine.Core.Scene.CanvasTransform
+  id: CanvasTransform
+  parent: Fusee.Engine.Core.Scene
+  children:
+  - Fusee.Engine.Core.Scene.CanvasTransform.#ctor(Fusee.Engine.Core.Scene.CanvasRenderMode)
+  - Fusee.Engine.Core.Scene.CanvasTransform.CanvasRenderMode
+  - Fusee.Engine.Core.Scene.CanvasTransform.Scale
+  - Fusee.Engine.Core.Scene.CanvasTransform.ScreenSpaceSize
+  - Fusee.Engine.Core.Scene.CanvasTransform.Size
+  langs:
+  - csharp
+  - vb
+  name: CanvasTransform
+  nameWithType: CanvasTransform
+  fullName: Fusee.Engine.Core.Scene.CanvasTransform
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/CanvasTransform.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CanvasTransform
+    path: src/Fusee/src/Engine/Core/Scene/CanvasTransform.cs
+    startLine: 8
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nBuilding block to set up User Interface hierarchies.\nUse this as your first element in the Interface hierarchy.\n"
+  example: []
+  syntax:
+    content: 'public class CanvasTransform : SceneComponent, IComponent'
+    content.vb: >-
+      Public Class CanvasTransform
+          Inherits SceneComponent
+          Implements IComponent
+  inheritance:
+  - System.Object
+  - Fusee.Engine.Core.Scene.SceneComponent
+  implements:
+  - Fusee.Xene.IComponent
+  inheritedMembers:
+  - Fusee.Engine.Core.Scene.SceneComponent.Name
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Core.Scene.CanvasTransform.CanvasRenderMode
+  commentId: F:Fusee.Engine.Core.Scene.CanvasTransform.CanvasRenderMode
+  id: CanvasRenderMode
+  parent: Fusee.Engine.Core.Scene.CanvasTransform
+  langs:
+  - csharp
+  - vb
+  name: CanvasRenderMode
+  nameWithType: CanvasTransform.CanvasRenderMode
+  fullName: Fusee.Engine.Core.Scene.CanvasTransform.CanvasRenderMode
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/CanvasTransform.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CanvasRenderMode
+    path: src/Fusee/src/Engine/Core/Scene/CanvasTransform.cs
+    startLine: 13
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nThe canvas render mode.  Is the UI on this canvas placed in the 3D world or overlaid onto the 2D screen. \n"
+  example: []
+  syntax:
+    content: public CanvasRenderMode CanvasRenderMode
+    return:
+      type: Fusee.Engine.Core.Scene.CanvasRenderMode
+    content.vb: Public CanvasRenderMode As CanvasRenderMode
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.CanvasTransform.Size
+  commentId: F:Fusee.Engine.Core.Scene.CanvasTransform.Size
+  id: Size
+  parent: Fusee.Engine.Core.Scene.CanvasTransform
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: CanvasTransform.Size
+  fullName: Fusee.Engine.Core.Scene.CanvasTransform.Size
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/CanvasTransform.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Size
+    path: src/Fusee/src/Engine/Core/Scene/CanvasTransform.cs
+    startLine: 18
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nAbsolute size of the Canvas. First element in the interface hierarchy.\n"
+  example: []
+  syntax:
+    content: public MinMaxRect Size
+    return:
+      type: Fusee.Math.Core.MinMaxRect
+    content.vb: Public Size As MinMaxRect
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.CanvasTransform.ScreenSpaceSize
+  commentId: F:Fusee.Engine.Core.Scene.CanvasTransform.ScreenSpaceSize
+  id: ScreenSpaceSize
+  parent: Fusee.Engine.Core.Scene.CanvasTransform
+  langs:
+  - csharp
+  - vb
+  name: ScreenSpaceSize
+  nameWithType: CanvasTransform.ScreenSpaceSize
+  fullName: Fusee.Engine.Core.Scene.CanvasTransform.ScreenSpaceSize
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/CanvasTransform.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ScreenSpaceSize
+    path: src/Fusee/src/Engine/Core/Scene/CanvasTransform.cs
+    startLine: 23
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nAbsolute size of the Canvas. First element in the interface hierarchy.\n"
+  example: []
+  syntax:
+    content: public MinMaxRect ScreenSpaceSize
+    return:
+      type: Fusee.Math.Core.MinMaxRect
+    content.vb: Public ScreenSpaceSize As MinMaxRect
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.CanvasTransform.Scale
+  commentId: F:Fusee.Engine.Core.Scene.CanvasTransform.Scale
+  id: Scale
+  parent: Fusee.Engine.Core.Scene.CanvasTransform
+  langs:
+  - csharp
+  - vb
+  name: Scale
+  nameWithType: CanvasTransform.Scale
+  fullName: Fusee.Engine.Core.Scene.CanvasTransform.Scale
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/CanvasTransform.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Scale
+    path: src/Fusee/src/Engine/Core/Scene/CanvasTransform.cs
+    startLine: 28
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nScale factor for the user given offsets that define the sizes if the canvas&apos; child elements. This becomes important when rendering in SCREEN mode.        \n"
+  example: []
+  syntax:
+    content: public float2 Scale
+    return:
+      type: Fusee.Math.Core.float2
+    content.vb: Public Scale As float2
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.CanvasTransform.#ctor(Fusee.Engine.Core.Scene.CanvasRenderMode)
+  commentId: M:Fusee.Engine.Core.Scene.CanvasTransform.#ctor(Fusee.Engine.Core.Scene.CanvasRenderMode)
+  id: '#ctor(Fusee.Engine.Core.Scene.CanvasRenderMode)'
+  parent: Fusee.Engine.Core.Scene.CanvasTransform
+  langs:
+  - csharp
+  - vb
+  name: CanvasTransform(CanvasRenderMode)
+  nameWithType: CanvasTransform.CanvasTransform(CanvasRenderMode)
+  fullName: Fusee.Engine.Core.Scene.CanvasTransform.CanvasTransform(Fusee.Engine.Core.Scene.CanvasRenderMode)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/CanvasTransform.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/Core/Scene/CanvasTransform.cs
+    startLine: 34
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Engine.Core.Scene.CanvasTransform\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public CanvasTransform(CanvasRenderMode canvasRenderMode)
+    parameters:
+    - id: canvasRenderMode
+      type: Fusee.Engine.Core.Scene.CanvasRenderMode
+      description: The canvas render mode. Is the UI on this canvas placed in the 3D world or overlaid onto the 2D screen.
+    content.vb: Public Sub New(canvasRenderMode As CanvasRenderMode)
+  overload: Fusee.Engine.Core.Scene.CanvasTransform.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Core.Scene.SceneComponent
+  commentId: T:Fusee.Engine.Core.Scene.SceneComponent
+  parent: Fusee.Engine.Core.Scene
+  name: SceneComponent
+  nameWithType: SceneComponent
+  fullName: Fusee.Engine.Core.Scene.SceneComponent
+- uid: Fusee.Xene.IComponent
+  commentId: T:Fusee.Xene.IComponent
+  parent: Fusee.Xene
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Fusee.Xene.IComponent
+- uid: Fusee.Engine.Core.Scene.SceneComponent.Name
+  commentId: F:Fusee.Engine.Core.Scene.SceneComponent.Name
+  parent: Fusee.Engine.Core.Scene.SceneComponent
+  name: Name
+  nameWithType: SceneComponent.Name
+  fullName: Fusee.Engine.Core.Scene.SceneComponent.Name
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Xene
+  commentId: N:Fusee.Xene
+  name: Fusee.Xene
+  nameWithType: Fusee.Xene
+  fullName: Fusee.Xene
+- uid: Fusee.Engine.Core.Scene.CanvasRenderMode
+  commentId: T:Fusee.Engine.Core.Scene.CanvasRenderMode
+  parent: Fusee.Engine.Core.Scene
+  name: CanvasRenderMode
+  nameWithType: CanvasRenderMode
+  fullName: Fusee.Engine.Core.Scene.CanvasRenderMode
+- uid: Fusee.Math.Core.MinMaxRect
+  commentId: T:Fusee.Math.Core.MinMaxRect
+  parent: Fusee.Math.Core
+  name: MinMaxRect
+  nameWithType: MinMaxRect
+  fullName: Fusee.Math.Core.MinMaxRect
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Math.Core.float2
+  commentId: T:Fusee.Math.Core.float2
+  parent: Fusee.Math.Core
+  name: float2
+  nameWithType: float2
+  fullName: Fusee.Math.Core.float2
+- uid: Fusee.Engine.Core.Scene.CanvasTransform
+  commentId: T:Fusee.Engine.Core.Scene.CanvasTransform
+  parent: Fusee.Engine.Core.Scene
+  name: CanvasTransform
+  nameWithType: CanvasTransform
+  fullName: Fusee.Engine.Core.Scene.CanvasTransform
+- uid: Fusee.Engine.Core.Scene.CanvasTransform.#ctor*
+  commentId: Overload:Fusee.Engine.Core.Scene.CanvasTransform.#ctor
+  name: CanvasTransform
+  nameWithType: CanvasTransform.CanvasTransform
+  fullName: Fusee.Engine.Core.Scene.CanvasTransform.CanvasTransform

@@ -1,0 +1,481 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.GUI.UIElementPosition
+  commentId: T:Fusee.Engine.GUI.UIElementPosition
+  id: UIElementPosition
+  parent: Fusee.Engine.GUI
+  children:
+  - Fusee.Engine.GUI.UIElementPosition.CalcOffsets(Fusee.Engine.GUI.AnchorPos,Fusee.Math.Core.float2,System.Single,System.Single,Fusee.Math.Core.float2)
+  - Fusee.Engine.GUI.UIElementPosition.GetAnchors(Fusee.Engine.GUI.AnchorPos)
+  langs:
+  - csharp
+  - vb
+  name: UIElementPosition
+  nameWithType: UIElementPosition
+  fullName: Fusee.Engine.GUI.UIElementPosition
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/GUI/GUINode.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: UIElementPosition
+    path: src/Fusee/src/Engine/GUI/GUINode.cs
+    startLine: 57
+  assemblies:
+  - Fusee.Engine.GUI
+  namespace: Fusee.Engine.GUI
+  summary: "\nContains convenience functions to position a UI element on its parent element.\n"
+  example: []
+  syntax:
+    content: public static class UIElementPosition
+    content.vb: Public Module UIElementPosition
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Fusee.Engine.GUI.UIElementPosition.GetAnchors(Fusee.Engine.GUI.AnchorPos)
+  commentId: M:Fusee.Engine.GUI.UIElementPosition.GetAnchors(Fusee.Engine.GUI.AnchorPos)
+  id: GetAnchors(Fusee.Engine.GUI.AnchorPos)
+  parent: Fusee.Engine.GUI.UIElementPosition
+  langs:
+  - csharp
+  - vb
+  name: GetAnchors(AnchorPos)
+  nameWithType: UIElementPosition.GetAnchors(AnchorPos)
+  fullName: Fusee.Engine.GUI.UIElementPosition.GetAnchors(Fusee.Engine.GUI.AnchorPos)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/GUI/GUINode.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetAnchors
+    path: src/Fusee/src/Engine/GUI/GUINode.cs
+    startLine: 64
+  assemblies:
+  - Fusee.Engine.GUI
+  namespace: Fusee.Engine.GUI
+  summary: "\nSets the anchor position in percent as a <xref href=\"Fusee.Math.Core.MinMaxRect\" data-throw-if-not-resolved=\"false\"></xref> depending on its <xref href=\"Fusee.Engine.GUI.AnchorPos\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static MinMaxRect GetAnchors(AnchorPos anchorPos)
+    parameters:
+    - id: anchorPos
+      type: Fusee.Engine.GUI.AnchorPos
+      description: The anchor point of the UI element.
+    return:
+      type: Fusee.Math.Core.MinMaxRect
+      description: The <xref href="Fusee.Math.Core.MinMaxRect" data-throw-if-not-resolved="false"></xref> containing the anchor position in percent.
+    content.vb: Public Shared Function GetAnchors(anchorPos As AnchorPos) As MinMaxRect
+  overload: Fusee.Engine.GUI.UIElementPosition.GetAnchors*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.GUI.UIElementPosition.CalcOffsets(Fusee.Engine.GUI.AnchorPos,Fusee.Math.Core.float2,System.Single,System.Single,Fusee.Math.Core.float2)
+  commentId: M:Fusee.Engine.GUI.UIElementPosition.CalcOffsets(Fusee.Engine.GUI.AnchorPos,Fusee.Math.Core.float2,System.Single,System.Single,Fusee.Math.Core.float2)
+  id: CalcOffsets(Fusee.Engine.GUI.AnchorPos,Fusee.Math.Core.float2,System.Single,System.Single,Fusee.Math.Core.float2)
+  parent: Fusee.Engine.GUI.UIElementPosition
+  langs:
+  - csharp
+  - vb
+  name: CalcOffsets(AnchorPos, float2, Single, Single, float2)
+  nameWithType: UIElementPosition.CalcOffsets(AnchorPos, float2, Single, Single, float2)
+  fullName: Fusee.Engine.GUI.UIElementPosition.CalcOffsets(Fusee.Engine.GUI.AnchorPos, Fusee.Math.Core.float2, System.Single, System.Single, Fusee.Math.Core.float2)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/GUI/GUINode.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CalcOffsets
+    path: src/Fusee/src/Engine/GUI/GUINode.cs
+    startLine: 129
+  assemblies:
+  - Fusee.Engine.GUI
+  namespace: Fusee.Engine.GUI
+  summary: "\nCalculates the offset between an element and their parent element and therefore its size.\n"
+  example: []
+  syntax:
+    content: public static MinMaxRect CalcOffsets(AnchorPos anchorPos, float2 posOnParent, float parentHeight, float parentWidth, float2 guiElementDim)
+    parameters:
+    - id: anchorPos
+      type: Fusee.Engine.GUI.AnchorPos
+      description: The anchor point of the element.
+    - id: posOnParent
+      type: Fusee.Math.Core.float2
+      description: The position on the parent element.
+    - id: parentHeight
+      type: System.Single
+      description: The height of the parent element.
+    - id: parentWidth
+      type: System.Single
+      description: The width of the parent element.
+    - id: guiElementDim
+      type: Fusee.Math.Core.float2
+      description: The dimensions of the element along the x and y axis.
+    return:
+      type: Fusee.Math.Core.MinMaxRect
+      description: ''
+    content.vb: Public Shared Function CalcOffsets(anchorPos As AnchorPos, posOnParent As float2, parentHeight As Single, parentWidth As Single, guiElementDim As float2) As MinMaxRect
+  overload: Fusee.Engine.GUI.UIElementPosition.CalcOffsets*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Fusee.Engine.GUI
+  commentId: N:Fusee.Engine.GUI
+  name: Fusee.Engine.GUI
+  nameWithType: Fusee.Engine.GUI
+  fullName: Fusee.Engine.GUI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Math.Core.MinMaxRect
+  commentId: T:Fusee.Math.Core.MinMaxRect
+  parent: Fusee.Math.Core
+  name: MinMaxRect
+  nameWithType: MinMaxRect
+  fullName: Fusee.Math.Core.MinMaxRect
+- uid: Fusee.Engine.GUI.AnchorPos
+  commentId: T:Fusee.Engine.GUI.AnchorPos
+  parent: Fusee.Engine.GUI
+  name: AnchorPos
+  nameWithType: AnchorPos
+  fullName: Fusee.Engine.GUI.AnchorPos
+- uid: Fusee.Engine.GUI.UIElementPosition.GetAnchors*
+  commentId: Overload:Fusee.Engine.GUI.UIElementPosition.GetAnchors
+  name: GetAnchors
+  nameWithType: UIElementPosition.GetAnchors
+  fullName: Fusee.Engine.GUI.UIElementPosition.GetAnchors
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.GUI.UIElementPosition.CalcOffsets*
+  commentId: Overload:Fusee.Engine.GUI.UIElementPosition.CalcOffsets
+  name: CalcOffsets
+  nameWithType: UIElementPosition.CalcOffsets
+  fullName: Fusee.Engine.GUI.UIElementPosition.CalcOffsets
+- uid: Fusee.Math.Core.float2
+  commentId: T:Fusee.Math.Core.float2
+  parent: Fusee.Math.Core
+  name: float2
+  nameWithType: float2
+  fullName: Fusee.Math.Core.float2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

@@ -1,0 +1,1039 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp
+  commentId: T:Fusee.Engine.Imp.Sound.Desktop.AudioImp
+  id: AudioImp
+  parent: Fusee.Engine.Imp.Sound.Desktop
+  children:
+  - Fusee.Engine.Imp.Sound.Desktop.AudioImp.#ctor
+  - Fusee.Engine.Imp.Sound.Desktop.AudioImp.CloseDevice
+  - Fusee.Engine.Imp.Sound.Desktop.AudioImp.GetVolume
+  - Fusee.Engine.Imp.Sound.Desktop.AudioImp.LoadFile(System.String,System.Boolean)
+  - Fusee.Engine.Imp.Sound.Desktop.AudioImp.OpenDevice
+  - Fusee.Engine.Imp.Sound.Desktop.AudioImp.OpenFromStream(System.String,System.IO.Stream,System.Boolean)
+  - Fusee.Engine.Imp.Sound.Desktop.AudioImp.SetPanning(System.Single)
+  - Fusee.Engine.Imp.Sound.Desktop.AudioImp.SetVolume(System.Single)
+  - Fusee.Engine.Imp.Sound.Desktop.AudioImp.Stop
+  langs:
+  - csharp
+  - vb
+  name: AudioImp
+  nameWithType: AudioImp
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AudioImp
+    path: src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+    startLine: 13
+  assemblies:
+  - Fusee.Engine.Imp.Sound.Desktop
+  namespace: Fusee.Engine.Imp.Sound.Desktop
+  summary: "\nThis class is a container of all <xref href=\"Fusee.Engine.Imp.Sound.Desktop.AudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> instances and regulates the properties of all Sounds.\n"
+  example: []
+  syntax:
+    content: 'public class AudioImp : IAudioImp'
+    content.vb: >-
+      Public Class AudioImp
+          Implements IAudioImp
+  inheritance:
+  - System.Object
+  implements:
+  - Fusee.Engine.Common.IAudioImp
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.#ctor
+  commentId: M:Fusee.Engine.Imp.Sound.Desktop.AudioImp.#ctor
+  id: '#ctor'
+  parent: Fusee.Engine.Imp.Sound.Desktop.AudioImp
+  langs:
+  - csharp
+  - vb
+  name: AudioImp()
+  nameWithType: AudioImp.AudioImp()
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.AudioImp()
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+    startLine: 23
+  assemblies:
+  - Fusee.Engine.Imp.Sound.Desktop
+  namespace: Fusee.Engine.Imp.Sound.Desktop
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Engine.Imp.Sound.Desktop.AudioImp\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public AudioImp()
+    content.vb: Public Sub New
+  overload: Fusee.Engine.Imp.Sound.Desktop.AudioImp.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.OpenDevice
+  commentId: M:Fusee.Engine.Imp.Sound.Desktop.AudioImp.OpenDevice
+  id: OpenDevice
+  parent: Fusee.Engine.Imp.Sound.Desktop.AudioImp
+  langs:
+  - csharp
+  - vb
+  name: OpenDevice()
+  nameWithType: AudioImp.OpenDevice()
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.OpenDevice()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: OpenDevice
+    path: src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+    startLine: 36
+  assemblies:
+  - Fusee.Engine.Imp.Sound.Desktop
+  namespace: Fusee.Engine.Imp.Sound.Desktop
+  summary: "\nOpens the device. All <xref href=\"Fusee.Engine.Imp.Sound.Desktop.AudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> are reset. The GlobalVolume is set to 100(maximum).\n"
+  example: []
+  syntax:
+    content: public void OpenDevice()
+    content.vb: Public Sub OpenDevice
+  overload: Fusee.Engine.Imp.Sound.Desktop.AudioImp.OpenDevice*
+  implements:
+  - Fusee.Engine.Common.IAudioImp.OpenDevice
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.CloseDevice
+  commentId: M:Fusee.Engine.Imp.Sound.Desktop.AudioImp.CloseDevice
+  id: CloseDevice
+  parent: Fusee.Engine.Imp.Sound.Desktop.AudioImp
+  langs:
+  - csharp
+  - vb
+  name: CloseDevice()
+  nameWithType: AudioImp.CloseDevice()
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.CloseDevice()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CloseDevice
+    path: src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+    startLine: 45
+  assemblies:
+  - Fusee.Engine.Imp.Sound.Desktop
+  namespace: Fusee.Engine.Imp.Sound.Desktop
+  summary: "\nCloses the device. All <xref href=\"Fusee.Engine.Imp.Sound.Desktop.AudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> instances get disposed.\n"
+  example: []
+  syntax:
+    content: public void CloseDevice()
+    content.vb: Public Sub CloseDevice
+  overload: Fusee.Engine.Imp.Sound.Desktop.AudioImp.CloseDevice*
+  implements:
+  - Fusee.Engine.Common.IAudioImp.CloseDevice
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.LoadFile(System.String,System.Boolean)
+  commentId: M:Fusee.Engine.Imp.Sound.Desktop.AudioImp.LoadFile(System.String,System.Boolean)
+  id: LoadFile(System.String,System.Boolean)
+  parent: Fusee.Engine.Imp.Sound.Desktop.AudioImp
+  langs:
+  - csharp
+  - vb
+  name: LoadFile(String, Boolean)
+  nameWithType: AudioImp.LoadFile(String, Boolean)
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.LoadFile(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: LoadFile
+    path: src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+    startLine: 56
+  assemblies:
+  - Fusee.Engine.Imp.Sound.Desktop
+  namespace: Fusee.Engine.Imp.Sound.Desktop
+  summary: "\nLoads an audio file.\n"
+  example: []
+  syntax:
+    content: public IAudioStreamImp LoadFile(string fileName, bool streaming)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: ''
+    - id: streaming
+      type: System.Boolean
+      description: ''
+    return:
+      type: Fusee.Engine.Common.IAudioStreamImp
+      description: ''
+    content.vb: Public Function LoadFile(fileName As String, streaming As Boolean) As IAudioStreamImp
+  overload: Fusee.Engine.Imp.Sound.Desktop.AudioImp.LoadFile*
+  implements:
+  - Fusee.Engine.Common.IAudioImp.LoadFile(System.String,System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.OpenFromStream(System.String,System.IO.Stream,System.Boolean)
+  commentId: M:Fusee.Engine.Imp.Sound.Desktop.AudioImp.OpenFromStream(System.String,System.IO.Stream,System.Boolean)
+  id: OpenFromStream(System.String,System.IO.Stream,System.Boolean)
+  parent: Fusee.Engine.Imp.Sound.Desktop.AudioImp
+  langs:
+  - csharp
+  - vb
+  name: OpenFromStream(String, Stream, Boolean)
+  nameWithType: AudioImp.OpenFromStream(String, Stream, Boolean)
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.OpenFromStream(System.String, System.IO.Stream, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: OpenFromStream
+    path: src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+    startLine: 97
+  assemblies:
+  - Fusee.Engine.Imp.Sound.Desktop
+  namespace: Fusee.Engine.Imp.Sound.Desktop
+  summary: "\nOpen a sound file from the given stream.\n"
+  example: []
+  syntax:
+    content: public IAudioStreamImp OpenFromStream(string id, Stream stream, bool streaming)
+    parameters:
+    - id: id
+      type: System.String
+    - id: stream
+      type: System.IO.Stream
+    - id: streaming
+      type: System.Boolean
+    return:
+      type: Fusee.Engine.Common.IAudioStreamImp
+      description: An IAudioStreamImp instance is returned if the file path was correctly resolved.
+    content.vb: Public Function OpenFromStream(id As String, stream As Stream, streaming As Boolean) As IAudioStreamImp
+  overload: Fusee.Engine.Imp.Sound.Desktop.AudioImp.OpenFromStream*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.Stop
+  commentId: M:Fusee.Engine.Imp.Sound.Desktop.AudioImp.Stop
+  id: Stop
+  parent: Fusee.Engine.Imp.Sound.Desktop.AudioImp
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: AudioImp.Stop()
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.Stop()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Stop
+    path: src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+    startLine: 124
+  assemblies:
+  - Fusee.Engine.Imp.Sound.Desktop
+  namespace: Fusee.Engine.Imp.Sound.Desktop
+  summary: "\nStops the playback of all <xref href=\"Fusee.Engine.Imp.Sound.Desktop.AudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> instances.\n"
+  example: []
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub Stop
+  overload: Fusee.Engine.Imp.Sound.Desktop.AudioImp.Stop*
+  implements:
+  - Fusee.Engine.Common.IAudioImp.Stop
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.SetVolume(System.Single)
+  commentId: M:Fusee.Engine.Imp.Sound.Desktop.AudioImp.SetVolume(System.Single)
+  id: SetVolume(System.Single)
+  parent: Fusee.Engine.Imp.Sound.Desktop.AudioImp
+  langs:
+  - csharp
+  - vb
+  name: SetVolume(Single)
+  nameWithType: AudioImp.SetVolume(Single)
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.SetVolume(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetVolume
+    path: src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+    startLine: 134
+  assemblies:
+  - Fusee.Engine.Imp.Sound.Desktop
+  namespace: Fusee.Engine.Imp.Sound.Desktop
+  summary: "\nSets the master volume of the listener.\n"
+  example: []
+  syntax:
+    content: public void SetVolume(float val)
+    parameters:
+    - id: val
+      type: System.Single
+      description: The value (0 - 100).
+    content.vb: Public Sub SetVolume(val As Single)
+  overload: Fusee.Engine.Imp.Sound.Desktop.AudioImp.SetVolume*
+  implements:
+  - Fusee.Engine.Common.IAudioImp.SetVolume(System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.GetVolume
+  commentId: M:Fusee.Engine.Imp.Sound.Desktop.AudioImp.GetVolume
+  id: GetVolume
+  parent: Fusee.Engine.Imp.Sound.Desktop.AudioImp
+  langs:
+  - csharp
+  - vb
+  name: GetVolume()
+  nameWithType: AudioImp.GetVolume()
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.GetVolume()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetVolume
+    path: src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+    startLine: 146
+  assemblies:
+  - Fusee.Engine.Imp.Sound.Desktop
+  namespace: Fusee.Engine.Imp.Sound.Desktop
+  summary: "\nGets the master volume of the Listener.\n"
+  example: []
+  syntax:
+    content: public float GetVolume()
+    return:
+      type: System.Single
+      description: The volume as float with 2 digit precision.
+    content.vb: Public Function GetVolume As Single
+  overload: Fusee.Engine.Imp.Sound.Desktop.AudioImp.GetVolume*
+  implements:
+  - Fusee.Engine.Common.IAudioImp.GetVolume
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.SetPanning(System.Single)
+  commentId: M:Fusee.Engine.Imp.Sound.Desktop.AudioImp.SetPanning(System.Single)
+  id: SetPanning(System.Single)
+  parent: Fusee.Engine.Imp.Sound.Desktop.AudioImp
+  langs:
+  - csharp
+  - vb
+  name: SetPanning(Single)
+  nameWithType: AudioImp.SetPanning(Single)
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.SetPanning(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetPanning
+    path: src/Fusee/src/Engine/Imp/Sound/Desktop/AudioImp.cs
+    startLine: 155
+  assemblies:
+  - Fusee.Engine.Imp.Sound.Desktop
+  namespace: Fusee.Engine.Imp.Sound.Desktop
+  summary: "\nSets the panning of all <xref href=\"Fusee.Engine.Imp.Sound.Desktop.AudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> instances.\n"
+  example: []
+  syntax:
+    content: public void SetPanning(float val)
+    parameters:
+    - id: val
+      type: System.Single
+      description: The value(-100 - 100).
+    content.vb: Public Sub SetPanning(val As Single)
+  overload: Fusee.Engine.Imp.Sound.Desktop.AudioImp.SetPanning*
+  implements:
+  - Fusee.Engine.Common.IAudioImp.SetPanning(System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioStreamImp
+  commentId: T:Fusee.Engine.Imp.Sound.Desktop.AudioStreamImp
+  isExternal: true
+- uid: Fusee.Engine.Imp.Sound.Desktop
+  commentId: N:Fusee.Engine.Imp.Sound.Desktop
+  name: Fusee.Engine.Imp.Sound.Desktop
+  nameWithType: Fusee.Engine.Imp.Sound.Desktop
+  fullName: Fusee.Engine.Imp.Sound.Desktop
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Common.IAudioImp
+  commentId: T:Fusee.Engine.Common.IAudioImp
+  parent: Fusee.Engine.Common
+  name: IAudioImp
+  nameWithType: IAudioImp
+  fullName: Fusee.Engine.Common.IAudioImp
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp
+  commentId: T:Fusee.Engine.Imp.Sound.Desktop.AudioImp
+  name: AudioImp
+  nameWithType: AudioImp
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.#ctor*
+  commentId: Overload:Fusee.Engine.Imp.Sound.Desktop.AudioImp.#ctor
+  name: AudioImp
+  nameWithType: AudioImp.AudioImp
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.AudioImp
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.OpenDevice*
+  commentId: Overload:Fusee.Engine.Imp.Sound.Desktop.AudioImp.OpenDevice
+  name: OpenDevice
+  nameWithType: AudioImp.OpenDevice
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.OpenDevice
+- uid: Fusee.Engine.Common.IAudioImp.OpenDevice
+  commentId: M:Fusee.Engine.Common.IAudioImp.OpenDevice
+  parent: Fusee.Engine.Common.IAudioImp
+  name: OpenDevice()
+  nameWithType: IAudioImp.OpenDevice()
+  fullName: Fusee.Engine.Common.IAudioImp.OpenDevice()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IAudioImp.OpenDevice
+    name: OpenDevice
+    nameWithType: IAudioImp.OpenDevice
+    fullName: Fusee.Engine.Common.IAudioImp.OpenDevice
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IAudioImp.OpenDevice
+    name: OpenDevice
+    nameWithType: IAudioImp.OpenDevice
+    fullName: Fusee.Engine.Common.IAudioImp.OpenDevice
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.CloseDevice*
+  commentId: Overload:Fusee.Engine.Imp.Sound.Desktop.AudioImp.CloseDevice
+  name: CloseDevice
+  nameWithType: AudioImp.CloseDevice
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.CloseDevice
+- uid: Fusee.Engine.Common.IAudioImp.CloseDevice
+  commentId: M:Fusee.Engine.Common.IAudioImp.CloseDevice
+  parent: Fusee.Engine.Common.IAudioImp
+  name: CloseDevice()
+  nameWithType: IAudioImp.CloseDevice()
+  fullName: Fusee.Engine.Common.IAudioImp.CloseDevice()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IAudioImp.CloseDevice
+    name: CloseDevice
+    nameWithType: IAudioImp.CloseDevice
+    fullName: Fusee.Engine.Common.IAudioImp.CloseDevice
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IAudioImp.CloseDevice
+    name: CloseDevice
+    nameWithType: IAudioImp.CloseDevice
+    fullName: Fusee.Engine.Common.IAudioImp.CloseDevice
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.LoadFile*
+  commentId: Overload:Fusee.Engine.Imp.Sound.Desktop.AudioImp.LoadFile
+  name: LoadFile
+  nameWithType: AudioImp.LoadFile
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.LoadFile
+- uid: Fusee.Engine.Common.IAudioImp.LoadFile(System.String,System.Boolean)
+  commentId: M:Fusee.Engine.Common.IAudioImp.LoadFile(System.String,System.Boolean)
+  parent: Fusee.Engine.Common.IAudioImp
+  isExternal: true
+  name: LoadFile(String, Boolean)
+  nameWithType: IAudioImp.LoadFile(String, Boolean)
+  fullName: Fusee.Engine.Common.IAudioImp.LoadFile(System.String, System.Boolean)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IAudioImp.LoadFile(System.String,System.Boolean)
+    name: LoadFile
+    nameWithType: IAudioImp.LoadFile
+    fullName: Fusee.Engine.Common.IAudioImp.LoadFile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IAudioImp.LoadFile(System.String,System.Boolean)
+    name: LoadFile
+    nameWithType: IAudioImp.LoadFile
+    fullName: Fusee.Engine.Common.IAudioImp.LoadFile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Engine.Common.IAudioStreamImp
+  commentId: T:Fusee.Engine.Common.IAudioStreamImp
+  parent: Fusee.Engine.Common
+  name: IAudioStreamImp
+  nameWithType: IAudioStreamImp
+  fullName: Fusee.Engine.Common.IAudioStreamImp
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.OpenFromStream*
+  commentId: Overload:Fusee.Engine.Imp.Sound.Desktop.AudioImp.OpenFromStream
+  name: OpenFromStream
+  nameWithType: AudioImp.OpenFromStream
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.OpenFromStream
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.Stop*
+  commentId: Overload:Fusee.Engine.Imp.Sound.Desktop.AudioImp.Stop
+  name: Stop
+  nameWithType: AudioImp.Stop
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.Stop
+- uid: Fusee.Engine.Common.IAudioImp.Stop
+  commentId: M:Fusee.Engine.Common.IAudioImp.Stop
+  parent: Fusee.Engine.Common.IAudioImp
+  name: Stop()
+  nameWithType: IAudioImp.Stop()
+  fullName: Fusee.Engine.Common.IAudioImp.Stop()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IAudioImp.Stop
+    name: Stop
+    nameWithType: IAudioImp.Stop
+    fullName: Fusee.Engine.Common.IAudioImp.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IAudioImp.Stop
+    name: Stop
+    nameWithType: IAudioImp.Stop
+    fullName: Fusee.Engine.Common.IAudioImp.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.SetVolume*
+  commentId: Overload:Fusee.Engine.Imp.Sound.Desktop.AudioImp.SetVolume
+  name: SetVolume
+  nameWithType: AudioImp.SetVolume
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.SetVolume
+- uid: Fusee.Engine.Common.IAudioImp.SetVolume(System.Single)
+  commentId: M:Fusee.Engine.Common.IAudioImp.SetVolume(System.Single)
+  parent: Fusee.Engine.Common.IAudioImp
+  isExternal: true
+  name: SetVolume(Single)
+  nameWithType: IAudioImp.SetVolume(Single)
+  fullName: Fusee.Engine.Common.IAudioImp.SetVolume(System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IAudioImp.SetVolume(System.Single)
+    name: SetVolume
+    nameWithType: IAudioImp.SetVolume
+    fullName: Fusee.Engine.Common.IAudioImp.SetVolume
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IAudioImp.SetVolume(System.Single)
+    name: SetVolume
+    nameWithType: IAudioImp.SetVolume
+    fullName: Fusee.Engine.Common.IAudioImp.SetVolume
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.GetVolume*
+  commentId: Overload:Fusee.Engine.Imp.Sound.Desktop.AudioImp.GetVolume
+  name: GetVolume
+  nameWithType: AudioImp.GetVolume
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.GetVolume
+- uid: Fusee.Engine.Common.IAudioImp.GetVolume
+  commentId: M:Fusee.Engine.Common.IAudioImp.GetVolume
+  parent: Fusee.Engine.Common.IAudioImp
+  name: GetVolume()
+  nameWithType: IAudioImp.GetVolume()
+  fullName: Fusee.Engine.Common.IAudioImp.GetVolume()
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IAudioImp.GetVolume
+    name: GetVolume
+    nameWithType: IAudioImp.GetVolume
+    fullName: Fusee.Engine.Common.IAudioImp.GetVolume
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IAudioImp.GetVolume
+    name: GetVolume
+    nameWithType: IAudioImp.GetVolume
+    fullName: Fusee.Engine.Common.IAudioImp.GetVolume
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Imp.Sound.Desktop.AudioImp.SetPanning*
+  commentId: Overload:Fusee.Engine.Imp.Sound.Desktop.AudioImp.SetPanning
+  name: SetPanning
+  nameWithType: AudioImp.SetPanning
+  fullName: Fusee.Engine.Imp.Sound.Desktop.AudioImp.SetPanning
+- uid: Fusee.Engine.Common.IAudioImp.SetPanning(System.Single)
+  commentId: M:Fusee.Engine.Common.IAudioImp.SetPanning(System.Single)
+  parent: Fusee.Engine.Common.IAudioImp
+  isExternal: true
+  name: SetPanning(Single)
+  nameWithType: IAudioImp.SetPanning(Single)
+  fullName: Fusee.Engine.Common.IAudioImp.SetPanning(System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IAudioImp.SetPanning(System.Single)
+    name: SetPanning
+    nameWithType: IAudioImp.SetPanning
+    fullName: Fusee.Engine.Common.IAudioImp.SetPanning
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IAudioImp.SetPanning(System.Single)
+    name: SetPanning
+    nameWithType: IAudioImp.SetPanning
+    fullName: Fusee.Engine.Common.IAudioImp.SetPanning
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,1523 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Base.Common.StreamAssetProvider
+  commentId: T:Fusee.Base.Common.StreamAssetProvider
+  id: StreamAssetProvider
+  parent: Fusee.Base.Common
+  children:
+  - Fusee.Base.Common.StreamAssetProvider.#ctor
+  - Fusee.Base.Common.StreamAssetProvider.BeginGetAsset(System.String,Fusee.Base.Common.GetCallback)
+  - Fusee.Base.Common.StreamAssetProvider.CanGet(System.String,System.Type)
+  - Fusee.Base.Common.StreamAssetProvider.CanGetAsync(System.String,System.Type)
+  - Fusee.Base.Common.StreamAssetProvider.CanHandleType(System.Type)
+  - Fusee.Base.Common.StreamAssetProvider.CheckExists(System.String)
+  - Fusee.Base.Common.StreamAssetProvider.CheckExistsAsync(System.String)
+  - Fusee.Base.Common.StreamAssetProvider.GetAsset(System.String,System.Type)
+  - Fusee.Base.Common.StreamAssetProvider.GetAssetAsync(System.String,System.Type)
+  - Fusee.Base.Common.StreamAssetProvider.GetStream(System.String)
+  - Fusee.Base.Common.StreamAssetProvider.GetStreamAsync(System.String)
+  - Fusee.Base.Common.StreamAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
+  langs:
+  - csharp
+  - vb
+  name: StreamAssetProvider
+  nameWithType: StreamAssetProvider
+  fullName: Fusee.Base.Common.StreamAssetProvider
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/StreamAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: StreamAssetProvider
+    path: src/Fusee/src/Base/Common/StreamAssetProvider.cs
+    startLine: 11
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nAsset provider base class for implementing asset providers based on streams. \nUsed to implement FileAssetProvider and Android ApkAssetProviders.\n"
+  example: []
+  syntax:
+    content: 'public abstract class StreamAssetProvider : IAssetProvider'
+    content.vb: >-
+      Public MustInherit Class StreamAssetProvider
+          Implements IAssetProvider
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Fusee.Base.Imp.Android.ApkAssetProvider
+  - Fusee.Base.Imp.Desktop.FileAssetProvider
+  implements:
+  - Fusee.Base.Common.IAssetProvider
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Fusee.Base.Common.StreamAssetProvider.#ctor
+  commentId: M:Fusee.Base.Common.StreamAssetProvider.#ctor
+  id: '#ctor'
+  parent: Fusee.Base.Common.StreamAssetProvider
+  langs:
+  - csharp
+  - vb
+  name: StreamAssetProvider()
+  nameWithType: StreamAssetProvider.StreamAssetProvider()
+  fullName: Fusee.Base.Common.StreamAssetProvider.StreamAssetProvider()
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/StreamAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Base/Common/StreamAssetProvider.cs
+    startLine: 19
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Base.Common.StreamAssetProvider\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: protected StreamAssetProvider()
+    content.vb: Protected Sub New
+  overload: Fusee.Base.Common.StreamAssetProvider.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Fusee.Base.Common.StreamAssetProvider.CanHandleType(System.Type)
+  commentId: M:Fusee.Base.Common.StreamAssetProvider.CanHandleType(System.Type)
+  id: CanHandleType(System.Type)
+  parent: Fusee.Base.Common.StreamAssetProvider
+  langs:
+  - csharp
+  - vb
+  name: CanHandleType(Type)
+  nameWithType: StreamAssetProvider.CanHandleType(Type)
+  fullName: Fusee.Base.Common.StreamAssetProvider.CanHandleType(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/StreamAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CanHandleType
+    path: src/Fusee/src/Base/Common/StreamAssetProvider.cs
+    startLine: 32
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nDetermines whether this instance can handle assets of the specified type (in general).\n"
+  example: []
+  syntax:
+    content: public bool CanHandleType(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The asset type  in question (such as typeof(ImageDate, Font, Sound, ...)).
+    return:
+      type: System.Boolean
+      description: "\ntrue if this instance can handle the specified type. false otherwise.\n"
+    content.vb: Public Function CanHandleType(type As Type) As Boolean
+  overload: Fusee.Base.Common.StreamAssetProvider.CanHandleType*
+  implements:
+  - Fusee.Base.Common.IAssetProvider.CanHandleType(System.Type)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Base.Common.StreamAssetProvider.GetStream(System.String)
+  commentId: M:Fusee.Base.Common.StreamAssetProvider.GetStream(System.String)
+  id: GetStream(System.String)
+  parent: Fusee.Base.Common.StreamAssetProvider
+  langs:
+  - csharp
+  - vb
+  name: GetStream(String)
+  nameWithType: StreamAssetProvider.GetStream(String)
+  fullName: Fusee.Base.Common.StreamAssetProvider.GetStream(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/StreamAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetStream
+    path: src/Fusee/src/Base/Common/StreamAssetProvider.cs
+    startLine: 46
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nImplement this on a given platform to create a stream for the asset identified by id.\n"
+  example: []
+  syntax:
+    content: protected abstract Stream GetStream(string id)
+    parameters:
+    - id: id
+      type: System.String
+      description: The asset identifier.
+    return:
+      type: System.IO.Stream
+      description: Implementors should return null if the asset cannot be retrieved.
+    content.vb: Protected MustOverride Function GetStream(id As String) As Stream
+  overload: Fusee.Base.Common.StreamAssetProvider.GetStream*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+- uid: Fusee.Base.Common.StreamAssetProvider.GetStreamAsync(System.String)
+  commentId: M:Fusee.Base.Common.StreamAssetProvider.GetStreamAsync(System.String)
+  id: GetStreamAsync(System.String)
+  parent: Fusee.Base.Common.StreamAssetProvider
+  langs:
+  - csharp
+  - vb
+  name: GetStreamAsync(String)
+  nameWithType: StreamAssetProvider.GetStreamAsync(String)
+  fullName: Fusee.Base.Common.StreamAssetProvider.GetStreamAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/StreamAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetStreamAsync
+    path: src/Fusee/src/Base/Common/StreamAssetProvider.cs
+    startLine: 53
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nImplement this on a given platform to create an async stream for the asset identified by id.\n"
+  example: []
+  syntax:
+    content: protected abstract Task<Stream> GetStreamAsync(string id)
+    parameters:
+    - id: id
+      type: System.String
+      description: The asset identifier.
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+      description: Implementors should return null if the asset cannot be retrieved.
+    content.vb: Protected MustOverride Function GetStreamAsync(id As String) As Task(Of Stream)
+  overload: Fusee.Base.Common.StreamAssetProvider.GetStreamAsync*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+- uid: Fusee.Base.Common.StreamAssetProvider.GetAsset(System.String,System.Type)
+  commentId: M:Fusee.Base.Common.StreamAssetProvider.GetAsset(System.String,System.Type)
+  id: GetAsset(System.String,System.Type)
+  parent: Fusee.Base.Common.StreamAssetProvider
+  langs:
+  - csharp
+  - vb
+  name: GetAsset(String, Type)
+  nameWithType: StreamAssetProvider.GetAsset(String, Type)
+  fullName: Fusee.Base.Common.StreamAssetProvider.GetAsset(System.String, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/StreamAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetAsset
+    path: src/Fusee/src/Base/Common/StreamAssetProvider.cs
+    startLine: 64
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nRetrieves the asset identified by the given string.\n"
+  example: []
+  syntax:
+    content: public object GetAsset(string id, Type type)
+    parameters:
+    - id: id
+      type: System.String
+      description: The identifier string.
+    - id: type
+      type: System.Type
+      description: The type of the asset.
+    return:
+      type: System.Object
+      description: "\nThe asset, if this provider can acquire an asset with the given id and the given type. Otherwise null.\n"
+    content.vb: Public Function GetAsset(id As String, type As Type) As Object
+  overload: Fusee.Base.Common.StreamAssetProvider.GetAsset*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+  implements:
+  - Fusee.Base.Common.IAssetProvider.GetAsset(System.String,System.Type)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Base.Common.StreamAssetProvider.GetAssetAsync(System.String,System.Type)
+  commentId: M:Fusee.Base.Common.StreamAssetProvider.GetAssetAsync(System.String,System.Type)
+  id: GetAssetAsync(System.String,System.Type)
+  parent: Fusee.Base.Common.StreamAssetProvider
+  langs:
+  - csharp
+  - vb
+  name: GetAssetAsync(String, Type)
+  nameWithType: StreamAssetProvider.GetAssetAsync(String, Type)
+  fullName: Fusee.Base.Common.StreamAssetProvider.GetAssetAsync(System.String, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/StreamAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetAssetAsync
+    path: src/Fusee/src/Base/Common/StreamAssetProvider.cs
+    startLine: 96
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nRetrieves the asset identified by the given string with an <xref uid=\"langword_csharp_async\" name=\"async\" href=\"\"></xref> method.\n"
+  example: []
+  syntax:
+    content: public Task<object> GetAssetAsync(string id, Type type)
+    parameters:
+    - id: id
+      type: System.String
+      description: The identifier string.
+    - id: type
+      type: System.Type
+      description: The type of the asset.
+    return:
+      type: System.Threading.Tasks.Task{System.Object}
+      description: "\nThe asset, if this provider can acquire an asset with the given id and the given type. Otherwise null.\n"
+    content.vb: Public Function GetAssetAsync(id As String, type As Type) As Task(Of Object)
+  overload: Fusee.Base.Common.StreamAssetProvider.GetAssetAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+  implements:
+  - Fusee.Base.Common.IAssetProvider.GetAssetAsync(System.String,System.Type)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Base.Common.StreamAssetProvider.CanGet(System.String,System.Type)
+  commentId: M:Fusee.Base.Common.StreamAssetProvider.CanGet(System.String,System.Type)
+  id: CanGet(System.String,System.Type)
+  parent: Fusee.Base.Common.StreamAssetProvider
+  langs:
+  - csharp
+  - vb
+  name: CanGet(String, Type)
+  nameWithType: StreamAssetProvider.CanGet(String, Type)
+  fullName: Fusee.Base.Common.StreamAssetProvider.CanGet(System.String, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/StreamAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CanGet
+    path: src/Fusee/src/Base/Common/StreamAssetProvider.cs
+    startLine: 123
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nDetermines whether this asset provider can get the specified asset without actually getting it.\n"
+  example: []
+  syntax:
+    content: public bool CanGet(string id, Type type)
+    parameters:
+    - id: id
+      type: System.String
+      description: The identifier string.
+    - id: type
+      type: System.Type
+      description: The expected type of the asset.
+    return:
+      type: System.Boolean
+      description: "\ntrue if this asset will produce a result. Otherwise false.\n"
+    content.vb: Public Function CanGet(id As String, type As Type) As Boolean
+  overload: Fusee.Base.Common.StreamAssetProvider.CanGet*
+  implements:
+  - Fusee.Base.Common.IAssetProvider.CanGet(System.String,System.Type)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Base.Common.StreamAssetProvider.CanGetAsync(System.String,System.Type)
+  commentId: M:Fusee.Base.Common.StreamAssetProvider.CanGetAsync(System.String,System.Type)
+  id: CanGetAsync(System.String,System.Type)
+  parent: Fusee.Base.Common.StreamAssetProvider
+  langs:
+  - csharp
+  - vb
+  name: CanGetAsync(String, Type)
+  nameWithType: StreamAssetProvider.CanGetAsync(String, Type)
+  fullName: Fusee.Base.Common.StreamAssetProvider.CanGetAsync(System.String, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/StreamAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CanGetAsync
+    path: src/Fusee/src/Base/Common/StreamAssetProvider.cs
+    startLine: 150
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nDetermines whether this asset provider can get the specified asset without actually getting it.\n"
+  example: []
+  syntax:
+    content: public Task<bool> CanGetAsync(string id, Type type)
+    parameters:
+    - id: id
+      type: System.String
+      description: The identifier string.
+    - id: type
+      type: System.Type
+      description: The expected type of the asset.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: "\ntrue if this asset will produce a result. Otherwise false.\n"
+    content.vb: Public Function CanGetAsync(id As String, type As Type) As Task(Of Boolean)
+  overload: Fusee.Base.Common.StreamAssetProvider.CanGetAsync*
+  implements:
+  - Fusee.Base.Common.IAssetProvider.CanGetAsync(System.String,System.Type)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Base.Common.StreamAssetProvider.CheckExists(System.String)
+  commentId: M:Fusee.Base.Common.StreamAssetProvider.CheckExists(System.String)
+  id: CheckExists(System.String)
+  parent: Fusee.Base.Common.StreamAssetProvider
+  langs:
+  - csharp
+  - vb
+  name: CheckExists(String)
+  nameWithType: StreamAssetProvider.CheckExists(String)
+  fullName: Fusee.Base.Common.StreamAssetProvider.CheckExists(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/StreamAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CheckExists
+    path: src/Fusee/src/Base/Common/StreamAssetProvider.cs
+    startLine: 175
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nChecks the existence of the identified asset. Implement this on a given platform.\n"
+  example: []
+  syntax:
+    content: protected abstract bool CheckExists(string id)
+    parameters:
+    - id: id
+      type: System.String
+      description: The asset identifier.
+    return:
+      type: System.Boolean
+      description: Implementors should return true if a stream can be created.
+    content.vb: Protected MustOverride Function CheckExists(id As String) As Boolean
+  overload: Fusee.Base.Common.StreamAssetProvider.CheckExists*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+- uid: Fusee.Base.Common.StreamAssetProvider.CheckExistsAsync(System.String)
+  commentId: M:Fusee.Base.Common.StreamAssetProvider.CheckExistsAsync(System.String)
+  id: CheckExistsAsync(System.String)
+  parent: Fusee.Base.Common.StreamAssetProvider
+  langs:
+  - csharp
+  - vb
+  name: CheckExistsAsync(String)
+  nameWithType: StreamAssetProvider.CheckExistsAsync(String)
+  fullName: Fusee.Base.Common.StreamAssetProvider.CheckExistsAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/StreamAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: CheckExistsAsync
+    path: src/Fusee/src/Base/Common/StreamAssetProvider.cs
+    startLine: 182
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nChecks the existence of the identified asset as an async method. Implement this on a given platform.\n"
+  example: []
+  syntax:
+    content: protected abstract Task<bool> CheckExistsAsync(string id)
+    parameters:
+    - id: id
+      type: System.String
+      description: The asset identifier.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: Implementors should return true if a stream can be created.
+    content.vb: Protected MustOverride Function CheckExistsAsync(id As String) As Task(Of Boolean)
+  overload: Fusee.Base.Common.StreamAssetProvider.CheckExistsAsync*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+- uid: Fusee.Base.Common.StreamAssetProvider.BeginGetAsset(System.String,Fusee.Base.Common.GetCallback)
+  commentId: M:Fusee.Base.Common.StreamAssetProvider.BeginGetAsset(System.String,Fusee.Base.Common.GetCallback)
+  id: BeginGetAsset(System.String,Fusee.Base.Common.GetCallback)
+  parent: Fusee.Base.Common.StreamAssetProvider
+  langs:
+  - csharp
+  - vb
+  name: BeginGetAsset(String, GetCallback)
+  nameWithType: StreamAssetProvider.BeginGetAsset(String, GetCallback)
+  fullName: Fusee.Base.Common.StreamAssetProvider.BeginGetAsset(System.String, Fusee.Base.Common.GetCallback)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/StreamAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: BeginGetAsset
+    path: src/Fusee/src/Base/Common/StreamAssetProvider.cs
+    startLine: 198
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nAsynchronous get method.\n"
+  remarks: "\nThe design doesn&apos;t follow any of the standard .NET asynchronous patterns like APM, EAP, or TAP.\nIt&apos;s close to JavaScript where you just provide an &quot;onLoad&quot; handler that&apos;s called when the object\nis retrieved and decoded. This is to enable AssetProviders to be implemented using standard\nJavaScript DOM objects like Image. See the article\n<a href=\"https://msdn.microsoft.com/en-us/library/hh873178(v=vs.110).aspx\">Interop with Other Asynchronous Patterns and Types</a>\nto get an idea how to map this pattern, which is similar to APM (albeit simpler), to the currently en-vogue TAP (async/await) pattern.\n"
+  example: []
+  syntax:
+    content: public void BeginGetAsset(string id, GetCallback getCallback)
+    parameters:
+    - id: id
+      type: System.String
+      description: The identifier string.
+    - id: getCallback
+      type: Fusee.Base.Common.GetCallback
+      description: Code to call when the loading is done.
+    content.vb: Public Sub BeginGetAsset(id As String, getCallback As GetCallback)
+  overload: Fusee.Base.Common.StreamAssetProvider.BeginGetAsset*
+  exceptions:
+  - type: System.NotImplementedException
+    commentId: T:System.NotImplementedException
+  implements:
+  - Fusee.Base.Common.IAssetProvider.BeginGetAsset(System.String,Fusee.Base.Common.GetCallback)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Base.Common.StreamAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
+  commentId: M:Fusee.Base.Common.StreamAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
+  id: RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
+  parent: Fusee.Base.Common.StreamAssetProvider
+  langs:
+  - csharp
+  - vb
+  name: RegisterTypeHandler(AssetHandler)
+  nameWithType: StreamAssetProvider.RegisterTypeHandler(AssetHandler)
+  fullName: Fusee.Base.Common.StreamAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/StreamAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RegisterTypeHandler
+    path: src/Fusee/src/Base/Common/StreamAssetProvider.cs
+    startLine: 214
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nRegisters the given asset type handler.\n"
+  remarks: "\nThis method is rather for internal purposes. While an asset provider typically implements access to\na given kind of asset storage, sometimes its hard to implement asset type handlers (decoders) capable of handling\na certain type without knowing much about the contents (like images, etc).\n"
+  example: []
+  syntax:
+    content: public void RegisterTypeHandler(AssetHandler handler)
+    parameters:
+    - id: handler
+      type: Fusee.Base.Common.AssetHandler
+      description: The handler.
+    content.vb: Public Sub RegisterTypeHandler(handler As AssetHandler)
+  overload: Fusee.Base.Common.StreamAssetProvider.RegisterTypeHandler*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+  implements:
+  - Fusee.Base.Common.IAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Base.Common
+  commentId: N:Fusee.Base.Common
+  name: Fusee.Base.Common
+  nameWithType: Fusee.Base.Common
+  fullName: Fusee.Base.Common
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Base.Common.IAssetProvider
+  commentId: T:Fusee.Base.Common.IAssetProvider
+  parent: Fusee.Base.Common
+  name: IAssetProvider
+  nameWithType: IAssetProvider
+  fullName: Fusee.Base.Common.IAssetProvider
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Base.Common.StreamAssetProvider
+  commentId: T:Fusee.Base.Common.StreamAssetProvider
+  parent: Fusee.Base.Common
+  name: StreamAssetProvider
+  nameWithType: StreamAssetProvider
+  fullName: Fusee.Base.Common.StreamAssetProvider
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: Fusee.Base.Common.StreamAssetProvider.#ctor*
+  commentId: Overload:Fusee.Base.Common.StreamAssetProvider.#ctor
+  name: StreamAssetProvider
+  nameWithType: StreamAssetProvider.StreamAssetProvider
+  fullName: Fusee.Base.Common.StreamAssetProvider.StreamAssetProvider
+- uid: Fusee.Base.Common.StreamAssetProvider.CanHandleType*
+  commentId: Overload:Fusee.Base.Common.StreamAssetProvider.CanHandleType
+  name: CanHandleType
+  nameWithType: StreamAssetProvider.CanHandleType
+  fullName: Fusee.Base.Common.StreamAssetProvider.CanHandleType
+- uid: Fusee.Base.Common.IAssetProvider.CanHandleType(System.Type)
+  commentId: M:Fusee.Base.Common.IAssetProvider.CanHandleType(System.Type)
+  parent: Fusee.Base.Common.IAssetProvider
+  isExternal: true
+  name: CanHandleType(Type)
+  nameWithType: IAssetProvider.CanHandleType(Type)
+  fullName: Fusee.Base.Common.IAssetProvider.CanHandleType(System.Type)
+  spec.csharp:
+  - uid: Fusee.Base.Common.IAssetProvider.CanHandleType(System.Type)
+    name: CanHandleType
+    nameWithType: IAssetProvider.CanHandleType
+    fullName: Fusee.Base.Common.IAssetProvider.CanHandleType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Base.Common.IAssetProvider.CanHandleType(System.Type)
+    name: CanHandleType
+    nameWithType: IAssetProvider.CanHandleType
+    fullName: Fusee.Base.Common.IAssetProvider.CanHandleType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Base.Common.StreamAssetProvider.GetStream*
+  commentId: Overload:Fusee.Base.Common.StreamAssetProvider.GetStream
+  name: GetStream
+  nameWithType: StreamAssetProvider.GetStream
+  fullName: Fusee.Base.Common.StreamAssetProvider.GetStream
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: Fusee.Base.Common.StreamAssetProvider.GetStreamAsync*
+  commentId: Overload:Fusee.Base.Common.StreamAssetProvider.GetStreamAsync
+  name: GetStreamAsync
+  nameWithType: StreamAssetProvider.GetStreamAsync
+  fullName: Fusee.Base.Common.StreamAssetProvider.GetStreamAsync
+- uid: System.Threading.Tasks.Task{System.IO.Stream}
+  commentId: T:System.Threading.Tasks.Task{System.IO.Stream}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Stream>
+  nameWithType: Task<Stream>
+  fullName: System.Threading.Tasks.Task<System.IO.Stream>
+  nameWithType.vb: Task(Of Stream)
+  fullName.vb: System.Threading.Tasks.Task(Of System.IO.Stream)
+  name.vb: Task(Of Stream)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Fusee.Base.Common.StreamAssetProvider.GetAsset*
+  commentId: Overload:Fusee.Base.Common.StreamAssetProvider.GetAsset
+  name: GetAsset
+  nameWithType: StreamAssetProvider.GetAsset
+  fullName: Fusee.Base.Common.StreamAssetProvider.GetAsset
+- uid: Fusee.Base.Common.IAssetProvider.GetAsset(System.String,System.Type)
+  commentId: M:Fusee.Base.Common.IAssetProvider.GetAsset(System.String,System.Type)
+  parent: Fusee.Base.Common.IAssetProvider
+  isExternal: true
+  name: GetAsset(String, Type)
+  nameWithType: IAssetProvider.GetAsset(String, Type)
+  fullName: Fusee.Base.Common.IAssetProvider.GetAsset(System.String, System.Type)
+  spec.csharp:
+  - uid: Fusee.Base.Common.IAssetProvider.GetAsset(System.String,System.Type)
+    name: GetAsset
+    nameWithType: IAssetProvider.GetAsset
+    fullName: Fusee.Base.Common.IAssetProvider.GetAsset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Base.Common.IAssetProvider.GetAsset(System.String,System.Type)
+    name: GetAsset
+    nameWithType: IAssetProvider.GetAsset
+    fullName: Fusee.Base.Common.IAssetProvider.GetAsset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Base.Common.StreamAssetProvider.GetAssetAsync*
+  commentId: Overload:Fusee.Base.Common.StreamAssetProvider.GetAssetAsync
+  name: GetAssetAsync
+  nameWithType: StreamAssetProvider.GetAssetAsync
+  fullName: Fusee.Base.Common.StreamAssetProvider.GetAssetAsync
+- uid: Fusee.Base.Common.IAssetProvider.GetAssetAsync(System.String,System.Type)
+  commentId: M:Fusee.Base.Common.IAssetProvider.GetAssetAsync(System.String,System.Type)
+  parent: Fusee.Base.Common.IAssetProvider
+  isExternal: true
+  name: GetAssetAsync(String, Type)
+  nameWithType: IAssetProvider.GetAssetAsync(String, Type)
+  fullName: Fusee.Base.Common.IAssetProvider.GetAssetAsync(System.String, System.Type)
+  spec.csharp:
+  - uid: Fusee.Base.Common.IAssetProvider.GetAssetAsync(System.String,System.Type)
+    name: GetAssetAsync
+    nameWithType: IAssetProvider.GetAssetAsync
+    fullName: Fusee.Base.Common.IAssetProvider.GetAssetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Base.Common.IAssetProvider.GetAssetAsync(System.String,System.Type)
+    name: GetAssetAsync
+    nameWithType: IAssetProvider.GetAssetAsync
+    fullName: Fusee.Base.Common.IAssetProvider.GetAssetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Object}
+  commentId: T:System.Threading.Tasks.Task{System.Object}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Object>
+  nameWithType: Task<Object>
+  fullName: System.Threading.Tasks.Task<System.Object>
+  nameWithType.vb: Task(Of Object)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Object)
+  name.vb: Task(Of Object)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Base.Common.StreamAssetProvider.CanGet*
+  commentId: Overload:Fusee.Base.Common.StreamAssetProvider.CanGet
+  name: CanGet
+  nameWithType: StreamAssetProvider.CanGet
+  fullName: Fusee.Base.Common.StreamAssetProvider.CanGet
+- uid: Fusee.Base.Common.IAssetProvider.CanGet(System.String,System.Type)
+  commentId: M:Fusee.Base.Common.IAssetProvider.CanGet(System.String,System.Type)
+  parent: Fusee.Base.Common.IAssetProvider
+  isExternal: true
+  name: CanGet(String, Type)
+  nameWithType: IAssetProvider.CanGet(String, Type)
+  fullName: Fusee.Base.Common.IAssetProvider.CanGet(System.String, System.Type)
+  spec.csharp:
+  - uid: Fusee.Base.Common.IAssetProvider.CanGet(System.String,System.Type)
+    name: CanGet
+    nameWithType: IAssetProvider.CanGet
+    fullName: Fusee.Base.Common.IAssetProvider.CanGet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Base.Common.IAssetProvider.CanGet(System.String,System.Type)
+    name: CanGet
+    nameWithType: IAssetProvider.CanGet
+    fullName: Fusee.Base.Common.IAssetProvider.CanGet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Base.Common.StreamAssetProvider.CanGetAsync*
+  commentId: Overload:Fusee.Base.Common.StreamAssetProvider.CanGetAsync
+  name: CanGetAsync
+  nameWithType: StreamAssetProvider.CanGetAsync
+  fullName: Fusee.Base.Common.StreamAssetProvider.CanGetAsync
+- uid: Fusee.Base.Common.IAssetProvider.CanGetAsync(System.String,System.Type)
+  commentId: M:Fusee.Base.Common.IAssetProvider.CanGetAsync(System.String,System.Type)
+  parent: Fusee.Base.Common.IAssetProvider
+  isExternal: true
+  name: CanGetAsync(String, Type)
+  nameWithType: IAssetProvider.CanGetAsync(String, Type)
+  fullName: Fusee.Base.Common.IAssetProvider.CanGetAsync(System.String, System.Type)
+  spec.csharp:
+  - uid: Fusee.Base.Common.IAssetProvider.CanGetAsync(System.String,System.Type)
+    name: CanGetAsync
+    nameWithType: IAssetProvider.CanGetAsync
+    fullName: Fusee.Base.Common.IAssetProvider.CanGetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Base.Common.IAssetProvider.CanGetAsync(System.String,System.Type)
+    name: CanGetAsync
+    nameWithType: IAssetProvider.CanGetAsync
+    fullName: Fusee.Base.Common.IAssetProvider.CanGetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Base.Common.StreamAssetProvider.CheckExists*
+  commentId: Overload:Fusee.Base.Common.StreamAssetProvider.CheckExists
+  name: CheckExists
+  nameWithType: StreamAssetProvider.CheckExists
+  fullName: Fusee.Base.Common.StreamAssetProvider.CheckExists
+- uid: Fusee.Base.Common.StreamAssetProvider.CheckExistsAsync*
+  commentId: Overload:Fusee.Base.Common.StreamAssetProvider.CheckExistsAsync
+  name: CheckExistsAsync
+  nameWithType: StreamAssetProvider.CheckExistsAsync
+  fullName: Fusee.Base.Common.StreamAssetProvider.CheckExistsAsync
+- uid: System.NotImplementedException
+  commentId: T:System.NotImplementedException
+  isExternal: true
+- uid: Fusee.Base.Common.StreamAssetProvider.BeginGetAsset*
+  commentId: Overload:Fusee.Base.Common.StreamAssetProvider.BeginGetAsset
+  name: BeginGetAsset
+  nameWithType: StreamAssetProvider.BeginGetAsset
+  fullName: Fusee.Base.Common.StreamAssetProvider.BeginGetAsset
+- uid: Fusee.Base.Common.IAssetProvider.BeginGetAsset(System.String,Fusee.Base.Common.GetCallback)
+  commentId: M:Fusee.Base.Common.IAssetProvider.BeginGetAsset(System.String,Fusee.Base.Common.GetCallback)
+  parent: Fusee.Base.Common.IAssetProvider
+  isExternal: true
+  name: BeginGetAsset(String, GetCallback)
+  nameWithType: IAssetProvider.BeginGetAsset(String, GetCallback)
+  fullName: Fusee.Base.Common.IAssetProvider.BeginGetAsset(System.String, Fusee.Base.Common.GetCallback)
+  spec.csharp:
+  - uid: Fusee.Base.Common.IAssetProvider.BeginGetAsset(System.String,Fusee.Base.Common.GetCallback)
+    name: BeginGetAsset
+    nameWithType: IAssetProvider.BeginGetAsset
+    fullName: Fusee.Base.Common.IAssetProvider.BeginGetAsset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Base.Common.GetCallback
+    name: GetCallback
+    nameWithType: GetCallback
+    fullName: Fusee.Base.Common.GetCallback
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Base.Common.IAssetProvider.BeginGetAsset(System.String,Fusee.Base.Common.GetCallback)
+    name: BeginGetAsset
+    nameWithType: IAssetProvider.BeginGetAsset
+    fullName: Fusee.Base.Common.IAssetProvider.BeginGetAsset
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Base.Common.GetCallback
+    name: GetCallback
+    nameWithType: GetCallback
+    fullName: Fusee.Base.Common.GetCallback
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Base.Common.GetCallback
+  commentId: T:Fusee.Base.Common.GetCallback
+  parent: Fusee.Base.Common
+  name: GetCallback
+  nameWithType: GetCallback
+  fullName: Fusee.Base.Common.GetCallback
+- uid: Fusee.Base.Common.StreamAssetProvider.RegisterTypeHandler*
+  commentId: Overload:Fusee.Base.Common.StreamAssetProvider.RegisterTypeHandler
+  name: RegisterTypeHandler
+  nameWithType: StreamAssetProvider.RegisterTypeHandler
+  fullName: Fusee.Base.Common.StreamAssetProvider.RegisterTypeHandler
+- uid: Fusee.Base.Common.IAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
+  commentId: M:Fusee.Base.Common.IAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
+  parent: Fusee.Base.Common.IAssetProvider
+  name: RegisterTypeHandler(AssetHandler)
+  nameWithType: IAssetProvider.RegisterTypeHandler(AssetHandler)
+  fullName: Fusee.Base.Common.IAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
+  spec.csharp:
+  - uid: Fusee.Base.Common.IAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
+    name: RegisterTypeHandler
+    nameWithType: IAssetProvider.RegisterTypeHandler
+    fullName: Fusee.Base.Common.IAssetProvider.RegisterTypeHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Base.Common.AssetHandler
+    name: AssetHandler
+    nameWithType: AssetHandler
+    fullName: Fusee.Base.Common.AssetHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Base.Common.IAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
+    name: RegisterTypeHandler
+    nameWithType: IAssetProvider.RegisterTypeHandler
+    fullName: Fusee.Base.Common.IAssetProvider.RegisterTypeHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Base.Common.AssetHandler
+    name: AssetHandler
+    nameWithType: AssetHandler
+    fullName: Fusee.Base.Common.AssetHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Base.Common.AssetHandler
+  commentId: T:Fusee.Base.Common.AssetHandler
+  parent: Fusee.Base.Common
+  name: AssetHandler
+  nameWithType: AssetHandler
+  fullName: Fusee.Base.Common.AssetHandler

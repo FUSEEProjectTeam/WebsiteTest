@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>My First FUSEE App </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="My First FUSEE App ">
+    <meta name="generator" content="docfx 2.47.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+
+<blockquote>
+<p><strong>NOTE</strong>: Developing FUSEE Apps is currently only supported on Windows operating systems.</p>
+</blockquote>
+<hr>
+<p>After a successful
+<a href="../install-fusee/">FUSEE Installation</a> you might want to create your first FUSEE App in
+Visual Studio Code.</p>
+<h2 id="create-a-simple-fusee-app">Create a simple FUSEE App</h2>
+<ol>
+<li><p>Create a new empty directory somewhere on your hard-disk. This will contain your first FUSEE App.
+Name the directory <code>MyFirstFuseeApp</code>.</p>
+</li>
+<li><p>Open the the directory in Visual Studio Code in one of the following ways.</p>
+<ul>
+<li><em><strong>Either</strong></em> Open VS Code, click on &quot;File → Open Folder&quot; from the menu and select the <code>MyFirstFuseeApp</code> directory.</li>
+<li><em><strong>Or</strong></em> In Windows Explorer, right-click on the <code>MyFirstFuseeApp</code> directory and select &quot;Open With Code&quot; from the context menu.</li>
+<li><em><strong>Or</strong></em> In a Console (Command Prompt or PowerShell), <code>cd</code> to <code>MyFirstFuseeApp</code> and enter <code>code .</code> at the command line.</li>
+</ul>
+</li>
+<li><p>In Visual Studio Code (with the open folder), Open the integrated terminal (&quot;View → Integrated Terminal&quot; from the menu, <code>Ctrl+`</code> on English
+keybards, <code>Ctrl+Ö</code> on German keyboards).</p>
+</li>
+<li><p>In the terminal window at the lower part of VS Code, enter <code>dotnet new fusee</code>.
+This will populate your <code>MyFirstFuseeApp</code> folder with all necessary sources, assets and project
+settings needed to build a simple FUSEE app.</p>
+</li>
+</ol>
+<h4 id="screen-cast-create-a-simple-fusee-app">Screen Cast: Create a simple FUSEE App</h4>
+<p><img src="images/createsimplefuseeapp.gif" alt="Create a simple FUSEE App"></p>
+<hr>
+<h2 id="build-and-run-the-app">Build and run the App</h2>
+<ol>
+<li><p>In Visual Studio Code, open the <em>Debug Side Bar</em> by clicking on the debug symbol (&quot;No Bugs Roadsign&quot;) on the left.</p>
+</li>
+<li><p>On top of the Debug Side Bar, make sure that the drop-down box next to the green arrow shows <code>Debug in FUSEE Player</code>.
+If not, select this option from the drop-down box.</p>
+</li>
+<li><p>Click on the green arrow to build your new FUSEE App and start it in the Debugger. As your new FUSEE App was
+never built before, the build process might take some time.</p>
+</li>
+<li><p>As a result, the FUSEE Player application starts and runs the code from your FUSEE application. Try to
+view the rocket from different angles by clicking and dragging the mouse.</p>
+</li>
+</ol>
+<h4 id="screen-cast-build-and-run-the-app">Screen Cast: Build and run the App</h4>
+<p><img src="images/buildandruntheapp.gif" alt="Build and run the App"></p>
+<p>If you're curious how your FUSEE App works look at the source code file <code>MyFirstFuseeApp.cs</code> that was generated
+in your project directory.</p>
+<hr>
+<h2 id="publish-as-web-app-and-start-in-browser">Publish as Web App and start in Browser</h2>
+<ol>
+<li><p>In Visual Studio Code's Debug Side Bar, select <code>Start in FUSEE Web Player</code> from the drop-down box next
+to the green arrow.</p>
+</li>
+<li><p>Click on the green arrow. This will start the following process:</p>
+<ul>
+<li>If not already done, your project will be built.</li>
+<li>The compiled code with your App's functionality will be cross-compiled to JavaScript</li>
+<li>The resulting JavaScript will be embedded into a cross-compiled version of the FUSEE Player</li>
+<li>A local Web Server will be started hosting the generated Web App on port 4655 (Hex-Ascii for &quot;FU&quot;).</li>
+<li>Your System's default browser will be started on &quot;localhost:4655&quot; to display your FUSEE Web App</li>
+</ul>
+</li>
+<li><p>As a result, you should see your new web-ified FUSEE App a inside a web browser. Don't forget to
+click on the &quot;Stop&quot; button (red square) in Visual Studio Code after closing the browser window.</p>
+</li>
+<li><p>The &quot;publish as web app&quot; process generated the Web App below <code>MyFirstFuseeApp/pub/Web</code>. Look at the
+folder contents. Simply copy the entire folder contents to some Web Space to deploy your FUSEE App
+to the world.</p>
+</li>
+</ol>
+<h4 id="screen-cast-publish-as-web-app-and-start-in-browser">Screen Cast: Publish as Web App and start in Browser</h4>
+<p><img src="images/publishaswebapp.gif" alt="Publish as Web App"></p>
+<hr>
+<h2 id="things-to-know">Things to know</h2>
+<p>Now that you created your first FUSEE App, there are some things to know about the build process.</p>
+<h3 id="console-commands">Console commands</h3>
+<p>All steps mentioned above are individually available as commands from within Visual Studio Code
+as well as from the command line. Make sure to <code>cd</code> to the root directory of your project. In our
+example above this would be <code>MyFirstFuseeApp/</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Build/Publish/Run Step</th>
+<th>Visual Studio Code command</th>
+<th>Console command line</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Build</td>
+<td>Tasks → Run Build Task... → build</td>
+<td><code>dotnet build</code></td>
+</tr>
+<tr>
+<td>Publish Web App</td>
+<td>Tasks → Run Build Task... → Publish FUSEE Web App</td>
+<td><code>fusee publish -p Web</code></td>
+</tr>
+<tr>
+<td>Run Web App</td>
+<td>Debug Side Bar → Start in FUSEE Web Player</td>
+<td><code>fusee server pub/Web</code></td>
+</tr>
+<tr>
+<td>Publish Desktop App</td>
+<td>Tasks → Run Build Task... → Publish FUSEE Desktop App</td>
+<td><code>fusee publish -p Desktop</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="publishing-as-desktop-app">Publishing as Desktop App</h3>
+<p>As mentioned in the table above, in addition to publishing to the Web there is also a build step available allowing you to
+publish your Desktop App (as .exe file). The result will be written to <code>pub/Desktop</code>.</p>
+<h3 id="project-folder-naming-rules">Project folder naming rules</h3>
+<p>When creating new FUSEE Apps in the way described above, several things in your new project will be named
+after your project folder. Make sure your folder name obeys to the C# identifier rules. Roughly, that means:</p>
+<ul>
+<li>First character may be only letter (<code>a</code>-<code>z</code>, <code>A</code>-<code>Z</code>) or underscore (<code>_</code>).</li>
+<li>All other characters may be letter, underscore or number (<code>0</code>-<code>9</code>).</li>
+<li><strong>Don't</strong> start the folder name with a number.</li>
+<li><strong>Don't</strong> use punctuation or other special characters in the folder name, not even a minus (<code>-</code>)!</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/WebsiteTest/blob/master/src/DocFX/getting-started/firstfuseeapp.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

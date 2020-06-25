@@ -1,0 +1,931 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Xirkit.Animation
+  commentId: T:Fusee.Xirkit.Animation
+  id: Animation
+  parent: Fusee.Xirkit
+  children:
+  - Fusee.Xirkit.Animation.#ctor(System.Int32)
+  - Fusee.Xirkit.Animation.AddAnimation``1(Fusee.Xirkit.Channel{``0},System.Object,System.String)
+  - Fusee.Xirkit.Animation.AddChannel(Fusee.Xirkit.ChannelBase)
+  - Fusee.Xirkit.Animation.Animate(System.Single)
+  - Fusee.Xirkit.Animation.AnimationMode
+  - Fusee.Xirkit.Animation.ChannelBaseList
+  - Fusee.Xirkit.Animation.DeleteAnimation(System.Int32)
+  - Fusee.Xirkit.Animation.RemoveChannel(System.Int32)
+  - Fusee.Xirkit.Animation.SetTick(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: Animation
+  nameWithType: Animation
+  fullName: Fusee.Xirkit.Animation
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Animation.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Animation
+    path: src/Fusee/src/Xirkit/Animation.cs
+    startLine: 10
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nThe Animation Class is capable of storing and handling different types of Channels.\n"
+  example: []
+  syntax:
+    content: public class Animation
+    content.vb: Public Class Animation
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Xirkit.Animation.ChannelBaseList
+  commentId: P:Fusee.Xirkit.Animation.ChannelBaseList
+  id: ChannelBaseList
+  parent: Fusee.Xirkit.Animation
+  langs:
+  - csharp
+  - vb
+  name: ChannelBaseList
+  nameWithType: Animation.ChannelBaseList
+  fullName: Fusee.Xirkit.Animation.ChannelBaseList
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Animation.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ChannelBaseList
+    path: src/Fusee/src/Xirkit/Animation.cs
+    startLine: 41
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nGets the channel base list.\n"
+  example: []
+  syntax:
+    content: public List<ChannelBase> ChannelBaseList { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Fusee.Xirkit.ChannelBase}
+    content.vb: Public ReadOnly Property ChannelBaseList As List(Of ChannelBase)
+  overload: Fusee.Xirkit.Animation.ChannelBaseList*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Xirkit.Animation.AnimationMode
+  commentId: P:Fusee.Xirkit.Animation.AnimationMode
+  id: AnimationMode
+  parent: Fusee.Xirkit.Animation
+  langs:
+  - csharp
+  - vb
+  name: AnimationMode
+  nameWithType: Animation.AnimationMode
+  fullName: Fusee.Xirkit.Animation.AnimationMode
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Animation.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AnimationMode
+    path: src/Fusee/src/Xirkit/Animation.cs
+    startLine: 48
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nGets and sets the animation mode.\n"
+  example: []
+  syntax:
+    content: public int AnimationMode { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe animation mode.\n"
+    content.vb: Public Property AnimationMode As Integer
+  overload: Fusee.Xirkit.Animation.AnimationMode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Xirkit.Animation.#ctor(System.Int32)
+  commentId: M:Fusee.Xirkit.Animation.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Fusee.Xirkit.Animation
+  langs:
+  - csharp
+  - vb
+  name: Animation(Int32)
+  nameWithType: Animation.Animation(Int32)
+  fullName: Fusee.Xirkit.Animation.Animation(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Animation.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Xirkit/Animation.cs
+    startLine: 54
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Xirkit.Animation\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public Animation(int animMode = 0)
+    parameters:
+    - id: animMode
+      type: System.Int32
+      description: The parameter sets the AnimationMode
+    content.vb: Public Sub New(animMode As Integer = 0)
+  overload: Fusee.Xirkit.Animation.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Xirkit.Animation.AddChannel(Fusee.Xirkit.ChannelBase)
+  commentId: M:Fusee.Xirkit.Animation.AddChannel(Fusee.Xirkit.ChannelBase)
+  id: AddChannel(Fusee.Xirkit.ChannelBase)
+  parent: Fusee.Xirkit.Animation
+  langs:
+  - csharp
+  - vb
+  name: AddChannel(ChannelBase)
+  nameWithType: Animation.AddChannel(ChannelBase)
+  fullName: Fusee.Xirkit.Animation.AddChannel(Fusee.Xirkit.ChannelBase)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Animation.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddChannel
+    path: src/Fusee/src/Xirkit/Animation.cs
+    startLine: 65
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nAdds a channel to this Animation. This channel will be handled by this Animation.\n"
+  example: []
+  syntax:
+    content: public void AddChannel(ChannelBase baseChannel)
+    parameters:
+    - id: baseChannel
+      type: Fusee.Xirkit.ChannelBase
+      description: The base channel that will be handled by this Animation.
+    content.vb: Public Sub AddChannel(baseChannel As ChannelBase)
+  overload: Fusee.Xirkit.Animation.AddChannel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Xirkit.Animation.AddAnimation``1(Fusee.Xirkit.Channel{``0},System.Object,System.String)
+  commentId: M:Fusee.Xirkit.Animation.AddAnimation``1(Fusee.Xirkit.Channel{``0},System.Object,System.String)
+  id: AddAnimation``1(Fusee.Xirkit.Channel{``0},System.Object,System.String)
+  parent: Fusee.Xirkit.Animation
+  langs:
+  - csharp
+  - vb
+  name: AddAnimation<TValue>(Channel<TValue>, Object, String)
+  nameWithType: Animation.AddAnimation<TValue>(Channel<TValue>, Object, String)
+  fullName: Fusee.Xirkit.Animation.AddAnimation<TValue>(Fusee.Xirkit.Channel<TValue>, System.Object, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Animation.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AddAnimation
+    path: src/Fusee/src/Xirkit/Animation.cs
+    startLine: 79
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nAdds the Channel to this Animation and adds it to the _animHandler.\n"
+  example: []
+  syntax:
+    content: public void AddAnimation<TValue>(Channel<TValue> channel, object channelObject, string field)
+    parameters:
+    - id: channel
+      type: Fusee.Xirkit.Channel{{TValue}}
+      description: The channel that will be added.
+    - id: channelObject
+      type: System.Object
+      description: The Object that will be wired with the channel.
+    - id: field
+      type: System.String
+      description: The full name of the Field or Property of the Object that will be handled by this Animation.
+    typeParameters:
+    - id: TValue
+      description: The Type of the channel.
+    content.vb: Public Sub AddAnimation(Of TValue)(channel As Channel(Of TValue), channelObject As Object, field As String)
+  overload: Fusee.Xirkit.Animation.AddAnimation*
+  nameWithType.vb: Animation.AddAnimation(Of TValue)(Channel(Of TValue), Object, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Xirkit.Animation.AddAnimation(Of TValue)(Fusee.Xirkit.Channel(Of TValue), System.Object, System.String)
+  name.vb: AddAnimation(Of TValue)(Channel(Of TValue), Object, String)
+- uid: Fusee.Xirkit.Animation.RemoveChannel(System.Int32)
+  commentId: M:Fusee.Xirkit.Animation.RemoveChannel(System.Int32)
+  id: RemoveChannel(System.Int32)
+  parent: Fusee.Xirkit.Animation
+  langs:
+  - csharp
+  - vb
+  name: RemoveChannel(Int32)
+  nameWithType: Animation.RemoveChannel(Int32)
+  fullName: Fusee.Xirkit.Animation.RemoveChannel(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Animation.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RemoveChannel
+    path: src/Fusee/src/Xirkit/Animation.cs
+    startLine: 100
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nRemoves a channel from the _channelList.\n"
+  example: []
+  syntax:
+    content: public void RemoveChannel(int channelPosition)
+    parameters:
+    - id: channelPosition
+      type: System.Int32
+      description: The position of the channel that has to be removed.
+    content.vb: Public Sub RemoveChannel(channelPosition As Integer)
+  overload: Fusee.Xirkit.Animation.RemoveChannel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Xirkit.Animation.SetTick(System.Single)
+  commentId: M:Fusee.Xirkit.Animation.SetTick(System.Single)
+  id: SetTick(System.Single)
+  parent: Fusee.Xirkit.Animation
+  langs:
+  - csharp
+  - vb
+  name: SetTick(Single)
+  nameWithType: Animation.SetTick(Single)
+  fullName: Fusee.Xirkit.Animation.SetTick(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Animation.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SetTick
+    path: src/Fusee/src/Xirkit/Animation.cs
+    startLine: 109
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nSets the time in all channels.\n"
+  example: []
+  syntax:
+    content: public void SetTick(float time)
+    parameters:
+    - id: time
+      type: System.Single
+      description: The time that will be set.
+    content.vb: Public Sub SetTick(time As Single)
+  overload: Fusee.Xirkit.Animation.SetTick*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Xirkit.Animation.Animate(System.Single)
+  commentId: M:Fusee.Xirkit.Animation.Animate(System.Single)
+  id: Animate(System.Single)
+  parent: Fusee.Xirkit.Animation
+  langs:
+  - csharp
+  - vb
+  name: Animate(Single)
+  nameWithType: Animation.Animate(Single)
+  fullName: Fusee.Xirkit.Animation.Animate(System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Animation.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Animate
+    path: src/Fusee/src/Xirkit/Animation.cs
+    startLine: 122
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nAnimates all channels. The time is set by the user.\n"
+  example: []
+  syntax:
+    content: public void Animate(float time)
+    parameters:
+    - id: time
+      type: System.Single
+      description: The time that the user set&apos;s.
+    content.vb: Public Sub Animate(time As Single)
+  overload: Fusee.Xirkit.Animation.Animate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Xirkit.Animation.DeleteAnimation(System.Int32)
+  commentId: M:Fusee.Xirkit.Animation.DeleteAnimation(System.Int32)
+  id: DeleteAnimation(System.Int32)
+  parent: Fusee.Xirkit.Animation
+  langs:
+  - csharp
+  - vb
+  name: DeleteAnimation(Int32)
+  nameWithType: Animation.DeleteAnimation(Int32)
+  fullName: Fusee.Xirkit.Animation.DeleteAnimation(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xirkit/Animation.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DeleteAnimation
+    path: src/Fusee/src/Xirkit/Animation.cs
+    startLine: 170
+  assemblies:
+  - Fusee.Xirkit
+  namespace: Fusee.Xirkit
+  summary: "\nDeletes the animation and removes the Nodes from the AnimHandler\n"
+  example: []
+  syntax:
+    content: public void DeleteAnimation(int pos)
+    parameters:
+    - id: pos
+      type: System.Int32
+      description: The position.
+    content.vb: Public Sub DeleteAnimation(pos As Integer)
+  overload: Fusee.Xirkit.Animation.DeleteAnimation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Xirkit
+  commentId: N:Fusee.Xirkit
+  name: Fusee.Xirkit
+  nameWithType: Fusee.Xirkit
+  fullName: Fusee.Xirkit
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Xirkit.Animation.ChannelBaseList*
+  commentId: Overload:Fusee.Xirkit.Animation.ChannelBaseList
+  name: ChannelBaseList
+  nameWithType: Animation.ChannelBaseList
+  fullName: Fusee.Xirkit.Animation.ChannelBaseList
+- uid: System.Collections.Generic.List{Fusee.Xirkit.ChannelBase}
+  commentId: T:System.Collections.Generic.List{Fusee.Xirkit.ChannelBase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ChannelBase>
+  nameWithType: List<ChannelBase>
+  fullName: System.Collections.Generic.List<Fusee.Xirkit.ChannelBase>
+  nameWithType.vb: List(Of ChannelBase)
+  fullName.vb: System.Collections.Generic.List(Of Fusee.Xirkit.ChannelBase)
+  name.vb: List(Of ChannelBase)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Xirkit.ChannelBase
+    name: ChannelBase
+    nameWithType: ChannelBase
+    fullName: Fusee.Xirkit.ChannelBase
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Xirkit.ChannelBase
+    name: ChannelBase
+    nameWithType: ChannelBase
+    fullName: Fusee.Xirkit.ChannelBase
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Fusee.Xirkit.Animation.AnimationMode*
+  commentId: Overload:Fusee.Xirkit.Animation.AnimationMode
+  name: AnimationMode
+  nameWithType: Animation.AnimationMode
+  fullName: Fusee.Xirkit.Animation.AnimationMode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Xirkit.Animation
+  commentId: T:Fusee.Xirkit.Animation
+  parent: Fusee.Xirkit
+  name: Animation
+  nameWithType: Animation
+  fullName: Fusee.Xirkit.Animation
+- uid: Fusee.Xirkit.Animation.#ctor*
+  commentId: Overload:Fusee.Xirkit.Animation.#ctor
+  name: Animation
+  nameWithType: Animation.Animation
+  fullName: Fusee.Xirkit.Animation.Animation
+- uid: Fusee.Xirkit.Animation.AddChannel*
+  commentId: Overload:Fusee.Xirkit.Animation.AddChannel
+  name: AddChannel
+  nameWithType: Animation.AddChannel
+  fullName: Fusee.Xirkit.Animation.AddChannel
+- uid: Fusee.Xirkit.ChannelBase
+  commentId: T:Fusee.Xirkit.ChannelBase
+  parent: Fusee.Xirkit
+  name: ChannelBase
+  nameWithType: ChannelBase
+  fullName: Fusee.Xirkit.ChannelBase
+- uid: Fusee.Xirkit.Animation.AddAnimation*
+  commentId: Overload:Fusee.Xirkit.Animation.AddAnimation
+  name: AddAnimation
+  nameWithType: Animation.AddAnimation
+  fullName: Fusee.Xirkit.Animation.AddAnimation
+- uid: Fusee.Xirkit.Channel{{TValue}}
+  commentId: T:Fusee.Xirkit.Channel{``0}
+  parent: Fusee.Xirkit
+  definition: Fusee.Xirkit.Channel`1
+  name: Channel<TValue>
+  nameWithType: Channel<TValue>
+  fullName: Fusee.Xirkit.Channel<TValue>
+  nameWithType.vb: Channel(Of TValue)
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue)
+  name.vb: Channel(Of TValue)
+  spec.csharp:
+  - uid: Fusee.Xirkit.Channel`1
+    name: Channel
+    nameWithType: Channel
+    fullName: Fusee.Xirkit.Channel
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xirkit.Channel`1
+    name: Channel
+    nameWithType: Channel
+    fullName: Fusee.Xirkit.Channel
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Fusee.Xirkit.Channel`1
+  commentId: T:Fusee.Xirkit.Channel`1
+  name: Channel<TValue>
+  nameWithType: Channel<TValue>
+  fullName: Fusee.Xirkit.Channel<TValue>
+  nameWithType.vb: Channel(Of TValue)
+  fullName.vb: Fusee.Xirkit.Channel(Of TValue)
+  name.vb: Channel(Of TValue)
+  spec.csharp:
+  - uid: Fusee.Xirkit.Channel`1
+    name: Channel
+    nameWithType: Channel
+    fullName: Fusee.Xirkit.Channel
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xirkit.Channel`1
+    name: Channel
+    nameWithType: Channel
+    fullName: Fusee.Xirkit.Channel
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xirkit.Animation.RemoveChannel*
+  commentId: Overload:Fusee.Xirkit.Animation.RemoveChannel
+  name: RemoveChannel
+  nameWithType: Animation.RemoveChannel
+  fullName: Fusee.Xirkit.Animation.RemoveChannel
+- uid: Fusee.Xirkit.Animation.SetTick*
+  commentId: Overload:Fusee.Xirkit.Animation.SetTick
+  name: SetTick
+  nameWithType: Animation.SetTick
+  fullName: Fusee.Xirkit.Animation.SetTick
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Xirkit.Animation.Animate*
+  commentId: Overload:Fusee.Xirkit.Animation.Animate
+  name: Animate
+  nameWithType: Animation.Animate
+  fullName: Fusee.Xirkit.Animation.Animate
+- uid: Fusee.Xirkit.Animation.DeleteAnimation*
+  commentId: Overload:Fusee.Xirkit.Animation.DeleteAnimation
+  name: DeleteAnimation
+  nameWithType: Animation.DeleteAnimation
+  fullName: Fusee.Xirkit.Animation.DeleteAnimation

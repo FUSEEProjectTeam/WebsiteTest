@@ -1,0 +1,854 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues
+  commentId: T:Fusee.Engine.Core.ShaderShards.MaterialValues
+  id: MaterialValues
+  parent: Fusee.Engine.Core.ShaderShards
+  children:
+  - Fusee.Engine.Core.ShaderShards.MaterialValues.AlbedoColor
+  - Fusee.Engine.Core.ShaderShards.MaterialValues.AlbedoMix
+  - Fusee.Engine.Core.ShaderShards.MaterialValues.AlbedoTexture
+  - Fusee.Engine.Core.ShaderShards.MaterialValues.DiffuseFraction
+  - Fusee.Engine.Core.ShaderShards.MaterialValues.EmissiveColor
+  - Fusee.Engine.Core.ShaderShards.MaterialValues.EmissiveMix
+  - Fusee.Engine.Core.ShaderShards.MaterialValues.EmissiveTexture
+  - Fusee.Engine.Core.ShaderShards.MaterialValues.FresnelReflectance
+  - Fusee.Engine.Core.ShaderShards.MaterialValues.NormalMap
+  - Fusee.Engine.Core.ShaderShards.MaterialValues.NormalMapIntensity
+  - Fusee.Engine.Core.ShaderShards.MaterialValues.RoughnessValue
+  - Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularColor
+  - Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularIntensity
+  - Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularMix
+  - Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularShininess
+  - Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularTexture
+  langs:
+  - csharp
+  - vb
+  name: MaterialValues
+  nameWithType: MaterialValues
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues
+  type: Struct
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MaterialValues
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 35
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nThe values one material could carry (e.g.: AlbedoColor or SpecularIntensity)\n"
+  example: []
+  syntax:
+    content: public struct MaterialValues
+    content.vb: Public Structure MaterialValues
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues.AlbedoColor
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialValues.AlbedoColor
+  id: AlbedoColor
+  parent: Fusee.Engine.Core.ShaderShards.MaterialValues
+  langs:
+  - csharp
+  - vb
+  name: AlbedoColor
+  nameWithType: MaterialValues.AlbedoColor
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues.AlbedoColor
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AlbedoColor
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 38
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  syntax:
+    content: public float4 AlbedoColor
+    return:
+      type: Fusee.Math.Core.float4
+    content.vb: Public AlbedoColor As float4
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues.AlbedoTexture
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialValues.AlbedoTexture
+  id: AlbedoTexture
+  parent: Fusee.Engine.Core.ShaderShards.MaterialValues
+  langs:
+  - csharp
+  - vb
+  name: AlbedoTexture
+  nameWithType: MaterialValues.AlbedoTexture
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues.AlbedoTexture
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AlbedoTexture
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 39
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  syntax:
+    content: public string AlbedoTexture
+    return:
+      type: System.String
+    content.vb: Public AlbedoTexture As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues.AlbedoMix
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialValues.AlbedoMix
+  id: AlbedoMix
+  parent: Fusee.Engine.Core.ShaderShards.MaterialValues
+  langs:
+  - csharp
+  - vb
+  name: AlbedoMix
+  nameWithType: MaterialValues.AlbedoMix
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues.AlbedoMix
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: AlbedoMix
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 40
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  syntax:
+    content: public float AlbedoMix
+    return:
+      type: System.Single
+    content.vb: Public AlbedoMix As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularColor
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularColor
+  id: SpecularColor
+  parent: Fusee.Engine.Core.ShaderShards.MaterialValues
+  langs:
+  - csharp
+  - vb
+  name: SpecularColor
+  nameWithType: MaterialValues.SpecularColor
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularColor
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SpecularColor
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 42
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  syntax:
+    content: public float4 SpecularColor
+    return:
+      type: Fusee.Math.Core.float4
+    content.vb: Public SpecularColor As float4
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularShininess
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularShininess
+  id: SpecularShininess
+  parent: Fusee.Engine.Core.ShaderShards.MaterialValues
+  langs:
+  - csharp
+  - vb
+  name: SpecularShininess
+  nameWithType: MaterialValues.SpecularShininess
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularShininess
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SpecularShininess
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 43
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  syntax:
+    content: public float SpecularShininess
+    return:
+      type: System.Single
+    content.vb: Public SpecularShininess As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularIntensity
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularIntensity
+  id: SpecularIntensity
+  parent: Fusee.Engine.Core.ShaderShards.MaterialValues
+  langs:
+  - csharp
+  - vb
+  name: SpecularIntensity
+  nameWithType: MaterialValues.SpecularIntensity
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularIntensity
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SpecularIntensity
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 44
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  syntax:
+    content: public float SpecularIntensity
+    return:
+      type: System.Single
+    content.vb: Public SpecularIntensity As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularMix
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularMix
+  id: SpecularMix
+  parent: Fusee.Engine.Core.ShaderShards.MaterialValues
+  langs:
+  - csharp
+  - vb
+  name: SpecularMix
+  nameWithType: MaterialValues.SpecularMix
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularMix
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SpecularMix
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 45
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  syntax:
+    content: public float SpecularMix
+    return:
+      type: System.Single
+    content.vb: Public SpecularMix As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularTexture
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularTexture
+  id: SpecularTexture
+  parent: Fusee.Engine.Core.ShaderShards.MaterialValues
+  langs:
+  - csharp
+  - vb
+  name: SpecularTexture
+  nameWithType: MaterialValues.SpecularTexture
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues.SpecularTexture
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SpecularTexture
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 46
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  syntax:
+    content: public string SpecularTexture
+    return:
+      type: System.String
+    content.vb: Public SpecularTexture As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues.RoughnessValue
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialValues.RoughnessValue
+  id: RoughnessValue
+  parent: Fusee.Engine.Core.ShaderShards.MaterialValues
+  langs:
+  - csharp
+  - vb
+  name: RoughnessValue
+  nameWithType: MaterialValues.RoughnessValue
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues.RoughnessValue
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: RoughnessValue
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 48
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  syntax:
+    content: public float RoughnessValue
+    return:
+      type: System.Single
+    content.vb: Public RoughnessValue As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues.FresnelReflectance
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialValues.FresnelReflectance
+  id: FresnelReflectance
+  parent: Fusee.Engine.Core.ShaderShards.MaterialValues
+  langs:
+  - csharp
+  - vb
+  name: FresnelReflectance
+  nameWithType: MaterialValues.FresnelReflectance
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues.FresnelReflectance
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: FresnelReflectance
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 49
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  syntax:
+    content: public float FresnelReflectance
+    return:
+      type: System.Single
+    content.vb: Public FresnelReflectance As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues.DiffuseFraction
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialValues.DiffuseFraction
+  id: DiffuseFraction
+  parent: Fusee.Engine.Core.ShaderShards.MaterialValues
+  langs:
+  - csharp
+  - vb
+  name: DiffuseFraction
+  nameWithType: MaterialValues.DiffuseFraction
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues.DiffuseFraction
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: DiffuseFraction
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 50
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  syntax:
+    content: public float DiffuseFraction
+    return:
+      type: System.Single
+    content.vb: Public DiffuseFraction As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues.EmissiveColor
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialValues.EmissiveColor
+  id: EmissiveColor
+  parent: Fusee.Engine.Core.ShaderShards.MaterialValues
+  langs:
+  - csharp
+  - vb
+  name: EmissiveColor
+  nameWithType: MaterialValues.EmissiveColor
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues.EmissiveColor
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: EmissiveColor
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 52
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  syntax:
+    content: public float4 EmissiveColor
+    return:
+      type: Fusee.Math.Core.float4
+    content.vb: Public EmissiveColor As float4
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues.EmissiveMix
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialValues.EmissiveMix
+  id: EmissiveMix
+  parent: Fusee.Engine.Core.ShaderShards.MaterialValues
+  langs:
+  - csharp
+  - vb
+  name: EmissiveMix
+  nameWithType: MaterialValues.EmissiveMix
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues.EmissiveMix
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: EmissiveMix
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 53
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  syntax:
+    content: public float EmissiveMix
+    return:
+      type: System.Single
+    content.vb: Public EmissiveMix As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues.EmissiveTexture
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialValues.EmissiveTexture
+  id: EmissiveTexture
+  parent: Fusee.Engine.Core.ShaderShards.MaterialValues
+  langs:
+  - csharp
+  - vb
+  name: EmissiveTexture
+  nameWithType: MaterialValues.EmissiveTexture
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues.EmissiveTexture
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: EmissiveTexture
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 54
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  syntax:
+    content: public string EmissiveTexture
+    return:
+      type: System.String
+    content.vb: Public EmissiveTexture As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues.NormalMapIntensity
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialValues.NormalMapIntensity
+  id: NormalMapIntensity
+  parent: Fusee.Engine.Core.ShaderShards.MaterialValues
+  langs:
+  - csharp
+  - vb
+  name: NormalMapIntensity
+  nameWithType: MaterialValues.NormalMapIntensity
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues.NormalMapIntensity
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: NormalMapIntensity
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 56
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  syntax:
+    content: public float NormalMapIntensity
+    return:
+      type: System.Single
+    content.vb: Public NormalMapIntensity As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialValues.NormalMap
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialValues.NormalMap
+  id: NormalMap
+  parent: Fusee.Engine.Core.ShaderShards.MaterialValues
+  langs:
+  - csharp
+  - vb
+  name: NormalMap
+  nameWithType: MaterialValues.NormalMap
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialValues.NormalMap
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: NormalMap
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 57
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  syntax:
+    content: public string NormalMap
+    return:
+      type: System.String
+    content.vb: Public NormalMap As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Core.ShaderShards
+  commentId: N:Fusee.Engine.Core.ShaderShards
+  name: Fusee.Engine.Core.ShaderShards
+  nameWithType: Fusee.Engine.Core.ShaderShards
+  fullName: Fusee.Engine.Core.ShaderShards
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Math.Core.float4
+  commentId: T:Fusee.Math.Core.float4
+  parent: Fusee.Math.Core
+  name: float4
+  nameWithType: float4
+  fullName: Fusee.Math.Core.float4
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

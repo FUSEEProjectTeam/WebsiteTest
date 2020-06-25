@@ -1,0 +1,159 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Base.Common.GetCallbackState
+  commentId: T:Fusee.Base.Common.GetCallbackState
+  id: GetCallbackState
+  parent: Fusee.Base.Common
+  children:
+  - Fusee.Base.Common.GetCallbackState.Done
+  - Fusee.Base.Common.GetCallbackState.Error
+  - Fusee.Base.Common.GetCallbackState.Progress
+  langs:
+  - csharp
+  - vb
+  name: GetCallbackState
+  nameWithType: GetCallbackState
+  fullName: Fusee.Base.Common.GetCallbackState
+  type: Enum
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GetCallbackState
+    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    startLine: 8
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nThe state of the asset acquisition process.\n"
+  example: []
+  syntax:
+    content: public enum GetCallbackState
+    content.vb: Public Enum GetCallbackState
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Fusee.Base.Common.GetCallbackState.Progress
+  commentId: F:Fusee.Base.Common.GetCallbackState.Progress
+  id: Progress
+  parent: Fusee.Base.Common.GetCallbackState
+  langs:
+  - csharp
+  - vb
+  name: Progress
+  nameWithType: GetCallbackState.Progress
+  fullName: Fusee.Base.Common.GetCallbackState.Progress
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Progress
+    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    startLine: 13
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nAsset acquisition is in progress. o (<xref href=\"Fusee.Base.Common.GetCallbackState\" data-throw-if-not-resolved=\"false\"></xref>)contains an integer specifying the progress in percent (100 == done).\n"
+  example: []
+  syntax:
+    content: Progress = 0
+    return:
+      type: Fusee.Base.Common.GetCallbackState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Base.Common.GetCallbackState.Error
+  commentId: F:Fusee.Base.Common.GetCallbackState.Error
+  id: Error
+  parent: Fusee.Base.Common.GetCallbackState
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: GetCallbackState.Error
+  fullName: Fusee.Base.Common.GetCallbackState.Error
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Error
+    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    startLine: 17
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nAn error occurred while acquiring the asset. o (<xref href=\"Fusee.Base.Common.GetCallbackState\" data-throw-if-not-resolved=\"false\"></xref>) contains a string containing the message.\n"
+  example: []
+  syntax:
+    content: Error = 1
+    return:
+      type: Fusee.Base.Common.GetCallbackState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Base.Common.GetCallbackState.Done
+  commentId: F:Fusee.Base.Common.GetCallbackState.Done
+  id: Done
+  parent: Fusee.Base.Common.GetCallbackState
+  langs:
+  - csharp
+  - vb
+  name: Done
+  nameWithType: GetCallbackState.Done
+  fullName: Fusee.Base.Common.GetCallbackState.Done
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Done
+    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    startLine: 21
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nAcquisition ended successfully. o contains the object of the type passed to <xref href=\"Fusee.Base.Common.GetCallback\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: Done = 2
+    return:
+      type: Fusee.Base.Common.GetCallbackState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Fusee.Base.Common
+  commentId: N:Fusee.Base.Common
+  name: Fusee.Base.Common
+  nameWithType: Fusee.Base.Common
+  fullName: Fusee.Base.Common
+- uid: Fusee.Base.Common.GetCallbackState
+  commentId: T:Fusee.Base.Common.GetCallbackState
+  parent: Fusee.Base.Common
+  name: GetCallbackState
+  nameWithType: GetCallbackState
+  fullName: Fusee.Base.Common.GetCallbackState
+- uid: Fusee.Base.Common.GetCallback
+  commentId: T:Fusee.Base.Common.GetCallback
+  parent: Fusee.Base.Common
+  name: GetCallback
+  nameWithType: GetCallback
+  fullName: Fusee.Base.Common.GetCallback

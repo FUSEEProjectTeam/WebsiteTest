@@ -1,0 +1,1289 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.GUI.GUIText
+  commentId: T:Fusee.Engine.GUI.GUIText
+  id: GUIText
+  parent: Fusee.Engine.GUI
+  children:
+  - Fusee.Engine.GUI.GUIText.#ctor(Fusee.Engine.Core.FontMap,System.String,Fusee.Engine.Core.Scene.HorizontalTextAlignment)
+  - Fusee.Engine.GUI.GUIText.Height
+  - Fusee.Engine.GUI.GUIText.HorizontalAlignment
+  - Fusee.Engine.GUI.GUIText.LineNormals
+  - Fusee.Engine.GUI.GUIText.LineTriangles
+  - Fusee.Engine.GUI.GUIText.LineUVs
+  - Fusee.Engine.GUI.GUIText.LineVertices
+  - Fusee.Engine.GUI.GUIText.Text
+  - Fusee.Engine.GUI.GUIText.Width
+  langs:
+  - csharp
+  - vb
+  name: GUIText
+  nameWithType: GUIText
+  fullName: Fusee.Engine.GUI.GUIText
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/GUI/GUIText.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: GUIText
+    path: src/Fusee/src/Engine/GUI/GUIText.cs
+    startLine: 12
+  assemblies:
+  - Fusee.Engine.GUI
+  namespace: Fusee.Engine.GUI
+  summary: "\nCreates a text mesh for the GUI.\n"
+  example: []
+  syntax:
+    content: 'public class GUIText : Mesh, IComponent, IDisposable'
+    content.vb: >-
+      Public Class GUIText
+          Inherits Mesh
+          Implements IComponent, IDisposable
+  inheritance:
+  - System.Object
+  - Fusee.Engine.Core.Scene.SceneComponent
+  - Fusee.Engine.Core.Scene.Mesh
+  implements:
+  - Fusee.Xene.IComponent
+  - System.IDisposable
+  inheritedMembers:
+  - Fusee.Engine.Core.Scene.Mesh.MeshChanged
+  - Fusee.Engine.Core.Scene.Mesh.SessionUniqueIdentifier
+  - Fusee.Engine.Core.Scene.Mesh.Vertices
+  - Fusee.Engine.Core.Scene.Mesh.VerticesSet
+  - Fusee.Engine.Core.Scene.Mesh.TangentsSet
+  - Fusee.Engine.Core.Scene.Mesh.BiTangentsSet
+  - Fusee.Engine.Core.Scene.Mesh.Colors
+  - Fusee.Engine.Core.Scene.Mesh.ColorsSet
+  - Fusee.Engine.Core.Scene.Mesh.Normals
+  - Fusee.Engine.Core.Scene.Mesh.NormalsSet
+  - Fusee.Engine.Core.Scene.Mesh.UVs
+  - Fusee.Engine.Core.Scene.Mesh.UVsSet
+  - Fusee.Engine.Core.Scene.Mesh.BoneWeights
+  - Fusee.Engine.Core.Scene.Mesh.BoneWeightsSet
+  - Fusee.Engine.Core.Scene.Mesh.BoneIndices
+  - Fusee.Engine.Core.Scene.Mesh.BoneIndicesSet
+  - Fusee.Engine.Core.Scene.Mesh.Triangles
+  - Fusee.Engine.Core.Scene.Mesh.TrianglesSet
+  - Fusee.Engine.Core.Scene.Mesh.BoundingBox
+  - Fusee.Engine.Core.Scene.Mesh.Tangents
+  - Fusee.Engine.Core.Scene.Mesh.BiTangents
+  - Fusee.Engine.Core.Scene.Mesh.Active
+  - Fusee.Engine.Core.Scene.Mesh.MeshType
+  - Fusee.Engine.Core.Scene.Mesh.Dispose(System.Boolean)
+  - Fusee.Engine.Core.Scene.Mesh.Dispose
+  - Fusee.Engine.Core.Scene.SceneComponent.Name
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.GUI.GUIText.Text
+  commentId: P:Fusee.Engine.GUI.GUIText.Text
+  id: Text
+  parent: Fusee.Engine.GUI.GUIText
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: GUIText.Text
+  fullName: Fusee.Engine.GUI.GUIText.Text
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/GUI/GUIText.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Text
+    path: src/Fusee/src/Engine/GUI/GUIText.cs
+    startLine: 20
+  assemblies:
+  - Fusee.Engine.GUI
+  namespace: Fusee.Engine.GUI
+  summary: "\nThe text to display.\nThe Vertices, Triangles, Normals and UV coordinates will be recalculated if this value is set.\n"
+  example: []
+  syntax:
+    content: public string Text { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Text As String
+  overload: Fusee.Engine.GUI.GUIText.Text*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.GUI.GUIText.LineVertices
+  commentId: P:Fusee.Engine.GUI.GUIText.LineVertices
+  id: LineVertices
+  parent: Fusee.Engine.GUI.GUIText
+  langs:
+  - csharp
+  - vb
+  name: LineVertices
+  nameWithType: GUIText.LineVertices
+  fullName: Fusee.Engine.GUI.GUIText.LineVertices
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/GUI/GUIText.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: LineVertices
+    path: src/Fusee/src/Engine/GUI/GUIText.cs
+    startLine: 35
+  assemblies:
+  - Fusee.Engine.GUI
+  namespace: Fusee.Engine.GUI
+  summary: "\nThe Vertices per line of text.\n"
+  example: []
+  syntax:
+    content: public List<List<float3>> LineVertices { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Collections.Generic.List{Fusee.Math.Core.float3}}
+    content.vb: Public ReadOnly Property LineVertices As List(Of List(Of float3))
+  overload: Fusee.Engine.GUI.GUIText.LineVertices*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.GUI.GUIText.LineTriangles
+  commentId: P:Fusee.Engine.GUI.GUIText.LineTriangles
+  id: LineTriangles
+  parent: Fusee.Engine.GUI.GUIText
+  langs:
+  - csharp
+  - vb
+  name: LineTriangles
+  nameWithType: GUIText.LineTriangles
+  fullName: Fusee.Engine.GUI.GUIText.LineTriangles
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/GUI/GUIText.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: LineTriangles
+    path: src/Fusee/src/Engine/GUI/GUIText.cs
+    startLine: 40
+  assemblies:
+  - Fusee.Engine.GUI
+  namespace: Fusee.Engine.GUI
+  summary: "\nThe Triangles per line of text.\n"
+  example: []
+  syntax:
+    content: public List<List<ushort>> LineTriangles { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Collections.Generic.List{System.UInt16}}
+    content.vb: Public ReadOnly Property LineTriangles As List(Of List(Of UShort))
+  overload: Fusee.Engine.GUI.GUIText.LineTriangles*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.GUI.GUIText.LineNormals
+  commentId: P:Fusee.Engine.GUI.GUIText.LineNormals
+  id: LineNormals
+  parent: Fusee.Engine.GUI.GUIText
+  langs:
+  - csharp
+  - vb
+  name: LineNormals
+  nameWithType: GUIText.LineNormals
+  fullName: Fusee.Engine.GUI.GUIText.LineNormals
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/GUI/GUIText.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: LineNormals
+    path: src/Fusee/src/Engine/GUI/GUIText.cs
+    startLine: 45
+  assemblies:
+  - Fusee.Engine.GUI
+  namespace: Fusee.Engine.GUI
+  summary: "\nThe Normals per line of text.\n"
+  example: []
+  syntax:
+    content: public List<List<float3>> LineNormals { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Collections.Generic.List{Fusee.Math.Core.float3}}
+    content.vb: Public ReadOnly Property LineNormals As List(Of List(Of float3))
+  overload: Fusee.Engine.GUI.GUIText.LineNormals*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.GUI.GUIText.LineUVs
+  commentId: P:Fusee.Engine.GUI.GUIText.LineUVs
+  id: LineUVs
+  parent: Fusee.Engine.GUI.GUIText
+  langs:
+  - csharp
+  - vb
+  name: LineUVs
+  nameWithType: GUIText.LineUVs
+  fullName: Fusee.Engine.GUI.GUIText.LineUVs
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/GUI/GUIText.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: LineUVs
+    path: src/Fusee/src/Engine/GUI/GUIText.cs
+    startLine: 50
+  assemblies:
+  - Fusee.Engine.GUI
+  namespace: Fusee.Engine.GUI
+  summary: "\nThe UV coordinates per line of text.\n"
+  example: []
+  syntax:
+    content: public List<List<float2>> LineUVs { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Collections.Generic.List{Fusee.Math.Core.float2}}
+    content.vb: Public ReadOnly Property LineUVs As List(Of List(Of float2))
+  overload: Fusee.Engine.GUI.GUIText.LineUVs*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.GUI.GUIText.HorizontalAlignment
+  commentId: P:Fusee.Engine.GUI.GUIText.HorizontalAlignment
+  id: HorizontalAlignment
+  parent: Fusee.Engine.GUI.GUIText
+  langs:
+  - csharp
+  - vb
+  name: HorizontalAlignment
+  nameWithType: GUIText.HorizontalAlignment
+  fullName: Fusee.Engine.GUI.GUIText.HorizontalAlignment
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/GUI/GUIText.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: HorizontalAlignment
+    path: src/Fusee/src/Engine/GUI/GUIText.cs
+    startLine: 57
+  assemblies:
+  - Fusee.Engine.GUI
+  namespace: Fusee.Engine.GUI
+  summary: "\nDefines the <xref href=\"Fusee.Engine.GUI.GUIText.HorizontalAlignment\" data-throw-if-not-resolved=\"false\"></xref> of the text. \nThis is needed here because it changes the shape of the mesh.\nThe mesh&apos;s vertices will be recalculated the value is set.\n"
+  example: []
+  syntax:
+    content: public HorizontalTextAlignment HorizontalAlignment { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Core.Scene.HorizontalTextAlignment
+    content.vb: Public Property HorizontalAlignment As HorizontalTextAlignment
+  overload: Fusee.Engine.GUI.GUIText.HorizontalAlignment*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.GUI.GUIText.Width
+  commentId: P:Fusee.Engine.GUI.GUIText.Width
+  id: Width
+  parent: Fusee.Engine.GUI.GUIText
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: GUIText.Width
+  fullName: Fusee.Engine.GUI.GUIText.Width
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/GUI/GUIText.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Width
+    path: src/Fusee/src/Engine/GUI/GUIText.cs
+    startLine: 71
+  assemblies:
+  - Fusee.Engine.GUI
+  namespace: Fusee.Engine.GUI
+  summary: "\nThe width of the text mesh&apos;s bounding box.\n"
+  example: []
+  syntax:
+    content: public float Width { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Width As Single
+  overload: Fusee.Engine.GUI.GUIText.Width*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.GUI.GUIText.Height
+  commentId: P:Fusee.Engine.GUI.GUIText.Height
+  id: Height
+  parent: Fusee.Engine.GUI.GUIText
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: GUIText.Height
+  fullName: Fusee.Engine.GUI.GUIText.Height
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/GUI/GUIText.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Height
+    path: src/Fusee/src/Engine/GUI/GUIText.cs
+    startLine: 76
+  assemblies:
+  - Fusee.Engine.GUI
+  namespace: Fusee.Engine.GUI
+  summary: "\nThe height of the text mesh&apos;s bounding box.\n"
+  example: []
+  syntax:
+    content: public float Height { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Height As Single
+  overload: Fusee.Engine.GUI.GUIText.Height*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.GUI.GUIText.#ctor(Fusee.Engine.Core.FontMap,System.String,Fusee.Engine.Core.Scene.HorizontalTextAlignment)
+  commentId: M:Fusee.Engine.GUI.GUIText.#ctor(Fusee.Engine.Core.FontMap,System.String,Fusee.Engine.Core.Scene.HorizontalTextAlignment)
+  id: '#ctor(Fusee.Engine.Core.FontMap,System.String,Fusee.Engine.Core.Scene.HorizontalTextAlignment)'
+  parent: Fusee.Engine.GUI.GUIText
+  langs:
+  - csharp
+  - vb
+  name: GUIText(FontMap, String, HorizontalTextAlignment)
+  nameWithType: GUIText.GUIText(FontMap, String, HorizontalTextAlignment)
+  fullName: Fusee.Engine.GUI.GUIText.GUIText(Fusee.Engine.Core.FontMap, System.String, Fusee.Engine.Core.Scene.HorizontalTextAlignment)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/GUI/GUIText.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Engine/GUI/GUIText.cs
+    startLine: 89
+  assemblies:
+  - Fusee.Engine.GUI
+  namespace: Fusee.Engine.GUI
+  summary: "\nReturns the text mesh.\n"
+  example: []
+  syntax:
+    content: public GUIText(FontMap fontMap, string text, HorizontalTextAlignment horizontalAlignment)
+    parameters:
+    - id: fontMap
+      type: Fusee.Engine.Core.FontMap
+      description: ''
+    - id: text
+      type: System.String
+      description: ''
+    - id: horizontalAlignment
+      type: Fusee.Engine.Core.Scene.HorizontalTextAlignment
+      description: "Defines the <xref href=\"Fusee.Engine.GUI.GUIText.HorizontalAlignment\" data-throw-if-not-resolved=\"false\"></xref> of the text. \nThis is needed here because it changes the shape of the mesh."
+    content.vb: Public Sub New(fontMap As FontMap, text As String, horizontalAlignment As HorizontalTextAlignment)
+  overload: Fusee.Engine.GUI.GUIText.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.GUI
+  commentId: N:Fusee.Engine.GUI
+  name: Fusee.Engine.GUI
+  nameWithType: Fusee.Engine.GUI
+  fullName: Fusee.Engine.GUI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Core.Scene.SceneComponent
+  commentId: T:Fusee.Engine.Core.Scene.SceneComponent
+  parent: Fusee.Engine.Core.Scene
+  name: SceneComponent
+  nameWithType: SceneComponent
+  fullName: Fusee.Engine.Core.Scene.SceneComponent
+- uid: Fusee.Engine.Core.Scene.Mesh
+  commentId: T:Fusee.Engine.Core.Scene.Mesh
+  parent: Fusee.Engine.Core.Scene
+  name: Mesh
+  nameWithType: Mesh
+  fullName: Fusee.Engine.Core.Scene.Mesh
+- uid: Fusee.Xene.IComponent
+  commentId: T:Fusee.Xene.IComponent
+  parent: Fusee.Xene
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Fusee.Xene.IComponent
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Fusee.Engine.Core.Scene.Mesh.MeshChanged
+  commentId: E:Fusee.Engine.Core.Scene.Mesh.MeshChanged
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: MeshChanged
+  nameWithType: Mesh.MeshChanged
+  fullName: Fusee.Engine.Core.Scene.Mesh.MeshChanged
+- uid: Fusee.Engine.Core.Scene.Mesh.SessionUniqueIdentifier
+  commentId: F:Fusee.Engine.Core.Scene.Mesh.SessionUniqueIdentifier
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: SessionUniqueIdentifier
+  nameWithType: Mesh.SessionUniqueIdentifier
+  fullName: Fusee.Engine.Core.Scene.Mesh.SessionUniqueIdentifier
+- uid: Fusee.Engine.Core.Scene.Mesh.Vertices
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.Vertices
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: Vertices
+  nameWithType: Mesh.Vertices
+  fullName: Fusee.Engine.Core.Scene.Mesh.Vertices
+- uid: Fusee.Engine.Core.Scene.Mesh.VerticesSet
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.VerticesSet
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: VerticesSet
+  nameWithType: Mesh.VerticesSet
+  fullName: Fusee.Engine.Core.Scene.Mesh.VerticesSet
+- uid: Fusee.Engine.Core.Scene.Mesh.TangentsSet
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.TangentsSet
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: TangentsSet
+  nameWithType: Mesh.TangentsSet
+  fullName: Fusee.Engine.Core.Scene.Mesh.TangentsSet
+- uid: Fusee.Engine.Core.Scene.Mesh.BiTangentsSet
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.BiTangentsSet
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: BiTangentsSet
+  nameWithType: Mesh.BiTangentsSet
+  fullName: Fusee.Engine.Core.Scene.Mesh.BiTangentsSet
+- uid: Fusee.Engine.Core.Scene.Mesh.Colors
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.Colors
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: Colors
+  nameWithType: Mesh.Colors
+  fullName: Fusee.Engine.Core.Scene.Mesh.Colors
+- uid: Fusee.Engine.Core.Scene.Mesh.ColorsSet
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.ColorsSet
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: ColorsSet
+  nameWithType: Mesh.ColorsSet
+  fullName: Fusee.Engine.Core.Scene.Mesh.ColorsSet
+- uid: Fusee.Engine.Core.Scene.Mesh.Normals
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.Normals
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: Normals
+  nameWithType: Mesh.Normals
+  fullName: Fusee.Engine.Core.Scene.Mesh.Normals
+- uid: Fusee.Engine.Core.Scene.Mesh.NormalsSet
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.NormalsSet
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: NormalsSet
+  nameWithType: Mesh.NormalsSet
+  fullName: Fusee.Engine.Core.Scene.Mesh.NormalsSet
+- uid: Fusee.Engine.Core.Scene.Mesh.UVs
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.UVs
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: UVs
+  nameWithType: Mesh.UVs
+  fullName: Fusee.Engine.Core.Scene.Mesh.UVs
+- uid: Fusee.Engine.Core.Scene.Mesh.UVsSet
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.UVsSet
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: UVsSet
+  nameWithType: Mesh.UVsSet
+  fullName: Fusee.Engine.Core.Scene.Mesh.UVsSet
+- uid: Fusee.Engine.Core.Scene.Mesh.BoneWeights
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.BoneWeights
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: BoneWeights
+  nameWithType: Mesh.BoneWeights
+  fullName: Fusee.Engine.Core.Scene.Mesh.BoneWeights
+- uid: Fusee.Engine.Core.Scene.Mesh.BoneWeightsSet
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.BoneWeightsSet
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: BoneWeightsSet
+  nameWithType: Mesh.BoneWeightsSet
+  fullName: Fusee.Engine.Core.Scene.Mesh.BoneWeightsSet
+- uid: Fusee.Engine.Core.Scene.Mesh.BoneIndices
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.BoneIndices
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: BoneIndices
+  nameWithType: Mesh.BoneIndices
+  fullName: Fusee.Engine.Core.Scene.Mesh.BoneIndices
+- uid: Fusee.Engine.Core.Scene.Mesh.BoneIndicesSet
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.BoneIndicesSet
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: BoneIndicesSet
+  nameWithType: Mesh.BoneIndicesSet
+  fullName: Fusee.Engine.Core.Scene.Mesh.BoneIndicesSet
+- uid: Fusee.Engine.Core.Scene.Mesh.Triangles
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.Triangles
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: Triangles
+  nameWithType: Mesh.Triangles
+  fullName: Fusee.Engine.Core.Scene.Mesh.Triangles
+- uid: Fusee.Engine.Core.Scene.Mesh.TrianglesSet
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.TrianglesSet
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: TrianglesSet
+  nameWithType: Mesh.TrianglesSet
+  fullName: Fusee.Engine.Core.Scene.Mesh.TrianglesSet
+- uid: Fusee.Engine.Core.Scene.Mesh.BoundingBox
+  commentId: F:Fusee.Engine.Core.Scene.Mesh.BoundingBox
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: BoundingBox
+  nameWithType: Mesh.BoundingBox
+  fullName: Fusee.Engine.Core.Scene.Mesh.BoundingBox
+- uid: Fusee.Engine.Core.Scene.Mesh.Tangents
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.Tangents
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: Tangents
+  nameWithType: Mesh.Tangents
+  fullName: Fusee.Engine.Core.Scene.Mesh.Tangents
+- uid: Fusee.Engine.Core.Scene.Mesh.BiTangents
+  commentId: P:Fusee.Engine.Core.Scene.Mesh.BiTangents
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: BiTangents
+  nameWithType: Mesh.BiTangents
+  fullName: Fusee.Engine.Core.Scene.Mesh.BiTangents
+- uid: Fusee.Engine.Core.Scene.Mesh.Active
+  commentId: F:Fusee.Engine.Core.Scene.Mesh.Active
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: Active
+  nameWithType: Mesh.Active
+  fullName: Fusee.Engine.Core.Scene.Mesh.Active
+- uid: Fusee.Engine.Core.Scene.Mesh.MeshType
+  commentId: F:Fusee.Engine.Core.Scene.Mesh.MeshType
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: MeshType
+  nameWithType: Mesh.MeshType
+  fullName: Fusee.Engine.Core.Scene.Mesh.MeshType
+- uid: Fusee.Engine.Core.Scene.Mesh.Dispose(System.Boolean)
+  commentId: M:Fusee.Engine.Core.Scene.Mesh.Dispose(System.Boolean)
+  parent: Fusee.Engine.Core.Scene.Mesh
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: Mesh.Dispose(Boolean)
+  fullName: Fusee.Engine.Core.Scene.Mesh.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.Mesh.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: Mesh.Dispose
+    fullName: Fusee.Engine.Core.Scene.Mesh.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.Mesh.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: Mesh.Dispose
+    fullName: Fusee.Engine.Core.Scene.Mesh.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.Mesh.Dispose
+  commentId: M:Fusee.Engine.Core.Scene.Mesh.Dispose
+  parent: Fusee.Engine.Core.Scene.Mesh
+  name: Dispose()
+  nameWithType: Mesh.Dispose()
+  fullName: Fusee.Engine.Core.Scene.Mesh.Dispose()
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.Mesh.Dispose
+    name: Dispose
+    nameWithType: Mesh.Dispose
+    fullName: Fusee.Engine.Core.Scene.Mesh.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.Mesh.Dispose
+    name: Dispose
+    nameWithType: Mesh.Dispose
+    fullName: Fusee.Engine.Core.Scene.Mesh.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.SceneComponent.Name
+  commentId: F:Fusee.Engine.Core.Scene.SceneComponent.Name
+  parent: Fusee.Engine.Core.Scene.SceneComponent
+  name: Name
+  nameWithType: SceneComponent.Name
+  fullName: Fusee.Engine.Core.Scene.SceneComponent.Name
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: Fusee.Xene
+  commentId: N:Fusee.Xene
+  name: Fusee.Xene
+  nameWithType: Fusee.Xene
+  fullName: Fusee.Xene
+- uid: Fusee.Engine.GUI.GUIText.Text*
+  commentId: Overload:Fusee.Engine.GUI.GUIText.Text
+  name: Text
+  nameWithType: GUIText.Text
+  fullName: Fusee.Engine.GUI.GUIText.Text
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Fusee.Engine.GUI.GUIText.LineVertices*
+  commentId: Overload:Fusee.Engine.GUI.GUIText.LineVertices
+  name: LineVertices
+  nameWithType: GUIText.LineVertices
+  fullName: Fusee.Engine.GUI.GUIText.LineVertices
+- uid: System.Collections.Generic.List{System.Collections.Generic.List{Fusee.Math.Core.float3}}
+  commentId: T:System.Collections.Generic.List{System.Collections.Generic.List{Fusee.Math.Core.float3}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<List<float3>>
+  nameWithType: List<List<float3>>
+  fullName: System.Collections.Generic.List<System.Collections.Generic.List<Fusee.Math.Core.float3>>
+  nameWithType.vb: List(Of List(Of float3))
+  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.List(Of Fusee.Math.Core.float3))
+  name.vb: List(Of List(Of float3))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Fusee.Engine.GUI.GUIText.LineTriangles*
+  commentId: Overload:Fusee.Engine.GUI.GUIText.LineTriangles
+  name: LineTriangles
+  nameWithType: GUIText.LineTriangles
+  fullName: Fusee.Engine.GUI.GUIText.LineTriangles
+- uid: System.Collections.Generic.List{System.Collections.Generic.List{System.UInt16}}
+  commentId: T:System.Collections.Generic.List{System.Collections.Generic.List{System.UInt16}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<List<UInt16>>
+  nameWithType: List<List<UInt16>>
+  fullName: System.Collections.Generic.List<System.Collections.Generic.List<System.UInt16>>
+  nameWithType.vb: List(Of List(Of UInt16))
+  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.List(Of System.UInt16))
+  name.vb: List(Of List(Of UInt16))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.UInt16
+    name: UInt16
+    nameWithType: UInt16
+    fullName: System.UInt16
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.UInt16
+    name: UInt16
+    nameWithType: UInt16
+    fullName: System.UInt16
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.GUI.GUIText.LineNormals*
+  commentId: Overload:Fusee.Engine.GUI.GUIText.LineNormals
+  name: LineNormals
+  nameWithType: GUIText.LineNormals
+  fullName: Fusee.Engine.GUI.GUIText.LineNormals
+- uid: Fusee.Engine.GUI.GUIText.LineUVs*
+  commentId: Overload:Fusee.Engine.GUI.GUIText.LineUVs
+  name: LineUVs
+  nameWithType: GUIText.LineUVs
+  fullName: Fusee.Engine.GUI.GUIText.LineUVs
+- uid: System.Collections.Generic.List{System.Collections.Generic.List{Fusee.Math.Core.float2}}
+  commentId: T:System.Collections.Generic.List{System.Collections.Generic.List{Fusee.Math.Core.float2}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<List<float2>>
+  nameWithType: List<List<float2>>
+  fullName: System.Collections.Generic.List<System.Collections.Generic.List<Fusee.Math.Core.float2>>
+  nameWithType.vb: List(Of List(Of float2))
+  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.List(Of Fusee.Math.Core.float2))
+  name.vb: List(Of List(Of float2))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Math.Core.float2
+    name: float2
+    nameWithType: float2
+    fullName: Fusee.Math.Core.float2
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Math.Core.float2
+    name: float2
+    nameWithType: float2
+    fullName: Fusee.Math.Core.float2
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.GUI.GUIText.HorizontalAlignment
+  commentId: P:Fusee.Engine.GUI.GUIText.HorizontalAlignment
+  isExternal: true
+- uid: Fusee.Engine.GUI.GUIText.HorizontalAlignment*
+  commentId: Overload:Fusee.Engine.GUI.GUIText.HorizontalAlignment
+  name: HorizontalAlignment
+  nameWithType: GUIText.HorizontalAlignment
+  fullName: Fusee.Engine.GUI.GUIText.HorizontalAlignment
+- uid: Fusee.Engine.Core.Scene.HorizontalTextAlignment
+  commentId: T:Fusee.Engine.Core.Scene.HorizontalTextAlignment
+  parent: Fusee.Engine.Core.Scene
+  name: HorizontalTextAlignment
+  nameWithType: HorizontalTextAlignment
+  fullName: Fusee.Engine.Core.Scene.HorizontalTextAlignment
+- uid: Fusee.Engine.GUI.GUIText.Width*
+  commentId: Overload:Fusee.Engine.GUI.GUIText.Width
+  name: Width
+  nameWithType: GUIText.Width
+  fullName: Fusee.Engine.GUI.GUIText.Width
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Engine.GUI.GUIText.Height*
+  commentId: Overload:Fusee.Engine.GUI.GUIText.Height
+  name: Height
+  nameWithType: GUIText.Height
+  fullName: Fusee.Engine.GUI.GUIText.Height
+- uid: Fusee.Engine.GUI.GUIText.#ctor*
+  commentId: Overload:Fusee.Engine.GUI.GUIText.#ctor
+  name: GUIText
+  nameWithType: GUIText.GUIText
+  fullName: Fusee.Engine.GUI.GUIText.GUIText
+- uid: Fusee.Engine.Core.FontMap
+  commentId: T:Fusee.Engine.Core.FontMap
+  parent: Fusee.Engine.Core
+  name: FontMap
+  nameWithType: FontMap
+  fullName: Fusee.Engine.Core.FontMap
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core

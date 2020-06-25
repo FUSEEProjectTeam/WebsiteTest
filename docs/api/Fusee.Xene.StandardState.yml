@@ -1,0 +1,679 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Xene.StandardState
+  commentId: T:Fusee.Xene.StandardState
+  id: StandardState
+  parent: Fusee.Xene
+  children:
+  - Fusee.Xene.StandardState.#ctor
+  - Fusee.Xene.StandardState.Model
+  - Fusee.Xene.StandardState.Projection
+  - Fusee.Xene.StandardState.View
+  langs:
+  - csharp
+  - vb
+  name: StandardState
+  nameWithType: StandardState
+  fullName: Fusee.Xene.StandardState
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/VisitorState.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: StandardState
+    path: src/Fusee/src/Xene/VisitorState.cs
+    startLine: 360
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nA standard state for typical traversals mimicking rendering activities. Keeps track of the main matrices\nas well as selected render states.\n"
+  example: []
+  syntax:
+    content: 'public class StandardState : VisitorState, IStateStack'
+    content.vb: >-
+      Public Class StandardState
+          Inherits VisitorState
+          Implements IStateStack
+  inheritance:
+  - System.Object
+  - Fusee.Xene.VisitorState
+  implements:
+  - Fusee.Xene.IStateStack
+  inheritedMembers:
+  - Fusee.Xene.VisitorState.RegisterState(Fusee.Xene.IStateStack)
+  - Fusee.Xene.VisitorState.Push
+  - Fusee.Xene.VisitorState.Pop
+  - Fusee.Xene.VisitorState.Clear
+  - Fusee.Xene.VisitorState.Depth
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Xene.StandardState.Model
+  commentId: P:Fusee.Xene.StandardState.Model
+  id: Model
+  parent: Fusee.Xene.StandardState
+  langs:
+  - csharp
+  - vb
+  name: Model
+  nameWithType: StandardState.Model
+  fullName: Fusee.Xene.StandardState.Model
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/VisitorState.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Model
+    path: src/Fusee/src/Xene/VisitorState.cs
+    startLine: 372
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nGets and sets the top of the Model matrix stack. The Model matrix transforms model coordinates into world coordinates.\n"
+  example: []
+  syntax:
+    content: public float4x4 Model { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe Model matrix.\n"
+    content.vb: Public Property Model As float4x4
+  overload: Fusee.Xene.StandardState.Model*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Xene.StandardState.View
+  commentId: P:Fusee.Xene.StandardState.View
+  id: View
+  parent: Fusee.Xene.StandardState
+  langs:
+  - csharp
+  - vb
+  name: View
+  nameWithType: StandardState.View
+  fullName: Fusee.Xene.StandardState.View
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/VisitorState.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: View
+    path: src/Fusee/src/Xene/VisitorState.cs
+    startLine: 385
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nGets and sets the top of the View matrix stack. The View matrix transforms world coordinates into view coordinates.\nThe View matrix contains a camera&apos;s extrinsic parameters (position and orientation).\n"
+  example: []
+  syntax:
+    content: public float4x4 View { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe View matrix.\n"
+    content.vb: Public Property View As float4x4
+  overload: Fusee.Xene.StandardState.View*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Xene.StandardState.Projection
+  commentId: P:Fusee.Xene.StandardState.Projection
+  id: Projection
+  parent: Fusee.Xene.StandardState
+  langs:
+  - csharp
+  - vb
+  name: Projection
+  nameWithType: StandardState.Projection
+  fullName: Fusee.Xene.StandardState.Projection
+  type: Property
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/VisitorState.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Projection
+    path: src/Fusee/src/Xene/VisitorState.cs
+    startLine: 398
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nGets and sets the top of the Projection matrix stack. The Projection matrix transforms view coordinates into projection coordinates.\nThe Projection matrix contains a camera&apos;s intrinsic parameters (field-of-view/focal length for perspective projections).\n"
+  example: []
+  syntax:
+    content: public float4x4 Projection { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Math.Core.float4x4
+      description: "\nThe Projection matrix\n"
+    content.vb: Public Property Projection As float4x4
+  overload: Fusee.Xene.StandardState.Projection*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Xene.StandardState.#ctor
+  commentId: M:Fusee.Xene.StandardState.#ctor
+  id: '#ctor'
+  parent: Fusee.Xene.StandardState
+  langs:
+  - csharp
+  - vb
+  name: StandardState()
+  nameWithType: StandardState.StandardState()
+  fullName: Fusee.Xene.StandardState.StandardState()
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/VisitorState.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Xene/VisitorState.cs
+    startLine: 407
+  assemblies:
+  - Fusee.Xene
+  namespace: Fusee.Xene
+  summary: "\nInitializes a new instance of the <xref href=\"Fusee.Xene.StandardState\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public StandardState()
+    content.vb: Public Sub New
+  overload: Fusee.Xene.StandardState.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Xene
+  commentId: N:Fusee.Xene
+  name: Fusee.Xene
+  nameWithType: Fusee.Xene
+  fullName: Fusee.Xene
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Xene.VisitorState
+  commentId: T:Fusee.Xene.VisitorState
+  parent: Fusee.Xene
+  name: VisitorState
+  nameWithType: VisitorState
+  fullName: Fusee.Xene.VisitorState
+- uid: Fusee.Xene.IStateStack
+  commentId: T:Fusee.Xene.IStateStack
+  parent: Fusee.Xene
+  name: IStateStack
+  nameWithType: IStateStack
+  fullName: Fusee.Xene.IStateStack
+- uid: Fusee.Xene.VisitorState.RegisterState(Fusee.Xene.IStateStack)
+  commentId: M:Fusee.Xene.VisitorState.RegisterState(Fusee.Xene.IStateStack)
+  parent: Fusee.Xene.VisitorState
+  name: RegisterState(IStateStack)
+  nameWithType: VisitorState.RegisterState(IStateStack)
+  fullName: Fusee.Xene.VisitorState.RegisterState(Fusee.Xene.IStateStack)
+  spec.csharp:
+  - uid: Fusee.Xene.VisitorState.RegisterState(Fusee.Xene.IStateStack)
+    name: RegisterState
+    nameWithType: VisitorState.RegisterState
+    fullName: Fusee.Xene.VisitorState.RegisterState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Xene.IStateStack
+    name: IStateStack
+    nameWithType: IStateStack
+    fullName: Fusee.Xene.IStateStack
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.VisitorState.RegisterState(Fusee.Xene.IStateStack)
+    name: RegisterState
+    nameWithType: VisitorState.RegisterState
+    fullName: Fusee.Xene.VisitorState.RegisterState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Xene.IStateStack
+    name: IStateStack
+    nameWithType: IStateStack
+    fullName: Fusee.Xene.IStateStack
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.VisitorState.Push
+  commentId: M:Fusee.Xene.VisitorState.Push
+  parent: Fusee.Xene.VisitorState
+  name: Push()
+  nameWithType: VisitorState.Push()
+  fullName: Fusee.Xene.VisitorState.Push()
+  spec.csharp:
+  - uid: Fusee.Xene.VisitorState.Push
+    name: Push
+    nameWithType: VisitorState.Push
+    fullName: Fusee.Xene.VisitorState.Push
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.VisitorState.Push
+    name: Push
+    nameWithType: VisitorState.Push
+    fullName: Fusee.Xene.VisitorState.Push
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.VisitorState.Pop
+  commentId: M:Fusee.Xene.VisitorState.Pop
+  parent: Fusee.Xene.VisitorState
+  name: Pop()
+  nameWithType: VisitorState.Pop()
+  fullName: Fusee.Xene.VisitorState.Pop()
+  spec.csharp:
+  - uid: Fusee.Xene.VisitorState.Pop
+    name: Pop
+    nameWithType: VisitorState.Pop
+    fullName: Fusee.Xene.VisitorState.Pop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.VisitorState.Pop
+    name: Pop
+    nameWithType: VisitorState.Pop
+    fullName: Fusee.Xene.VisitorState.Pop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.VisitorState.Clear
+  commentId: M:Fusee.Xene.VisitorState.Clear
+  parent: Fusee.Xene.VisitorState
+  name: Clear()
+  nameWithType: VisitorState.Clear()
+  fullName: Fusee.Xene.VisitorState.Clear()
+  spec.csharp:
+  - uid: Fusee.Xene.VisitorState.Clear
+    name: Clear
+    nameWithType: VisitorState.Clear
+    fullName: Fusee.Xene.VisitorState.Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Xene.VisitorState.Clear
+    name: Clear
+    nameWithType: VisitorState.Clear
+    fullName: Fusee.Xene.VisitorState.Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene.VisitorState.Depth
+  commentId: P:Fusee.Xene.VisitorState.Depth
+  parent: Fusee.Xene.VisitorState
+  name: Depth
+  nameWithType: VisitorState.Depth
+  fullName: Fusee.Xene.VisitorState.Depth
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Xene.StandardState.Model*
+  commentId: Overload:Fusee.Xene.StandardState.Model
+  name: Model
+  nameWithType: StandardState.Model
+  fullName: Fusee.Xene.StandardState.Model
+- uid: Fusee.Math.Core.float4x4
+  commentId: T:Fusee.Math.Core.float4x4
+  parent: Fusee.Math.Core
+  name: float4x4
+  nameWithType: float4x4
+  fullName: Fusee.Math.Core.float4x4
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Xene.StandardState.View*
+  commentId: Overload:Fusee.Xene.StandardState.View
+  name: View
+  nameWithType: StandardState.View
+  fullName: Fusee.Xene.StandardState.View
+- uid: Fusee.Xene.StandardState.Projection*
+  commentId: Overload:Fusee.Xene.StandardState.Projection
+  name: Projection
+  nameWithType: StandardState.Projection
+  fullName: Fusee.Xene.StandardState.Projection
+- uid: Fusee.Xene.StandardState
+  commentId: T:Fusee.Xene.StandardState
+  name: StandardState
+  nameWithType: StandardState
+  fullName: Fusee.Xene.StandardState
+- uid: Fusee.Xene.StandardState.#ctor*
+  commentId: Overload:Fusee.Xene.StandardState.#ctor
+  name: StandardState
+  nameWithType: StandardState.StandardState
+  fullName: Fusee.Xene.StandardState.StandardState

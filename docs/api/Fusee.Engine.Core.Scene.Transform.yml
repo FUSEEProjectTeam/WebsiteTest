@@ -1,0 +1,1478 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Scene.Transform
+  commentId: T:Fusee.Engine.Core.Scene.Transform
+  id: Transform
+  parent: Fusee.Engine.Core.Scene
+  children:
+  - Fusee.Engine.Core.Scene.Transform.Rotation
+  - Fusee.Engine.Core.Scene.Transform.Scale
+  - Fusee.Engine.Core.Scene.Transform.Translation
+  langs:
+  - csharp
+  - vb
+  name: Transform
+  nameWithType: Transform
+  fullName: Fusee.Engine.Core.Scene.Transform
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Transform.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Transform
+    path: src/Fusee/src/Engine/Core/Scene/Transform.cs
+    startLine: 11
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nTransformation (position, orientation and size) of the node.\n"
+  example: []
+  syntax:
+    content: 'public class Transform : SceneComponent, IComponent'
+    content.vb: >-
+      Public Class Transform
+          Inherits SceneComponent
+          Implements IComponent
+  inheritance:
+  - System.Object
+  - Fusee.Engine.Core.Scene.SceneComponent
+  implements:
+  - Fusee.Xene.IComponent
+  inheritedMembers:
+  - Fusee.Engine.Core.Scene.SceneComponent.Name
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.Matrix
+  - Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation
+  - Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Math.Core.float3)
+  - Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Math.Core.float4x4)
+  - Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Math.Core.float3,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  - Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Math.Core.Quaternion,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  - Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  - Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Math.Core.float4x4,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  - Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.FpsView(System.Single,System.Single,System.Single,System.Single,System.Single)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Core.Scene.Transform.Translation
+  commentId: F:Fusee.Engine.Core.Scene.Transform.Translation
+  id: Translation
+  parent: Fusee.Engine.Core.Scene.Transform
+  langs:
+  - csharp
+  - vb
+  name: Translation
+  nameWithType: Transform.Translation
+  fullName: Fusee.Engine.Core.Scene.Transform.Translation
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Transform.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Translation
+    path: src/Fusee/src/Engine/Core/Scene/Transform.cs
+    startLine: 16
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nThe translation (position) of the node.\n"
+  example: []
+  syntax:
+    content: public float3 Translation
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Translation As float3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.Transform.Rotation
+  commentId: F:Fusee.Engine.Core.Scene.Transform.Rotation
+  id: Rotation
+  parent: Fusee.Engine.Core.Scene.Transform
+  langs:
+  - csharp
+  - vb
+  name: Rotation
+  nameWithType: Transform.Rotation
+  fullName: Fusee.Engine.Core.Scene.Transform.Rotation
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Transform.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Rotation
+    path: src/Fusee/src/Engine/Core/Scene/Transform.cs
+    startLine: 20
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nThe rotation (orientation) of the node.\n"
+  example: []
+  syntax:
+    content: public float3 Rotation
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Rotation As float3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.Transform.Scale
+  commentId: F:Fusee.Engine.Core.Scene.Transform.Scale
+  id: Scale
+  parent: Fusee.Engine.Core.Scene.Transform
+  langs:
+  - csharp
+  - vb
+  name: Scale
+  nameWithType: Transform.Scale
+  fullName: Fusee.Engine.Core.Scene.Transform.Scale
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/Transform.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Scale
+    path: src/Fusee/src/Engine/Core/Scene/Transform.cs
+    startLine: 24
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nThe scale (size) of the node.\n"
+  example: []
+  syntax:
+    content: public float3 Scale
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Scale As float3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Core.Scene.SceneComponent
+  commentId: T:Fusee.Engine.Core.Scene.SceneComponent
+  parent: Fusee.Engine.Core.Scene
+  name: SceneComponent
+  nameWithType: SceneComponent
+  fullName: Fusee.Engine.Core.Scene.SceneComponent
+- uid: Fusee.Xene.IComponent
+  commentId: T:Fusee.Xene.IComponent
+  parent: Fusee.Xene
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Fusee.Xene.IComponent
+- uid: Fusee.Engine.Core.Scene.SceneComponent.Name
+  commentId: F:Fusee.Engine.Core.Scene.SceneComponent.Name
+  parent: Fusee.Engine.Core.Scene.SceneComponent
+  name: Name
+  nameWithType: SceneComponent.Name
+  fullName: Fusee.Engine.Core.Scene.SceneComponent.Name
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.Matrix
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Matrix(Fusee.Engine.Core.Scene.Transform)
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  definition: Fusee.Engine.Core.Scene.SceneExtensions.Matrix(Fusee.Engine.Core.Scene.Transform)
+  name: Matrix()
+  nameWithType: SceneExtensions.Matrix()
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Matrix()
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Matrix
+    name: Matrix
+    nameWithType: SceneExtensions.Matrix
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Matrix
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Matrix
+    name: Matrix
+    nameWithType: SceneExtensions.Matrix
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Matrix
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation(Fusee.Engine.Core.Scene.Transform)
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  definition: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation(Fusee.Engine.Core.Scene.Transform)
+  name: GetLocalTransformation()
+  nameWithType: SceneExtensions.GetLocalTransformation()
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation()
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation
+    name: GetLocalTransformation
+    nameWithType: SceneExtensions.GetLocalTransformation
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation
+    name: GetLocalTransformation
+    nameWithType: SceneExtensions.GetLocalTransformation
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3)
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  definition: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3)
+  name: Translate(float3)
+  nameWithType: SceneExtensions.Translate(float3)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Math.Core.float3)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Math.Core.float3)
+    name: Translate
+    nameWithType: SceneExtensions.Translate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Translate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Math.Core.float3)
+    name: Translate
+    nameWithType: SceneExtensions.Translate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Translate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Math.Core.float4x4)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4)
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  definition: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4)
+  name: Translate(float4x4)
+  nameWithType: SceneExtensions.Translate(float4x4)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Math.Core.float4x4)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Math.Core.float4x4)
+    name: Translate
+    nameWithType: SceneExtensions.Translate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Translate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Math.Core.float4x4)
+    name: Translate
+    nameWithType: SceneExtensions.Translate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Translate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Math.Core.float3,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  definition: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  name: Rotate(float3, SceneExtensions.Space)
+  nameWithType: SceneExtensions.Rotate(float3, SceneExtensions.Space)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Math.Core.float3, Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Math.Core.float3,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+    name: Rotate
+    nameWithType: SceneExtensions.Rotate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Space
+    name: SceneExtensions.Space
+    nameWithType: SceneExtensions.Space
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Space
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Math.Core.float3,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+    name: Rotate
+    nameWithType: SceneExtensions.Rotate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Space
+    name: SceneExtensions.Space
+    nameWithType: SceneExtensions.Space
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Space
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Math.Core.Quaternion,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.Quaternion,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  definition: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.Quaternion,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  name: Rotate(Quaternion, SceneExtensions.Space)
+  nameWithType: SceneExtensions.Rotate(Quaternion, SceneExtensions.Space)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Math.Core.Quaternion, Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Math.Core.Quaternion,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+    name: Rotate
+    nameWithType: SceneExtensions.Rotate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: Fusee.Math.Core.Quaternion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Space
+    name: SceneExtensions.Space
+    nameWithType: SceneExtensions.Space
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Space
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Math.Core.Quaternion,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+    name: Rotate
+    nameWithType: SceneExtensions.Rotate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: Fusee.Math.Core.Quaternion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Space
+    name: SceneExtensions.Space
+    nameWithType: SceneExtensions.Space
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Space
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  definition: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  name: RotateAround(float3, float3)
+  nameWithType: SceneExtensions.RotateAround(float3, float3)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+    name: RotateAround
+    nameWithType: SceneExtensions.RotateAround
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+    name: RotateAround
+    nameWithType: SceneExtensions.RotateAround
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Math.Core.float4x4,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  definition: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  name: Rotate(float4x4, SceneExtensions.Space)
+  nameWithType: SceneExtensions.Rotate(float4x4, SceneExtensions.Space)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Math.Core.float4x4, Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Math.Core.float4x4,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+    name: Rotate
+    nameWithType: SceneExtensions.Rotate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Space
+    name: SceneExtensions.Space
+    nameWithType: SceneExtensions.Space
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Space
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Math.Core.float4x4,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+    name: Rotate
+    nameWithType: SceneExtensions.Rotate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Space
+    name: SceneExtensions.Space
+    nameWithType: SceneExtensions.Space
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Space
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.Transform.Fusee.Engine.Core.Scene.SceneExtensions.FpsView(System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FpsView(Fusee.Engine.Core.Scene.Transform,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Fusee.Engine.Core.Scene.SceneExtensions
+  definition: Fusee.Engine.Core.Scene.SceneExtensions.FpsView(Fusee.Engine.Core.Scene.Transform,System.Single,System.Single,System.Single,System.Single,System.Single)
+  name: FpsView(Single, Single, Single, Single, Single)
+  nameWithType: SceneExtensions.FpsView(Single, Single, Single, Single, Single)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FpsView(System.Single, System.Single, System.Single, System.Single, System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FpsView(System.Single,System.Single,System.Single,System.Single,System.Single)
+    name: FpsView
+    nameWithType: SceneExtensions.FpsView
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FpsView
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FpsView(System.Single,System.Single,System.Single,System.Single,System.Single)
+    name: FpsView
+    nameWithType: SceneExtensions.FpsView
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FpsView
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Xene
+  commentId: N:Fusee.Xene
+  name: Fusee.Xene
+  nameWithType: Fusee.Xene
+  fullName: Fusee.Xene
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.Matrix(Fusee.Engine.Core.Scene.Transform)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Matrix(Fusee.Engine.Core.Scene.Transform)
+  name: Matrix(Transform)
+  nameWithType: SceneExtensions.Matrix(Transform)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Matrix(Fusee.Engine.Core.Scene.Transform)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Matrix(Fusee.Engine.Core.Scene.Transform)
+    name: Matrix
+    nameWithType: SceneExtensions.Matrix
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Matrix
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Matrix(Fusee.Engine.Core.Scene.Transform)
+    name: Matrix
+    nameWithType: SceneExtensions.Matrix
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Matrix
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.SceneExtensions
+  commentId: T:Fusee.Engine.Core.Scene.SceneExtensions
+  parent: Fusee.Engine.Core.Scene
+  name: SceneExtensions
+  nameWithType: SceneExtensions
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation(Fusee.Engine.Core.Scene.Transform)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation(Fusee.Engine.Core.Scene.Transform)
+  name: GetLocalTransformation(Transform)
+  nameWithType: SceneExtensions.GetLocalTransformation(Transform)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation(Fusee.Engine.Core.Scene.Transform)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation(Fusee.Engine.Core.Scene.Transform)
+    name: GetLocalTransformation
+    nameWithType: SceneExtensions.GetLocalTransformation
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation(Fusee.Engine.Core.Scene.Transform)
+    name: GetLocalTransformation
+    nameWithType: SceneExtensions.GetLocalTransformation
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3)
+  name: Translate(Transform, float3)
+  nameWithType: SceneExtensions.Translate(Transform, float3)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform, Fusee.Math.Core.float3)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3)
+    name: Translate
+    nameWithType: SceneExtensions.Translate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Translate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3)
+    name: Translate
+    nameWithType: SceneExtensions.Translate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Translate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4)
+  name: Translate(Transform, float4x4)
+  nameWithType: SceneExtensions.Translate(Transform, float4x4)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform, Fusee.Math.Core.float4x4)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4)
+    name: Translate
+    nameWithType: SceneExtensions.Translate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Translate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4)
+    name: Translate
+    nameWithType: SceneExtensions.Translate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Translate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  name: Rotate(Transform, float3, SceneExtensions.Space)
+  nameWithType: SceneExtensions.Rotate(Transform, float3, SceneExtensions.Space)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform, Fusee.Math.Core.float3, Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+    name: Rotate
+    nameWithType: SceneExtensions.Rotate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Space
+    name: SceneExtensions.Space
+    nameWithType: SceneExtensions.Space
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Space
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+    name: Rotate
+    nameWithType: SceneExtensions.Rotate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Space
+    name: SceneExtensions.Space
+    nameWithType: SceneExtensions.Space
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Space
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.Quaternion,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.Quaternion,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  name: Rotate(Transform, Quaternion, SceneExtensions.Space)
+  nameWithType: SceneExtensions.Rotate(Transform, Quaternion, SceneExtensions.Space)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform, Fusee.Math.Core.Quaternion, Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.Quaternion,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+    name: Rotate
+    nameWithType: SceneExtensions.Rotate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: Fusee.Math.Core.Quaternion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Space
+    name: SceneExtensions.Space
+    nameWithType: SceneExtensions.Space
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Space
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.Quaternion,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+    name: Rotate
+    nameWithType: SceneExtensions.Rotate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: Fusee.Math.Core.Quaternion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Space
+    name: SceneExtensions.Space
+    nameWithType: SceneExtensions.Space
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Space
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  name: RotateAround(Transform, float3, float3)
+  nameWithType: SceneExtensions.RotateAround(Transform, float3, float3)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Engine.Core.Scene.Transform, Fusee.Math.Core.float3, Fusee.Math.Core.float3)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+    name: RotateAround
+    nameWithType: SceneExtensions.RotateAround
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+    name: RotateAround
+    nameWithType: SceneExtensions.RotateAround
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.RotateAround
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float3
+    name: float3
+    nameWithType: float3
+    fullName: Fusee.Math.Core.float3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  name: Rotate(Transform, float4x4, SceneExtensions.Space)
+  nameWithType: SceneExtensions.Rotate(Transform, float4x4, SceneExtensions.Space)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform, Fusee.Math.Core.float4x4, Fusee.Engine.Core.Scene.SceneExtensions.Space)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+    name: Rotate
+    nameWithType: SceneExtensions.Rotate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Space
+    name: SceneExtensions.Space
+    nameWithType: SceneExtensions.Space
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Space
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4,Fusee.Engine.Core.Scene.SceneExtensions.Space)
+    name: Rotate
+    nameWithType: SceneExtensions.Rotate
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Rotate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.Space
+    name: SceneExtensions.Space
+    nameWithType: SceneExtensions.Space
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.Space
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.FpsView(Fusee.Engine.Core.Scene.Transform,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FpsView(Fusee.Engine.Core.Scene.Transform,System.Single,System.Single,System.Single,System.Single,System.Single)
+  isExternal: true
+  name: FpsView(Transform, Single, Single, Single, Single, Single)
+  nameWithType: SceneExtensions.FpsView(Transform, Single, Single, Single, Single, Single)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FpsView(Fusee.Engine.Core.Scene.Transform, System.Single, System.Single, System.Single, System.Single, System.Single)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FpsView(Fusee.Engine.Core.Scene.Transform,System.Single,System.Single,System.Single,System.Single,System.Single)
+    name: FpsView
+    nameWithType: SceneExtensions.FpsView
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FpsView
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FpsView(Fusee.Engine.Core.Scene.Transform,System.Single,System.Single,System.Single,System.Single,System.Single)
+    name: FpsView
+    nameWithType: SceneExtensions.FpsView
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FpsView
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: Fusee.Engine.Core.Scene.Transform
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core

@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Common.ClearFlags
+  commentId: T:Fusee.Engine.Common.ClearFlags
+  id: ClearFlags
+  parent: Fusee.Engine.Common
+  children:
+  - Fusee.Engine.Common.ClearFlags.Accum
+  - Fusee.Engine.Common.ClearFlags.Color
+  - Fusee.Engine.Common.ClearFlags.Depth
+  - Fusee.Engine.Common.ClearFlags.Stencil
+  langs:
+  - csharp
+  - vb
+  name: ClearFlags
+  nameWithType: ClearFlags
+  fullName: Fusee.Engine.Common.ClearFlags
+  type: Enum
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: ClearFlags
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 222
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nSpecifies the buffer to use when calling the Clear method. \n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum ClearFlags
+    content.vb: >-
+      <Flags>
+
+      Public Enum ClearFlags
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Fusee.Engine.Common.ClearFlags.Depth
+  commentId: F:Fusee.Engine.Common.ClearFlags.Depth
+  id: Depth
+  parent: Fusee.Engine.Common.ClearFlags
+  langs:
+  - csharp
+  - vb
+  name: Depth
+  nameWithType: ClearFlags.Depth
+  fullName: Fusee.Engine.Common.ClearFlags.Depth
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Depth
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 226
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: Depth = 256
+    return:
+      type: Fusee.Engine.Common.ClearFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.ClearFlags.Accum
+  commentId: F:Fusee.Engine.Common.ClearFlags.Accum
+  id: Accum
+  parent: Fusee.Engine.Common.ClearFlags
+  langs:
+  - csharp
+  - vb
+  name: Accum
+  nameWithType: ClearFlags.Accum
+  fullName: Fusee.Engine.Common.ClearFlags.Accum
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Accum
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 227
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: Accum = 512
+    return:
+      type: Fusee.Engine.Common.ClearFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.ClearFlags.Stencil
+  commentId: F:Fusee.Engine.Common.ClearFlags.Stencil
+  id: Stencil
+  parent: Fusee.Engine.Common.ClearFlags
+  langs:
+  - csharp
+  - vb
+  name: Stencil
+  nameWithType: ClearFlags.Stencil
+  fullName: Fusee.Engine.Common.ClearFlags.Stencil
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Stencil
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 228
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: Stencil = 1024
+    return:
+      type: Fusee.Engine.Common.ClearFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.ClearFlags.Color
+  commentId: F:Fusee.Engine.Common.ClearFlags.Color
+  id: Color
+  parent: Fusee.Engine.Common.ClearFlags
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: ClearFlags.Color
+  fullName: Fusee.Engine.Common.ClearFlags.Color
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Common/RCEnums.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Color
+    path: src/Fusee/src/Engine/Common/RCEnums.cs
+    startLine: 229
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  syntax:
+    content: Color = 16384
+    return:
+      type: Fusee.Engine.Common.ClearFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Common.ClearFlags
+  commentId: T:Fusee.Engine.Common.ClearFlags
+  parent: Fusee.Engine.Common
+  name: ClearFlags
+  nameWithType: ClearFlags
+  fullName: Fusee.Engine.Common.ClearFlags

@@ -1,0 +1,562 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.ShaderShards.MaterialProps
+  commentId: T:Fusee.Engine.Core.ShaderShards.MaterialProps
+  id: MaterialProps
+  parent: Fusee.Engine.Core.ShaderShards
+  children:
+  - Fusee.Engine.Core.ShaderShards.MaterialProps.HasAlbedo
+  - Fusee.Engine.Core.ShaderShards.MaterialProps.HasAlbedoTexture
+  - Fusee.Engine.Core.ShaderShards.MaterialProps.HasEmissive
+  - Fusee.Engine.Core.ShaderShards.MaterialProps.HasEmissiveTexture
+  - Fusee.Engine.Core.ShaderShards.MaterialProps.HasNormalMap
+  - Fusee.Engine.Core.ShaderShards.MaterialProps.HasSpecular
+  - Fusee.Engine.Core.ShaderShards.MaterialProps.HasSpecularTexture
+  langs:
+  - csharp
+  - vb
+  name: MaterialProps
+  nameWithType: MaterialProps
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialProps
+  type: Struct
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: MaterialProps
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 100
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nCollection of bools, describing the material properties.\n"
+  example: []
+  syntax:
+    content: public struct MaterialProps
+    content.vb: Public Structure MaterialProps
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Fusee.Engine.Core.ShaderShards.MaterialProps.HasAlbedo
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialProps.HasAlbedo
+  id: HasAlbedo
+  parent: Fusee.Engine.Core.ShaderShards.MaterialProps
+  langs:
+  - csharp
+  - vb
+  name: HasAlbedo
+  nameWithType: MaterialProps.HasAlbedo
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialProps.HasAlbedo
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: HasAlbedo
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 105
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nDoes this material have an albedo color?\n"
+  example: []
+  syntax:
+    content: public bool HasAlbedo
+    return:
+      type: System.Boolean
+    content.vb: Public HasAlbedo As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialProps.HasAlbedoTexture
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialProps.HasAlbedoTexture
+  id: HasAlbedoTexture
+  parent: Fusee.Engine.Core.ShaderShards.MaterialProps
+  langs:
+  - csharp
+  - vb
+  name: HasAlbedoTexture
+  nameWithType: MaterialProps.HasAlbedoTexture
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialProps.HasAlbedoTexture
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: HasAlbedoTexture
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 110
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nDoes this material have an albedo texture?\n"
+  example: []
+  syntax:
+    content: public bool HasAlbedoTexture
+    return:
+      type: System.Boolean
+    content.vb: Public HasAlbedoTexture As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialProps.HasSpecular
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialProps.HasSpecular
+  id: HasSpecular
+  parent: Fusee.Engine.Core.ShaderShards.MaterialProps
+  langs:
+  - csharp
+  - vb
+  name: HasSpecular
+  nameWithType: MaterialProps.HasSpecular
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialProps.HasSpecular
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: HasSpecular
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 115
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nDoes this material have a specular reflection?\n"
+  example: []
+  syntax:
+    content: public bool HasSpecular
+    return:
+      type: System.Boolean
+    content.vb: Public HasSpecular As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialProps.HasSpecularTexture
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialProps.HasSpecularTexture
+  id: HasSpecularTexture
+  parent: Fusee.Engine.Core.ShaderShards.MaterialProps
+  langs:
+  - csharp
+  - vb
+  name: HasSpecularTexture
+  nameWithType: MaterialProps.HasSpecularTexture
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialProps.HasSpecularTexture
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: HasSpecularTexture
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 120
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nDoes this material have a specular texture?\n"
+  example: []
+  syntax:
+    content: public bool HasSpecularTexture
+    return:
+      type: System.Boolean
+    content.vb: Public HasSpecularTexture As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialProps.HasEmissive
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialProps.HasEmissive
+  id: HasEmissive
+  parent: Fusee.Engine.Core.ShaderShards.MaterialProps
+  langs:
+  - csharp
+  - vb
+  name: HasEmissive
+  nameWithType: MaterialProps.HasEmissive
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialProps.HasEmissive
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: HasEmissive
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 125
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nDoes this material have a emissive component?\n"
+  example: []
+  syntax:
+    content: public bool HasEmissive
+    return:
+      type: System.Boolean
+    content.vb: Public HasEmissive As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialProps.HasEmissiveTexture
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialProps.HasEmissiveTexture
+  id: HasEmissiveTexture
+  parent: Fusee.Engine.Core.ShaderShards.MaterialProps
+  langs:
+  - csharp
+  - vb
+  name: HasEmissiveTexture
+  nameWithType: MaterialProps.HasEmissiveTexture
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialProps.HasEmissiveTexture
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: HasEmissiveTexture
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 130
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nDoes this material have a emissive texture?\n"
+  example: []
+  syntax:
+    content: public bool HasEmissiveTexture
+    return:
+      type: System.Boolean
+    content.vb: Public HasEmissiveTexture As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.ShaderShards.MaterialProps.HasNormalMap
+  commentId: F:Fusee.Engine.Core.ShaderShards.MaterialProps.HasNormalMap
+  id: HasNormalMap
+  parent: Fusee.Engine.Core.ShaderShards.MaterialProps
+  langs:
+  - csharp
+  - vb
+  name: HasNormalMap
+  nameWithType: MaterialProps.HasNormalMap
+  fullName: Fusee.Engine.Core.ShaderShards.MaterialProps.HasNormalMap
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: HasNormalMap
+    path: src/Fusee/src/Engine/Core/ShaderShards/ShaderShardUtil.cs
+    startLine: 135
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nDoes this material have a normal map?\n"
+  example: []
+  syntax:
+    content: public bool HasNormalMap
+    return:
+      type: System.Boolean
+    content.vb: Public HasNormalMap As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine.Core.ShaderShards
+  commentId: N:Fusee.Engine.Core.ShaderShards
+  name: Fusee.Engine.Core.ShaderShards
+  nameWithType: Fusee.Engine.Core.ShaderShards
+  fullName: Fusee.Engine.Core.ShaderShards
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

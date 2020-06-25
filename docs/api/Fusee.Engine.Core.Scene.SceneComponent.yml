@@ -1,0 +1,499 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Scene.SceneComponent
+  commentId: T:Fusee.Engine.Core.Scene.SceneComponent
+  id: SceneComponent
+  parent: Fusee.Engine.Core.Scene
+  children:
+  - Fusee.Engine.Core.Scene.SceneComponent.Name
+  langs:
+  - csharp
+  - vb
+  name: SceneComponent
+  nameWithType: SceneComponent
+  fullName: Fusee.Engine.Core.Scene.SceneComponent
+  type: Class
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneComponent.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: SceneComponent
+    path: src/Fusee/src/Engine/Core/Scene/SceneComponent.cs
+    startLine: 8
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nBase type for all Components used as building blocks within <xref href=\"Fusee.Engine\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: 'public class SceneComponent : IComponent'
+    content.vb: >-
+      Public Class SceneComponent
+          Implements IComponent
+  seealso:
+  - linkId: Fusee.Xene.IComponent
+    commentId: T:Fusee.Xene.IComponent
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Fusee.Engine.Core.Scene.Animation
+  - Fusee.Engine.Core.Scene.Bone
+  - Fusee.Engine.Core.Scene.Camera
+  - Fusee.Engine.Core.Scene.CanvasTransform
+  - Fusee.Engine.Core.Scene.CodeComponent
+  - Fusee.Engine.Core.Scene.Light
+  - Fusee.Engine.Core.Scene.Mesh
+  - Fusee.Engine.Core.Scene.Octant
+  - Fusee.Engine.Core.Scene.RectTransform
+  - Fusee.Engine.Core.Scene.ShaderEffect
+  - Fusee.Engine.Core.Scene.Transform
+  - Fusee.Engine.Core.Scene.Weight
+  - Fusee.Engine.Core.Scene.XForm
+  - Fusee.Engine.Core.Scene.XFormText
+  implements:
+  - Fusee.Xene.IComponent
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Engine.Core.Scene.SceneComponent.Name
+  commentId: F:Fusee.Engine.Core.Scene.SceneComponent.Name
+  id: Name
+  parent: Fusee.Engine.Core.Scene.SceneComponent
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: SceneComponent.Name
+  fullName: Fusee.Engine.Core.Scene.SceneComponent.Name
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Scene/SceneComponent.cs
+      branch: master
+      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
+    id: Name
+    path: src/Fusee/src/Engine/Core/Scene/SceneComponent.cs
+    startLine: 14
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nThe components name. Might serve as identifier in find traversals.\n"
+  example: []
+  syntax:
+    content: public string Name
+    return:
+      type: System.String
+    content.vb: Public Name As String
+  seealso:
+  - linkId: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+    commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Fusee.Engine
+  commentId: N:Fusee.Engine
+  isExternal: true
+- uid: Fusee.Xene.IComponent
+  commentId: T:Fusee.Xene.IComponent
+  parent: Fusee.Xene
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Fusee.Xene.IComponent
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Xene
+  commentId: N:Fusee.Xene
+  name: Fusee.Xene
+  nameWithType: Fusee.Xene
+  fullName: Fusee.Xene
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  commentId: M:Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+  isExternal: true
+  name: FindComponents(SceneNode, Predicate<SceneComponent>)
+  nameWithType: SceneExtensions.FindComponents(SceneNode, Predicate<SceneComponent>)
+  fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Fusee.Engine.Core.Scene.SceneNode, System.Predicate<Fusee.Engine.Core.Scene.SceneComponent>)
+  nameWithType.vb: SceneExtensions.FindComponents(SceneNode, Predicate(Of SceneComponent))
+  fullName.vb: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Fusee.Engine.Core.Scene.SceneNode, System.Predicate(Of Fusee.Engine.Core.Scene.SceneComponent))
+  name.vb: FindComponents(SceneNode, Predicate(Of SceneComponent))
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+    name: FindComponents
+    nameWithType: SceneExtensions.FindComponents
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.SceneComponent
+    name: SceneComponent
+    nameWithType: SceneComponent
+    fullName: Fusee.Engine.Core.Scene.SceneComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})
+    name: FindComponents
+    nameWithType: SceneExtensions.FindComponents
+    fullName: Fusee.Engine.Core.Scene.SceneExtensions.FindComponents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.SceneNode
+    name: SceneNode
+    nameWithType: SceneNode
+    fullName: Fusee.Engine.Core.Scene.SceneNode
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.SceneComponent
+    name: SceneComponent
+    nameWithType: SceneComponent
+    fullName: Fusee.Engine.Core.Scene.SceneComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
