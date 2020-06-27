@@ -24,12 +24,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMesh
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMesh.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FusMesh
-    path: src/Fusee/src/Serialization/V1/FusMesh.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMesh.cs
     startLine: 8
   assemblies:
   - Fusee.Serialization
@@ -37,8 +33,13 @@ items:
   summary: "\nContains 3D geometry information (Vertices, Triangles, Normals, UVs, ...).\n"
   example: []
   syntax:
-    content: 'public class FusMesh : FusComponent, IComponent'
+    content: >-
+      [ProtoContract]
+
+      public class FusMesh : FusComponent, IComponent
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusMesh
           Inherits FusComponent
           Implements IComponent
@@ -56,6 +57,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -74,12 +79,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMesh.Vertices
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMesh.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Vertices
-    path: src/Fusee/src/Serialization/V1/FusMesh.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMesh.cs
     startLine: 19
   assemblies:
   - Fusee.Serialization
@@ -87,11 +88,23 @@ items:
   summary: "\nGets and sets the vertices.\n"
   example: []
   syntax:
-    content: public float3[] Vertices
+    content: >-
+      [ProtoMember(1)]
+
+      public float3[] Vertices
     return:
       type: Fusee.Math.Core.float3[]
       description: "\nThe vertices.\n"
-    content.vb: Public Vertices As float3()
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Vertices As float3()
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -108,12 +121,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMesh.Colors
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMesh.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Colors
-    path: src/Fusee/src/Serialization/V1/FusMesh.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMesh.cs
     startLine: 28
   assemblies:
   - Fusee.Serialization
@@ -121,11 +130,23 @@ items:
   summary: "\nGets and sets the color of a single vertex.\n"
   example: []
   syntax:
-    content: public uint[] Colors
+    content: >-
+      [ProtoMember(2)]
+
+      public uint[] Colors
     return:
       type: System.UInt32[]
       description: "\nThe color.\n"
-    content.vb: Public Colors As UInteger()
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Colors As UInteger()
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -142,12 +163,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMesh.Normals
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMesh.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Normals
-    path: src/Fusee/src/Serialization/V1/FusMesh.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMesh.cs
     startLine: 37
   assemblies:
   - Fusee.Serialization
@@ -155,11 +172,23 @@ items:
   summary: "\nGets and sets the normals.\n"
   example: []
   syntax:
-    content: public float3[] Normals
+    content: >-
+      [ProtoMember(3)]
+
+      public float3[] Normals
     return:
       type: Fusee.Math.Core.float3[]
       description: "\nThe normals..\n"
-    content.vb: Public Normals As float3()
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public Normals As float3()
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -176,12 +205,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMesh.UVs
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMesh.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: UVs
-    path: src/Fusee/src/Serialization/V1/FusMesh.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMesh.cs
     startLine: 46
   assemblies:
   - Fusee.Serialization
@@ -189,11 +214,23 @@ items:
   summary: "\nGets and sets the UV-coordinates.\n"
   example: []
   syntax:
-    content: public float2[] UVs
+    content: >-
+      [ProtoMember(4)]
+
+      public float2[] UVs
     return:
       type: Fusee.Math.Core.float2[]
       description: "\nThe UV-coordinates.\n"
-    content.vb: Public UVs As float2()
+    content.vb: >-
+      <ProtoMember(4)>
+
+      Public UVs As float2()
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -210,12 +247,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMesh.BoneWeights
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMesh.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: BoneWeights
-    path: src/Fusee/src/Serialization/V1/FusMesh.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMesh.cs
     startLine: 55
   assemblies:
   - Fusee.Serialization
@@ -223,11 +256,23 @@ items:
   summary: "\nGets and sets the boneweights.\n"
   example: []
   syntax:
-    content: public float4[] BoneWeights
+    content: >-
+      [ProtoMember(5)]
+
+      public float4[] BoneWeights
     return:
       type: Fusee.Math.Core.float4[]
       description: "\nThe boneweights.\n"
-    content.vb: Public BoneWeights As float4()
+    content.vb: >-
+      <ProtoMember(5)>
+
+      Public BoneWeights As float4()
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 5
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -244,12 +289,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMesh.BoneIndices
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMesh.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: BoneIndices
-    path: src/Fusee/src/Serialization/V1/FusMesh.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMesh.cs
     startLine: 64
   assemblies:
   - Fusee.Serialization
@@ -257,11 +298,23 @@ items:
   summary: "\nGets and sets the boneindices.\n"
   example: []
   syntax:
-    content: public float4[] BoneIndices
+    content: >-
+      [ProtoMember(6)]
+
+      public float4[] BoneIndices
     return:
       type: Fusee.Math.Core.float4[]
       description: "\nThe boneindices.\n"
-    content.vb: Public BoneIndices As float4()
+    content.vb: >-
+      <ProtoMember(6)>
+
+      Public BoneIndices As float4()
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 6
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -278,12 +331,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMesh.Triangles
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMesh.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Triangles
-    path: src/Fusee/src/Serialization/V1/FusMesh.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMesh.cs
     startLine: 73
   assemblies:
   - Fusee.Serialization
@@ -291,11 +340,23 @@ items:
   summary: "\nGets and sets the triangles.\n"
   example: []
   syntax:
-    content: public ushort[] Triangles
+    content: >-
+      [ProtoMember(7)]
+
+      public ushort[] Triangles
     return:
       type: System.UInt16[]
       description: "\nThe triangles.\n"
-    content.vb: Public Triangles As UShort()
+    content.vb: >-
+      <ProtoMember(7)>
+
+      Public Triangles As UShort()
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 7
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -312,12 +373,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMesh.BoundingBox
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMesh.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: BoundingBox
-    path: src/Fusee/src/Serialization/V1/FusMesh.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMesh.cs
     startLine: 79
   assemblies:
   - Fusee.Serialization
@@ -325,10 +382,22 @@ items:
   summary: "\nThe bounding box of this geometry chunk.\n"
   example: []
   syntax:
-    content: public AABBf BoundingBox
+    content: >-
+      [ProtoMember(8)]
+
+      public AABBf BoundingBox
     return:
       type: Fusee.Math.Core.AABBf
-    content.vb: Public BoundingBox As AABBf
+    content.vb: >-
+      <ProtoMember(8)>
+
+      Public BoundingBox As AABBf
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 8
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -345,12 +414,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMesh.Tangents
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMesh.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Tangents
-    path: src/Fusee/src/Serialization/V1/FusMesh.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMesh.cs
     startLine: 86
   assemblies:
   - Fusee.Serialization
@@ -358,10 +423,22 @@ items:
   summary: "\nThe tangent of each triangle for bump mapping.\nw-component is handedness\n"
   example: []
   syntax:
-    content: public float4[] Tangents
+    content: >-
+      [ProtoMember(9)]
+
+      public float4[] Tangents
     return:
       type: Fusee.Math.Core.float4[]
-    content.vb: Public Tangents As float4()
+    content.vb: >-
+      <ProtoMember(9)>
+
+      Public Tangents As float4()
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 9
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -378,12 +455,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMesh.BiTangents
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMesh.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: BiTangents
-    path: src/Fusee/src/Serialization/V1/FusMesh.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMesh.cs
     startLine: 92
   assemblies:
   - Fusee.Serialization
@@ -391,10 +464,22 @@ items:
   summary: "\nThe bitangent of each triangle for bump mapping.\n"
   example: []
   syntax:
-    content: public float3[] BiTangents
+    content: >-
+      [ProtoMember(10)]
+
+      public float3[] BiTangents
     return:
       type: Fusee.Math.Core.float3[]
-    content.vb: Public BiTangents As float3()
+    content.vb: >-
+      <ProtoMember(10)>
+
+      Public BiTangents As float3()
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 10
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -411,12 +496,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMesh.MeshType
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMesh.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: MeshType
-    path: src/Fusee/src/Serialization/V1/FusMesh.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMesh.cs
     startLine: 98
   assemblies:
   - Fusee.Serialization
@@ -424,10 +505,22 @@ items:
   summary: "\nThe type of the mesh ???\n"
   example: []
   syntax:
-    content: public int MeshType
+    content: >-
+      [ProtoMember(11)]
+
+      public int MeshType
     return:
       type: System.Int32
-    content.vb: Public MeshType As Integer
+    content.vb: >-
+      <ProtoMember(11)>
+
+      Public MeshType As Integer
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 11
   modifiers.csharp:
   - public
   modifiers.vb:

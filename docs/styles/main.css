@@ -6,7 +6,9 @@
 
 .navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:hover{color: black ; background-color:#88B04B}
 
-.subnav{background-color:#88B04B;}
+.toc .nav>li.active>a:link,.toc .nav>li.active>a:visited { color: rgb(136, 176, 75)}
+
+.subnav{color:black; background-color:#88B04B;}
 
 html {
 	font-family: Lato-Black;	
@@ -21,7 +23,22 @@ body {
 	color: #000;
 }
 
-a, a:link {
+a:link {
 	text-decoration: none;
 	color: rgb(136, 176, 75);
+}
+
+a:visited {
+	text-decoration: none;
+	color: rgb(136, 176, 75);
+}
+
+.subnav a:link {
+	text-decoration: none;
+	color: rgb(51, 122, 183);
+}
+
+.subnav a:visited {
+	text-decoration: none;
+	color: rgb(51, 122, 183);
 }

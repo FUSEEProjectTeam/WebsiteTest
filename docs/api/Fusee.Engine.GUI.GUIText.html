@@ -1,0 +1,496 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GUIText
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GUIText
+   ">
+    <meta name="generator" content="docfx 2.55.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.Engine.GUI.GUIText">
+  
+  
+  <h1 id="Fusee_Engine_GUI_GUIText" data-uid="Fusee.Engine.GUI.GUIText" class="text-break">Class GUIText
+  </h1>
+  <div class="markdown level0 summary"><p>Creates a text mesh for the GUI.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a></div>
+    <div class="level2"><a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a></div>
+    <div class="level3"><span class="xref">GUIText</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_MeshChanged">Mesh.MeshChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_SessionUniqueIdentifier">Mesh.SessionUniqueIdentifier</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_Vertices">Mesh.Vertices</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_VerticesSet">Mesh.VerticesSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_TangentsSet">Mesh.TangentsSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_BiTangentsSet">Mesh.BiTangentsSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_Colors">Mesh.Colors</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_ColorsSet">Mesh.ColorsSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_Normals">Mesh.Normals</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_NormalsSet">Mesh.NormalsSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_UVs">Mesh.UVs</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_UVsSet">Mesh.UVsSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_BoneWeights">Mesh.BoneWeights</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_BoneWeightsSet">Mesh.BoneWeightsSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_BoneIndices">Mesh.BoneIndices</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_BoneIndicesSet">Mesh.BoneIndicesSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_Triangles">Mesh.Triangles</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_TrianglesSet">Mesh.TrianglesSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_BoundingBox">Mesh.BoundingBox</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_Tangents">Mesh.Tangents</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_BiTangents">Mesh.BiTangents</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_Active">Mesh.Active</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_MeshType">Mesh.MeshType</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_Dispose_System_Boolean_">Mesh.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_Dispose">Mesh.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html#Fusee_Engine_Core_Scene_SceneComponent_Name">SceneComponent.Name</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.GUI.html">Fusee.Engine.GUI</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Engine.GUI.dll</h6>
+  <h5 id="Fusee_Engine_GUI_GUIText_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GUIText : Mesh, IComponent, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Fusee_Engine_GUI_GUIText__ctor_" data-uid="Fusee.Engine.GUI.GUIText.#ctor*"></a>
+  <h4 id="Fusee_Engine_GUI_GUIText__ctor_Fusee_Engine_Core_FontMap_System_String_Fusee_Engine_Core_Scene_HorizontalTextAlignment_" data-uid="Fusee.Engine.GUI.GUIText.#ctor(Fusee.Engine.Core.FontMap,System.String,Fusee.Engine.Core.Scene.HorizontalTextAlignment)">GUIText(FontMap, String, HorizontalTextAlignment)</h4>
+  <div class="markdown level1 summary"><p>Returns the text mesh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GUIText(FontMap fontMap, string text, HorizontalTextAlignment horizontalAlignment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.FontMap.html">FontMap</a></td>
+        <td><span class="parametername">fontMap</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.HorizontalTextAlignment.html">HorizontalTextAlignment</a></td>
+        <td><span class="parametername">horizontalAlignment</span></td>
+        <td><p>Defines the <a class="xref" href="Fusee.Engine.GUI.GUIText.html#Fusee_Engine_GUI_GUIText_HorizontalAlignment">HorizontalAlignment</a> of the text.
+This is needed here because it changes the shape of the mesh.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Fusee_Engine_GUI_GUIText_Height_" data-uid="Fusee.Engine.GUI.GUIText.Height*"></a>
+  <h4 id="Fusee_Engine_GUI_GUIText_Height" data-uid="Fusee.Engine.GUI.GUIText.Height">Height</h4>
+  <div class="markdown level1 summary"><p>The height of the text mesh's bounding box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Height { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_GUI_GUIText_HorizontalAlignment_" data-uid="Fusee.Engine.GUI.GUIText.HorizontalAlignment*"></a>
+  <h4 id="Fusee_Engine_GUI_GUIText_HorizontalAlignment" data-uid="Fusee.Engine.GUI.GUIText.HorizontalAlignment">HorizontalAlignment</h4>
+  <div class="markdown level1 summary"><p>Defines the <a class="xref" href="Fusee.Engine.GUI.GUIText.html#Fusee_Engine_GUI_GUIText_HorizontalAlignment">HorizontalAlignment</a> of the text.
+This is needed here because it changes the shape of the mesh.
+The mesh's vertices will be recalculated the value is set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HorizontalTextAlignment HorizontalAlignment { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.HorizontalTextAlignment.html">HorizontalTextAlignment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_GUI_GUIText_LineNormals_" data-uid="Fusee.Engine.GUI.GUIText.LineNormals*"></a>
+  <h4 id="Fusee_Engine_GUI_GUIText_LineNormals" data-uid="Fusee.Engine.GUI.GUIText.LineNormals">LineNormals</h4>
+  <div class="markdown level1 summary"><p>The Normals per line of text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;List&lt;float3&gt;&gt; LineNormals { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Fusee.Math.Core.float3.html">float3</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_GUI_GUIText_LineTriangles_" data-uid="Fusee.Engine.GUI.GUIText.LineTriangles*"></a>
+  <h4 id="Fusee_Engine_GUI_GUIText_LineTriangles" data-uid="Fusee.Engine.GUI.GUIText.LineTriangles">LineTriangles</h4>
+  <div class="markdown level1 summary"><p>The Triangles per line of text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;List&lt;ushort&gt;&gt; LineTriangles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.UInt16</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_GUI_GUIText_LineUVs_" data-uid="Fusee.Engine.GUI.GUIText.LineUVs*"></a>
+  <h4 id="Fusee_Engine_GUI_GUIText_LineUVs" data-uid="Fusee.Engine.GUI.GUIText.LineUVs">LineUVs</h4>
+  <div class="markdown level1 summary"><p>The UV coordinates per line of text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;List&lt;float2&gt;&gt; LineUVs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Fusee.Math.Core.float2.html">float2</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_GUI_GUIText_LineVertices_" data-uid="Fusee.Engine.GUI.GUIText.LineVertices*"></a>
+  <h4 id="Fusee_Engine_GUI_GUIText_LineVertices" data-uid="Fusee.Engine.GUI.GUIText.LineVertices">LineVertices</h4>
+  <div class="markdown level1 summary"><p>The Vertices per line of text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;List&lt;float3&gt;&gt; LineVertices { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Fusee.Math.Core.float3.html">float3</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_GUI_GUIText_Text_" data-uid="Fusee.Engine.GUI.GUIText.Text*"></a>
+  <h4 id="Fusee_Engine_GUI_GUIText_Text" data-uid="Fusee.Engine.GUI.GUIText.Text">Text</h4>
+  <div class="markdown level1 summary"><p>The text to display.
+The Vertices, Triangles, Normals and UV coordinates will be recalculated if this value is set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Text { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_GUI_GUIText_Width_" data-uid="Fusee.Engine.GUI.GUIText.Width*"></a>
+  <h4 id="Fusee_Engine_GUI_GUIText_Width" data-uid="Fusee.Engine.GUI.GUIText.Width">Width</h4>
+  <div class="markdown level1 summary"><p>The width of the text mesh's bounding box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Width { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -21,12 +21,8 @@ items:
   fullName: Fusee.Serialization.V1.FusNode
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusNode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FusNode
-    path: src/Fusee/src/Serialization/V1/FusNode.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusNode.cs
     startLine: 11
   assemblies:
   - Fusee.Serialization
@@ -34,8 +30,13 @@ items:
   summary: "\nNodes are the building blocks for scene graphs within .fus files.\n"
   example: []
   syntax:
-    content: 'public class FusNode : INode'
+    content: >-
+      [ProtoContract]
+
+      public class FusNode : INode
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusNode
           Implements INode
   inheritance:
@@ -50,6 +51,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -68,12 +73,8 @@ items:
   fullName: Fusee.Serialization.V1.FusNode.Name
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusNode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Name
-    path: src/Fusee/src/Serialization/V1/FusNode.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusNode.cs
     startLine: 19
   assemblies:
   - Fusee.Serialization
@@ -81,10 +82,22 @@ items:
   summary: "\nThe name of the node. Often used to identify individual parts of a scene.\n"
   example: []
   syntax:
-    content: public string Name
+    content: >-
+      [ProtoMember(1)]
+
+      public string Name
     return:
       type: System.String
-    content.vb: Public Name As String
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Name As String
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -101,12 +114,8 @@ items:
   fullName: Fusee.Serialization.V1.FusNode.Components
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusNode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Components
-    path: src/Fusee/src/Serialization/V1/FusNode.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusNode.cs
     startLine: 25
   assemblies:
   - Fusee.Serialization
@@ -114,10 +123,22 @@ items:
   summary: "\nIndices into the <xref href=\"Fusee.Serialization.V1.FusScene\" data-throw-if-not-resolved=\"false\"></xref>&apos;s list of components that make up this node.\n"
   example: []
   syntax:
-    content: public List<int> Components
+    content: >-
+      [ProtoMember(2)]
+
+      public List<int> Components
     return:
       type: System.Collections.Generic.List{System.Int32}
-    content.vb: Public Components As List(Of Integer)
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Components As List(Of Integer)
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -134,12 +155,8 @@ items:
   fullName: Fusee.Serialization.V1.FusNode.Children
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusNode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Children
-    path: src/Fusee/src/Serialization/V1/FusNode.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusNode.cs
     startLine: 31
   assemblies:
   - Fusee.Serialization
@@ -147,10 +164,22 @@ items:
   summary: "\nThis node&apos;s children. Possibly empty.\n"
   example: []
   syntax:
-    content: public List<FusNode> Children
+    content: >-
+      [ProtoMember(3)]
+
+      public List<FusNode> Children
     return:
       type: System.Collections.Generic.List{Fusee.Serialization.V1.FusNode}
-    content.vb: Public Children As List(Of FusNode)
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public Children As List(Of FusNode)
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -167,12 +196,8 @@ items:
   fullName: Fusee.Serialization.V1.FusNode.Scene
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusNode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Scene
-    path: src/Fusee/src/Serialization/V1/FusNode.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusNode.cs
     startLine: 35
   assemblies:
   - Fusee.Serialization
@@ -198,12 +223,8 @@ items:
   fullName: Fusee.Serialization.V1.FusNode.EnumChildren
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusNode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: EnumChildren
-    path: src/Fusee/src/Serialization/V1/FusNode.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusNode.cs
     startLine: 40
   assemblies:
   - Fusee.Serialization
@@ -237,12 +258,8 @@ items:
   fullName: Fusee.Serialization.V1.FusNode.EnumComponents
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusNode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: EnumComponents
-    path: src/Fusee/src/Serialization/V1/FusNode.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusNode.cs
     startLine: 45
   assemblies:
   - Fusee.Serialization
@@ -276,12 +293,8 @@ items:
   fullName: Fusee.Serialization.V1.FusNode.AddComponent(Fusee.Serialization.V1.FusComponent)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusNode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: AddComponent
-    path: src/Fusee/src/Serialization/V1/FusNode.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusNode.cs
     startLine: 52
   assemblies:
   - Fusee.Serialization
@@ -312,12 +325,8 @@ items:
   fullName: Fusee.Serialization.V1.FusNode.AddNode(Fusee.Serialization.V1.FusNode)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusNode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: AddNode
-    path: src/Fusee/src/Serialization/V1/FusNode.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusNode.cs
     startLine: 63
   assemblies:
   - Fusee.Serialization

@@ -20,12 +20,8 @@ items:
   fullName: Fusee.Engine.Common.IAudioImp
   type: Interface
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IAudioImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: IAudioImp
-    path: src/Fusee/src/Engine/Common/IAudioImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IAudioImp.cs
     startLine: 6
   assemblies:
   - Fusee.Engine.Common
@@ -53,17 +49,13 @@ items:
   fullName: Fusee.Engine.Common.IAudioImp.OpenDevice()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IAudioImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: OpenDevice
-    path: src/Fusee/src/Engine/Common/IAudioImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IAudioImp.cs
     startLine: 12
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
-  summary: "\nImplementation Tasks: Opens the device. All <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> derivate instances have to be wiped and the global volume of a Listener(if 3D Sound is intended) can be set to maximum.\n"
+  summary: "\nImplementation Tasks: Opens the device. All <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> derivate instances have to be wiped and the globalvolume of a Listener(if 3D Sound is intended) can be set to maximum.\n"
   example: []
   syntax:
     content: void OpenDevice()
@@ -81,12 +73,8 @@ items:
   fullName: Fusee.Engine.Common.IAudioImp.CloseDevice()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IAudioImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CloseDevice
-    path: src/Fusee/src/Engine/Common/IAudioImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IAudioImp.cs
     startLine: 17
   assemblies:
   - Fusee.Engine.Common
@@ -109,12 +97,8 @@ items:
   fullName: Fusee.Engine.Common.IAudioImp.LoadFile(System.String, System.Boolean)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IAudioImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: LoadFile
-    path: src/Fusee/src/Engine/Common/IAudioImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IAudioImp.cs
     startLine: 25
   assemblies:
   - Fusee.Engine.Common
@@ -132,7 +116,7 @@ items:
       description: if set to <code>true</code> [streaming].
     return:
       type: Fusee.Engine.Common.IAudioStreamImp
-      description: A derivate of <xref href="Fusee.Engine.Common.IAudioStreamImp" data-throw-if-not-resolved="false"></xref> should be returned upon successful file path resolution.
+      description: A derivate of <xref href="Fusee.Engine.Common.IAudioStreamImp" data-throw-if-not-resolved="false"></xref> should be returned upon succesful filepath resolution.
     content.vb: Function LoadFile(fileName As String, streaming As Boolean) As IAudioStreamImp
   overload: Fusee.Engine.Common.IAudioImp.LoadFile*
 - uid: Fusee.Engine.Common.IAudioImp.Stop
@@ -147,17 +131,13 @@ items:
   fullName: Fusee.Engine.Common.IAudioImp.Stop()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IAudioImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Stop
-    path: src/Fusee/src/Engine/Common/IAudioImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IAudioImp.cs
     startLine: 30
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
-  summary: "\nImplementation Tasks: Stops all <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> derived playbacks that this instance is responsible for.\n"
+  summary: "\nImplementation Tasks: Stops all <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> derivates playbacks that this instance is responsible for.\n"
   example: []
   syntax:
     content: void Stop()
@@ -175,17 +155,13 @@ items:
   fullName: Fusee.Engine.Common.IAudioImp.SetVolume(System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IAudioImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetVolume
-    path: src/Fusee/src/Engine/Common/IAudioImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IAudioImp.cs
     startLine: 37
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
-  summary: "\nImplementation Tasks: Sets the global volume of the application. In 3D Sound usually a Listener is used to accomplish this task. \nIn 2D Sound a simple iteration through all <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> derived that this instance is responsible for is sufficient.\n"
+  summary: "\nImplemenation Tasks: Sets the global volume of the application. In 3D Sound usually a Listener is used to accomplish this task. \nIn 2D Sound a simple iteration through all <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> derivates that this instance is responsible for is sufficient.\n"
   example: []
   syntax:
     content: void SetVolume(float val)
@@ -207,17 +183,13 @@ items:
   fullName: Fusee.Engine.Common.IAudioImp.GetVolume()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IAudioImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetVolume
-    path: src/Fusee/src/Engine/Common/IAudioImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IAudioImp.cs
     startLine: 44
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
-  summary: "\nImplementation Tasks: Gets the global volume of the application. In 3D Sound a Listener is usually used to accomplish this task.\nIn 2D Sound an internal master volume property can be implemented that handles all <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> derived volumes that this instance is responsible for.\n"
+  summary: "\nImplementation Tasks: Gets the global volume of the application. In 3D Sound a Listener is usually used to accomplish this task.\nIn 2D Sound an internal master volume property can be implemented that handles all <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> derivates volumes that this instance is responsible for.\n"
   example: []
   syntax:
     content: float GetVolume()
@@ -238,17 +210,13 @@ items:
   fullName: Fusee.Engine.Common.IAudioImp.SetPanning(System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IAudioImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetPanning
-    path: src/Fusee/src/Engine/Common/IAudioImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IAudioImp.cs
     startLine: 50
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
-  summary: "\nImplementation Tasks: Sets the panning for all <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> derived that this instance is responsible for.\n"
+  summary: "\nImplemenation Tasks: Sets the panning for all <xref href=\"Fusee.Engine.Common.IAudioStreamImp\" data-throw-if-not-resolved=\"false\"></xref> derivates that this instance is responsible for.\n"
   example: []
   syntax:
     content: void SetPanning(float val)

@@ -56,12 +56,8 @@ items:
   fullName: Fusee.Math.Core.int3
   type: Struct
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: int3
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 10
   assemblies:
   - Fusee.Math.Core
@@ -69,8 +65,13 @@ items:
   summary: "\nRepresents a 3D vector or an index (eg. for a grid-like structure) using three integers.\n"
   example: []
   syntax:
-    content: 'public struct int3 : IEquatable<int3>'
+    content: >-
+      [ProtoContract]
+
+      public struct int3 : IEquatable<int3>
     content.vb: >-
+      <ProtoContract>
+
       Public Structure int3
           Implements IEquatable(Of int3)
   implements:
@@ -79,6 +80,10 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - struct
@@ -97,12 +102,8 @@ items:
   fullName: Fusee.Math.Core.int3.x
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: x
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 20
   assemblies:
   - Fusee.Math.Core
@@ -110,10 +111,22 @@ items:
   summary: "\nThe x component of the float3.\n"
   example: []
   syntax:
-    content: public int x
+    content: >-
+      [ProtoMember(1)]
+
+      public int x
     return:
       type: System.Int32
-    content.vb: Public x As Integer
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public x As Integer
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -130,12 +143,8 @@ items:
   fullName: Fusee.Math.Core.int3.y
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: y
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 26
   assemblies:
   - Fusee.Math.Core
@@ -143,10 +152,22 @@ items:
   summary: "\nThe y component of the float3.\n"
   example: []
   syntax:
-    content: public int y
+    content: >-
+      [ProtoMember(2)]
+
+      public int y
     return:
       type: System.Int32
-    content.vb: Public y As Integer
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public y As Integer
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -163,12 +184,8 @@ items:
   fullName: Fusee.Math.Core.int3.z
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: z
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 32
   assemblies:
   - Fusee.Math.Core
@@ -176,10 +193,22 @@ items:
   summary: "\nThe z component of the float3.\n"
   example: []
   syntax:
-    content: public int z
+    content: >-
+      [ProtoMember(3)]
+
+      public int z
     return:
       type: System.Int32
-    content.vb: Public z As Integer
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public z As Integer
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -196,12 +225,8 @@ items:
   fullName: Fusee.Math.Core.int3.int3(System.Int32, System.Int32, System.Int32)
   type: Constructor
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 44
   assemblies:
   - Fusee.Math.Core
@@ -238,12 +263,8 @@ items:
   fullName: Fusee.Math.Core.int3.int3(System.Int32)
   type: Constructor
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 56
   assemblies:
   - Fusee.Math.Core
@@ -274,12 +295,8 @@ items:
   fullName: Fusee.Math.Core.int3.ToArray()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ToArray
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 73
   assemblies:
   - Fusee.Math.Core
@@ -309,12 +326,8 @@ items:
   fullName: Fusee.Math.Core.int3.UnitX
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: UnitX
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 87
   assemblies:
   - Fusee.Math.Core
@@ -346,12 +359,8 @@ items:
   fullName: Fusee.Math.Core.int3.UnitY
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: UnitY
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 92
   assemblies:
   - Fusee.Math.Core
@@ -383,12 +392,8 @@ items:
   fullName: Fusee.Math.Core.int3.UnitZ
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: UnitZ
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 97
   assemblies:
   - Fusee.Math.Core
@@ -420,12 +425,8 @@ items:
   fullName: Fusee.Math.Core.int3.Zero
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Zero
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 102
   assemblies:
   - Fusee.Math.Core
@@ -457,12 +458,8 @@ items:
   fullName: Fusee.Math.Core.int3.One
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: One
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 107
   assemblies:
   - Fusee.Math.Core
@@ -494,12 +491,8 @@ items:
   fullName: Fusee.Math.Core.int3.Add(Fusee.Math.Core.int3, Fusee.Math.Core.int3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Add
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 126
   assemblies:
   - Fusee.Math.Core
@@ -538,12 +531,8 @@ items:
   fullName: Fusee.Math.Core.int3.Add(Fusee.Math.Core.int3, System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Add
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 140
   assemblies:
   - Fusee.Math.Core
@@ -582,12 +571,8 @@ items:
   fullName: Fusee.Math.Core.int3.Subtract(Fusee.Math.Core.int3, Fusee.Math.Core.int3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Subtract
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 158
   assemblies:
   - Fusee.Math.Core
@@ -626,12 +611,8 @@ items:
   fullName: Fusee.Math.Core.int3.Subtract(Fusee.Math.Core.int3, System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Subtract
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 172
   assemblies:
   - Fusee.Math.Core
@@ -670,12 +651,8 @@ items:
   fullName: Fusee.Math.Core.int3.Multiply(Fusee.Math.Core.int3, System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Multiply
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 190
   assemblies:
   - Fusee.Math.Core
@@ -714,12 +691,8 @@ items:
   fullName: Fusee.Math.Core.int3.Multiply(Fusee.Math.Core.int3, Fusee.Math.Core.int3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Multiply
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 204
   assemblies:
   - Fusee.Math.Core
@@ -758,12 +731,8 @@ items:
   fullName: Fusee.Math.Core.int3.Divide(Fusee.Math.Core.int3, System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Divide
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 222
   assemblies:
   - Fusee.Math.Core
@@ -802,12 +771,8 @@ items:
   fullName: Fusee.Math.Core.int3.Divide(Fusee.Math.Core.int3, Fusee.Math.Core.int3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Divide
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 236
   assemblies:
   - Fusee.Math.Core
@@ -846,12 +811,8 @@ items:
   fullName: Fusee.Math.Core.int3.ComponentMin(Fusee.Math.Core.int3, Fusee.Math.Core.int3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ComponentMin
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 254
   assemblies:
   - Fusee.Math.Core
@@ -890,12 +851,8 @@ items:
   fullName: Fusee.Math.Core.int3.ComponentMax(Fusee.Math.Core.int3, Fusee.Math.Core.int3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ComponentMax
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 274
   assemblies:
   - Fusee.Math.Core
@@ -934,12 +891,8 @@ items:
   fullName: Fusee.Math.Core.int3.Clamp(Fusee.Math.Core.int3, Fusee.Math.Core.int3, Fusee.Math.Core.int3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Clamp
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 295
   assemblies:
   - Fusee.Math.Core
@@ -981,12 +934,8 @@ items:
   fullName: Fusee.Math.Core.int3.Lerp(Fusee.Math.Core.int3, Fusee.Math.Core.int3, System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Lerp
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 316
   assemblies:
   - Fusee.Math.Core
@@ -1028,12 +977,8 @@ items:
   fullName: Fusee.Math.Core.int3.Addition(Fusee.Math.Core.int3, Fusee.Math.Core.int3)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Addition
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 338
   assemblies:
   - Fusee.Math.Core
@@ -1072,12 +1017,8 @@ items:
   fullName: Fusee.Math.Core.int3.Addition(Fusee.Math.Core.int3, System.Int32)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Addition
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 351
   assemblies:
   - Fusee.Math.Core
@@ -1116,12 +1057,8 @@ items:
   fullName: Fusee.Math.Core.int3.Subtraction(Fusee.Math.Core.int3, Fusee.Math.Core.int3)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Subtraction
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 364
   assemblies:
   - Fusee.Math.Core
@@ -1160,12 +1097,8 @@ items:
   fullName: Fusee.Math.Core.int3.Subtraction(Fusee.Math.Core.int3, System.Int32)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Subtraction
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 377
   assemblies:
   - Fusee.Math.Core
@@ -1204,12 +1137,8 @@ items:
   fullName: Fusee.Math.Core.int3.UnaryNegation(Fusee.Math.Core.int3)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_UnaryNegation
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 389
   assemblies:
   - Fusee.Math.Core
@@ -1245,12 +1174,8 @@ items:
   fullName: Fusee.Math.Core.int3.Multiply(Fusee.Math.Core.int3, System.Int32)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Multiply
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 405
   assemblies:
   - Fusee.Math.Core
@@ -1289,12 +1214,8 @@ items:
   fullName: Fusee.Math.Core.int3.Multiply(System.Int32, Fusee.Math.Core.int3)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Multiply
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 418
   assemblies:
   - Fusee.Math.Core
@@ -1333,12 +1254,8 @@ items:
   fullName: Fusee.Math.Core.int3.Multiply(Fusee.Math.Core.int3, Fusee.Math.Core.int3)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Multiply
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 429
   assemblies:
   - Fusee.Math.Core
@@ -1377,12 +1294,8 @@ items:
   fullName: Fusee.Math.Core.int3.Division(Fusee.Math.Core.int3, System.Int32)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Division
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 442
   assemblies:
   - Fusee.Math.Core
@@ -1421,12 +1334,8 @@ items:
   fullName: Fusee.Math.Core.int3.Equality(Fusee.Math.Core.int3, Fusee.Math.Core.int3)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Equality
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 455
   assemblies:
   - Fusee.Math.Core
@@ -1465,12 +1374,8 @@ items:
   fullName: Fusee.Math.Core.int3.Inequality(Fusee.Math.Core.int3, Fusee.Math.Core.int3)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Inequality
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 468
   assemblies:
   - Fusee.Math.Core
@@ -1509,12 +1414,8 @@ items:
   fullName: Fusee.Math.Core.int3.Explicit(System.Int32 to Fusee.Math.Core.int3)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Explicit
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 478
   assemblies:
   - Fusee.Math.Core
@@ -1553,12 +1454,8 @@ items:
   fullName: Fusee.Math.Core.int3.ToString()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ToString
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 495
   assemblies:
   - Fusee.Math.Core
@@ -1591,12 +1488,8 @@ items:
   fullName: Fusee.Math.Core.int3.ToString(System.IFormatProvider)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ToString
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 507
   assemblies:
   - Fusee.Math.Core
@@ -1630,12 +1523,8 @@ items:
   fullName: Fusee.Math.Core.int3.Equals(Fusee.Math.Core.int3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Equals
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 531
   assemblies:
   - Fusee.Math.Core
@@ -1671,12 +1560,8 @@ items:
   fullName: Fusee.Math.Core.int3.Equals(System.Object)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Equals
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 545
   assemblies:
   - Fusee.Math.Core
@@ -1713,12 +1598,8 @@ items:
   fullName: Fusee.Math.Core.int3.GetHashCode()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetHashCode
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 560
   assemblies:
   - Fusee.Math.Core
@@ -1751,12 +1632,8 @@ items:
   fullName: Fusee.Math.Core.int3.r
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: r
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 575
   assemblies:
   - Fusee.Math.Core
@@ -1788,12 +1665,8 @@ items:
   fullName: Fusee.Math.Core.int3.g
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: g
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 584
   assemblies:
   - Fusee.Math.Core
@@ -1825,12 +1698,8 @@ items:
   fullName: Fusee.Math.Core.int3.b
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/int3.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: b
-    path: src/Fusee/src/Math/Core/int3.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\int3.cs
     startLine: 593
   assemblies:
   - Fusee.Math.Core

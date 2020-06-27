@@ -14,17 +14,13 @@ items:
   fullName: Fusee.Jometri.SubdivisionSurface
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Jometri/SubdivisionSurface.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SubdivisionSurface
-    path: src/Fusee/src/Jometri/SubdivisionSurface.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Jometri\SubdivisionSurface.cs
     startLine: 8
   assemblies:
   - Fusee.Jometri
   namespace: Fusee.Jometri
-  summary: "\nProvides functionality to perform a Catmull-Clark Subdivision-Surface algorithm on a Geometry.\n"
+  summary: "\nProvides functionallity to perform a Catmull-Clark Subdivision-Surface algorithm on a Geometry.\n"
   example: []
   syntax:
     content: public class SubdivisionSurface
@@ -57,12 +53,8 @@ items:
   fullName: Fusee.Jometri.SubdivisionSurface.CatmullClarkSubdivision(Fusee.Jometri.Geometry)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Jometri/SubdivisionSurface.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CatmullClarkSubdivision
-    path: src/Fusee/src/Jometri/SubdivisionSurface.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Jometri\SubdivisionSurface.cs
     startLine: 15
   assemblies:
   - Fusee.Jometri
@@ -74,10 +66,10 @@ items:
     parameters:
     - id: geometry
       type: Fusee.Jometri.Geometry
-      description: The geometry to perform the SD on.
+      description: The goemetry to perform the SD on.
     return:
       type: Fusee.Jometri.Geometry
-      description: 'A smoother geometry with '
+      description: 'A smoother geoemtry with '
     content.vb: Public Shared Function CatmullClarkSubdivision(geometry As Geometry) As Geometry
   overload: Fusee.Jometri.SubdivisionSurface.CatmullClarkSubdivision*
   modifiers.csharp:

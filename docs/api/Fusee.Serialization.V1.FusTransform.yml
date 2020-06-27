@@ -16,12 +16,8 @@ items:
   fullName: Fusee.Serialization.V1.FusTransform
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusTransform.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FusTransform
-    path: src/Fusee/src/Serialization/V1/FusTransform.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusTransform.cs
     startLine: 8
   assemblies:
   - Fusee.Serialization
@@ -29,8 +25,13 @@ items:
   summary: "\nTransformation (position, orientation and size) of the node.\n"
   example: []
   syntax:
-    content: 'public class FusTransform : FusComponent, IComponent'
+    content: >-
+      [ProtoContract]
+
+      public class FusTransform : FusComponent, IComponent
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusTransform
           Inherits FusComponent
           Implements IComponent
@@ -48,6 +49,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -66,12 +71,8 @@ items:
   fullName: Fusee.Serialization.V1.FusTransform.Translation
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusTransform.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Translation
-    path: src/Fusee/src/Serialization/V1/FusTransform.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusTransform.cs
     startLine: 16
   assemblies:
   - Fusee.Serialization
@@ -79,10 +80,22 @@ items:
   summary: "\nThe translation (position) of the node.\n"
   example: []
   syntax:
-    content: public float3 Translation
+    content: >-
+      [ProtoMember(1)]
+
+      public float3 Translation
     return:
       type: Fusee.Math.Core.float3
-    content.vb: Public Translation As float3
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Translation As float3
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -99,12 +112,8 @@ items:
   fullName: Fusee.Serialization.V1.FusTransform.Rotation
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusTransform.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Rotation
-    path: src/Fusee/src/Serialization/V1/FusTransform.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusTransform.cs
     startLine: 22
   assemblies:
   - Fusee.Serialization
@@ -112,10 +121,22 @@ items:
   summary: "\nThe rotation (orientation) of the node.\n"
   example: []
   syntax:
-    content: public float3 Rotation
+    content: >-
+      [ProtoMember(2)]
+
+      public float3 Rotation
     return:
       type: Fusee.Math.Core.float3
-    content.vb: Public Rotation As float3
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Rotation As float3
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -132,12 +153,8 @@ items:
   fullName: Fusee.Serialization.V1.FusTransform.Scale
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusTransform.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Scale
-    path: src/Fusee/src/Serialization/V1/FusTransform.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusTransform.cs
     startLine: 28
   assemblies:
   - Fusee.Serialization
@@ -145,10 +162,22 @@ items:
   summary: "\nThe scale (size) of the node.\n"
   example: []
   syntax:
-    content: public float3 Scale
+    content: >-
+      [ProtoMember(3)]
+
+      public float3 Scale
     return:
       type: Fusee.Math.Core.float3
-    content.vb: Public Scale As float3
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public Scale As float3
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:

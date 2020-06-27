@@ -15,12 +15,8 @@ items:
   fullName: Fusee.Serialization.V1.NormapMapChannelContainer
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: NormapMapChannelContainer
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 56
   assemblies:
   - Fusee.Serialization
@@ -28,8 +24,14 @@ items:
   summary: "\nIf used, the material shows bumps defined by a normal map (a texture in RGB).\n"
   example: []
   syntax:
-    content: public class NormapMapChannelContainer
-    content.vb: Public Class NormapMapChannelContainer
+    content: >-
+      [ProtoContract]
+
+      public class NormapMapChannelContainer
+    content.vb: >-
+      <ProtoContract>
+
+      Public Class NormapMapChannelContainer
   inheritance:
   - System.Object
   inheritedMembers:
@@ -40,6 +42,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -58,12 +64,8 @@ items:
   fullName: Fusee.Serialization.V1.NormapMapChannelContainer.Texture
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Texture
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 63
   assemblies:
   - Fusee.Serialization
@@ -71,10 +73,22 @@ items:
   summary: "\nThe texture to read the normal information from.\n"
   example: []
   syntax:
-    content: public string Texture
+    content: >-
+      [ProtoMember(1)]
+
+      public string Texture
     return:
       type: System.String
-    content.vb: Public Texture As String
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Texture As String
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -91,12 +105,8 @@ items:
   fullName: Fusee.Serialization.V1.NormapMapChannelContainer.Intensity
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Intensity
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 69
   assemblies:
   - Fusee.Serialization
@@ -104,10 +114,22 @@ items:
   summary: "\nThe intensity of the normal map..\n"
   example: []
   syntax:
-    content: public float Intensity
+    content: >-
+      [ProtoMember(2)]
+
+      public float Intensity
     return:
       type: System.Single
-    content.vb: Public Intensity As Single
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Intensity As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:

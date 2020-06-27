@@ -5,7 +5,7 @@ items:
   id: ApkAssetProvider
   parent: Fusee.Base.Imp.Android
   children:
-  - Fusee.Base.Imp.Android.ApkAssetProvider.#ctor(Android.Content.Context)
+  - Fusee.Base.Imp.Android.ApkAssetProvider.#ctor(Context)
   - Fusee.Base.Imp.Android.ApkAssetProvider.CheckExists(System.String)
   - Fusee.Base.Imp.Android.ApkAssetProvider.CheckExistsAsync(System.String)
   - Fusee.Base.Imp.Android.ApkAssetProvider.GetStream(System.String)
@@ -18,12 +18,8 @@ items:
   fullName: Fusee.Base.Imp.Android.ApkAssetProvider
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/ApkAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ApkAssetProvider
-    path: src/Fusee/src/Base/Imp/Android/ApkAssetProvider.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
     startLine: 11
   assemblies:
   - Fusee.Base.Imp.Android
@@ -47,37 +43,26 @@ items:
   - Fusee.Base.Common.StreamAssetProvider.CanGetAsync(System.String,System.Type)
   - Fusee.Base.Common.StreamAssetProvider.BeginGetAsset(System.String,Fusee.Base.Common.GetCallback)
   - Fusee.Base.Common.StreamAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ToString
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   modifiers.csharp:
   - public
   - class
   modifiers.vb:
   - Public
   - Class
-- uid: Fusee.Base.Imp.Android.ApkAssetProvider.#ctor(Android.Content.Context)
-  commentId: M:Fusee.Base.Imp.Android.ApkAssetProvider.#ctor(Android.Content.Context)
-  id: '#ctor(Android.Content.Context)'
+- uid: Fusee.Base.Imp.Android.ApkAssetProvider.#ctor(Context)
+  commentId: M:Fusee.Base.Imp.Android.ApkAssetProvider.#ctor(Context)
+  id: '#ctor(Context)'
   parent: Fusee.Base.Imp.Android.ApkAssetProvider
   langs:
   - csharp
   - vb
   name: ApkAssetProvider(Context)
   nameWithType: ApkAssetProvider.ApkAssetProvider(Context)
-  fullName: Fusee.Base.Imp.Android.ApkAssetProvider.ApkAssetProvider(Android.Content.Context)
+  fullName: Fusee.Base.Imp.Android.ApkAssetProvider.ApkAssetProvider(Context)
   type: Constructor
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/ApkAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: src/Fusee/src/Base/Imp/Android/ApkAssetProvider.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
     startLine: 20
   assemblies:
   - Fusee.Base.Imp.Android
@@ -88,13 +73,10 @@ items:
     content: public ApkAssetProvider(Context androidContext)
     parameters:
     - id: androidContext
-      type: Android.Content.Context
+      type: Context
       description: The android context.
     content.vb: Public Sub New(androidContext As Context)
   overload: Fusee.Base.Imp.Android.ApkAssetProvider.#ctor*
-  exceptions:
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -111,17 +93,13 @@ items:
   fullName: Fusee.Base.Imp.Android.ApkAssetProvider.GetStream(System.String)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/ApkAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetStream
-    path: src/Fusee/src/Base/Imp/Android/ApkAssetProvider.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
     startLine: 94
   assemblies:
   - Fusee.Base.Imp.Android
   namespace: Fusee.Base.Imp.Android
-  summary: "\nCreates a stream for the asset identified by id using <xref href=\"System.IO.FileStream\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  summary: "\nCreates a stream for the asset identified by id using <see cref=\"!:FileStream\"></see>\n"
   example: []
   syntax:
     content: protected override Stream GetStream(string id)
@@ -130,14 +108,11 @@ items:
       type: System.String
       description: The asset identifier.
     return:
-      type: System.IO.Stream
+      type: Stream
       description: "\nA valid stream for reading if the asset ca be retrieved. null otherwise.\n"
     content.vb: Protected Overrides Function GetStream(id As String) As Stream
   overridden: Fusee.Base.Common.StreamAssetProvider.GetStream(System.String)
   overload: Fusee.Base.Imp.Android.ApkAssetProvider.GetStream*
-  exceptions:
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
   modifiers.csharp:
   - protected
   - override
@@ -156,17 +131,13 @@ items:
   fullName: Fusee.Base.Imp.Android.ApkAssetProvider.CheckExists(System.String)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/ApkAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CheckExists
-    path: src/Fusee/src/Base/Imp/Android/ApkAssetProvider.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
     startLine: 109
   assemblies:
   - Fusee.Base.Imp.Android
   namespace: Fusee.Base.Imp.Android
-  summary: "\nChecks the existence of the identified asset using <xref href=\"System.IO.File.Exists(System.String)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  summary: "\nChecks the existence of the identified asset using <see cref=\"!:File.Exists\"></see>\n"
   example: []
   syntax:
     content: protected override bool CheckExists(string id)
@@ -180,9 +151,6 @@ items:
     content.vb: Protected Overrides Function CheckExists(id As String) As Boolean
   overridden: Fusee.Base.Common.StreamAssetProvider.CheckExists(System.String)
   overload: Fusee.Base.Imp.Android.ApkAssetProvider.CheckExists*
-  exceptions:
-  - type: System.ArgumentNullException
-    commentId: T:System.ArgumentNullException
   modifiers.csharp:
   - protected
   - override
@@ -201,12 +169,8 @@ items:
   fullName: Fusee.Base.Imp.Android.ApkAssetProvider.GetStreamAsync(System.String)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/ApkAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetStreamAsync
-    path: src/Fusee/src/Base/Imp/Android/ApkAssetProvider.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
     startLine: 119
   assemblies:
   - Fusee.Base.Imp.Android
@@ -217,7 +181,7 @@ items:
     - id: id
       type: System.String
     return:
-      type: System.Threading.Tasks.Task{System.IO.Stream}
+      type: Task{Stream}
     content.vb: Protected Overrides Function GetStreamAsync(id As String) As Task(Of Stream)
   overridden: Fusee.Base.Common.StreamAssetProvider.GetStreamAsync(System.String)
   overload: Fusee.Base.Imp.Android.ApkAssetProvider.GetStreamAsync*
@@ -239,12 +203,8 @@ items:
   fullName: Fusee.Base.Imp.Android.ApkAssetProvider.CheckExistsAsync(System.String)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/ApkAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CheckExistsAsync
-    path: src/Fusee/src/Base/Imp/Android/ApkAssetProvider.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
     startLine: 126
   assemblies:
   - Fusee.Base.Imp.Android
@@ -255,7 +215,7 @@ items:
     - id: id
       type: System.String
     return:
-      type: System.Threading.Tasks.Task{System.Boolean}
+      type: Task{System.Boolean}
     content.vb: Protected Overrides Function CheckExistsAsync(id As String) As Task(Of Boolean)
   overridden: Fusee.Base.Common.StreamAssetProvider.CheckExistsAsync(System.String)
   overload: Fusee.Base.Imp.Android.ApkAssetProvider.CheckExistsAsync*
@@ -638,285 +598,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -933,30 +614,16 @@ references:
   name: ApkAssetProvider
   nameWithType: ApkAssetProvider
   fullName: Fusee.Base.Imp.Android.ApkAssetProvider
-- uid: System.ArgumentNullException
-  commentId: T:System.ArgumentNullException
-  isExternal: true
 - uid: Fusee.Base.Imp.Android.ApkAssetProvider.#ctor*
   commentId: Overload:Fusee.Base.Imp.Android.ApkAssetProvider.#ctor
   name: ApkAssetProvider
   nameWithType: ApkAssetProvider.ApkAssetProvider
   fullName: Fusee.Base.Imp.Android.ApkAssetProvider.ApkAssetProvider
-- uid: Android.Content.Context
-  commentId: T:Android.Content.Context
-  parent: Android.Content
+- uid: Context
   isExternal: true
   name: Context
   nameWithType: Context
-  fullName: Android.Content.Context
-- uid: Android.Content
-  commentId: N:Android.Content
-  isExternal: true
-  name: Android.Content
-  nameWithType: Android.Content
-  fullName: Android.Content
-- uid: System.IO.FileStream
-  commentId: T:System.IO.FileStream
-  isExternal: true
+  fullName: Context
 - uid: Fusee.Base.Common.StreamAssetProvider.GetStream(System.String)
   commentId: M:Fusee.Base.Common.StreamAssetProvider.GetStream(System.String)
   parent: Fusee.Base.Common.StreamAssetProvider
@@ -1008,22 +675,11 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: System.IO.Stream
-  commentId: T:System.IO.Stream
-  parent: System.IO
+- uid: Stream
   isExternal: true
   name: Stream
   nameWithType: Stream
-  fullName: System.IO.Stream
-- uid: System.IO
-  commentId: N:System.IO
-  isExternal: true
-  name: System.IO
-  nameWithType: System.IO
-  fullName: System.IO
-- uid: System.IO.File.Exists(System.String)
-  commentId: M:System.IO.File.Exists(System.String)
-  isExternal: true
+  fullName: Stream
 - uid: Fusee.Base.Common.StreamAssetProvider.CheckExists(System.String)
   commentId: M:Fusee.Base.Common.StreamAssetProvider.CheckExists(System.String)
   parent: Fusee.Base.Common.StreamAssetProvider
@@ -1119,95 +775,87 @@ references:
   name: GetStreamAsync
   nameWithType: ApkAssetProvider.GetStreamAsync
   fullName: Fusee.Base.Imp.Android.ApkAssetProvider.GetStreamAsync
-- uid: System.Threading.Tasks.Task{System.IO.Stream}
-  commentId: T:System.Threading.Tasks.Task{System.IO.Stream}
-  parent: System.Threading.Tasks
-  definition: System.Threading.Tasks.Task`1
+- uid: Task{Stream}
+  commentId: '!:Task{Stream}'
+  definition: Task`1
   name: Task<Stream>
   nameWithType: Task<Stream>
-  fullName: System.Threading.Tasks.Task<System.IO.Stream>
+  fullName: Task<Stream>
   nameWithType.vb: Task(Of Stream)
-  fullName.vb: System.Threading.Tasks.Task(Of System.IO.Stream)
+  fullName.vb: Task(Of Stream)
   name.vb: Task(Of Stream)
   spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
+  - uid: Task`1
     name: Task
     nameWithType: Task
-    fullName: System.Threading.Tasks.Task
+    fullName: Task
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - uid: System.IO.Stream
+  - uid: Stream
     name: Stream
     nameWithType: Stream
-    fullName: System.IO.Stream
+    fullName: Stream
     isExternal: true
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Threading.Tasks.Task`1
+  - uid: Task`1
     name: Task
     nameWithType: Task
-    fullName: System.Threading.Tasks.Task
+    fullName: Task
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: System.IO.Stream
+  - uid: Stream
     name: Stream
     nameWithType: Stream
-    fullName: System.IO.Stream
+    fullName: Stream
     isExternal: true
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Threading.Tasks.Task`1
-  commentId: T:System.Threading.Tasks.Task`1
+- uid: Task`1
   isExternal: true
-  name: Task<TResult>
-  nameWithType: Task<TResult>
-  fullName: System.Threading.Tasks.Task<TResult>
-  nameWithType.vb: Task(Of TResult)
-  fullName.vb: System.Threading.Tasks.Task(Of TResult)
-  name.vb: Task(Of TResult)
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
   spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
+  - uid: Task`1
     name: Task
     nameWithType: Task
-    fullName: System.Threading.Tasks.Task
+    fullName: Task
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: TResult
-    nameWithType: TResult
-    fullName: TResult
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Threading.Tasks.Task`1
+  - uid: Task`1
     name: Task
     nameWithType: Task
-    fullName: System.Threading.Tasks.Task
+    fullName: Task
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: TResult
-    nameWithType: TResult
-    fullName: TResult
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Threading.Tasks
-  commentId: N:System.Threading.Tasks
-  isExternal: true
-  name: System.Threading.Tasks
-  nameWithType: System.Threading.Tasks
-  fullName: System.Threading.Tasks
 - uid: Fusee.Base.Common.StreamAssetProvider.CheckExistsAsync(System.String)
   commentId: M:Fusee.Base.Common.StreamAssetProvider.CheckExistsAsync(System.String)
   parent: Fusee.Base.Common.StreamAssetProvider
@@ -1252,21 +900,20 @@ references:
   name: CheckExistsAsync
   nameWithType: ApkAssetProvider.CheckExistsAsync
   fullName: Fusee.Base.Imp.Android.ApkAssetProvider.CheckExistsAsync
-- uid: System.Threading.Tasks.Task{System.Boolean}
-  commentId: T:System.Threading.Tasks.Task{System.Boolean}
-  parent: System.Threading.Tasks
-  definition: System.Threading.Tasks.Task`1
+- uid: Task{System.Boolean}
+  commentId: '!:Task{System.Boolean}'
+  definition: Task`1
   name: Task<Boolean>
   nameWithType: Task<Boolean>
-  fullName: System.Threading.Tasks.Task<System.Boolean>
+  fullName: Task<System.Boolean>
   nameWithType.vb: Task(Of Boolean)
-  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  fullName.vb: Task(Of System.Boolean)
   name.vb: Task(Of Boolean)
   spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
+  - uid: Task`1
     name: Task
     nameWithType: Task
-    fullName: System.Threading.Tasks.Task
+    fullName: Task
     isExternal: true
   - name: <
     nameWithType: <
@@ -1280,10 +927,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Threading.Tasks.Task`1
+  - uid: Task`1
     name: Task
     nameWithType: Task
-    fullName: System.Threading.Tasks.Task
+    fullName: Task
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '

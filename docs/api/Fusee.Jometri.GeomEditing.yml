@@ -16,12 +16,8 @@ items:
   fullName: Fusee.Jometri.GeomEditing
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Jometri/GeomEditing.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GeomEditing
-    path: src/Fusee/src/Jometri/GeomEditing.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Jometri\GeomEditing.cs
     startLine: 10
   assemblies:
   - Fusee.Jometri
@@ -61,17 +57,13 @@ items:
   fullName: Fusee.Jometri.GeomEditing.InsertVertex(Fusee.Jometri.Geometry, System.Int32, System.Int32, Fusee.Math.Core.float3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Jometri/GeomEditing.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: InsertVertex
-    path: src/Fusee/src/Jometri/GeomEditing.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Jometri\GeomEditing.cs
     startLine: 22
   assemblies:
   - Fusee.Jometri
   namespace: Fusee.Jometri
-  summary: "\nInserts a new Vertex between two given existing Vertices.\n"
+  summary: "\nInserts a new Vertex between two given exsisting Vertices.\n"
   example: []
   syntax:
     content: public static int InsertVertex(this Geometry geometry, int p, int q, float3 pos)
@@ -115,12 +107,8 @@ items:
   fullName: Fusee.Jometri.GeomEditing.InsertDiagonal(Fusee.Jometri.Geometry, System.Int32, System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Jometri/GeomEditing.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: InsertDiagonal
-    path: src/Fusee/src/Jometri/GeomEditing.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Jometri\GeomEditing.cs
     startLine: 106
   assemblies:
   - Fusee.Jometri
@@ -132,7 +120,7 @@ items:
     parameters:
     - id: geometry
       type: Fusee.Jometri.Geometry
-      description: The Geometry to insert a diagonal.
+      description: The Geometry to insert a dignonal
     - id: p
       type: System.Int32
       description: First Vertex handle.
@@ -166,12 +154,8 @@ items:
   fullName: Fusee.Jometri.GeomEditing.InsetFace(Fusee.Jometri.Geometry, System.Int32, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Jometri/GeomEditing.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: InsetFace
-    path: src/Fusee/src/Jometri/GeomEditing.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Jometri\GeomEditing.cs
     startLine: 259
   assemblies:
   - Fusee.Jometri
@@ -186,7 +170,7 @@ items:
       description: The geometry on which to perform a face inset.
     - id: faceHandle
       type: System.Int32
-      description: The Handle of the face, the new one will be inserted to.
+      description: The Handle of the face, the new one will be inseted to.
     - id: insetOffset
       type: System.Single
       description: The offset of the inset in percent. Use values between 0 and 1. A value of 0.5f means 50% of the original face remains.

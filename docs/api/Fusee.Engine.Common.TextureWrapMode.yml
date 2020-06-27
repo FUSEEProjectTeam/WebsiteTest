@@ -5,10 +5,10 @@ items:
   id: TextureWrapMode
   parent: Fusee.Engine.Common
   children:
-  - Fusee.Engine.Common.TextureWrapMode.ClampToBorder
-  - Fusee.Engine.Common.TextureWrapMode.ClampToEdge
-  - Fusee.Engine.Common.TextureWrapMode.MirroredRepeat
-  - Fusee.Engine.Common.TextureWrapMode.Repeat
+  - Fusee.Engine.Common.TextureWrapMode.CLAMP_TO_BORDER
+  - Fusee.Engine.Common.TextureWrapMode.CLAMP_TO_EDGE
+  - Fusee.Engine.Common.TextureWrapMode.MIRRORED_REPEAT
+  - Fusee.Engine.Common.TextureWrapMode.REPEAT
   langs:
   - csharp
   - vb
@@ -17,12 +17,8 @@ items:
   fullName: Fusee.Engine.Common.TextureWrapMode
   type: Enum
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/ITextureBase.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: TextureWrapMode
-    path: src/Fusee/src/Engine/Common/ITextureBase.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
     startLine: 34
   assemblies:
   - Fusee.Engine.Common
@@ -38,24 +34,20 @@ items:
   modifiers.vb:
   - Public
   - Enum
-- uid: Fusee.Engine.Common.TextureWrapMode.Repeat
-  commentId: F:Fusee.Engine.Common.TextureWrapMode.Repeat
-  id: Repeat
+- uid: Fusee.Engine.Common.TextureWrapMode.REPEAT
+  commentId: F:Fusee.Engine.Common.TextureWrapMode.REPEAT
+  id: REPEAT
   parent: Fusee.Engine.Common.TextureWrapMode
   langs:
   - csharp
   - vb
-  name: Repeat
-  nameWithType: TextureWrapMode.Repeat
-  fullName: Fusee.Engine.Common.TextureWrapMode.Repeat
+  name: REPEAT
+  nameWithType: TextureWrapMode.REPEAT
+  fullName: Fusee.Engine.Common.TextureWrapMode.REPEAT
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/ITextureBase.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Repeat
-    path: src/Fusee/src/Engine/Common/ITextureBase.cs
+    id: REPEAT
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
     startLine: 39
   assemblies:
   - Fusee.Engine.Common
@@ -63,7 +55,7 @@ items:
   summary: "\nThe integer part of the uv coordinate will be ignored and a repeating pattern is formed.\n"
   example: []
   syntax:
-    content: Repeat = 0
+    content: REPEAT = 0
     return:
       type: Fusee.Engine.Common.TextureWrapMode
   modifiers.csharp:
@@ -72,24 +64,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.TextureWrapMode.MirroredRepeat
-  commentId: F:Fusee.Engine.Common.TextureWrapMode.MirroredRepeat
-  id: MirroredRepeat
+- uid: Fusee.Engine.Common.TextureWrapMode.MIRRORED_REPEAT
+  commentId: F:Fusee.Engine.Common.TextureWrapMode.MIRRORED_REPEAT
+  id: MIRRORED_REPEAT
   parent: Fusee.Engine.Common.TextureWrapMode
   langs:
   - csharp
   - vb
-  name: MirroredRepeat
-  nameWithType: TextureWrapMode.MirroredRepeat
-  fullName: Fusee.Engine.Common.TextureWrapMode.MirroredRepeat
+  name: MIRRORED_REPEAT
+  nameWithType: TextureWrapMode.MIRRORED_REPEAT
+  fullName: Fusee.Engine.Common.TextureWrapMode.MIRRORED_REPEAT
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/ITextureBase.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: MirroredRepeat
-    path: src/Fusee/src/Engine/Common/ITextureBase.cs
+    id: MIRRORED_REPEAT
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
     startLine: 43
   assemblies:
   - Fusee.Engine.Common
@@ -97,7 +85,7 @@ items:
   summary: "\nThe texture will be repeated, but it will be mirrored when the integer part of the uv coordinate is odd.\n"
   example: []
   syntax:
-    content: MirroredRepeat = 1
+    content: MIRRORED_REPEAT = 1
     return:
       type: Fusee.Engine.Common.TextureWrapMode
   modifiers.csharp:
@@ -106,24 +94,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.TextureWrapMode.ClampToEdge
-  commentId: F:Fusee.Engine.Common.TextureWrapMode.ClampToEdge
-  id: ClampToEdge
+- uid: Fusee.Engine.Common.TextureWrapMode.CLAMP_TO_EDGE
+  commentId: F:Fusee.Engine.Common.TextureWrapMode.CLAMP_TO_EDGE
+  id: CLAMP_TO_EDGE
   parent: Fusee.Engine.Common.TextureWrapMode
   langs:
   - csharp
   - vb
-  name: ClampToEdge
-  nameWithType: TextureWrapMode.ClampToEdge
-  fullName: Fusee.Engine.Common.TextureWrapMode.ClampToEdge
+  name: CLAMP_TO_EDGE
+  nameWithType: TextureWrapMode.CLAMP_TO_EDGE
+  fullName: Fusee.Engine.Common.TextureWrapMode.CLAMP_TO_EDGE
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/ITextureBase.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: ClampToEdge
-    path: src/Fusee/src/Engine/Common/ITextureBase.cs
+    id: CLAMP_TO_EDGE
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
     startLine: 47
   assemblies:
   - Fusee.Engine.Common
@@ -131,7 +115,7 @@ items:
   summary: "\nThe coordinate will simply be clamped between 0 and 1.\n"
   example: []
   syntax:
-    content: ClampToEdge = 2
+    content: CLAMP_TO_EDGE = 2
     return:
       type: Fusee.Engine.Common.TextureWrapMode
   modifiers.csharp:
@@ -140,24 +124,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.TextureWrapMode.ClampToBorder
-  commentId: F:Fusee.Engine.Common.TextureWrapMode.ClampToBorder
-  id: ClampToBorder
+- uid: Fusee.Engine.Common.TextureWrapMode.CLAMP_TO_BORDER
+  commentId: F:Fusee.Engine.Common.TextureWrapMode.CLAMP_TO_BORDER
+  id: CLAMP_TO_BORDER
   parent: Fusee.Engine.Common.TextureWrapMode
   langs:
   - csharp
   - vb
-  name: ClampToBorder
-  nameWithType: TextureWrapMode.ClampToBorder
-  fullName: Fusee.Engine.Common.TextureWrapMode.ClampToBorder
+  name: CLAMP_TO_BORDER
+  nameWithType: TextureWrapMode.CLAMP_TO_BORDER
+  fullName: Fusee.Engine.Common.TextureWrapMode.CLAMP_TO_BORDER
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/ITextureBase.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: ClampToBorder
-    path: src/Fusee/src/Engine/Common/ITextureBase.cs
+    id: CLAMP_TO_BORDER
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
     startLine: 51
   assemblies:
   - Fusee.Engine.Common
@@ -165,7 +145,7 @@ items:
   summary: "\nThe coordinates that fall outside the range will be given a specified border color.\n"
   example: []
   syntax:
-    content: ClampToBorder = 3
+    content: CLAMP_TO_BORDER = 3
     return:
       type: Fusee.Engine.Common.TextureWrapMode
   modifiers.csharp:

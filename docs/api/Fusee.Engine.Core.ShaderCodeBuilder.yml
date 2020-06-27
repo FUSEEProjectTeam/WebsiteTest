@@ -31,12 +31,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ShaderCodeBuilder
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 17
   assemblies:
   - Fusee.Engine.Core
@@ -75,12 +71,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.Default
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Default
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 22
   assemblies:
   - Fusee.Engine.Core
@@ -114,12 +106,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.FXAARenderTargetEffect(Fusee.Engine.Core.WritableTexture, Fusee.Math.Core.float2)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FXAARenderTargetEffect
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 33
   assemblies:
   - Fusee.Engine.Core
@@ -157,17 +145,13 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.SSAORenderTargetTextureEffect(Fusee.Engine.Core.RenderTarget, System.Int32, Fusee.Math.Core.float2)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SSAORenderTargetTextureEffect
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 63
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nShader effect for the SSAO pass.\n"
+  summary: "\nShader effect for the ssao pass.\n"
   example: []
   syntax:
     content: public static ShaderEffect SSAORenderTargetTextureEffect(RenderTarget geomPassRenderTarget, int kernelLength, float2 screenParams)
@@ -203,24 +187,20 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.SSAORenderTargetBlurEffect(Fusee.Engine.Core.WritableTexture)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SSAORenderTargetBlurEffect
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 109
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nCreates a blurred SSAO texture, to hide rectangular artifacts originating from the noise texture;\n"
+  summary: "\nCreates a blurred ssao texture, to hide rectangular artifacts originating from the noise texture;\n"
   example: []
   syntax:
     content: public static ShaderEffect SSAORenderTargetBlurEffect(WritableTexture ssaoRenderTex)
     parameters:
     - id: ssaoRenderTex
       type: Fusee.Engine.Core.WritableTexture
-      description: The non blurred SSAO texture.
+      description: The non blurred ssao texture.
     return:
       type: Fusee.Engine.Core.Scene.ShaderEffect
     content.vb: Public Shared Function SSAORenderTargetBlurEffect(ssaoRenderTex As WritableTexture) As ShaderEffect
@@ -243,12 +223,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.DeferredLightingPassEffect(Fusee.Engine.Core.RenderTarget, Fusee.Engine.Core.Scene.Light, Fusee.Math.Core.float4, Fusee.Engine.Common.IWritableTexture)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: DeferredLightingPassEffect
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 164
   assemblies:
   - Fusee.Engine.Core
@@ -293,12 +269,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.DeferredLightingPassEffect(Fusee.Engine.Core.RenderTarget, Fusee.Engine.Core.Scene.Light, Fusee.Engine.Core.WritableTexture[], Fusee.Math.Core.float2[], System.Int32, Fusee.Math.Core.float4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: DeferredLightingPassEffect
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 211
   assemblies:
   - Fusee.Engine.Core
@@ -352,12 +324,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.ShadowCubeMapEffect(Fusee.Math.Core.float4x4[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ShadowCubeMapEffect
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 243
   assemblies:
   - Fusee.Engine.Core
@@ -395,12 +363,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.ShadowMapEffect()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ShadowMapEffect
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 277
   assemblies:
   - Fusee.Engine.Core
@@ -432,12 +396,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.MakeShaderEffect(Fusee.Math.Core.float4, System.String, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: MakeShaderEffect
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 355
   assemblies:
   - Fusee.Engine.Core
@@ -479,12 +439,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.MakeShaderEffectProto(Fusee.Math.Core.float4, System.String, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: MakeShaderEffectProto
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 381
   assemblies:
   - Fusee.Engine.Core
@@ -526,12 +482,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.MakeShaderEffect(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: MakeShaderEffect
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 408
   assemblies:
   - Fusee.Engine.Core
@@ -576,12 +528,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.MakeShaderEffectProto(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: MakeShaderEffectProto
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 436
   assemblies:
   - Fusee.Engine.Core
@@ -626,12 +574,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.MakeShaderEffect(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, System.String, System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: MakeShaderEffect
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 466
   assemblies:
   - Fusee.Engine.Core
@@ -682,12 +626,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.MakeShaderEffectProto(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, System.String, System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: MakeShaderEffectProto
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 499
   assemblies:
   - Fusee.Engine.Core
@@ -738,12 +678,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.MakeShaderEffectProto(Fusee.Engine.Core.ShaderShards.ShaderEffectProps)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: MakeShaderEffectProto
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 527
   assemblies:
   - Fusee.Engine.Core
@@ -779,12 +715,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.MakeShaderEffect(Fusee.Engine.Core.ShaderShards.ShaderEffectProps)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: MakeShaderEffect
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 537
   assemblies:
   - Fusee.Engine.Core
@@ -820,12 +752,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.MakeShaderEffectFromShaderEffectProps(Fusee.Engine.Core.ShaderShards.ShaderEffectProps, Fusee.Engine.Core.Scene.Weight)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: MakeShaderEffectFromShaderEffectProps
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 549
   assemblies:
   - Fusee.Engine.Core
@@ -867,12 +795,8 @@ items:
   fullName: Fusee.Engine.Core.ShaderCodeBuilder.MakeShaderEffectFromShaderEffectPropsProto(Fusee.Engine.Core.ShaderShards.ShaderEffectProps, Fusee.Engine.Core.Scene.Weight)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: MakeShaderEffectFromShaderEffectPropsProto
-    path: src/Fusee/src/Engine/Core/ShaderCodeBuilder.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 588
   assemblies:
   - Fusee.Engine.Core

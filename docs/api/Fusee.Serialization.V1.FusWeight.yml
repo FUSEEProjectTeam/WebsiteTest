@@ -16,12 +16,8 @@ items:
   fullName: Fusee.Serialization.V1.FusWeight
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusWeight.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FusWeight
-    path: src/Fusee/src/Serialization/V1/FusWeight.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusWeight.cs
     startLine: 10
   assemblies:
   - Fusee.Serialization
@@ -29,8 +25,13 @@ items:
   summary: "\nDefines a weight map. Basically a table with a row for each vertex and a column for each bone\ncontrolling the geometry. \n"
   example: []
   syntax:
-    content: 'public class FusWeight : FusComponent, IComponent'
+    content: >-
+      [ProtoContract]
+
+      public class FusWeight : FusComponent, IComponent
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusWeight
           Inherits FusComponent
           Implements IComponent
@@ -48,6 +49,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -66,12 +71,8 @@ items:
   fullName: Fusee.Serialization.V1.FusWeight.WeightMap
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusWeight.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: WeightMap
-    path: src/Fusee/src/Serialization/V1/FusWeight.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusWeight.cs
     startLine: 17
   assemblies:
   - Fusee.Serialization
@@ -79,10 +80,22 @@ items:
   summary: "\nThe weight map. Contains as many entries as the object containing this node&apos;s geometry has vertices.\n"
   example: []
   syntax:
-    content: public List<VertexWeightList> WeightMap
+    content: >-
+      [ProtoMember(1)]
+
+      public List<VertexWeightList> WeightMap
     return:
       type: System.Collections.Generic.List{Fusee.Serialization.V1.VertexWeightList}
-    content.vb: Public WeightMap As List(Of VertexWeightList)
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public WeightMap As List(Of VertexWeightList)
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -99,12 +112,8 @@ items:
   fullName: Fusee.Serialization.V1.FusWeight.Joints
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusWeight.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Joints
-    path: src/Fusee/src/Serialization/V1/FusWeight.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusWeight.cs
     startLine: 23
   assemblies:
   - Fusee.Serialization
@@ -112,10 +121,22 @@ items:
   summary: "\nThe joint objects controlling the geometry.\n"
   example: []
   syntax:
-    content: public List<FusComponent> Joints
+    content: >-
+      [ProtoMember(2)]
+
+      public List<FusComponent> Joints
     return:
       type: System.Collections.Generic.List{Fusee.Serialization.V1.FusComponent}
-    content.vb: Public Joints As List(Of FusComponent)
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Joints As List(Of FusComponent)
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -132,12 +153,8 @@ items:
   fullName: Fusee.Serialization.V1.FusWeight.BindingMatrices
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusWeight.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: BindingMatrices
-    path: src/Fusee/src/Serialization/V1/FusWeight.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusWeight.cs
     startLine: 29
   assemblies:
   - Fusee.Serialization
@@ -145,10 +162,22 @@ items:
   summary: "\nThe binding matrices defining the object&apos;s untransformed state.\n"
   example: []
   syntax:
-    content: public List<float4x4> BindingMatrices
+    content: >-
+      [ProtoMember(3)]
+
+      public List<float4x4> BindingMatrices
     return:
       type: System.Collections.Generic.List{Fusee.Math.Core.float4x4}
-    content.vb: Public BindingMatrices As List(Of float4x4)
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public BindingMatrices As List(Of float4x4)
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:

@@ -5,7 +5,7 @@ items:
   id: RenderContextImp
   parent: Fusee.Engine.Imp.Graphics.Android
   children:
-  - Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor(Fusee.Engine.Common.IRenderCanvasImp,Android.Content.Context)
+  - Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor(Fusee.Engine.Common.IRenderCanvasImp,Context)
   - Fusee.Engine.Imp.Graphics.Android.RenderContextImp.AttacheTextureToFbo(Fusee.Engine.Common.IRenderTarget,System.Boolean,Fusee.Engine.Common.ITextureHandle,System.Int32)
   - Fusee.Engine.Imp.Graphics.Android.RenderContextImp.Clear(Fusee.Engine.Common.ClearFlags)
   - Fusee.Engine.Imp.Graphics.Android.RenderContextImp.ClearColor
@@ -85,12 +85,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RenderContextImp
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 17
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -98,46 +94,35 @@ items:
   summary: "\nImplementation of the <xref href=\"Fusee.Engine.Common.IRenderContextImp\" data-throw-if-not-resolved=\"false\"></xref> interface for usage with OpenTK framework.\n"
   example: []
   syntax:
-    content: 'public class RenderContextImp : IRenderContextImp'
+    content: 'public class RenderContextImp : object, IRenderContextImp'
     content.vb: >-
       Public Class RenderContextImp
+          Inherits Object
           Implements IRenderContextImp
   inheritance:
   - System.Object
   implements:
   - Fusee.Engine.Common.IRenderContextImp
-  inheritedMembers:
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ToString
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   modifiers.csharp:
   - public
   - class
   modifiers.vb:
   - Public
   - Class
-- uid: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor(Fusee.Engine.Common.IRenderCanvasImp,Android.Content.Context)
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor(Fusee.Engine.Common.IRenderCanvasImp,Android.Content.Context)
-  id: '#ctor(Fusee.Engine.Common.IRenderCanvasImp,Android.Content.Context)'
+- uid: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor(Fusee.Engine.Common.IRenderCanvasImp,Context)
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor(Fusee.Engine.Common.IRenderCanvasImp,Context)
+  id: '#ctor(Fusee.Engine.Common.IRenderCanvasImp,Context)'
   parent: Fusee.Engine.Imp.Graphics.Android.RenderContextImp
   langs:
   - csharp
   - vb
   name: RenderContextImp(IRenderCanvasImp, Context)
   nameWithType: RenderContextImp.RenderContextImp(IRenderCanvasImp, Context)
-  fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RenderContextImp(Fusee.Engine.Common.IRenderCanvasImp, Android.Content.Context)
+  fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RenderContextImp(Fusee.Engine.Common.IRenderCanvasImp, Context)
   type: Constructor
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 36
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -151,7 +136,7 @@ items:
       type: Fusee.Engine.Common.IRenderCanvasImp
       description: The render canvas interface.
     - id: androidContext
-      type: Android.Content.Context
+      type: Context
     content.vb: Public Sub New(renderCanvas As IRenderCanvasImp, androidContext As Context)
   overload: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor*
   modifiers.csharp:
@@ -170,12 +155,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableCubeMap)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateTexture
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 264
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -211,12 +192,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.CreateTexture(Fusee.Engine.Common.ITexture)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateTexture
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 296
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -252,12 +229,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableTexture)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateTexture
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 332
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -293,12 +266,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.UpdateTextureRegion(Fusee.Engine.Common.ITextureHandle, Fusee.Engine.Common.ITexture, System.Int32, System.Int32, System.Int32, System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: UpdateTextureRegion
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 376
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -347,12 +316,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.DeleteFrameBuffer(Fusee.Engine.Common.IBufferHandle)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: DeleteFrameBuffer
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 389
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -385,12 +350,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.DeleteRenderBuffer(Fusee.Engine.Common.IBufferHandle)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: DeleteRenderBuffer
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 398
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -423,12 +384,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RemoveTextureHandle(Fusee.Engine.Common.ITextureHandle)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RemoveTextureHandle
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 403
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -458,12 +415,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.CreateShaderProgram(System.String, System.String, System.String)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateShaderProgram
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 437
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -486,10 +439,6 @@ items:
       description: An instance of <xref href="Fusee.Engine.Common.IShaderHandle" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Function CreateShaderProgram(vs As String, ps As String, gs As String = Nothing) As IShaderHandle
   overload: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.CreateShaderProgram*
-  exceptions:
-  - type: System.ApplicationException
-    commentId: T:System.ApplicationException
-    description: "\n"
   implements:
   - Fusee.Engine.Common.IRenderContextImp.CreateShaderProgram(System.String,System.String,System.String)
   modifiers.csharp:
@@ -508,12 +457,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RemoveShader(Fusee.Engine.Common.IShaderHandle)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RemoveShader
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 493
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -546,12 +491,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetShader(Fusee.Engine.Common.IShaderHandle)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetShader
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 512
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -584,12 +525,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetLineWidth(System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetLineWidth
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 520
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -619,12 +556,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.GetShaderParam(Fusee.Engine.Common.IShaderHandle, System.String)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetShaderParam
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 533
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -663,12 +596,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.GetParamValue(Fusee.Engine.Common.IShaderHandle, Fusee.Engine.Common.IShaderParam)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetParamValue
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 547
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -705,12 +634,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.GetShaderParamList(Fusee.Engine.Common.IShaderHandle)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetShaderParamList
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 559
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -724,15 +649,10 @@ items:
       type: Fusee.Engine.Common.IShaderHandle
       description: The shader program.
     return:
-      type: System.Collections.Generic.IList{Fusee.Engine.Common.ShaderParamInfo}
+      type: IList{Fusee.Engine.Common.ShaderParamInfo}
       description: All Shader parameters of a shader program are returned.
     content.vb: Public Function GetShaderParamList(shaderProgram As IShaderHandle) As IList(Of ShaderParamInfo)
   overload: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.GetShaderParamList*
-  exceptions:
-  - type: System.ArgumentOutOfRangeException
-    commentId: T:System.ArgumentOutOfRangeException
-  implements:
-  - Fusee.Engine.Common.IRenderContextImp.GetShaderParamList(Fusee.Engine.Common.IShaderHandle)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -749,12 +669,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetShaderParam(Fusee.Engine.Common.IShaderParam, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetShaderParam
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 626
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -790,12 +706,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetShaderParam(Fusee.Engine.Common.IShaderParam, float2)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetShaderParam
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 636
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -829,12 +741,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetShaderParam(Fusee.Engine.Common.IShaderParam, float2[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetShaderParam
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 646
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -871,12 +779,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetShaderParam(Fusee.Engine.Common.IShaderParam, float3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetShaderParam
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 657
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -910,12 +814,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetShaderParam(Fusee.Engine.Common.IShaderParam, float3[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetShaderParam
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 667
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -952,12 +852,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetShaderParam(Fusee.Engine.Common.IShaderParam, float4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetShaderParam
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 678
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -991,12 +887,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetShaderParam(Fusee.Engine.Common.IShaderParam, float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetShaderParam
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 688
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1030,12 +922,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetShaderParam(Fusee.Engine.Common.IShaderParam, float4[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetShaderParam
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 704
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1072,12 +960,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetShaderParam(Fusee.Engine.Common.IShaderParam, float4x4[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetShaderParam
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 715
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1114,12 +998,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetShaderParam(Fusee.Engine.Common.IShaderParam, System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetShaderParam
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 736
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1155,12 +1035,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetActiveAndBindTexture(Fusee.Engine.Common.IShaderParam, Fusee.Engine.Common.ITextureHandle, Fusee.Engine.Common.TextureType)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetActiveAndBindTexture
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 768
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1199,12 +1075,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetActiveAndBindTexture(Fusee.Engine.Common.IShaderParam, Fusee.Engine.Common.ITextureHandle, Fusee.Engine.Common.TextureType, out System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetActiveAndBindTexture
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 789
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1249,12 +1121,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetActiveAndBindTextureArray(Fusee.Engine.Common.IShaderParam, Fusee.Engine.Common.ITextureHandle[], Fusee.Engine.Common.TextureType)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetActiveAndBindTextureArray
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 809
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1296,12 +1164,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetActiveAndBindTextureArray(Fusee.Engine.Common.IShaderParam, Fusee.Engine.Common.ITextureHandle[], Fusee.Engine.Common.TextureType, out System.Int32[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetActiveAndBindTextureArray
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 838
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1346,12 +1210,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetShaderParamTexture(Fusee.Engine.Common.IShaderParam, Fusee.Engine.Common.ITextureHandle, Fusee.Engine.Common.TextureType)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetShaderParamTexture
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 866
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1390,12 +1250,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetShaderParamTextureArray(Fusee.Engine.Common.IShaderParam, Fusee.Engine.Common.ITextureHandle[], Fusee.Engine.Common.TextureType)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetShaderParamTextureArray
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 878
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1437,12 +1293,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.Clear(Fusee.Engine.Common.ClearFlags)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Clear
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 894
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1475,12 +1327,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.ClearColor
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ClearColor
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 905
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1513,12 +1361,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.ClearDepth
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ClearDepth
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 922
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1553,12 +1397,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.Scissor(System.Int32, System.Int32, System.Int32, System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Scissor
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 944
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1600,12 +1440,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.EnableDepthClamp()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: EnableDepthClamp
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 954
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1634,12 +1470,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.DisableDepthClamp()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: DisableDepthClamp
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 962
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1668,12 +1500,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetVertices(Fusee.Engine.Common.IMeshImp, float3[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetVertices
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 974
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1691,12 +1519,6 @@ items:
       description: The vertices.
     content.vb: Public Sub SetVertices(mr As IMeshImp, vertices As float3())
   overload: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetVertices*
-  exceptions:
-  - type: System.ArgumentException
-    commentId: T:System.ArgumentException
-    description: Vertices must not be null or empty
-  - type: System.ApplicationException
-    commentId: T:System.ApplicationException
   nameWithType.vb: RenderContextImp.SetVertices(IMeshImp, float3())
   modifiers.csharp:
   - public
@@ -1716,12 +1538,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetTangents(Fusee.Engine.Common.IMeshImp, float4[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetTangents
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 996
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1754,12 +1572,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetBiTangents(Fusee.Engine.Common.IMeshImp, float3[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetBiTangents
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1018
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1792,12 +1606,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetNormals(Fusee.Engine.Common.IMeshImp, float3[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetNormals
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1047
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1815,12 +1625,6 @@ items:
       description: The normals.
     content.vb: Public Sub SetNormals(mr As IMeshImp, normals As float3())
   overload: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetNormals*
-  exceptions:
-  - type: System.ArgumentException
-    commentId: T:System.ArgumentException
-    description: Normals must not be null or empty
-  - type: System.ApplicationException
-    commentId: T:System.ApplicationException
   nameWithType.vb: RenderContextImp.SetNormals(IMeshImp, float3())
   modifiers.csharp:
   - public
@@ -1840,12 +1644,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetBoneIndices(Fusee.Engine.Common.IMeshImp, float4[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetBoneIndices
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1074
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1863,12 +1663,6 @@ items:
       description: The bone indices.
     content.vb: Public Sub SetBoneIndices(mr As IMeshImp, boneIndices As float4())
   overload: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetBoneIndices*
-  exceptions:
-  - type: System.ArgumentException
-    commentId: T:System.ArgumentException
-    description: BoneIndices must not be null or empty
-  - type: System.ApplicationException
-    commentId: T:System.ApplicationException
   nameWithType.vb: RenderContextImp.SetBoneIndices(IMeshImp, float4())
   modifiers.csharp:
   - public
@@ -1888,12 +1682,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetBoneWeights(Fusee.Engine.Common.IMeshImp, float4[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetBoneWeights
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1101
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1911,12 +1701,6 @@ items:
       description: The bone weights.
     content.vb: Public Sub SetBoneWeights(mr As IMeshImp, boneWeights As float4())
   overload: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetBoneWeights*
-  exceptions:
-  - type: System.ArgumentException
-    commentId: T:System.ArgumentException
-    description: BoneWeights must not be null or empty
-  - type: System.ApplicationException
-    commentId: T:System.ApplicationException
   nameWithType.vb: RenderContextImp.SetBoneWeights(IMeshImp, float4())
   modifiers.csharp:
   - public
@@ -1936,12 +1720,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetUVs(Fusee.Engine.Common.IMeshImp, float2[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetUVs
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1128
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1959,12 +1739,6 @@ items:
       description: The UV&apos;s.
     content.vb: Public Sub SetUVs(mr As IMeshImp, uvs As float2())
   overload: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetUVs*
-  exceptions:
-  - type: System.ArgumentException
-    commentId: T:System.ArgumentException
-    description: UVs must not be null or empty
-  - type: System.ApplicationException
-    commentId: T:System.ApplicationException
   nameWithType.vb: RenderContextImp.SetUVs(IMeshImp, float2())
   modifiers.csharp:
   - public
@@ -1984,12 +1758,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetColors(Fusee.Engine.Common.IMeshImp, System.UInt32[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetColors
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1155
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2007,12 +1777,6 @@ items:
       description: The colors.
     content.vb: Public Sub SetColors(mr As IMeshImp, colors As UInteger())
   overload: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetColors*
-  exceptions:
-  - type: System.ArgumentException
-    commentId: T:System.ArgumentException
-    description: colors must not be null or empty
-  - type: System.ApplicationException
-    commentId: T:System.ApplicationException
   implements:
   - Fusee.Engine.Common.IRenderContextImp.SetColors(Fusee.Engine.Common.IMeshImp,System.UInt32[])
   nameWithType.vb: RenderContextImp.SetColors(IMeshImp, UInt32())
@@ -2034,12 +1798,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetTriangles(Fusee.Engine.Common.IMeshImp, System.UInt16[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetTriangles
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1183
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2057,12 +1817,6 @@ items:
       description: The triangle indices.
     content.vb: Public Sub SetTriangles(mr As IMeshImp, triangleIndices As UShort())
   overload: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetTriangles*
-  exceptions:
-  - type: System.ArgumentException
-    commentId: T:System.ArgumentException
-    description: triangleIndices must not be null or empty
-  - type: System.ApplicationException
-    commentId: T:System.ApplicationException
   implements:
   - Fusee.Engine.Common.IRenderContextImp.SetTriangles(Fusee.Engine.Common.IMeshImp,System.UInt16[])
   nameWithType.vb: RenderContextImp.SetTriangles(IMeshImp, UInt16())
@@ -2084,12 +1838,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RemoveVertices(Fusee.Engine.Common.IMeshImp)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RemoveVertices
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1210
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2121,12 +1871,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RemoveNormals(Fusee.Engine.Common.IMeshImp)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RemoveNormals
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1220
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2158,12 +1904,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RemoveColors(Fusee.Engine.Common.IMeshImp)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RemoveColors
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1230
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2195,12 +1937,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RemoveUVs(Fusee.Engine.Common.IMeshImp)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RemoveUVs
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1240
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2232,12 +1970,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RemoveTriangles(Fusee.Engine.Common.IMeshImp)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RemoveTriangles
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1250
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2269,12 +2003,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RemoveBoneWeights(Fusee.Engine.Common.IMeshImp)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RemoveBoneWeights
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1260
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2306,12 +2036,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RemoveBoneIndices(Fusee.Engine.Common.IMeshImp)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RemoveBoneIndices
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1270
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2343,12 +2069,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RemoveTangents(Fusee.Engine.Common.IMeshImp)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RemoveTangents
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1276
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2378,12 +2100,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RemoveBiTangents(Fusee.Engine.Common.IMeshImp)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RemoveBiTangents
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1282
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2413,12 +2131,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.Render(Fusee.Engine.Common.IMeshImp)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Render
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1292
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2451,12 +2165,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.GetBufferContent(Fusee.Engine.Common.Rectangle, Fusee.Engine.Common.ITextureHandle)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetBufferContent
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1428
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2492,12 +2202,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.CreateMeshImp()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateMeshImp
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1439
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2529,12 +2235,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetRenderState(Fusee.Engine.Common.RenderState, System.UInt32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetRenderState
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1608
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2552,10 +2254,6 @@ items:
       description: 'The value. See <xref href="Fusee.Engine.Common.RenderState" data-throw-if-not-resolved="false"></xref> for detailed information. '
     content.vb: Public Sub SetRenderState(renderState As RenderState, value As UInteger)
   overload: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetRenderState*
-  exceptions:
-  - type: System.ArgumentOutOfRangeException
-    commentId: T:System.ArgumentOutOfRangeException
-    description: "\nvalue\nor\nvalue\nor\nvalue\nor\nrenderState\n"
   implements:
   - Fusee.Engine.Common.IRenderContextImp.SetRenderState(Fusee.Engine.Common.RenderState,System.UInt32)
   modifiers.csharp:
@@ -2574,12 +2272,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.GetRenderState(Fusee.Engine.Common.RenderState)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetRenderState
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1753
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2597,10 +2291,6 @@ items:
       description: ''
     content.vb: Public Function GetRenderState(renderState As RenderState) As UInteger
   overload: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.GetRenderState*
-  exceptions:
-  - type: System.ArgumentOutOfRangeException
-    commentId: T:System.ArgumentOutOfRangeException
-    description: "\npm;Value  + ((PolygonMode)pm) +  not handled\nor\ndepFunc;Value  + ((All)depFunc) +  not handled\nor\nrenderState\n"
   implements:
   - Fusee.Engine.Common.IRenderContextImp.GetRenderState(Fusee.Engine.Common.RenderState)
   modifiers.csharp:
@@ -2619,12 +2309,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableTexture, Fusee.Engine.Common.ITextureHandle)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetRenderTarget
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1878
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2656,12 +2342,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableCubeMap, Fusee.Engine.Common.ITextureHandle)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetRenderTarget
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1906
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2693,12 +2375,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetRenderTarget(Fusee.Engine.Common.IRenderTarget, Fusee.Engine.Common.ITextureHandle[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SetRenderTarget
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 1934
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2733,12 +2411,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.DetachTextureFromFbo(Fusee.Engine.Common.IRenderTarget, System.Boolean, System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: DetachTextureFromFbo
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 2041
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2753,10 +2427,10 @@ items:
       description: The render target.
     - id: isDepthTex
       type: System.Boolean
-      description: Determines if the texture is a depth texture. In this case the texture currently associated with <xref href="OpenTK.Graphics.ES31.FramebufferAttachment.DepthAttachment" data-throw-if-not-resolved="false"></xref> will be detached.
+      description: Determines if the texture is a depth texture. In this case the texture currently associated with <see cref="!:FramebufferAttachment.DepthAttachment"></see> will be detached.
     - id: attachment
       type: System.Int32
-      description: 'Number of the fbo attachment. For example: attachment = 1 will detach the texture currently associated with <xref href="OpenTK.Graphics.ES31.FramebufferAttachment.ColorAttachment1" data-throw-if-not-resolved="false"></xref>.'
+      description: 'Number of the fbo attachment. For example: attachment = 1 will detach the texture currently associated with <see cref="!:FramebufferAttachment.ColorAttachment1"></see>.'
     content.vb: Public Sub DetachTextureFromFbo(renderTarget As IRenderTarget, isDepthTex As Boolean, attachment As Integer = 0)
   overload: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.DetachTextureFromFbo*
   implements:
@@ -2777,12 +2451,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.AttacheTextureToFbo(Fusee.Engine.Common.IRenderTarget, System.Boolean, Fusee.Engine.Common.ITextureHandle, System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: AttacheTextureToFbo
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 2054
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2797,13 +2467,13 @@ items:
       description: The render target.
     - id: isDepthTex
       type: System.Boolean
-      description: Determines if the texture is a depth texture. In this case the texture is attached to <xref href="OpenTK.Graphics.ES31.FramebufferAttachment.DepthAttachment" data-throw-if-not-resolved="false"></xref>.
+      description: Determines if the texture is a depth texture. In this case the texture is attached to <see cref="!:FramebufferAttachment.DepthAttachment"></see>.
     - id: texHandle
       type: Fusee.Engine.Common.ITextureHandle
       description: The gpu handle of the texture.
     - id: attachment
       type: System.Int32
-      description: 'Number of the fbo attachment. For example: attachment = 1 will attach the texture to <xref href="OpenTK.Graphics.ES31.FramebufferAttachment.ColorAttachment1" data-throw-if-not-resolved="false"></xref>.'
+      description: 'Number of the fbo attachment. For example: attachment = 1 will attach the texture to <see cref="!:FramebufferAttachment.ColorAttachment1"></see>.'
     content.vb: Public Sub AttacheTextureToFbo(renderTarget As IRenderTarget, isDepthTex As Boolean, texHandle As ITextureHandle, attachment As Integer = 0)
   overload: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.AttacheTextureToFbo*
   implements:
@@ -2824,12 +2494,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.Viewport(System.Int32, System.Int32, System.Int32, System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Viewport
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 2092
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2871,12 +2537,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.ColorMask(System.Boolean, System.Boolean, System.Boolean, System.Boolean)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ColorMask
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 2105
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2918,12 +2580,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.GetHardwareCapabilities(Fusee.Engine.Common.HardwareCapability)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetHardwareCapabilities
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 2115
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2959,12 +2617,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.GetHardwareDescription()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetHardwareDescription
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 2133
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -2996,12 +2650,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.DebugLine(float3, float3, float4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: DebugLine
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 2144
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -3038,12 +2688,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.GetPixelColor(System.Int32, System.Int32, System.Int32, System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetPixelColor
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 2167
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -3086,12 +2732,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.GetPixelDepth(System.Int32, System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetPixelDepth
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderContextImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderContextImp.cs
     startLine: 2180
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -3137,285 +2779,6 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: Fusee.Engine.Common
   commentId: N:Fusee.Engine.Common
   name: Fusee.Engine.Common
@@ -3443,19 +2806,11 @@ references:
   name: IRenderCanvasImp
   nameWithType: IRenderCanvasImp
   fullName: Fusee.Engine.Common.IRenderCanvasImp
-- uid: Android.Content.Context
-  commentId: T:Android.Content.Context
-  parent: Android.Content
+- uid: Context
   isExternal: true
   name: Context
   nameWithType: Context
-  fullName: Android.Content.Context
-- uid: Android.Content
-  commentId: N:Android.Content
-  isExternal: true
-  name: Android.Content
-  nameWithType: Android.Content
-  fullName: Android.Content
+  fullName: Context
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.CreateTexture*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Android.RenderContextImp.CreateTexture
   name: CreateTexture
@@ -3855,9 +3210,6 @@ references:
   name: IShaderHandle
   nameWithType: IShaderHandle
   fullName: Fusee.Engine.Common.IShaderHandle
-- uid: System.ApplicationException
-  commentId: T:System.ApplicationException
-  isExternal: true
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.CreateShaderProgram*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Android.RenderContextImp.CreateShaderProgram
   name: CreateShaderProgram
@@ -4143,65 +3495,25 @@ references:
   name: GetParamValue
   nameWithType: RenderContextImp.GetParamValue
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.GetParamValue
-- uid: System.ArgumentOutOfRangeException
-  commentId: T:System.ArgumentOutOfRangeException
-  isExternal: true
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.GetShaderParamList*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Android.RenderContextImp.GetShaderParamList
   name: GetShaderParamList
   nameWithType: RenderContextImp.GetShaderParamList
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.GetShaderParamList
-- uid: Fusee.Engine.Common.IRenderContextImp.GetShaderParamList(Fusee.Engine.Common.IShaderHandle)
-  commentId: M:Fusee.Engine.Common.IRenderContextImp.GetShaderParamList(Fusee.Engine.Common.IShaderHandle)
-  parent: Fusee.Engine.Common.IRenderContextImp
-  name: GetShaderParamList(IShaderHandle)
-  nameWithType: IRenderContextImp.GetShaderParamList(IShaderHandle)
-  fullName: Fusee.Engine.Common.IRenderContextImp.GetShaderParamList(Fusee.Engine.Common.IShaderHandle)
-  spec.csharp:
-  - uid: Fusee.Engine.Common.IRenderContextImp.GetShaderParamList(Fusee.Engine.Common.IShaderHandle)
-    name: GetShaderParamList
-    nameWithType: IRenderContextImp.GetShaderParamList
-    fullName: Fusee.Engine.Common.IRenderContextImp.GetShaderParamList
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Fusee.Engine.Common.IShaderHandle
-    name: IShaderHandle
-    nameWithType: IShaderHandle
-    fullName: Fusee.Engine.Common.IShaderHandle
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Fusee.Engine.Common.IRenderContextImp.GetShaderParamList(Fusee.Engine.Common.IShaderHandle)
-    name: GetShaderParamList
-    nameWithType: IRenderContextImp.GetShaderParamList
-    fullName: Fusee.Engine.Common.IRenderContextImp.GetShaderParamList
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Fusee.Engine.Common.IShaderHandle
-    name: IShaderHandle
-    nameWithType: IShaderHandle
-    fullName: Fusee.Engine.Common.IShaderHandle
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.Generic.IList{Fusee.Engine.Common.ShaderParamInfo}
-  commentId: T:System.Collections.Generic.IList{Fusee.Engine.Common.ShaderParamInfo}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.IList`1
+- uid: IList{Fusee.Engine.Common.ShaderParamInfo}
+  commentId: '!:IList{Fusee.Engine.Common.ShaderParamInfo}'
+  definition: IList`1
   name: IList<ShaderParamInfo>
   nameWithType: IList<ShaderParamInfo>
-  fullName: System.Collections.Generic.IList<Fusee.Engine.Common.ShaderParamInfo>
+  fullName: IList<Fusee.Engine.Common.ShaderParamInfo>
   nameWithType.vb: IList(Of ShaderParamInfo)
-  fullName.vb: System.Collections.Generic.IList(Of Fusee.Engine.Common.ShaderParamInfo)
+  fullName.vb: IList(Of Fusee.Engine.Common.ShaderParamInfo)
   name.vb: IList(Of ShaderParamInfo)
   spec.csharp:
-  - uid: System.Collections.Generic.IList`1
+  - uid: IList`1
     name: IList
     nameWithType: IList
-    fullName: System.Collections.Generic.IList
+    fullName: IList
     isExternal: true
   - name: <
     nameWithType: <
@@ -4214,10 +3526,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.Generic.IList`1
+  - uid: IList`1
     name: IList
     nameWithType: IList
-    fullName: System.Collections.Generic.IList
+    fullName: IList
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -4229,51 +3541,44 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.IList`1
-  commentId: T:System.Collections.Generic.IList`1
+- uid: IList`1
   isExternal: true
-  name: IList<T>
-  nameWithType: IList<T>
-  fullName: System.Collections.Generic.IList<T>
-  nameWithType.vb: IList(Of T)
-  fullName.vb: System.Collections.Generic.IList(Of T)
-  name.vb: IList(Of T)
+  name: IList<>
+  nameWithType: IList<>
+  fullName: IList<>
+  nameWithType.vb: IList(Of )
+  fullName.vb: IList(Of )
+  name.vb: IList(Of )
   spec.csharp:
-  - uid: System.Collections.Generic.IList`1
+  - uid: IList`1
     name: IList
     nameWithType: IList
-    fullName: System.Collections.Generic.IList
+    fullName: IList
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.Generic.IList`1
+  - uid: IList`1
     name: IList
     nameWithType: IList
-    fullName: System.Collections.Generic.IList
+    fullName: IList
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetShaderParam*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetShaderParam
   name: SetShaderParam
@@ -5268,9 +4573,6 @@ references:
   name: IMeshImp
   nameWithType: IMeshImp
   fullName: Fusee.Engine.Common.IMeshImp
-- uid: System.ArgumentException
-  commentId: T:System.ArgumentException
-  isExternal: true
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetVertices*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Android.RenderContextImp.SetVertices
   name: SetVertices
@@ -6278,12 +5580,6 @@ references:
   name: IRenderTarget
   nameWithType: IRenderTarget
   fullName: Fusee.Engine.Common.IRenderTarget
-- uid: OpenTK.Graphics.ES31.FramebufferAttachment.ColorAttachment1
-  commentId: F:OpenTK.Graphics.ES31.FramebufferAttachment.ColorAttachment1
-  isExternal: true
-- uid: OpenTK.Graphics.ES31.FramebufferAttachment.DepthAttachment
-  commentId: F:OpenTK.Graphics.ES31.FramebufferAttachment.DepthAttachment
-  isExternal: true
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.DetachTextureFromFbo*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Android.RenderContextImp.DetachTextureFromFbo
   name: DetachTextureFromFbo

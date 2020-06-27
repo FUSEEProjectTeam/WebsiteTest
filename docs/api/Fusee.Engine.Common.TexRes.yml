@@ -5,9 +5,9 @@ items:
   id: TexRes
   parent: Fusee.Engine.Common
   children:
-  - Fusee.Engine.Common.TexRes.High
-  - Fusee.Engine.Common.TexRes.Low
-  - Fusee.Engine.Common.TexRes.Middle
+  - Fusee.Engine.Common.TexRes.HIGH_RES
+  - Fusee.Engine.Common.TexRes.LOW_RES
+  - Fusee.Engine.Common.TexRes.MID_RES
   langs:
   - csharp
   - vb
@@ -16,12 +16,8 @@ items:
   fullName: Fusee.Engine.Common.TexRes
   type: Enum
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/MultipassEnums.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: TexRes
-    path: src/Fusee/src/Engine/Common/MultipassEnums.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\MultipassEnums.cs
     startLine: 41
   assemblies:
   - Fusee.Engine.Common
@@ -47,24 +43,20 @@ items:
   modifiers.vb:
   - Public
   - Enum
-- uid: Fusee.Engine.Common.TexRes.Low
-  commentId: F:Fusee.Engine.Common.TexRes.Low
-  id: Low
+- uid: Fusee.Engine.Common.TexRes.LOW_RES
+  commentId: F:Fusee.Engine.Common.TexRes.LOW_RES
+  id: LOW_RES
   parent: Fusee.Engine.Common.TexRes
   langs:
   - csharp
   - vb
-  name: Low
-  nameWithType: TexRes.Low
-  fullName: Fusee.Engine.Common.TexRes.Low
+  name: LOW_RES
+  nameWithType: TexRes.LOW_RES
+  fullName: Fusee.Engine.Common.TexRes.LOW_RES
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/MultipassEnums.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Low
-    path: src/Fusee/src/Engine/Common/MultipassEnums.cs
+    id: LOW_RES
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\MultipassEnums.cs
     startLine: 47
   assemblies:
   - Fusee.Engine.Common
@@ -72,7 +64,7 @@ items:
   summary: "\nCreate textures in low resolution.\n"
   example: []
   syntax:
-    content: Low = 1024
+    content: LOW_RES = 1024
     return:
       type: Fusee.Engine.Common.TexRes
   modifiers.csharp:
@@ -81,24 +73,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.TexRes.Middle
-  commentId: F:Fusee.Engine.Common.TexRes.Middle
-  id: Middle
+- uid: Fusee.Engine.Common.TexRes.MID_RES
+  commentId: F:Fusee.Engine.Common.TexRes.MID_RES
+  id: MID_RES
   parent: Fusee.Engine.Common.TexRes
   langs:
   - csharp
   - vb
-  name: Middle
-  nameWithType: TexRes.Middle
-  fullName: Fusee.Engine.Common.TexRes.Middle
+  name: MID_RES
+  nameWithType: TexRes.MID_RES
+  fullName: Fusee.Engine.Common.TexRes.MID_RES
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/MultipassEnums.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Middle
-    path: src/Fusee/src/Engine/Common/MultipassEnums.cs
+    id: MID_RES
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\MultipassEnums.cs
     startLine: 51
   assemblies:
   - Fusee.Engine.Common
@@ -106,7 +94,7 @@ items:
   summary: "\nCreate textures in middle resolution.\n"
   example: []
   syntax:
-    content: Middle = 2048
+    content: MID_RES = 2048
     return:
       type: Fusee.Engine.Common.TexRes
   modifiers.csharp:
@@ -115,24 +103,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.TexRes.High
-  commentId: F:Fusee.Engine.Common.TexRes.High
-  id: High
+- uid: Fusee.Engine.Common.TexRes.HIGH_RES
+  commentId: F:Fusee.Engine.Common.TexRes.HIGH_RES
+  id: HIGH_RES
   parent: Fusee.Engine.Common.TexRes
   langs:
   - csharp
   - vb
-  name: High
-  nameWithType: TexRes.High
-  fullName: Fusee.Engine.Common.TexRes.High
+  name: HIGH_RES
+  nameWithType: TexRes.HIGH_RES
+  fullName: Fusee.Engine.Common.TexRes.HIGH_RES
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/MultipassEnums.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: High
-    path: src/Fusee/src/Engine/Common/MultipassEnums.cs
+    id: HIGH_RES
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\MultipassEnums.cs
     startLine: 55
   assemblies:
   - Fusee.Engine.Common
@@ -140,7 +124,7 @@ items:
   summary: "\nCreate textures in high resolution.\n"
   example: []
   syntax:
-    content: High = 4096
+    content: HIGH_RES = 4096
     return:
       type: Fusee.Engine.Common.TexRes
   modifiers.csharp:

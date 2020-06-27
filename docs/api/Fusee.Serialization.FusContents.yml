@@ -13,21 +13,27 @@ items:
   fullName: Fusee.Serialization.FusContents
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FusContents
-    path: src/Fusee/src/Serialization/FusFile.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\FusFile.cs
     startLine: 44
   assemblies:
   - Fusee.Serialization
   namespace: Fusee.Serialization
-  summary: "\nPolymorphic contents of a fus file. The actual contents is contained in a sub-class. Possible sub-classes are listed\nin <see cref=\"!:ProtoIncludeAttribute\"></see> decorators preceding this class declaration. This mechanism allows fus files\nto contain different types of contents as well as different versions of contents. \n"
+  summary: "\nPolymorphic contents of a fus file. The actual contents is contained in a sub-class. Possible sub-classes are listed\nin <xref href=\"ProtoBuf.ProtoIncludeAttribute\" data-throw-if-not-resolved=\"false\"></xref> decorators preceding this class declaration. This mechanism allows fus files\nto contain different types of contents as well as different versions of contents. \n"
   example: []
   syntax:
-    content: public class FusContents
-    content.vb: Public Class FusContents
+    content: >-
+      [ProtoInclude(201, typeof(FusScene))]
+
+      [ProtoContract]
+
+      public class FusContents
+    content.vb: >-
+      <ProtoInclude(201, GetType(FusScene))>
+
+      <ProtoContract>
+
+      Public Class FusContents
   inheritance:
   - System.Object
   derivedClasses:
@@ -40,6 +46,17 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 201
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusScene
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -47,6 +64,13 @@ items:
   - Public
   - Class
 references:
+- uid: ProtoBuf.ProtoIncludeAttribute
+  commentId: T:ProtoBuf.ProtoIncludeAttribute
+  parent: ProtoBuf
+  isExternal: true
+  name: ProtoIncludeAttribute
+  nameWithType: ProtoIncludeAttribute
+  fullName: ProtoBuf.ProtoIncludeAttribute
 - uid: Fusee.Serialization
   commentId: N:Fusee.Serialization
   name: Fusee.Serialization
@@ -338,6 +362,12 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: ProtoBuf
+  commentId: N:ProtoBuf
+  isExternal: true
+  name: ProtoBuf
+  nameWithType: ProtoBuf
+  fullName: ProtoBuf
 - uid: System
   commentId: N:System
   isExternal: true

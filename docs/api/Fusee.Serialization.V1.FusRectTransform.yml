@@ -15,12 +15,8 @@ items:
   fullName: Fusee.Serialization.V1.FusRectTransform
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusRectTransform.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FusRectTransform
-    path: src/Fusee/src/Serialization/V1/FusRectTransform.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusRectTransform.cs
     startLine: 8
   assemblies:
   - Fusee.Serialization
@@ -28,8 +24,13 @@ items:
   summary: "\nBuilding block to set up User Interface hierarchies.\n"
   example: []
   syntax:
-    content: 'public class FusRectTransform : FusComponent, IComponent'
+    content: >-
+      [ProtoContract]
+
+      public class FusRectTransform : FusComponent, IComponent
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusRectTransform
           Inherits FusComponent
           Implements IComponent
@@ -47,6 +48,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -65,12 +70,8 @@ items:
   fullName: Fusee.Serialization.V1.FusRectTransform.Anchors
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusRectTransform.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Anchors
-    path: src/Fusee/src/Serialization/V1/FusRectTransform.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusRectTransform.cs
     startLine: 16
   assemblies:
   - Fusee.Serialization
@@ -78,10 +79,22 @@ items:
   summary: "\nPer-cent setting where to place the anchor point in respect to \nthe area defined by the parent node.\n"
   example: []
   syntax:
-    content: public MinMaxRect Anchors
+    content: >-
+      [ProtoMember(1)]
+
+      public MinMaxRect Anchors
     return:
       type: Fusee.Math.Core.MinMaxRect
-    content.vb: Public Anchors As MinMaxRect
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Anchors As MinMaxRect
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -98,12 +111,8 @@ items:
   fullName: Fusee.Serialization.V1.FusRectTransform.Offsets
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusRectTransform.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Offsets
-    path: src/Fusee/src/Serialization/V1/FusRectTransform.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusRectTransform.cs
     startLine: 21
   assemblies:
   - Fusee.Serialization
@@ -111,10 +120,22 @@ items:
   summary: "\nAbsolute offset values added to the anchor points.\n"
   example: []
   syntax:
-    content: public MinMaxRect Offsets
+    content: >-
+      [ProtoMember(2)]
+
+      public MinMaxRect Offsets
     return:
       type: Fusee.Math.Core.MinMaxRect
-    content.vb: Public Offsets As MinMaxRect
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Offsets As MinMaxRect
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:

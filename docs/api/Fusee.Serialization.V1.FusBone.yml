@@ -14,12 +14,8 @@ items:
   fullName: Fusee.Serialization.V1.FusBone
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusBone.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FusBone
-    path: src/Fusee/src/Serialization/V1/FusBone.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusBone.cs
     startLine: 8
   assemblies:
   - Fusee.Serialization
@@ -27,8 +23,13 @@ items:
   summary: "\nMarker component (contains no data). If contained within a node, the node \nserves as a bone in a bone animation.\n"
   example: []
   syntax:
-    content: 'public class FusBone : FusComponent, IComponent'
+    content: >-
+      [ProtoContract]
+
+      public class FusBone : FusComponent, IComponent
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusBone
           Inherits FusComponent
           Implements IComponent
@@ -45,6 +46,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -63,12 +68,8 @@ items:
   fullName: Fusee.Serialization.V1.FusBone.Name
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusBone.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Name
-    path: src/Fusee/src/Serialization/V1/FusBone.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusBone.cs
     startLine: 17
   assemblies:
   - Fusee.Serialization
@@ -76,10 +77,22 @@ items:
   summary: "\nThe name of this component.\nNeeded for blender exporter\n"
   example: []
   syntax:
-    content: public string Name
+    content: >-
+      [ProtoMember(1)]
+
+      public string Name
     return:
       type: System.String
-    content.vb: Public Name As String
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Name As String
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:

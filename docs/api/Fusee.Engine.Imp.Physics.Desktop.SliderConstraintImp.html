@@ -1,0 +1,1498 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SliderConstraintImp
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SliderConstraintImp
+   ">
+    <meta name="generator" content="docfx 2.55.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp">
+  
+  
+  <h1 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp" class="text-break">Class SliderConstraintImp
+  </h1>
+  <div class="markdown level0 summary"><p>Implementation of the <a class="xref" href="Fusee.Engine.Common.ISliderConstraintImp.html">ISliderConstraintImp</a> interface using the bullet physics engine.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SliderConstraintImp</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Fusee.Engine.Common.ISliderConstraintImp.html">ISliderConstraintImp</a></div>
+    <div><a class="xref" href="Fusee.Engine.Common.IConstraintImp.html">IConstraintImp</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.Imp.Physics.Desktop.html">Fusee.Engine.Imp.Physics.Desktop</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Engine.Imp.Physics.Desktop.dll</h6>
+  <h5 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SliderConstraintImp : ISliderConstraintImp, IConstraintImp</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_AnchorInA_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.AnchorInA*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_AnchorInA" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.AnchorInA">AnchorInA</h4>
+  <div class="markdown level1 summary"><p>Gets the anchor in a.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 AnchorInA { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><p>The anchor in a.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_AnchorInB_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.AnchorInB*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_AnchorInB" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.AnchorInB">AnchorInB</h4>
+  <div class="markdown level1 summary"><p>Gets the anchor in b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 AnchorInB { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><p>The anchor in b.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_AngularDepth_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.AngularDepth*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_AngularDepth" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.AngularDepth">AngularDepth</h4>
+  <div class="markdown level1 summary"><p>Gets the angular depth.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AngularDepth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The angular depth.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_AngularPos_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.AngularPos*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_AngularPos" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.AngularPos">AngularPos</h4>
+  <div class="markdown level1 summary"><p>Gets the angular position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AngularPos { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The angular position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_CalculatedTransformA_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.CalculatedTransformA*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_CalculatedTransformA" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.CalculatedTransformA">CalculatedTransformA</h4>
+  <div class="markdown level1 summary"><p>Gets the calculated transform a.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 CalculatedTransformA { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The calculated transform a.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_CalculatedTransformB_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.CalculatedTransformB*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_CalculatedTransformB" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.CalculatedTransformB">CalculatedTransformB</h4>
+  <div class="markdown level1 summary"><p>Gets the calculated transform b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 CalculatedTransformB { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The calculated transform b.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_DampingDirAngular_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.DampingDirAngular*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_DampingDirAngular" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.DampingDirAngular">DampingDirAngular</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the damping dir angular.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DampingDirAngular { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The damping dir angular.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_DampingDirLin_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.DampingDirLin*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_DampingDirLin" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.DampingDirLin">DampingDirLin</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the damping dir lin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DampingDirLin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The damping dir lin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_DampingLimAngular_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.DampingLimAngular*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_DampingLimAngular" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.DampingLimAngular">DampingLimAngular</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the damping lim angular.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DampingLimAngular { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The damping lim angular.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_DampingLimLin_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.DampingLimLin*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_DampingLimLin" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.DampingLimLin">DampingLimLin</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the damping lim lin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DampingLimLin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The damping lim lin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_DampingOrthoAngular_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.DampingOrthoAngular*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_DampingOrthoAngular" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.DampingOrthoAngular">DampingOrthoAngular</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the damping ortho angular.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DampingOrthoAngular { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The damping ortho angular.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_DampingOrthoLin_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.DampingOrthoLin*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_DampingOrthoLin" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.DampingOrthoLin">DampingOrthoLin</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the damping ortho lin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DampingOrthoLin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The damping ortho lin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_FrameOffsetA_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.FrameOffsetA*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_FrameOffsetA" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.FrameOffsetA">FrameOffsetA</h4>
+  <div class="markdown level1 summary"><p>Gets the frame offset a.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 FrameOffsetA { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The frame offset a.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_FrameOffsetB_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.FrameOffsetB*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_FrameOffsetB" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.FrameOffsetB">FrameOffsetB</h4>
+  <div class="markdown level1 summary"><p>Gets the frame offset b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 FrameOffsetB { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The frame offset b.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_LinDepth_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.LinDepth*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_LinDepth" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.LinDepth">LinDepth</h4>
+  <div class="markdown level1 summary"><p>Gets the lin depth.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LinDepth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The lin depth.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_LinPos_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.LinPos*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_LinPos" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.LinPos">LinPos</h4>
+  <div class="markdown level1 summary"><p>Gets the lin position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LinPos { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The lin position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_LowerAngularLimit_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.LowerAngularLimit*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_LowerAngularLimit" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.LowerAngularLimit">LowerAngularLimit</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the lower angular limit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LowerAngularLimit { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The lower angular limit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_LowerLinLimit_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.LowerLinLimit*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_LowerLinLimit" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.LowerLinLimit">LowerLinLimit</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the lower lin limit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LowerLinLimit { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The lower lin limit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_MaxAngularMotorForce_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.MaxAngularMotorForce*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_MaxAngularMotorForce" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.MaxAngularMotorForce">MaxAngularMotorForce</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the maximum angular motor force.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxAngularMotorForce { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The maximum angular motor force.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_MaxLinMotorForce_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.MaxLinMotorForce*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_MaxLinMotorForce" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.MaxLinMotorForce">MaxLinMotorForce</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the maximum lin motor force.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxLinMotorForce { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The maximum lin motor force.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_PoweredAngularMotor_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.PoweredAngularMotor*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_PoweredAngularMotor" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.PoweredAngularMotor">PoweredAngularMotor</h4>
+  <div class="markdown level1 summary"><p>Gets and sets a value indicating whether [powered angular motor].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PoweredAngularMotor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [powered angular motor]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_PoweredLinMotor_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.PoweredLinMotor*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_PoweredLinMotor" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.PoweredLinMotor">PoweredLinMotor</h4>
+  <div class="markdown level1 summary"><p>Gets and sets a value indicating whether [powered lin motor].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PoweredLinMotor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [powered lin motor]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_RestitutionDirAngular_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.RestitutionDirAngular*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_RestitutionDirAngular" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.RestitutionDirAngular">RestitutionDirAngular</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the restitution dir angular.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RestitutionDirAngular { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The restitution dir angular.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_RestitutionDirLin_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.RestitutionDirLin*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_RestitutionDirLin" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.RestitutionDirLin">RestitutionDirLin</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the restitution dir lin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RestitutionDirLin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The restitution dir lin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_RestitutionLimAngular_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.RestitutionLimAngular*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_RestitutionLimAngular" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.RestitutionLimAngular">RestitutionLimAngular</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the restitution lim angular.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RestitutionLimAngular { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The restitution lim angular.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_RestitutionLimLin_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.RestitutionLimLin*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_RestitutionLimLin" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.RestitutionLimLin">RestitutionLimLin</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the restitution lim lin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RestitutionLimLin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The restitution lim lin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_RestitutionOrthoAngular_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.RestitutionOrthoAngular*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_RestitutionOrthoAngular" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.RestitutionOrthoAngular">RestitutionOrthoAngular</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the restitution ortho angular.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RestitutionOrthoAngular { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The restitution ortho angular.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_RestitutionOrthoLin_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.RestitutionOrthoLin*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_RestitutionOrthoLin" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.RestitutionOrthoLin">RestitutionOrthoLin</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the restitution ortho lin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RestitutionOrthoLin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The restitution ortho lin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_RigidBodyA_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.RigidBodyA*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_RigidBodyA" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.RigidBodyA">RigidBodyA</h4>
+  <div class="markdown level1 summary"><p>Gets the rigid body a.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRigidBodyImp RigidBodyA { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IRigidBodyImp.html">IRigidBodyImp</a></td>
+        <td><p>The rigid body a.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_RigidBodyB_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.RigidBodyB*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_RigidBodyB" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.RigidBodyB">RigidBodyB</h4>
+  <div class="markdown level1 summary"><p>Gets the rigid body b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRigidBodyImp RigidBodyB { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IRigidBodyImp.html">IRigidBodyImp</a></td>
+        <td><p>The rigid body b.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SoftnessDirAngular_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SoftnessDirAngular*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SoftnessDirAngular" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SoftnessDirAngular">SoftnessDirAngular</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the softness dir angular.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SoftnessDirAngular { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The softness dir angular.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SoftnessDirLin_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SoftnessDirLin*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SoftnessDirLin" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SoftnessDirLin">SoftnessDirLin</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the softness dir lin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SoftnessDirLin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The softness dir lin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SoftnessLimAngular_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SoftnessLimAngular*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SoftnessLimAngular" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SoftnessLimAngular">SoftnessLimAngular</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the softness lim angular.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SoftnessLimAngular { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The softness lim angular.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SoftnessLimLin_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SoftnessLimLin*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SoftnessLimLin" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SoftnessLimLin">SoftnessLimLin</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the softness lim lin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SoftnessLimLin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The softness lim lin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SoftnessOrthoAngular_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SoftnessOrthoAngular*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SoftnessOrthoAngular" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SoftnessOrthoAngular">SoftnessOrthoAngular</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the softness ortho angular.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SoftnessOrthoAngular { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The softness ortho angular.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SoftnessOrthoLin_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SoftnessOrthoLin*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SoftnessOrthoLin" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SoftnessOrthoLin">SoftnessOrthoLin</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the softness ortho lin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SoftnessOrthoLin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The softness ortho lin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SolveAngularLimit_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SolveAngularLimit*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SolveAngularLimit" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SolveAngularLimit">SolveAngularLimit</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether [solve angular limit].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SolveAngularLimit { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [solve angular limit]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SolveLinLimit_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SolveLinLimit*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SolveLinLimit" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SolveLinLimit">SolveLinLimit</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether [solve lin limit].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SolveLinLimit { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [solve lin limit]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_TargetAngularMotorVelocity_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.TargetAngularMotorVelocity*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_TargetAngularMotorVelocity" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.TargetAngularMotorVelocity">TargetAngularMotorVelocity</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the target angular motor velocity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TargetAngularMotorVelocity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The target angular motor velocity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_TargetLinMotorVelocity_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.TargetLinMotorVelocity*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_TargetLinMotorVelocity" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.TargetLinMotorVelocity">TargetLinMotorVelocity</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the target lin motor velocity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TargetLinMotorVelocity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The target lin motor velocity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_UpperAngularLimit_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.UpperAngularLimit*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_UpperAngularLimit" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.UpperAngularLimit">UpperAngularLimit</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the upper angular limit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float UpperAngularLimit { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The upper angular limit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_UpperLinLimit_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.UpperLinLimit*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_UpperLinLimit" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.UpperLinLimit">UpperLinLimit</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the upper lin limit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float UpperLinLimit { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The upper lin limit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_UseFrameOffset_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.UseFrameOffset*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_UseFrameOffset" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.UseFrameOffset">UseFrameOffset</h4>
+  <div class="markdown level1 summary"><p>Gets and sets a value indicating whether [use frame offset].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseFrameOffset { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [use frame offset]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_UseLinearReferenceFrameA_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.UseLinearReferenceFrameA*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_UseLinearReferenceFrameA" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.UseLinearReferenceFrameA">UseLinearReferenceFrameA</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether [use linear reference frame a].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseLinearReferenceFrameA { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [use linear reference frame a]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_UserObject_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.UserObject*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_UserObject" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.UserObject">UserObject</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the user object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object UserObject { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The user object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_CalculateTransforms_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.CalculateTransforms*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_CalculateTransforms_Fusee_Math_Core_float4x4_Fusee_Math_Core_float4x4_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.CalculateTransforms(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)">CalculateTransforms(float4x4, float4x4)</h4>
+  <div class="markdown level1 summary"><p>Calculates the transforms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CalculateTransforms(float4x4 transA, float4x4 transB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">transA</span></td>
+        <td><p>The trans a.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">transB</span></td>
+        <td><p>The trans b.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_GetUid_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.GetUid*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_GetUid" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.GetUid">GetUid()</h4>
+  <div class="markdown level1 summary"><p>Gets the uid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetUid()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SetFrames_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SetFrames*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_SetFrames_Fusee_Math_Core_float4x4_Fusee_Math_Core_float4x4_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.SetFrames(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)">SetFrames(float4x4, float4x4)</h4>
+  <div class="markdown level1 summary"><p>Sets the frames.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFrames(float4x4 frameA, float4x4 frameB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">frameA</span></td>
+        <td><p>The frame a.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">frameB</span></td>
+        <td><p>The frame b.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_TestAngularLimits_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.TestAngularLimits*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_TestAngularLimits" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.TestAngularLimits">TestAngularLimits()</h4>
+  <div class="markdown level1 summary"><p>Tests the angular limits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TestAngularLimits()</code></pre>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_TestLinLimits_" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.TestLinLimits*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_SliderConstraintImp_TestLinLimits" data-uid="Fusee.Engine.Imp.Physics.Desktop.SliderConstraintImp.TestLinLimits">TestLinLimits()</h4>
+  <div class="markdown level1 summary"><p>Tests the lin limits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TestLinLimits()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Fusee.Engine.Common.ISliderConstraintImp.html">ISliderConstraintImp</a>
+  </div>
+  <div>
+      <a class="xref" href="Fusee.Engine.Common.IConstraintImp.html">IConstraintImp</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

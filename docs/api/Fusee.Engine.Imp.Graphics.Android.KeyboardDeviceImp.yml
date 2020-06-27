@@ -24,12 +24,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: KeyboardDeviceImp
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 560
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -37,22 +33,15 @@ items:
   summary: "\nTODO: Implement this!!! Keyboard device implementation for the Android platforms.\n"
   example: []
   syntax:
-    content: 'public class KeyboardDeviceImp : IInputDeviceImp'
+    content: 'public class KeyboardDeviceImp : object, IInputDeviceImp'
     content.vb: >-
       Public Class KeyboardDeviceImp
+          Inherits Object
           Implements IInputDeviceImp
   inheritance:
   - System.Object
   implements:
   - Fusee.Engine.Common.IInputDeviceImp
-  inheritedMembers:
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ToString
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   modifiers.csharp:
   - public
   - class
@@ -71,12 +60,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp.AxesCount
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: AxesCount
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 582
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -110,12 +95,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp.AxisImpDesc
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: AxisImpDesc
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 593
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -126,11 +107,9 @@ items:
     content: public IEnumerable<AxisImpDescription> AxisImpDesc { get; }
     parameters: []
     return:
-      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.AxisImpDescription}
+      type: IEnumerable{Fusee.Engine.Common.AxisImpDescription}
     content.vb: Public ReadOnly Property AxisImpDesc As IEnumerable(Of AxisImpDescription)
   overload: Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp.AxisImpDesc*
-  implements:
-  - Fusee.Engine.Common.IInputDeviceImp.AxisImpDesc
   modifiers.csharp:
   - public
   - get
@@ -149,12 +128,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp.ButtonCount
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ButtonCount
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 604
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -188,12 +163,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp.ButtonImpDesc
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ButtonImpDesc
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 615
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -204,11 +175,9 @@ items:
     content: public IEnumerable<ButtonImpDescription> ButtonImpDesc { get; }
     parameters: []
     return:
-      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.ButtonImpDescription}
+      type: IEnumerable{Fusee.Engine.Common.ButtonImpDescription}
     content.vb: Public ReadOnly Property ButtonImpDesc As IEnumerable(Of ButtonImpDescription)
   overload: Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp.ButtonImpDesc*
-  implements:
-  - Fusee.Engine.Common.IInputDeviceImp.ButtonImpDesc
   modifiers.csharp:
   - public
   - get
@@ -227,12 +196,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp.Category
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Category
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 627
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -266,12 +231,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp.Desc
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Desc
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 638
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -305,12 +266,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp.Id
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Id
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 650
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -344,12 +301,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp.AxisValueChanged
   type: Event
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: AxisValueChanged
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 663
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -359,10 +312,8 @@ items:
   syntax:
     content: public event EventHandler<AxisValueChangedArgs> AxisValueChanged
     return:
-      type: System.EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}
+      type: EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}
     content.vb: Public Event AxisValueChanged As EventHandler(Of AxisValueChangedArgs)
-  implements:
-  - Fusee.Engine.Common.IInputDeviceImp.AxisValueChanged
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -379,12 +330,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp.ButtonValueChanged
   type: Event
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ButtonValueChanged
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 669
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -394,10 +341,8 @@ items:
   syntax:
     content: public event EventHandler<ButtonValueChangedArgs> ButtonValueChanged
     return:
-      type: System.EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}
+      type: EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}
     content.vb: Public Event ButtonValueChanged As EventHandler(Of ButtonValueChangedArgs)
-  implements:
-  - Fusee.Engine.Common.IInputDeviceImp.ButtonValueChanged
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -414,12 +359,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp.GetAxis(System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetAxis
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 716
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -455,12 +396,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp.GetButton(System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetButton
-    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 727
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -503,285 +440,6 @@ references:
   name: IInputDeviceImp
   nameWithType: IInputDeviceImp
   fullName: Fusee.Engine.Common.IInputDeviceImp
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -819,27 +477,20 @@ references:
   name: AxisImpDesc
   nameWithType: KeyboardDeviceImp.AxisImpDesc
   fullName: Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp.AxisImpDesc
-- uid: Fusee.Engine.Common.IInputDeviceImp.AxisImpDesc
-  commentId: P:Fusee.Engine.Common.IInputDeviceImp.AxisImpDesc
-  parent: Fusee.Engine.Common.IInputDeviceImp
-  name: AxisImpDesc
-  nameWithType: IInputDeviceImp.AxisImpDesc
-  fullName: Fusee.Engine.Common.IInputDeviceImp.AxisImpDesc
-- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.AxisImpDescription}
-  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Engine.Common.AxisImpDescription}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.IEnumerable`1
+- uid: IEnumerable{Fusee.Engine.Common.AxisImpDescription}
+  commentId: '!:IEnumerable{Fusee.Engine.Common.AxisImpDescription}'
+  definition: IEnumerable`1
   name: IEnumerable<AxisImpDescription>
   nameWithType: IEnumerable<AxisImpDescription>
-  fullName: System.Collections.Generic.IEnumerable<Fusee.Engine.Common.AxisImpDescription>
+  fullName: IEnumerable<Fusee.Engine.Common.AxisImpDescription>
   nameWithType.vb: IEnumerable(Of AxisImpDescription)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Engine.Common.AxisImpDescription)
+  fullName.vb: IEnumerable(Of Fusee.Engine.Common.AxisImpDescription)
   name.vb: IEnumerable(Of AxisImpDescription)
   spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
+  - uid: IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: System.Collections.Generic.IEnumerable
+    fullName: IEnumerable
     isExternal: true
   - name: <
     nameWithType: <
@@ -852,10 +503,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
+  - uid: IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: System.Collections.Generic.IEnumerable
+    fullName: IEnumerable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -867,51 +518,44 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic.IEnumerable`1
-  commentId: T:System.Collections.Generic.IEnumerable`1
+- uid: IEnumerable`1
   isExternal: true
-  name: IEnumerable<T>
-  nameWithType: IEnumerable<T>
-  fullName: System.Collections.Generic.IEnumerable<T>
-  nameWithType.vb: IEnumerable(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
-  name.vb: IEnumerable(Of T)
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
   spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
+  - uid: IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: System.Collections.Generic.IEnumerable
+    fullName: IEnumerable
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
+  - uid: IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: System.Collections.Generic.IEnumerable
+    fullName: IEnumerable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
 - uid: Fusee.Engine.Common.KeyCodes
   commentId: T:Fusee.Engine.Common.KeyCodes
   parent: Fusee.Engine.Common
@@ -934,27 +578,20 @@ references:
   name: ButtonImpDesc
   nameWithType: KeyboardDeviceImp.ButtonImpDesc
   fullName: Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp.ButtonImpDesc
-- uid: Fusee.Engine.Common.IInputDeviceImp.ButtonImpDesc
-  commentId: P:Fusee.Engine.Common.IInputDeviceImp.ButtonImpDesc
-  parent: Fusee.Engine.Common.IInputDeviceImp
-  name: ButtonImpDesc
-  nameWithType: IInputDeviceImp.ButtonImpDesc
-  fullName: Fusee.Engine.Common.IInputDeviceImp.ButtonImpDesc
-- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.ButtonImpDescription}
-  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Engine.Common.ButtonImpDescription}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.IEnumerable`1
+- uid: IEnumerable{Fusee.Engine.Common.ButtonImpDescription}
+  commentId: '!:IEnumerable{Fusee.Engine.Common.ButtonImpDescription}'
+  definition: IEnumerable`1
   name: IEnumerable<ButtonImpDescription>
   nameWithType: IEnumerable<ButtonImpDescription>
-  fullName: System.Collections.Generic.IEnumerable<Fusee.Engine.Common.ButtonImpDescription>
+  fullName: IEnumerable<Fusee.Engine.Common.ButtonImpDescription>
   nameWithType.vb: IEnumerable(Of ButtonImpDescription)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Engine.Common.ButtonImpDescription)
+  fullName.vb: IEnumerable(Of Fusee.Engine.Common.ButtonImpDescription)
   name.vb: IEnumerable(Of ButtonImpDescription)
   spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
+  - uid: IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: System.Collections.Generic.IEnumerable
+    fullName: IEnumerable
     isExternal: true
   - name: <
     nameWithType: <
@@ -967,10 +604,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
+  - uid: IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: System.Collections.Generic.IEnumerable
+    fullName: IEnumerable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -1031,27 +668,20 @@ references:
   name: Id
   nameWithType: IInputDeviceImp.Id
   fullName: Fusee.Engine.Common.IInputDeviceImp.Id
-- uid: Fusee.Engine.Common.IInputDeviceImp.AxisValueChanged
-  commentId: E:Fusee.Engine.Common.IInputDeviceImp.AxisValueChanged
-  parent: Fusee.Engine.Common.IInputDeviceImp
-  name: AxisValueChanged
-  nameWithType: IInputDeviceImp.AxisValueChanged
-  fullName: Fusee.Engine.Common.IInputDeviceImp.AxisValueChanged
-- uid: System.EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}
-  commentId: T:System.EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}
-  parent: System
-  definition: System.EventHandler`1
+- uid: EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}
+  commentId: '!:EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}'
+  definition: EventHandler`1
   name: EventHandler<AxisValueChangedArgs>
   nameWithType: EventHandler<AxisValueChangedArgs>
-  fullName: System.EventHandler<Fusee.Engine.Common.AxisValueChangedArgs>
+  fullName: EventHandler<Fusee.Engine.Common.AxisValueChangedArgs>
   nameWithType.vb: EventHandler(Of AxisValueChangedArgs)
-  fullName.vb: System.EventHandler(Of Fusee.Engine.Common.AxisValueChangedArgs)
+  fullName.vb: EventHandler(Of Fusee.Engine.Common.AxisValueChangedArgs)
   name.vb: EventHandler(Of AxisValueChangedArgs)
   spec.csharp:
-  - uid: System.EventHandler`1
+  - uid: EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: System.EventHandler
+    fullName: EventHandler
     isExternal: true
   - name: <
     nameWithType: <
@@ -1064,10 +694,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.EventHandler`1
+  - uid: EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: System.EventHandler
+    fullName: EventHandler
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -1079,66 +709,58 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.EventHandler`1
-  commentId: T:System.EventHandler`1
+- uid: EventHandler`1
   isExternal: true
-  name: EventHandler<TEventArgs>
-  nameWithType: EventHandler<TEventArgs>
-  fullName: System.EventHandler<TEventArgs>
-  nameWithType.vb: EventHandler(Of TEventArgs)
-  fullName.vb: System.EventHandler(Of TEventArgs)
-  name.vb: EventHandler(Of TEventArgs)
+  name: EventHandler<>
+  nameWithType: EventHandler<>
+  fullName: EventHandler<>
+  nameWithType.vb: EventHandler(Of )
+  fullName.vb: EventHandler(Of )
+  name.vb: EventHandler(Of )
   spec.csharp:
-  - uid: System.EventHandler`1
+  - uid: EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: System.EventHandler
+    fullName: EventHandler
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: TEventArgs
-    nameWithType: TEventArgs
-    fullName: TEventArgs
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.EventHandler`1
+  - uid: EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: System.EventHandler
+    fullName: EventHandler
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: TEventArgs
-    nameWithType: TEventArgs
-    fullName: TEventArgs
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: )
     nameWithType: )
     fullName: )
-- uid: Fusee.Engine.Common.IInputDeviceImp.ButtonValueChanged
-  commentId: E:Fusee.Engine.Common.IInputDeviceImp.ButtonValueChanged
-  parent: Fusee.Engine.Common.IInputDeviceImp
-  name: ButtonValueChanged
-  nameWithType: IInputDeviceImp.ButtonValueChanged
-  fullName: Fusee.Engine.Common.IInputDeviceImp.ButtonValueChanged
-- uid: System.EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}
-  commentId: T:System.EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}
-  parent: System
-  definition: System.EventHandler`1
+- uid: EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}
+  commentId: '!:EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}'
+  definition: EventHandler`1
   name: EventHandler<ButtonValueChangedArgs>
   nameWithType: EventHandler<ButtonValueChangedArgs>
-  fullName: System.EventHandler<Fusee.Engine.Common.ButtonValueChangedArgs>
+  fullName: EventHandler<Fusee.Engine.Common.ButtonValueChangedArgs>
   nameWithType.vb: EventHandler(Of ButtonValueChangedArgs)
-  fullName.vb: System.EventHandler(Of Fusee.Engine.Common.ButtonValueChangedArgs)
+  fullName.vb: EventHandler(Of Fusee.Engine.Common.ButtonValueChangedArgs)
   name.vb: EventHandler(Of ButtonValueChangedArgs)
   spec.csharp:
-  - uid: System.EventHandler`1
+  - uid: EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: System.EventHandler
+    fullName: EventHandler
     isExternal: true
   - name: <
     nameWithType: <
@@ -1151,10 +773,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.EventHandler`1
+  - uid: EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: System.EventHandler
+    fullName: EventHandler
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '

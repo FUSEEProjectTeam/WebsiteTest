@@ -5,7 +5,7 @@ items:
   id: FontImp
   parent: Fusee.Base.Imp.Android
   children:
-  - Fusee.Base.Imp.Android.FontImp.#ctor(System.IO.Stream)
+  - Fusee.Base.Imp.Android.FontImp.#ctor(Stream)
   - Fusee.Base.Imp.Android.FontImp.GetGlyphCurve(System.UInt32)
   - Fusee.Base.Imp.Android.FontImp.GetGlyphInfo(System.UInt32)
   - Fusee.Base.Imp.Android.FontImp.GetKerning(System.UInt32,System.UInt32)
@@ -22,12 +22,8 @@ items:
   fullName: Fusee.Base.Imp.Android.FontImp
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/FontImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FontImp
-    path: src/Fusee/src/Base/Imp/Android/FontImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 14
   assemblies:
   - Fusee.Base.Imp.Android
@@ -35,46 +31,35 @@ items:
   summary: "\nFont implementation using freetype (262) / SharpFont.\n"
   example: []
   syntax:
-    content: 'public class FontImp : IFontImp'
+    content: 'public class FontImp : object, IFontImp'
     content.vb: >-
       Public Class FontImp
+          Inherits Object
           Implements IFontImp
   inheritance:
   - System.Object
   implements:
   - Fusee.Base.Common.IFontImp
-  inheritedMembers:
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ToString
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   modifiers.csharp:
   - public
   - class
   modifiers.vb:
   - Public
   - Class
-- uid: Fusee.Base.Imp.Android.FontImp.#ctor(System.IO.Stream)
-  commentId: M:Fusee.Base.Imp.Android.FontImp.#ctor(System.IO.Stream)
-  id: '#ctor(System.IO.Stream)'
+- uid: Fusee.Base.Imp.Android.FontImp.#ctor(Stream)
+  commentId: M:Fusee.Base.Imp.Android.FontImp.#ctor(Stream)
+  id: '#ctor(Stream)'
   parent: Fusee.Base.Imp.Android.FontImp
   langs:
   - csharp
   - vb
   name: FontImp(Stream)
   nameWithType: FontImp.FontImp(Stream)
-  fullName: Fusee.Base.Imp.Android.FontImp.FontImp(System.IO.Stream)
+  fullName: Fusee.Base.Imp.Android.FontImp.FontImp(Stream)
   type: Constructor
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/FontImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: src/Fusee/src/Base/Imp/Android/FontImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 25
   assemblies:
   - Fusee.Base.Imp.Android
@@ -85,7 +70,7 @@ items:
     content: public FontImp(Stream stream)
     parameters:
     - id: stream
-      type: System.IO.Stream
+      type: Stream
       description: The stream.
     content.vb: Public Sub New(stream As Stream)
   overload: Fusee.Base.Imp.Android.FontImp.#ctor*
@@ -105,12 +90,8 @@ items:
   fullName: Fusee.Base.Imp.Android.FontImp.UseKerning
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/FontImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: UseKerning
-    path: src/Fusee/src/Base/Imp/Android/FontImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 48
   assemblies:
   - Fusee.Base.Imp.Android
@@ -145,12 +126,8 @@ items:
   fullName: Fusee.Base.Imp.Android.FontImp.PixelHeight
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/FontImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: PixelHeight
-    path: src/Fusee/src/Base/Imp/Android/FontImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 64
   assemblies:
   - Fusee.Base.Imp.Android
@@ -185,12 +162,8 @@ items:
   fullName: Fusee.Base.Imp.Android.FontImp.GetGlyphInfo(System.UInt32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/FontImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetGlyphInfo
-    path: src/Fusee/src/Base/Imp/Android/FontImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 85
   assemblies:
   - Fusee.Base.Imp.Android
@@ -208,9 +181,6 @@ items:
       description: "\nAn information record about the character.\n"
     content.vb: Public Function GetGlyphInfo(c As UInteger) As GlyphInfo
   overload: Fusee.Base.Imp.Android.FontImp.GetGlyphInfo*
-  exceptions:
-  - type: System.NotImplementedException
-    commentId: T:System.NotImplementedException
   implements:
   - Fusee.Base.Common.IFontImp.GetGlyphInfo(System.UInt32)
   modifiers.csharp:
@@ -229,12 +199,8 @@ items:
   fullName: Fusee.Base.Imp.Android.FontImp.GetGlyphCurve(System.UInt32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/FontImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetGlyphCurve
-    path: src/Fusee/src/Base/Imp/Android/FontImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 105
   assemblies:
   - Fusee.Base.Imp.Android
@@ -268,12 +234,8 @@ items:
   fullName: Fusee.Base.Imp.Android.FontImp.GetUnscaledAdvance(System.UInt32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/FontImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetUnscaledAdvance
-    path: src/Fusee/src/Base/Imp/Android/FontImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 146
   assemblies:
   - Fusee.Base.Imp.Android
@@ -309,12 +271,8 @@ items:
   fullName: Fusee.Base.Imp.Android.FontImp.RenderGlyph(System.UInt32, out System.Int32, out System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/FontImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RenderGlyph
-    path: src/Fusee/src/Base/Imp/Android/FontImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 168
   assemblies:
   - Fusee.Base.Imp.Android
@@ -359,12 +317,8 @@ items:
   fullName: Fusee.Base.Imp.Android.FontImp.GetKerning(System.UInt32, System.UInt32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/FontImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetKerning
-    path: src/Fusee/src/Base/Imp/Android/FontImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 197
   assemblies:
   - Fusee.Base.Imp.Android
@@ -403,12 +357,8 @@ items:
   fullName: Fusee.Base.Imp.Android.FontImp.GetUnscaledKerning(System.UInt32, System.UInt32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/FontImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetUnscaledKerning
-    path: src/Fusee/src/Base/Imp/Android/FontImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 214
   assemblies:
   - Fusee.Base.Imp.Android
@@ -454,285 +404,6 @@ references:
   name: IFontImp
   nameWithType: IFontImp
   fullName: Fusee.Base.Common.IFontImp
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -754,19 +425,11 @@ references:
   name: FontImp
   nameWithType: FontImp.FontImp
   fullName: Fusee.Base.Imp.Android.FontImp.FontImp
-- uid: System.IO.Stream
-  commentId: T:System.IO.Stream
-  parent: System.IO
+- uid: Stream
   isExternal: true
   name: Stream
   nameWithType: Stream
-  fullName: System.IO.Stream
-- uid: System.IO
-  commentId: N:System.IO
-  isExternal: true
-  name: System.IO
-  nameWithType: System.IO
-  fullName: System.IO
+  fullName: Stream
 - uid: Fusee.Base.Imp.Android.FontImp.UseKerning*
   commentId: Overload:Fusee.Base.Imp.Android.FontImp.UseKerning
   name: UseKerning
@@ -803,9 +466,6 @@ references:
   name: UInt32
   nameWithType: UInt32
   fullName: System.UInt32
-- uid: System.NotImplementedException
-  commentId: T:System.NotImplementedException
-  isExternal: true
 - uid: Fusee.Base.Imp.Android.FontImp.GetGlyphInfo*
   commentId: Overload:Fusee.Base.Imp.Android.FontImp.GetGlyphInfo
   name: GetGlyphInfo

@@ -15,12 +15,8 @@ items:
   fullName: Fusee.Serialization.V1.VertexWeight
   type: Struct
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusWeight.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: VertexWeight
-    path: src/Fusee/src/Serialization/V1/FusWeight.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusWeight.cs
     startLine: 36
   assemblies:
   - Fusee.Serialization
@@ -28,8 +24,14 @@ items:
   summary: "\nA single entry of a weight table row.\n"
   example: []
   syntax:
-    content: public struct VertexWeight
-    content.vb: Public Structure VertexWeight
+    content: >-
+      [ProtoContract]
+
+      public struct VertexWeight
+    content.vb: >-
+      <ProtoContract>
+
+      Public Structure VertexWeight
   inheritedMembers:
   - System.ValueType.Equals(System.Object)
   - System.ValueType.GetHashCode
@@ -37,6 +39,10 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - struct
@@ -55,12 +61,8 @@ items:
   fullName: Fusee.Serialization.V1.VertexWeight.JointIndex
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusWeight.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: JointIndex
-    path: src/Fusee/src/Serialization/V1/FusWeight.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusWeight.cs
     startLine: 43
   assemblies:
   - Fusee.Serialization
@@ -68,10 +70,22 @@ items:
   summary: "\nThe joint index controlling the vertex.\n"
   example: []
   syntax:
-    content: public int JointIndex
+    content: >-
+      [ProtoMember(1)]
+
+      public int JointIndex
     return:
       type: System.Int32
-    content.vb: Public JointIndex As Integer
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public JointIndex As Integer
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -88,12 +102,8 @@ items:
   fullName: Fusee.Serialization.V1.VertexWeight.Weight
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusWeight.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Weight
-    path: src/Fusee/src/Serialization/V1/FusWeight.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusWeight.cs
     startLine: 49
   assemblies:
   - Fusee.Serialization
@@ -101,10 +111,22 @@ items:
   summary: "\nThe weight (the influence) of the bone on the vertex&apos;s transformation.\n"
   example: []
   syntax:
-    content: public float Weight
+    content: >-
+      [ProtoMember(2)]
+
+      public float Weight
     return:
       type: System.Single
-    content.vb: Public Weight As Single
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Weight As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:

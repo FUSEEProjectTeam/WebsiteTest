@@ -17,12 +17,8 @@ items:
   fullName: Fusee.Serialization.FusHeader
   type: Struct
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FusHeader
-    path: src/Fusee/src/Serialization/FusFile.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\FusFile.cs
     startLine: 10
   assemblies:
   - Fusee.Serialization
@@ -30,8 +26,14 @@ items:
   summary: "\nThe header of a FUSEE file.\n"
   example: []
   syntax:
-    content: public struct FusHeader
-    content.vb: Public Structure FusHeader
+    content: >-
+      [ProtoContract]
+
+      public struct FusHeader
+    content.vb: >-
+      <ProtoContract>
+
+      Public Structure FusHeader
   inheritedMembers:
   - System.ValueType.Equals(System.Object)
   - System.ValueType.GetHashCode
@@ -39,6 +41,10 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - struct
@@ -57,12 +63,8 @@ items:
   fullName: Fusee.Serialization.FusHeader.FileVersion
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FileVersion
-    path: src/Fusee/src/Serialization/FusFile.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\FusFile.cs
     startLine: 17
   assemblies:
   - Fusee.Serialization
@@ -70,10 +72,22 @@ items:
   summary: "\nThe file version number of this fus file.\n"
   example: []
   syntax:
-    content: public int FileVersion
+    content: >-
+      [ProtoMember(1)]
+
+      public int FileVersion
     return:
       type: System.Int32
-    content.vb: Public FileVersion As Integer
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public FileVersion As Integer
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -90,12 +104,8 @@ items:
   fullName: Fusee.Serialization.FusHeader.Generator
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Generator
-    path: src/Fusee/src/Serialization/FusFile.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\FusFile.cs
     startLine: 23
   assemblies:
   - Fusee.Serialization
@@ -103,10 +113,22 @@ items:
   summary: "\nThe generator used to create this fus file.\n"
   example: []
   syntax:
-    content: public string Generator
+    content: >-
+      [ProtoMember(2)]
+
+      public string Generator
     return:
       type: System.String
-    content.vb: Public Generator As String
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Generator As String
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -123,12 +145,8 @@ items:
   fullName: Fusee.Serialization.FusHeader.CreatedBy
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreatedBy
-    path: src/Fusee/src/Serialization/FusFile.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\FusFile.cs
     startLine: 29
   assemblies:
   - Fusee.Serialization
@@ -136,10 +154,22 @@ items:
   summary: "\nThe user who created this fus file.\n"
   example: []
   syntax:
-    content: public string CreatedBy
+    content: >-
+      [ProtoMember(3)]
+
+      public string CreatedBy
     return:
       type: System.String
-    content.vb: Public CreatedBy As String
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public CreatedBy As String
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -156,12 +186,8 @@ items:
   fullName: Fusee.Serialization.FusHeader.CreationDate
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreationDate
-    path: src/Fusee/src/Serialization/FusFile.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\FusFile.cs
     startLine: 35
   assemblies:
   - Fusee.Serialization
@@ -169,10 +195,22 @@ items:
   summary: "\nThe creation date of the file.\n"
   example: []
   syntax:
-    content: public string CreationDate
+    content: >-
+      [ProtoMember(4)]
+
+      public string CreationDate
     return:
       type: System.String
-    content.vb: Public CreationDate As String
+    content.vb: >-
+      <ProtoMember(4)>
+
+      Public CreationDate As String
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
   modifiers.csharp:
   - public
   modifiers.vb:

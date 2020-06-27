@@ -16,12 +16,8 @@ items:
   fullName: Fusee.Serialization.V1.MatChannelContainer
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: MatChannelContainer
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 9
   assemblies:
   - Fusee.Serialization
@@ -29,8 +25,18 @@ items:
   summary: "\nPart of the <xref href=\"Fusee.Serialization.V1.FusMaterial\" data-throw-if-not-resolved=\"false\"></xref> defining material settings.\nUsed in the different lighting calculation components.\n"
   example: []
   syntax:
-    content: public class MatChannelContainer
-    content.vb: Public Class MatChannelContainer
+    content: >-
+      [ProtoContract]
+
+      [ProtoInclude(100, typeof(SpecularChannelContainer))]
+
+      public class MatChannelContainer
+    content.vb: >-
+      <ProtoContract>
+
+      <ProtoInclude(100, GetType(SpecularChannelContainer))>
+
+      Public Class MatChannelContainer
   inheritance:
   - System.Object
   derivedClasses:
@@ -43,6 +49,17 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 100
+    - type: System.Type
+      value: Fusee.Serialization.V1.SpecularChannelContainer
   modifiers.csharp:
   - public
   - class
@@ -61,12 +78,8 @@ items:
   fullName: Fusee.Serialization.V1.MatChannelContainer.Color
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Color
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 19
   assemblies:
   - Fusee.Serialization
@@ -74,10 +87,22 @@ items:
   summary: "\nThe color of the light component.\n"
   example: []
   syntax:
-    content: public float4 Color
+    content: >-
+      [ProtoMember(1)]
+
+      public float4 Color
     return:
       type: Fusee.Math.Core.float4
-    content.vb: Public Color As float4
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Color As float4
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -94,12 +119,8 @@ items:
   fullName: Fusee.Serialization.V1.MatChannelContainer.Texture
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Texture
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 25
   assemblies:
   - Fusee.Serialization
@@ -107,10 +128,22 @@ items:
   summary: "\nIf not null, the texture to use as the color.\n"
   example: []
   syntax:
-    content: public string Texture
+    content: >-
+      [ProtoMember(2)]
+
+      public string Texture
     return:
       type: System.String
-    content.vb: Public Texture As String
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Texture As String
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -127,12 +160,8 @@ items:
   fullName: Fusee.Serialization.V1.MatChannelContainer.Mix
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Mix
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 31
   assemblies:
   - Fusee.Serialization
@@ -140,10 +169,22 @@ items:
   summary: "\nThe percentage how to mix Color and Texture.\n"
   example: []
   syntax:
-    content: public float Mix
+    content: >-
+      [ProtoMember(3)]
+
+      public float Mix
     return:
       type: System.Single
-    content.vb: Public Mix As Single
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public Mix As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:

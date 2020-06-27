@@ -5,14 +5,14 @@ items:
   id: AnchorPos
   parent: Fusee.Engine.GUI
   children:
-  - Fusee.Engine.GUI.AnchorPos.DownDownLeft
-  - Fusee.Engine.GUI.AnchorPos.DownDownRight
-  - Fusee.Engine.GUI.AnchorPos.Middle
-  - Fusee.Engine.GUI.AnchorPos.StretchAll
-  - Fusee.Engine.GUI.AnchorPos.StretchHorizontal
-  - Fusee.Engine.GUI.AnchorPos.StretchVertical
-  - Fusee.Engine.GUI.AnchorPos.TopTopLeft
-  - Fusee.Engine.GUI.AnchorPos.TopTopRight
+  - Fusee.Engine.GUI.AnchorPos.DOWN_DOWN_LEFT
+  - Fusee.Engine.GUI.AnchorPos.DOWN_DOWN_RIGHT
+  - Fusee.Engine.GUI.AnchorPos.MIDDLE
+  - Fusee.Engine.GUI.AnchorPos.STRETCH_ALL
+  - Fusee.Engine.GUI.AnchorPos.STRETCH_HORIZONTAL
+  - Fusee.Engine.GUI.AnchorPos.STRETCH_VERTICAL
+  - Fusee.Engine.GUI.AnchorPos.TOP_TOP_LEFT
+  - Fusee.Engine.GUI.AnchorPos.TOP_TOP_RIGHT
   langs:
   - csharp
   - vb
@@ -21,12 +21,8 @@ items:
   fullName: Fusee.Engine.GUI.AnchorPos
   type: Enum
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/GUI/GUINode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: AnchorPos
-    path: src/Fusee/src/Engine/GUI/GUINode.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUINode.cs
     startLine: 11
   assemblies:
   - Fusee.Engine.GUI
@@ -42,24 +38,20 @@ items:
   modifiers.vb:
   - Public
   - Enum
-- uid: Fusee.Engine.GUI.AnchorPos.DownDownLeft
-  commentId: F:Fusee.Engine.GUI.AnchorPos.DownDownLeft
-  id: DownDownLeft
+- uid: Fusee.Engine.GUI.AnchorPos.DOWN_DOWN_LEFT
+  commentId: F:Fusee.Engine.GUI.AnchorPos.DOWN_DOWN_LEFT
+  id: DOWN_DOWN_LEFT
   parent: Fusee.Engine.GUI.AnchorPos
   langs:
   - csharp
   - vb
-  name: DownDownLeft
-  nameWithType: AnchorPos.DownDownLeft
-  fullName: Fusee.Engine.GUI.AnchorPos.DownDownLeft
+  name: DOWN_DOWN_LEFT
+  nameWithType: AnchorPos.DOWN_DOWN_LEFT
+  fullName: Fusee.Engine.GUI.AnchorPos.DOWN_DOWN_LEFT
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/GUI/GUINode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: DownDownLeft
-    path: src/Fusee/src/Engine/GUI/GUINode.cs
+    id: DOWN_DOWN_LEFT
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUINode.cs
     startLine: 16
   assemblies:
   - Fusee.Engine.GUI
@@ -67,7 +59,7 @@ items:
   summary: "\nAnchors to the lower left corner of the parent element.\n"
   example: []
   syntax:
-    content: DownDownLeft = 0
+    content: DOWN_DOWN_LEFT = 0
     return:
       type: Fusee.Engine.GUI.AnchorPos
   modifiers.csharp:
@@ -76,24 +68,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.GUI.AnchorPos.DownDownRight
-  commentId: F:Fusee.Engine.GUI.AnchorPos.DownDownRight
-  id: DownDownRight
+- uid: Fusee.Engine.GUI.AnchorPos.DOWN_DOWN_RIGHT
+  commentId: F:Fusee.Engine.GUI.AnchorPos.DOWN_DOWN_RIGHT
+  id: DOWN_DOWN_RIGHT
   parent: Fusee.Engine.GUI.AnchorPos
   langs:
   - csharp
   - vb
-  name: DownDownRight
-  nameWithType: AnchorPos.DownDownRight
-  fullName: Fusee.Engine.GUI.AnchorPos.DownDownRight
+  name: DOWN_DOWN_RIGHT
+  nameWithType: AnchorPos.DOWN_DOWN_RIGHT
+  fullName: Fusee.Engine.GUI.AnchorPos.DOWN_DOWN_RIGHT
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/GUI/GUINode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: DownDownRight
-    path: src/Fusee/src/Engine/GUI/GUINode.cs
+    id: DOWN_DOWN_RIGHT
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUINode.cs
     startLine: 21
   assemblies:
   - Fusee.Engine.GUI
@@ -101,7 +89,7 @@ items:
   summary: "\nAnchors to the lower right corner of the parent element.\n"
   example: []
   syntax:
-    content: DownDownRight = 1
+    content: DOWN_DOWN_RIGHT = 1
     return:
       type: Fusee.Engine.GUI.AnchorPos
   modifiers.csharp:
@@ -110,24 +98,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.GUI.AnchorPos.TopTopLeft
-  commentId: F:Fusee.Engine.GUI.AnchorPos.TopTopLeft
-  id: TopTopLeft
+- uid: Fusee.Engine.GUI.AnchorPos.TOP_TOP_LEFT
+  commentId: F:Fusee.Engine.GUI.AnchorPos.TOP_TOP_LEFT
+  id: TOP_TOP_LEFT
   parent: Fusee.Engine.GUI.AnchorPos
   langs:
   - csharp
   - vb
-  name: TopTopLeft
-  nameWithType: AnchorPos.TopTopLeft
-  fullName: Fusee.Engine.GUI.AnchorPos.TopTopLeft
+  name: TOP_TOP_LEFT
+  nameWithType: AnchorPos.TOP_TOP_LEFT
+  fullName: Fusee.Engine.GUI.AnchorPos.TOP_TOP_LEFT
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/GUI/GUINode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: TopTopLeft
-    path: src/Fusee/src/Engine/GUI/GUINode.cs
+    id: TOP_TOP_LEFT
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUINode.cs
     startLine: 26
   assemblies:
   - Fusee.Engine.GUI
@@ -135,7 +119,7 @@ items:
   summary: "\nAnchors to the upper left corner of the parent element.\n"
   example: []
   syntax:
-    content: TopTopLeft = 2
+    content: TOP_TOP_LEFT = 2
     return:
       type: Fusee.Engine.GUI.AnchorPos
   modifiers.csharp:
@@ -144,24 +128,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.GUI.AnchorPos.TopTopRight
-  commentId: F:Fusee.Engine.GUI.AnchorPos.TopTopRight
-  id: TopTopRight
+- uid: Fusee.Engine.GUI.AnchorPos.TOP_TOP_RIGHT
+  commentId: F:Fusee.Engine.GUI.AnchorPos.TOP_TOP_RIGHT
+  id: TOP_TOP_RIGHT
   parent: Fusee.Engine.GUI.AnchorPos
   langs:
   - csharp
   - vb
-  name: TopTopRight
-  nameWithType: AnchorPos.TopTopRight
-  fullName: Fusee.Engine.GUI.AnchorPos.TopTopRight
+  name: TOP_TOP_RIGHT
+  nameWithType: AnchorPos.TOP_TOP_RIGHT
+  fullName: Fusee.Engine.GUI.AnchorPos.TOP_TOP_RIGHT
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/GUI/GUINode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: TopTopRight
-    path: src/Fusee/src/Engine/GUI/GUINode.cs
+    id: TOP_TOP_RIGHT
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUINode.cs
     startLine: 31
   assemblies:
   - Fusee.Engine.GUI
@@ -169,7 +149,7 @@ items:
   summary: "\nAnchors to the upper right corner of the parent element.\n"
   example: []
   syntax:
-    content: TopTopRight = 3
+    content: TOP_TOP_RIGHT = 3
     return:
       type: Fusee.Engine.GUI.AnchorPos
   modifiers.csharp:
@@ -178,24 +158,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.GUI.AnchorPos.StretchAll
-  commentId: F:Fusee.Engine.GUI.AnchorPos.StretchAll
-  id: StretchAll
+- uid: Fusee.Engine.GUI.AnchorPos.STRETCH_ALL
+  commentId: F:Fusee.Engine.GUI.AnchorPos.STRETCH_ALL
+  id: STRETCH_ALL
   parent: Fusee.Engine.GUI.AnchorPos
   langs:
   - csharp
   - vb
-  name: StretchAll
-  nameWithType: AnchorPos.StretchAll
-  fullName: Fusee.Engine.GUI.AnchorPos.StretchAll
+  name: STRETCH_ALL
+  nameWithType: AnchorPos.STRETCH_ALL
+  fullName: Fusee.Engine.GUI.AnchorPos.STRETCH_ALL
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/GUI/GUINode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: StretchAll
-    path: src/Fusee/src/Engine/GUI/GUINode.cs
+    id: STRETCH_ALL
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUINode.cs
     startLine: 36
   assemblies:
   - Fusee.Engine.GUI
@@ -203,7 +179,7 @@ items:
   summary: "\nStretches across all of the parent element.\n"
   example: []
   syntax:
-    content: StretchAll = 4
+    content: STRETCH_ALL = 4
     return:
       type: Fusee.Engine.GUI.AnchorPos
   modifiers.csharp:
@@ -212,24 +188,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.GUI.AnchorPos.StretchHorizontal
-  commentId: F:Fusee.Engine.GUI.AnchorPos.StretchHorizontal
-  id: StretchHorizontal
+- uid: Fusee.Engine.GUI.AnchorPos.STRETCH_HORIZONTAL
+  commentId: F:Fusee.Engine.GUI.AnchorPos.STRETCH_HORIZONTAL
+  id: STRETCH_HORIZONTAL
   parent: Fusee.Engine.GUI.AnchorPos
   langs:
   - csharp
   - vb
-  name: StretchHorizontal
-  nameWithType: AnchorPos.StretchHorizontal
-  fullName: Fusee.Engine.GUI.AnchorPos.StretchHorizontal
+  name: STRETCH_HORIZONTAL
+  nameWithType: AnchorPos.STRETCH_HORIZONTAL
+  fullName: Fusee.Engine.GUI.AnchorPos.STRETCH_HORIZONTAL
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/GUI/GUINode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: StretchHorizontal
-    path: src/Fusee/src/Engine/GUI/GUINode.cs
+    id: STRETCH_HORIZONTAL
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUINode.cs
     startLine: 41
   assemblies:
   - Fusee.Engine.GUI
@@ -237,7 +209,7 @@ items:
   summary: "\nStretches horizontally, but keeps its size vertically.\n"
   example: []
   syntax:
-    content: StretchHorizontal = 5
+    content: STRETCH_HORIZONTAL = 5
     return:
       type: Fusee.Engine.GUI.AnchorPos
   modifiers.csharp:
@@ -246,24 +218,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.GUI.AnchorPos.StretchVertical
-  commentId: F:Fusee.Engine.GUI.AnchorPos.StretchVertical
-  id: StretchVertical
+- uid: Fusee.Engine.GUI.AnchorPos.STRETCH_VERTICAL
+  commentId: F:Fusee.Engine.GUI.AnchorPos.STRETCH_VERTICAL
+  id: STRETCH_VERTICAL
   parent: Fusee.Engine.GUI.AnchorPos
   langs:
   - csharp
   - vb
-  name: StretchVertical
-  nameWithType: AnchorPos.StretchVertical
-  fullName: Fusee.Engine.GUI.AnchorPos.StretchVertical
+  name: STRETCH_VERTICAL
+  nameWithType: AnchorPos.STRETCH_VERTICAL
+  fullName: Fusee.Engine.GUI.AnchorPos.STRETCH_VERTICAL
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/GUI/GUINode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: StretchVertical
-    path: src/Fusee/src/Engine/GUI/GUINode.cs
+    id: STRETCH_VERTICAL
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUINode.cs
     startLine: 46
   assemblies:
   - Fusee.Engine.GUI
@@ -271,7 +239,7 @@ items:
   summary: "\nStretches vertically, but keeps its size horizontally.\n"
   example: []
   syntax:
-    content: StretchVertical = 6
+    content: STRETCH_VERTICAL = 6
     return:
       type: Fusee.Engine.GUI.AnchorPos
   modifiers.csharp:
@@ -280,24 +248,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.GUI.AnchorPos.Middle
-  commentId: F:Fusee.Engine.GUI.AnchorPos.Middle
-  id: Middle
+- uid: Fusee.Engine.GUI.AnchorPos.MIDDLE
+  commentId: F:Fusee.Engine.GUI.AnchorPos.MIDDLE
+  id: MIDDLE
   parent: Fusee.Engine.GUI.AnchorPos
   langs:
   - csharp
   - vb
-  name: Middle
-  nameWithType: AnchorPos.Middle
-  fullName: Fusee.Engine.GUI.AnchorPos.Middle
+  name: MIDDLE
+  nameWithType: AnchorPos.MIDDLE
+  fullName: Fusee.Engine.GUI.AnchorPos.MIDDLE
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/GUI/GUINode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Middle
-    path: src/Fusee/src/Engine/GUI/GUINode.cs
+    id: MIDDLE
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUINode.cs
     startLine: 51
   assemblies:
   - Fusee.Engine.GUI
@@ -305,7 +269,7 @@ items:
   summary: "\nAnchors to the middle of the parent element.\n"
   example: []
   syntax:
-    content: Middle = 7
+    content: MIDDLE = 7
     return:
       type: Fusee.Engine.GUI.AnchorPos
   modifiers.csharp:

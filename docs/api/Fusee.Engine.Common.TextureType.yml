@@ -5,10 +5,10 @@ items:
   id: TextureType
   parent: Fusee.Engine.Common
   children:
-  - Fusee.Engine.Common.TextureType.Texture1D
-  - Fusee.Engine.Common.TextureType.Texture2D
-  - Fusee.Engine.Common.TextureType.Texture3D
-  - Fusee.Engine.Common.TextureType.TextureCubeMap
+  - Fusee.Engine.Common.TextureType.TEXTURE_CUBE_MAP
+  - Fusee.Engine.Common.TextureType.TEXTURE1D
+  - Fusee.Engine.Common.TextureType.TEXTURE2D
+  - Fusee.Engine.Common.TextureType.TEXTURE3D
   langs:
   - csharp
   - vb
@@ -17,12 +17,8 @@ items:
   fullName: Fusee.Engine.Common.TextureType
   type: Enum
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/ITextureBase.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: TextureType
-    path: src/Fusee/src/Engine/Common/ITextureBase.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
     startLine: 8
   assemblies:
   - Fusee.Engine.Common
@@ -38,24 +34,20 @@ items:
   modifiers.vb:
   - Public
   - Enum
-- uid: Fusee.Engine.Common.TextureType.Texture1D
-  commentId: F:Fusee.Engine.Common.TextureType.Texture1D
-  id: Texture1D
+- uid: Fusee.Engine.Common.TextureType.TEXTURE1D
+  commentId: F:Fusee.Engine.Common.TextureType.TEXTURE1D
+  id: TEXTURE1D
   parent: Fusee.Engine.Common.TextureType
   langs:
   - csharp
   - vb
-  name: Texture1D
-  nameWithType: TextureType.Texture1D
-  fullName: Fusee.Engine.Common.TextureType.Texture1D
+  name: TEXTURE1D
+  nameWithType: TextureType.TEXTURE1D
+  fullName: Fusee.Engine.Common.TextureType.TEXTURE1D
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/ITextureBase.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Texture1D
-    path: src/Fusee/src/Engine/Common/ITextureBase.cs
+    id: TEXTURE1D
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
     startLine: 13
   assemblies:
   - Fusee.Engine.Common
@@ -63,7 +55,7 @@ items:
   summary: "\n1D Texture, width only.\n"
   example: []
   syntax:
-    content: Texture1D = 0
+    content: TEXTURE1D = 0
     return:
       type: Fusee.Engine.Common.TextureType
   modifiers.csharp:
@@ -72,24 +64,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.TextureType.Texture2D
-  commentId: F:Fusee.Engine.Common.TextureType.Texture2D
-  id: Texture2D
+- uid: Fusee.Engine.Common.TextureType.TEXTURE2D
+  commentId: F:Fusee.Engine.Common.TextureType.TEXTURE2D
+  id: TEXTURE2D
   parent: Fusee.Engine.Common.TextureType
   langs:
   - csharp
   - vb
-  name: Texture2D
-  nameWithType: TextureType.Texture2D
-  fullName: Fusee.Engine.Common.TextureType.Texture2D
+  name: TEXTURE2D
+  nameWithType: TextureType.TEXTURE2D
+  fullName: Fusee.Engine.Common.TextureType.TEXTURE2D
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/ITextureBase.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Texture2D
-    path: src/Fusee/src/Engine/Common/ITextureBase.cs
+    id: TEXTURE2D
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
     startLine: 18
   assemblies:
   - Fusee.Engine.Common
@@ -97,7 +85,7 @@ items:
   summary: "\n2D Texture, width and height.\n"
   example: []
   syntax:
-    content: Texture2D = 1
+    content: TEXTURE2D = 1
     return:
       type: Fusee.Engine.Common.TextureType
   modifiers.csharp:
@@ -106,24 +94,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.TextureType.Texture3D
-  commentId: F:Fusee.Engine.Common.TextureType.Texture3D
-  id: Texture3D
+- uid: Fusee.Engine.Common.TextureType.TEXTURE3D
+  commentId: F:Fusee.Engine.Common.TextureType.TEXTURE3D
+  id: TEXTURE3D
   parent: Fusee.Engine.Common.TextureType
   langs:
   - csharp
   - vb
-  name: Texture3D
-  nameWithType: TextureType.Texture3D
-  fullName: Fusee.Engine.Common.TextureType.Texture3D
+  name: TEXTURE3D
+  nameWithType: TextureType.TEXTURE3D
+  fullName: Fusee.Engine.Common.TextureType.TEXTURE3D
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/ITextureBase.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Texture3D
-    path: src/Fusee/src/Engine/Common/ITextureBase.cs
+    id: TEXTURE3D
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
     startLine: 23
   assemblies:
   - Fusee.Engine.Common
@@ -131,7 +115,7 @@ items:
   summary: "\n3D Texture, width, height, depth.\n"
   example: []
   syntax:
-    content: Texture3D = 2
+    content: TEXTURE3D = 2
     return:
       type: Fusee.Engine.Common.TextureType
   modifiers.csharp:
@@ -140,24 +124,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.TextureType.TextureCubeMap
-  commentId: F:Fusee.Engine.Common.TextureType.TextureCubeMap
-  id: TextureCubeMap
+- uid: Fusee.Engine.Common.TextureType.TEXTURE_CUBE_MAP
+  commentId: F:Fusee.Engine.Common.TextureType.TEXTURE_CUBE_MAP
+  id: TEXTURE_CUBE_MAP
   parent: Fusee.Engine.Common.TextureType
   langs:
   - csharp
   - vb
-  name: TextureCubeMap
-  nameWithType: TextureType.TextureCubeMap
-  fullName: Fusee.Engine.Common.TextureType.TextureCubeMap
+  name: TEXTURE_CUBE_MAP
+  nameWithType: TextureType.TEXTURE_CUBE_MAP
+  fullName: Fusee.Engine.Common.TextureType.TEXTURE_CUBE_MAP
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/ITextureBase.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: TextureCubeMap
-    path: src/Fusee/src/Engine/Common/ITextureBase.cs
+    id: TEXTURE_CUBE_MAP
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
     startLine: 28
   assemblies:
   - Fusee.Engine.Common
@@ -165,7 +145,7 @@ items:
   summary: "\nExactly 6 distinct sets of 2D images, all of the same size. They act as 6 faces of a cube.\n"
   example: []
   syntax:
-    content: TextureCubeMap = 3
+    content: TEXTURE_CUBE_MAP = 3
     return:
       type: Fusee.Engine.Common.TextureType
   modifiers.csharp:

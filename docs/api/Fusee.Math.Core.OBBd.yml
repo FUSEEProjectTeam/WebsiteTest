@@ -21,12 +21,8 @@ items:
   fullName: Fusee.Math.Core.OBBd
   type: Struct
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/OBBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: OBBd
-    path: src/Fusee/src/Math/Core/OBBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBd.cs
     startLine: 9
   assemblies:
   - Fusee.Math.Core
@@ -34,8 +30,14 @@ items:
   summary: "\nRepresents an oriented bounding box.\n"
   example: []
   syntax:
-    content: public struct OBBd
-    content.vb: Public Structure OBBd
+    content: >-
+      [ProtoContract]
+
+      public struct OBBd
+    content.vb: >-
+      <ProtoContract>
+
+      Public Structure OBBd
   inheritedMembers:
   - System.ValueType.Equals(System.Object)
   - System.ValueType.GetHashCode
@@ -43,6 +45,10 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - struct
@@ -61,12 +67,8 @@ items:
   fullName: Fusee.Math.Core.OBBd.Min
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/OBBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Min
-    path: src/Fusee/src/Math/Core/OBBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBd.cs
     startLine: 16
   assemblies:
   - Fusee.Math.Core
@@ -74,10 +76,22 @@ items:
   summary: "\nThe minimum values of the oriented bounding box in x, y and z direction\n"
   example: []
   syntax:
-    content: public double3 Min
+    content: >-
+      [ProtoMember(1)]
+
+      public double3 Min
     return:
       type: Fusee.Math.Core.double3
-    content.vb: Public Min As double3
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Min As double3
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -94,12 +108,8 @@ items:
   fullName: Fusee.Math.Core.OBBd.Max
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/OBBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Max
-    path: src/Fusee/src/Math/Core/OBBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBd.cs
     startLine: 21
   assemblies:
   - Fusee.Math.Core
@@ -107,10 +117,22 @@ items:
   summary: "\nThe maximum values of the oriented bounding box in x, y and z direction\n"
   example: []
   syntax:
-    content: public double3 Max
+    content: >-
+      [ProtoMember(2)]
+
+      public double3 Max
     return:
       type: Fusee.Math.Core.double3
-    content.vb: Public Max As double3
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Max As double3
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -127,12 +149,8 @@ items:
   fullName: Fusee.Math.Core.OBBd.Rotation
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/OBBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Rotation
-    path: src/Fusee/src/Math/Core/OBBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBd.cs
     startLine: 26
   assemblies:
   - Fusee.Math.Core
@@ -140,10 +158,22 @@ items:
   summary: "\nThe rotation of the oriented bounding box\n"
   example: []
   syntax:
-    content: public double4x4 Rotation
+    content: >-
+      [ProtoMember(3)]
+
+      public double4x4 Rotation
     return:
       type: Fusee.Math.Core.double4x4
-    content.vb: Public Rotation As double4x4
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public Rotation As double4x4
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -160,12 +190,8 @@ items:
   fullName: Fusee.Math.Core.OBBd.Translation
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/OBBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Translation
-    path: src/Fusee/src/Math/Core/OBBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBd.cs
     startLine: 31
   assemblies:
   - Fusee.Math.Core
@@ -173,10 +199,22 @@ items:
   summary: "\nThe translation of the oriented bounding box\n"
   example: []
   syntax:
-    content: public double3 Translation
+    content: >-
+      [ProtoMember(4)]
+
+      public double3 Translation
     return:
       type: Fusee.Math.Core.double3
-    content.vb: Public Translation As double3
+    content.vb: >-
+      <ProtoMember(4)>
+
+      Public Translation As double3
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -193,12 +231,8 @@ items:
   fullName: Fusee.Math.Core.OBBd.Size
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/OBBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Size
-    path: src/Fusee/src/Math/Core/OBBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBd.cs
     startLine: 36
   assemblies:
   - Fusee.Math.Core
@@ -206,10 +240,22 @@ items:
   summary: "\nReturns the with, height and depth of the box in x, y and z\n"
   example: []
   syntax:
-    content: public double3 Size
+    content: >-
+      [ProtoMember(5)]
+
+      public double3 Size
     return:
       type: Fusee.Math.Core.double3
-    content.vb: Public Size As double3
+    content.vb: >-
+      <ProtoMember(5)>
+
+      Public Size As double3
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 5
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -226,12 +272,8 @@ items:
   fullName: Fusee.Math.Core.OBBd.Center
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/OBBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Center
-    path: src/Fusee/src/Math/Core/OBBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBd.cs
     startLine: 41
   assemblies:
   - Fusee.Math.Core
@@ -263,12 +305,8 @@ items:
   fullName: Fusee.Math.Core.OBBd.EulerRotation
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/OBBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: EulerRotation
-    path: src/Fusee/src/Math/Core/OBBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBd.cs
     startLine: 46
   assemblies:
   - Fusee.Math.Core
@@ -300,12 +338,8 @@ items:
   fullName: Fusee.Math.Core.OBBd.OBBd(Fusee.Math.Core.double3[])
   type: Constructor
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/OBBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: src/Fusee/src/Math/Core/OBBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBd.cs
     startLine: 52
   assemblies:
   - Fusee.Math.Core

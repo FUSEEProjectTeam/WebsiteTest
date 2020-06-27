@@ -125,12 +125,8 @@ items:
   fullName: Fusee.Math.Core.float4x4
   type: Struct
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: float4x4
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 41
   assemblies:
   - Fusee.Math.Core
@@ -139,8 +135,13 @@ items:
   remarks: "\n<p>\nfloat4x4 objects represent matrices used in column-vector-notation, that means\nwhen used in common matrix-vector-multiplication scenarios, the vector should\nbe multiplied from the right to the matrix (M * v). Concatenations of matrices\nfrom left to right represent a transformation where the rightmost matrix is applied\nfirst and the leftmost matrix is applied last, for example in (M3 * M2 * M1) * v the vector\nv is first transformed by M1, then by M2 and finally by M3. The translation part of a 4x4\nmatrix used in homogeneous coordinate calculations can be found in the leftmost column\n(M14 - x-translation, M24 - y-translation, M34 - z-translation).\n</p>\n<p>\nNote that although float4x4 objects represent matrices in COLUMN-vector-NOTATION as\nfound in math books, the objects&apos; contents is physically stored in ROW-major-ORDER, meaning that\nin physical memory, a float4x4&apos;s components are stored contiguously in the following order: first row (M11, M12, M13, M14),\nthen second row (M21, M22, M21, M24), and so on. When exchanging matrix contents with libraries like\ngraphics engines (OpenGL, Direct3D), physics engines, file formats, etc. make sure to convert to and\nfrom the given Matrix layout of the API you are exchanging data with.\n</p>\n<p>\nfloat4x4 contains convenience construction methods to create matrices commonly\nused in Computer Graphics. Most of these application matrices are handedness-agnostic, meaning\nthat the resulting matrices can be used in both, left-handed and right-handed coordinate systems.\nThis does not hold for LookAt and Projection matrices where the viewing direction plays a role. In\nleft-handed coordinate systems the viewing direction is positive, meaning positions further away have\nbigger positive z-coordinates whereas in right-handed coordinate systems positions further away have smaller\nnegative z-coordinates. By default, float4x4 will assume a left-handed coordinate system, but contains\nconvenience construction methods to also create right-handed matrices if necessary. The right-handed versions\nof methods are postfixed with &quot;RH&quot;.\n</p>\n"
   example: []
   syntax:
-    content: 'public struct float4x4 : IEquatable<float4x4>'
+    content: >-
+      [ProtoContract]
+
+      public struct float4x4 : IEquatable<float4x4>
     content.vb: >-
+      <ProtoContract>
+
       Public Structure float4x4
           Implements IEquatable(Of float4x4)
   implements:
@@ -149,6 +150,10 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - struct
@@ -167,12 +172,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Row0
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Row0
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 51
   assemblies:
   - Fusee.Math.Core
@@ -180,10 +181,22 @@ items:
   summary: "\nTop row of the matrix\n"
   example: []
   syntax:
-    content: public float4 Row0
+    content: >-
+      [ProtoMember(1)]
+
+      public float4 Row0
     return:
       type: Fusee.Math.Core.float4
-    content.vb: Public Row0 As float4
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Row0 As float4
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -200,12 +213,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Row1
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Row1
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 57
   assemblies:
   - Fusee.Math.Core
@@ -213,10 +222,22 @@ items:
   summary: "\n2nd row of the matrix\n"
   example: []
   syntax:
-    content: public float4 Row1
+    content: >-
+      [ProtoMember(2)]
+
+      public float4 Row1
     return:
       type: Fusee.Math.Core.float4
-    content.vb: Public Row1 As float4
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Row1 As float4
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -233,12 +254,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Row2
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Row2
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 63
   assemblies:
   - Fusee.Math.Core
@@ -246,10 +263,22 @@ items:
   summary: "\n3rd row of the matrix\n"
   example: []
   syntax:
-    content: public float4 Row2
+    content: >-
+      [ProtoMember(3)]
+
+      public float4 Row2
     return:
       type: Fusee.Math.Core.float4
-    content.vb: Public Row2 As float4
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public Row2 As float4
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -266,12 +295,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Row3
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Row3
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 69
   assemblies:
   - Fusee.Math.Core
@@ -279,10 +304,22 @@ items:
   summary: "\nBottom row of the matrix\n"
   example: []
   syntax:
-    content: public float4 Row3
+    content: >-
+      [ProtoMember(4)]
+
+      public float4 Row3
     return:
       type: Fusee.Math.Core.float4
-    content.vb: Public Row3 As float4
+    content.vb: >-
+      <ProtoMember(4)>
+
+      Public Row3 As float4
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -299,12 +336,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Identity
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Identity
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 74
   assemblies:
   - Fusee.Math.Core
@@ -334,12 +367,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Zero
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Zero
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 79
   assemblies:
   - Fusee.Math.Core
@@ -369,12 +398,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.float4x4(Fusee.Math.Core.float4, Fusee.Math.Core.float4, Fusee.Math.Core.float4, Fusee.Math.Core.float4)
   type: Constructor
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 92
   assemblies:
   - Fusee.Math.Core
@@ -414,12 +439,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.float4x4(System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single)
   type: Constructor
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 119
   assemblies:
   - Fusee.Math.Core
@@ -495,12 +516,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.float4x4(Fusee.Math.Core.double4x4)
   type: Constructor
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 135
   assemblies:
   - Fusee.Math.Core
@@ -531,12 +548,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.float4x4(Fusee.Math.Core.float3x3)
   type: Constructor
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 147
   assemblies:
   - Fusee.Math.Core
@@ -567,12 +580,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Determinant
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Determinant
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 164
   assemblies:
   - Fusee.Math.Core
@@ -604,12 +613,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Trace
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Trace
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 187
   assemblies:
   - Fusee.Math.Core
@@ -641,12 +646,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Column0
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Column0
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 198
   assemblies:
   - Fusee.Math.Core
@@ -678,12 +679,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Column1
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Column1
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 207
   assemblies:
   - Fusee.Math.Core
@@ -715,12 +712,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Column2
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Column2
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 216
   assemblies:
   - Fusee.Math.Core
@@ -752,12 +745,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Column3
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Column3
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 225
   assemblies:
   - Fusee.Math.Core
@@ -789,12 +778,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.M11
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: M11
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 234
   assemblies:
   - Fusee.Math.Core
@@ -826,12 +811,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.M12
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: M12
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 243
   assemblies:
   - Fusee.Math.Core
@@ -863,12 +844,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.M13
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: M13
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 252
   assemblies:
   - Fusee.Math.Core
@@ -900,12 +877,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.M14
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: M14
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 261
   assemblies:
   - Fusee.Math.Core
@@ -937,12 +910,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.M21
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: M21
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 270
   assemblies:
   - Fusee.Math.Core
@@ -974,12 +943,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.M22
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: M22
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 279
   assemblies:
   - Fusee.Math.Core
@@ -1011,12 +976,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.M23
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: M23
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 288
   assemblies:
   - Fusee.Math.Core
@@ -1048,12 +1009,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.M24
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: M24
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 297
   assemblies:
   - Fusee.Math.Core
@@ -1085,12 +1042,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.M31
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: M31
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 306
   assemblies:
   - Fusee.Math.Core
@@ -1122,12 +1075,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.M32
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: M32
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 315
   assemblies:
   - Fusee.Math.Core
@@ -1159,12 +1108,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.M33
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: M33
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 324
   assemblies:
   - Fusee.Math.Core
@@ -1196,12 +1141,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.M34
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: M34
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 333
   assemblies:
   - Fusee.Math.Core
@@ -1233,12 +1174,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.M41
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: M41
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 342
   assemblies:
   - Fusee.Math.Core
@@ -1270,12 +1207,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.M42
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: M42
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 351
   assemblies:
   - Fusee.Math.Core
@@ -1307,12 +1240,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.M43
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: M43
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 360
   assemblies:
   - Fusee.Math.Core
@@ -1344,12 +1273,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.M44
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: M44
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 369
   assemblies:
   - Fusee.Math.Core
@@ -1381,12 +1306,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Offset
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Offset
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 381
   assemblies:
   - Fusee.Math.Core
@@ -1419,12 +1340,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Item[System.Int32, System.Int32]
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: this[]
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 399
   assemblies:
   - Fusee.Math.Core
@@ -1466,12 +1383,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Invert()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Invert
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 454
   assemblies:
   - Fusee.Math.Core
@@ -1500,12 +1413,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.InvertAffine()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: InvertAffine
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 462
   assemblies:
   - Fusee.Math.Core
@@ -1534,12 +1443,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Transpose()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Transpose
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 474
   assemblies:
   - Fusee.Math.Core
@@ -1568,12 +1473,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.ToArray()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ToArray
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 485
   assemblies:
   - Fusee.Math.Core
@@ -1603,12 +1504,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Round()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Round
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 499
   assemblies:
   - Fusee.Math.Core
@@ -1637,12 +1534,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.TranslationComponent()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: TranslationComponent
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 511
   assemblies:
   - Fusee.Math.Core
@@ -1671,12 +1564,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Translation()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Translation
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 519
   assemblies:
   - Fusee.Math.Core
@@ -1705,12 +1594,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.RotationComponent()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RotationComponent
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 527
   assemblies:
   - Fusee.Math.Core
@@ -1739,12 +1624,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.ScaleComponent()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ScaleComponent
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 535
   assemblies:
   - Fusee.Math.Core
@@ -1773,12 +1654,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Scale()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Scale
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 543
   assemblies:
   - Fusee.Math.Core
@@ -1807,12 +1684,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateFromAxisAngle(Fusee.Math.Core.float3, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateFromAxisAngle
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 562
   assemblies:
   - Fusee.Math.Core
@@ -1851,12 +1724,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateRotationX(System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateRotationX
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 587
   assemblies:
   - Fusee.Math.Core
@@ -1892,12 +1761,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateRotationY(System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateRotationY
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 607
   assemblies:
   - Fusee.Math.Core
@@ -1933,12 +1798,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateRotationZ(System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateRotationZ
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 627
   assemblies:
   - Fusee.Math.Core
@@ -1974,12 +1835,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateRotationYX(Fusee.Math.Core.float2)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateRotationYX
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 647
   assemblies:
   - Fusee.Math.Core
@@ -2015,12 +1872,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateRotationYX(System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateRotationYX
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 658
   assemblies:
   - Fusee.Math.Core
@@ -2059,12 +1912,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateRotationYZ(Fusee.Math.Core.float2)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateRotationYZ
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 668
   assemblies:
   - Fusee.Math.Core
@@ -2100,12 +1949,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateRotationYZ(System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateRotationYZ
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 679
   assemblies:
   - Fusee.Math.Core
@@ -2144,12 +1989,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateRotationXZ(Fusee.Math.Core.float2)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateRotationXZ
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 689
   assemblies:
   - Fusee.Math.Core
@@ -2185,12 +2026,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateRotationXZ(System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateRotationXZ
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 700
   assemblies:
   - Fusee.Math.Core
@@ -2229,12 +2066,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateRotationYXZ(Fusee.Math.Core.float3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateRotationYXZ
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 710
   assemblies:
   - Fusee.Math.Core
@@ -2270,12 +2103,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateRotationYXZ(System.Single, System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateRotationYXZ
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 722
   assemblies:
   - Fusee.Math.Core
@@ -2317,12 +2146,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateTranslation(System.Single, System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateTranslation
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 738
   assemblies:
   - Fusee.Math.Core
@@ -2364,12 +2189,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateTranslation(Fusee.Math.Core.float3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateTranslation
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 754
   assemblies:
   - Fusee.Math.Core
@@ -2405,12 +2226,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.RotMatToEuler(Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RotMatToEuler
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 816
   assemblies:
   - Fusee.Math.Core
@@ -2445,12 +2262,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateScale(System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateScale
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 843
   assemblies:
   - Fusee.Math.Core
@@ -2486,12 +2299,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateScale(System.Single, System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateScale
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 861
   assemblies:
   - Fusee.Math.Core
@@ -2533,12 +2342,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateScale(Fusee.Math.Core.float3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateScale
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 877
   assemblies:
   - Fusee.Math.Core
@@ -2574,12 +2379,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateOrthographic(System.Single, System.Single, System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateOrthographic
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 900
   assemblies:
   - Fusee.Math.Core
@@ -2624,12 +2425,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateOrthographicOffCenterRH(System.Single, System.Single, System.Single, System.Single, System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateOrthographicOffCenterRH
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 919
   assemblies:
   - Fusee.Math.Core
@@ -2680,12 +2477,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreateOrthographicOffCenter(System.Single, System.Single, System.Single, System.Single, System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreateOrthographicOffCenter
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 950
   assemblies:
   - Fusee.Math.Core
@@ -2736,12 +2529,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreatePerspectiveFieldOfView(System.Single, System.Single, System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreatePerspectiveFieldOfView
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 993
   assemblies:
   - Fusee.Math.Core
@@ -2790,12 +2579,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreatePerspectiveOffCenterRH(System.Single, System.Single, System.Single, System.Single, System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreatePerspectiveOffCenterRH
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1047
   assemblies:
   - Fusee.Math.Core
@@ -2864,12 +2649,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.CreatePerspectiveOffCenter(System.Single, System.Single, System.Single, System.Single, System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CreatePerspectiveOffCenter
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1092
   assemblies:
   - Fusee.Math.Core
@@ -2924,12 +2705,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Scale(System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Scale
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1128
   assemblies:
   - Fusee.Math.Core
@@ -2965,12 +2742,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Scale(Fusee.Math.Core.float3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Scale
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1138
   assemblies:
   - Fusee.Math.Core
@@ -3006,12 +2779,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Scale(System.Single, System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Scale
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1150
   assemblies:
   - Fusee.Math.Core
@@ -3053,12 +2822,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.LookAt(Fusee.Math.Core.float3, Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: LookAt
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1171
   assemblies:
   - Fusee.Math.Core
@@ -3100,12 +2865,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.LookAtRH(Fusee.Math.Core.float3, Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: LookAtRH
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1197
   assemblies:
   - Fusee.Math.Core
@@ -3147,12 +2908,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.LookAt(System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: LookAt
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1229
   assemblies:
   - Fusee.Math.Core
@@ -3212,12 +2969,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Add(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Add
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1245
   assemblies:
   - Fusee.Math.Core
@@ -3259,12 +3012,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Subtract(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Subtract
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1259
   assemblies:
   - Fusee.Math.Core
@@ -3306,12 +3055,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Mult(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Mult
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1277
   assemblies:
   - Fusee.Math.Core
@@ -3353,12 +3098,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.IsInvertable(Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: IsInvertable
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1340
   assemblies:
   - Fusee.Math.Core
@@ -3393,12 +3134,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.IsInvertable(Fusee.Math.Core.float4x4, out System.Single)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: IsInvertable
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1350
   assemblies:
   - Fusee.Math.Core
@@ -3439,12 +3176,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Invert(Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Invert
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1362
   assemblies:
   - Fusee.Math.Core
@@ -3480,12 +3213,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.InvertAffine(Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: InvertAffine
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1451
   assemblies:
   - Fusee.Math.Core
@@ -3521,12 +3250,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Transpose(Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Transpose
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1496
   assemblies:
   - Fusee.Math.Core
@@ -3562,12 +3287,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Transform(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Transform
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1511
   assemblies:
   - Fusee.Math.Core
@@ -3606,12 +3327,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.TransformPremult(Fusee.Math.Core.float4, Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: TransformPremult
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1526
   assemblies:
   - Fusee.Math.Core
@@ -3650,12 +3367,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Transform(Fusee.Math.Core.float4x4, Fusee.Math.Core.float3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Transform
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1546
   assemblies:
   - Fusee.Math.Core
@@ -3695,12 +3408,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.TransformPremult(Fusee.Math.Core.float3, Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: TransformPremult
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1566
   assemblies:
   - Fusee.Math.Core
@@ -3740,12 +3449,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.TransformPerspective(Fusee.Math.Core.float4x4, Fusee.Math.Core.float3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: TransformPerspective
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1581
   assemblies:
   - Fusee.Math.Core
@@ -3784,12 +3489,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.TransformPerspective(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: TransformPerspective
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1607
   assemblies:
   - Fusee.Math.Core
@@ -3828,12 +3529,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.GetTranslation(Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetTranslation
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1622
   assemblies:
   - Fusee.Math.Core
@@ -3869,12 +3566,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.TranslationDecomposition(Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: TranslationDecomposition
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1632
   assemblies:
   - Fusee.Math.Core
@@ -3910,12 +3603,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.RotationDecomposition(Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RotationDecomposition
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1649
   assemblies:
   - Fusee.Math.Core
@@ -3951,12 +3640,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.GetScale(Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetScale
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1674
   assemblies:
   - Fusee.Math.Core
@@ -3992,12 +3677,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.ScaleDecomposition(Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ScaleDecomposition
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1690
   assemblies:
   - Fusee.Math.Core
@@ -4033,12 +3714,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Round(Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Round
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1711
   assemblies:
   - Fusee.Math.Core
@@ -4074,12 +3751,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Addition(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Addition
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1731
   assemblies:
   - Fusee.Math.Core
@@ -4118,12 +3791,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Subtraction(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Subtraction
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1742
   assemblies:
   - Fusee.Math.Core
@@ -4162,12 +3831,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Multiply(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Multiply
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1753
   assemblies:
   - Fusee.Math.Core
@@ -4206,12 +3871,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Equality(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Equality
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1764
   assemblies:
   - Fusee.Math.Core
@@ -4250,12 +3911,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Inequality(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Inequality
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1775
   assemblies:
   - Fusee.Math.Core
@@ -4294,12 +3951,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Multiply(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Multiply
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1786
   assemblies:
   - Fusee.Math.Core
@@ -4338,12 +3991,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Multiply(Fusee.Math.Core.float4, Fusee.Math.Core.float4x4)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Multiply
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1797
   assemblies:
   - Fusee.Math.Core
@@ -4382,12 +4031,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Multiply(Fusee.Math.Core.float4x4, Fusee.Math.Core.float3)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Multiply
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1813
   assemblies:
   - Fusee.Math.Core
@@ -4427,12 +4072,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Multiply(Fusee.Math.Core.float3, Fusee.Math.Core.float4x4)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Multiply
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1829
   assemblies:
   - Fusee.Math.Core
@@ -4472,12 +4113,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Explicit(Fusee.Math.Core.double4x4 to Fusee.Math.Core.float4x4)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Explicit
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1839
   assemblies:
   - Fusee.Math.Core
@@ -4516,12 +4153,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.ToString()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ToString
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1854
   assemblies:
   - Fusee.Math.Core
@@ -4554,12 +4187,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.ToString(System.IFormatProvider)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ToString
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1866
   assemblies:
   - Fusee.Math.Core
@@ -4593,12 +4222,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.GetHashCode()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetHashCode
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1887
   assemblies:
   - Fusee.Math.Core
@@ -4631,12 +4256,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Equals(System.Object)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Equals
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1901
   assemblies:
   - Fusee.Math.Core
@@ -4673,12 +4294,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.IsAffine
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: IsAffine
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1920
   assemblies:
   - Fusee.Math.Core
@@ -4710,12 +4327,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Equals(Fusee.Math.Core.float4x4)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Equals
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1932
   assemblies:
   - Fusee.Math.Core
@@ -4751,12 +4364,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.ParseConverter
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ParseConverter
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1949
   assemblies:
   - Fusee.Math.Core
@@ -4791,12 +4400,8 @@ items:
   fullName: Fusee.Math.Core.float4x4.Parse(System.String, System.IFormatProvider)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/float4x4.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Parse
-    path: src/Fusee/src/Math/Core/float4x4.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4x4.cs
     startLine: 1957
   assemblies:
   - Fusee.Math.Core

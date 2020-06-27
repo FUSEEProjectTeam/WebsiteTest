@@ -16,12 +16,8 @@ items:
   fullName: Fusee.Serialization.V1.FusScene
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusScene.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FusScene
-    path: src/Fusee/src/Serialization/V1/FusScene.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusScene.cs
     startLine: 9
   assemblies:
   - Fusee.Serialization
@@ -29,8 +25,13 @@ items:
   summary: "\n.fus File contents making up a scene.\n"
   example: []
   syntax:
-    content: 'public class FusScene : FusContents'
+    content: >-
+      [ProtoContract]
+
+      public class FusScene : FusContents
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusScene
           Inherits FusContents
   inheritance:
@@ -44,6 +45,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -62,12 +67,8 @@ items:
   fullName: Fusee.Serialization.V1.FusScene.ComponentList
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusScene.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ComponentList
-    path: src/Fusee/src/Serialization/V1/FusScene.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusScene.cs
     startLine: 18
   assemblies:
   - Fusee.Serialization
@@ -75,10 +76,22 @@ items:
   summary: "\nOverall list of components used in this scene. This list contains the .fus file&apos;s physical payload.\nIndices into this list are used as references at other places in the .fus file.\n"
   example: []
   syntax:
-    content: public List<FusComponent> ComponentList
+    content: >-
+      [ProtoMember(1)]
+
+      public List<FusComponent> ComponentList
     return:
       type: System.Collections.Generic.List{Fusee.Serialization.V1.FusComponent}
-    content.vb: Public ComponentList As List(Of FusComponent)
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public ComponentList As List(Of FusComponent)
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -95,12 +108,8 @@ items:
   fullName: Fusee.Serialization.V1.FusScene.Children
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusScene.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Children
-    path: src/Fusee/src/Serialization/V1/FusScene.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusScene.cs
     startLine: 24
   assemblies:
   - Fusee.Serialization
@@ -108,10 +117,22 @@ items:
   summary: "\nList of root nodes of the scene graph making up this scene.\n"
   example: []
   syntax:
-    content: public List<FusNode> Children
+    content: >-
+      [ProtoMember(2)]
+
+      public List<FusNode> Children
     return:
       type: System.Collections.Generic.List{Fusee.Serialization.V1.FusNode}
-    content.vb: Public Children As List(Of FusNode)
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Children As List(Of FusNode)
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -128,12 +149,8 @@ items:
   fullName: Fusee.Serialization.V1.FusScene.AddNode(Fusee.Serialization.V1.FusNode)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusScene.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: AddNode
-    path: src/Fusee/src/Serialization/V1/FusScene.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusScene.cs
     startLine: 30
   assemblies:
   - Fusee.Serialization

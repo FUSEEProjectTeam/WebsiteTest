@@ -1,0 +1,1714 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RenderContext
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RenderContext
+   ">
+    <meta name="generator" content="docfx 2.55.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Core.RenderContext">
+  
+  
+  <h1 id="Fusee_Engine_Core_RenderContext" data-uid="Fusee.Engine.Core.RenderContext" class="text-break">Class RenderContext
+  </h1>
+  <div class="markdown level0 summary"><p>The render context contains all functions necessary to manipulate the underlying rendering hardware. Use this class' elements
+to render geometry to the RenderCanvas associated with this context. If you have worked with OpenGL or DirectX before you will find
+many similarities in this class' methods and properties.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RenderContext</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.Core.html">Fusee.Engine.Core</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Engine.Core.dll</h6>
+  <h5 id="Fusee_Engine_Core_RenderContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RenderContext</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext__ctor_" data-uid="Fusee.Engine.Core.RenderContext.#ctor*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext__ctor_Fusee_Engine_Common_IRenderContextImp_" data-uid="Fusee.Engine.Core.RenderContext.#ctor(Fusee.Engine.Common.IRenderContextImp)">RenderContext(IRenderContextImp)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderContext(IRenderContextImp rci)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html">IRenderContextImp</a></td>
+        <td><span class="parametername">rci</span></td>
+        <td><p>The <a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html">IRenderContextImp</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_Bones_" data-uid="Fusee.Engine.Core.RenderContext.Bones*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_Bones" data-uid="Fusee.Engine.Core.RenderContext.Bones">Bones</h4>
+  <div class="markdown level1 summary"><p>Array of bone matrices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4[] Bones { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_ClearColor_" data-uid="Fusee.Engine.Core.RenderContext.ClearColor*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_ClearColor" data-uid="Fusee.Engine.Core.RenderContext.ClearColor">ClearColor</h4>
+  <div class="markdown level1 summary"><p>The color to use when clearing the color buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4 ClearColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4.html">float4</a></td>
+        <td><p>The color value is interpreted as a (Red, Green, Blue, Alpha) quadruple with
+component values ranging from 0.0f to 1.0f.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_ClearColor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is the color that will be copied to all pixels in the output color buffer when Clear is called on the render context.</p>
+</div>
+  <h5 id="Fusee_Engine_Core_RenderContext_ClearColor_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_Clear_Fusee_Engine_Common_ClearFlags_">Clear(ClearFlags)</a></div>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_ClearDepth_" data-uid="Fusee.Engine.Core.RenderContext.ClearDepth*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_ClearDepth" data-uid="Fusee.Engine.Core.RenderContext.ClearDepth">ClearDepth</h4>
+  <div class="markdown level1 summary"><p>The depth value to use when clearing the color buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ClearDepth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Typically set to the highest possible depth value. Typically ranges between 0 and 1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_ClearDepth_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is the depth (z-) value that will be copied to all pixels in the depth (z-) buffer when Clear is called on the render context.</p>
+</div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_CurrentRenderState_" data-uid="Fusee.Engine.Core.RenderContext.CurrentRenderState*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_CurrentRenderState" data-uid="Fusee.Engine.Core.RenderContext.CurrentRenderState">CurrentRenderState</h4>
+  <div class="markdown level1 summary"><p>Saves the current RenderState.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderStateSet CurrentRenderState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.RenderStateSet.html">RenderStateSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_DefaultState_" data-uid="Fusee.Engine.Core.RenderContext.DefaultState*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_DefaultState" data-uid="Fusee.Engine.Core.RenderContext.DefaultState">DefaultState</h4>
+  <div class="markdown level1 summary"><p>Contains the default state of the render context. can be used to reset this RenderContext to it's DefaultState.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderContextDefaultState DefaultState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.RenderContextDefaultState.html">RenderContextDefaultState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_InvModel_" data-uid="Fusee.Engine.Core.RenderContext.InvModel*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_InvModel" data-uid="Fusee.Engine.Core.RenderContext.InvModel">InvModel</h4>
+  <div class="markdown level1 summary"><p>Gets the inverted Model matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 InvModel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The inverted Model matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvModel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the Model matrix is orthogonal (i.e. contains no scale component), its inverse matrix
+is equal to its transpose matrix.</p>
+</div>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvModel_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_Model">Model</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_TransModel">TransModel</a></div>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_InvModelView_" data-uid="Fusee.Engine.Core.RenderContext.InvModelView*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_InvModelView" data-uid="Fusee.Engine.Core.RenderContext.InvModelView">InvModelView</h4>
+  <div class="markdown level1 summary"><p>The inverse of the ModelView matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 InvModelView { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The 4x4 matrix resulting from the matrix inversion applied to the ModelView matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvModelView_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the ModelView matrix is orthogonal (i.e. contains no scale component), its inverse matrix
+is equal to its transpose matrix.</p>
+</div>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvModelView_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_ModelView">ModelView</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_TransModelView">TransModelView</a></div>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_InvModelViewProjection_" data-uid="Fusee.Engine.Core.RenderContext.InvModelViewProjection*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_InvModelViewProjection" data-uid="Fusee.Engine.Core.RenderContext.InvModelViewProjection">InvModelViewProjection</h4>
+  <div class="markdown level1 summary"><p>The inverse of the ModelViewProjection matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 InvModelViewProjection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The 4x4 matrix resulting from the matrix inversion applied to the ModelViewProjection matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvModelViewProjection_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the ModelViewProjection matrix is orthogonal (i.e. contains no scale component), its inverse matrix
+is equal to its transpose matrix.</p>
+</div>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvModelViewProjection_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_ModelViewProjection">ModelViewProjection</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_TransModelViewProjection">TransModelViewProjection</a></div>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_InvProjection_" data-uid="Fusee.Engine.Core.RenderContext.InvProjection*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_InvProjection" data-uid="Fusee.Engine.Core.RenderContext.InvProjection">InvProjection</h4>
+  <div class="markdown level1 summary"><p>The inverse of the Projection matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 InvProjection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The 4x4 matrix resulting from the matrix inversion applied to the Projection matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvProjection_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the Projection matrix is orthogonal (i.e. contains no scale component), its inverse matrix
+is equal to its transpose matrix.</p>
+</div>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvProjection_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_Projection">Projection</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_TransProjection">TransProjection</a></div>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_InvTransModel_" data-uid="Fusee.Engine.Core.RenderContext.InvTransModel*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_InvTransModel" data-uid="Fusee.Engine.Core.RenderContext.InvTransModel">InvTransModel</h4>
+  <div class="markdown level1 summary"><p>The inverse transpose of the Model matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 InvTransModel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The 4x4 matrix resulting from the matrix inversion and transpose applied to the Model matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvTransModel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the Model matrix is orthogonal (i.e. contains no scale component), its inverse transpose matrix
+is the same as the original Model matrix.</p>
+</div>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvTransModel_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_Model">Model</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_InvModel">InvModel</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_TransModel">TransModel</a></div>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_InvTransModelView_" data-uid="Fusee.Engine.Core.RenderContext.InvTransModelView*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_InvTransModelView" data-uid="Fusee.Engine.Core.RenderContext.InvTransModelView">InvTransModelView</h4>
+  <div class="markdown level1 summary"><p>The inverse transpose of the ModelView matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 InvTransModelView { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The 4x4 matrix resulting from the matrix inversion and transpose applied to the ModelView matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvTransModelView_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the ModelView matrix is orthogonal (i.e. contains no scale component), its inverse transpose matrix
+is the same as the original ModelView matrix.</p>
+</div>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvTransModelView_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_ModelView">ModelView</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_InvModelView">InvModelView</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_TransModelView">TransModelView</a></div>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_InvTransModelViewProjection_" data-uid="Fusee.Engine.Core.RenderContext.InvTransModelViewProjection*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_InvTransModelViewProjection" data-uid="Fusee.Engine.Core.RenderContext.InvTransModelViewProjection">InvTransModelViewProjection</h4>
+  <div class="markdown level1 summary"><p>The inverse transpose of the ModelViewProjection matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 InvTransModelViewProjection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The 4x4 matrix resulting from the matrix inversion and transpose applied to the ModelViewProjection matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvTransModelViewProjection_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the ModelViewProjection matrix is orthogonal (i.e. contains no scale component), its inverse transpose matrix
+is the same as the original ModelViewProjection matrix.</p>
+</div>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvTransModelViewProjection_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_ModelViewProjection">ModelViewProjection</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_InvModelViewProjection">InvModelViewProjection</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_TransModelViewProjection">TransModelViewProjection</a></div>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_InvTransProjection_" data-uid="Fusee.Engine.Core.RenderContext.InvTransProjection*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_InvTransProjection" data-uid="Fusee.Engine.Core.RenderContext.InvTransProjection">InvTransProjection</h4>
+  <div class="markdown level1 summary"><p>The inverse transpose of the Projection matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 InvTransProjection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The 4x4 matrix resulting from the matrix inversion and transpose applied to the Projection matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvTransProjection_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the Projection matrix is orthogonal (i.e. contains no scale component), its inverse transpose matrix
+is the same as the original Projection matrix.</p>
+</div>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvTransProjection_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_Projection">Projection</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_InvProjection">InvProjection</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_TransProjection">TransProjection</a></div>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_InvTransView_" data-uid="Fusee.Engine.Core.RenderContext.InvTransView*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_InvTransView" data-uid="Fusee.Engine.Core.RenderContext.InvTransView">InvTransView</h4>
+  <div class="markdown level1 summary"><p>The inverse transpose of the View matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 InvTransView { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The 4x4 matrix resulting from the matrix inversion and transpose applied to the View matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvTransView_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the View matrix is orthogonal (i.e. contains no scale component), its inverse transpose matrix
+is the same as the original View matrix.</p>
+</div>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvTransView_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_View">View</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_InvView">InvView</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_TransView">TransView</a></div>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_InvView_" data-uid="Fusee.Engine.Core.RenderContext.InvView*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_InvView" data-uid="Fusee.Engine.Core.RenderContext.InvView">InvView</h4>
+  <div class="markdown level1 summary"><p>Gets the inverted View matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 InvView { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The inverted view matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvView_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the View matrix is orthogonal (i.e. contains no scale component), its inverse matrix
+is equal to its transpose matrix.</p>
+</div>
+  <h5 id="Fusee_Engine_Core_RenderContext_InvView_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_View">View</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_TransView">TransView</a></div>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_LockedStates_" data-uid="Fusee.Engine.Core.RenderContext.LockedStates*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_LockedStates" data-uid="Fusee.Engine.Core.RenderContext.LockedStates">LockedStates</h4>
+  <div class="markdown level1 summary"><p>If a state is forced it will remain the value currently set in <a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_CurrentRenderState">CurrentRenderState</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;RenderState, KeyValuePair&lt;bool, uint&gt;&gt; LockedStates { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="Fusee.Engine.Common.RenderState.html">RenderState</a>, <span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<span class="xref">System.Boolean</span>, <span class="xref">System.UInt32</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_Model_" data-uid="Fusee.Engine.Core.RenderContext.Model*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_Model" data-uid="Fusee.Engine.Core.RenderContext.Model">Model</h4>
+  <div class="markdown level1 summary"><p>The Model matrix used by the rendering pipeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 Model { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The model matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_Model_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Model coordinates are the coordinates directly taken from the model (the mesh geometry - <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a>).</p>
+</div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_ModelView_" data-uid="Fusee.Engine.Core.RenderContext.ModelView*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_ModelView" data-uid="Fusee.Engine.Core.RenderContext.ModelView">ModelView</h4>
+  <div class="markdown level1 summary"><p>The ModelView matrix used by the rendering pipeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 ModelView { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The 4x4 ModelView matrix defining the transformation applied to model coordinates yielding view coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_ModelView_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Model coordinates are the coordinates directly taken from the model (the mesh geometry - <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a>). The rendering pipeline
+transforms these coordinates into View coordinates. Further down the pipeline the coordinates will be transformed to screen coordinates to allow the
+geometry to be rendered to pixel positions on the screen. The ModelView matrix defines the transformations performed on the original model coordinates
+to yield view coordinates. In most cases the matrix is a composition of several translations, rotations, and scale operations.</p>
+</div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_ModelViewProjection_" data-uid="Fusee.Engine.Core.RenderContext.ModelViewProjection*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_ModelViewProjection" data-uid="Fusee.Engine.Core.RenderContext.ModelViewProjection">ModelViewProjection</h4>
+  <div class="markdown level1 summary"><p>The combination of the ModelView and Projection matrices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 ModelViewProjection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The 4x4 matrix resulting from the matrix multiplication of the ModelView and the Projection matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_ModelViewProjection_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_ModelView">ModelView</a> and <a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_Projection">Projection</a>.</p>
+</div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_Projection_" data-uid="Fusee.Engine.Core.RenderContext.Projection*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_Projection" data-uid="Fusee.Engine.Core.RenderContext.Projection">Projection</h4>
+  <div class="markdown level1 summary"><p>The projection matrix used by the rendering pipeline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 Projection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The 4x4 projection matrix applied to view coordinates yielding clip space coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_Projection_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>View coordinates are the result of the ModelView matrix multiplied to the geometry (<a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_ModelView">ModelView</a>).
+The coordinate system of the view space has its origin in the camera center with the z axis aligned to the viewing direction, and the x- and
+y axes aligned to the viewing plane. Still, no projection from 3d space to the viewing plane has been performed. This is done by multiplying
+view coordinate geometry with the projection matrix. Typically, the projection matrix either performs a parallel projection or a perspective
+projection.</p>
+</div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_RenderFrustum_" data-uid="Fusee.Engine.Core.RenderContext.RenderFrustum*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_RenderFrustum" data-uid="Fusee.Engine.Core.RenderContext.RenderFrustum">RenderFrustum</h4>
+  <div class="markdown level1 summary"><p>The world space frustum planes, derived from the current view-projection matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Frustum RenderFrustum { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.Frustum.html">Frustum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_TransModel_" data-uid="Fusee.Engine.Core.RenderContext.TransModel*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_TransModel" data-uid="Fusee.Engine.Core.RenderContext.TransModel">TransModel</h4>
+  <div class="markdown level1 summary"><p>The transpose of the Model matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 TransModel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The 4x4 matrix resulting from the matrix transpose applied to the Model matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_TransModel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the Model matrix is orthogonal (i.e. contains no scale component), its transpose matrix
+is equal to its inverse matrix.</p>
+</div>
+  <h5 id="Fusee_Engine_Core_RenderContext_TransModel_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_Model">Model</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_InvModel">InvModel</a></div>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_TransModelView_" data-uid="Fusee.Engine.Core.RenderContext.TransModelView*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_TransModelView" data-uid="Fusee.Engine.Core.RenderContext.TransModelView">TransModelView</h4>
+  <div class="markdown level1 summary"><p>The transpose of the ModelView matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 TransModelView { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The 4x4 matrix resulting from the matrix transpose applied to the ModelView matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_TransModelView_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the ModelView matrix is orthogonal (i.e. contains no scale component), its transpose matrix
+is equal to its inverse matrix.</p>
+</div>
+  <h5 id="Fusee_Engine_Core_RenderContext_TransModelView_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_ModelView">ModelView</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_InvModelView">InvModelView</a></div>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_TransModelViewProjection_" data-uid="Fusee.Engine.Core.RenderContext.TransModelViewProjection*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_TransModelViewProjection" data-uid="Fusee.Engine.Core.RenderContext.TransModelViewProjection">TransModelViewProjection</h4>
+  <div class="markdown level1 summary"><p>The transpose of the ModelViewProjection matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 TransModelViewProjection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The 4x4 matrix resulting from the matrix transpose applied to the ModelViewProjection matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_TransModelViewProjection_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the ModelViewProjection matrix is orthogonal (i.e. contains no scale component), its transpose matrix
+is equal to its inverse matrix.</p>
+</div>
+  <h5 id="Fusee_Engine_Core_RenderContext_TransModelViewProjection_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_ModelViewProjection">ModelViewProjection</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_InvModelViewProjection">InvModelViewProjection</a></div>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_TransProjection_" data-uid="Fusee.Engine.Core.RenderContext.TransProjection*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_TransProjection" data-uid="Fusee.Engine.Core.RenderContext.TransProjection">TransProjection</h4>
+  <div class="markdown level1 summary"><p>The transpose of the Projection matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 TransProjection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The 4x4 matrix resulting from the matrix transpose applied to the Projection matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_TransProjection_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the Projection matrix is orthogonal (i.e. contains no scale component), its transpose matrix
+is equal to its inverse matrix.</p>
+</div>
+  <h5 id="Fusee_Engine_Core_RenderContext_TransProjection_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_Projection">Projection</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_InvProjection">InvProjection</a></div>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_TransView_" data-uid="Fusee.Engine.Core.RenderContext.TransView*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_TransView" data-uid="Fusee.Engine.Core.RenderContext.TransView">TransView</h4>
+  <div class="markdown level1 summary"><p>The transpose of the View matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 TransView { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The 4x4 matrix resulting from the matrix transpose applied to the View matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_TransView_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the View matrix is orthogonal (i.e. contains no scale component), its transpose matrix
+is equal to its inverse matrix.</p>
+</div>
+  <h5 id="Fusee_Engine_Core_RenderContext_TransView_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_View">View</a></div>
+      <div><a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_InvView">InvView</a></div>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_View_" data-uid="Fusee.Engine.Core.RenderContext.View*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_View" data-uid="Fusee.Engine.Core.RenderContext.View">View</h4>
+  <div class="markdown level1 summary"><p>The View matrix used by the rendering pipeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 View { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The view matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_View_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This matrix is also referred often as the camera transformation(not the projection).
+It describes the orientation of the view that is used to render a scene.
+You can use <a class="xref" href="Fusee.Math.Core.float4x4.html#Fusee_Math_Core_float4x4_LookAt_Fusee_Math_Core_float3_Fusee_Math_Core_float3_Fusee_Math_Core_float3_">LookAt(float3, float3, float3)</a> to create a valid view matrix and analyze how it is build up.</p>
+</div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_ViewportHeight_" data-uid="Fusee.Engine.Core.RenderContext.ViewportHeight*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_ViewportHeight" data-uid="Fusee.Engine.Core.RenderContext.ViewportHeight">ViewportHeight</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the viewport height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ViewportHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_ViewportWidth_" data-uid="Fusee.Engine.Core.RenderContext.ViewportWidth*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_ViewportWidth" data-uid="Fusee.Engine.Core.RenderContext.ViewportWidth">ViewportWidth</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the viewport width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ViewportWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_ViewportXStart_" data-uid="Fusee.Engine.Core.RenderContext.ViewportXStart*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_ViewportXStart" data-uid="Fusee.Engine.Core.RenderContext.ViewportXStart">ViewportXStart</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the x coordinate of viewport's lower left (starting) point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ViewportXStart { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_ViewportYStart_" data-uid="Fusee.Engine.Core.RenderContext.ViewportYStart*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_ViewportYStart" data-uid="Fusee.Engine.Core.RenderContext.ViewportYStart">ViewportYStart</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the y coordinate of viewport's lower left (starting) point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ViewportYStart { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_Clear_" data-uid="Fusee.Engine.Core.RenderContext.Clear*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_Clear_Fusee_Engine_Common_ClearFlags_" data-uid="Fusee.Engine.Core.RenderContext.Clear(Fusee.Engine.Common.ClearFlags)">Clear(ClearFlags)</h4>
+  <div class="markdown level1 summary"><p>Erases the contents of the specified rendering buffers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear(ClearFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.ClearFlags.html">ClearFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>A combination of flags specifying the rendering buffers to clear.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_Clear_Fusee_Engine_Common_ClearFlags__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Calling this method erases all contents of the rendering buffers. A typical use case for this method
+is to erase the contents of the color buffer and the depth buffer (z-buffer) before rendering starts
+at the beginning of a rendering loop. Thus, rendering the current frame starts with an empty color and
+z-buffer. <a class="xref" href="Fusee.Engine.Common.ClearFlags.html">ClearFlags</a> for a list of possible buffers to clear. Make sure to use the bitwise
+or-operator (|) to combine several buffers to clear.</p>
+</div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_DisableDepthClamp_" data-uid="Fusee.Engine.Core.RenderContext.DisableDepthClamp*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_DisableDepthClamp" data-uid="Fusee.Engine.Core.RenderContext.DisableDepthClamp">DisableDepthClamp()</h4>
+  <div class="markdown level1 summary"><p>Disables depths clamping. <a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_EnableDepthClamp">EnableDepthClamp()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableDepthClamp()</code></pre>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_EnableDepthClamp_" data-uid="Fusee.Engine.Core.RenderContext.EnableDepthClamp*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_EnableDepthClamp" data-uid="Fusee.Engine.Core.RenderContext.EnableDepthClamp">EnableDepthClamp()</h4>
+  <div class="markdown level1 summary"><p>The clipping behavior against the Z position of a vertex can be turned off by activating depth clamping.
+This is done with glEnable(GL_DEPTH_CLAMP). This will cause the clip-space Z to remain unclipped by the front and rear viewing volume.
+See: <a href="https://www.khronos.org/opengl/wiki/Vertex_Post-Processing#Depth_clamping">https://www.khronos.org/opengl/wiki/Vertex_Post-Processing#Depth_clamping</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableDepthClamp()</code></pre>
+  </div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_GetHardwareCapabilities_" data-uid="Fusee.Engine.Core.RenderContext.GetHardwareCapabilities*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_GetHardwareCapabilities_Fusee_Engine_Common_HardwareCapability_" data-uid="Fusee.Engine.Core.RenderContext.GetHardwareCapabilities(Fusee.Engine.Common.HardwareCapability)">GetHardwareCapabilities(HardwareCapability)</h4>
+  <div class="markdown level1 summary"><p>Returns the hardware capabilities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetHardwareCapabilities(HardwareCapability capability)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.HardwareCapability.html">HardwareCapability</a></td>
+        <td><span class="parametername">capability</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_GetHardwareDescription_" data-uid="Fusee.Engine.Core.RenderContext.GetHardwareDescription*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_GetHardwareDescription" data-uid="Fusee.Engine.Core.RenderContext.GetHardwareDescription">GetHardwareDescription()</h4>
+  <div class="markdown level1 summary"><p>Returns a human readable description of the underlying graphics hardware</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetHardwareDescription()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_GetRenderState_" data-uid="Fusee.Engine.Core.RenderContext.GetRenderState*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_GetRenderState_Fusee_Engine_Common_RenderState_" data-uid="Fusee.Engine.Core.RenderContext.GetRenderState(Fusee.Engine.Common.RenderState)">GetRenderState(RenderState)</h4>
+  <div class="markdown level1 summary"><p>Returns a current render state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetRenderState(RenderState renderState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.RenderState.html">RenderState</a></td>
+        <td><span class="parametername">renderState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_SetLineWidth_" data-uid="Fusee.Engine.Core.RenderContext.SetLineWidth*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_SetLineWidth_System_Single_" data-uid="Fusee.Engine.Core.RenderContext.SetLineWidth(System.Single)">SetLineWidth(Single)</h4>
+  <div class="markdown level1 summary"><p>Specifies the rasterized width of both aliased and antialiased lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLineWidth(float width)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>The width in pixel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_SetRenderState_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderState*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_SetRenderState_Fusee_Engine_Common_RenderState_System_UInt32_System_Boolean_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderState(Fusee.Engine.Common.RenderState,System.UInt32,System.Boolean)">SetRenderState(RenderState, UInt32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Apply a single render state to the render context. All subsequent rendering will be
+performed using the currently set state unless it is changed to a different value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderState(RenderState renderState, uint value, bool doLockState = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.RenderState.html">RenderState</a></td>
+        <td><span class="parametername">renderState</span></td>
+        <td><p>One of the <a class="xref" href="Fusee.Engine.Common.RenderState.html">RenderState</a> enumeration values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>An unsigned integer value representing the value the state should be set to.
+Depending on the renderState, this value can be interpreted as an integer value, a float value, a
+boolean value, or even a color.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">doLockState</span></td>
+        <td><p>Forces this state to have the given value and locks the state. Unlock it by calling <a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_UnlockRenderState_Fusee_Engine_Common_RenderState_System_Boolean_">UnlockRenderState(RenderState, Boolean)</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_SetRenderState_Fusee_Engine_Common_RenderState_System_UInt32_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is close to the underlying implementation layer and might be awkward to use
+due to the ambiguity of the value parameter type. If you want type-safe state values and also
+want to set a couple of states at the same time, try the more
+elaborate <a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_SetRenderStateSet_Fusee_Engine_Core_RenderStateSet_System_Boolean_">SetRenderStateSet(RenderStateSet, Boolean)</a> method.</p>
+</div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_SetRenderStateSet_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderStateSet*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_SetRenderStateSet_Fusee_Engine_Core_RenderStateSet_System_Boolean_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderStateSet(Fusee.Engine.Core.RenderStateSet,System.Boolean)">SetRenderStateSet(RenderStateSet, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Apply a number of render states to this render context. All subsequent rendering will be
+performed using the currently set state set unless one of its values it is changed. Use this
+method to change more than one render state at once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderStateSet(RenderStateSet renderStateSet, bool doLockState = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.RenderStateSet.html">RenderStateSet</a></td>
+        <td><span class="parametername">renderStateSet</span></td>
+        <td><p>A set of render states with their respective values to be set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">doLockState</span></td>
+        <td><p>Forces all states that are set in this <a class="xref" href="Fusee.Engine.Core.RenderStateSet.html">RenderStateSet</a> to have the given value and locks them. Unlock them by calling <a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_UnlockRenderState_Fusee_Engine_Common_RenderState_System_Boolean_">UnlockRenderState(RenderState, Boolean)</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_SetRenderTarget_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderTarget*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_SetRenderTarget_Fusee_Engine_Common_IWritableCubeMap_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableCubeMap)">SetRenderTarget(IWritableCubeMap)</h4>
+  <div class="markdown level1 summary"><p>Renders into the given texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderTarget(IWritableCubeMap tex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IWritableCubeMap.html">IWritableCubeMap</a></td>
+        <td><span class="parametername">tex</span></td>
+        <td><p>The render texture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_SetRenderTarget_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderTarget*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_SetRenderTarget_Fusee_Engine_Common_IWritableTexture_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableTexture)">SetRenderTarget(IWritableTexture)</h4>
+  <div class="markdown level1 summary"><p>Renders into the given texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderTarget(IWritableTexture tex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IWritableTexture.html">IWritableTexture</a></td>
+        <td><span class="parametername">tex</span></td>
+        <td><p>The render texture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_SetRenderTarget_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderTarget*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_SetRenderTarget_Fusee_Engine_Core_RenderTarget_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Core.RenderTarget)">SetRenderTarget(RenderTarget)</h4>
+  <div class="markdown level1 summary"><p>Sets the RenderTarget, if texture is null render target is the main screen, otherwise the picture will be rendered onto given texture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderTarget(RenderTarget renderTarget = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.RenderTarget.html">RenderTarget</a></td>
+        <td><span class="parametername">renderTarget</span></td>
+        <td><p>The render target.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_SetShaderEffect_" data-uid="Fusee.Engine.Core.RenderContext.SetShaderEffect*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_SetShaderEffect_Fusee_Engine_Core_Scene_ShaderEffect_" data-uid="Fusee.Engine.Core.RenderContext.SetShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)">SetShaderEffect(ShaderEffect)</h4>
+  <div class="markdown level1 summary"><p>Activates the passed shader effect as the current shader for geometry rendering.
+Will compile a shader by calling <a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_CreateShaderProgram_System_String_System_String_System_String_">CreateShaderProgram(String, String, String)</a> if it hasn't been compiled yet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetShaderEffect(ShaderEffect ef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.ShaderEffect.html">ShaderEffect</a></td>
+        <td><span class="parametername">ef</span></td>
+        <td><p>The shader effect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_SetShaderEffect_Fusee_Engine_Core_Scene_ShaderEffect__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A ShaderEffect must be attached to a context before you can render geometry with it. The main
+task performed in this method is compiling the provided shader source code and uploading the shaders to
+the gpu.</p>
+</div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_UnlockAllRenderStates_" data-uid="Fusee.Engine.Core.RenderContext.UnlockAllRenderStates*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_UnlockAllRenderStates_System_Boolean_" data-uid="Fusee.Engine.Core.RenderContext.UnlockAllRenderStates(System.Boolean)">UnlockAllRenderStates(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Unlocks all previously locked <a class="xref" href="Fusee.Engine.Common.RenderState.html">RenderState</a>s.</p>
+<param name="resetValue">True by default. Defines if the states get reset to their pre-locked value.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnlockAllRenderStates(bool resetValue = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">resetValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_UnlockRenderState_" data-uid="Fusee.Engine.Core.RenderContext.UnlockRenderState*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_UnlockRenderState_Fusee_Engine_Common_RenderState_System_Boolean_" data-uid="Fusee.Engine.Core.RenderContext.UnlockRenderState(Fusee.Engine.Common.RenderState,System.Boolean)">UnlockRenderState(RenderState, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Unlocks the given <a class="xref" href="Fusee.Engine.Common.RenderState.html">RenderState</a>. And sets it to the value it had before it was locked.
+After this call the state can be set to a new value again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnlockRenderState(RenderState state, bool resetValue = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.RenderState.html">RenderState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The state to unlock.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">resetValue</span></td>
+        <td><p>True by default. Defines if the state gets reset to its pre-locked value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_Viewport_" data-uid="Fusee.Engine.Core.RenderContext.Viewport*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_Viewport_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Fusee.Engine.Core.RenderContext.Viewport(System.Int32,System.Int32,System.Int32,System.Int32)">Viewport(Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the rectangular output region within the output buffer(s).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Viewport(int x, int y, int width, int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>leftmost pixel of the rectangular output region within the output buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>topmost pixel of the rectangular output region within the output buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>horizontal size (in pixels) of the output region.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>vertical size (in pixels) of the output region.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_Viewport_System_Int32_System_Int32_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Setting the Viewport limits the rendering output to the specified rectangular region.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

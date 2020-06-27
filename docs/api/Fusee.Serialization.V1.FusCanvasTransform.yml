@@ -18,12 +18,8 @@ items:
   fullName: Fusee.Serialization.V1.FusCanvasTransform
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusCanvasTransform.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FusCanvasTransform
-    path: src/Fusee/src/Serialization/V1/FusCanvasTransform.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusCanvasTransform.cs
     startLine: 9
   assemblies:
   - Fusee.Serialization
@@ -31,8 +27,13 @@ items:
   summary: "\nBuilding block to set up User Interface hierarchies.\nUse this as your first element in the Interface hierarchy.\n"
   example: []
   syntax:
-    content: 'public class FusCanvasTransform : FusComponent, IComponent'
+    content: >-
+      [ProtoContract]
+
+      public class FusCanvasTransform : FusComponent, IComponent
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusCanvasTransform
           Inherits FusComponent
           Implements IComponent
@@ -50,6 +51,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -68,12 +73,8 @@ items:
   fullName: Fusee.Serialization.V1.FusCanvasTransform.CanvasRenderMode
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusCanvasTransform.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CanvasRenderMode
-    path: src/Fusee/src/Serialization/V1/FusCanvasTransform.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusCanvasTransform.cs
     startLine: 16
   assemblies:
   - Fusee.Serialization
@@ -81,10 +82,22 @@ items:
   summary: "\nThe canvas render mode.  Is the UI on this canvas placed in the 3D world or overlaid onto the 2D screen. \n"
   example: []
   syntax:
-    content: public CanvasRenderMode CanvasRenderMode
+    content: >-
+      [ProtoMember(1)]
+
+      public CanvasRenderMode CanvasRenderMode
     return:
       type: Fusee.Serialization.V1.CanvasRenderMode
-    content.vb: Public CanvasRenderMode As CanvasRenderMode
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public CanvasRenderMode As CanvasRenderMode
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -101,12 +114,8 @@ items:
   fullName: Fusee.Serialization.V1.FusCanvasTransform.Size
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusCanvasTransform.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Size
-    path: src/Fusee/src/Serialization/V1/FusCanvasTransform.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusCanvasTransform.cs
     startLine: 22
   assemblies:
   - Fusee.Serialization
@@ -114,10 +123,22 @@ items:
   summary: "\nAbsolute size of the Canvas. First element in the interface hierarchy.\n"
   example: []
   syntax:
-    content: public MinMaxRect Size
+    content: >-
+      [ProtoMember(2)]
+
+      public MinMaxRect Size
     return:
       type: Fusee.Math.Core.MinMaxRect
-    content.vb: Public Size As MinMaxRect
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Size As MinMaxRect
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -134,12 +155,8 @@ items:
   fullName: Fusee.Serialization.V1.FusCanvasTransform.ScreenSpaceSize
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusCanvasTransform.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ScreenSpaceSize
-    path: src/Fusee/src/Serialization/V1/FusCanvasTransform.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusCanvasTransform.cs
     startLine: 28
   assemblies:
   - Fusee.Serialization
@@ -147,10 +164,22 @@ items:
   summary: "\nAbsolute size of the Canvas. First element in the interface hierarchy.\n"
   example: []
   syntax:
-    content: public MinMaxRect ScreenSpaceSize
+    content: >-
+      [ProtoMember(3)]
+
+      public MinMaxRect ScreenSpaceSize
     return:
       type: Fusee.Math.Core.MinMaxRect
-    content.vb: Public ScreenSpaceSize As MinMaxRect
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public ScreenSpaceSize As MinMaxRect
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -167,12 +196,8 @@ items:
   fullName: Fusee.Serialization.V1.FusCanvasTransform.Scale
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusCanvasTransform.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Scale
-    path: src/Fusee/src/Serialization/V1/FusCanvasTransform.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusCanvasTransform.cs
     startLine: 33
   assemblies:
   - Fusee.Serialization
@@ -180,10 +205,22 @@ items:
   summary: "\nScale factor for the user given offsets that define the sizes if the canvas&apos; child elements. This becomes important when rendering in SCREEN mode.        \n"
   example: []
   syntax:
-    content: public float2 Scale
+    content: >-
+      [ProtoMember(4)]
+
+      public float2 Scale
     return:
       type: Fusee.Math.Core.float2
-    content.vb: Public Scale As float2
+    content.vb: >-
+      <ProtoMember(4)>
+
+      Public Scale As float2
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -200,12 +237,8 @@ items:
   fullName: Fusee.Serialization.V1.FusCanvasTransform.FusCanvasTransform(Fusee.Serialization.V1.CanvasRenderMode)
   type: Constructor
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusCanvasTransform.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: src/Fusee/src/Serialization/V1/FusCanvasTransform.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusCanvasTransform.cs
     startLine: 39
   assemblies:
   - Fusee.Serialization

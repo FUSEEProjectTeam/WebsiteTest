@@ -14,12 +14,8 @@ items:
   fullName: Fusee.Serialization.V1.FusAnimationKeyInt
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusAnimationTrack.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FusAnimationKeyInt
-    path: src/Fusee/src/Serialization/V1/FusAnimationTrack.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusAnimationTrack.cs
     startLine: 44
   assemblies:
   - Fusee.Serialization
@@ -27,8 +23,13 @@ items:
   summary: "\nAnimation key storing integer values.\n"
   example: []
   syntax:
-    content: 'public class FusAnimationKeyInt : FusAnimationKeyBase'
+    content: >-
+      [ProtoContract]
+
+      public class FusAnimationKeyInt : FusAnimationKeyBase
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusAnimationKeyInt
           Inherits FusAnimationKeyBase
   inheritance:
@@ -43,6 +44,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -61,12 +66,8 @@ items:
   fullName: Fusee.Serialization.V1.FusAnimationKeyInt.Value
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusAnimationTrack.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Value
-    path: src/Fusee/src/Serialization/V1/FusAnimationTrack.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusAnimationTrack.cs
     startLine: 51
   assemblies:
   - Fusee.Serialization
@@ -74,10 +75,22 @@ items:
   summary: "\nThe key value effective at the <xref href=\"Fusee.Serialization.V1.FusAnimationKeyBase.Time\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: public int Value
+    content: >-
+      [ProtoMember(1)]
+
+      public int Value
     return:
       type: System.Int32
-    content.vb: Public Value As Integer
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Value As Integer
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:

@@ -5,8 +5,8 @@ items:
   id: HardwareCapability
   parent: Fusee.Engine.Common
   children:
-  - Fusee.Engine.Common.HardwareCapability.CanRenderDeferred
-  - Fusee.Engine.Common.HardwareCapability.CanUseGeometryShaders
+  - Fusee.Engine.Common.HardwareCapability.CAN_RENDER_DEFFERED
+  - Fusee.Engine.Common.HardwareCapability.CAN_USE_GEOMETRY_SHADERS
   langs:
   - csharp
   - vb
@@ -15,12 +15,8 @@ items:
   fullName: Fusee.Engine.Common.HardwareCapability
   type: Enum
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IRenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: HardwareCapability
-    path: src/Fusee/src/Engine/Common/IRenderContextImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
     startLine: 632
   assemblies:
   - Fusee.Engine.Common
@@ -36,24 +32,20 @@ items:
   modifiers.vb:
   - Public
   - Enum
-- uid: Fusee.Engine.Common.HardwareCapability.CanRenderDeferred
-  commentId: F:Fusee.Engine.Common.HardwareCapability.CanRenderDeferred
-  id: CanRenderDeferred
+- uid: Fusee.Engine.Common.HardwareCapability.CAN_RENDER_DEFFERED
+  commentId: F:Fusee.Engine.Common.HardwareCapability.CAN_RENDER_DEFFERED
+  id: CAN_RENDER_DEFFERED
   parent: Fusee.Engine.Common.HardwareCapability
   langs:
   - csharp
   - vb
-  name: CanRenderDeferred
-  nameWithType: HardwareCapability.CanRenderDeferred
-  fullName: Fusee.Engine.Common.HardwareCapability.CanRenderDeferred
+  name: CAN_RENDER_DEFFERED
+  nameWithType: HardwareCapability.CAN_RENDER_DEFFERED
+  fullName: Fusee.Engine.Common.HardwareCapability.CAN_RENDER_DEFFERED
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IRenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: CanRenderDeferred
-    path: src/Fusee/src/Engine/Common/IRenderContextImp.cs
+    id: CAN_RENDER_DEFFERED
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
     startLine: 637
   assemblies:
   - Fusee.Engine.Common
@@ -61,7 +53,7 @@ items:
   summary: "\nChecks if deferred rendering with frame buffer objects is possible\n"
   example: []
   syntax:
-    content: CanRenderDeferred = 0
+    content: CAN_RENDER_DEFFERED = 0
     return:
       type: Fusee.Engine.Common.HardwareCapability
   modifiers.csharp:
@@ -70,24 +62,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.HardwareCapability.CanUseGeometryShaders
-  commentId: F:Fusee.Engine.Common.HardwareCapability.CanUseGeometryShaders
-  id: CanUseGeometryShaders
+- uid: Fusee.Engine.Common.HardwareCapability.CAN_USE_GEOMETRY_SHADERS
+  commentId: F:Fusee.Engine.Common.HardwareCapability.CAN_USE_GEOMETRY_SHADERS
+  id: CAN_USE_GEOMETRY_SHADERS
   parent: Fusee.Engine.Common.HardwareCapability
   langs:
   - csharp
   - vb
-  name: CanUseGeometryShaders
-  nameWithType: HardwareCapability.CanUseGeometryShaders
-  fullName: Fusee.Engine.Common.HardwareCapability.CanUseGeometryShaders
+  name: CAN_USE_GEOMETRY_SHADERS
+  nameWithType: HardwareCapability.CAN_USE_GEOMETRY_SHADERS
+  fullName: Fusee.Engine.Common.HardwareCapability.CAN_USE_GEOMETRY_SHADERS
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IRenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: CanUseGeometryShaders
-    path: src/Fusee/src/Engine/Common/IRenderContextImp.cs
+    id: CAN_USE_GEOMETRY_SHADERS
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
     startLine: 642
   assemblies:
   - Fusee.Engine.Common
@@ -95,7 +83,7 @@ items:
   summary: "\nChecks if geometry shaders can be used.\n"
   example: []
   syntax:
-    content: CanUseGeometryShaders = 1
+    content: CAN_USE_GEOMETRY_SHADERS = 1
     return:
       type: Fusee.Engine.Common.HardwareCapability
   modifiers.csharp:

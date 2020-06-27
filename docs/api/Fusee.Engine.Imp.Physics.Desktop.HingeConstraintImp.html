@@ -1,0 +1,838 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HingeConstraintImp
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HingeConstraintImp
+   ">
+    <meta name="generator" content="docfx 2.55.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp">
+  
+  
+  <h1 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp" class="text-break">Class HingeConstraintImp
+  </h1>
+  <div class="markdown level0 summary"><p>Implementation of the <a class="xref" href="Fusee.Engine.Common.IHingeConstraintImp.html">IHingeConstraintImp</a> interface using the bullet physics engine.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">HingeConstraintImp</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Fusee.Engine.Common.IHingeConstraintImp.html">IHingeConstraintImp</a></div>
+    <div><a class="xref" href="Fusee.Engine.Common.IConstraintImp.html">IConstraintImp</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.Imp.Physics.Desktop.html">Fusee.Engine.Imp.Physics.Desktop</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Engine.Imp.Physics.Desktop.dll</h6>
+  <h5 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HingeConstraintImp : IHingeConstraintImp, IConstraintImp</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_AngularOnly_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.AngularOnly*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_AngularOnly" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.AngularOnly">AngularOnly</h4>
+  <div class="markdown level1 summary"><p>Gets and sets a value indicating whether [angular only].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AngularOnly { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [angular only]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_EnableMotor_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.EnableMotor*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_EnableMotor" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.EnableMotor">EnableMotor</h4>
+  <div class="markdown level1 summary"><p>Gets and sets a value indicating whether [enable motor].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableMotor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [enable motor]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_FrameA_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.FrameA*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_FrameA" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.FrameA">FrameA</h4>
+  <div class="markdown level1 summary"><p>Gets the frame a.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 FrameA { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The frame a.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_FrameB_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.FrameB*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_FrameB" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.FrameB">FrameB</h4>
+  <div class="markdown level1 summary"><p>Gets the frame b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 FrameB { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The frame b.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_FrameOffsetA_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.FrameOffsetA*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_FrameOffsetA" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.FrameOffsetA">FrameOffsetA</h4>
+  <div class="markdown level1 summary"><p>Gets the frame offset a.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 FrameOffsetA { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The frame offset a.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_FrameOffsetB_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.FrameOffsetB*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_FrameOffsetB" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.FrameOffsetB">FrameOffsetB</h4>
+  <div class="markdown level1 summary"><p>Gets the frame offset b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 FrameOffsetB { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The frame offset b.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_LowerLimit_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.LowerLimit*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_LowerLimit" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.LowerLimit">LowerLimit</h4>
+  <div class="markdown level1 summary"><p>Gets the lower limit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LowerLimit { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The lower limit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_MaxMotorImpulse_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.MaxMotorImpulse*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_MaxMotorImpulse" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.MaxMotorImpulse">MaxMotorImpulse</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the maximum motor impulse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxMotorImpulse { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The maximum motor impulse.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_MotorTargetVelocity_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.MotorTargetVelocity*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_MotorTargetVelocity" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.MotorTargetVelocity">MotorTargetVelocity</h4>
+  <div class="markdown level1 summary"><p>Gets the motor target velocity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MotorTargetVelocity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The motor target velocity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_RigidBodyA_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.RigidBodyA*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_RigidBodyA" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.RigidBodyA">RigidBodyA</h4>
+  <div class="markdown level1 summary"><p>Gets the rigid body a.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRigidBodyImp RigidBodyA { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IRigidBodyImp.html">IRigidBodyImp</a></td>
+        <td><p>The rigid body a.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_RigidBodyB_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.RigidBodyB*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_RigidBodyB" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.RigidBodyB">RigidBodyB</h4>
+  <div class="markdown level1 summary"><p>Gets the rigid body b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRigidBodyImp RigidBodyB { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IRigidBodyImp.html">IRigidBodyImp</a></td>
+        <td><p>The rigid body b.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_SolverLimit_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.SolverLimit*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_SolverLimit" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.SolverLimit">SolverLimit</h4>
+  <div class="markdown level1 summary"><p>Gets the solver limit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SolverLimit { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The solver limit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_UpperLimit_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.UpperLimit*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_UpperLimit" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.UpperLimit">UpperLimit</h4>
+  <div class="markdown level1 summary"><p>Gets the upper limit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float UpperLimit { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The upper limit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_UserObject_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.UserObject*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_UserObject" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.UserObject">UserObject</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the user object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object UserObject { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The user object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_EnableAngularMotor_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.EnableAngularMotor*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_EnableAngularMotor_System_Boolean_System_Single_System_Single_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.EnableAngularMotor(System.Boolean,System.Single,System.Single)">EnableAngularMotor(Boolean, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Enables the angular motor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableAngularMotor(bool enableMotor, float targetVelocity, float maxMotorImpulse)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">enableMotor</span></td>
+        <td><p>if set to <code>true</code> [enable motor].</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">targetVelocity</span></td>
+        <td><p>The target velocity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">maxMotorImpulse</span></td>
+        <td><p>The maximum motor impulse.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_GetHingeAngle_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.GetHingeAngle*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_GetHingeAngle" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.GetHingeAngle">GetHingeAngle()</h4>
+  <div class="markdown level1 summary"><p>Gets the hinge angle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetHingeAngle()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_GetHingeAngle_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.GetHingeAngle*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_GetHingeAngle_Fusee_Math_Core_float4x4_Fusee_Math_Core_float4x4_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.GetHingeAngle(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)">GetHingeAngle(float4x4, float4x4)</h4>
+  <div class="markdown level1 summary"><p>Gets the hinge angle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetHingeAngle(float4x4 transA, float4x4 transB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">transA</span></td>
+        <td><p>The trans a.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">transB</span></td>
+        <td><p>The trans b.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_GetUid_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.GetUid*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_GetUid" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.GetUid">GetUid()</h4>
+  <div class="markdown level1 summary"><p>Gets the uid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetUid()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_SetAxis_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.SetAxis*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_SetAxis_Fusee_Math_Core_float3_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.SetAxis(Fusee.Math.Core.float3)">SetAxis(float3)</h4>
+  <div class="markdown level1 summary"><p>Sets the axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAxis(float3 axisInA)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">axisInA</span></td>
+        <td><p>The axis in a.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_SetLimit_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.SetLimit*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_SetLimit_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.SetLimit(System.Single,System.Single,System.Single,System.Single,System.Single)">SetLimit(Single, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Sets the limit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLimit(float low, float high, float softness = 0.9F, float biasFactor = 0.3F, float relaxationFactor = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">low</span></td>
+        <td><p>The low.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">high</span></td>
+        <td><p>The high.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">softness</span></td>
+        <td><p>The softness.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">biasFactor</span></td>
+        <td><p>The bias factor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">relaxationFactor</span></td>
+        <td><p>The relaxation factor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_SetMotorTarget_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.SetMotorTarget*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_SetMotorTarget_Fusee_Math_Core_Quaternion_System_Single_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.SetMotorTarget(Fusee.Math.Core.Quaternion,System.Single)">SetMotorTarget(Quaternion, Single)</h4>
+  <div class="markdown level1 summary"><p>Sets the motor target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMotorTarget(Quaternion qAinB, float dt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">qAinB</span></td>
+        <td><p>The q ain b.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">dt</span></td>
+        <td><p>The dt.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_SetMotorTarget_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.SetMotorTarget*"></a>
+  <h4 id="Fusee_Engine_Imp_Physics_Desktop_HingeConstraintImp_SetMotorTarget_System_Single_System_Single_" data-uid="Fusee.Engine.Imp.Physics.Desktop.HingeConstraintImp.SetMotorTarget(System.Single,System.Single)">SetMotorTarget(Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Sets the motor target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMotorTarget(float targetAngle, float dt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">targetAngle</span></td>
+        <td><p>The target angle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">dt</span></td>
+        <td><p>The dt.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Fusee.Engine.Common.IHingeConstraintImp.html">IHingeConstraintImp</a>
+  </div>
+  <div>
+      <a class="xref" href="Fusee.Engine.Common.IConstraintImp.html">IConstraintImp</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

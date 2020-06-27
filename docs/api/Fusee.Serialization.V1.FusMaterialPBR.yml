@@ -16,12 +16,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMaterialPBR
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterialPBR.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FusMaterialPBR
-    path: src/Fusee/src/Serialization/V1/FusMaterialPBR.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterialPBR.cs
     startLine: 8
   assemblies:
   - Fusee.Serialization
@@ -29,8 +25,13 @@ items:
   summary: "\nMaterial definition.If contained within a node, the node&apos;s (and potentially child node&apos;s)\ngeometry is rendered with the specifies material.\n"
   example: []
   syntax:
-    content: 'public class FusMaterialPBR : FusMaterial, IComponent'
+    content: >-
+      [ProtoContract]
+
+      public class FusMaterialPBR : FusMaterial, IComponent
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusMaterialPBR
           Inherits FusMaterial
           Implements IComponent
@@ -57,6 +58,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -75,12 +80,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMaterialPBR.RoughnessValue
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterialPBR.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RoughnessValue
-    path: src/Fusee/src/Serialization/V1/FusMaterialPBR.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterialPBR.cs
     startLine: 16
   assemblies:
   - Fusee.Serialization
@@ -88,10 +89,22 @@ items:
   summary: "\nThis float describes the roughness of the material\n"
   example: []
   syntax:
-    content: public float RoughnessValue
+    content: >-
+      [ProtoMember(1)]
+
+      public float RoughnessValue
     return:
       type: System.Single
-    content.vb: Public RoughnessValue As Single
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public RoughnessValue As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -108,12 +121,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMaterialPBR.FresnelReflectance
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterialPBR.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FresnelReflectance
-    path: src/Fusee/src/Serialization/V1/FusMaterialPBR.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterialPBR.cs
     startLine: 22
   assemblies:
   - Fusee.Serialization
@@ -121,10 +130,22 @@ items:
   summary: "\nThis float describes the fresnel reflectance of the material\n"
   example: []
   syntax:
-    content: public float FresnelReflectance
+    content: >-
+      [ProtoMember(2)]
+
+      public float FresnelReflectance
     return:
       type: System.Single
-    content.vb: Public FresnelReflectance As Single
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public FresnelReflectance As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -141,12 +162,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMaterialPBR.DiffuseFraction
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterialPBR.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: DiffuseFraction
-    path: src/Fusee/src/Serialization/V1/FusMaterialPBR.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterialPBR.cs
     startLine: 28
   assemblies:
   - Fusee.Serialization
@@ -154,10 +171,22 @@ items:
   summary: "\nThis float describes the diffuse fraction of the material\n"
   example: []
   syntax:
-    content: public float DiffuseFraction
+    content: >-
+      [ProtoMember(3)]
+
+      public float DiffuseFraction
     return:
       type: System.Single
-    content.vb: Public DiffuseFraction As Single
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public DiffuseFraction As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:

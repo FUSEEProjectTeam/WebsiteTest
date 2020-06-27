@@ -21,12 +21,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMaterial
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FusMaterial
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 76
   assemblies:
   - Fusee.Serialization
@@ -34,8 +30,17 @@ items:
   summary: "\nMaterial definition. If contained within a node, the node&apos;s (and potentially child node&apos;s)\ngeometry is rendered with the specified material.\n"
   example: []
   syntax:
-    content: 'public class FusMaterial : FusComponent, IComponent'
+    content: >-
+      [ProtoContract]
+
+      [ProtoInclude(200, typeof(FusMaterialPBR))]
+
+      public class FusMaterial : FusComponent, IComponent
     content.vb: >-
+      <ProtoContract>
+
+      <ProtoInclude(200, GetType(FusMaterialPBR))>
+
       Public Class FusMaterial
           Inherits FusComponent
           Implements IComponent
@@ -55,6 +60,17 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 200
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusMaterialPBR
   modifiers.csharp:
   - public
   - class
@@ -73,12 +89,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMaterial.HasAlbedo
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: HasAlbedo
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 87
   assemblies:
   - Fusee.Serialization
@@ -111,12 +123,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMaterial.Albedo
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Albedo
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 93
   assemblies:
   - Fusee.Serialization
@@ -124,10 +132,22 @@ items:
   summary: "\nThe albedo channel.\n"
   example: []
   syntax:
-    content: public MatChannelContainer Albedo
+    content: >-
+      [ProtoMember(1)]
+
+      public MatChannelContainer Albedo
     return:
       type: Fusee.Serialization.V1.MatChannelContainer
-    content.vb: Public Albedo As MatChannelContainer
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Albedo As MatChannelContainer
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -144,12 +164,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMaterial.HasSpecular
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: HasSpecular
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 103
   assemblies:
   - Fusee.Serialization
@@ -182,12 +198,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMaterial.Specular
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Specular
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 109
   assemblies:
   - Fusee.Serialization
@@ -195,10 +207,22 @@ items:
   summary: "\nThe specular channel.\n"
   example: []
   syntax:
-    content: public SpecularChannelContainer Specular
+    content: >-
+      [ProtoMember(2)]
+
+      public SpecularChannelContainer Specular
     return:
       type: Fusee.Serialization.V1.SpecularChannelContainer
-    content.vb: Public Specular As SpecularChannelContainer
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Specular As SpecularChannelContainer
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -215,12 +239,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMaterial.HasEmissive
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: HasEmissive
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 119
   assemblies:
   - Fusee.Serialization
@@ -253,12 +273,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMaterial.Emissive
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Emissive
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 125
   assemblies:
   - Fusee.Serialization
@@ -266,10 +282,22 @@ items:
   summary: "\nThe emissive channel.\n"
   example: []
   syntax:
-    content: public MatChannelContainer Emissive
+    content: >-
+      [ProtoMember(3)]
+
+      public MatChannelContainer Emissive
     return:
       type: Fusee.Serialization.V1.MatChannelContainer
-    content.vb: Public Emissive As MatChannelContainer
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public Emissive As MatChannelContainer
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -286,12 +314,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMaterial.HasNormalMap
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: HasNormalMap
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 135
   assemblies:
   - Fusee.Serialization
@@ -324,12 +348,8 @@ items:
   fullName: Fusee.Serialization.V1.FusMaterial.NormalMap
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: NormalMap
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 141
   assemblies:
   - Fusee.Serialization
@@ -337,10 +357,22 @@ items:
   summary: "\nThe normal map channel.\n"
   example: []
   syntax:
-    content: public NormapMapChannelContainer NormalMap
+    content: >-
+      [ProtoMember(4)]
+
+      public NormapMapChannelContainer NormalMap
     return:
       type: Fusee.Serialization.V1.NormapMapChannelContainer
-    content.vb: Public NormalMap As NormapMapChannelContainer
+    content.vb: >-
+      <ProtoMember(4)>
+
+      Public NormalMap As NormapMapChannelContainer
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
   modifiers.csharp:
   - public
   modifiers.vb:

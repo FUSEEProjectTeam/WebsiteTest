@@ -5,16 +5,16 @@ items:
   id: OpenGLPrimitiveType
   parent: Fusee.Engine.Common
   children:
-  - Fusee.Engine.Common.OpenGLPrimitiveType.LineLoop
-  - Fusee.Engine.Common.OpenGLPrimitiveType.Lines
-  - Fusee.Engine.Common.OpenGLPrimitiveType.LineStrip
-  - Fusee.Engine.Common.OpenGLPrimitiveType.Patches
-  - Fusee.Engine.Common.OpenGLPrimitiveType.Points
-  - Fusee.Engine.Common.OpenGLPrimitiveType.Quads
-  - Fusee.Engine.Common.OpenGLPrimitiveType.QuadStrip
-  - Fusee.Engine.Common.OpenGLPrimitiveType.TriangleFan
-  - Fusee.Engine.Common.OpenGLPrimitiveType.Triangles
-  - Fusee.Engine.Common.OpenGLPrimitiveType.TriangleStrip
+  - Fusee.Engine.Common.OpenGLPrimitiveType.LINE_LOOP
+  - Fusee.Engine.Common.OpenGLPrimitiveType.LINE_STRIP
+  - Fusee.Engine.Common.OpenGLPrimitiveType.LINES
+  - Fusee.Engine.Common.OpenGLPrimitiveType.PATCHES
+  - Fusee.Engine.Common.OpenGLPrimitiveType.POINT
+  - Fusee.Engine.Common.OpenGLPrimitiveType.QUAD_STRIP
+  - Fusee.Engine.Common.OpenGLPrimitiveType.QUADS
+  - Fusee.Engine.Common.OpenGLPrimitiveType.TRIANGLE_FAN
+  - Fusee.Engine.Common.OpenGLPrimitiveType.TRIANGLE_STRIP
+  - Fusee.Engine.Common.OpenGLPrimitiveType.TRIANGLES
   langs:
   - csharp
   - vb
@@ -23,12 +23,8 @@ items:
   fullName: Fusee.Engine.Common.OpenGLPrimitiveType
   type: Enum
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IRenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: OpenGLPrimitiveType
-    path: src/Fusee/src/Engine/Common/IRenderContextImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
     startLine: 648
   assemblies:
   - Fusee.Engine.Common
@@ -44,24 +40,20 @@ items:
   modifiers.vb:
   - Public
   - Enum
-- uid: Fusee.Engine.Common.OpenGLPrimitiveType.Triangles
-  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.Triangles
-  id: Triangles
+- uid: Fusee.Engine.Common.OpenGLPrimitiveType.TRIANGLES
+  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.TRIANGLES
+  id: TRIANGLES
   parent: Fusee.Engine.Common.OpenGLPrimitiveType
   langs:
   - csharp
   - vb
-  name: Triangles
-  nameWithType: OpenGLPrimitiveType.Triangles
-  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.Triangles
+  name: TRIANGLES
+  nameWithType: OpenGLPrimitiveType.TRIANGLES
+  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.TRIANGLES
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IRenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Triangles
-    path: src/Fusee/src/Engine/Common/IRenderContextImp.cs
+    id: TRIANGLES
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
     startLine: 653
   assemblies:
   - Fusee.Engine.Common
@@ -69,7 +61,7 @@ items:
   summary: "\nRelates to OpenGl GL_TRIANGLES.\n"
   example: []
   syntax:
-    content: Triangles = 0
+    content: TRIANGLES = 0
     return:
       type: Fusee.Engine.Common.OpenGLPrimitiveType
   modifiers.csharp:
@@ -78,24 +70,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.OpenGLPrimitiveType.TriangleStrip
-  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.TriangleStrip
-  id: TriangleStrip
+- uid: Fusee.Engine.Common.OpenGLPrimitiveType.TRIANGLE_STRIP
+  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.TRIANGLE_STRIP
+  id: TRIANGLE_STRIP
   parent: Fusee.Engine.Common.OpenGLPrimitiveType
   langs:
   - csharp
   - vb
-  name: TriangleStrip
-  nameWithType: OpenGLPrimitiveType.TriangleStrip
-  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.TriangleStrip
+  name: TRIANGLE_STRIP
+  nameWithType: OpenGLPrimitiveType.TRIANGLE_STRIP
+  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.TRIANGLE_STRIP
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IRenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: TriangleStrip
-    path: src/Fusee/src/Engine/Common/IRenderContextImp.cs
+    id: TRIANGLE_STRIP
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
     startLine: 658
   assemblies:
   - Fusee.Engine.Common
@@ -103,7 +91,7 @@ items:
   summary: "\nRelates to OpenGl GL_TRIANGLES_STRIP.\n"
   example: []
   syntax:
-    content: TriangleStrip = 1
+    content: TRIANGLE_STRIP = 1
     return:
       type: Fusee.Engine.Common.OpenGLPrimitiveType
   modifiers.csharp:
@@ -112,24 +100,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.OpenGLPrimitiveType.TriangleFan
-  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.TriangleFan
-  id: TriangleFan
+- uid: Fusee.Engine.Common.OpenGLPrimitiveType.TRIANGLE_FAN
+  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.TRIANGLE_FAN
+  id: TRIANGLE_FAN
   parent: Fusee.Engine.Common.OpenGLPrimitiveType
   langs:
   - csharp
   - vb
-  name: TriangleFan
-  nameWithType: OpenGLPrimitiveType.TriangleFan
-  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.TriangleFan
+  name: TRIANGLE_FAN
+  nameWithType: OpenGLPrimitiveType.TRIANGLE_FAN
+  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.TRIANGLE_FAN
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IRenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: TriangleFan
-    path: src/Fusee/src/Engine/Common/IRenderContextImp.cs
+    id: TRIANGLE_FAN
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
     startLine: 663
   assemblies:
   - Fusee.Engine.Common
@@ -137,7 +121,7 @@ items:
   summary: "\nRelates to OpenGl GL_TRIANGLES_FAN.\n"
   example: []
   syntax:
-    content: TriangleFan = 2
+    content: TRIANGLE_FAN = 2
     return:
       type: Fusee.Engine.Common.OpenGLPrimitiveType
   modifiers.csharp:
@@ -146,24 +130,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.OpenGLPrimitiveType.Quads
-  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.Quads
-  id: Quads
+- uid: Fusee.Engine.Common.OpenGLPrimitiveType.QUADS
+  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.QUADS
+  id: QUADS
   parent: Fusee.Engine.Common.OpenGLPrimitiveType
   langs:
   - csharp
   - vb
-  name: Quads
-  nameWithType: OpenGLPrimitiveType.Quads
-  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.Quads
+  name: QUADS
+  nameWithType: OpenGLPrimitiveType.QUADS
+  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.QUADS
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IRenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Quads
-    path: src/Fusee/src/Engine/Common/IRenderContextImp.cs
+    id: QUADS
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
     startLine: 668
   assemblies:
   - Fusee.Engine.Common
@@ -171,7 +151,7 @@ items:
   summary: "\nRelates to OpenGl GL_QUADS.\n"
   example: []
   syntax:
-    content: Quads = 3
+    content: QUADS = 3
     return:
       type: Fusee.Engine.Common.OpenGLPrimitiveType
   modifiers.csharp:
@@ -180,24 +160,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.OpenGLPrimitiveType.QuadStrip
-  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.QuadStrip
-  id: QuadStrip
+- uid: Fusee.Engine.Common.OpenGLPrimitiveType.QUAD_STRIP
+  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.QUAD_STRIP
+  id: QUAD_STRIP
   parent: Fusee.Engine.Common.OpenGLPrimitiveType
   langs:
   - csharp
   - vb
-  name: QuadStrip
-  nameWithType: OpenGLPrimitiveType.QuadStrip
-  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.QuadStrip
+  name: QUAD_STRIP
+  nameWithType: OpenGLPrimitiveType.QUAD_STRIP
+  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.QUAD_STRIP
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IRenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: QuadStrip
-    path: src/Fusee/src/Engine/Common/IRenderContextImp.cs
+    id: QUAD_STRIP
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
     startLine: 673
   assemblies:
   - Fusee.Engine.Common
@@ -205,7 +181,7 @@ items:
   summary: "\nRelates to OpenGl GL_QUADS_STRIP.\n"
   example: []
   syntax:
-    content: QuadStrip = 4
+    content: QUAD_STRIP = 4
     return:
       type: Fusee.Engine.Common.OpenGLPrimitiveType
   modifiers.csharp:
@@ -214,24 +190,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.OpenGLPrimitiveType.Points
-  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.Points
-  id: Points
+- uid: Fusee.Engine.Common.OpenGLPrimitiveType.POINT
+  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.POINT
+  id: POINT
   parent: Fusee.Engine.Common.OpenGLPrimitiveType
   langs:
   - csharp
   - vb
-  name: Points
-  nameWithType: OpenGLPrimitiveType.Points
-  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.Points
+  name: POINT
+  nameWithType: OpenGLPrimitiveType.POINT
+  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.POINT
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IRenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Points
-    path: src/Fusee/src/Engine/Common/IRenderContextImp.cs
+    id: POINT
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
     startLine: 678
   assemblies:
   - Fusee.Engine.Common
@@ -239,7 +211,7 @@ items:
   summary: "\nRelates to OpenGl GL_POINTS.\n"
   example: []
   syntax:
-    content: Points = 5
+    content: POINT = 5
     return:
       type: Fusee.Engine.Common.OpenGLPrimitiveType
   modifiers.csharp:
@@ -248,24 +220,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.OpenGLPrimitiveType.Lines
-  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.Lines
-  id: Lines
+- uid: Fusee.Engine.Common.OpenGLPrimitiveType.LINES
+  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.LINES
+  id: LINES
   parent: Fusee.Engine.Common.OpenGLPrimitiveType
   langs:
   - csharp
   - vb
-  name: Lines
-  nameWithType: OpenGLPrimitiveType.Lines
-  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.Lines
+  name: LINES
+  nameWithType: OpenGLPrimitiveType.LINES
+  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.LINES
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IRenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Lines
-    path: src/Fusee/src/Engine/Common/IRenderContextImp.cs
+    id: LINES
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
     startLine: 683
   assemblies:
   - Fusee.Engine.Common
@@ -273,7 +241,7 @@ items:
   summary: "\nRelates to OpenGl GL_LINES.\n"
   example: []
   syntax:
-    content: Lines = 6
+    content: LINES = 6
     return:
       type: Fusee.Engine.Common.OpenGLPrimitiveType
   modifiers.csharp:
@@ -282,24 +250,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.OpenGLPrimitiveType.LineStrip
-  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.LineStrip
-  id: LineStrip
+- uid: Fusee.Engine.Common.OpenGLPrimitiveType.LINE_STRIP
+  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.LINE_STRIP
+  id: LINE_STRIP
   parent: Fusee.Engine.Common.OpenGLPrimitiveType
   langs:
   - csharp
   - vb
-  name: LineStrip
-  nameWithType: OpenGLPrimitiveType.LineStrip
-  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.LineStrip
+  name: LINE_STRIP
+  nameWithType: OpenGLPrimitiveType.LINE_STRIP
+  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.LINE_STRIP
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IRenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: LineStrip
-    path: src/Fusee/src/Engine/Common/IRenderContextImp.cs
+    id: LINE_STRIP
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
     startLine: 688
   assemblies:
   - Fusee.Engine.Common
@@ -307,7 +271,7 @@ items:
   summary: "\nRelates to OpenGl GL_LINE_STRIP.\n"
   example: []
   syntax:
-    content: LineStrip = 7
+    content: LINE_STRIP = 7
     return:
       type: Fusee.Engine.Common.OpenGLPrimitiveType
   modifiers.csharp:
@@ -316,24 +280,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.OpenGLPrimitiveType.LineLoop
-  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.LineLoop
-  id: LineLoop
+- uid: Fusee.Engine.Common.OpenGLPrimitiveType.LINE_LOOP
+  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.LINE_LOOP
+  id: LINE_LOOP
   parent: Fusee.Engine.Common.OpenGLPrimitiveType
   langs:
   - csharp
   - vb
-  name: LineLoop
-  nameWithType: OpenGLPrimitiveType.LineLoop
-  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.LineLoop
+  name: LINE_LOOP
+  nameWithType: OpenGLPrimitiveType.LINE_LOOP
+  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.LINE_LOOP
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IRenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: LineLoop
-    path: src/Fusee/src/Engine/Common/IRenderContextImp.cs
+    id: LINE_LOOP
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
     startLine: 693
   assemblies:
   - Fusee.Engine.Common
@@ -341,7 +301,7 @@ items:
   summary: "\nRelates to OpenGl GL_LINE_LOOP.\n"
   example: []
   syntax:
-    content: LineLoop = 8
+    content: LINE_LOOP = 8
     return:
       type: Fusee.Engine.Common.OpenGLPrimitiveType
   modifiers.csharp:
@@ -350,24 +310,20 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.OpenGLPrimitiveType.Patches
-  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.Patches
-  id: Patches
+- uid: Fusee.Engine.Common.OpenGLPrimitiveType.PATCHES
+  commentId: F:Fusee.Engine.Common.OpenGLPrimitiveType.PATCHES
+  id: PATCHES
   parent: Fusee.Engine.Common.OpenGLPrimitiveType
   langs:
   - csharp
   - vb
-  name: Patches
-  nameWithType: OpenGLPrimitiveType.Patches
-  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.Patches
+  name: PATCHES
+  nameWithType: OpenGLPrimitiveType.PATCHES
+  fullName: Fusee.Engine.Common.OpenGLPrimitiveType.PATCHES
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Common/IRenderContextImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Patches
-    path: src/Fusee/src/Engine/Common/IRenderContextImp.cs
+    id: PATCHES
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
     startLine: 698
   assemblies:
   - Fusee.Engine.Common
@@ -375,7 +331,7 @@ items:
   summary: "\nRelates to OpenGl GL_PATCHES.\n"
   example: []
   syntax:
-    content: Patches = 9
+    content: PATCHES = 9
     return:
       type: Fusee.Engine.Common.OpenGLPrimitiveType
   modifiers.csharp:

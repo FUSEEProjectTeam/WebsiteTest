@@ -1,0 +1,406 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AABBCalculator
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AABBCalculator
+   ">
+    <meta name="generator" content="docfx 2.55.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Core.AABBCalculator">
+  
+  
+  <h1 id="Fusee_Engine_Core_AABBCalculator" data-uid="Fusee.Engine.Core.AABBCalculator" class="text-break">Class AABBCalculator
+  </h1>
+  <div class="markdown level0 summary"><p>Axis-Aligned Bounding Box Calculator. Use instances of this class to calculate axis-aligned bounding boxes
+on scenes, list of scene nodes or individual scene nodes. Calculations always include any child nodes.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Fusee.Xene.Visitor-2.html">Visitor</a>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a>, <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a>&gt;</div>
+    <div class="level2"><span class="xref">AABBCalculator</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_Traverse__0_">Visitor&lt;SceneNode, SceneComponent&gt;.Traverse(SceneNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_Traverse_System_Collections_Generic_IEnumerable__0__">Visitor&lt;SceneNode, SceneComponent&gt;.Traverse(IEnumerable&lt;SceneNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_InitState">Visitor&lt;SceneNode, SceneComponent&gt;.InitState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_PushState">Visitor&lt;SceneNode, SceneComponent&gt;.PushState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_PopState">Visitor&lt;SceneNode, SceneComponent&gt;.PopState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_CurrentNode">Visitor&lt;SceneNode, SceneComponent&gt;.CurrentNode</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_CurrentComponent">Visitor&lt;SceneNode, SceneComponent&gt;.CurrentComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_YieldOnCurrentNode">Visitor&lt;SceneNode, SceneComponent&gt;.YieldOnCurrentNode</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_YieldOnCurrentComponent">Visitor&lt;SceneNode, SceneComponent&gt;.YieldOnCurrentComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_YieldEnumeration">Visitor&lt;SceneNode, SceneComponent&gt;.YieldEnumeration</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_EnumInit_System_Collections_Generic_IEnumerator__0__">Visitor&lt;SceneNode, SceneComponent&gt;.EnumInit(IEnumerator&lt;SceneNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_EnumMoveNext">Visitor&lt;SceneNode, SceneComponent&gt;.EnumMoveNext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_EnumMoveNextNoComponent">Visitor&lt;SceneNode, SceneComponent&gt;.EnumMoveNextNoComponent()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.Core.html">Fusee.Engine.Core</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Engine.Core.dll</h6>
+  <h5 id="Fusee_Engine_Core_AABBCalculator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AABBCalculator : Visitor&lt;SceneNode, SceneComponent&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Fusee_Engine_Core_AABBCalculator__ctor_" data-uid="Fusee.Engine.Core.AABBCalculator.#ctor*"></a>
+  <h4 id="Fusee_Engine_Core_AABBCalculator__ctor_Fusee_Engine_Core_Scene_SceneContainer_" data-uid="Fusee.Engine.Core.AABBCalculator.#ctor(Fusee.Engine.Core.Scene.SceneContainer)">AABBCalculator(SceneContainer)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Fusee.Engine.Core.AABBCalculator.html">AABBCalculator</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AABBCalculator(SceneContainer sc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a></td>
+        <td><span class="parametername">sc</span></td>
+        <td><p>The scene container to calculate an axis-aligned bounding box for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_AABBCalculator__ctor_" data-uid="Fusee.Engine.Core.AABBCalculator.#ctor*"></a>
+  <h4 id="Fusee_Engine_Core_AABBCalculator__ctor_Fusee_Engine_Core_Scene_SceneNode_" data-uid="Fusee.Engine.Core.AABBCalculator.#ctor(Fusee.Engine.Core.Scene.SceneNode)">AABBCalculator(SceneNode)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Fusee.Engine.Core.AABBCalculator.html">AABBCalculator</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AABBCalculator(SceneNode snc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snc</span></td>
+        <td><p>A single scene node to calculate an axis-aligned bounding box for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_AABBCalculator__ctor_" data-uid="Fusee.Engine.Core.AABBCalculator.#ctor*"></a>
+  <h4 id="Fusee_Engine_Core_AABBCalculator__ctor_System_Collections_Generic_IEnumerable_Fusee_Engine_Core_Scene_SceneNode__" data-uid="Fusee.Engine.Core.AABBCalculator.#ctor(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode})">AABBCalculator(IEnumerable&lt;SceneNode&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Fusee.Engine.Core.AABBCalculator.html">AABBCalculator</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AABBCalculator(IEnumerable&lt;SceneNode&gt; sncList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a>&gt;</td>
+        <td><span class="parametername">sncList</span></td>
+        <td><p>The list of scene nodes to calculate an axis-aligned bounding box for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Fusee_Engine_Core_AABBCalculator_GetBox_" data-uid="Fusee.Engine.Core.AABBCalculator.GetBox*"></a>
+  <h4 id="Fusee_Engine_Core_AABBCalculator_GetBox" data-uid="Fusee.Engine.Core.AABBCalculator.GetBox">GetBox()</h4>
+  <div class="markdown level1 summary"><p>Performs the calculation and returns the resulting box on the object(s) passed in the constructor. Any calculation
+always includes a full traversal over all child nodes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AABBf? GetBox()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Fusee.Math.Core.AABBf.html">AABBf</a>&gt;</td>
+        <td><p>The resulting axis-aligned bounding box.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_AABBCalculator_InitState_" data-uid="Fusee.Engine.Core.AABBCalculator.InitState*"></a>
+  <h4 id="Fusee_Engine_Core_AABBCalculator_InitState" data-uid="Fusee.Engine.Core.AABBCalculator.InitState">InitState()</h4>
+  <div class="markdown level1 summary"><p>Method is called when traversal starts to initialize the traversal state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InitState()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Fusee.Xene.Visitor&lt;Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent&gt;.InitState()</span></div>
+  
+  
+  <a id="Fusee_Engine_Core_AABBCalculator_OnMesh_" data-uid="Fusee.Engine.Core.AABBCalculator.OnMesh*"></a>
+  <h4 id="Fusee_Engine_Core_AABBCalculator_OnMesh_Fusee_Engine_Core_Scene_Mesh_" data-uid="Fusee.Engine.Core.AABBCalculator.OnMesh(Fusee.Engine.Core.Scene.Mesh)">OnMesh(Mesh)</h4>
+  <div class="markdown level1 summary"><p>Do not call. Used for internal traversal purposes only</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMesh(Mesh mesh)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a></td>
+        <td><span class="parametername">mesh</span></td>
+        <td><p>The mesh component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_AABBCalculator_OnTransform_" data-uid="Fusee.Engine.Core.AABBCalculator.OnTransform*"></a>
+  <h4 id="Fusee_Engine_Core_AABBCalculator_OnTransform_Fusee_Engine_Core_Scene_Transform_" data-uid="Fusee.Engine.Core.AABBCalculator.OnTransform(Fusee.Engine.Core.Scene.Transform)">OnTransform(Transform)</h4>
+  <div class="markdown level1 summary"><p>Do not call. Used for internal traversal purposes only</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTransform(Transform transform)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Transform.html">Transform</a></td>
+        <td><span class="parametername">transform</span></td>
+        <td><p>The transform component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_AABBCalculator_PopState_" data-uid="Fusee.Engine.Core.AABBCalculator.PopState*"></a>
+  <h4 id="Fusee_Engine_Core_AABBCalculator_PopState" data-uid="Fusee.Engine.Core.AABBCalculator.PopState">PopState()</h4>
+  <div class="markdown level1 summary"><p>Method is called when going up one hierarchy level while traversing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void PopState()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Fusee.Xene.Visitor&lt;Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent&gt;.PopState()</span></div>
+  
+  
+  <a id="Fusee_Engine_Core_AABBCalculator_PushState_" data-uid="Fusee.Engine.Core.AABBCalculator.PushState*"></a>
+  <h4 id="Fusee_Engine_Core_AABBCalculator_PushState" data-uid="Fusee.Engine.Core.AABBCalculator.PushState">PushState()</h4>
+  <div class="markdown level1 summary"><p>Method is called when going down one hierarchy level while traversing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void PushState()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Fusee.Xene.Visitor&lt;Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent&gt;.PushState()</span></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

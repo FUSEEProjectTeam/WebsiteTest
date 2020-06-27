@@ -15,12 +15,8 @@ items:
   fullName: Fusee.Serialization.FusFile
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: FusFile
-    path: src/Fusee/src/Serialization/FusFile.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\FusFile.cs
     startLine: 54
   assemblies:
   - Fusee.Serialization
@@ -28,8 +24,14 @@ items:
   summary: "\nDe-serialized raw contents of a .fus File. Contains a <xref href=\"Fusee.Serialization.FusHeader\" data-throw-if-not-resolved=\"false\"></xref> and a very polymorphic <xref href=\"Fusee.Serialization.FusContents\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: public class FusFile
-    content.vb: Public Class FusFile
+    content: >-
+      [ProtoContract]
+
+      public class FusFile
+    content.vb: >-
+      <ProtoContract>
+
+      Public Class FusFile
   inheritance:
   - System.Object
   inheritedMembers:
@@ -40,6 +42,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -58,12 +64,8 @@ items:
   fullName: Fusee.Serialization.FusFile.Header
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Header
-    path: src/Fusee/src/Serialization/FusFile.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\FusFile.cs
     startLine: 61
   assemblies:
   - Fusee.Serialization
@@ -71,10 +73,22 @@ items:
   summary: "\nThe file header. Contains some meta data.\n"
   example: []
   syntax:
-    content: public FusHeader Header
+    content: >-
+      [ProtoMember(1)]
+
+      public FusHeader Header
     return:
       type: Fusee.Serialization.FusHeader
-    content.vb: Public Header As FusHeader
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Header As FusHeader
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -91,12 +105,8 @@ items:
   fullName: Fusee.Serialization.FusFile.Contents
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Contents
-    path: src/Fusee/src/Serialization/FusFile.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\FusFile.cs
     startLine: 68
   assemblies:
   - Fusee.Serialization
@@ -104,10 +114,22 @@ items:
   summary: "\nThe file contents. Check and cast to the concrete type to access it, e. g. using a C# 7.0 \n<a href=\"https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching\">pattern matching in switch expression</a>.\n"
   example: []
   syntax:
-    content: public FusContents Contents
+    content: >-
+      [ProtoMember(2)]
+
+      public FusContents Contents
     return:
       type: Fusee.Serialization.FusContents
-    content.vb: Public Contents As FusContents
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Contents As FusContents
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:

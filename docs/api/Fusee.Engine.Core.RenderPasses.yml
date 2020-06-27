@@ -5,14 +5,14 @@ items:
   id: RenderPasses
   parent: Fusee.Engine.Core
   children:
-  - Fusee.Engine.Core.RenderPasses.Fxaa
-  - Fusee.Engine.Core.RenderPasses.Geometry
-  - Fusee.Engine.Core.RenderPasses.Lighting
-  - Fusee.Engine.Core.RenderPasses.ShaderEffectPre
-  - Fusee.Engine.Core.RenderPasses.Shadow
-  - Fusee.Engine.Core.RenderPasses.Single
-  - Fusee.Engine.Core.RenderPasses.Ssao
-  - Fusee.Engine.Core.RenderPasses.SsaoBlur
+  - Fusee.Engine.Core.RenderPasses.FXAA
+  - Fusee.Engine.Core.RenderPasses.GEOMETRY
+  - Fusee.Engine.Core.RenderPasses.LIGHTING
+  - Fusee.Engine.Core.RenderPasses.SHADER_EFFECT_PRE
+  - Fusee.Engine.Core.RenderPasses.SHADOW
+  - Fusee.Engine.Core.RenderPasses.SINGLE
+  - Fusee.Engine.Core.RenderPasses.SSAO
+  - Fusee.Engine.Core.RenderPasses.SSAO_BLUR
   langs:
   - csharp
   - vb
@@ -21,12 +21,8 @@ items:
   fullName: Fusee.Engine.Core.RenderPasses
   type: Enum
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/RenderPasses.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RenderPasses
-    path: src/Fusee/src/Engine/Core/RenderPasses.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderPasses.cs
     startLine: 6
   assemblies:
   - Fusee.Engine.Core
@@ -42,30 +38,26 @@ items:
   modifiers.vb:
   - Public
   - Enum
-- uid: Fusee.Engine.Core.RenderPasses.ShaderEffectPre
-  commentId: F:Fusee.Engine.Core.RenderPasses.ShaderEffectPre
-  id: ShaderEffectPre
+- uid: Fusee.Engine.Core.RenderPasses.SHADER_EFFECT_PRE
+  commentId: F:Fusee.Engine.Core.RenderPasses.SHADER_EFFECT_PRE
+  id: SHADER_EFFECT_PRE
   parent: Fusee.Engine.Core.RenderPasses
   langs:
   - csharp
   - vb
-  name: ShaderEffectPre
-  nameWithType: RenderPasses.ShaderEffectPre
-  fullName: Fusee.Engine.Core.RenderPasses.ShaderEffectPre
+  name: SHADER_EFFECT_PRE
+  nameWithType: RenderPasses.SHADER_EFFECT_PRE
+  fullName: Fusee.Engine.Core.RenderPasses.SHADER_EFFECT_PRE
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/RenderPasses.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: ShaderEffectPre
-    path: src/Fusee/src/Engine/Core/RenderPasses.cs
+    id: SHADER_EFFECT_PRE
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderPasses.cs
     startLine: 9
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   syntax:
-    content: ShaderEffectPre = 0
+    content: SHADER_EFFECT_PRE = 0
     return:
       type: Fusee.Engine.Core.RenderPasses
   modifiers.csharp:
@@ -74,30 +66,26 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Core.RenderPasses.Geometry
-  commentId: F:Fusee.Engine.Core.RenderPasses.Geometry
-  id: Geometry
+- uid: Fusee.Engine.Core.RenderPasses.GEOMETRY
+  commentId: F:Fusee.Engine.Core.RenderPasses.GEOMETRY
+  id: GEOMETRY
   parent: Fusee.Engine.Core.RenderPasses
   langs:
   - csharp
   - vb
-  name: Geometry
-  nameWithType: RenderPasses.Geometry
-  fullName: Fusee.Engine.Core.RenderPasses.Geometry
+  name: GEOMETRY
+  nameWithType: RenderPasses.GEOMETRY
+  fullName: Fusee.Engine.Core.RenderPasses.GEOMETRY
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/RenderPasses.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Geometry
-    path: src/Fusee/src/Engine/Core/RenderPasses.cs
+    id: GEOMETRY
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderPasses.cs
     startLine: 10
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   syntax:
-    content: Geometry = 1
+    content: GEOMETRY = 1
     return:
       type: Fusee.Engine.Core.RenderPasses
   modifiers.csharp:
@@ -106,30 +94,26 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Core.RenderPasses.Ssao
-  commentId: F:Fusee.Engine.Core.RenderPasses.Ssao
-  id: Ssao
+- uid: Fusee.Engine.Core.RenderPasses.SSAO
+  commentId: F:Fusee.Engine.Core.RenderPasses.SSAO
+  id: SSAO
   parent: Fusee.Engine.Core.RenderPasses
   langs:
   - csharp
   - vb
-  name: Ssao
-  nameWithType: RenderPasses.Ssao
-  fullName: Fusee.Engine.Core.RenderPasses.Ssao
+  name: SSAO
+  nameWithType: RenderPasses.SSAO
+  fullName: Fusee.Engine.Core.RenderPasses.SSAO
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/RenderPasses.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Ssao
-    path: src/Fusee/src/Engine/Core/RenderPasses.cs
+    id: SSAO
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderPasses.cs
     startLine: 11
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   syntax:
-    content: Ssao = 2
+    content: SSAO = 2
     return:
       type: Fusee.Engine.Core.RenderPasses
   modifiers.csharp:
@@ -138,30 +122,26 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Core.RenderPasses.SsaoBlur
-  commentId: F:Fusee.Engine.Core.RenderPasses.SsaoBlur
-  id: SsaoBlur
+- uid: Fusee.Engine.Core.RenderPasses.SSAO_BLUR
+  commentId: F:Fusee.Engine.Core.RenderPasses.SSAO_BLUR
+  id: SSAO_BLUR
   parent: Fusee.Engine.Core.RenderPasses
   langs:
   - csharp
   - vb
-  name: SsaoBlur
-  nameWithType: RenderPasses.SsaoBlur
-  fullName: Fusee.Engine.Core.RenderPasses.SsaoBlur
+  name: SSAO_BLUR
+  nameWithType: RenderPasses.SSAO_BLUR
+  fullName: Fusee.Engine.Core.RenderPasses.SSAO_BLUR
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/RenderPasses.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: SsaoBlur
-    path: src/Fusee/src/Engine/Core/RenderPasses.cs
+    id: SSAO_BLUR
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderPasses.cs
     startLine: 12
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   syntax:
-    content: SsaoBlur = 3
+    content: SSAO_BLUR = 3
     return:
       type: Fusee.Engine.Core.RenderPasses
   modifiers.csharp:
@@ -170,30 +150,26 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Core.RenderPasses.Shadow
-  commentId: F:Fusee.Engine.Core.RenderPasses.Shadow
-  id: Shadow
+- uid: Fusee.Engine.Core.RenderPasses.SHADOW
+  commentId: F:Fusee.Engine.Core.RenderPasses.SHADOW
+  id: SHADOW
   parent: Fusee.Engine.Core.RenderPasses
   langs:
   - csharp
   - vb
-  name: Shadow
-  nameWithType: RenderPasses.Shadow
-  fullName: Fusee.Engine.Core.RenderPasses.Shadow
+  name: SHADOW
+  nameWithType: RenderPasses.SHADOW
+  fullName: Fusee.Engine.Core.RenderPasses.SHADOW
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/RenderPasses.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Shadow
-    path: src/Fusee/src/Engine/Core/RenderPasses.cs
+    id: SHADOW
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderPasses.cs
     startLine: 13
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   syntax:
-    content: Shadow = 4
+    content: SHADOW = 4
     return:
       type: Fusee.Engine.Core.RenderPasses
   modifiers.csharp:
@@ -202,30 +178,26 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Core.RenderPasses.Fxaa
-  commentId: F:Fusee.Engine.Core.RenderPasses.Fxaa
-  id: Fxaa
+- uid: Fusee.Engine.Core.RenderPasses.FXAA
+  commentId: F:Fusee.Engine.Core.RenderPasses.FXAA
+  id: FXAA
   parent: Fusee.Engine.Core.RenderPasses
   langs:
   - csharp
   - vb
-  name: Fxaa
-  nameWithType: RenderPasses.Fxaa
-  fullName: Fusee.Engine.Core.RenderPasses.Fxaa
+  name: FXAA
+  nameWithType: RenderPasses.FXAA
+  fullName: Fusee.Engine.Core.RenderPasses.FXAA
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/RenderPasses.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Fxaa
-    path: src/Fusee/src/Engine/Core/RenderPasses.cs
+    id: FXAA
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderPasses.cs
     startLine: 14
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   syntax:
-    content: Fxaa = 5
+    content: FXAA = 5
     return:
       type: Fusee.Engine.Core.RenderPasses
   modifiers.csharp:
@@ -234,30 +206,26 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Core.RenderPasses.Lighting
-  commentId: F:Fusee.Engine.Core.RenderPasses.Lighting
-  id: Lighting
+- uid: Fusee.Engine.Core.RenderPasses.LIGHTING
+  commentId: F:Fusee.Engine.Core.RenderPasses.LIGHTING
+  id: LIGHTING
   parent: Fusee.Engine.Core.RenderPasses
   langs:
   - csharp
   - vb
-  name: Lighting
-  nameWithType: RenderPasses.Lighting
-  fullName: Fusee.Engine.Core.RenderPasses.Lighting
+  name: LIGHTING
+  nameWithType: RenderPasses.LIGHTING
+  fullName: Fusee.Engine.Core.RenderPasses.LIGHTING
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/RenderPasses.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Lighting
-    path: src/Fusee/src/Engine/Core/RenderPasses.cs
+    id: LIGHTING
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderPasses.cs
     startLine: 15
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   syntax:
-    content: Lighting = 6
+    content: LIGHTING = 6
     return:
       type: Fusee.Engine.Core.RenderPasses
   modifiers.csharp:
@@ -266,30 +234,26 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Core.RenderPasses.Single
-  commentId: F:Fusee.Engine.Core.RenderPasses.Single
-  id: Single
+- uid: Fusee.Engine.Core.RenderPasses.SINGLE
+  commentId: F:Fusee.Engine.Core.RenderPasses.SINGLE
+  id: SINGLE
   parent: Fusee.Engine.Core.RenderPasses
   langs:
   - csharp
   - vb
-  name: Single
-  nameWithType: RenderPasses.Single
-  fullName: Fusee.Engine.Core.RenderPasses.Single
+  name: SINGLE
+  nameWithType: RenderPasses.SINGLE
+  fullName: Fusee.Engine.Core.RenderPasses.SINGLE
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Core/RenderPasses.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
-    id: Single
-    path: src/Fusee/src/Engine/Core/RenderPasses.cs
+    id: SINGLE
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderPasses.cs
     startLine: 16
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   syntax:
-    content: Single = 7
+    content: SINGLE = 7
     return:
       type: Fusee.Engine.Core.RenderPasses
   modifiers.csharp:

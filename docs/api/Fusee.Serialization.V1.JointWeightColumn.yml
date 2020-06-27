@@ -14,12 +14,8 @@ items:
   fullName: Fusee.Serialization.V1.JointWeightColumn
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusWeight.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: JointWeightColumn
-    path: src/Fusee/src/Serialization/V1/FusWeight.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusWeight.cs
     startLine: 70
   assemblies:
   - Fusee.Serialization
@@ -27,8 +23,14 @@ items:
   summary: "\nDEPRECATED\n"
   example: []
   syntax:
-    content: public class JointWeightColumn
-    content.vb: Public Class JointWeightColumn
+    content: >-
+      [ProtoContract]
+
+      public class JointWeightColumn
+    content.vb: >-
+      <ProtoContract>
+
+      Public Class JointWeightColumn
   inheritance:
   - System.Object
   inheritedMembers:
@@ -39,6 +41,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -57,12 +63,8 @@ items:
   fullName: Fusee.Serialization.V1.JointWeightColumn.JointWeights
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusWeight.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: JointWeights
-    path: src/Fusee/src/Serialization/V1/FusWeight.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusWeight.cs
     startLine: 79
   assemblies:
   - Fusee.Serialization
@@ -70,13 +72,25 @@ items:
   summary: "\nDEPRECATED: Gets and sets the joint weights.\n"
   example: []
   syntax:
-    content: public List<double> JointWeights { get; set; }
+    content: >-
+      [ProtoMember(1)]
+
+      public List<double> JointWeights { get; set; }
     parameters: []
     return:
       type: System.Collections.Generic.List{System.Double}
       description: "\nThe joint weights.\n"
-    content.vb: Public Property JointWeights As List(Of Double)
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Property JointWeights As List(Of Double)
   overload: Fusee.Serialization.V1.JointWeightColumn.JointWeights*
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   - get

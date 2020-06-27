@@ -16,17 +16,13 @@ items:
   fullName: Fusee.Base.Common.GetCallbackState
   type: Enum
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetCallbackState
-    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Common\IAssetProvider.cs
     startLine: 8
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
-  summary: "\nThe state of the asset acquisition process.\n"
+  summary: "\nThe state of the asset akquisition process.\n"
   example: []
   syntax:
     content: public enum GetCallbackState
@@ -49,17 +45,13 @@ items:
   fullName: Fusee.Base.Common.GetCallbackState.Progress
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Progress
-    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Common\IAssetProvider.cs
     startLine: 13
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
-  summary: "\nAsset acquisition is in progress. o (<xref href=\"Fusee.Base.Common.GetCallbackState\" data-throw-if-not-resolved=\"false\"></xref>)contains an integer specifying the progress in percent (100 == done).\n"
+  summary: "\nAsset akquisition is in progress. o (<xref href=\"Fusee.Base.Common.GetCallbackState\" data-throw-if-not-resolved=\"false\"></xref>)contains an integer specifying the progress in percent (100 == done).\n"
   example: []
   syntax:
     content: Progress = 0
@@ -83,17 +75,13 @@ items:
   fullName: Fusee.Base.Common.GetCallbackState.Error
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Error
-    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Common\IAssetProvider.cs
     startLine: 17
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
-  summary: "\nAn error occurred while acquiring the asset. o (<xref href=\"Fusee.Base.Common.GetCallbackState\" data-throw-if-not-resolved=\"false\"></xref>) contains a string containing the message.\n"
+  summary: "\nAn error occured while akquiring the asset. o (<xref href=\"Fusee.Base.Common.GetCallbackState\" data-throw-if-not-resolved=\"false\"></xref>) contains a string containting the message.\n"
   example: []
   syntax:
     content: Error = 1
@@ -117,17 +105,13 @@ items:
   fullName: Fusee.Base.Common.GetCallbackState.Done
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Done
-    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Common\IAssetProvider.cs
     startLine: 21
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
-  summary: "\nAcquisition ended successfully. o contains the object of the type passed to <xref href=\"Fusee.Base.Common.GetCallback\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  summary: "\nAkquisition ended successfully. o contains the object of the type passed to <xref href=\"Fusee.Base.Common.GetCallback\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
     content: Done = 2

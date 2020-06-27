@@ -1,0 +1,1881 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SceneExtensions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SceneExtensions
+   ">
+    <meta name="generator" content="docfx 2.55.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Core.Scene.SceneExtensions">
+  
+  
+  <h1 id="Fusee_Engine_Core_Scene_SceneExtensions" data-uid="Fusee.Engine.Core.Scene.SceneExtensions" class="text-break">Class SceneExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Static extension methods on <a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a> and <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a> instances (or enumerations)
+for various purposes.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SceneExtensions</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.Core.Scene.html">Fusee.Engine.Core.Scene</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Engine.Core.dll</h6>
+  <h5 id="Fusee_Engine_Core_Scene_SceneExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class SceneExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_AddComponent_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.AddComponent*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_AddComponent_Fusee_Engine_Core_Scene_SceneNode_Fusee_Engine_Core_Scene_SceneComponent_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.AddComponent(Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent)">AddComponent(SceneNode, SceneComponent)</h4>
+  <div class="markdown level1 summary"><p>Adds the given component into this container's list of components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddComponent(this SceneNode snThisThis, SceneComponent scc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThisThis</span></td>
+        <td><p>This node.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a></td>
+        <td><span class="parametername">scc</span></td>
+        <td><p>The component to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_FindComponents_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.FindComponents*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_FindComponents_Fusee_Engine_Core_Scene_SceneNode_System_Predicate_Fusee_Engine_Core_Scene_SceneComponent__" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})">FindComponents(SceneNode, Predicate&lt;SceneComponent&gt;)</h4>
+  <div class="markdown level1 summary"><p>Finds all components matching a given search predicate within the given node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;SceneComponent&gt; FindComponents(this SceneNode root, Predicate&lt;SceneComponent&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">root</span></td>
+        <td><p>The root node where to start the traversal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Predicate</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a>&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The matching predicate. Enumeration will yield on every matching node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a>&gt;</td>
+        <td><p>An enumerable that can be used in foreach statements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_Scene_SceneExtensions_FindComponents_Fusee_Engine_Core_Scene_SceneNode_System_Predicate_Fusee_Engine_Core_Scene_SceneComponent___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Narrows the generic parameters of <a class="xref" href="Fusee.Xene.SceneFinderExtensions.html#Fusee_Xene_SceneFinderExtensions_FindComponents__2___0_System_Predicate___1__">FindComponents&lt;TNode, TComponent&gt;(TNode, Predicate&lt;TComponent&gt;)</a>
+to the concrete Types <a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a> and <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a>.</p>
+</div>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_FindComponents_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.FindComponents*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_FindComponents_System_Collections_Generic_IEnumerable_Fusee_Engine_Core_Scene_SceneNode__System_Predicate_Fusee_Engine_Core_Scene_SceneComponent__" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.FindComponents(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})">FindComponents(IEnumerable&lt;SceneNode&gt;, Predicate&lt;SceneComponent&gt;)</h4>
+  <div class="markdown level1 summary"><p>Finds all components matching a given search predicate within the given list of nodes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;SceneComponent&gt; FindComponents(this IEnumerable&lt;SceneNode&gt; roots, Predicate&lt;SceneComponent&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a>&gt;</td>
+        <td><span class="parametername">roots</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Predicate</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a>&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_FindComponents_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.FindComponents*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_FindComponents__1_Fusee_Engine_Core_Scene_SceneNode_System_Predicate___0__" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{``0})">FindComponents&lt;TComponentToFind&gt;(SceneNode, Predicate&lt;TComponentToFind&gt;)</h4>
+  <div class="markdown level1 summary"><p>Finds all components of a certain type matching a given search predicate within the given node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;TComponentToFind&gt; FindComponents&lt;TComponentToFind&gt;(this SceneNode root, Predicate&lt;TComponentToFind&gt; match)
+    where TComponentToFind : SceneComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">root</span></td>
+        <td><p>The root node where to start the traversal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Predicate</span>&lt;TComponentToFind&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The matching predicate. Enumeration will yield on every matching node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TComponentToFind&gt;</td>
+        <td><p>An enumerable that can be used in foreach statements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TComponentToFind</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_Scene_SceneExtensions_FindComponents__1_Fusee_Engine_Core_Scene_SceneNode_System_Predicate___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Narrows the generic parameters of <a class="xref" href="Fusee.Xene.SceneFinderExtensions.html#Fusee_Xene_SceneFinderExtensions_FindComponents__2___0_System_Predicate___1__">FindComponents&lt;TNode, TComponent&gt;(TNode, Predicate&lt;TComponent&gt;)</a>
+to the concrete Types <a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a> and <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a>.</p>
+</div>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_FindComponents_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.FindComponents*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_FindComponents__1_System_Collections_Generic_IEnumerable_Fusee_Engine_Core_Scene_SceneNode__System_Predicate___0__" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.FindComponents``1(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{``0})">FindComponents&lt;TComponentToFind&gt;(IEnumerable&lt;SceneNode&gt;, Predicate&lt;TComponentToFind&gt;)</h4>
+  <div class="markdown level1 summary"><p>Finds all components of a certain type matching a given search predicate within the given list of nodes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;TComponentToFind&gt; FindComponents&lt;TComponentToFind&gt;(this IEnumerable&lt;SceneNode&gt; roots, Predicate&lt;TComponentToFind&gt; match)
+    where TComponentToFind : SceneComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a>&gt;</td>
+        <td><span class="parametername">roots</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Predicate</span>&lt;TComponentToFind&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TComponentToFind&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TComponentToFind</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_FindNodesWhereComponent_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_FindNodesWhereComponent_Fusee_Engine_Core_Scene_SceneNode_System_Predicate_Fusee_Engine_Core_Scene_SceneComponent__" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(Fusee.Engine.Core.Scene.SceneNode,System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})">FindNodesWhereComponent(SceneNode, Predicate&lt;SceneComponent&gt;)</h4>
+  <div class="markdown level1 summary"><p>Finds all components matching a given search predicate within the given node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;SceneNode&gt; FindNodesWhereComponent(this SceneNode root, Predicate&lt;SceneComponent&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">root</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Predicate</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a>&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_FindNodesWhereComponent_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_FindNodesWhereComponent_System_Collections_Generic_IEnumerable_Fusee_Engine_Core_Scene_SceneNode__System_Predicate_Fusee_Engine_Core_Scene_SceneComponent__" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.FindNodesWhereComponent(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode},System.Predicate{Fusee.Engine.Core.Scene.SceneComponent})">FindNodesWhereComponent(IEnumerable&lt;SceneNode&gt;, Predicate&lt;SceneComponent&gt;)</h4>
+  <div class="markdown level1 summary"><p>Finds all components matching a given search predicate within the given node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;SceneNode&gt; FindNodesWhereComponent(this IEnumerable&lt;SceneNode&gt; roots, Predicate&lt;SceneComponent&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a>&gt;</td>
+        <td><span class="parametername">roots</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Predicate</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a>&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_FpsView_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.FpsView*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_FpsView_Fusee_Engine_Core_Scene_Transform_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.FpsView(Fusee.Engine.Core.Scene.Transform,System.Single,System.Single,System.Single,System.Single,System.Single)">FpsView(Transform, Single, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Use this if the TransformComponent is part of a camera and you want to achieve a first person behavior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FpsView(this Transform tc, float angleHorz, float angleVert, float inputWSAxis, float inputADAxis, float speed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Transform.html">Transform</a></td>
+        <td><span class="parametername">tc</span></td>
+        <td><p>This TransformComponent</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">angleHorz</span></td>
+        <td><p>The horizontal rotation angle in rad. Should probably come from Mouse input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">angleVert</span></td>
+        <td><p>The vertical rotation angle in rad. Should probably come from Mouse input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">inputWSAxis</span></td>
+        <td><p>The value we want to translate the camera when pressing the W or S key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">inputADAxis</span></td>
+        <td><p>The value we want to translate the camera when pressing the A or D key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">speed</span></td>
+        <td><p>Changes the speed of the camera movement.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetComponent_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetComponent*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetComponent_Fusee_Engine_Core_Scene_SceneNode_System_Type_System_Int32_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetComponent(Fusee.Engine.Core.Scene.SceneNode,System.Type,System.Int32)">GetComponent(SceneNode, Type, Int32)</h4>
+  <div class="markdown level1 summary"><p>Finds the component with the specified type in this scene node container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SceneComponent GetComponent(this SceneNode snThisThis, Type type, int inx = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThisThis</span></td>
+        <td><p>This scene node container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the component to look for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inx</span></td>
+        <td><p>specifies the n'th component if more than component of the given type exists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a></td>
+        <td><p>A component of the specified type, if contained within the given container, null otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetComponent_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetComponent*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetComponent__1_Fusee_Engine_Core_Scene_SceneNode_System_Int32_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetComponent``1(Fusee.Engine.Core.Scene.SceneNode,System.Int32)">GetComponent&lt;TComp&gt;(SceneNode, Int32)</h4>
+  <div class="markdown level1 summary"><p>Finds the component with the specified type in this scene node container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TComp GetComponent&lt;TComp&gt;(this SceneNode snThisThis, int inx = 0)
+    where TComp : SceneComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThisThis</span></td>
+        <td><p>This scene node container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inx</span></td>
+        <td><p>specifies the n'th component if more than component of the given type exists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TComp</span></td>
+        <td><p>A component of the specified type, if contained within this container, null otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TComp</span></td>
+        <td><p>The type of the component to look for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetComponents_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetComponents*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetComponents_Fusee_Engine_Core_Scene_SceneNode_System_Type_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetComponents(Fusee.Engine.Core.Scene.SceneNode,System.Type)">GetComponents(SceneNode, Type)</h4>
+  <div class="markdown level1 summary"><p>Finds the components with the specified type in this scene node container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;SceneComponent&gt; GetComponents(this SceneNode snThisThis, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThisThis</span></td>
+        <td><p>This scene node container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the component to look for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetComponents_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetComponents*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetComponents__1_Fusee_Engine_Core_Scene_SceneNode_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetComponents``1(Fusee.Engine.Core.Scene.SceneNode)">GetComponents&lt;TComp&gt;(SceneNode)</h4>
+  <div class="markdown level1 summary"><p>Finds the components with the specified type in this scene node container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;TComp&gt; GetComponents&lt;TComp&gt;(this SceneNode snThisThis)
+    where TComp : SceneComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThisThis</span></td>
+        <td><p>This scene node container.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TComp&gt;</td>
+        <td><p>A component of the specified type, if contained within the given container, null otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TComp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetComponentsInChildren_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetComponentsInChildren_Fusee_Engine_Core_Scene_SceneNode_System_Type_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren(Fusee.Engine.Core.Scene.SceneNode,System.Type)">GetComponentsInChildren(SceneNode, Type)</h4>
+  <div class="markdown level1 summary"><p>Finds the components with the specified type and the sub-types in the children of this scene node container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;SceneComponent&gt; GetComponentsInChildren(this SceneNode snThisThis, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThisThis</span></td>
+        <td><p>This scene node container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the components to look for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a>&gt;</td>
+        <td><p>A List of components of the specified type, if contained within the given container.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetComponentsInChildren_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetComponentsInChildren__1_Fusee_Engine_Core_Scene_SceneNode_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetComponentsInChildren``1(Fusee.Engine.Core.Scene.SceneNode)">GetComponentsInChildren&lt;TComp&gt;(SceneNode)</h4>
+  <div class="markdown level1 summary"><p>Finds the components with the specified type in the children of this scene node container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;TComp&gt; GetComponentsInChildren&lt;TComp&gt;(this SceneNode snThisThis)
+    where TComp : SceneComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThisThis</span></td>
+        <td><p>This scene node container.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TComp&gt;</td>
+        <td><p>A List of components of the specified type, if contained within the given container.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TComp</span></td>
+        <td><p>The type of the components to look for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetGlobalRotation_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalRotation*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetGlobalRotation_Fusee_Engine_Core_Scene_SceneNode_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalRotation(Fusee.Engine.Core.Scene.SceneNode)">GetGlobalRotation(SceneNode)</h4>
+  <div class="markdown level1 summary"><p>Returns the global rotation matrix as the product of all rotations along the scene graph branch this SceneNode is a part of.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float4x4 GetGlobalRotation(this SceneNode snThis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThis</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetGlobalScale_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalScale*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetGlobalScale_Fusee_Engine_Core_Scene_SceneNode_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalScale(Fusee.Engine.Core.Scene.SceneNode)">GetGlobalScale(SceneNode)</h4>
+  <div class="markdown level1 summary"><p>Returns the global scale as the product of all scaling along the scene graph branch this SceneNode is a part of.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float3 GetGlobalScale(this SceneNode snThis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThis</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetGlobalTransformation_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTransformation*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetGlobalTransformation_Fusee_Engine_Core_Scene_SceneNode_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTransformation(Fusee.Engine.Core.Scene.SceneNode)">GetGlobalTransformation(SceneNode)</h4>
+  <div class="markdown level1 summary"><p>Returns the global transformation matrix as the product of all transformations along the scene graph branch this SceneNode is a part of.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float4x4 GetGlobalTransformation(this SceneNode snThis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThis</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetGlobalTranslation_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTranslation*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetGlobalTranslation_Fusee_Engine_Core_Scene_SceneNode_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetGlobalTranslation(Fusee.Engine.Core.Scene.SceneNode)">GetGlobalTranslation(SceneNode)</h4>
+  <div class="markdown level1 summary"><p>Returns the global translation as the product of all translations along the scene graph branch this SceneNode is a part of.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float3 GetGlobalTranslation(this SceneNode snThis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThis</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetLight_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetLight*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetLight_Fusee_Engine_Core_Scene_SceneNode_System_Int32_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetLight(Fusee.Engine.Core.Scene.SceneNode,System.Int32)">GetLight(SceneNode, Int32)</h4>
+  <div class="markdown level1 summary"><p>Shortcut for <pre><code>GetComponent&lt;Light&gt;(snThisThis, inx);</code></pre>. See <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_GetComponent__1_Fusee_Engine_Core_Scene_SceneNode_System_Int32_">GetComponent&lt;TComp&gt;(SceneNode, Int32)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Light GetLight(this SceneNode snThisThis, int inx = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThisThis</span></td>
+        <td><p>This scene node container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inx</span></td>
+        <td><p>specifies the n'th component if more than component of the given type exists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Light.html">Light</a></td>
+        <td><p>A light if contained within this container.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetLocalTransformation_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetLocalTransformation_Fusee_Engine_Core_Scene_Transform_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTransformation(Fusee.Engine.Core.Scene.Transform)">GetLocalTransformation(Transform)</h4>
+  <div class="markdown level1 summary"><p>Get the local transformation matrix from this TransformationComponent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float4x4 GetLocalTransformation(this Transform tansThis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Transform.html">Transform</a></td>
+        <td><span class="parametername">tansThis</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetMesh_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetMesh*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetMesh_Fusee_Engine_Core_Scene_SceneNode_System_Int32_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetMesh(Fusee.Engine.Core.Scene.SceneNode,System.Int32)">GetMesh(SceneNode, Int32)</h4>
+  <div class="markdown level1 summary"><p>Shortcut for <pre><code>GetComponent&lt;Mesh&gt;(snThisThis, inx);</code></pre>. See <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_GetComponent__1_Fusee_Engine_Core_Scene_SceneNode_System_Int32_">GetComponent&lt;TComp&gt;(SceneNode, Int32)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Mesh GetMesh(this SceneNode snThisThis, int inx = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThisThis</span></td>
+        <td><p>This scene node container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inx</span></td>
+        <td><p>specifies the n'th component if more than component of the given type exists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a></td>
+        <td><p>A mesh if contained within this container.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetTransform_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetTransform*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetTransform_Fusee_Engine_Core_Scene_SceneNode_System_Int32_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetTransform(Fusee.Engine.Core.Scene.SceneNode,System.Int32)">GetTransform(SceneNode, Int32)</h4>
+  <div class="markdown level1 summary"><p>Shortcut for <pre><code>GetComponent&lt;Transform&gt;(snThisThis, inx);</code></pre>. See <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_GetComponent__1_Fusee_Engine_Core_Scene_SceneNode_System_Int32_">GetComponent&lt;TComp&gt;(SceneNode, Int32)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transform GetTransform(this SceneNode snThisThis, int inx = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThisThis</span></td>
+        <td><p>This scene node container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inx</span></td>
+        <td><p>specifies the n'th component if more than component of the given type exists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Transform.html">Transform</a></td>
+        <td><p>A transform if contained within this container.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetWeights_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetWeights*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetWeights_Fusee_Engine_Core_Scene_SceneNode_System_Int32_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetWeights(Fusee.Engine.Core.Scene.SceneNode,System.Int32)">GetWeights(SceneNode, Int32)</h4>
+  <div class="markdown level1 summary"><p>Shortcut for <pre><code>GetComponent&lt;Weight&gt;(snThisThis, inx);</code></pre>. See <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_GetComponent__1_Fusee_Engine_Core_Scene_SceneNode_System_Int32_">GetComponent&lt;TComp&gt;(SceneNode, Int32)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Weight GetWeights(this SceneNode snThisThis, int inx = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThisThis</span></td>
+        <td><p>This scene node container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inx</span></td>
+        <td><p>specifies the n'th component if more than component of the given type exists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Weight.html">Weight</a></td>
+        <td><p>A weight component if contained within this container.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_Matrix_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Matrix*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_Matrix_Fusee_Engine_Core_Scene_Transform_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Matrix(Fusee.Engine.Core.Scene.Transform)">Matrix(Transform)</h4>
+  <div class="markdown level1 summary"><p>Calculates a transformation matrix from this transform component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float4x4 Matrix(this Transform transformThis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Transform.html">Transform</a></td>
+        <td><span class="parametername">transformThis</span></td>
+        <td><p>This transform component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><p>The transform component's translation, rotation and scale combined in a single matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_RemoveComponent_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_RemoveComponent_Fusee_Engine_Core_Scene_SceneNode_System_Type_System_Int32_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent(Fusee.Engine.Core.Scene.SceneNode,System.Type,System.Int32)">RemoveComponent(SceneNode, Type, Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the component with the specified type in this scene node container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveComponent(this SceneNode snThisThis, Type type, int inx = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThisThis</span></td>
+        <td><p>This scene node container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the component to look for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inx</span></td>
+        <td><p>specifies the n'th component if more than component of the given type exists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_RemoveComponent_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_RemoveComponent__1_Fusee_Engine_Core_Scene_SceneNode_System_Int32_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponent``1(Fusee.Engine.Core.Scene.SceneNode,System.Int32)">RemoveComponent&lt;TComp&gt;(SceneNode, Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the component with the specified type in this scene node container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveComponent&lt;TComp&gt;(this SceneNode snThisThis, int inx = 0)
+    where TComp : SceneComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThisThis</span></td>
+        <td><p>This scene node container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inx</span></td>
+        <td><p>specifies the n'th component if more than component of the given type exists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TComp</span></td>
+        <td><p>The type of the component to look for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_RemoveComponentsInChildren_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_RemoveComponentsInChildren_Fusee_Engine_Core_Scene_SceneNode_System_Type_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren(Fusee.Engine.Core.Scene.SceneNode,System.Type)">RemoveComponentsInChildren(SceneNode, Type)</h4>
+  <div class="markdown level1 summary"><p>Removes the components with the specified type and the sub-types in the children of this scene node container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveComponentsInChildren(this SceneNode snThisThis, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThisThis</span></td>
+        <td><p>This scene node container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the components to look for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_RemoveComponentsInChildren_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_RemoveComponentsInChildren__1_Fusee_Engine_Core_Scene_SceneNode_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.RemoveComponentsInChildren``1(Fusee.Engine.Core.Scene.SceneNode)">RemoveComponentsInChildren&lt;TComp&gt;(SceneNode)</h4>
+  <div class="markdown level1 summary"><p>Removes components with the specified type in the children of this scene node container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveComponentsInChildren&lt;TComp&gt;(this SceneNode snThisThis)
+    where TComp : SceneComponent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThisThis</span></td>
+        <td><p>This scene node container.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TComp</span></td>
+        <td><p>The type of the components to look for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_Rotate_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Rotate*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_Rotate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float3_Fusee_Engine_Core_Scene_SceneExtensions_Space_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Engine.Core.Scene.SceneExtensions.Space)">Rotate(Transform, float3, SceneExtensions.Space)</h4>
+  <div class="markdown level1 summary"><p>Rotates this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Rotate(this Transform tc, float3 xyz, SceneExtensions.Space space = SceneExtensions.Space.Model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Transform.html">Transform</a></td>
+        <td><span class="parametername">tc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">xyz</span></td>
+        <td><p>Rotation amount as float3.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.Space.html">SceneExtensions.Space</a></td>
+        <td><span class="parametername">space</span></td>
+        <td><p>Rotation in reference to model or world space.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_Rotate_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Rotate*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_Rotate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float4x4_Fusee_Engine_Core_Scene_SceneExtensions_Space_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4,Fusee.Engine.Core.Scene.SceneExtensions.Space)">Rotate(Transform, float4x4, SceneExtensions.Space)</h4>
+  <div class="markdown level1 summary"><p>Rotates this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Rotate(this Transform tc, float4x4 rotationMtx, SceneExtensions.Space space = SceneExtensions.Space.Model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Transform.html">Transform</a></td>
+        <td><span class="parametername">tc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">rotationMtx</span></td>
+        <td><p>Rotation amount as represented in float4x4.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.Space.html">SceneExtensions.Space</a></td>
+        <td><span class="parametername">space</span></td>
+        <td><p>Rotation in reference to model or world space.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_Rotate_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Rotate*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_Rotate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_Quaternion_Fusee_Engine_Core_Scene_SceneExtensions_Space_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.Quaternion,Fusee.Engine.Core.Scene.SceneExtensions.Space)">Rotate(Transform, Quaternion, SceneExtensions.Space)</h4>
+  <div class="markdown level1 summary"><p>Rotates this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Rotate(this Transform tc, Quaternion quaternion, SceneExtensions.Space space = SceneExtensions.Space.Model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Transform.html">Transform</a></td>
+        <td><span class="parametername">tc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">quaternion</span></td>
+        <td><p>Rotation amount in Quaternion.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.Space.html">SceneExtensions.Space</a></td>
+        <td><span class="parametername">space</span></td>
+        <td><p>Rotation in reference to model or world space.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_RotateAround_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.RotateAround*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_RotateAround_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float3_Fusee_Math_Core_float3_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Math.Core.float3)">RotateAround(Transform, float3, float3)</h4>
+  <div class="markdown level1 summary"><p>Roates around a given center and angle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RotateAround(this Transform tc, float3 center, float3 angles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Transform.html">Transform</a></td>
+        <td><span class="parametername">tc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">center</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">angles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_ToScene_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.ToScene*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_ToScene_Fusee_Engine_Core_Scene_SceneNode_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.ToScene(Fusee.Engine.Core.Scene.SceneNode)">ToScene(SceneNode)</h4>
+  <div class="markdown level1 summary"><p>Converts the SceneNode to a Scene</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SceneContainer ToScene(this SceneNode snThis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td><span class="parametername">snThis</span></td>
+        <td><p>this node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_ToSceneNode_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.ToSceneNode*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_ToSceneNode_Fusee_Engine_Core_Scene_SceneContainer_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.ToSceneNode(Fusee.Engine.Core.Scene.SceneContainer)">ToSceneNode(SceneContainer)</h4>
+  <div class="markdown level1 summary"><p>Converts the Scene to a SceneNode with a separate Transform</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SceneNode ToSceneNode(this SceneContainer sc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a></td>
+        <td><span class="parametername">sc</span></td>
+        <td><p>this node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_Translate_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Translate*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_Translate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float3_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3)">Translate(Transform, float3)</h4>
+  <div class="markdown level1 summary"><p>Translate this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Translate(this Transform tc, float3 xyz)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Transform.html">Transform</a></td>
+        <td><span class="parametername">tc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">xyz</span></td>
+        <td><p>Translation amount as float3.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_Translate_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Translate*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_Translate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float4x4_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Translate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4)">Translate(Transform, float4x4)</h4>
+  <div class="markdown level1 summary"><p>Translates a transform component with a specified float4x4 translation matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Translate(this Transform tc, float4x4 translationMtx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Transform.html">Transform</a></td>
+        <td><span class="parametername">tc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">translationMtx</span></td>
+        <td><p>Translation amount as represented in float4x4.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

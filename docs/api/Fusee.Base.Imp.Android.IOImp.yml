@@ -5,7 +5,7 @@ items:
   id: IOImp
   parent: Fusee.Base.Imp.Android
   children:
-  - Fusee.Base.Imp.Android.IOImp.#ctor(Android.Content.Context)
+  - Fusee.Base.Imp.Android.IOImp.#ctor(Context)
   - Fusee.Base.Imp.Android.IOImp.StreamFromFile(System.String,Fusee.Base.Common.FileMode)
   langs:
   - csharp
@@ -15,12 +15,8 @@ items:
   fullName: Fusee.Base.Imp.Android.IOImp
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/IOImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: IOImp
-    path: src/Fusee/src/Base/Imp/Android/IOImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\IOImp.cs
     startLine: 9
   assemblies:
   - Fusee.Base.Imp.Android
@@ -28,46 +24,35 @@ items:
   summary: "\nImplementation (platform dependent) for IO related functionality not supported by portable libraries.\n"
   example: []
   syntax:
-    content: 'public class IOImp : IIOImp'
+    content: 'public class IOImp : object, IIOImp'
     content.vb: >-
       Public Class IOImp
+          Inherits Object
           Implements IIOImp
   inheritance:
   - System.Object
   implements:
   - Fusee.Base.Common.IIOImp
-  inheritedMembers:
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ToString
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   modifiers.csharp:
   - public
   - class
   modifiers.vb:
   - Public
   - Class
-- uid: Fusee.Base.Imp.Android.IOImp.#ctor(Android.Content.Context)
-  commentId: M:Fusee.Base.Imp.Android.IOImp.#ctor(Android.Content.Context)
-  id: '#ctor(Android.Content.Context)'
+- uid: Fusee.Base.Imp.Android.IOImp.#ctor(Context)
+  commentId: M:Fusee.Base.Imp.Android.IOImp.#ctor(Context)
+  id: '#ctor(Context)'
   parent: Fusee.Base.Imp.Android.IOImp
   langs:
   - csharp
   - vb
   name: IOImp(Context)
   nameWithType: IOImp.IOImp(Context)
-  fullName: Fusee.Base.Imp.Android.IOImp.IOImp(Android.Content.Context)
+  fullName: Fusee.Base.Imp.Android.IOImp.IOImp(Context)
   type: Constructor
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/IOImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: src/Fusee/src/Base/Imp/Android/IOImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\IOImp.cs
     startLine: 12
   assemblies:
   - Fusee.Base.Imp.Android
@@ -76,7 +61,7 @@ items:
     content: public IOImp(Context androidContext)
     parameters:
     - id: androidContext
-      type: Android.Content.Context
+      type: Context
     content.vb: Public Sub New(androidContext As Context)
   overload: Fusee.Base.Imp.Android.IOImp.#ctor*
   modifiers.csharp:
@@ -95,17 +80,13 @@ items:
   fullName: Fusee.Base.Imp.Android.IOImp.StreamFromFile(System.String, Fusee.Base.Common.FileMode)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Imp/Android/IOImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: StreamFromFile
-    path: src/Fusee/src/Base/Imp/Android/IOImp.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\IOImp.cs
     startLine: 26
   assemblies:
   - Fusee.Base.Imp.Android
   namespace: Fusee.Base.Imp.Android
-  summary: "\nOpens a file and returns its contents as a <xref href=\"System.IO.Stream\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  summary: "\nOpens a file and returns its contents as a <see cref=\"!:Stream\"></see>.\n"
   example: []
   syntax:
     content: public Stream StreamFromFile(string path, FileMode mode)
@@ -117,12 +98,10 @@ items:
       type: Fusee.Base.Common.FileMode
       description: The file mode (read, write, append).
     return:
-      type: System.IO.Stream
+      type: Stream
       description: "\nThe stream specified by path.\n"
     content.vb: Public Function StreamFromFile(path As String, mode As FileMode) As Stream
   overload: Fusee.Base.Imp.Android.IOImp.StreamFromFile*
-  implements:
-  - Fusee.Base.Common.IIOImp.StreamFromFile(System.String,Fusee.Base.Common.FileMode)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -146,285 +125,6 @@ references:
   name: IIOImp
   nameWithType: IIOImp
   fullName: Fusee.Base.Common.IIOImp
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -441,84 +141,16 @@ references:
   name: IOImp
   nameWithType: IOImp.IOImp
   fullName: Fusee.Base.Imp.Android.IOImp.IOImp
-- uid: Android.Content.Context
-  commentId: T:Android.Content.Context
-  parent: Android.Content
+- uid: Context
   isExternal: true
   name: Context
   nameWithType: Context
-  fullName: Android.Content.Context
-- uid: Android.Content
-  commentId: N:Android.Content
-  isExternal: true
-  name: Android.Content
-  nameWithType: Android.Content
-  fullName: Android.Content
-- uid: System.IO.Stream
-  commentId: T:System.IO.Stream
-  parent: System.IO
-  isExternal: true
-  name: Stream
-  nameWithType: Stream
-  fullName: System.IO.Stream
+  fullName: Context
 - uid: Fusee.Base.Imp.Android.IOImp.StreamFromFile*
   commentId: Overload:Fusee.Base.Imp.Android.IOImp.StreamFromFile
   name: StreamFromFile
   nameWithType: IOImp.StreamFromFile
   fullName: Fusee.Base.Imp.Android.IOImp.StreamFromFile
-- uid: Fusee.Base.Common.IIOImp.StreamFromFile(System.String,Fusee.Base.Common.FileMode)
-  commentId: M:Fusee.Base.Common.IIOImp.StreamFromFile(System.String,Fusee.Base.Common.FileMode)
-  parent: Fusee.Base.Common.IIOImp
-  isExternal: true
-  name: StreamFromFile(String, FileMode)
-  nameWithType: IIOImp.StreamFromFile(String, FileMode)
-  fullName: Fusee.Base.Common.IIOImp.StreamFromFile(System.String, Fusee.Base.Common.FileMode)
-  spec.csharp:
-  - uid: Fusee.Base.Common.IIOImp.StreamFromFile(System.String,Fusee.Base.Common.FileMode)
-    name: StreamFromFile
-    nameWithType: IIOImp.StreamFromFile
-    fullName: Fusee.Base.Common.IIOImp.StreamFromFile
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: Fusee.Base.Common.FileMode
-    name: FileMode
-    nameWithType: FileMode
-    fullName: Fusee.Base.Common.FileMode
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Fusee.Base.Common.IIOImp.StreamFromFile(System.String,Fusee.Base.Common.FileMode)
-    name: StreamFromFile
-    nameWithType: IIOImp.StreamFromFile
-    fullName: Fusee.Base.Common.IIOImp.StreamFromFile
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: Fusee.Base.Common.FileMode
-    name: FileMode
-    nameWithType: FileMode
-    fullName: Fusee.Base.Common.FileMode
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -532,9 +164,8 @@ references:
   name: FileMode
   nameWithType: FileMode
   fullName: Fusee.Base.Common.FileMode
-- uid: System.IO
-  commentId: N:System.IO
+- uid: Stream
   isExternal: true
-  name: System.IO
-  nameWithType: System.IO
-  fullName: System.IO
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream

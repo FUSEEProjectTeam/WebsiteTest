@@ -34,12 +34,8 @@ items:
   fullName: Fusee.Math.Core.AABBd
   type: Struct
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: AABBd
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 9
   assemblies:
   - Fusee.Math.Core
@@ -47,13 +43,23 @@ items:
   summary: "\nRepresents an axis aligned bounding box.\n"
   example: []
   syntax:
-    content: public struct AABBd
-    content.vb: Public Structure AABBd
+    content: >-
+      [ProtoContract]
+
+      public struct AABBd
+    content.vb: >-
+      <ProtoContract>
+
+      Public Structure AABBd
   inheritedMembers:
   - System.ValueType.ToString
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - struct
@@ -72,12 +78,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.min
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: min
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 16
   assemblies:
   - Fusee.Math.Core
@@ -85,10 +87,22 @@ items:
   summary: "\nThe minimum values of the axis aligned bounding box in x, y and z direction\n"
   example: []
   syntax:
-    content: public double3 min
+    content: >-
+      [ProtoMember(1)]
+
+      public double3 min
     return:
       type: Fusee.Math.Core.double3
-    content.vb: Public min As double3
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public min As double3
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -105,12 +119,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.max
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: max
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 21
   assemblies:
   - Fusee.Math.Core
@@ -118,10 +128,22 @@ items:
   summary: "\nThe maximum values of the axis aligned bounding box in x, y and z direction\n"
   example: []
   syntax:
-    content: public double3 max
+    content: >-
+      [ProtoMember(2)]
+
+      public double3 max
     return:
       type: Fusee.Math.Core.double3
-    content.vb: Public max As double3
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public max As double3
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -138,12 +160,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.AABBd(Fusee.Math.Core.double3, Fusee.Math.Core.double3)
   type: Constructor
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 28
   assemblies:
   - Fusee.Math.Core
@@ -177,12 +195,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.Multiply(Fusee.Math.Core.double4x4, Fusee.Math.Core.AABBd)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Multiply
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 42
   assemblies:
   - Fusee.Math.Core
@@ -221,12 +235,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.ExclusiveOr(System.Func<Fusee.Math.Core.double3, Fusee.Math.Core.double3>, Fusee.Math.Core.AABBd)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_ExclusiveOr
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 84
   assemblies:
   - Fusee.Math.Core
@@ -268,12 +278,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.Union(Fusee.Math.Core.AABBd, Fusee.Math.Core.AABBd)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Union
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 124
   assemblies:
   - Fusee.Math.Core
@@ -312,12 +318,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.Union(Fusee.Math.Core.AABBd, Fusee.Math.Core.double3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Union
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 142
   assemblies:
   - Fusee.Math.Core
@@ -356,12 +358,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.BitwiseOr(Fusee.Math.Core.AABBd, Fusee.Math.Core.AABBd)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_BitwiseOr
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 160
   assemblies:
   - Fusee.Math.Core
@@ -400,12 +398,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.BitwiseOr(Fusee.Math.Core.AABBd, Fusee.Math.Core.double3)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_BitwiseOr
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 176
   assemblies:
   - Fusee.Math.Core
@@ -445,12 +439,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.Center
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Center
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 181
   assemblies:
   - Fusee.Math.Core
@@ -482,12 +472,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.Size
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Size
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 189
   assemblies:
   - Fusee.Math.Core
@@ -519,12 +505,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.Intersects(Fusee.Math.Core.AABBd)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Intersects
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 199
   assemblies:
   - Fusee.Math.Core
@@ -558,12 +540,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.Intersects(Fusee.Math.Core.double3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Intersects
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 211
   assemblies:
   - Fusee.Math.Core
@@ -597,12 +575,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.InsideOrIntersectingFrustum(Fusee.Math.Core.PlaneD[])
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: InsideOrIntersectingFrustum
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 222
   assemblies:
   - Fusee.Math.Core
@@ -639,12 +613,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.InsideOrIntersectingPlane(Fusee.Math.Core.PlaneD)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: InsideOrIntersectingPlane
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 237
   assemblies:
   - Fusee.Math.Core
@@ -678,12 +648,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.Intersects(Fusee.Math.Core.AABBd, Fusee.Math.Core.AABBd)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Intersects
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 248
   assemblies:
   - Fusee.Math.Core
@@ -722,12 +688,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.Intersects(Fusee.Math.Core.AABBd, Fusee.Math.Core.double3)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Intersects
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 259
   assemblies:
   - Fusee.Math.Core
@@ -766,12 +728,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.Equality(Fusee.Math.Core.AABBd, Fusee.Math.Core.AABBd)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Equality
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 269
   assemblies:
   - Fusee.Math.Core
@@ -809,12 +767,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.Inequality(Fusee.Math.Core.AABBd, Fusee.Math.Core.AABBd)
   type: Operator
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: op_Inequality
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 279
   assemblies:
   - Fusee.Math.Core
@@ -852,12 +806,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.Equals(System.Object)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Equals
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 289
   assemblies:
   - Fusee.Math.Core
@@ -894,12 +844,8 @@ items:
   fullName: Fusee.Math.Core.AABBd.GetHashCode()
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Math/Core/AABBd.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetHashCode
-    path: src/Fusee/src/Math/Core/AABBd.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\AABBd.cs
     startLine: 300
   assemblies:
   - Fusee.Math.Core

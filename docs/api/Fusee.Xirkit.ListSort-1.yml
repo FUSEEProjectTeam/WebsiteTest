@@ -14,12 +14,8 @@ items:
   fullName: Fusee.Xirkit.ListSort<TValue>
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Xirkit/ListSort.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ListSort
-    path: src/Fusee/src/Xirkit/ListSort.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Xirkit\ListSort.cs
     startLine: 8
   assemblies:
   - Fusee.Xirkit
@@ -67,27 +63,23 @@ items:
   fullName: Fusee.Xirkit.ListSort<TValue>.Compare(Fusee.Xirkit.Keyframe<TValue>, Fusee.Xirkit.Keyframe<TValue>)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Xirkit/ListSort.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Compare
-    path: src/Fusee/src/Xirkit/ListSort.cs
-    startLine: 15
+    path: C:\Users\test\Documents\fusee\Fusee\src\Xirkit\ListSort.cs
+    startLine: 17
   assemblies:
   - Fusee.Xirkit
   namespace: Fusee.Xirkit
-  summary: "\nCompares 2 Objects and shows through the returned value, whether an Object is smaller, bigger or equals the other Objects.\n"
+  summary: "\nCompares 2 Objekts and shows through the returned value, wheater an Objekt is smaller, bigger or equals the other Objekts.\n"
   example: []
   syntax:
     content: public int Compare(Keyframe<TValue> x, Keyframe<TValue> y)
     parameters:
     - id: x
       type: Fusee.Xirkit.Keyframe{{TValue}}
-      description: The first Object that shall be compared.
+      description: The first Objekt that shall be compared.
     - id: y
       type: Fusee.Xirkit.Keyframe{{TValue}}
-      description: The second Object that shall be compared.
+      description: The second Objekt that shall be compared.
     return:
       type: System.Int32
     content.vb: Public Function Compare(x As Keyframe(Of TValue), y As Keyframe(Of TValue)) As Integer

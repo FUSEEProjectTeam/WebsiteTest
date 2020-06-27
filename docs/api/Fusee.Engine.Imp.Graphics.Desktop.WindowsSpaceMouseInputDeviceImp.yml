@@ -5,7 +5,7 @@ items:
   id: WindowsSpaceMouseInputDeviceImp
   parent: Fusee.Engine.Imp.Graphics.Desktop
   children:
-  - Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(GameWindow)
+  - Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(OpenTK.GameWindow)
   - Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._RX
   - Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._RY
   - Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._RZ
@@ -32,17 +32,13 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: WindowsSpaceMouseInputDeviceImp
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 142
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
-  summary: "\nSMI input device implementation for the Windows platform. This implementation directly\nsniffs at the render window&apos;s message pump (identified by the <see cref=\"!:GameWindow\"></see> parameter passed\nto the constructor) to receive \n<a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/hh454904(v=vs.85).aspx\">WM_POINTER</a> messages.\n"
+  summary: "\nSMI input device implementation for the Windows platform. This implementation directly\nsniffs at the render window&apos;s message pump (identified by the <xref href=\"OpenTK.GameWindow\" data-throw-if-not-resolved=\"false\"></xref> parameter passed\nto the constructor) to receive \n<a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/hh454904(v=vs.85).aspx\">WM_POINTER</a> messages.\n"
   example: []
   syntax:
     content: 'public class WindowsSpaceMouseInputDeviceImp : IInputDeviceImp'
@@ -67,24 +63,20 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(GameWindow)
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(GameWindow)
-  id: '#ctor(GameWindow)'
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(OpenTK.GameWindow)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(OpenTK.GameWindow)
+  id: '#ctor(OpenTK.GameWindow)'
   parent: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp
   langs:
   - csharp
   - vb
   name: WindowsSpaceMouseInputDeviceImp(GameWindow)
   nameWithType: WindowsSpaceMouseInputDeviceImp.WindowsSpaceMouseInputDeviceImp(GameWindow)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.WindowsSpaceMouseInputDeviceImp(GameWindow)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.WindowsSpaceMouseInputDeviceImp(OpenTK.GameWindow)
   type: Constructor
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 245
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -95,7 +87,7 @@ items:
     content: public WindowsSpaceMouseInputDeviceImp(GameWindow gameWindow)
     parameters:
     - id: gameWindow
-      type: GameWindow
+      type: OpenTK.GameWindow
       description: "The game window to hook on to receive \n<a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/hh454904(v=vs.85).aspx\">WM_POINTER</a> messages."
     content.vb: Public Sub New(gameWindow As GameWindow)
   overload: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor*
@@ -115,12 +107,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._TX
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: _TX
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 343
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -148,12 +136,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._TY
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: _TY
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 343
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -181,12 +165,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._TZ
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: _TZ
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 343
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -214,12 +194,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._RX
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: _RX
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 343
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -247,12 +223,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._RY
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: _RY
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 343
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -280,12 +252,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._RZ
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: _RZ
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 343
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -313,12 +281,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.Id
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Id
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 348
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -352,12 +316,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.Desc
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Desc
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 353
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -391,12 +351,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.Category
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Category
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 358
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -430,12 +386,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.AxesCount
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: AxesCount
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 363
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -469,12 +421,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.AxisImpDesc
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: AxisImpDesc
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 368
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -508,12 +456,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.ButtonCount
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ButtonCount
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 384
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -547,12 +491,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.ButtonImpDesc
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ButtonImpDesc
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 390
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -586,12 +526,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.AxisValueChanged
   type: Event
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: AxisValueChanged
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 402
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -621,12 +557,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.HandleMotion(System.Object, Fusee.Engine.Imp.Graphics.Desktop._3DconnexionDriver.MotionEventArgs)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: HandleMotion
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 409
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -660,12 +592,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.ButtonValueChanged
   type: Event
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: ButtonValueChanged
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 431
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -695,12 +623,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.GetAxis(System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetAxis
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 438
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -736,12 +660,8 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.GetButton(System.Int32)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetButton
-    path: src/Fusee/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\WindowsSpaceMouseDeviceImp.cs
     startLine: 449
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
@@ -766,6 +686,13 @@ items:
   modifiers.vb:
   - Public
 references:
+- uid: OpenTK.GameWindow
+  commentId: T:OpenTK.GameWindow
+  parent: OpenTK
+  isExternal: true
+  name: GameWindow
+  nameWithType: GameWindow
+  fullName: OpenTK.GameWindow
 - uid: Fusee.Engine.Imp.Graphics.Desktop
   commentId: N:Fusee.Engine.Imp.Graphics.Desktop
   name: Fusee.Engine.Imp.Graphics.Desktop
@@ -1063,6 +990,12 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: OpenTK
+  commentId: N:OpenTK
+  isExternal: true
+  name: OpenTK
+  nameWithType: OpenTK
+  fullName: OpenTK
 - uid: System
   commentId: N:System
   isExternal: true
@@ -1084,11 +1017,6 @@ references:
   name: WindowsSpaceMouseInputDeviceImp
   nameWithType: WindowsSpaceMouseInputDeviceImp.WindowsSpaceMouseInputDeviceImp
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.WindowsSpaceMouseInputDeviceImp
-- uid: GameWindow
-  isExternal: true
-  name: GameWindow
-  nameWithType: GameWindow
-  fullName: GameWindow
 - uid: Fusee.Engine.Common.AxisImpDescription
   commentId: T:Fusee.Engine.Common.AxisImpDescription
   parent: Fusee.Engine.Common

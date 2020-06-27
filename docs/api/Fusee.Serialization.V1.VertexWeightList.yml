@@ -14,12 +14,8 @@ items:
   fullName: Fusee.Serialization.V1.VertexWeightList
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusWeight.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: VertexWeightList
-    path: src/Fusee/src/Serialization/V1/FusWeight.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusWeight.cs
     startLine: 55
   assemblies:
   - Fusee.Serialization
@@ -27,8 +23,14 @@ items:
   summary: "\nA single row of the weight table. Stored in a way respecting sparse data (only few bones control a vertex).\n"
   example: []
   syntax:
-    content: public class VertexWeightList
-    content.vb: Public Class VertexWeightList
+    content: >-
+      [ProtoContract]
+
+      public class VertexWeightList
+    content.vb: >-
+      <ProtoContract>
+
+      Public Class VertexWeightList
   inheritance:
   - System.Object
   inheritedMembers:
@@ -39,6 +41,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -57,12 +63,8 @@ items:
   fullName: Fusee.Serialization.V1.VertexWeightList.VertexWeights
   type: Property
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusWeight.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: VertexWeights
-    path: src/Fusee/src/Serialization/V1/FusWeight.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusWeight.cs
     startLine: 61
   assemblies:
   - Fusee.Serialization
@@ -70,12 +72,24 @@ items:
   summary: "\nList of bones controlling the vertex.\n"
   example: []
   syntax:
-    content: public List<VertexWeight> VertexWeights { get; set; }
+    content: >-
+      [ProtoMember(1)]
+
+      public List<VertexWeight> VertexWeights { get; set; }
     parameters: []
     return:
       type: System.Collections.Generic.List{Fusee.Serialization.V1.VertexWeight}
-    content.vb: Public Property VertexWeights As List(Of VertexWeight)
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Property VertexWeights As List(Of VertexWeight)
   overload: Fusee.Serialization.V1.VertexWeightList.VertexWeights*
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   - get

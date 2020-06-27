@@ -20,18 +20,14 @@ items:
   fullName: Fusee.Base.Common.IAssetProvider
   type: Interface
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: IAssetProvider
-    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Common\IAssetProvider.cs
     startLine: 98
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
-  summary: "\nAn AssetProvider knows how to acquire assets of certain types from a certain kind of storage.\n"
-  remarks: "\nIn a normal world, a good design would separate the many aspects of asset acquisition (storage,\nserialization, codec, asynchronicity). Unfortunately, in JavaScript-Land, it&apos;s all mixed (or should I say messed) up.\nYou tell the JavaScript API &quot;get me an image&quot; and JavaScript magically loads the raw image \ndata, converts it to a two-dimensional pixel array and calls a user-provided callback when its all done. \nNo way to replace a single step by something self-provided. \nSo this is FUSEE&apos;s pitiful approach for an asset acquisition abstraction which is capable of \nbeing implemented by poorly designed JavaScript APIs.\n"
+  summary: "\nAn AssetProvider knows how to akquire assets of certain types from a certain kind of storage.\n"
+  remarks: "\nIn a normal world, a good design would separate the many aspects of asset akquisition (storage,\nserialization, codec, asynchronicity). Unfortunately, in JavaScript-Land, it&apos;s all mixed (or should I say messed) up.\nYou tell the JavaScript API &quot;get me an image&quot; and JavaScript magically loads the raw image \ndata, converts it to a two-dimensional pixel array and calls a user-provided callback when its all done. \nNo way to replace a single step by something self-provided. \nSo this is FUSEE&apos;s pitiful approach for an asset akquisition abstraction which is capable of \nbeing implemented by poorly designed JavaScript APIs.\n"
   example: []
   syntax:
     content: public interface IAssetProvider
@@ -54,12 +50,8 @@ items:
   fullName: Fusee.Base.Common.IAssetProvider.CanHandleType(System.Type)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CanHandleType
-    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Common\IAssetProvider.cs
     startLine: 105
   assemblies:
   - Fusee.Base.Common
@@ -89,12 +81,8 @@ items:
   fullName: Fusee.Base.Common.IAssetProvider.GetAsset(System.String, System.Type)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetAsset
-    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Common\IAssetProvider.cs
     startLine: 113
   assemblies:
   - Fusee.Base.Common
@@ -127,12 +115,8 @@ items:
   fullName: Fusee.Base.Common.IAssetProvider.GetAssetAsync(System.String, System.Type)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: GetAssetAsync
-    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Common\IAssetProvider.cs
     startLine: 121
   assemblies:
   - Fusee.Base.Common
@@ -165,12 +149,8 @@ items:
   fullName: Fusee.Base.Common.IAssetProvider.CanGet(System.String, System.Type)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CanGet
-    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Common\IAssetProvider.cs
     startLine: 131
   assemblies:
   - Fusee.Base.Common
@@ -203,12 +183,8 @@ items:
   fullName: Fusee.Base.Common.IAssetProvider.CanGetAsync(System.String, System.Type)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: CanGetAsync
-    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Common\IAssetProvider.cs
     startLine: 141
   assemblies:
   - Fusee.Base.Common
@@ -241,12 +217,8 @@ items:
   fullName: Fusee.Base.Common.IAssetProvider.BeginGetAsset(System.String, Fusee.Base.Common.GetCallback)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: BeginGetAsset
-    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Common\IAssetProvider.cs
     startLine: 157
   assemblies:
   - Fusee.Base.Common
@@ -277,12 +249,8 @@ items:
   fullName: Fusee.Base.Common.IAssetProvider.RegisterTypeHandler(Fusee.Base.Common.AssetHandler)
   type: Method
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Base/Common/IAssetProvider.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: RegisterTypeHandler
-    path: src/Fusee/src/Base/Common/IAssetProvider.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Common\IAssetProvider.cs
     startLine: 168
   assemblies:
   - Fusee.Base.Common

@@ -14,12 +14,8 @@ items:
   fullName: Fusee.Engine.GUI.TextNode
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/GUI/GUINode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: TextNode
-    path: src/Fusee/src/Engine/GUI/GUINode.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUINode.cs
     startLine: 363
   assemblies:
   - Fusee.Engine.GUI
@@ -69,12 +65,8 @@ items:
   fullName: Fusee.Engine.GUI.TextNode.TextNode(System.String, System.String, System.String, System.String, Fusee.Math.Core.MinMaxRect, Fusee.Math.Core.MinMaxRect, Fusee.Engine.Core.FontMap, Fusee.Math.Core.float4, Fusee.Engine.Core.Scene.HorizontalTextAlignment, Fusee.Engine.Core.Scene.VerticalTextAlignment)
   type: Constructor
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Engine/GUI/GUINode.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: src/Fusee/src/Engine/GUI/GUINode.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUINode.cs
     startLine: 378
   assemblies:
   - Fusee.Engine.GUI
@@ -82,7 +74,7 @@ items:
   summary: "\nInitializes a new instance of the <xref href=\"Fusee.Engine.GUI.TextNode\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
   example: []
   syntax:
-    content: public TextNode(string text, string name, string vs, string ps, MinMaxRect anchors, MinMaxRect offsets, FontMap fontMap, float4 color, HorizontalTextAlignment horizontalAlignment = HorizontalTextAlignment.Left, VerticalTextAlignment verticalTextAlignment = VerticalTextAlignment.Top)
+    content: public TextNode(string text, string name, string vs, string ps, MinMaxRect anchors, MinMaxRect offsets, FontMap fontMap, float4 color, HorizontalTextAlignment horizontalAlignment = HorizontalTextAlignment.LEFT, VerticalTextAlignment verticalTextAlignment = VerticalTextAlignment.TOP)
     parameters:
     - id: text
       type: System.String
@@ -114,7 +106,7 @@ items:
     - id: verticalTextAlignment
       type: Fusee.Engine.Core.Scene.VerticalTextAlignment
       description: The <xref href="Fusee.Engine.Core.Scene.HorizontalTextAlignment" data-throw-if-not-resolved="false"></xref> defines the text&apos;s placement along the enclosing <xref href="Fusee.Math.Core.MinMaxRect" data-throw-if-not-resolved="false"></xref>&apos;s y-axis.
-    content.vb: Public Sub New(text As String, name As String, vs As String, ps As String, anchors As MinMaxRect, offsets As MinMaxRect, fontMap As FontMap, color As float4, horizontalAlignment As HorizontalTextAlignment = HorizontalTextAlignment.Left, verticalTextAlignment As VerticalTextAlignment = VerticalTextAlignment.Top)
+    content.vb: Public Sub New(text As String, name As String, vs As String, ps As String, anchors As MinMaxRect, offsets As MinMaxRect, fontMap As FontMap, color As float4, horizontalAlignment As HorizontalTextAlignment = HorizontalTextAlignment.LEFT, verticalTextAlignment As VerticalTextAlignment = VerticalTextAlignment.TOP)
   overload: Fusee.Engine.GUI.TextNode.#ctor*
   modifiers.csharp:
   - public

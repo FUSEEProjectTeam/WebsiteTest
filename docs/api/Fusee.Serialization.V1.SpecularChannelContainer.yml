@@ -15,12 +15,8 @@ items:
   fullName: Fusee.Serialization.V1.SpecularChannelContainer
   type: Class
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: SpecularChannelContainer
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 37
   assemblies:
   - Fusee.Serialization
@@ -28,8 +24,13 @@ items:
   summary: "\nThe specular channel definition. \n"
   example: []
   syntax:
-    content: 'public class SpecularChannelContainer : MatChannelContainer'
+    content: >-
+      [ProtoContract]
+
+      public class SpecularChannelContainer : MatChannelContainer
     content.vb: >-
+      <ProtoContract>
+
       Public Class SpecularChannelContainer
           Inherits MatChannelContainer
   inheritance:
@@ -46,6 +47,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -64,12 +69,8 @@ items:
   fullName: Fusee.Serialization.V1.SpecularChannelContainer.Shininess
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Shininess
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 44
   assemblies:
   - Fusee.Serialization
@@ -77,10 +78,22 @@ items:
   summary: "\nThe material&apos;s shininess.\n"
   example: []
   syntax:
-    content: public float Shininess
+    content: >-
+      [ProtoMember(1)]
+
+      public float Shininess
     return:
       type: System.Single
-    content.vb: Public Shininess As Single
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Shininess As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -97,12 +110,8 @@ items:
   fullName: Fusee.Serialization.V1.SpecularChannelContainer.Intensity
   type: Field
   source:
-    remote:
-      path: src/DocFX/src/Fusee/src/Serialization/V1/FusMaterial.cs
-      branch: master
-      repo: https://github.com/FUSEEProjectTeam/WebsiteTest.git
     id: Intensity
-    path: src/Fusee/src/Serialization/V1/FusMaterial.cs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 50
   assemblies:
   - Fusee.Serialization
@@ -110,10 +119,22 @@ items:
   summary: "\nThe specular intensity.\n"
   example: []
   syntax:
-    content: public float Intensity
+    content: >-
+      [ProtoMember(2)]
+
+      public float Intensity
     return:
       type: System.Single
-    content.vb: Public Intensity As Single
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Intensity As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
