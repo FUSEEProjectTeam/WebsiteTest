@@ -59,30 +59,6 @@ in your project directory.
 
 -------------
 
-## Publish as Web App and start in Browser
-
-1. In Visual Studio Code's Debug Side Bar, select `Start in FUSEE Web Player` from the drop-down box next
-   to the green arrow.
-
-2. Click on the green arrow. This will start the following process:
-   - If not already done, your project will be built.
-   - The compiled code with your App's functionality will be cross-compiled to JavaScript
-   - The resulting JavaScript will be embedded into a cross-compiled version of the FUSEE Player
-   - A local Web Server will be started hosting the generated Web App on port 4655 (Hex-Ascii for "FU").
-   - Your System's default browser will be started on "localhost:4655" to display your FUSEE Web App
-
-3. As a result, you should see your new web-ified FUSEE App a inside a web browser. Don't forget to 
-   click on the "Stop" button (red square) in Visual Studio Code after closing the browser window.
-
-4. The "publish as web app" process generated the Web App below `MyFirstFuseeApp/pub/Web`. Look at the 
-   folder contents. Simply copy the entire folder contents to some Web Space to deploy your FUSEE App
-   to the world.
-
-#### Screen Cast: Publish as Web App and start in Browser
-![Publish as Web App](images/publishaswebapp.gif)
-
--------------
-
 ## Things to know
 
 Now that you created your first FUSEE App, there are some things to know about the build process.
@@ -95,14 +71,19 @@ example above this would be `MyFirstFuseeApp/`.
 Build/Publish/Run Step |  Visual Studio Code command  |  Console command line 
 -----------------------|------------------------------|-----------------------
 Build                  | Tasks &rarr; Run Build Task... &rarr; build | `dotnet build`
-Publish Web App        | Tasks &rarr; Run Build Task... &rarr; Publish FUSEE Web App | `fusee publish -p Web`
-Run Web App            | Debug Side Bar &rarr; Start in FUSEE Web Player | `fusee server pub/Web`
+Publish .FUZ App       | Terminal &rarr; Run Build Task... |
 Publish Desktop App    | Tasks &rarr; Run Build Task... &rarr; Publish FUSEE Desktop App | `fusee publish -p Desktop`
 
 ### Publishing as Desktop App
 
-As mentioned in the table above, in addition to publishing to the Web there is also a build step available allowing you to 
+As mentioned in the table above, there is a build step available allowing you to 
 publish your Desktop App (as .exe file). The result will be written to `pub/Desktop`.
+
+### Publishing as .FUZ App
+To create the project as .FUZ, you have to select the build task in Visual Studio Code. 
+Either in the Terminal tab under Run Build Task or with the key combination CTRL-Shift-B. 
+The file is then in the bin folder
+
 
 
 ### Project folder naming rules

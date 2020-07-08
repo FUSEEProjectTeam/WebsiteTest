@@ -118,31 +118,6 @@ view the rocket from different angles by clicking and dragging the mouse.</p>
 <p>If you're curious how your FUSEE App works look at the source code file <code>MyFirstFuseeApp.cs</code> that was generated
 in your project directory.</p>
 <hr>
-<h2 id="publish-as-web-app-and-start-in-browser">Publish as Web App and start in Browser</h2>
-<ol>
-<li><p>In Visual Studio Code's Debug Side Bar, select <code>Start in FUSEE Web Player</code> from the drop-down box next
-to the green arrow.</p>
-</li>
-<li><p>Click on the green arrow. This will start the following process:</p>
-<ul>
-<li>If not already done, your project will be built.</li>
-<li>The compiled code with your App's functionality will be cross-compiled to JavaScript</li>
-<li>The resulting JavaScript will be embedded into a cross-compiled version of the FUSEE Player</li>
-<li>A local Web Server will be started hosting the generated Web App on port 4655 (Hex-Ascii for &quot;FU&quot;).</li>
-<li>Your System's default browser will be started on &quot;localhost:4655&quot; to display your FUSEE Web App</li>
-</ul>
-</li>
-<li><p>As a result, you should see your new web-ified FUSEE App a inside a web browser. Don't forget to
-click on the &quot;Stop&quot; button (red square) in Visual Studio Code after closing the browser window.</p>
-</li>
-<li><p>The &quot;publish as web app&quot; process generated the Web App below <code>MyFirstFuseeApp/pub/Web</code>. Look at the
-folder contents. Simply copy the entire folder contents to some Web Space to deploy your FUSEE App
-to the world.</p>
-</li>
-</ol>
-<h4 id="screen-cast-publish-as-web-app-and-start-in-browser">Screen Cast: Publish as Web App and start in Browser</h4>
-<p><img src="images/publishaswebapp.gif" alt="Publish as Web App"></p>
-<hr>
 <h2 id="things-to-know">Things to know</h2>
 <p>Now that you created your first FUSEE App, there are some things to know about the build process.</p>
 <h3 id="console-commands">Console commands</h3>
@@ -164,14 +139,9 @@ example above this would be <code>MyFirstFuseeApp/</code>.</p>
 <td><code>dotnet build</code></td>
 </tr>
 <tr>
-<td>Publish Web App</td>
-<td>Tasks → Run Build Task... → Publish FUSEE Web App</td>
-<td><code>fusee publish -p Web</code></td>
-</tr>
-<tr>
-<td>Run Web App</td>
-<td>Debug Side Bar → Start in FUSEE Web Player</td>
-<td><code>fusee server pub/Web</code></td>
+<td>Publish .FUZ App</td>
+<td>Terminal → Run Build Task...</td>
+<td></td>
 </tr>
 <tr>
 <td>Publish Desktop App</td>
@@ -181,8 +151,12 @@ example above this would be <code>MyFirstFuseeApp/</code>.</p>
 </tbody>
 </table>
 <h3 id="publishing-as-desktop-app">Publishing as Desktop App</h3>
-<p>As mentioned in the table above, in addition to publishing to the Web there is also a build step available allowing you to
+<p>As mentioned in the table above, there is a build step available allowing you to
 publish your Desktop App (as .exe file). The result will be written to <code>pub/Desktop</code>.</p>
+<h3 id="publishing-as-fuz-app">Publishing as .FUZ App</h3>
+<p>To create the project as .FUZ, you have to select the build task in Visual Studio Code.
+Either in the Terminal tab under Run Build Task or with the key combination CTRL-Shift-B.
+The file is then in the bin folder</p>
 <h3 id="project-folder-naming-rules">Project folder naming rules</h3>
 <p>When creating new FUSEE Apps in the way described above, several things in your new project will be named
 after your project folder. Make sure your folder name obeys to the C# identifier rules. Roughly, that means:</p>

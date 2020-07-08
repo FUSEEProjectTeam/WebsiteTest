@@ -13,33 +13,27 @@ weight: 20
 Before following the FUSEE installation instructions on this page, make sure all
 [Necessary Tools](../necessary-tools/) are installed.
 
-## Installation
+## Installing
 
-- Download the latest 
-  [FUSEE Release](https://github.com/FUSEEProjectTeam/Fusee/releases/latest) 
-  from the 
-  [FUSEE GitHub Repository](https://github.com/FUSEEProjectTeam/Fusee/releases).
+`dotnet tool install -g Fusee.Tools.CmdLine`
 
-- Copy or move the downloaded `Fusee_v0.7.0.exe` to a convenient place on your hard drive. This will
-  become the home of your FUSEE installation.
+On HFU Pcs you in addition have to `set PATH=%PATH%;%USERPROFILE%\.dotnet\tools`
 
->  **IMPORTANT:** On some systems, the executable file is blocked and it may fail to run.
->  Before double-clicking it, [unblock](https://blogs.msdn.microsoft.com/delay/p/unblockingdownloadedfile/)
->  the file `Fusee_v0.7.0.exe`.
-  
-- Double-click on the executable file.
-  This will extract its contents into a `Fusee` folder below the folder where the executable file is placed.
+## Uninstalling
 
-- In the newly extracted `Fusee` folder, 
+`dotnet tool uninstall -g Fusee.Tools.CmdLine`
 
-  - ***either*** start `SetupPerUser.bat` if you want to register the FUSEE installation only for the current user.
-    This is the only option to install FUSEE without Administrator privileges. You can simply double-click
-    on `SetupPerUser.bat`.
+## Updating
 
-  - ***or*** start `SetupMachineWide.bat`. This will perform the necessary FUSEE registration steps to enable
-    all users on a machine to use the FUSEE installation. You need to start the command with Administrator privileges,
-    otherwise the installation will fail. To start the machine-wide-installation, right-click on `SetupMachineWide.bat`
-    and select "Start as administrator" from the context-menu.
+`dotnet tool update -g Fusee.Tools.CmdLine`
+
+## Usage
+
+`fusee` and follow the help text.
+
+## Install Blender Add-on
+
+`fusee install` 
 
 ### Enable the FUSEE Export Add-On within Blender
 
