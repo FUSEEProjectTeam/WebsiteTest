@@ -182,10 +182,10 @@ items:
       description: The trans b.
     - id: invInertiaWorldA
       type: Fusee.Math.Core.float4x4
-      description: The inv inertia world a.
+      description: The inverted inertia world a.
     - id: invInertiaWorldB
       type: Fusee.Math.Core.float4x4
-      description: The inv inertia world b.
+      description: The derived inertia world b.
     content.vb: Sub CalcAngleInfo2(transA As float4x4, transB As float4x4, invInertiaWorldA As float4x4, invInertiaWorldB As float4x4)
   overload: Fusee.Engine.Common.IConeTwistConstraintImp.CalcAngleInfo2*
 - uid: Fusee.Engine.Common.IConeTwistConstraintImp.EnableMotor(System.Boolean)

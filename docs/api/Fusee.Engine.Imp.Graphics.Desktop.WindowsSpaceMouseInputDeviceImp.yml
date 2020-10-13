@@ -5,7 +5,7 @@ items:
   id: WindowsSpaceMouseInputDeviceImp
   parent: Fusee.Engine.Imp.Graphics.Desktop
   children:
-  - Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(OpenTK.GameWindow)
+  - Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(GameWindow)
   - Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._RX
   - Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._RY
   - Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._RZ
@@ -38,7 +38,7 @@ items:
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
-  summary: "\nSMI input device implementation for the Windows platform. This implementation directly\nsniffs at the render window&apos;s message pump (identified by the <xref href=\"OpenTK.GameWindow\" data-throw-if-not-resolved=\"false\"></xref> parameter passed\nto the constructor) to receive \n<a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/hh454904(v=vs.85).aspx\">WM_POINTER</a> messages.\n"
+  summary: "\nSMI input device implementation for the Windows platform. This implementation directly\nsniffs at the render window&apos;s message pump (identified by the <see cref=\"!:GameWindow\"></see> parameter passed\nto the constructor) to receive \n<a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/hh454904(v=vs.85).aspx\">WM_POINTER</a> messages.\n"
   example: []
   syntax:
     content: 'public class WindowsSpaceMouseInputDeviceImp : IInputDeviceImp'
@@ -63,16 +63,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(OpenTK.GameWindow)
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(OpenTK.GameWindow)
-  id: '#ctor(OpenTK.GameWindow)'
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(GameWindow)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(GameWindow)
+  id: '#ctor(GameWindow)'
   parent: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp
   langs:
   - csharp
   - vb
   name: WindowsSpaceMouseInputDeviceImp(GameWindow)
   nameWithType: WindowsSpaceMouseInputDeviceImp.WindowsSpaceMouseInputDeviceImp(GameWindow)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.WindowsSpaceMouseInputDeviceImp(OpenTK.GameWindow)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.WindowsSpaceMouseInputDeviceImp(GameWindow)
   type: Constructor
   source:
     id: .ctor
@@ -87,7 +87,7 @@ items:
     content: public WindowsSpaceMouseInputDeviceImp(GameWindow gameWindow)
     parameters:
     - id: gameWindow
-      type: OpenTK.GameWindow
+      type: GameWindow
       description: "The game window to hook on to receive \n<a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/hh454904(v=vs.85).aspx\">WM_POINTER</a> messages."
     content.vb: Public Sub New(gameWindow As GameWindow)
   overload: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor*
@@ -686,13 +686,6 @@ items:
   modifiers.vb:
   - Public
 references:
-- uid: OpenTK.GameWindow
-  commentId: T:OpenTK.GameWindow
-  parent: OpenTK
-  isExternal: true
-  name: GameWindow
-  nameWithType: GameWindow
-  fullName: OpenTK.GameWindow
 - uid: Fusee.Engine.Imp.Graphics.Desktop
   commentId: N:Fusee.Engine.Imp.Graphics.Desktop
   name: Fusee.Engine.Imp.Graphics.Desktop
@@ -990,12 +983,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: OpenTK
-  commentId: N:OpenTK
-  isExternal: true
-  name: OpenTK
-  nameWithType: OpenTK
-  fullName: OpenTK
 - uid: System
   commentId: N:System
   isExternal: true
@@ -1017,6 +1004,11 @@ references:
   name: WindowsSpaceMouseInputDeviceImp
   nameWithType: WindowsSpaceMouseInputDeviceImp.WindowsSpaceMouseInputDeviceImp
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.WindowsSpaceMouseInputDeviceImp
+- uid: GameWindow
+  isExternal: true
+  name: GameWindow
+  nameWithType: GameWindow
+  fullName: GameWindow
 - uid: Fusee.Engine.Common.AxisImpDescription
   commentId: T:Fusee.Engine.Common.AxisImpDescription
   parent: Fusee.Engine.Common

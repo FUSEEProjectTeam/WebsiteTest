@@ -1,0 +1,477 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.ShaderShards.Vertex.VertMain
+  commentId: T:Fusee.Engine.Core.ShaderShards.Vertex.VertMain
+  id: VertMain
+  parent: Fusee.Engine.Core.ShaderShards.Vertex
+  children:
+  - Fusee.Engine.Core.ShaderShards.Vertex.VertMain.TransformNormalByBone
+  - Fusee.Engine.Core.ShaderShards.Vertex.VertMain.TransformPosByBone
+  - Fusee.Engine.Core.ShaderShards.Vertex.VertMain.VertexMain(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  langs:
+  - csharp
+  - vb
+  name: VertMain
+  nameWithType: VertMain
+  fullName: Fusee.Engine.Core.ShaderShards.Vertex.VertMain
+  type: Class
+  source:
+    id: VertMain
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Vertex\VertMain.cs
+    startLine: 7
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Vertex
+  summary: "\nCollection of shader code strings, describing the Main method of a vertex shader.\n"
+  example: []
+  syntax:
+    content: public static class VertMain
+    content.vb: Public Module VertMain
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Fusee.Engine.Core.ShaderShards.Vertex.VertMain.TransformPosByBone
+  commentId: M:Fusee.Engine.Core.ShaderShards.Vertex.VertMain.TransformPosByBone
+  id: TransformPosByBone
+  parent: Fusee.Engine.Core.ShaderShards.Vertex.VertMain
+  langs:
+  - csharp
+  - vb
+  name: TransformPosByBone()
+  nameWithType: VertMain.TransformPosByBone()
+  fullName: Fusee.Engine.Core.ShaderShards.Vertex.VertMain.TransformPosByBone()
+  type: Method
+  source:
+    id: TransformPosByBone
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Vertex\VertMain.cs
+    startLine: 14
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Vertex
+  summary: "\nReturns a GLSL method that transforms a vertex by a bone.\nReturns the transformed vertex.\nParameters: vertex position (vec3).\n"
+  example: []
+  syntax:
+    content: public static string TransformPosByBone()
+    return:
+      type: System.String
+    content.vb: Public Shared Function TransformPosByBone As String
+  overload: Fusee.Engine.Core.ShaderShards.Vertex.VertMain.TransformPosByBone*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Vertex.VertMain.TransformNormalByBone
+  commentId: M:Fusee.Engine.Core.ShaderShards.Vertex.VertMain.TransformNormalByBone
+  id: TransformNormalByBone
+  parent: Fusee.Engine.Core.ShaderShards.Vertex.VertMain
+  langs:
+  - csharp
+  - vb
+  name: TransformNormalByBone()
+  nameWithType: VertMain.TransformNormalByBone()
+  fullName: Fusee.Engine.Core.ShaderShards.Vertex.VertMain.TransformNormalByBone()
+  type: Method
+  source:
+    id: TransformNormalByBone
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Vertex\VertMain.cs
+    startLine: 34
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Vertex
+  summary: "\nReturns a GLSL method that transforms a normal by a bone.\nReturns the transformed normal.\nParameters: normal (vec3).\n"
+  example: []
+  syntax:
+    content: public static string TransformNormalByBone()
+    return:
+      type: System.String
+    content.vb: Public Shared Function TransformNormalByBone As String
+  overload: Fusee.Engine.Core.ShaderShards.Vertex.VertMain.TransformNormalByBone*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Vertex.VertMain.VertexMain(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  commentId: M:Fusee.Engine.Core.ShaderShards.Vertex.VertMain.VertexMain(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  id: VertexMain(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  parent: Fusee.Engine.Core.ShaderShards.Vertex.VertMain
+  langs:
+  - csharp
+  - vb
+  name: VertexMain(LightingSetupFlags)
+  nameWithType: VertMain.VertexMain(LightingSetupFlags)
+  fullName: Fusee.Engine.Core.ShaderShards.Vertex.VertMain.VertexMain(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  type: Method
+  source:
+    id: VertexMain
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Vertex\VertMain.cs
+    startLine: 53
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Vertex
+  summary: "\nCreates the main method for the vertex shader, used in forward rendering.\n"
+  example: []
+  syntax:
+    content: public static string VertexMain(LightingSetupFlags setup)
+    parameters:
+    - id: setup
+      type: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function VertexMain(setup As LightingSetupFlags) As String
+  overload: Fusee.Engine.Core.ShaderShards.Vertex.VertMain.VertexMain*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Fusee.Engine.Core.ShaderShards.Vertex
+  commentId: N:Fusee.Engine.Core.ShaderShards.Vertex
+  name: Fusee.Engine.Core.ShaderShards.Vertex
+  nameWithType: Fusee.Engine.Core.ShaderShards.Vertex
+  fullName: Fusee.Engine.Core.ShaderShards.Vertex
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.ShaderShards.Vertex.VertMain.TransformPosByBone*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Vertex.VertMain.TransformPosByBone
+  name: TransformPosByBone
+  nameWithType: VertMain.TransformPosByBone
+  fullName: Fusee.Engine.Core.ShaderShards.Vertex.VertMain.TransformPosByBone
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Fusee.Engine.Core.ShaderShards.Vertex.VertMain.TransformNormalByBone*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Vertex.VertMain.TransformNormalByBone
+  name: TransformNormalByBone
+  nameWithType: VertMain.TransformNormalByBone
+  fullName: Fusee.Engine.Core.ShaderShards.Vertex.VertMain.TransformNormalByBone
+- uid: Fusee.Engine.Core.ShaderShards.Vertex.VertMain.VertexMain*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Vertex.VertMain.VertexMain
+  name: VertexMain
+  nameWithType: VertMain.VertexMain
+  fullName: Fusee.Engine.Core.ShaderShards.Vertex.VertMain.VertexMain
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  commentId: T:Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  parent: Fusee.Engine.Core.ShaderShards
+  name: LightingSetupFlags
+  nameWithType: LightingSetupFlags
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+- uid: Fusee.Engine.Core.ShaderShards
+  commentId: N:Fusee.Engine.Core.ShaderShards
+  name: Fusee.Engine.Core.ShaderShards
+  nameWithType: Fusee.Engine.Core.ShaderShards
+  fullName: Fusee.Engine.Core.ShaderShards

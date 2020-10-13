@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Effects.ShaderCategory
+  commentId: T:Fusee.Engine.Core.Effects.ShaderCategory
+  id: ShaderCategory
+  parent: Fusee.Engine.Core.Effects
+  children:
+  - Fusee.Engine.Core.Effects.ShaderCategory.Fragment
+  - Fusee.Engine.Core.Effects.ShaderCategory.Geometry
+  - Fusee.Engine.Core.Effects.ShaderCategory.Vertex
+  langs:
+  - csharp
+  - vb
+  name: ShaderCategory
+  nameWithType: ShaderCategory
+  fullName: Fusee.Engine.Core.Effects.ShaderCategory
+  type: Enum
+  source:
+    id: ShaderCategory
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    startLine: 41
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nUsed to flag which shader type a <xref href=\"Fusee.Engine.Core.Effects.ShaderEffect\" data-throw-if-not-resolved=\"false\"></xref> property belongs to. \nSupports vertex, pixel and geometry shaders.\n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum ShaderCategory : ushort
+    content.vb: >-
+      <Flags>
+
+      Public Enum ShaderCategory As UShort
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Fusee.Engine.Core.Effects.ShaderCategory.Vertex
+  commentId: F:Fusee.Engine.Core.Effects.ShaderCategory.Vertex
+  id: Vertex
+  parent: Fusee.Engine.Core.Effects.ShaderCategory
+  langs:
+  - csharp
+  - vb
+  name: Vertex
+  nameWithType: ShaderCategory.Vertex
+  fullName: Fusee.Engine.Core.Effects.ShaderCategory.Vertex
+  type: Field
+  source:
+    id: Vertex
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    startLine: 47
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe parameter is only used in the vertex shader.\n"
+  example: []
+  syntax:
+    content: Vertex = 1
+    return:
+      type: Fusee.Engine.Core.Effects.ShaderCategory
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Effects.ShaderCategory.Fragment
+  commentId: F:Fusee.Engine.Core.Effects.ShaderCategory.Fragment
+  id: Fragment
+  parent: Fusee.Engine.Core.Effects.ShaderCategory
+  langs:
+  - csharp
+  - vb
+  name: Fragment
+  nameWithType: ShaderCategory.Fragment
+  fullName: Fusee.Engine.Core.Effects.ShaderCategory.Fragment
+  type: Field
+  source:
+    id: Fragment
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    startLine: 52
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe parameter is only used in the pixel shader.\n"
+  example: []
+  syntax:
+    content: Fragment = 2
+    return:
+      type: Fusee.Engine.Core.Effects.ShaderCategory
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Effects.ShaderCategory.Geometry
+  commentId: F:Fusee.Engine.Core.Effects.ShaderCategory.Geometry
+  id: Geometry
+  parent: Fusee.Engine.Core.Effects.ShaderCategory
+  langs:
+  - csharp
+  - vb
+  name: Geometry
+  nameWithType: ShaderCategory.Geometry
+  fullName: Fusee.Engine.Core.Effects.ShaderCategory.Geometry
+  type: Field
+  source:
+    id: Geometry
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    startLine: 57
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe parameter is only used in the geometry shader.\n"
+  example: []
+  syntax:
+    content: Geometry = 4
+    return:
+      type: Fusee.Engine.Core.Effects.ShaderCategory
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Fusee.Engine.Core.Effects.ShaderEffect
+  commentId: T:Fusee.Engine.Core.Effects.ShaderEffect
+  parent: Fusee.Engine.Core.Effects
+  name: ShaderEffect
+  nameWithType: ShaderEffect
+  fullName: Fusee.Engine.Core.Effects.ShaderEffect
+- uid: Fusee.Engine.Core.Effects
+  commentId: N:Fusee.Engine.Core.Effects
+  name: Fusee.Engine.Core.Effects
+  nameWithType: Fusee.Engine.Core.Effects
+  fullName: Fusee.Engine.Core.Effects
+- uid: Fusee.Engine.Core.Effects.ShaderCategory
+  commentId: T:Fusee.Engine.Core.Effects.ShaderCategory
+  parent: Fusee.Engine.Core.Effects
+  name: ShaderCategory
+  nameWithType: ShaderCategory
+  fullName: Fusee.Engine.Core.Effects.ShaderCategory

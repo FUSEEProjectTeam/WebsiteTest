@@ -1,0 +1,1479 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.MakeEffect
+  commentId: T:Fusee.Engine.Core.MakeEffect
+  id: MakeEffect
+  parent: Fusee.Engine.Core
+  children:
+  - Fusee.Engine.Core.MakeEffect.Default
+  - Fusee.Engine.Core.MakeEffect.DeferredLightingPassEffect(Fusee.Engine.Core.RenderTarget,Fusee.Engine.Core.Scene.Light,Fusee.Engine.Core.WritableArrayTexture,Fusee.Math.Core.float2[],System.Int32,Fusee.Math.Core.float4)
+  - Fusee.Engine.Core.MakeEffect.DeferredLightingPassEffect(Fusee.Engine.Core.RenderTarget,Fusee.Engine.Core.Scene.Light,Fusee.Math.Core.float4,Fusee.Engine.Common.IWritableTexture)
+  - Fusee.Engine.Core.MakeEffect.FromBRDF(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - Fusee.Engine.Core.MakeEffect.FromBRDFAlbedoTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2)
+  - Fusee.Engine.Core.MakeEffect.FromBRDFNormalTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2)
+  - Fusee.Engine.Core.MakeEffect.FromBRDFTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single,Fusee.Engine.Core.Texture,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
+  - Fusee.Engine.Core.MakeEffect.FromDiffuseSpecular(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single)
+  - Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularAlbedoTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
+  - Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularNormalTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
+  - Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single,System.Single)
+  - Fusee.Engine.Core.MakeEffect.FromUnlit(Fusee.Math.Core.float4)
+  - Fusee.Engine.Core.MakeEffect.FromUnlitAlbedoTexture(Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,Fusee.Math.Core.float2,System.Single)
+  - Fusee.Engine.Core.MakeEffect.FXAARenderTargetEffect(Fusee.Engine.Core.WritableTexture,Fusee.Math.Core.float2)
+  - Fusee.Engine.Core.MakeEffect.ShadowCubeMapEffect(Fusee.Math.Core.float4x4[])
+  - Fusee.Engine.Core.MakeEffect.ShadowMapEffect
+  - Fusee.Engine.Core.MakeEffect.SSAORenderTargetBlurEffect(Fusee.Engine.Core.WritableTexture)
+  - Fusee.Engine.Core.MakeEffect.SSAORenderTargetTextureEffect(Fusee.Engine.Core.RenderTarget,System.Int32,Fusee.Math.Core.float2,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: MakeEffect
+  nameWithType: MakeEffect
+  fullName: Fusee.Engine.Core.MakeEffect
+  type: Class
+  source:
+    id: MakeEffect
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 18
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nProvides helper methods for creating <xref href=\"Fusee.Engine.Core.Effects.ShaderEffect\" data-throw-if-not-resolved=\"false\"></xref>s.\n"
+  example: []
+  syntax:
+    content: public static class MakeEffect
+    content.vb: Public Module MakeEffect
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Fusee.Engine.Core.MakeEffect.Default
+  commentId: P:Fusee.Engine.Core.MakeEffect.Default
+  id: Default
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: MakeEffect.Default
+  fullName: Fusee.Engine.Core.MakeEffect.Default
+  type: Property
+  source:
+    id: Default
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 23
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe default <xref href=\"Fusee.Engine.Core.Effects.Effect\" data-throw-if-not-resolved=\"false\"></xref>, that is used if a <xref href=\"Fusee.Engine.Core.Scene.SceneNode\" data-throw-if-not-resolved=\"false\"></xref> has a mesh but no effect.\n"
+  example: []
+  syntax:
+    content: public static SurfaceEffect Default { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Core.Effects.SurfaceEffect
+    content.vb: Public Shared ReadOnly Property Default As SurfaceEffect
+  overload: Fusee.Engine.Core.MakeEffect.Default*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Fusee.Engine.Core.MakeEffect.FXAARenderTargetEffect(Fusee.Engine.Core.WritableTexture,Fusee.Math.Core.float2)
+  commentId: M:Fusee.Engine.Core.MakeEffect.FXAARenderTargetEffect(Fusee.Engine.Core.WritableTexture,Fusee.Math.Core.float2)
+  id: FXAARenderTargetEffect(Fusee.Engine.Core.WritableTexture,Fusee.Math.Core.float2)
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: FXAARenderTargetEffect(WritableTexture, float2)
+  nameWithType: MakeEffect.FXAARenderTargetEffect(WritableTexture, float2)
+  fullName: Fusee.Engine.Core.MakeEffect.FXAARenderTargetEffect(Fusee.Engine.Core.WritableTexture, Fusee.Math.Core.float2)
+  type: Method
+  source:
+    id: FXAARenderTargetEffect
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 34
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nIf rendered with FXAA we&apos;ll need an additional (final) pass, that takes the lighted scene, rendered to a texture, as input.\n"
+  example: []
+  syntax:
+    content: public static ShaderEffect FXAARenderTargetEffect(WritableTexture srcTex, float2 screenParams)
+    parameters:
+    - id: srcTex
+      type: Fusee.Engine.Core.WritableTexture
+      description: RenderTarget, that contains a single texture in the Albedo/Specular channel, that contains the lighted scene.
+    - id: screenParams
+      type: Fusee.Math.Core.float2
+      description: The width and height of the screen.
+    return:
+      type: Fusee.Engine.Core.Effects.ShaderEffect
+    content.vb: Public Shared Function FXAARenderTargetEffect(srcTex As WritableTexture, screenParams As float2) As ShaderEffect
+  overload: Fusee.Engine.Core.MakeEffect.FXAARenderTargetEffect*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.MakeEffect.SSAORenderTargetTextureEffect(Fusee.Engine.Core.RenderTarget,System.Int32,Fusee.Math.Core.float2,System.Int32)
+  commentId: M:Fusee.Engine.Core.MakeEffect.SSAORenderTargetTextureEffect(Fusee.Engine.Core.RenderTarget,System.Int32,Fusee.Math.Core.float2,System.Int32)
+  id: SSAORenderTargetTextureEffect(Fusee.Engine.Core.RenderTarget,System.Int32,Fusee.Math.Core.float2,System.Int32)
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: SSAORenderTargetTextureEffect(RenderTarget, Int32, float2, Int32)
+  nameWithType: MakeEffect.SSAORenderTargetTextureEffect(RenderTarget, Int32, float2, Int32)
+  fullName: Fusee.Engine.Core.MakeEffect.SSAORenderTargetTextureEffect(Fusee.Engine.Core.RenderTarget, System.Int32, Fusee.Math.Core.float2, System.Int32)
+  type: Method
+  source:
+    id: SSAORenderTargetTextureEffect
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 62
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nShader effect for the ssao pass.\n"
+  example: []
+  syntax:
+    content: public static ShaderEffect SSAORenderTargetTextureEffect(RenderTarget geomPassRenderTarget, int kernelLength, float2 screenParams, int noiseTexSize)
+    parameters:
+    - id: geomPassRenderTarget
+      type: Fusee.Engine.Core.RenderTarget
+      description: RenderTarget filled in the previous geometry pass.
+    - id: kernelLength
+      type: System.Int32
+      description: SSAO kernel size.
+    - id: screenParams
+      type: Fusee.Math.Core.float2
+      description: Width and Height of the screen.
+    - id: noiseTexSize
+      type: System.Int32
+      description: Width and height of the noise texture.
+    return:
+      type: Fusee.Engine.Core.Effects.ShaderEffect
+    content.vb: Public Shared Function SSAORenderTargetTextureEffect(geomPassRenderTarget As RenderTarget, kernelLength As Integer, screenParams As float2, noiseTexSize As Integer) As ShaderEffect
+  overload: Fusee.Engine.Core.MakeEffect.SSAORenderTargetTextureEffect*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.MakeEffect.SSAORenderTargetBlurEffect(Fusee.Engine.Core.WritableTexture)
+  commentId: M:Fusee.Engine.Core.MakeEffect.SSAORenderTargetBlurEffect(Fusee.Engine.Core.WritableTexture)
+  id: SSAORenderTargetBlurEffect(Fusee.Engine.Core.WritableTexture)
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: SSAORenderTargetBlurEffect(WritableTexture)
+  nameWithType: MakeEffect.SSAORenderTargetBlurEffect(WritableTexture)
+  fullName: Fusee.Engine.Core.MakeEffect.SSAORenderTargetBlurEffect(Fusee.Engine.Core.WritableTexture)
+  type: Method
+  source:
+    id: SSAORenderTargetBlurEffect
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 108
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nCreates a blurred ssao texture, to hide rectangular artifacts originating from the noise texture;\n"
+  example: []
+  syntax:
+    content: public static ShaderEffect SSAORenderTargetBlurEffect(WritableTexture ssaoRenderTex)
+    parameters:
+    - id: ssaoRenderTex
+      type: Fusee.Engine.Core.WritableTexture
+      description: The non blurred ssao texture.
+    return:
+      type: Fusee.Engine.Core.Effects.ShaderEffect
+    content.vb: Public Shared Function SSAORenderTargetBlurEffect(ssaoRenderTex As WritableTexture) As ShaderEffect
+  overload: Fusee.Engine.Core.MakeEffect.SSAORenderTargetBlurEffect*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.MakeEffect.DeferredLightingPassEffect(Fusee.Engine.Core.RenderTarget,Fusee.Engine.Core.Scene.Light,Fusee.Math.Core.float4,Fusee.Engine.Common.IWritableTexture)
+  commentId: M:Fusee.Engine.Core.MakeEffect.DeferredLightingPassEffect(Fusee.Engine.Core.RenderTarget,Fusee.Engine.Core.Scene.Light,Fusee.Math.Core.float4,Fusee.Engine.Common.IWritableTexture)
+  id: DeferredLightingPassEffect(Fusee.Engine.Core.RenderTarget,Fusee.Engine.Core.Scene.Light,Fusee.Math.Core.float4,Fusee.Engine.Common.IWritableTexture)
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: DeferredLightingPassEffect(RenderTarget, Light, float4, IWritableTexture)
+  nameWithType: MakeEffect.DeferredLightingPassEffect(RenderTarget, Light, float4, IWritableTexture)
+  fullName: Fusee.Engine.Core.MakeEffect.DeferredLightingPassEffect(Fusee.Engine.Core.RenderTarget, Fusee.Engine.Core.Scene.Light, Fusee.Math.Core.float4, Fusee.Engine.Common.IWritableTexture)
+  type: Method
+  source:
+    id: DeferredLightingPassEffect
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 161
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nShaderEffect that performs the lighting calculation according to the textures from the Geometry Pass.\n"
+  example: []
+  syntax:
+    content: public static ShaderEffect DeferredLightingPassEffect(RenderTarget srcRenderTarget, Light lc, float4 backgroundColor, IWritableTexture shadowMap = null)
+    parameters:
+    - id: srcRenderTarget
+      type: Fusee.Engine.Core.RenderTarget
+      description: The source render target.
+    - id: lc
+      type: Fusee.Engine.Core.Scene.Light
+      description: The light component.
+    - id: backgroundColor
+      type: Fusee.Math.Core.float4
+      description: Sets the background color. Could be replaced with a texture or other sky color calculations in the future.
+    - id: shadowMap
+      type: Fusee.Engine.Common.IWritableTexture
+      description: The shadow map.
+    return:
+      type: Fusee.Engine.Core.Effects.ShaderEffect
+      description: ''
+    content.vb: Public Shared Function DeferredLightingPassEffect(srcRenderTarget As RenderTarget, lc As Light, backgroundColor As float4, shadowMap As IWritableTexture = Nothing) As ShaderEffect
+  overload: Fusee.Engine.Core.MakeEffect.DeferredLightingPassEffect*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.MakeEffect.DeferredLightingPassEffect(Fusee.Engine.Core.RenderTarget,Fusee.Engine.Core.Scene.Light,Fusee.Engine.Core.WritableArrayTexture,Fusee.Math.Core.float2[],System.Int32,Fusee.Math.Core.float4)
+  commentId: M:Fusee.Engine.Core.MakeEffect.DeferredLightingPassEffect(Fusee.Engine.Core.RenderTarget,Fusee.Engine.Core.Scene.Light,Fusee.Engine.Core.WritableArrayTexture,Fusee.Math.Core.float2[],System.Int32,Fusee.Math.Core.float4)
+  id: DeferredLightingPassEffect(Fusee.Engine.Core.RenderTarget,Fusee.Engine.Core.Scene.Light,Fusee.Engine.Core.WritableArrayTexture,Fusee.Math.Core.float2[],System.Int32,Fusee.Math.Core.float4)
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: DeferredLightingPassEffect(RenderTarget, Light, WritableArrayTexture, float2[], Int32, float4)
+  nameWithType: MakeEffect.DeferredLightingPassEffect(RenderTarget, Light, WritableArrayTexture, float2[], Int32, float4)
+  fullName: Fusee.Engine.Core.MakeEffect.DeferredLightingPassEffect(Fusee.Engine.Core.RenderTarget, Fusee.Engine.Core.Scene.Light, Fusee.Engine.Core.WritableArrayTexture, Fusee.Math.Core.float2[], System.Int32, Fusee.Math.Core.float4)
+  type: Method
+  source:
+    id: DeferredLightingPassEffect
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 208
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\n[Parallel light only] ShaderEffect that performs the lighting calculation according to the textures from the Geometry Pass. Shadow is calculated with cascaded shadow maps.\n"
+  example: []
+  syntax:
+    content: public static ShaderEffect DeferredLightingPassEffect(RenderTarget srcRenderTarget, Light lc, WritableArrayTexture shadowMap, float2[] clipPlanes, int numberOfCascades, float4 backgroundColor)
+    parameters:
+    - id: srcRenderTarget
+      type: Fusee.Engine.Core.RenderTarget
+      description: The source render target.
+    - id: lc
+      type: Fusee.Engine.Core.Scene.Light
+      description: The light component.
+    - id: shadowMap
+      type: Fusee.Engine.Core.WritableArrayTexture
+      description: The cascaded shadow maps.
+    - id: clipPlanes
+      type: Fusee.Math.Core.float2[]
+      description: The clip planes of the frustums. Each frustum is associated with one shadow map.
+    - id: numberOfCascades
+      type: System.Int32
+      description: The number of sub-frustums, used for cascaded shadow mapping.
+    - id: backgroundColor
+      type: Fusee.Math.Core.float4
+      description: Sets the background color. Could be replaced with a texture or other sky color calculations in the future.
+    return:
+      type: Fusee.Engine.Core.Effects.ShaderEffect
+      description: ''
+    content.vb: Public Shared Function DeferredLightingPassEffect(srcRenderTarget As RenderTarget, lc As Light, shadowMap As WritableArrayTexture, clipPlanes As float2(), numberOfCascades As Integer, backgroundColor As float4) As ShaderEffect
+  overload: Fusee.Engine.Core.MakeEffect.DeferredLightingPassEffect*
+  nameWithType.vb: MakeEffect.DeferredLightingPassEffect(RenderTarget, Light, WritableArrayTexture, float2(), Int32, float4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Engine.Core.MakeEffect.DeferredLightingPassEffect(Fusee.Engine.Core.RenderTarget, Fusee.Engine.Core.Scene.Light, Fusee.Engine.Core.WritableArrayTexture, Fusee.Math.Core.float2(), System.Int32, Fusee.Math.Core.float4)
+  name.vb: DeferredLightingPassEffect(RenderTarget, Light, WritableArrayTexture, float2(), Int32, float4)
+- uid: Fusee.Engine.Core.MakeEffect.ShadowCubeMapEffect(Fusee.Math.Core.float4x4[])
+  commentId: M:Fusee.Engine.Core.MakeEffect.ShadowCubeMapEffect(Fusee.Math.Core.float4x4[])
+  id: ShadowCubeMapEffect(Fusee.Math.Core.float4x4[])
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: ShadowCubeMapEffect(float4x4[])
+  nameWithType: MakeEffect.ShadowCubeMapEffect(float4x4[])
+  fullName: Fusee.Engine.Core.MakeEffect.ShadowCubeMapEffect(Fusee.Math.Core.float4x4[])
+  type: Method
+  source:
+    id: ShadowCubeMapEffect
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 247
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nShaderEffect that renders the depth map from a lights point of view - this depth map is used as a shadow map.\n"
+  example: []
+  syntax:
+    content: public static ShaderEffect ShadowCubeMapEffect(float4x4[] lightSpaceMatrices)
+    parameters:
+    - id: lightSpaceMatrices
+      type: Fusee.Math.Core.float4x4[]
+    return:
+      type: Fusee.Engine.Core.Effects.ShaderEffect
+      description: ''
+    content.vb: Public Shared Function ShadowCubeMapEffect(lightSpaceMatrices As float4x4()) As ShaderEffect
+  overload: Fusee.Engine.Core.MakeEffect.ShadowCubeMapEffect*
+  nameWithType.vb: MakeEffect.ShadowCubeMapEffect(float4x4())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Engine.Core.MakeEffect.ShadowCubeMapEffect(Fusee.Math.Core.float4x4())
+  name.vb: ShadowCubeMapEffect(float4x4())
+- uid: Fusee.Engine.Core.MakeEffect.ShadowMapEffect
+  commentId: M:Fusee.Engine.Core.MakeEffect.ShadowMapEffect
+  id: ShadowMapEffect
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: ShadowMapEffect()
+  nameWithType: MakeEffect.ShadowMapEffect()
+  fullName: Fusee.Engine.Core.MakeEffect.ShadowMapEffect()
+  type: Method
+  source:
+    id: ShadowMapEffect
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 280
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nShaderEffect that renders the depth map from a lights point of view - this depth map is used as a shadow map.\n"
+  example: []
+  syntax:
+    content: public static ShaderEffect ShadowMapEffect()
+    return:
+      type: Fusee.Engine.Core.Effects.ShaderEffect
+      description: ''
+    content.vb: Public Shared Function ShadowMapEffect As ShaderEffect
+  overload: Fusee.Engine.Core.MakeEffect.ShadowMapEffect*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.MakeEffect.FromUnlit(Fusee.Math.Core.float4)
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromUnlit(Fusee.Math.Core.float4)
+  id: FromUnlit(Fusee.Math.Core.float4)
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: FromUnlit(float4)
+  nameWithType: MakeEffect.FromUnlit(float4)
+  fullName: Fusee.Engine.Core.MakeEffect.FromUnlit(Fusee.Math.Core.float4)
+  type: Method
+  source:
+    id: FromUnlit
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 368
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nCreates a simple unlit effect from an color only.\n"
+  example: []
+  syntax:
+    content: public static DefaultSurfaceEffect FromUnlit(float4 albedoColor)
+    parameters:
+    - id: albedoColor
+      type: Fusee.Math.Core.float4
+      description: The albedo color.
+    return:
+      type: Fusee.Engine.Core.Effects.DefaultSurfaceEffect
+      description: ''
+    content.vb: Public Shared Function FromUnlit(albedoColor As float4) As DefaultSurfaceEffect
+  overload: Fusee.Engine.Core.MakeEffect.FromUnlit*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.MakeEffect.FromUnlitAlbedoTexture(Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,Fusee.Math.Core.float2,System.Single)
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromUnlitAlbedoTexture(Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,Fusee.Math.Core.float2,System.Single)
+  id: FromUnlitAlbedoTexture(Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,Fusee.Math.Core.float2,System.Single)
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: FromUnlitAlbedoTexture(float4, Texture, float2, Single)
+  nameWithType: MakeEffect.FromUnlitAlbedoTexture(float4, Texture, float2, Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromUnlitAlbedoTexture(Fusee.Math.Core.float4, Fusee.Engine.Core.Texture, Fusee.Math.Core.float2, System.Single)
+  type: Method
+  source:
+    id: FromUnlitAlbedoTexture
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 385
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nCreates a simple unlit shader from an albedo color and texture.\n"
+  example: []
+  syntax:
+    content: public static DefaultSurfaceEffect FromUnlitAlbedoTexture(float4 albedoColor, Texture albedoTex, float2 texTiles, float albedoMix)
+    parameters:
+    - id: albedoColor
+      type: Fusee.Math.Core.float4
+      description: The albedo color.
+    - id: albedoTex
+      type: Fusee.Engine.Core.Texture
+      description: The albedo texture.
+    - id: texTiles
+      type: Fusee.Math.Core.float2
+      description: The number of times the textures are repeated in x and y direction.
+    - id: albedoMix
+      type: System.Single
+      description: Determines how much the diffuse color and the color from the texture are mixed.
+    return:
+      type: Fusee.Engine.Core.Effects.DefaultSurfaceEffect
+      description: ''
+    content.vb: Public Shared Function FromUnlitAlbedoTexture(albedoColor As float4, albedoTex As Texture, texTiles As float2, albedoMix As Single) As DefaultSurfaceEffect
+  overload: Fusee.Engine.Core.MakeEffect.FromUnlitAlbedoTexture*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecular(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single)
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromDiffuseSpecular(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single)
+  id: FromDiffuseSpecular(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single)
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: FromDiffuseSpecular(float4, float4, Single, Single)
+  nameWithType: MakeEffect.FromDiffuseSpecular(float4, float4, Single, Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecular(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, System.Single)
+  type: Method
+  source:
+    id: FromDiffuseSpecular
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 406
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nBuilds a simple shader effect with diffuse and specular components.\n"
+  example: []
+  syntax:
+    content: public static DefaultSurfaceEffect FromDiffuseSpecular(float4 albedoColor, float4 emissionColor, float shininess, float specularStrength = 0.5F)
+    parameters:
+    - id: albedoColor
+      type: Fusee.Math.Core.float4
+      description: The diffuse color the resulting effect.
+    - id: emissionColor
+      type: Fusee.Math.Core.float4
+      description: If this color isn&apos;t black the material emits it. Note that this will not have any effect on global illumination yet.
+    - id: shininess
+      type: System.Single
+      description: The resulting effect&apos;s shininess.
+    - id: specularStrength
+      type: System.Single
+      description: The resulting effects specular intensity.
+    return:
+      type: Fusee.Engine.Core.Effects.DefaultSurfaceEffect
+      description: A ShaderEffect ready to use as a component in scene graphs.
+    content.vb: Public Shared Function FromDiffuseSpecular(albedoColor As float4, emissionColor As float4, shininess As Single, specularStrength As Single = 0.5F) As DefaultSurfaceEffect
+  overload: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecular*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.MakeEffect.FromBRDF(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromBRDF(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single)
+  id: FromBRDF(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: FromBRDF(float4, float4, Single, Single, Single, Single, Single)
+  nameWithType: MakeEffect.FromBRDF(float4, float4, Single, Single, Single, Single, Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromBRDF(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, System.Single, System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    id: FromBRDF
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 429
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nBuilds a simple shader effect with diffuse and specular components.\n"
+  example: []
+  syntax:
+    content: public static DefaultSurfaceEffect FromBRDF(float4 albedoColor, float4 emissionColor, float roughness, float metallic, float specular, float ior, float subsurface)
+    parameters:
+    - id: albedoColor
+      type: Fusee.Math.Core.float4
+      description: The diffuse color the resulting effect.
+    - id: emissionColor
+      type: Fusee.Math.Core.float4
+      description: If this color isn&apos;t black the material emits it. Note that this will not have any effect on global illumination yet.
+    - id: roughness
+      type: System.Single
+      description: The roughness of the specular and diffuse reflection.
+    - id: metallic
+      type: System.Single
+      description: 'Value used to blend between the metallic and the dielectric model. '
+    - id: specular
+      type: System.Single
+      description: 'Amount of dielectric specular reflection. '
+    - id: ior
+      type: System.Single
+      description: The index of refraction. Note that this is set to 0.04 for dielectrics when rendering deferred.
+    - id: subsurface
+      type: System.Single
+      description: Mix between diffuse and subsurface scattering.
+    return:
+      type: Fusee.Engine.Core.Effects.DefaultSurfaceEffect
+      description: A ShaderEffect ready to use as a component in scene graphs.
+    content.vb: Public Shared Function FromBRDF(albedoColor As float4, emissionColor As float4, roughness As Single, metallic As Single, specular As Single, ior As Single, subsurface As Single) As DefaultSurfaceEffect
+  overload: Fusee.Engine.Core.MakeEffect.FromBRDF*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularAlbedoTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularAlbedoTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
+  id: FromDiffuseSpecularAlbedoTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: FromDiffuseSpecularAlbedoTexture(float4, float4, Single, Texture, Single, float2, Single)
+  nameWithType: MakeEffect.FromDiffuseSpecularAlbedoTexture(float4, float4, Single, Texture, Single, float2, Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularAlbedoTexture(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, Fusee.Engine.Core.Texture, System.Single, Fusee.Math.Core.float2, System.Single)
+  type: Method
+  source:
+    id: FromDiffuseSpecularAlbedoTexture
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 455
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nBuilds a simple shader effect with diffuse and specular color.\n"
+  example: []
+  syntax:
+    content: public static DefaultSurfaceEffect FromDiffuseSpecularAlbedoTexture(float4 albedoColor, float4 emissionColor, float shininess, Texture albedoTex, float albedoMix, float2 texTiles, float specularStrength = 0.5F)
+    parameters:
+    - id: albedoColor
+      type: Fusee.Math.Core.float4
+      description: The albedo color of the resulting effect.
+    - id: emissionColor
+      type: Fusee.Math.Core.float4
+      description: If this color isn&apos;t black the material emits it. Note that this will not have any effect on global illumination yet.
+    - id: shininess
+      type: System.Single
+      description: The resulting effect&apos;s shininess.
+    - id: albedoTex
+      type: Fusee.Engine.Core.Texture
+      description: The albedo texture.
+    - id: albedoMix
+      type: System.Single
+      description: Determines how much the diffuse color and the color from the texture are mixed.
+    - id: texTiles
+      type: Fusee.Math.Core.float2
+      description: The number of times the textures are repeated in x and y direction.
+    - id: specularStrength
+      type: System.Single
+      description: The resulting effects specular intensity.
+    return:
+      type: Fusee.Engine.Core.Effects.DefaultSurfaceEffect
+    content.vb: Public Shared Function FromDiffuseSpecularAlbedoTexture(albedoColor As float4, emissionColor As float4, shininess As Single, albedoTex As Texture, albedoMix As Single, texTiles As float2, specularStrength As Single = 0.5F) As DefaultSurfaceEffect
+  overload: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularAlbedoTexture*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularNormalTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularNormalTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
+  id: FromDiffuseSpecularNormalTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: FromDiffuseSpecularNormalTexture(float4, float4, Single, Texture, Single, float2, Single)
+  nameWithType: MakeEffect.FromDiffuseSpecularNormalTexture(float4, float4, Single, Texture, Single, float2, Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularNormalTexture(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, Fusee.Engine.Core.Texture, System.Single, Fusee.Math.Core.float2, System.Single)
+  type: Method
+  source:
+    id: FromDiffuseSpecularNormalTexture
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 482
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nBuilds a simple shader effect with diffuse and specular color.\n"
+  example: []
+  syntax:
+    content: public static DefaultSurfaceEffect FromDiffuseSpecularNormalTexture(float4 albedoColor, float4 emissionColor, float shininess, Texture normalTex, float normalMapStrength, float2 texTiles, float specularStrength = 0.5F)
+    parameters:
+    - id: albedoColor
+      type: Fusee.Math.Core.float4
+      description: The albedo color of the resulting effect.
+    - id: emissionColor
+      type: Fusee.Math.Core.float4
+      description: If this color isn&apos;t black the material emits it. Note that this will not have any effect on global illumination yet.
+    - id: shininess
+      type: System.Single
+      description: The resulting effect&apos;s shininess.
+    - id: normalTex
+      type: Fusee.Engine.Core.Texture
+      description: The normal map.
+    - id: normalMapStrength
+      type: System.Single
+      description: The strength of the normal mapping effect.
+    - id: texTiles
+      type: Fusee.Math.Core.float2
+      description: The number of times the textures are repeated in x and y direction.
+    - id: specularStrength
+      type: System.Single
+      description: The resulting effects specular intensity.
+    return:
+      type: Fusee.Engine.Core.Effects.DefaultSurfaceEffect
+    content.vb: Public Shared Function FromDiffuseSpecularNormalTexture(albedoColor As float4, emissionColor As float4, shininess As Single, normalTex As Texture, normalMapStrength As Single, texTiles As float2, specularStrength As Single = 0.5F) As DefaultSurfaceEffect
+  overload: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularNormalTexture*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single,System.Single)
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single,System.Single)
+  id: FromDiffuseSpecularTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single,System.Single)
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: FromDiffuseSpecularTexture(float4, float4, Single, Texture, Texture, Single, float2, Single, Single)
+  nameWithType: MakeEffect.FromDiffuseSpecularTexture(float4, float4, Single, Texture, Texture, Single, float2, Single, Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularTexture(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, Fusee.Engine.Core.Texture, Fusee.Engine.Core.Texture, System.Single, Fusee.Math.Core.float2, System.Single, System.Single)
+  type: Method
+  source:
+    id: FromDiffuseSpecularTexture
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 511
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nBuilds a simple shader effect with diffuse and specular color.\n"
+  example: []
+  syntax:
+    content: public static DefaultSurfaceEffect FromDiffuseSpecularTexture(float4 albedoColor, float4 emissionColor, float shininess, Texture albedoTex, Texture normalTex, float albedoMix, float2 texTiles, float specularStrength = 0.5F, float normalMapStrength = 0.5F)
+    parameters:
+    - id: albedoColor
+      type: Fusee.Math.Core.float4
+      description: The albedo color of the resulting effect.
+    - id: emissionColor
+      type: Fusee.Math.Core.float4
+      description: If this color isn&apos;t black the material emits it. Note that this will not have any effect on global illumination yet.
+    - id: shininess
+      type: System.Single
+      description: The resulting effect&apos;s shininess.
+    - id: albedoTex
+      type: Fusee.Engine.Core.Texture
+      description: The albedo texture.
+    - id: normalTex
+      type: Fusee.Engine.Core.Texture
+      description: The normal map.
+    - id: albedoMix
+      type: System.Single
+      description: Determines how much the diffuse color and the color from the texture are mixed.
+    - id: texTiles
+      type: Fusee.Math.Core.float2
+      description: The number of times the textures are repeated in x and y direction.
+    - id: specularStrength
+      type: System.Single
+      description: The resulting effects specular intensity.
+    - id: normalMapStrength
+      type: System.Single
+      description: The strength of the normal mapping effect.
+    return:
+      type: Fusee.Engine.Core.Effects.DefaultSurfaceEffect
+    content.vb: Public Shared Function FromDiffuseSpecularTexture(albedoColor As float4, emissionColor As float4, shininess As Single, albedoTex As Texture, normalTex As Texture, albedoMix As Single, texTiles As float2, specularStrength As Single = 0.5F, normalMapStrength As Single = 0.5F) As DefaultSurfaceEffect
+  overload: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularTexture*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.MakeEffect.FromBRDFAlbedoTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2)
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromBRDFAlbedoTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2)
+  id: FromBRDFAlbedoTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2)
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: FromBRDFAlbedoTexture(float4, float4, Single, Single, Single, Single, Single, Texture, Single, float2)
+  nameWithType: MakeEffect.FromBRDFAlbedoTexture(float4, float4, Single, Single, Single, Single, Single, Texture, Single, float2)
+  fullName: Fusee.Engine.Core.MakeEffect.FromBRDFAlbedoTexture(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, System.Single, System.Single, System.Single, System.Single, Fusee.Engine.Core.Texture, System.Single, Fusee.Math.Core.float2)
+  type: Method
+  source:
+    id: FromBRDFAlbedoTexture
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 543
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nBuilds a simple shader effect with diffuse and specular color.\n"
+  example: []
+  syntax:
+    content: public static DefaultSurfaceEffect FromBRDFAlbedoTexture(float4 albedoColor, float4 emissionColor, float roughness, float metallic, float specular, float ior, float subsurface, Texture albedoTex, float albedoMix, float2 texTiles)
+    parameters:
+    - id: albedoColor
+      type: Fusee.Math.Core.float4
+      description: The albedo color of the resulting effect.
+    - id: emissionColor
+      type: Fusee.Math.Core.float4
+      description: If this color isn&apos;t black the material emits it. Note that this will not have any effect on global illumination yet.
+    - id: roughness
+      type: System.Single
+      description: The roughness of the specular and diffuse reflection.
+    - id: metallic
+      type: System.Single
+      description: 'Value used to blend between the metallic and the dielectric model. '
+    - id: specular
+      type: System.Single
+      description: 'Amount of dielectric specular reflection. '
+    - id: ior
+      type: System.Single
+      description: The index of refraction. Note that this is set to 0.04 for dielectrics when rendering deferred.
+    - id: subsurface
+      type: System.Single
+      description: Mix between diffuse and subsurface scattering.
+    - id: albedoTex
+      type: Fusee.Engine.Core.Texture
+      description: The albedo texture.
+    - id: albedoMix
+      type: System.Single
+      description: Determines how much the diffuse color and the color from the texture are mixed.
+    - id: texTiles
+      type: Fusee.Math.Core.float2
+      description: The number of times the textures are repeated in x and y direction.
+    return:
+      type: Fusee.Engine.Core.Effects.DefaultSurfaceEffect
+    content.vb: Public Shared Function FromBRDFAlbedoTexture(albedoColor As float4, emissionColor As float4, roughness As Single, metallic As Single, specular As Single, ior As Single, subsurface As Single, albedoTex As Texture, albedoMix As Single, texTiles As float2) As DefaultSurfaceEffect
+  overload: Fusee.Engine.Core.MakeEffect.FromBRDFAlbedoTexture*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.MakeEffect.FromBRDFNormalTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2)
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromBRDFNormalTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2)
+  id: FromBRDFNormalTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2)
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: FromBRDFNormalTexture(float4, float4, Single, Single, Single, Single, Single, Texture, Single, float2)
+  nameWithType: MakeEffect.FromBRDFNormalTexture(float4, float4, Single, Single, Single, Single, Single, Texture, Single, float2)
+  fullName: Fusee.Engine.Core.MakeEffect.FromBRDFNormalTexture(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, System.Single, System.Single, System.Single, System.Single, Fusee.Engine.Core.Texture, System.Single, Fusee.Math.Core.float2)
+  type: Method
+  source:
+    id: FromBRDFNormalTexture
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 576
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nBuilds a simple shader effect with diffuse and specular color.\n"
+  example: []
+  syntax:
+    content: public static DefaultSurfaceEffect FromBRDFNormalTexture(float4 albedoColor, float4 emissionColor, float roughness, float metallic, float specular, float ior, float subsurface, Texture normalTex, float normalMapStrength, float2 texTiles)
+    parameters:
+    - id: albedoColor
+      type: Fusee.Math.Core.float4
+      description: The albedo color of the resulting effect.
+    - id: emissionColor
+      type: Fusee.Math.Core.float4
+      description: If this color isn&apos;t black the material emits it. Note that this will not have any effect on global illumination yet.
+    - id: roughness
+      type: System.Single
+      description: The roughness of the specular and diffuse reflection.
+    - id: metallic
+      type: System.Single
+      description: 'Value used to blend between the metallic and the dielectric model. '
+    - id: specular
+      type: System.Single
+      description: 'Amount of dielectric specular reflection. '
+    - id: ior
+      type: System.Single
+      description: The index of refraction. Note that this is set to 0.04 for dielectrics when rendering deferred.
+    - id: subsurface
+      type: System.Single
+      description: Mix between diffuse and subsurface scattering.
+    - id: normalTex
+      type: Fusee.Engine.Core.Texture
+      description: The normal map.
+    - id: normalMapStrength
+      type: System.Single
+      description: The strength of the normal mapping effect.
+    - id: texTiles
+      type: Fusee.Math.Core.float2
+      description: The number of times the textures are repeated in x and y direction.
+    return:
+      type: Fusee.Engine.Core.Effects.DefaultSurfaceEffect
+    content.vb: Public Shared Function FromBRDFNormalTexture(albedoColor As float4, emissionColor As float4, roughness As Single, metallic As Single, specular As Single, ior As Single, subsurface As Single, normalTex As Texture, normalMapStrength As Single, texTiles As float2) As DefaultSurfaceEffect
+  overload: Fusee.Engine.Core.MakeEffect.FromBRDFNormalTexture*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.MakeEffect.FromBRDFTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single,Fusee.Engine.Core.Texture,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromBRDFTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single,Fusee.Engine.Core.Texture,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
+  id: FromBRDFTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single,Fusee.Engine.Core.Texture,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
+  parent: Fusee.Engine.Core.MakeEffect
+  langs:
+  - csharp
+  - vb
+  name: FromBRDFTexture(float4, float4, Single, Single, Single, Single, Single, Texture, Texture, Single, float2, Single)
+  nameWithType: MakeEffect.FromBRDFTexture(float4, float4, Single, Single, Single, Single, Single, Texture, Texture, Single, float2, Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromBRDFTexture(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, System.Single, System.Single, System.Single, System.Single, Fusee.Engine.Core.Texture, Fusee.Engine.Core.Texture, System.Single, Fusee.Math.Core.float2, System.Single)
+  type: Method
+  source:
+    id: FromBRDFTexture
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\MakeEffect.cs
+    startLine: 611
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nBuilds a simple shader effect with diffuse and specular color.\n"
+  example: []
+  syntax:
+    content: public static DefaultSurfaceEffect FromBRDFTexture(float4 albedoColor, float4 emissionColor, float roughness, float metallic, float specular, float ior, float subsurface, Texture albedoTex, Texture normalTex, float albedoMix, float2 texTiles, float normalMapStrength = 0.5F)
+    parameters:
+    - id: albedoColor
+      type: Fusee.Math.Core.float4
+      description: The albedo color of the resulting effect.
+    - id: emissionColor
+      type: Fusee.Math.Core.float4
+      description: If this color isn&apos;t black the material emits it. Note that this will not have any effect on global illumination yet.
+    - id: roughness
+      type: System.Single
+      description: The roughness of the specular and diffuse reflection.
+    - id: metallic
+      type: System.Single
+      description: 'Value used to blend between the metallic and the dielectric model. '
+    - id: specular
+      type: System.Single
+      description: 'Amount of dielectric specular reflection. '
+    - id: ior
+      type: System.Single
+      description: The index of refraction. Note that this is set to 0.04 for dielectrics when rendering deferred.
+    - id: subsurface
+      type: System.Single
+      description: Mix between diffuse and subsurface scattering.
+    - id: albedoTex
+      type: Fusee.Engine.Core.Texture
+      description: The albedo texture.
+    - id: normalTex
+      type: Fusee.Engine.Core.Texture
+      description: The normal map.
+    - id: albedoMix
+      type: System.Single
+      description: Determines how much the diffuse color and the color from the texture are mixed.
+    - id: texTiles
+      type: Fusee.Math.Core.float2
+      description: The number of times the textures are repeated in x and y direction.
+    - id: normalMapStrength
+      type: System.Single
+      description: The strength of the normal mapping effect.
+    return:
+      type: Fusee.Engine.Core.Effects.DefaultSurfaceEffect
+    content.vb: Public Shared Function FromBRDFTexture(albedoColor As float4, emissionColor As float4, roughness As Single, metallic As Single, specular As Single, ior As Single, subsurface As Single, albedoTex As Texture, normalTex As Texture, albedoMix As Single, texTiles As float2, normalMapStrength As Single = 0.5F) As DefaultSurfaceEffect
+  overload: Fusee.Engine.Core.MakeEffect.FromBRDFTexture*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Fusee.Engine.Core.Effects.ShaderEffect
+  commentId: T:Fusee.Engine.Core.Effects.ShaderEffect
+  parent: Fusee.Engine.Core.Effects
+  name: ShaderEffect
+  nameWithType: ShaderEffect
+  fullName: Fusee.Engine.Core.Effects.ShaderEffect
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Effects
+  commentId: N:Fusee.Engine.Core.Effects
+  name: Fusee.Engine.Core.Effects
+  nameWithType: Fusee.Engine.Core.Effects
+  fullName: Fusee.Engine.Core.Effects
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.Effects.Effect
+  commentId: T:Fusee.Engine.Core.Effects.Effect
+  parent: Fusee.Engine.Core.Effects
+  name: Effect
+  nameWithType: Effect
+  fullName: Fusee.Engine.Core.Effects.Effect
+- uid: Fusee.Engine.Core.Scene.SceneNode
+  commentId: T:Fusee.Engine.Core.Scene.SceneNode
+  parent: Fusee.Engine.Core.Scene
+  name: SceneNode
+  nameWithType: SceneNode
+  fullName: Fusee.Engine.Core.Scene.SceneNode
+- uid: Fusee.Engine.Core.MakeEffect.Default*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.Default
+  name: Default
+  nameWithType: MakeEffect.Default
+  fullName: Fusee.Engine.Core.MakeEffect.Default
+- uid: Fusee.Engine.Core.Effects.SurfaceEffect
+  commentId: T:Fusee.Engine.Core.Effects.SurfaceEffect
+  parent: Fusee.Engine.Core.Effects
+  name: SurfaceEffect
+  nameWithType: SurfaceEffect
+  fullName: Fusee.Engine.Core.Effects.SurfaceEffect
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: Fusee.Engine.Core.MakeEffect.FXAARenderTargetEffect*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FXAARenderTargetEffect
+  name: FXAARenderTargetEffect
+  nameWithType: MakeEffect.FXAARenderTargetEffect
+  fullName: Fusee.Engine.Core.MakeEffect.FXAARenderTargetEffect
+- uid: Fusee.Engine.Core.WritableTexture
+  commentId: T:Fusee.Engine.Core.WritableTexture
+  parent: Fusee.Engine.Core
+  name: WritableTexture
+  nameWithType: WritableTexture
+  fullName: Fusee.Engine.Core.WritableTexture
+- uid: Fusee.Math.Core.float2
+  commentId: T:Fusee.Math.Core.float2
+  parent: Fusee.Math.Core
+  name: float2
+  nameWithType: float2
+  fullName: Fusee.Math.Core.float2
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Engine.Core.MakeEffect.SSAORenderTargetTextureEffect*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.SSAORenderTargetTextureEffect
+  name: SSAORenderTargetTextureEffect
+  nameWithType: MakeEffect.SSAORenderTargetTextureEffect
+  fullName: Fusee.Engine.Core.MakeEffect.SSAORenderTargetTextureEffect
+- uid: Fusee.Engine.Core.RenderTarget
+  commentId: T:Fusee.Engine.Core.RenderTarget
+  parent: Fusee.Engine.Core
+  name: RenderTarget
+  nameWithType: RenderTarget
+  fullName: Fusee.Engine.Core.RenderTarget
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Engine.Core.MakeEffect.SSAORenderTargetBlurEffect*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.SSAORenderTargetBlurEffect
+  name: SSAORenderTargetBlurEffect
+  nameWithType: MakeEffect.SSAORenderTargetBlurEffect
+  fullName: Fusee.Engine.Core.MakeEffect.SSAORenderTargetBlurEffect
+- uid: Fusee.Engine.Core.MakeEffect.DeferredLightingPassEffect*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.DeferredLightingPassEffect
+  name: DeferredLightingPassEffect
+  nameWithType: MakeEffect.DeferredLightingPassEffect
+  fullName: Fusee.Engine.Core.MakeEffect.DeferredLightingPassEffect
+- uid: Fusee.Engine.Core.Scene.Light
+  commentId: T:Fusee.Engine.Core.Scene.Light
+  parent: Fusee.Engine.Core.Scene
+  name: Light
+  nameWithType: Light
+  fullName: Fusee.Engine.Core.Scene.Light
+- uid: Fusee.Math.Core.float4
+  commentId: T:Fusee.Math.Core.float4
+  parent: Fusee.Math.Core
+  name: float4
+  nameWithType: float4
+  fullName: Fusee.Math.Core.float4
+- uid: Fusee.Engine.Common.IWritableTexture
+  commentId: T:Fusee.Engine.Common.IWritableTexture
+  parent: Fusee.Engine.Common
+  name: IWritableTexture
+  nameWithType: IWritableTexture
+  fullName: Fusee.Engine.Common.IWritableTexture
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Core.WritableArrayTexture
+  commentId: T:Fusee.Engine.Core.WritableArrayTexture
+  parent: Fusee.Engine.Core
+  name: WritableArrayTexture
+  nameWithType: WritableArrayTexture
+  fullName: Fusee.Engine.Core.WritableArrayTexture
+- uid: Fusee.Math.Core.float2[]
+  isExternal: true
+  name: float2[]
+  nameWithType: float2[]
+  fullName: Fusee.Math.Core.float2[]
+  nameWithType.vb: float2()
+  fullName.vb: Fusee.Math.Core.float2()
+  name.vb: float2()
+  spec.csharp:
+  - uid: Fusee.Math.Core.float2
+    name: float2
+    nameWithType: float2
+    fullName: Fusee.Math.Core.float2
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Fusee.Math.Core.float2
+    name: float2
+    nameWithType: float2
+    fullName: Fusee.Math.Core.float2
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Fusee.Engine.Core.MakeEffect.ShadowCubeMapEffect*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.ShadowCubeMapEffect
+  name: ShadowCubeMapEffect
+  nameWithType: MakeEffect.ShadowCubeMapEffect
+  fullName: Fusee.Engine.Core.MakeEffect.ShadowCubeMapEffect
+- uid: Fusee.Math.Core.float4x4[]
+  isExternal: true
+  name: float4x4[]
+  nameWithType: float4x4[]
+  fullName: Fusee.Math.Core.float4x4[]
+  nameWithType.vb: float4x4()
+  fullName.vb: Fusee.Math.Core.float4x4()
+  name.vb: float4x4()
+  spec.csharp:
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Fusee.Math.Core.float4x4
+    name: float4x4
+    nameWithType: float4x4
+    fullName: Fusee.Math.Core.float4x4
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Fusee.Engine.Core.MakeEffect.ShadowMapEffect*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.ShadowMapEffect
+  name: ShadowMapEffect
+  nameWithType: MakeEffect.ShadowMapEffect
+  fullName: Fusee.Engine.Core.MakeEffect.ShadowMapEffect
+- uid: Fusee.Engine.Core.MakeEffect.FromUnlit*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromUnlit
+  name: FromUnlit
+  nameWithType: MakeEffect.FromUnlit
+  fullName: Fusee.Engine.Core.MakeEffect.FromUnlit
+- uid: Fusee.Engine.Core.Effects.DefaultSurfaceEffect
+  commentId: T:Fusee.Engine.Core.Effects.DefaultSurfaceEffect
+  parent: Fusee.Engine.Core.Effects
+  name: DefaultSurfaceEffect
+  nameWithType: DefaultSurfaceEffect
+  fullName: Fusee.Engine.Core.Effects.DefaultSurfaceEffect
+- uid: Fusee.Engine.Core.MakeEffect.FromUnlitAlbedoTexture*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromUnlitAlbedoTexture
+  name: FromUnlitAlbedoTexture
+  nameWithType: MakeEffect.FromUnlitAlbedoTexture
+  fullName: Fusee.Engine.Core.MakeEffect.FromUnlitAlbedoTexture
+- uid: Fusee.Engine.Core.Texture
+  commentId: T:Fusee.Engine.Core.Texture
+  parent: Fusee.Engine.Core
+  name: Texture
+  nameWithType: Texture
+  fullName: Fusee.Engine.Core.Texture
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecular*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromDiffuseSpecular
+  name: FromDiffuseSpecular
+  nameWithType: MakeEffect.FromDiffuseSpecular
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecular
+- uid: Fusee.Engine.Core.MakeEffect.FromBRDF*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromBRDF
+  name: FromBRDF
+  nameWithType: MakeEffect.FromBRDF
+  fullName: Fusee.Engine.Core.MakeEffect.FromBRDF
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularAlbedoTexture*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularAlbedoTexture
+  name: FromDiffuseSpecularAlbedoTexture
+  nameWithType: MakeEffect.FromDiffuseSpecularAlbedoTexture
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularAlbedoTexture
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularNormalTexture*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularNormalTexture
+  name: FromDiffuseSpecularNormalTexture
+  nameWithType: MakeEffect.FromDiffuseSpecularNormalTexture
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularNormalTexture
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularTexture*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularTexture
+  name: FromDiffuseSpecularTexture
+  nameWithType: MakeEffect.FromDiffuseSpecularTexture
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularTexture
+- uid: Fusee.Engine.Core.MakeEffect.FromBRDFAlbedoTexture*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromBRDFAlbedoTexture
+  name: FromBRDFAlbedoTexture
+  nameWithType: MakeEffect.FromBRDFAlbedoTexture
+  fullName: Fusee.Engine.Core.MakeEffect.FromBRDFAlbedoTexture
+- uid: Fusee.Engine.Core.MakeEffect.FromBRDFNormalTexture*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromBRDFNormalTexture
+  name: FromBRDFNormalTexture
+  nameWithType: MakeEffect.FromBRDFNormalTexture
+  fullName: Fusee.Engine.Core.MakeEffect.FromBRDFNormalTexture
+- uid: Fusee.Engine.Core.MakeEffect.FromBRDFTexture*
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromBRDFTexture
+  name: FromBRDFTexture
+  nameWithType: MakeEffect.FromBRDFTexture
+  fullName: Fusee.Engine.Core.MakeEffect.FromBRDFTexture

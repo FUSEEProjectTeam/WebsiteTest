@@ -231,7 +231,7 @@ The start point for the CurveSegment with index i is the last vertex in the Curv
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">acreage</span></td>
-        <td><p>Determines a maximal acreage for the tringale created from start point random point and end point.</p>
+        <td><p>Determines a maximal acreage for the triangle created from start point random point and end point.</p>
 </td>
       </tr>
       <tr>
@@ -261,7 +261,7 @@ The start point for the CurveSegment with index i is the last vertex in the Curv
   
   <a id="Fusee_Math_Core_CurveSegment_CalcPoint_" data-uid="Fusee.Math.Core.CurveSegment.CalcPoint*"></a>
   <h4 id="Fusee_Math_Core_CurveSegment_CalcPoint_System_Single_Fusee_Math_Core_float3___" data-uid="Fusee.Math.Core.CurveSegment.CalcPoint(System.Single,Fusee.Math.Core.float3[])">CalcPoint(Single, float3[])</h4>
-  <div class="markdown level1 summary"><p>Calculates a point on a bézier curve using De Casteljaus algorithm.</p>
+  <div class="markdown level1 summary"><p>Calculates a point on a bézier curve using De Casteljau's algorithm.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -281,13 +281,13 @@ The start point for the CurveSegment with index i is the last vertex in the Curv
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">t</span></td>
-        <td><p>Beziér curves are polynominals of t. t is element of [0, 1]</p>
+        <td><p>Bézier curves are polynominals of t. t is element of [0, 1]</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a>[]</td>
         <td><span class="parametername">vertices</span></td>
-        <td><p>All control points thet represent the curve, incl. start and end point</p>
+        <td><p>All control points that represent the curve, incl. start and end point</p>
 </td>
       </tr>
     </tbody>
@@ -367,7 +367,7 @@ The start point for the CurveSegment with index i is the last vertex in the Curv
   
   <a id="Fusee_Math_Core_CurveSegment_SplitCurve_" data-uid="Fusee.Math.Core.CurveSegment.SplitCurve*"></a>
   <h4 id="Fusee_Math_Core_CurveSegment_SplitCurve_System_Single_Fusee_Math_Core_float3___System_Collections_Generic_List_Fusee_Math_Core_float3___System_Collections_Generic_List_Fusee_Math_Core_float3___" data-uid="Fusee.Math.Core.CurveSegment.SplitCurve(System.Single,Fusee.Math.Core.float3[],System.Collections.Generic.List{Fusee.Math.Core.float3}@,System.Collections.Generic.List{Fusee.Math.Core.float3}@)">SplitCurve(Single, float3[], ref List&lt;float3&gt;, ref List&lt;float3&gt;)</h4>
-  <div class="markdown level1 summary"><p>Splits a curve using De Casteljaus algorithm.</p>
+  <div class="markdown level1 summary"><p>Splits a curve using De Casteljau's algorithm.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -387,7 +387,7 @@ The start point for the CurveSegment with index i is the last vertex in the Curv
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">t</span></td>
-        <td><p>Beziér curves are polynominals of t. t is element of [0, 1].</p>
+        <td><p>Bézier curves are polynominals of t. t is element of [0, 1].</p>
 </td>
       </tr>
       <tr>

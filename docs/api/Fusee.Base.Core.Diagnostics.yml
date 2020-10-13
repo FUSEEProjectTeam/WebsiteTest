@@ -288,7 +288,7 @@ items:
 
       [Conditional("DEBUG")]
 
-      public static void Log(object o, Diagnostics.SeverityLevel logLevel = Diagnostics.SeverityLevel.DEBUG, string callerName = "", int sourceLineNumber = 0, string sourceFilePath = "")
+      public static void Log(object o, Diagnostics.SeverityLevel logLevel = Diagnostics.SeverityLevel.Debug, string callerName = "", int sourceLineNumber = 0, string sourceFilePath = "")
     parameters:
     - id: o
       type: System.Object
@@ -310,7 +310,7 @@ items:
 
       <Conditional("DEBUG")>
 
-      Public Shared Sub Log(o As Object, logLevel As Diagnostics.SeverityLevel = Diagnostics.SeverityLevel.DEBUG, callerName As String = "", sourceLineNumber As Integer = 0, sourceFilePath As String = "")
+      Public Shared Sub Log(o As Object, logLevel As Diagnostics.SeverityLevel = Diagnostics.SeverityLevel.Debug, callerName As String = "", sourceLineNumber As Integer = 0, sourceFilePath As String = "")
   overload: Fusee.Base.Core.Diagnostics.Log*
   attributes:
   - type: System.ObsoleteAttribute

@@ -1325,6 +1325,85 @@ See: <a href="https://www.khronos.org/opengl/wiki/Vertex_Post-Processing#Depth_c
   </table>
   
   
+  <a id="Fusee_Engine_Core_RenderContext_Render_" data-uid="Fusee.Engine.Core.RenderContext.Render*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_Render_Fusee_Engine_Core_Scene_Mesh_System_Boolean_" data-uid="Fusee.Engine.Core.RenderContext.Render(Fusee.Engine.Core.Scene.Mesh,System.Boolean)">Render(Mesh, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Renders the specified mesh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Render(Mesh m, bool renderForward = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a></td>
+        <td><span class="parametername">m</span></td>
+        <td><p>The mesh that should be rendered.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">renderForward</span></td>
+        <td><p>Is a forward or deferred renderer used? Will fetch the proper shader for the render method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_Render_Fusee_Engine_Core_Scene_Mesh_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Passes geometry to be pushed through the rendering pipeline. <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a> for a description how geometry is made up.
+The geometry is transformed and rendered by the currently active shader program.</p>
+</div>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_SetEffect_" data-uid="Fusee.Engine.Core.RenderContext.SetEffect*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_SetEffect_Fusee_Engine_Core_Effects_Effect_System_Boolean_" data-uid="Fusee.Engine.Core.RenderContext.SetEffect(Fusee.Engine.Core.Effects.Effect,System.Boolean)">SetEffect(Effect, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Activates the passed shader effect as the current shader for geometry rendering.
+Will compile a shader by calling <a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_CreateShaderProgram_System_String_System_String_System_String_">CreateShaderProgram(String, String, String)</a> if it hasn't been compiled yet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEffect(Effect ef, bool renderForward = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Effects.Effect.html">Effect</a></td>
+        <td><span class="parametername">ef</span></td>
+        <td><p>The effect.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">renderForward</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_SetEffect_Fusee_Engine_Core_Effects_Effect_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A Effect must be attached to a context before you can render geometry with it. The main
+task performed in this method is compiling the provided shader source code and uploading the shaders to
+the gpu.</p>
+</div>
+  
+  
   <a id="Fusee_Engine_Core_RenderContext_SetLineWidth_" data-uid="Fusee.Engine.Core.RenderContext.SetLineWidth*"></a>
   <h4 id="Fusee_Engine_Core_RenderContext_SetLineWidth_System_Single_" data-uid="Fusee.Engine.Core.RenderContext.SetLineWidth(System.Single)">SetLineWidth(Single)</h4>
   <div class="markdown level1 summary"><p>Specifies the rasterized width of both aliased and antialiased lines.</p>
@@ -1442,6 +1521,41 @@ method to change more than one render state at once.</p>
   
   
   <a id="Fusee_Engine_Core_RenderContext_SetRenderTarget_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderTarget*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_SetRenderTarget_Fusee_Engine_Common_IWritableArrayTexture_System_Int32_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32)">SetRenderTarget(IWritableArrayTexture, Int32)</h4>
+  <div class="markdown level1 summary"><p>Renders into the given texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderTarget(IWritableArrayTexture tex, int layer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IWritableArrayTexture.html">IWritableArrayTexture</a></td>
+        <td><span class="parametername">tex</span></td>
+        <td><p>The render texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">layer</span></td>
+        <td><p>The layer of the array texture that is set as render target.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RenderContext_SetRenderTarget_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderTarget*"></a>
   <h4 id="Fusee_Engine_Core_RenderContext_SetRenderTarget_Fusee_Engine_Common_IWritableCubeMap_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableCubeMap)">SetRenderTarget(IWritableCubeMap)</h4>
   <div class="markdown level1 summary"><p>Renders into the given texture.</p>
 </div>
@@ -1526,41 +1640,6 @@ method to change more than one render state at once.</p>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="Fusee_Engine_Core_RenderContext_SetShaderEffect_" data-uid="Fusee.Engine.Core.RenderContext.SetShaderEffect*"></a>
-  <h4 id="Fusee_Engine_Core_RenderContext_SetShaderEffect_Fusee_Engine_Core_Scene_ShaderEffect_" data-uid="Fusee.Engine.Core.RenderContext.SetShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)">SetShaderEffect(ShaderEffect)</h4>
-  <div class="markdown level1 summary"><p>Activates the passed shader effect as the current shader for geometry rendering.
-Will compile a shader by calling <a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_CreateShaderProgram_System_String_System_String_System_String_">CreateShaderProgram(String, String, String)</a> if it hasn't been compiled yet.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetShaderEffect(ShaderEffect ef)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Engine.Core.Scene.ShaderEffect.html">ShaderEffect</a></td>
-        <td><span class="parametername">ef</span></td>
-        <td><p>The shader effect.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Fusee_Engine_Core_RenderContext_SetShaderEffect_Fusee_Engine_Core_Scene_ShaderEffect__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>A ShaderEffect must be attached to a context before you can render geometry with it. The main
-task performed in this method is compiling the provided shader source code and uploading the shaders to
-the gpu.</p>
-</div>
   
   
   <a id="Fusee_Engine_Core_RenderContext_UnlockAllRenderStates_" data-uid="Fusee.Engine.Core.RenderContext.UnlockAllRenderStates*"></a>

@@ -5,7 +5,7 @@ items:
   id: SceneRendererForward
   parent: Fusee.Engine.Core
   children:
-  - Fusee.Engine.Core.SceneRendererForward.#ctor(Fusee.Engine.Core.Scene.SceneContainer)
+  - Fusee.Engine.Core.SceneRendererForward.#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Core.Scene.RenderLayers)
   - Fusee.Engine.Core.SceneRendererForward._animation
   - Fusee.Engine.Core.SceneRendererForward._boneMap
   - Fusee.Engine.Core.SceneRendererForward._lightResults
@@ -25,10 +25,12 @@ items:
   - Fusee.Engine.Core.SceneRendererForward.Render(Fusee.Engine.Core.RenderContext)
   - Fusee.Engine.Core.SceneRendererForward.RenderBone(Fusee.Engine.Core.Scene.Bone)
   - Fusee.Engine.Core.SceneRendererForward.RenderCanvasTransform(Fusee.Engine.Core.Scene.CanvasTransform)
+  - Fusee.Engine.Core.SceneRendererForward.RenderEffect(Fusee.Engine.Core.Effects.Effect)
+  - Fusee.Engine.Core.SceneRendererForward.RenderLayer
   - Fusee.Engine.Core.SceneRendererForward.RenderMesh(Fusee.Engine.Core.Scene.Mesh)
   - Fusee.Engine.Core.SceneRendererForward.RenderPtOctant(Fusee.Engine.Core.Scene.Octant)
   - Fusee.Engine.Core.SceneRendererForward.RenderRectTransform(Fusee.Engine.Core.Scene.RectTransform)
-  - Fusee.Engine.Core.SceneRendererForward.RenderShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
+  - Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer(Fusee.Engine.Core.Scene.RenderLayer)
   - Fusee.Engine.Core.SceneRendererForward.RenderTransform(Fusee.Engine.Core.Scene.Transform)
   - Fusee.Engine.Core.SceneRendererForward.RenderWeight(Fusee.Engine.Core.Scene.Weight)
   - Fusee.Engine.Core.SceneRendererForward.RenderXForm(Fusee.Engine.Core.Scene.XForm)
@@ -44,7 +46,7 @@ items:
   source:
     id: SceneRendererForward
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -101,7 +103,7 @@ items:
   source:
     id: HasNumberOfLightsChanged
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -130,7 +132,7 @@ items:
   source:
     id: DoFrumstumCulling
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 30
+    startLine: 31
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -143,6 +145,39 @@ items:
     content.vb: Public DoFrumstumCulling As Boolean
   modifiers.csharp:
   - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.SceneRendererForward.RenderLayer
+  commentId: P:Fusee.Engine.Core.SceneRendererForward.RenderLayer
+  id: RenderLayer
+  parent: Fusee.Engine.Core.SceneRendererForward
+  langs:
+  - csharp
+  - vb
+  name: RenderLayer
+  nameWithType: SceneRendererForward.RenderLayer
+  fullName: Fusee.Engine.Core.SceneRendererForward.RenderLayer
+  type: Property
+  source:
+    id: RenderLayer
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
+    startLine: 36
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nThe RenderLayer this renderer should render.\n"
+  example: []
+  syntax:
+    content: public RenderLayers RenderLayer { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+    content.vb: Public Property RenderLayer As RenderLayers
+  overload: Fusee.Engine.Core.SceneRendererForward.RenderLayer*
+  modifiers.csharp:
+  - public
+  - get
+  - set
   modifiers.vb:
   - Public
 - uid: Fusee.Engine.Core.SceneRendererForward.LightViseratorResults
@@ -159,7 +194,7 @@ items:
   source:
     id: LightViseratorResults
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 35
+    startLine: 41
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -192,7 +227,7 @@ items:
   source:
     id: _boneMap
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 62
+    startLine: 68
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -221,7 +256,7 @@ items:
   source:
     id: _animation
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 67
+    startLine: 73
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -250,7 +285,7 @@ items:
   source:
     id: _sc
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 72
+    startLine: 78
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -279,11 +314,11 @@ items:
   source:
     id: _rc
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 77
+    startLine: 83
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nThe RenderContext, used to render the scene.\n"
+  summary: "\nThe RenderContext, used to render the scene. This will be ignored if cameras are used.\n"
   example: []
   syntax:
     content: protected RenderContext _rc
@@ -308,7 +343,7 @@ items:
   source:
     id: _state
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 82
+    startLine: 88
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -337,7 +372,7 @@ items:
   source:
     id: _lightResults
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 87
+    startLine: 93
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -352,33 +387,36 @@ items:
   - protected
   modifiers.vb:
   - Protected
-- uid: Fusee.Engine.Core.SceneRendererForward.#ctor(Fusee.Engine.Core.Scene.SceneContainer)
-  commentId: M:Fusee.Engine.Core.SceneRendererForward.#ctor(Fusee.Engine.Core.Scene.SceneContainer)
-  id: '#ctor(Fusee.Engine.Core.Scene.SceneContainer)'
+- uid: Fusee.Engine.Core.SceneRendererForward.#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Core.Scene.RenderLayers)
+  commentId: M:Fusee.Engine.Core.SceneRendererForward.#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Core.Scene.RenderLayers)
+  id: '#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Core.Scene.RenderLayers)'
   parent: Fusee.Engine.Core.SceneRendererForward
   langs:
   - csharp
   - vb
-  name: SceneRendererForward(SceneContainer)
-  nameWithType: SceneRendererForward.SceneRendererForward(SceneContainer)
-  fullName: Fusee.Engine.Core.SceneRendererForward.SceneRendererForward(Fusee.Engine.Core.Scene.SceneContainer)
+  name: SceneRendererForward(SceneContainer, RenderLayers)
+  nameWithType: SceneRendererForward.SceneRendererForward(SceneContainer, RenderLayers)
+  fullName: Fusee.Engine.Core.SceneRendererForward.SceneRendererForward(Fusee.Engine.Core.Scene.SceneContainer, Fusee.Engine.Core.Scene.RenderLayers)
   type: Constructor
   source:
     id: .ctor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 131
+    startLine: 138
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   summary: "\nCreates a new instance of type SceneRendererForward.\nThis scene renderer is used for forward rendering.\n"
   example: []
   syntax:
-    content: public SceneRendererForward(SceneContainer sc)
+    content: public SceneRendererForward(SceneContainer sc, RenderLayers renderLayer = RenderLayers.All | RenderLayers.Default)
     parameters:
     - id: sc
       type: Fusee.Engine.Core.Scene.SceneContainer
       description: The <xref href="Fusee.Engine.Core.Scene" data-throw-if-not-resolved="false"></xref> containing the scene that is rendered.
-    content.vb: Public Sub New(sc As SceneContainer)
+    - id: renderLayer
+      type: Fusee.Engine.Core.Scene.RenderLayers
+      description: ''
+    content.vb: Public Sub New(sc As SceneContainer, renderLayer As RenderLayers = RenderLayers.All Or RenderLayers.Default)
   overload: Fusee.Engine.Core.SceneRendererForward.#ctor*
   modifiers.csharp:
   - public
@@ -398,7 +436,7 @@ items:
   source:
     id: InitAnimations
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 146
+    startLine: 150
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -430,7 +468,7 @@ items:
   source:
     id: Animate
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 247
+    startLine: 251
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -458,7 +496,7 @@ items:
   source:
     id: SetContext
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 260
+    startLine: 264
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -490,7 +528,7 @@ items:
   source:
     id: Render
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 279
+    startLine: 282
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -522,7 +560,7 @@ items:
   source:
     id: AccumulateLight
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 340
+    startLine: 345
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -536,6 +574,38 @@ items:
   - protected
   modifiers.vb:
   - Protected
+- uid: Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer(Fusee.Engine.Core.Scene.RenderLayer)
+  commentId: M:Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer(Fusee.Engine.Core.Scene.RenderLayer)
+  id: RenderRenderLayer(Fusee.Engine.Core.Scene.RenderLayer)
+  parent: Fusee.Engine.Core.SceneRendererForward
+  langs:
+  - csharp
+  - vb
+  name: RenderRenderLayer(RenderLayer)
+  nameWithType: SceneRendererForward.RenderRenderLayer(RenderLayer)
+  fullName: Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer(Fusee.Engine.Core.Scene.RenderLayer)
+  type: Method
+  source:
+    id: RenderRenderLayer
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
+    startLine: 359
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRenders the RenderLayer.\n"
+  example: []
+  syntax:
+    content: public void RenderRenderLayer(RenderLayer renderLayer)
+    parameters:
+    - id: renderLayer
+      type: Fusee.Engine.Core.Scene.RenderLayer
+      description: ''
+    content.vb: Public Sub RenderRenderLayer(renderLayer As RenderLayer)
+  overload: Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Fusee.Engine.Core.SceneRendererForward.RenderBone(Fusee.Engine.Core.Scene.Bone)
   commentId: M:Fusee.Engine.Core.SceneRendererForward.RenderBone(Fusee.Engine.Core.Scene.Bone)
   id: RenderBone(Fusee.Engine.Core.Scene.Bone)
@@ -550,7 +620,7 @@ items:
   source:
     id: RenderBone
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 354
+    startLine: 369
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -582,7 +652,7 @@ items:
   source:
     id: RenderWeight
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 374
+    startLine: 389
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -614,7 +684,7 @@ items:
   source:
     id: RenderCanvasTransform
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 392
+    startLine: 407
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -646,7 +716,7 @@ items:
   source:
     id: RenderRectTransform
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 467
+    startLine: 482
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -678,7 +748,7 @@ items:
   source:
     id: RenderXForm
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 504
+    startLine: 519
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -710,7 +780,7 @@ items:
   source:
     id: RenderXFormText
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 532
+    startLine: 547
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -742,7 +812,7 @@ items:
   source:
     id: RenderTransform
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 633
+    startLine: 648
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -774,7 +844,7 @@ items:
   source:
     id: RenderPtOctant
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 644
+    startLine: 659
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -792,34 +862,34 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Fusee.Engine.Core.SceneRendererForward.RenderShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
-  commentId: M:Fusee.Engine.Core.SceneRendererForward.RenderShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
-  id: RenderShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
+- uid: Fusee.Engine.Core.SceneRendererForward.RenderEffect(Fusee.Engine.Core.Effects.Effect)
+  commentId: M:Fusee.Engine.Core.SceneRendererForward.RenderEffect(Fusee.Engine.Core.Effects.Effect)
+  id: RenderEffect(Fusee.Engine.Core.Effects.Effect)
   parent: Fusee.Engine.Core.SceneRendererForward
   langs:
   - csharp
   - vb
-  name: RenderShaderEffect(ShaderEffect)
-  nameWithType: SceneRendererForward.RenderShaderEffect(ShaderEffect)
-  fullName: Fusee.Engine.Core.SceneRendererForward.RenderShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
+  name: RenderEffect(Effect)
+  nameWithType: SceneRendererForward.RenderEffect(Effect)
+  fullName: Fusee.Engine.Core.SceneRendererForward.RenderEffect(Fusee.Engine.Core.Effects.Effect)
   type: Method
   source:
-    id: RenderShaderEffect
+    id: RenderEffect
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 655
+    startLine: 670
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   summary: "\nIf a ShaderEffect is visited the ShaderEffect of the <xref href=\"Fusee.Engine.Core.RendererState\" data-throw-if-not-resolved=\"false\"></xref> is updated and the effect is set in the <xref href=\"Fusee.Engine.Core.RenderContext\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: public void RenderShaderEffect(ShaderEffect shader)
+    content: public void RenderEffect(Effect effect)
     parameters:
-    - id: shader
-      type: Fusee.Engine.Core.Scene.ShaderEffect
-      description: The ShaderEffect
-    content.vb: Public Sub RenderShaderEffect(shader As ShaderEffect)
-  overload: Fusee.Engine.Core.SceneRendererForward.RenderShaderEffect*
+    - id: effect
+      type: Fusee.Engine.Core.Effects.Effect
+      description: The <xref href="Fusee.Engine.Core.Effects.Effect" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub RenderEffect(effect As Effect)
+  overload: Fusee.Engine.Core.SceneRendererForward.RenderEffect*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -838,7 +908,7 @@ items:
   source:
     id: RenderMesh
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 672
+    startLine: 687
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -870,17 +940,21 @@ items:
   source:
     id: AddWeightToMesh
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 699
+    startLine: 721
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
+  summary: "\nAdds bone indices and bone weights from a <xref href=\"Fusee.Engine.Core.Scene.Weight\" data-throw-if-not-resolved=\"false\"></xref> to a mesh.\n"
+  example: []
   syntax:
     content: protected void AddWeightToMesh(Mesh mesh, Weight wc)
     parameters:
     - id: mesh
       type: Fusee.Engine.Core.Scene.Mesh
+      description: ''
     - id: wc
       type: Fusee.Engine.Core.Scene.Weight
+      description: ''
     content.vb: Protected Sub AddWeightToMesh(mesh As Mesh, wc As Weight)
   overload: Fusee.Engine.Core.SceneRendererForward.AddWeightToMesh*
   modifiers.csharp:
@@ -901,7 +975,7 @@ items:
   source:
     id: InitState
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 760
+    startLine: 782
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -932,7 +1006,7 @@ items:
   source:
     id: PushState
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 773
+    startLine: 797
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -963,7 +1037,7 @@ items:
   source:
     id: PopState
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererForward.cs
-    startLine: 781
+    startLine: 805
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -2088,6 +2162,22 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: Fusee.Engine.Core.SceneRendererForward.RenderLayer*
+  commentId: Overload:Fusee.Engine.Core.SceneRendererForward.RenderLayer
+  name: RenderLayer
+  nameWithType: SceneRendererForward.RenderLayer
+  fullName: Fusee.Engine.Core.SceneRendererForward.RenderLayer
+- uid: Fusee.Engine.Core.Scene.RenderLayers
+  commentId: T:Fusee.Engine.Core.Scene.RenderLayers
+  parent: Fusee.Engine.Core.Scene
+  name: RenderLayers
+  nameWithType: RenderLayers
+  fullName: Fusee.Engine.Core.Scene.RenderLayers
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
 - uid: Fusee.Engine.Core.PrePassVisitor
   commentId: T:Fusee.Engine.Core.PrePassVisitor
   isExternal: true
@@ -2281,11 +2371,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Fusee.Engine.Core.Scene
-  commentId: N:Fusee.Engine.Core.Scene
-  name: Fusee.Engine.Core.Scene
-  nameWithType: Fusee.Engine.Core.Scene
-  fullName: Fusee.Engine.Core.Scene
 - uid: System.Collections.Generic.Dictionary`2
   commentId: T:System.Collections.Generic.Dictionary`2
   isExternal: true
@@ -2402,6 +2487,17 @@ references:
   name: AccumulateLight
   nameWithType: SceneRendererForward.AccumulateLight
   fullName: Fusee.Engine.Core.SceneRendererForward.AccumulateLight
+- uid: Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer*
+  commentId: Overload:Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer
+  name: RenderRenderLayer
+  nameWithType: SceneRendererForward.RenderRenderLayer
+  fullName: Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer
+- uid: Fusee.Engine.Core.Scene.RenderLayer
+  commentId: T:Fusee.Engine.Core.Scene.RenderLayer
+  parent: Fusee.Engine.Core.Scene
+  name: RenderLayer
+  nameWithType: RenderLayer
+  fullName: Fusee.Engine.Core.Scene.RenderLayer
 - uid: Fusee.Engine.Core.SceneRendererForward.RenderBone*
   commentId: Overload:Fusee.Engine.Core.SceneRendererForward.RenderBone
   name: RenderBone
@@ -2484,17 +2580,22 @@ references:
   name: Octant
   nameWithType: Octant
   fullName: Fusee.Engine.Core.Scene.Octant
-- uid: Fusee.Engine.Core.SceneRendererForward.RenderShaderEffect*
-  commentId: Overload:Fusee.Engine.Core.SceneRendererForward.RenderShaderEffect
-  name: RenderShaderEffect
-  nameWithType: SceneRendererForward.RenderShaderEffect
-  fullName: Fusee.Engine.Core.SceneRendererForward.RenderShaderEffect
-- uid: Fusee.Engine.Core.Scene.ShaderEffect
-  commentId: T:Fusee.Engine.Core.Scene.ShaderEffect
-  parent: Fusee.Engine.Core.Scene
-  name: ShaderEffect
-  nameWithType: ShaderEffect
-  fullName: Fusee.Engine.Core.Scene.ShaderEffect
+- uid: Fusee.Engine.Core.Effects.Effect
+  commentId: T:Fusee.Engine.Core.Effects.Effect
+  parent: Fusee.Engine.Core.Effects
+  name: Effect
+  nameWithType: Effect
+  fullName: Fusee.Engine.Core.Effects.Effect
+- uid: Fusee.Engine.Core.SceneRendererForward.RenderEffect*
+  commentId: Overload:Fusee.Engine.Core.SceneRendererForward.RenderEffect
+  name: RenderEffect
+  nameWithType: SceneRendererForward.RenderEffect
+  fullName: Fusee.Engine.Core.SceneRendererForward.RenderEffect
+- uid: Fusee.Engine.Core.Effects
+  commentId: N:Fusee.Engine.Core.Effects
+  name: Fusee.Engine.Core.Effects
+  nameWithType: Fusee.Engine.Core.Effects
+  fullName: Fusee.Engine.Core.Effects
 - uid: Fusee.Engine.Core.SceneRendererForward.RenderMesh*
   commentId: Overload:Fusee.Engine.Core.SceneRendererForward.RenderMesh
   name: RenderMesh

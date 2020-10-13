@@ -234,7 +234,7 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">isDepthTex</span></td>
-        <td><p>Determines if the texture is a depth texture. In this case the texture is attached to <span class="xref">OpenTK.Graphics.OpenGL.FramebufferAttachment.DepthAttachment</span>.</p>
+        <td><p>Determines if the texture is a depth texture. In this case the texture is attached to <see cref="!:FramebufferAttachment.DepthAttachment"></see>.</p>
 </td>
       </tr>
       <tr>
@@ -246,7 +246,7 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">attachment</span></td>
-        <td><p>Number of the fbo attachment. For example: attachment = 1 will attach the texture to <span class="xref">OpenTK.Graphics.OpenGL.FramebufferAttachment.ColorAttachment1</span>.</p>
+        <td><p>Number of the fbo attachment. For example: attachment = 1 will attach the texture to <see cref="!:FramebufferAttachment.ColorAttachment1"></see>.</p>
 </td>
       </tr>
     </tbody>
@@ -500,6 +500,51 @@ Do not use this function in frequent updates.</p>
       <tr>
         <td><a class="xref" href="Fusee.Engine.Common.ITexture.html">ITexture</a></td>
         <td><span class="parametername">img</span></td>
+        <td><p>A given ITexture object, containing all necessary information for the upload to the graphics card.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.ITextureHandle.html">ITextureHandle</a></td>
+        <td><p>An ITextureHandle that can be used for texturing in the shader. In this implementation, the handle is an integer-value which is necessary for OpenTK.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_RenderContextImp_CreateTexture_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.CreateTexture*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderContextImp_CreateTexture_Fusee_Engine_Common_IWritableArrayTexture_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)">CreateTexture(IWritableArrayTexture)</h4>
+  <div class="markdown level1 summary"><p>Creates a new Texture and binds it to the shader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITextureHandle CreateTexture(IWritableArrayTexture img)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IWritableArrayTexture.html">IWritableArrayTexture</a></td>
+        <td><span class="parametername">img</span></td>
         <td><p>A given ImageData object, containing all necessary information for the upload to the graphics card.</p>
 </td>
       </tr>
@@ -545,7 +590,7 @@ Do not use this function in frequent updates.</p>
       <tr>
         <td><a class="xref" href="Fusee.Engine.Common.IWritableCubeMap.html">IWritableCubeMap</a></td>
         <td><span class="parametername">img</span></td>
-        <td><p>A given ImageData object, containing all necessary information for the upload to the graphics card.</p>
+        <td><p>A given IWritableCubeMap object, containing all necessary information for the upload to the graphics card.</p>
 </td>
       </tr>
     </tbody>
@@ -590,7 +635,7 @@ Do not use this function in frequent updates.</p>
       <tr>
         <td><a class="xref" href="Fusee.Engine.Common.IWritableTexture.html">IWritableTexture</a></td>
         <td><span class="parametername">img</span></td>
-        <td><p>A given ImageData object, containing all necessary information for the upload to the graphics card.</p>
+        <td><p>A given IWritableTexture object, containing all necessary information for the upload to the graphics card.</p>
 </td>
       </tr>
     </tbody>
@@ -770,13 +815,13 @@ allocated on the GPU.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">isDepthTex</span></td>
-        <td><p>Determines if the texture is a depth texture. In this case the texture currently associated with <span class="xref">OpenTK.Graphics.OpenGL.FramebufferAttachment.DepthAttachment</span> will be detached.</p>
+        <td><p>Determines if the texture is a depth texture. In this case the texture currently associated with <see cref="!:FramebufferAttachment.DepthAttachment"></see> will be detached.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">attachment</span></td>
-        <td><p>Number of the fbo attachment. For example: attachment = 1 will detach the texture currently associated with <span class="xref">OpenTK.Graphics.OpenGL.FramebufferAttachment.ColorAttachment1</span>.</p>
+        <td><p>Number of the fbo attachment. For example: attachment = 1 will detach the texture currently associated with <see cref="!:FramebufferAttachment.ColorAttachment1"></see>.</p>
 </td>
       </tr>
     </tbody>
@@ -835,7 +880,7 @@ See: <a href="https://www.khronos.org/opengl/wiki/Vertex_Post-Processing#Depth_c
       <tr>
         <td><a class="xref" href="Fusee.Engine.Common.ITextureHandle.html">ITextureHandle</a></td>
         <td><span class="parametername">texId</span></td>
-        <td><p>The tex identifier.</p>
+        <td><p>The texture identifier.</p>
 </td>
       </tr>
     </tbody>
@@ -2223,6 +2268,47 @@ renderState</p>
   
   
   <a id="Fusee_Engine_Imp_Graphics_Desktop_RenderContextImp_SetRenderTarget_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetRenderTarget*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderContextImp_SetRenderTarget_Fusee_Engine_Common_IWritableArrayTexture_System_Int32_Fusee_Engine_Common_ITextureHandle_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32,Fusee.Engine.Common.ITextureHandle)">SetRenderTarget(IWritableArrayTexture, Int32, ITextureHandle)</h4>
+  <div class="markdown level1 summary"><p>Renders into the given layer of the array texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderTarget(IWritableArrayTexture tex, int layer, ITextureHandle texHandle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IWritableArrayTexture.html">IWritableArrayTexture</a></td>
+        <td><span class="parametername">tex</span></td>
+        <td><p>The array texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">layer</span></td>
+        <td><p>The layer to render to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.ITextureHandle.html">ITextureHandle</a></td>
+        <td><span class="parametername">texHandle</span></td>
+        <td><p>The texture handle, associated with the given texture. Should be created by the TextureManager in the RenderContext.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_RenderContextImp_SetRenderTarget_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetRenderTarget*"></a>
   <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderContextImp_SetRenderTarget_Fusee_Engine_Common_IWritableCubeMap_Fusee_Engine_Common_ITextureHandle_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableCubeMap,Fusee.Engine.Common.ITextureHandle)">SetRenderTarget(IWritableCubeMap, ITextureHandle)</h4>
   <div class="markdown level1 summary"><p>Renders into the given cube map.</p>
 </div>
@@ -2803,6 +2889,76 @@ renderState</p>
       <tr>
         <td><span class="xref">System.ApplicationException</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_RenderContextImp_SetTextureFilterMode_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureFilterMode*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderContextImp_SetTextureFilterMode_Fusee_Engine_Common_ITextureHandle_Fusee_Engine_Common_TextureFilterMode_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureFilterMode)">SetTextureFilterMode(ITextureHandle, TextureFilterMode)</h4>
+  <div class="markdown level1 summary"><p>Sets the textures filter mode (<a class="xref" href="Fusee.Engine.Common.TextureFilterMode.html">TextureFilterMode</a> at runtime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTextureFilterMode(ITextureHandle tex, TextureFilterMode filterMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.ITextureHandle.html">ITextureHandle</a></td>
+        <td><span class="parametername">tex</span></td>
+        <td><p>The handle of the texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.TextureFilterMode.html">TextureFilterMode</a></td>
+        <td><span class="parametername">filterMode</span></td>
+        <td><p>The new filter mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_RenderContextImp_SetTextureWrapMode_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureWrapMode*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderContextImp_SetTextureWrapMode_Fusee_Engine_Common_ITextureHandle_Fusee_Engine_Common_TextureWrapMode_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureWrapMode)">SetTextureWrapMode(ITextureHandle, TextureWrapMode)</h4>
+  <div class="markdown level1 summary"><p>Sets the textures filter mode (<a class="xref" href="Fusee.Engine.Common.TextureWrapMode.html">TextureWrapMode</a> at runtime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTextureWrapMode(ITextureHandle tex, TextureWrapMode wrapMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.ITextureHandle.html">ITextureHandle</a></td>
+        <td><span class="parametername">tex</span></td>
+        <td><p>The handle of the texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.TextureWrapMode.html">TextureWrapMode</a></td>
+        <td><span class="parametername">wrapMode</span></td>
+        <td><p>The new wrap mode.</p>
+</td>
       </tr>
     </tbody>
   </table>

@@ -75,40 +75,17 @@
 <hr>
 <p>Before following the FUSEE installation instructions on this page, make sure all
 <a href="../necessary-tools/">Necessary Tools</a> are installed.</p>
-<h2 id="installation">Installation</h2>
-<ul>
-<li><p>Download the latest
-<a href="https://github.com/FUSEEProjectTeam/Fusee/releases/latest">FUSEE Release</a>
-from the
-<a href="https://github.com/FUSEEProjectTeam/Fusee/releases">FUSEE GitHub Repository</a>.</p>
-</li>
-<li><p>Copy or move the downloaded <code>Fusee_v0.7.0.exe</code> to a convenient place on your hard drive. This will
-become the home of your FUSEE installation.</p>
-</li>
-</ul>
-<blockquote>
-<p><strong>IMPORTANT:</strong> On some systems, the executable file is blocked and it may fail to run.
-Before double-clicking it, <a href="https://blogs.msdn.microsoft.com/delay/p/unblockingdownloadedfile/">unblock</a>
-the file <code>Fusee_v0.7.0.exe</code>.</p>
-</blockquote>
-<ul>
-<li><p>Double-click on the executable file.
-This will extract its contents into a <code>Fusee</code> folder below the folder where the executable file is placed.</p>
-</li>
-<li><p>In the newly extracted <code>Fusee</code> folder,</p>
-<ul>
-<li><p><em><strong>either</strong></em> start <code>SetupPerUser.bat</code> if you want to register the FUSEE installation only for the current user.
-This is the only option to install FUSEE without Administrator privileges. You can simply double-click
-on <code>SetupPerUser.bat</code>.</p>
-</li>
-<li><p><em><strong>or</strong></em> start <code>SetupMachineWide.bat</code>. This will perform the necessary FUSEE registration steps to enable
-all users on a machine to use the FUSEE installation. You need to start the command with Administrator privileges,
-otherwise the installation will fail. To start the machine-wide-installation, right-click on <code>SetupMachineWide.bat</code>
-and select &quot;Start as administrator&quot; from the context-menu.</p>
-</li>
-</ul>
-</li>
-</ul>
+<h2 id="installing">Installing</h2>
+<p><code>dotnet tool install -g Fusee.Tools.CmdLine</code></p>
+<p>On HFU Pcs you in addition have to <code>set PATH=%PATH%;%USERPROFILE%\.dotnet\tools</code></p>
+<h2 id="uninstalling">Uninstalling</h2>
+<p><code>dotnet tool uninstall -g Fusee.Tools.CmdLine</code></p>
+<h2 id="updating">Updating</h2>
+<p><code>dotnet tool update -g Fusee.Tools.CmdLine</code></p>
+<h2 id="usage">Usage</h2>
+<p><code>fusee</code> and follow the help text.</p>
+<h2 id="install-blender-add-on">Install Blender Add-on</h2>
+<p><code>fusee install</code></p>
 <h3 id="enable-the-fusee-export-add-on-within-blender">Enable the FUSEE Export Add-On within Blender</h3>
 <p>If a Blender installation exists at a typical installation path (e.g. &quot;C:\Program Files\Blender Foundation...&quot;)
 one of the <code>Setup...</code> commands in the previous step already copied the FUSEE Blender Add-on to a directory recognized

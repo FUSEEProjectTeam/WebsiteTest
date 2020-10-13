@@ -1,0 +1,684 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.ShaderShards.SurfaceOut
+  commentId: T:Fusee.Engine.Core.ShaderShards.SurfaceOut
+  id: SurfaceOut
+  parent: Fusee.Engine.Core.ShaderShards
+  children:
+  - Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfFragMethod(System.Collections.Generic.List{System.String},System.Type)
+  - Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfVertMethod(System.Collections.Generic.List{System.String},Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  - Fusee.Engine.Core.ShaderShards.SurfaceOut.GetLightingSetupShards(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  - Fusee.Engine.Core.ShaderShards.SurfaceOut.StructName
+  - Fusee.Engine.Core.ShaderShards.SurfaceOut.SurfOutVaryingName
+  langs:
+  - csharp
+  - vb
+  name: SurfaceOut
+  nameWithType: SurfaceOut
+  fullName: Fusee.Engine.Core.ShaderShards.SurfaceOut
+  type: Class
+  source:
+    id: SurfaceOut
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\SurfaceOut.cs
+    startLine: 62
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nContains all needed information to define the <xref href=\"Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceOutput\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static class SurfaceOut
+    content.vb: Public Module SurfaceOut
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Fusee.Engine.Core.ShaderShards.SurfaceOut.StructName
+  commentId: F:Fusee.Engine.Core.ShaderShards.SurfaceOut.StructName
+  id: StructName
+  parent: Fusee.Engine.Core.ShaderShards.SurfaceOut
+  langs:
+  - csharp
+  - vb
+  name: StructName
+  nameWithType: SurfaceOut.StructName
+  fullName: Fusee.Engine.Core.ShaderShards.SurfaceOut.StructName
+  type: Field
+  source:
+    id: StructName
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\SurfaceOut.cs
+    startLine: 67
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nThe surface effects &quot;out&quot;-struct (<xref href=\"Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceOutput\" data-throw-if-not-resolved=\"false\"></xref>) always has this type in the shader code.\n"
+  example: []
+  syntax:
+    content: public const string StructName = "SurfOut"
+    return:
+      type: System.String
+    content.vb: Public Const StructName As String = "SurfOut"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.ShaderShards.SurfaceOut.SurfOutVaryingName
+  commentId: F:Fusee.Engine.Core.ShaderShards.SurfaceOut.SurfOutVaryingName
+  id: SurfOutVaryingName
+  parent: Fusee.Engine.Core.ShaderShards.SurfaceOut
+  langs:
+  - csharp
+  - vb
+  name: SurfOutVaryingName
+  nameWithType: SurfaceOut.SurfOutVaryingName
+  fullName: Fusee.Engine.Core.ShaderShards.SurfaceOut.SurfOutVaryingName
+  type: Field
+  source:
+    id: SurfOutVaryingName
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\SurfaceOut.cs
+    startLine: 72
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nThe surface effects &quot;out&quot;-struct (<xref href=\"Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceOutput\" data-throw-if-not-resolved=\"false\"></xref>) always has this variable name in the shader code.\n"
+  example: []
+  syntax:
+    content: public const string SurfOutVaryingName = "surfOut"
+    return:
+      type: System.String
+    content.vb: Public Const SurfOutVaryingName As String = "surfOut"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetLightingSetupShards(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  commentId: M:Fusee.Engine.Core.ShaderShards.SurfaceOut.GetLightingSetupShards(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  id: GetLightingSetupShards(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  parent: Fusee.Engine.Core.ShaderShards.SurfaceOut
+  langs:
+  - csharp
+  - vb
+  name: GetLightingSetupShards(LightingSetupFlags)
+  nameWithType: SurfaceOut.GetLightingSetupShards(LightingSetupFlags)
+  fullName: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetLightingSetupShards(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  type: Method
+  source:
+    id: GetLightingSetupShards
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\SurfaceOut.cs
+    startLine: 106
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nReturns the GLSL default constructor and declaration of the <xref href=\"Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceOutput\" data-throw-if-not-resolved=\"false\"></xref> struct.\n"
+  example: []
+  syntax:
+    content: public static LightingSetupShards GetLightingSetupShards(LightingSetupFlags setup)
+    parameters:
+    - id: setup
+      type: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+      description: The <xref href="Fusee.Engine.Core.ShaderShards.LightingSetupFlags" data-throw-if-not-resolved="false"></xref> that decides what the appropriate struct is.
+    return:
+      type: Fusee.Engine.Core.ShaderShards.LightingSetupShards
+      description: ''
+    content.vb: Public Shared Function GetLightingSetupShards(setup As LightingSetupFlags) As LightingSetupShards
+  overload: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetLightingSetupShards*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfFragMethod(System.Collections.Generic.List{System.String},System.Type)
+  commentId: M:Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfFragMethod(System.Collections.Generic.List{System.String},System.Type)
+  id: GetChangeSurfFragMethod(System.Collections.Generic.List{System.String},System.Type)
+  parent: Fusee.Engine.Core.ShaderShards.SurfaceOut
+  langs:
+  - csharp
+  - vb
+  name: GetChangeSurfFragMethod(List<String>, Type)
+  nameWithType: SurfaceOut.GetChangeSurfFragMethod(List<String>, Type)
+  fullName: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfFragMethod(System.Collections.Generic.List<System.String>, System.Type)
+  type: Method
+  source:
+    id: GetChangeSurfFragMethod
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\SurfaceOut.cs
+    startLine: 161
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nReturns the GLSL method that modifies the values of the <xref href=\"Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceOutput\" data-throw-if-not-resolved=\"false\"></xref> struct.\n"
+  example: []
+  syntax:
+    content: public static string GetChangeSurfFragMethod(List<string> methodBody, Type inputType)
+    parameters:
+    - id: methodBody
+      type: System.Collections.Generic.List{System.String}
+      description: User-written shader code for modifying.
+    - id: inputType
+      type: System.Type
+      description: The type of the <xref href="Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceInput" data-throw-if-not-resolved="false"></xref> struct.
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function GetChangeSurfFragMethod(methodBody As List(Of String), inputType As Type) As String
+  overload: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfFragMethod*
+  nameWithType.vb: SurfaceOut.GetChangeSurfFragMethod(List(Of String), Type)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfFragMethod(System.Collections.Generic.List(Of System.String), System.Type)
+  name.vb: GetChangeSurfFragMethod(List(Of String), Type)
+- uid: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfVertMethod(System.Collections.Generic.List{System.String},Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  commentId: M:Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfVertMethod(System.Collections.Generic.List{System.String},Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  id: GetChangeSurfVertMethod(System.Collections.Generic.List{System.String},Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  parent: Fusee.Engine.Core.ShaderShards.SurfaceOut
+  langs:
+  - csharp
+  - vb
+  name: GetChangeSurfVertMethod(List<String>, LightingSetupFlags)
+  nameWithType: SurfaceOut.GetChangeSurfVertMethod(List<String>, LightingSetupFlags)
+  fullName: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfVertMethod(System.Collections.Generic.List<System.String>, Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  type: Method
+  source:
+    id: GetChangeSurfVertMethod
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\SurfaceOut.cs
+    startLine: 178
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nReturns the GLSL method that modifies the values of the <xref href=\"Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceOutput\" data-throw-if-not-resolved=\"false\"></xref> struct.\n"
+  example: []
+  syntax:
+    content: public static string GetChangeSurfVertMethod(List<string> methodBody, LightingSetupFlags setup)
+    parameters:
+    - id: methodBody
+      type: System.Collections.Generic.List{System.String}
+      description: User-written shader code for modifying.
+    - id: setup
+      type: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+      description: The lighting setup.
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function GetChangeSurfVertMethod(methodBody As List(Of String), setup As LightingSetupFlags) As String
+  overload: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfVertMethod*
+  nameWithType.vb: SurfaceOut.GetChangeSurfVertMethod(List(Of String), LightingSetupFlags)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfVertMethod(System.Collections.Generic.List(Of System.String), Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  name.vb: GetChangeSurfVertMethod(List(Of String), LightingSetupFlags)
+references:
+- uid: Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceOutput
+  commentId: F:Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceOutput
+  parent: Fusee.Engine.Core.Effects.SurfaceEffect
+  name: SurfaceOutput
+  nameWithType: SurfaceEffect.SurfaceOutput
+  fullName: Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceOutput
+- uid: Fusee.Engine.Core.ShaderShards
+  commentId: N:Fusee.Engine.Core.ShaderShards
+  name: Fusee.Engine.Core.ShaderShards
+  nameWithType: Fusee.Engine.Core.ShaderShards
+  fullName: Fusee.Engine.Core.ShaderShards
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Effects.SurfaceEffect
+  commentId: T:Fusee.Engine.Core.Effects.SurfaceEffect
+  parent: Fusee.Engine.Core.Effects
+  name: SurfaceEffect
+  nameWithType: SurfaceEffect
+  fullName: Fusee.Engine.Core.Effects.SurfaceEffect
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.Effects
+  commentId: N:Fusee.Engine.Core.Effects
+  name: Fusee.Engine.Core.Effects
+  nameWithType: Fusee.Engine.Core.Effects
+  fullName: Fusee.Engine.Core.Effects
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  commentId: T:Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  parent: Fusee.Engine.Core.ShaderShards
+  name: LightingSetupFlags
+  nameWithType: LightingSetupFlags
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+- uid: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetLightingSetupShards*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.SurfaceOut.GetLightingSetupShards
+  name: GetLightingSetupShards
+  nameWithType: SurfaceOut.GetLightingSetupShards
+  fullName: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetLightingSetupShards
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupShards
+  commentId: T:Fusee.Engine.Core.ShaderShards.LightingSetupShards
+  parent: Fusee.Engine.Core.ShaderShards
+  name: LightingSetupShards
+  nameWithType: LightingSetupShards
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupShards
+- uid: Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceInput
+  commentId: P:Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceInput
+  parent: Fusee.Engine.Core.Effects.SurfaceEffect
+  name: SurfaceInput
+  nameWithType: SurfaceEffect.SurfaceInput
+  fullName: Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceInput
+- uid: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfFragMethod*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfFragMethod
+  name: GetChangeSurfFragMethod
+  nameWithType: SurfaceOut.GetChangeSurfFragMethod
+  fullName: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfFragMethod
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfVertMethod*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfVertMethod
+  name: GetChangeSurfVertMethod
+  nameWithType: SurfaceOut.GetChangeSurfVertMethod
+  fullName: Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfVertMethod

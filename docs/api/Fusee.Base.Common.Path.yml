@@ -307,7 +307,7 @@ items:
     parameters:
     - id: path
       type: System.String
-      description: The path to extrect from.
+      description: The path to extract the directory name from.
     return:
       type: System.String
       description: The directory name.
@@ -514,7 +514,7 @@ items:
       description: The path.
     return:
       type: System.Boolean
-      description: true if the path has an extenstion, otherwise false.
+      description: true if the path has an extension, otherwise false.
     content.vb: Public Shared Function HasExtension(path As String) As Boolean
   overload: Fusee.Base.Common.Path.HasExtension*
   exceptions:

@@ -25,6 +25,7 @@ items:
   - Fusee.Engine.Core.Face
   - Fusee.Engine.Core.FontMap
   - Fusee.Engine.Core.FusSceneConverter
+  - Fusee.Engine.Core.FxParam
   - Fusee.Engine.Core.GamePadDevice
   - Fusee.Engine.Core.GearConstraint
   - Fusee.Engine.Core.Generic6DofConstraint
@@ -41,6 +42,7 @@ items:
   - Fusee.Engine.Core.KeyboardDevice
   - Fusee.Engine.Core.LightResult
   - Fusee.Engine.Core.Line
+  - Fusee.Engine.Core.MakeEffect
   - Fusee.Engine.Core.MatchFunc
   - Fusee.Engine.Core.MeshChangedEnum
   - Fusee.Engine.Core.MeshDataEventArgs
@@ -84,6 +86,7 @@ items:
   - Fusee.Engine.Core.VideoManager
   - Fusee.Engine.Core.VideoStream
   - Fusee.Engine.Core.WireframeCube
+  - Fusee.Engine.Core.WritableArrayTexture
   - Fusee.Engine.Core.WritableCubeMap
   - Fusee.Engine.Core.WritableTexture
   langs:
@@ -234,6 +237,11 @@ references:
   name: FusSceneConverter
   nameWithType: FusSceneConverter
   fullName: Fusee.Engine.Core.FusSceneConverter
+- uid: Fusee.Engine.Core.FxParam
+  commentId: T:Fusee.Engine.Core.FxParam
+  name: FxParam
+  nameWithType: FxParam
+  fullName: Fusee.Engine.Core.FxParam
 - uid: Fusee.Engine.Core.GamePadDevice
   commentId: T:Fusee.Engine.Core.GamePadDevice
   name: GamePadDevice
@@ -321,6 +329,11 @@ references:
   name: KeyboardDevice
   nameWithType: KeyboardDevice
   fullName: Fusee.Engine.Core.KeyboardDevice
+- uid: Fusee.Engine.Core.MakeEffect
+  commentId: T:Fusee.Engine.Core.MakeEffect
+  name: MakeEffect
+  nameWithType: MakeEffect
+  fullName: Fusee.Engine.Core.MakeEffect
 - uid: Fusee.Engine.Core.MeshChangedEnum
   commentId: T:Fusee.Engine.Core.MeshChangedEnum
   parent: Fusee.Engine.Core
@@ -355,11 +368,6 @@ references:
   name: Network
   nameWithType: Network
   fullName: Fusee.Engine.Core.Network
-- uid: Fusee.Engine.Core.NineSlicePlane
-  commentId: T:Fusee.Engine.Core.NineSlicePlane
-  name: NineSlicePlane
-  nameWithType: NineSlicePlane
-  fullName: Fusee.Engine.Core.NineSlicePlane
 - uid: Fusee.Engine.Core.Octant`1
   commentId: T:Fusee.Engine.Core.Octant`1
   name: Octant<T>
@@ -413,51 +421,6 @@ references:
   name: LightResult
   nameWithType: LightResult
   fullName: Fusee.Engine.Core.LightResult
-- uid: Fusee.Engine.Core.Circle
-  commentId: T:Fusee.Engine.Core.Circle
-  name: Circle
-  nameWithType: Circle
-  fullName: Fusee.Engine.Core.Circle
-- uid: Fusee.Engine.Core.WireframeCube
-  commentId: T:Fusee.Engine.Core.WireframeCube
-  name: WireframeCube
-  nameWithType: WireframeCube
-  fullName: Fusee.Engine.Core.WireframeCube
-- uid: Fusee.Engine.Core.Cube
-  commentId: T:Fusee.Engine.Core.Cube
-  name: Cube
-  nameWithType: Cube
-  fullName: Fusee.Engine.Core.Cube
-- uid: Fusee.Engine.Core.Icosahedron
-  commentId: T:Fusee.Engine.Core.Icosahedron
-  name: Icosahedron
-  nameWithType: Icosahedron
-  fullName: Fusee.Engine.Core.Icosahedron
-- uid: Fusee.Engine.Core.Icosphere
-  commentId: T:Fusee.Engine.Core.Icosphere
-  name: Icosphere
-  nameWithType: Icosphere
-  fullName: Fusee.Engine.Core.Icosphere
-- uid: Fusee.Engine.Core.Line
-  commentId: T:Fusee.Engine.Core.Line
-  name: Line
-  nameWithType: Line
-  fullName: Fusee.Engine.Core.Line
-- uid: Fusee.Engine.Core.Plane
-  commentId: T:Fusee.Engine.Core.Plane
-  name: Plane
-  nameWithType: Plane
-  fullName: Fusee.Engine.Core.Plane
-- uid: Fusee.Engine.Core.Rocket
-  commentId: T:Fusee.Engine.Core.Rocket
-  name: Rocket
-  nameWithType: Rocket
-  fullName: Fusee.Engine.Core.Rocket
-- uid: Fusee.Engine.Core.Sphere
-  commentId: T:Fusee.Engine.Core.Sphere
-  name: Sphere
-  nameWithType: Sphere
-  fullName: Fusee.Engine.Core.Sphere
 - uid: Fusee.Engine.Core.RenderCanvas
   commentId: T:Fusee.Engine.Core.RenderCanvas
   parent: Fusee.Engine.Core
@@ -532,11 +495,6 @@ references:
   name: SceneRendererForward
   nameWithType: SceneRendererForward
   fullName: Fusee.Engine.Core.SceneRendererForward
-- uid: Fusee.Engine.Core.ShaderCodeBuilder
-  commentId: T:Fusee.Engine.Core.ShaderCodeBuilder
-  name: ShaderCodeBuilder
-  nameWithType: ShaderCodeBuilder
-  fullName: Fusee.Engine.Core.ShaderCodeBuilder
 - uid: Fusee.Engine.Core.SixDOFDevice
   commentId: T:Fusee.Engine.Core.SixDOFDevice
   parent: Fusee.Engine.Core
@@ -607,6 +565,12 @@ references:
   name: VideoStream
   nameWithType: VideoStream
   fullName: Fusee.Engine.Core.VideoStream
+- uid: Fusee.Engine.Core.WritableArrayTexture
+  commentId: T:Fusee.Engine.Core.WritableArrayTexture
+  parent: Fusee.Engine.Core
+  name: WritableArrayTexture
+  nameWithType: WritableArrayTexture
+  fullName: Fusee.Engine.Core.WritableArrayTexture
 - uid: Fusee.Engine.Core.WritableCubeMap
   commentId: T:Fusee.Engine.Core.WritableCubeMap
   name: WritableCubeMap
@@ -618,6 +582,61 @@ references:
   name: WritableTexture
   nameWithType: WritableTexture
   fullName: Fusee.Engine.Core.WritableTexture
+- uid: Fusee.Engine.Core.NineSlicePlane
+  commentId: T:Fusee.Engine.Core.NineSlicePlane
+  name: NineSlicePlane
+  nameWithType: NineSlicePlane
+  fullName: Fusee.Engine.Core.NineSlicePlane
+- uid: Fusee.Engine.Core.Circle
+  commentId: T:Fusee.Engine.Core.Circle
+  name: Circle
+  nameWithType: Circle
+  fullName: Fusee.Engine.Core.Circle
+- uid: Fusee.Engine.Core.WireframeCube
+  commentId: T:Fusee.Engine.Core.WireframeCube
+  name: WireframeCube
+  nameWithType: WireframeCube
+  fullName: Fusee.Engine.Core.WireframeCube
+- uid: Fusee.Engine.Core.Cube
+  commentId: T:Fusee.Engine.Core.Cube
+  name: Cube
+  nameWithType: Cube
+  fullName: Fusee.Engine.Core.Cube
+- uid: Fusee.Engine.Core.Icosahedron
+  commentId: T:Fusee.Engine.Core.Icosahedron
+  name: Icosahedron
+  nameWithType: Icosahedron
+  fullName: Fusee.Engine.Core.Icosahedron
+- uid: Fusee.Engine.Core.Icosphere
+  commentId: T:Fusee.Engine.Core.Icosphere
+  name: Icosphere
+  nameWithType: Icosphere
+  fullName: Fusee.Engine.Core.Icosphere
+- uid: Fusee.Engine.Core.Line
+  commentId: T:Fusee.Engine.Core.Line
+  name: Line
+  nameWithType: Line
+  fullName: Fusee.Engine.Core.Line
+- uid: Fusee.Engine.Core.Plane
+  commentId: T:Fusee.Engine.Core.Plane
+  name: Plane
+  nameWithType: Plane
+  fullName: Fusee.Engine.Core.Plane
+- uid: Fusee.Engine.Core.Rocket
+  commentId: T:Fusee.Engine.Core.Rocket
+  name: Rocket
+  nameWithType: Rocket
+  fullName: Fusee.Engine.Core.Rocket
+- uid: Fusee.Engine.Core.Sphere
+  commentId: T:Fusee.Engine.Core.Sphere
+  name: Sphere
+  nameWithType: Sphere
+  fullName: Fusee.Engine.Core.Sphere
+- uid: Fusee.Engine.Core.ShaderCodeBuilder
+  commentId: T:Fusee.Engine.Core.ShaderCodeBuilder
+  name: ShaderCodeBuilder
+  nameWithType: ShaderCodeBuilder
+  fullName: Fusee.Engine.Core.ShaderCodeBuilder
 - uid: Fusee.Engine.Core
   commentId: N:Fusee.Engine.Core
   name: Fusee.Engine.Core

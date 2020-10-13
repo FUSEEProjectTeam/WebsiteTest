@@ -7,11 +7,16 @@ items:
   children:
   - Fusee.Serialization.V1.FusMaterial.Albedo
   - Fusee.Serialization.V1.FusMaterial.Emissive
+  - Fusee.Serialization.V1.FusMaterial.Equals(Fusee.Serialization.V1.FusMaterial)
+  - Fusee.Serialization.V1.FusMaterial.Equals(System.Object)
+  - Fusee.Serialization.V1.FusMaterial.GetHashCode
   - Fusee.Serialization.V1.FusMaterial.HasAlbedo
   - Fusee.Serialization.V1.FusMaterial.HasEmissive
   - Fusee.Serialization.V1.FusMaterial.HasNormalMap
   - Fusee.Serialization.V1.FusMaterial.HasSpecular
   - Fusee.Serialization.V1.FusMaterial.NormalMap
+  - Fusee.Serialization.V1.FusMaterial.op_Equality(Fusee.Serialization.V1.FusMaterial,Fusee.Serialization.V1.FusMaterial)
+  - Fusee.Serialization.V1.FusMaterial.op_Inequality(Fusee.Serialization.V1.FusMaterial,Fusee.Serialization.V1.FusMaterial)
   - Fusee.Serialization.V1.FusMaterial.Specular
   langs:
   - csharp
@@ -22,28 +27,19 @@ items:
   type: Class
   source:
     id: FusMaterial
-    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
-    startLine: 76
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    startLine: 312
   assemblies:
   - Fusee.Serialization
   namespace: Fusee.Serialization.V1
   summary: "\nMaterial definition. If contained within a node, the node&apos;s (and potentially child node&apos;s)\ngeometry is rendered with the specified material.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoContract]
-
-      [ProtoInclude(200, typeof(FusMaterialPBR))]
-
-      public class FusMaterial : FusComponent, IComponent
+    content: 'public class FusMaterial : FusComponent, IComponent, IEquatable<FusMaterial>'
     content.vb: >-
-      <ProtoContract>
-
-      <ProtoInclude(200, GetType(FusMaterialPBR))>
-
       Public Class FusMaterial
           Inherits FusComponent
-          Implements IComponent
+          Implements IComponent, IEquatable(Of FusMaterial)
   inheritance:
   - System.Object
   - Fusee.Serialization.V1.FusComponent
@@ -51,26 +47,14 @@ items:
   - Fusee.Serialization.V1.FusMaterialPBR
   implements:
   - Fusee.Xene.IComponent
+  - System.IEquatable{Fusee.Serialization.V1.FusMaterial}
   inheritedMembers:
   - Fusee.Serialization.V1.FusComponent.Name
-  - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  attributes:
-  - type: ProtoBuf.ProtoContractAttribute
-    ctor: ProtoBuf.ProtoContractAttribute.#ctor
-    arguments: []
-  - type: ProtoBuf.ProtoIncludeAttribute
-    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
-    arguments:
-    - type: System.Int32
-      value: 200
-    - type: System.Type
-      value: Fusee.Serialization.V1.FusMaterialPBR
   modifiers.csharp:
   - public
   - class
@@ -90,8 +74,8 @@ items:
   type: Property
   source:
     id: HasAlbedo
-    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
-    startLine: 87
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    startLine: 323
   assemblies:
   - Fusee.Serialization
   namespace: Fusee.Serialization.V1
@@ -124,30 +108,18 @@ items:
   type: Field
   source:
     id: Albedo
-    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
-    startLine: 93
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    startLine: 329
   assemblies:
   - Fusee.Serialization
   namespace: Fusee.Serialization.V1
   summary: "\nThe albedo channel.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(1)]
-
-      public MatChannelContainer Albedo
+    content: public MatChannelContainer Albedo
     return:
       type: Fusee.Serialization.V1.MatChannelContainer
-    content.vb: >-
-      <ProtoMember(1)>
-
-      Public Albedo As MatChannelContainer
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 1
+    content.vb: Public Albedo As MatChannelContainer
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -165,8 +137,8 @@ items:
   type: Property
   source:
     id: HasSpecular
-    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
-    startLine: 103
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    startLine: 339
   assemblies:
   - Fusee.Serialization
   namespace: Fusee.Serialization.V1
@@ -199,30 +171,18 @@ items:
   type: Field
   source:
     id: Specular
-    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
-    startLine: 109
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    startLine: 345
   assemblies:
   - Fusee.Serialization
   namespace: Fusee.Serialization.V1
   summary: "\nThe specular channel.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(2)]
-
-      public SpecularChannelContainer Specular
+    content: public SpecularChannelContainer Specular
     return:
       type: Fusee.Serialization.V1.SpecularChannelContainer
-    content.vb: >-
-      <ProtoMember(2)>
-
-      Public Specular As SpecularChannelContainer
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 2
+    content.vb: Public Specular As SpecularChannelContainer
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -240,8 +200,8 @@ items:
   type: Property
   source:
     id: HasEmissive
-    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
-    startLine: 119
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    startLine: 355
   assemblies:
   - Fusee.Serialization
   namespace: Fusee.Serialization.V1
@@ -274,30 +234,18 @@ items:
   type: Field
   source:
     id: Emissive
-    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
-    startLine: 125
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    startLine: 361
   assemblies:
   - Fusee.Serialization
   namespace: Fusee.Serialization.V1
   summary: "\nThe emissive channel.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(3)]
-
-      public MatChannelContainer Emissive
+    content: public MatChannelContainer Emissive
     return:
       type: Fusee.Serialization.V1.MatChannelContainer
-    content.vb: >-
-      <ProtoMember(3)>
-
-      Public Emissive As MatChannelContainer
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 3
+    content.vb: Public Emissive As MatChannelContainer
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -315,8 +263,8 @@ items:
   type: Property
   source:
     id: HasNormalMap
-    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
-    startLine: 135
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    startLine: 371
   assemblies:
   - Fusee.Serialization
   namespace: Fusee.Serialization.V1
@@ -349,34 +297,210 @@ items:
   type: Field
   source:
     id: NormalMap
-    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusMaterial.cs
-    startLine: 141
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    startLine: 377
   assemblies:
   - Fusee.Serialization
   namespace: Fusee.Serialization.V1
   summary: "\nThe normal map channel.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(4)]
-
-      public NormapMapChannelContainer NormalMap
+    content: public NormapMapChannelContainer NormalMap
     return:
       type: Fusee.Serialization.V1.NormapMapChannelContainer
-    content.vb: >-
-      <ProtoMember(4)>
-
-      Public NormalMap As NormapMapChannelContainer
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 4
+    content.vb: Public NormalMap As NormapMapChannelContainer
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
+- uid: Fusee.Serialization.V1.FusMaterial.op_Equality(Fusee.Serialization.V1.FusMaterial,Fusee.Serialization.V1.FusMaterial)
+  commentId: M:Fusee.Serialization.V1.FusMaterial.op_Equality(Fusee.Serialization.V1.FusMaterial,Fusee.Serialization.V1.FusMaterial)
+  id: op_Equality(Fusee.Serialization.V1.FusMaterial,Fusee.Serialization.V1.FusMaterial)
+  parent: Fusee.Serialization.V1.FusMaterial
+  langs:
+  - csharp
+  - vb
+  name: Equality(FusMaterial, FusMaterial)
+  nameWithType: FusMaterial.Equality(FusMaterial, FusMaterial)
+  fullName: Fusee.Serialization.V1.FusMaterial.Equality(Fusee.Serialization.V1.FusMaterial, Fusee.Serialization.V1.FusMaterial)
+  type: Operator
+  source:
+    id: op_Equality
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    startLine: 390
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nCompares two instances for equality.\n"
+  example: []
+  syntax:
+    content: public static bool operator ==(FusMaterial lhs, FusMaterial rhs)
+    parameters:
+    - id: lhs
+      type: Fusee.Serialization.V1.FusMaterial
+      description: The first instance.
+    - id: rhs
+      type: Fusee.Serialization.V1.FusMaterial
+      description: The second instance.
+    return:
+      type: System.Boolean
+      description: "\nTrue, if left does equal right; false otherwise.\n"
+    content.vb: Public Shared Operator =(lhs As FusMaterial, rhs As FusMaterial) As Boolean
+  overload: Fusee.Serialization.V1.FusMaterial.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Serialization.V1.FusMaterial.op_Inequality(Fusee.Serialization.V1.FusMaterial,Fusee.Serialization.V1.FusMaterial)
+  commentId: M:Fusee.Serialization.V1.FusMaterial.op_Inequality(Fusee.Serialization.V1.FusMaterial,Fusee.Serialization.V1.FusMaterial)
+  id: op_Inequality(Fusee.Serialization.V1.FusMaterial,Fusee.Serialization.V1.FusMaterial)
+  parent: Fusee.Serialization.V1.FusMaterial
+  langs:
+  - csharp
+  - vb
+  name: Inequality(FusMaterial, FusMaterial)
+  nameWithType: FusMaterial.Inequality(FusMaterial, FusMaterial)
+  fullName: Fusee.Serialization.V1.FusMaterial.Inequality(Fusee.Serialization.V1.FusMaterial, Fusee.Serialization.V1.FusMaterial)
+  type: Operator
+  source:
+    id: op_Inequality
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    startLine: 412
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nCompares two instances for inequality.\n"
+  example: []
+  syntax:
+    content: public static bool operator !=(FusMaterial lhs, FusMaterial rhs)
+    parameters:
+    - id: lhs
+      type: Fusee.Serialization.V1.FusMaterial
+      description: The first instance.
+    - id: rhs
+      type: Fusee.Serialization.V1.FusMaterial
+      description: The second instance.
+    return:
+      type: System.Boolean
+      description: "\nTrue, if left does not equal right; false otherwise.\n"
+    content.vb: Public Shared Operator <>(lhs As FusMaterial, rhs As FusMaterial) As Boolean
+  overload: Fusee.Serialization.V1.FusMaterial.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Serialization.V1.FusMaterial.Equals(Fusee.Serialization.V1.FusMaterial)
+  commentId: M:Fusee.Serialization.V1.FusMaterial.Equals(Fusee.Serialization.V1.FusMaterial)
+  id: Equals(Fusee.Serialization.V1.FusMaterial)
+  parent: Fusee.Serialization.V1.FusMaterial
+  langs:
+  - csharp
+  - vb
+  name: Equals(FusMaterial)
+  nameWithType: FusMaterial.Equals(FusMaterial)
+  fullName: Fusee.Serialization.V1.FusMaterial.Equals(Fusee.Serialization.V1.FusMaterial)
+  type: Method
+  source:
+    id: Equals
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    startLine: 424
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nIndicates whether the NormapMapChannel is equal to another one.\n"
+  example: []
+  syntax:
+    content: public bool Equals(FusMaterial other)
+    parameters:
+    - id: other
+      type: Fusee.Serialization.V1.FusMaterial
+      description: The NormapMapChannel to compare with this one.
+    return:
+      type: System.Boolean
+      description: "\ntrue if the current NormapMapChannel is equal to the other; otherwise, false.\n"
+    content.vb: Public Function Equals(other As FusMaterial) As Boolean
+  overload: Fusee.Serialization.V1.FusMaterial.Equals*
+  implements:
+  - System.IEquatable{Fusee.Serialization.V1.FusMaterial}.Equals(Fusee.Serialization.V1.FusMaterial)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Serialization.V1.FusMaterial.Equals(System.Object)
+  commentId: M:Fusee.Serialization.V1.FusMaterial.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Fusee.Serialization.V1.FusMaterial
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: FusMaterial.Equals(Object)
+  fullName: Fusee.Serialization.V1.FusMaterial.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    startLine: 441
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nIndicates whether this instance and a specified object are equal.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare to.
+    return:
+      type: System.Boolean
+      description: "\nTrue if the instances are equal; false otherwise.\n"
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Fusee.Serialization.V1.FusMaterial.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Fusee.Serialization.V1.FusMaterial.GetHashCode
+  commentId: M:Fusee.Serialization.V1.FusMaterial.GetHashCode
+  id: GetHashCode
+  parent: Fusee.Serialization.V1.FusMaterial
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: FusMaterial.GetHashCode()
+  fullName: Fusee.Serialization.V1.FusMaterial.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    startLine: 453
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nReturns the hash for this instance.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.Object.GetHashCode
+  overload: Fusee.Serialization.V1.FusMaterial.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
 references:
 - uid: Fusee.Serialization.V1
   commentId: N:Fusee.Serialization.V1
@@ -402,53 +526,54 @@ references:
   name: IComponent
   nameWithType: IComponent
   fullName: Fusee.Xene.IComponent
+- uid: System.IEquatable{Fusee.Serialization.V1.FusMaterial}
+  commentId: T:System.IEquatable{Fusee.Serialization.V1.FusMaterial}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<FusMaterial>
+  nameWithType: IEquatable<FusMaterial>
+  fullName: System.IEquatable<Fusee.Serialization.V1.FusMaterial>
+  nameWithType.vb: IEquatable(Of FusMaterial)
+  fullName.vb: System.IEquatable(Of Fusee.Serialization.V1.FusMaterial)
+  name.vb: IEquatable(Of FusMaterial)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Serialization.V1.FusMaterial
+    name: FusMaterial
+    nameWithType: FusMaterial
+    fullName: Fusee.Serialization.V1.FusMaterial
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Serialization.V1.FusMaterial
+    name: FusMaterial
+    nameWithType: FusMaterial
+    fullName: Fusee.Serialization.V1.FusMaterial
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Fusee.Serialization.V1.FusComponent.Name
   commentId: F:Fusee.Serialization.V1.FusComponent.Name
   parent: Fusee.Serialization.V1.FusComponent
   name: Name
   nameWithType: FusComponent.Name
   fullName: Fusee.Serialization.V1.FusComponent.Name
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   commentId: M:System.Object.Equals(System.Object,System.Object)
   parent: System.Object
@@ -503,37 +628,6 @@ references:
     nameWithType: Object
     fullName: System.Object
     isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
   - name: )
     nameWithType: )
     fullName: )
@@ -698,6 +792,45 @@ references:
   name: Fusee.Xene
   nameWithType: Fusee.Xene
   fullName: Fusee.Xene
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Fusee.Serialization.V1.FusMaterial.HasAlbedo*
   commentId: Overload:Fusee.Serialization.V1.FusMaterial.HasAlbedo
   name: HasAlbedo
@@ -743,3 +876,187 @@ references:
   name: NormapMapChannelContainer
   nameWithType: NormapMapChannelContainer
   fullName: Fusee.Serialization.V1.NormapMapChannelContainer
+- uid: Fusee.Serialization.V1.FusMaterial.op_Equality*
+  commentId: Overload:Fusee.Serialization.V1.FusMaterial.op_Equality
+  name: Equality
+  nameWithType: FusMaterial.Equality
+  fullName: Fusee.Serialization.V1.FusMaterial.Equality
+- uid: Fusee.Serialization.V1.FusMaterial
+  commentId: T:Fusee.Serialization.V1.FusMaterial
+  parent: Fusee.Serialization.V1
+  name: FusMaterial
+  nameWithType: FusMaterial
+  fullName: Fusee.Serialization.V1.FusMaterial
+- uid: Fusee.Serialization.V1.FusMaterial.op_Inequality*
+  commentId: Overload:Fusee.Serialization.V1.FusMaterial.op_Inequality
+  name: Inequality
+  nameWithType: FusMaterial.Inequality
+  fullName: Fusee.Serialization.V1.FusMaterial.Inequality
+- uid: Fusee.Serialization.V1.FusMaterial.Equals*
+  commentId: Overload:Fusee.Serialization.V1.FusMaterial.Equals
+  name: Equals
+  nameWithType: FusMaterial.Equals
+  fullName: Fusee.Serialization.V1.FusMaterial.Equals
+- uid: System.IEquatable{Fusee.Serialization.V1.FusMaterial}.Equals(Fusee.Serialization.V1.FusMaterial)
+  commentId: M:System.IEquatable{Fusee.Serialization.V1.FusMaterial}.Equals(Fusee.Serialization.V1.FusMaterial)
+  parent: System.IEquatable{Fusee.Serialization.V1.FusMaterial}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(FusMaterial)
+  nameWithType: IEquatable<FusMaterial>.Equals(FusMaterial)
+  fullName: System.IEquatable<Fusee.Serialization.V1.FusMaterial>.Equals(Fusee.Serialization.V1.FusMaterial)
+  nameWithType.vb: IEquatable(Of FusMaterial).Equals(FusMaterial)
+  fullName.vb: System.IEquatable(Of Fusee.Serialization.V1.FusMaterial).Equals(Fusee.Serialization.V1.FusMaterial)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<FusMaterial>.Equals
+    fullName: System.IEquatable<Fusee.Serialization.V1.FusMaterial>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Serialization.V1.FusMaterial
+    name: FusMaterial
+    nameWithType: FusMaterial
+    fullName: Fusee.Serialization.V1.FusMaterial
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of FusMaterial).Equals
+    fullName: System.IEquatable(Of Fusee.Serialization.V1.FusMaterial).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Serialization.V1.FusMaterial
+    name: FusMaterial
+    nameWithType: FusMaterial
+    fullName: Fusee.Serialization.V1.FusMaterial
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Serialization.V1.FusMaterial.GetHashCode*
+  commentId: Overload:Fusee.Serialization.V1.FusMaterial.GetHashCode
+  name: GetHashCode
+  nameWithType: FusMaterial.GetHashCode
+  fullName: Fusee.Serialization.V1.FusMaterial.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

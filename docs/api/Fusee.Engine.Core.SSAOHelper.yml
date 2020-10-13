@@ -98,18 +98,18 @@ items:
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nCreates a noise texture with size 4x4.\n"
+  summary: "\nCreates a noise texture.\n"
   example: []
   syntax:
-    content: public static Texture CreateNoiseTex(int noiseSize)
+    content: public static Texture CreateNoiseTex(int texSize)
     parameters:
-    - id: noiseSize
+    - id: texSize
       type: System.Int32
-      description: Number of random values used to rotate the sample kernel.
+      description: 'Width and height of the texture. '
     return:
       type: Fusee.Engine.Core.Texture
       description: ''
-    content.vb: Public Shared Function CreateNoiseTex(noiseSize As Integer) As Texture
+    content.vb: Public Shared Function CreateNoiseTex(texSize As Integer) As Texture
   overload: Fusee.Engine.Core.SSAOHelper.CreateNoiseTex*
   modifiers.csharp:
   - public

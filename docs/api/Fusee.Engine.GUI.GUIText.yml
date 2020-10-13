@@ -5,7 +5,7 @@ items:
   id: GUIText
   parent: Fusee.Engine.GUI
   children:
-  - Fusee.Engine.GUI.GUIText.#ctor(Fusee.Engine.Core.FontMap,System.String,Fusee.Engine.Core.Scene.HorizontalTextAlignment)
+  - Fusee.Engine.GUI.GUIText.#ctor(Fusee.Engine.Core.FontMap,System.String,Fusee.Engine.Common.HorizontalTextAlignment)
   - Fusee.Engine.GUI.GUIText.Height
   - Fusee.Engine.GUI.GUIText.HorizontalAlignment
   - Fusee.Engine.GUI.GUIText.LineNormals
@@ -24,7 +24,7 @@ items:
   source:
     id: GUIText
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUIText.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - Fusee.Engine.GUI
   namespace: Fusee.Engine.GUI
@@ -97,7 +97,7 @@ items:
   source:
     id: Text
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUIText.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - Fusee.Engine.GUI
   namespace: Fusee.Engine.GUI
@@ -130,7 +130,7 @@ items:
   source:
     id: LineVertices
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUIText.cs
-    startLine: 35
+    startLine: 36
   assemblies:
   - Fusee.Engine.GUI
   namespace: Fusee.Engine.GUI
@@ -163,7 +163,7 @@ items:
   source:
     id: LineTriangles
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUIText.cs
-    startLine: 40
+    startLine: 41
   assemblies:
   - Fusee.Engine.GUI
   namespace: Fusee.Engine.GUI
@@ -196,7 +196,7 @@ items:
   source:
     id: LineNormals
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUIText.cs
-    startLine: 45
+    startLine: 46
   assemblies:
   - Fusee.Engine.GUI
   namespace: Fusee.Engine.GUI
@@ -229,7 +229,7 @@ items:
   source:
     id: LineUVs
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUIText.cs
-    startLine: 50
+    startLine: 51
   assemblies:
   - Fusee.Engine.GUI
   namespace: Fusee.Engine.GUI
@@ -262,7 +262,7 @@ items:
   source:
     id: HorizontalAlignment
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUIText.cs
-    startLine: 57
+    startLine: 58
   assemblies:
   - Fusee.Engine.GUI
   namespace: Fusee.Engine.GUI
@@ -272,7 +272,7 @@ items:
     content: public HorizontalTextAlignment HorizontalAlignment { get; set; }
     parameters: []
     return:
-      type: Fusee.Engine.Core.Scene.HorizontalTextAlignment
+      type: Fusee.Engine.Common.HorizontalTextAlignment
     content.vb: Public Property HorizontalAlignment As HorizontalTextAlignment
   overload: Fusee.Engine.GUI.GUIText.HorizontalAlignment*
   modifiers.csharp:
@@ -295,7 +295,7 @@ items:
   source:
     id: Width
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUIText.cs
-    startLine: 71
+    startLine: 72
   assemblies:
   - Fusee.Engine.GUI
   namespace: Fusee.Engine.GUI
@@ -328,7 +328,7 @@ items:
   source:
     id: Height
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUIText.cs
-    startLine: 76
+    startLine: 77
   assemblies:
   - Fusee.Engine.GUI
   namespace: Fusee.Engine.GUI
@@ -347,21 +347,21 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Fusee.Engine.GUI.GUIText.#ctor(Fusee.Engine.Core.FontMap,System.String,Fusee.Engine.Core.Scene.HorizontalTextAlignment)
-  commentId: M:Fusee.Engine.GUI.GUIText.#ctor(Fusee.Engine.Core.FontMap,System.String,Fusee.Engine.Core.Scene.HorizontalTextAlignment)
-  id: '#ctor(Fusee.Engine.Core.FontMap,System.String,Fusee.Engine.Core.Scene.HorizontalTextAlignment)'
+- uid: Fusee.Engine.GUI.GUIText.#ctor(Fusee.Engine.Core.FontMap,System.String,Fusee.Engine.Common.HorizontalTextAlignment)
+  commentId: M:Fusee.Engine.GUI.GUIText.#ctor(Fusee.Engine.Core.FontMap,System.String,Fusee.Engine.Common.HorizontalTextAlignment)
+  id: '#ctor(Fusee.Engine.Core.FontMap,System.String,Fusee.Engine.Common.HorizontalTextAlignment)'
   parent: Fusee.Engine.GUI.GUIText
   langs:
   - csharp
   - vb
   name: GUIText(FontMap, String, HorizontalTextAlignment)
   nameWithType: GUIText.GUIText(FontMap, String, HorizontalTextAlignment)
-  fullName: Fusee.Engine.GUI.GUIText.GUIText(Fusee.Engine.Core.FontMap, System.String, Fusee.Engine.Core.Scene.HorizontalTextAlignment)
+  fullName: Fusee.Engine.GUI.GUIText.GUIText(Fusee.Engine.Core.FontMap, System.String, Fusee.Engine.Common.HorizontalTextAlignment)
   type: Constructor
   source:
     id: .ctor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUIText.cs
-    startLine: 89
+    startLine: 90
   assemblies:
   - Fusee.Engine.GUI
   namespace: Fusee.Engine.GUI
@@ -377,7 +377,7 @@ items:
       type: System.String
       description: ''
     - id: horizontalAlignment
-      type: Fusee.Engine.Core.Scene.HorizontalTextAlignment
+      type: Fusee.Engine.Common.HorizontalTextAlignment
       description: "Defines the <xref href=\"Fusee.Engine.GUI.GUIText.HorizontalAlignment\" data-throw-if-not-resolved=\"false\"></xref> of the text. \nThis is needed here because it changes the shape of the mesh."
     content.vb: Public Sub New(fontMap As FontMap, text As String, horizontalAlignment As HorizontalTextAlignment)
   overload: Fusee.Engine.GUI.GUIText.#ctor*
@@ -1208,12 +1208,17 @@ references:
   name: HorizontalAlignment
   nameWithType: GUIText.HorizontalAlignment
   fullName: Fusee.Engine.GUI.GUIText.HorizontalAlignment
-- uid: Fusee.Engine.Core.Scene.HorizontalTextAlignment
-  commentId: T:Fusee.Engine.Core.Scene.HorizontalTextAlignment
-  parent: Fusee.Engine.Core.Scene
+- uid: Fusee.Engine.Common.HorizontalTextAlignment
+  commentId: T:Fusee.Engine.Common.HorizontalTextAlignment
+  parent: Fusee.Engine.Common
   name: HorizontalTextAlignment
   nameWithType: HorizontalTextAlignment
-  fullName: Fusee.Engine.Core.Scene.HorizontalTextAlignment
+  fullName: Fusee.Engine.Common.HorizontalTextAlignment
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
 - uid: Fusee.Engine.GUI.GUIText.Width*
   commentId: Overload:Fusee.Engine.GUI.GUIText.Width
   name: Width

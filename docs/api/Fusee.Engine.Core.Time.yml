@@ -37,7 +37,7 @@ items:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   summary: "\nThe Time class provides all time information. Time is a staticton (a singleton with an additional\nstatic interface). \n"
-  remarks: "\nUse the input instance in cases where you actually need an \nobject to pass around (although there is no such use case in FUSEE code at all).\nUse the static access in all other cases to reduce typing Input.Instance\nover and over again. Use <pre><code>using static Fusee.Engine.Core.Time</code></pre> to\ndirectly access <xref href=\"Fusee.Engine.Core.Time.FramePerSecond\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"Fusee.Engine.Core.Time.DeltaTime\" data-throw-if-not-resolved=\"false\"></xref> etc.\nwithout even typing a namespace or classname.\n"
+  remarks: "\nUse the input instance in cases where you actually need an \nobject to pass around (although there is no such use case in FUSEE code at all).\nUse the static access in all other cases to reduce typing Input.Instance\nover and over again. Use <pre><code>using static Fusee.Engine.Core.Time</code></pre> to\ndirectly access <xref href=\"Fusee.Engine.Core.Time.FramePerSecond\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"Fusee.Engine.Core.Time.DeltaTime\" data-throw-if-not-resolved=\"false\"></xref> etc.\nwithout even typing a namespace or class name.\n"
   example: []
   syntax:
     content: public class Time
@@ -144,7 +144,7 @@ items:
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nProvides the passed time since start of the application uneffected by TimeScale (read only).\n"
+  summary: "\nProvides the passed time since start of the application unaffected by TimeScale (read only).\n"
   example: []
   syntax:
     content: public float TimeRealTimeSinceStart { get; }
@@ -177,7 +177,7 @@ items:
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nProvides the passed time since start of the application uneffected by TimeScale (read only).\n"
+  summary: "\nProvides the passed time since start of the application unaffected by TimeScale (read only).\n"
   example: []
   syntax:
     content: public static float RealTimeSinceStart { get; }
@@ -416,7 +416,7 @@ items:
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nProvides the DeltaTime since the last frame in milliseconds that is uneffected by the TimeScale (read only).\n"
+  summary: "\nProvides the DeltaTime since the last frame in milliseconds that is unaffected by the TimeScale (read only).\n"
   example: []
   syntax:
     content: public float TimeRealDeltaTimeMs { get; }
@@ -449,7 +449,7 @@ items:
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nProvides the DeltaTime since the last frame in milliseconds that is uneffected by the TimeScale (read only).\n"
+  summary: "\nProvides the DeltaTime since the last frame in milliseconds that is unaffected by the TimeScale (read only).\n"
   example: []
   syntax:
     content: public static float RealDeltaTimeMs { get; }

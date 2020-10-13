@@ -1,0 +1,933 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Serialization.V1.BRDFChannel
+  commentId: T:Fusee.Serialization.V1.BRDFChannel
+  id: BRDFChannel
+  parent: Fusee.Serialization.V1
+  children:
+  - Fusee.Serialization.V1.BRDFChannel.Equals(Fusee.Serialization.V1.BRDFChannel)
+  - Fusee.Serialization.V1.BRDFChannel.Equals(System.Object)
+  - Fusee.Serialization.V1.BRDFChannel.GetHashCode
+  - Fusee.Serialization.V1.BRDFChannel.IOR
+  - Fusee.Serialization.V1.BRDFChannel.Metallic
+  - Fusee.Serialization.V1.BRDFChannel.op_Equality(Fusee.Serialization.V1.BRDFChannel,Fusee.Serialization.V1.BRDFChannel)
+  - Fusee.Serialization.V1.BRDFChannel.op_Inequality(Fusee.Serialization.V1.BRDFChannel,Fusee.Serialization.V1.BRDFChannel)
+  - Fusee.Serialization.V1.BRDFChannel.Roughness
+  - Fusee.Serialization.V1.BRDFChannel.Specular
+  - Fusee.Serialization.V1.BRDFChannel.Subsurface
+  - Fusee.Serialization.V1.BRDFChannel.SubsurfaceColor
+  langs:
+  - csharp
+  - vb
+  name: BRDFChannel
+  nameWithType: BRDFChannel
+  fullName: Fusee.Serialization.V1.BRDFChannel
+  type: Class
+  source:
+    id: BRDFChannel
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 9
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nContains information needed for a physically-based lighting calculation using a bidirectional reflectance distribution function.\n"
+  example: []
+  syntax:
+    content: 'public class BRDFChannel : IEquatable<BRDFChannel>'
+    content.vb: >-
+      Public Class BRDFChannel
+          Implements IEquatable(Of BRDFChannel)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Fusee.Serialization.V1.BRDFChannel}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Serialization.V1.BRDFChannel.IOR
+  commentId: F:Fusee.Serialization.V1.BRDFChannel.IOR
+  id: IOR
+  parent: Fusee.Serialization.V1.BRDFChannel
+  langs:
+  - csharp
+  - vb
+  name: IOR
+  nameWithType: BRDFChannel.IOR
+  fullName: Fusee.Serialization.V1.BRDFChannel.IOR
+  type: Field
+  source:
+    id: IOR
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 16
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nThe index of refraction.\n"
+  example: []
+  syntax:
+    content: public float IOR
+    return:
+      type: System.Single
+    content.vb: Public IOR As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Serialization.V1.BRDFChannel.Metallic
+  commentId: F:Fusee.Serialization.V1.BRDFChannel.Metallic
+  id: Metallic
+  parent: Fusee.Serialization.V1.BRDFChannel
+  langs:
+  - csharp
+  - vb
+  name: Metallic
+  nameWithType: BRDFChannel.Metallic
+  fullName: Fusee.Serialization.V1.BRDFChannel.Metallic
+  type: Field
+  source:
+    id: Metallic
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 24
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nBlends between a non-metallic and metallic material model. Must be a value between 0 and 1.\n0: The material is dielectric: has a diffuse and a non-tinted specular component.\n1: The material is metallic: has no diffuse and a specular component whose color is tinted by the materials base color.\n"
+  example: []
+  syntax:
+    content: public float Metallic
+    return:
+      type: System.Single
+    content.vb: Public Metallic As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Serialization.V1.BRDFChannel.Specular
+  commentId: F:Fusee.Serialization.V1.BRDFChannel.Specular
+  id: Specular
+  parent: Fusee.Serialization.V1.BRDFChannel
+  langs:
+  - csharp
+  - vb
+  name: Specular
+  nameWithType: BRDFChannel.Specular
+  fullName: Fusee.Serialization.V1.BRDFChannel.Specular
+  type: Field
+  source:
+    id: Specular
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 30
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nAmount of dielectric specular reflection. Must be a value between 0 and 1.\n"
+  example: []
+  syntax:
+    content: public float Specular
+    return:
+      type: System.Single
+    content.vb: Public Specular As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Serialization.V1.BRDFChannel.Roughness
+  commentId: F:Fusee.Serialization.V1.BRDFChannel.Roughness
+  id: Roughness
+  parent: Fusee.Serialization.V1.BRDFChannel
+  langs:
+  - csharp
+  - vb
+  name: Roughness
+  nameWithType: BRDFChannel.Roughness
+  fullName: Fusee.Serialization.V1.BRDFChannel.Roughness
+  type: Field
+  source:
+    id: Roughness
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 36
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nSpecifies microfacet roughness of the surface for diffuse and specular reflection.\n"
+  example: []
+  syntax:
+    content: public float Roughness
+    return:
+      type: System.Single
+    content.vb: Public Roughness As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Serialization.V1.BRDFChannel.Subsurface
+  commentId: F:Fusee.Serialization.V1.BRDFChannel.Subsurface
+  id: Subsurface
+  parent: Fusee.Serialization.V1.BRDFChannel
+  langs:
+  - csharp
+  - vb
+  name: Subsurface
+  nameWithType: BRDFChannel.Subsurface
+  fullName: Fusee.Serialization.V1.BRDFChannel.Subsurface
+  type: Field
+  source:
+    id: Subsurface
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 42
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nMix between diffuse and subsurface scattering.\n"
+  example: []
+  syntax:
+    content: public float Subsurface
+    return:
+      type: System.Single
+    content.vb: Public Subsurface As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Serialization.V1.BRDFChannel.SubsurfaceColor
+  commentId: F:Fusee.Serialization.V1.BRDFChannel.SubsurfaceColor
+  id: SubsurfaceColor
+  parent: Fusee.Serialization.V1.BRDFChannel
+  langs:
+  - csharp
+  - vb
+  name: SubsurfaceColor
+  nameWithType: BRDFChannel.SubsurfaceColor
+  fullName: Fusee.Serialization.V1.BRDFChannel.SubsurfaceColor
+  type: Field
+  source:
+    id: SubsurfaceColor
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 48
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nMix between diffuse and subsurface scattering.\n"
+  example: []
+  syntax:
+    content: public float3 SubsurfaceColor
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public SubsurfaceColor As float3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Serialization.V1.BRDFChannel.op_Equality(Fusee.Serialization.V1.BRDFChannel,Fusee.Serialization.V1.BRDFChannel)
+  commentId: M:Fusee.Serialization.V1.BRDFChannel.op_Equality(Fusee.Serialization.V1.BRDFChannel,Fusee.Serialization.V1.BRDFChannel)
+  id: op_Equality(Fusee.Serialization.V1.BRDFChannel,Fusee.Serialization.V1.BRDFChannel)
+  parent: Fusee.Serialization.V1.BRDFChannel
+  langs:
+  - csharp
+  - vb
+  name: Equality(BRDFChannel, BRDFChannel)
+  nameWithType: BRDFChannel.Equality(BRDFChannel, BRDFChannel)
+  fullName: Fusee.Serialization.V1.BRDFChannel.Equality(Fusee.Serialization.V1.BRDFChannel, Fusee.Serialization.V1.BRDFChannel)
+  type: Operator
+  source:
+    id: op_Equality
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 60
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nCompares two instances for equality.\n"
+  example: []
+  syntax:
+    content: public static bool operator ==(BRDFChannel lhs, BRDFChannel rhs)
+    parameters:
+    - id: lhs
+      type: Fusee.Serialization.V1.BRDFChannel
+      description: The first instance.
+    - id: rhs
+      type: Fusee.Serialization.V1.BRDFChannel
+      description: The second instance.
+    return:
+      type: System.Boolean
+      description: "\nTrue, if left does equal right; false otherwise.\n"
+    content.vb: Public Shared Operator =(lhs As BRDFChannel, rhs As BRDFChannel) As Boolean
+  overload: Fusee.Serialization.V1.BRDFChannel.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Serialization.V1.BRDFChannel.op_Inequality(Fusee.Serialization.V1.BRDFChannel,Fusee.Serialization.V1.BRDFChannel)
+  commentId: M:Fusee.Serialization.V1.BRDFChannel.op_Inequality(Fusee.Serialization.V1.BRDFChannel,Fusee.Serialization.V1.BRDFChannel)
+  id: op_Inequality(Fusee.Serialization.V1.BRDFChannel,Fusee.Serialization.V1.BRDFChannel)
+  parent: Fusee.Serialization.V1.BRDFChannel
+  langs:
+  - csharp
+  - vb
+  name: Inequality(BRDFChannel, BRDFChannel)
+  nameWithType: BRDFChannel.Inequality(BRDFChannel, BRDFChannel)
+  fullName: Fusee.Serialization.V1.BRDFChannel.Inequality(Fusee.Serialization.V1.BRDFChannel, Fusee.Serialization.V1.BRDFChannel)
+  type: Operator
+  source:
+    id: op_Inequality
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 83
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nCompares two instances for inequality.\n"
+  example: []
+  syntax:
+    content: public static bool operator !=(BRDFChannel lhs, BRDFChannel rhs)
+    parameters:
+    - id: lhs
+      type: Fusee.Serialization.V1.BRDFChannel
+      description: The first instance.
+    - id: rhs
+      type: Fusee.Serialization.V1.BRDFChannel
+      description: The second instance.
+    return:
+      type: System.Boolean
+      description: "\nTrue, if left does not equal right; false otherwise.\n"
+    content.vb: Public Shared Operator <>(lhs As BRDFChannel, rhs As BRDFChannel) As Boolean
+  overload: Fusee.Serialization.V1.BRDFChannel.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Serialization.V1.BRDFChannel.Equals(Fusee.Serialization.V1.BRDFChannel)
+  commentId: M:Fusee.Serialization.V1.BRDFChannel.Equals(Fusee.Serialization.V1.BRDFChannel)
+  id: Equals(Fusee.Serialization.V1.BRDFChannel)
+  parent: Fusee.Serialization.V1.BRDFChannel
+  langs:
+  - csharp
+  - vb
+  name: Equals(BRDFChannel)
+  nameWithType: BRDFChannel.Equals(BRDFChannel)
+  fullName: Fusee.Serialization.V1.BRDFChannel.Equals(Fusee.Serialization.V1.BRDFChannel)
+  type: Method
+  source:
+    id: Equals
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 95
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nIndicates whether the MatChannelContainer is equal to another one.\n"
+  example: []
+  syntax:
+    content: public bool Equals(BRDFChannel other)
+    parameters:
+    - id: other
+      type: Fusee.Serialization.V1.BRDFChannel
+      description: The MatChannelContainer to compare with this one.
+    return:
+      type: System.Boolean
+      description: "\ntrue if the current MatChannelContainer is equal to the other; otherwise, false.\n"
+    content.vb: Public Function Equals(other As BRDFChannel) As Boolean
+  overload: Fusee.Serialization.V1.BRDFChannel.Equals*
+  implements:
+  - System.IEquatable{Fusee.Serialization.V1.BRDFChannel}.Equals(Fusee.Serialization.V1.BRDFChannel)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Serialization.V1.BRDFChannel.Equals(System.Object)
+  commentId: M:Fusee.Serialization.V1.BRDFChannel.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Fusee.Serialization.V1.BRDFChannel
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: BRDFChannel.Equals(Object)
+  fullName: Fusee.Serialization.V1.BRDFChannel.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 115
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nIndicates whether this instance and a specified object are equal.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare to.
+    return:
+      type: System.Boolean
+      description: "\nTrue if the instances are equal; false otherwise.\n"
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Fusee.Serialization.V1.BRDFChannel.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Fusee.Serialization.V1.BRDFChannel.GetHashCode
+  commentId: M:Fusee.Serialization.V1.BRDFChannel.GetHashCode
+  id: GetHashCode
+  parent: Fusee.Serialization.V1.BRDFChannel
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: BRDFChannel.GetHashCode()
+  fullName: Fusee.Serialization.V1.BRDFChannel.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 126
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nReturns the hash for this instance.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.Object.GetHashCode
+  overload: Fusee.Serialization.V1.BRDFChannel.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Fusee.Serialization.V1
+  commentId: N:Fusee.Serialization.V1
+  name: Fusee.Serialization.V1
+  nameWithType: Fusee.Serialization.V1
+  fullName: Fusee.Serialization.V1
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IEquatable{Fusee.Serialization.V1.BRDFChannel}
+  commentId: T:System.IEquatable{Fusee.Serialization.V1.BRDFChannel}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<BRDFChannel>
+  nameWithType: IEquatable<BRDFChannel>
+  fullName: System.IEquatable<Fusee.Serialization.V1.BRDFChannel>
+  nameWithType.vb: IEquatable(Of BRDFChannel)
+  fullName.vb: System.IEquatable(Of Fusee.Serialization.V1.BRDFChannel)
+  name.vb: IEquatable(Of BRDFChannel)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Serialization.V1.BRDFChannel
+    name: BRDFChannel
+    nameWithType: BRDFChannel
+    fullName: Fusee.Serialization.V1.BRDFChannel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Serialization.V1.BRDFChannel
+    name: BRDFChannel
+    nameWithType: BRDFChannel
+    fullName: Fusee.Serialization.V1.BRDFChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Math.Core.float3
+  commentId: T:Fusee.Math.Core.float3
+  parent: Fusee.Math.Core
+  name: float3
+  nameWithType: float3
+  fullName: Fusee.Math.Core.float3
+- uid: Fusee.Math.Core
+  commentId: N:Fusee.Math.Core
+  name: Fusee.Math.Core
+  nameWithType: Fusee.Math.Core
+  fullName: Fusee.Math.Core
+- uid: Fusee.Serialization.V1.BRDFChannel.op_Equality*
+  commentId: Overload:Fusee.Serialization.V1.BRDFChannel.op_Equality
+  name: Equality
+  nameWithType: BRDFChannel.Equality
+  fullName: Fusee.Serialization.V1.BRDFChannel.Equality
+- uid: Fusee.Serialization.V1.BRDFChannel
+  commentId: T:Fusee.Serialization.V1.BRDFChannel
+  parent: Fusee.Serialization.V1
+  name: BRDFChannel
+  nameWithType: BRDFChannel
+  fullName: Fusee.Serialization.V1.BRDFChannel
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Serialization.V1.BRDFChannel.op_Inequality*
+  commentId: Overload:Fusee.Serialization.V1.BRDFChannel.op_Inequality
+  name: Inequality
+  nameWithType: BRDFChannel.Inequality
+  fullName: Fusee.Serialization.V1.BRDFChannel.Inequality
+- uid: Fusee.Serialization.V1.BRDFChannel.Equals*
+  commentId: Overload:Fusee.Serialization.V1.BRDFChannel.Equals
+  name: Equals
+  nameWithType: BRDFChannel.Equals
+  fullName: Fusee.Serialization.V1.BRDFChannel.Equals
+- uid: System.IEquatable{Fusee.Serialization.V1.BRDFChannel}.Equals(Fusee.Serialization.V1.BRDFChannel)
+  commentId: M:System.IEquatable{Fusee.Serialization.V1.BRDFChannel}.Equals(Fusee.Serialization.V1.BRDFChannel)
+  parent: System.IEquatable{Fusee.Serialization.V1.BRDFChannel}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(BRDFChannel)
+  nameWithType: IEquatable<BRDFChannel>.Equals(BRDFChannel)
+  fullName: System.IEquatable<Fusee.Serialization.V1.BRDFChannel>.Equals(Fusee.Serialization.V1.BRDFChannel)
+  nameWithType.vb: IEquatable(Of BRDFChannel).Equals(BRDFChannel)
+  fullName.vb: System.IEquatable(Of Fusee.Serialization.V1.BRDFChannel).Equals(Fusee.Serialization.V1.BRDFChannel)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<BRDFChannel>.Equals
+    fullName: System.IEquatable<Fusee.Serialization.V1.BRDFChannel>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Serialization.V1.BRDFChannel
+    name: BRDFChannel
+    nameWithType: BRDFChannel
+    fullName: Fusee.Serialization.V1.BRDFChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of BRDFChannel).Equals
+    fullName: System.IEquatable(Of Fusee.Serialization.V1.BRDFChannel).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Serialization.V1.BRDFChannel
+    name: BRDFChannel
+    nameWithType: BRDFChannel
+    fullName: Fusee.Serialization.V1.BRDFChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Serialization.V1.BRDFChannel.GetHashCode*
+  commentId: Overload:Fusee.Serialization.V1.BRDFChannel.GetHashCode
+  name: GetHashCode
+  nameWithType: BRDFChannel.GetHashCode
+  fullName: Fusee.Serialization.V1.BRDFChannel.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

@@ -426,7 +426,7 @@ items:
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nSpecifies the texture&apos;s comparison function, see <see cref=\"!:TextureCompareFunc\"></see>.\n"
+  summary: "\nSpecifies the texture&apos;s comparison function. See <xref href=\"Fusee.Engine.Common.Compare\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
     content: public Compare CompareFunc { get; }
@@ -464,7 +464,7 @@ items:
   summary: "\nCreates a new instance of type &quot;WritableTexture&quot;.\n"
   example: []
   syntax:
-    content: public WritableCubeMap(RenderTargetTextureTypes textureType, ImagePixelFormat colorFormat, int width, int height, bool generateMipMaps = true, TextureFilterMode filterMode = TextureFilterMode.LINEAR, TextureWrapMode wrapMode = TextureWrapMode.REPEAT, TextureCompareMode compareMode = TextureCompareMode.NONE, Compare compareFunc = Compare.Less)
+    content: public WritableCubeMap(RenderTargetTextureTypes textureType, ImagePixelFormat colorFormat, int width, int height, bool generateMipMaps = true, TextureFilterMode filterMode = TextureFilterMode.LinearMipmapLinear, TextureWrapMode wrapMode = TextureWrapMode.Repeat, TextureCompareMode compareMode = TextureCompareMode.None, Compare compareFunc = Compare.Less)
     parameters:
     - id: textureType
       type: Fusee.Engine.Common.RenderTargetTextureTypes
@@ -489,11 +489,11 @@ items:
       description: Defines the wrapping mode <xref href="Fusee.Engine.Common.TextureWrapMode" data-throw-if-not-resolved="false"></xref>.
     - id: compareMode
       type: Fusee.Engine.Common.TextureCompareMode
-      description: Defines the compare mode <xref href="Fusee.Engine.Common.TextureCompareMode" data-throw-if-not-resolved="false"></xref>´.
+      description: Defines the compare mode <xref href="Fusee.Engine.Common.TextureCompareMode" data-throw-if-not-resolved="false"></xref>.
     - id: compareFunc
       type: Fusee.Engine.Common.Compare
-      description: Defines the compare function <see cref="!:TextureCompareFunc"></see>.
-    content.vb: Public Sub New(textureType As RenderTargetTextureTypes, colorFormat As ImagePixelFormat, width As Integer, height As Integer, generateMipMaps As Boolean = True, filterMode As TextureFilterMode = TextureFilterMode.LINEAR, wrapMode As TextureWrapMode = TextureWrapMode.REPEAT, compareMode As TextureCompareMode = TextureCompareMode.NONE, compareFunc As Compare = Compare.Less)
+      description: Specifies the texture&apos;s comparison function.
+    content.vb: Public Sub New(textureType As RenderTargetTextureTypes, colorFormat As ImagePixelFormat, width As Integer, height As Integer, generateMipMaps As Boolean = True, filterMode As TextureFilterMode = TextureFilterMode.LinearMipmapLinear, wrapMode As TextureWrapMode = TextureWrapMode.Repeat, compareMode As TextureCompareMode = TextureCompareMode.None, compareFunc As Compare = Compare.Less)
   overload: Fusee.Engine.Core.WritableCubeMap.#ctor*
   modifiers.csharp:
   - public
@@ -1138,6 +1138,12 @@ references:
   name: CompareMode
   nameWithType: IWritableTexture.CompareMode
   fullName: Fusee.Engine.Common.IWritableTexture.CompareMode
+- uid: Fusee.Engine.Common.Compare
+  commentId: T:Fusee.Engine.Common.Compare
+  parent: Fusee.Engine.Common
+  name: Compare
+  nameWithType: Compare
+  fullName: Fusee.Engine.Common.Compare
 - uid: Fusee.Engine.Core.WritableCubeMap.CompareFunc*
   commentId: Overload:Fusee.Engine.Core.WritableCubeMap.CompareFunc
   name: CompareFunc
@@ -1149,12 +1155,6 @@ references:
   name: CompareFunc
   nameWithType: IWritableTexture.CompareFunc
   fullName: Fusee.Engine.Common.IWritableTexture.CompareFunc
-- uid: Fusee.Engine.Common.Compare
-  commentId: T:Fusee.Engine.Common.Compare
-  parent: Fusee.Engine.Common
-  name: Compare
-  nameWithType: Compare
-  fullName: Fusee.Engine.Common.Compare
 - uid: Fusee.Engine.Core.WritableCubeMap.#ctor*
   commentId: Overload:Fusee.Engine.Core.WritableCubeMap.#ctor
   name: WritableCubeMap

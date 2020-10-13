@@ -247,7 +247,7 @@ items:
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nReturns a value signalling if the given touchpoint is currently active (if something hits the screen).\n"
+  summary: "\nReturns a value signaling if the given touchpoint is currently active (if something hits the screen).\n"
   example: []
   syntax:
     content: public bool GetTouchActive(TouchPoints touch)
@@ -257,7 +257,7 @@ items:
       description: The touchpoint to check.
     return:
       type: System.Boolean
-      description: true if this touch is acitve (a finger is on the screen), otherwise false.
+      description: true if this touch is active (a finger is on the screen), otherwise false.
     content.vb: Public Function GetTouchActive(touch As TouchPoints) As Boolean
   overload: Fusee.Engine.Core.TouchDevice.GetTouchActive*
   modifiers.csharp:
@@ -292,7 +292,7 @@ items:
       description: The touchpoint.
     return:
       type: Fusee.Math.Core.float2
-      description: The X/Y postion of the given touchpoint.
+      description: The X/Y position of the given touchpoint.
     content.vb: Public Function GetPosition(touch As TouchPoints) As float2
   overload: Fusee.Engine.Core.TouchDevice.GetPosition*
   modifiers.csharp:
@@ -317,7 +317,7 @@ items:
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nRetrieves the current velocity (in pixels per second) of the giben touch point. \nThe returned values are only valid if <xref href=\"Fusee.Engine.Core.TouchDevice.GetTouchActive(Fusee.Engine.Common.TouchPoints)\" data-throw-if-not-resolved=\"false\"></xref> holds true for the same touchpoint.\n"
+  summary: "\nRetrieves the current velocity (in pixels per second) of the given touch point. \nThe returned values are only valid if <xref href=\"Fusee.Engine.Core.TouchDevice.GetTouchActive(Fusee.Engine.Common.TouchPoints)\" data-throw-if-not-resolved=\"false\"></xref> holds true for the same touchpoint.\n"
   example: []
   syntax:
     content: public float2 GetVelocity(TouchPoints touch)
@@ -327,7 +327,7 @@ items:
       description: The touchpoint.
     return:
       type: Fusee.Math.Core.float2
-      description: The two-dimensional velocitiy of the touchpoint.
+      description: The two-dimensional velocity of the touchpoint.
     content.vb: Public Function GetVelocity(touch As TouchPoints) As float2
   overload: Fusee.Engine.Core.TouchDevice.GetVelocity*
   modifiers.csharp:
@@ -421,7 +421,7 @@ items:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   summary: "\nGets a value indicating the <xref href=\"Fusee.Engine.Core.TwoPointAction\" data-throw-if-not-resolved=\"false\"></xref> currently performed with the highest intensity.\n"
-  remarks: "\nTwo moving touchpoints on the screen can be interpreted in various ways. It&apos;s up to the application to interpret the two individual changes in position\nas <xref href=\"Fusee.Engine.Core.TwoPointAction.Move\" data-throw-if-not-resolved=\"false\"></xref> , as a <xref href=\"Fusee.Engine.Core.TwoPointAction.Rotate\" data-throw-if-not-resolved=\"false\"></xref> or as a <xref href=\"Fusee.Engine.Core.TwoPointAction.Pinch\" data-throw-if-not-resolved=\"false\"></xref> . Use this method to retrieve\na symbolic value which of these three possibilites is currently performed with the highest intensity. Applications should sensibly decide whether to \nallow to change their behavior during a two-point-gesture (as long as <xref href=\"Fusee.Engine.Core.TouchDevice.TwoPoint\" data-throw-if-not-resolved=\"false\"></xref> holds true) or to check this value only initially whenever\na two-point gesture starts, or do something in-between. As a practice: Investigate how the \n<a href=\"https://play.google.com/store/apps/details?id=com.google.earth\">Google Earth mobile app</a> handles this question!\n"
+  remarks: "\nTwo moving touchpoints on the screen can be interpreted in various ways. It&apos;s up to the application to interpret the two individual changes in position\nas <xref href=\"Fusee.Engine.Core.TwoPointAction.Move\" data-throw-if-not-resolved=\"false\"></xref> , as a <xref href=\"Fusee.Engine.Core.TwoPointAction.Rotate\" data-throw-if-not-resolved=\"false\"></xref> or as a <xref href=\"Fusee.Engine.Core.TwoPointAction.Pinch\" data-throw-if-not-resolved=\"false\"></xref> . Use this method to retrieve\na symbolic value which of these three possibilities is currently performed with the highest intensity. Applications should sensibly decide whether to \nallow to change their behavior during a two-point-gesture (as long as <xref href=\"Fusee.Engine.Core.TouchDevice.TwoPoint\" data-throw-if-not-resolved=\"false\"></xref> holds true) or to check this value only initially whenever\na two-point gesture starts, or do something in-between. As a practice: Investigate how the \n<a href=\"https://play.google.com/store/apps/details?id=com.google.earth\">Google Earth mobile app</a> handles this question!\n"
   example: []
   syntax:
     content: public TwoPointAction TwoPointGesture { get; }
@@ -632,7 +632,7 @@ items:
     parameters: []
     return:
       type: Fusee.Math.Core.float2
-      description: "\nThe two-dimenstional speed vector of the midpoint between touchpoint 0 and touchpoint 1.\n"
+      description: "\nThe two-dimensional speed vector of the midpoint between touchpoint 0 and touchpoint 1.\n"
     content.vb: Public ReadOnly Property TwoPointMidPointVel As float2
   overload: Fusee.Engine.Core.TouchDevice.TwoPointMidPointVel*
   modifiers.csharp:

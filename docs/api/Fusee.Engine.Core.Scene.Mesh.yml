@@ -64,6 +64,15 @@ items:
   - Fusee.Engine.Core.Line
   - Fusee.Engine.Core.NineSlicePlane
   - Fusee.Engine.Core.Plane
+  - Fusee.Engine.Core.Primitives.Circle
+  - Fusee.Engine.Core.Primitives.Cube
+  - Fusee.Engine.Core.Primitives.Icosahedron
+  - Fusee.Engine.Core.Primitives.Icosphere
+  - Fusee.Engine.Core.Primitives.Line
+  - Fusee.Engine.Core.Primitives.NineSlicePlane
+  - Fusee.Engine.Core.Primitives.Plane
+  - Fusee.Engine.Core.Primitives.Sphere
+  - Fusee.Engine.Core.Primitives.WireframeCube
   - Fusee.Engine.Core.Sphere
   - Fusee.Engine.Core.WireframeCube
   - Fusee.Engine.GUI.GUIText
@@ -739,7 +748,7 @@ items:
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.Scene
-  summary: "\nThe tangent of each triangle for bump mapping.\nw-component is handedness\n"
+  summary: "\nThe tangent of each triangle for normal mapping.\nw-component is handedness\n"
   example: []
   syntax:
     content: public float4[] Tangents { get; set; }
@@ -772,7 +781,7 @@ items:
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.Scene
-  summary: "\nThe bi tangent of each triangle for bump mapping.\n"
+  summary: "\nThe bi tangent of each triangle for normal mapping.\n"
   example: []
   syntax:
     content: public float3[] BiTangents { get; set; }

@@ -174,12 +174,12 @@
   
   
   <h4 id="Fusee_Engine_Core_RendererState__effect" data-uid="Fusee.Engine.Core.RendererState._effect">_effect</h4>
-  <div class="markdown level1 summary"><p>State of the <a class="xref" href="Fusee.Engine.Core.Scene.ShaderEffect.html">ShaderEffect</a>.</p>
+  <div class="markdown level1 summary"><p>State of the <a class="xref" href="Fusee.Engine.Core.Effects.ShaderEffect.html">ShaderEffect</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected CollapsingStateStack&lt;ShaderEffect&gt; _effect</code></pre>
+    <pre><code class="lang-csharp hljs">protected CollapsingStateStack&lt;Effect&gt; _effect</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -191,7 +191,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Xene.CollapsingStateStack-1.html">CollapsingStateStack</a>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.ShaderEffect.html">ShaderEffect</a>&gt;</td>
+        <td><a class="xref" href="Fusee.Xene.CollapsingStateStack-1.html">CollapsingStateStack</a>&lt;<a class="xref" href="Fusee.Engine.Core.Effects.Effect.html">Effect</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -217,6 +217,31 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Xene.CollapsingStateStack-1.html">CollapsingStateStack</a>&lt;<a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Fusee_Engine_Core_RendererState__renderLayer" data-uid="Fusee.Engine.Core.RendererState._renderLayer">_renderLayer</h4>
+  <div class="markdown level1 summary"><p>State of the <a class="xref" href="Fusee.Engine.Core.RendererState.html#Fusee_Engine_Core_RendererState_RenderLayer">RenderLayer</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CollapsingStateStack&lt;RenderLayer&gt; _renderLayer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Xene.CollapsingStateStack-1.html">CollapsingStateStack</a>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.RenderLayer.html">RenderLayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -308,7 +333,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ShaderEffect Effect { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Effect Effect { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -320,7 +345,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Engine.Core.Scene.ShaderEffect.html">ShaderEffect</a></td>
+        <td><a class="xref" href="Fusee.Engine.Core.Effects.Effect.html">Effect</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -347,6 +372,32 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_RendererState_RenderLayer_" data-uid="Fusee.Engine.Core.RendererState.RenderLayer*"></a>
+  <h4 id="Fusee_Engine_Core_RendererState_RenderLayer" data-uid="Fusee.Engine.Core.RendererState.RenderLayer">RenderLayer</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the RenderLayer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderLayer RenderLayer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.RenderLayer.html">RenderLayer</a></td>
         <td></td>
       </tr>
     </tbody>

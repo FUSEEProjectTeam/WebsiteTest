@@ -5,8 +5,8 @@ items:
   id: CanvasRenderMode
   parent: Fusee.Engine.Core.Scene
   children:
-  - Fusee.Engine.Core.Scene.CanvasRenderMode.SCREEN
-  - Fusee.Engine.Core.Scene.CanvasRenderMode.WORLD
+  - Fusee.Engine.Core.Scene.CanvasRenderMode.Screen
+  - Fusee.Engine.Core.Scene.CanvasRenderMode.World
   langs:
   - csharp
   - vb
@@ -32,19 +32,19 @@ items:
   modifiers.vb:
   - Public
   - Enum
-- uid: Fusee.Engine.Core.Scene.CanvasRenderMode.WORLD
-  commentId: F:Fusee.Engine.Core.Scene.CanvasRenderMode.WORLD
-  id: WORLD
+- uid: Fusee.Engine.Core.Scene.CanvasRenderMode.World
+  commentId: F:Fusee.Engine.Core.Scene.CanvasRenderMode.World
+  id: World
   parent: Fusee.Engine.Core.Scene.CanvasRenderMode
   langs:
   - csharp
   - vb
-  name: WORLD
-  nameWithType: CanvasRenderMode.WORLD
-  fullName: Fusee.Engine.Core.Scene.CanvasRenderMode.WORLD
+  name: World
+  nameWithType: CanvasRenderMode.World
+  fullName: Fusee.Engine.Core.Scene.CanvasRenderMode.World
   type: Field
   source:
-    id: WORLD
+    id: World
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\CanvasTransform.cs
     startLine: 49
   assemblies:
@@ -53,7 +53,7 @@ items:
   summary: "\nThe UI is embedded into the 3D world.\n"
   example: []
   syntax:
-    content: WORLD = 0
+    content: World = 0
     return:
       type: Fusee.Engine.Core.Scene.CanvasRenderMode
   modifiers.csharp:
@@ -62,19 +62,19 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Core.Scene.CanvasRenderMode.SCREEN
-  commentId: F:Fusee.Engine.Core.Scene.CanvasRenderMode.SCREEN
-  id: SCREEN
+- uid: Fusee.Engine.Core.Scene.CanvasRenderMode.Screen
+  commentId: F:Fusee.Engine.Core.Scene.CanvasRenderMode.Screen
+  id: Screen
   parent: Fusee.Engine.Core.Scene.CanvasRenderMode
   langs:
   - csharp
   - vb
-  name: SCREEN
-  nameWithType: CanvasRenderMode.SCREEN
-  fullName: Fusee.Engine.Core.Scene.CanvasRenderMode.SCREEN
+  name: Screen
+  nameWithType: CanvasRenderMode.Screen
+  fullName: Fusee.Engine.Core.Scene.CanvasRenderMode.Screen
   type: Field
   source:
-    id: SCREEN
+    id: Screen
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\CanvasTransform.cs
     startLine: 53
   assemblies:
@@ -83,7 +83,7 @@ items:
   summary: "\nThe UI should be overlaid onto the 2D screen.\n"
   example: []
   syntax:
-    content: SCREEN = 1
+    content: Screen = 1
     return:
       type: Fusee.Engine.Core.Scene.CanvasRenderMode
   modifiers.csharp:

@@ -5,14 +5,19 @@ items:
   id: Fusee.Engine.Core.ShaderShards
   children:
   - Fusee.Engine.Core.ShaderShards.AttributeLocations
+  - Fusee.Engine.Core.ShaderShards.Header
   - Fusee.Engine.Core.ShaderShards.HeaderShard
+  - Fusee.Engine.Core.ShaderShards.Include
   - Fusee.Engine.Core.ShaderShards.Includes
+  - Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  - Fusee.Engine.Core.ShaderShards.LightingSetupShards
   - Fusee.Engine.Core.ShaderShards.MaterialProps
   - Fusee.Engine.Core.ShaderShards.MaterialType
   - Fusee.Engine.Core.ShaderShards.MaterialValues
   - Fusee.Engine.Core.ShaderShards.MeshProps
   - Fusee.Engine.Core.ShaderShards.ShaderEffectProps
   - Fusee.Engine.Core.ShaderShards.ShaderShardUtil
+  - Fusee.Engine.Core.ShaderShards.SurfaceOut
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
   - Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations
   langs:
@@ -25,6 +30,43 @@ items:
   assemblies:
   - Fusee.Engine.Core
 references:
+- uid: Fusee.Engine.Core.ShaderShards.Header
+  commentId: T:Fusee.Engine.Core.ShaderShards.Header
+  name: Header
+  nameWithType: Header
+  fullName: Fusee.Engine.Core.ShaderShards.Header
+- uid: Fusee.Engine.Core.ShaderShards.Include
+  commentId: T:Fusee.Engine.Core.ShaderShards.Include
+  name: Include
+  nameWithType: Include
+  fullName: Fusee.Engine.Core.ShaderShards.Include
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupShards
+  commentId: T:Fusee.Engine.Core.ShaderShards.LightingSetupShards
+  parent: Fusee.Engine.Core.ShaderShards
+  name: LightingSetupShards
+  nameWithType: LightingSetupShards
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupShards
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  commentId: T:Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  parent: Fusee.Engine.Core.ShaderShards
+  name: LightingSetupFlags
+  nameWithType: LightingSetupFlags
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+- uid: Fusee.Engine.Core.ShaderShards.SurfaceOut
+  commentId: T:Fusee.Engine.Core.ShaderShards.SurfaceOut
+  name: SurfaceOut
+  nameWithType: SurfaceOut
+  fullName: Fusee.Engine.Core.ShaderShards.SurfaceOut
+- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
+  commentId: T:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
+  name: UniformNameDeclarations
+  nameWithType: UniformNameDeclarations
+  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
+- uid: Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations
+  commentId: T:Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations
+  name: VaryingNameDeclarations
+  nameWithType: VaryingNameDeclarations
+  fullName: Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations
 - uid: Fusee.Engine.Core.ShaderShards.AttributeLocations
   commentId: T:Fusee.Engine.Core.ShaderShards.AttributeLocations
   name: AttributeLocations
@@ -75,16 +117,6 @@ references:
   name: ShaderShardUtil
   nameWithType: ShaderShardUtil
   fullName: Fusee.Engine.Core.ShaderShards.ShaderShardUtil
-- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
-  commentId: T:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
-  name: UniformNameDeclarations
-  nameWithType: UniformNameDeclarations
-  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
-- uid: Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations
-  commentId: T:Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations
-  name: VaryingNameDeclarations
-  nameWithType: VaryingNameDeclarations
-  fullName: Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations
 - uid: Fusee.Engine.Core.ShaderShards
   commentId: N:Fusee.Engine.Core.ShaderShards
   name: Fusee.Engine.Core.ShaderShards

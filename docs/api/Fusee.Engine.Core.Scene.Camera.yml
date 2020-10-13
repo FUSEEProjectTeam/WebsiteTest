@@ -5,7 +5,7 @@ items:
   id: Camera
   parent: Fusee.Engine.Core.Scene
   children:
-  - Fusee.Engine.Core.Scene.Camera.#ctor(Fusee.Engine.Core.Scene.ProjectionMethod,System.Single,System.Single,System.Single)
+  - Fusee.Engine.Core.Scene.Camera.#ctor(Fusee.Engine.Core.Scene.ProjectionMethod,System.Single,System.Single,System.Single,Fusee.Engine.Core.Scene.RenderLayers)
   - Fusee.Engine.Core.Scene.Camera.Active
   - Fusee.Engine.Core.Scene.Camera.BackgroundColor
   - Fusee.Engine.Core.Scene.Camera.ClearColor
@@ -17,6 +17,7 @@ items:
   - Fusee.Engine.Core.Scene.Camera.GetProjectionMat(System.Int32,System.Int32,Fusee.Math.Core.float4@)
   - Fusee.Engine.Core.Scene.Camera.Layer
   - Fusee.Engine.Core.Scene.Camera.ProjectionMethod
+  - Fusee.Engine.Core.Scene.Camera.RenderLayer
   - Fusee.Engine.Core.Scene.Camera.RenderTexture
   - Fusee.Engine.Core.Scene.Camera.Viewport
   langs:
@@ -409,28 +410,57 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Fusee.Engine.Core.Scene.Camera.#ctor(Fusee.Engine.Core.Scene.ProjectionMethod,System.Single,System.Single,System.Single)
-  commentId: M:Fusee.Engine.Core.Scene.Camera.#ctor(Fusee.Engine.Core.Scene.ProjectionMethod,System.Single,System.Single,System.Single)
-  id: '#ctor(Fusee.Engine.Core.Scene.ProjectionMethod,System.Single,System.Single,System.Single)'
+- uid: Fusee.Engine.Core.Scene.Camera.RenderLayer
+  commentId: F:Fusee.Engine.Core.Scene.Camera.RenderLayer
+  id: RenderLayer
   parent: Fusee.Engine.Core.Scene.Camera
   langs:
   - csharp
   - vb
-  name: Camera(ProjectionMethod, Single, Single, Single)
-  nameWithType: Camera.Camera(ProjectionMethod, Single, Single, Single)
-  fullName: Fusee.Engine.Core.Scene.Camera.Camera(Fusee.Engine.Core.Scene.ProjectionMethod, System.Single, System.Single, System.Single)
+  name: RenderLayer
+  nameWithType: Camera.RenderLayer
+  fullName: Fusee.Engine.Core.Scene.Camera.RenderLayer
+  type: Field
+  source:
+    id: RenderLayer
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\Camera.cs
+    startLine: 102
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nSets the RenderLayer for this camera.\n"
+  example: []
+  syntax:
+    content: public RenderLayers RenderLayer
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+    content.vb: Public RenderLayer As RenderLayers
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Scene.Camera.#ctor(Fusee.Engine.Core.Scene.ProjectionMethod,System.Single,System.Single,System.Single,Fusee.Engine.Core.Scene.RenderLayers)
+  commentId: M:Fusee.Engine.Core.Scene.Camera.#ctor(Fusee.Engine.Core.Scene.ProjectionMethod,System.Single,System.Single,System.Single,Fusee.Engine.Core.Scene.RenderLayers)
+  id: '#ctor(Fusee.Engine.Core.Scene.ProjectionMethod,System.Single,System.Single,System.Single,Fusee.Engine.Core.Scene.RenderLayers)'
+  parent: Fusee.Engine.Core.Scene.Camera
+  langs:
+  - csharp
+  - vb
+  name: Camera(ProjectionMethod, Single, Single, Single, RenderLayers)
+  nameWithType: Camera.Camera(ProjectionMethod, Single, Single, Single, RenderLayers)
+  fullName: Fusee.Engine.Core.Scene.Camera.Camera(Fusee.Engine.Core.Scene.ProjectionMethod, System.Single, System.Single, System.Single, Fusee.Engine.Core.Scene.RenderLayers)
   type: Constructor
   source:
     id: .ctor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\Camera.cs
-    startLine: 106
+    startLine: 112
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.Scene
   summary: "\nCreates a new instance of type CameraComponent.\n"
   example: []
   syntax:
-    content: public Camera(ProjectionMethod projectionMethod, float zNear, float zFar, float fovY)
+    content: public Camera(ProjectionMethod projectionMethod, float zNear, float zFar, float fovY, RenderLayers renderLayer = RenderLayers.All | RenderLayers.Default)
     parameters:
     - id: projectionMethod
       type: Fusee.Engine.Core.Scene.ProjectionMethod
@@ -444,7 +474,10 @@ items:
     - id: fovY
       type: System.Single
       description: The vertical field of view in radians.
-    content.vb: Public Sub New(projectionMethod As ProjectionMethod, zNear As Single, zFar As Single, fovY As Single)
+    - id: renderLayer
+      type: Fusee.Engine.Core.Scene.RenderLayers
+      description: The <xref href="Fusee.Engine.Core.Scene.RenderLayers" data-throw-if-not-resolved="false"></xref> for this camera
+    content.vb: Public Sub New(projectionMethod As ProjectionMethod, zNear As Single, zFar As Single, fovY As Single, renderLayer As RenderLayers = RenderLayers.All Or RenderLayers.Default)
   overload: Fusee.Engine.Core.Scene.Camera.#ctor*
   modifiers.csharp:
   - public
@@ -464,7 +497,7 @@ items:
   source:
     id: GetProjectionMat
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\Camera.cs
-    startLine: 120
+    startLine: 127
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.Scene
@@ -897,6 +930,12 @@ references:
   name: CustomCameraUpdate
   nameWithType: CustomCameraUpdate
   fullName: Fusee.Engine.Core.Scene.CustomCameraUpdate
+- uid: Fusee.Engine.Core.Scene.RenderLayers
+  commentId: T:Fusee.Engine.Core.Scene.RenderLayers
+  parent: Fusee.Engine.Core.Scene
+  name: RenderLayers
+  nameWithType: RenderLayers
+  fullName: Fusee.Engine.Core.Scene.RenderLayers
 - uid: Fusee.Engine.Core.Scene.Camera.ClippingPlanes
   commentId: F:Fusee.Engine.Core.Scene.Camera.ClippingPlanes
   isExternal: true

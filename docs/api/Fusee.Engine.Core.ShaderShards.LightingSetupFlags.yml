@@ -1,0 +1,230 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  commentId: T:Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  id: LightingSetupFlags
+  parent: Fusee.Engine.Core.ShaderShards
+  children:
+  - Fusee.Engine.Core.ShaderShards.LightingSetupFlags.AlbedoTex
+  - Fusee.Engine.Core.ShaderShards.LightingSetupFlags.BlinnPhong
+  - Fusee.Engine.Core.ShaderShards.LightingSetupFlags.BRDF
+  - Fusee.Engine.Core.ShaderShards.LightingSetupFlags.DiffuseOnly
+  - Fusee.Engine.Core.ShaderShards.LightingSetupFlags.NormalMap
+  - Fusee.Engine.Core.ShaderShards.LightingSetupFlags.Unlit
+  langs:
+  - csharp
+  - vb
+  name: LightingSetupFlags
+  nameWithType: LightingSetupFlags
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  type: Enum
+  source:
+    id: LightingSetupFlags
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\SurfaceOut.cs
+    startLine: 25
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nUsed to create the correct Surface Effect for the given lighting parameters.\n"
+  example: []
+  syntax:
+    content: public enum LightingSetupFlags
+    content.vb: Public Enum LightingSetupFlags
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.AlbedoTex
+  commentId: F:Fusee.Engine.Core.ShaderShards.LightingSetupFlags.AlbedoTex
+  id: AlbedoTex
+  parent: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  langs:
+  - csharp
+  - vb
+  name: AlbedoTex
+  nameWithType: LightingSetupFlags.AlbedoTex
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.AlbedoTex
+  type: Field
+  source:
+    id: AlbedoTex
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\SurfaceOut.cs
+    startLine: 30
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nDoes this Effect have an albedo texture?\n"
+  example: []
+  syntax:
+    content: AlbedoTex = 32
+    return:
+      type: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.NormalMap
+  commentId: F:Fusee.Engine.Core.ShaderShards.LightingSetupFlags.NormalMap
+  id: NormalMap
+  parent: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  langs:
+  - csharp
+  - vb
+  name: NormalMap
+  nameWithType: LightingSetupFlags.NormalMap
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.NormalMap
+  type: Field
+  source:
+    id: NormalMap
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\SurfaceOut.cs
+    startLine: 35
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nDoes this Effect have a normal map?\n"
+  example: []
+  syntax:
+    content: NormalMap = 16
+    return:
+      type: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.BlinnPhong
+  commentId: F:Fusee.Engine.Core.ShaderShards.LightingSetupFlags.BlinnPhong
+  id: BlinnPhong
+  parent: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  langs:
+  - csharp
+  - vb
+  name: BlinnPhong
+  nameWithType: LightingSetupFlags.BlinnPhong
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.BlinnPhong
+  type: Field
+  source:
+    id: BlinnPhong
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\SurfaceOut.cs
+    startLine: 40
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nA Effect uses the standard (= non pbr) lighting calculation.\n"
+  example: []
+  syntax:
+    content: BlinnPhong = 8
+    return:
+      type: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.BRDF
+  commentId: F:Fusee.Engine.Core.ShaderShards.LightingSetupFlags.BRDF
+  id: BRDF
+  parent: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  langs:
+  - csharp
+  - vb
+  name: BRDF
+  nameWithType: LightingSetupFlags.BRDF
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.BRDF
+  type: Field
+  source:
+    id: BRDF
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\SurfaceOut.cs
+    startLine: 46
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nA Effect uses a pbr specular calculation (BRDF).\nIncludes diffuse calculation.\n"
+  example: []
+  syntax:
+    content: BRDF = 4
+    return:
+      type: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.DiffuseOnly
+  commentId: F:Fusee.Engine.Core.ShaderShards.LightingSetupFlags.DiffuseOnly
+  id: DiffuseOnly
+  parent: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  langs:
+  - csharp
+  - vb
+  name: DiffuseOnly
+  nameWithType: LightingSetupFlags.DiffuseOnly
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.DiffuseOnly
+  type: Field
+  source:
+    id: DiffuseOnly
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\SurfaceOut.cs
+    startLine: 51
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nPerform only a simple diffuse calculation.\n"
+  example: []
+  syntax:
+    content: DiffuseOnly = 2
+    return:
+      type: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.Unlit
+  commentId: F:Fusee.Engine.Core.ShaderShards.LightingSetupFlags.Unlit
+  id: Unlit
+  parent: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  langs:
+  - csharp
+  - vb
+  name: Unlit
+  nameWithType: LightingSetupFlags.Unlit
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.Unlit
+  type: Field
+  source:
+    id: Unlit
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\SurfaceOut.cs
+    startLine: 56
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nDoes this effect perform no lighting calculation at all?\n"
+  example: []
+  syntax:
+    content: Unlit = 1
+    return:
+      type: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Fusee.Engine.Core.ShaderShards
+  commentId: N:Fusee.Engine.Core.ShaderShards
+  name: Fusee.Engine.Core.ShaderShards
+  nameWithType: Fusee.Engine.Core.ShaderShards
+  fullName: Fusee.Engine.Core.ShaderShards
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  commentId: T:Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  parent: Fusee.Engine.Core.ShaderShards
+  name: LightingSetupFlags
+  nameWithType: LightingSetupFlags
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags

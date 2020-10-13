@@ -1,0 +1,602 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties
+  commentId: T:Fusee.Engine.Core.ShaderShards.Fragment.FragProperties
+  id: FragProperties
+  parent: Fusee.Engine.Core.ShaderShards.Fragment
+  children:
+  - Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.ColorOut
+  - Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.DeferredLightAndShadowUniforms(Fusee.Engine.Core.Scene.Light,System.Boolean,System.Int32)
+  - Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.DeferredTextureUniforms
+  - Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.FixedNumberLightArray
+  - Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.GBufferOut
+  - Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.OutColorName
+  langs:
+  - csharp
+  - vb
+  name: FragProperties
+  nameWithType: FragProperties
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties
+  type: Class
+  source:
+    id: FragProperties
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\FragProperties.cs
+    startLine: 10
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nCollection of shader code strings, describing possible in, out and uniform properties of a fragment shader.\n"
+  example: []
+  syntax:
+    content: public static class FragProperties
+    content.vb: Public Module FragProperties
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.OutColorName
+  commentId: F:Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.OutColorName
+  id: OutColorName
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties
+  langs:
+  - csharp
+  - vb
+  name: OutColorName
+  nameWithType: FragProperties.OutColorName
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.OutColorName
+  type: Field
+  source:
+    id: OutColorName
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\FragProperties.cs
+    startLine: 15
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nThe standard name for the fragment shader color output.\n"
+  example: []
+  syntax:
+    content: public static string OutColorName
+    return:
+      type: System.String
+    content.vb: Public Shared OutColorName As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.ColorOut
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.ColorOut
+  id: ColorOut
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties
+  langs:
+  - csharp
+  - vb
+  name: ColorOut()
+  nameWithType: FragProperties.ColorOut()
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.ColorOut()
+  type: Method
+  source:
+    id: ColorOut
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\FragProperties.cs
+    startLine: 20
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nCreates a single color (vec4) out parameter.\n"
+  example: []
+  syntax:
+    content: public static string ColorOut()
+    return:
+      type: System.String
+    content.vb: Public Shared Function ColorOut As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.ColorOut*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.GBufferOut
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.GBufferOut
+  id: GBufferOut
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties
+  langs:
+  - csharp
+  - vb
+  name: GBufferOut()
+  nameWithType: FragProperties.GBufferOut()
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.GBufferOut()
+  type: Method
+  source:
+    id: GBufferOut
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\FragProperties.cs
+    startLine: 29
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nCreates the out parameters for rendering into a G-Buffer object.\n"
+  example: []
+  syntax:
+    content: public static string GBufferOut()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function GBufferOut As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.GBufferOut*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.DeferredTextureUniforms
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.DeferredTextureUniforms
+  id: DeferredTextureUniforms
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties
+  langs:
+  - csharp
+  - vb
+  name: DeferredTextureUniforms()
+  nameWithType: FragProperties.DeferredTextureUniforms()
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.DeferredTextureUniforms()
+  type: Method
+  source:
+    id: DeferredTextureUniforms
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\FragProperties.cs
+    startLine: 52
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nCreates the uniform texture parameters for the lighting pass, as used in deferred rendering.\n"
+  example: []
+  syntax:
+    content: public static string DeferredTextureUniforms()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function DeferredTextureUniforms As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.DeferredTextureUniforms*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.DeferredLightAndShadowUniforms(Fusee.Engine.Core.Scene.Light,System.Boolean,System.Int32)
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.DeferredLightAndShadowUniforms(Fusee.Engine.Core.Scene.Light,System.Boolean,System.Int32)
+  id: DeferredLightAndShadowUniforms(Fusee.Engine.Core.Scene.Light,System.Boolean,System.Int32)
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties
+  langs:
+  - csharp
+  - vb
+  name: DeferredLightAndShadowUniforms(Light, Boolean, Int32)
+  nameWithType: FragProperties.DeferredLightAndShadowUniforms(Light, Boolean, Int32)
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.DeferredLightAndShadowUniforms(Fusee.Engine.Core.Scene.Light, System.Boolean, System.Int32)
+  type: Method
+  source:
+    id: DeferredLightAndShadowUniforms
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\FragProperties.cs
+    startLine: 73
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nCreates the uniforms for the deferred lighting pass for one light.\n"
+  example: []
+  syntax:
+    content: public static string DeferredLightAndShadowUniforms(Light lc, bool isCascaded, int numberOfCascades)
+    parameters:
+    - id: lc
+      type: Fusee.Engine.Core.Scene.Light
+      description: The light component, needed to decide if we have a Shadow Cube Map or a standard shadow map.
+    - id: isCascaded
+      type: System.Boolean
+      description: If cascaded shadow mapping is used, this should be set to true.
+    - id: numberOfCascades
+      type: System.Int32
+      description: If cascaded shadow mapping is used this is the number of cascades.
+    return:
+      type: System.String
+    content.vb: Public Shared Function DeferredLightAndShadowUniforms(lc As Light, isCascaded As Boolean, numberOfCascades As Integer) As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.DeferredLightAndShadowUniforms*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.FixedNumberLightArray
+  commentId: F:Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.FixedNumberLightArray
+  id: FixedNumberLightArray
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties
+  langs:
+  - csharp
+  - vb
+  name: FixedNumberLightArray
+  nameWithType: FragProperties.FixedNumberLightArray
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.FixedNumberLightArray
+  type: Field
+  source:
+    id: FixedNumberLightArray
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\FragProperties.cs
+    startLine: 110
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nCreates the &quot;allLights&quot; uniform array, as it is used in forward rendering.\n"
+  example: []
+  syntax:
+    content: public static string FixedNumberLightArray
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared FixedNumberLightArray As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Fusee.Engine.Core.ShaderShards.Fragment
+  commentId: N:Fusee.Engine.Core.ShaderShards.Fragment
+  name: Fusee.Engine.Core.ShaderShards.Fragment
+  nameWithType: Fusee.Engine.Core.ShaderShards.Fragment
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.ColorOut*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.ColorOut
+  name: ColorOut
+  nameWithType: FragProperties.ColorOut
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.ColorOut
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.GBufferOut*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.GBufferOut
+  name: GBufferOut
+  nameWithType: FragProperties.GBufferOut
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.GBufferOut
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.DeferredTextureUniforms*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.DeferredTextureUniforms
+  name: DeferredTextureUniforms
+  nameWithType: FragProperties.DeferredTextureUniforms
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.DeferredTextureUniforms
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.DeferredLightAndShadowUniforms*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.DeferredLightAndShadowUniforms
+  name: DeferredLightAndShadowUniforms
+  nameWithType: FragProperties.DeferredLightAndShadowUniforms
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.DeferredLightAndShadowUniforms
+- uid: Fusee.Engine.Core.Scene.Light
+  commentId: T:Fusee.Engine.Core.Scene.Light
+  parent: Fusee.Engine.Core.Scene
+  name: Light
+  nameWithType: Light
+  fullName: Fusee.Engine.Core.Scene.Light
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene

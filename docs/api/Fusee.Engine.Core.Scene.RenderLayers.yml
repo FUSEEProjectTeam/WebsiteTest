@@ -1,0 +1,1017 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Scene.RenderLayers
+  commentId: T:Fusee.Engine.Core.Scene.RenderLayers
+  id: RenderLayers
+  parent: Fusee.Engine.Core.Scene
+  children:
+  - Fusee.Engine.Core.Scene.RenderLayers.All
+  - Fusee.Engine.Core.Scene.RenderLayers.Default
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer01
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer02
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer03
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer04
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer05
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer06
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer07
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer08
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer09
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer10
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer11
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer12
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer13
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer14
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer15
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer16
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer17
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer18
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer19
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer20
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer21
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer22
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer23
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer24
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer25
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer26
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer27
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer28
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer29
+  - Fusee.Engine.Core.Scene.RenderLayers.Layer30
+  - Fusee.Engine.Core.Scene.RenderLayers.None
+  langs:
+  - csharp
+  - vb
+  name: RenderLayers
+  nameWithType: RenderLayers
+  fullName: Fusee.Engine.Core.Scene.RenderLayers
+  type: Enum
+  source:
+    id: RenderLayers
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 19
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum RenderLayers
+    content.vb: >-
+      <Flags>
+
+      Public Enum RenderLayers
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Fusee.Engine.Core.Scene.RenderLayers.All
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.All
+  id: All
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: RenderLayers.All
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.All
+  type: Field
+  source:
+    id: All
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 25
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nRender on all layers\n"
+  example: []
+  syntax:
+    content: All = 0
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Default
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Default
+  id: Default
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: RenderLayers.Default
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Default
+  type: Field
+  source:
+    id: Default
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 30
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nEquivalent to All\n"
+  example: []
+  syntax:
+    content: Default = 0
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.None
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.None
+  id: None
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: RenderLayers.None
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.None
+  type: Field
+  source:
+    id: None
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 35
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  summary: "\nRender on none layer. This will take precedence over all other RenderLayers.\n"
+  example: []
+  syntax:
+    content: None = 1073741824
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer01
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer01
+  id: Layer01
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer01
+  nameWithType: RenderLayers.Layer01
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer01
+  type: Field
+  source:
+    id: Layer01
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 38
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer01 = 1
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer02
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer02
+  id: Layer02
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer02
+  nameWithType: RenderLayers.Layer02
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer02
+  type: Field
+  source:
+    id: Layer02
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 39
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer02 = 2
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer03
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer03
+  id: Layer03
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer03
+  nameWithType: RenderLayers.Layer03
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer03
+  type: Field
+  source:
+    id: Layer03
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 40
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer03 = 4
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer04
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer04
+  id: Layer04
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer04
+  nameWithType: RenderLayers.Layer04
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer04
+  type: Field
+  source:
+    id: Layer04
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 41
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer04 = 8
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer05
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer05
+  id: Layer05
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer05
+  nameWithType: RenderLayers.Layer05
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer05
+  type: Field
+  source:
+    id: Layer05
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 42
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer05 = 16
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer06
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer06
+  id: Layer06
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer06
+  nameWithType: RenderLayers.Layer06
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer06
+  type: Field
+  source:
+    id: Layer06
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 43
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer06 = 32
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer07
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer07
+  id: Layer07
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer07
+  nameWithType: RenderLayers.Layer07
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer07
+  type: Field
+  source:
+    id: Layer07
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 44
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer07 = 64
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer08
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer08
+  id: Layer08
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer08
+  nameWithType: RenderLayers.Layer08
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer08
+  type: Field
+  source:
+    id: Layer08
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 45
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer08 = 128
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer09
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer09
+  id: Layer09
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer09
+  nameWithType: RenderLayers.Layer09
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer09
+  type: Field
+  source:
+    id: Layer09
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 46
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer09 = 256
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer10
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer10
+  id: Layer10
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer10
+  nameWithType: RenderLayers.Layer10
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer10
+  type: Field
+  source:
+    id: Layer10
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 47
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer10 = 512
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer11
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer11
+  id: Layer11
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer11
+  nameWithType: RenderLayers.Layer11
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer11
+  type: Field
+  source:
+    id: Layer11
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 48
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer11 = 1024
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer12
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer12
+  id: Layer12
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer12
+  nameWithType: RenderLayers.Layer12
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer12
+  type: Field
+  source:
+    id: Layer12
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 49
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer12 = 2048
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer13
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer13
+  id: Layer13
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer13
+  nameWithType: RenderLayers.Layer13
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer13
+  type: Field
+  source:
+    id: Layer13
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 50
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer13 = 4096
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer14
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer14
+  id: Layer14
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer14
+  nameWithType: RenderLayers.Layer14
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer14
+  type: Field
+  source:
+    id: Layer14
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 51
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer14 = 8192
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer15
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer15
+  id: Layer15
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer15
+  nameWithType: RenderLayers.Layer15
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer15
+  type: Field
+  source:
+    id: Layer15
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 52
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer15 = 16384
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer16
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer16
+  id: Layer16
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer16
+  nameWithType: RenderLayers.Layer16
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer16
+  type: Field
+  source:
+    id: Layer16
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 53
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer16 = 32768
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer17
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer17
+  id: Layer17
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer17
+  nameWithType: RenderLayers.Layer17
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer17
+  type: Field
+  source:
+    id: Layer17
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 54
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer17 = 65536
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer18
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer18
+  id: Layer18
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer18
+  nameWithType: RenderLayers.Layer18
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer18
+  type: Field
+  source:
+    id: Layer18
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 55
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer18 = 131072
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer19
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer19
+  id: Layer19
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer19
+  nameWithType: RenderLayers.Layer19
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer19
+  type: Field
+  source:
+    id: Layer19
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 56
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer19 = 262144
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer20
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer20
+  id: Layer20
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer20
+  nameWithType: RenderLayers.Layer20
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer20
+  type: Field
+  source:
+    id: Layer20
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 57
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer20 = 524288
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer21
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer21
+  id: Layer21
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer21
+  nameWithType: RenderLayers.Layer21
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer21
+  type: Field
+  source:
+    id: Layer21
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 58
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer21 = 1048576
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer22
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer22
+  id: Layer22
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer22
+  nameWithType: RenderLayers.Layer22
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer22
+  type: Field
+  source:
+    id: Layer22
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 59
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer22 = 2097152
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer23
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer23
+  id: Layer23
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer23
+  nameWithType: RenderLayers.Layer23
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer23
+  type: Field
+  source:
+    id: Layer23
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 60
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer23 = 4194304
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer24
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer24
+  id: Layer24
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer24
+  nameWithType: RenderLayers.Layer24
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer24
+  type: Field
+  source:
+    id: Layer24
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 61
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer24 = 8388608
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer25
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer25
+  id: Layer25
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer25
+  nameWithType: RenderLayers.Layer25
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer25
+  type: Field
+  source:
+    id: Layer25
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 62
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer25 = 16777216
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer26
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer26
+  id: Layer26
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer26
+  nameWithType: RenderLayers.Layer26
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer26
+  type: Field
+  source:
+    id: Layer26
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 63
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer26 = 33554432
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer27
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer27
+  id: Layer27
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer27
+  nameWithType: RenderLayers.Layer27
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer27
+  type: Field
+  source:
+    id: Layer27
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 64
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer27 = 67108864
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer28
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer28
+  id: Layer28
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer28
+  nameWithType: RenderLayers.Layer28
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer28
+  type: Field
+  source:
+    id: Layer28
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 65
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer28 = 134217728
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer29
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer29
+  id: Layer29
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer29
+  nameWithType: RenderLayers.Layer29
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer29
+  type: Field
+  source:
+    id: Layer29
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 66
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer29 = 268435456
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Scene.RenderLayers.Layer30
+  commentId: F:Fusee.Engine.Core.Scene.RenderLayers.Layer30
+  id: Layer30
+  parent: Fusee.Engine.Core.Scene.RenderLayers
+  langs:
+  - csharp
+  - vb
+  name: Layer30
+  nameWithType: RenderLayers.Layer30
+  fullName: Fusee.Engine.Core.Scene.RenderLayers.Layer30
+  type: Field
+  source:
+    id: Layer30
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\RenderLayer.cs
+    startLine: 67
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Scene
+  syntax:
+    content: Layer30 = 536870912
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayers
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: Fusee.Engine.Core.Scene.RenderLayers
+  commentId: T:Fusee.Engine.Core.Scene.RenderLayers
+  parent: Fusee.Engine.Core.Scene
+  name: RenderLayers
+  nameWithType: RenderLayers
+  fullName: Fusee.Engine.Core.Scene.RenderLayers

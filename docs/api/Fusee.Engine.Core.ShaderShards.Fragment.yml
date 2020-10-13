@@ -4,8 +4,12 @@ items:
   commentId: N:Fusee.Engine.Core.ShaderShards.Fragment
   id: Fusee.Engine.Core.ShaderShards.Fragment
   children:
+  - Fusee.Engine.Core.ShaderShards.Fragment.FragMain
   - Fusee.Engine.Core.ShaderShards.Fragment.FragMainShard
+  - Fusee.Engine.Core.ShaderShards.Fragment.FragProperties
   - Fusee.Engine.Core.ShaderShards.Fragment.FragPropertiesShard
+  - Fusee.Engine.Core.ShaderShards.Fragment.FragShards
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting
   - Fusee.Engine.Core.ShaderShards.Fragment.LightingShard
   langs:
   - csharp
@@ -17,6 +21,26 @@ items:
   assemblies:
   - Fusee.Engine.Core
 references:
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragMain
+  commentId: T:Fusee.Engine.Core.ShaderShards.Fragment.FragMain
+  name: FragMain
+  nameWithType: FragMain
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragMain
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties
+  commentId: T:Fusee.Engine.Core.ShaderShards.Fragment.FragProperties
+  name: FragProperties
+  nameWithType: FragProperties
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragShards
+  commentId: T:Fusee.Engine.Core.ShaderShards.Fragment.FragShards
+  name: FragShards
+  nameWithType: FragShards
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragShards
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  commentId: T:Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  name: Lighting
+  nameWithType: Lighting
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
 - uid: Fusee.Engine.Core.ShaderShards.Fragment.FragMainShard
   commentId: T:Fusee.Engine.Core.ShaderShards.Fragment.FragMainShard
   name: FragMainShard

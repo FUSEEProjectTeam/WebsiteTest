@@ -4,6 +4,7 @@ items:
   commentId: N:Fusee.Engine.Common
   id: Fusee.Engine.Common
   children:
+  - Fusee.Engine.Common.AttributeLocations
   - Fusee.Engine.Common.AxisBoundedType
   - Fusee.Engine.Common.AxisDescription
   - Fusee.Engine.Common.AxisDirection
@@ -30,6 +31,7 @@ items:
   - Fusee.Engine.Common.Gamepad
   - Fusee.Engine.Common.HardwareCapability
   - Fusee.Engine.Common.HingeFlags
+  - Fusee.Engine.Common.HorizontalTextAlignment
   - Fusee.Engine.Common.IAttribImp
   - Fusee.Engine.Common.IAudioImp
   - Fusee.Engine.Common.IAudioStreamImp
@@ -76,6 +78,7 @@ items:
   - Fusee.Engine.Common.ITexturePixelInfo
   - Fusee.Engine.Common.IVideoManagerImp
   - Fusee.Engine.Common.IVideoStreamImp
+  - Fusee.Engine.Common.IWritableArrayTexture
   - Fusee.Engine.Common.IWritableCubeMap
   - Fusee.Engine.Common.IWritableTexture
   - Fusee.Engine.Common.KeyCodes
@@ -111,6 +114,7 @@ items:
   - Fusee.Engine.Common.TextureWrapMode
   - Fusee.Engine.Common.TouchAxes
   - Fusee.Engine.Common.TouchPoints
+  - Fusee.Engine.Common.VerticalTextAlignment
   langs:
   - csharp
   - vb
@@ -121,11 +125,22 @@ items:
   assemblies:
   - Fusee.Engine.Common
 references:
+- uid: Fusee.Engine.Common.AttributeLocations
+  commentId: T:Fusee.Engine.Common.AttributeLocations
+  name: AttributeLocations
+  nameWithType: AttributeLocations
+  fullName: Fusee.Engine.Common.AttributeLocations
 - uid: Fusee.Engine.Common.FuseeApplicationAttribute
   commentId: T:Fusee.Engine.Common.FuseeApplicationAttribute
   name: FuseeApplicationAttribute
   nameWithType: FuseeApplicationAttribute
   fullName: Fusee.Engine.Common.FuseeApplicationAttribute
+- uid: Fusee.Engine.Common.HorizontalTextAlignment
+  commentId: T:Fusee.Engine.Common.HorizontalTextAlignment
+  parent: Fusee.Engine.Common
+  name: HorizontalTextAlignment
+  nameWithType: HorizontalTextAlignment
+  fullName: Fusee.Engine.Common.HorizontalTextAlignment
 - uid: Fusee.Engine.Common.IAudioImp
   commentId: T:Fusee.Engine.Common.IAudioImp
   parent: Fusee.Engine.Common
@@ -572,6 +587,12 @@ references:
   name: IVideoStreamImp
   nameWithType: IVideoStreamImp
   fullName: Fusee.Engine.Common.IVideoStreamImp
+- uid: Fusee.Engine.Common.IWritableArrayTexture
+  commentId: T:Fusee.Engine.Common.IWritableArrayTexture
+  parent: Fusee.Engine.Common
+  name: IWritableArrayTexture
+  nameWithType: IWritableArrayTexture
+  fullName: Fusee.Engine.Common.IWritableArrayTexture
 - uid: Fusee.Engine.Common.IWritableCubeMap
   commentId: T:Fusee.Engine.Common.IWritableCubeMap
   parent: Fusee.Engine.Common
@@ -727,6 +748,7 @@ references:
   fullName: Fusee.Engine.Common.ResizeEventArgs
 - uid: Fusee.Engine.Common.ShaderParamInfo
   commentId: T:Fusee.Engine.Common.ShaderParamInfo
+  parent: Fusee.Engine.Common
   name: ShaderParamInfo
   nameWithType: ShaderParamInfo
   fullName: Fusee.Engine.Common.ShaderParamInfo
@@ -747,6 +769,12 @@ references:
   name: TextureEventArgs
   nameWithType: TextureEventArgs
   fullName: Fusee.Engine.Common.TextureEventArgs
+- uid: Fusee.Engine.Common.VerticalTextAlignment
+  commentId: T:Fusee.Engine.Common.VerticalTextAlignment
+  parent: Fusee.Engine.Common
+  name: VerticalTextAlignment
+  nameWithType: VerticalTextAlignment
+  fullName: Fusee.Engine.Common.VerticalTextAlignment
 - uid: Fusee.Engine.Common
   commentId: N:Fusee.Engine.Common
   name: Fusee.Engine.Common

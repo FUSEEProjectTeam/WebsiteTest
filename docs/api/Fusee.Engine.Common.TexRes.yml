@@ -5,9 +5,9 @@ items:
   id: TexRes
   parent: Fusee.Engine.Common
   children:
-  - Fusee.Engine.Common.TexRes.HIGH_RES
-  - Fusee.Engine.Common.TexRes.LOW_RES
-  - Fusee.Engine.Common.TexRes.MID_RES
+  - Fusee.Engine.Common.TexRes.High
+  - Fusee.Engine.Common.TexRes.Low
+  - Fusee.Engine.Common.TexRes.Middle
   langs:
   - csharp
   - vb
@@ -18,53 +18,43 @@ items:
   source:
     id: TexRes
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\MultipassEnums.cs
-    startLine: 41
+    startLine: 46
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
   summary: "\nCommon texture resolutions for render textures. The value is given in px.\n"
   example: []
   syntax:
-    content: >-
-      [Flags]
-
-      public enum TexRes
-    content.vb: >-
-      <Flags>
-
-      Public Enum TexRes
-  attributes:
-  - type: System.FlagsAttribute
-    ctor: System.FlagsAttribute.#ctor
-    arguments: []
+    content: public enum TexRes
+    content.vb: Public Enum TexRes
   modifiers.csharp:
   - public
   - enum
   modifiers.vb:
   - Public
   - Enum
-- uid: Fusee.Engine.Common.TexRes.LOW_RES
-  commentId: F:Fusee.Engine.Common.TexRes.LOW_RES
-  id: LOW_RES
+- uid: Fusee.Engine.Common.TexRes.Low
+  commentId: F:Fusee.Engine.Common.TexRes.Low
+  id: Low
   parent: Fusee.Engine.Common.TexRes
   langs:
   - csharp
   - vb
-  name: LOW_RES
-  nameWithType: TexRes.LOW_RES
-  fullName: Fusee.Engine.Common.TexRes.LOW_RES
+  name: Low
+  nameWithType: TexRes.Low
+  fullName: Fusee.Engine.Common.TexRes.Low
   type: Field
   source:
-    id: LOW_RES
+    id: Low
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\MultipassEnums.cs
-    startLine: 47
+    startLine: 51
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
   summary: "\nCreate textures in low resolution.\n"
   example: []
   syntax:
-    content: LOW_RES = 1024
+    content: Low = 1024
     return:
       type: Fusee.Engine.Common.TexRes
   modifiers.csharp:
@@ -73,28 +63,28 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.TexRes.MID_RES
-  commentId: F:Fusee.Engine.Common.TexRes.MID_RES
-  id: MID_RES
+- uid: Fusee.Engine.Common.TexRes.Middle
+  commentId: F:Fusee.Engine.Common.TexRes.Middle
+  id: Middle
   parent: Fusee.Engine.Common.TexRes
   langs:
   - csharp
   - vb
-  name: MID_RES
-  nameWithType: TexRes.MID_RES
-  fullName: Fusee.Engine.Common.TexRes.MID_RES
+  name: Middle
+  nameWithType: TexRes.Middle
+  fullName: Fusee.Engine.Common.TexRes.Middle
   type: Field
   source:
-    id: MID_RES
+    id: Middle
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\MultipassEnums.cs
-    startLine: 51
+    startLine: 55
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
   summary: "\nCreate textures in middle resolution.\n"
   example: []
   syntax:
-    content: MID_RES = 2048
+    content: Middle = 2048
     return:
       type: Fusee.Engine.Common.TexRes
   modifiers.csharp:
@@ -103,28 +93,28 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.TexRes.HIGH_RES
-  commentId: F:Fusee.Engine.Common.TexRes.HIGH_RES
-  id: HIGH_RES
+- uid: Fusee.Engine.Common.TexRes.High
+  commentId: F:Fusee.Engine.Common.TexRes.High
+  id: High
   parent: Fusee.Engine.Common.TexRes
   langs:
   - csharp
   - vb
-  name: HIGH_RES
-  nameWithType: TexRes.HIGH_RES
-  fullName: Fusee.Engine.Common.TexRes.HIGH_RES
+  name: High
+  nameWithType: TexRes.High
+  fullName: Fusee.Engine.Common.TexRes.High
   type: Field
   source:
-    id: HIGH_RES
+    id: High
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\MultipassEnums.cs
-    startLine: 55
+    startLine: 59
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
   summary: "\nCreate textures in high resolution.\n"
   example: []
   syntax:
-    content: HIGH_RES = 4096
+    content: High = 4096
     return:
       type: Fusee.Engine.Common.TexRes
   modifiers.csharp:

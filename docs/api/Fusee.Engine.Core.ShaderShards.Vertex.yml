@@ -4,8 +4,11 @@ items:
   commentId: N:Fusee.Engine.Core.ShaderShards.Vertex
   id: Fusee.Engine.Core.ShaderShards.Vertex
   children:
+  - Fusee.Engine.Core.ShaderShards.Vertex.VertMain
   - Fusee.Engine.Core.ShaderShards.Vertex.VertMainShard
+  - Fusee.Engine.Core.ShaderShards.Vertex.VertProperties
   - Fusee.Engine.Core.ShaderShards.Vertex.VertPropertiesShard
+  - Fusee.Engine.Core.ShaderShards.Vertex.VertShards
   langs:
   - csharp
   - vb
@@ -16,6 +19,21 @@ items:
   assemblies:
   - Fusee.Engine.Core
 references:
+- uid: Fusee.Engine.Core.ShaderShards.Vertex.VertMain
+  commentId: T:Fusee.Engine.Core.ShaderShards.Vertex.VertMain
+  name: VertMain
+  nameWithType: VertMain
+  fullName: Fusee.Engine.Core.ShaderShards.Vertex.VertMain
+- uid: Fusee.Engine.Core.ShaderShards.Vertex.VertProperties
+  commentId: T:Fusee.Engine.Core.ShaderShards.Vertex.VertProperties
+  name: VertProperties
+  nameWithType: VertProperties
+  fullName: Fusee.Engine.Core.ShaderShards.Vertex.VertProperties
+- uid: Fusee.Engine.Core.ShaderShards.Vertex.VertShards
+  commentId: T:Fusee.Engine.Core.ShaderShards.Vertex.VertShards
+  name: VertShards
+  nameWithType: VertShards
+  fullName: Fusee.Engine.Core.ShaderShards.Vertex.VertShards
 - uid: Fusee.Engine.Core.ShaderShards.Vertex.VertMainShard
   commentId: T:Fusee.Engine.Core.ShaderShards.Vertex.VertMainShard
   name: VertMainShard

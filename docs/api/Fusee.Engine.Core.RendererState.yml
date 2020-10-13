@@ -9,11 +9,13 @@ items:
   - Fusee.Engine.Core.RendererState._canvasXForm
   - Fusee.Engine.Core.RendererState._effect
   - Fusee.Engine.Core.RendererState._model
+  - Fusee.Engine.Core.RendererState._renderLayer
   - Fusee.Engine.Core.RendererState._renderStates
   - Fusee.Engine.Core.RendererState._uiRect
   - Fusee.Engine.Core.RendererState.CanvasXForm
   - Fusee.Engine.Core.RendererState.Effect
   - Fusee.Engine.Core.RendererState.Model
+  - Fusee.Engine.Core.RendererState.RenderLayer
   - Fusee.Engine.Core.RendererState.RenderUndoStates
   - Fusee.Engine.Core.RendererState.UiRect
   langs:
@@ -26,7 +28,7 @@ items:
   source:
     id: RendererState
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RendererState.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -76,7 +78,7 @@ items:
   source:
     id: _model
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RendererState.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -105,7 +107,7 @@ items:
   source:
     id: _uiRect
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RendererState.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -134,7 +136,7 @@ items:
   source:
     id: _canvasXForm
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RendererState.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -163,17 +165,17 @@ items:
   source:
     id: _effect
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RendererState.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nState of the <xref href=\"Fusee.Engine.Core.Scene.ShaderEffect\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  summary: "\nState of the <xref href=\"Fusee.Engine.Core.Effects.ShaderEffect\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: protected CollapsingStateStack<ShaderEffect> _effect
+    content: protected CollapsingStateStack<Effect> _effect
     return:
-      type: Fusee.Xene.CollapsingStateStack{Fusee.Engine.Core.Scene.ShaderEffect}
-    content.vb: Protected _effect As CollapsingStateStack(Of ShaderEffect)
+      type: Fusee.Xene.CollapsingStateStack{Fusee.Engine.Core.Effects.Effect}
+    content.vb: Protected _effect As CollapsingStateStack(Of Effect)
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -192,7 +194,7 @@ items:
   source:
     id: _renderStates
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RendererState.cs
-    startLine: 34
+    startLine: 35
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -203,6 +205,35 @@ items:
     return:
       type: Fusee.Xene.CollapsingStateStack{Fusee.Engine.Core.RenderStateSet}
     content.vb: Protected _renderStates As CollapsingStateStack(Of RenderStateSet)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Fusee.Engine.Core.RendererState._renderLayer
+  commentId: F:Fusee.Engine.Core.RendererState._renderLayer
+  id: _renderLayer
+  parent: Fusee.Engine.Core.RendererState
+  langs:
+  - csharp
+  - vb
+  name: _renderLayer
+  nameWithType: RendererState._renderLayer
+  fullName: Fusee.Engine.Core.RendererState._renderLayer
+  type: Field
+  source:
+    id: _renderLayer
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RendererState.cs
+    startLine: 40
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nState of the <xref href=\"Fusee.Engine.Core.RendererState.RenderLayer\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: protected CollapsingStateStack<RenderLayer> _renderLayer
+    return:
+      type: Fusee.Xene.CollapsingStateStack{Fusee.Engine.Core.Scene.RenderLayer}
+    content.vb: Protected _renderLayer As CollapsingStateStack(Of RenderLayer)
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -221,7 +252,7 @@ items:
   source:
     id: RenderUndoStates
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RendererState.cs
-    startLine: 39
+    startLine: 45
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -254,7 +285,7 @@ items:
   source:
     id: Model
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RendererState.cs
-    startLine: 48
+    startLine: 54
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -287,7 +318,7 @@ items:
   source:
     id: UiRect
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RendererState.cs
-    startLine: 57
+    startLine: 63
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -320,7 +351,7 @@ items:
   source:
     id: CanvasXForm
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RendererState.cs
-    startLine: 66
+    startLine: 72
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -353,19 +384,52 @@ items:
   source:
     id: Effect
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RendererState.cs
-    startLine: 75
+    startLine: 81
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   summary: "\nGets and sets the shader effect.\n"
   example: []
   syntax:
-    content: public ShaderEffect Effect { get; set; }
+    content: public Effect Effect { get; set; }
     parameters: []
     return:
-      type: Fusee.Engine.Core.Scene.ShaderEffect
-    content.vb: Public Property Effect As ShaderEffect
+      type: Fusee.Engine.Core.Effects.Effect
+    content.vb: Public Property Effect As Effect
   overload: Fusee.Engine.Core.RendererState.Effect*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RendererState.RenderLayer
+  commentId: P:Fusee.Engine.Core.RendererState.RenderLayer
+  id: RenderLayer
+  parent: Fusee.Engine.Core.RendererState
+  langs:
+  - csharp
+  - vb
+  name: RenderLayer
+  nameWithType: RendererState.RenderLayer
+  fullName: Fusee.Engine.Core.RendererState.RenderLayer
+  type: Property
+  source:
+    id: RenderLayer
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RendererState.cs
+    startLine: 90
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGets and sets the RenderLayer.\n"
+  example: []
+  syntax:
+    content: public RenderLayer RenderLayer { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Core.Scene.RenderLayer
+    content.vb: Public Property RenderLayer As RenderLayer
+  overload: Fusee.Engine.Core.RendererState.RenderLayer*
   modifiers.csharp:
   - public
   - get
@@ -386,7 +450,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RendererState.cs
-    startLine: 84
+    startLine: 99
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -971,22 +1035,22 @@ references:
 - uid: Fusee.Engine.Core.RendererState.CanvasXForm
   commentId: P:Fusee.Engine.Core.RendererState.CanvasXForm
   isExternal: true
-- uid: Fusee.Engine.Core.Scene.ShaderEffect
-  commentId: T:Fusee.Engine.Core.Scene.ShaderEffect
-  parent: Fusee.Engine.Core.Scene
+- uid: Fusee.Engine.Core.Effects.ShaderEffect
+  commentId: T:Fusee.Engine.Core.Effects.ShaderEffect
+  parent: Fusee.Engine.Core.Effects
   name: ShaderEffect
   nameWithType: ShaderEffect
-  fullName: Fusee.Engine.Core.Scene.ShaderEffect
-- uid: Fusee.Xene.CollapsingStateStack{Fusee.Engine.Core.Scene.ShaderEffect}
-  commentId: T:Fusee.Xene.CollapsingStateStack{Fusee.Engine.Core.Scene.ShaderEffect}
+  fullName: Fusee.Engine.Core.Effects.ShaderEffect
+- uid: Fusee.Xene.CollapsingStateStack{Fusee.Engine.Core.Effects.Effect}
+  commentId: T:Fusee.Xene.CollapsingStateStack{Fusee.Engine.Core.Effects.Effect}
   parent: Fusee.Xene
   definition: Fusee.Xene.CollapsingStateStack`1
-  name: CollapsingStateStack<ShaderEffect>
-  nameWithType: CollapsingStateStack<ShaderEffect>
-  fullName: Fusee.Xene.CollapsingStateStack<Fusee.Engine.Core.Scene.ShaderEffect>
-  nameWithType.vb: CollapsingStateStack(Of ShaderEffect)
-  fullName.vb: Fusee.Xene.CollapsingStateStack(Of Fusee.Engine.Core.Scene.ShaderEffect)
-  name.vb: CollapsingStateStack(Of ShaderEffect)
+  name: CollapsingStateStack<Effect>
+  nameWithType: CollapsingStateStack<Effect>
+  fullName: Fusee.Xene.CollapsingStateStack<Fusee.Engine.Core.Effects.Effect>
+  nameWithType.vb: CollapsingStateStack(Of Effect)
+  fullName.vb: Fusee.Xene.CollapsingStateStack(Of Fusee.Engine.Core.Effects.Effect)
+  name.vb: CollapsingStateStack(Of Effect)
   spec.csharp:
   - uid: Fusee.Xene.CollapsingStateStack`1
     name: CollapsingStateStack
@@ -995,10 +1059,10 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: Fusee.Engine.Core.Scene.ShaderEffect
-    name: ShaderEffect
-    nameWithType: ShaderEffect
-    fullName: Fusee.Engine.Core.Scene.ShaderEffect
+  - uid: Fusee.Engine.Core.Effects.Effect
+    name: Effect
+    nameWithType: Effect
+    fullName: Fusee.Engine.Core.Effects.Effect
   - name: '>'
     nameWithType: '>'
     fullName: '>'
@@ -1010,18 +1074,18 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: Fusee.Engine.Core.Scene.ShaderEffect
-    name: ShaderEffect
-    nameWithType: ShaderEffect
-    fullName: Fusee.Engine.Core.Scene.ShaderEffect
+  - uid: Fusee.Engine.Core.Effects.Effect
+    name: Effect
+    nameWithType: Effect
+    fullName: Fusee.Engine.Core.Effects.Effect
   - name: )
     nameWithType: )
     fullName: )
-- uid: Fusee.Engine.Core.Scene
-  commentId: N:Fusee.Engine.Core.Scene
-  name: Fusee.Engine.Core.Scene
-  nameWithType: Fusee.Engine.Core.Scene
-  fullName: Fusee.Engine.Core.Scene
+- uid: Fusee.Engine.Core.Effects
+  commentId: N:Fusee.Engine.Core.Effects
+  name: Fusee.Engine.Core.Effects
+  nameWithType: Fusee.Engine.Core.Effects
+  fullName: Fusee.Engine.Core.Effects
 - uid: Fusee.Engine.Core.RenderStateSet
   commentId: T:Fusee.Engine.Core.RenderStateSet
   parent: Fusee.Engine.Core
@@ -1068,6 +1132,49 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Fusee.Engine.Core.RendererState.RenderLayer
+  commentId: P:Fusee.Engine.Core.RendererState.RenderLayer
+  isExternal: true
+- uid: Fusee.Xene.CollapsingStateStack{Fusee.Engine.Core.Scene.RenderLayer}
+  commentId: T:Fusee.Xene.CollapsingStateStack{Fusee.Engine.Core.Scene.RenderLayer}
+  parent: Fusee.Xene
+  definition: Fusee.Xene.CollapsingStateStack`1
+  name: CollapsingStateStack<RenderLayer>
+  nameWithType: CollapsingStateStack<RenderLayer>
+  fullName: Fusee.Xene.CollapsingStateStack<Fusee.Engine.Core.Scene.RenderLayer>
+  nameWithType.vb: CollapsingStateStack(Of RenderLayer)
+  fullName.vb: Fusee.Xene.CollapsingStateStack(Of Fusee.Engine.Core.Scene.RenderLayer)
+  name.vb: CollapsingStateStack(Of RenderLayer)
+  spec.csharp:
+  - uid: Fusee.Xene.CollapsingStateStack`1
+    name: CollapsingStateStack
+    nameWithType: CollapsingStateStack
+    fullName: Fusee.Xene.CollapsingStateStack
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Scene.RenderLayer
+    name: RenderLayer
+    nameWithType: RenderLayer
+    fullName: Fusee.Engine.Core.Scene.RenderLayer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Fusee.Xene.CollapsingStateStack`1
+    name: CollapsingStateStack
+    nameWithType: CollapsingStateStack
+    fullName: Fusee.Xene.CollapsingStateStack
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Scene.RenderLayer
+    name: RenderLayer
+    nameWithType: RenderLayer
+    fullName: Fusee.Engine.Core.Scene.RenderLayer
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Fusee.Engine.Core.RendererState.RenderUndoStates*
   commentId: Overload:Fusee.Engine.Core.RendererState.RenderUndoStates
   name: RenderUndoStates
@@ -1099,6 +1206,28 @@ references:
   name: Effect
   nameWithType: RendererState.Effect
   fullName: Fusee.Engine.Core.RendererState.Effect
+- uid: Fusee.Engine.Core.Effects.Effect
+  commentId: T:Fusee.Engine.Core.Effects.Effect
+  parent: Fusee.Engine.Core.Effects
+  name: Effect
+  nameWithType: Effect
+  fullName: Fusee.Engine.Core.Effects.Effect
+- uid: Fusee.Engine.Core.RendererState.RenderLayer*
+  commentId: Overload:Fusee.Engine.Core.RendererState.RenderLayer
+  name: RenderLayer
+  nameWithType: RendererState.RenderLayer
+  fullName: Fusee.Engine.Core.RendererState.RenderLayer
+- uid: Fusee.Engine.Core.Scene.RenderLayer
+  commentId: T:Fusee.Engine.Core.Scene.RenderLayer
+  parent: Fusee.Engine.Core.Scene
+  name: RenderLayer
+  nameWithType: RenderLayer
+  fullName: Fusee.Engine.Core.Scene.RenderLayer
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
 - uid: Fusee.Engine.Core.RendererState.#ctor*
   commentId: Overload:Fusee.Engine.Core.RendererState.#ctor
   name: RendererState

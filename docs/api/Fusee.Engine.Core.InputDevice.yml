@@ -198,7 +198,7 @@ items:
     parameters: []
     return:
       type: System.String
-      description: "\nThe deivce description.\n"
+      description: "\nThe device description.\n"
     content.vb: Public ReadOnly Property Desc As String
   overload: Fusee.Engine.Core.InputDevice.Desc*
   modifiers.csharp:
@@ -771,7 +771,7 @@ items:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   summary: "\nRegisters a calculated axis. Calculated axes behave like axes exposed by the underlying\nhardware device but can be calculated from one or more existing axes or buttons.\n"
-  remarks: "\nTo register your own axis you need to provide a working <xref href=\"Fusee.Engine.Core.InputDevice.AxisValueCalculator\" data-throw-if-not-resolved=\"false\"></xref>. This method\nis called whenever the axis value needs to be present.\nAny state the calculation depends upon should be queried from existing axes presented by the input device \nor &quot;statically&quot; stored in the closure around the calculator. The methodes\n<ul></ul>\n<item><xref href=\"Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32%2cFusee.Engine.Common.AxisDirection%2cSystem.Single%2cSystem.Single%2cSystem.Int32%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref></item>\n<item><xref href=\"Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32%2cSystem.Int32%2cFusee.Engine.Common.AxisDirection%2cSystem.Single%2cSystem.Single%2cSystem.Int32%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref></item>\n<item><xref href=\"Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32%2cSystem.Int32%2cSystem.Int32%2cSystem.String%2cFusee.Engine.Common.AxisDirection)\" data-throw-if-not-resolved=\"false\"></xref></item>\n"
+  remarks: "\nTo register your own axis you need to provide a working <xref href=\"Fusee.Engine.Core.InputDevice.AxisValueCalculator\" data-throw-if-not-resolved=\"false\"></xref>. This method\nis called whenever the axis value needs to be present.\nAny state the calculation depends upon should be queried from existing axes presented by the input device \nor &quot;statically&quot; stored in the closure around the calculator. The methods\n<ul></ul>\n<item><xref href=\"Fusee.Engine.Core.InputDevice.RegisterSingleButtonAxis(System.Int32%2cFusee.Engine.Common.AxisDirection%2cSystem.Single%2cSystem.Single%2cSystem.Int32%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref></item>\n<item><xref href=\"Fusee.Engine.Core.InputDevice.RegisterTwoButtonAxis(System.Int32%2cSystem.Int32%2cFusee.Engine.Common.AxisDirection%2cSystem.Single%2cSystem.Single%2cSystem.Int32%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref></item>\n<item><xref href=\"Fusee.Engine.Core.InputDevice.RegisterVelocityAxis(System.Int32%2cSystem.Int32%2cSystem.Int32%2cSystem.String%2cFusee.Engine.Common.AxisDirection)\" data-throw-if-not-resolved=\"false\"></xref></item>\n"
   example: []
   syntax:
     content: public void RegisterCalculatedAxis(AxisDescription calculatedAxisDescription, InputDevice.AxisValueCalculator calculator, float initialValue = 0F)
@@ -820,7 +820,7 @@ items:
       description: The original axis identifier.
     - id: triggerButtonId
       type: System.Int32
-      description: "If a valid id is passed, the derived axis only produces values if the specified button is pressed. The velocity is only\ncalculated based on the axis value when the trigger button is pressed. This allows touch velocities to always start with a speed of zero when the touch starts (e.g. the \nbutton identifying that a touchpoint has contact). Otherwise touch velocites would become huge between two click-like touches on different screen locations. \nIf this parameter is 0 (zero), the derived axis will always be calculated based on the original axis only."
+      description: "If a valid id is passed, the derived axis only produces values if the specified button is pressed. The velocity is only\ncalculated based on the axis value when the trigger button is pressed. This allows touch velocities to always start with a speed of zero when the touch starts (e.g. the \nbutton identifying that a touchpoint has contact). Otherwise touch velocities would become huge between two click-like touches on different screen locations. \nIf this parameter is 0 (zero), the derived axis will always be calculated based on the original axis only."
     - id: velocityAxisId
       type: System.Int32
       description: >-
@@ -861,7 +861,7 @@ items:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   summary: "\nRegisters a calculated axis from a button. The axis&apos; value changes between 0 and 1 as the user hits the button or releases it.\nThe time it takes to change the value can be set.\n"
-  remarks: "\nButton axes are useful to simulate a trigger or thrust panel with the help of individual buttons. There is a user-defineable acceleration and \ndeceleration period, so a simulation resulting on this input delivers a feeling of inertance.\n"
+  remarks: "\nButton axes are useful to simulate a trigger or thrust panel with the help of individual buttons. There is a user-definable acceleration and \ndeceleration period, so a simulation resulting on this input delivers a feeling of inertance.\n"
   example: []
   syntax:
     content: public AxisDescription RegisterSingleButtonAxis(int origButtonId, AxisDirection direction = AxisDirection.Unknown, float rampUpTime = 0.2F, float rampDownTime = 0.2F, int buttonAxisId = 0, string name = null)
@@ -910,12 +910,12 @@ items:
   source:
     id: RegisterTwoButtonAxis
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\InputDevice.cs
-    startLine: 720
+    startLine: 726
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   summary: "\nRegisters a calculated axis from two buttons. The axis&apos; value changes between -1 and 1 as the user hits the button or releases it.\nThe time it takes to change the value can be set.\n"
-  remarks: "\nButton axes are useful to simulate one axis of a joypad or a joystick with the help of two individual buttons. One button acts as pushing the \njoystick into the positve direction along the given axis by animating the axis&apos; value to 1 and the a second button acts as pushing the joystick \ninto the negative direction by animating the value to -1. Releasing both buttons will animate the value to 0. Pushing both buttons simultaneously\nwill stop the animation and keep the value at its current amount.\nThere is a user-defineable acceleration and deceleration period, so a simulation resulting on this input delivers a feeling of inertance.\n"
+  remarks: "\nButton axes are useful to simulate one axis of a joypad or a joystick with the help of two individual buttons. One button acts as pushing the \njoystick into the positive direction along the given axis by animating the axis&apos; value to 1 and the a second button acts as pushing the joystick \ninto the negative direction by animating the value to -1. Releasing both buttons will animate the value to 0. Pushing both buttons simultaneously\nwill stop the animation and keep the value at its current amount.\nThere is a user-definable acceleration and deceleration period, so a simulation resulting on this input delivers a feeling of inertance.\n"
   example: []
   syntax:
     content: public AxisDescription RegisterTwoButtonAxis(int origButtonIdNegative, int origButtonIdPositive, AxisDirection direction = AxisDirection.Unknown, float rampUpTime = 0.15F, float rampDownTime = 0.35F, int buttonAxisId = 0, string name = null)
@@ -967,7 +967,7 @@ items:
   source:
     id: PostRender
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\InputDevice.cs
-    startLine: 880
+    startLine: 893
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core

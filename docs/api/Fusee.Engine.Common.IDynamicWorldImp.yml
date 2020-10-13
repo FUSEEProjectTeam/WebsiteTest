@@ -55,7 +55,7 @@ items:
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
-  summary: "\nImplementation agnostic representation of a dynamic worl. The dynamic world is the root object of \nany physics simulation. It keeps track of all objects moving and rotating within the world.\n"
+  summary: "\nImplementation agnostic representation of a dynamic world. The dynamic world is the root object of \nany physics simulation. It keeps track of all objects moving and rotating within the world.\n"
   example: []
   syntax:
     content: public interface IDynamicWorldImp
@@ -1270,7 +1270,7 @@ items:
       description: The mesh triangles.
     - id: meshVertecies
       type: Fusee.Math.Core.float3[]
-      description: The mesh vertecies.
+      description: The mesh vertices.
     return:
       type: Fusee.Engine.Common.IGImpactMeshShapeImp
       description: ''

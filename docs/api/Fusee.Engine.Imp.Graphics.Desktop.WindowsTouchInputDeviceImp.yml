@@ -5,7 +5,7 @@ items:
   id: WindowsTouchInputDeviceImp
   parent: Fusee.Engine.Imp.Graphics.Desktop
   children:
-  - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(OpenTK.GameWindow)
+  - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(GameWindow)
   - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxesCount
   - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxisImpDesc
   - Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.AxisValueChanged
@@ -31,7 +31,7 @@ items:
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
-  summary: "\nTouch input device implementation for the Windows platform. This implementation directly\nsniffes at the render window&apos;s message pump (identified by the <xref href=\"OpenTK.GameWindow\" data-throw-if-not-resolved=\"false\"></xref> parameter passed\nto the constructor) to receive \n<a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/hh454904(v=vs.85).aspx\">WM_POINTER</a> messages.\n"
+  summary: "\nTouch input device implementation for the Windows platform. This implementation directly\nsniffles at the render window&apos;s message pump (identified by the <see cref=\"!:GameWindow\"></see> parameter passed\nto the constructor) to receive \n<a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/hh454904(v=vs.85).aspx\">WM_POINTER</a> messages.\n"
   example: []
   syntax:
     content: 'public class WindowsTouchInputDeviceImp : IInputDeviceImp'
@@ -56,16 +56,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(OpenTK.GameWindow)
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(OpenTK.GameWindow)
-  id: '#ctor(OpenTK.GameWindow)'
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(GameWindow)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(GameWindow)
+  id: '#ctor(GameWindow)'
   parent: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
   langs:
   - csharp
   - vb
   name: WindowsTouchInputDeviceImp(GameWindow)
   nameWithType: WindowsTouchInputDeviceImp.WindowsTouchInputDeviceImp(GameWindow)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.WindowsTouchInputDeviceImp(OpenTK.GameWindow)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.WindowsTouchInputDeviceImp(GameWindow)
   type: Constructor
   source:
     id: .ctor
@@ -80,8 +80,8 @@ items:
     content: public WindowsTouchInputDeviceImp(GameWindow gameWindow)
     parameters:
     - id: gameWindow
-      type: OpenTK.GameWindow
-      description: "The game window to hook on to reveive \n<a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/hh454904(v=vs.85).aspx\">WM_POINTER</a> messages."
+      type: GameWindow
+      description: "The game window to hook on to receive \n<a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/hh454904(v=vs.85).aspx\">WM_POINTER</a> messages."
     content.vb: Public Sub New(gameWindow As GameWindow)
   overload: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor*
   modifiers.csharp:
@@ -241,7 +241,7 @@ items:
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
-  summary: "\nReturns <xref href=\"Fusee.Engine.Common.DeviceCategory.Touch\" data-throw-if-not-resolved=\"false\"></xref>, just because it&apos;s a touch tevice :-).\n"
+  summary: "\nReturns <xref href=\"Fusee.Engine.Common.DeviceCategory.Touch\" data-throw-if-not-resolved=\"false\"></xref>, just because it&apos;s a touch device :-).\n"
   example: []
   syntax:
     content: public DeviceCategory Category { get; }
@@ -427,7 +427,7 @@ items:
     parameters: []
     return:
       type: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.ButtonImpDescription}
-      description: "\nThe button imp desc.\n"
+      description: "\nThe button imp description.\n"
     content.vb: Public ReadOnly Property ButtonImpDesc As IEnumerable(Of ButtonImpDescription)
   overload: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.ButtonImpDesc*
   implements:
@@ -476,13 +476,6 @@ items:
   modifiers.vb:
   - Public
 references:
-- uid: OpenTK.GameWindow
-  commentId: T:OpenTK.GameWindow
-  parent: OpenTK
-  isExternal: true
-  name: GameWindow
-  nameWithType: GameWindow
-  fullName: OpenTK.GameWindow
 - uid: Fusee.Engine.Imp.Graphics.Desktop
   commentId: N:Fusee.Engine.Imp.Graphics.Desktop
   name: Fusee.Engine.Imp.Graphics.Desktop
@@ -780,12 +773,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: OpenTK
-  commentId: N:OpenTK
-  isExternal: true
-  name: OpenTK
-  nameWithType: OpenTK
-  fullName: OpenTK
 - uid: System
   commentId: N:System
   isExternal: true
@@ -807,6 +794,11 @@ references:
   name: WindowsTouchInputDeviceImp
   nameWithType: WindowsTouchInputDeviceImp.WindowsTouchInputDeviceImp
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.WindowsTouchInputDeviceImp
+- uid: GameWindow
+  isExternal: true
+  name: GameWindow
+  nameWithType: GameWindow
+  fullName: GameWindow
 - uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Desc*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.Desc
   name: Desc

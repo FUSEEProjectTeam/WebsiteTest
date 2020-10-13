@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Effects.IFxPassDeclarationBase
+  commentId: T:Fusee.Engine.Core.Effects.IFxPassDeclarationBase
+  id: IFxPassDeclarationBase
+  parent: Fusee.Engine.Core.Effects
+  children:
+  - Fusee.Engine.Core.Effects.IFxPassDeclarationBase.GS
+  - Fusee.Engine.Core.Effects.IFxPassDeclarationBase.StateSet
+  - Fusee.Engine.Core.Effects.IFxPassDeclarationBase.VS
+  langs:
+  - csharp
+  - vb
+  name: IFxPassDeclarationBase
+  nameWithType: IFxPassDeclarationBase
+  fullName: Fusee.Engine.Core.Effects.IFxPassDeclarationBase
+  type: Interface
+  source:
+    id: IFxPassDeclarationBase
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\FxPassDeclaration.cs
+    startLine: 5
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nAn effect pass declaration contains the relevant shader source code as well as a <xref href=\"Fusee.Engine.Core.RenderStateSet\" data-throw-if-not-resolved=\"false\"></xref> declaration for a <xref href=\"Fusee.Engine.Core.Effects.ShaderEffect\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public interface IFxPassDeclarationBase
+    content.vb: Public Interface IFxPassDeclarationBase
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Fusee.Engine.Core.Effects.IFxPassDeclarationBase.StateSet
+  commentId: P:Fusee.Engine.Core.Effects.IFxPassDeclarationBase.StateSet
+  id: StateSet
+  parent: Fusee.Engine.Core.Effects.IFxPassDeclarationBase
+  langs:
+  - csharp
+  - vb
+  name: StateSet
+  nameWithType: IFxPassDeclarationBase.StateSet
+  fullName: Fusee.Engine.Core.Effects.IFxPassDeclarationBase.StateSet
+  type: Property
+  source:
+    id: StateSet
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\FxPassDeclaration.cs
+    startLine: 10
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe  <xref href=\"Fusee.Engine.Core.RenderStateSet\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: RenderStateSet StateSet { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Core.RenderStateSet
+    content.vb: Property StateSet As RenderStateSet
+  overload: Fusee.Engine.Core.Effects.IFxPassDeclarationBase.StateSet*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Fusee.Engine.Core.Effects.IFxPassDeclarationBase.VS
+  commentId: P:Fusee.Engine.Core.Effects.IFxPassDeclarationBase.VS
+  id: VS
+  parent: Fusee.Engine.Core.Effects.IFxPassDeclarationBase
+  langs:
+  - csharp
+  - vb
+  name: VS
+  nameWithType: IFxPassDeclarationBase.VS
+  fullName: Fusee.Engine.Core.Effects.IFxPassDeclarationBase.VS
+  type: Property
+  source:
+    id: VS
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\FxPassDeclaration.cs
+    startLine: 15
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nVertex shader as string\n"
+  example: []
+  syntax:
+    content: string VS { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property VS As String
+  overload: Fusee.Engine.Core.Effects.IFxPassDeclarationBase.VS*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Fusee.Engine.Core.Effects.IFxPassDeclarationBase.GS
+  commentId: P:Fusee.Engine.Core.Effects.IFxPassDeclarationBase.GS
+  id: GS
+  parent: Fusee.Engine.Core.Effects.IFxPassDeclarationBase
+  langs:
+  - csharp
+  - vb
+  name: GS
+  nameWithType: IFxPassDeclarationBase.GS
+  fullName: Fusee.Engine.Core.Effects.IFxPassDeclarationBase.GS
+  type: Property
+  source:
+    id: GS
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\FxPassDeclaration.cs
+    startLine: 20
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nGeometry-shader as string\n"
+  example: []
+  syntax:
+    content: string GS { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property GS As String
+  overload: Fusee.Engine.Core.Effects.IFxPassDeclarationBase.GS*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: Fusee.Engine.Core.RenderStateSet
+  commentId: T:Fusee.Engine.Core.RenderStateSet
+  parent: Fusee.Engine.Core
+  name: RenderStateSet
+  nameWithType: RenderStateSet
+  fullName: Fusee.Engine.Core.RenderStateSet
+- uid: Fusee.Engine.Core.Effects.ShaderEffect
+  commentId: T:Fusee.Engine.Core.Effects.ShaderEffect
+  parent: Fusee.Engine.Core.Effects
+  name: ShaderEffect
+  nameWithType: ShaderEffect
+  fullName: Fusee.Engine.Core.Effects.ShaderEffect
+- uid: Fusee.Engine.Core.Effects
+  commentId: N:Fusee.Engine.Core.Effects
+  name: Fusee.Engine.Core.Effects
+  nameWithType: Fusee.Engine.Core.Effects
+  fullName: Fusee.Engine.Core.Effects
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: Fusee.Engine.Core.Effects.IFxPassDeclarationBase.StateSet*
+  commentId: Overload:Fusee.Engine.Core.Effects.IFxPassDeclarationBase.StateSet
+  name: StateSet
+  nameWithType: IFxPassDeclarationBase.StateSet
+  fullName: Fusee.Engine.Core.Effects.IFxPassDeclarationBase.StateSet
+- uid: Fusee.Engine.Core.Effects.IFxPassDeclarationBase.VS*
+  commentId: Overload:Fusee.Engine.Core.Effects.IFxPassDeclarationBase.VS
+  name: VS
+  nameWithType: IFxPassDeclarationBase.VS
+  fullName: Fusee.Engine.Core.Effects.IFxPassDeclarationBase.VS
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.Effects.IFxPassDeclarationBase.GS*
+  commentId: Overload:Fusee.Engine.Core.Effects.IFxPassDeclarationBase.GS
+  name: GS
+  nameWithType: IFxPassDeclarationBase.GS
+  fullName: Fusee.Engine.Core.Effects.IFxPassDeclarationBase.GS

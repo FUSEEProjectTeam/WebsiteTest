@@ -23,14 +23,8 @@ items:
   summary: "\nDEPRECATED\n"
   example: []
   syntax:
-    content: >-
-      [ProtoContract]
-
-      public class JointWeightColumn
-    content.vb: >-
-      <ProtoContract>
-
-      Public Class JointWeightColumn
+    content: public class JointWeightColumn
+    content.vb: Public Class JointWeightColumn
   inheritance:
   - System.Object
   inheritedMembers:
@@ -41,10 +35,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  attributes:
-  - type: ProtoBuf.ProtoContractAttribute
-    ctor: ProtoBuf.ProtoContractAttribute.#ctor
-    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -72,25 +62,13 @@ items:
   summary: "\nDEPRECATED: Gets and sets the joint weights.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(1)]
-
-      public List<double> JointWeights { get; set; }
+    content: public List<double> JointWeights { get; set; }
     parameters: []
     return:
       type: System.Collections.Generic.List{System.Double}
       description: "\nThe joint weights.\n"
-    content.vb: >-
-      <ProtoMember(1)>
-
-      Public Property JointWeights As List(Of Double)
+    content.vb: Public Property JointWeights As List(Of Double)
   overload: Fusee.Serialization.V1.JointWeightColumn.JointWeights*
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 1
   modifiers.csharp:
   - public
   - get

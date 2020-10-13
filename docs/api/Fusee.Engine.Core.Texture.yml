@@ -5,7 +5,6 @@ items:
   id: Texture
   parent: Fusee.Engine.Core
   children:
-  - Fusee.Engine.Core.Texture.#ctor
   - Fusee.Engine.Core.Texture.#ctor(Fusee.Base.Common.IImageData,System.Boolean,Fusee.Engine.Common.TextureFilterMode,Fusee.Engine.Common.TextureWrapMode)
   - Fusee.Engine.Core.Texture.#ctor(System.Byte[],System.Int32,System.Int32,Fusee.Base.Common.ImagePixelFormat,System.Boolean,Fusee.Engine.Common.TextureFilterMode,Fusee.Engine.Common.TextureWrapMode)
   - Fusee.Engine.Core.Texture.Blt(System.Int32,System.Int32,Fusee.Base.Common.IImageData,System.Int32,System.Int32,System.Int32,System.Int32)
@@ -15,6 +14,7 @@ items:
   - Fusee.Engine.Core.Texture.Finalize
   - Fusee.Engine.Core.Texture.Height
   - Fusee.Engine.Core.Texture.IsEmpty
+  - Fusee.Engine.Core.Texture.PathAndName
   - Fusee.Engine.Core.Texture.PixelData
   - Fusee.Engine.Core.Texture.PixelFormat
   - Fusee.Engine.Core.Texture.ScanLines(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -132,6 +132,35 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
+- uid: Fusee.Engine.Core.Texture.PathAndName
+  commentId: F:Fusee.Engine.Core.Texture.PathAndName
+  id: PathAndName
+  parent: Fusee.Engine.Core.Texture
+  langs:
+  - csharp
+  - vb
+  name: PathAndName
+  nameWithType: Texture.PathAndName
+  fullName: Fusee.Engine.Core.Texture.PathAndName
+  type: Field
+  source:
+    id: PathAndName
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
+    startLine: 33
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nReference to the original image. Should save  path/file name. \n"
+  example: []
+  syntax:
+    content: public string PathAndName
+    return:
+      type: System.String
+    content.vb: Public PathAndName As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Fusee.Engine.Core.Texture.Width
   commentId: P:Fusee.Engine.Core.Texture.Width
   id: Width
@@ -146,7 +175,7 @@ items:
   source:
     id: Width
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
-    startLine: 33
+    startLine: 38
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -181,7 +210,7 @@ items:
   source:
     id: Height
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
-    startLine: 41
+    startLine: 46
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -216,11 +245,11 @@ items:
   source:
     id: PixelData
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
-    startLine: 49
+    startLine: 54
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nThe raw Pixeldata byte buffer. This byte buffer will be uploaded to the GPU inside <xref href=\"Fusee.Engine.Core.RenderContext\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  summary: "\nThe raw pixel data byte buffer. This byte buffer will be uploaded to the GPU inside <xref href=\"Fusee.Engine.Core.RenderContext\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
   syntax:
     content: public byte[] PixelData { get; }
@@ -251,7 +280,7 @@ items:
   source:
     id: PixelFormat
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
-    startLine: 57
+    startLine: 62
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -286,7 +315,7 @@ items:
   source:
     id: IsEmpty
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
-    startLine: 68
+    startLine: 73
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -322,7 +351,7 @@ items:
   source:
     id: DoGenerateMipMaps
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
-    startLine: 73
+    startLine: 78
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -357,27 +386,27 @@ items:
   source:
     id: WrapMode
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
-    startLine: 82
+    startLine: 87
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   summary: "\nSpecifies the texture&apos;s wrap mode, see <xref href=\"Fusee.Engine.Common.TextureWrapMode\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: public TextureWrapMode WrapMode { get; }
+    content: public TextureWrapMode WrapMode { get; set; }
     parameters: []
     return:
       type: Fusee.Engine.Common.TextureWrapMode
-    content.vb: Public ReadOnly Property WrapMode As TextureWrapMode
+    content.vb: Public Property WrapMode As TextureWrapMode
   overload: Fusee.Engine.Core.Texture.WrapMode*
   implements:
   - Fusee.Engine.Common.ITextureBase.WrapMode
   modifiers.csharp:
   - public
   - get
+  - set
   modifiers.vb:
   - Public
-  - ReadOnly
 - uid: Fusee.Engine.Core.Texture.FilterMode
   commentId: P:Fusee.Engine.Core.Texture.FilterMode
   id: FilterMode
@@ -392,27 +421,27 @@ items:
   source:
     id: FilterMode
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
-    startLine: 91
+    startLine: 104
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   summary: "\nSpecifies the texture&apos;s filter mode, see <xref href=\"Fusee.Engine.Common.TextureWrapMode\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: public TextureFilterMode FilterMode { get; }
+    content: public TextureFilterMode FilterMode { get; set; }
     parameters: []
     return:
       type: Fusee.Engine.Common.TextureFilterMode
-    content.vb: Public ReadOnly Property FilterMode As TextureFilterMode
+    content.vb: Public Property FilterMode As TextureFilterMode
   overload: Fusee.Engine.Core.Texture.FilterMode*
   implements:
   - Fusee.Engine.Common.ITextureBase.FilterMode
   modifiers.csharp:
   - public
   - get
+  - set
   modifiers.vb:
   - Public
-  - ReadOnly
 - uid: Fusee.Engine.Core.Texture.TextureType
   commentId: P:Fusee.Engine.Core.Texture.TextureType
   id: TextureType
@@ -427,7 +456,7 @@ items:
   source:
     id: TextureType
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
-    startLine: 100
+    startLine: 121
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -446,34 +475,6 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Fusee.Engine.Core.Texture.#ctor
-  commentId: M:Fusee.Engine.Core.Texture.#ctor
-  id: '#ctor'
-  parent: Fusee.Engine.Core.Texture
-  langs:
-  - csharp
-  - vb
-  name: Texture()
-  nameWithType: Texture.Texture()
-  fullName: Fusee.Engine.Core.Texture.Texture()
-  type: Constructor
-  source:
-    id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
-    startLine: 107
-  assemblies:
-  - Fusee.Engine.Core
-  namespace: Fusee.Engine.Core
-  summary: "\nCreates a new instance of type Texture.\n"
-  example: []
-  syntax:
-    content: protected Texture()
-    content.vb: Protected Sub New
-  overload: Fusee.Engine.Core.Texture.#ctor*
-  modifiers.csharp:
-  - protected
-  modifiers.vb:
-  - Protected
 - uid: Fusee.Engine.Core.Texture.#ctor(System.Byte[],System.Int32,System.Int32,Fusee.Base.Common.ImagePixelFormat,System.Boolean,Fusee.Engine.Common.TextureFilterMode,Fusee.Engine.Common.TextureWrapMode)
   commentId: M:Fusee.Engine.Core.Texture.#ctor(System.Byte[],System.Int32,System.Int32,Fusee.Base.Common.ImagePixelFormat,System.Boolean,Fusee.Engine.Common.TextureFilterMode,Fusee.Engine.Common.TextureWrapMode)
   id: '#ctor(System.Byte[],System.Int32,System.Int32,Fusee.Base.Common.ImagePixelFormat,System.Boolean,Fusee.Engine.Common.TextureFilterMode,Fusee.Engine.Common.TextureWrapMode)'
@@ -488,14 +489,14 @@ items:
   source:
     id: .ctor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
-    startLine: 119
+    startLine: 135
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   summary: "\nConstructor initializes a Texture from a pixelData byte buffer, width and height in pixels and <xref href=\"Fusee.Base.Common.ImagePixelFormat\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: public Texture(byte[] pixelData, int width, int height, ImagePixelFormat colorFormat, bool generateMipMaps = true, TextureFilterMode filterMode = TextureFilterMode.LINEAR, TextureWrapMode wrapMode = TextureWrapMode.REPEAT)
+    content: public Texture(byte[] pixelData, int width, int height, ImagePixelFormat colorFormat, bool generateMipMaps = true, TextureFilterMode filterMode = TextureFilterMode.LinearMipmapLinear, TextureWrapMode wrapMode = TextureWrapMode.Repeat)
     parameters:
     - id: pixelData
       type: System.Byte[]
@@ -518,7 +519,7 @@ items:
     - id: wrapMode
       type: Fusee.Engine.Common.TextureWrapMode
       description: Defines the wrapping mode <xref href="Fusee.Engine.Common.TextureWrapMode" data-throw-if-not-resolved="false"></xref>.
-    content.vb: Public Sub New(pixelData As Byte(), width As Integer, height As Integer, colorFormat As ImagePixelFormat, generateMipMaps As Boolean = True, filterMode As TextureFilterMode = TextureFilterMode.LINEAR, wrapMode As TextureWrapMode = TextureWrapMode.REPEAT)
+    content.vb: Public Sub New(pixelData As Byte(), width As Integer, height As Integer, colorFormat As ImagePixelFormat, generateMipMaps As Boolean = True, filterMode As TextureFilterMode = TextureFilterMode.LinearMipmapLinear, wrapMode As TextureWrapMode = TextureWrapMode.Repeat)
   overload: Fusee.Engine.Core.Texture.#ctor*
   nameWithType.vb: Texture.Texture(Byte(), Int32, Int32, ImagePixelFormat, Boolean, TextureFilterMode, TextureWrapMode)
   modifiers.csharp:
@@ -541,14 +542,14 @@ items:
   source:
     id: .ctor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
-    startLine: 135
+    startLine: 151
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   summary: "\nInitialize a Texture from an existing IImageData. The input IImageData will be copied into this Texture via <xref href=\"Fusee.Engine.Core.Texture.Blt(System.Int32%2cSystem.Int32%2cFusee.Base.Common.IImageData%2cSystem.Int32%2cSystem.Int32%2cSystem.Int32%2cSystem.Int32)\" data-throw-if-not-resolved=\"false\"></xref> command.\n"
   example: []
   syntax:
-    content: public Texture(IImageData imageData, bool generateMipMaps = true, TextureFilterMode filterMode = TextureFilterMode.LINEAR, TextureWrapMode wrapMode = TextureWrapMode.REPEAT)
+    content: public Texture(IImageData imageData, bool generateMipMaps = true, TextureFilterMode filterMode = TextureFilterMode.NearestMipmapLinear, TextureWrapMode wrapMode = TextureWrapMode.Repeat)
     parameters:
     - id: imageData
       type: Fusee.Base.Common.IImageData
@@ -562,7 +563,7 @@ items:
     - id: wrapMode
       type: Fusee.Engine.Common.TextureWrapMode
       description: Defines the wrapping mode <xref href="Fusee.Engine.Common.TextureWrapMode" data-throw-if-not-resolved="false"></xref>.
-    content.vb: Public Sub New(imageData As IImageData, generateMipMaps As Boolean = True, filterMode As TextureFilterMode = TextureFilterMode.LINEAR, wrapMode As TextureWrapMode = TextureWrapMode.REPEAT)
+    content.vb: Public Sub New(imageData As IImageData, generateMipMaps As Boolean = True, filterMode As TextureFilterMode = TextureFilterMode.NearestMipmapLinear, wrapMode As TextureWrapMode = TextureWrapMode.Repeat)
   overload: Fusee.Engine.Core.Texture.#ctor*
   modifiers.csharp:
   - public
@@ -582,7 +583,7 @@ items:
   source:
     id: Blt
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
-    startLine: 161
+    startLine: 177
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -635,7 +636,7 @@ items:
   source:
     id: ScanLines
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
-    startLine: 189
+    startLine: 205
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -684,7 +685,7 @@ items:
   source:
     id: Dispose
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
-    startLine: 197
+    startLine: 213
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -714,7 +715,7 @@ items:
   source:
     id: Finalize
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Texture.cs
-    startLine: 205
+    startLine: 221
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1177,6 +1178,13 @@ references:
   name: Suid
   nameWithType: Suid
   fullName: Fusee.Engine.Common.Suid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Fusee.Engine.Core.Texture.Width*
   commentId: Overload:Fusee.Engine.Core.Texture.Width
   name: Width

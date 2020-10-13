@@ -5,15 +5,17 @@ items:
   id: SceneRendererDeferred
   parent: Fusee.Engine.Core
   children:
-  - Fusee.Engine.Core.SceneRendererDeferred.#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Common.TexRes,Fusee.Engine.Common.TexRes)
+  - Fusee.Engine.Core.SceneRendererDeferred.#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Core.Scene.RenderLayers,Fusee.Engine.Common.TexRes,Fusee.Engine.Common.TexRes)
   - Fusee.Engine.Core.SceneRendererDeferred.BackgroundColor
+  - Fusee.Engine.Core.SceneRendererDeferred.CascadeFarPlane
   - Fusee.Engine.Core.SceneRendererDeferred.FxaaOn
+  - Fusee.Engine.Core.SceneRendererDeferred.InitState
   - Fusee.Engine.Core.SceneRendererDeferred.NumberOfCascades
   - Fusee.Engine.Core.SceneRendererDeferred.PopState
   - Fusee.Engine.Core.SceneRendererDeferred.PssmLambda
   - Fusee.Engine.Core.SceneRendererDeferred.Render(Fusee.Engine.Core.RenderContext,Fusee.Engine.Core.WritableTexture)
   - Fusee.Engine.Core.SceneRendererDeferred.RenderMesh(Fusee.Engine.Core.Scene.Mesh)
-  - Fusee.Engine.Core.SceneRendererDeferred.RenderShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
+  - Fusee.Engine.Core.SceneRendererDeferred.RenderShaderEffect(Fusee.Engine.Core.Effects.Effect)
   - Fusee.Engine.Core.SceneRendererDeferred.ShadowMapRes
   - Fusee.Engine.Core.SceneRendererDeferred.SsaoOn
   - Fusee.Engine.Core.SceneRendererDeferred.TexRes
@@ -27,7 +29,7 @@ items:
   source:
     id: SceneRendererDeferred
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererDeferred.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -45,6 +47,7 @@ items:
   inheritedMembers:
   - Fusee.Engine.Core.SceneRendererForward.HasNumberOfLightsChanged
   - Fusee.Engine.Core.SceneRendererForward.DoFrumstumCulling
+  - Fusee.Engine.Core.SceneRendererForward.RenderLayer
   - Fusee.Engine.Core.SceneRendererForward.LightViseratorResults
   - Fusee.Engine.Core.SceneRendererForward._boneMap
   - Fusee.Engine.Core.SceneRendererForward._animation
@@ -57,6 +60,7 @@ items:
   - Fusee.Engine.Core.SceneRendererForward.SetContext(Fusee.Engine.Core.RenderContext)
   - Fusee.Engine.Core.SceneRendererForward.Render(Fusee.Engine.Core.RenderContext)
   - Fusee.Engine.Core.SceneRendererForward.AccumulateLight
+  - Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer(Fusee.Engine.Core.Scene.RenderLayer)
   - Fusee.Engine.Core.SceneRendererForward.RenderBone(Fusee.Engine.Core.Scene.Bone)
   - Fusee.Engine.Core.SceneRendererForward.RenderWeight(Fusee.Engine.Core.Scene.Weight)
   - Fusee.Engine.Core.SceneRendererForward.RenderCanvasTransform(Fusee.Engine.Core.Scene.CanvasTransform)
@@ -65,8 +69,8 @@ items:
   - Fusee.Engine.Core.SceneRendererForward.RenderXFormText(Fusee.Engine.Core.Scene.XFormText)
   - Fusee.Engine.Core.SceneRendererForward.RenderTransform(Fusee.Engine.Core.Scene.Transform)
   - Fusee.Engine.Core.SceneRendererForward.RenderPtOctant(Fusee.Engine.Core.Scene.Octant)
+  - Fusee.Engine.Core.SceneRendererForward.RenderEffect(Fusee.Engine.Core.Effects.Effect)
   - Fusee.Engine.Core.SceneRendererForward.AddWeightToMesh(Fusee.Engine.Core.Scene.Mesh,Fusee.Engine.Core.Scene.Weight)
-  - Fusee.Engine.Core.SceneRendererForward.InitState
   - Fusee.Engine.Core.SceneRendererForward.PushState
   - Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.Traverse(Fusee.Engine.Core.Scene.SceneNode)
   - Fusee.Xene.Visitor{Fusee.Engine.Core.Scene.SceneNode,Fusee.Engine.Core.Scene.SceneComponent}.Traverse(System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Scene.SceneNode})
@@ -108,7 +112,7 @@ items:
   source:
     id: BackgroundColor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererDeferred.cs
-    startLine: 22
+    startLine: 24
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -141,7 +145,7 @@ items:
   source:
     id: ShadowMapRes
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererDeferred.cs
-    startLine: 27
+    startLine: 29
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -174,7 +178,7 @@ items:
   source:
     id: TexRes
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererDeferred.cs
-    startLine: 32
+    startLine: 34
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -193,6 +197,35 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
+- uid: Fusee.Engine.Core.SceneRendererDeferred.CascadeFarPlane
+  commentId: F:Fusee.Engine.Core.SceneRendererDeferred.CascadeFarPlane
+  id: CascadeFarPlane
+  parent: Fusee.Engine.Core.SceneRendererDeferred
+  langs:
+  - csharp
+  - vb
+  name: CascadeFarPlane
+  nameWithType: SceneRendererDeferred.CascadeFarPlane
+  fullName: Fusee.Engine.Core.SceneRendererDeferred.CascadeFarPlane
+  type: Field
+  source:
+    id: CascadeFarPlane
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererDeferred.cs
+    startLine: 40
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nSets the distance to the far plane for the cascaded shadow mapping calculation.\nFor smaller scenes we need to choose smaller values to get shadow maps with decent resolution.\n"
+  example: []
+  syntax:
+    content: public int CascadeFarPlane
+    return:
+      type: System.Int32
+    content.vb: Public CascadeFarPlane As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Fusee.Engine.Core.SceneRendererDeferred.FxaaOn
   commentId: P:Fusee.Engine.Core.SceneRendererDeferred.FxaaOn
   id: FxaaOn
@@ -207,7 +240,7 @@ items:
   source:
     id: FxaaOn
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererDeferred.cs
-    startLine: 37
+    startLine: 45
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -240,7 +273,7 @@ items:
   source:
     id: SsaoOn
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererDeferred.cs
-    startLine: 43
+    startLine: 51
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -273,7 +306,7 @@ items:
   source:
     id: PssmLambda
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererDeferred.cs
-    startLine: 60
+    startLine: 68
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -302,7 +335,7 @@ items:
   source:
     id: NumberOfCascades
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererDeferred.cs
-    startLine: 66
+    startLine: 74
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -317,71 +350,74 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Fusee.Engine.Core.SceneRendererDeferred.#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Common.TexRes,Fusee.Engine.Common.TexRes)
-  commentId: M:Fusee.Engine.Core.SceneRendererDeferred.#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Common.TexRes,Fusee.Engine.Common.TexRes)
-  id: '#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Common.TexRes,Fusee.Engine.Common.TexRes)'
+- uid: Fusee.Engine.Core.SceneRendererDeferred.#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Core.Scene.RenderLayers,Fusee.Engine.Common.TexRes,Fusee.Engine.Common.TexRes)
+  commentId: M:Fusee.Engine.Core.SceneRendererDeferred.#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Core.Scene.RenderLayers,Fusee.Engine.Common.TexRes,Fusee.Engine.Common.TexRes)
+  id: '#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Core.Scene.RenderLayers,Fusee.Engine.Common.TexRes,Fusee.Engine.Common.TexRes)'
   parent: Fusee.Engine.Core.SceneRendererDeferred
   langs:
   - csharp
   - vb
-  name: SceneRendererDeferred(SceneContainer, TexRes, TexRes)
-  nameWithType: SceneRendererDeferred.SceneRendererDeferred(SceneContainer, TexRes, TexRes)
-  fullName: Fusee.Engine.Core.SceneRendererDeferred.SceneRendererDeferred(Fusee.Engine.Core.Scene.SceneContainer, Fusee.Engine.Common.TexRes, Fusee.Engine.Common.TexRes)
+  name: SceneRendererDeferred(SceneContainer, RenderLayers, TexRes, TexRes)
+  nameWithType: SceneRendererDeferred.SceneRendererDeferred(SceneContainer, RenderLayers, TexRes, TexRes)
+  fullName: Fusee.Engine.Core.SceneRendererDeferred.SceneRendererDeferred(Fusee.Engine.Core.Scene.SceneContainer, Fusee.Engine.Core.Scene.RenderLayers, Fusee.Engine.Common.TexRes, Fusee.Engine.Common.TexRes)
   type: Constructor
   source:
     id: .ctor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererDeferred.cs
-    startLine: 107
+    startLine: 116
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   summary: "\nCreates a new instance of type SceneRendererDeferred.\n"
   example: []
   syntax:
-    content: public SceneRendererDeferred(SceneContainer sc, TexRes texRes = TexRes.MID_RES, TexRes shadowMapRes = TexRes.MID_RES)
+    content: public SceneRendererDeferred(SceneContainer sc, RenderLayers renderLayer = RenderLayers.All | RenderLayers.Default, TexRes texRes = TexRes.Middle, TexRes shadowMapRes = TexRes.Middle)
     parameters:
     - id: sc
       type: Fusee.Engine.Core.Scene.SceneContainer
       description: The SceneContainer, containing the scene that gets rendered.
+    - id: renderLayer
+      type: Fusee.Engine.Core.Scene.RenderLayers
+      description: ''
     - id: texRes
       type: Fusee.Engine.Common.TexRes
       description: The g-buffer texture resolution.
     - id: shadowMapRes
       type: Fusee.Engine.Common.TexRes
       description: The shadow map resolution.
-    content.vb: Public Sub New(sc As SceneContainer, texRes As TexRes = TexRes.MID_RES, shadowMapRes As TexRes = TexRes.MID_RES)
+    content.vb: Public Sub New(sc As SceneContainer, renderLayer As RenderLayers = RenderLayers.All Or RenderLayers.Default, texRes As TexRes = TexRes.Middle, shadowMapRes As TexRes = TexRes.Middle)
   overload: Fusee.Engine.Core.SceneRendererDeferred.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Fusee.Engine.Core.SceneRendererDeferred.RenderShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
-  commentId: M:Fusee.Engine.Core.SceneRendererDeferred.RenderShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
-  id: RenderShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
+- uid: Fusee.Engine.Core.SceneRendererDeferred.RenderShaderEffect(Fusee.Engine.Core.Effects.Effect)
+  commentId: M:Fusee.Engine.Core.SceneRendererDeferred.RenderShaderEffect(Fusee.Engine.Core.Effects.Effect)
+  id: RenderShaderEffect(Fusee.Engine.Core.Effects.Effect)
   parent: Fusee.Engine.Core.SceneRendererDeferred
   langs:
   - csharp
   - vb
-  name: RenderShaderEffect(ShaderEffect)
-  nameWithType: SceneRendererDeferred.RenderShaderEffect(ShaderEffect)
-  fullName: Fusee.Engine.Core.SceneRendererDeferred.RenderShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
+  name: RenderShaderEffect(Effect)
+  nameWithType: SceneRendererDeferred.RenderShaderEffect(Effect)
+  fullName: Fusee.Engine.Core.SceneRendererDeferred.RenderShaderEffect(Fusee.Engine.Core.Effects.Effect)
   type: Method
   source:
     id: RenderShaderEffect
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererDeferred.cs
-    startLine: 139
+    startLine: 145
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   summary: "\nIf a ShaderEffectComponent is visited the ShaderEffect of the <xref href=\"Fusee.Engine.Core.RendererState\" data-throw-if-not-resolved=\"false\"></xref> is updated and the effect is set in the <xref href=\"Fusee.Engine.Core.RenderContext\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: public void RenderShaderEffect(ShaderEffect shaderComponent)
+    content: public void RenderShaderEffect(Effect effect)
     parameters:
-    - id: shaderComponent
-      type: Fusee.Engine.Core.Scene.ShaderEffect
-      description: The ShaderEffectComponent
-    content.vb: Public Sub RenderShaderEffect(shaderComponent As ShaderEffect)
+    - id: effect
+      type: Fusee.Engine.Core.Effects.Effect
+      description: The effect.
+    content.vb: Public Sub RenderShaderEffect(effect As Effect)
   overload: Fusee.Engine.Core.SceneRendererDeferred.RenderShaderEffect*
   modifiers.csharp:
   - public
@@ -401,11 +437,11 @@ items:
   source:
     id: RenderMesh
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererDeferred.cs
-    startLine: 157
+    startLine: 163
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nIf a Mesh is visited and it has a <see cref=\"!:WeightComponent\"></see> the BoneIndices and  BoneWeights get set, \nthe shader parameters for all lights in the scene are updated and the geometry is passed to be pushed through the rendering pipeline.        \n"
+  summary: "\nIf a Mesh is visited and it has a <xref href=\"Fusee.Engine.Core.Scene.Weight\" data-throw-if-not-resolved=\"false\"></xref> the BoneIndices and  BoneWeights get set, \nthe shader parameters for all lights in the scene are updated and the geometry is passed to be pushed through the rendering pipeline.        \n"
   example: []
   syntax:
     content: public void RenderMesh(Mesh mesh)
@@ -433,7 +469,7 @@ items:
   source:
     id: PopState
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererDeferred.cs
-    startLine: 197
+    startLine: 205
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -464,7 +500,7 @@ items:
   source:
     id: Render
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererDeferred.cs
-    startLine: 401
+    startLine: 411
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -485,6 +521,37 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: Fusee.Engine.Core.SceneRendererDeferred.InitState
+  commentId: M:Fusee.Engine.Core.SceneRendererDeferred.InitState
+  id: InitState
+  parent: Fusee.Engine.Core.SceneRendererDeferred
+  langs:
+  - csharp
+  - vb
+  name: InitState()
+  nameWithType: SceneRendererDeferred.InitState()
+  fullName: Fusee.Engine.Core.SceneRendererDeferred.InitState()
+  type: Method
+  source:
+    id: InitState
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\SceneRendererDeferred.cs
+    startLine: 895
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nSets the initial values in the <xref href=\"Fusee.Engine.Core.RendererState\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: protected override void InitState()
+    content.vb: Protected Overrides Sub InitState
+  overridden: Fusee.Engine.Core.SceneRendererForward.InitState
+  overload: Fusee.Engine.Core.SceneRendererDeferred.InitState*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
 references:
 - uid: Fusee.Engine.Core
   commentId: N:Fusee.Engine.Core
@@ -570,6 +637,12 @@ references:
   name: DoFrumstumCulling
   nameWithType: SceneRendererForward.DoFrumstumCulling
   fullName: Fusee.Engine.Core.SceneRendererForward.DoFrumstumCulling
+- uid: Fusee.Engine.Core.SceneRendererForward.RenderLayer
+  commentId: P:Fusee.Engine.Core.SceneRendererForward.RenderLayer
+  parent: Fusee.Engine.Core.SceneRendererForward
+  name: RenderLayer
+  nameWithType: SceneRendererForward.RenderLayer
+  fullName: Fusee.Engine.Core.SceneRendererForward.RenderLayer
 - uid: Fusee.Engine.Core.SceneRendererForward.LightViseratorResults
   commentId: P:Fusee.Engine.Core.SceneRendererForward.LightViseratorResults
   parent: Fusee.Engine.Core.SceneRendererForward
@@ -773,6 +846,42 @@ references:
   - name: (
     nameWithType: (
     fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer(Fusee.Engine.Core.Scene.RenderLayer)
+  commentId: M:Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer(Fusee.Engine.Core.Scene.RenderLayer)
+  parent: Fusee.Engine.Core.SceneRendererForward
+  name: RenderRenderLayer(RenderLayer)
+  nameWithType: SceneRendererForward.RenderRenderLayer(RenderLayer)
+  fullName: Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer(Fusee.Engine.Core.Scene.RenderLayer)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer(Fusee.Engine.Core.Scene.RenderLayer)
+    name: RenderRenderLayer
+    nameWithType: SceneRendererForward.RenderRenderLayer
+    fullName: Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.RenderLayer
+    name: RenderLayer
+    nameWithType: RenderLayer
+    fullName: Fusee.Engine.Core.Scene.RenderLayer
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer(Fusee.Engine.Core.Scene.RenderLayer)
+    name: RenderRenderLayer
+    nameWithType: SceneRendererForward.RenderRenderLayer
+    fullName: Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Scene.RenderLayer
+    name: RenderLayer
+    nameWithType: RenderLayer
+    fullName: Fusee.Engine.Core.Scene.RenderLayer
   - name: )
     nameWithType: )
     fullName: )
@@ -1064,6 +1173,42 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Fusee.Engine.Core.SceneRendererForward.RenderEffect(Fusee.Engine.Core.Effects.Effect)
+  commentId: M:Fusee.Engine.Core.SceneRendererForward.RenderEffect(Fusee.Engine.Core.Effects.Effect)
+  parent: Fusee.Engine.Core.SceneRendererForward
+  name: RenderEffect(Effect)
+  nameWithType: SceneRendererForward.RenderEffect(Effect)
+  fullName: Fusee.Engine.Core.SceneRendererForward.RenderEffect(Fusee.Engine.Core.Effects.Effect)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.SceneRendererForward.RenderEffect(Fusee.Engine.Core.Effects.Effect)
+    name: RenderEffect
+    nameWithType: SceneRendererForward.RenderEffect
+    fullName: Fusee.Engine.Core.SceneRendererForward.RenderEffect
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Effects.Effect
+    name: Effect
+    nameWithType: Effect
+    fullName: Fusee.Engine.Core.Effects.Effect
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.SceneRendererForward.RenderEffect(Fusee.Engine.Core.Effects.Effect)
+    name: RenderEffect
+    nameWithType: SceneRendererForward.RenderEffect
+    fullName: Fusee.Engine.Core.SceneRendererForward.RenderEffect
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Core.Effects.Effect
+    name: Effect
+    nameWithType: Effect
+    fullName: Fusee.Engine.Core.Effects.Effect
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Fusee.Engine.Core.SceneRendererForward.AddWeightToMesh(Fusee.Engine.Core.Scene.Mesh,Fusee.Engine.Core.Scene.Weight)
   commentId: M:Fusee.Engine.Core.SceneRendererForward.AddWeightToMesh(Fusee.Engine.Core.Scene.Mesh,Fusee.Engine.Core.Scene.Weight)
   parent: Fusee.Engine.Core.SceneRendererForward
@@ -1111,34 +1256,6 @@ references:
     name: Weight
     nameWithType: Weight
     fullName: Fusee.Engine.Core.Scene.Weight
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Fusee.Engine.Core.SceneRendererForward.InitState
-  commentId: M:Fusee.Engine.Core.SceneRendererForward.InitState
-  parent: Fusee.Engine.Core.SceneRendererForward
-  name: InitState()
-  nameWithType: SceneRendererForward.InitState()
-  fullName: Fusee.Engine.Core.SceneRendererForward.InitState()
-  spec.csharp:
-  - uid: Fusee.Engine.Core.SceneRendererForward.InitState
-    name: InitState
-    nameWithType: SceneRendererForward.InitState
-    fullName: Fusee.Engine.Core.SceneRendererForward.InitState
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Fusee.Engine.Core.SceneRendererForward.InitState
-    name: InitState
-    nameWithType: SceneRendererForward.InitState
-    fullName: Fusee.Engine.Core.SceneRendererForward.InitState
-  - name: (
-    nameWithType: (
-    fullName: (
   - name: )
     nameWithType: )
     fullName: )
@@ -2241,6 +2358,13 @@ references:
   name: TexRes
   nameWithType: SceneRendererDeferred.TexRes
   fullName: Fusee.Engine.Core.SceneRendererDeferred.TexRes
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: Fusee.Engine.Core.SceneRendererDeferred.FxaaOn*
   commentId: Overload:Fusee.Engine.Core.SceneRendererDeferred.FxaaOn
   name: FxaaOn
@@ -2265,13 +2389,6 @@ references:
   name: Single
   nameWithType: Single
   fullName: System.Single
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
 - uid: Fusee.Engine.Core.SceneRendererDeferred.#ctor*
   commentId: Overload:Fusee.Engine.Core.SceneRendererDeferred.#ctor
   name: SceneRendererDeferred
@@ -2283,6 +2400,12 @@ references:
   name: SceneContainer
   nameWithType: SceneContainer
   fullName: Fusee.Engine.Core.Scene.SceneContainer
+- uid: Fusee.Engine.Core.Scene.RenderLayers
+  commentId: T:Fusee.Engine.Core.Scene.RenderLayers
+  parent: Fusee.Engine.Core.Scene
+  name: RenderLayers
+  nameWithType: RenderLayers
+  fullName: Fusee.Engine.Core.Scene.RenderLayers
 - uid: Fusee.Engine.Core.Scene
   commentId: N:Fusee.Engine.Core.Scene
   name: Fusee.Engine.Core.Scene
@@ -2305,12 +2428,23 @@ references:
   name: RenderShaderEffect
   nameWithType: SceneRendererDeferred.RenderShaderEffect
   fullName: Fusee.Engine.Core.SceneRendererDeferred.RenderShaderEffect
-- uid: Fusee.Engine.Core.Scene.ShaderEffect
-  commentId: T:Fusee.Engine.Core.Scene.ShaderEffect
+- uid: Fusee.Engine.Core.Effects.Effect
+  commentId: T:Fusee.Engine.Core.Effects.Effect
+  parent: Fusee.Engine.Core.Effects
+  name: Effect
+  nameWithType: Effect
+  fullName: Fusee.Engine.Core.Effects.Effect
+- uid: Fusee.Engine.Core.Effects
+  commentId: N:Fusee.Engine.Core.Effects
+  name: Fusee.Engine.Core.Effects
+  nameWithType: Fusee.Engine.Core.Effects
+  fullName: Fusee.Engine.Core.Effects
+- uid: Fusee.Engine.Core.Scene.Weight
+  commentId: T:Fusee.Engine.Core.Scene.Weight
   parent: Fusee.Engine.Core.Scene
-  name: ShaderEffect
-  nameWithType: ShaderEffect
-  fullName: Fusee.Engine.Core.Scene.ShaderEffect
+  name: Weight
+  nameWithType: Weight
+  fullName: Fusee.Engine.Core.Scene.Weight
 - uid: Fusee.Engine.Core.SceneRendererDeferred.RenderMesh*
   commentId: Overload:Fusee.Engine.Core.SceneRendererDeferred.RenderMesh
   name: RenderMesh
@@ -2366,3 +2500,36 @@ references:
   name: WritableTexture
   nameWithType: WritableTexture
   fullName: Fusee.Engine.Core.WritableTexture
+- uid: Fusee.Engine.Core.SceneRendererForward.InitState
+  commentId: M:Fusee.Engine.Core.SceneRendererForward.InitState
+  parent: Fusee.Engine.Core.SceneRendererForward
+  name: InitState()
+  nameWithType: SceneRendererForward.InitState()
+  fullName: Fusee.Engine.Core.SceneRendererForward.InitState()
+  spec.csharp:
+  - uid: Fusee.Engine.Core.SceneRendererForward.InitState
+    name: InitState
+    nameWithType: SceneRendererForward.InitState
+    fullName: Fusee.Engine.Core.SceneRendererForward.InitState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.SceneRendererForward.InitState
+    name: InitState
+    nameWithType: SceneRendererForward.InitState
+    fullName: Fusee.Engine.Core.SceneRendererForward.InitState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.SceneRendererDeferred.InitState*
+  commentId: Overload:Fusee.Engine.Core.SceneRendererDeferred.InitState
+  name: InitState
+  nameWithType: SceneRendererDeferred.InitState
+  fullName: Fusee.Engine.Core.SceneRendererDeferred.InitState

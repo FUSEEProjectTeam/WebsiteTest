@@ -158,14 +158,14 @@ to have each visited element contribute to the result rendered against a given r
   
   
   <a id="Fusee_Engine_Core_SceneRendererForward__ctor_" data-uid="Fusee.Engine.Core.SceneRendererForward.#ctor*"></a>
-  <h4 id="Fusee_Engine_Core_SceneRendererForward__ctor_Fusee_Engine_Core_Scene_SceneContainer_" data-uid="Fusee.Engine.Core.SceneRendererForward.#ctor(Fusee.Engine.Core.Scene.SceneContainer)">SceneRendererForward(SceneContainer)</h4>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward__ctor_Fusee_Engine_Core_Scene_SceneContainer_Fusee_Engine_Core_Scene_RenderLayers_" data-uid="Fusee.Engine.Core.SceneRendererForward.#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Core.Scene.RenderLayers)">SceneRendererForward(SceneContainer, RenderLayers)</h4>
   <div class="markdown level1 summary"><p>Creates a new instance of type SceneRendererForward.
 This scene renderer is used for forward rendering.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SceneRendererForward(SceneContainer sc)</code></pre>
+    <pre><code class="lang-csharp hljs">public SceneRendererForward(SceneContainer sc, RenderLayers renderLayer = RenderLayers.All | RenderLayers.Default)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -182,6 +182,11 @@ This scene renderer is used for forward rendering.</p>
         <td><span class="parametername">sc</span></td>
         <td><p>The <a class="xref" href="Fusee.Engine.Core.Scene.html">Fusee.Engine.Core.Scene</a> containing the scene that is rendered.</p>
 </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.RenderLayers.html">RenderLayers</a></td>
+        <td><span class="parametername">renderLayer</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -265,7 +270,7 @@ This scene renderer is used for forward rendering.</p>
   
   
   <h4 id="Fusee_Engine_Core_SceneRendererForward__rc" data-uid="Fusee.Engine.Core.SceneRendererForward._rc">_rc</h4>
-  <div class="markdown level1 summary"><p>The RenderContext, used to render the scene.</p>
+  <div class="markdown level1 summary"><p>The RenderContext, used to render the scene. This will be ignored if cameras are used.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -417,6 +422,32 @@ If we render with one or more cameras this value will be overwritten by <see cre
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="Fusee_Engine_Core_SceneRendererForward_RenderLayer_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderLayer*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderLayer" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderLayer">RenderLayer</h4>
+  <div class="markdown level1 summary"><p>The RenderLayer this renderer should render.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderLayers RenderLayer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.RenderLayers.html">RenderLayers</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
@@ -434,7 +465,8 @@ If we render with one or more cameras this value will be overwritten by <see cre
   
   <a id="Fusee_Engine_Core_SceneRendererForward_AddWeightToMesh_" data-uid="Fusee.Engine.Core.SceneRendererForward.AddWeightToMesh*"></a>
   <h4 id="Fusee_Engine_Core_SceneRendererForward_AddWeightToMesh_Fusee_Engine_Core_Scene_Mesh_Fusee_Engine_Core_Scene_Weight_" data-uid="Fusee.Engine.Core.SceneRendererForward.AddWeightToMesh(Fusee.Engine.Core.Scene.Mesh,Fusee.Engine.Core.Scene.Weight)">AddWeightToMesh(Mesh, Weight)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds bone indices and bone weights from a <a class="xref" href="Fusee.Engine.Core.Scene.Weight.html">Weight</a> to a mesh.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -629,6 +661,35 @@ If we render with one or more cameras this value will be overwritten by <see cre
   </table>
   
   
+  <a id="Fusee_Engine_Core_SceneRendererForward_RenderEffect_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderEffect*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderEffect_Fusee_Engine_Core_Effects_Effect_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderEffect(Fusee.Engine.Core.Effects.Effect)">RenderEffect(Effect)</h4>
+  <div class="markdown level1 summary"><p>If a ShaderEffect is visited the ShaderEffect of the <a class="xref" href="Fusee.Engine.Core.RendererState.html">RendererState</a> is updated and the effect is set in the <a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderEffect(Effect effect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Effects.Effect.html">Effect</a></td>
+        <td><span class="parametername">effect</span></td>
+        <td><p>The <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html">Effect</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Fusee_Engine_Core_SceneRendererForward_RenderMesh_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderMesh*"></a>
   <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderMesh_Fusee_Engine_Core_Scene_Mesh_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderMesh(Fusee.Engine.Core.Scene.Mesh)">RenderMesh(Mesh)</h4>
   <div class="markdown level1 summary"><p>If a Mesh is visited and it has a <a class="xref" href="Fusee.Engine.Core.Scene.Weight.html">Weight</a> the BoneIndices and  BoneWeights get set,
@@ -716,14 +777,14 @@ the shader parameters for all lights in the scene are updated and the geometry i
   </table>
   
   
-  <a id="Fusee_Engine_Core_SceneRendererForward_RenderShaderEffect_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderShaderEffect*"></a>
-  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderShaderEffect_Fusee_Engine_Core_Scene_ShaderEffect_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)">RenderShaderEffect(ShaderEffect)</h4>
-  <div class="markdown level1 summary"><p>If a ShaderEffect is visited the ShaderEffect of the <a class="xref" href="Fusee.Engine.Core.RendererState.html">RendererState</a> is updated and the effect is set in the <a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a>.</p>
+  <a id="Fusee_Engine_Core_SceneRendererForward_RenderRenderLayer_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderRenderLayer_Fusee_Engine_Core_Scene_RenderLayer_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer(Fusee.Engine.Core.Scene.RenderLayer)">RenderRenderLayer(RenderLayer)</h4>
+  <div class="markdown level1 summary"><p>Renders the RenderLayer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RenderShaderEffect(ShaderEffect shader)</code></pre>
+    <pre><code class="lang-csharp hljs">public void RenderRenderLayer(RenderLayer renderLayer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -736,10 +797,9 @@ the shader parameters for all lights in the scene are updated and the geometry i
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Engine.Core.Scene.ShaderEffect.html">ShaderEffect</a></td>
-        <td><span class="parametername">shader</span></td>
-        <td><p>The ShaderEffect</p>
-</td>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.RenderLayer.html">RenderLayer</a></td>
+        <td><span class="parametername">renderLayer</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

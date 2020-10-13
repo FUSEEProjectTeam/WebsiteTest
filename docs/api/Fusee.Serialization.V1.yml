@@ -4,6 +4,8 @@ items:
   commentId: N:Fusee.Serialization.V1
   id: Fusee.Serialization.V1
   children:
+  - Fusee.Serialization.V1.AlbedoChannel
+  - Fusee.Serialization.V1.BRDFChannel
   - Fusee.Serialization.V1.CanvasRenderMode
   - Fusee.Serialization.V1.FusAnimation
   - Fusee.Serialization.V1.FusAnimationKeyBase
@@ -18,15 +20,20 @@ items:
   - Fusee.Serialization.V1.FusCamera
   - Fusee.Serialization.V1.FusCanvasTransform
   - Fusee.Serialization.V1.FusComponent
+  - Fusee.Serialization.V1.FusHorizontalTextAlignment
   - Fusee.Serialization.V1.FusLight
   - Fusee.Serialization.V1.FusMaterial
+  - Fusee.Serialization.V1.FusMaterialBase
+  - Fusee.Serialization.V1.FusMaterialBRDF
   - Fusee.Serialization.V1.FusMaterialPBR
+  - Fusee.Serialization.V1.FusMaterialStandard
   - Fusee.Serialization.V1.FusMesh
   - Fusee.Serialization.V1.FusNode
   - Fusee.Serialization.V1.FusOctant
   - Fusee.Serialization.V1.FusRectTransform
   - Fusee.Serialization.V1.FusScene
   - Fusee.Serialization.V1.FusTransform
+  - Fusee.Serialization.V1.FusVerticalTextAlignment
   - Fusee.Serialization.V1.FusWeight
   - Fusee.Serialization.V1.FusXForm
   - Fusee.Serialization.V1.FusXFormText
@@ -34,8 +41,10 @@ items:
   - Fusee.Serialization.V1.JointWeightColumn
   - Fusee.Serialization.V1.LerpType
   - Fusee.Serialization.V1.MatChannelContainer
+  - Fusee.Serialization.V1.NormapMapChannel
   - Fusee.Serialization.V1.NormapMapChannelContainer
   - Fusee.Serialization.V1.ProjectionMethod
+  - Fusee.Serialization.V1.SpecularChannel
   - Fusee.Serialization.V1.SpecularChannelContainer
   - Fusee.Serialization.V1.TypeId
   - Fusee.Serialization.V1.VertexWeight
@@ -53,7 +62,6 @@ items:
 references:
 - uid: Fusee.Serialization.V1.FusAnimation
   commentId: T:Fusee.Serialization.V1.FusAnimation
-  parent: Fusee.Serialization.V1
   name: FusAnimation
   nameWithType: FusAnimation
   fullName: Fusee.Serialization.V1.FusAnimation
@@ -65,37 +73,31 @@ references:
   fullName: Fusee.Serialization.V1.FusAnimationKeyBase
 - uid: Fusee.Serialization.V1.FusAnimationKeyDouble
   commentId: T:Fusee.Serialization.V1.FusAnimationKeyDouble
-  parent: Fusee.Serialization.V1
   name: FusAnimationKeyDouble
   nameWithType: FusAnimationKeyDouble
   fullName: Fusee.Serialization.V1.FusAnimationKeyDouble
 - uid: Fusee.Serialization.V1.FusAnimationKeyInt
   commentId: T:Fusee.Serialization.V1.FusAnimationKeyInt
-  parent: Fusee.Serialization.V1
   name: FusAnimationKeyInt
   nameWithType: FusAnimationKeyInt
   fullName: Fusee.Serialization.V1.FusAnimationKeyInt
 - uid: Fusee.Serialization.V1.FusAnimationKeyFloat
   commentId: T:Fusee.Serialization.V1.FusAnimationKeyFloat
-  parent: Fusee.Serialization.V1
   name: FusAnimationKeyFloat
   nameWithType: FusAnimationKeyFloat
   fullName: Fusee.Serialization.V1.FusAnimationKeyFloat
 - uid: Fusee.Serialization.V1.FusAnimationKeyFloat2
   commentId: T:Fusee.Serialization.V1.FusAnimationKeyFloat2
-  parent: Fusee.Serialization.V1
   name: FusAnimationKeyFloat2
   nameWithType: FusAnimationKeyFloat2
   fullName: Fusee.Serialization.V1.FusAnimationKeyFloat2
 - uid: Fusee.Serialization.V1.FusAnimationKeyFloat3
   commentId: T:Fusee.Serialization.V1.FusAnimationKeyFloat3
-  parent: Fusee.Serialization.V1
   name: FusAnimationKeyFloat3
   nameWithType: FusAnimationKeyFloat3
   fullName: Fusee.Serialization.V1.FusAnimationKeyFloat3
 - uid: Fusee.Serialization.V1.FusAnimationKeyFloat4
   commentId: T:Fusee.Serialization.V1.FusAnimationKeyFloat4
-  parent: Fusee.Serialization.V1
   name: FusAnimationKeyFloat4
   nameWithType: FusAnimationKeyFloat4
   fullName: Fusee.Serialization.V1.FusAnimationKeyFloat4
@@ -118,7 +120,6 @@ references:
   fullName: Fusee.Serialization.V1.FusAnimationTrack
 - uid: Fusee.Serialization.V1.FusBone
   commentId: T:Fusee.Serialization.V1.FusBone
-  parent: Fusee.Serialization.V1
   name: FusBone
   nameWithType: FusBone
   fullName: Fusee.Serialization.V1.FusBone
@@ -130,7 +131,6 @@ references:
   fullName: Fusee.Serialization.V1.ProjectionMethod
 - uid: Fusee.Serialization.V1.FusCamera
   commentId: T:Fusee.Serialization.V1.FusCamera
-  parent: Fusee.Serialization.V1
   name: FusCamera
   nameWithType: FusCamera
   fullName: Fusee.Serialization.V1.FusCamera
@@ -153,40 +153,27 @@ references:
   fullName: Fusee.Serialization.V1.FusComponent
 - uid: Fusee.Serialization.V1.FusLight
   commentId: T:Fusee.Serialization.V1.FusLight
-  parent: Fusee.Serialization.V1
   name: FusLight
   nameWithType: FusLight
   fullName: Fusee.Serialization.V1.FusLight
-- uid: Fusee.Serialization.V1.MatChannelContainer
-  commentId: T:Fusee.Serialization.V1.MatChannelContainer
+- uid: Fusee.Serialization.V1.FusMaterialBase
+  commentId: T:Fusee.Serialization.V1.FusMaterialBase
   parent: Fusee.Serialization.V1
-  name: MatChannelContainer
-  nameWithType: MatChannelContainer
-  fullName: Fusee.Serialization.V1.MatChannelContainer
-- uid: Fusee.Serialization.V1.SpecularChannelContainer
-  commentId: T:Fusee.Serialization.V1.SpecularChannelContainer
+  name: FusMaterialBase
+  nameWithType: FusMaterialBase
+  fullName: Fusee.Serialization.V1.FusMaterialBase
+- uid: Fusee.Serialization.V1.FusMaterialBRDF
+  commentId: T:Fusee.Serialization.V1.FusMaterialBRDF
   parent: Fusee.Serialization.V1
-  name: SpecularChannelContainer
-  nameWithType: SpecularChannelContainer
-  fullName: Fusee.Serialization.V1.SpecularChannelContainer
-- uid: Fusee.Serialization.V1.NormapMapChannelContainer
-  commentId: T:Fusee.Serialization.V1.NormapMapChannelContainer
+  name: FusMaterialBRDF
+  nameWithType: FusMaterialBRDF
+  fullName: Fusee.Serialization.V1.FusMaterialBRDF
+- uid: Fusee.Serialization.V1.FusMaterialStandard
+  commentId: T:Fusee.Serialization.V1.FusMaterialStandard
   parent: Fusee.Serialization.V1
-  name: NormapMapChannelContainer
-  nameWithType: NormapMapChannelContainer
-  fullName: Fusee.Serialization.V1.NormapMapChannelContainer
-- uid: Fusee.Serialization.V1.FusMaterial
-  commentId: T:Fusee.Serialization.V1.FusMaterial
-  parent: Fusee.Serialization.V1
-  name: FusMaterial
-  nameWithType: FusMaterial
-  fullName: Fusee.Serialization.V1.FusMaterial
-- uid: Fusee.Serialization.V1.FusMaterialPBR
-  commentId: T:Fusee.Serialization.V1.FusMaterialPBR
-  parent: Fusee.Serialization.V1
-  name: FusMaterialPBR
-  nameWithType: FusMaterialPBR
-  fullName: Fusee.Serialization.V1.FusMaterialPBR
+  name: FusMaterialStandard
+  nameWithType: FusMaterialStandard
+  fullName: Fusee.Serialization.V1.FusMaterialStandard
 - uid: Fusee.Serialization.V1.FusMesh
   commentId: T:Fusee.Serialization.V1.FusMesh
   parent: Fusee.Serialization.V1
@@ -217,13 +204,11 @@ references:
   fullName: Fusee.Serialization.V1.FusScene
 - uid: Fusee.Serialization.V1.FusTransform
   commentId: T:Fusee.Serialization.V1.FusTransform
-  parent: Fusee.Serialization.V1
   name: FusTransform
   nameWithType: FusTransform
   fullName: Fusee.Serialization.V1.FusTransform
 - uid: Fusee.Serialization.V1.FusWeight
   commentId: T:Fusee.Serialization.V1.FusWeight
-  parent: Fusee.Serialization.V1
   name: FusWeight
   nameWithType: FusWeight
   fullName: Fusee.Serialization.V1.FusWeight
@@ -247,6 +232,77 @@ references:
   name: FusXForm
   nameWithType: FusXForm
   fullName: Fusee.Serialization.V1.FusXForm
+- uid: Fusee.Serialization.V1.FusVerticalTextAlignment
+  commentId: T:Fusee.Serialization.V1.FusVerticalTextAlignment
+  parent: Fusee.Serialization.V1
+  name: FusVerticalTextAlignment
+  nameWithType: FusVerticalTextAlignment
+  fullName: Fusee.Serialization.V1.FusVerticalTextAlignment
+- uid: Fusee.Serialization.V1.FusHorizontalTextAlignment
+  commentId: T:Fusee.Serialization.V1.FusHorizontalTextAlignment
+  parent: Fusee.Serialization.V1
+  name: FusHorizontalTextAlignment
+  nameWithType: FusHorizontalTextAlignment
+  fullName: Fusee.Serialization.V1.FusHorizontalTextAlignment
+- uid: Fusee.Serialization.V1.FusXFormText
+  commentId: T:Fusee.Serialization.V1.FusXFormText
+  name: FusXFormText
+  nameWithType: FusXFormText
+  fullName: Fusee.Serialization.V1.FusXFormText
+- uid: Fusee.Serialization.V1.BRDFChannel
+  commentId: T:Fusee.Serialization.V1.BRDFChannel
+  parent: Fusee.Serialization.V1
+  name: BRDFChannel
+  nameWithType: BRDFChannel
+  fullName: Fusee.Serialization.V1.BRDFChannel
+- uid: Fusee.Serialization.V1.AlbedoChannel
+  commentId: T:Fusee.Serialization.V1.AlbedoChannel
+  parent: Fusee.Serialization.V1
+  name: AlbedoChannel
+  nameWithType: AlbedoChannel
+  fullName: Fusee.Serialization.V1.AlbedoChannel
+- uid: Fusee.Serialization.V1.SpecularChannel
+  commentId: T:Fusee.Serialization.V1.SpecularChannel
+  parent: Fusee.Serialization.V1
+  name: SpecularChannel
+  nameWithType: SpecularChannel
+  fullName: Fusee.Serialization.V1.SpecularChannel
+- uid: Fusee.Serialization.V1.NormapMapChannel
+  commentId: T:Fusee.Serialization.V1.NormapMapChannel
+  parent: Fusee.Serialization.V1
+  name: NormapMapChannel
+  nameWithType: NormapMapChannel
+  fullName: Fusee.Serialization.V1.NormapMapChannel
+- uid: Fusee.Serialization.V1.MatChannelContainer
+  commentId: T:Fusee.Serialization.V1.MatChannelContainer
+  parent: Fusee.Serialization.V1
+  name: MatChannelContainer
+  nameWithType: MatChannelContainer
+  fullName: Fusee.Serialization.V1.MatChannelContainer
+- uid: Fusee.Serialization.V1.SpecularChannelContainer
+  commentId: T:Fusee.Serialization.V1.SpecularChannelContainer
+  parent: Fusee.Serialization.V1
+  name: SpecularChannelContainer
+  nameWithType: SpecularChannelContainer
+  fullName: Fusee.Serialization.V1.SpecularChannelContainer
+- uid: Fusee.Serialization.V1.NormapMapChannelContainer
+  commentId: T:Fusee.Serialization.V1.NormapMapChannelContainer
+  parent: Fusee.Serialization.V1
+  name: NormapMapChannelContainer
+  nameWithType: NormapMapChannelContainer
+  fullName: Fusee.Serialization.V1.NormapMapChannelContainer
+- uid: Fusee.Serialization.V1.FusMaterial
+  commentId: T:Fusee.Serialization.V1.FusMaterial
+  parent: Fusee.Serialization.V1
+  name: FusMaterial
+  nameWithType: FusMaterial
+  fullName: Fusee.Serialization.V1.FusMaterial
+- uid: Fusee.Serialization.V1.FusMaterialPBR
+  commentId: T:Fusee.Serialization.V1.FusMaterialPBR
+  parent: Fusee.Serialization.V1
+  name: FusMaterialPBR
+  nameWithType: FusMaterialPBR
+  fullName: Fusee.Serialization.V1.FusMaterialPBR
 - uid: Fusee.Serialization.V1.VerticalTextAlignment
   commentId: T:Fusee.Serialization.V1.VerticalTextAlignment
   parent: Fusee.Serialization.V1
@@ -259,11 +315,6 @@ references:
   name: HorizontalTextAlignment
   nameWithType: HorizontalTextAlignment
   fullName: Fusee.Serialization.V1.HorizontalTextAlignment
-- uid: Fusee.Serialization.V1.FusXFormText
-  commentId: T:Fusee.Serialization.V1.FusXFormText
-  name: FusXFormText
-  nameWithType: FusXFormText
-  fullName: Fusee.Serialization.V1.FusXFormText
 - uid: Fusee.Serialization.V1
   commentId: N:Fusee.Serialization.V1
   name: Fusee.Serialization.V1

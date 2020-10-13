@@ -73,7 +73,7 @@
   
   <h1 id="Fusee_Base_Common_IAssetProvider" data-uid="Fusee.Base.Common.IAssetProvider" class="text-break">Interface IAssetProvider
   </h1>
-  <div class="markdown level0 summary"><p>An AssetProvider knows how to akquire assets of certain types from a certain kind of storage.</p>
+  <div class="markdown level0 summary"><p>An AssetProvider knows how to acquire assets of certain types from a certain kind of storage.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Base.Common.html">Fusee.Base.Common</a></h6>
@@ -83,12 +83,12 @@
     <pre><code class="lang-csharp hljs">public interface IAssetProvider</code></pre>
   </div>
   <h5 id="Fusee_Base_Common_IAssetProvider_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>In a normal world, a good design would separate the many aspects of asset akquisition (storage,
+  <div class="markdown level0 remarks"><p>In a normal world, a good design would separate the many aspects of asset acquisition (storage,
 serialization, codec, asynchronicity). Unfortunately, in JavaScript-Land, it's all mixed (or should I say messed) up.
 You tell the JavaScript API &quot;get me an image&quot; and JavaScript magically loads the raw image
 data, converts it to a two-dimensional pixel array and calls a user-provided callback when its all done.
 No way to replace a single step by something self-provided.
-So this is FUSEE's pitiful approach for an asset akquisition abstraction which is capable of
+So this is FUSEE's pitiful approach for an asset acquisition abstraction which is capable of
 being implemented by poorly designed JavaScript APIs.</p>
 </div>
   <h3 id="methods">Methods

@@ -83,16 +83,14 @@ Used in the different lighting calculation components.</p>
     <div class="level1"><span class="xref">MatChannelContainer</span></div>
       <div class="level2"><a class="xref" href="Fusee.Serialization.V1.SpecularChannelContainer.html">SpecularChannelContainer</a></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Fusee.Serialization.V1.MatChannelContainer.html">MatChannelContainer</a>&gt;</div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
     </div>
     <div>
       <span class="xref">System.Object.GetType()</span>
@@ -111,9 +109,7 @@ Used in the different lighting calculation components.</p>
   <h6><strong>Assembly</strong>: Fusee.Serialization.dll</h6>
   <h5 id="Fusee_Serialization_V1_MatChannelContainer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ProtoContract]
-[ProtoInclude(100, typeof(SpecularChannelContainer))]
-public class MatChannelContainer</code></pre>
+    <pre><code class="lang-csharp hljs">public class MatChannelContainer : IEquatable&lt;MatChannelContainer&gt;</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -125,8 +121,7 @@ public class MatChannelContainer</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ProtoMember(1)]
-public float4 Color</code></pre>
+    <pre><code class="lang-csharp hljs">public float4 Color</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -151,8 +146,7 @@ public float4 Color</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ProtoMember(3)]
-public float Mix</code></pre>
+    <pre><code class="lang-csharp hljs">public float Mix</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -177,8 +171,7 @@ public float Mix</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ProtoMember(2)]
-public string Texture</code></pre>
+    <pre><code class="lang-csharp hljs">public string Texture</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -195,6 +188,236 @@ public string Texture</code></pre>
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Fusee_Serialization_V1_MatChannelContainer_Equals_" data-uid="Fusee.Serialization.V1.MatChannelContainer.Equals*"></a>
+  <h4 id="Fusee_Serialization_V1_MatChannelContainer_Equals_Fusee_Serialization_V1_MatChannelContainer_" data-uid="Fusee.Serialization.V1.MatChannelContainer.Equals(Fusee.Serialization.V1.MatChannelContainer)">Equals(MatChannelContainer)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the MatChannelContainer is equal to another one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(MatChannelContainer other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Serialization.V1.MatChannelContainer.html">MatChannelContainer</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The MatChannelContainer to compare with this one.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the current MatChannelContainer is equal to the other; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Serialization_V1_MatChannelContainer_Equals_" data-uid="Fusee.Serialization.V1.MatChannelContainer.Equals*"></a>
+  <h4 id="Fusee_Serialization_V1_MatChannelContainer_Equals_System_Object_" data-uid="Fusee.Serialization.V1.MatChannelContainer.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to compare to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the instances are equal; false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  
+  
+  <a id="Fusee_Serialization_V1_MatChannelContainer_GetHashCode_" data-uid="Fusee.Serialization.V1.MatChannelContainer.GetHashCode*"></a>
+  <h4 id="Fusee_Serialization_V1_MatChannelContainer_GetHashCode" data-uid="Fusee.Serialization.V1.MatChannelContainer.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Returns the hash for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="Fusee_Serialization_V1_MatChannelContainer_op_Equality_" data-uid="Fusee.Serialization.V1.MatChannelContainer.op_Equality*"></a>
+  <h4 id="Fusee_Serialization_V1_MatChannelContainer_op_Equality_Fusee_Serialization_V1_MatChannelContainer_Fusee_Serialization_V1_MatChannelContainer_" data-uid="Fusee.Serialization.V1.MatChannelContainer.op_Equality(Fusee.Serialization.V1.MatChannelContainer,Fusee.Serialization.V1.MatChannelContainer)">Equality(MatChannelContainer, MatChannelContainer)</h4>
+  <div class="markdown level1 summary"><p>Compares two instances for equality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(MatChannelContainer lhs, MatChannelContainer rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Serialization.V1.MatChannelContainer.html">MatChannelContainer</a></td>
+        <td><span class="parametername">lhs</span></td>
+        <td><p>The first instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Serialization.V1.MatChannelContainer.html">MatChannelContainer</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The second instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if left does equal right; false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Serialization_V1_MatChannelContainer_op_Inequality_" data-uid="Fusee.Serialization.V1.MatChannelContainer.op_Inequality*"></a>
+  <h4 id="Fusee_Serialization_V1_MatChannelContainer_op_Inequality_Fusee_Serialization_V1_MatChannelContainer_Fusee_Serialization_V1_MatChannelContainer_" data-uid="Fusee.Serialization.V1.MatChannelContainer.op_Inequality(Fusee.Serialization.V1.MatChannelContainer,Fusee.Serialization.V1.MatChannelContainer)">Inequality(MatChannelContainer, MatChannelContainer)</h4>
+  <div class="markdown level1 summary"><p>Compares two instances for inequality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(MatChannelContainer lhs, MatChannelContainer rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Serialization.V1.MatChannelContainer.html">MatChannelContainer</a></td>
+        <td><span class="parametername">lhs</span></td>
+        <td><p>The first instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Serialization.V1.MatChannelContainer.html">MatChannelContainer</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The second instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if left does not equal right; false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
 </article>
           </div>
           

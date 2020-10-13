@@ -33,13 +33,8 @@ items:
   summary: "\nContains 3D geometry information (Vertices, Triangles, Normals, UVs, ...).\n"
   example: []
   syntax:
-    content: >-
-      [ProtoContract]
-
-      public class FusMesh : FusComponent, IComponent
+    content: 'public class FusMesh : FusComponent, IComponent'
     content.vb: >-
-      <ProtoContract>
-
       Public Class FusMesh
           Inherits FusComponent
           Implements IComponent
@@ -57,10 +52,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  attributes:
-  - type: ProtoBuf.ProtoContractAttribute
-    ctor: ProtoBuf.ProtoContractAttribute.#ctor
-    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -88,23 +79,11 @@ items:
   summary: "\nGets and sets the vertices.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(1)]
-
-      public float3[] Vertices
+    content: public float3[] Vertices
     return:
       type: Fusee.Math.Core.float3[]
       description: "\nThe vertices.\n"
-    content.vb: >-
-      <ProtoMember(1)>
-
-      Public Vertices As float3()
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 1
+    content.vb: Public Vertices As float3()
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -130,23 +109,11 @@ items:
   summary: "\nGets and sets the color of a single vertex.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(2)]
-
-      public uint[] Colors
+    content: public uint[] Colors
     return:
       type: System.UInt32[]
       description: "\nThe color.\n"
-    content.vb: >-
-      <ProtoMember(2)>
-
-      Public Colors As UInteger()
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 2
+    content.vb: Public Colors As UInteger()
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -172,23 +139,11 @@ items:
   summary: "\nGets and sets the normals.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(3)]
-
-      public float3[] Normals
+    content: public float3[] Normals
     return:
       type: Fusee.Math.Core.float3[]
       description: "\nThe normals..\n"
-    content.vb: >-
-      <ProtoMember(3)>
-
-      Public Normals As float3()
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 3
+    content.vb: Public Normals As float3()
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -214,23 +169,11 @@ items:
   summary: "\nGets and sets the UV-coordinates.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(4)]
-
-      public float2[] UVs
+    content: public float2[] UVs
     return:
       type: Fusee.Math.Core.float2[]
       description: "\nThe UV-coordinates.\n"
-    content.vb: >-
-      <ProtoMember(4)>
-
-      Public UVs As float2()
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 4
+    content.vb: Public UVs As float2()
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -256,23 +199,11 @@ items:
   summary: "\nGets and sets the boneweights.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(5)]
-
-      public float4[] BoneWeights
+    content: public float4[] BoneWeights
     return:
       type: Fusee.Math.Core.float4[]
       description: "\nThe boneweights.\n"
-    content.vb: >-
-      <ProtoMember(5)>
-
-      Public BoneWeights As float4()
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 5
+    content.vb: Public BoneWeights As float4()
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -298,23 +229,11 @@ items:
   summary: "\nGets and sets the boneindices.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(6)]
-
-      public float4[] BoneIndices
+    content: public float4[] BoneIndices
     return:
       type: Fusee.Math.Core.float4[]
       description: "\nThe boneindices.\n"
-    content.vb: >-
-      <ProtoMember(6)>
-
-      Public BoneIndices As float4()
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 6
+    content.vb: Public BoneIndices As float4()
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -340,23 +259,11 @@ items:
   summary: "\nGets and sets the triangles.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(7)]
-
-      public ushort[] Triangles
+    content: public ushort[] Triangles
     return:
       type: System.UInt16[]
       description: "\nThe triangles.\n"
-    content.vb: >-
-      <ProtoMember(7)>
-
-      Public Triangles As UShort()
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 7
+    content.vb: Public Triangles As UShort()
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -382,22 +289,10 @@ items:
   summary: "\nThe bounding box of this geometry chunk.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(8)]
-
-      public AABBf BoundingBox
+    content: public AABBf BoundingBox
     return:
       type: Fusee.Math.Core.AABBf
-    content.vb: >-
-      <ProtoMember(8)>
-
-      Public BoundingBox As AABBf
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 8
+    content.vb: Public BoundingBox As AABBf
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -420,25 +315,13 @@ items:
   assemblies:
   - Fusee.Serialization
   namespace: Fusee.Serialization.V1
-  summary: "\nThe tangent of each triangle for bump mapping.\nw-component is handedness\n"
+  summary: "\nThe tangent of each triangle for normal mapping.\nw-component is handedness\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(9)]
-
-      public float4[] Tangents
+    content: public float4[] Tangents
     return:
       type: Fusee.Math.Core.float4[]
-    content.vb: >-
-      <ProtoMember(9)>
-
-      Public Tangents As float4()
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 9
+    content.vb: Public Tangents As float4()
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -461,25 +344,13 @@ items:
   assemblies:
   - Fusee.Serialization
   namespace: Fusee.Serialization.V1
-  summary: "\nThe bitangent of each triangle for bump mapping.\n"
+  summary: "\nThe bitangent of each triangle for normal mapping.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(10)]
-
-      public float3[] BiTangents
+    content: public float3[] BiTangents
     return:
       type: Fusee.Math.Core.float3[]
-    content.vb: >-
-      <ProtoMember(10)>
-
-      Public BiTangents As float3()
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 10
+    content.vb: Public BiTangents As float3()
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -505,22 +376,10 @@ items:
   summary: "\nThe type of the mesh ???\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(11)]
-
-      public int MeshType
+    content: public int MeshType
     return:
       type: System.Int32
-    content.vb: >-
-      <ProtoMember(11)>
-
-      Public MeshType As Integer
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 11
+    content.vb: Public MeshType As Integer
   modifiers.csharp:
   - public
   modifiers.vb:

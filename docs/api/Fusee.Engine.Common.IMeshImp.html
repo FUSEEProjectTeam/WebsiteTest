@@ -74,16 +74,15 @@
   <h1 id="Fusee_Engine_Common_IMeshImp" data-uid="Fusee.Engine.Common.IMeshImp" class="text-break">Interface IMeshImp
   </h1>
   <div class="markdown level0 summary"><p>Interface for Mesh implementations. The implementation should handle typical mesh informations like: vertices, triangles, normals, colors, UV's.
-It is also required to implement a connection to the current Rendercontext in order to apply the Mesh for rendering.
-The Mesh should preferable use handles for its informations in order to communicate with a rendercontext. The handles are refering to so called BufferObjects.</p>
+It is also required to implement a connection to the current RenderContext in order to apply the Mesh for rendering.
+The Mesh should preferable use handles for its informations in order to communicate with a RenderContext. The handles are referring to so called BufferObjects.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.Common.html">Fusee.Engine.Common</a></h6>
   <h6><strong>Assembly</strong>: Fusee.Engine.Common.dll</h6>
   <h5 id="Fusee_Engine_Common_IMeshImp_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ProtoContract]
-public interface IMeshImp</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IMeshImp</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -91,7 +90,7 @@ public interface IMeshImp</code></pre>
   
   <a id="Fusee_Engine_Common_IMeshImp_BiTangentsSet_" data-uid="Fusee.Engine.Common.IMeshImp.BiTangentsSet*"></a>
   <h4 id="Fusee_Engine_Common_IMeshImp_BiTangentsSet" data-uid="Fusee.Engine.Common.IMeshImp.BiTangentsSet">BiTangentsSet</h4>
-  <div class="markdown level1 summary"><p>Implementation Tasks: Gets a value indicating wether [BiTangents Set].</p>
+  <div class="markdown level1 summary"><p>Implementation Tasks: Gets a value indicating whether [BiTangents Set].</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -251,7 +250,7 @@ public interface IMeshImp</code></pre>
   
   <a id="Fusee_Engine_Common_IMeshImp_TangentsSet_" data-uid="Fusee.Engine.Common.IMeshImp.TangentsSet*"></a>
   <h4 id="Fusee_Engine_Common_IMeshImp_TangentsSet" data-uid="Fusee.Engine.Common.IMeshImp.TangentsSet">TangentsSet</h4>
-  <div class="markdown level1 summary"><p>Implementation Tasks: Gets a value indicating wether [Tangents Set].</p>
+  <div class="markdown level1 summary"><p>Implementation Tasks: Gets a value indicating whether [Tangents Set].</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -360,7 +359,7 @@ public interface IMeshImp</code></pre>
   
   <a id="Fusee_Engine_Common_IMeshImp_InvalidateBoneIndices_" data-uid="Fusee.Engine.Common.IMeshImp.InvalidateBoneIndices*"></a>
   <h4 id="Fusee_Engine_Common_IMeshImp_InvalidateBoneIndices" data-uid="Fusee.Engine.Common.IMeshImp.InvalidateBoneIndices">InvalidateBoneIndices()</h4>
-  <div class="markdown level1 summary"><p>Implementation Tasks: Invalidates the boneindices of the mesh, e.g. reset the BoneIndicesBufferObject of this instance by setting it to 0.</p>
+  <div class="markdown level1 summary"><p>Implementation Tasks: Invalidates the bone indices of the mesh, e.g. reset the BoneIndicesBufferObject of this instance by setting it to 0.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -371,7 +370,7 @@ public interface IMeshImp</code></pre>
   
   <a id="Fusee_Engine_Common_IMeshImp_InvalidateBoneWeights_" data-uid="Fusee.Engine.Common.IMeshImp.InvalidateBoneWeights*"></a>
   <h4 id="Fusee_Engine_Common_IMeshImp_InvalidateBoneWeights" data-uid="Fusee.Engine.Common.IMeshImp.InvalidateBoneWeights">InvalidateBoneWeights()</h4>
-  <div class="markdown level1 summary"><p>Implementation Tasks: Invalidates the boneweights of the mesh, e.g. reset the BoneWeightsBufferObject of this instance by setting it to 0.</p>
+  <div class="markdown level1 summary"><p>Implementation Tasks: Invalidates the bone weights of the mesh, e.g. reset the BoneWeightsBufferObject of this instance by setting it to 0.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

@@ -23,21 +23,15 @@ items:
   source:
     id: OBBf
     path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBf.cs
-    startLine: 11
+    startLine: 10
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
   summary: "\nRepresents an oriented bounding box.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoContract]
-
-      public struct OBBf
-    content.vb: >-
-      <ProtoContract>
-
-      Public Structure OBBf
+    content: public struct OBBf
+    content.vb: Public Structure OBBf
   inheritedMembers:
   - System.ValueType.Equals(System.Object)
   - System.ValueType.GetHashCode
@@ -45,10 +39,6 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
-  attributes:
-  - type: ProtoBuf.ProtoContractAttribute
-    ctor: ProtoBuf.ProtoContractAttribute.#ctor
-    arguments: []
   modifiers.csharp:
   - public
   - struct
@@ -69,29 +59,17 @@ items:
   source:
     id: Min
     path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBf.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
   summary: "\nThe minimum values of the oriented bounding box in x, y and z direction\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(1)]
-
-      public float3 Min
+    content: public float3 Min
     return:
       type: Fusee.Math.Core.float3
-    content.vb: >-
-      <ProtoMember(1)>
-
-      Public Min As float3
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 1
+    content.vb: Public Min As float3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -110,29 +88,17 @@ items:
   source:
     id: Max
     path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBf.cs
-    startLine: 23
+    startLine: 22
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
   summary: "\nThe maximum values of the oriented bounding box in x, y and z direction\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(2)]
-
-      public float3 Max
+    content: public float3 Max
     return:
       type: Fusee.Math.Core.float3
-    content.vb: >-
-      <ProtoMember(2)>
-
-      Public Max As float3
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 2
+    content.vb: Public Max As float3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -151,29 +117,17 @@ items:
   source:
     id: Rotation
     path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBf.cs
-    startLine: 28
+    startLine: 27
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
   summary: "\nThe rotation of the oriented bounding box\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(3)]
-
-      public float4x4 Rotation
+    content: public float4x4 Rotation
     return:
       type: Fusee.Math.Core.float4x4
-    content.vb: >-
-      <ProtoMember(3)>
-
-      Public Rotation As float4x4
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 3
+    content.vb: Public Rotation As float4x4
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -192,29 +146,17 @@ items:
   source:
     id: Translation
     path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBf.cs
-    startLine: 33
+    startLine: 32
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
   summary: "\nThe translation of the oriented bounding box\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(4)]
-
-      public float3 Translation
+    content: public float3 Translation
     return:
       type: Fusee.Math.Core.float3
-    content.vb: >-
-      <ProtoMember(4)>
-
-      Public Translation As float3
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 4
+    content.vb: Public Translation As float3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -233,29 +175,17 @@ items:
   source:
     id: Size
     path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBf.cs
-    startLine: 38
+    startLine: 37
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
   summary: "\nReturns the with, height and depth of the box in x, y and z\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(5)]
-
-      public float3 Size
+    content: public float3 Size
     return:
       type: Fusee.Math.Core.float3
-    content.vb: >-
-      <ProtoMember(5)>
-
-      Public Size As float3
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 5
+    content.vb: Public Size As float3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -274,7 +204,7 @@ items:
   source:
     id: Center
     path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBf.cs
-    startLine: 43
+    startLine: 42
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -307,7 +237,7 @@ items:
   source:
     id: EulerRotation
     path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBf.cs
-    startLine: 48
+    startLine: 47
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -340,7 +270,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\OBBf.cs
-    startLine: 54
+    startLine: 53
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core

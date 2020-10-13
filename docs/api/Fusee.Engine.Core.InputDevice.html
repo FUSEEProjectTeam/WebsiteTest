@@ -284,7 +284,7 @@ parameter can be used in user dialogs to identify devices.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>The deivce description.</p>
+        <td><p>The device description.</p>
 </td>
       </tr>
     </tbody>
@@ -801,7 +801,7 @@ hardware device but can be calculated from one or more existing axes or buttons.
   <div class="markdown level1 remarks"><p>To register your own axis you need to provide a working <a class="xref" href="Fusee.Engine.Core.InputDevice.AxisValueCalculator.html">InputDevice.AxisValueCalculator</a>. This method
 is called whenever the axis value needs to be present.
 Any state the calculation depends upon should be queried from existing axes presented by the input device
-or &quot;statically&quot; stored in the closure around the calculator. The methodes</p>
+or &quot;statically&quot; stored in the closure around the calculator. The methods</p>
 <ul></ul>
 <item><a class="xref" href="Fusee.Engine.Core.InputDevice.html#Fusee_Engine_Core_InputDevice_RegisterSingleButtonAxis_System_Int32_Fusee_Engine_Common_AxisDirection_System_Single_System_Single_System_Int32_System_String_">RegisterSingleButtonAxis(Int32, AxisDirection, Single, Single, Int32, String)</a></item>
 <item><a class="xref" href="Fusee.Engine.Core.InputDevice.html#Fusee_Engine_Core_InputDevice_RegisterTwoButtonAxis_System_Int32_System_Int32_Fusee_Engine_Common_AxisDirection_System_Single_System_Single_System_Int32_System_String_">RegisterTwoButtonAxis(Int32, Int32, AxisDirection, Single, Single, Int32, String)</a></item>
@@ -885,7 +885,7 @@ zero to have a new identifier calculated automatically.</p>
     </tbody>
   </table>
   <h5 id="Fusee_Engine_Core_InputDevice_RegisterSingleButtonAxis_System_Int32_Fusee_Engine_Common_AxisDirection_System_Single_System_Single_System_Int32_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Button axes are useful to simulate a trigger or thrust panel with the help of individual buttons. There is a user-defineable acceleration and
+  <div class="markdown level1 remarks"><p>Button axes are useful to simulate a trigger or thrust panel with the help of individual buttons. There is a user-definable acceleration and
 deceleration period, so a simulation resulting on this input delivers a feeling of inertance.</p>
 </div>
   
@@ -973,10 +973,10 @@ zero to have a new identifier calculated automatically.</p>
   </table>
   <h5 id="Fusee_Engine_Core_InputDevice_RegisterTwoButtonAxis_System_Int32_System_Int32_Fusee_Engine_Common_AxisDirection_System_Single_System_Single_System_Int32_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Button axes are useful to simulate one axis of a joypad or a joystick with the help of two individual buttons. One button acts as pushing the
-joystick into the positve direction along the given axis by animating the axis' value to 1 and the a second button acts as pushing the joystick
+joystick into the positive direction along the given axis by animating the axis' value to 1 and the a second button acts as pushing the joystick
 into the negative direction by animating the value to -1. Releasing both buttons will animate the value to 0. Pushing both buttons simultaneously
 will stop the animation and keep the value at its current amount.
-There is a user-defineable acceleration and deceleration period, so a simulation resulting on this input delivers a feeling of inertance.</p>
+There is a user-definable acceleration and deceleration period, so a simulation resulting on this input delivers a feeling of inertance.</p>
 </div>
   
   
@@ -1010,7 +1010,7 @@ There is a user-defineable acceleration and deceleration period, so a simulation
         <td><span class="parametername">triggerButtonId</span></td>
         <td><p>If a valid id is passed, the derived axis only produces values if the specified button is pressed. The velocity is only
 calculated based on the axis value when the trigger button is pressed. This allows touch velocities to always start with a speed of zero when the touch starts (e.g. the
-button identifying that a touchpoint has contact). Otherwise touch velocites would become huge between two click-like touches on different screen locations.
+button identifying that a touchpoint has contact). Otherwise touch velocities would become huge between two click-like touches on different screen locations.
 If this parameter is 0 (zero), the derived axis will always be calculated based on the original axis only.</p>
 </td>
       </tr>

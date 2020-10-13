@@ -179,14 +179,14 @@ items:
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nGets the local ip. Do not use this often due to performance reasons.\n"
+  summary: "\nGets the local IP. Do not use this often due to performance reasons.\n"
   example: []
   syntax:
     content: public string LocalIP { get; }
     parameters: []
     return:
       type: System.String
-      description: "\nThe local ip as a string, e.g. 127.0.0.1\n"
+      description: "\nThe local IP as a string, e.g. 127.0.0.1\n"
     content.vb: Public ReadOnly Property LocalIP As String
   overload: Fusee.Engine.Core.Network.LocalIP*
   modifiers.csharp:

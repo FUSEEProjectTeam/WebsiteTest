@@ -1,0 +1,925 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  commentId: T:Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  id: Lighting
+  parent: Fusee.Engine.Core.ShaderShards.Fragment
+  children:
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightDeferred(Fusee.Engine.Core.Scene.Light,System.Boolean,System.Int32,System.Boolean)
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightForward(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AssembleLightingMethods(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationConeComponent
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationPointComponent
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFDiffuseComponent
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFSpecularComponent
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.LightStructDeclaration
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.NumberOfLightsForward
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculation
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCascaded
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCubeMap
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.SpecularComponent
+  langs:
+  - csharp
+  - vb
+  name: Lighting
+  nameWithType: Lighting
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  type: Class
+  source:
+    id: Lighting
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    startLine: 12
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nCollection of shader code strings, describing the struct for a Light and different methods for light and shadow calculation.\n"
+  example: []
+  syntax:
+    content: public static class Lighting
+    content.vb: Public Module Lighting
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.NumberOfLightsForward
+  commentId: F:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.NumberOfLightsForward
+  id: NumberOfLightsForward
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: NumberOfLightsForward
+  nameWithType: Lighting.NumberOfLightsForward
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.NumberOfLightsForward
+  type: Field
+  source:
+    id: NumberOfLightsForward
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    startLine: 15
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  example: []
+  syntax:
+    content: public const int NumberOfLightsForward = 8
+    return:
+      type: System.Int32
+    content.vb: Public Const NumberOfLightsForward As Integer = 8
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.LightStructDeclaration
+  commentId: F:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.LightStructDeclaration
+  id: LightStructDeclaration
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: LightStructDeclaration
+  nameWithType: Lighting.LightStructDeclaration
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.LightStructDeclaration
+  type: Field
+  source:
+    id: LightStructDeclaration
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    startLine: 21
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nStruct, that describes a Light object in the shader code./>\n"
+  example: []
+  syntax:
+    content: public static string LightStructDeclaration
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared LightStructDeclaration As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AssembleLightingMethods(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AssembleLightingMethods(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  id: AssembleLightingMethods(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: AssembleLightingMethods(LightingSetupFlags)
+  nameWithType: Lighting.AssembleLightingMethods(LightingSetupFlags)
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AssembleLightingMethods(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  type: Method
+  source:
+    id: AssembleLightingMethods
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    startLine: 48
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nCollects all lighting methods, dependent on what is defined in the given <xref href=\"Fusee.Engine.Core.ShaderShards.LightingSetupFlags\" data-throw-if-not-resolved=\"false\"></xref> and the LightingCalculationMethod.\n"
+  example: []
+  syntax:
+    content: public static string AssembleLightingMethods(LightingSetupFlags setup)
+    parameters:
+    - id: setup
+      type: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+      description: The <xref href="Fusee.Engine.Core.ShaderShards.LightingSetupFlags" data-throw-if-not-resolved="false"></xref> which is used to decide which lighting methods we need.
+    return:
+      type: System.String
+    content.vb: Public Shared Function AssembleLightingMethods(setup As LightingSetupFlags) As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AssembleLightingMethods*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent
+  id: DiffuseComponent
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: DiffuseComponent()
+  nameWithType: Lighting.DiffuseComponent()
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent()
+  type: Method
+  source:
+    id: DiffuseComponent
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    startLine: 92
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nMethod for calculation the diffuse lighting component.\n"
+  example: []
+  syntax:
+    content: public static string DiffuseComponent()
+    return:
+      type: System.String
+    content.vb: Public Shared Function DiffuseComponent As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFDiffuseComponent
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFDiffuseComponent
+  id: BRDFDiffuseComponent
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: BRDFDiffuseComponent()
+  nameWithType: Lighting.BRDFDiffuseComponent()
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFDiffuseComponent()
+  type: Method
+  source:
+    id: BRDFDiffuseComponent
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    startLine: 109
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nMethod for calculation the diffuse lighting component.\nReplaces the standard diffuse calculation with the one introduced in [Burley 2012, &quot;Physically-Based Shading at Disney&quot;].\n"
+  example: []
+  syntax:
+    content: public static string BRDFDiffuseComponent()
+    return:
+      type: System.String
+    content.vb: Public Shared Function BRDFDiffuseComponent As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFDiffuseComponent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.SpecularComponent
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.SpecularComponent
+  id: SpecularComponent
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: SpecularComponent()
+  nameWithType: Lighting.SpecularComponent()
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.SpecularComponent()
+  type: Method
+  source:
+    id: SpecularComponent
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    startLine: 144
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nMethod for calculation the specular lighting component.\n"
+  example: []
+  syntax:
+    content: public static string SpecularComponent()
+    return:
+      type: System.String
+    content.vb: Public Shared Function SpecularComponent As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.SpecularComponent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFSpecularComponent
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFSpecularComponent
+  id: BRDFSpecularComponent
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: BRDFSpecularComponent()
+  nameWithType: Lighting.BRDFSpecularComponent()
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFSpecularComponent()
+  type: Method
+  source:
+    id: BRDFSpecularComponent
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    startLine: 171
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nMethod for calculation the specular lighting component.\nReplaces the standard specular calculation with the Cook-Torrance calculation.\n"
+  example: []
+  syntax:
+    content: public static string BRDFSpecularComponent()
+    return:
+      type: System.String
+    content.vb: Public Shared Function BRDFSpecularComponent As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFSpecularComponent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationPointComponent
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationPointComponent
+  id: AttenuationPointComponent
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: AttenuationPointComponent()
+  nameWithType: Lighting.AttenuationPointComponent()
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationPointComponent()
+  type: Method
+  source:
+    id: AttenuationPointComponent
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    startLine: 218
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nCalculates the attenuation of a point light.\n"
+  example: []
+  syntax:
+    content: public static string AttenuationPointComponent()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function AttenuationPointComponent As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationPointComponent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationConeComponent
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationConeComponent
+  id: AttenuationConeComponent
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: AttenuationConeComponent()
+  nameWithType: Lighting.AttenuationConeComponent()
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationConeComponent()
+  type: Method
+  source:
+    id: AttenuationConeComponent
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    startLine: 235
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nCalculates the cone component of the attenuation of a spot light.\n"
+  example: []
+  syntax:
+    content: public static string AttenuationConeComponent()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function AttenuationConeComponent As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationConeComponent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightForward(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightForward(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  id: ApplyLightForward(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: ApplyLightForward(LightingSetupFlags)
+  nameWithType: Lighting.ApplyLightForward(LightingSetupFlags)
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightForward(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
+  type: Method
+  source:
+    id: ApplyLightForward
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    startLine: 346
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nWraps all the lighting methods into a single one.\n"
+  example: []
+  syntax:
+    content: public static string ApplyLightForward(LightingSetupFlags setup)
+    parameters:
+    - id: setup
+      type: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+    return:
+      type: System.String
+    content.vb: Public Shared Function ApplyLightForward(setup As LightingSetupFlags) As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightForward*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightDeferred(Fusee.Engine.Core.Scene.Light,System.Boolean,System.Int32,System.Boolean)
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightDeferred(Fusee.Engine.Core.Scene.Light,System.Boolean,System.Int32,System.Boolean)
+  id: ApplyLightDeferred(Fusee.Engine.Core.Scene.Light,System.Boolean,System.Int32,System.Boolean)
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: ApplyLightDeferred(Light, Boolean, Int32, Boolean)
+  nameWithType: Lighting.ApplyLightDeferred(Light, Boolean, Int32, Boolean)
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightDeferred(Fusee.Engine.Core.Scene.Light, System.Boolean, System.Int32, System.Boolean)
+  type: Method
+  source:
+    id: ApplyLightDeferred
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    startLine: 430
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nWraps all the lighting methods into a single one. For deferred rendering, this equals the &quot;main&quot; method.\n"
+  example: []
+  syntax:
+    content: public static string ApplyLightDeferred(Light lc, bool isCascaded = false, int numberOfCascades = 0, bool debugCascades = false)
+    parameters:
+    - id: lc
+      type: Fusee.Engine.Core.Scene.Light
+    - id: isCascaded
+      type: System.Boolean
+    - id: numberOfCascades
+      type: System.Int32
+    - id: debugCascades
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: Public Shared Function ApplyLightDeferred(lc As Light, isCascaded As Boolean = False, numberOfCascades As Integer = 0, debugCascades As Boolean = False) As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightDeferred*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculation
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculation
+  id: ShadowCalculation
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: ShadowCalculation()
+  nameWithType: Lighting.ShadowCalculation()
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculation()
+  type: Method
+  source:
+    id: ShadowCalculation
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    startLine: 628
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nCreates the method for calculating whether a fragment is in shadow or not, by using a shadow map (sampler2D).\n"
+  example: []
+  syntax:
+    content: public static string ShadowCalculation()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function ShadowCalculation As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculation*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCascaded
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCascaded
+  id: ShadowCalculationCascaded
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: ShadowCalculationCascaded()
+  nameWithType: Lighting.ShadowCalculationCascaded()
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCascaded()
+  type: Method
+  source:
+    id: ShadowCalculationCascaded
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    startLine: 679
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nCreates the method for calculating whether a fragment is in shadow or not, by using a shadow map (sampler2D).\n"
+  example: []
+  syntax:
+    content: public static string ShadowCalculationCascaded()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function ShadowCalculationCascaded As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCascaded*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCubeMap
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCubeMap
+  id: ShadowCalculationCubeMap
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: ShadowCalculationCubeMap()
+  nameWithType: Lighting.ShadowCalculationCubeMap()
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCubeMap()
+  type: Method
+  source:
+    id: ShadowCalculationCubeMap
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    startLine: 728
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nCreates the method for calculating whether a fragment is in shadow or not, by using a shadow map (sampler2DCube).\nThe cube map is used when calculating the shadows for a point light.\n"
+  example: []
+  syntax:
+    content: public static string ShadowCalculationCubeMap()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function ShadowCalculationCubeMap As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCubeMap*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Fusee.Engine.Core.ShaderShards.Fragment
+  commentId: N:Fusee.Engine.Core.ShaderShards.Fragment
+  name: Fusee.Engine.Core.ShaderShards.Fragment
+  nameWithType: Fusee.Engine.Core.ShaderShards.Fragment
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  commentId: T:Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  parent: Fusee.Engine.Core.ShaderShards
+  name: LightingSetupFlags
+  nameWithType: LightingSetupFlags
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AssembleLightingMethods*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AssembleLightingMethods
+  name: AssembleLightingMethods
+  nameWithType: Lighting.AssembleLightingMethods
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AssembleLightingMethods
+- uid: Fusee.Engine.Core.ShaderShards
+  commentId: N:Fusee.Engine.Core.ShaderShards
+  name: Fusee.Engine.Core.ShaderShards
+  nameWithType: Fusee.Engine.Core.ShaderShards
+  fullName: Fusee.Engine.Core.ShaderShards
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent
+  name: DiffuseComponent
+  nameWithType: Lighting.DiffuseComponent
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFDiffuseComponent*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFDiffuseComponent
+  name: BRDFDiffuseComponent
+  nameWithType: Lighting.BRDFDiffuseComponent
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFDiffuseComponent
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.SpecularComponent*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.SpecularComponent
+  name: SpecularComponent
+  nameWithType: Lighting.SpecularComponent
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.SpecularComponent
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFSpecularComponent*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFSpecularComponent
+  name: BRDFSpecularComponent
+  nameWithType: Lighting.BRDFSpecularComponent
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFSpecularComponent
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationPointComponent*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationPointComponent
+  name: AttenuationPointComponent
+  nameWithType: Lighting.AttenuationPointComponent
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationPointComponent
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationConeComponent*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationConeComponent
+  name: AttenuationConeComponent
+  nameWithType: Lighting.AttenuationConeComponent
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationConeComponent
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightForward*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightForward
+  name: ApplyLightForward
+  nameWithType: Lighting.ApplyLightForward
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightForward
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightDeferred*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightDeferred
+  name: ApplyLightDeferred
+  nameWithType: Lighting.ApplyLightDeferred
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightDeferred
+- uid: Fusee.Engine.Core.Scene.Light
+  commentId: T:Fusee.Engine.Core.Scene.Light
+  parent: Fusee.Engine.Core.Scene
+  name: Light
+  nameWithType: Light
+  fullName: Fusee.Engine.Core.Scene.Light
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculation*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculation
+  name: ShadowCalculation
+  nameWithType: Lighting.ShadowCalculation
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculation
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCascaded*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCascaded
+  name: ShadowCalculationCascaded
+  nameWithType: Lighting.ShadowCalculationCascaded
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCascaded
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCubeMap*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCubeMap
+  name: ShadowCalculationCubeMap
+  nameWithType: Lighting.ShadowCalculationCubeMap
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCubeMap

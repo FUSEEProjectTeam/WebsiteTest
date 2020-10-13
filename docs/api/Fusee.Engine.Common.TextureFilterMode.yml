@@ -5,12 +5,12 @@ items:
   id: TextureFilterMode
   parent: Fusee.Engine.Common
   children:
-  - Fusee.Engine.Common.TextureFilterMode.LINEAR
-  - Fusee.Engine.Common.TextureFilterMode.LINEAR_MIPMAP_LINEAR
-  - Fusee.Engine.Common.TextureFilterMode.LINEAR_MIPMAP_NEAREST
-  - Fusee.Engine.Common.TextureFilterMode.NEAREST
-  - Fusee.Engine.Common.TextureFilterMode.NEAREST_MIPMAP_LINEAR
-  - Fusee.Engine.Common.TextureFilterMode.NEAREST_MIPMAP_NEAREST
+  - Fusee.Engine.Common.TextureFilterMode.Linear
+  - Fusee.Engine.Common.TextureFilterMode.LinearMipmapLinear
+  - Fusee.Engine.Common.TextureFilterMode.LinearMipmapNearest
+  - Fusee.Engine.Common.TextureFilterMode.Nearest
+  - Fusee.Engine.Common.TextureFilterMode.NearestMipmapLinear
+  - Fusee.Engine.Common.TextureFilterMode.NearestMipmapNearest
   langs:
   - csharp
   - vb
@@ -21,7 +21,7 @@ items:
   source:
     id: TextureFilterMode
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
-    startLine: 75
+    startLine: 80
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -36,28 +36,28 @@ items:
   modifiers.vb:
   - Public
   - Enum
-- uid: Fusee.Engine.Common.TextureFilterMode.NEAREST
-  commentId: F:Fusee.Engine.Common.TextureFilterMode.NEAREST
-  id: NEAREST
+- uid: Fusee.Engine.Common.TextureFilterMode.Nearest
+  commentId: F:Fusee.Engine.Common.TextureFilterMode.Nearest
+  id: Nearest
   parent: Fusee.Engine.Common.TextureFilterMode
   langs:
   - csharp
   - vb
-  name: NEAREST
-  nameWithType: TextureFilterMode.NEAREST
-  fullName: Fusee.Engine.Common.TextureFilterMode.NEAREST
+  name: Nearest
+  nameWithType: TextureFilterMode.Nearest
+  fullName: Fusee.Engine.Common.TextureFilterMode.Nearest
   type: Field
   source:
-    id: NEAREST
+    id: Nearest
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
-    startLine: 80
+    startLine: 85
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
   summary: "\nDefault texture filtering method. When set, the pixel which center is closest to the texture coordinate is selected. \n"
   example: []
   syntax:
-    content: NEAREST = 0
+    content: Nearest = 0
     return:
       type: Fusee.Engine.Common.TextureFilterMode
   modifiers.csharp:
@@ -66,28 +66,28 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.TextureFilterMode.LINEAR
-  commentId: F:Fusee.Engine.Common.TextureFilterMode.LINEAR
-  id: LINEAR
+- uid: Fusee.Engine.Common.TextureFilterMode.Linear
+  commentId: F:Fusee.Engine.Common.TextureFilterMode.Linear
+  id: Linear
   parent: Fusee.Engine.Common.TextureFilterMode
   langs:
   - csharp
   - vb
-  name: LINEAR
-  nameWithType: TextureFilterMode.LINEAR
-  fullName: Fusee.Engine.Common.TextureFilterMode.LINEAR
+  name: Linear
+  nameWithType: TextureFilterMode.Linear
+  fullName: Fusee.Engine.Common.TextureFilterMode.Linear
   type: Field
   source:
-    id: LINEAR
+    id: Linear
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
-    startLine: 84
+    startLine: 89
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
   summary: "\nBilinear filtering.An interpolated value from the texture coordinate&apos;s neighboring texels, approximating a color between the texels, is taken.\n"
   example: []
   syntax:
-    content: LINEAR = 1
+    content: Linear = 1
     return:
       type: Fusee.Engine.Common.TextureFilterMode
   modifiers.csharp:
@@ -96,28 +96,28 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.TextureFilterMode.NEAREST_MIPMAP_NEAREST
-  commentId: F:Fusee.Engine.Common.TextureFilterMode.NEAREST_MIPMAP_NEAREST
-  id: NEAREST_MIPMAP_NEAREST
+- uid: Fusee.Engine.Common.TextureFilterMode.NearestMipmapNearest
+  commentId: F:Fusee.Engine.Common.TextureFilterMode.NearestMipmapNearest
+  id: NearestMipmapNearest
   parent: Fusee.Engine.Common.TextureFilterMode
   langs:
   - csharp
   - vb
-  name: NEAREST_MIPMAP_NEAREST
-  nameWithType: TextureFilterMode.NEAREST_MIPMAP_NEAREST
-  fullName: Fusee.Engine.Common.TextureFilterMode.NEAREST_MIPMAP_NEAREST
+  name: NearestMipmapNearest
+  nameWithType: TextureFilterMode.NearestMipmapNearest
+  fullName: Fusee.Engine.Common.TextureFilterMode.NearestMipmapNearest
   type: Field
   source:
-    id: NEAREST_MIPMAP_NEAREST
+    id: NearestMipmapNearest
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
-    startLine: 88
+    startLine: 93
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
   summary: "\nTakes the nearest mipmap to match the pixel size and uses nearest neighbor interpolation for texture sampling.\n"
   example: []
   syntax:
-    content: NEAREST_MIPMAP_NEAREST = 2
+    content: NearestMipmapNearest = 2
     return:
       type: Fusee.Engine.Common.TextureFilterMode
   modifiers.csharp:
@@ -126,28 +126,28 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.TextureFilterMode.LINEAR_MIPMAP_NEAREST
-  commentId: F:Fusee.Engine.Common.TextureFilterMode.LINEAR_MIPMAP_NEAREST
-  id: LINEAR_MIPMAP_NEAREST
+- uid: Fusee.Engine.Common.TextureFilterMode.LinearMipmapNearest
+  commentId: F:Fusee.Engine.Common.TextureFilterMode.LinearMipmapNearest
+  id: LinearMipmapNearest
   parent: Fusee.Engine.Common.TextureFilterMode
   langs:
   - csharp
   - vb
-  name: LINEAR_MIPMAP_NEAREST
-  nameWithType: TextureFilterMode.LINEAR_MIPMAP_NEAREST
-  fullName: Fusee.Engine.Common.TextureFilterMode.LINEAR_MIPMAP_NEAREST
+  name: LinearMipmapNearest
+  nameWithType: TextureFilterMode.LinearMipmapNearest
+  fullName: Fusee.Engine.Common.TextureFilterMode.LinearMipmapNearest
   type: Field
   source:
-    id: LINEAR_MIPMAP_NEAREST
+    id: LinearMipmapNearest
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
-    startLine: 92
+    startLine: 97
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
   summary: "\nTakes the nearest mipmap level and samples using linear interpolation. \n"
   example: []
   syntax:
-    content: LINEAR_MIPMAP_NEAREST = 3
+    content: LinearMipmapNearest = 3
     return:
       type: Fusee.Engine.Common.TextureFilterMode
   modifiers.csharp:
@@ -156,28 +156,28 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.TextureFilterMode.NEAREST_MIPMAP_LINEAR
-  commentId: F:Fusee.Engine.Common.TextureFilterMode.NEAREST_MIPMAP_LINEAR
-  id: NEAREST_MIPMAP_LINEAR
+- uid: Fusee.Engine.Common.TextureFilterMode.NearestMipmapLinear
+  commentId: F:Fusee.Engine.Common.TextureFilterMode.NearestMipmapLinear
+  id: NearestMipmapLinear
   parent: Fusee.Engine.Common.TextureFilterMode
   langs:
   - csharp
   - vb
-  name: NEAREST_MIPMAP_LINEAR
-  nameWithType: TextureFilterMode.NEAREST_MIPMAP_LINEAR
-  fullName: Fusee.Engine.Common.TextureFilterMode.NEAREST_MIPMAP_LINEAR
+  name: NearestMipmapLinear
+  nameWithType: TextureFilterMode.NearestMipmapLinear
+  fullName: Fusee.Engine.Common.TextureFilterMode.NearestMipmapLinear
   type: Field
   source:
-    id: NEAREST_MIPMAP_LINEAR
+    id: NearestMipmapLinear
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
-    startLine: 96
+    startLine: 101
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
   summary: "\nLinearly interpolates between the two mipmaps that most closely match the size of a pixel and samples via nearest neighbor interpolation.\n"
   example: []
   syntax:
-    content: NEAREST_MIPMAP_LINEAR = 4
+    content: NearestMipmapLinear = 4
     return:
       type: Fusee.Engine.Common.TextureFilterMode
   modifiers.csharp:
@@ -186,28 +186,28 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.TextureFilterMode.LINEAR_MIPMAP_LINEAR
-  commentId: F:Fusee.Engine.Common.TextureFilterMode.LINEAR_MIPMAP_LINEAR
-  id: LINEAR_MIPMAP_LINEAR
+- uid: Fusee.Engine.Common.TextureFilterMode.LinearMipmapLinear
+  commentId: F:Fusee.Engine.Common.TextureFilterMode.LinearMipmapLinear
+  id: LinearMipmapLinear
   parent: Fusee.Engine.Common.TextureFilterMode
   langs:
   - csharp
   - vb
-  name: LINEAR_MIPMAP_LINEAR
-  nameWithType: TextureFilterMode.LINEAR_MIPMAP_LINEAR
-  fullName: Fusee.Engine.Common.TextureFilterMode.LINEAR_MIPMAP_LINEAR
+  name: LinearMipmapLinear
+  nameWithType: TextureFilterMode.LinearMipmapLinear
+  fullName: Fusee.Engine.Common.TextureFilterMode.LinearMipmapLinear
   type: Field
   source:
-    id: LINEAR_MIPMAP_LINEAR
+    id: LinearMipmapLinear
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
-    startLine: 100
+    startLine: 105
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
   summary: "\nLinearly interpolates between the two closest mipmaps and samples the texture via linear interpolation.\n"
   example: []
   syntax:
-    content: LINEAR_MIPMAP_LINEAR = 5
+    content: LinearMipmapLinear = 5
     return:
       type: Fusee.Engine.Common.TextureFilterMode
   modifiers.csharp:

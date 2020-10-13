@@ -1,0 +1,255 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Effects.IFxParamDeclaration
+  commentId: T:Fusee.Engine.Core.Effects.IFxParamDeclaration
+  id: IFxParamDeclaration
+  parent: Fusee.Engine.Core.Effects
+  children:
+  - Fusee.Engine.Core.Effects.IFxParamDeclaration.Name
+  - Fusee.Engine.Core.Effects.IFxParamDeclaration.ParamType
+  - Fusee.Engine.Core.Effects.IFxParamDeclaration.UsedInShaders
+  langs:
+  - csharp
+  - vb
+  name: IFxParamDeclaration
+  nameWithType: IFxParamDeclaration
+  fullName: Fusee.Engine.Core.Effects.IFxParamDeclaration
+  type: Interface
+  source:
+    id: IFxParamDeclaration
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\FxParamDeclaration.cs
+    startLine: 9
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nA parameter declaration contains the name and type of the shader parameter, as well as a flag, that indicates in which types of shaders this parameter is used.\n"
+  example: []
+  syntax:
+    content: public interface IFxParamDeclaration
+    content.vb: Public Interface IFxParamDeclaration
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Fusee.Engine.Core.Effects.IFxParamDeclaration.Name
+  commentId: P:Fusee.Engine.Core.Effects.IFxParamDeclaration.Name
+  id: Name
+  parent: Fusee.Engine.Core.Effects.IFxParamDeclaration
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IFxParamDeclaration.Name
+  fullName: Fusee.Engine.Core.Effects.IFxParamDeclaration.Name
+  type: Property
+  source:
+    id: Name
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\FxParamDeclaration.cs
+    startLine: 14
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe name of the parameter.\n"
+  example: []
+  syntax:
+    content: string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Name As String
+  overload: Fusee.Engine.Core.Effects.IFxParamDeclaration.Name*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Fusee.Engine.Core.Effects.IFxParamDeclaration.ParamType
+  commentId: P:Fusee.Engine.Core.Effects.IFxParamDeclaration.ParamType
+  id: ParamType
+  parent: Fusee.Engine.Core.Effects.IFxParamDeclaration
+  langs:
+  - csharp
+  - vb
+  name: ParamType
+  nameWithType: IFxParamDeclaration.ParamType
+  fullName: Fusee.Engine.Core.Effects.IFxParamDeclaration.ParamType
+  type: Property
+  source:
+    id: ParamType
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\FxParamDeclaration.cs
+    startLine: 19
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe Type of the parameter.\n"
+  example: []
+  syntax:
+    content: Type ParamType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: ReadOnly Property ParamType As Type
+  overload: Fusee.Engine.Core.Effects.IFxParamDeclaration.ParamType*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Fusee.Engine.Core.Effects.IFxParamDeclaration.UsedInShaders
+  commentId: P:Fusee.Engine.Core.Effects.IFxParamDeclaration.UsedInShaders
+  id: UsedInShaders
+  parent: Fusee.Engine.Core.Effects.IFxParamDeclaration
+  langs:
+  - csharp
+  - vb
+  name: UsedInShaders
+  nameWithType: IFxParamDeclaration.UsedInShaders
+  fullName: Fusee.Engine.Core.Effects.IFxParamDeclaration.UsedInShaders
+  type: Property
+  source:
+    id: UsedInShaders
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\FxParamDeclaration.cs
+    startLine: 24
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nDefines in which type of shader this parameter is used in.\n"
+  example: []
+  syntax:
+    content: IEnumerable<ShaderCategory> UsedInShaders { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Effects.ShaderCategory}
+    content.vb: ReadOnly Property UsedInShaders As IEnumerable(Of ShaderCategory)
+  overload: Fusee.Engine.Core.Effects.IFxParamDeclaration.UsedInShaders*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Fusee.Engine.Core.Effects
+  commentId: N:Fusee.Engine.Core.Effects
+  name: Fusee.Engine.Core.Effects
+  nameWithType: Fusee.Engine.Core.Effects
+  fullName: Fusee.Engine.Core.Effects
+- uid: Fusee.Engine.Core.Effects.IFxParamDeclaration.Name*
+  commentId: Overload:Fusee.Engine.Core.Effects.IFxParamDeclaration.Name
+  name: Name
+  nameWithType: IFxParamDeclaration.Name
+  fullName: Fusee.Engine.Core.Effects.IFxParamDeclaration.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.Effects.IFxParamDeclaration.ParamType*
+  commentId: Overload:Fusee.Engine.Core.Effects.IFxParamDeclaration.ParamType
+  name: ParamType
+  nameWithType: IFxParamDeclaration.ParamType
+  fullName: Fusee.Engine.Core.Effects.IFxParamDeclaration.ParamType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Fusee.Engine.Core.Effects.IFxParamDeclaration.UsedInShaders*
+  commentId: Overload:Fusee.Engine.Core.Effects.IFxParamDeclaration.UsedInShaders
+  name: UsedInShaders
+  nameWithType: IFxParamDeclaration.UsedInShaders
+  fullName: Fusee.Engine.Core.Effects.IFxParamDeclaration.UsedInShaders
+- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Effects.ShaderCategory}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Engine.Core.Effects.ShaderCategory}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<ShaderCategory>
+  nameWithType: IEnumerable<ShaderCategory>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Engine.Core.Effects.ShaderCategory>
+  nameWithType.vb: IEnumerable(Of ShaderCategory)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Engine.Core.Effects.ShaderCategory)
+  name.vb: IEnumerable(Of ShaderCategory)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Effects.ShaderCategory
+    name: ShaderCategory
+    nameWithType: ShaderCategory
+    fullName: Fusee.Engine.Core.Effects.ShaderCategory
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Effects.ShaderCategory
+    name: ShaderCategory
+    nameWithType: ShaderCategory
+    fullName: Fusee.Engine.Core.Effects.ShaderCategory
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

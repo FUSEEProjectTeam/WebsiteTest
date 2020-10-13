@@ -5,12 +5,13 @@ items:
   id: RenderTargetTextureTypes
   parent: Fusee.Engine.Common
   children:
-  - Fusee.Engine.Common.RenderTargetTextureTypes.G_ALBEDO
-  - Fusee.Engine.Common.RenderTargetTextureTypes.G_DEPTH
-  - Fusee.Engine.Common.RenderTargetTextureTypes.G_NORMAL
-  - Fusee.Engine.Common.RenderTargetTextureTypes.G_POSITION
-  - Fusee.Engine.Common.RenderTargetTextureTypes.G_SPECULAR
-  - Fusee.Engine.Common.RenderTargetTextureTypes.G_SSAO
+  - Fusee.Engine.Common.RenderTargetTextureTypes.Albedo
+  - Fusee.Engine.Common.RenderTargetTextureTypes.Depth
+  - Fusee.Engine.Common.RenderTargetTextureTypes.Emission
+  - Fusee.Engine.Common.RenderTargetTextureTypes.Normal
+  - Fusee.Engine.Common.RenderTargetTextureTypes.Position
+  - Fusee.Engine.Common.RenderTargetTextureTypes.Specular
+  - Fusee.Engine.Common.RenderTargetTextureTypes.Ssao
   langs:
   - csharp
   - vb
@@ -36,19 +37,19 @@ items:
   modifiers.vb:
   - Public
   - Enum
-- uid: Fusee.Engine.Common.RenderTargetTextureTypes.G_POSITION
-  commentId: F:Fusee.Engine.Common.RenderTargetTextureTypes.G_POSITION
-  id: G_POSITION
+- uid: Fusee.Engine.Common.RenderTargetTextureTypes.Position
+  commentId: F:Fusee.Engine.Common.RenderTargetTextureTypes.Position
+  id: Position
   parent: Fusee.Engine.Common.RenderTargetTextureTypes
   langs:
   - csharp
   - vb
-  name: G_POSITION
-  nameWithType: RenderTargetTextureTypes.G_POSITION
-  fullName: Fusee.Engine.Common.RenderTargetTextureTypes.G_POSITION
+  name: Position
+  nameWithType: RenderTargetTextureTypes.Position
+  fullName: Fusee.Engine.Common.RenderTargetTextureTypes.Position
   type: Field
   source:
-    id: G_POSITION
+    id: Position
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\MultipassEnums.cs
     startLine: 10
   assemblies:
@@ -57,7 +58,7 @@ items:
   summary: "\nPosition texture.\n"
   example: []
   syntax:
-    content: G_POSITION = 0
+    content: Position = 0
     return:
       type: Fusee.Engine.Common.RenderTargetTextureTypes
   modifiers.csharp:
@@ -66,19 +67,19 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.RenderTargetTextureTypes.G_ALBEDO
-  commentId: F:Fusee.Engine.Common.RenderTargetTextureTypes.G_ALBEDO
-  id: G_ALBEDO
+- uid: Fusee.Engine.Common.RenderTargetTextureTypes.Albedo
+  commentId: F:Fusee.Engine.Common.RenderTargetTextureTypes.Albedo
+  id: Albedo
   parent: Fusee.Engine.Common.RenderTargetTextureTypes
   langs:
   - csharp
   - vb
-  name: G_ALBEDO
-  nameWithType: RenderTargetTextureTypes.G_ALBEDO
-  fullName: Fusee.Engine.Common.RenderTargetTextureTypes.G_ALBEDO
+  name: Albedo
+  nameWithType: RenderTargetTextureTypes.Albedo
+  fullName: Fusee.Engine.Common.RenderTargetTextureTypes.Albedo
   type: Field
   source:
-    id: G_ALBEDO
+    id: Albedo
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\MultipassEnums.cs
     startLine: 15
   assemblies:
@@ -87,7 +88,7 @@ items:
   summary: "\nAlbedo texture (specular reflection in alpha channel).\n"
   example: []
   syntax:
-    content: G_ALBEDO = 1
+    content: Albedo = 1
     return:
       type: Fusee.Engine.Common.RenderTargetTextureTypes
   modifiers.csharp:
@@ -96,19 +97,19 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.RenderTargetTextureTypes.G_NORMAL
-  commentId: F:Fusee.Engine.Common.RenderTargetTextureTypes.G_NORMAL
-  id: G_NORMAL
+- uid: Fusee.Engine.Common.RenderTargetTextureTypes.Normal
+  commentId: F:Fusee.Engine.Common.RenderTargetTextureTypes.Normal
+  id: Normal
   parent: Fusee.Engine.Common.RenderTargetTextureTypes
   langs:
   - csharp
   - vb
-  name: G_NORMAL
-  nameWithType: RenderTargetTextureTypes.G_NORMAL
-  fullName: Fusee.Engine.Common.RenderTargetTextureTypes.G_NORMAL
+  name: Normal
+  nameWithType: RenderTargetTextureTypes.Normal
+  fullName: Fusee.Engine.Common.RenderTargetTextureTypes.Normal
   type: Field
   source:
-    id: G_NORMAL
+    id: Normal
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\MultipassEnums.cs
     startLine: 20
   assemblies:
@@ -117,7 +118,7 @@ items:
   summary: "\nNormal texture.\n"
   example: []
   syntax:
-    content: G_NORMAL = 2
+    content: Normal = 2
     return:
       type: Fusee.Engine.Common.RenderTargetTextureTypes
   modifiers.csharp:
@@ -126,19 +127,19 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.RenderTargetTextureTypes.G_DEPTH
-  commentId: F:Fusee.Engine.Common.RenderTargetTextureTypes.G_DEPTH
-  id: G_DEPTH
+- uid: Fusee.Engine.Common.RenderTargetTextureTypes.Depth
+  commentId: F:Fusee.Engine.Common.RenderTargetTextureTypes.Depth
+  id: Depth
   parent: Fusee.Engine.Common.RenderTargetTextureTypes
   langs:
   - csharp
   - vb
-  name: G_DEPTH
-  nameWithType: RenderTargetTextureTypes.G_DEPTH
-  fullName: Fusee.Engine.Common.RenderTargetTextureTypes.G_DEPTH
+  name: Depth
+  nameWithType: RenderTargetTextureTypes.Depth
+  fullName: Fusee.Engine.Common.RenderTargetTextureTypes.Depth
   type: Field
   source:
-    id: G_DEPTH
+    id: Depth
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\MultipassEnums.cs
     startLine: 25
   assemblies:
@@ -147,7 +148,7 @@ items:
   summary: "\nDepth texture.\n"
   example: []
   syntax:
-    content: G_DEPTH = 3
+    content: Depth = 3
     return:
       type: Fusee.Engine.Common.RenderTargetTextureTypes
   modifiers.csharp:
@@ -156,19 +157,19 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.RenderTargetTextureTypes.G_SSAO
-  commentId: F:Fusee.Engine.Common.RenderTargetTextureTypes.G_SSAO
-  id: G_SSAO
+- uid: Fusee.Engine.Common.RenderTargetTextureTypes.Ssao
+  commentId: F:Fusee.Engine.Common.RenderTargetTextureTypes.Ssao
+  id: Ssao
   parent: Fusee.Engine.Common.RenderTargetTextureTypes
   langs:
   - csharp
   - vb
-  name: G_SSAO
-  nameWithType: RenderTargetTextureTypes.G_SSAO
-  fullName: Fusee.Engine.Common.RenderTargetTextureTypes.G_SSAO
+  name: Ssao
+  nameWithType: RenderTargetTextureTypes.Ssao
+  fullName: Fusee.Engine.Common.RenderTargetTextureTypes.Ssao
   type: Field
   source:
-    id: G_SSAO
+    id: Ssao
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\MultipassEnums.cs
     startLine: 30
   assemblies:
@@ -177,7 +178,7 @@ items:
   summary: "\nSSAO texture (stores occlusion).\n"
   example: []
   syntax:
-    content: G_SSAO = 4
+    content: Ssao = 4
     return:
       type: Fusee.Engine.Common.RenderTargetTextureTypes
   modifiers.csharp:
@@ -186,19 +187,19 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.RenderTargetTextureTypes.G_SPECULAR
-  commentId: F:Fusee.Engine.Common.RenderTargetTextureTypes.G_SPECULAR
-  id: G_SPECULAR
+- uid: Fusee.Engine.Common.RenderTargetTextureTypes.Specular
+  commentId: F:Fusee.Engine.Common.RenderTargetTextureTypes.Specular
+  id: Specular
   parent: Fusee.Engine.Common.RenderTargetTextureTypes
   langs:
   - csharp
   - vb
-  name: G_SPECULAR
-  nameWithType: RenderTargetTextureTypes.G_SPECULAR
-  fullName: Fusee.Engine.Common.RenderTargetTextureTypes.G_SPECULAR
+  name: Specular
+  nameWithType: RenderTargetTextureTypes.Specular
+  fullName: Fusee.Engine.Common.RenderTargetTextureTypes.Specular
   type: Field
   source:
-    id: G_SPECULAR
+    id: Specular
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\MultipassEnums.cs
     startLine: 35
   assemblies:
@@ -207,7 +208,37 @@ items:
   summary: "\nSpecular texture.\n"
   example: []
   syntax:
-    content: G_SPECULAR = 5
+    content: Specular = 5
+    return:
+      type: Fusee.Engine.Common.RenderTargetTextureTypes
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Common.RenderTargetTextureTypes.Emission
+  commentId: F:Fusee.Engine.Common.RenderTargetTextureTypes.Emission
+  id: Emission
+  parent: Fusee.Engine.Common.RenderTargetTextureTypes
+  langs:
+  - csharp
+  - vb
+  name: Emission
+  nameWithType: RenderTargetTextureTypes.Emission
+  fullName: Fusee.Engine.Common.RenderTargetTextureTypes.Emission
+  type: Field
+  source:
+    id: Emission
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\MultipassEnums.cs
+    startLine: 40
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nContains the emissive color.\n"
+  example: []
+  syntax:
+    content: Emission = 6
     return:
       type: Fusee.Engine.Common.RenderTargetTextureTypes
   modifiers.csharp:

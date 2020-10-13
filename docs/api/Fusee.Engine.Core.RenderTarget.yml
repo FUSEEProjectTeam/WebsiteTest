@@ -17,6 +17,7 @@ items:
   - Fusee.Engine.Core.RenderTarget.RenderTextures
   - Fusee.Engine.Core.RenderTarget.SetAlbedoSpecularTex
   - Fusee.Engine.Core.RenderTarget.SetDepthTex(Fusee.Engine.Common.TextureCompareMode,Fusee.Engine.Common.Compare)
+  - Fusee.Engine.Core.RenderTarget.SetEmissiveTex
   - Fusee.Engine.Core.RenderTarget.SetNormalTex
   - Fusee.Engine.Core.RenderTarget.SetPositionTex
   - Fusee.Engine.Core.RenderTarget.SetSpecularTex
@@ -506,13 +507,13 @@ items:
   summary: "\nGenerates a depth texture and sets it at the correct position in the RenderTextures Array.\n"
   example: []
   syntax:
-    content: public void SetDepthTex(TextureCompareMode compareMode = TextureCompareMode.NONE, Compare compareFunc = Compare.Less)
+    content: public void SetDepthTex(TextureCompareMode compareMode = TextureCompareMode.None, Compare compareFunc = Compare.Less)
     parameters:
     - id: compareMode
       type: Fusee.Engine.Common.TextureCompareMode
     - id: compareFunc
       type: Fusee.Engine.Common.Compare
-    content.vb: Public Sub SetDepthTex(compareMode As TextureCompareMode = TextureCompareMode.NONE, compareFunc As Compare = Compare.Less)
+    content.vb: Public Sub SetDepthTex(compareMode As TextureCompareMode = TextureCompareMode.None, compareFunc As Compare = Compare.Less)
   overload: Fusee.Engine.Core.RenderTarget.SetDepthTex*
   modifiers.csharp:
   - public
@@ -536,7 +537,7 @@ items:
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nGenerates a ssao texture and sets it at the correct position in the RenderTextures Array.\n"
+  summary: "\nGenerates a SSAO texture and sets it at the correct position in the RenderTextures Array.\n"
   example: []
   syntax:
     content: public void SetSSAOTex()
@@ -574,6 +575,34 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: Fusee.Engine.Core.RenderTarget.SetEmissiveTex
+  commentId: M:Fusee.Engine.Core.RenderTarget.SetEmissiveTex
+  id: SetEmissiveTex
+  parent: Fusee.Engine.Core.RenderTarget
+  langs:
+  - csharp
+  - vb
+  name: SetEmissiveTex()
+  nameWithType: RenderTarget.SetEmissiveTex()
+  fullName: Fusee.Engine.Core.RenderTarget.SetEmissiveTex()
+  type: Method
+  source:
+    id: SetEmissiveTex
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderTarget.cs
+    startLine: 126
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nGenerates a specular texture and sets it at the correct position in the RenderTextures Array.\n"
+  example: []
+  syntax:
+    content: public void SetEmissiveTex()
+    content.vb: Public Sub SetEmissiveTex
+  overload: Fusee.Engine.Core.RenderTarget.SetEmissiveTex*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Fusee.Engine.Core.RenderTarget.Dispose
   commentId: M:Fusee.Engine.Core.RenderTarget.Dispose
   id: Dispose
@@ -588,7 +617,7 @@ items:
   source:
     id: Dispose
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderTarget.cs
-    startLine: 126
+    startLine: 134
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -618,7 +647,7 @@ items:
   source:
     id: Dispose
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderTarget.cs
-    startLine: 136
+    startLine: 144
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -652,7 +681,7 @@ items:
   source:
     id: Finalize
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderTarget.cs
-    startLine: 153
+    startLine: 161
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1243,6 +1272,11 @@ references:
   name: SetSpecularTex
   nameWithType: RenderTarget.SetSpecularTex
   fullName: Fusee.Engine.Core.RenderTarget.SetSpecularTex
+- uid: Fusee.Engine.Core.RenderTarget.SetEmissiveTex*
+  commentId: Overload:Fusee.Engine.Core.RenderTarget.SetEmissiveTex
+  name: SetEmissiveTex
+  nameWithType: RenderTarget.SetEmissiveTex
+  fullName: Fusee.Engine.Core.RenderTarget.SetEmissiveTex
 - uid: Fusee.Engine.Core.RenderTarget.Dispose*
   commentId: Overload:Fusee.Engine.Core.RenderTarget.Dispose
   name: Dispose

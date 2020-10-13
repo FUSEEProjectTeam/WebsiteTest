@@ -9,6 +9,7 @@ items:
   - Fusee.Base.Common.ColorFormat.Depth24
   - Fusee.Base.Common.ColorFormat.fRGB16
   - Fusee.Base.Common.ColorFormat.fRGB32
+  - Fusee.Base.Common.ColorFormat.fRGBA16
   - Fusee.Base.Common.ColorFormat.Intensity
   - Fusee.Base.Common.ColorFormat.RGB
   - Fusee.Base.Common.ColorFormat.RGBA
@@ -116,7 +117,7 @@ items:
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
-  summary: "\nUsed for Images containing a single grey-scale value per-pixel. Each pixel consists of one byte.\n"
+  summary: "\nUsed for Images containing a single grayscale value per-pixel. Each pixel consists of one byte.\n"
   example: []
   syntax:
     content: Intensity = 2
@@ -206,10 +207,40 @@ items:
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
-  summary: "\nRGBA float, 16bit.\n"
+  summary: "\nRGB float, 16bit.\n"
   example: []
   syntax:
     content: fRGB16 = 5
+    return:
+      type: Fusee.Base.Common.ColorFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Base.Common.ColorFormat.fRGBA16
+  commentId: F:Fusee.Base.Common.ColorFormat.fRGBA16
+  id: fRGBA16
+  parent: Fusee.Base.Common.ColorFormat
+  langs:
+  - csharp
+  - vb
+  name: fRGBA16
+  nameWithType: ColorFormat.fRGBA16
+  fullName: Fusee.Base.Common.ColorFormat.fRGBA16
+  type: Field
+  source:
+    id: fRGBA16
+    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Common\ColorFormat.cs
+    startLine: 40
+  assemblies:
+  - Fusee.Base.Common
+  namespace: Fusee.Base.Common
+  summary: "\nRGB float, 16bit.\n"
+  example: []
+  syntax:
+    content: fRGBA16 = 6
     return:
       type: Fusee.Base.Common.ColorFormat
   modifiers.csharp:
@@ -232,14 +263,14 @@ items:
   source:
     id: Depth16
     path: C:\Users\test\Documents\fusee\Fusee\src\Base\Common\ColorFormat.cs
-    startLine: 40
+    startLine: 45
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
   summary: "\nUsed for creating depth maps.\n"
   example: []
   syntax:
-    content: Depth16 = 6
+    content: Depth16 = 7
     return:
       type: Fusee.Base.Common.ColorFormat
   modifiers.csharp:
@@ -262,14 +293,14 @@ items:
   source:
     id: Depth24
     path: C:\Users\test\Documents\fusee\Fusee\src\Base\Common\ColorFormat.cs
-    startLine: 45
+    startLine: 50
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
   summary: "\nUsed for creating depth maps.\n"
   example: []
   syntax:
-    content: Depth24 = 7
+    content: Depth24 = 8
     return:
       type: Fusee.Base.Common.ColorFormat
   modifiers.csharp:

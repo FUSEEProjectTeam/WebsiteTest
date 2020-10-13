@@ -17,26 +17,25 @@ items:
   type: Class
   source:
     id: ShaderEffectProtoPixel
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
-    startLine: 312
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    startLine: 297
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.Scene
   summary: "\nA ShaderEffect contains a list of render passes with each pass item being a combination of a set of render states, and Shader Programs (the code running on the GPU).\nIn addition a ShaderEffect contains the actual values for all the shaders&apos; (uniform) variables.\n"
   example: []
   syntax:
-    content: 'public class ShaderEffectProtoPixel : ShaderEffect, IComponent, IDisposable'
+    content: 'public class ShaderEffectProtoPixel : ShaderEffect, IComponent'
     content.vb: >-
       Public Class ShaderEffectProtoPixel
           Inherits ShaderEffect
-          Implements IComponent, IDisposable
+          Implements IComponent
   inheritance:
   - System.Object
   - Fusee.Engine.Core.Scene.SceneComponent
   - Fusee.Engine.Core.Scene.ShaderEffect
   implements:
   - Fusee.Xene.IComponent
-  - System.IDisposable
   inheritedMembers:
   - Fusee.Engine.Core.Scene.ShaderEffect.ParamDecl
   - Fusee.Engine.Core.Scene.ShaderEffect.States
@@ -47,7 +46,6 @@ items:
   - Fusee.Engine.Core.Scene.ShaderEffect.GetEffectParam(System.String)
   - Fusee.Engine.Core.Scene.ShaderEffect.GetEffectParam(System.String,System.Object@)
   - Fusee.Engine.Core.Scene.ShaderEffect.Count
-  - Fusee.Engine.Core.Scene.ShaderEffect.Dispose(System.Boolean)
   - Fusee.Engine.Core.Scene.ShaderEffect.Dispose
   - Fusee.Engine.Core.Scene.SceneComponent.Name
   - System.Object.Equals(System.Object)
@@ -76,8 +74,8 @@ items:
   type: Property
   source:
     id: EffectProps
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
-    startLine: 317
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    startLine: 302
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.Scene
@@ -109,8 +107,8 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
-    startLine: 326
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    startLine: 311
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.Scene
@@ -147,8 +145,8 @@ items:
   type: Method
   source:
     id: CreateFragmentShader
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
-    startLine: 365
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    startLine: 350
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.Scene
@@ -196,13 +194,6 @@ references:
   name: IComponent
   nameWithType: IComponent
   fullName: Fusee.Xene.IComponent
-- uid: System.IDisposable
-  commentId: T:System.IDisposable
-  parent: System
-  isExternal: true
-  name: IDisposable
-  nameWithType: IDisposable
-  fullName: System.IDisposable
 - uid: Fusee.Engine.Core.Scene.ShaderEffect.ParamDecl
   commentId: P:Fusee.Engine.Core.Scene.ShaderEffect.ParamDecl
   parent: Fusee.Engine.Core.Scene.ShaderEffect
@@ -388,45 +379,6 @@ references:
   name: Count
   nameWithType: ShaderEffect.Count
   fullName: Fusee.Engine.Core.Scene.ShaderEffect.Count
-- uid: Fusee.Engine.Core.Scene.ShaderEffect.Dispose(System.Boolean)
-  commentId: M:Fusee.Engine.Core.Scene.ShaderEffect.Dispose(System.Boolean)
-  parent: Fusee.Engine.Core.Scene.ShaderEffect
-  isExternal: true
-  name: Dispose(Boolean)
-  nameWithType: ShaderEffect.Dispose(Boolean)
-  fullName: Fusee.Engine.Core.Scene.ShaderEffect.Dispose(System.Boolean)
-  spec.csharp:
-  - uid: Fusee.Engine.Core.Scene.ShaderEffect.Dispose(System.Boolean)
-    name: Dispose
-    nameWithType: ShaderEffect.Dispose
-    fullName: Fusee.Engine.Core.Scene.ShaderEffect.Dispose
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Fusee.Engine.Core.Scene.ShaderEffect.Dispose(System.Boolean)
-    name: Dispose
-    nameWithType: ShaderEffect.Dispose
-    fullName: Fusee.Engine.Core.Scene.ShaderEffect.Dispose
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: Fusee.Engine.Core.Scene.ShaderEffect.Dispose
   commentId: M:Fusee.Engine.Core.Scene.ShaderEffect.Dispose
   parent: Fusee.Engine.Core.Scene.ShaderEffect

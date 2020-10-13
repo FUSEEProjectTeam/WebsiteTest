@@ -102,6 +102,8 @@
 - uid: Fusee.Engine.Common
   name: Fusee.Engine.Common
   items:
+  - uid: Fusee.Engine.Common.AttributeLocations
+    name: AttributeLocations
   - uid: Fusee.Engine.Common.AxisBoundedType
     name: AxisBoundedType
   - uid: Fusee.Engine.Common.AxisDescription
@@ -154,6 +156,8 @@
     name: HardwareCapability
   - uid: Fusee.Engine.Common.HingeFlags
     name: HingeFlags
+  - uid: Fusee.Engine.Common.HorizontalTextAlignment
+    name: HorizontalTextAlignment
   - uid: Fusee.Engine.Common.IAttribImp
     name: IAttribImp
   - uid: Fusee.Engine.Common.IAudioImp
@@ -246,6 +250,8 @@
     name: IVideoManagerImp
   - uid: Fusee.Engine.Common.IVideoStreamImp
     name: IVideoStreamImp
+  - uid: Fusee.Engine.Common.IWritableArrayTexture
+    name: IWritableArrayTexture
   - uid: Fusee.Engine.Common.IWritableCubeMap
     name: IWritableCubeMap
   - uid: Fusee.Engine.Common.IWritableTexture
@@ -316,6 +322,8 @@
     name: TouchAxes
   - uid: Fusee.Engine.Common.TouchPoints
     name: TouchPoints
+  - uid: Fusee.Engine.Common.VerticalTextAlignment
+    name: VerticalTextAlignment
 - uid: Fusee.Engine.Core
   name: Fusee.Engine.Core
   items:
@@ -362,6 +370,8 @@
     name: FontMap
   - uid: Fusee.Engine.Core.FusSceneConverter
     name: FusSceneConverter
+  - uid: Fusee.Engine.Core.FxParam
+    name: FxParam
   - uid: Fusee.Engine.Core.GamePadDevice
     name: GamePadDevice
   - uid: Fusee.Engine.Core.GearConstraint
@@ -394,6 +404,8 @@
     name: LightResult
   - uid: Fusee.Engine.Core.Line
     name: Line
+  - uid: Fusee.Engine.Core.MakeEffect
+    name: MakeEffect
   - uid: Fusee.Engine.Core.MatchFunc
     name: MatchFunc
   - uid: Fusee.Engine.Core.MeshChangedEnum
@@ -481,10 +493,79 @@
     name: VideoStream
   - uid: Fusee.Engine.Core.WireframeCube
     name: WireframeCube
+  - uid: Fusee.Engine.Core.WritableArrayTexture
+    name: WritableArrayTexture
   - uid: Fusee.Engine.Core.WritableCubeMap
     name: WritableCubeMap
   - uid: Fusee.Engine.Core.WritableTexture
     name: WritableTexture
+- uid: Fusee.Engine.Core.Effects
+  name: Fusee.Engine.Core.Effects
+  items:
+  - uid: Fusee.Engine.Core.Effects.BRDFInput
+    name: BRDFInput
+  - uid: Fusee.Engine.Core.Effects.ColorInput
+    name: ColorInput
+  - uid: Fusee.Engine.Core.Effects.DefaultSurfaceEffect
+    name: DefaultSurfaceEffect
+  - uid: Fusee.Engine.Core.Effects.Effect
+    name: Effect
+  - uid: Fusee.Engine.Core.Effects.EffectManagerEventArgs
+    name: EffectManagerEventArgs
+  - uid: Fusee.Engine.Core.Effects.FxParamDeclaration`1
+    name: FxParamDeclaration<T>
+    name.vb: FxParamDeclaration(Of T)
+  - uid: Fusee.Engine.Core.Effects.FxPassDeclaration
+    name: FxPassDeclaration
+  - uid: Fusee.Engine.Core.Effects.IFxParamDeclaration
+    name: IFxParamDeclaration
+  - uid: Fusee.Engine.Core.Effects.IFxPassDeclarationBase
+    name: IFxPassDeclarationBase
+  - uid: Fusee.Engine.Core.Effects.INotifyInputChange
+    name: INotifyInputChange
+  - uid: Fusee.Engine.Core.Effects.ShaderCategory
+    name: ShaderCategory
+  - uid: Fusee.Engine.Core.Effects.ShaderEffect
+    name: ShaderEffect
+  - uid: Fusee.Engine.Core.Effects.ShardCategory
+    name: ShardCategory
+  - uid: Fusee.Engine.Core.Effects.SpecularInput
+    name: SpecularInput
+  - uid: Fusee.Engine.Core.Effects.SurfaceEffect
+    name: SurfaceEffect
+  - uid: Fusee.Engine.Core.Effects.SurfaceEffectEventArgs
+    name: SurfaceEffectEventArgs
+  - uid: Fusee.Engine.Core.Effects.TextureInput
+    name: TextureInput
+  - uid: Fusee.Engine.Core.Effects.TextureInputBRDF
+    name: TextureInputBRDF
+  - uid: Fusee.Engine.Core.Effects.TextureInputUnlit
+    name: TextureInputUnlit
+  - uid: Fusee.Engine.Core.Effects.UniformChangedEnum
+    name: UniformChangedEnum
+- uid: Fusee.Engine.Core.Primitives
+  name: Fusee.Engine.Core.Primitives
+  items:
+  - uid: Fusee.Engine.Core.Primitives.Circle
+    name: Circle
+  - uid: Fusee.Engine.Core.Primitives.Cube
+    name: Cube
+  - uid: Fusee.Engine.Core.Primitives.Icosahedron
+    name: Icosahedron
+  - uid: Fusee.Engine.Core.Primitives.Icosphere
+    name: Icosphere
+  - uid: Fusee.Engine.Core.Primitives.Line
+    name: Line
+  - uid: Fusee.Engine.Core.Primitives.NineSlicePlane
+    name: NineSlicePlane
+  - uid: Fusee.Engine.Core.Primitives.Plane
+    name: Plane
+  - uid: Fusee.Engine.Core.Primitives.Rocket
+    name: Rocket
+  - uid: Fusee.Engine.Core.Primitives.Sphere
+    name: Sphere
+  - uid: Fusee.Engine.Core.Primitives.WireframeCube
+    name: WireframeCube
 - uid: Fusee.Engine.Core.Scene
   name: Fusee.Engine.Core.Scene
   items:
@@ -546,6 +627,10 @@
     name: ProjectionMethod
   - uid: Fusee.Engine.Core.Scene.RectTransform
     name: RectTransform
+  - uid: Fusee.Engine.Core.Scene.RenderLayer
+    name: RenderLayer
+  - uid: Fusee.Engine.Core.Scene.RenderLayers
+    name: RenderLayers
   - uid: Fusee.Engine.Core.Scene.SceneComponent
     name: SceneComponent
   - uid: Fusee.Engine.Core.Scene.SceneContainer
@@ -583,10 +668,18 @@
   items:
   - uid: Fusee.Engine.Core.ShaderShards.AttributeLocations
     name: AttributeLocations
+  - uid: Fusee.Engine.Core.ShaderShards.Header
+    name: Header
   - uid: Fusee.Engine.Core.ShaderShards.HeaderShard
     name: HeaderShard
+  - uid: Fusee.Engine.Core.ShaderShards.Include
+    name: Include
   - uid: Fusee.Engine.Core.ShaderShards.Includes
     name: Includes
+  - uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+    name: LightingSetupFlags
+  - uid: Fusee.Engine.Core.ShaderShards.LightingSetupShards
+    name: LightingSetupShards
   - uid: Fusee.Engine.Core.ShaderShards.MaterialProps
     name: MaterialProps
   - uid: Fusee.Engine.Core.ShaderShards.MaterialType
@@ -599,6 +692,8 @@
     name: ShaderEffectProps
   - uid: Fusee.Engine.Core.ShaderShards.ShaderShardUtil
     name: ShaderShardUtil
+  - uid: Fusee.Engine.Core.ShaderShards.SurfaceOut
+    name: SurfaceOut
   - uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
     name: UniformNameDeclarations
   - uid: Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations
@@ -606,19 +701,33 @@
 - uid: Fusee.Engine.Core.ShaderShards.Fragment
   name: Fusee.Engine.Core.ShaderShards.Fragment
   items:
+  - uid: Fusee.Engine.Core.ShaderShards.Fragment.FragMain
+    name: FragMain
   - uid: Fusee.Engine.Core.ShaderShards.Fragment.FragMainShard
     name: FragMainShard
+  - uid: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties
+    name: FragProperties
   - uid: Fusee.Engine.Core.ShaderShards.Fragment.FragPropertiesShard
     name: FragPropertiesShard
+  - uid: Fusee.Engine.Core.ShaderShards.Fragment.FragShards
+    name: FragShards
+  - uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+    name: Lighting
   - uid: Fusee.Engine.Core.ShaderShards.Fragment.LightingShard
     name: LightingShard
 - uid: Fusee.Engine.Core.ShaderShards.Vertex
   name: Fusee.Engine.Core.ShaderShards.Vertex
   items:
+  - uid: Fusee.Engine.Core.ShaderShards.Vertex.VertMain
+    name: VertMain
   - uid: Fusee.Engine.Core.ShaderShards.Vertex.VertMainShard
     name: VertMainShard
+  - uid: Fusee.Engine.Core.ShaderShards.Vertex.VertProperties
+    name: VertProperties
   - uid: Fusee.Engine.Core.ShaderShards.Vertex.VertPropertiesShard
     name: VertPropertiesShard
+  - uid: Fusee.Engine.Core.ShaderShards.Vertex.VertShards
+    name: VertShards
 - uid: Fusee.Engine.GUI
   name: Fusee.Engine.GUI
   items:
@@ -899,6 +1008,10 @@
 - uid: Fusee.Serialization.V1
   name: Fusee.Serialization.V1
   items:
+  - uid: Fusee.Serialization.V1.AlbedoChannel
+    name: AlbedoChannel
+  - uid: Fusee.Serialization.V1.BRDFChannel
+    name: BRDFChannel
   - uid: Fusee.Serialization.V1.CanvasRenderMode
     name: CanvasRenderMode
   - uid: Fusee.Serialization.V1.FusAnimation
@@ -927,12 +1040,20 @@
     name: FusCanvasTransform
   - uid: Fusee.Serialization.V1.FusComponent
     name: FusComponent
+  - uid: Fusee.Serialization.V1.FusHorizontalTextAlignment
+    name: FusHorizontalTextAlignment
   - uid: Fusee.Serialization.V1.FusLight
     name: FusLight
   - uid: Fusee.Serialization.V1.FusMaterial
     name: FusMaterial
+  - uid: Fusee.Serialization.V1.FusMaterialBase
+    name: FusMaterialBase
+  - uid: Fusee.Serialization.V1.FusMaterialBRDF
+    name: FusMaterialBRDF
   - uid: Fusee.Serialization.V1.FusMaterialPBR
     name: FusMaterialPBR
+  - uid: Fusee.Serialization.V1.FusMaterialStandard
+    name: FusMaterialStandard
   - uid: Fusee.Serialization.V1.FusMesh
     name: FusMesh
   - uid: Fusee.Serialization.V1.FusNode
@@ -945,6 +1066,8 @@
     name: FusScene
   - uid: Fusee.Serialization.V1.FusTransform
     name: FusTransform
+  - uid: Fusee.Serialization.V1.FusVerticalTextAlignment
+    name: FusVerticalTextAlignment
   - uid: Fusee.Serialization.V1.FusWeight
     name: FusWeight
   - uid: Fusee.Serialization.V1.FusXForm
@@ -959,10 +1082,14 @@
     name: LerpType
   - uid: Fusee.Serialization.V1.MatChannelContainer
     name: MatChannelContainer
+  - uid: Fusee.Serialization.V1.NormapMapChannel
+    name: NormapMapChannel
   - uid: Fusee.Serialization.V1.NormapMapChannelContainer
     name: NormapMapChannelContainer
   - uid: Fusee.Serialization.V1.ProjectionMethod
     name: ProjectionMethod
+  - uid: Fusee.Serialization.V1.SpecularChannel
+    name: SpecularChannel
   - uid: Fusee.Serialization.V1.SpecularChannelContainer
     name: SpecularChannelContainer
   - uid: Fusee.Serialization.V1.TypeId

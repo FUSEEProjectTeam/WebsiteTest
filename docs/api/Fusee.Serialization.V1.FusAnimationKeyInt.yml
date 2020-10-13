@@ -23,13 +23,8 @@ items:
   summary: "\nAnimation key storing integer values.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoContract]
-
-      public class FusAnimationKeyInt : FusAnimationKeyBase
+    content: 'public class FusAnimationKeyInt : FusAnimationKeyBase'
     content.vb: >-
-      <ProtoContract>
-
       Public Class FusAnimationKeyInt
           Inherits FusAnimationKeyBase
   inheritance:
@@ -44,10 +39,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  attributes:
-  - type: ProtoBuf.ProtoContractAttribute
-    ctor: ProtoBuf.ProtoContractAttribute.#ctor
-    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -75,22 +66,10 @@ items:
   summary: "\nThe key value effective at the <xref href=\"Fusee.Serialization.V1.FusAnimationKeyBase.Time\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(1)]
-
-      public int Value
+    content: public int Value
     return:
       type: System.Int32
-    content.vb: >-
-      <ProtoMember(1)>
-
-      Public Value As Integer
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 1
+    content.vb: Public Value As Integer
   modifiers.csharp:
   - public
   modifiers.vb:

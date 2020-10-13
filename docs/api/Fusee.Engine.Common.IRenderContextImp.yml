@@ -13,6 +13,7 @@ items:
   - Fusee.Engine.Common.IRenderContextImp.CreateMeshImp
   - Fusee.Engine.Common.IRenderContextImp.CreateShaderProgram(System.String,System.String,System.String)
   - Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.ITexture)
+  - Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)
   - Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableCubeMap)
   - Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableTexture)
   - Fusee.Engine.Common.IRenderContextImp.DebugLine(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float4)
@@ -54,6 +55,7 @@ items:
   - Fusee.Engine.Common.IRenderContextImp.SetNormals(Fusee.Engine.Common.IMeshImp,Fusee.Math.Core.float3[])
   - Fusee.Engine.Common.IRenderContextImp.SetRenderState(Fusee.Engine.Common.RenderState,System.UInt32)
   - Fusee.Engine.Common.IRenderContextImp.SetRenderTarget(Fusee.Engine.Common.IRenderTarget,Fusee.Engine.Common.ITextureHandle[])
+  - Fusee.Engine.Common.IRenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32,Fusee.Engine.Common.ITextureHandle)
   - Fusee.Engine.Common.IRenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableCubeMap,Fusee.Engine.Common.ITextureHandle)
   - Fusee.Engine.Common.IRenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableTexture,Fusee.Engine.Common.ITextureHandle)
   - Fusee.Engine.Common.IRenderContextImp.SetShader(Fusee.Engine.Common.IShaderHandle)
@@ -70,6 +72,8 @@ items:
   - Fusee.Engine.Common.IRenderContextImp.SetShaderParamTexture(Fusee.Engine.Common.IShaderParam,Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureType)
   - Fusee.Engine.Common.IRenderContextImp.SetShaderParamTextureArray(Fusee.Engine.Common.IShaderParam,Fusee.Engine.Common.ITextureHandle[],Fusee.Engine.Common.TextureType)
   - Fusee.Engine.Common.IRenderContextImp.SetTangents(Fusee.Engine.Common.IMeshImp,Fusee.Math.Core.float4[])
+  - Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureFilterMode)
+  - Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureWrapMode)
   - Fusee.Engine.Common.IRenderContextImp.SetTriangles(Fusee.Engine.Common.IMeshImp,System.UInt16[])
   - Fusee.Engine.Common.IRenderContextImp.SetUVs(Fusee.Engine.Common.IMeshImp,Fusee.Math.Core.float2[])
   - Fusee.Engine.Common.IRenderContextImp.SetVertices(Fusee.Engine.Common.IMeshImp,Fusee.Math.Core.float3[])
@@ -229,7 +233,7 @@ items:
   source:
     id: CreateShaderProgram
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 62
+    startLine: 61
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -267,7 +271,7 @@ items:
   source:
     id: RemoveShader
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 68
+    startLine: 67
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -295,7 +299,7 @@ items:
   source:
     id: DeleteFrameBuffer
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 74
+    startLine: 73
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -323,7 +327,7 @@ items:
   source:
     id: DeleteRenderBuffer
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 80
+    startLine: 79
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -351,7 +355,7 @@ items:
   source:
     id: DetachTextureFromFbo
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 88
+    startLine: 87
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -385,7 +389,7 @@ items:
   source:
     id: AttacheTextureToFbo
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 98
+    startLine: 97
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -422,7 +426,7 @@ items:
   source:
     id: GetShaderParamList
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 110
+    startLine: 109
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -453,7 +457,7 @@ items:
   source:
     id: GetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 122
+    startLine: 121
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -491,7 +495,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 133
+    startLine: 132
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -523,7 +527,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 144
+    startLine: 143
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -555,7 +559,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 155
+    startLine: 154
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -590,7 +594,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 166
+    startLine: 165
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -622,7 +626,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 177
+    startLine: 176
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -657,7 +661,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 188
+    startLine: 187
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -689,7 +693,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 199
+    startLine: 198
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -724,7 +728,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 210
+    startLine: 209
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -756,7 +760,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 221
+    startLine: 220
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -791,7 +795,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 232
+    startLine: 231
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -823,7 +827,7 @@ items:
   source:
     id: SetShaderParamTexture
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 240
+    startLine: 239
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -857,7 +861,7 @@ items:
   source:
     id: SetActiveAndBindTexture
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 249
+    startLine: 248
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -897,7 +901,7 @@ items:
   source:
     id: SetActiveAndBindTexture
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 257
+    startLine: 256
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -931,7 +935,7 @@ items:
   source:
     id: SetShaderParamTextureArray
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 265
+    startLine: 264
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -968,7 +972,7 @@ items:
   source:
     id: SetActiveAndBindTextureArray
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 274
+    startLine: 273
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1008,7 +1012,7 @@ items:
   source:
     id: SetActiveAndBindTextureArray
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 282
+    startLine: 281
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1045,7 +1049,7 @@ items:
   source:
     id: UpdateTextureRegion
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 293
+    startLine: 292
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1056,7 +1060,7 @@ items:
     parameters:
     - id: tex
       type: Fusee.Engine.Common.ITextureHandle
-      description: The tex.
+      description: The texture.
     - id: img
       type: Fusee.Engine.Common.ITexture
       description: The image.
@@ -1074,6 +1078,68 @@ items:
       description: The height.
     content.vb: Sub UpdateTextureRegion(tex As ITextureHandle, img As ITexture, startX As Integer, startY As Integer, width As Integer, height As Integer)
   overload: Fusee.Engine.Common.IRenderContextImp.UpdateTextureRegion*
+- uid: Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureFilterMode)
+  commentId: M:Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureFilterMode)
+  id: SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureFilterMode)
+  parent: Fusee.Engine.Common.IRenderContextImp
+  langs:
+  - csharp
+  - vb
+  name: SetTextureFilterMode(ITextureHandle, TextureFilterMode)
+  nameWithType: IRenderContextImp.SetTextureFilterMode(ITextureHandle, TextureFilterMode)
+  fullName: Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle, Fusee.Engine.Common.TextureFilterMode)
+  type: Method
+  source:
+    id: SetTextureFilterMode
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
+    startLine: 299
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nSets the textures filter mode (<xref href=\"Fusee.Engine.Common.TextureFilterMode\" data-throw-if-not-resolved=\"false\"></xref> at runtime.\n"
+  example: []
+  syntax:
+    content: void SetTextureFilterMode(ITextureHandle tex, TextureFilterMode filterMode)
+    parameters:
+    - id: tex
+      type: Fusee.Engine.Common.ITextureHandle
+      description: The handle of the texture.
+    - id: filterMode
+      type: Fusee.Engine.Common.TextureFilterMode
+      description: The new filter mode.
+    content.vb: Sub SetTextureFilterMode(tex As ITextureHandle, filterMode As TextureFilterMode)
+  overload: Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode*
+- uid: Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureWrapMode)
+  commentId: M:Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureWrapMode)
+  id: SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureWrapMode)
+  parent: Fusee.Engine.Common.IRenderContextImp
+  langs:
+  - csharp
+  - vb
+  name: SetTextureWrapMode(ITextureHandle, TextureWrapMode)
+  nameWithType: IRenderContextImp.SetTextureWrapMode(ITextureHandle, TextureWrapMode)
+  fullName: Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle, Fusee.Engine.Common.TextureWrapMode)
+  type: Method
+  source:
+    id: SetTextureWrapMode
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
+    startLine: 306
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nSets the textures filter mode (<xref href=\"Fusee.Engine.Common.TextureWrapMode\" data-throw-if-not-resolved=\"false\"></xref> at runtime.\n"
+  example: []
+  syntax:
+    content: void SetTextureWrapMode(ITextureHandle tex, TextureWrapMode wrapMode)
+    parameters:
+    - id: tex
+      type: Fusee.Engine.Common.ITextureHandle
+      description: The handle of the texture.
+    - id: wrapMode
+      type: Fusee.Engine.Common.TextureWrapMode
+      description: The new wrap mode.
+    content.vb: Sub SetTextureWrapMode(tex As ITextureHandle, wrapMode As TextureWrapMode)
+  overload: Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode*
 - uid: Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.ITexture)
   commentId: M:Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.ITexture)
   id: CreateTexture(Fusee.Engine.Common.ITexture)
@@ -1088,7 +1154,7 @@ items:
   source:
     id: CreateTexture
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 303
+    startLine: 316
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1105,6 +1171,36 @@ items:
       type: Fusee.Engine.Common.ITextureHandle
     content.vb: Function CreateTexture(img As ITexture) As ITextureHandle
   overload: Fusee.Engine.Common.IRenderContextImp.CreateTexture*
+- uid: Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)
+  commentId: M:Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)
+  id: CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)
+  parent: Fusee.Engine.Common.IRenderContextImp
+  langs:
+  - csharp
+  - vb
+  name: CreateTexture(IWritableArrayTexture)
+  nameWithType: IRenderContextImp.CreateTexture(IWritableArrayTexture)
+  fullName: Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)
+  type: Method
+  source:
+    id: CreateTexture
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
+    startLine: 322
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nCreates a new cube map and binds it to the shader.\n"
+  example: []
+  syntax:
+    content: ITextureHandle CreateTexture(IWritableArrayTexture img)
+    parameters:
+    - id: img
+      type: Fusee.Engine.Common.IWritableArrayTexture
+      description: An <xref href="Fusee.Engine.Common.IWritableArrayTexture" data-throw-if-not-resolved="false"></xref>, containing necessary information for the upload to the graphics card.
+    return:
+      type: Fusee.Engine.Common.ITextureHandle
+    content.vb: Function CreateTexture(img As IWritableArrayTexture) As ITextureHandle
+  overload: Fusee.Engine.Common.IRenderContextImp.CreateTexture*
 - uid: Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableCubeMap)
   commentId: M:Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableCubeMap)
   id: CreateTexture(Fusee.Engine.Common.IWritableCubeMap)
@@ -1119,7 +1215,7 @@ items:
   source:
     id: CreateTexture
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 309
+    startLine: 328
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1149,7 +1245,7 @@ items:
   source:
     id: CreateTexture
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 315
+    startLine: 334
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1179,7 +1275,7 @@ items:
   source:
     id: RemoveTextureHandle
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 324
+    startLine: 343
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1208,7 +1304,7 @@ items:
   source:
     id: SetLineWidth
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 330
+    startLine: 349
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1236,7 +1332,7 @@ items:
   source:
     id: Clear
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 343
+    startLine: 362
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1265,7 +1361,7 @@ items:
   source:
     id: SetVertices
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 351
+    startLine: 370
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1303,7 +1399,7 @@ items:
   source:
     id: SetTangents
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 360
+    startLine: 379
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1343,7 +1439,7 @@ items:
   source:
     id: SetBiTangents
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 369
+    startLine: 388
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1357,7 +1453,7 @@ items:
       description: The <xref href="Fusee.Engine.Common.IMeshImp" data-throw-if-not-resolved="false"></xref> instance.
     - id: bitangents
       type: Fusee.Math.Core.float3[]
-      description: THe bitangents.
+      description: The bitangents.
     content.vb: Sub SetBiTangents(mr As IMeshImp, bitangents As float3())
   overload: Fusee.Engine.Common.IRenderContextImp.SetBiTangents*
   exceptions:
@@ -1383,7 +1479,7 @@ items:
   source:
     id: SetNormals
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 377
+    startLine: 396
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1421,7 +1517,7 @@ items:
   source:
     id: SetUVs
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 385
+    startLine: 404
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1459,7 +1555,7 @@ items:
   source:
     id: SetColors
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 393
+    startLine: 412
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1497,7 +1593,7 @@ items:
   source:
     id: SetTriangles
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 401
+    startLine: 420
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1535,7 +1631,7 @@ items:
   source:
     id: SetBoneIndices
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 409
+    startLine: 428
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1573,7 +1669,7 @@ items:
   source:
     id: SetBoneWeights
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 417
+    startLine: 436
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1611,7 +1707,7 @@ items:
   source:
     id: SetShader
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 425
+    startLine: 444
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1645,7 +1741,7 @@ items:
   source:
     id: RemoveVertices
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 431
+    startLine: 450
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1673,7 +1769,7 @@ items:
   source:
     id: RemoveNormals
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 437
+    startLine: 456
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1701,7 +1797,7 @@ items:
   source:
     id: RemoveColors
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 443
+    startLine: 462
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1729,7 +1825,7 @@ items:
   source:
     id: RemoveUVs
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 449
+    startLine: 468
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1757,7 +1853,7 @@ items:
   source:
     id: RemoveTriangles
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 455
+    startLine: 474
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1785,7 +1881,7 @@ items:
   source:
     id: RemoveBoneWeights
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 461
+    startLine: 480
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1813,7 +1909,7 @@ items:
   source:
     id: RemoveBoneIndices
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 467
+    startLine: 486
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1841,7 +1937,7 @@ items:
   source:
     id: RemoveTangents
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 473
+    startLine: 492
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1869,7 +1965,7 @@ items:
   source:
     id: RemoveBiTangents
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 479
+    startLine: 498
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1897,12 +1993,12 @@ items:
   source:
     id: Viewport
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 491
+    startLine: 510
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
   summary: "\nSets the rectangular output region within the output buffer(s).\n"
-  remarks: "\nSetting the Viewport limits the rendering output to the specified rectangular region.\n"
+  remarks: "\nSetting the viewport limits the rendering output to the specified rectangular region.\n"
   example: []
   syntax:
     content: void Viewport(int x, int y, int width, int height)
@@ -1935,7 +2031,7 @@ items:
   source:
     id: Scissor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 501
+    startLine: 520
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -1972,7 +2068,7 @@ items:
   source:
     id: ColorMask
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 511
+    startLine: 530
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -2009,7 +2105,7 @@ items:
   source:
     id: Render
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 521
+    startLine: 540
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -2038,7 +2134,7 @@ items:
   source:
     id: DebugLine
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 529
+    startLine: 548
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -2072,7 +2168,7 @@ items:
   source:
     id: GetBufferContent
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 536
+    startLine: 555
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -2086,7 +2182,7 @@ items:
       description: The quad.
     - id: texId
       type: Fusee.Engine.Common.ITextureHandle
-      description: The tex identifier.
+      description: The texture identifier.
     content.vb: Sub GetBufferContent(quad As Rectangle, texId As ITextureHandle)
   overload: Fusee.Engine.Common.IRenderContextImp.GetBufferContent*
 - uid: Fusee.Engine.Common.IRenderContextImp.CreateMeshImp
@@ -2103,7 +2199,7 @@ items:
   source:
     id: CreateMeshImp
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 542
+    startLine: 561
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -2130,7 +2226,7 @@ items:
   source:
     id: SetRenderState
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 549
+    startLine: 568
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -2161,7 +2257,7 @@ items:
   source:
     id: GetRenderState
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 556
+    startLine: 575
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -2192,7 +2288,7 @@ items:
   source:
     id: SetRenderTarget
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 563
+    startLine: 582
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -2226,7 +2322,7 @@ items:
   source:
     id: SetRenderTarget
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 570
+    startLine: 589
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -2257,7 +2353,7 @@ items:
   source:
     id: SetRenderTarget
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 577
+    startLine: 596
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -2274,6 +2370,40 @@ items:
       description: The texture handle, associated with the given texture. Should be created by the TextureManager in the RenderContext.
     content.vb: Sub SetRenderTarget(tex As IWritableCubeMap, texHandle As ITextureHandle)
   overload: Fusee.Engine.Common.IRenderContextImp.SetRenderTarget*
+- uid: Fusee.Engine.Common.IRenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32,Fusee.Engine.Common.ITextureHandle)
+  commentId: M:Fusee.Engine.Common.IRenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32,Fusee.Engine.Common.ITextureHandle)
+  id: SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32,Fusee.Engine.Common.ITextureHandle)
+  parent: Fusee.Engine.Common.IRenderContextImp
+  langs:
+  - csharp
+  - vb
+  name: SetRenderTarget(IWritableArrayTexture, Int32, ITextureHandle)
+  nameWithType: IRenderContextImp.SetRenderTarget(IWritableArrayTexture, Int32, ITextureHandle)
+  fullName: Fusee.Engine.Common.IRenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture, System.Int32, Fusee.Engine.Common.ITextureHandle)
+  type: Method
+  source:
+    id: SetRenderTarget
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
+    startLine: 604
+  assemblies:
+  - Fusee.Engine.Common
+  namespace: Fusee.Engine.Common
+  summary: "\nRenders into the given layer of the array texture.\n"
+  example: []
+  syntax:
+    content: void SetRenderTarget(IWritableArrayTexture tex, int layer, ITextureHandle texHandle)
+    parameters:
+    - id: tex
+      type: Fusee.Engine.Common.IWritableArrayTexture
+      description: The array texture.
+    - id: layer
+      type: System.Int32
+      description: The layer to render to.
+    - id: texHandle
+      type: Fusee.Engine.Common.ITextureHandle
+      description: The texture handle, associated with the given texture. Should be created by the TextureManager in the RenderContext.
+    content.vb: Sub SetRenderTarget(tex As IWritableArrayTexture, layer As Integer, texHandle As ITextureHandle)
+  overload: Fusee.Engine.Common.IRenderContextImp.SetRenderTarget*
 - uid: Fusee.Engine.Common.IRenderContextImp.GetPixelColor(System.Int32,System.Int32,System.Int32,System.Int32)
   commentId: M:Fusee.Engine.Common.IRenderContextImp.GetPixelColor(System.Int32,System.Int32,System.Int32,System.Int32)
   id: GetPixelColor(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -2288,7 +2418,7 @@ items:
   source:
     id: GetPixelColor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 604
+    startLine: 614
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -2328,7 +2458,7 @@ items:
   source:
     id: GetPixelDepth
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 612
+    startLine: 622
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -2362,7 +2492,7 @@ items:
   source:
     id: GetHardwareCapabilities
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 619
+    startLine: 629
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -2393,7 +2523,7 @@ items:
   source:
     id: GetHardwareDescription
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\IRenderContextImp.cs
-    startLine: 625
+    startLine: 635
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -3052,11 +3182,39 @@ references:
   name: ITexture
   nameWithType: ITexture
   fullName: Fusee.Engine.Common.ITexture
+- uid: Fusee.Engine.Common.TextureFilterMode
+  commentId: T:Fusee.Engine.Common.TextureFilterMode
+  parent: Fusee.Engine.Common
+  name: TextureFilterMode
+  nameWithType: TextureFilterMode
+  fullName: Fusee.Engine.Common.TextureFilterMode
+- uid: Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode*
+  commentId: Overload:Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode
+  name: SetTextureFilterMode
+  nameWithType: IRenderContextImp.SetTextureFilterMode
+  fullName: Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode
+- uid: Fusee.Engine.Common.TextureWrapMode
+  commentId: T:Fusee.Engine.Common.TextureWrapMode
+  parent: Fusee.Engine.Common
+  name: TextureWrapMode
+  nameWithType: TextureWrapMode
+  fullName: Fusee.Engine.Common.TextureWrapMode
+- uid: Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode*
+  commentId: Overload:Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode
+  name: SetTextureWrapMode
+  nameWithType: IRenderContextImp.SetTextureWrapMode
+  fullName: Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode
 - uid: Fusee.Engine.Common.IRenderContextImp.CreateTexture*
   commentId: Overload:Fusee.Engine.Common.IRenderContextImp.CreateTexture
   name: CreateTexture
   nameWithType: IRenderContextImp.CreateTexture
   fullName: Fusee.Engine.Common.IRenderContextImp.CreateTexture
+- uid: Fusee.Engine.Common.IWritableArrayTexture
+  commentId: T:Fusee.Engine.Common.IWritableArrayTexture
+  parent: Fusee.Engine.Common
+  name: IWritableArrayTexture
+  nameWithType: IWritableArrayTexture
+  fullName: Fusee.Engine.Common.IWritableArrayTexture
 - uid: Fusee.Engine.Common.IWritableCubeMap
   commentId: T:Fusee.Engine.Common.IWritableCubeMap
   parent: Fusee.Engine.Common

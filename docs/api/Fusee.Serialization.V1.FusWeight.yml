@@ -25,13 +25,8 @@ items:
   summary: "\nDefines a weight map. Basically a table with a row for each vertex and a column for each bone\ncontrolling the geometry. \n"
   example: []
   syntax:
-    content: >-
-      [ProtoContract]
-
-      public class FusWeight : FusComponent, IComponent
+    content: 'public class FusWeight : FusComponent, IComponent'
     content.vb: >-
-      <ProtoContract>
-
       Public Class FusWeight
           Inherits FusComponent
           Implements IComponent
@@ -49,10 +44,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  attributes:
-  - type: ProtoBuf.ProtoContractAttribute
-    ctor: ProtoBuf.ProtoContractAttribute.#ctor
-    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -80,22 +71,10 @@ items:
   summary: "\nThe weight map. Contains as many entries as the object containing this node&apos;s geometry has vertices.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(1)]
-
-      public List<VertexWeightList> WeightMap
+    content: public List<VertexWeightList> WeightMap
     return:
       type: System.Collections.Generic.List{Fusee.Serialization.V1.VertexWeightList}
-    content.vb: >-
-      <ProtoMember(1)>
-
-      Public WeightMap As List(Of VertexWeightList)
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 1
+    content.vb: Public WeightMap As List(Of VertexWeightList)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -121,22 +100,10 @@ items:
   summary: "\nThe joint objects controlling the geometry.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(2)]
-
-      public List<FusComponent> Joints
+    content: public List<FusComponent> Joints
     return:
       type: System.Collections.Generic.List{Fusee.Serialization.V1.FusComponent}
-    content.vb: >-
-      <ProtoMember(2)>
-
-      Public Joints As List(Of FusComponent)
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 2
+    content.vb: Public Joints As List(Of FusComponent)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -162,22 +129,10 @@ items:
   summary: "\nThe binding matrices defining the object&apos;s untransformed state.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(3)]
-
-      public List<float4x4> BindingMatrices
+    content: public List<float4x4> BindingMatrices
     return:
       type: System.Collections.Generic.List{Fusee.Math.Core.float4x4}
-    content.vb: >-
-      <ProtoMember(3)>
-
-      Public BindingMatrices As List(Of float4x4)
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 3
+    content.vb: Public BindingMatrices As List(Of float4x4)
   modifiers.csharp:
   - public
   modifiers.vb:

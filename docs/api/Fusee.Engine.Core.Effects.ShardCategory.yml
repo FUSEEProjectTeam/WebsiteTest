@@ -1,0 +1,277 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Effects.ShardCategory
+  commentId: T:Fusee.Engine.Core.Effects.ShardCategory
+  id: ShardCategory
+  parent: Fusee.Engine.Core.Effects
+  children:
+  - Fusee.Engine.Core.Effects.ShardCategory.Header
+  - Fusee.Engine.Core.Effects.ShardCategory.Main
+  - Fusee.Engine.Core.Effects.ShardCategory.Matrix
+  - Fusee.Engine.Core.Effects.ShardCategory.Method
+  - Fusee.Engine.Core.Effects.ShardCategory.Property
+  - Fusee.Engine.Core.Effects.ShardCategory.Struct
+  - Fusee.Engine.Core.Effects.ShardCategory.Uniform
+  langs:
+  - csharp
+  - vb
+  name: ShardCategory
+  nameWithType: ShardCategory
+  fullName: Fusee.Engine.Core.Effects.ShardCategory
+  type: Enum
+  source:
+    id: ShardCategory
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    startLine: 66
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nUsed to describe the type of shader shard. A shard is a piece of shader code, usually in form of a static string.\nThe category is used to sort the shards in order to build the complete shader source code from them.\nFurthermore this it can be used to describe special behavior of a shader shard in the <xref href=\"Fusee.Engine.Core.Effects.SurfaceEffect\" data-throw-if-not-resolved=\"false\"></xref>.\nThe order is given by the values of the enumeration.\n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum ShardCategory : ushort
+    content.vb: >-
+      <Flags>
+
+      Public Enum ShardCategory As UShort
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Fusee.Engine.Core.Effects.ShardCategory.Header
+  commentId: F:Fusee.Engine.Core.Effects.ShardCategory.Header
+  id: Header
+  parent: Fusee.Engine.Core.Effects.ShardCategory
+  langs:
+  - csharp
+  - vb
+  name: Header
+  nameWithType: ShardCategory.Header
+  fullName: Fusee.Engine.Core.Effects.ShardCategory.Header
+  type: Field
+  source:
+    id: Header
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    startLine: 72
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe shader shard belongs to the header of the source shader.\n"
+  example: []
+  syntax:
+    content: Header = 1
+    return:
+      type: Fusee.Engine.Core.Effects.ShardCategory
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Effects.ShardCategory.Struct
+  commentId: F:Fusee.Engine.Core.Effects.ShardCategory.Struct
+  id: Struct
+  parent: Fusee.Engine.Core.Effects.ShardCategory
+  langs:
+  - csharp
+  - vb
+  name: Struct
+  nameWithType: ShardCategory.Struct
+  fullName: Fusee.Engine.Core.Effects.ShardCategory.Struct
+  type: Field
+  source:
+    id: Struct
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    startLine: 77
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe shader shard belongs is a struct of the source shader.\n"
+  example: []
+  syntax:
+    content: Struct = 2
+    return:
+      type: Fusee.Engine.Core.Effects.ShardCategory
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Effects.ShardCategory.Uniform
+  commentId: F:Fusee.Engine.Core.Effects.ShardCategory.Uniform
+  id: Uniform
+  parent: Fusee.Engine.Core.Effects.ShardCategory
+  langs:
+  - csharp
+  - vb
+  name: Uniform
+  nameWithType: ShardCategory.Uniform
+  fullName: Fusee.Engine.Core.Effects.ShardCategory.Uniform
+  type: Field
+  source:
+    id: Uniform
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    startLine: 82
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe shader shard belongs is a property of the source shader.\n"
+  example: []
+  syntax:
+    content: Uniform = 4
+    return:
+      type: Fusee.Engine.Core.Effects.ShardCategory
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Effects.ShardCategory.Property
+  commentId: F:Fusee.Engine.Core.Effects.ShardCategory.Property
+  id: Property
+  parent: Fusee.Engine.Core.Effects.ShardCategory
+  langs:
+  - csharp
+  - vb
+  name: Property
+  nameWithType: ShardCategory.Property
+  fullName: Fusee.Engine.Core.Effects.ShardCategory.Property
+  type: Field
+  source:
+    id: Property
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    startLine: 87
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe shader shard belongs is a property of the source shader.\n"
+  example: []
+  syntax:
+    content: Property = 8
+    return:
+      type: Fusee.Engine.Core.Effects.ShardCategory
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Effects.ShardCategory.Method
+  commentId: F:Fusee.Engine.Core.Effects.ShardCategory.Method
+  id: Method
+  parent: Fusee.Engine.Core.Effects.ShardCategory
+  langs:
+  - csharp
+  - vb
+  name: Method
+  nameWithType: ShardCategory.Method
+  fullName: Fusee.Engine.Core.Effects.ShardCategory.Method
+  type: Field
+  source:
+    id: Method
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    startLine: 92
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe shader shard is a method of the source shader.\n"
+  example: []
+  syntax:
+    content: Method = 16
+    return:
+      type: Fusee.Engine.Core.Effects.ShardCategory
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Effects.ShardCategory.Main
+  commentId: F:Fusee.Engine.Core.Effects.ShardCategory.Main
+  id: Main
+  parent: Fusee.Engine.Core.Effects.ShardCategory
+  langs:
+  - csharp
+  - vb
+  name: Main
+  nameWithType: ShardCategory.Main
+  fullName: Fusee.Engine.Core.Effects.ShardCategory.Main
+  type: Field
+  source:
+    id: Main
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    startLine: 97
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe shader shard is, or is part of, the main method of the source shader.\n"
+  example: []
+  syntax:
+    content: Main = 31
+    return:
+      type: Fusee.Engine.Core.Effects.ShardCategory
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Effects.ShardCategory.Matrix
+  commentId: F:Fusee.Engine.Core.Effects.ShardCategory.Matrix
+  id: Matrix
+  parent: Fusee.Engine.Core.Effects.ShardCategory
+  langs:
+  - csharp
+  - vb
+  name: Matrix
+  nameWithType: ShardCategory.Matrix
+  fullName: Fusee.Engine.Core.Effects.ShardCategory.Matrix
+  type: Field
+  source:
+    id: Matrix
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    startLine: 103
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nDescribes a matrix, like the mvp matrix. \nThose are uniforms in the shader code but should not be properties of a <xref href=\"Fusee.Engine.Core.Effects.SurfaceEffect\" data-throw-if-not-resolved=\"false\"></xref> because they will be updated by the SceneRenderer.\n"
+  example: []
+  syntax:
+    content: Matrix = 62
+    return:
+      type: Fusee.Engine.Core.Effects.ShardCategory
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Fusee.Engine.Core.Effects.SurfaceEffect
+  commentId: T:Fusee.Engine.Core.Effects.SurfaceEffect
+  parent: Fusee.Engine.Core.Effects
+  name: SurfaceEffect
+  nameWithType: SurfaceEffect
+  fullName: Fusee.Engine.Core.Effects.SurfaceEffect
+- uid: Fusee.Engine.Core.Effects
+  commentId: N:Fusee.Engine.Core.Effects
+  name: Fusee.Engine.Core.Effects
+  nameWithType: Fusee.Engine.Core.Effects
+  fullName: Fusee.Engine.Core.Effects
+- uid: Fusee.Engine.Core.Effects.ShardCategory
+  commentId: T:Fusee.Engine.Core.Effects.ShardCategory
+  parent: Fusee.Engine.Core.Effects
+  name: ShardCategory
+  nameWithType: ShardCategory
+  fullName: Fusee.Engine.Core.Effects.ShardCategory

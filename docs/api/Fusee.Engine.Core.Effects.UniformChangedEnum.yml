@@ -1,0 +1,140 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Effects.UniformChangedEnum
+  commentId: T:Fusee.Engine.Core.Effects.UniformChangedEnum
+  id: UniformChangedEnum
+  parent: Fusee.Engine.Core.Effects
+  children:
+  - Fusee.Engine.Core.Effects.UniformChangedEnum.Dispose
+  - Fusee.Engine.Core.Effects.UniformChangedEnum.Unchanged
+  - Fusee.Engine.Core.Effects.UniformChangedEnum.Update
+  langs:
+  - csharp
+  - vb
+  name: UniformChangedEnum
+  nameWithType: UniformChangedEnum
+  fullName: Fusee.Engine.Core.Effects.UniformChangedEnum
+  type: Enum
+  source:
+    id: UniformChangedEnum
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\UniformChangedEnum.cs
+    startLine: 5
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nEnum for determining the action that needs to be taken for a uniform variable in the <xref href=\"Fusee.Engine.Core.EffectManager\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public enum UniformChangedEnum
+    content.vb: Public Enum UniformChangedEnum
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Fusee.Engine.Core.Effects.UniformChangedEnum.Dispose
+  commentId: F:Fusee.Engine.Core.Effects.UniformChangedEnum.Dispose
+  id: Dispose
+  parent: Fusee.Engine.Core.Effects.UniformChangedEnum
+  langs:
+  - csharp
+  - vb
+  name: Dispose
+  nameWithType: UniformChangedEnum.Dispose
+  fullName: Fusee.Engine.Core.Effects.UniformChangedEnum.Dispose
+  type: Field
+  source:
+    id: Dispose
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\UniformChangedEnum.cs
+    startLine: 10
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe effect isn&apos;t needed anymore - the uniform will be disposed of.\n"
+  example: []
+  syntax:
+    content: Dispose = 0
+    return:
+      type: Fusee.Engine.Core.Effects.UniformChangedEnum
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Effects.UniformChangedEnum.Update
+  commentId: F:Fusee.Engine.Core.Effects.UniformChangedEnum.Update
+  id: Update
+  parent: Fusee.Engine.Core.Effects.UniformChangedEnum
+  langs:
+  - csharp
+  - vb
+  name: Update
+  nameWithType: UniformChangedEnum.Update
+  fullName: Fusee.Engine.Core.Effects.UniformChangedEnum.Update
+  type: Field
+  source:
+    id: Update
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\UniformChangedEnum.cs
+    startLine: 15
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe uniform value has changed and will be updated.\n"
+  example: []
+  syntax:
+    content: Update = 1
+    return:
+      type: Fusee.Engine.Core.Effects.UniformChangedEnum
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Effects.UniformChangedEnum.Unchanged
+  commentId: F:Fusee.Engine.Core.Effects.UniformChangedEnum.Unchanged
+  id: Unchanged
+  parent: Fusee.Engine.Core.Effects.UniformChangedEnum
+  langs:
+  - csharp
+  - vb
+  name: Unchanged
+  nameWithType: UniformChangedEnum.Unchanged
+  fullName: Fusee.Engine.Core.Effects.UniformChangedEnum.Unchanged
+  type: Field
+  source:
+    id: Unchanged
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\UniformChangedEnum.cs
+    startLine: 23
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe uniform value is unchanged - no action needed.\n"
+  example: []
+  syntax:
+    content: Unchanged = 3
+    return:
+      type: Fusee.Engine.Core.Effects.UniformChangedEnum
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Fusee.Engine.Core.EffectManager
+  commentId: T:Fusee.Engine.Core.EffectManager
+  isExternal: true
+- uid: Fusee.Engine.Core.Effects
+  commentId: N:Fusee.Engine.Core.Effects
+  name: Fusee.Engine.Core.Effects
+  nameWithType: Fusee.Engine.Core.Effects
+  fullName: Fusee.Engine.Core.Effects
+- uid: Fusee.Engine.Core.Effects.UniformChangedEnum
+  commentId: T:Fusee.Engine.Core.Effects.UniformChangedEnum
+  parent: Fusee.Engine.Core.Effects
+  name: UniformChangedEnum
+  nameWithType: UniformChangedEnum
+  fullName: Fusee.Engine.Core.Effects.UniformChangedEnum

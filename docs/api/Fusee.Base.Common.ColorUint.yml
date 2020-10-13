@@ -240,7 +240,7 @@ items:
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
-  summary: "\nRepresents a 32-bit color (4 bytes) in the form of RGBA (in byte order: R, G, B, A).\nSeen as a 32 bit unsigned integer, each color is in the form AARRGGBB - so the \nmost signifcant byte is Alpha and the least significatn byte is the blue channel\n"
+  summary: "\nRepresents a 32-bit color (4 bytes) in the form of RGBA (in byte order: R, G, B, A).\nSeen as a 32 bit unsigned integer, each color is in the form AARRGGBB - so the \nmost significant byte is Alpha and the least significant byte is the blue channel\n"
   example: []
   syntax:
     content: 'public struct ColorUint : IEquatable<ColorUint>, IFormattable'
@@ -5025,7 +5025,7 @@ items:
     parameters:
     - id: value
       type: Fusee.Math.Core.float3
-      description: The red, green, and blue compoennts of the color.
+      description: The red, green, and blue components of the color.
     - id: alpha
       type: System.Single
       description: The alpha component of the color.
@@ -5609,7 +5609,7 @@ items:
     parameters:
     - id: value
       type: Fusee.Base.Common.ColorUint
-      description: The color to assert (unchange).
+      description: The color to assert (unchanged).
     return:
       type: Fusee.Base.Common.ColorUint
       description: "\nThe asserted (unchanged) color.\n"
@@ -6169,13 +6169,13 @@ items:
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
-  summary: "\nConverts the color to a string capbable of being used in html/css declarations, like #FF0000 for red or #0000FF for blue.\n"
+  summary: "\nConverts the color to a string capable of being used in html/css declarations, like #FF0000 for red or #0000FF for blue.\n"
   example: []
   syntax:
     content: public string ToCss()
     return:
       type: System.String
-      description: A seven charcacter string (# followed by two hex digits for each color channel, red, green and blue).
+      description: A seven characters string (# followed by two hex digits for each color channel, red, green and blue).
     content.vb: Public Function ToCss As String
   overload: Fusee.Base.Common.ColorUint.ToCss*
   modifiers.csharp:
@@ -7119,7 +7119,7 @@ items:
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
-  summary: "\nReturns a color containing the smallest components of the specified colorss.\n\n"
+  summary: "\nReturns a color containing the smallest components of the specified colors.\n\n"
   example: []
   syntax:
     content: public static void Max(ref ColorUint left, ref ColorUint right, out ColorUint result)
@@ -7132,7 +7132,7 @@ items:
       description: The second source color.
     - id: result
       type: Fusee.Base.Common.ColorUint
-      description: When the method completes, contains an new color composed of the largest components of the source colorss.
+      description: When the method completes, contains an new color composed of the largest components of the source colors.
     content.vb: Public Shared Sub Max(ByRef left As ColorUint, ByRef right As ColorUint, ByRef result As ColorUint)
   overload: Fusee.Base.Common.ColorUint.Max*
   nameWithType.vb: ColorUint.Max(ByRef ColorUint, ByRef ColorUint, ByRef ColorUint)
@@ -7162,7 +7162,7 @@ items:
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
-  summary: "\nReturns a color containing the largest components of the specified colorss.\n\n"
+  summary: "\nReturns a color containing the largest components of the specified colors.\n\n"
   example: []
   syntax:
     content: public static ColorUint Max(ColorUint left, ColorUint right)

@@ -26,14 +26,8 @@ items:
   summary: "\nThe header of a FUSEE file.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoContract]
-
-      public struct FusHeader
-    content.vb: >-
-      <ProtoContract>
-
-      Public Structure FusHeader
+    content: public struct FusHeader
+    content.vb: Public Structure FusHeader
   inheritedMembers:
   - System.ValueType.Equals(System.Object)
   - System.ValueType.GetHashCode
@@ -41,10 +35,6 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
-  attributes:
-  - type: ProtoBuf.ProtoContractAttribute
-    ctor: ProtoBuf.ProtoContractAttribute.#ctor
-    arguments: []
   modifiers.csharp:
   - public
   - struct
@@ -72,22 +62,10 @@ items:
   summary: "\nThe file version number of this fus file.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(1)]
-
-      public int FileVersion
+    content: public int FileVersion
     return:
       type: System.Int32
-    content.vb: >-
-      <ProtoMember(1)>
-
-      Public FileVersion As Integer
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 1
+    content.vb: Public FileVersion As Integer
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -113,22 +91,10 @@ items:
   summary: "\nThe generator used to create this fus file.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(2)]
-
-      public string Generator
+    content: public string Generator
     return:
       type: System.String
-    content.vb: >-
-      <ProtoMember(2)>
-
-      Public Generator As String
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 2
+    content.vb: Public Generator As String
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -154,22 +120,10 @@ items:
   summary: "\nThe user who created this fus file.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(3)]
-
-      public string CreatedBy
+    content: public string CreatedBy
     return:
       type: System.String
-    content.vb: >-
-      <ProtoMember(3)>
-
-      Public CreatedBy As String
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 3
+    content.vb: Public CreatedBy As String
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -195,22 +149,10 @@ items:
   summary: "\nThe creation date of the file.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(4)]
-
-      public string CreationDate
+    content: public string CreationDate
     return:
       type: System.String
-    content.vb: >-
-      <ProtoMember(4)>
-
-      Public CreationDate As String
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 4
+    content.vb: Public CreationDate As String
   modifiers.csharp:
   - public
   modifiers.vb:

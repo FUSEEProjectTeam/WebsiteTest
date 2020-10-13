@@ -5,8 +5,8 @@ items:
   id: TextureCompareMode
   parent: Fusee.Engine.Common
   children:
-  - Fusee.Engine.Common.TextureCompareMode.GL_COMPARE_REF_TO_TEXTURE
-  - Fusee.Engine.Common.TextureCompareMode.NONE
+  - Fusee.Engine.Common.TextureCompareMode.CompareRefToTexture
+  - Fusee.Engine.Common.TextureCompareMode.None
   langs:
   - csharp
   - vb
@@ -17,7 +17,7 @@ items:
   source:
     id: TextureCompareMode
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
-    startLine: 60
+    startLine: 65
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -32,28 +32,28 @@ items:
   modifiers.vb:
   - Public
   - Enum
-- uid: Fusee.Engine.Common.TextureCompareMode.NONE
-  commentId: F:Fusee.Engine.Common.TextureCompareMode.NONE
-  id: NONE
+- uid: Fusee.Engine.Common.TextureCompareMode.None
+  commentId: F:Fusee.Engine.Common.TextureCompareMode.None
+  id: None
   parent: Fusee.Engine.Common.TextureCompareMode
   langs:
   - csharp
   - vb
-  name: NONE
-  nameWithType: TextureCompareMode.NONE
-  fullName: Fusee.Engine.Common.TextureCompareMode.NONE
+  name: None
+  nameWithType: TextureCompareMode.None
+  fullName: Fusee.Engine.Common.TextureCompareMode.None
   type: Field
   source:
-    id: NONE
+    id: None
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
-    startLine: 65
+    startLine: 70
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
   summary: "\nDisables the compare mode.\n"
   example: []
   syntax:
-    content: NONE = 0
+    content: None = 0
     return:
       type: Fusee.Engine.Common.TextureCompareMode
   modifiers.csharp:
@@ -62,28 +62,28 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Common.TextureCompareMode.GL_COMPARE_REF_TO_TEXTURE
-  commentId: F:Fusee.Engine.Common.TextureCompareMode.GL_COMPARE_REF_TO_TEXTURE
-  id: GL_COMPARE_REF_TO_TEXTURE
+- uid: Fusee.Engine.Common.TextureCompareMode.CompareRefToTexture
+  commentId: F:Fusee.Engine.Common.TextureCompareMode.CompareRefToTexture
+  id: CompareRefToTexture
   parent: Fusee.Engine.Common.TextureCompareMode
   langs:
   - csharp
   - vb
-  name: GL_COMPARE_REF_TO_TEXTURE
-  nameWithType: TextureCompareMode.GL_COMPARE_REF_TO_TEXTURE
-  fullName: Fusee.Engine.Common.TextureCompareMode.GL_COMPARE_REF_TO_TEXTURE
+  name: CompareRefToTexture
+  nameWithType: TextureCompareMode.CompareRefToTexture
+  fullName: Fusee.Engine.Common.TextureCompareMode.CompareRefToTexture
   type: Field
   source:
-    id: GL_COMPARE_REF_TO_TEXTURE
+    id: CompareRefToTexture
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\ITextureBase.cs
-    startLine: 69
+    startLine: 74
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
   summary: "\nEnables the compare mode.\n"
   example: []
   syntax:
-    content: GL_COMPARE_REF_TO_TEXTURE = 1
+    content: CompareRefToTexture = 1
     return:
       type: Fusee.Engine.Common.TextureCompareMode
   modifiers.csharp:

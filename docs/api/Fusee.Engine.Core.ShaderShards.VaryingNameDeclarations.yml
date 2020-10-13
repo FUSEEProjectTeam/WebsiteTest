@@ -11,6 +11,7 @@ items:
   - Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations.Normal
   - Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations.Position
   - Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations.Tangent
+  - Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations.TBN
   - Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations.TextureCoordinates
   - Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations.ViewDirection
   langs:
@@ -49,6 +50,39 @@ items:
   modifiers.vb:
   - Public
   - Module
+- uid: Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations.TBN
+  commentId: F:Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations.TBN
+  id: TBN
+  parent: Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations
+  langs:
+  - csharp
+  - vb
+  name: TBN
+  nameWithType: VaryingNameDeclarations.TBN
+  fullName: Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations.TBN
+  type: Field
+  source:
+    id: TBN
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\VaryingNameDeclarations.cs
+    startLine: 12
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nThe variable name of the TBN (Tangent, Bitangent, Normal) matrix.\n"
+  example: []
+  syntax:
+    content: public static readonly string TBN
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly TBN As String
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
 - uid: Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations.TextureCoordinates
   commentId: F:Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations.TextureCoordinates
   id: TextureCoordinates
@@ -63,7 +97,7 @@ items:
   source:
     id: TextureCoordinates
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\VaryingNameDeclarations.cs
-    startLine: 12
+    startLine: 17
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -96,7 +130,7 @@ items:
   source:
     id: ViewDirection
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\VaryingNameDeclarations.cs
-    startLine: 17
+    startLine: 22
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -129,7 +163,7 @@ items:
   source:
     id: CameraPosition
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\VaryingNameDeclarations.cs
-    startLine: 22
+    startLine: 27
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -162,7 +196,7 @@ items:
   source:
     id: Tangent
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\VaryingNameDeclarations.cs
-    startLine: 27
+    startLine: 32
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -195,7 +229,7 @@ items:
   source:
     id: Bitangent
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\VaryingNameDeclarations.cs
-    startLine: 32
+    startLine: 37
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -228,7 +262,7 @@ items:
   source:
     id: Color
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\VaryingNameDeclarations.cs
-    startLine: 37
+    startLine: 42
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -261,7 +295,7 @@ items:
   source:
     id: Position
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\VaryingNameDeclarations.cs
-    startLine: 42
+    startLine: 47
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -294,7 +328,7 @@ items:
   source:
     id: Normal
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\VaryingNameDeclarations.cs
-    startLine: 47
+    startLine: 52
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards

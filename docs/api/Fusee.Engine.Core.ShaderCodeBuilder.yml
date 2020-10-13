@@ -32,7 +32,7 @@ items:
   type: Class
   source:
     id: ShaderCodeBuilder
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 17
   assemblies:
   - Fusee.Engine.Core
@@ -72,7 +72,7 @@ items:
   type: Property
   source:
     id: Default
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 22
   assemblies:
   - Fusee.Engine.Core
@@ -107,7 +107,7 @@ items:
   type: Method
   source:
     id: FXAARenderTargetEffect
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 33
   assemblies:
   - Fusee.Engine.Core
@@ -146,12 +146,12 @@ items:
   type: Method
   source:
     id: SSAORenderTargetTextureEffect
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 63
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nShader effect for the ssao pass.\n"
+  summary: "\nShader effect for the SSAO pass.\n"
   example: []
   syntax:
     content: public static ShaderEffect SSAORenderTargetTextureEffect(RenderTarget geomPassRenderTarget, int kernelLength, float2 screenParams)
@@ -188,19 +188,19 @@ items:
   type: Method
   source:
     id: SSAORenderTargetBlurEffect
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 109
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nCreates a blurred ssao texture, to hide rectangular artifacts originating from the noise texture;\n"
+  summary: "\nCreates a blurred SSAO texture, to hide rectangular artifacts originating from the noise texture;\n"
   example: []
   syntax:
     content: public static ShaderEffect SSAORenderTargetBlurEffect(WritableTexture ssaoRenderTex)
     parameters:
     - id: ssaoRenderTex
       type: Fusee.Engine.Core.WritableTexture
-      description: The non blurred ssao texture.
+      description: The non blurred SSAO texture.
     return:
       type: Fusee.Engine.Core.Scene.ShaderEffect
     content.vb: Public Shared Function SSAORenderTargetBlurEffect(ssaoRenderTex As WritableTexture) As ShaderEffect
@@ -224,7 +224,7 @@ items:
   type: Method
   source:
     id: DeferredLightingPassEffect
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 164
   assemblies:
   - Fusee.Engine.Core
@@ -270,7 +270,7 @@ items:
   type: Method
   source:
     id: DeferredLightingPassEffect
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 211
   assemblies:
   - Fusee.Engine.Core
@@ -325,7 +325,7 @@ items:
   type: Method
   source:
     id: ShadowCubeMapEffect
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 243
   assemblies:
   - Fusee.Engine.Core
@@ -364,7 +364,7 @@ items:
   type: Method
   source:
     id: ShadowMapEffect
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 277
   assemblies:
   - Fusee.Engine.Core
@@ -397,7 +397,7 @@ items:
   type: Method
   source:
     id: MakeShaderEffect
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 355
   assemblies:
   - Fusee.Engine.Core
@@ -440,7 +440,7 @@ items:
   type: Method
   source:
     id: MakeShaderEffectProto
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 381
   assemblies:
   - Fusee.Engine.Core
@@ -483,7 +483,7 @@ items:
   type: Method
   source:
     id: MakeShaderEffect
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 408
   assemblies:
   - Fusee.Engine.Core
@@ -529,7 +529,7 @@ items:
   type: Method
   source:
     id: MakeShaderEffectProto
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 436
   assemblies:
   - Fusee.Engine.Core
@@ -575,7 +575,7 @@ items:
   type: Method
   source:
     id: MakeShaderEffect
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 466
   assemblies:
   - Fusee.Engine.Core
@@ -627,7 +627,7 @@ items:
   type: Method
   source:
     id: MakeShaderEffectProto
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 499
   assemblies:
   - Fusee.Engine.Core
@@ -679,7 +679,7 @@ items:
   type: Method
   source:
     id: MakeShaderEffectProto
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 527
   assemblies:
   - Fusee.Engine.Core
@@ -716,7 +716,7 @@ items:
   type: Method
   source:
     id: MakeShaderEffect
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 537
   assemblies:
   - Fusee.Engine.Core
@@ -753,7 +753,7 @@ items:
   type: Method
   source:
     id: MakeShaderEffectFromShaderEffectProps
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 549
   assemblies:
   - Fusee.Engine.Core
@@ -796,7 +796,7 @@ items:
   type: Method
   source:
     id: MakeShaderEffectFromShaderEffectPropsProto
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
+    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\ShaderCodeBuilder.cs
     startLine: 588
   assemblies:
   - Fusee.Engine.Core

@@ -23,13 +23,8 @@ items:
   summary: "\nContains animation data. Generally, a list of animation tracks\n"
   example: []
   syntax:
-    content: >-
-      [ProtoContract]
-
-      public class FusAnimation : FusComponent, IComponent
+    content: 'public class FusAnimation : FusComponent, IComponent'
     content.vb: >-
-      <ProtoContract>
-
       Public Class FusAnimation
           Inherits FusComponent
           Implements IComponent
@@ -47,10 +42,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  attributes:
-  - type: ProtoBuf.ProtoContractAttribute
-    ctor: ProtoBuf.ProtoContractAttribute.#ctor
-    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -78,22 +69,10 @@ items:
   summary: "\nThe animation tracks making up this animation data. \nEach animation track controls a single value.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(3)]
-
-      public List<FusAnimationTrack> AnimationTracks
+    content: public List<FusAnimationTrack> AnimationTracks
     return:
       type: System.Collections.Generic.List{Fusee.Serialization.V1.FusAnimationTrack}
-    content.vb: >-
-      <ProtoMember(3)>
-
-      Public AnimationTracks As List(Of FusAnimationTrack)
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 3
+    content.vb: Public AnimationTracks As List(Of FusAnimationTrack)
   modifiers.csharp:
   - public
   modifiers.vb:

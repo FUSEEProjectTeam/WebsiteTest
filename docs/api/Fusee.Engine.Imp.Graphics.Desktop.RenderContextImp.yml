@@ -15,6 +15,7 @@ items:
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.CreateMeshImp
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.CreateShaderProgram(System.String,System.String,System.String)
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.CreateTexture(Fusee.Engine.Common.ITexture)
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableCubeMap)
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableTexture)
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.DebugLine(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float4)
@@ -58,6 +59,7 @@ items:
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetNormals(Fusee.Engine.Common.IMeshImp,Fusee.Math.Core.float3[])
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetRenderState(Fusee.Engine.Common.RenderState,System.UInt32)
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetRenderTarget(Fusee.Engine.Common.IRenderTarget,Fusee.Engine.Common.ITextureHandle[])
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32,Fusee.Engine.Common.ITextureHandle)
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableCubeMap,Fusee.Engine.Common.ITextureHandle)
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableTexture,Fusee.Engine.Common.ITextureHandle)
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetShader(Fusee.Engine.Common.IShaderHandle)
@@ -74,6 +76,8 @@ items:
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetShaderParamTexture(Fusee.Engine.Common.IShaderParam,Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureType)
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetShaderParamTextureArray(Fusee.Engine.Common.IShaderParam,Fusee.Engine.Common.ITextureHandle[],Fusee.Engine.Common.TextureType)
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTangents(Fusee.Engine.Common.IMeshImp,Fusee.Math.Core.float4[])
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureFilterMode)
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureWrapMode)
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTriangles(Fusee.Engine.Common.IMeshImp,System.UInt16[])
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetUVs(Fusee.Engine.Common.IMeshImp,Fusee.Math.Core.float2[])
   - Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetVertices(Fusee.Engine.Common.IMeshImp,Fusee.Math.Core.float3[])
@@ -150,6 +154,43 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)
+  id: CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)
+  parent: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp
+  langs:
+  - csharp
+  - vb
+  name: CreateTexture(IWritableArrayTexture)
+  nameWithType: RenderContextImp.CreateTexture(IWritableArrayTexture)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)
+  type: Method
+  source:
+    id: CreateTexture
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
+    startLine: 248
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nCreates a new Texture and binds it to the shader.\n"
+  example: []
+  syntax:
+    content: public ITextureHandle CreateTexture(IWritableArrayTexture img)
+    parameters:
+    - id: img
+      type: Fusee.Engine.Common.IWritableArrayTexture
+      description: A given ImageData object, containing all necessary information for the upload to the graphics card.
+    return:
+      type: Fusee.Engine.Common.ITextureHandle
+      description: An ITextureHandle that can be used for texturing in the shader. In this implementation, the handle is an integer-value which is necessary for OpenTK.
+    content.vb: Public Function CreateTexture(img As IWritableArrayTexture) As ITextureHandle
+  overload: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.CreateTexture*
+  implements:
+  - Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableCubeMap)
   commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableCubeMap)
   id: CreateTexture(Fusee.Engine.Common.IWritableCubeMap)
@@ -164,7 +205,7 @@ items:
   source:
     id: CreateTexture
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 245
+    startLine: 281
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -175,7 +216,7 @@ items:
     parameters:
     - id: img
       type: Fusee.Engine.Common.IWritableCubeMap
-      description: A given ImageData object, containing all necessary information for the upload to the graphics card.
+      description: A given IWritableCubeMap object, containing all necessary information for the upload to the graphics card.
     return:
       type: Fusee.Engine.Common.ITextureHandle
       description: An ITextureHandle that can be used for texturing in the shader. In this implementation, the handle is an integer-value which is necessary for OpenTK.
@@ -201,7 +242,7 @@ items:
   source:
     id: CreateTexture
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 277
+    startLine: 312
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -212,7 +253,7 @@ items:
     parameters:
     - id: img
       type: Fusee.Engine.Common.ITexture
-      description: A given ImageData object, containing all necessary information for the upload to the graphics card.
+      description: A given ITexture object, containing all necessary information for the upload to the graphics card.
     return:
       type: Fusee.Engine.Common.ITextureHandle
       description: An ITextureHandle that can be used for texturing in the shader. In this implementation, the handle is an integer-value which is necessary for OpenTK.
@@ -238,7 +279,7 @@ items:
   source:
     id: CreateTexture
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 310
+    startLine: 346
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -249,7 +290,7 @@ items:
     parameters:
     - id: img
       type: Fusee.Engine.Common.IWritableTexture
-      description: A given ImageData object, containing all necessary information for the upload to the graphics card.
+      description: A given IWritableTexture object, containing all necessary information for the upload to the graphics card.
     return:
       type: Fusee.Engine.Common.ITextureHandle
       description: An ITextureHandle that can be used for texturing in the shader. In this implementation, the handle is an integer-value which is necessary for OpenTK.
@@ -275,7 +316,7 @@ items:
   source:
     id: UpdateTextureRegion
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 348
+    startLine: 384
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -311,6 +352,80 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureFilterMode)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureFilterMode)
+  id: SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureFilterMode)
+  parent: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp
+  langs:
+  - csharp
+  - vb
+  name: SetTextureFilterMode(ITextureHandle, TextureFilterMode)
+  nameWithType: RenderContextImp.SetTextureFilterMode(ITextureHandle, TextureFilterMode)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle, Fusee.Engine.Common.TextureFilterMode)
+  type: Method
+  source:
+    id: SetTextureFilterMode
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
+    startLine: 418
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nSets the textures filter mode (<xref href=\"Fusee.Engine.Common.TextureFilterMode\" data-throw-if-not-resolved=\"false\"></xref> at runtime.\n"
+  example: []
+  syntax:
+    content: public void SetTextureFilterMode(ITextureHandle tex, TextureFilterMode filterMode)
+    parameters:
+    - id: tex
+      type: Fusee.Engine.Common.ITextureHandle
+      description: The handle of the texture.
+    - id: filterMode
+      type: Fusee.Engine.Common.TextureFilterMode
+      description: The new filter mode.
+    content.vb: Public Sub SetTextureFilterMode(tex As ITextureHandle, filterMode As TextureFilterMode)
+  overload: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureFilterMode*
+  implements:
+  - Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureFilterMode)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureWrapMode)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureWrapMode)
+  id: SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureWrapMode)
+  parent: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp
+  langs:
+  - csharp
+  - vb
+  name: SetTextureWrapMode(ITextureHandle, TextureWrapMode)
+  nameWithType: RenderContextImp.SetTextureWrapMode(ITextureHandle, TextureWrapMode)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle, Fusee.Engine.Common.TextureWrapMode)
+  type: Method
+  source:
+    id: SetTextureWrapMode
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
+    startLine: 431
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nSets the textures filter mode (<xref href=\"Fusee.Engine.Common.TextureWrapMode\" data-throw-if-not-resolved=\"false\"></xref> at runtime.\n"
+  example: []
+  syntax:
+    content: public void SetTextureWrapMode(ITextureHandle tex, TextureWrapMode wrapMode)
+    parameters:
+    - id: tex
+      type: Fusee.Engine.Common.ITextureHandle
+      description: The handle of the texture.
+    - id: wrapMode
+      type: Fusee.Engine.Common.TextureWrapMode
+      description: The new wrap mode.
+    content.vb: Public Sub SetTextureWrapMode(tex As ITextureHandle, wrapMode As TextureWrapMode)
+  overload: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureWrapMode*
+  implements:
+  - Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureWrapMode)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.DeleteFrameBuffer(Fusee.Engine.Common.IBufferHandle)
   commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.DeleteFrameBuffer(Fusee.Engine.Common.IBufferHandle)
   id: DeleteFrameBuffer(Fusee.Engine.Common.IBufferHandle)
@@ -325,7 +440,7 @@ items:
   source:
     id: DeleteFrameBuffer
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 381
+    startLine: 444
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -359,7 +474,7 @@ items:
   source:
     id: DeleteRenderBuffer
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 390
+    startLine: 453
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -393,7 +508,7 @@ items:
   source:
     id: RemoveTextureHandle
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 399
+    startLine: 462
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -427,7 +542,7 @@ items:
   source:
     id: CreateShaderProgram
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 433
+    startLine: 496
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -474,7 +589,7 @@ items:
   source:
     id: RemoveShader
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 505
+    startLine: 567
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -508,7 +623,7 @@ items:
   source:
     id: SetShader
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 521
+    startLine: 583
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -542,7 +657,7 @@ items:
   source:
     id: GetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 537
+    startLine: 599
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -582,7 +697,7 @@ items:
   source:
     id: GetParamValue
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 550
+    startLine: 612
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -620,7 +735,7 @@ items:
   source:
     id: GetShaderParamList
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 562
+    startLine: 624
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -660,7 +775,7 @@ items:
   source:
     id: SetLineWidth
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 625
+    startLine: 690
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -694,7 +809,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 635
+    startLine: 700
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -731,7 +846,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 645
+    startLine: 710
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -768,7 +883,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 655
+    startLine: 720
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -808,7 +923,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 666
+    startLine: 731
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -845,7 +960,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 676
+    startLine: 741
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -885,7 +1000,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 687
+    startLine: 752
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -922,7 +1037,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 697
+    startLine: 762
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -959,7 +1074,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 715
+    startLine: 780
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -999,7 +1114,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 726
+    startLine: 791
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1039,7 +1154,7 @@ items:
   source:
     id: SetShaderParam
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 747
+    startLine: 812
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1076,7 +1191,7 @@ items:
   source:
     id: SetActiveAndBindTexture
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 780
+    startLine: 848
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1116,7 +1231,7 @@ items:
   source:
     id: SetActiveAndBindTexture
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 801
+    startLine: 869
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1162,7 +1277,7 @@ items:
   source:
     id: SetActiveAndBindTextureArray
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 821
+    startLine: 889
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1205,7 +1320,7 @@ items:
   source:
     id: SetActiveAndBindTextureArray
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 850
+    startLine: 918
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1251,7 +1366,7 @@ items:
   source:
     id: SetShaderParamTexture
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 878
+    startLine: 946
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1291,7 +1406,7 @@ items:
   source:
     id: SetShaderParamTextureArray
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 890
+    startLine: 958
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1334,7 +1449,7 @@ items:
   source:
     id: Clear
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 906
+    startLine: 974
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1368,7 +1483,7 @@ items:
   source:
     id: ClearColor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 917
+    startLine: 985
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1404,7 +1519,7 @@ items:
   source:
     id: ClearDepth
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 933
+    startLine: 1001
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1440,7 +1555,7 @@ items:
   source:
     id: EnableDepthClamp
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 952
+    startLine: 1020
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1470,7 +1585,7 @@ items:
   source:
     id: DisableDepthClamp
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 960
+    startLine: 1028
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1500,7 +1615,7 @@ items:
   source:
     id: CreateAttributeBuffer
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 971
+    startLine: 1039
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1541,7 +1656,7 @@ items:
   source:
     id: DeleteAttributeBuffer
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 997
+    startLine: 1065
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1573,7 +1688,7 @@ items:
   source:
     id: SetVertices
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1017
+    startLine: 1085
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1619,7 +1734,7 @@ items:
   source:
     id: SetTangents
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1042
+    startLine: 1110
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1665,7 +1780,7 @@ items:
   source:
     id: SetBiTangents
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1067
+    startLine: 1135
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1711,7 +1826,7 @@ items:
   source:
     id: SetNormals
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1092
+    startLine: 1160
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1757,7 +1872,7 @@ items:
   source:
     id: SetBoneIndices
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1117
+    startLine: 1185
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1803,7 +1918,7 @@ items:
   source:
     id: SetBoneWeights
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1142
+    startLine: 1210
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1849,7 +1964,7 @@ items:
   source:
     id: SetUVs
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1167
+    startLine: 1235
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1895,7 +2010,7 @@ items:
   source:
     id: SetColors
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1192
+    startLine: 1260
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1941,7 +2056,7 @@ items:
   source:
     id: SetTriangles
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1217
+    startLine: 1285
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -1987,7 +2102,7 @@ items:
   source:
     id: RemoveVertices
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1240
+    startLine: 1308
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2021,7 +2136,7 @@ items:
   source:
     id: RemoveNormals
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1250
+    startLine: 1318
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2055,7 +2170,7 @@ items:
   source:
     id: RemoveColors
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1260
+    startLine: 1328
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2089,7 +2204,7 @@ items:
   source:
     id: RemoveUVs
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1270
+    startLine: 1338
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2123,7 +2238,7 @@ items:
   source:
     id: RemoveTriangles
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1280
+    startLine: 1348
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2157,7 +2272,7 @@ items:
   source:
     id: RemoveBoneWeights
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1290
+    startLine: 1358
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2191,7 +2306,7 @@ items:
   source:
     id: RemoveBoneIndices
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1300
+    startLine: 1368
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2225,7 +2340,7 @@ items:
   source:
     id: RemoveTangents
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1310
+    startLine: 1378
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2259,7 +2374,7 @@ items:
   source:
     id: RemoveBiTangents
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1320
+    startLine: 1388
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2293,7 +2408,7 @@ items:
   source:
     id: Render
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1330
+    startLine: 1398
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2327,7 +2442,7 @@ items:
   source:
     id: GetBufferContent
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1460
+    startLine: 1528
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2341,7 +2456,7 @@ items:
       description: The Rectangle where the content is draw into.
     - id: texId
       type: Fusee.Engine.Common.ITextureHandle
-      description: The tex identifier.
+      description: The texture identifier.
     content.vb: Public Sub GetBufferContent(quad As Rectangle, texId As ITextureHandle)
   overload: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.GetBufferContent*
   implements:
@@ -2364,7 +2479,7 @@ items:
   source:
     id: CreateMeshImp
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1470
+    startLine: 1538
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2397,7 +2512,7 @@ items:
   source:
     id: SetRenderState
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1606
+    startLine: 1674
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2438,7 +2553,7 @@ items:
   source:
     id: GetRenderState
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1744
+    startLine: 1812
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2479,7 +2594,7 @@ items:
   source:
     id: SetRenderTarget
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1875
+    startLine: 1943
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2516,7 +2631,7 @@ items:
   source:
     id: SetRenderTarget
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1912
+    startLine: 1980
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2539,6 +2654,46 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32,Fusee.Engine.Common.ITextureHandle)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32,Fusee.Engine.Common.ITextureHandle)
+  id: SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32,Fusee.Engine.Common.ITextureHandle)
+  parent: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp
+  langs:
+  - csharp
+  - vb
+  name: SetRenderTarget(IWritableArrayTexture, Int32, ITextureHandle)
+  nameWithType: RenderContextImp.SetRenderTarget(IWritableArrayTexture, Int32, ITextureHandle)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture, System.Int32, Fusee.Engine.Common.ITextureHandle)
+  type: Method
+  source:
+    id: SetRenderTarget
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
+    startLine: 2019
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Desktop
+  namespace: Fusee.Engine.Imp.Graphics.Desktop
+  summary: "\nRenders into the given layer of the array texture.\n"
+  example: []
+  syntax:
+    content: public void SetRenderTarget(IWritableArrayTexture tex, int layer, ITextureHandle texHandle)
+    parameters:
+    - id: tex
+      type: Fusee.Engine.Common.IWritableArrayTexture
+      description: The array texture.
+    - id: layer
+      type: System.Int32
+      description: The layer to render to.
+    - id: texHandle
+      type: Fusee.Engine.Common.ITextureHandle
+      description: The texture handle, associated with the given texture. Should be created by the TextureManager in the RenderContext.
+    content.vb: Public Sub SetRenderTarget(tex As IWritableArrayTexture, layer As Integer, texHandle As ITextureHandle)
+  overload: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetRenderTarget*
+  implements:
+  - Fusee.Engine.Common.IRenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32,Fusee.Engine.Common.ITextureHandle)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetRenderTarget(Fusee.Engine.Common.IRenderTarget,Fusee.Engine.Common.ITextureHandle[])
   commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetRenderTarget(Fusee.Engine.Common.IRenderTarget,Fusee.Engine.Common.ITextureHandle[])
   id: SetRenderTarget(Fusee.Engine.Common.IRenderTarget,Fusee.Engine.Common.ITextureHandle[])
@@ -2553,7 +2708,7 @@ items:
   source:
     id: SetRenderTarget
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 1950
+    startLine: 2060
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2593,7 +2748,7 @@ items:
   source:
     id: DetachTextureFromFbo
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 2062
+    startLine: 2172
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2607,10 +2762,10 @@ items:
       description: The render target.
     - id: isDepthTex
       type: System.Boolean
-      description: Determines if the texture is a depth texture. In this case the texture currently associated with <xref href="OpenTK.Graphics.OpenGL.FramebufferAttachment.DepthAttachment" data-throw-if-not-resolved="false"></xref> will be detached.
+      description: Determines if the texture is a depth texture. In this case the texture currently associated with <see cref="!:FramebufferAttachment.DepthAttachment"></see> will be detached.
     - id: attachment
       type: System.Int32
-      description: 'Number of the fbo attachment. For example: attachment = 1 will detach the texture currently associated with <xref href="OpenTK.Graphics.OpenGL.FramebufferAttachment.ColorAttachment1" data-throw-if-not-resolved="false"></xref>.'
+      description: 'Number of the fbo attachment. For example: attachment = 1 will detach the texture currently associated with <see cref="!:FramebufferAttachment.ColorAttachment1"></see>.'
     content.vb: Public Sub DetachTextureFromFbo(renderTarget As IRenderTarget, isDepthTex As Boolean, attachment As Integer = 0)
   overload: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.DetachTextureFromFbo*
   implements:
@@ -2633,7 +2788,7 @@ items:
   source:
     id: AttacheTextureToFbo
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 2075
+    startLine: 2185
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2647,13 +2802,13 @@ items:
       description: The render target.
     - id: isDepthTex
       type: System.Boolean
-      description: Determines if the texture is a depth texture. In this case the texture is attached to <xref href="OpenTK.Graphics.OpenGL.FramebufferAttachment.DepthAttachment" data-throw-if-not-resolved="false"></xref>.
+      description: Determines if the texture is a depth texture. In this case the texture is attached to <see cref="!:FramebufferAttachment.DepthAttachment"></see>.
     - id: texHandle
       type: Fusee.Engine.Common.ITextureHandle
       description: The gpu handle of the texture.
     - id: attachment
       type: System.Int32
-      description: 'Number of the fbo attachment. For example: attachment = 1 will attach the texture to <xref href="OpenTK.Graphics.OpenGL.FramebufferAttachment.ColorAttachment1" data-throw-if-not-resolved="false"></xref>.'
+      description: 'Number of the fbo attachment. For example: attachment = 1 will attach the texture to <see cref="!:FramebufferAttachment.ColorAttachment1"></see>.'
     content.vb: Public Sub AttacheTextureToFbo(renderTarget As IRenderTarget, isDepthTex As Boolean, texHandle As ITextureHandle, attachment As Integer = 0)
   overload: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.AttacheTextureToFbo*
   implements:
@@ -2676,7 +2831,7 @@ items:
   source:
     id: Scissor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 2114
+    startLine: 2224
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2719,7 +2874,7 @@ items:
   source:
     id: Viewport
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 2127
+    startLine: 2237
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2762,7 +2917,7 @@ items:
   source:
     id: ColorMask
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 2140
+    startLine: 2250
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2805,7 +2960,7 @@ items:
   source:
     id: GetHardwareCapabilities
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 2150
+    startLine: 2260
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2842,7 +2997,7 @@ items:
   source:
     id: GetHardwareDescription
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 2167
+    startLine: 2277
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2875,7 +3030,7 @@ items:
   source:
     id: DebugLine
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 2178
+    startLine: 2288
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2915,7 +3070,7 @@ items:
   source:
     id: GetPixelColor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 2198
+    startLine: 2311
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -2961,7 +3116,7 @@ items:
   source:
     id: GetPixelDepth
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Desktop\RenderContextImp.cs
-    startLine: 2211
+    startLine: 2324
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
@@ -3317,6 +3472,54 @@ references:
   name: CreateTexture
   nameWithType: RenderContextImp.CreateTexture
   fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.CreateTexture
+- uid: Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)
+  commentId: M:Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)
+  parent: Fusee.Engine.Common.IRenderContextImp
+  name: CreateTexture(IWritableArrayTexture)
+  nameWithType: IRenderContextImp.CreateTexture(IWritableArrayTexture)
+  fullName: Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)
+    name: CreateTexture
+    nameWithType: IRenderContextImp.CreateTexture
+    fullName: Fusee.Engine.Common.IRenderContextImp.CreateTexture
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IWritableArrayTexture
+    name: IWritableArrayTexture
+    nameWithType: IWritableArrayTexture
+    fullName: Fusee.Engine.Common.IWritableArrayTexture
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)
+    name: CreateTexture
+    nameWithType: IRenderContextImp.CreateTexture
+    fullName: Fusee.Engine.Common.IRenderContextImp.CreateTexture
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IWritableArrayTexture
+    name: IWritableArrayTexture
+    nameWithType: IWritableArrayTexture
+    fullName: Fusee.Engine.Common.IWritableArrayTexture
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.IWritableArrayTexture
+  commentId: T:Fusee.Engine.Common.IWritableArrayTexture
+  parent: Fusee.Engine.Common
+  name: IWritableArrayTexture
+  nameWithType: IWritableArrayTexture
+  fullName: Fusee.Engine.Common.IWritableArrayTexture
+- uid: Fusee.Engine.Common.ITextureHandle
+  commentId: T:Fusee.Engine.Common.ITextureHandle
+  parent: Fusee.Engine.Common
+  name: ITextureHandle
+  nameWithType: ITextureHandle
+  fullName: Fusee.Engine.Common.ITextureHandle
 - uid: Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableCubeMap)
   commentId: M:Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableCubeMap)
   parent: Fusee.Engine.Common.IRenderContextImp
@@ -3359,12 +3562,6 @@ references:
   name: IWritableCubeMap
   nameWithType: IWritableCubeMap
   fullName: Fusee.Engine.Common.IWritableCubeMap
-- uid: Fusee.Engine.Common.ITextureHandle
-  commentId: T:Fusee.Engine.Common.ITextureHandle
-  parent: Fusee.Engine.Common
-  name: ITextureHandle
-  nameWithType: ITextureHandle
-  fullName: Fusee.Engine.Common.ITextureHandle
 - uid: Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.ITexture)
   commentId: M:Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.ITexture)
   parent: Fusee.Engine.Common.IRenderContextImp
@@ -3576,6 +3773,128 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
+- uid: Fusee.Engine.Common.TextureFilterMode
+  commentId: T:Fusee.Engine.Common.TextureFilterMode
+  parent: Fusee.Engine.Common
+  name: TextureFilterMode
+  nameWithType: TextureFilterMode
+  fullName: Fusee.Engine.Common.TextureFilterMode
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureFilterMode*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureFilterMode
+  name: SetTextureFilterMode
+  nameWithType: RenderContextImp.SetTextureFilterMode
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureFilterMode
+- uid: Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureFilterMode)
+  commentId: M:Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureFilterMode)
+  parent: Fusee.Engine.Common.IRenderContextImp
+  name: SetTextureFilterMode(ITextureHandle, TextureFilterMode)
+  nameWithType: IRenderContextImp.SetTextureFilterMode(ITextureHandle, TextureFilterMode)
+  fullName: Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle, Fusee.Engine.Common.TextureFilterMode)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureFilterMode)
+    name: SetTextureFilterMode
+    nameWithType: IRenderContextImp.SetTextureFilterMode
+    fullName: Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.ITextureHandle
+    name: ITextureHandle
+    nameWithType: ITextureHandle
+    fullName: Fusee.Engine.Common.ITextureHandle
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.TextureFilterMode
+    name: TextureFilterMode
+    nameWithType: TextureFilterMode
+    fullName: Fusee.Engine.Common.TextureFilterMode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureFilterMode)
+    name: SetTextureFilterMode
+    nameWithType: IRenderContextImp.SetTextureFilterMode
+    fullName: Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.ITextureHandle
+    name: ITextureHandle
+    nameWithType: ITextureHandle
+    fullName: Fusee.Engine.Common.ITextureHandle
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.TextureFilterMode
+    name: TextureFilterMode
+    nameWithType: TextureFilterMode
+    fullName: Fusee.Engine.Common.TextureFilterMode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Common.TextureWrapMode
+  commentId: T:Fusee.Engine.Common.TextureWrapMode
+  parent: Fusee.Engine.Common
+  name: TextureWrapMode
+  nameWithType: TextureWrapMode
+  fullName: Fusee.Engine.Common.TextureWrapMode
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureWrapMode*
+  commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureWrapMode
+  name: SetTextureWrapMode
+  nameWithType: RenderContextImp.SetTextureWrapMode
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.SetTextureWrapMode
+- uid: Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureWrapMode)
+  commentId: M:Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureWrapMode)
+  parent: Fusee.Engine.Common.IRenderContextImp
+  name: SetTextureWrapMode(ITextureHandle, TextureWrapMode)
+  nameWithType: IRenderContextImp.SetTextureWrapMode(ITextureHandle, TextureWrapMode)
+  fullName: Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle, Fusee.Engine.Common.TextureWrapMode)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureWrapMode)
+    name: SetTextureWrapMode
+    nameWithType: IRenderContextImp.SetTextureWrapMode
+    fullName: Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.ITextureHandle
+    name: ITextureHandle
+    nameWithType: ITextureHandle
+    fullName: Fusee.Engine.Common.ITextureHandle
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.TextureWrapMode
+    name: TextureWrapMode
+    nameWithType: TextureWrapMode
+    fullName: Fusee.Engine.Common.TextureWrapMode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureWrapMode)
+    name: SetTextureWrapMode
+    nameWithType: IRenderContextImp.SetTextureWrapMode
+    fullName: Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.ITextureHandle
+    name: ITextureHandle
+    nameWithType: ITextureHandle
+    fullName: Fusee.Engine.Common.ITextureHandle
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.TextureWrapMode
+    name: TextureWrapMode
+    nameWithType: TextureWrapMode
+    fullName: Fusee.Engine.Common.TextureWrapMode
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.DeleteFrameBuffer*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.DeleteFrameBuffer
   name: DeleteFrameBuffer
@@ -6850,6 +7169,73 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Fusee.Engine.Common.IRenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32,Fusee.Engine.Common.ITextureHandle)
+  commentId: M:Fusee.Engine.Common.IRenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32,Fusee.Engine.Common.ITextureHandle)
+  parent: Fusee.Engine.Common.IRenderContextImp
+  isExternal: true
+  name: SetRenderTarget(IWritableArrayTexture, Int32, ITextureHandle)
+  nameWithType: IRenderContextImp.SetRenderTarget(IWritableArrayTexture, Int32, ITextureHandle)
+  fullName: Fusee.Engine.Common.IRenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture, System.Int32, Fusee.Engine.Common.ITextureHandle)
+  spec.csharp:
+  - uid: Fusee.Engine.Common.IRenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32,Fusee.Engine.Common.ITextureHandle)
+    name: SetRenderTarget
+    nameWithType: IRenderContextImp.SetRenderTarget
+    fullName: Fusee.Engine.Common.IRenderContextImp.SetRenderTarget
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IWritableArrayTexture
+    name: IWritableArrayTexture
+    nameWithType: IWritableArrayTexture
+    fullName: Fusee.Engine.Common.IWritableArrayTexture
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.ITextureHandle
+    name: ITextureHandle
+    nameWithType: ITextureHandle
+    fullName: Fusee.Engine.Common.ITextureHandle
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Common.IRenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32,Fusee.Engine.Common.ITextureHandle)
+    name: SetRenderTarget
+    nameWithType: IRenderContextImp.SetRenderTarget
+    fullName: Fusee.Engine.Common.IRenderContextImp.SetRenderTarget
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Engine.Common.IWritableArrayTexture
+    name: IWritableArrayTexture
+    nameWithType: IWritableArrayTexture
+    fullName: Fusee.Engine.Common.IWritableArrayTexture
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Common.ITextureHandle
+    name: ITextureHandle
+    nameWithType: ITextureHandle
+    fullName: Fusee.Engine.Common.ITextureHandle
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Fusee.Engine.Common.IRenderContextImp.SetRenderTarget(Fusee.Engine.Common.IRenderTarget,Fusee.Engine.Common.ITextureHandle[])
   commentId: M:Fusee.Engine.Common.IRenderContextImp.SetRenderTarget(Fusee.Engine.Common.IRenderTarget,Fusee.Engine.Common.ITextureHandle[])
   parent: Fusee.Engine.Common.IRenderContextImp
@@ -6915,12 +7301,6 @@ references:
   name: IRenderTarget
   nameWithType: IRenderTarget
   fullName: Fusee.Engine.Common.IRenderTarget
-- uid: OpenTK.Graphics.OpenGL.FramebufferAttachment.ColorAttachment1
-  commentId: F:OpenTK.Graphics.OpenGL.FramebufferAttachment.ColorAttachment1
-  isExternal: true
-- uid: OpenTK.Graphics.OpenGL.FramebufferAttachment.DepthAttachment
-  commentId: F:OpenTK.Graphics.OpenGL.FramebufferAttachment.DepthAttachment
-  isExternal: true
 - uid: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.DetachTextureFromFbo*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.DetachTextureFromFbo
   name: DetachTextureFromFbo

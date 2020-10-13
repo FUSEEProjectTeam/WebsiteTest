@@ -27,10 +27,6 @@ simply typing `dotnet new fusee` at the command line.
 - **.NET App**. This will embed your application code into a .NET Framework
   3D application and bundles all necessary files into one directory. 
 
-- **Web App**. This will cross-compile your application code into a
-  a HTML/JavaScript WebGL-based Web-App runnable on most browsers, including
-  mobile versions.
-
 - **Android**. Using Xamarin, your code will be transformed into a native
   Android apk. Currently, the Xamarin build is not integrated into 
   the FUSEE Visual Studio Code build process. To create Android Apps from 

@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Fusee.Engine.Core.Effects
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Fusee.Engine.Core.Effects
+   ">
+    <meta name="generator" content="docfx 2.55.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Core.Effects">
+  
+  <h1 id="Fusee_Engine_Core_Effects" data-uid="Fusee.Engine.Core.Effects" class="text-break">Namespace Fusee.Engine.Core.Effects
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.BRDFInput.html">BRDFInput</a></h4>
+      <section><p>Class that can be used to collect properties that will serve as uniforms for a specific lighting setup.
+In this case for a BRDF lighting calculation.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.ColorInput.html">ColorInput</a></h4>
+      <section><p>Class that can be used to collect properties that will serve as uniforms for a specific lighting setup.
+In this case it only contains the albedo color.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.DefaultSurfaceEffect.html">DefaultSurfaceEffect</a></h4>
+      <section><p>The default <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html">Effect</a>, that is used if no other Effect is found.
+Provides properties to change the Diffuse Color, Specular Color, Specular Intensity and Specular Shininess.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.Effect.html">Effect</a></h4>
+      <section><p>Abstract class that provides input for <a class="xref" href="Fusee.Engine.Core.Effects.ShaderEffect.html">ShaderEffect</a> and <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html">SurfaceEffect</a>.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.EffectManagerEventArgs.html">EffectManagerEventArgs</a></h4>
+      <section><p>Event arguments that are passed from an <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html">Effect</a> to the <span class="xref">Fusee.Engine.Core.EffectManager</span>.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.ShaderEffect.html">ShaderEffect</a></h4>
+      <section><p>A ShaderEffect contains a string for each, the vertex, fragment and geometry shader and a set of render states.
+Use this if you want to write the shader code on your own.
+The values of uniform variables you defined (<a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_ParamDecl">ParamDecl</a>) can be set using <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_SetFxParam__1_System_String___0_">SetFxParam&lt;T&gt;(String, T)</a>.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.SpecularInput.html">SpecularInput</a></h4>
+      <section><p>Class that can be used to collect properties that will serve as uniforms for a specific lighting setup.
+In this case for specular lighting with strength and shininess.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html">SurfaceEffect</a></h4>
+      <section><p>A surface effect contains information to build a shader program</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectEventArgs.html">SurfaceEffectEventArgs</a></h4>
+      <section><p>Event arguments for notifying a <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html">SurfaceEffect</a> about changes in a property of a class (for example see <a class="xref" href="Fusee.Engine.Core.Effects.ColorInput.html">ColorInput</a>).</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.TextureInput.html">TextureInput</a></h4>
+      <section><p>Class that can be used to collect properties that will serve as uniforms for a specific lighting setup.
+In this case for specular lighting with strength and shininess.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.TextureInputBRDF.html">TextureInputBRDF</a></h4>
+      <section><p>Class that can be used to collect properties that will serve as uniforms for a specific lighting setup.
+In this case for specular lighting with strength and shininess.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.TextureInputUnlit.html">TextureInputUnlit</a></h4>
+      <section><p>Class that can be used to collect properties that will serve as uniforms for a specific lighting setup.
+In this case for specular lighting with strength and shininess.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.FxParamDeclaration-1.html">FxParamDeclaration&lt;T&gt;</a></h4>
+      <section><p>A data type for the list of (uniform) parameters possibly occurring in one of the shaders in the various passes.
+Each of this array entry consists of the parameter's name and its initial value. The concrete type of the object also indicates the
+parameter's type.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.FxPassDeclaration.html">FxPassDeclaration</a></h4>
+      <section><p>An effect pass declaration contains the vertex, pixel and geometry shader source code as well as a <a class="xref" href="Fusee.Engine.Core.RenderStateSet.html">RenderStateSet</a> for a <a class="xref" href="Fusee.Engine.Core.Effects.ShaderEffect.html">ShaderEffect</a>.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.IFxParamDeclaration.html">IFxParamDeclaration</a></h4>
+      <section><p>A parameter declaration contains the name and type of the shader parameter, as well as a flag, that indicates in which types of shaders this parameter is used.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.IFxPassDeclarationBase.html">IFxPassDeclarationBase</a></h4>
+      <section><p>An effect pass declaration contains the relevant shader source code as well as a <a class="xref" href="Fusee.Engine.Core.RenderStateSet.html">RenderStateSet</a> declaration for a <a class="xref" href="Fusee.Engine.Core.Effects.ShaderEffect.html">ShaderEffect</a>.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.INotifyInputChange.html">INotifyInputChange</a></h4>
+      <section><p>Provides an Event for notifying a property change.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.ShaderCategory.html">ShaderCategory</a></h4>
+      <section><p>Used to flag which shader type a <a class="xref" href="Fusee.Engine.Core.Effects.ShaderEffect.html">ShaderEffect</a> property belongs to.
+Supports vertex, pixel and geometry shaders.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.ShardCategory.html">ShardCategory</a></h4>
+      <section><p>Used to describe the type of shader shard. A shard is a piece of shader code, usually in form of a static string.
+The category is used to sort the shards in order to build the complete shader source code from them.
+Furthermore this it can be used to describe special behavior of a shader shard in the <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html">SurfaceEffect</a>.
+The order is given by the values of the enumeration.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.Effects.UniformChangedEnum.html">UniformChangedEnum</a></h4>
+      <section><p>Enum for determining the action that needs to be taken for a uniform variable in the <span class="xref">Fusee.Engine.Core.EffectManager</span>.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

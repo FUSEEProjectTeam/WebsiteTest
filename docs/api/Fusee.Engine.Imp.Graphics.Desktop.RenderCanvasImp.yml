@@ -6,7 +6,7 @@ items:
   parent: Fusee.Engine.Imp.Graphics.Desktop
   children:
   - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor
-  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(System.Drawing.Icon)
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(Icon)
   - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(System.Int32,System.Int32)
   - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.Caption
   - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.CloseGameWindow
@@ -492,16 +492,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(System.Drawing.Icon)
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(System.Drawing.Icon)
-  id: '#ctor(System.Drawing.Icon)'
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(Icon)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(Icon)
+  id: '#ctor(Icon)'
   parent: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp
   langs:
   - csharp
   - vb
   name: RenderCanvasImp(Icon)
   nameWithType: RenderCanvasImp.RenderCanvasImp(Icon)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.RenderCanvasImp(System.Drawing.Icon)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.RenderCanvasImp(Icon)
   type: Constructor
   source:
     id: .ctor
@@ -516,7 +516,7 @@ items:
     content: public RenderCanvasImp(Icon appIcon)
     parameters:
     - id: appIcon
-      type: System.Drawing.Icon
+      type: Icon
       description: The icon for the render window.
     content.vb: Public Sub New(appIcon As Icon)
   overload: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor*
@@ -753,7 +753,7 @@ items:
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
-  summary: "\nSet the cursor (the mouse pointer image) to one of the pre-defined types\n"
+  summary: "\nSet the cursor (the mouse pointer image) to one of the predefined types\n"
   example: []
   syntax:
     content: public void SetCursor(CursorType cursorType)
@@ -863,7 +863,7 @@ items:
       type: System.Int32
       description: The height of the window, and therefore image to render.
     return:
-      type: System.Drawing.Bitmap
+      type: Bitmap
       description: ''
     content.vb: Public Function ShootCurrentFrame(width As Integer, height As Integer) As Bitmap
   overload: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.ShootCurrentFrame*
@@ -1502,19 +1502,11 @@ references:
   name: RenderCanvasImp
   nameWithType: RenderCanvasImp.RenderCanvasImp
   fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.RenderCanvasImp
-- uid: System.Drawing.Icon
-  commentId: T:System.Drawing.Icon
-  parent: System.Drawing
+- uid: Icon
   isExternal: true
   name: Icon
   nameWithType: Icon
-  fullName: System.Drawing.Icon
-- uid: System.Drawing
-  commentId: N:System.Drawing
-  isExternal: true
-  name: System.Drawing
-  nameWithType: System.Drawing
-  fullName: System.Drawing
+  fullName: Icon
 - uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.Dispose*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.Dispose
   name: Dispose
@@ -1828,10 +1820,8 @@ references:
   name: ShootCurrentFrame
   nameWithType: RenderCanvasImp.ShootCurrentFrame
   fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.ShootCurrentFrame
-- uid: System.Drawing.Bitmap
-  commentId: T:System.Drawing.Bitmap
-  parent: System.Drawing
+- uid: Bitmap
   isExternal: true
   name: Bitmap
   nameWithType: Bitmap
-  fullName: System.Drawing.Bitmap
+  fullName: Bitmap

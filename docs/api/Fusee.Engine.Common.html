@@ -77,6 +77,9 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="Fusee.Engine.Common.AttributeLocations.html">AttributeLocations</a></h4>
+      <section><p>Declares buffer locations.</p>
+</section>
       <h4><a class="xref" href="Fusee.Engine.Common.AxisValueChangedArgs.html">AxisValueChangedArgs</a></h4>
       <section><p>Event arguments sent with value changing events for input axes.</p>
 </section>
@@ -134,7 +137,7 @@ can be used to access the button state.</p>
       <section><p>Implementation specific information about a button exhibited by a device.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.CharInfoStruct.html">CharInfoStruct</a></h4>
-      <section><p>A struct for saving character information needed for proccesing a font.</p>
+      <section><p>A struct for saving character information needed for processing a font.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.IPEndpointData.html">IPEndpointData</a></h4>
       <section><p>Struct holding all data necessary to describe an IP connection.</p>
@@ -159,7 +162,7 @@ Does NOT contain the actual value of the shader parameter.</p>
   </h3>
       <h4><a class="xref" href="Fusee.Engine.Common.IAttribImp.html">IAttribImp</a></h4>
       <section><p>Interface for implementing handles on attribute arrays stored on GPU memory such as vertices, normals, uvs etc.
-This interface does not require any particular public impmlementation. It is meant as a markup-Interace to identify
+This interface does not require any particular public implementation. It is meant as a markup-Interface to identify
 types.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.IAudioImp.html">IAudioImp</a></h4>
@@ -206,14 +209,14 @@ by a connection between two bodies A and B.</p>
       <section><p>Implementation agnostic representation of a cylinder shape.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.IDynamicWorldImp.html">IDynamicWorldImp</a></h4>
-      <section><p>Implementation agnostic representation of a dynamic worl. The dynamic world is the root object of
+      <section><p>Implementation agnostic representation of a dynamic world. The dynamic world is the root object of
 any physics simulation. It keeps track of all objects moving and rotating within the world.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.IEmptyShapeImp.html">IEmptyShapeImp</a></h4>
       <section><p>Implementation agnostic representation of an empty shape.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.IFont.html">IFont</a></h4>
-      <section><p>Interface for a font object to save informationen needed for proccesing a font.</p>
+      <section><p>Interface for a font object to save information needed for processing a font.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.IGearConstraintImp.html">IGearConstraintImp</a></h4>
       <section><p>Implementation agnostic representation of a gear constraint.</p>
@@ -234,13 +237,13 @@ any physics simulation. It keeps track of all objects moving and rotating within
       <section><p>Abstracts the platform/device dependent implementation of an input device.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.IInputDriverImp.html">IInputDriverImp</a></h4>
-      <section><p>Implementations of this interface represent a piece of software capabable of connecting to
+      <section><p>Implementations of this interface represent a piece of software capable of connecting to
 one or more input devices (<a class="xref" href="Fusee.Engine.Common.IInputDeviceImp.html">IInputDeviceImp</a>. Members of this interface allow access to the devices.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a></h4>
       <section><p>Interface for Mesh implementations. The implementation should handle typical mesh informations like: vertices, triangles, normals, colors, UV's.
-It is also required to implement a connection to the current Rendercontext in order to apply the Mesh for rendering.
-The Mesh should preferable use handles for its informations in order to communicate with a rendercontext. The handles are refering to so called BufferObjects.</p>
+It is also required to implement a connection to the current RenderContext in order to apply the Mesh for rendering.
+The Mesh should preferable use handles for its informations in order to communicate with a RenderContext. The handles are referring to so called BufferObjects.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.IMultiSphereShapeImp.html">IMultiSphereShapeImp</a></h4>
       <section><p>Implementation agnostic representation of a collision shape
@@ -256,7 +259,7 @@ consisting of multiple spheres.</p>
       <section><p>The Network message interface.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.IPoint2PointConstraintImp.html">IPoint2PointConstraintImp</a></h4>
-      <section><p>Implmentation agnostic representation of a point-to-point constraint.</p>
+      <section><p>Implementation agnostic representation of a point-to-point constraint.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.IRenderCanvasImp.html">IRenderCanvasImp</a></h4>
       <section><p>Implementation agnostic representation of a render canvas.</p>
@@ -316,6 +319,11 @@ to load a video.</p>
 The interface for all VideoStream implementations.
 This interface contains all functions to control the playback of a video.</p>
 </section>
+      <h4><a class="xref" href="Fusee.Engine.Common.IWritableArrayTexture.html">IWritableArrayTexture</a></h4>
+      <section><p>Cross platform abstraction for a WritableTexture.
+Use writable textures if you want to render into a texture.
+Does NOT offer access to the pixel data.</p>
+</section>
       <h4><a class="xref" href="Fusee.Engine.Common.IWritableCubeMap.html">IWritableCubeMap</a></h4>
       <section><p>Cross platform abstraction for WritableCubeMap.
 Interface for creating a WritableCubeMap with six faces.</p>
@@ -335,7 +343,7 @@ Does NOT offer access to the pixel data.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.AxisNature.html">AxisNature</a></h4>
       <section><p>Symbolic value describing the nature of the axis (the typical usage of this axis in applications).
-Use this value to query unkown devices/axes.</p>
+Use this value to query unknown devices/axes.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.Blend.html">Blend</a></h4>
       <section><p>Used to define the source and destination blending factors. Together, these specify the blend operation to be used when writing a pixel color value onto the render canvas.</p>
@@ -371,7 +379,7 @@ Standard pointer and link-hand cursor are currently supported.</p>
       <section><p>Specifies the fill mode to use by the rasterizer. Options are Point (renders vertices as single pixels), Wireframe (renders only triangles' edges as lines), or Solid (fills all pixels covered by triangles).</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.Gamepad.html">Gamepad</a></h4>
-      <section><p>The buttons and axes a gamecontroller exposes.</p>
+      <section><p>The buttons and axes a game controller exposes.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.HardwareCapability.html">HardwareCapability</a></h4>
       <section><p>Checks if the hardware is capable of the following entries.
@@ -379,6 +387,9 @@ If a numeric value is expected, this will be returned as a uint from the <a clas
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.HingeFlags.html">HingeFlags</a></h4>
       <section><p>Flags describing hinge detail.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Common.HorizontalTextAlignment.html">HorizontalTextAlignment</a></h4>
+      <section><p>Defines the alignment in x direction.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.KeyCodes.html">KeyCodes</a></h4>
       <section><p>Specifies the possible key values on a keyboard.</p>
@@ -403,7 +414,7 @@ Data is always received as Byte[] and will be casted to appropriate enum type.</
       <section><p>This is the primitive type used by the RenderContext internally to distinguish between the different OpenGL primitives</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.PointToPointFlags.html">PointToPointFlags</a></h4>
-      <section><p>Flags specifing point-to-point constraint details.</p>
+      <section><p>Flags specifying point-to-point constraint details.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.RenderState.html">RenderState</a></h4>
       <section><p>The render state enumeration. This is used in render context implementations to identify the render state to set.
@@ -413,7 +424,7 @@ Keep this binary compatible with DirectX version 9.</p>
       <section><p>Enum, that defines all available render texture types.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.SixDOFAxis.html">SixDOFAxis</a></h4>
-      <section><p>The different axes a SixDOF device e.g. spacemouse exposes.</p>
+      <section><p>The different axes a SixDOF device e.g. SpaceMouse exposes.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.SysType.html">SysType</a></h4>
       <section><p>Type of the system enums.</p>
@@ -446,6 +457,9 @@ if not enough axes are handled by enum values.</p>
       <h4><a class="xref" href="Fusee.Engine.Common.TouchPoints.html">TouchPoints</a></h4>
       <section><p>Button Ids for Touch devices. Use <pre><code>(int) (Touchpoint_0 + i)</code></pre>
 if not enough axes are handled by enum values.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Common.VerticalTextAlignment.html">VerticalTextAlignment</a></h4>
+      <section><p>Defines the alignment in y direction.</p>
 </section>
     <h3 id="delegates">Delegates
   </h3>

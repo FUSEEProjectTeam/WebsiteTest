@@ -94,6 +94,9 @@ This particular SceneRenderer uses deferred rendering.</p>
       <a class="xref" href="Fusee.Engine.Core.SceneRendererForward.html#Fusee_Engine_Core_SceneRendererForward_DoFrumstumCulling">SceneRendererForward.DoFrumstumCulling</a>
     </div>
     <div>
+      <a class="xref" href="Fusee.Engine.Core.SceneRendererForward.html#Fusee_Engine_Core_SceneRendererForward_RenderLayer">SceneRendererForward.RenderLayer</a>
+    </div>
+    <div>
       <a class="xref" href="Fusee.Engine.Core.SceneRendererForward.html#Fusee_Engine_Core_SceneRendererForward_LightViseratorResults">SceneRendererForward.LightViseratorResults</a>
     </div>
     <div>
@@ -130,6 +133,9 @@ This particular SceneRenderer uses deferred rendering.</p>
       <a class="xref" href="Fusee.Engine.Core.SceneRendererForward.html#Fusee_Engine_Core_SceneRendererForward_AccumulateLight">SceneRendererForward.AccumulateLight()</a>
     </div>
     <div>
+      <a class="xref" href="Fusee.Engine.Core.SceneRendererForward.html#Fusee_Engine_Core_SceneRendererForward_RenderRenderLayer_Fusee_Engine_Core_Scene_RenderLayer_">SceneRendererForward.RenderRenderLayer(RenderLayer)</a>
+    </div>
+    <div>
       <a class="xref" href="Fusee.Engine.Core.SceneRendererForward.html#Fusee_Engine_Core_SceneRendererForward_RenderBone_Fusee_Engine_Core_Scene_Bone_">SceneRendererForward.RenderBone(Bone)</a>
     </div>
     <div>
@@ -154,10 +160,10 @@ This particular SceneRenderer uses deferred rendering.</p>
       <a class="xref" href="Fusee.Engine.Core.SceneRendererForward.html#Fusee_Engine_Core_SceneRendererForward_RenderPtOctant_Fusee_Engine_Core_Scene_Octant_">SceneRendererForward.RenderPtOctant(Octant)</a>
     </div>
     <div>
-      <a class="xref" href="Fusee.Engine.Core.SceneRendererForward.html#Fusee_Engine_Core_SceneRendererForward_AddWeightToMesh_Fusee_Engine_Core_Scene_Mesh_Fusee_Engine_Core_Scene_Weight_">SceneRendererForward.AddWeightToMesh(Mesh, Weight)</a>
+      <a class="xref" href="Fusee.Engine.Core.SceneRendererForward.html#Fusee_Engine_Core_SceneRendererForward_RenderEffect_Fusee_Engine_Core_Effects_Effect_">SceneRendererForward.RenderEffect(Effect)</a>
     </div>
     <div>
-      <a class="xref" href="Fusee.Engine.Core.SceneRendererForward.html#Fusee_Engine_Core_SceneRendererForward_InitState">SceneRendererForward.InitState()</a>
+      <a class="xref" href="Fusee.Engine.Core.SceneRendererForward.html#Fusee_Engine_Core_SceneRendererForward_AddWeightToMesh_Fusee_Engine_Core_Scene_Mesh_Fusee_Engine_Core_Scene_Weight_">SceneRendererForward.AddWeightToMesh(Mesh, Weight)</a>
     </div>
     <div>
       <a class="xref" href="Fusee.Engine.Core.SceneRendererForward.html#Fusee_Engine_Core_SceneRendererForward_PushState">SceneRendererForward.PushState()</a>
@@ -234,13 +240,13 @@ This particular SceneRenderer uses deferred rendering.</p>
   
   
   <a id="Fusee_Engine_Core_SceneRendererDeferred__ctor_" data-uid="Fusee.Engine.Core.SceneRendererDeferred.#ctor*"></a>
-  <h4 id="Fusee_Engine_Core_SceneRendererDeferred__ctor_Fusee_Engine_Core_Scene_SceneContainer_Fusee_Engine_Common_TexRes_Fusee_Engine_Common_TexRes_" data-uid="Fusee.Engine.Core.SceneRendererDeferred.#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Common.TexRes,Fusee.Engine.Common.TexRes)">SceneRendererDeferred(SceneContainer, TexRes, TexRes)</h4>
+  <h4 id="Fusee_Engine_Core_SceneRendererDeferred__ctor_Fusee_Engine_Core_Scene_SceneContainer_Fusee_Engine_Core_Scene_RenderLayers_Fusee_Engine_Common_TexRes_Fusee_Engine_Common_TexRes_" data-uid="Fusee.Engine.Core.SceneRendererDeferred.#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Core.Scene.RenderLayers,Fusee.Engine.Common.TexRes,Fusee.Engine.Common.TexRes)">SceneRendererDeferred(SceneContainer, RenderLayers, TexRes, TexRes)</h4>
   <div class="markdown level1 summary"><p>Creates a new instance of type SceneRendererDeferred.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SceneRendererDeferred(SceneContainer sc, TexRes texRes = TexRes.MID_RES, TexRes shadowMapRes = TexRes.MID_RES)</code></pre>
+    <pre><code class="lang-csharp hljs">public SceneRendererDeferred(SceneContainer sc, RenderLayers renderLayer = RenderLayers.All | RenderLayers.Default, TexRes texRes = TexRes.Middle, TexRes shadowMapRes = TexRes.Middle)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -259,6 +265,11 @@ This particular SceneRenderer uses deferred rendering.</p>
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.RenderLayers.html">RenderLayers</a></td>
+        <td><span class="parametername">renderLayer</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><a class="xref" href="Fusee.Engine.Common.TexRes.html">TexRes</a></td>
         <td><span class="parametername">texRes</span></td>
         <td><p>The g-buffer texture resolution.</p>
@@ -274,6 +285,32 @@ This particular SceneRenderer uses deferred rendering.</p>
   </table>
   <h3 id="fields">Fields
   </h3>
+  
+  
+  <h4 id="Fusee_Engine_Core_SceneRendererDeferred_CascadeFarPlane" data-uid="Fusee.Engine.Core.SceneRendererDeferred.CascadeFarPlane">CascadeFarPlane</h4>
+  <div class="markdown level1 summary"><p>Sets the distance to the far plane for the cascaded shadow mapping calculation.
+For smaller scenes we need to choose smaller values to get shadow maps with decent resolution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CascadeFarPlane</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <h4 id="Fusee_Engine_Core_SceneRendererDeferred_NumberOfCascades" data-uid="Fusee.Engine.Core.SceneRendererDeferred.NumberOfCascades">NumberOfCascades</h4>
@@ -465,6 +502,19 @@ If possible set this in the &quot;Init&quot; method to avoid the creation of an 
   </h3>
   
   
+  <a id="Fusee_Engine_Core_SceneRendererDeferred_InitState_" data-uid="Fusee.Engine.Core.SceneRendererDeferred.InitState*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererDeferred_InitState" data-uid="Fusee.Engine.Core.SceneRendererDeferred.InitState">InitState()</h4>
+  <div class="markdown level1 summary"><p>Sets the initial values in the <a class="xref" href="Fusee.Engine.Core.RendererState.html">RendererState</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InitState()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Fusee.Engine.Core.SceneRendererForward.html#Fusee_Engine_Core_SceneRendererForward_InitState">SceneRendererForward.InitState()</a></div>
+  
+  
   <a id="Fusee_Engine_Core_SceneRendererDeferred_PopState_" data-uid="Fusee.Engine.Core.SceneRendererDeferred.PopState*"></a>
   <h4 id="Fusee_Engine_Core_SceneRendererDeferred_PopState" data-uid="Fusee.Engine.Core.SceneRendererDeferred.PopState">PopState()</h4>
   <div class="markdown level1 summary"><p>Pops from the RenderState and sets the Model and View matrices in the RenderContext.</p>
@@ -515,7 +565,7 @@ If possible set this in the &quot;Init&quot; method to avoid the creation of an 
   
   <a id="Fusee_Engine_Core_SceneRendererDeferred_RenderMesh_" data-uid="Fusee.Engine.Core.SceneRendererDeferred.RenderMesh*"></a>
   <h4 id="Fusee_Engine_Core_SceneRendererDeferred_RenderMesh_Fusee_Engine_Core_Scene_Mesh_" data-uid="Fusee.Engine.Core.SceneRendererDeferred.RenderMesh(Fusee.Engine.Core.Scene.Mesh)">RenderMesh(Mesh)</h4>
-  <div class="markdown level1 summary"><p>If a Mesh is visited and it has a <see cref="!:WeightComponent"></see> the BoneIndices and  BoneWeights get set,
+  <div class="markdown level1 summary"><p>If a Mesh is visited and it has a <a class="xref" href="Fusee.Engine.Core.Scene.Weight.html">Weight</a> the BoneIndices and  BoneWeights get set,
 the shader parameters for all lights in the scene are updated and the geometry is passed to be pushed through the rendering pipeline.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -544,13 +594,13 @@ the shader parameters for all lights in the scene are updated and the geometry i
   
   
   <a id="Fusee_Engine_Core_SceneRendererDeferred_RenderShaderEffect_" data-uid="Fusee.Engine.Core.SceneRendererDeferred.RenderShaderEffect*"></a>
-  <h4 id="Fusee_Engine_Core_SceneRendererDeferred_RenderShaderEffect_Fusee_Engine_Core_Scene_ShaderEffect_" data-uid="Fusee.Engine.Core.SceneRendererDeferred.RenderShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)">RenderShaderEffect(ShaderEffect)</h4>
+  <h4 id="Fusee_Engine_Core_SceneRendererDeferred_RenderShaderEffect_Fusee_Engine_Core_Effects_Effect_" data-uid="Fusee.Engine.Core.SceneRendererDeferred.RenderShaderEffect(Fusee.Engine.Core.Effects.Effect)">RenderShaderEffect(Effect)</h4>
   <div class="markdown level1 summary"><p>If a ShaderEffectComponent is visited the ShaderEffect of the <a class="xref" href="Fusee.Engine.Core.RendererState.html">RendererState</a> is updated and the effect is set in the <a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RenderShaderEffect(ShaderEffect shaderComponent)</code></pre>
+    <pre><code class="lang-csharp hljs">public void RenderShaderEffect(Effect effect)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -563,9 +613,9 @@ the shader parameters for all lights in the scene are updated and the geometry i
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Engine.Core.Scene.ShaderEffect.html">ShaderEffect</a></td>
-        <td><span class="parametername">shaderComponent</span></td>
-        <td><p>The ShaderEffectComponent</p>
+        <td><a class="xref" href="Fusee.Engine.Core.Effects.Effect.html">Effect</a></td>
+        <td><span class="parametername">effect</span></td>
+        <td><p>The effect.</p>
 </td>
       </tr>
     </tbody>

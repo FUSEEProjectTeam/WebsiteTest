@@ -30,7 +30,7 @@ items:
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
-  summary: "\nImplements a Gamepad Control option only works for XBox Gamepads\n"
+  summary: "\nImplements a gamepad control option only works for XBox Gamepads\n"
   remarks: "\nThe current implementation does not fire the <xref href=\"Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasInputDriverImp.NewDeviceConnected\" data-throw-if-not-resolved=\"false\"></xref> and  <xref href=\"Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasInputDriverImp.DeviceDisconnected\" data-throw-if-not-resolved=\"false\"></xref>\nevents. This driver will always report one connected GamePad no matter how many physical devices are connected\nto the machine. If no physical GamePad is present all of its axes and buttons will return 0 or false.\n"
   example: []
   syntax:
@@ -144,7 +144,7 @@ items:
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
-  summary: "\nReturns Type of ínput device.\n"
+  summary: "\nReturns Type of input device.\n"
   example: []
   syntax:
     content: public DeviceCategory Category { get; }

@@ -34,7 +34,7 @@ items:
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nStores threedimensional, polygonal geometry and provides methods for manipulation.\nTo actually render the geometry in the engine, convert Geometry to <xref href=\"Fusee.Engine.Core.Scene.Mesh\" data-throw-if-not-resolved=\"false\"></xref> objects.\n"
+  summary: "\nStores three dimensional, polygonal geometry and provides methods for manipulation.\nTo actually render the geometry in the engine, convert Geometry to <xref href=\"Fusee.Engine.Core.Scene.Mesh\" data-throw-if-not-resolved=\"false\"></xref> objects.\n"
   example: []
   syntax:
     content: public class Geometry
@@ -427,7 +427,7 @@ items:
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nGets a value indicating whether this instance has tex coords.\n"
+  summary: "\nGets a value indicating whether this instance has texture coordinates.\n"
   example: []
   syntax:
     content: public bool HasTexCoords { get; }
@@ -471,7 +471,7 @@ items:
       description: The index of the vertex.
     - id: vertInFace
       type: System.Collections.Generic.IList{System.Int32}
-      description: 'Out parameter: A list of indices of the vertex in each respecitve face.'
+      description: 'Out parameter: A list of indices of the vertex in each respective face.'
     return:
       type: System.Collections.Generic.IList{System.Int32}
       description: A list of indices containing the vertex.
@@ -512,7 +512,7 @@ items:
       description: The face to calculate the normal for.
     return:
       type: Fusee.Math.Core.double3
-      description: The nomal vector for the face.
+      description: The normal vector for the face.
     content.vb: Public Function CalcFaceNormal(f As Face) As double3
   overload: Fusee.Engine.Core.Geometry.CalcFaceNormal*
   exceptions:
@@ -573,7 +573,7 @@ items:
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nConverts the whole geomentry to a <xref href=\"Fusee.Engine.Core.Scene.Mesh\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  summary: "\nConverts the whole geometry to a <xref href=\"Fusee.Engine.Core.Scene.Mesh\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
     content: public Mesh ToMesh()

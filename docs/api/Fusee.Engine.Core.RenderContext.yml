@@ -32,14 +32,16 @@ items:
   - Fusee.Engine.Core.RenderContext.ModelView
   - Fusee.Engine.Core.RenderContext.ModelViewProjection
   - Fusee.Engine.Core.RenderContext.Projection
+  - Fusee.Engine.Core.RenderContext.Render(Fusee.Engine.Core.Scene.Mesh,System.Boolean)
   - Fusee.Engine.Core.RenderContext.RenderFrustum
+  - Fusee.Engine.Core.RenderContext.SetEffect(Fusee.Engine.Core.Effects.Effect,System.Boolean)
   - Fusee.Engine.Core.RenderContext.SetLineWidth(System.Single)
   - Fusee.Engine.Core.RenderContext.SetRenderState(Fusee.Engine.Common.RenderState,System.UInt32,System.Boolean)
   - Fusee.Engine.Core.RenderContext.SetRenderStateSet(Fusee.Engine.Core.RenderStateSet,System.Boolean)
+  - Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32)
   - Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableCubeMap)
   - Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableTexture)
   - Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Core.RenderTarget)
-  - Fusee.Engine.Core.RenderContext.SetShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
   - Fusee.Engine.Core.RenderContext.TransModel
   - Fusee.Engine.Core.RenderContext.TransModelView
   - Fusee.Engine.Core.RenderContext.TransModelViewProjection
@@ -63,7 +65,7 @@ items:
   source:
     id: RenderContext
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 15
+    startLine: 17
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -102,7 +104,7 @@ items:
   source:
     id: ClearColor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 28
+    startLine: 30
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -140,7 +142,7 @@ items:
   source:
     id: ClearDepth
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 43
+    startLine: 45
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -175,7 +177,7 @@ items:
   source:
     id: DefaultState
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 52
+    startLine: 54
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -208,7 +210,7 @@ items:
   source:
     id: RenderFrustum
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 57
+    startLine: 59
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -241,7 +243,7 @@ items:
   source:
     id: CurrentRenderState
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 73
+    startLine: 75
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -274,7 +276,7 @@ items:
   source:
     id: LockedStates
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 78
+    startLine: 80
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -307,7 +309,7 @@ items:
   source:
     id: ViewportWidth
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 87
+    startLine: 89
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -340,7 +342,7 @@ items:
   source:
     id: ViewportHeight
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 92
+    startLine: 94
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -373,7 +375,7 @@ items:
   source:
     id: ViewportXStart
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 97
+    startLine: 99
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -406,7 +408,7 @@ items:
   source:
     id: ViewportYStart
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 102
+    startLine: 104
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -439,7 +441,7 @@ items:
   source:
     id: View
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 194
+    startLine: 195
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -474,7 +476,7 @@ items:
   source:
     id: Model
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 247
+    startLine: 248
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -509,7 +511,7 @@ items:
   source:
     id: Projection
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 300
+    startLine: 301
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -544,7 +546,7 @@ items:
   source:
     id: ModelView
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 338
+    startLine: 339
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -579,7 +581,7 @@ items:
   source:
     id: ModelViewProjection
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 361
+    startLine: 362
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -614,7 +616,7 @@ items:
   source:
     id: InvView
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 387
+    startLine: 388
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -654,7 +656,7 @@ items:
   source:
     id: InvModel
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 412
+    startLine: 413
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -694,7 +696,7 @@ items:
   source:
     id: InvModelView
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 437
+    startLine: 438
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -734,7 +736,7 @@ items:
   source:
     id: InvProjection
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 463
+    startLine: 464
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -774,7 +776,7 @@ items:
   source:
     id: InvModelViewProjection
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 489
+    startLine: 490
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -814,7 +816,7 @@ items:
   source:
     id: TransView
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 514
+    startLine: 515
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -854,7 +856,7 @@ items:
   source:
     id: TransModel
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 539
+    startLine: 540
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -894,7 +896,7 @@ items:
   source:
     id: TransModelView
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 564
+    startLine: 565
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -934,7 +936,7 @@ items:
   source:
     id: TransProjection
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 590
+    startLine: 591
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -974,7 +976,7 @@ items:
   source:
     id: TransModelViewProjection
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 616
+    startLine: 617
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1014,7 +1016,7 @@ items:
   source:
     id: InvTransView
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 642
+    startLine: 643
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1056,7 +1058,7 @@ items:
   source:
     id: InvTransModel
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 668
+    startLine: 669
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1098,7 +1100,7 @@ items:
   source:
     id: InvTransModelView
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 694
+    startLine: 695
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1140,7 +1142,7 @@ items:
   source:
     id: InvTransProjection
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 721
+    startLine: 722
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1182,7 +1184,7 @@ items:
   source:
     id: InvTransModelViewProjection
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 748
+    startLine: 749
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1224,7 +1226,7 @@ items:
   source:
     id: Bones
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 766
+    startLine: 767
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1257,7 +1259,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 780
+    startLine: 781
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1289,7 +1291,7 @@ items:
   source:
     id: Clear
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 812
+    startLine: 813
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1322,7 +1324,7 @@ items:
   source:
     id: Viewport
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 827
+    startLine: 828
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1350,40 +1352,43 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Fusee.Engine.Core.RenderContext.SetShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
-  commentId: M:Fusee.Engine.Core.RenderContext.SetShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
-  id: SetShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
+- uid: Fusee.Engine.Core.RenderContext.SetEffect(Fusee.Engine.Core.Effects.Effect,System.Boolean)
+  commentId: M:Fusee.Engine.Core.RenderContext.SetEffect(Fusee.Engine.Core.Effects.Effect,System.Boolean)
+  id: SetEffect(Fusee.Engine.Core.Effects.Effect,System.Boolean)
   parent: Fusee.Engine.Core.RenderContext
   langs:
   - csharp
   - vb
-  name: SetShaderEffect(ShaderEffect)
-  nameWithType: RenderContext.SetShaderEffect(ShaderEffect)
-  fullName: Fusee.Engine.Core.RenderContext.SetShaderEffect(Fusee.Engine.Core.Scene.ShaderEffect)
+  name: SetEffect(Effect, Boolean)
+  nameWithType: RenderContext.SetEffect(Effect, Boolean)
+  fullName: Fusee.Engine.Core.RenderContext.SetEffect(Fusee.Engine.Core.Effects.Effect, System.Boolean)
   type: Method
   source:
-    id: SetShaderEffect
+    id: SetEffect
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 938
+    startLine: 951
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   summary: "\nActivates the passed shader effect as the current shader for geometry rendering.\nWill compile a shader by calling <xref href=\"Fusee.Engine.Common.IRenderContextImp.CreateShaderProgram(System.String%2cSystem.String%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref> if it hasn&apos;t been compiled yet.\n"
   remarks: >-
-    A ShaderEffect must be attached to a context before you can render geometry with it. The main
+    A Effect must be attached to a context before you can render geometry with it. The main
 
     task performed in this method is compiling the provided shader source code and uploading the shaders to
 
     the gpu.
   example: []
   syntax:
-    content: public void SetShaderEffect(ShaderEffect ef)
+    content: public void SetEffect(Effect ef, bool renderForward = true)
     parameters:
     - id: ef
-      type: Fusee.Engine.Core.Scene.ShaderEffect
-      description: The shader effect.
-    content.vb: Public Sub SetShaderEffect(ef As ShaderEffect)
-  overload: Fusee.Engine.Core.RenderContext.SetShaderEffect*
+      type: Fusee.Engine.Core.Effects.Effect
+      description: The effect.
+    - id: renderForward
+      type: System.Boolean
+      description: ''
+    content.vb: Public Sub SetEffect(ef As Effect, renderForward As Boolean = True)
+  overload: Fusee.Engine.Core.RenderContext.SetEffect*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -1402,7 +1407,7 @@ items:
   source:
     id: EnableDepthClamp
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 1231
+    startLine: 1340
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1430,7 +1435,7 @@ items:
   source:
     id: DisableDepthClamp
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 1239
+    startLine: 1348
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1458,7 +1463,7 @@ items:
   source:
     id: GetHardwareCapabilities
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 1249
+    startLine: 1358
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1493,7 +1498,7 @@ items:
   source:
     id: GetHardwareDescription
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 1258
+    startLine: 1367
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1524,7 +1529,7 @@ items:
   source:
     id: UnlockRenderState
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 1269
+    startLine: 1378
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1559,7 +1564,7 @@ items:
   source:
     id: UnlockAllRenderStates
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 1285
+    startLine: 1394
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1590,7 +1595,7 @@ items:
   source:
     id: SetRenderState
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 1306
+    startLine: 1415
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1629,7 +1634,7 @@ items:
   source:
     id: SetRenderStateSet
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 1350
+    startLine: 1459
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1664,7 +1669,7 @@ items:
   source:
     id: GetRenderState
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 1363
+    startLine: 1472
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1699,7 +1704,7 @@ items:
   source:
     id: SetRenderTarget
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 1377
+    startLine: 1486
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1712,6 +1717,41 @@ items:
       type: Fusee.Engine.Core.RenderTarget
       description: The render target.
     content.vb: Public Sub SetRenderTarget(renderTarget As RenderTarget = Nothing)
+  overload: Fusee.Engine.Core.RenderContext.SetRenderTarget*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32)
+  commentId: M:Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32)
+  id: SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32)
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: SetRenderTarget(IWritableArrayTexture, Int32)
+  nameWithType: RenderContext.SetRenderTarget(IWritableArrayTexture, Int32)
+  fullName: Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture, System.Int32)
+  type: Method
+  source:
+    id: SetRenderTarget
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
+    startLine: 1509
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRenders into the given texture.\n"
+  example: []
+  syntax:
+    content: public void SetRenderTarget(IWritableArrayTexture tex, int layer)
+    parameters:
+    - id: tex
+      type: Fusee.Engine.Common.IWritableArrayTexture
+      description: The render texture.
+    - id: layer
+      type: System.Int32
+      description: The layer of the array texture that is set as render target.
+    content.vb: Public Sub SetRenderTarget(tex As IWritableArrayTexture, layer As Integer)
   overload: Fusee.Engine.Core.RenderContext.SetRenderTarget*
   modifiers.csharp:
   - public
@@ -1731,7 +1771,7 @@ items:
   source:
     id: SetRenderTarget
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 1399
+    startLine: 1519
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1763,7 +1803,7 @@ items:
   source:
     id: SetRenderTarget
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 1409
+    startLine: 1529
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1795,7 +1835,7 @@ items:
   source:
     id: SetLineWidth
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
-    startLine: 1419
+    startLine: 1539
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -1809,6 +1849,42 @@ items:
       description: The width in pixel.
     content.vb: Public Sub SetLineWidth(width As Single)
   overload: Fusee.Engine.Core.RenderContext.SetLineWidth*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.RenderContext.Render(Fusee.Engine.Core.Scene.Mesh,System.Boolean)
+  commentId: M:Fusee.Engine.Core.RenderContext.Render(Fusee.Engine.Core.Scene.Mesh,System.Boolean)
+  id: Render(Fusee.Engine.Core.Scene.Mesh,System.Boolean)
+  parent: Fusee.Engine.Core.RenderContext
+  langs:
+  - csharp
+  - vb
+  name: Render(Mesh, Boolean)
+  nameWithType: RenderContext.Render(Mesh, Boolean)
+  fullName: Fusee.Engine.Core.RenderContext.Render(Fusee.Engine.Core.Scene.Mesh, System.Boolean)
+  type: Method
+  source:
+    id: Render
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\RenderContext.cs
+    startLine: 1553
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core
+  summary: "\nRenders the specified mesh.\n"
+  remarks: "\nPasses geometry to be pushed through the rendering pipeline. <xref href=\"Fusee.Engine.Core.Scene.Mesh\" data-throw-if-not-resolved=\"false\"></xref> for a description how geometry is made up.\nThe geometry is transformed and rendered by the currently active shader program.\n"
+  example: []
+  syntax:
+    content: public void Render(Mesh m, bool renderForward = true)
+    parameters:
+    - id: m
+      type: Fusee.Engine.Core.Scene.Mesh
+      description: The mesh that should be rendered.
+    - id: renderForward
+      type: System.Boolean
+      description: Is a forward or deferred renderer used? Will fetch the proper shader for the render method.
+    content.vb: Public Sub Render(m As Mesh, renderForward As Boolean = True)
+  overload: Fusee.Engine.Core.RenderContext.Render*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -2666,17 +2742,29 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Fusee.Engine.Core.RenderContext.SetShaderEffect*
-  commentId: Overload:Fusee.Engine.Core.RenderContext.SetShaderEffect
-  name: SetShaderEffect
-  nameWithType: RenderContext.SetShaderEffect
-  fullName: Fusee.Engine.Core.RenderContext.SetShaderEffect
-- uid: Fusee.Engine.Core.Scene.ShaderEffect
-  commentId: T:Fusee.Engine.Core.Scene.ShaderEffect
-  parent: Fusee.Engine.Core.Scene
-  name: ShaderEffect
-  nameWithType: ShaderEffect
-  fullName: Fusee.Engine.Core.Scene.ShaderEffect
+- uid: Fusee.Engine.Core.RenderContext.SetEffect*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.SetEffect
+  name: SetEffect
+  nameWithType: RenderContext.SetEffect
+  fullName: Fusee.Engine.Core.RenderContext.SetEffect
+- uid: Fusee.Engine.Core.Effects.Effect
+  commentId: T:Fusee.Engine.Core.Effects.Effect
+  parent: Fusee.Engine.Core.Effects
+  name: Effect
+  nameWithType: Effect
+  fullName: Fusee.Engine.Core.Effects.Effect
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Engine.Core.Effects
+  commentId: N:Fusee.Engine.Core.Effects
+  name: Fusee.Engine.Core.Effects
+  nameWithType: Fusee.Engine.Core.Effects
+  fullName: Fusee.Engine.Core.Effects
 - uid: Fusee.Engine.Core.RenderContext.EnableDepthClamp*
   commentId: Overload:Fusee.Engine.Core.RenderContext.EnableDepthClamp
   name: EnableDepthClamp
@@ -2731,13 +2819,6 @@ references:
   name: UnlockRenderState
   nameWithType: RenderContext.UnlockRenderState
   fullName: Fusee.Engine.Core.RenderContext.UnlockRenderState
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
 - uid: Fusee.Engine.Core.RenderContext.UnlockAllRenderStates*
   commentId: Overload:Fusee.Engine.Core.RenderContext.UnlockAllRenderStates
   name: UnlockAllRenderStates
@@ -2775,6 +2856,12 @@ references:
   name: RenderTarget
   nameWithType: RenderTarget
   fullName: Fusee.Engine.Core.RenderTarget
+- uid: Fusee.Engine.Common.IWritableArrayTexture
+  commentId: T:Fusee.Engine.Common.IWritableArrayTexture
+  parent: Fusee.Engine.Common
+  name: IWritableArrayTexture
+  nameWithType: IWritableArrayTexture
+  fullName: Fusee.Engine.Common.IWritableArrayTexture
 - uid: Fusee.Engine.Common.IWritableTexture
   commentId: T:Fusee.Engine.Common.IWritableTexture
   parent: Fusee.Engine.Common
@@ -2792,3 +2879,8 @@ references:
   name: SetLineWidth
   nameWithType: RenderContext.SetLineWidth
   fullName: Fusee.Engine.Core.RenderContext.SetLineWidth
+- uid: Fusee.Engine.Core.RenderContext.Render*
+  commentId: Overload:Fusee.Engine.Core.RenderContext.Render
+  name: Render
+  nameWithType: RenderContext.Render
+  fullName: Fusee.Engine.Core.RenderContext.Render

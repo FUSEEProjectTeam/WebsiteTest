@@ -1,0 +1,906 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Serialization.V1.SpecularChannel
+  commentId: T:Fusee.Serialization.V1.SpecularChannel
+  id: SpecularChannel
+  parent: Fusee.Serialization.V1
+  children:
+  - Fusee.Serialization.V1.SpecularChannel.Equals(Fusee.Serialization.V1.SpecularChannel)
+  - Fusee.Serialization.V1.SpecularChannel.Equals(System.Object)
+  - Fusee.Serialization.V1.SpecularChannel.GetHashCode
+  - Fusee.Serialization.V1.SpecularChannel.op_Equality(Fusee.Serialization.V1.SpecularChannel,Fusee.Serialization.V1.SpecularChannel)
+  - Fusee.Serialization.V1.SpecularChannel.op_Inequality(Fusee.Serialization.V1.SpecularChannel,Fusee.Serialization.V1.SpecularChannel)
+  - Fusee.Serialization.V1.SpecularChannel.Shininess
+  - Fusee.Serialization.V1.SpecularChannel.Strength
+  langs:
+  - csharp
+  - vb
+  name: SpecularChannel
+  nameWithType: SpecularChannel
+  fullName: Fusee.Serialization.V1.SpecularChannel
+  type: Class
+  source:
+    id: SpecularChannel
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 244
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nThe specular channel definition. \n"
+  example: []
+  syntax:
+    content: 'public class SpecularChannel : AlbedoChannel, IEquatable<AlbedoChannel>, IEquatable<SpecularChannel>'
+    content.vb: >-
+      Public Class SpecularChannel
+          Inherits AlbedoChannel
+          Implements IEquatable(Of AlbedoChannel), IEquatable(Of SpecularChannel)
+  inheritance:
+  - System.Object
+  - Fusee.Serialization.V1.AlbedoChannel
+  implements:
+  - System.IEquatable{Fusee.Serialization.V1.AlbedoChannel}
+  - System.IEquatable{Fusee.Serialization.V1.SpecularChannel}
+  inheritedMembers:
+  - Fusee.Serialization.V1.AlbedoChannel.Color
+  - Fusee.Serialization.V1.AlbedoChannel.Texture
+  - Fusee.Serialization.V1.AlbedoChannel.Mix
+  - Fusee.Serialization.V1.AlbedoChannel.Equals(Fusee.Serialization.V1.AlbedoChannel)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Fusee.Serialization.V1.SpecularChannel.Shininess
+  commentId: F:Fusee.Serialization.V1.SpecularChannel.Shininess
+  id: Shininess
+  parent: Fusee.Serialization.V1.SpecularChannel
+  langs:
+  - csharp
+  - vb
+  name: Shininess
+  nameWithType: SpecularChannel.Shininess
+  fullName: Fusee.Serialization.V1.SpecularChannel.Shininess
+  type: Field
+  source:
+    id: Shininess
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 251
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nThe material&apos;s shininess.\n"
+  example: []
+  syntax:
+    content: public float Shininess
+    return:
+      type: System.Single
+    content.vb: Public Shininess As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Serialization.V1.SpecularChannel.Strength
+  commentId: F:Fusee.Serialization.V1.SpecularChannel.Strength
+  id: Strength
+  parent: Fusee.Serialization.V1.SpecularChannel
+  langs:
+  - csharp
+  - vb
+  name: Strength
+  nameWithType: SpecularChannel.Strength
+  fullName: Fusee.Serialization.V1.SpecularChannel.Strength
+  type: Field
+  source:
+    id: Strength
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 257
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nThe specular intensity.\n"
+  example: []
+  syntax:
+    content: public float Strength
+    return:
+      type: System.Single
+    content.vb: Public Strength As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Serialization.V1.SpecularChannel.op_Equality(Fusee.Serialization.V1.SpecularChannel,Fusee.Serialization.V1.SpecularChannel)
+  commentId: M:Fusee.Serialization.V1.SpecularChannel.op_Equality(Fusee.Serialization.V1.SpecularChannel,Fusee.Serialization.V1.SpecularChannel)
+  id: op_Equality(Fusee.Serialization.V1.SpecularChannel,Fusee.Serialization.V1.SpecularChannel)
+  parent: Fusee.Serialization.V1.SpecularChannel
+  langs:
+  - csharp
+  - vb
+  name: Equality(SpecularChannel, SpecularChannel)
+  nameWithType: SpecularChannel.Equality(SpecularChannel, SpecularChannel)
+  fullName: Fusee.Serialization.V1.SpecularChannel.Equality(Fusee.Serialization.V1.SpecularChannel, Fusee.Serialization.V1.SpecularChannel)
+  type: Operator
+  source:
+    id: op_Equality
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 269
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nCompares two instances for equality.\n"
+  example: []
+  syntax:
+    content: public static bool operator ==(SpecularChannel lhs, SpecularChannel rhs)
+    parameters:
+    - id: lhs
+      type: Fusee.Serialization.V1.SpecularChannel
+      description: The first instance.
+    - id: rhs
+      type: Fusee.Serialization.V1.SpecularChannel
+      description: The second instance.
+    return:
+      type: System.Boolean
+      description: "\nTrue, if left does equal right; false otherwise.\n"
+    content.vb: Public Shared Operator =(lhs As SpecularChannel, rhs As SpecularChannel) As Boolean
+  overload: Fusee.Serialization.V1.SpecularChannel.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Serialization.V1.SpecularChannel.op_Inequality(Fusee.Serialization.V1.SpecularChannel,Fusee.Serialization.V1.SpecularChannel)
+  commentId: M:Fusee.Serialization.V1.SpecularChannel.op_Inequality(Fusee.Serialization.V1.SpecularChannel,Fusee.Serialization.V1.SpecularChannel)
+  id: op_Inequality(Fusee.Serialization.V1.SpecularChannel,Fusee.Serialization.V1.SpecularChannel)
+  parent: Fusee.Serialization.V1.SpecularChannel
+  langs:
+  - csharp
+  - vb
+  name: Inequality(SpecularChannel, SpecularChannel)
+  nameWithType: SpecularChannel.Inequality(SpecularChannel, SpecularChannel)
+  fullName: Fusee.Serialization.V1.SpecularChannel.Inequality(Fusee.Serialization.V1.SpecularChannel, Fusee.Serialization.V1.SpecularChannel)
+  type: Operator
+  source:
+    id: op_Inequality
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 291
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nCompares two instances for inequality.\n"
+  example: []
+  syntax:
+    content: public static bool operator !=(SpecularChannel lhs, SpecularChannel rhs)
+    parameters:
+    - id: lhs
+      type: Fusee.Serialization.V1.SpecularChannel
+      description: The first instance.
+    - id: rhs
+      type: Fusee.Serialization.V1.SpecularChannel
+      description: The second instance.
+    return:
+      type: System.Boolean
+      description: "\nTrue, if left does not equal right; false otherwise.\n"
+    content.vb: Public Shared Operator <>(lhs As SpecularChannel, rhs As SpecularChannel) As Boolean
+  overload: Fusee.Serialization.V1.SpecularChannel.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Serialization.V1.SpecularChannel.Equals(Fusee.Serialization.V1.SpecularChannel)
+  commentId: M:Fusee.Serialization.V1.SpecularChannel.Equals(Fusee.Serialization.V1.SpecularChannel)
+  id: Equals(Fusee.Serialization.V1.SpecularChannel)
+  parent: Fusee.Serialization.V1.SpecularChannel
+  langs:
+  - csharp
+  - vb
+  name: Equals(SpecularChannel)
+  nameWithType: SpecularChannel.Equals(SpecularChannel)
+  fullName: Fusee.Serialization.V1.SpecularChannel.Equals(Fusee.Serialization.V1.SpecularChannel)
+  type: Method
+  source:
+    id: Equals
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 303
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nIndicates whether the SpecularChannelContainer is equal to another one.\n"
+  example: []
+  syntax:
+    content: public bool Equals(SpecularChannel other)
+    parameters:
+    - id: other
+      type: Fusee.Serialization.V1.SpecularChannel
+      description: The SpecularChannelContainer to compare with this one.
+    return:
+      type: System.Boolean
+      description: "\ntrue if the current SpecularChannelContainer is equal to the other; otherwise, false.\n"
+    content.vb: Public Function Equals(other As SpecularChannel) As Boolean
+  overload: Fusee.Serialization.V1.SpecularChannel.Equals*
+  implements:
+  - System.IEquatable{Fusee.Serialization.V1.SpecularChannel}.Equals(Fusee.Serialization.V1.SpecularChannel)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Serialization.V1.SpecularChannel.Equals(System.Object)
+  commentId: M:Fusee.Serialization.V1.SpecularChannel.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Fusee.Serialization.V1.SpecularChannel
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: SpecularChannel.Equals(Object)
+  fullName: Fusee.Serialization.V1.SpecularChannel.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 317
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nIndicates whether this instance and a specified object are equal.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare to.
+    return:
+      type: System.Boolean
+      description: "\nTrue if the instances are equal; false otherwise.\n"
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: Fusee.Serialization.V1.AlbedoChannel.Equals(System.Object)
+  overload: Fusee.Serialization.V1.SpecularChannel.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Fusee.Serialization.V1.SpecularChannel.GetHashCode
+  commentId: M:Fusee.Serialization.V1.SpecularChannel.GetHashCode
+  id: GetHashCode
+  parent: Fusee.Serialization.V1.SpecularChannel
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: SpecularChannel.GetHashCode()
+  fullName: Fusee.Serialization.V1.SpecularChannel.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\MatChannels.cs
+    startLine: 328
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization.V1
+  summary: "\nReturns the hash for this instance.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: Fusee.Serialization.V1.AlbedoChannel.GetHashCode
+  overload: Fusee.Serialization.V1.SpecularChannel.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Fusee.Serialization.V1
+  commentId: N:Fusee.Serialization.V1
+  name: Fusee.Serialization.V1
+  nameWithType: Fusee.Serialization.V1
+  fullName: Fusee.Serialization.V1
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Serialization.V1.AlbedoChannel
+  commentId: T:Fusee.Serialization.V1.AlbedoChannel
+  parent: Fusee.Serialization.V1
+  name: AlbedoChannel
+  nameWithType: AlbedoChannel
+  fullName: Fusee.Serialization.V1.AlbedoChannel
+- uid: System.IEquatable{Fusee.Serialization.V1.AlbedoChannel}
+  commentId: T:System.IEquatable{Fusee.Serialization.V1.AlbedoChannel}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<AlbedoChannel>
+  nameWithType: IEquatable<AlbedoChannel>
+  fullName: System.IEquatable<Fusee.Serialization.V1.AlbedoChannel>
+  nameWithType.vb: IEquatable(Of AlbedoChannel)
+  fullName.vb: System.IEquatable(Of Fusee.Serialization.V1.AlbedoChannel)
+  name.vb: IEquatable(Of AlbedoChannel)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Serialization.V1.AlbedoChannel
+    name: AlbedoChannel
+    nameWithType: AlbedoChannel
+    fullName: Fusee.Serialization.V1.AlbedoChannel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Serialization.V1.AlbedoChannel
+    name: AlbedoChannel
+    nameWithType: AlbedoChannel
+    fullName: Fusee.Serialization.V1.AlbedoChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable{Fusee.Serialization.V1.SpecularChannel}
+  commentId: T:System.IEquatable{Fusee.Serialization.V1.SpecularChannel}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<SpecularChannel>
+  nameWithType: IEquatable<SpecularChannel>
+  fullName: System.IEquatable<Fusee.Serialization.V1.SpecularChannel>
+  nameWithType.vb: IEquatable(Of SpecularChannel)
+  fullName.vb: System.IEquatable(Of Fusee.Serialization.V1.SpecularChannel)
+  name.vb: IEquatable(Of SpecularChannel)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Serialization.V1.SpecularChannel
+    name: SpecularChannel
+    nameWithType: SpecularChannel
+    fullName: Fusee.Serialization.V1.SpecularChannel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Serialization.V1.SpecularChannel
+    name: SpecularChannel
+    nameWithType: SpecularChannel
+    fullName: Fusee.Serialization.V1.SpecularChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Serialization.V1.AlbedoChannel.Color
+  commentId: F:Fusee.Serialization.V1.AlbedoChannel.Color
+  parent: Fusee.Serialization.V1.AlbedoChannel
+  name: Color
+  nameWithType: AlbedoChannel.Color
+  fullName: Fusee.Serialization.V1.AlbedoChannel.Color
+- uid: Fusee.Serialization.V1.AlbedoChannel.Texture
+  commentId: F:Fusee.Serialization.V1.AlbedoChannel.Texture
+  parent: Fusee.Serialization.V1.AlbedoChannel
+  name: Texture
+  nameWithType: AlbedoChannel.Texture
+  fullName: Fusee.Serialization.V1.AlbedoChannel.Texture
+- uid: Fusee.Serialization.V1.AlbedoChannel.Mix
+  commentId: F:Fusee.Serialization.V1.AlbedoChannel.Mix
+  parent: Fusee.Serialization.V1.AlbedoChannel
+  name: Mix
+  nameWithType: AlbedoChannel.Mix
+  fullName: Fusee.Serialization.V1.AlbedoChannel.Mix
+- uid: Fusee.Serialization.V1.AlbedoChannel.Equals(Fusee.Serialization.V1.AlbedoChannel)
+  commentId: M:Fusee.Serialization.V1.AlbedoChannel.Equals(Fusee.Serialization.V1.AlbedoChannel)
+  parent: Fusee.Serialization.V1.AlbedoChannel
+  name: Equals(AlbedoChannel)
+  nameWithType: AlbedoChannel.Equals(AlbedoChannel)
+  fullName: Fusee.Serialization.V1.AlbedoChannel.Equals(Fusee.Serialization.V1.AlbedoChannel)
+  spec.csharp:
+  - uid: Fusee.Serialization.V1.AlbedoChannel.Equals(Fusee.Serialization.V1.AlbedoChannel)
+    name: Equals
+    nameWithType: AlbedoChannel.Equals
+    fullName: Fusee.Serialization.V1.AlbedoChannel.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Serialization.V1.AlbedoChannel
+    name: AlbedoChannel
+    nameWithType: AlbedoChannel
+    fullName: Fusee.Serialization.V1.AlbedoChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Serialization.V1.AlbedoChannel.Equals(Fusee.Serialization.V1.AlbedoChannel)
+    name: Equals
+    nameWithType: AlbedoChannel.Equals
+    fullName: Fusee.Serialization.V1.AlbedoChannel.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Serialization.V1.AlbedoChannel
+    name: AlbedoChannel
+    nameWithType: AlbedoChannel
+    fullName: Fusee.Serialization.V1.AlbedoChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Fusee.Serialization.V1.SpecularChannel.op_Equality*
+  commentId: Overload:Fusee.Serialization.V1.SpecularChannel.op_Equality
+  name: Equality
+  nameWithType: SpecularChannel.Equality
+  fullName: Fusee.Serialization.V1.SpecularChannel.Equality
+- uid: Fusee.Serialization.V1.SpecularChannel
+  commentId: T:Fusee.Serialization.V1.SpecularChannel
+  parent: Fusee.Serialization.V1
+  name: SpecularChannel
+  nameWithType: SpecularChannel
+  fullName: Fusee.Serialization.V1.SpecularChannel
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Fusee.Serialization.V1.SpecularChannel.op_Inequality*
+  commentId: Overload:Fusee.Serialization.V1.SpecularChannel.op_Inequality
+  name: Inequality
+  nameWithType: SpecularChannel.Inequality
+  fullName: Fusee.Serialization.V1.SpecularChannel.Inequality
+- uid: Fusee.Serialization.V1.SpecularChannel.Equals*
+  commentId: Overload:Fusee.Serialization.V1.SpecularChannel.Equals
+  name: Equals
+  nameWithType: SpecularChannel.Equals
+  fullName: Fusee.Serialization.V1.SpecularChannel.Equals
+- uid: System.IEquatable{Fusee.Serialization.V1.SpecularChannel}.Equals(Fusee.Serialization.V1.SpecularChannel)
+  commentId: M:System.IEquatable{Fusee.Serialization.V1.SpecularChannel}.Equals(Fusee.Serialization.V1.SpecularChannel)
+  parent: System.IEquatable{Fusee.Serialization.V1.SpecularChannel}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(SpecularChannel)
+  nameWithType: IEquatable<SpecularChannel>.Equals(SpecularChannel)
+  fullName: System.IEquatable<Fusee.Serialization.V1.SpecularChannel>.Equals(Fusee.Serialization.V1.SpecularChannel)
+  nameWithType.vb: IEquatable(Of SpecularChannel).Equals(SpecularChannel)
+  fullName.vb: System.IEquatable(Of Fusee.Serialization.V1.SpecularChannel).Equals(Fusee.Serialization.V1.SpecularChannel)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<SpecularChannel>.Equals
+    fullName: System.IEquatable<Fusee.Serialization.V1.SpecularChannel>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Serialization.V1.SpecularChannel
+    name: SpecularChannel
+    nameWithType: SpecularChannel
+    fullName: Fusee.Serialization.V1.SpecularChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of SpecularChannel).Equals
+    fullName: System.IEquatable(Of Fusee.Serialization.V1.SpecularChannel).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Fusee.Serialization.V1.SpecularChannel
+    name: SpecularChannel
+    nameWithType: SpecularChannel
+    fullName: Fusee.Serialization.V1.SpecularChannel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Serialization.V1.AlbedoChannel.Equals(System.Object)
+  commentId: M:Fusee.Serialization.V1.AlbedoChannel.Equals(System.Object)
+  parent: Fusee.Serialization.V1.AlbedoChannel
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: AlbedoChannel.Equals(Object)
+  fullName: Fusee.Serialization.V1.AlbedoChannel.Equals(System.Object)
+  spec.csharp:
+  - uid: Fusee.Serialization.V1.AlbedoChannel.Equals(System.Object)
+    name: Equals
+    nameWithType: AlbedoChannel.Equals
+    fullName: Fusee.Serialization.V1.AlbedoChannel.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Serialization.V1.AlbedoChannel.Equals(System.Object)
+    name: Equals
+    nameWithType: AlbedoChannel.Equals
+    fullName: Fusee.Serialization.V1.AlbedoChannel.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Serialization.V1.AlbedoChannel.GetHashCode
+  commentId: M:Fusee.Serialization.V1.AlbedoChannel.GetHashCode
+  parent: Fusee.Serialization.V1.AlbedoChannel
+  name: GetHashCode()
+  nameWithType: AlbedoChannel.GetHashCode()
+  fullName: Fusee.Serialization.V1.AlbedoChannel.GetHashCode()
+  spec.csharp:
+  - uid: Fusee.Serialization.V1.AlbedoChannel.GetHashCode
+    name: GetHashCode
+    nameWithType: AlbedoChannel.GetHashCode
+    fullName: Fusee.Serialization.V1.AlbedoChannel.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Serialization.V1.AlbedoChannel.GetHashCode
+    name: GetHashCode
+    nameWithType: AlbedoChannel.GetHashCode
+    fullName: Fusee.Serialization.V1.AlbedoChannel.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Serialization.V1.SpecularChannel.GetHashCode*
+  commentId: Overload:Fusee.Serialization.V1.SpecularChannel.GetHashCode
+  name: GetHashCode
+  nameWithType: SpecularChannel.GetHashCode
+  fullName: Fusee.Serialization.V1.SpecularChannel.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

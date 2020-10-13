@@ -63,7 +63,7 @@ items:
   assemblies:
   - Fusee.Jometri
   namespace: Fusee.Jometri
-  summary: "\nInserts a new Vertex between two given exsisting Vertices.\n"
+  summary: "\nInserts a new Vertex between two given existing Vertices.\n"
   example: []
   syntax:
     content: public static int InsertVertex(this Geometry geometry, int p, int q, float3 pos)
@@ -120,7 +120,7 @@ items:
     parameters:
     - id: geometry
       type: Fusee.Jometri.Geometry
-      description: The Geometry to insert a dignonal
+      description: The Geometry to insert a diagonal.
     - id: p
       type: System.Int32
       description: First Vertex handle.
@@ -170,7 +170,7 @@ items:
       description: The geometry on which to perform a face inset.
     - id: faceHandle
       type: System.Int32
-      description: The Handle of the face, the new one will be inseted to.
+      description: The Handle of the face, the new one will be inserted to.
     - id: insetOffset
       type: System.Single
       description: The offset of the inset in percent. Use values between 0 and 1. A value of 0.5f means 50% of the original face remains.

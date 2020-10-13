@@ -130,7 +130,7 @@ Does NOT offer access to the pixel data.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WritableTexture(RenderTargetTextureTypes texType, ImagePixelFormat colorFormat, int width, int height, bool generateMipMaps = true, TextureFilterMode filterMode = TextureFilterMode.LINEAR, TextureWrapMode wrapMode = TextureWrapMode.REPEAT, TextureCompareMode compareMode = TextureCompareMode.NONE, Compare compareFunc = Compare.Less)</code></pre>
+    <pre><code class="lang-csharp hljs">public WritableTexture(RenderTargetTextureTypes texType, ImagePixelFormat colorFormat, int width, int height, bool generateMipMaps = true, TextureFilterMode filterMode = TextureFilterMode.NearestMipmapLinear, TextureWrapMode wrapMode = TextureWrapMode.Repeat, TextureCompareMode compareMode = TextureCompareMode.None, Compare compareFunc = Compare.Less)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -521,7 +521,7 @@ Does NOT offer access to the pixel data.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static WritableTexture CreateDepthTex(int width, int height, TextureCompareMode compareMode = TextureCompareMode.NONE, Compare compareFunc = Compare.Less)</code></pre>
+    <pre><code class="lang-csharp hljs">public static WritableTexture CreateDepthTex(int width, int height, TextureCompareMode compareMode = TextureCompareMode.None, Compare compareFunc = Compare.Less)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -555,6 +555,56 @@ Does NOT offer access to the pixel data.</p>
         <td><a class="xref" href="Fusee.Engine.Common.Compare.html">Compare</a></td>
         <td><span class="parametername">compareFunc</span></td>
         <td><p>The textures compare function. If uncertain, leaf on LEESS, this is only important for depth (shadow) textures and if the CompareMode isn't NONE (<a class="xref" href="Fusee.Engine.Common.Compare.html">Compare</a>)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.WritableTexture.html">WritableTexture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Core_WritableTexture_CreateEmissionTex_" data-uid="Fusee.Engine.Core.WritableTexture.CreateEmissionTex*"></a>
+  <h4 id="Fusee_Engine_Core_WritableTexture_CreateEmissionTex_System_Int32_System_Int32_" data-uid="Fusee.Engine.Core.WritableTexture.CreateEmissionTex(System.Int32,System.Int32)">CreateEmissionTex(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Create a texture that is intended to save emissive color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WritableTexture CreateEmissionTex(int width, int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width in px.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height in px.</p>
 </td>
       </tr>
     </tbody>
@@ -728,7 +778,7 @@ Does NOT offer access to the pixel data.</p>
   
   <a id="Fusee_Engine_Core_WritableTexture_CreateSSAOTex_" data-uid="Fusee.Engine.Core.WritableTexture.CreateSSAOTex*"></a>
   <h4 id="Fusee_Engine_Core_WritableTexture_CreateSSAOTex_System_Int32_System_Int32_" data-uid="Fusee.Engine.Core.WritableTexture.CreateSSAOTex(System.Int32,System.Int32)">CreateSSAOTex(Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Create a texture that is intended to save ssao information.</p>
+  <div class="markdown level1 summary"><p>Create a texture that is intended to save SSAO information.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

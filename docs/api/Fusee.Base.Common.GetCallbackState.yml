@@ -22,7 +22,7 @@ items:
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
-  summary: "\nThe state of the asset akquisition process.\n"
+  summary: "\nThe state of the asset acquisition process.\n"
   example: []
   syntax:
     content: public enum GetCallbackState
@@ -51,7 +51,7 @@ items:
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
-  summary: "\nAsset akquisition is in progress. o (<xref href=\"Fusee.Base.Common.GetCallbackState\" data-throw-if-not-resolved=\"false\"></xref>)contains an integer specifying the progress in percent (100 == done).\n"
+  summary: "\nAsset acquisition is in progress. o (<xref href=\"Fusee.Base.Common.GetCallbackState\" data-throw-if-not-resolved=\"false\"></xref>)contains an integer specifying the progress in percent (100 == done).\n"
   example: []
   syntax:
     content: Progress = 0
@@ -81,7 +81,7 @@ items:
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
-  summary: "\nAn error occured while akquiring the asset. o (<xref href=\"Fusee.Base.Common.GetCallbackState\" data-throw-if-not-resolved=\"false\"></xref>) contains a string containting the message.\n"
+  summary: "\nAn error occurred while acquiring the asset. o (<xref href=\"Fusee.Base.Common.GetCallbackState\" data-throw-if-not-resolved=\"false\"></xref>) contains a string containing the message.\n"
   example: []
   syntax:
     content: Error = 1
@@ -111,7 +111,7 @@ items:
   assemblies:
   - Fusee.Base.Common
   namespace: Fusee.Base.Common
-  summary: "\nAkquisition ended successfully. o contains the object of the type passed to <xref href=\"Fusee.Base.Common.GetCallback\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  summary: "\nAcquisition ended successfully. o contains the object of the type passed to <xref href=\"Fusee.Base.Common.GetCallback\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
     content: Done = 2

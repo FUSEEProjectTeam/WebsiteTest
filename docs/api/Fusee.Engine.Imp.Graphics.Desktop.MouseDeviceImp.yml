@@ -5,7 +5,7 @@ items:
   id: MouseDeviceImp
   parent: Fusee.Engine.Imp.Graphics.Desktop
   children:
-  - Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor(OpenTK.GameWindow)
+  - Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor(GameWindow)
   - Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.AxesCount
   - Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.AxisImpDesc
   - Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.AxisValueChanged
@@ -17,9 +17,9 @@ items:
   - Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.GetAxis(System.Int32)
   - Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.GetButton(System.Int32)
   - Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.Id
-  - Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object,OpenTK.Input.MouseButtonEventArgs)
-  - Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object,OpenTK.Input.MouseButtonEventArgs)
-  - Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object,OpenTK.Input.MouseMoveEventArgs)
+  - Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object,MouseButtonEventArgs)
+  - Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object,MouseButtonEventArgs)
+  - Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object,MouseMoveEventArgs)
   langs:
   - csharp
   - vb
@@ -59,16 +59,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor(OpenTK.GameWindow)
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor(OpenTK.GameWindow)
-  id: '#ctor(OpenTK.GameWindow)'
+- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor(GameWindow)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor(GameWindow)
+  id: '#ctor(GameWindow)'
   parent: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp
   langs:
   - csharp
   - vb
   name: MouseDeviceImp(GameWindow)
   nameWithType: MouseDeviceImp.MouseDeviceImp(GameWindow)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.MouseDeviceImp(OpenTK.GameWindow)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.MouseDeviceImp(GameWindow)
   type: Constructor
   source:
     id: .ctor
@@ -77,13 +77,13 @@ items:
   assemblies:
   - Fusee.Engine.Imp.Graphics.Desktop
   namespace: Fusee.Engine.Imp.Graphics.Desktop
-  summary: "\nCreates a new mouse input device instance using an existing <xref href=\"OpenTK.GameWindow\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  summary: "\nCreates a new mouse input device instance using an existing <see cref=\"!:OpenTK.GameWindow\"></see>.\n"
   example: []
   syntax:
     content: public MouseDeviceImp(GameWindow gameWindow)
     parameters:
     - id: gameWindow
-      type: OpenTK.GameWindow
+      type: GameWindow
       description: The game window providing mouse input.
     content.vb: Public Sub New(gameWindow As GameWindow)
   overload: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor*
@@ -435,16 +435,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object,OpenTK.Input.MouseMoveEventArgs)
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object,OpenTK.Input.MouseMoveEventArgs)
-  id: OnMouseMove(System.Object,OpenTK.Input.MouseMoveEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object,MouseMoveEventArgs)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object,MouseMoveEventArgs)
+  id: OnMouseMove(System.Object,MouseMoveEventArgs)
   parent: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp
   langs:
   - csharp
   - vb
   name: OnMouseMove(Object, MouseMoveEventArgs)
   nameWithType: MouseDeviceImp.OnMouseMove(Object, MouseMoveEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object, OpenTK.Input.MouseMoveEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object, MouseMoveEventArgs)
   type: Method
   source:
     id: OnMouseMove
@@ -462,8 +462,8 @@ items:
       type: System.Object
       description: The sender.
     - id: mouseArgs
-      type: OpenTK.Input.MouseMoveEventArgs
-      description: The <xref href="OpenTK.Input.MouseMoveEventArgs" data-throw-if-not-resolved="false"></xref> instance containing the event data.
+      type: MouseMoveEventArgs
+      description: The <see cref="!:MouseMoveEventArgs"></see> instance containing the event data.
     content.vb: Protected Sub OnMouseMove(sender As Object, mouseArgs As MouseMoveEventArgs)
   overload: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove*
   modifiers.csharp:
@@ -507,16 +507,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object,OpenTK.Input.MouseButtonEventArgs)
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object,OpenTK.Input.MouseButtonEventArgs)
-  id: OnGameWinMouseDown(System.Object,OpenTK.Input.MouseButtonEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object,MouseButtonEventArgs)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object,MouseButtonEventArgs)
+  id: OnGameWinMouseDown(System.Object,MouseButtonEventArgs)
   parent: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp
   langs:
   - csharp
   - vb
   name: OnGameWinMouseDown(Object, MouseButtonEventArgs)
   nameWithType: MouseDeviceImp.OnGameWinMouseDown(Object, MouseButtonEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object, OpenTK.Input.MouseButtonEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object, MouseButtonEventArgs)
   type: Method
   source:
     id: OnGameWinMouseDown
@@ -534,24 +534,24 @@ items:
       type: System.Object
       description: The sender.
     - id: mouseArgs
-      type: OpenTK.Input.MouseButtonEventArgs
-      description: The <xref href="OpenTK.Input.MouseButtonEventArgs" data-throw-if-not-resolved="false"></xref> instance containing the event data.
+      type: MouseButtonEventArgs
+      description: The <see cref="!:MouseButtonEventArgs"></see> instance containing the event data.
     content.vb: Protected Sub OnGameWinMouseDown(sender As Object, mouseArgs As MouseButtonEventArgs)
   overload: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown*
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object,OpenTK.Input.MouseButtonEventArgs)
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object,OpenTK.Input.MouseButtonEventArgs)
-  id: OnGameWinMouseUp(System.Object,OpenTK.Input.MouseButtonEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object,MouseButtonEventArgs)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object,MouseButtonEventArgs)
+  id: OnGameWinMouseUp(System.Object,MouseButtonEventArgs)
   parent: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp
   langs:
   - csharp
   - vb
   name: OnGameWinMouseUp(Object, MouseButtonEventArgs)
   nameWithType: MouseDeviceImp.OnGameWinMouseUp(Object, MouseButtonEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object, OpenTK.Input.MouseButtonEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object, MouseButtonEventArgs)
   type: Method
   source:
     id: OnGameWinMouseUp
@@ -569,8 +569,8 @@ items:
       type: System.Object
       description: The sender.
     - id: mouseArgs
-      type: OpenTK.Input.MouseButtonEventArgs
-      description: The <xref href="OpenTK.Input.MouseButtonEventArgs" data-throw-if-not-resolved="false"></xref> instance containing the event data.
+      type: MouseButtonEventArgs
+      description: The <see cref="!:MouseButtonEventArgs"></see> instance containing the event data.
     content.vb: Protected Sub OnGameWinMouseUp(sender As Object, mouseArgs As MouseButtonEventArgs)
   overload: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp*
   modifiers.csharp:
@@ -886,24 +886,16 @@ references:
   name: Fusee.Engine.Common
   nameWithType: Fusee.Engine.Common
   fullName: Fusee.Engine.Common
-- uid: OpenTK.GameWindow
-  commentId: T:OpenTK.GameWindow
-  parent: OpenTK
-  isExternal: true
-  name: GameWindow
-  nameWithType: GameWindow
-  fullName: OpenTK.GameWindow
 - uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor
   name: MouseDeviceImp
   nameWithType: MouseDeviceImp.MouseDeviceImp
   fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.MouseDeviceImp
-- uid: OpenTK
-  commentId: N:OpenTK
+- uid: GameWindow
   isExternal: true
-  name: OpenTK
-  nameWithType: OpenTK
-  fullName: OpenTK
+  name: GameWindow
+  nameWithType: GameWindow
+  fullName: GameWindow
 - uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.AxesCount*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.AxesCount
   name: AxesCount
@@ -1319,24 +1311,16 @@ references:
   name: Single
   nameWithType: Single
   fullName: System.Single
-- uid: OpenTK.Input.MouseMoveEventArgs
-  commentId: T:OpenTK.Input.MouseMoveEventArgs
-  parent: OpenTK.Input
-  isExternal: true
-  name: MouseMoveEventArgs
-  nameWithType: MouseMoveEventArgs
-  fullName: OpenTK.Input.MouseMoveEventArgs
 - uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove
   name: OnMouseMove
   nameWithType: MouseDeviceImp.OnMouseMove
   fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove
-- uid: OpenTK.Input
-  commentId: N:OpenTK.Input
+- uid: MouseMoveEventArgs
   isExternal: true
-  name: OpenTK.Input
-  nameWithType: OpenTK.Input
-  fullName: OpenTK.Input
+  name: MouseMoveEventArgs
+  nameWithType: MouseMoveEventArgs
+  fullName: MouseMoveEventArgs
 - uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.ButtonValueChanged
   commentId: E:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.ButtonValueChanged
   isExternal: true
@@ -1391,18 +1375,16 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: OpenTK.Input.MouseButtonEventArgs
-  commentId: T:OpenTK.Input.MouseButtonEventArgs
-  parent: OpenTK.Input
-  isExternal: true
-  name: MouseButtonEventArgs
-  nameWithType: MouseButtonEventArgs
-  fullName: OpenTK.Input.MouseButtonEventArgs
 - uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown
   name: OnGameWinMouseDown
   nameWithType: MouseDeviceImp.OnGameWinMouseDown
   fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown
+- uid: MouseButtonEventArgs
+  isExternal: true
+  name: MouseButtonEventArgs
+  nameWithType: MouseButtonEventArgs
+  fullName: MouseButtonEventArgs
 - uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp
   name: OnGameWinMouseUp

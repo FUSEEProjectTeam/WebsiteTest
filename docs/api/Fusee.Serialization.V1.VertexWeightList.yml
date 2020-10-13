@@ -23,14 +23,8 @@ items:
   summary: "\nA single row of the weight table. Stored in a way respecting sparse data (only few bones control a vertex).\n"
   example: []
   syntax:
-    content: >-
-      [ProtoContract]
-
-      public class VertexWeightList
-    content.vb: >-
-      <ProtoContract>
-
-      Public Class VertexWeightList
+    content: public class VertexWeightList
+    content.vb: Public Class VertexWeightList
   inheritance:
   - System.Object
   inheritedMembers:
@@ -41,10 +35,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  attributes:
-  - type: ProtoBuf.ProtoContractAttribute
-    ctor: ProtoBuf.ProtoContractAttribute.#ctor
-    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -72,24 +62,12 @@ items:
   summary: "\nList of bones controlling the vertex.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(1)]
-
-      public List<VertexWeight> VertexWeights { get; set; }
+    content: public List<VertexWeight> VertexWeights { get; set; }
     parameters: []
     return:
       type: System.Collections.Generic.List{Fusee.Serialization.V1.VertexWeight}
-    content.vb: >-
-      <ProtoMember(1)>
-
-      Public Property VertexWeights As List(Of VertexWeight)
+    content.vb: Public Property VertexWeights As List(Of VertexWeight)
   overload: Fusee.Serialization.V1.VertexWeightList.VertexWeights*
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 1
   modifiers.csharp:
   - public
   - get

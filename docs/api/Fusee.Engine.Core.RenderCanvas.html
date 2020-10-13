@@ -115,33 +115,6 @@ one containing the more view oriented aspects and the other containing the more 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class RenderCanvas</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="Fusee_Engine_Core_RenderCanvas__appInitialized" data-uid="Fusee.Engine.Core.RenderCanvas._appInitialized">_appInitialized</h4>
-  <div class="markdown level1 summary"><p>Whether or not the app is initialized.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool _appInitialized</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -556,23 +529,8 @@ All audio and network resources get reset.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; Init()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Init()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h5 id="Fusee_Engine_Core_RenderCanvas_Init_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Override this method in inherited classes of RenderCanvas to apply initialization code. Typically, an application
 will call one-time initialization code on the render context (<a class="xref" href="Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_RC">RC</a>) to set render states.</p>
@@ -700,7 +658,7 @@ necessary initialization, call the Init method and enter the application main lo
   
   <a id="Fusee_Engine_Core_RenderCanvas_SetCursor_" data-uid="Fusee.Engine.Core.RenderCanvas.SetCursor*"></a>
   <h4 id="Fusee_Engine_Core_RenderCanvas_SetCursor_Fusee_Engine_Common_CursorType_" data-uid="Fusee.Engine.Core.RenderCanvas.SetCursor(Fusee.Engine.Common.CursorType)">SetCursor(CursorType)</h4>
-  <div class="markdown level1 summary"><p>Set the cursor (the mouse pointer image) to one of the pre-defined types</p>
+  <div class="markdown level1 summary"><p>Set the cursor (the mouse pointer image) to one of the predefined types</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

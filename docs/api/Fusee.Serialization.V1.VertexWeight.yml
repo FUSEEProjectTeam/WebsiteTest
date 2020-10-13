@@ -24,14 +24,8 @@ items:
   summary: "\nA single entry of a weight table row.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoContract]
-
-      public struct VertexWeight
-    content.vb: >-
-      <ProtoContract>
-
-      Public Structure VertexWeight
+    content: public struct VertexWeight
+    content.vb: Public Structure VertexWeight
   inheritedMembers:
   - System.ValueType.Equals(System.Object)
   - System.ValueType.GetHashCode
@@ -39,10 +33,6 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
-  attributes:
-  - type: ProtoBuf.ProtoContractAttribute
-    ctor: ProtoBuf.ProtoContractAttribute.#ctor
-    arguments: []
   modifiers.csharp:
   - public
   - struct
@@ -70,22 +60,10 @@ items:
   summary: "\nThe joint index controlling the vertex.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(1)]
-
-      public int JointIndex
+    content: public int JointIndex
     return:
       type: System.Int32
-    content.vb: >-
-      <ProtoMember(1)>
-
-      Public JointIndex As Integer
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 1
+    content.vb: Public JointIndex As Integer
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -111,22 +89,10 @@ items:
   summary: "\nThe weight (the influence) of the bone on the vertex&apos;s transformation.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(2)]
-
-      public float Weight
+    content: public float Weight
     return:
       type: System.Single
-    content.vb: >-
-      <ProtoMember(2)>
-
-      Public Weight As Single
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 2
+    content.vb: Public Weight As Single
   modifiers.csharp:
   - public
   modifiers.vb:

@@ -424,6 +424,50 @@ the BitmapData an make them available for the shader.</p>
   
   
   <a id="Fusee_Engine_Common_IRenderContextImp_CreateTexture_" data-uid="Fusee.Engine.Common.IRenderContextImp.CreateTexture*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_CreateTexture_Fusee_Engine_Common_IWritableArrayTexture_" data-uid="Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableArrayTexture)">CreateTexture(IWritableArrayTexture)</h4>
+  <div class="markdown level1 summary"><p>Creates a new cube map and binds it to the shader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITextureHandle CreateTexture(IWritableArrayTexture img)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IWritableArrayTexture.html">IWritableArrayTexture</a></td>
+        <td><span class="parametername">img</span></td>
+        <td><p>An <a class="xref" href="Fusee.Engine.Common.IWritableArrayTexture.html">IWritableArrayTexture</a>, containing necessary information for the upload to the graphics card.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.ITextureHandle.html">ITextureHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Common_IRenderContextImp_CreateTexture_" data-uid="Fusee.Engine.Common.IRenderContextImp.CreateTexture*"></a>
   <h4 id="Fusee_Engine_Common_IRenderContextImp_CreateTexture_Fusee_Engine_Common_IWritableCubeMap_" data-uid="Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.IWritableCubeMap)">CreateTexture(IWritableCubeMap)</h4>
   <div class="markdown level1 summary"><p>Creates a new cube map and binds it to the shader.</p>
 </div>
@@ -703,7 +747,7 @@ See: <a href="https://www.khronos.org/opengl/wiki/Vertex_Post-Processing#Depth_c
       <tr>
         <td><a class="xref" href="Fusee.Engine.Common.ITextureHandle.html">ITextureHandle</a></td>
         <td><span class="parametername">texId</span></td>
-        <td><p>The tex identifier.</p>
+        <td><p>The texture identifier.</p>
 </td>
       </tr>
     </tbody>
@@ -1653,7 +1697,7 @@ Note that the Scissor test must be enabled for this to work.</p>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a>[]</td>
         <td><span class="parametername">bitangents</span></td>
-        <td><p>THe bitangents.</p>
+        <td><p>The bitangents.</p>
 </td>
       </tr>
     </tbody>
@@ -1976,6 +2020,47 @@ Note that the Scissor test must be enabled for this to work.</p>
         <td><a class="xref" href="Fusee.Engine.Common.ITextureHandle.html">ITextureHandle</a>[]</td>
         <td><span class="parametername">texHandles</span></td>
         <td><p>The texture handles, associated with the given textures. Each handle should be created by the TextureManager in the RenderContext.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Common_IRenderContextImp_SetRenderTarget_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetRenderTarget*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_SetRenderTarget_Fusee_Engine_Common_IWritableArrayTexture_System_Int32_Fusee_Engine_Common_ITextureHandle_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32,Fusee.Engine.Common.ITextureHandle)">SetRenderTarget(IWritableArrayTexture, Int32, ITextureHandle)</h4>
+  <div class="markdown level1 summary"><p>Renders into the given layer of the array texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetRenderTarget(IWritableArrayTexture tex, int layer, ITextureHandle texHandle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IWritableArrayTexture.html">IWritableArrayTexture</a></td>
+        <td><span class="parametername">tex</span></td>
+        <td><p>The array texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">layer</span></td>
+        <td><p>The layer to render to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.ITextureHandle.html">ITextureHandle</a></td>
+        <td><span class="parametername">texHandle</span></td>
+        <td><p>The texture handle, associated with the given texture. Should be created by the TextureManager in the RenderContext.</p>
 </td>
       </tr>
     </tbody>
@@ -2612,6 +2697,76 @@ a given uniform parameter name used in a shader program.</p>
   </table>
   
   
+  <a id="Fusee_Engine_Common_IRenderContextImp_SetTextureFilterMode_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_SetTextureFilterMode_Fusee_Engine_Common_ITextureHandle_Fusee_Engine_Common_TextureFilterMode_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetTextureFilterMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureFilterMode)">SetTextureFilterMode(ITextureHandle, TextureFilterMode)</h4>
+  <div class="markdown level1 summary"><p>Sets the textures filter mode (<a class="xref" href="Fusee.Engine.Common.TextureFilterMode.html">TextureFilterMode</a> at runtime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetTextureFilterMode(ITextureHandle tex, TextureFilterMode filterMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.ITextureHandle.html">ITextureHandle</a></td>
+        <td><span class="parametername">tex</span></td>
+        <td><p>The handle of the texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.TextureFilterMode.html">TextureFilterMode</a></td>
+        <td><span class="parametername">filterMode</span></td>
+        <td><p>The new filter mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Fusee_Engine_Common_IRenderContextImp_SetTextureWrapMode_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_SetTextureWrapMode_Fusee_Engine_Common_ITextureHandle_Fusee_Engine_Common_TextureWrapMode_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetTextureWrapMode(Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureWrapMode)">SetTextureWrapMode(ITextureHandle, TextureWrapMode)</h4>
+  <div class="markdown level1 summary"><p>Sets the textures filter mode (<a class="xref" href="Fusee.Engine.Common.TextureWrapMode.html">TextureWrapMode</a> at runtime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetTextureWrapMode(ITextureHandle tex, TextureWrapMode wrapMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.ITextureHandle.html">ITextureHandle</a></td>
+        <td><span class="parametername">tex</span></td>
+        <td><p>The handle of the texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.TextureWrapMode.html">TextureWrapMode</a></td>
+        <td><span class="parametername">wrapMode</span></td>
+        <td><p>The new wrap mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Fusee_Engine_Common_IRenderContextImp_SetTriangles_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetTriangles*"></a>
   <h4 id="Fusee_Engine_Common_IRenderContextImp_SetTriangles_Fusee_Engine_Common_IMeshImp_System_UInt16___" data-uid="Fusee.Engine.Common.IRenderContextImp.SetTriangles(Fusee.Engine.Common.IMeshImp,System.UInt16[])">SetTriangles(IMeshImp, UInt16[])</h4>
   <div class="markdown level1 summary"><p>Binds the triangles onto the GL render context and assigns an ElementBuffer index to the passed <a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a> instance.</p>
@@ -2787,7 +2942,7 @@ a given uniform parameter name used in a shader program.</p>
       <tr>
         <td><a class="xref" href="Fusee.Engine.Common.ITextureHandle.html">ITextureHandle</a></td>
         <td><span class="parametername">tex</span></td>
-        <td><p>The tex.</p>
+        <td><p>The texture.</p>
 </td>
       </tr>
       <tr>
@@ -2870,7 +3025,7 @@ a given uniform parameter name used in a shader program.</p>
     </tbody>
   </table>
   <h5 id="Fusee_Engine_Common_IRenderContextImp_Viewport_System_Int32_System_Int32_System_Int32_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Setting the Viewport limits the rendering output to the specified rectangular region.</p>
+  <div class="markdown level1 remarks"><p>Setting the viewport limits the rendering output to the specified rectangular region.</p>
 </div>
 </article>
           </div>

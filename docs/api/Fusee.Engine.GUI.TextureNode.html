@@ -139,13 +139,13 @@
   
   
   <a id="Fusee_Engine_GUI_TextureNode__ctor_" data-uid="Fusee.Engine.GUI.TextureNode.#ctor*"></a>
-  <h4 id="Fusee_Engine_GUI_TextureNode__ctor_System_String_System_String_System_String_Fusee_Engine_Core_Texture_Fusee_Math_Core_MinMaxRect_Fusee_Math_Core_MinMaxRect_" data-uid="Fusee.Engine.GUI.TextureNode.#ctor(System.String,System.String,System.String,Fusee.Engine.Core.Texture,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect)">TextureNode(String, String, String, Texture, MinMaxRect, MinMaxRect)</h4>
-  <div class="markdown level1 summary"><p>Creates a SceneNode with the proper components and children for rendering a nine sliced texture.</p>
+  <h4 id="Fusee_Engine_GUI_TextureNode__ctor_System_String_System_String_System_String_Fusee_Engine_Core_Texture_Fusee_Math_Core_MinMaxRect_Fusee_Math_Core_MinMaxRect_Fusee_Math_Core_float2_" data-uid="Fusee.Engine.GUI.TextureNode.#ctor(System.String,System.String,System.String,Fusee.Engine.Core.Texture,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.float2)">TextureNode(String, String, String, Texture, MinMaxRect, MinMaxRect, float2)</h4>
+  <div class="markdown level1 summary"><p>Creates a SceneNodeContainer with the proper components and children for rendering a nine sliced texture.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TextureNode(string name, string vs, string ps, Texture tex, MinMaxRect anchors, MinMaxRect offsets)</code></pre>
+    <pre><code class="lang-csharp hljs">public TextureNode(string name, string vs, string ps, Texture tex, MinMaxRect anchors, MinMaxRect offsets, float2 diffuseTexTiles)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -160,7 +160,7 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td><p>Name of the SceneNode.</p>
+        <td><p>Name of the SceneNodeContainer.</p>
 </td>
       </tr>
       <tr>
@@ -193,13 +193,19 @@
         <td><p>Offsets for the mesh. Defines the position of the object relative to its enclosing UI element.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float2.html">float2</a></td>
+        <td><span class="parametername">diffuseTexTiles</span></td>
+        <td><p>The tiling of the diffuse texture.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   
   
   <a id="Fusee_Engine_GUI_TextureNode__ctor_" data-uid="Fusee.Engine.GUI.TextureNode.#ctor*"></a>
   <h4 id="Fusee_Engine_GUI_TextureNode__ctor_System_String_System_String_System_String_Fusee_Engine_Core_Texture_Fusee_Math_Core_MinMaxRect_Fusee_Math_Core_MinMaxRect_Fusee_Math_Core_float2_Fusee_Math_Core_float4_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="Fusee.Engine.GUI.TextureNode.#ctor(System.String,System.String,System.String,Fusee.Engine.Core.Texture,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.float2,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single)">TextureNode(String, String, String, Texture, MinMaxRect, MinMaxRect, float2, float4, Single, Single, Single, Single, Single)</h4>
-  <div class="markdown level1 summary"><p>Creates a SceneNode with the proper components and children for rendering a nine sliced texture.
+  <div class="markdown level1 summary"><p>Creates a SceneNodeContainer with the proper components and children for rendering a nine sliced texture.
 By default the border thickness is calculated relative to a unit plane. For a thicker border set the border thickness to the desired value, 2 means a twice as thick border.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -220,7 +226,7 @@ By default the border thickness is calculated relative to a unit plane. For a th
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td><p>Name of the SceneNode.</p>
+        <td><p>Name of the SceneNodeContainer.</p>
 </td>
       </tr>
       <tr>

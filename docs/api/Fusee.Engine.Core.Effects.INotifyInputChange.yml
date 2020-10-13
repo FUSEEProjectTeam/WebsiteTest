@@ -1,0 +1,283 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Effects.INotifyInputChange
+  commentId: T:Fusee.Engine.Core.Effects.INotifyInputChange
+  id: INotifyInputChange
+  parent: Fusee.Engine.Core.Effects
+  children:
+  - Fusee.Engine.Core.Effects.INotifyInputChange.NotifyPropertyChanged(System.Type,System.String,System.Object)
+  - Fusee.Engine.Core.Effects.INotifyInputChange.PropertyChanged
+  langs:
+  - csharp
+  - vb
+  name: INotifyInputChange
+  nameWithType: INotifyInputChange
+  fullName: Fusee.Engine.Core.Effects.INotifyInputChange
+  type: Interface
+  source:
+    id: INotifyInputChange
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\SurfaceEffectInput.cs
+    startLine: 8
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nProvides an Event for notifying a property change.\n"
+  example: []
+  syntax:
+    content: public interface INotifyInputChange
+    content.vb: Public Interface INotifyInputChange
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Fusee.Engine.Core.Effects.INotifyInputChange.PropertyChanged
+  commentId: E:Fusee.Engine.Core.Effects.INotifyInputChange.PropertyChanged
+  id: PropertyChanged
+  parent: Fusee.Engine.Core.Effects.INotifyInputChange
+  langs:
+  - csharp
+  - vb
+  name: PropertyChanged
+  nameWithType: INotifyInputChange.PropertyChanged
+  fullName: Fusee.Engine.Core.Effects.INotifyInputChange.PropertyChanged
+  type: Event
+  source:
+    id: PropertyChanged
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\SurfaceEffectInput.cs
+    startLine: 13
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nEvent to notify a <xref href=\"Fusee.Engine.Core.Effects.SurfaceEffect\" data-throw-if-not-resolved=\"false\"></xref> about a changed value of a property of this class.\n"
+  example: []
+  syntax:
+    content: event EventHandler<SurfaceEffectEventArgs> PropertyChanged
+    return:
+      type: System.EventHandler{Fusee.Engine.Core.Effects.SurfaceEffectEventArgs}
+    content.vb: Event PropertyChanged As EventHandler(Of SurfaceEffectEventArgs)
+- uid: Fusee.Engine.Core.Effects.INotifyInputChange.NotifyPropertyChanged(System.Type,System.String,System.Object)
+  commentId: M:Fusee.Engine.Core.Effects.INotifyInputChange.NotifyPropertyChanged(System.Type,System.String,System.Object)
+  id: NotifyPropertyChanged(System.Type,System.String,System.Object)
+  parent: Fusee.Engine.Core.Effects.INotifyInputChange
+  langs:
+  - csharp
+  - vb
+  name: NotifyPropertyChanged(Type, String, Object)
+  nameWithType: INotifyInputChange.NotifyPropertyChanged(Type, String, Object)
+  fullName: Fusee.Engine.Core.Effects.INotifyInputChange.NotifyPropertyChanged(System.Type, System.String, System.Object)
+  type: Method
+  source:
+    id: NotifyPropertyChanged
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\SurfaceEffectInput.cs
+    startLine: 22
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThis method needs to be called by the setter of each property.\nA <xref href=\"Fusee.Engine.Core.Effects.SurfaceEffect\" data-throw-if-not-resolved=\"false\"></xref> can register <xref href=\"Fusee.Engine.Core.Effects.Effect.SetFxParam%60%601(System.String%2c%60%600)\" data-throw-if-not-resolved=\"false\"></xref> to the <xref href=\"Fusee.Engine.Core.Effects.INotifyInputChange.PropertyChanged\" data-throw-if-not-resolved=\"false\"></xref> event.\n"
+  example: []
+  syntax:
+    content: void NotifyPropertyChanged(Type type, string name, object value)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of the property.
+    - id: name
+      type: System.String
+      description: The name of the property.
+    - id: value
+      type: System.Object
+      description: The value of the property.
+    content.vb: Sub NotifyPropertyChanged(type As Type, name As String, value As Object)
+  overload: Fusee.Engine.Core.Effects.INotifyInputChange.NotifyPropertyChanged*
+references:
+- uid: Fusee.Engine.Core.Effects
+  commentId: N:Fusee.Engine.Core.Effects
+  name: Fusee.Engine.Core.Effects
+  nameWithType: Fusee.Engine.Core.Effects
+  fullName: Fusee.Engine.Core.Effects
+- uid: Fusee.Engine.Core.Effects.SurfaceEffect
+  commentId: T:Fusee.Engine.Core.Effects.SurfaceEffect
+  parent: Fusee.Engine.Core.Effects
+  name: SurfaceEffect
+  nameWithType: SurfaceEffect
+  fullName: Fusee.Engine.Core.Effects.SurfaceEffect
+- uid: System.EventHandler{Fusee.Engine.Core.Effects.SurfaceEffectEventArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Core.Effects.SurfaceEffectEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<SurfaceEffectEventArgs>
+  nameWithType: EventHandler<SurfaceEffectEventArgs>
+  fullName: System.EventHandler<Fusee.Engine.Core.Effects.SurfaceEffectEventArgs>
+  nameWithType.vb: EventHandler(Of SurfaceEffectEventArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Core.Effects.SurfaceEffectEventArgs)
+  name.vb: EventHandler(Of SurfaceEffectEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Effects.SurfaceEffectEventArgs
+    name: SurfaceEffectEventArgs
+    nameWithType: SurfaceEffectEventArgs
+    fullName: Fusee.Engine.Core.Effects.SurfaceEffectEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Effects.SurfaceEffectEventArgs
+    name: SurfaceEffectEventArgs
+    nameWithType: SurfaceEffectEventArgs
+    fullName: Fusee.Engine.Core.Effects.SurfaceEffectEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.Effects.Effect.SetFxParam``1(System.String,``0)
+  commentId: M:Fusee.Engine.Core.Effects.Effect.SetFxParam``1(System.String,``0)
+  isExternal: true
+  name: SetFxParam<T>(String, T)
+  nameWithType: Effect.SetFxParam<T>(String, T)
+  fullName: Fusee.Engine.Core.Effects.Effect.SetFxParam<T>(System.String, T)
+  nameWithType.vb: Effect.SetFxParam(Of T)(String, T)
+  fullName.vb: Fusee.Engine.Core.Effects.Effect.SetFxParam(Of T)(System.String, T)
+  name.vb: SetFxParam(Of T)(String, T)
+  spec.csharp:
+  - uid: Fusee.Engine.Core.Effects.Effect.SetFxParam``1(System.String,``0)
+    name: SetFxParam<T>
+    nameWithType: Effect.SetFxParam<T>
+    fullName: Fusee.Engine.Core.Effects.Effect.SetFxParam<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Fusee.Engine.Core.Effects.Effect.SetFxParam``1(System.String,``0)
+    name: SetFxParam(Of T)
+    nameWithType: Effect.SetFxParam(Of T)
+    fullName: Fusee.Engine.Core.Effects.Effect.SetFxParam(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.Effects.INotifyInputChange.PropertyChanged
+  commentId: E:Fusee.Engine.Core.Effects.INotifyInputChange.PropertyChanged
+  parent: Fusee.Engine.Core.Effects.INotifyInputChange
+  name: PropertyChanged
+  nameWithType: INotifyInputChange.PropertyChanged
+  fullName: Fusee.Engine.Core.Effects.INotifyInputChange.PropertyChanged
+- uid: Fusee.Engine.Core.Effects.INotifyInputChange.NotifyPropertyChanged*
+  commentId: Overload:Fusee.Engine.Core.Effects.INotifyInputChange.NotifyPropertyChanged
+  name: NotifyPropertyChanged
+  nameWithType: INotifyInputChange.NotifyPropertyChanged
+  fullName: Fusee.Engine.Core.Effects.INotifyInputChange.NotifyPropertyChanged
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Core.Effects.INotifyInputChange
+  commentId: T:Fusee.Engine.Core.Effects.INotifyInputChange
+  parent: Fusee.Engine.Core.Effects
+  name: INotifyInputChange
+  nameWithType: INotifyInputChange
+  fullName: Fusee.Engine.Core.Effects.INotifyInputChange

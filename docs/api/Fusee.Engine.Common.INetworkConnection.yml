@@ -87,14 +87,14 @@ items:
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
-  summary: "\nGets the roundtrip time of a packet. This is the time in milliseconds that a packet requires to be send to the remote end point and back.\n"
+  summary: "\nGets the round-trip time of a packet. This is the time in milliseconds that a packet requires to be send to the remote end point and back.\n"
   example: []
   syntax:
     content: float RoundtripTime { get; }
     parameters: []
     return:
       type: System.Single
-      description: "\nThe roundtrip time.\n"
+      description: "\nThe round-trip time.\n"
     content.vb: ReadOnly Property RoundtripTime As Single
   overload: Fusee.Engine.Common.INetworkConnection.RoundtripTime*
   modifiers.csharp:

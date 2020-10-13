@@ -147,7 +147,7 @@ items:
   assemblies:
   - Fusee.Jometri
   namespace: Fusee.Jometri
-  summary: "\nPreorder traversal of the tree. Visits the root, then visits the left sub-tree, after that visits the right sub-tree.\nRetruns the keys.\n"
+  summary: "\nPreorder traversal of the tree. Visits the root, then visits the left sub-tree, after that visits the right sub-tree.\nReturns the keys.\n"
   example: []
   syntax:
     content: public IEnumerable<TK> PreorderTraverseTreeKeys()
@@ -180,7 +180,7 @@ items:
   assemblies:
   - Fusee.Jometri
   namespace: Fusee.Jometri
-  summary: "\nPreorder traversal of the tree. Visits the root, then visits the left sub-tree, after that visits the right sub-tree.\nRetruns the values.\n"
+  summary: "\nPreorder traversal of the tree. Visits the root, then visits the left sub-tree, after that visits the right sub-tree.\nReturns the values.\n"
   example: []
   syntax:
     content: public IEnumerable<TV> PreorderTraverseTreeValues()
@@ -427,7 +427,7 @@ items:
     parameters:
     - id: key
       type: '{TK}'
-      description: The key that is uesed as search parameter.
+      description: The key that is used as search parameter.
     return:
       type: '{TV}'
       description: ''

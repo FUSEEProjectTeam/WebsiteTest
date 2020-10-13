@@ -5,7 +5,7 @@ items:
   id: TextNode
   parent: Fusee.Engine.GUI
   children:
-  - Fusee.Engine.GUI.TextNode.#ctor(System.String,System.String,System.String,System.String,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect,Fusee.Engine.Core.FontMap,Fusee.Math.Core.float4,Fusee.Engine.Core.Scene.HorizontalTextAlignment,Fusee.Engine.Core.Scene.VerticalTextAlignment)
+  - Fusee.Engine.GUI.TextNode.#ctor(System.String,System.String,System.String,System.String,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect,Fusee.Engine.Core.FontMap,Fusee.Math.Core.float4,Fusee.Engine.Common.HorizontalTextAlignment,Fusee.Engine.Common.VerticalTextAlignment)
   langs:
   - csharp
   - vb
@@ -16,11 +16,11 @@ items:
   source:
     id: TextNode
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUINode.cs
-    startLine: 363
+    startLine: 364
   assemblies:
   - Fusee.Engine.GUI
   namespace: Fusee.Engine.GUI
-  summary: "\nCreates a SceneNode with the proper components and children for rendering text in the UI.\n"
+  summary: "\nCreates a SceneNodeContainer with the proper components and children for rendering text in the UI.\n"
   example: []
   syntax:
     content: 'public class TextNode : SceneNode, INode'
@@ -53,35 +53,35 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Fusee.Engine.GUI.TextNode.#ctor(System.String,System.String,System.String,System.String,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect,Fusee.Engine.Core.FontMap,Fusee.Math.Core.float4,Fusee.Engine.Core.Scene.HorizontalTextAlignment,Fusee.Engine.Core.Scene.VerticalTextAlignment)
-  commentId: M:Fusee.Engine.GUI.TextNode.#ctor(System.String,System.String,System.String,System.String,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect,Fusee.Engine.Core.FontMap,Fusee.Math.Core.float4,Fusee.Engine.Core.Scene.HorizontalTextAlignment,Fusee.Engine.Core.Scene.VerticalTextAlignment)
-  id: '#ctor(System.String,System.String,System.String,System.String,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect,Fusee.Engine.Core.FontMap,Fusee.Math.Core.float4,Fusee.Engine.Core.Scene.HorizontalTextAlignment,Fusee.Engine.Core.Scene.VerticalTextAlignment)'
+- uid: Fusee.Engine.GUI.TextNode.#ctor(System.String,System.String,System.String,System.String,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect,Fusee.Engine.Core.FontMap,Fusee.Math.Core.float4,Fusee.Engine.Common.HorizontalTextAlignment,Fusee.Engine.Common.VerticalTextAlignment)
+  commentId: M:Fusee.Engine.GUI.TextNode.#ctor(System.String,System.String,System.String,System.String,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect,Fusee.Engine.Core.FontMap,Fusee.Math.Core.float4,Fusee.Engine.Common.HorizontalTextAlignment,Fusee.Engine.Common.VerticalTextAlignment)
+  id: '#ctor(System.String,System.String,System.String,System.String,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect,Fusee.Engine.Core.FontMap,Fusee.Math.Core.float4,Fusee.Engine.Common.HorizontalTextAlignment,Fusee.Engine.Common.VerticalTextAlignment)'
   parent: Fusee.Engine.GUI.TextNode
   langs:
   - csharp
   - vb
   name: TextNode(String, String, String, String, MinMaxRect, MinMaxRect, FontMap, float4, HorizontalTextAlignment, VerticalTextAlignment)
   nameWithType: TextNode.TextNode(String, String, String, String, MinMaxRect, MinMaxRect, FontMap, float4, HorizontalTextAlignment, VerticalTextAlignment)
-  fullName: Fusee.Engine.GUI.TextNode.TextNode(System.String, System.String, System.String, System.String, Fusee.Math.Core.MinMaxRect, Fusee.Math.Core.MinMaxRect, Fusee.Engine.Core.FontMap, Fusee.Math.Core.float4, Fusee.Engine.Core.Scene.HorizontalTextAlignment, Fusee.Engine.Core.Scene.VerticalTextAlignment)
+  fullName: Fusee.Engine.GUI.TextNode.TextNode(System.String, System.String, System.String, System.String, Fusee.Math.Core.MinMaxRect, Fusee.Math.Core.MinMaxRect, Fusee.Engine.Core.FontMap, Fusee.Math.Core.float4, Fusee.Engine.Common.HorizontalTextAlignment, Fusee.Engine.Common.VerticalTextAlignment)
   type: Constructor
   source:
     id: .ctor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUINode.cs
-    startLine: 378
+    startLine: 379
   assemblies:
   - Fusee.Engine.GUI
   namespace: Fusee.Engine.GUI
   summary: "\nInitializes a new instance of the <xref href=\"Fusee.Engine.GUI.TextNode\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
   example: []
   syntax:
-    content: public TextNode(string text, string name, string vs, string ps, MinMaxRect anchors, MinMaxRect offsets, FontMap fontMap, float4 color, HorizontalTextAlignment horizontalAlignment = HorizontalTextAlignment.LEFT, VerticalTextAlignment verticalTextAlignment = VerticalTextAlignment.TOP)
+    content: public TextNode(string text, string name, string vs, string ps, MinMaxRect anchors, MinMaxRect offsets, FontMap fontMap, float4 color, HorizontalTextAlignment horizontalAlignment = HorizontalTextAlignment.Left, VerticalTextAlignment verticalTextAlignment = VerticalTextAlignment.Top)
     parameters:
     - id: text
       type: System.String
       description: The text you want to display.
     - id: name
       type: System.String
-      description: The name of the SceneNode.
+      description: The name of the SceneNodeContainer.
     - id: vs
       type: System.String
       description: The vertex shader you want to use..
@@ -101,12 +101,12 @@ items:
       type: Fusee.Math.Core.float4
       description: The color.
     - id: horizontalAlignment
-      type: Fusee.Engine.Core.Scene.HorizontalTextAlignment
-      description: The <xref href="Fusee.Engine.Core.Scene.HorizontalTextAlignment" data-throw-if-not-resolved="false"></xref> defines the text&apos;s placement along the enclosing <xref href="Fusee.Math.Core.MinMaxRect" data-throw-if-not-resolved="false"></xref>&apos;s x-axis.
+      type: Fusee.Engine.Common.HorizontalTextAlignment
+      description: The <xref href="Fusee.Engine.Common.HorizontalTextAlignment" data-throw-if-not-resolved="false"></xref> defines the text&apos;s placement along the enclosing <xref href="Fusee.Math.Core.MinMaxRect" data-throw-if-not-resolved="false"></xref>&apos;s x-axis.
     - id: verticalTextAlignment
-      type: Fusee.Engine.Core.Scene.VerticalTextAlignment
-      description: The <xref href="Fusee.Engine.Core.Scene.HorizontalTextAlignment" data-throw-if-not-resolved="false"></xref> defines the text&apos;s placement along the enclosing <xref href="Fusee.Math.Core.MinMaxRect" data-throw-if-not-resolved="false"></xref>&apos;s y-axis.
-    content.vb: Public Sub New(text As String, name As String, vs As String, ps As String, anchors As MinMaxRect, offsets As MinMaxRect, fontMap As FontMap, color As float4, horizontalAlignment As HorizontalTextAlignment = HorizontalTextAlignment.LEFT, verticalTextAlignment As VerticalTextAlignment = VerticalTextAlignment.TOP)
+      type: Fusee.Engine.Common.VerticalTextAlignment
+      description: The <xref href="Fusee.Engine.Common.HorizontalTextAlignment" data-throw-if-not-resolved="false"></xref> defines the text&apos;s placement along the enclosing <xref href="Fusee.Math.Core.MinMaxRect" data-throw-if-not-resolved="false"></xref>&apos;s y-axis.
+    content.vb: Public Sub New(text As String, name As String, vs As String, ps As String, anchors As MinMaxRect, offsets As MinMaxRect, fontMap As FontMap, color As float4, horizontalAlignment As HorizontalTextAlignment = HorizontalTextAlignment.Left, verticalTextAlignment As VerticalTextAlignment = VerticalTextAlignment.Top)
   overload: Fusee.Engine.GUI.TextNode.#ctor*
   modifiers.csharp:
   - public
@@ -473,12 +473,12 @@ references:
   name: TextNode
   nameWithType: TextNode
   fullName: Fusee.Engine.GUI.TextNode
-- uid: Fusee.Engine.Core.Scene.HorizontalTextAlignment
-  commentId: T:Fusee.Engine.Core.Scene.HorizontalTextAlignment
-  parent: Fusee.Engine.Core.Scene
+- uid: Fusee.Engine.Common.HorizontalTextAlignment
+  commentId: T:Fusee.Engine.Common.HorizontalTextAlignment
+  parent: Fusee.Engine.Common
   name: HorizontalTextAlignment
   nameWithType: HorizontalTextAlignment
-  fullName: Fusee.Engine.Core.Scene.HorizontalTextAlignment
+  fullName: Fusee.Engine.Common.HorizontalTextAlignment
 - uid: Fusee.Math.Core.MinMaxRect
   commentId: T:Fusee.Math.Core.MinMaxRect
   parent: Fusee.Math.Core
@@ -509,12 +509,17 @@ references:
   name: float4
   nameWithType: float4
   fullName: Fusee.Math.Core.float4
-- uid: Fusee.Engine.Core.Scene.VerticalTextAlignment
-  commentId: T:Fusee.Engine.Core.Scene.VerticalTextAlignment
-  parent: Fusee.Engine.Core.Scene
+- uid: Fusee.Engine.Common.VerticalTextAlignment
+  commentId: T:Fusee.Engine.Common.VerticalTextAlignment
+  parent: Fusee.Engine.Common
   name: VerticalTextAlignment
   nameWithType: VerticalTextAlignment
-  fullName: Fusee.Engine.Core.Scene.VerticalTextAlignment
+  fullName: Fusee.Engine.Common.VerticalTextAlignment
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
 - uid: Fusee.Math.Core
   commentId: N:Fusee.Math.Core
   name: Fusee.Math.Core

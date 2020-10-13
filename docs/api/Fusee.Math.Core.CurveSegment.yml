@@ -99,17 +99,17 @@ items:
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
-  summary: "\nCalculates a point on a bézier curve using De Casteljaus algorithm.\n"
+  summary: "\nCalculates a point on a bézier curve using De Casteljau&apos;s algorithm.\n"
   example: []
   syntax:
     content: public float3 CalcPoint(float t, float3[] vertices)
     parameters:
     - id: t
       type: System.Single
-      description: Beziér curves are polynominals of t. t is element of [0, 1]
+      description: Bézier curves are polynominals of t. t is element of [0, 1]
     - id: vertices
       type: Fusee.Math.Core.float3[]
-      description: All control points thet represent the curve, incl. start and end point
+      description: All control points that represent the curve, incl. start and end point
     return:
       type: Fusee.Math.Core.float3
       description: ''
@@ -140,14 +140,14 @@ items:
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
-  summary: "\nSplits a curve using De Casteljaus algorithm.\n"
+  summary: "\nSplits a curve using De Casteljau&apos;s algorithm.\n"
   example: []
   syntax:
     content: public void SplitCurve(float t, float3[] vertices, ref List<float3> leftCurve, ref List<float3> rightCurve)
     parameters:
     - id: t
       type: System.Single
-      description: Beziér curves are polynominals of t. t is element of [0, 1].
+      description: Bézier curves are polynominals of t. t is element of [0, 1].
     - id: vertices
       type: Fusee.Math.Core.float3[]
       description: All control points that represent the curve, incl. start and end point.
@@ -277,7 +277,7 @@ items:
       description: The segment&apos;s starting point
     - id: acreage
       type: System.Single
-      description: Determines a maximal acreage for the tringale created from start point random point and end point.
+      description: Determines a maximal acreage for the triangle created from start point random point and end point.
     - id: degree
       type: System.Int32
       description: 'The degree of the curve: 1 for linear, 2 for conic, 3 for cubic'

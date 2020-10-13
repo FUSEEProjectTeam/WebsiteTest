@@ -33,6 +33,8 @@ items:
   - Fusee.Engine.Core.Scene.Octant
   - Fusee.Engine.Core.Scene.ProjectionMethod
   - Fusee.Engine.Core.Scene.RectTransform
+  - Fusee.Engine.Core.Scene.RenderLayer
+  - Fusee.Engine.Core.Scene.RenderLayers
   - Fusee.Engine.Core.Scene.SceneComponent
   - Fusee.Engine.Core.Scene.SceneContainer
   - Fusee.Engine.Core.Scene.SceneExtensions
@@ -194,6 +196,18 @@ references:
   name: RectTransform
   nameWithType: RectTransform
   fullName: Fusee.Engine.Core.Scene.RectTransform
+- uid: Fusee.Engine.Core.Scene.RenderLayer
+  commentId: T:Fusee.Engine.Core.Scene.RenderLayer
+  parent: Fusee.Engine.Core.Scene
+  name: RenderLayer
+  nameWithType: RenderLayer
+  fullName: Fusee.Engine.Core.Scene.RenderLayer
+- uid: Fusee.Engine.Core.Scene.RenderLayers
+  commentId: T:Fusee.Engine.Core.Scene.RenderLayers
+  parent: Fusee.Engine.Core.Scene
+  name: RenderLayers
+  nameWithType: RenderLayers
+  fullName: Fusee.Engine.Core.Scene.RenderLayers
 - uid: Fusee.Engine.Core.Scene.SceneComponent
   commentId: T:Fusee.Engine.Core.Scene.SceneComponent
   parent: Fusee.Engine.Core.Scene
@@ -235,6 +249,41 @@ references:
   name: SceneNode
   nameWithType: SceneNode
   fullName: Fusee.Engine.Core.Scene.SceneNode
+- uid: Fusee.Engine.Core.Scene.Transform
+  commentId: T:Fusee.Engine.Core.Scene.Transform
+  parent: Fusee.Engine.Core.Scene
+  name: Transform
+  nameWithType: Transform
+  fullName: Fusee.Engine.Core.Scene.Transform
+- uid: Fusee.Engine.Core.Scene.Weight
+  commentId: T:Fusee.Engine.Core.Scene.Weight
+  parent: Fusee.Engine.Core.Scene
+  name: Weight
+  nameWithType: Weight
+  fullName: Fusee.Engine.Core.Scene.Weight
+- uid: Fusee.Engine.Core.Scene.VertexWeightList
+  commentId: T:Fusee.Engine.Core.Scene.VertexWeightList
+  name: VertexWeightList
+  nameWithType: VertexWeightList
+  fullName: Fusee.Engine.Core.Scene.VertexWeightList
+- uid: Fusee.Engine.Core.Scene.VertexWeight
+  commentId: T:Fusee.Engine.Core.Scene.VertexWeight
+  parent: Fusee.Engine.Core.Scene
+  name: VertexWeight
+  nameWithType: VertexWeight
+  fullName: Fusee.Engine.Core.Scene.VertexWeight
+- uid: Fusee.Engine.Core.Scene.XForm
+  commentId: T:Fusee.Engine.Core.Scene.XForm
+  parent: Fusee.Engine.Core.Scene
+  name: XForm
+  nameWithType: XForm
+  fullName: Fusee.Engine.Core.Scene.XForm
+- uid: Fusee.Engine.Core.Scene.XFormText
+  commentId: T:Fusee.Engine.Core.Scene.XFormText
+  parent: Fusee.Engine.Core.Scene
+  name: XFormText
+  nameWithType: XFormText
+  fullName: Fusee.Engine.Core.Scene.XFormText
 - uid: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase
   commentId: T:Fusee.Engine.Core.Scene.IEffectPassDeclarationBase
   parent: Fusee.Engine.Core.Scene
@@ -268,35 +317,6 @@ references:
   name: ShaderEffectProtoPixel
   nameWithType: ShaderEffectProtoPixel
   fullName: Fusee.Engine.Core.Scene.ShaderEffectProtoPixel
-- uid: Fusee.Engine.Core.Scene.Transform
-  commentId: T:Fusee.Engine.Core.Scene.Transform
-  parent: Fusee.Engine.Core.Scene
-  name: Transform
-  nameWithType: Transform
-  fullName: Fusee.Engine.Core.Scene.Transform
-- uid: Fusee.Engine.Core.Scene.Weight
-  commentId: T:Fusee.Engine.Core.Scene.Weight
-  parent: Fusee.Engine.Core.Scene
-  name: Weight
-  nameWithType: Weight
-  fullName: Fusee.Engine.Core.Scene.Weight
-- uid: Fusee.Engine.Core.Scene.VertexWeightList
-  commentId: T:Fusee.Engine.Core.Scene.VertexWeightList
-  name: VertexWeightList
-  nameWithType: VertexWeightList
-  fullName: Fusee.Engine.Core.Scene.VertexWeightList
-- uid: Fusee.Engine.Core.Scene.VertexWeight
-  commentId: T:Fusee.Engine.Core.Scene.VertexWeight
-  parent: Fusee.Engine.Core.Scene
-  name: VertexWeight
-  nameWithType: VertexWeight
-  fullName: Fusee.Engine.Core.Scene.VertexWeight
-- uid: Fusee.Engine.Core.Scene.XForm
-  commentId: T:Fusee.Engine.Core.Scene.XForm
-  parent: Fusee.Engine.Core.Scene
-  name: XForm
-  nameWithType: XForm
-  fullName: Fusee.Engine.Core.Scene.XForm
 - uid: Fusee.Engine.Core.Scene.HorizontalTextAlignment
   commentId: T:Fusee.Engine.Core.Scene.HorizontalTextAlignment
   parent: Fusee.Engine.Core.Scene
@@ -309,12 +329,6 @@ references:
   name: VerticalTextAlignment
   nameWithType: VerticalTextAlignment
   fullName: Fusee.Engine.Core.Scene.VerticalTextAlignment
-- uid: Fusee.Engine.Core.Scene.XFormText
-  commentId: T:Fusee.Engine.Core.Scene.XFormText
-  parent: Fusee.Engine.Core.Scene
-  name: XFormText
-  nameWithType: XFormText
-  fullName: Fusee.Engine.Core.Scene.XFormText
 - uid: Fusee.Engine.Core.Scene
   commentId: N:Fusee.Engine.Core.Scene
   name: Fusee.Engine.Core.Scene

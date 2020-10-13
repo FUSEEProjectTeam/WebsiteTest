@@ -424,7 +424,7 @@ based on the current rotation speed of the first two touchpoints.</p>
   <h5 id="Fusee_Engine_Core_TouchDevice_TwoPointGesture_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Two moving touchpoints on the screen can be interpreted in various ways. It's up to the application to interpret the two individual changes in position
 as <a class="xref" href="Fusee.Engine.Core.TwoPointAction.html#Fusee_Engine_Core_TwoPointAction_Move">Move</a> , as a <a class="xref" href="Fusee.Engine.Core.TwoPointAction.html#Fusee_Engine_Core_TwoPointAction_Rotate">Rotate</a> or as a <a class="xref" href="Fusee.Engine.Core.TwoPointAction.html#Fusee_Engine_Core_TwoPointAction_Pinch">Pinch</a> . Use this method to retrieve
-a symbolic value which of these three possibilites is currently performed with the highest intensity. Applications should sensibly decide whether to
+a symbolic value which of these three possibilities is currently performed with the highest intensity. Applications should sensibly decide whether to
 allow to change their behavior during a two-point-gesture (as long as <a class="xref" href="Fusee.Engine.Core.TouchDevice.html#Fusee_Engine_Core_TouchDevice_TwoPoint">TwoPoint</a> holds true) or to check this value only initially whenever
 a two-point gesture starts, or do something in-between. As a practice: Investigate how the
 <a href="https://play.google.com/store/apps/details?id=com.google.earth">Google Earth mobile app</a> handles this question!</p>
@@ -480,7 +480,7 @@ averaged speed of the first two touchpoints.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.float2.html">float2</a></td>
-        <td><p>The two-dimenstional speed vector of the midpoint between touchpoint 0 and touchpoint 1.</p>
+        <td><p>The two-dimensional speed vector of the midpoint between touchpoint 0 and touchpoint 1.</p>
 </td>
       </tr>
     </tbody>
@@ -528,7 +528,7 @@ The returned values are only valid if <a class="xref" href="Fusee.Engine.Core.To
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.float2.html">float2</a></td>
-        <td><p>The X/Y postion of the given touchpoint.</p>
+        <td><p>The X/Y position of the given touchpoint.</p>
 </td>
       </tr>
     </tbody>
@@ -537,7 +537,7 @@ The returned values are only valid if <a class="xref" href="Fusee.Engine.Core.To
   
   <a id="Fusee_Engine_Core_TouchDevice_GetTouchActive_" data-uid="Fusee.Engine.Core.TouchDevice.GetTouchActive*"></a>
   <h4 id="Fusee_Engine_Core_TouchDevice_GetTouchActive_Fusee_Engine_Common_TouchPoints_" data-uid="Fusee.Engine.Core.TouchDevice.GetTouchActive(Fusee.Engine.Common.TouchPoints)">GetTouchActive(TouchPoints)</h4>
-  <div class="markdown level1 summary"><p>Returns a value signalling if the given touchpoint is currently active (if something hits the screen).</p>
+  <div class="markdown level1 summary"><p>Returns a value signaling if the given touchpoint is currently active (if something hits the screen).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -573,7 +573,7 @@ The returned values are only valid if <a class="xref" href="Fusee.Engine.Core.To
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if this touch is acitve (a finger is on the screen), otherwise false.</p>
+        <td><p>true if this touch is active (a finger is on the screen), otherwise false.</p>
 </td>
       </tr>
     </tbody>
@@ -582,7 +582,7 @@ The returned values are only valid if <a class="xref" href="Fusee.Engine.Core.To
   
   <a id="Fusee_Engine_Core_TouchDevice_GetVelocity_" data-uid="Fusee.Engine.Core.TouchDevice.GetVelocity*"></a>
   <h4 id="Fusee_Engine_Core_TouchDevice_GetVelocity_Fusee_Engine_Common_TouchPoints_" data-uid="Fusee.Engine.Core.TouchDevice.GetVelocity(Fusee.Engine.Common.TouchPoints)">GetVelocity(TouchPoints)</h4>
-  <div class="markdown level1 summary"><p>Retrieves the current velocity (in pixels per second) of the giben touch point.
+  <div class="markdown level1 summary"><p>Retrieves the current velocity (in pixels per second) of the given touch point.
 The returned values are only valid if <a class="xref" href="Fusee.Engine.Core.TouchDevice.html#Fusee_Engine_Core_TouchDevice_GetTouchActive_Fusee_Engine_Common_TouchPoints_">GetTouchActive(TouchPoints)</a> holds true for the same touchpoint.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -619,7 +619,7 @@ The returned values are only valid if <a class="xref" href="Fusee.Engine.Core.To
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.float2.html">float2</a></td>
-        <td><p>The two-dimensional velocitiy of the touchpoint.</p>
+        <td><p>The two-dimensional velocity of the touchpoint.</p>
 </td>
       </tr>
     </tbody>

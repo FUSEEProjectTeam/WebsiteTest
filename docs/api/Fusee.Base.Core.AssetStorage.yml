@@ -27,7 +27,7 @@ items:
   assemblies:
   - Fusee.Base.Core
   namespace: Fusee.Base.Core
-  summary: "\nA class providing access to Assets. An asset is considered any content to be loaded, de-serialized and converted during\nan application&apos;s lifetime. Often Assets should be loaded up-front and accessed during run-time with no perceivable delay.\nAssetStorage is a staticton (a singleton with an additional static interface).\n"
+  summary: "\nA class providing access to Assets. An asset is considered any content to be loaded, deserialized and converted during\nan application&apos;s lifetime. Often Assets should be loaded up-front and accessed during run-time with no perceivable delay.\nAssetStorage is a staticton (a singleton with an additional static interface).\n"
   remarks: "\nThe existence of this class is a tribute to the Web-world where a lot of asset types (e.g. images) are JavaScript built-in\nfunctionality with no possibility to separate the many aspects of asset-access (like loading, deserialization, codec,\nasynchronicity). Decent programming environments allow to separate these aspects using streams. A decoder is implemented\nagainst a stream. Anything capable of providing streams, synchronously or asynchronously thus can act as an asset store.\nIf FUSEE had been designed without JavaScript X-compilation in mind, this class would probably not\nexist.\n"
   example: []
   syntax:
@@ -351,7 +351,7 @@ items:
   assemblies:
   - Fusee.Base.Core
   namespace: Fusee.Base.Core
-  summary: "\nCreates a deep copy of the source object. Only works for source objects with the \n<xref href=\"ProtoBuf.ProtoContractAttribute\" data-throw-if-not-resolved=\"false\"></xref> defined on their class.\n"
+  summary: "\nCreates a deep copy of the source object. Only works for source objects with the \n<see cref=\"!:ProtoBuf.ProtoContractAttribute\"></see> defined on their class.\n"
   example: []
   syntax:
     content: >-
@@ -838,21 +838,8 @@ references:
   name: RegisterAssetProvider
   nameWithType: AssetStorage.RegisterAssetProvider
   fullName: Fusee.Base.Core.AssetStorage.RegisterAssetProvider
-- uid: ProtoBuf.ProtoContractAttribute
-  commentId: T:ProtoBuf.ProtoContractAttribute
-  parent: ProtoBuf
-  isExternal: true
-  name: ProtoContractAttribute
-  nameWithType: ProtoContractAttribute
-  fullName: ProtoBuf.ProtoContractAttribute
 - uid: Fusee.Base.Core.AssetStorage.DeepCopy*
   commentId: Overload:Fusee.Base.Core.AssetStorage.DeepCopy
   name: DeepCopy
   nameWithType: AssetStorage.DeepCopy
   fullName: Fusee.Base.Core.AssetStorage.DeepCopy
-- uid: ProtoBuf
-  commentId: N:ProtoBuf
-  isExternal: true
-  name: ProtoBuf
-  nameWithType: ProtoBuf
-  fullName: ProtoBuf

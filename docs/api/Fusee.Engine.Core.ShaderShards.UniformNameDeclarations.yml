@@ -5,24 +5,22 @@ items:
   id: UniformNameDeclarations
   parent: Fusee.Engine.Core.ShaderShards
   children:
-  - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AlbedoColor
+  - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Albedo
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AlbedoMix
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AlbedoTexture
-  - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AmbientStrengthName
+  - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AmbientStrength
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ArrayPostfix
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BackgroundColor
-  - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BitangentAttribName
+  - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Bitangent
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BoneIndex
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Bones
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BonesArray
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BoneWeight
-  - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Color
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.DeferredRenderTextures
-  - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.DiffuseFraction
+  - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.DiffuseTextureTiles
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.EmissiveColor
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.EmissiveMix
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.EmissiveTexture
-  - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.FresnelReflectance
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.IModel
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.IModelView
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.IModelViewProjection
@@ -41,6 +39,7 @@ items:
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Normal
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.NormalMap
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.NormalMapIntensity
+  - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.NormalTextureTiles
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Projection
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.RenderPassNo
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.RoughnessValue
@@ -48,13 +47,13 @@ items:
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ShadowCubeMap
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ShadowMap
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularColor
-  - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularIntensity
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularMix
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularShininess
+  - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularStrength
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularTexture
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SSAOKernel
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SsaoOn
-  - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TangentAttribName
+  - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Tangent
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TextureCoordinates
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TModel
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TModelView
@@ -62,6 +61,7 @@ items:
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TProjection
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TView
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Vertex
+  - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.VertexColor
   - Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.View
   langs:
   - csharp
@@ -161,19 +161,19 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Color
-  commentId: F:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Color
-  id: Color
+- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.VertexColor
+  commentId: F:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.VertexColor
+  id: VertexColor
   parent: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
   langs:
   - csharp
   - vb
-  name: Color
-  nameWithType: UniformNameDeclarations.Color
-  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Color
+  name: VertexColor
+  nameWithType: UniformNameDeclarations.VertexColor
+  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.VertexColor
   type: Field
   source:
-    id: Color
+    id: VertexColor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
     startLine: 25
   assemblies:
@@ -182,10 +182,10 @@ items:
   summary: "\nThe color attribute name.\n"
   example: []
   syntax:
-    content: public const string Color = "fuColor"
+    content: public const string VertexColor = "fuColor"
     return:
       type: System.String
-    content.vb: Public Const Color As String = "fuColor"
+    content.vb: Public Const VertexColor As String = "fuColor"
   modifiers.csharp:
   - public
   - const
@@ -254,19 +254,19 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TangentAttribName
-  commentId: F:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TangentAttribName
-  id: TangentAttribName
+- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Tangent
+  commentId: F:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Tangent
+  id: Tangent
   parent: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
   langs:
   - csharp
   - vb
-  name: TangentAttribName
-  nameWithType: UniformNameDeclarations.TangentAttribName
-  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TangentAttribName
+  name: Tangent
+  nameWithType: UniformNameDeclarations.Tangent
+  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Tangent
   type: Field
   source:
-    id: TangentAttribName
+    id: Tangent
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
     startLine: 40
   assemblies:
@@ -275,29 +275,29 @@ items:
   summary: "\nThe tangent attribute name.\n"
   example: []
   syntax:
-    content: public const string TangentAttribName = "fuTangent"
+    content: public const string Tangent = "fuTangent"
     return:
       type: System.String
-    content.vb: Public Const TangentAttribName As String = "fuTangent"
+    content.vb: Public Const Tangent As String = "fuTangent"
   modifiers.csharp:
   - public
   - const
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BitangentAttribName
-  commentId: F:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BitangentAttribName
-  id: BitangentAttribName
+- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Bitangent
+  commentId: F:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Bitangent
+  id: Bitangent
   parent: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
   langs:
   - csharp
   - vb
-  name: BitangentAttribName
-  nameWithType: UniformNameDeclarations.BitangentAttribName
-  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BitangentAttribName
+  name: Bitangent
+  nameWithType: UniformNameDeclarations.Bitangent
+  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Bitangent
   type: Field
   source:
-    id: BitangentAttribName
+    id: Bitangent
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
     startLine: 45
   assemblies:
@@ -306,10 +306,10 @@ items:
   summary: "\nThe bitangent attribute name.\n"
   example: []
   syntax:
-    content: public const string BitangentAttribName = "fuBitangent"
+    content: public const string Bitangent = "fuBitangent"
     return:
       type: System.String
-    content.vb: Public Const BitangentAttribName As String = "fuBitangent"
+    content.vb: Public Const Bitangent As String = "fuBitangent"
   modifiers.csharp:
   - public
   - const
@@ -1272,7 +1272,7 @@ items:
   source:
     id: RenderPassNo
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 212
+    startLine: 211
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -1303,7 +1303,7 @@ items:
   source:
     id: BackgroundColor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 217
+    startLine: 216
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -1334,7 +1334,7 @@ items:
   source:
     id: ScreenParams
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 222
+    startLine: 221
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -1351,62 +1351,62 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AmbientStrengthName
-  commentId: F:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AmbientStrengthName
-  id: AmbientStrengthName
+- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AmbientStrength
+  commentId: F:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AmbientStrength
+  id: AmbientStrength
   parent: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
   langs:
   - csharp
   - vb
-  name: AmbientStrengthName
-  nameWithType: UniformNameDeclarations.AmbientStrengthName
-  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AmbientStrengthName
+  name: AmbientStrength
+  nameWithType: UniformNameDeclarations.AmbientStrength
+  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AmbientStrength
   type: Field
   source:
-    id: AmbientStrengthName
+    id: AmbientStrength
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 227
+    startLine: 226
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
-  summary: "\nThe var name for the uniform DiffuseColor variable within the pixel shaders.\n"
+  summary: "\nThe var name for the uniform AmbientStrength variable within the pixel shaders.\n"
   example: []
   syntax:
-    content: public const string AmbientStrengthName = "AmbientStrength"
+    content: public const string AmbientStrength = "AmbientStrength"
     return:
       type: System.String
-    content.vb: Public Const AmbientStrengthName As String = "AmbientStrength"
+    content.vb: Public Const AmbientStrength As String = "AmbientStrength"
   modifiers.csharp:
   - public
   - const
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AlbedoColor
-  commentId: F:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AlbedoColor
-  id: AlbedoColor
+- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Albedo
+  commentId: F:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Albedo
+  id: Albedo
   parent: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
   langs:
   - csharp
   - vb
-  name: AlbedoColor
-  nameWithType: UniformNameDeclarations.AlbedoColor
-  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AlbedoColor
+  name: Albedo
+  nameWithType: UniformNameDeclarations.Albedo
+  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Albedo
   type: Field
   source:
-    id: AlbedoColor
+    id: Albedo
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 232
+    startLine: 231
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
   summary: "\nThe var name for the uniform DiffuseColor variable within the pixel shaders.\n"
   example: []
   syntax:
-    content: public const string AlbedoColor = "AlbedoColor"
+    content: public const string Albedo = "Albedo"
     return:
       type: System.String
-    content.vb: Public Const AlbedoColor As String = "AlbedoColor"
+    content.vb: Public Const Albedo As String = "Albedo"
   modifiers.csharp:
   - public
   - const
@@ -1427,7 +1427,7 @@ items:
   source:
     id: SpecularColor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 237
+    startLine: 236
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -1458,7 +1458,7 @@ items:
   source:
     id: EmissiveColor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 242
+    startLine: 241
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -1489,7 +1489,7 @@ items:
   source:
     id: AlbedoTexture
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 247
+    startLine: 246
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -1500,6 +1500,37 @@ items:
     return:
       type: System.String
     content.vb: Public Const AlbedoTexture As String = "AlbedoTexture"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.DiffuseTextureTiles
+  commentId: F:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.DiffuseTextureTiles
+  id: DiffuseTextureTiles
+  parent: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
+  langs:
+  - csharp
+  - vb
+  name: DiffuseTextureTiles
+  nameWithType: UniformNameDeclarations.DiffuseTextureTiles
+  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.DiffuseTextureTiles
+  type: Field
+  source:
+    id: DiffuseTextureTiles
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
+    startLine: 251
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nThe var name for the uniform DiffuseTexture variable within the pixel shaders.\n"
+  example: []
+  syntax:
+    content: public const string DiffuseTextureTiles = "AlbedoTextureTiles"
+    return:
+      type: System.String
+    content.vb: Public Const DiffuseTextureTiles As String = "AlbedoTextureTiles"
   modifiers.csharp:
   - public
   - const
@@ -1520,7 +1551,7 @@ items:
   source:
     id: SpecularTexture
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 252
+    startLine: 256
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -1551,7 +1582,7 @@ items:
   source:
     id: EmissiveTexture
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 257
+    startLine: 261
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -1582,7 +1613,7 @@ items:
   source:
     id: NormalMap
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 262
+    startLine: 266
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -1593,6 +1624,37 @@ items:
     return:
       type: System.String
     content.vb: Public Const NormalMap As String = "NormalMap"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.NormalTextureTiles
+  commentId: F:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.NormalTextureTiles
+  id: NormalTextureTiles
+  parent: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
+  langs:
+  - csharp
+  - vb
+  name: NormalTextureTiles
+  nameWithType: UniformNameDeclarations.NormalTextureTiles
+  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.NormalTextureTiles
+  type: Field
+  source:
+    id: NormalTextureTiles
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
+    startLine: 271
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nThe var name for the uniform DiffuseTexture variable within the pixel shaders.\n"
+  example: []
+  syntax:
+    content: public const string NormalTextureTiles = "NormalTextureTiles"
+    return:
+      type: System.String
+    content.vb: Public Const NormalTextureTiles As String = "NormalTextureTiles"
   modifiers.csharp:
   - public
   - const
@@ -1613,7 +1675,7 @@ items:
   source:
     id: AlbedoMix
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 267
+    startLine: 276
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -1644,7 +1706,7 @@ items:
   source:
     id: SpecularMix
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 272
+    startLine: 281
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -1675,7 +1737,7 @@ items:
   source:
     id: EmissiveMix
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 277
+    startLine: 286
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -1706,7 +1768,7 @@ items:
   source:
     id: SpecularShininess
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 282
+    startLine: 291
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -1723,31 +1785,31 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularIntensity
-  commentId: F:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularIntensity
-  id: SpecularIntensity
+- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularStrength
+  commentId: F:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularStrength
+  id: SpecularStrength
   parent: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
   langs:
   - csharp
   - vb
-  name: SpecularIntensity
-  nameWithType: UniformNameDeclarations.SpecularIntensity
-  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularIntensity
+  name: SpecularStrength
+  nameWithType: UniformNameDeclarations.SpecularStrength
+  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularStrength
   type: Field
   source:
-    id: SpecularIntensity
+    id: SpecularStrength
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 287
+    startLine: 296
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
   summary: "\nThe var name for the uniform SpecularIntensity variable within the pixel shaders.\n"
   example: []
   syntax:
-    content: public const string SpecularIntensity = "SpecularIntensity"
+    content: public const string SpecularStrength = "SpecularStrength"
     return:
       type: System.String
-    content.vb: Public Const SpecularIntensity As String = "SpecularIntensity"
+    content.vb: Public Const SpecularStrength As String = "SpecularStrength"
   modifiers.csharp:
   - public
   - const
@@ -1768,7 +1830,7 @@ items:
   source:
     id: RoughnessValue
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 292
+    startLine: 301
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
@@ -1779,68 +1841,6 @@ items:
     return:
       type: System.String
     content.vb: Public Const RoughnessValue As String = "RoughnessValue"
-  modifiers.csharp:
-  - public
-  - const
-  modifiers.vb:
-  - Public
-  - Const
-- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.FresnelReflectance
-  commentId: F:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.FresnelReflectance
-  id: FresnelReflectance
-  parent: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
-  langs:
-  - csharp
-  - vb
-  name: FresnelReflectance
-  nameWithType: UniformNameDeclarations.FresnelReflectance
-  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.FresnelReflectance
-  type: Field
-  source:
-    id: FresnelReflectance
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 297
-  assemblies:
-  - Fusee.Engine.Core
-  namespace: Fusee.Engine.Core.ShaderShards
-  summary: "\n[PBR (Cook-Torrance) only] This float describes the fresnel reflectance of the material.\n"
-  example: []
-  syntax:
-    content: public const string FresnelReflectance = "FresnelReflectance"
-    return:
-      type: System.String
-    content.vb: Public Const FresnelReflectance As String = "FresnelReflectance"
-  modifiers.csharp:
-  - public
-  - const
-  modifiers.vb:
-  - Public
-  - Const
-- uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.DiffuseFraction
-  commentId: F:Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.DiffuseFraction
-  id: DiffuseFraction
-  parent: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
-  langs:
-  - csharp
-  - vb
-  name: DiffuseFraction
-  nameWithType: UniformNameDeclarations.DiffuseFraction
-  fullName: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.DiffuseFraction
-  type: Field
-  source:
-    id: DiffuseFraction
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 302
-  assemblies:
-  - Fusee.Engine.Core
-  namespace: Fusee.Engine.Core.ShaderShards
-  summary: "\n[PBR (Cook-Torrance) only] This float describes the diffuse fraction of the material.\n"
-  example: []
-  syntax:
-    content: public const string DiffuseFraction = "DiffuseFraction"
-    return:
-      type: System.String
-    content.vb: Public Const DiffuseFraction As String = "DiffuseFraction"
   modifiers.csharp:
   - public
   - const
@@ -1861,11 +1861,11 @@ items:
   source:
     id: NormalMapIntensity
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\UniformNameDeclarations.cs
-    startLine: 307
+    startLine: 306
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards
-  summary: "\nThe var name for the uniform BumpIntensity variable within the pixel shaders.\n"
+  summary: "\nThe var name for the uniform NormalMapIntensity variable within the pixel shaders.\n"
   example: []
   syntax:
     content: public const string NormalMapIntensity = "NormalMapIntensity"

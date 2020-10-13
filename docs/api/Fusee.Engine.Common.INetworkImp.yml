@@ -156,13 +156,13 @@ items:
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
-  summary: "\nGets the local ip. Do not use this often due to performance reasons.\n"
+  summary: "\nGets the local IP. Do not use this often due to performance reasons.\n"
   example: []
   syntax:
     content: string GetLocalIp()
     return:
       type: System.String
-      description: The local ip as a string.
+      description: The local IP as a string.
     content.vb: Function GetLocalIp As String
   overload: Fusee.Engine.Common.INetworkImp.GetLocalIp*
 - uid: Fusee.Engine.Common.INetworkImp.IncomingMsg
@@ -284,7 +284,7 @@ items:
       description: The port.
     return:
       type: System.Boolean
-      description: True if could open connection succesfully.
+      description: True if could open connection successfully.
     content.vb: Function OpenConnection(type As SysType, host As String, port As Integer) As Boolean
   overload: Fusee.Engine.Common.INetworkImp.OpenConnection*
 - uid: Fusee.Engine.Common.INetworkImp.CloseConnection
@@ -301,7 +301,7 @@ items:
   source:
     id: CloseConnection
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\INetworkImp.cs
-    startLine: 158
+    startLine: 159
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -325,7 +325,7 @@ items:
   source:
     id: SendMessage
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\INetworkImp.cs
-    startLine: 167
+    startLine: 168
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -365,7 +365,7 @@ items:
   source:
     id: SendDiscoveryMessage
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\INetworkImp.cs
-    startLine: 173
+    startLine: 174
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -393,7 +393,7 @@ items:
   source:
     id: OnUpdateFrame
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\INetworkImp.cs
-    startLine: 178
+    startLine: 179
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
@@ -417,7 +417,7 @@ items:
   source:
     id: CloseDevices
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Common\INetworkImp.cs
-    startLine: 183
+    startLine: 184
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common

@@ -87,7 +87,6 @@ In addition a ShaderEffect contains the actual values for all the shaders' (unif
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a></div>
-    <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -120,7 +119,7 @@ In addition a ShaderEffect contains the actual values for all the shaders' (unif
   <h6><strong>Assembly</strong>: Fusee.Engine.Core.dll</h6>
   <h5 id="Fusee_Engine_Core_Scene_ShaderEffect_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ShaderEffect : SceneComponent, IComponent, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class ShaderEffect : SceneComponent, IComponent</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -343,41 +342,24 @@ Needed for <span class="xref">System.Dynamic.DynamicObject</span></p>
   
   <a id="Fusee_Engine_Core_Scene_ShaderEffect_Dispose_" data-uid="Fusee.Engine.Core.Scene.ShaderEffect.Dispose*"></a>
   <h4 id="Fusee_Engine_Core_Scene_ShaderEffect_Dispose" data-uid="Fusee.Engine.Core.Scene.ShaderEffect.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"><p>Invoke deletion of shaders on GPU</p>
+  <div class="markdown level1 summary"><p>Invokes deletion of shaders on GPU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+    <pre><code class="lang-csharp hljs">protected void Dispose()</code></pre>
   </div>
   
   
-  <a id="Fusee_Engine_Core_Scene_ShaderEffect_Dispose_" data-uid="Fusee.Engine.Core.Scene.ShaderEffect.Dispose*"></a>
-  <h4 id="Fusee_Engine_Core_Scene_ShaderEffect_Dispose_System_Boolean_" data-uid="Fusee.Engine.Core.Scene.ShaderEffect.Dispose(System.Boolean)">Dispose(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Invoke deletion of shaders on GPU</p>
+  <a id="Fusee_Engine_Core_Scene_ShaderEffect_Finalize_" data-uid="Fusee.Engine.Core.Scene.ShaderEffect.Finalize*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_ShaderEffect_Finalize" data-uid="Fusee.Engine.Core.Scene.ShaderEffect.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>Invokes deletion of shaders on GPU</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">disposing</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Fusee_Engine_Core_Scene_ShaderEffect_GetEffectParam_" data-uid="Fusee.Engine.Core.Scene.ShaderEffect.GetEffectParam*"></a>
@@ -497,9 +479,6 @@ Needed for <span class="xref">System.Dynamic.DynamicObject</span></p>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a>
-  </div>
-  <div>
-      <span class="xref">System.IDisposable</span>
   </div>
 </article>
           </div>

@@ -1,0 +1,931 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.Effects.Effect
+  commentId: T:Fusee.Engine.Core.Effects.Effect
+  id: Effect
+  parent: Fusee.Engine.Core.Effects
+  children:
+  - Fusee.Engine.Core.Effects.Effect.EffectChanged
+  - Fusee.Engine.Core.Effects.Effect.EffectManagerEventArgs
+  - Fusee.Engine.Core.Effects.Effect.GetFxParam``1(System.String)
+  - Fusee.Engine.Core.Effects.Effect.ParamDecl
+  - Fusee.Engine.Core.Effects.Effect.RendererStates
+  - Fusee.Engine.Core.Effects.Effect.SessionUniqueIdentifier
+  - Fusee.Engine.Core.Effects.Effect.SetFxParam``1(System.String,``0)
+  langs:
+  - csharp
+  - vb
+  name: Effect
+  nameWithType: Effect
+  fullName: Fusee.Engine.Core.Effects.Effect
+  type: Class
+  source:
+    id: Effect
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Effect.cs
+    startLine: 11
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nAbstract class that provides input for <xref href=\"Fusee.Engine.Core.Effects.ShaderEffect\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Fusee.Engine.Core.Effects.SurfaceEffect\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: 'public abstract class Effect : SceneComponent, IComponent'
+    content.vb: >-
+      Public MustInherit Class Effect
+          Inherits SceneComponent
+          Implements IComponent
+  inheritance:
+  - System.Object
+  - Fusee.Engine.Core.Scene.SceneComponent
+  derivedClasses:
+  - Fusee.Engine.Core.Effects.ShaderEffect
+  - Fusee.Engine.Core.Effects.SurfaceEffect
+  implements:
+  - Fusee.Xene.IComponent
+  inheritedMembers:
+  - Fusee.Engine.Core.Scene.SceneComponent.Name
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Fusee.Engine.Core.Effects.Effect.ParamDecl
+  commentId: P:Fusee.Engine.Core.Effects.Effect.ParamDecl
+  id: ParamDecl
+  parent: Fusee.Engine.Core.Effects.Effect
+  langs:
+  - csharp
+  - vb
+  name: ParamDecl
+  nameWithType: Effect.ParamDecl
+  fullName: Fusee.Engine.Core.Effects.Effect.ParamDecl
+  type: Property
+  source:
+    id: ParamDecl
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Effect.cs
+    startLine: 16
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nCollection of all uniform parameters of this effect. See <xref href=\"Fusee.Engine.Core.Effects.IFxParamDeclaration\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public Dictionary<string, IFxParamDeclaration> ParamDecl { get; protected set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,Fusee.Engine.Core.Effects.IFxParamDeclaration}
+    content.vb: Public Property ParamDecl As Dictionary(Of String, IFxParamDeclaration)
+  overload: Fusee.Engine.Core.Effects.Effect.ParamDecl*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: Fusee.Engine.Core.Effects.Effect.RendererStates
+  commentId: P:Fusee.Engine.Core.Effects.Effect.RendererStates
+  id: RendererStates
+  parent: Fusee.Engine.Core.Effects.Effect
+  langs:
+  - csharp
+  - vb
+  name: RendererStates
+  nameWithType: Effect.RendererStates
+  fullName: Fusee.Engine.Core.Effects.Effect.RendererStates
+  type: Property
+  source:
+    id: RendererStates
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Effect.cs
+    startLine: 21
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe renderer states that are applied for this effect, e.g. the blend and alpha mode.\n"
+  example: []
+  syntax:
+    content: public RenderStateSet RendererStates { get; set; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Core.RenderStateSet
+    content.vb: Public Property RendererStates As RenderStateSet
+  overload: Fusee.Engine.Core.Effects.Effect.RendererStates*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Fusee.Engine.Core.Effects.Effect.EffectChanged
+  commentId: P:Fusee.Engine.Core.Effects.Effect.EffectChanged
+  id: EffectChanged
+  parent: Fusee.Engine.Core.Effects.Effect
+  langs:
+  - csharp
+  - vb
+  name: EffectChanged
+  nameWithType: Effect.EffectChanged
+  fullName: Fusee.Engine.Core.Effects.Effect.EffectChanged
+  type: Property
+  source:
+    id: EffectChanged
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Effect.cs
+    startLine: 26
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nShaderEffect event notifies observing ShaderEffectManager about property changes and the ShaderEffects&apos;s disposal.\n"
+  example: []
+  syntax:
+    content: public EventHandler<EffectManagerEventArgs> EffectChanged { get; }
+    parameters: []
+    return:
+      type: System.EventHandler{Fusee.Engine.Core.Effects.EffectManagerEventArgs}
+    content.vb: Public ReadOnly Property EffectChanged As EventHandler(Of EffectManagerEventArgs)
+  overload: Fusee.Engine.Core.Effects.Effect.EffectChanged*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.Effects.Effect.EffectManagerEventArgs
+  commentId: P:Fusee.Engine.Core.Effects.Effect.EffectManagerEventArgs
+  id: EffectManagerEventArgs
+  parent: Fusee.Engine.Core.Effects.Effect
+  langs:
+  - csharp
+  - vb
+  name: EffectManagerEventArgs
+  nameWithType: Effect.EffectManagerEventArgs
+  fullName: Fusee.Engine.Core.Effects.Effect.EffectManagerEventArgs
+  type: Property
+  source:
+    id: EffectManagerEventArgs
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Effect.cs
+    startLine: 31
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nEvent arguments that are used in the <xref href=\"Fusee.Engine.Core.EffectManager\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public EffectManagerEventArgs EffectManagerEventArgs { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Core.Effects.EffectManagerEventArgs
+    content.vb: Public ReadOnly Property EffectManagerEventArgs As EffectManagerEventArgs
+  overload: Fusee.Engine.Core.Effects.Effect.EffectManagerEventArgs*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.Effects.Effect.SessionUniqueIdentifier
+  commentId: P:Fusee.Engine.Core.Effects.Effect.SessionUniqueIdentifier
+  id: SessionUniqueIdentifier
+  parent: Fusee.Engine.Core.Effects.Effect
+  langs:
+  - csharp
+  - vb
+  name: SessionUniqueIdentifier
+  nameWithType: Effect.SessionUniqueIdentifier
+  fullName: Fusee.Engine.Core.Effects.Effect.SessionUniqueIdentifier
+  type: Property
+  source:
+    id: SessionUniqueIdentifier
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Effect.cs
+    startLine: 36
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nSessionUniqueIdentifier is used to verify a Mesh&apos;s uniqueness in the current session.\n"
+  example: []
+  syntax:
+    content: public Suid SessionUniqueIdentifier { get; }
+    parameters: []
+    return:
+      type: Fusee.Engine.Common.Suid
+    content.vb: Public ReadOnly Property SessionUniqueIdentifier As Suid
+  overload: Fusee.Engine.Core.Effects.Effect.SessionUniqueIdentifier*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Fusee.Engine.Core.Effects.Effect.SetFxParam``1(System.String,``0)
+  commentId: M:Fusee.Engine.Core.Effects.Effect.SetFxParam``1(System.String,``0)
+  id: SetFxParam``1(System.String,``0)
+  parent: Fusee.Engine.Core.Effects.Effect
+  langs:
+  - csharp
+  - vb
+  name: SetFxParam<T>(String, T)
+  nameWithType: Effect.SetFxParam<T>(String, T)
+  fullName: Fusee.Engine.Core.Effects.Effect.SetFxParam<T>(System.String, T)
+  type: Method
+  source:
+    id: SetFxParam
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Effect.cs
+    startLine: 43
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nSet effect parameter\n"
+  example: []
+  syntax:
+    content: public void SetFxParam<T>(string name, T value)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of the uniform variable
+    - id: value
+      type: '{T}'
+      description: Value of the uniform variable
+    typeParameters:
+    - id: T
+    content.vb: Public Sub SetFxParam(Of T)(name As String, value As T)
+  overload: Fusee.Engine.Core.Effects.Effect.SetFxParam*
+  nameWithType.vb: Effect.SetFxParam(Of T)(String, T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Engine.Core.Effects.Effect.SetFxParam(Of T)(System.String, T)
+  name.vb: SetFxParam(Of T)(String, T)
+- uid: Fusee.Engine.Core.Effects.Effect.GetFxParam``1(System.String)
+  commentId: M:Fusee.Engine.Core.Effects.Effect.GetFxParam``1(System.String)
+  id: GetFxParam``1(System.String)
+  parent: Fusee.Engine.Core.Effects.Effect
+  langs:
+  - csharp
+  - vb
+  name: GetFxParam<T>(String)
+  nameWithType: Effect.GetFxParam<T>(String)
+  fullName: Fusee.Engine.Core.Effects.Effect.GetFxParam<T>(System.String)
+  type: Method
+  source:
+    id: GetFxParam
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Effect.cs
+    startLine: 75
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nReturns the value of a given shader effect variable\n"
+  example: []
+  syntax:
+    content: public T GetFxParam<T>(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of the uniform variable
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+      description: ''
+    content.vb: Public Function GetFxParam(Of T)(name As String) As T
+  overload: Fusee.Engine.Core.Effects.Effect.GetFxParam*
+  nameWithType.vb: Effect.GetFxParam(Of T)(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Fusee.Engine.Core.Effects.Effect.GetFxParam(Of T)(System.String)
+  name.vb: GetFxParam(Of T)(String)
+references:
+- uid: Fusee.Engine.Core.Effects.ShaderEffect
+  commentId: T:Fusee.Engine.Core.Effects.ShaderEffect
+  parent: Fusee.Engine.Core.Effects
+  name: ShaderEffect
+  nameWithType: ShaderEffect
+  fullName: Fusee.Engine.Core.Effects.ShaderEffect
+- uid: Fusee.Engine.Core.Effects.SurfaceEffect
+  commentId: T:Fusee.Engine.Core.Effects.SurfaceEffect
+  parent: Fusee.Engine.Core.Effects
+  name: SurfaceEffect
+  nameWithType: SurfaceEffect
+  fullName: Fusee.Engine.Core.Effects.SurfaceEffect
+- uid: Fusee.Engine.Core.Effects
+  commentId: N:Fusee.Engine.Core.Effects
+  name: Fusee.Engine.Core.Effects
+  nameWithType: Fusee.Engine.Core.Effects
+  fullName: Fusee.Engine.Core.Effects
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Core.Scene.SceneComponent
+  commentId: T:Fusee.Engine.Core.Scene.SceneComponent
+  parent: Fusee.Engine.Core.Scene
+  name: SceneComponent
+  nameWithType: SceneComponent
+  fullName: Fusee.Engine.Core.Scene.SceneComponent
+- uid: Fusee.Xene.IComponent
+  commentId: T:Fusee.Xene.IComponent
+  parent: Fusee.Xene
+  name: IComponent
+  nameWithType: IComponent
+  fullName: Fusee.Xene.IComponent
+- uid: Fusee.Engine.Core.Scene.SceneComponent.Name
+  commentId: F:Fusee.Engine.Core.Scene.SceneComponent.Name
+  parent: Fusee.Engine.Core.Scene.SceneComponent
+  name: Name
+  nameWithType: SceneComponent.Name
+  fullName: Fusee.Engine.Core.Scene.SceneComponent.Name
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene
+- uid: Fusee.Xene
+  commentId: N:Fusee.Xene
+  name: Fusee.Xene
+  nameWithType: Fusee.Xene
+  fullName: Fusee.Xene
+- uid: Fusee.Engine.Core.Effects.IFxParamDeclaration
+  commentId: T:Fusee.Engine.Core.Effects.IFxParamDeclaration
+  parent: Fusee.Engine.Core.Effects
+  name: IFxParamDeclaration
+  nameWithType: IFxParamDeclaration
+  fullName: Fusee.Engine.Core.Effects.IFxParamDeclaration
+- uid: Fusee.Engine.Core.Effects.Effect.ParamDecl*
+  commentId: Overload:Fusee.Engine.Core.Effects.Effect.ParamDecl
+  name: ParamDecl
+  nameWithType: Effect.ParamDecl
+  fullName: Fusee.Engine.Core.Effects.Effect.ParamDecl
+- uid: System.Collections.Generic.Dictionary{System.String,Fusee.Engine.Core.Effects.IFxParamDeclaration}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,Fusee.Engine.Core.Effects.IFxParamDeclaration}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, IFxParamDeclaration>
+  nameWithType: Dictionary<String, IFxParamDeclaration>
+  fullName: System.Collections.Generic.Dictionary<System.String, Fusee.Engine.Core.Effects.IFxParamDeclaration>
+  nameWithType.vb: Dictionary(Of String, IFxParamDeclaration)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, Fusee.Engine.Core.Effects.IFxParamDeclaration)
+  name.vb: Dictionary(Of String, IFxParamDeclaration)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Effects.IFxParamDeclaration
+    name: IFxParamDeclaration
+    nameWithType: IFxParamDeclaration
+    fullName: Fusee.Engine.Core.Effects.IFxParamDeclaration
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Fusee.Engine.Core.Effects.IFxParamDeclaration
+    name: IFxParamDeclaration
+    nameWithType: IFxParamDeclaration
+    fullName: Fusee.Engine.Core.Effects.IFxParamDeclaration
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Fusee.Engine.Core.Effects.Effect.RendererStates*
+  commentId: Overload:Fusee.Engine.Core.Effects.Effect.RendererStates
+  name: RendererStates
+  nameWithType: Effect.RendererStates
+  fullName: Fusee.Engine.Core.Effects.Effect.RendererStates
+- uid: Fusee.Engine.Core.RenderStateSet
+  commentId: T:Fusee.Engine.Core.RenderStateSet
+  parent: Fusee.Engine.Core
+  name: RenderStateSet
+  nameWithType: RenderStateSet
+  fullName: Fusee.Engine.Core.RenderStateSet
+- uid: Fusee.Engine.Core
+  commentId: N:Fusee.Engine.Core
+  name: Fusee.Engine.Core
+  nameWithType: Fusee.Engine.Core
+  fullName: Fusee.Engine.Core
+- uid: Fusee.Engine.Core.Effects.Effect.EffectChanged*
+  commentId: Overload:Fusee.Engine.Core.Effects.Effect.EffectChanged
+  name: EffectChanged
+  nameWithType: Effect.EffectChanged
+  fullName: Fusee.Engine.Core.Effects.Effect.EffectChanged
+- uid: System.EventHandler{Fusee.Engine.Core.Effects.EffectManagerEventArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Core.Effects.EffectManagerEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<EffectManagerEventArgs>
+  nameWithType: EventHandler<EffectManagerEventArgs>
+  fullName: System.EventHandler<Fusee.Engine.Core.Effects.EffectManagerEventArgs>
+  nameWithType.vb: EventHandler(Of EffectManagerEventArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Core.Effects.EffectManagerEventArgs)
+  name.vb: EventHandler(Of EffectManagerEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Fusee.Engine.Core.Effects.EffectManagerEventArgs
+    name: EffectManagerEventArgs
+    nameWithType: EffectManagerEventArgs
+    fullName: Fusee.Engine.Core.Effects.EffectManagerEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Fusee.Engine.Core.Effects.EffectManagerEventArgs
+    name: EffectManagerEventArgs
+    nameWithType: EffectManagerEventArgs
+    fullName: Fusee.Engine.Core.Effects.EffectManagerEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Fusee.Engine.Core.EffectManager
+  commentId: T:Fusee.Engine.Core.EffectManager
+  isExternal: true
+- uid: Fusee.Engine.Core.Effects.Effect.EffectManagerEventArgs*
+  commentId: Overload:Fusee.Engine.Core.Effects.Effect.EffectManagerEventArgs
+  name: EffectManagerEventArgs
+  nameWithType: Effect.EffectManagerEventArgs
+  fullName: Fusee.Engine.Core.Effects.Effect.EffectManagerEventArgs
+- uid: Fusee.Engine.Core.Effects.EffectManagerEventArgs
+  commentId: T:Fusee.Engine.Core.Effects.EffectManagerEventArgs
+  parent: Fusee.Engine.Core.Effects
+  name: EffectManagerEventArgs
+  nameWithType: EffectManagerEventArgs
+  fullName: Fusee.Engine.Core.Effects.EffectManagerEventArgs
+- uid: Fusee.Engine.Core.Effects.Effect.SessionUniqueIdentifier*
+  commentId: Overload:Fusee.Engine.Core.Effects.Effect.SessionUniqueIdentifier
+  name: SessionUniqueIdentifier
+  nameWithType: Effect.SessionUniqueIdentifier
+  fullName: Fusee.Engine.Core.Effects.Effect.SessionUniqueIdentifier
+- uid: Fusee.Engine.Common.Suid
+  commentId: T:Fusee.Engine.Common.Suid
+  parent: Fusee.Engine.Common
+  name: Suid
+  nameWithType: Suid
+  fullName: Fusee.Engine.Common.Suid
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Core.Effects.Effect.SetFxParam*
+  commentId: Overload:Fusee.Engine.Core.Effects.Effect.SetFxParam
+  name: SetFxParam
+  nameWithType: Effect.SetFxParam
+  fullName: Fusee.Engine.Core.Effects.Effect.SetFxParam
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Fusee.Engine.Core.Effects.Effect.GetFxParam*
+  commentId: Overload:Fusee.Engine.Core.Effects.Effect.GetFxParam
+  name: GetFxParam
+  nameWithType: Effect.GetFxParam
+  fullName: Fusee.Engine.Core.Effects.Effect.GetFxParam

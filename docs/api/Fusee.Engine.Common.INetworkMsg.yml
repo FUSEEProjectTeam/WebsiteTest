@@ -24,7 +24,7 @@ items:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
   summary: "\nThe Network message interface. \n"
-  remarks: "\nImplementation Tasks: In order to use this with own implementations own enums for MessageType, Connectionstatus and Network message type are required.\nAn implementation of <xref href=\"Fusee.Engine.Common.INetworkConnection\" data-throw-if-not-resolved=\"false\"></xref> is required to identify the sender of the message.\n"
+  remarks: "\nImplementation Tasks: In order to use this with own implementations own enums for MessageType, Connection status and Network message type are required.\nAn implementation of <xref href=\"Fusee.Engine.Common.INetworkConnection\" data-throw-if-not-resolved=\"false\"></xref> is required to identify the sender of the message.\n"
   example: []
   syntax:
     content: public interface INetworkMsg
@@ -149,7 +149,7 @@ items:
   assemblies:
   - Fusee.Engine.Common
   namespace: Fusee.Engine.Common
-  summary: "\nGets the message&apos;s data dontent.\n"
+  summary: "\nGets the message&apos;s data content.\n"
   example: []
   syntax:
     content: NetworkMsgType Message { get; }

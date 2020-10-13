@@ -30,14 +30,8 @@ items:
   summary: "\nRepresents an oriented bounding box.\n"
   example: []
   syntax:
-    content: >-
-      [ProtoContract]
-
-      public struct OBBd
-    content.vb: >-
-      <ProtoContract>
-
-      Public Structure OBBd
+    content: public struct OBBd
+    content.vb: Public Structure OBBd
   inheritedMembers:
   - System.ValueType.Equals(System.Object)
   - System.ValueType.GetHashCode
@@ -45,10 +39,6 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
-  attributes:
-  - type: ProtoBuf.ProtoContractAttribute
-    ctor: ProtoBuf.ProtoContractAttribute.#ctor
-    arguments: []
   modifiers.csharp:
   - public
   - struct
@@ -76,22 +66,10 @@ items:
   summary: "\nThe minimum values of the oriented bounding box in x, y and z direction\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(1)]
-
-      public double3 Min
+    content: public double3 Min
     return:
       type: Fusee.Math.Core.double3
-    content.vb: >-
-      <ProtoMember(1)>
-
-      Public Min As double3
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 1
+    content.vb: Public Min As double3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -117,22 +95,10 @@ items:
   summary: "\nThe maximum values of the oriented bounding box in x, y and z direction\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(2)]
-
-      public double3 Max
+    content: public double3 Max
     return:
       type: Fusee.Math.Core.double3
-    content.vb: >-
-      <ProtoMember(2)>
-
-      Public Max As double3
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 2
+    content.vb: Public Max As double3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -158,22 +124,10 @@ items:
   summary: "\nThe rotation of the oriented bounding box\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(3)]
-
-      public double4x4 Rotation
+    content: public double4x4 Rotation
     return:
       type: Fusee.Math.Core.double4x4
-    content.vb: >-
-      <ProtoMember(3)>
-
-      Public Rotation As double4x4
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 3
+    content.vb: Public Rotation As double4x4
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -199,22 +153,10 @@ items:
   summary: "\nThe translation of the oriented bounding box\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(4)]
-
-      public double3 Translation
+    content: public double3 Translation
     return:
       type: Fusee.Math.Core.double3
-    content.vb: >-
-      <ProtoMember(4)>
-
-      Public Translation As double3
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 4
+    content.vb: Public Translation As double3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -240,22 +182,10 @@ items:
   summary: "\nReturns the with, height and depth of the box in x, y and z\n"
   example: []
   syntax:
-    content: >-
-      [ProtoMember(5)]
-
-      public double3 Size
+    content: public double3 Size
     return:
       type: Fusee.Math.Core.double3
-    content.vb: >-
-      <ProtoMember(5)>
-
-      Public Size As double3
-  attributes:
-  - type: ProtoBuf.ProtoMemberAttribute
-    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
-    arguments:
-    - type: System.Int32
-      value: 5
+    content.vb: Public Size As double3
   modifiers.csharp:
   - public
   modifiers.vb:

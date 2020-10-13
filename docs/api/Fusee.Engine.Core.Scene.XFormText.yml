@@ -19,7 +19,7 @@ items:
   source:
     id: XFormText
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\XFormText.cs
-    startLine: 51
+    startLine: 8
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.Scene
@@ -65,7 +65,7 @@ items:
   source:
     id: Width
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\XFormText.cs
-    startLine: 56
+    startLine: 13
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.Scene
@@ -94,7 +94,7 @@ items:
   source:
     id: Height
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\XFormText.cs
-    startLine: 61
+    startLine: 18
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.Scene
@@ -123,16 +123,16 @@ items:
   source:
     id: HorizontalAlignment
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\XFormText.cs
-    startLine: 66
+    startLine: 23
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.Scene
-  summary: "\nThe <xref href=\"Fusee.Engine.Core.Scene.HorizontalTextAlignment\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  summary: "\nThe <xref href=\"Fusee.Engine.Common.HorizontalTextAlignment\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
     content: public HorizontalTextAlignment HorizontalAlignment
     return:
-      type: Fusee.Engine.Core.Scene.HorizontalTextAlignment
+      type: Fusee.Engine.Common.HorizontalTextAlignment
     content.vb: Public HorizontalAlignment As HorizontalTextAlignment
   modifiers.csharp:
   - public
@@ -152,16 +152,16 @@ items:
   source:
     id: VerticalAlignment
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Scene\XFormText.cs
-    startLine: 71
+    startLine: 28
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.Scene
-  summary: "\nThe <xref href=\"Fusee.Engine.Core.Scene.VerticalTextAlignment\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  summary: "\nThe <xref href=\"Fusee.Engine.Common.VerticalTextAlignment\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
     content: public VerticalTextAlignment VerticalAlignment
     return:
-      type: Fusee.Engine.Core.Scene.VerticalTextAlignment
+      type: Fusee.Engine.Common.VerticalTextAlignment
     content.vb: Public VerticalAlignment As VerticalTextAlignment
   modifiers.csharp:
   - public
@@ -495,15 +495,20 @@ references:
   name: Single
   nameWithType: Single
   fullName: System.Single
-- uid: Fusee.Engine.Core.Scene.HorizontalTextAlignment
-  commentId: T:Fusee.Engine.Core.Scene.HorizontalTextAlignment
-  parent: Fusee.Engine.Core.Scene
+- uid: Fusee.Engine.Common.HorizontalTextAlignment
+  commentId: T:Fusee.Engine.Common.HorizontalTextAlignment
+  parent: Fusee.Engine.Common
   name: HorizontalTextAlignment
   nameWithType: HorizontalTextAlignment
-  fullName: Fusee.Engine.Core.Scene.HorizontalTextAlignment
-- uid: Fusee.Engine.Core.Scene.VerticalTextAlignment
-  commentId: T:Fusee.Engine.Core.Scene.VerticalTextAlignment
-  parent: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Common.HorizontalTextAlignment
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: Fusee.Engine.Common.VerticalTextAlignment
+  commentId: T:Fusee.Engine.Common.VerticalTextAlignment
+  parent: Fusee.Engine.Common
   name: VerticalTextAlignment
   nameWithType: VerticalTextAlignment
-  fullName: Fusee.Engine.Core.Scene.VerticalTextAlignment
+  fullName: Fusee.Engine.Common.VerticalTextAlignment

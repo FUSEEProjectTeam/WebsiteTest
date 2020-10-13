@@ -242,7 +242,7 @@ items:
       description: The asset identifier.
     return:
       type: System.Threading.Tasks.Task{System.IO.Stream}
-      description: Implementors should return null if the asset cannot be retrieved. Otherwise returns a filestream to the asset.
+      description: Implementors should return null if the asset cannot be retrieved. Otherwise returns a file stream to the asset.
     content.vb: Protected Overrides Function GetStreamAsync(id As String) As Task(Of Stream)
   overridden: Fusee.Base.Common.StreamAssetProvider.GetStreamAsync(System.String)
   overload: Fusee.Base.Imp.Desktop.FileAssetProvider.GetStreamAsync*
@@ -266,7 +266,7 @@ items:
   source:
     id: CheckExistsAsync
     path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FileAssetProvider.cs
-    startLine: 217
+    startLine: 218
   assemblies:
   - Fusee.Base.Imp.Desktop
   namespace: Fusee.Base.Imp.Desktop

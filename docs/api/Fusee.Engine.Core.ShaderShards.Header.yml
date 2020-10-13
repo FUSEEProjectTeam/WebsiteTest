@@ -1,0 +1,528 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.ShaderShards.Header
+  commentId: T:Fusee.Engine.Core.ShaderShards.Header
+  id: Header
+  parent: Fusee.Engine.Core.ShaderShards
+  children:
+  - Fusee.Engine.Core.ShaderShards.Header.BoneDefineVar
+  - Fusee.Engine.Core.ShaderShards.Header.DefineBones(Fusee.Engine.Core.Scene.Weight)
+  - Fusee.Engine.Core.ShaderShards.Header.DefinePi
+  - Fusee.Engine.Core.ShaderShards.Header.EsPrecisionHighpFloat
+  - Fusee.Engine.Core.ShaderShards.Header.Version300Es
+  langs:
+  - csharp
+  - vb
+  name: Header
+  nameWithType: Header
+  fullName: Fusee.Engine.Core.ShaderShards.Header
+  type: Class
+  source:
+    id: Header
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Header.cs
+    startLine: 7
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nCollection of shader code strings, describing a shader&apos;s header information, such as the version precision and preprocessor instructions.\n"
+  example: []
+  syntax:
+    content: public static class Header
+    content.vb: Public Module Header
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Fusee.Engine.Core.ShaderShards.Header.BoneDefineVar
+  commentId: F:Fusee.Engine.Core.ShaderShards.Header.BoneDefineVar
+  id: BoneDefineVar
+  parent: Fusee.Engine.Core.ShaderShards.Header
+  langs:
+  - csharp
+  - vb
+  name: BoneDefineVar
+  nameWithType: Header.BoneDefineVar
+  fullName: Fusee.Engine.Core.ShaderShards.Header.BoneDefineVar
+  type: Field
+  source:
+    id: BoneDefineVar
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Header.cs
+    startLine: 12
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nName of the number of bones preprocessor directive.\n"
+  example: []
+  syntax:
+    content: public static string BoneDefineVar
+    return:
+      type: System.String
+    content.vb: Public Shared BoneDefineVar As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Header.EsPrecisionHighpFloat
+  commentId: F:Fusee.Engine.Core.ShaderShards.Header.EsPrecisionHighpFloat
+  id: EsPrecisionHighpFloat
+  parent: Fusee.Engine.Core.ShaderShards.Header
+  langs:
+  - csharp
+  - vb
+  name: EsPrecisionHighpFloat
+  nameWithType: Header.EsPrecisionHighpFloat
+  fullName: Fusee.Engine.Core.ShaderShards.Header.EsPrecisionHighpFloat
+  type: Field
+  source:
+    id: EsPrecisionHighpFloat
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Header.cs
+    startLine: 17
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nSets the precision to highp float.\n"
+  example: []
+  syntax:
+    content: public static string EsPrecisionHighpFloat
+    return:
+      type: System.String
+    content.vb: Public Shared EsPrecisionHighpFloat As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Header.Version300Es
+  commentId: F:Fusee.Engine.Core.ShaderShards.Header.Version300Es
+  id: Version300Es
+  parent: Fusee.Engine.Core.ShaderShards.Header
+  langs:
+  - csharp
+  - vb
+  name: Version300Es
+  nameWithType: Header.Version300Es
+  fullName: Fusee.Engine.Core.ShaderShards.Header.Version300Es
+  type: Field
+  source:
+    id: Version300Es
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Header.cs
+    startLine: 22
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nSets the version to 330es.\n"
+  example: []
+  syntax:
+    content: public static string Version300Es
+    return:
+      type: System.String
+    content.vb: Public Shared Version300Es As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Header.DefinePi
+  commentId: F:Fusee.Engine.Core.ShaderShards.Header.DefinePi
+  id: DefinePi
+  parent: Fusee.Engine.Core.ShaderShards.Header
+  langs:
+  - csharp
+  - vb
+  name: DefinePi
+  nameWithType: Header.DefinePi
+  fullName: Fusee.Engine.Core.ShaderShards.Header.DefinePi
+  type: Field
+  source:
+    id: DefinePi
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Header.cs
+    startLine: 27
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nAdds PI as preprocessor directive (#define).\n"
+  example: []
+  syntax:
+    content: public static string DefinePi
+    return:
+      type: System.String
+    content.vb: Public Shared DefinePi As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Header.DefineBones(Fusee.Engine.Core.Scene.Weight)
+  commentId: M:Fusee.Engine.Core.ShaderShards.Header.DefineBones(Fusee.Engine.Core.Scene.Weight)
+  id: DefineBones(Fusee.Engine.Core.Scene.Weight)
+  parent: Fusee.Engine.Core.ShaderShards.Header
+  langs:
+  - csharp
+  - vb
+  name: DefineBones(Weight)
+  nameWithType: Header.DefineBones(Weight)
+  fullName: Fusee.Engine.Core.ShaderShards.Header.DefineBones(Fusee.Engine.Core.Scene.Weight)
+  type: Method
+  source:
+    id: DefineBones
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Header.cs
+    startLine: 32
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards
+  summary: "\nSets preprocessor that defines the bone count.\n"
+  example: []
+  syntax:
+    content: public static string DefineBones(Weight wc)
+    parameters:
+    - id: wc
+      type: Fusee.Engine.Core.Scene.Weight
+    return:
+      type: System.String
+    content.vb: Public Shared Function DefineBones(wc As Weight) As String
+  overload: Fusee.Engine.Core.ShaderShards.Header.DefineBones*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Fusee.Engine.Core.ShaderShards
+  commentId: N:Fusee.Engine.Core.ShaderShards
+  name: Fusee.Engine.Core.ShaderShards
+  nameWithType: Fusee.Engine.Core.ShaderShards
+  fullName: Fusee.Engine.Core.ShaderShards
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Fusee.Engine.Core.ShaderShards.Header.DefineBones*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Header.DefineBones
+  name: DefineBones
+  nameWithType: Header.DefineBones
+  fullName: Fusee.Engine.Core.ShaderShards.Header.DefineBones
+- uid: Fusee.Engine.Core.Scene.Weight
+  commentId: T:Fusee.Engine.Core.Scene.Weight
+  parent: Fusee.Engine.Core.Scene
+  name: Weight
+  nameWithType: Weight
+  fullName: Fusee.Engine.Core.Scene.Weight
+- uid: Fusee.Engine.Core.Scene
+  commentId: N:Fusee.Engine.Core.Scene
+  name: Fusee.Engine.Core.Scene
+  nameWithType: Fusee.Engine.Core.Scene
+  fullName: Fusee.Engine.Core.Scene

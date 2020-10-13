@@ -5,7 +5,7 @@ items:
   id: TextureNode
   parent: Fusee.Engine.GUI
   children:
-  - Fusee.Engine.GUI.TextureNode.#ctor(System.String,System.String,System.String,Fusee.Engine.Core.Texture,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect)
+  - Fusee.Engine.GUI.TextureNode.#ctor(System.String,System.String,System.String,Fusee.Engine.Core.Texture,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.float2)
   - Fusee.Engine.GUI.TextureNode.#ctor(System.String,System.String,System.String,Fusee.Engine.Core.Texture,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.float2,Fusee.Math.Core.float4,System.Single,System.Single,System.Single,System.Single,System.Single)
   langs:
   - csharp
@@ -17,7 +17,7 @@ items:
   source:
     id: TextureNode
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUINode.cs
-    startLine: 222
+    startLine: 225
   assemblies:
   - Fusee.Engine.GUI
   namespace: Fusee.Engine.GUI
@@ -68,18 +68,18 @@ items:
   source:
     id: .ctor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUINode.cs
-    startLine: 242
+    startLine: 245
   assemblies:
   - Fusee.Engine.GUI
   namespace: Fusee.Engine.GUI
-  summary: "\nCreates a SceneNode with the proper components and children for rendering a nine sliced texture.\nBy default the border thickness is calculated relative to a unit plane. For a thicker border set the border thickness to the desired value, 2 means a twice as thick border.\n"
+  summary: "\nCreates a SceneNodeContainer with the proper components and children for rendering a nine sliced texture.\nBy default the border thickness is calculated relative to a unit plane. For a thicker border set the border thickness to the desired value, 2 means a twice as thick border.\n"
   example: []
   syntax:
     content: public TextureNode(string name, string vs, string ps, Texture tex, MinMaxRect anchors, MinMaxRect offsets, float2 tiles, float4 borders, float borderThicknessLeft = 1F, float borderThicknessRight = 1F, float borderThicknessTop = 1F, float borderThicknessBottom = 1F, float borderScaleFactor = 1F)
     parameters:
     - id: name
       type: System.String
-      description: Name of the SceneNode.
+      description: Name of the SceneNodeContainer.
     - id: vs
       type: System.String
       description: The vertex shader you want to use.
@@ -122,32 +122,32 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Fusee.Engine.GUI.TextureNode.#ctor(System.String,System.String,System.String,Fusee.Engine.Core.Texture,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect)
-  commentId: M:Fusee.Engine.GUI.TextureNode.#ctor(System.String,System.String,System.String,Fusee.Engine.Core.Texture,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect)
-  id: '#ctor(System.String,System.String,System.String,Fusee.Engine.Core.Texture,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect)'
+- uid: Fusee.Engine.GUI.TextureNode.#ctor(System.String,System.String,System.String,Fusee.Engine.Core.Texture,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.float2)
+  commentId: M:Fusee.Engine.GUI.TextureNode.#ctor(System.String,System.String,System.String,Fusee.Engine.Core.Texture,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.float2)
+  id: '#ctor(System.String,System.String,System.String,Fusee.Engine.Core.Texture,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.MinMaxRect,Fusee.Math.Core.float2)'
   parent: Fusee.Engine.GUI.TextureNode
   langs:
   - csharp
   - vb
-  name: TextureNode(String, String, String, Texture, MinMaxRect, MinMaxRect)
-  nameWithType: TextureNode.TextureNode(String, String, String, Texture, MinMaxRect, MinMaxRect)
-  fullName: Fusee.Engine.GUI.TextureNode.TextureNode(System.String, System.String, System.String, Fusee.Engine.Core.Texture, Fusee.Math.Core.MinMaxRect, Fusee.Math.Core.MinMaxRect)
+  name: TextureNode(String, String, String, Texture, MinMaxRect, MinMaxRect, float2)
+  nameWithType: TextureNode.TextureNode(String, String, String, Texture, MinMaxRect, MinMaxRect, float2)
+  fullName: Fusee.Engine.GUI.TextureNode.TextureNode(System.String, System.String, System.String, Fusee.Engine.Core.Texture, Fusee.Math.Core.MinMaxRect, Fusee.Math.Core.MinMaxRect, Fusee.Math.Core.float2)
   type: Constructor
   source:
     id: .ctor
     path: C:\Users\test\Documents\fusee\Fusee\src\Engine\GUI\GUINode.cs
-    startLine: 311
+    startLine: 313
   assemblies:
   - Fusee.Engine.GUI
   namespace: Fusee.Engine.GUI
-  summary: "\nCreates a SceneNode with the proper components and children for rendering a nine sliced texture.\n"
+  summary: "\nCreates a SceneNodeContainer with the proper components and children for rendering a nine sliced texture.\n"
   example: []
   syntax:
-    content: public TextureNode(string name, string vs, string ps, Texture tex, MinMaxRect anchors, MinMaxRect offsets)
+    content: public TextureNode(string name, string vs, string ps, Texture tex, MinMaxRect anchors, MinMaxRect offsets, float2 diffuseTexTiles)
     parameters:
     - id: name
       type: System.String
-      description: Name of the SceneNode.
+      description: Name of the SceneNodeContainer.
     - id: vs
       type: System.String
       description: The vertex shader you want to use.
@@ -163,7 +163,10 @@ items:
     - id: offsets
       type: Fusee.Math.Core.MinMaxRect
       description: Offsets for the mesh. Defines the position of the object relative to its enclosing UI element.
-    content.vb: Public Sub New(name As String, vs As String, ps As String, tex As Texture, anchors As MinMaxRect, offsets As MinMaxRect)
+    - id: diffuseTexTiles
+      type: Fusee.Math.Core.float2
+      description: The tiling of the diffuse texture.
+    content.vb: Public Sub New(name As String, vs As String, ps As String, tex As Texture, anchors As MinMaxRect, offsets As MinMaxRect, diffuseTexTiles As float2)
   overload: Fusee.Engine.GUI.TextureNode.#ctor*
   modifiers.csharp:
   - public

@@ -65,21 +65,21 @@ items:
   source:
     id: Compare
     path: C:\Users\test\Documents\fusee\Fusee\src\Xirkit\ListSort.cs
-    startLine: 17
+    startLine: 15
   assemblies:
   - Fusee.Xirkit
   namespace: Fusee.Xirkit
-  summary: "\nCompares 2 Objekts and shows through the returned value, wheater an Objekt is smaller, bigger or equals the other Objekts.\n"
+  summary: "\nCompares 2 Objects and shows through the returned value, whether an Object is smaller, bigger or equals the other Objects.\n"
   example: []
   syntax:
     content: public int Compare(Keyframe<TValue> x, Keyframe<TValue> y)
     parameters:
     - id: x
       type: Fusee.Xirkit.Keyframe{{TValue}}
-      description: The first Objekt that shall be compared.
+      description: The first Object that shall be compared.
     - id: y
       type: Fusee.Xirkit.Keyframe{{TValue}}
-      description: The second Objekt that shall be compared.
+      description: The second Object that shall be compared.
     return:
       type: System.Int32
     content.vb: Public Function Compare(x As Keyframe(Of TValue), y As Keyframe(Of TValue)) As Integer

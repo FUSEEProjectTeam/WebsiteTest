@@ -5,11 +5,11 @@ items:
   id: VertexType
   parent: Fusee.Jometri
   children:
-  - Fusee.Jometri.VertexType.END_VERTEX
-  - Fusee.Jometri.VertexType.MERGE_VERTEX
-  - Fusee.Jometri.VertexType.REGULAR_VERTEX
-  - Fusee.Jometri.VertexType.SPLIT_VERTEX
-  - Fusee.Jometri.VertexType.START_VERTEX
+  - Fusee.Jometri.VertexType.EndVertex
+  - Fusee.Jometri.VertexType.MergeVertex
+  - Fusee.Jometri.VertexType.RegularVertex
+  - Fusee.Jometri.VertexType.SplitVertex
+  - Fusee.Jometri.VertexType.StartVertex
   langs:
   - csharp
   - vb
@@ -35,28 +35,28 @@ items:
   modifiers.vb:
   - Public
   - Enum
-- uid: Fusee.Jometri.VertexType.START_VERTEX
-  commentId: F:Fusee.Jometri.VertexType.START_VERTEX
-  id: START_VERTEX
+- uid: Fusee.Jometri.VertexType.StartVertex
+  commentId: F:Fusee.Jometri.VertexType.StartVertex
+  id: StartVertex
   parent: Fusee.Jometri.VertexType
   langs:
   - csharp
   - vb
-  name: START_VERTEX
-  nameWithType: VertexType.START_VERTEX
-  fullName: Fusee.Jometri.VertexType.START_VERTEX
+  name: StartVertex
+  nameWithType: VertexType.StartVertex
+  fullName: Fusee.Jometri.VertexType.StartVertex
   type: Field
   source:
-    id: START_VERTEX
+    id: StartVertex
     path: C:\Users\test\Documents\fusee\Fusee\src\Jometri\VertexType.cs
     startLine: 11
   assemblies:
   - Fusee.Jometri
   namespace: Fusee.Jometri
-  summary: "\nA vertex is a start vertex in case his two neighbours are below him and the interior angle between the two adjacent edges is smaller than pi.\n"
+  summary: "\nA vertex is a start vertex in case his two neighbors are below him and the interior angle between the two adjacent edges is smaller than pi.\n"
   example: []
   syntax:
-    content: START_VERTEX = 0
+    content: StartVertex = 0
     return:
       type: Fusee.Jometri.VertexType
   modifiers.csharp:
@@ -65,28 +65,28 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Jometri.VertexType.END_VERTEX
-  commentId: F:Fusee.Jometri.VertexType.END_VERTEX
-  id: END_VERTEX
+- uid: Fusee.Jometri.VertexType.EndVertex
+  commentId: F:Fusee.Jometri.VertexType.EndVertex
+  id: EndVertex
   parent: Fusee.Jometri.VertexType
   langs:
   - csharp
   - vb
-  name: END_VERTEX
-  nameWithType: VertexType.END_VERTEX
-  fullName: Fusee.Jometri.VertexType.END_VERTEX
+  name: EndVertex
+  nameWithType: VertexType.EndVertex
+  fullName: Fusee.Jometri.VertexType.EndVertex
   type: Field
   source:
-    id: END_VERTEX
+    id: EndVertex
     path: C:\Users\test\Documents\fusee\Fusee\src\Jometri\VertexType.cs
     startLine: 16
   assemblies:
   - Fusee.Jometri
   namespace: Fusee.Jometri
-  summary: "\nA vertex is a end vertex in case his two neighbours are above him and the interior angle between the two adjacent edges is smaller than pi.\n"
+  summary: "\nA vertex is a end vertex in case his two neighbors are above him and the interior angle between the two adjacent edges is smaller than pi.\n"
   example: []
   syntax:
-    content: END_VERTEX = 1
+    content: EndVertex = 1
     return:
       type: Fusee.Jometri.VertexType
   modifiers.csharp:
@@ -95,28 +95,28 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Jometri.VertexType.SPLIT_VERTEX
-  commentId: F:Fusee.Jometri.VertexType.SPLIT_VERTEX
-  id: SPLIT_VERTEX
+- uid: Fusee.Jometri.VertexType.SplitVertex
+  commentId: F:Fusee.Jometri.VertexType.SplitVertex
+  id: SplitVertex
   parent: Fusee.Jometri.VertexType
   langs:
   - csharp
   - vb
-  name: SPLIT_VERTEX
-  nameWithType: VertexType.SPLIT_VERTEX
-  fullName: Fusee.Jometri.VertexType.SPLIT_VERTEX
+  name: SplitVertex
+  nameWithType: VertexType.SplitVertex
+  fullName: Fusee.Jometri.VertexType.SplitVertex
   type: Field
   source:
-    id: SPLIT_VERTEX
+    id: SplitVertex
     path: C:\Users\test\Documents\fusee\Fusee\src\Jometri\VertexType.cs
     startLine: 21
   assemblies:
   - Fusee.Jometri
   namespace: Fusee.Jometri
-  summary: "\nA vertex is a split vertex in case his two neighbours are below him and the interior angle between the two adjacent edges is greater than pi.\n"
+  summary: "\nA vertex is a split vertex in case his two neighbors are below him and the interior angle between the two adjacent edges is greater than pi.\n"
   example: []
   syntax:
-    content: SPLIT_VERTEX = 2
+    content: SplitVertex = 2
     return:
       type: Fusee.Jometri.VertexType
   modifiers.csharp:
@@ -125,28 +125,28 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Jometri.VertexType.MERGE_VERTEX
-  commentId: F:Fusee.Jometri.VertexType.MERGE_VERTEX
-  id: MERGE_VERTEX
+- uid: Fusee.Jometri.VertexType.MergeVertex
+  commentId: F:Fusee.Jometri.VertexType.MergeVertex
+  id: MergeVertex
   parent: Fusee.Jometri.VertexType
   langs:
   - csharp
   - vb
-  name: MERGE_VERTEX
-  nameWithType: VertexType.MERGE_VERTEX
-  fullName: Fusee.Jometri.VertexType.MERGE_VERTEX
+  name: MergeVertex
+  nameWithType: VertexType.MergeVertex
+  fullName: Fusee.Jometri.VertexType.MergeVertex
   type: Field
   source:
-    id: MERGE_VERTEX
+    id: MergeVertex
     path: C:\Users\test\Documents\fusee\Fusee\src\Jometri\VertexType.cs
     startLine: 26
   assemblies:
   - Fusee.Jometri
   namespace: Fusee.Jometri
-  summary: "\nA vertex is a merge vertex in case his two neighbours are above him and the interior angle between the two adjacent edges is greater than pi.\n"
+  summary: "\nA vertex is a merge vertex in case his two neighbors are above him and the interior angle between the two adjacent edges is greater than pi.\n"
   example: []
   syntax:
-    content: MERGE_VERTEX = 3
+    content: MergeVertex = 3
     return:
       type: Fusee.Jometri.VertexType
   modifiers.csharp:
@@ -155,28 +155,28 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Fusee.Jometri.VertexType.REGULAR_VERTEX
-  commentId: F:Fusee.Jometri.VertexType.REGULAR_VERTEX
-  id: REGULAR_VERTEX
+- uid: Fusee.Jometri.VertexType.RegularVertex
+  commentId: F:Fusee.Jometri.VertexType.RegularVertex
+  id: RegularVertex
   parent: Fusee.Jometri.VertexType
   langs:
   - csharp
   - vb
-  name: REGULAR_VERTEX
-  nameWithType: VertexType.REGULAR_VERTEX
-  fullName: Fusee.Jometri.VertexType.REGULAR_VERTEX
+  name: RegularVertex
+  nameWithType: VertexType.RegularVertex
+  fullName: Fusee.Jometri.VertexType.RegularVertex
   type: Field
   source:
-    id: REGULAR_VERTEX
+    id: RegularVertex
     path: C:\Users\test\Documents\fusee\Fusee\src\Jometri\VertexType.cs
     startLine: 31
   assemblies:
   - Fusee.Jometri
   namespace: Fusee.Jometri
-  summary: "\nA vertex is a regular vertex in case his two neighbours and the adjacent edges do not meet one of the conditions defining the other types.\n"
+  summary: "\nA vertex is a regular vertex in case his two neighbors and the adjacent edges do not meet one of the conditions defining the other types.\n"
   example: []
   syntax:
-    content: REGULAR_VERTEX = 4
+    content: RegularVertex = 4
     return:
       type: Fusee.Jometri.VertexType
   modifiers.csharp:

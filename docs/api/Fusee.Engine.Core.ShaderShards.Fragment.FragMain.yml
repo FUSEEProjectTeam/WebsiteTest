@@ -1,0 +1,449 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragMain
+  commentId: T:Fusee.Engine.Core.ShaderShards.Fragment.FragMain
+  id: FragMain
+  parent: Fusee.Engine.Core.ShaderShards.Fragment
+  children:
+  - Fusee.Engine.Core.ShaderShards.Fragment.FragMain.ForwardLighting(Fusee.Engine.Core.ShaderShards.LightingSetupFlags,System.String,System.String)
+  - Fusee.Engine.Core.ShaderShards.Fragment.FragMain.RenderToGBuffer(Fusee.Engine.Core.ShaderShards.LightingSetupFlags,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: FragMain
+  nameWithType: FragMain
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragMain
+  type: Class
+  source:
+    id: FragMain
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\FragMain.cs
+    startLine: 8
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nCollection of shader code strings, describing the Main method of a fragment shader.\n"
+  example: []
+  syntax:
+    content: public static class FragMain
+    content.vb: Public Module FragMain
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragMain.ForwardLighting(Fusee.Engine.Core.ShaderShards.LightingSetupFlags,System.String,System.String)
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.FragMain.ForwardLighting(Fusee.Engine.Core.ShaderShards.LightingSetupFlags,System.String,System.String)
+  id: ForwardLighting(Fusee.Engine.Core.ShaderShards.LightingSetupFlags,System.String,System.String)
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.FragMain
+  langs:
+  - csharp
+  - vb
+  name: ForwardLighting(LightingSetupFlags, String, String)
+  nameWithType: FragMain.ForwardLighting(LightingSetupFlags, String, String)
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragMain.ForwardLighting(Fusee.Engine.Core.ShaderShards.LightingSetupFlags, System.String, System.String)
+  type: Method
+  source:
+    id: ForwardLighting
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\FragMain.cs
+    startLine: 13
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nLighting Main method for forward rendering.\n"
+  example: []
+  syntax:
+    content: public static string ForwardLighting(LightingSetupFlags setup, string inStructName, string outStructType)
+    parameters:
+    - id: setup
+      type: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+    - id: inStructName
+      type: System.String
+    - id: outStructType
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function ForwardLighting(setup As LightingSetupFlags, inStructName As String, outStructType As String) As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.FragMain.ForwardLighting*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragMain.RenderToGBuffer(Fusee.Engine.Core.ShaderShards.LightingSetupFlags,System.String,System.String)
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.FragMain.RenderToGBuffer(Fusee.Engine.Core.ShaderShards.LightingSetupFlags,System.String,System.String)
+  id: RenderToGBuffer(Fusee.Engine.Core.ShaderShards.LightingSetupFlags,System.String,System.String)
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.FragMain
+  langs:
+  - csharp
+  - vb
+  name: RenderToGBuffer(LightingSetupFlags, String, String)
+  nameWithType: FragMain.RenderToGBuffer(LightingSetupFlags, String, String)
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragMain.RenderToGBuffer(Fusee.Engine.Core.ShaderShards.LightingSetupFlags, System.String, System.String)
+  type: Method
+  source:
+    id: RenderToGBuffer
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\FragMain.cs
+    startLine: 45
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nThe main method for rendering into a G-Buffer object.\n"
+  example: []
+  syntax:
+    content: public static string RenderToGBuffer(LightingSetupFlags lightingSetup, string inStructName, string outStructType)
+    parameters:
+    - id: lightingSetup
+      type: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+    - id: inStructName
+      type: System.String
+    - id: outStructType
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function RenderToGBuffer(lightingSetup As LightingSetupFlags, inStructName As String, outStructType As String) As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.FragMain.RenderToGBuffer*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Fusee.Engine.Core.ShaderShards.Fragment
+  commentId: N:Fusee.Engine.Core.ShaderShards.Fragment
+  name: Fusee.Engine.Core.ShaderShards.Fragment
+  nameWithType: Fusee.Engine.Core.ShaderShards.Fragment
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragMain.ForwardLighting*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.FragMain.ForwardLighting
+  name: ForwardLighting
+  nameWithType: FragMain.ForwardLighting
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragMain.ForwardLighting
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  commentId: T:Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+  parent: Fusee.Engine.Core.ShaderShards
+  name: LightingSetupFlags
+  nameWithType: LightingSetupFlags
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Fusee.Engine.Core.ShaderShards
+  commentId: N:Fusee.Engine.Core.ShaderShards
+  name: Fusee.Engine.Core.ShaderShards
+  nameWithType: Fusee.Engine.Core.ShaderShards
+  fullName: Fusee.Engine.Core.ShaderShards
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragMain.RenderToGBuffer*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.FragMain.RenderToGBuffer
+  name: RenderToGBuffer
+  nameWithType: FragMain.RenderToGBuffer
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragMain.RenderToGBuffer

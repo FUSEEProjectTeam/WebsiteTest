@@ -31,7 +31,7 @@ items:
   assemblies:
   - Fusee.Jometri
   namespace: Fusee.Jometri
-  summary: "\nEach face belonging to a 2D geometry contains:\na handle to assign a abstract reference to it.\na referance to one of the half edges that belongs to the faces outer boundary.\na List that contains handles to one half edge for each hole in a face.\nattribute information, e.g. the face nromal.\nNote that unbounded faces can&apos;t have a OuterHalfEdge but must have at least one InnerHalfEdge - bounded faces must have a OuterComponent.\n"
+  summary: "\nEach face belonging to a 2D geometry contains:\na handle to assign a abstract reference to it.\na reference to one of the half edges that belongs to the faces outer boundary.\na List that contains handles to one half edge for each hole in a face.\nattribute information, e.g. the face normal.\nNote that unbounded faces can&apos;t have a OuterHalfEdge but must have at least one InnerHalfEdge - bounded faces must have a OuterComponent.\n"
   example: []
   syntax:
     content: public struct Face
@@ -125,7 +125,7 @@ items:
   assemblies:
   - Fusee.Jometri
   namespace: Fusee.Jometri
-  summary: "\nAttribute information, e.g. the face nromal.\n"
+  summary: "\nAttribute information, e.g. the face normals.\n"
   example: []
   syntax:
     content: public FaceData FaceData

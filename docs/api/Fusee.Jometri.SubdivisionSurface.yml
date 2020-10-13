@@ -20,7 +20,7 @@ items:
   assemblies:
   - Fusee.Jometri
   namespace: Fusee.Jometri
-  summary: "\nProvides functionallity to perform a Catmull-Clark Subdivision-Surface algorithm on a Geometry.\n"
+  summary: "\nProvides functionality to perform a Catmull-Clark Subdivision-Surface algorithm on a Geometry.\n"
   example: []
   syntax:
     content: public class SubdivisionSurface
@@ -66,10 +66,10 @@ items:
     parameters:
     - id: geometry
       type: Fusee.Jometri.Geometry
-      description: The goemetry to perform the SD on.
+      description: The geometry to perform the SD on.
     return:
       type: Fusee.Jometri.Geometry
-      description: 'A smoother geoemtry with '
+      description: 'A smoother geometry with '
     content.vb: Public Shared Function CatmullClarkSubdivision(geometry As Geometry) As Geometry
   overload: Fusee.Jometri.SubdivisionSurface.CatmullClarkSubdivision*
   modifiers.csharp:
