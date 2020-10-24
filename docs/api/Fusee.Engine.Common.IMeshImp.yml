@@ -39,8 +39,18 @@ items:
   summary: "\nInterface for Mesh implementations. The implementation should handle typical mesh informations like: vertices, triangles, normals, colors, UV&apos;s.\nIt is also required to implement a connection to the current RenderContext in order to apply the Mesh for rendering.\nThe Mesh should preferable use handles for its informations in order to communicate with a RenderContext. The handles are referring to so called BufferObjects.\n"
   example: []
   syntax:
-    content: public interface IMeshImp
-    content.vb: Public Interface IMeshImp
+    content: >-
+      [ProtoContract]
+
+      public interface IMeshImp
+    content.vb: >-
+      <ProtoContract>
+
+      Public Interface IMeshImp
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - interface

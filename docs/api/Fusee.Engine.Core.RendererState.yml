@@ -38,7 +38,9 @@ items:
     content: 'public class RendererState : VisitorState, IStateStack'
     content.vb: >-
       Public Class RendererState
+
           Inherits VisitorState
+
           Implements IStateStack
   inheritance:
   - System.Object

@@ -1,3 +1,5 @@
+![Fusee3D](index/Fusee.png)
+
 ## What's FUSEE?
 
 FUSEE is an Open Source 3D Realtime Engine written in C#. Applications written on top of FUSEE 

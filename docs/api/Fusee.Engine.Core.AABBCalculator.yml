@@ -34,6 +34,7 @@ items:
     content: 'public class AABBCalculator : Visitor<SceneNode, SceneComponent>'
     content.vb: >-
       Public Class AABBCalculator
+
           Inherits Visitor(Of SceneNode, SceneComponent)
   inheritance:
   - System.Object

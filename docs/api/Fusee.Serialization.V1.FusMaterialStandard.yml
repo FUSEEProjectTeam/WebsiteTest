@@ -29,10 +29,17 @@ items:
   summary: "\nMaterial definition. If contained within a node, the node&apos;s (and potentially child node&apos;s)\ngeometry is rendered with the specified material.\nThe standard material contains information needed to calculate specular reflection based on Shininess and Intensity (= strength).\n"
   example: []
   syntax:
-    content: 'public class FusMaterialStandard : FusMaterialBase, IComponent, IEquatable<FusMaterialBase>, IEquatable<FusMaterialStandard>'
+    content: >-
+      [ProtoContract]
+
+      public class FusMaterialStandard : FusMaterialBase, IComponent, IEquatable<FusMaterialBase>, IEquatable<FusMaterialStandard>
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusMaterialStandard
+
           Inherits FusMaterialBase
+
           Implements IComponent, IEquatable(Of FusMaterialBase), IEquatable(Of FusMaterialStandard)
   inheritance:
   - System.Object
@@ -56,6 +63,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -117,10 +128,22 @@ items:
   summary: "\nThe specular channel.\n"
   example: []
   syntax:
-    content: public SpecularChannel Specular
+    content: >-
+      [ProtoMember(2)]
+
+      public SpecularChannel Specular
     return:
       type: Fusee.Serialization.V1.SpecularChannel
-    content.vb: Public Specular As SpecularChannel
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Specular As SpecularChannel
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:

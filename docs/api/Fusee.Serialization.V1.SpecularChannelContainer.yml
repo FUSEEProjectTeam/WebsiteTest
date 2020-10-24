@@ -32,7 +32,9 @@ items:
     content: 'public class SpecularChannelContainer : MatChannelContainer, IEquatable<MatChannelContainer>, IEquatable<SpecularChannelContainer>'
     content.vb: >-
       Public Class SpecularChannelContainer
+
           Inherits MatChannelContainer
+
           Implements IEquatable(Of MatChannelContainer), IEquatable(Of SpecularChannelContainer)
   inheritance:
   - System.Object

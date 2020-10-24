@@ -197,6 +197,7 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TComponentToFind> FindComponents<TComponentToFind>(this SceneNode root, Predicate<TComponentToFind> match)
+
           where TComponentToFind : SceneComponent
     parameters:
     - id: root
@@ -248,6 +249,7 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TComponentToFind> FindComponents<TComponentToFind>(this IEnumerable<SceneNode> roots, Predicate<TComponentToFind> match)
+
           where TComponentToFind : SceneComponent
     parameters:
     - id: roots
@@ -670,6 +672,7 @@ items:
   syntax:
     content: >-
       public static void RemoveComponentsInChildren<TComp>(this SceneNode snThisThis)
+
           where TComp : SceneComponent
     parameters:
     - id: snThisThis
@@ -760,6 +763,7 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TComp> GetComponentsInChildren<TComp>(this SceneNode snThisThis)
+
           where TComp : SceneComponent
     parameters:
     - id: snThisThis
@@ -900,6 +904,7 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TComp> GetComponents<TComp>(this SceneNode snThisThis)
+
           where TComp : SceneComponent
     parameters:
     - id: snThisThis
@@ -991,6 +996,7 @@ items:
   syntax:
     content: >-
       public static TComp GetComponent<TComp>(this SceneNode snThisThis, int inx = 0)
+
           where TComp : SceneComponent
     parameters:
     - id: snThisThis
@@ -1043,6 +1049,7 @@ items:
   syntax:
     content: >-
       public static void RemoveComponent<TComp>(this SceneNode snThisThis, int inx = 0)
+
           where TComp : SceneComponent
     parameters:
     - id: snThisThis

@@ -25,10 +25,17 @@ items:
   summary: "\nTransformation (position, orientation and size) of the node.\n"
   example: []
   syntax:
-    content: 'public class FusTransform : FusComponent, IComponent'
+    content: >-
+      [ProtoContract]
+
+      public class FusTransform : FusComponent, IComponent
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusTransform
+
           Inherits FusComponent
+
           Implements IComponent
   inheritance:
   - System.Object
@@ -44,6 +51,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -71,10 +82,22 @@ items:
   summary: "\nThe translation (position) of the node.\n"
   example: []
   syntax:
-    content: public float3 Translation
+    content: >-
+      [ProtoMember(1)]
+
+      public float3 Translation
     return:
       type: Fusee.Math.Core.float3
-    content.vb: Public Translation As float3
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Translation As float3
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -100,10 +123,22 @@ items:
   summary: "\nThe rotation (orientation) of the node.\n"
   example: []
   syntax:
-    content: public float3 Rotation
+    content: >-
+      [ProtoMember(2)]
+
+      public float3 Rotation
     return:
       type: Fusee.Math.Core.float3
-    content.vb: Public Rotation As float3
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Rotation As float3
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -129,10 +164,22 @@ items:
   summary: "\nThe scale (size) of the node.\n"
   example: []
   syntax:
-    content: public float3 Scale
+    content: >-
+      [ProtoMember(3)]
+
+      public float3 Scale
     return:
       type: Fusee.Math.Core.float3
-    content.vb: Public Scale As float3
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public Scale As float3
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:

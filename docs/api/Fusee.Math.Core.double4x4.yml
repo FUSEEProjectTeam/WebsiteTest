@@ -118,9 +118,15 @@ items:
   remarks: "\n<p>\ndouble4x4 objects represent matrices used in column-vector-notation, that means\nwhen used in common matrix-vector-multiplication scenarios, the vector should\nbe multiplied from the right to the matrix (M * v). Concatenations of matrices\nfrom left to right represent a transformation where the rightmost matrix is applied\nfirst and the leftmost matrix is applied last, for example in (M3 * M2 * M1) * v the vector\nv is first transformed by M1, then by M2 and finally by M3. The translation part of a 4x4\nmatrix used in homogeneous coordinate calculations can be found in the leftmost column\n(M14 - x-translation, M24 - y-translation, M34 - z-translation).\n</p>\n<p>\nNote that although double4x4 objects represent matrices in COLUMN-vector-NOTATION as\nfound in math books, the objects&apos; contents is physically stored in ROW-major-ORDER, meaning that\nin physical memory, a double4x4&apos;s components are stored contiguously in the following order: first row (M11, M12, M13, M14),\nthen second row (M21, M22, M21, M24), and so on. When exchanging matrix contents with libraries like\ngraphics engines (OpenGL, Direct3D), physics engines, file formats, etc. make sure to convert to and\nfrom the given Matrix layout of the API you are exchanging data with.\n</p>\n<p>\ndouble4x4 contains convenience construction methods to create matrices commonly\nused in Computer Graphics. Most of these application matrices are handedness-agnostic, meaning\nthat the resulting matrices can be used in both, left-handed and right-handed coordinate systems.\nThis does not hold for LookAt and Projection matrices where the viewing direction plays a role. In\nleft-handed coordinate systems the viewing direction is positive, meaning positions further away have\nbigger positive z-coordinates whereas in right-handed coordinate systems positions further away have smaller\nnegative z-coordinates. By default, double4x4 will assume a left-handed coordinate system, but contains\nconvenience construction methods to also create right-handed matrices if necessary. The right-handed versions\nof methods are postfixed with &quot;RH&quot;.\n</p>\n"
   example: []
   syntax:
-    content: 'public struct double4x4 : IEquatable<double4x4>'
+    content: >-
+      [ProtoContract]
+
+      public struct double4x4 : IEquatable<double4x4>
     content.vb: >-
+      <ProtoContract>
+
       Public Structure double4x4
+
           Implements IEquatable(Of double4x4)
   implements:
   - System.IEquatable{Fusee.Math.Core.double4x4}
@@ -128,6 +134,10 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - struct
@@ -155,10 +165,22 @@ items:
   summary: "\nTop row of the matrix\n"
   example: []
   syntax:
-    content: public double4 Row0
+    content: >-
+      [ProtoMember(1)]
+
+      public double4 Row0
     return:
       type: Fusee.Math.Core.double4
-    content.vb: Public Row0 As double4
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Row0 As double4
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -184,10 +206,22 @@ items:
   summary: "\n2nd row of the matrix\n"
   example: []
   syntax:
-    content: public double4 Row1
+    content: >-
+      [ProtoMember(2)]
+
+      public double4 Row1
     return:
       type: Fusee.Math.Core.double4
-    content.vb: Public Row1 As double4
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Row1 As double4
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -213,10 +247,22 @@ items:
   summary: "\n3rd row of the matrix\n"
   example: []
   syntax:
-    content: public double4 Row2
+    content: >-
+      [ProtoMember(3)]
+
+      public double4 Row2
     return:
       type: Fusee.Math.Core.double4
-    content.vb: Public Row2 As double4
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public Row2 As double4
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -242,10 +288,22 @@ items:
   summary: "\nBottom row of the matrix\n"
   example: []
   syntax:
-    content: public double4 Row3
+    content: >-
+      [ProtoMember(4)]
+
+      public double4 Row3
     return:
       type: Fusee.Math.Core.double4
-    content.vb: Public Row3 As double4
+    content.vb: >-
+      <ProtoMember(4)>
+
+      Public Row3 As double4
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
   modifiers.csharp:
   - public
   modifiers.vb:

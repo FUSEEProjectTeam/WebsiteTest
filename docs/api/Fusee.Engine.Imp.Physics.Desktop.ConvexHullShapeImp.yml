@@ -31,7 +31,9 @@ items:
     content: 'public class ConvexHullShapeImp : CollisonShapeImp, IConvexHullShapeImp, ICollisionShapeImp'
     content.vb: >-
       Public Class ConvexHullShapeImp
+
           Inherits CollisonShapeImp
+
           Implements IConvexHullShapeImp, ICollisionShapeImp
   inheritance:
   - System.Object

@@ -38,7 +38,9 @@ items:
     content: 'public class FusMaterial : FusComponent, IComponent, IEquatable<FusMaterial>'
     content.vb: >-
       Public Class FusMaterial
+
           Inherits FusComponent
+
           Implements IComponent, IEquatable(Of FusMaterial)
   inheritance:
   - System.Object

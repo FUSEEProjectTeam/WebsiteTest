@@ -23,9 +23,15 @@ items:
   summary: "\nAnimation key storing float2 values.\n"
   example: []
   syntax:
-    content: 'public class FusAnimationKeyFloat2 : FusAnimationKeyBase'
+    content: >-
+      [ProtoContract]
+
+      public class FusAnimationKeyFloat2 : FusAnimationKeyBase
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusAnimationKeyFloat2
+
           Inherits FusAnimationKeyBase
   inheritance:
   - System.Object
@@ -39,6 +45,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -66,10 +76,22 @@ items:
   summary: "\nThe key value effective at the <xref href=\"Fusee.Serialization.V1.FusAnimationKeyBase.Time\" data-throw-if-not-resolved=\"false\"></xref>.\n"
   example: []
   syntax:
-    content: public float2 Value
+    content: >-
+      [ProtoMember(1)]
+
+      public float2 Value
     return:
       type: Fusee.Math.Core.float2
-    content.vb: Public Value As float2
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Value As float2
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:

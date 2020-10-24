@@ -27,7 +27,9 @@ items:
     content: 'public class GImpactMeshShapeImp : CollisonShapeImp, IGImpactMeshShapeImp, ICollisionShapeImp'
     content.vb: >-
       Public Class GImpactMeshShapeImp
+
           Inherits CollisonShapeImp
+
           Implements IGImpactMeshShapeImp, ICollisionShapeImp
   inheritance:
   - System.Object

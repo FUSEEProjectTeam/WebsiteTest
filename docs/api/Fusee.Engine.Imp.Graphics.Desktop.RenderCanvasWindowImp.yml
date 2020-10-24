@@ -45,7 +45,9 @@ items:
     content: 'public abstract class RenderCanvasWindowImp : RenderCanvasImpBase, IRenderCanvasImp, IDisposable'
     content.vb: >-
       Public MustInherit Class RenderCanvasWindowImp
+
           Inherits RenderCanvasImpBase
+
           Implements IRenderCanvasImp, IDisposable
   inheritance:
   - System.Object

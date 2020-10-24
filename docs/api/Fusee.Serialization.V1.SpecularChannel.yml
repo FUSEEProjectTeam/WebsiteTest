@@ -29,10 +29,17 @@ items:
   summary: "\nThe specular channel definition. \n"
   example: []
   syntax:
-    content: 'public class SpecularChannel : AlbedoChannel, IEquatable<AlbedoChannel>, IEquatable<SpecularChannel>'
+    content: >-
+      [ProtoContract]
+
+      public class SpecularChannel : AlbedoChannel, IEquatable<AlbedoChannel>, IEquatable<SpecularChannel>
     content.vb: >-
+      <ProtoContract>
+
       Public Class SpecularChannel
+
           Inherits AlbedoChannel
+
           Implements IEquatable(Of AlbedoChannel), IEquatable(Of SpecularChannel)
   inheritance:
   - System.Object
@@ -50,6 +57,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -77,10 +88,22 @@ items:
   summary: "\nThe material&apos;s shininess.\n"
   example: []
   syntax:
-    content: public float Shininess
+    content: >-
+      [ProtoMember(1)]
+
+      public float Shininess
     return:
       type: System.Single
-    content.vb: Public Shininess As Single
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Shininess As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -106,10 +129,22 @@ items:
   summary: "\nThe specular intensity.\n"
   example: []
   syntax:
-    content: public float Strength
+    content: >-
+      [ProtoMember(2)]
+
+      public float Strength
     return:
       type: System.Single
-    content.vb: Public Strength As Single
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Strength As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:

@@ -38,7 +38,9 @@ items:
       description: The concrete base type of components used as building blocks for scene graphs.
     content.vb: >-
       Public Class SceneNodeFinder(Of TNodeToFind As TNode, TNode As {Class, INode}, TComponent As {Class, IComponent})
+
           Inherits SceneFinderBase(Of TNodeToFind, TNode, TComponent)
+
           Implements IEnumerator(Of TNodeToFind), IEnumerator, IDisposable
   inheritance:
   - System.Object

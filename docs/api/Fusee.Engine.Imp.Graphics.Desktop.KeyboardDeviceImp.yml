@@ -16,8 +16,8 @@ items:
   - Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.GetAxis(System.Int32)
   - Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.GetButton(System.Int32)
   - Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.Id
-  - Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object,KeyboardKeyEventArgs)
-  - Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object,KeyboardKeyEventArgs)
+  - Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object,OpenTK.Input.KeyboardKeyEventArgs)
+  - Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object,OpenTK.Input.KeyboardKeyEventArgs)
   langs:
   - csharp
   - vb
@@ -38,6 +38,7 @@ items:
     content: 'public class KeyboardDeviceImp : IInputDeviceImp'
     content.vb: >-
       Public Class KeyboardDeviceImp
+
           Implements IInputDeviceImp
   inheritance:
   - System.Object
@@ -364,16 +365,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object,KeyboardKeyEventArgs)
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object,KeyboardKeyEventArgs)
-  id: OnGameWinKeyDown(System.Object,KeyboardKeyEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object,OpenTK.Input.KeyboardKeyEventArgs)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object,OpenTK.Input.KeyboardKeyEventArgs)
+  id: OnGameWinKeyDown(System.Object,OpenTK.Input.KeyboardKeyEventArgs)
   parent: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp
   langs:
   - csharp
   - vb
   name: OnGameWinKeyDown(Object, KeyboardKeyEventArgs)
   nameWithType: KeyboardDeviceImp.OnGameWinKeyDown(Object, KeyboardKeyEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object, KeyboardKeyEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object, OpenTK.Input.KeyboardKeyEventArgs)
   type: Method
   source:
     id: OnGameWinKeyDown
@@ -391,24 +392,24 @@ items:
       type: System.Object
       description: The sender.
     - id: key
-      type: KeyboardKeyEventArgs
-      description: The <see cref="!:KeyboardKeyEventArgs"></see> instance containing the event data.
+      type: OpenTK.Input.KeyboardKeyEventArgs
+      description: The <xref href="OpenTK.Input.KeyboardKeyEventArgs" data-throw-if-not-resolved="false"></xref> instance containing the event data.
     content.vb: Protected Sub OnGameWinKeyDown(sender As Object, key As KeyboardKeyEventArgs)
   overload: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown*
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
-- uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object,KeyboardKeyEventArgs)
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object,KeyboardKeyEventArgs)
-  id: OnGameWinKeyUp(System.Object,KeyboardKeyEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object,OpenTK.Input.KeyboardKeyEventArgs)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object,OpenTK.Input.KeyboardKeyEventArgs)
+  id: OnGameWinKeyUp(System.Object,OpenTK.Input.KeyboardKeyEventArgs)
   parent: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp
   langs:
   - csharp
   - vb
   name: OnGameWinKeyUp(Object, KeyboardKeyEventArgs)
   nameWithType: KeyboardDeviceImp.OnGameWinKeyUp(Object, KeyboardKeyEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object, KeyboardKeyEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object, OpenTK.Input.KeyboardKeyEventArgs)
   type: Method
   source:
     id: OnGameWinKeyUp
@@ -426,8 +427,8 @@ items:
       type: System.Object
       description: The sender.
     - id: key
-      type: KeyboardKeyEventArgs
-      description: The <see cref="!:KeyboardKeyEventArgs"></see> instance containing the event data.
+      type: OpenTK.Input.KeyboardKeyEventArgs
+      description: The <xref href="OpenTK.Input.KeyboardKeyEventArgs" data-throw-if-not-resolved="false"></xref> instance containing the event data.
     content.vb: Protected Sub OnGameWinKeyUp(sender As Object, key As KeyboardKeyEventArgs)
   overload: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp*
   modifiers.csharp:
@@ -1190,16 +1191,24 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: OpenTK.Input.KeyboardKeyEventArgs
+  commentId: T:OpenTK.Input.KeyboardKeyEventArgs
+  parent: OpenTK.Input
+  isExternal: true
+  name: KeyboardKeyEventArgs
+  nameWithType: KeyboardKeyEventArgs
+  fullName: OpenTK.Input.KeyboardKeyEventArgs
 - uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown
   name: OnGameWinKeyDown
   nameWithType: KeyboardDeviceImp.OnGameWinKeyDown
   fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown
-- uid: KeyboardKeyEventArgs
+- uid: OpenTK.Input
+  commentId: N:OpenTK.Input
   isExternal: true
-  name: KeyboardKeyEventArgs
-  nameWithType: KeyboardKeyEventArgs
-  fullName: KeyboardKeyEventArgs
+  name: OpenTK.Input
+  nameWithType: OpenTK.Input
+  fullName: OpenTK.Input
 - uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp
   name: OnGameWinKeyUp

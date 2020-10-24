@@ -27,8 +27,14 @@ items:
   summary: "\nStores data about a single animation track (mainly a list of keyframes)\n"
   example: []
   syntax:
-    content: public class FusAnimationTrack
-    content.vb: Public Class FusAnimationTrack
+    content: >-
+      [ProtoContract]
+
+      public class FusAnimationTrack
+    content.vb: >-
+      <ProtoContract>
+
+      Public Class FusAnimationTrack
   inheritance:
   - System.Object
   inheritedMembers:
@@ -39,6 +45,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -66,10 +76,22 @@ items:
   summary: "\nThe scene component to be controlled by this animation track.\n"
   example: []
   syntax:
-    content: public FusComponent SceneComponent
+    content: >-
+      [ProtoMember(1)]
+
+      public FusComponent SceneComponent
     return:
       type: Fusee.Serialization.V1.FusComponent
-    content.vb: Public SceneComponent As FusComponent
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public SceneComponent As FusComponent
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -95,10 +117,22 @@ items:
   summary: "\nThe name to the property/field to control. May be a dot-separated path to a sub-item (e.g. &quot;Transform.Position.x&quot;).\n"
   example: []
   syntax:
-    content: public string Property
+    content: >-
+      [ProtoMember(2)]
+
+      public string Property
     return:
       type: System.String
-    content.vb: Public Property As String
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Property As String
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -124,10 +158,22 @@ items:
   summary: "\nThe type of the key-values stored in this animation track.\n"
   example: []
   syntax:
-    content: public TypeId TypeId
+    content: >-
+      [ProtoMember(3)]
+
+      public TypeId TypeId
     return:
       type: Fusee.Serialization.V1.TypeId
-    content.vb: Public TypeId As TypeId
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public TypeId As TypeId
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -153,10 +199,22 @@ items:
   summary: "\nThe lerp type to use for interpolation. \n"
   example: []
   syntax:
-    content: public LerpType LerpType
+    content: >-
+      [ProtoMember(5)]
+
+      public LerpType LerpType
     return:
       type: Fusee.Serialization.V1.LerpType
-    content.vb: Public LerpType As LerpType
+    content.vb: >-
+      <ProtoMember(5)>
+
+      Public LerpType As LerpType
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 5
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -182,10 +240,22 @@ items:
   summary: "\nThe list of key frames ordered by time.\n"
   example: []
   syntax:
-    content: public List<FusAnimationKeyBase> KeyFrames
+    content: >-
+      [ProtoMember(4)]
+
+      public List<FusAnimationKeyBase> KeyFrames
     return:
       type: System.Collections.Generic.List{Fusee.Serialization.V1.FusAnimationKeyBase}
-    content.vb: Public KeyFrames As List(Of FusAnimationKeyBase)
+    content.vb: >-
+      <ProtoMember(4)>
+
+      Public KeyFrames As List(Of FusAnimationKeyBase)
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
   modifiers.csharp:
   - public
   modifiers.vb:

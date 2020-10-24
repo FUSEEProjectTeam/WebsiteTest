@@ -103,6 +103,7 @@ items:
     content: 'public class RenderContextImp : IRenderContextImp'
     content.vb: >-
       Public Class RenderContextImp
+
           Implements IRenderContextImp
   inheritance:
   - System.Object
@@ -2762,10 +2763,10 @@ items:
       description: The render target.
     - id: isDepthTex
       type: System.Boolean
-      description: Determines if the texture is a depth texture. In this case the texture currently associated with <see cref="!:FramebufferAttachment.DepthAttachment"></see> will be detached.
+      description: Determines if the texture is a depth texture. In this case the texture currently associated with <xref href="OpenTK.Graphics.OpenGL.FramebufferAttachment.DepthAttachment" data-throw-if-not-resolved="false"></xref> will be detached.
     - id: attachment
       type: System.Int32
-      description: 'Number of the fbo attachment. For example: attachment = 1 will detach the texture currently associated with <see cref="!:FramebufferAttachment.ColorAttachment1"></see>.'
+      description: 'Number of the fbo attachment. For example: attachment = 1 will detach the texture currently associated with <xref href="OpenTK.Graphics.OpenGL.FramebufferAttachment.ColorAttachment1" data-throw-if-not-resolved="false"></xref>.'
     content.vb: Public Sub DetachTextureFromFbo(renderTarget As IRenderTarget, isDepthTex As Boolean, attachment As Integer = 0)
   overload: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.DetachTextureFromFbo*
   implements:
@@ -2802,13 +2803,13 @@ items:
       description: The render target.
     - id: isDepthTex
       type: System.Boolean
-      description: Determines if the texture is a depth texture. In this case the texture is attached to <see cref="!:FramebufferAttachment.DepthAttachment"></see>.
+      description: Determines if the texture is a depth texture. In this case the texture is attached to <xref href="OpenTK.Graphics.OpenGL.FramebufferAttachment.DepthAttachment" data-throw-if-not-resolved="false"></xref>.
     - id: texHandle
       type: Fusee.Engine.Common.ITextureHandle
       description: The gpu handle of the texture.
     - id: attachment
       type: System.Int32
-      description: 'Number of the fbo attachment. For example: attachment = 1 will attach the texture to <see cref="!:FramebufferAttachment.ColorAttachment1"></see>.'
+      description: 'Number of the fbo attachment. For example: attachment = 1 will attach the texture to <xref href="OpenTK.Graphics.OpenGL.FramebufferAttachment.ColorAttachment1" data-throw-if-not-resolved="false"></xref>.'
     content.vb: Public Sub AttacheTextureToFbo(renderTarget As IRenderTarget, isDepthTex As Boolean, texHandle As ITextureHandle, attachment As Integer = 0)
   overload: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.AttacheTextureToFbo*
   implements:
@@ -7301,6 +7302,12 @@ references:
   name: IRenderTarget
   nameWithType: IRenderTarget
   fullName: Fusee.Engine.Common.IRenderTarget
+- uid: OpenTK.Graphics.OpenGL.FramebufferAttachment.ColorAttachment1
+  commentId: F:OpenTK.Graphics.OpenGL.FramebufferAttachment.ColorAttachment1
+  isExternal: true
+- uid: OpenTK.Graphics.OpenGL.FramebufferAttachment.DepthAttachment
+  commentId: F:OpenTK.Graphics.OpenGL.FramebufferAttachment.DepthAttachment
+  isExternal: true
 - uid: Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.DetachTextureFromFbo*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.DetachTextureFromFbo
   name: DetachTextureFromFbo

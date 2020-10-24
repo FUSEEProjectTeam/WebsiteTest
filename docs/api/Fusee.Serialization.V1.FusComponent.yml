@@ -23,9 +23,47 @@ items:
   summary: "\nBase class for components. Each node (<xref href=\"Fusee.Serialization.V1.FusNode\" data-throw-if-not-resolved=\"false\"></xref>) contains a list of components of various types.\n"
   example: []
   syntax:
-    content: 'public class FusComponent : IComponent'
+    content: >-
+      [ProtoContract]
+
+      [ProtoInclude(100, typeof(FusTransform))]
+
+      [ProtoInclude(101, typeof(FusMesh))]
+
+      [ProtoInclude(102, typeof(FusMaterialBase))]
+
+      [ProtoInclude(103, typeof(FusLight))]
+
+      [ProtoInclude(104, typeof(FusWeight))]
+
+      [ProtoInclude(105, typeof(FusAnimation))]
+
+      [ProtoInclude(106, typeof(FusBone))]
+
+      [ProtoInclude(107, typeof(FusCamera))]
+
+      public class FusComponent : IComponent
     content.vb: >-
+      <ProtoContract>
+
+      <ProtoInclude(100, GetType(FusTransform))>
+
+      <ProtoInclude(101, GetType(FusMesh))>
+
+      <ProtoInclude(102, GetType(FusMaterialBase))>
+
+      <ProtoInclude(103, GetType(FusLight))>
+
+      <ProtoInclude(104, GetType(FusWeight))>
+
+      <ProtoInclude(105, GetType(FusAnimation))>
+
+      <ProtoInclude(106, GetType(FusBone))>
+
+      <ProtoInclude(107, GetType(FusCamera))>
+
       Public Class FusComponent
+
           Implements IComponent
   inheritance:
   - System.Object
@@ -54,6 +92,66 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 100
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusTransform
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 101
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusMesh
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 102
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusMaterialBase
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 103
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusLight
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 104
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusWeight
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 105
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusAnimation
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 106
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusBone
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 107
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusCamera
   modifiers.csharp:
   - public
   - class
@@ -81,10 +179,22 @@ items:
   summary: "\nThe name of this component.\n"
   example: []
   syntax:
-    content: public string Name
+    content: >-
+      [ProtoMember(1)]
+
+      public string Name
     return:
       type: System.String
-    content.vb: Public Name As String
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Name As String
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:

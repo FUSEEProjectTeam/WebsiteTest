@@ -26,6 +26,7 @@ items:
     content: 'public interface ITexture : IImageData, ITextureBase, IImageBase, IDisposable'
     content.vb: >-
       Public Interface ITexture
+
           Inherits IImageData, ITextureBase
   inheritedMembers:
   - Fusee.Base.Common.IImageData.Blt(System.Int32,System.Int32,Fusee.Base.Common.IImageData,System.Int32,System.Int32,System.Int32,System.Int32)

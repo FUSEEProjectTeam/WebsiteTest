@@ -30,7 +30,9 @@ items:
     content: 'public class CapsuleShapeImp : CollisonShapeImp, ICapsuleShapeImp, ICollisionShapeImp'
     content.vb: >-
       Public Class CapsuleShapeImp
+
           Inherits CollisonShapeImp
+
           Implements ICapsuleShapeImp, ICollisionShapeImp
   inheritance:
   - System.Object

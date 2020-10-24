@@ -104,9 +104,15 @@ items:
   remarks: "\nThe float3 structure is suitable for inter-operation with unmanaged code requiring three consecutive floats.\n"
   example: []
   syntax:
-    content: 'public struct float3 : IEquatable<float3>'
+    content: >-
+      [ProtoContract]
+
+      public struct float3 : IEquatable<float3>
     content.vb: >-
+      <ProtoContract>
+
       Public Structure float3
+
           Implements IEquatable(Of float3)
   implements:
   - System.IEquatable{Fusee.Math.Core.float3}
@@ -114,6 +120,10 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - struct
@@ -141,10 +151,22 @@ items:
   summary: "\nThe x component of the float3.\n"
   example: []
   syntax:
-    content: public float x
+    content: >-
+      [ProtoMember(1)]
+
+      public float x
     return:
       type: System.Single
-    content.vb: Public x As Single
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public x As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -170,10 +192,22 @@ items:
   summary: "\nThe y component of the float3.\n"
   example: []
   syntax:
-    content: public float y
+    content: >-
+      [ProtoMember(2)]
+
+      public float y
     return:
       type: System.Single
-    content.vb: Public y As Single
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public y As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -199,10 +233,22 @@ items:
   summary: "\nThe z component of the float3.\n"
   example: []
   syntax:
-    content: public float z
+    content: >-
+      [ProtoMember(3)]
+
+      public float z
     return:
       type: System.Single
-    content.vb: Public z As Single
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public z As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:

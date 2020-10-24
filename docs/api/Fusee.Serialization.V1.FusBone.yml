@@ -23,10 +23,17 @@ items:
   summary: "\nMarker component (contains no data). If contained within a node, the node \nserves as a bone in a bone animation.\n"
   example: []
   syntax:
-    content: 'public class FusBone : FusComponent, IComponent'
+    content: >-
+      [ProtoContract]
+
+      public class FusBone : FusComponent, IComponent
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusBone
+
           Inherits FusComponent
+
           Implements IComponent
   inheritance:
   - System.Object
@@ -41,6 +48,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -68,10 +79,22 @@ items:
   summary: "\nThe name of this component.\nNeeded for blender exporter\n"
   example: []
   syntax:
-    content: public string Name
+    content: >-
+      [ProtoMember(1)]
+
+      public string Name
     return:
       type: System.String
-    content.vb: Public Name As String
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Name As String
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:

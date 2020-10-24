@@ -29,9 +29,15 @@ items:
   summary: "\nIf used, the material shows bumps defined by a normal map (a texture in RGB).\n"
   example: []
   syntax:
-    content: 'public class NormapMapChannel : IEquatable<NormapMapChannel>'
+    content: >-
+      [ProtoContract]
+
+      public class NormapMapChannel : IEquatable<NormapMapChannel>
     content.vb: >-
+      <ProtoContract>
+
       Public Class NormapMapChannel
+
           Implements IEquatable(Of NormapMapChannel)
   inheritance:
   - System.Object
@@ -43,6 +49,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -70,10 +80,22 @@ items:
   summary: "\nThe texture to read the normal information from.\n"
   example: []
   syntax:
-    content: public string Texture
+    content: >-
+      [ProtoMember(1)]
+
+      public string Texture
     return:
       type: System.String
-    content.vb: Public Texture As String
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Texture As String
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -99,10 +121,22 @@ items:
   summary: "\nThe intensity of the normal map..\n"
   example: []
   syntax:
-    content: public float Intensity
+    content: >-
+      [ProtoMember(2)]
+
+      public float Intensity
     return:
       type: System.Single
-    content.vb: Public Intensity As Single
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Intensity As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:

@@ -29,6 +29,7 @@ items:
       description: The type of the value.
     content.vb: >-
       Public Class ListSort(Of TValue)
+
           Implements IComparer(Of Keyframe(Of TValue))
   inheritance:
   - System.Object

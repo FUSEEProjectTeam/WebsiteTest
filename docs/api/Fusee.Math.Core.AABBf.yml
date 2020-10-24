@@ -43,13 +43,23 @@ items:
   summary: "\nRepresents an axis aligned bounding box.\n"
   example: []
   syntax:
-    content: public struct AABBf
-    content.vb: Public Structure AABBf
+    content: >-
+      [ProtoContract]
+
+      public struct AABBf
+    content.vb: >-
+      <ProtoContract>
+
+      Public Structure AABBf
   inheritedMembers:
   - System.ValueType.ToString
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - struct
@@ -77,10 +87,22 @@ items:
   summary: "\nThe minimum values of the axis aligned bounding box in x, y and z direction\n"
   example: []
   syntax:
-    content: public float3 min
+    content: >-
+      [ProtoMember(1)]
+
+      public float3 min
     return:
       type: Fusee.Math.Core.float3
-    content.vb: Public min As float3
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public min As float3
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -106,10 +128,22 @@ items:
   summary: "\nThe maximum values of the axis aligned bounding box in x, y and z direction\n"
   example: []
   syntax:
-    content: public float3 max
+    content: >-
+      [ProtoMember(2)]
+
+      public float3 max
     return:
       type: Fusee.Math.Core.float3
-    content.vb: Public max As float3
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public max As float3
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:

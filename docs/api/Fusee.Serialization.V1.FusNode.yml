@@ -30,9 +30,15 @@ items:
   summary: "\nNodes are the building blocks for scene graphs within .fus files.\n"
   example: []
   syntax:
-    content: 'public class FusNode : INode'
+    content: >-
+      [ProtoContract]
+
+      public class FusNode : INode
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusNode
+
           Implements INode
   inheritance:
   - System.Object
@@ -46,6 +52,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -73,10 +83,22 @@ items:
   summary: "\nThe name of the node. Often used to identify individual parts of a scene.\n"
   example: []
   syntax:
-    content: public string Name
+    content: >-
+      [ProtoMember(1)]
+
+      public string Name
     return:
       type: System.String
-    content.vb: Public Name As String
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Name As String
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -102,10 +124,22 @@ items:
   summary: "\nIndices into the <xref href=\"Fusee.Serialization.V1.FusScene\" data-throw-if-not-resolved=\"false\"></xref>&apos;s list of components that make up this node.\n"
   example: []
   syntax:
-    content: public List<int> Components
+    content: >-
+      [ProtoMember(2)]
+
+      public List<int> Components
     return:
       type: System.Collections.Generic.List{System.Int32}
-    content.vb: Public Components As List(Of Integer)
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Components As List(Of Integer)
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -131,10 +165,22 @@ items:
   summary: "\nThis node&apos;s children. Possibly empty.\n"
   example: []
   syntax:
-    content: public List<FusNode> Children
+    content: >-
+      [ProtoMember(3)]
+
+      public List<FusNode> Children
     return:
       type: System.Collections.Generic.List{Fusee.Serialization.V1.FusNode}
-    content.vb: Public Children As List(Of FusNode)
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public Children As List(Of FusNode)
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:

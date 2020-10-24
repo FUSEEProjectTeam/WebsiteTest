@@ -246,6 +246,7 @@ items:
     content: 'public struct ColorUint : IEquatable<ColorUint>, IFormattable'
     content.vb: >-
       Public Structure ColorUint
+
           Implements IEquatable(Of ColorUint), IFormattable
   implements:
   - System.IEquatable{Fusee.Base.Common.ColorUint}

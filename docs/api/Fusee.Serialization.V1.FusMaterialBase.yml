@@ -33,10 +33,25 @@ items:
   summary: "\nMaterial definition. If contained within a node, the node&apos;s (and potentially child node&apos;s)\ngeometry is rendered with the specifies material.\nThis base material does not contain any information about specular reflection calculation.\n"
   example: []
   syntax:
-    content: 'public class FusMaterialBase : FusComponent, IComponent, IEquatable<FusMaterialBase>'
+    content: >-
+      [ProtoContract]
+
+      [ProtoInclude(200, typeof(FusMaterialStandard))]
+
+      [ProtoInclude(201, typeof(FusMaterialBRDF))]
+
+      public class FusMaterialBase : FusComponent, IComponent, IEquatable<FusMaterialBase>
     content.vb: >-
+      <ProtoContract>
+
+      <ProtoInclude(200, GetType(FusMaterialStandard))>
+
+      <ProtoInclude(201, GetType(FusMaterialBRDF))>
+
       Public Class FusMaterialBase
+
           Inherits FusComponent
+
           Implements IComponent, IEquatable(Of FusMaterialBase)
   inheritance:
   - System.Object
@@ -54,6 +69,24 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 200
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusMaterialStandard
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 201
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusMaterialBRDF
   modifiers.csharp:
   - public
   - class
@@ -115,10 +148,22 @@ items:
   summary: "\nThe albedo channel.\n"
   example: []
   syntax:
-    content: public AlbedoChannel Albedo
+    content: >-
+      [ProtoMember(1)]
+
+      public AlbedoChannel Albedo
     return:
       type: Fusee.Serialization.V1.AlbedoChannel
-    content.vb: Public Albedo As AlbedoChannel
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Albedo As AlbedoChannel
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -178,10 +223,22 @@ items:
   summary: "\nThe emissive channel.\n"
   example: []
   syntax:
-    content: public AlbedoChannel Emissive
+    content: >-
+      [ProtoMember(3)]
+
+      public AlbedoChannel Emissive
     return:
       type: Fusee.Serialization.V1.AlbedoChannel
-    content.vb: Public Emissive As AlbedoChannel
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public Emissive As AlbedoChannel
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -241,10 +298,22 @@ items:
   summary: "\nThe normal map channel.\n"
   example: []
   syntax:
-    content: public NormapMapChannel NormalMap
+    content: >-
+      [ProtoMember(4)]
+
+      public NormapMapChannel NormalMap
     return:
       type: Fusee.Serialization.V1.NormapMapChannel
-    content.vb: Public NormalMap As NormapMapChannel
+    content.vb: >-
+      <ProtoMember(4)>
+
+      Public NormalMap As NormapMapChannel
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
   modifiers.csharp:
   - public
   modifiers.vb:

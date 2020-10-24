@@ -30,7 +30,9 @@ items:
     content: 'public class CylinderShapeImp : CollisonShapeImp, ICylinderShapeImp, ICollisionShapeImp'
     content.vb: >-
       Public Class CylinderShapeImp
+
           Inherits CollisonShapeImp
+
           Implements ICylinderShapeImp, ICollisionShapeImp
   inheritance:
   - System.Object

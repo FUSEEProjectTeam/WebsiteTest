@@ -29,10 +29,17 @@ items:
   summary: "\nMaterial definition. If contained within a node, the node&apos;s (and potentially child node&apos;s)\ngeometry is rendered with the specifies material.\nThe BRDF material contains information needed for a physically-based lighting calculation using a bidirectional reflectance distribution function.\n"
   example: []
   syntax:
-    content: 'public class FusMaterialBRDF : FusMaterialBase, IComponent, IEquatable<FusMaterialBase>, IEquatable<FusMaterialBRDF>'
+    content: >-
+      [ProtoContract]
+
+      public class FusMaterialBRDF : FusMaterialBase, IComponent, IEquatable<FusMaterialBase>, IEquatable<FusMaterialBRDF>
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusMaterialBRDF
+
           Inherits FusMaterialBase
+
           Implements IComponent, IEquatable(Of FusMaterialBase), IEquatable(Of FusMaterialBRDF)
   inheritance:
   - System.Object
@@ -56,6 +63,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -116,10 +127,22 @@ items:
   summary: "\nContains all variables for a physically-based lighting calculation using a bidirectional reflectance distribution function.\n"
   example: []
   syntax:
-    content: public BRDFChannel BRDF
+    content: >-
+      [ProtoMember(2)]
+
+      public BRDFChannel BRDF
     return:
       type: Fusee.Serialization.V1.BRDFChannel
-    content.vb: Public BRDF As BRDFChannel
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public BRDF As BRDFChannel
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:

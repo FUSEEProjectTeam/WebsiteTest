@@ -28,6 +28,7 @@ items:
     content: 'public interface IWritableTexture : ITextureBase, IImageBase, IDisposable'
     content.vb: >-
       Public Interface IWritableTexture
+
           Inherits ITextureBase
   inheritedMembers:
   - Fusee.Engine.Common.ITextureBase.TextureChanged

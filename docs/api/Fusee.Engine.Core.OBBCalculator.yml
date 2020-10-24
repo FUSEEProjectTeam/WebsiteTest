@@ -34,6 +34,7 @@ items:
     content: 'public class OBBCalculator : Visitor<SceneNode, SceneComponent>'
     content.vb: >-
       Public Class OBBCalculator
+
           Inherits Visitor(Of SceneNode, SceneComponent)
   inheritance:
   - System.Object

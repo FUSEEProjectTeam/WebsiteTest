@@ -24,8 +24,18 @@ items:
   summary: "\nThe available render modes.\n"
   example: []
   syntax:
-    content: public enum CanvasRenderMode
-    content.vb: Public Enum CanvasRenderMode
+    content: >-
+      [ProtoContract]
+
+      public enum CanvasRenderMode
+    content.vb: >-
+      <ProtoContract>
+
+      Public Enum CanvasRenderMode
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - enum

@@ -31,10 +31,17 @@ items:
   summary: "\nContains light information. If contained in a node, the node serves as a light object.\nIf possible, avoid adding or removing these at runtime, instead create all you need and set active or inactive.\nThe Position and Direction of a Light gets calculated internally, depending on the parent transform components, found in the scene graph.\n"
   example: []
   syntax:
-    content: 'public class FusLight : FusComponent, IComponent'
+    content: >-
+      [ProtoContract]
+
+      public class FusLight : FusComponent, IComponent
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusLight
+
           Inherits FusComponent
+
           Implements IComponent
   inheritance:
   - System.Object
@@ -50,6 +57,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -77,10 +88,22 @@ items:
   summary: "\nRepresents the light status.\n"
   example: []
   syntax:
-    content: public bool Active
+    content: >-
+      [ProtoMember(1)]
+
+      public bool Active
     return:
       type: System.Boolean
-    content.vb: Public Active As Boolean
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Active As Boolean
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -106,10 +129,22 @@ items:
   summary: "\nRepresents the color.\n"
   example: []
   syntax:
-    content: public float4 Color
+    content: >-
+      [ProtoMember(2)]
+
+      public float4 Color
     return:
       type: Fusee.Math.Core.float4
-    content.vb: Public Color As float4
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Color As float4
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -135,10 +170,22 @@ items:
   summary: "\nRepresents the attenuation of the light.\n"
   example: []
   syntax:
-    content: public float MaxDistance
+    content: >-
+      [ProtoMember(3)]
+
+      public float MaxDistance
     return:
       type: System.Single
-    content.vb: Public MaxDistance As Single
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public MaxDistance As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -164,10 +211,22 @@ items:
   summary: "\nRepresents the strength of the light (non-physically representation of the brightness).\nShould be a value between 0 and 1.\n"
   example: []
   syntax:
-    content: public float Strength
+    content: >-
+      [ProtoMember(4)]
+
+      public float Strength
     return:
       type: System.Single
-    content.vb: Public Strength As Single
+    content.vb: >-
+      <ProtoMember(4)>
+
+      Public Strength As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -193,10 +252,22 @@ items:
   summary: "\nRepresents the type of the light.\n"
   example: []
   syntax:
-    content: public LightType Type
+    content: >-
+      [ProtoMember(5)]
+
+      public LightType Type
     return:
       type: Fusee.Base.Common.LightType
-    content.vb: Public Type As LightType
+    content.vb: >-
+      <ProtoMember(5)>
+
+      Public Type As LightType
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 5
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -222,10 +293,22 @@ items:
   summary: "\nRepresents the outer spot angle of the light.\n"
   example: []
   syntax:
-    content: public float OuterConeAngle
+    content: >-
+      [ProtoMember(6)]
+
+      public float OuterConeAngle
     return:
       type: System.Single
-    content.vb: Public OuterConeAngle As Single
+    content.vb: >-
+      <ProtoMember(6)>
+
+      Public OuterConeAngle As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 6
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -251,10 +334,22 @@ items:
   summary: "\nRepresents the spot inner angle of the light.\n"
   example: []
   syntax:
-    content: public float InnerConeAngle
+    content: >-
+      [ProtoMember(7)]
+
+      public float InnerConeAngle
     return:
       type: System.Single
-    content.vb: Public InnerConeAngle As Single
+    content.vb: >-
+      <ProtoMember(7)>
+
+      Public InnerConeAngle As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 7
   modifiers.csharp:
   - public
   modifiers.vb:

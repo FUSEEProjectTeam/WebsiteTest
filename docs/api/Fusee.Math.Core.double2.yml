@@ -75,6 +75,7 @@ items:
     content: 'public struct double2 : IEquatable<double2>'
     content.vb: >-
       Public Structure double2
+
           Implements IEquatable(Of double2)
   implements:
   - System.IEquatable{Fusee.Math.Core.double2}

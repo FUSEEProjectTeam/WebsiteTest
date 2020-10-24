@@ -28,7 +28,9 @@ items:
     content: 'public class SphereShapeImp : CollisonShapeImp, ISphereShapeImp, ICollisionShapeImp'
     content.vb: >-
       Public Class SphereShapeImp
+
           Inherits CollisonShapeImp
+
           Implements ISphereShapeImp, ICollisionShapeImp
   inheritance:
   - System.Object

@@ -28,6 +28,7 @@ items:
     content: 'public class SceneInteractionHandler : Visitor<SceneNode, SceneComponent>'
     content.vb: >-
       Public Class SceneInteractionHandler
+
           Inherits Visitor(Of SceneNode, SceneComponent)
   inheritance:
   - System.Object

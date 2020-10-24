@@ -25,6 +25,7 @@ items:
     content: 'public interface IWritableCubeMap : IWritableTexture, ITextureBase, IImageBase, IDisposable'
     content.vb: >-
       Public Interface IWritableCubeMap
+
           Inherits IWritableTexture
   inheritedMembers:
   - Fusee.Engine.Common.IWritableTexture.TextureType

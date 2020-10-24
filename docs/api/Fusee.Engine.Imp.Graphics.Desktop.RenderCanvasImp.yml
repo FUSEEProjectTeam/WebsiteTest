@@ -6,7 +6,7 @@ items:
   parent: Fusee.Engine.Imp.Graphics.Desktop
   children:
   - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor
-  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(Icon)
+  - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(System.Drawing.Icon)
   - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(System.Int32,System.Int32)
   - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.Caption
   - Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.CloseGameWindow
@@ -48,7 +48,9 @@ items:
     content: 'public class RenderCanvasImp : RenderCanvasImpBase, IRenderCanvasImp'
     content.vb: >-
       Public Class RenderCanvasImp
+
           Inherits RenderCanvasImpBase
+
           Implements IRenderCanvasImp
   inheritance:
   - System.Object
@@ -492,16 +494,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(Icon)
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(Icon)
-  id: '#ctor(Icon)'
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(System.Drawing.Icon)
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(System.Drawing.Icon)
+  id: '#ctor(System.Drawing.Icon)'
   parent: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp
   langs:
   - csharp
   - vb
   name: RenderCanvasImp(Icon)
   nameWithType: RenderCanvasImp.RenderCanvasImp(Icon)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.RenderCanvasImp(Icon)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.RenderCanvasImp(System.Drawing.Icon)
   type: Constructor
   source:
     id: .ctor
@@ -516,7 +518,7 @@ items:
     content: public RenderCanvasImp(Icon appIcon)
     parameters:
     - id: appIcon
-      type: Icon
+      type: System.Drawing.Icon
       description: The icon for the render window.
     content.vb: Public Sub New(appIcon As Icon)
   overload: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor*
@@ -863,7 +865,7 @@ items:
       type: System.Int32
       description: The height of the window, and therefore image to render.
     return:
-      type: Bitmap
+      type: System.Drawing.Bitmap
       description: ''
     content.vb: Public Function ShootCurrentFrame(width As Integer, height As Integer) As Bitmap
   overload: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.ShootCurrentFrame*
@@ -1502,11 +1504,19 @@ references:
   name: RenderCanvasImp
   nameWithType: RenderCanvasImp.RenderCanvasImp
   fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.RenderCanvasImp
-- uid: Icon
+- uid: System.Drawing.Icon
+  commentId: T:System.Drawing.Icon
+  parent: System.Drawing
   isExternal: true
   name: Icon
   nameWithType: Icon
-  fullName: Icon
+  fullName: System.Drawing.Icon
+- uid: System.Drawing
+  commentId: N:System.Drawing
+  isExternal: true
+  name: System.Drawing
+  nameWithType: System.Drawing
+  fullName: System.Drawing
 - uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.Dispose*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.Dispose
   name: Dispose
@@ -1820,8 +1830,10 @@ references:
   name: ShootCurrentFrame
   nameWithType: RenderCanvasImp.ShootCurrentFrame
   fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.ShootCurrentFrame
-- uid: Bitmap
+- uid: System.Drawing.Bitmap
+  commentId: T:System.Drawing.Bitmap
+  parent: System.Drawing
   isExternal: true
   name: Bitmap
   nameWithType: Bitmap
-  fullName: Bitmap
+  fullName: System.Drawing.Bitmap

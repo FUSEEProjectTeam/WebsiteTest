@@ -29,7 +29,9 @@ items:
     content: 'public class ChildList : Collection<SceneNode>, IList<SceneNode>, ICollection<SceneNode>, IReadOnlyList<SceneNode>, IReadOnlyCollection<SceneNode>, IEnumerable<SceneNode>, IList, ICollection, IEnumerable'
     content.vb: >-
       Public Class ChildList
+
           Inherits Collection(Of SceneNode)
+
           Implements IList(Of SceneNode), ICollection(Of SceneNode), IReadOnlyList(Of SceneNode), IReadOnlyCollection(Of SceneNode), IEnumerable(Of SceneNode), IList, ICollection, IEnumerable
   inheritance:
   - System.Object

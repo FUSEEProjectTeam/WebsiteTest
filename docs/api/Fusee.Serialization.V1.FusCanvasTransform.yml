@@ -27,10 +27,17 @@ items:
   summary: "\nBuilding block to set up User Interface hierarchies.\nUse this as your first element in the Interface hierarchy.\n"
   example: []
   syntax:
-    content: 'public class FusCanvasTransform : FusComponent, IComponent'
+    content: >-
+      [ProtoContract]
+
+      public class FusCanvasTransform : FusComponent, IComponent
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusCanvasTransform
+
           Inherits FusComponent
+
           Implements IComponent
   inheritance:
   - System.Object
@@ -46,6 +53,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -73,10 +84,22 @@ items:
   summary: "\nThe canvas render mode.  Is the UI on this canvas placed in the 3D world or overlaid onto the 2D screen. \n"
   example: []
   syntax:
-    content: public CanvasRenderMode CanvasRenderMode
+    content: >-
+      [ProtoMember(1)]
+
+      public CanvasRenderMode CanvasRenderMode
     return:
       type: Fusee.Serialization.V1.CanvasRenderMode
-    content.vb: Public CanvasRenderMode As CanvasRenderMode
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public CanvasRenderMode As CanvasRenderMode
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -102,10 +125,22 @@ items:
   summary: "\nAbsolute size of the Canvas. First element in the interface hierarchy.\n"
   example: []
   syntax:
-    content: public MinMaxRect Size
+    content: >-
+      [ProtoMember(2)]
+
+      public MinMaxRect Size
     return:
       type: Fusee.Math.Core.MinMaxRect
-    content.vb: Public Size As MinMaxRect
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Size As MinMaxRect
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -131,10 +166,22 @@ items:
   summary: "\nAbsolute size of the Canvas. First element in the interface hierarchy.\n"
   example: []
   syntax:
-    content: public MinMaxRect ScreenSpaceSize
+    content: >-
+      [ProtoMember(3)]
+
+      public MinMaxRect ScreenSpaceSize
     return:
       type: Fusee.Math.Core.MinMaxRect
-    content.vb: Public ScreenSpaceSize As MinMaxRect
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public ScreenSpaceSize As MinMaxRect
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -160,10 +207,22 @@ items:
   summary: "\nScale factor for the user given offsets that define the sizes if the canvas&apos; child elements. This becomes important when rendering in SCREEN mode.        \n"
   example: []
   syntax:
-    content: public float2 Scale
+    content: >-
+      [ProtoMember(4)]
+
+      public float2 Scale
     return:
       type: Fusee.Math.Core.float2
-    content.vb: Public Scale As float2
+    content.vb: >-
+      <ProtoMember(4)>
+
+      Public Scale As float2
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
   modifiers.csharp:
   - public
   modifiers.vb:

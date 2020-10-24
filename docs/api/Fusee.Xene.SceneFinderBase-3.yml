@@ -37,6 +37,7 @@ items:
       description: The concrete base type for components used in the scene graph being traversed.
     content.vb: >-
       Public Class SceneFinderBase(Of TSceneElementType, TNode As {Class, INode}, TComponent As {Class, IComponent})
+
           Inherits Visitor(Of TNode, TComponent)
   inheritance:
   - System.Object

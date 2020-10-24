@@ -31,10 +31,17 @@ items:
   summary: "\nNot yet completely implemented - Projection serialization currently not used.\nTODO (MR): check with/against blender\n"
   example: []
   syntax:
-    content: 'public class FusCamera : FusComponent, IComponent'
+    content: >-
+      [ProtoContract]
+
+      public class FusCamera : FusComponent, IComponent
     content.vb: >-
+      <ProtoContract>
+
       Public Class FusCamera
+
           Inherits FusComponent
+
           Implements IComponent
   inheritance:
   - System.Object
@@ -50,6 +57,10 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - class
@@ -77,10 +88,22 @@ items:
   summary: "\nIf set to false, the color bit won&apos;t be cleared before this camera is rendered.\n"
   example: []
   syntax:
-    content: public bool ClearColor
+    content: >-
+      [ProtoMember(1)]
+
+      public bool ClearColor
     return:
       type: System.Boolean
-    content.vb: Public ClearColor As Boolean
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public ClearColor As Boolean
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -106,10 +129,22 @@ items:
   summary: "\nIf set to false, the depth bit won&apos;t be cleared before this camera is rendered.\n"
   example: []
   syntax:
-    content: public bool ClearDepth
+    content: >-
+      [ProtoMember(2)]
+
+      public bool ClearDepth
     return:
       type: System.Boolean
-    content.vb: Public ClearDepth As Boolean
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public ClearDepth As Boolean
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -135,10 +170,22 @@ items:
   summary: "\nIf there is more than one CameraComponent in one scene, the rendered output of the camera with a higher layer will be drawn above the output of a camera with a lower layer.        \n"
   example: []
   syntax:
-    content: public int Layer
+    content: >-
+      [ProtoMember(3)]
+
+      public int Layer
     return:
       type: System.Int32
-    content.vb: Public Layer As Integer
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public Layer As Integer
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -164,10 +211,22 @@ items:
   summary: "\nThe background color for this camera&apos;s viewport.\n"
   example: []
   syntax:
-    content: public float4 BackgroundColor
+    content: >-
+      [ProtoMember(4)]
+
+      public float4 BackgroundColor
     return:
       type: Fusee.Math.Core.float4
-    content.vb: Public BackgroundColor As float4
+    content.vb: >-
+      <ProtoMember(4)>
+
+      Public BackgroundColor As float4
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -193,10 +252,22 @@ items:
   summary: "\nYou can choose from a set of projection methods. This will automatically calculate the correct projection matrix.\n"
   example: []
   syntax:
-    content: public ProjectionMethod ProjectionMethod
+    content: >-
+      [ProtoMember(5)]
+
+      public ProjectionMethod ProjectionMethod
     return:
       type: Fusee.Serialization.V1.ProjectionMethod
-    content.vb: Public ProjectionMethod As ProjectionMethod
+    content.vb: >-
+      <ProtoMember(5)>
+
+      Public ProjectionMethod As ProjectionMethod
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 5
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -222,10 +293,22 @@ items:
   summary: "\nThe vertical (y) field of view in radians.\n"
   example: []
   syntax:
-    content: public float Fov
+    content: >-
+      [ProtoMember(6)]
+
+      public float Fov
     return:
       type: System.Single
-    content.vb: Public Fov As Single
+    content.vb: >-
+      <ProtoMember(6)>
+
+      Public Fov As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 6
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -251,10 +334,22 @@ items:
   summary: "\nDistance to the near and far clipping planes.\n"
   example: []
   syntax:
-    content: public float2 ClippingPlanes
+    content: >-
+      [ProtoMember(7)]
+
+      public float2 ClippingPlanes
     return:
       type: Fusee.Math.Core.float2
-    content.vb: Public ClippingPlanes As float2
+    content.vb: >-
+      <ProtoMember(7)>
+
+      Public ClippingPlanes As float2
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 7
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -280,10 +375,22 @@ items:
   summary: "\nThe viewport in percent [0, 100].\nx: start\ny: end\nz: width\nw: height\n"
   example: []
   syntax:
-    content: public float4 Viewport
+    content: >-
+      [ProtoMember(8)]
+
+      public float4 Viewport
     return:
       type: Fusee.Math.Core.float4
-    content.vb: Public Viewport As float4
+    content.vb: >-
+      <ProtoMember(8)>
+
+      Public Viewport As float4
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 8
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -309,10 +416,22 @@ items:
   summary: "\nA camera is active by default. Set this to false to deactivate it. \n"
   example: []
   syntax:
-    content: public bool Active
+    content: >-
+      [ProtoMember(9)]
+
+      public bool Active
     return:
       type: System.Boolean
-    content.vb: Public Active As Boolean
+    content.vb: >-
+      <ProtoMember(9)>
+
+      Public Active As Boolean
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 9
   modifiers.csharp:
   - public
   modifiers.vb:

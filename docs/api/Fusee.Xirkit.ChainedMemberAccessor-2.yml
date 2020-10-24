@@ -33,6 +33,7 @@ items:
       description: The type of the object referenced by the innermost member of the access chain.
     content.vb: >-
       Public Class ChainedMemberAccessor(Of TPin, TObj)
+
           Implements IMemberAccessor(Of TPin)
   inheritance:
   - System.Object

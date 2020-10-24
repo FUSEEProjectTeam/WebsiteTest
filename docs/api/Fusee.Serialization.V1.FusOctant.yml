@@ -35,7 +35,9 @@ items:
     content: 'public class FusOctant : FusComponent, IComponent'
     content.vb: >-
       Public Class FusOctant
+
           Inherits FusComponent
+
           Implements IComponent
   seealso:
   - linkId: Fusee.Serialization.V1.FusComponent
@@ -81,10 +83,22 @@ items:
   summary: "\nDefines the position in the parent octant.\n"
   example: []
   syntax:
-    content: public int PosInParent
+    content: >-
+      [ProtoMember(0)]
+
+      public int PosInParent
     return:
       type: System.Int32
-    content.vb: Public PosInParent As Integer
+    content.vb: >-
+      <ProtoMember(0)>
+
+      Public PosInParent As Integer
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 0
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -110,10 +124,22 @@ items:
   summary: "\nThe level of the octree the node lies in.\n"
   example: []
   syntax:
-    content: public int Level
+    content: >-
+      [ProtoMember(1)]
+
+      public int Level
     return:
       type: System.Int32
-    content.vb: Public Level As Integer
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Level As Integer
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -139,10 +165,22 @@ items:
   summary: "\nUnique identifier of the node.\n"
   example: []
   syntax:
-    content: public Guid Guid
+    content: >-
+      [ProtoMember(2)]
+
+      public Guid Guid
     return:
       type: System.Guid
-    content.vb: Public Guid As Guid
+    content.vb: >-
+      <ProtoMember(2)>
+
+      Public Guid As Guid
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -168,10 +206,22 @@ items:
   summary: "\nCenter in world space.\n"
   example: []
   syntax:
-    content: public double3 Center
+    content: >-
+      [ProtoMember(3)]
+
+      public double3 Center
     return:
       type: Fusee.Math.Core.double3
-    content.vb: Public Center As double3
+    content.vb: >-
+      <ProtoMember(3)>
+
+      Public Center As double3
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -197,10 +247,22 @@ items:
   summary: "\nLength of on side of the cubical node.\n"
   example: []
   syntax:
-    content: public double Size
+    content: >-
+      [ProtoMember(4)]
+
+      public double Size
     return:
       type: System.Double
-    content.vb: Public Size As Double
+    content.vb: >-
+      <ProtoMember(4)>
+
+      Public Size As Double
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -226,10 +288,22 @@ items:
   summary: "\nDefines if the node is a leaf node.\n"
   example: []
   syntax:
-    content: public bool IsLeaf
+    content: >-
+      [ProtoMember(5)]
+
+      public bool IsLeaf
     return:
       type: System.Boolean
-    content.vb: Public IsLeaf As Boolean
+    content.vb: >-
+      <ProtoMember(5)>
+
+      Public IsLeaf As Boolean
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 5
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -255,10 +329,22 @@ items:
   summary: "\nDefines if the node was loaded into memory.\n"
   example: []
   syntax:
-    content: public bool WasLoaded
+    content: >-
+      [ProtoMember(6)]
+
+      public bool WasLoaded
     return:
       type: System.Boolean
-    content.vb: Public WasLoaded As Boolean
+    content.vb: >-
+      <ProtoMember(6)>
+
+      Public WasLoaded As Boolean
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 6
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -284,10 +370,22 @@ items:
   summary: "\nNumber of point cloud points, this node holds.\n"
   example: []
   syntax:
-    content: public int NumberOfPointsInNode
+    content: >-
+      [ProtoMember(7)]
+
+      public int NumberOfPointsInNode
     return:
       type: System.Int32
-    content.vb: Public NumberOfPointsInNode As Integer
+    content.vb: >-
+      <ProtoMember(7)>
+
+      Public NumberOfPointsInNode As Integer
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 7
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -313,10 +411,22 @@ items:
   summary: "\nTBD\n"
   example: []
   syntax:
-    content: public int PosInHierarchyTex
+    content: >-
+      [ProtoMember(8)]
+
+      public int PosInHierarchyTex
     return:
       type: System.Int32
-    content.vb: Public PosInHierarchyTex As Integer
+    content.vb: >-
+      <ProtoMember(8)>
+
+      Public PosInHierarchyTex As Integer
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 8
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -342,10 +452,22 @@ items:
   summary: "\nTBD\n"
   example: []
   syntax:
-    content: public byte VisibleChildIndices
+    content: >-
+      [ProtoMember(9)]
+
+      public byte VisibleChildIndices
     return:
       type: System.Byte
-    content.vb: Public VisibleChildIndices As Byte
+    content.vb: >-
+      <ProtoMember(9)>
+
+      Public VisibleChildIndices As Byte
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 9
   modifiers.csharp:
   - public
   modifiers.vb:

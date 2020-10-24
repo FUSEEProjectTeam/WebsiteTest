@@ -23,8 +23,38 @@ items:
   summary: "\nBase class to hold a single animation key. Derived types specify the type of the value\ncontrolled by the keys.\n"
   example: []
   syntax:
-    content: public class FusAnimationKeyBase
-    content.vb: Public Class FusAnimationKeyBase
+    content: >-
+      [ProtoContract]
+
+      [ProtoInclude(100, typeof(FusAnimationKeyDouble))]
+
+      [ProtoInclude(101, typeof(FusAnimationKeyInt))]
+
+      [ProtoInclude(102, typeof(FusAnimationKeyFloat))]
+
+      [ProtoInclude(103, typeof(FusAnimationKeyFloat2))]
+
+      [ProtoInclude(104, typeof(FusAnimationKeyFloat3))]
+
+      [ProtoInclude(105, typeof(FusAnimationKeyFloat4))]
+
+      public class FusAnimationKeyBase
+    content.vb: >-
+      <ProtoContract>
+
+      <ProtoInclude(100, GetType(FusAnimationKeyDouble))>
+
+      <ProtoInclude(101, GetType(FusAnimationKeyInt))>
+
+      <ProtoInclude(102, GetType(FusAnimationKeyFloat))>
+
+      <ProtoInclude(103, GetType(FusAnimationKeyFloat2))>
+
+      <ProtoInclude(104, GetType(FusAnimationKeyFloat3))>
+
+      <ProtoInclude(105, GetType(FusAnimationKeyFloat4))>
+
+      Public Class FusAnimationKeyBase
   inheritance:
   - System.Object
   derivedClasses:
@@ -42,6 +72,52 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: ProtoBuf.ProtoContractAttribute
+    ctor: ProtoBuf.ProtoContractAttribute.#ctor
+    arguments: []
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 100
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusAnimationKeyDouble
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 101
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusAnimationKeyInt
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 102
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusAnimationKeyFloat
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 103
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusAnimationKeyFloat2
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 104
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusAnimationKeyFloat3
+  - type: ProtoBuf.ProtoIncludeAttribute
+    ctor: ProtoBuf.ProtoIncludeAttribute.#ctor(System.Int32,System.Type)
+    arguments:
+    - type: System.Int32
+      value: 105
+    - type: System.Type
+      value: Fusee.Serialization.V1.FusAnimationKeyFloat4
   modifiers.csharp:
   - public
   - class
@@ -69,10 +145,22 @@ items:
   summary: "\nThe position of the key on the timeline.\n"
   example: []
   syntax:
-    content: public float Time
+    content: >-
+      [ProtoMember(1)]
+
+      public float Time
     return:
       type: System.Single
-    content.vb: Public Time As Single
+    content.vb: >-
+      <ProtoMember(1)>
+
+      Public Time As Single
+  attributes:
+  - type: ProtoBuf.ProtoMemberAttribute
+    ctor: ProtoBuf.ProtoMemberAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
   modifiers.csharp:
   - public
   modifiers.vb:
