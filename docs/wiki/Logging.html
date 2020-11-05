@@ -33,6 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
+          	          <a href="https://github.com/FUSEEProjectTeam/Fusee" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;z-index:1000;" ;="" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
               
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.svg" alt="">
@@ -67,11 +68,8 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-
-<blockquote>
-<p>⚠️ <strong>Pre-Release Content</strong></p>
-</blockquote>
 <h1 id="logging">Logging</h1>
+
 <p>Logging is implemented within <code>Fusee.Base.Core.Diagnostics.cs</code>.</p>
 <ul>
 <li><a href="#1-log-levels">1. Log levels</a>
@@ -157,7 +155,7 @@ catch(Exception ex)
 </ul>
 <p>Console and debug output are enabled by default. The file target is disabled and can be activated with <code>Diagnostics.LogToTextFile(bool log, string logFileName = &quot;&quot;)</code>.</p>
 <h2 id="4-targets-and-severity-levels-with-different-build-configurations">4. Targets and severity levels with different build configurations</h2>
-<p>Within a <em>debug build</em> every log message is displayed for every available target.
+<p>Within a <em>debug build</em>, every log message is displayed for every available target.
 A <em>release build</em> also displays every log message per default but the <code>Diagnostics.Debug()</code> method is removed completely.</p>
 <p>Furthermore, one can adapt every minimal log level for every target with the following three methods:</p>
 <ul>

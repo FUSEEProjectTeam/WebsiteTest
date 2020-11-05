@@ -11,7 +11,7 @@ weight: 10
 -------------
 
 After a successful
-[FUSEE Installation](../install-fusee/) you might want to create your first FUSEE App in 
+[FUSEE Installation](../getting-started/install-fusee.html) you might want to create your first FUSEE App in 
 Visual Studio Code.
 
 

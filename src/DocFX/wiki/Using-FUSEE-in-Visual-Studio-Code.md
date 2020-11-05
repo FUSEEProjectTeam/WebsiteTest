@@ -1,6 +1,19 @@
-  > ⚠️ **Pre-Release Content**
-
 # TLDR
+
+## Your own PC
+
+- Install .NET Core 3.1 (https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- Install Visual Studio Code (https://code.visualstudio.com/)
+- Install the C# extension for Visul Studio Code (https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+
+```
+dotnet tool install -g Fusee.Tools.CmdLine
+dotnet new -i Fusee.Template.dotnet
+fusee install
+```
+⚠️ If `fusee install` throws an error about the Blender installation, you can either direct it by using the `-i` argument, or you can install the Blender addon manually by using the `io_export_fus.zip` in the [latest release](https://github.com/FUSEEProjectTeam/Fusee/releases).
+If you don't have Blender installed just ignore this error, Fusee will run perfectly fine without it. Blender is just used to create/export 3D-models for the use in Fusee.
+
 ## HFU PC
 
 ```
@@ -12,22 +25,10 @@ fusee install
 
 Run these commands every time you log onto a machine.
 
-## Your own PC
-
-- Install .NET Core 3.0 (https://dotnet.microsoft.com/download/dotnet-core/3.0)
-- Install Visual Studio Code (https://code.visualstudio.com/)
-- Install the C# extension for Visul Studio Code (https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
-
-```
-dotnet tool install -g Fusee.Tools.CmdLine
-dotnet new -i Fusee.Template.dotnet
-fusee install
-```
-
 # Prerequisite
-## .NET Core 3.0
+## .NET Core 3.1
 
-- Install .NET Core 3.0 (https://dotnet.microsoft.com/download/dotnet-core/3.0)
+- Install .NET Core 3.1 (https://dotnet.microsoft.com/download/dotnet-core/3.1)
 - Install Visual Studio Code (https://code.visualstudio.com/)
 - Install the C# extension for Visul Studio Code (https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 
@@ -86,6 +87,8 @@ Run `dotnet add package Fusee.Desktop` in the same directory as the csproj file.
 Install Fusee command line tool.
 
 `fusee install -b`
+
+Alternatively you can download the latest Blender addon directly from our [latest release](https://github.com/FUSEEProjectTeam/Fusee/releases), the file you want is io_export_fus.zip. Install it through the [Blender addon dialog](https://docs.blender.org/manual/en/latest/editors/preferences/addons.html).
 
 ### Uninstall
 

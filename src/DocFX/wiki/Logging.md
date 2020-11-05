@@ -1,5 +1,3 @@
-  > ⚠️ **Pre-Release Content**  
-
 # Logging
 
 Logging is implemented within `Fusee.Base.Core.Diagnostics.cs`.
@@ -97,7 +95,7 @@ Console and debug output are enabled by default. The file target is disabled and
 
 ## 4. Targets and severity levels with different build configurations
 
-Within a _debug build_ every log message is displayed for every available target.
+Within a _debug build_, every log message is displayed for every available target.
 A _release build_ also displays every log message per default but the `Diagnostics.Debug()` method is removed completely.
 
 Furthermore, one can adapt every minimal log level for every target with the following three methods:

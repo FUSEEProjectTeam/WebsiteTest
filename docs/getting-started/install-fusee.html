@@ -33,6 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
+          	          <a href="https://github.com/FUSEEProjectTeam/Fusee" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;z-index:1000;" ;="" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
               
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.svg" alt="">
@@ -74,7 +75,7 @@
 </blockquote>
 <hr>
 <p>Before following the FUSEE installation instructions on this page, make sure all
-<a href="../necessary-tools/">Necessary Tools</a> are installed.</p>
+<a href="../getting-started/necessary-tools.html">Necessary Tools</a> are installed.</p>
 <h2 id="installing">Installing</h2>
 <p><code>dotnet tool install -g Fusee.Tools.CmdLine</code></p>
 <p>On HFU Pcs you in addition have to <code>set PATH=%PATH%;%USERPROFILE%\.dotnet\tools</code></p>
@@ -84,24 +85,19 @@
 <p><code>dotnet tool update -g Fusee.Tools.CmdLine</code></p>
 <h2 id="usage">Usage</h2>
 <p><code>fusee</code> and follow the help text.</p>
-<h2 id="install-blender-add-on">Install Blender Add-on</h2>
-<p><code>fusee install</code></p>
-<h3 id="enable-the-fusee-export-add-on-within-blender">Enable the FUSEE Export Add-On within Blender</h3>
-<p>If a Blender installation exists at a typical installation path (e.g. &quot;C:\Program Files\Blender Foundation...&quot;)
-one of the <code>Setup...</code> commands in the previous step already copied the FUSEE Blender Add-on to a directory recognized
-by Blender on start up. Still, the Add-on needs to be activated inside Blender:</p>
+<h3 id="installenable-the-fusee-export-add-on-within-blender">Install/Enable the FUSEE Export Add-On within Blender</h3>
 <ol>
+<li>Download the <a href="https://github.com/FUSEEProjectTeam/Fusee/releases/latest/download/io_export_fus.zip">io_export_fus.zip</a></li>
 <li>Open Blender</li>
-<li>Open the <em>User Preferences</em> window (&quot;File → User Preferences&quot; or <code>Ctrl+Alt+U</code>)</li>
-<li>Open the <em>Add-ons</em> Tab</li>
-<li>Under <em>Supported Level</em> activate <em>Testing</em> (The FUSEE Blender Add-on is still experimental).</li>
-<li>As a result, the Export Add-on should show up as <em>Import-Export: .fus format</em>.
-If the Add-on does not appear in the list, the Blender Add-on installation part of the setup process
-failed.</li>
+<li>Open the <code>User Preferences</code> window (&quot;File → Preferences&quot; or <code>Ctrl+Alt+U</code>)</li>
+<li>Open the <code>Add-ons</code> Tab</li>
+<li>Under Supported Level activate Testing (The FUSEE Blender Add-on is still experimental).</li>
+<li>Click the <code>Install</code> button</li>
+<li>Goto the <code>io_export_fus.zip</code> location and select it</li>
+<li>Click the <code>Install Add-on</code> button</li>
 <li>Activate the Add-on by checking the check-box.</li>
-<li><em>Save User Settings</em> and close the User Preferences window.</li>
-<li>Blender's File-&gt;Export menu should now contain the <em>FUS (.fus)</em> option capable of writing
-FUSEE's .fus file format for 3D Assets.</li>
+<li>Save User Settings and close the User Preferences window.</li>
+<li>Blender's File-&gt;Export menu should now contain the FUS (.fus) option capable of writing FUSEE's .fus file format for 3D Assets.</li>
 </ol>
 <h4 id="screen-cast-enable-the-fusee-export-add-on-within-blender">Screen Cast: Enable the FUSEE Export Add-On within Blender.</h4>
 <p><img src="images/enableblenderaddon.gif" alt="Enable FUSEE Blender Add-On"></p>

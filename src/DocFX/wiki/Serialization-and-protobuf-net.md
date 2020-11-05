@@ -1,5 +1,3 @@
-  > ⚠️ **Pre-Release Content**  
-
 # Serialization
 
 Serialization is the automatic process of transforming data structures or objects into a format that Fusee can store and reconstruct. For this Fusee uses `Google's Protocol Buffers` ([protobuf](https://github.com/protocolbuffers/protobuf)). This is a data format for serialization which utilizes an interface description language that describes the structure of data.
@@ -46,7 +44,7 @@ var scene = FusSceneConverter.ConvertFrom(lowLevelScene);
 
 - Add class to `Fusee.Serialization`
 - Let the class inherit from `FusComponent`
-- Annotate class with the `[ProtoContract]` keyword
+- Annotate the class with the `[ProtoContract]` keyword
 - Annotate each class member which should be serializable with `[ProtoMember(NUMBER)]`, make sure `NUMBER` is a unique number, start with 1, e. g.: `[ProtoMember(1)]`.
 - Go to `FusComponent` and let this class know of the new inheritance by adding `[ProtoInclude(1xx, typeof(Name_of_your_class))]`. Increase the counting accordingly.
 - Add and implement both new visitors inside `FusSceneConverter`
@@ -89,11 +87,11 @@ For inheritance and other advanced concepts study the existing classes and/or vi
 
 ### Conceptual changes from v0.8.0 onward
 
-This paragraph describes the transition from the "old" (no version) FUSEE serialization scheme the new one (V1).
+This paragraph describes the transition from the "old" (no version) FUSEE serialization scheme to the new one (V1).
 
 The "old" serialization utilizes "container" classes and derivatives decorated for serialization with Protobuf .NET's `[ProtoContract]` etc. attributes while at the same time using these classes directly at run-time as scene graph building blocks.
 
-Since Protobuf .NET version 3.* protobuf does not support references within serializable properties. Allowing components within multiple nodes requires this feature. In addition at several places it was necessary to implement between scene graph building blocks used in serialization different from those used during traversal.
+Since Protobuf .NET version 3.* protobuf does not support references within serializable properties. Allowing components within multiple nodes requires this feature. Besides at several places, it was necessary to implement between scene graph building blocks used in serialization different from those used during traversal.
 
 From V1 on, FUSEE's serialization is completely separated from scene graph building blocks in `Fusee.Engine`. As a result, `Fusee.Xene` was completely freed from all references and thus neither references `Fusee.Serialization` nor `Fusee.Engine`.
 

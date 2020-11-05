@@ -10,9 +10,9 @@ Aktuell wird an FUSEE im Rahmen des Forschungsprojekts RaVeNNA 4pi (https://www.
 
 Die folgenden Themen sind allgemein gefasst, sind aber von ihrem Fokus her interessant für die Folgenutzung im Projekt RaVeNNA 4PI. Angesprochen sind alle Studiengänge, Bachelor und Master.
 
-### 1. Konzeption und Gestaltung einer Nutzeroberflächer für eine 3D-Applikation zur Befundung im Medizinischen Bereich.
+### <s>1. Konzeption und Gestaltung einer Nutzeroberflächer für eine 3D-Applikation zur Befundung im Medizinischen Bereich.</s>
 
-Aufgaben:
+<s>Aufgaben:
 
  - Nutzerbefragung zu den Bedarfen an die Nutzeroberfläche.
  - Konzeption und Erstellung von Prototypen (nicht in FUSEE).
@@ -22,7 +22,7 @@ Optional:
 
  - Umsetzung der Prototypen in FUSEE
 
-Der Focus der Arbeit liegt auf der Konzeption und Validierung, die Erstellung der Prototypen kann durch die Betreuer übernommen werden.
+Der Focus der Arbeit liegt auf der Konzeption und Validierung, die Erstellung der Prototypen kann durch die Betreuer übernommen werden.</s>
 
 ### 2. FUSEE als Universal Viewer
 
