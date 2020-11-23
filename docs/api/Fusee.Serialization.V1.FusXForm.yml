@@ -13,8 +13,12 @@ items:
   fullName: Fusee.Serialization.V1.FusXForm
   type: Class
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Serialization/V1/FusXForm.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: FusXForm
-    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\V1\FusXForm.cs
+    path: src/Fusee/src/Serialization/V1/FusXForm.cs
     startLine: 7
   assemblies:
   - Fusee.Serialization
@@ -25,9 +29,7 @@ items:
     content: 'public class FusXForm : FusComponent, IComponent'
     content.vb: >-
       Public Class FusXForm
-
           Inherits FusComponent
-
           Implements IComponent
   inheritance:
   - System.Object

@@ -5,7 +5,7 @@ items:
   id: SimpleConvertSceneGraphV1
   parent: Fusee.Test.Serialization.V1
   children:
-  - Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.SceneShouldGT
+  - Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.BuildGroundTruthSceneContainer
   - Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.V1_SimpleScene_Convert
   langs:
   - csharp
@@ -15,9 +15,13 @@ items:
   fullName: Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1
   type: Class
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Tests/Serialization/Fusee.Serialization.Test/SimpleConvertSceneGraph.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: SimpleConvertSceneGraphV1
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleConvertSceneGraph.cs
-    startLine: 14
+    path: src/Fusee/src/Tests/Serialization/Fusee.Serialization.Test/SimpleConvertSceneGraph.cs
+    startLine: 15
   assemblies:
   - Fusee.Test.Serialization.V1
   namespace: Fusee.Test.Serialization.V1
@@ -52,44 +56,62 @@ items:
   fullName: Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.V1_SimpleScene_Convert()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Tests/Serialization/Fusee.Serialization.Test/SimpleConvertSceneGraph.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: V1_SimpleScene_Convert
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleConvertSceneGraph.cs
-    startLine: 16
+    path: src/Fusee/src/Tests/Serialization/Fusee.Serialization.Test/SimpleConvertSceneGraph.cs
+    startLine: 17
   assemblies:
   - Fusee.Test.Serialization.V1
   namespace: Fusee.Test.Serialization.V1
   syntax:
-    content: public void V1_SimpleScene_Convert()
-    content.vb: Public Sub V1_SimpleScene_Convert
+    content: >-
+      [Fact]
+
+      public void V1_SimpleScene_Convert()
+    content.vb: >-
+      <Fact>
+
+      Public Sub V1_SimpleScene_Convert
   overload: Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.V1_SimpleScene_Convert*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.SceneShouldGT
-  commentId: M:Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.SceneShouldGT
-  id: SceneShouldGT
+- uid: Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.BuildGroundTruthSceneContainer
+  commentId: M:Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.BuildGroundTruthSceneContainer
+  id: BuildGroundTruthSceneContainer
   parent: Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1
   langs:
   - csharp
   - vb
-  name: SceneShouldGT()
-  nameWithType: SimpleConvertSceneGraphV1.SceneShouldGT()
-  fullName: Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.SceneShouldGT()
+  name: BuildGroundTruthSceneContainer()
+  nameWithType: SimpleConvertSceneGraphV1.BuildGroundTruthSceneContainer()
+  fullName: Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.BuildGroundTruthSceneContainer()
   type: Method
   source:
-    id: SceneShouldGT
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleConvertSceneGraph.cs
-    startLine: 677
+    remote:
+      path: src/DocFX/src/Fusee/src/Tests/Serialization/Fusee.Serialization.Test/SimpleConvertSceneGraph.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: BuildGroundTruthSceneContainer
+    path: src/Fusee/src/Tests/Serialization/Fusee.Serialization.Test/SimpleConvertSceneGraph.cs
+    startLine: 443
   assemblies:
   - Fusee.Test.Serialization.V1
   namespace: Fusee.Test.Serialization.V1
   syntax:
-    content: public static SceneContainer SceneShouldGT()
+    content: public static SceneContainer BuildGroundTruthSceneContainer()
     return:
       type: Fusee.Engine.Core.Scene.SceneContainer
-    content.vb: Public Shared Function SceneShouldGT As SceneContainer
-  overload: Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.SceneShouldGT*
+    content.vb: Public Shared Function BuildGroundTruthSceneContainer As SceneContainer
+  overload: Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.BuildGroundTruthSceneContainer*
   modifiers.csharp:
   - public
   - static
@@ -399,11 +421,11 @@ references:
   name: V1_SimpleScene_Convert
   nameWithType: SimpleConvertSceneGraphV1.V1_SimpleScene_Convert
   fullName: Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.V1_SimpleScene_Convert
-- uid: Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.SceneShouldGT*
-  commentId: Overload:Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.SceneShouldGT
-  name: SceneShouldGT
-  nameWithType: SimpleConvertSceneGraphV1.SceneShouldGT
-  fullName: Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.SceneShouldGT
+- uid: Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.BuildGroundTruthSceneContainer*
+  commentId: Overload:Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.BuildGroundTruthSceneContainer
+  name: BuildGroundTruthSceneContainer
+  nameWithType: SimpleConvertSceneGraphV1.BuildGroundTruthSceneContainer
+  fullName: Fusee.Test.Serialization.V1.SimpleConvertSceneGraphV1.BuildGroundTruthSceneContainer
 - uid: Fusee.Engine.Core.Scene.SceneContainer
   commentId: T:Fusee.Engine.Core.Scene.SceneContainer
   parent: Fusee.Engine.Core.Scene

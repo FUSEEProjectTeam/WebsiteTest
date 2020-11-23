@@ -5,7 +5,7 @@ items:
   id: FusSceneConverter
   parent: Fusee.Engine.Core
   children:
-  - Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
+  - Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile,System.String)
   - Fusee.Engine.Core.FusSceneConverter.ConvertTo(Fusee.Engine.Core.Scene.SceneContainer)
   langs:
   - csharp
@@ -15,13 +15,17 @@ items:
   fullName: Fusee.Engine.Core.FusSceneConverter
   type: Class
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/FusSceneConverter.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: FusSceneConverter
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\FusSceneConverter.cs
-    startLine: 18
+    path: src/Fusee/src/Engine/Core/FusSceneConverter.cs
+    startLine: 19
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
-  summary: "\nUse <xref href=\"Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Fusee.Engine.Core.FusSceneConverter.ConvertTo(Fusee.Engine.Core.Scene.SceneContainer)\" data-throw-if-not-resolved=\"false\"></xref>, to create new high/low level graph from a low/high level graph (made out of scene nodes and components)\nin order to have each visited element converted and/or split into its high/low level, render-ready/serialization-ready components.\n"
+  summary: "\nUse <xref href=\"Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Fusee.Engine.Core.FusSceneConverter.ConvertTo(Fusee.Engine.Core.Scene.SceneContainer)\" data-throw-if-not-resolved=\"false\"></xref>, to create new high/low level graph from a low/high level graph (made out of scene nodes and components)\nin order to have each visited element converted and/or split into its high/low level, render-ready/serialization-ready components.\n"
   example: []
   syntax:
     content: public static class FusSceneConverter
@@ -43,35 +47,41 @@ items:
   modifiers.vb:
   - Public
   - Module
-- uid: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
-  commentId: M:Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
-  id: ConvertFrom(Fusee.Serialization.FusFile)
+- uid: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile,System.String)
+  commentId: M:Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile,System.String)
+  id: ConvertFrom(Fusee.Serialization.FusFile,System.String)
   parent: Fusee.Engine.Core.FusSceneConverter
   langs:
   - csharp
   - vb
-  name: ConvertFrom(FusFile)
-  nameWithType: FusSceneConverter.ConvertFrom(FusFile)
-  fullName: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
+  name: ConvertFrom(FusFile, String)
+  nameWithType: FusSceneConverter.ConvertFrom(FusFile, String)
+  fullName: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile, System.String)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/FusSceneConverter.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ConvertFrom
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\FusSceneConverter.cs
-    startLine: 24
+    path: src/Fusee/src/Engine/Core/FusSceneConverter.cs
+    startLine: 25
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
   summary: "\nTraverses the given SceneContainer and creates new high level graph <xref href=\"Fusee.Engine.Core.Scene\" data-throw-if-not-resolved=\"false\"></xref> by converting and/or splitting its components into the high level equivalents.\n"
   example: []
   syntax:
-    content: public static SceneContainer ConvertFrom(FusFile fus)
+    content: public static SceneContainer ConvertFrom(FusFile fus, string id = null)
     parameters:
     - id: fus
       type: Fusee.Serialization.FusFile
       description: The FusFile to convert.
+    - id: id
+      type: System.String
     return:
       type: Fusee.Engine.Core.Scene.SceneContainer
-    content.vb: Public Shared Function ConvertFrom(fus As FusFile) As SceneContainer
+    content.vb: Public Shared Function ConvertFrom(fus As FusFile, id As String = Nothing) As SceneContainer
   overload: Fusee.Engine.Core.FusSceneConverter.ConvertFrom*
   modifiers.csharp:
   - public
@@ -91,9 +101,13 @@ items:
   fullName: Fusee.Engine.Core.FusSceneConverter.ConvertTo(Fusee.Engine.Core.Scene.SceneContainer)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/FusSceneConverter.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ConvertTo
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\FusSceneConverter.cs
-    startLine: 57
+    path: src/Fusee/src/Engine/Core/FusSceneConverter.cs
+    startLine: 99
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core
@@ -116,8 +130,8 @@ items:
   - Public
   - Shared
 references:
-- uid: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
-  commentId: M:Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
+- uid: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile,System.String)
+  commentId: M:Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile,System.String)
   isExternal: true
 - uid: Fusee.Engine.Core.FusSceneConverter.ConvertTo(Fusee.Engine.Core.Scene.SceneContainer)
   commentId: M:Fusee.Engine.Core.FusSceneConverter.ConvertTo(Fusee.Engine.Core.Scene.SceneContainer)
@@ -435,6 +449,13 @@ references:
   name: FusFile
   nameWithType: FusFile
   fullName: Fusee.Serialization.FusFile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: Fusee.Engine.Core.Scene.SceneContainer
   commentId: T:Fusee.Engine.Core.Scene.SceneContainer
   parent: Fusee.Engine.Core.Scene

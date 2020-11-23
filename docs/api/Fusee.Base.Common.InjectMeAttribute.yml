@@ -13,8 +13,12 @@ items:
   fullName: Fusee.Base.Common.InjectMeAttribute
   type: Class
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Base/Common/Attributes.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: InjectMeAttribute
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Common\Attributes.cs
+    path: src/Fusee/src/Base/Common/Attributes.cs
     startLine: 9
   assemblies:
   - Fusee.Base.Common
@@ -30,7 +34,6 @@ items:
       <AttributeUsage(AttributeTargets.Field Or AttributeTargets.Parameter Or AttributeTargets.Property)>
 
       Public Class InjectMeAttribute
-
           Inherits Attribute
   inheritance:
   - System.Object

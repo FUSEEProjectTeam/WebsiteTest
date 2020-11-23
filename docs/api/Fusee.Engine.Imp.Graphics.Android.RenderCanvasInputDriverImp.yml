@@ -21,8 +21,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasInputDriverImp
   type: Class
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: RenderCanvasInputDriverImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 12
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -30,18 +34,23 @@ items:
   summary: "\nInput driver implementation for touch input on Android.\n"
   example: []
   syntax:
-    content: 'public class RenderCanvasInputDriverImp : object, IInputDriverImp, IDisposable'
+    content: 'public class RenderCanvasInputDriverImp : IInputDriverImp, IDisposable'
     content.vb: >-
       Public Class RenderCanvasInputDriverImp
-
-          Inherits Object
-
           Implements IInputDriverImp, IDisposable
   inheritance:
   - System.Object
   implements:
   - Fusee.Engine.Common.IInputDriverImp
   - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   modifiers.csharp:
   - public
   - class
@@ -60,8 +69,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasInputDriverImp.RenderCanvasInputDriverImp(Fusee.Engine.Common.IRenderCanvasImp)
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 18
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -92,8 +105,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasInputDriverImp.Devices
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Devices
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 43
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -104,9 +121,11 @@ items:
     content: public IEnumerable<IInputDeviceImp> Devices { get; }
     parameters: []
     return:
-      type: IEnumerable{Fusee.Engine.Common.IInputDeviceImp}
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.IInputDeviceImp}
     content.vb: Public ReadOnly Property Devices As IEnumerable(Of IInputDeviceImp)
   overload: Fusee.Engine.Imp.Graphics.Android.RenderCanvasInputDriverImp.Devices*
+  implements:
+  - Fusee.Engine.Common.IInputDriverImp.Devices
   modifiers.csharp:
   - public
   - get
@@ -125,8 +144,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasInputDriverImp.DriverDesc
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: DriverDesc
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 56
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -160,8 +183,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasInputDriverImp.DriverId
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: DriverId
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 69
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -195,8 +222,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasInputDriverImp.DeviceDisconnected
   type: Event
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: DeviceDisconnected
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 77
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -206,8 +237,10 @@ items:
   syntax:
     content: public event EventHandler<DeviceImpDisconnectedArgs> DeviceDisconnected
     return:
-      type: EventHandler{Fusee.Engine.Common.DeviceImpDisconnectedArgs}
+      type: System.EventHandler{Fusee.Engine.Common.DeviceImpDisconnectedArgs}
     content.vb: Public Event DeviceDisconnected As EventHandler(Of DeviceImpDisconnectedArgs)
+  implements:
+  - Fusee.Engine.Common.IInputDriverImp.DeviceDisconnected
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -224,8 +257,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasInputDriverImp.NewDeviceConnected
   type: Event
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: NewDeviceConnected
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 83
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -235,8 +272,10 @@ items:
   syntax:
     content: public event EventHandler<NewDeviceImpConnectedArgs> NewDeviceConnected
     return:
-      type: EventHandler{Fusee.Engine.Common.NewDeviceImpConnectedArgs}
+      type: System.EventHandler{Fusee.Engine.Common.NewDeviceImpConnectedArgs}
     content.vb: Public Event NewDeviceConnected As EventHandler(Of NewDeviceImpConnectedArgs)
+  implements:
+  - Fusee.Engine.Common.IInputDriverImp.NewDeviceConnected
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -253,8 +292,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasInputDriverImp.Dispose(System.Boolean)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Dispose
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 95
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -287,8 +330,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasInputDriverImp.Dispose()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Dispose
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 121
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -299,6 +346,8 @@ items:
     content: public void Dispose()
     content.vb: Public Sub Dispose
   overload: Fusee.Engine.Imp.Graphics.Android.RenderCanvasInputDriverImp.Dispose*
+  implements:
+  - System.IDisposable.Dispose
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -329,6 +378,285 @@ references:
   name: IDisposable
   nameWithType: IDisposable
   fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -356,20 +684,27 @@ references:
   name: Devices
   nameWithType: RenderCanvasInputDriverImp.Devices
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasInputDriverImp.Devices
-- uid: IEnumerable{Fusee.Engine.Common.IInputDeviceImp}
-  commentId: '!:IEnumerable{Fusee.Engine.Common.IInputDeviceImp}'
-  definition: IEnumerable`1
+- uid: Fusee.Engine.Common.IInputDriverImp.Devices
+  commentId: P:Fusee.Engine.Common.IInputDriverImp.Devices
+  parent: Fusee.Engine.Common.IInputDriverImp
+  name: Devices
+  nameWithType: IInputDriverImp.Devices
+  fullName: Fusee.Engine.Common.IInputDriverImp.Devices
+- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.IInputDeviceImp}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Engine.Common.IInputDeviceImp}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
   name: IEnumerable<IInputDeviceImp>
   nameWithType: IEnumerable<IInputDeviceImp>
-  fullName: IEnumerable<Fusee.Engine.Common.IInputDeviceImp>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Engine.Common.IInputDeviceImp>
   nameWithType.vb: IEnumerable(Of IInputDeviceImp)
-  fullName.vb: IEnumerable(Of Fusee.Engine.Common.IInputDeviceImp)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Engine.Common.IInputDeviceImp)
   name.vb: IEnumerable(Of IInputDeviceImp)
   spec.csharp:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: <
     nameWithType: <
@@ -382,10 +717,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -397,44 +732,51 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: IEnumerable`1
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
   isExternal: true
-  name: IEnumerable<>
-  nameWithType: IEnumerable<>
-  fullName: IEnumerable<>
-  nameWithType.vb: IEnumerable(Of )
-  fullName.vb: IEnumerable(Of )
-  name.vb: IEnumerable(Of )
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
   spec.csharp:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
+    nameWithType: T
+    fullName: T
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
+    nameWithType: T
+    fullName: T
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasInputDriverImp.DriverDesc*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Android.RenderCanvasInputDriverImp.DriverDesc
   name: DriverDesc
@@ -464,20 +806,27 @@ references:
   name: DriverId
   nameWithType: IInputDriverImp.DriverId
   fullName: Fusee.Engine.Common.IInputDriverImp.DriverId
-- uid: EventHandler{Fusee.Engine.Common.DeviceImpDisconnectedArgs}
-  commentId: '!:EventHandler{Fusee.Engine.Common.DeviceImpDisconnectedArgs}'
-  definition: EventHandler`1
+- uid: Fusee.Engine.Common.IInputDriverImp.DeviceDisconnected
+  commentId: E:Fusee.Engine.Common.IInputDriverImp.DeviceDisconnected
+  parent: Fusee.Engine.Common.IInputDriverImp
+  name: DeviceDisconnected
+  nameWithType: IInputDriverImp.DeviceDisconnected
+  fullName: Fusee.Engine.Common.IInputDriverImp.DeviceDisconnected
+- uid: System.EventHandler{Fusee.Engine.Common.DeviceImpDisconnectedArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Common.DeviceImpDisconnectedArgs}
+  parent: System
+  definition: System.EventHandler`1
   name: EventHandler<DeviceImpDisconnectedArgs>
   nameWithType: EventHandler<DeviceImpDisconnectedArgs>
-  fullName: EventHandler<Fusee.Engine.Common.DeviceImpDisconnectedArgs>
+  fullName: System.EventHandler<Fusee.Engine.Common.DeviceImpDisconnectedArgs>
   nameWithType.vb: EventHandler(Of DeviceImpDisconnectedArgs)
-  fullName.vb: EventHandler(Of Fusee.Engine.Common.DeviceImpDisconnectedArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Common.DeviceImpDisconnectedArgs)
   name.vb: EventHandler(Of DeviceImpDisconnectedArgs)
   spec.csharp:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: <
     nameWithType: <
@@ -490,10 +839,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -505,58 +854,66 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: EventHandler`1
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
   isExternal: true
-  name: EventHandler<>
-  nameWithType: EventHandler<>
-  fullName: EventHandler<>
-  nameWithType.vb: EventHandler(Of )
-  fullName.vb: EventHandler(Of )
-  name.vb: EventHandler(Of )
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
   spec.csharp:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
   - name: )
     nameWithType: )
     fullName: )
-- uid: EventHandler{Fusee.Engine.Common.NewDeviceImpConnectedArgs}
-  commentId: '!:EventHandler{Fusee.Engine.Common.NewDeviceImpConnectedArgs}'
-  definition: EventHandler`1
+- uid: Fusee.Engine.Common.IInputDriverImp.NewDeviceConnected
+  commentId: E:Fusee.Engine.Common.IInputDriverImp.NewDeviceConnected
+  parent: Fusee.Engine.Common.IInputDriverImp
+  name: NewDeviceConnected
+  nameWithType: IInputDriverImp.NewDeviceConnected
+  fullName: Fusee.Engine.Common.IInputDriverImp.NewDeviceConnected
+- uid: System.EventHandler{Fusee.Engine.Common.NewDeviceImpConnectedArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Common.NewDeviceImpConnectedArgs}
+  parent: System
+  definition: System.EventHandler`1
   name: EventHandler<NewDeviceImpConnectedArgs>
   nameWithType: EventHandler<NewDeviceImpConnectedArgs>
-  fullName: EventHandler<Fusee.Engine.Common.NewDeviceImpConnectedArgs>
+  fullName: System.EventHandler<Fusee.Engine.Common.NewDeviceImpConnectedArgs>
   nameWithType.vb: EventHandler(Of NewDeviceImpConnectedArgs)
-  fullName.vb: EventHandler(Of Fusee.Engine.Common.NewDeviceImpConnectedArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Common.NewDeviceImpConnectedArgs)
   name.vb: EventHandler(Of NewDeviceImpConnectedArgs)
   spec.csharp:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: <
     nameWithType: <
@@ -569,10 +926,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -596,3 +953,34 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

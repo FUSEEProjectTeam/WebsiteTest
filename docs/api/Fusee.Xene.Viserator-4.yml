@@ -20,8 +20,12 @@ items:
   fullName: Fusee.Xene.Viserator<TItem, TState, TNode, TComponent>
   type: Class
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Viserator.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Viserator
-    path: C:\Users\test\Documents\fusee\Fusee\src\Xene\Viserator.cs
+    path: src/Fusee/src/Xene/Viserator.cs
     startLine: 193
   assemblies:
   - Fusee.Xene
@@ -32,7 +36,6 @@ items:
   syntax:
     content: >-
       public abstract class Viserator<TItem, TState, TNode, TComponent> : ViseratorBase<TItem, TNode, TComponent>, IEnumerator<TItem>, IEnumerator, IDisposable where TState : IStateStack, new()
-
           where TNode : class, INode where TComponent : class, IComponent
     typeParameters:
     - id: TItem
@@ -47,9 +50,7 @@ items:
       description: The root type of components used in the given trees.
     content.vb: >-
       Public MustInherit Class Viserator(Of TItem, TState As {IStateStack, New}, TNode As {Class, INode}, TComponent As {Class, IComponent})
-
           Inherits ViseratorBase(Of TItem, TNode, TComponent)
-
           Implements IEnumerator(Of TItem), IEnumerator, IDisposable
   inheritance:
   - System.Object
@@ -113,8 +114,12 @@ items:
   fullName: Fusee.Xene.Viserator<TItem, TState, TNode, TComponent>.State
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Viserator.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: State
-    path: C:\Users\test\Documents\fusee\Fusee\src\Xene\Viserator.cs
+    path: src/Fusee/src/Xene/Viserator.cs
     startLine: 202
   assemblies:
   - Fusee.Xene
@@ -144,8 +149,12 @@ items:
   fullName: Fusee.Xene.Viserator<TItem, TState, TNode, TComponent>.Viserator()
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Viserator.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Xene\Viserator.cs
+    path: src/Fusee/src/Xene/Viserator.cs
     startLine: 207
   assemblies:
   - Fusee.Xene
@@ -174,8 +183,12 @@ items:
   fullName: Fusee.Xene.Viserator<TItem, TState, TNode, TComponent>.Init(System.Collections.Generic.IEnumerable<TNode>)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Viserator.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Init
-    path: C:\Users\test\Documents\fusee\Fusee\src\Xene\Viserator.cs
+    path: src/Fusee/src/Xene/Viserator.cs
     startLine: 215
   assemblies:
   - Fusee.Xene
@@ -212,8 +225,12 @@ items:
   fullName: Fusee.Xene.Viserator<TItem, TState, TNode, TComponent>.Viserator(System.Collections.Generic.IEnumerable<TNode>)
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Viserator.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Xene\Viserator.cs
+    path: src/Fusee/src/Xene/Viserator.cs
     startLine: 225
   assemblies:
   - Fusee.Xene
@@ -247,8 +264,12 @@ items:
   fullName: Fusee.Xene.Viserator<TItem, TState, TNode, TComponent>.InitState()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Viserator.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: InitState
-    path: C:\Users\test\Documents\fusee\Fusee\src\Xene\Viserator.cs
+    path: src/Fusee/src/Xene/Viserator.cs
     startLine: 236
   assemblies:
   - Fusee.Xene
@@ -280,8 +301,12 @@ items:
   fullName: Fusee.Xene.Viserator<TItem, TState, TNode, TComponent>.PushState()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Viserator.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: PushState
-    path: C:\Users\test\Documents\fusee\Fusee\src\Xene\Viserator.cs
+    path: src/Fusee/src/Xene/Viserator.cs
     startLine: 246
   assemblies:
   - Fusee.Xene
@@ -313,8 +338,12 @@ items:
   fullName: Fusee.Xene.Viserator<TItem, TState, TNode, TComponent>.PopState()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Viserator.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: PopState
-    path: C:\Users\test\Documents\fusee\Fusee\src\Xene\Viserator.cs
+    path: src/Fusee/src/Xene/Viserator.cs
     startLine: 256
   assemblies:
   - Fusee.Xene
@@ -2208,6 +2237,7 @@ references:
   nameWithType: TState
   fullName: TState
 - uid: TState
+  commentId: '!:TState'
   name: TState
   nameWithType: TState
   fullName: TState

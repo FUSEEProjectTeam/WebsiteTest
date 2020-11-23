@@ -13,8 +13,12 @@ items:
   fullName: Fusee.Xene.VisitMethodAttribute
   type: Class
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Visitor.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: VisitMethodAttribute
-    path: C:\Users\test\Documents\fusee\Fusee\src\Xene\Visitor.cs
+    path: src/Fusee/src/Xene/Visitor.cs
     startLine: 11
   assemblies:
   - Fusee.Xene
@@ -30,7 +34,6 @@ items:
       <AttributeUsage(AttributeTargets.Method, AllowMultiple:=False)>
 
       Public NotInheritable Class VisitMethodAttribute
-
           Inherits Attribute
   inheritance:
   - System.Object

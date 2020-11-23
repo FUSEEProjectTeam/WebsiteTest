@@ -9,6 +9,8 @@ items:
   - Fusee.Serialization.FusHeader.CreationDate
   - Fusee.Serialization.FusHeader.FileVersion
   - Fusee.Serialization.FusHeader.Generator
+  - Fusee.Serialization.FusHeader.LoadFilename
+  - Fusee.Serialization.FusHeader.LoadPath
   langs:
   - csharp
   - vb
@@ -17,8 +19,12 @@ items:
   fullName: Fusee.Serialization.FusHeader
   type: Struct
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: FusHeader
-    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\FusFile.cs
+    path: src/Fusee/src/Serialization/FusFile.cs
     startLine: 10
   assemblies:
   - Fusee.Serialization
@@ -63,8 +69,12 @@ items:
   fullName: Fusee.Serialization.FusHeader.FileVersion
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: FileVersion
-    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\FusFile.cs
+    path: src/Fusee/src/Serialization/FusFile.cs
     startLine: 17
   assemblies:
   - Fusee.Serialization
@@ -104,8 +114,12 @@ items:
   fullName: Fusee.Serialization.FusHeader.Generator
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Generator
-    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\FusFile.cs
+    path: src/Fusee/src/Serialization/FusFile.cs
     startLine: 23
   assemblies:
   - Fusee.Serialization
@@ -145,8 +159,12 @@ items:
   fullName: Fusee.Serialization.FusHeader.CreatedBy
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: CreatedBy
-    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\FusFile.cs
+    path: src/Fusee/src/Serialization/FusFile.cs
     startLine: 29
   assemblies:
   - Fusee.Serialization
@@ -186,8 +204,12 @@ items:
   fullName: Fusee.Serialization.FusHeader.CreationDate
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: CreationDate
-    path: C:\Users\test\Documents\fusee\Fusee\src\Serialization\FusFile.cs
+    path: src/Fusee/src/Serialization/FusFile.cs
     startLine: 35
   assemblies:
   - Fusee.Serialization
@@ -211,6 +233,92 @@ items:
     arguments:
     - type: System.Int32
       value: 4
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Serialization.FusHeader.LoadPath
+  commentId: F:Fusee.Serialization.FusHeader.LoadPath
+  id: LoadPath
+  parent: Fusee.Serialization.FusHeader
+  langs:
+  - csharp
+  - vb
+  name: LoadPath
+  nameWithType: FusHeader.LoadPath
+  fullName: Fusee.Serialization.FusHeader.LoadPath
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: LoadPath
+    path: src/Fusee/src/Serialization/FusFile.cs
+    startLine: 41
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization
+  summary: "\nThe path this file was loaded from.\n"
+  example: []
+  syntax:
+    content: >-
+      [ProtoIgnore]
+
+      public string LoadPath
+    return:
+      type: System.String
+    content.vb: >-
+      <ProtoIgnore>
+
+      Public LoadPath As String
+  attributes:
+  - type: ProtoBuf.ProtoIgnoreAttribute
+    ctor: ProtoBuf.ProtoIgnoreAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Serialization.FusHeader.LoadFilename
+  commentId: F:Fusee.Serialization.FusHeader.LoadFilename
+  id: LoadFilename
+  parent: Fusee.Serialization.FusHeader
+  langs:
+  - csharp
+  - vb
+  name: LoadFilename
+  nameWithType: FusHeader.LoadFilename
+  fullName: Fusee.Serialization.FusHeader.LoadFilename
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Serialization/FusFile.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: LoadFilename
+    path: src/Fusee/src/Serialization/FusFile.cs
+    startLine: 47
+  assemblies:
+  - Fusee.Serialization
+  namespace: Fusee.Serialization
+  summary: "\nThe filename this file was loaded from.\n"
+  example: []
+  syntax:
+    content: >-
+      [ProtoIgnore]
+
+      public string LoadFilename
+    return:
+      type: System.String
+    content.vb: >-
+      <ProtoIgnore>
+
+      Public LoadFilename As String
+  attributes:
+  - type: ProtoBuf.ProtoIgnoreAttribute
+    ctor: ProtoBuf.ProtoIgnoreAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   modifiers.vb:

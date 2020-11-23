@@ -9,6 +9,7 @@ items:
   - Fusee.Math.Core.float3.#ctor(Fusee.Math.Core.float2)
   - Fusee.Math.Core.float3.#ctor(Fusee.Math.Core.float3)
   - Fusee.Math.Core.float3.#ctor(Fusee.Math.Core.float4)
+  - Fusee.Math.Core.float3.#ctor(System.Single)
   - Fusee.Math.Core.float3.#ctor(System.Single,System.Single,System.Single)
   - Fusee.Math.Core.float3.Add(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
   - Fusee.Math.Core.float3.Add(Fusee.Math.Core.float3,System.Single)
@@ -32,7 +33,13 @@ items:
   - Fusee.Math.Core.float3.Item(System.Int32)
   - Fusee.Math.Core.float3.Length
   - Fusee.Math.Core.float3.LengthSquared
+  - Fusee.Math.Core.float3.Lerp(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
   - Fusee.Math.Core.float3.Lerp(Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single)
+  - Fusee.Math.Core.float3.LinearColorFromSRgb
+  - Fusee.Math.Core.float3.LinearColorFromSRgb(Fusee.Math.Core.float3)
+  - Fusee.Math.Core.float3.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32)
+  - Fusee.Math.Core.float3.LinearColorFromSRgb(System.String)
+  - Fusee.Math.Core.float3.LinearColorFromSRgb(System.UInt32)
   - Fusee.Math.Core.float3.Max(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
   - Fusee.Math.Core.float3.Min(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
   - Fusee.Math.Core.float3.Multiply(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
@@ -59,9 +66,16 @@ items:
   - Fusee.Math.Core.float3.Parse(System.String,System.IFormatProvider)
   - Fusee.Math.Core.float3.ParseConverter
   - Fusee.Math.Core.float3.PositiveInfinity
+  - Fusee.Math.Core.float3.Pow(Fusee.Math.Core.float3,System.Single)
   - Fusee.Math.Core.float3.r
   - Fusee.Math.Core.float3.Rotate(Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Boolean)
   - Fusee.Math.Core.float3.Rotate(Fusee.Math.Core.Quaternion,Fusee.Math.Core.float3)
+  - Fusee.Math.Core.float3.SRgbFromLinearColor
+  - Fusee.Math.Core.float3.SRgbFromLinearColor(Fusee.Math.Core.float3)
+  - Fusee.Math.Core.float3.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32)
+  - Fusee.Math.Core.float3.SRgbFromLinearColor(System.String)
+  - Fusee.Math.Core.float3.SRgbFromLinearColor(System.UInt32)
+  - Fusee.Math.Core.float3.Step(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
   - Fusee.Math.Core.float3.Subtract(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
   - Fusee.Math.Core.float3.Subtract(Fusee.Math.Core.float3,System.Single)
   - Fusee.Math.Core.float3.ToArray
@@ -94,9 +108,13 @@ items:
   fullName: Fusee.Math.Core.float3
   type: Struct
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: float3
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 13
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 14
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -112,7 +130,6 @@ items:
       <ProtoContract>
 
       Public Structure float3
-
           Implements IEquatable(Of float3)
   implements:
   - System.IEquatable{Fusee.Math.Core.float3}
@@ -142,9 +159,13 @@ items:
   fullName: Fusee.Math.Core.float3.x
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: x
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 23
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 24
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -183,9 +204,13 @@ items:
   fullName: Fusee.Math.Core.float3.y
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: y
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 29
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 30
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -224,9 +249,13 @@ items:
   fullName: Fusee.Math.Core.float3.z
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: z
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 35
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 36
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -253,6 +282,42 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: Fusee.Math.Core.float3.#ctor(System.Single)
+  commentId: M:Fusee.Math.Core.float3.#ctor(System.Single)
+  id: '#ctor(System.Single)'
+  parent: Fusee.Math.Core.float3
+  langs:
+  - csharp
+  - vb
+  name: float3(Single)
+  nameWithType: float3.float3(Single)
+  fullName: Fusee.Math.Core.float3.float3(System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 46
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConstructs a new float3.\n"
+  example: []
+  syntax:
+    content: public float3(float val)
+    parameters:
+    - id: val
+      type: System.Single
+      description: This value will be set for the x, y and z component.
+    content.vb: Public Sub New(val As Single)
+  overload: Fusee.Math.Core.float3.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Fusee.Math.Core.float3.#ctor(System.Single,System.Single,System.Single)
   commentId: M:Fusee.Math.Core.float3.#ctor(System.Single,System.Single,System.Single)
   id: '#ctor(System.Single,System.Single,System.Single)'
@@ -265,9 +330,13 @@ items:
   fullName: Fusee.Math.Core.float3.float3(System.Single, System.Single, System.Single)
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 47
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 59
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -303,9 +372,13 @@ items:
   fullName: Fusee.Math.Core.float3.float3(Fusee.Math.Core.float2)
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 58
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 70
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -335,9 +408,13 @@ items:
   fullName: Fusee.Math.Core.float3.float3(Fusee.Math.Core.float3)
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 69
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 81
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -367,9 +444,13 @@ items:
   fullName: Fusee.Math.Core.float3.float3(Fusee.Math.Core.float4)
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 80
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 92
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -399,9 +480,13 @@ items:
   fullName: Fusee.Math.Core.float3.float3(Fusee.Math.Core.double3)
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 91
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 103
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -431,9 +516,13 @@ items:
   fullName: Fusee.Math.Core.float3.Item[System.Int32]
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: this[]
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 109
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 121
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -471,9 +560,13 @@ items:
   fullName: Fusee.Math.Core.float3.Length
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Length
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 163
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 175
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -508,9 +601,13 @@ items:
   fullName: Fusee.Math.Core.float3.LengthSquared
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: LengthSquared
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 183
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 195
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -546,9 +643,13 @@ items:
   fullName: Fusee.Math.Core.float3.Normalize()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Normalize
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 195
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 207
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -576,9 +677,13 @@ items:
   fullName: Fusee.Math.Core.float3.NormalizeFast()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: NormalizeFast
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 207
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 219
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -590,6 +695,76 @@ items:
       type: Fusee.Math.Core.float3
     content.vb: Public Function NormalizeFast As float3
   overload: Fusee.Math.Core.float3.NormalizeFast*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3.LinearColorFromSRgb
+  commentId: M:Fusee.Math.Core.float3.LinearColorFromSRgb
+  id: LinearColorFromSRgb
+  parent: Fusee.Math.Core.float3
+  langs:
+  - csharp
+  - vb
+  name: LinearColorFromSRgb()
+  nameWithType: float3.LinearColorFromSRgb()
+  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: LinearColorFromSRgb
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 232
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts this float3 - which is interpreted as a color - from linear color space to sRgb space.\n"
+  example: []
+  syntax:
+    content: public float3 LinearColorFromSRgb()
+    return:
+      type: Fusee.Math.Core.float3
+      description: ''
+    content.vb: Public Function LinearColorFromSRgb As float3
+  overload: Fusee.Math.Core.float3.LinearColorFromSRgb*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float3.SRgbFromLinearColor
+  commentId: M:Fusee.Math.Core.float3.SRgbFromLinearColor
+  id: SRgbFromLinearColor
+  parent: Fusee.Math.Core.float3
+  langs:
+  - csharp
+  - vb
+  name: SRgbFromLinearColor()
+  nameWithType: float3.SRgbFromLinearColor()
+  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: SRgbFromLinearColor
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 241
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts this float3 - which is interpreted as a color - from sRgb space to linear color space.\n"
+  example: []
+  syntax:
+    content: public float3 SRgbFromLinearColor()
+    return:
+      type: Fusee.Math.Core.float3
+      description: ''
+    content.vb: Public Function SRgbFromLinearColor As float3
+  overload: Fusee.Math.Core.float3.SRgbFromLinearColor*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -606,9 +781,13 @@ items:
   fullName: Fusee.Math.Core.float3.ToArray()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ToArray
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 218
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 252
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -637,9 +816,13 @@ items:
   fullName: Fusee.Math.Core.float3.IsNaN
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: IsNaN
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 226
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 260
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -670,9 +853,13 @@ items:
   fullName: Fusee.Math.Core.float3.IsInfinity
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: IsInfinity
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 231
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 265
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -703,9 +890,13 @@ items:
   fullName: Fusee.Math.Core.float3.UnitX
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: UnitX
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 242
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 276
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -736,9 +927,13 @@ items:
   fullName: Fusee.Math.Core.float3.UnitY
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: UnitY
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 247
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 281
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -769,9 +964,13 @@ items:
   fullName: Fusee.Math.Core.float3.UnitZ
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: UnitZ
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 252
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 286
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -802,9 +1001,13 @@ items:
   fullName: Fusee.Math.Core.float3.Zero
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Zero
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 257
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 291
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -835,9 +1038,13 @@ items:
   fullName: Fusee.Math.Core.float3.One
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: One
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 262
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 296
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -868,9 +1075,13 @@ items:
   fullName: Fusee.Math.Core.float3.PositiveInfinity
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: PositiveInfinity
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 269
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 303
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -903,9 +1114,13 @@ items:
   fullName: Fusee.Math.Core.float3.NegativeInfinity
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: NegativeInfinity
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 274
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 308
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -938,9 +1153,13 @@ items:
   fullName: Fusee.Math.Core.float3.Add(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Add
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 297
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 331
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -978,9 +1197,13 @@ items:
   fullName: Fusee.Math.Core.float3.Add(Fusee.Math.Core.float3, System.Single)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Add
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 311
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 345
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1018,9 +1241,13 @@ items:
   fullName: Fusee.Math.Core.float3.Subtract(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Subtract
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 329
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 363
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1058,9 +1285,13 @@ items:
   fullName: Fusee.Math.Core.float3.Subtract(Fusee.Math.Core.float3, System.Single)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Subtract
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 343
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 377
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1098,9 +1329,13 @@ items:
   fullName: Fusee.Math.Core.float3.Multiply(Fusee.Math.Core.float3, System.Single)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Multiply
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 361
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 395
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1138,9 +1373,13 @@ items:
   fullName: Fusee.Math.Core.float3.Multiply(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Multiply
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 375
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 409
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1178,9 +1417,13 @@ items:
   fullName: Fusee.Math.Core.float3.Divide(Fusee.Math.Core.float3, System.Single)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Divide
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 393
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 427
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1218,9 +1461,13 @@ items:
   fullName: Fusee.Math.Core.float3.Divide(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Divide
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 407
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 441
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1258,9 +1505,13 @@ items:
   fullName: Fusee.Math.Core.float3.ComponentMin(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ComponentMin
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 425
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 459
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1298,9 +1549,13 @@ items:
   fullName: Fusee.Math.Core.float3.ComponentMax(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ComponentMax
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 445
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 479
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1338,9 +1593,13 @@ items:
   fullName: Fusee.Math.Core.float3.Min(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Min
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 465
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 499
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1378,9 +1637,13 @@ items:
   fullName: Fusee.Math.Core.float3.Max(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Max
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 482
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 516
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1418,9 +1681,13 @@ items:
   fullName: Fusee.Math.Core.float3.Clamp(Fusee.Math.Core.float3, Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Clamp
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 500
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 534
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1461,9 +1728,13 @@ items:
   fullName: Fusee.Math.Core.float3.Normalize(Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Normalize
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 519
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 553
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1498,9 +1769,13 @@ items:
   fullName: Fusee.Math.Core.float3.OrthoNormalize(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: OrthoNormalize
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 539
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 573
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1538,9 +1813,13 @@ items:
   fullName: Fusee.Math.Core.float3.NormalizeFast(Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: NormalizeFast
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 566
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 600
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1575,9 +1854,13 @@ items:
   fullName: Fusee.Math.Core.float3.Dot(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Dot
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 587
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 621
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1615,9 +1898,13 @@ items:
   fullName: Fusee.Math.Core.float3.Cross(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Cross
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 604
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 638
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1643,6 +1930,93 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Fusee.Math.Core.float3.Step(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Math.Core.float3.Step(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  id: Step(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  parent: Fusee.Math.Core.float3
+  langs:
+  - csharp
+  - vb
+  name: Step(float3, float3)
+  nameWithType: float3.Step(float3, float3)
+  fullName: Fusee.Math.Core.float3.Step(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: Step
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 654
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nPerforms <xref href=\"Fusee.Math.Core.M.Step(System.Single%2cSystem.Single)\" data-throw-if-not-resolved=\"false\"></xref> for each component of the input vectors.\n"
+  example: []
+  syntax:
+    content: public static float3 Step(float3 edge, float3 val)
+    parameters:
+    - id: edge
+      type: Fusee.Math.Core.float3
+      description: Specifies the location of the edge of the step function.
+    - id: val
+      type: Fusee.Math.Core.float3
+      description: Specifies the value to be used to generate the step function.
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Shared Function Step(edge As float3, val As float3) As float3
+  overload: Fusee.Math.Core.float3.Step*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3.Pow(Fusee.Math.Core.float3,System.Single)
+  commentId: M:Fusee.Math.Core.float3.Pow(Fusee.Math.Core.float3,System.Single)
+  id: Pow(Fusee.Math.Core.float3,System.Single)
+  parent: Fusee.Math.Core.float3
+  langs:
+  - csharp
+  - vb
+  name: Pow(float3, Single)
+  nameWithType: float3.Pow(float3, Single)
+  fullName: Fusee.Math.Core.float3.Pow(Fusee.Math.Core.float3, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: Pow
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 665
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns a float3 where all components are raised to the specified power.\n"
+  example: []
+  syntax:
+    content: public static float3 Pow(float3 val, float exp)
+    parameters:
+    - id: val
+      type: Fusee.Math.Core.float3
+      description: The float3 to be raised to a power.
+    - id: exp
+      type: System.Single
+      description: A float that specifies a power.
+    return:
+      type: Fusee.Math.Core.float3
+      description: ''
+    content.vb: Public Shared Function Pow(val As float3, exp As Single) As float3
+  overload: Fusee.Math.Core.float3.Pow*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: Fusee.Math.Core.float3.Lerp(Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single)
   commentId: M:Fusee.Math.Core.float3.Lerp(Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single)
   id: Lerp(Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single)
@@ -1655,9 +2029,13 @@ items:
   fullName: Fusee.Math.Core.float3.Lerp(Fusee.Math.Core.float3, Fusee.Math.Core.float3, System.Single)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Lerp
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 626
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 681
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1686,6 +2064,52 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Fusee.Math.Core.float3.Lerp(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  commentId: M:Fusee.Math.Core.float3.Lerp(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  id: Lerp(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  parent: Fusee.Math.Core.float3
+  langs:
+  - csharp
+  - vb
+  name: Lerp(float3, float3, float3)
+  nameWithType: float3.Lerp(float3, float3, float3)
+  fullName: Fusee.Math.Core.float3.Lerp(Fusee.Math.Core.float3, Fusee.Math.Core.float3, Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: Lerp
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 696
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns a new Vector that is the linear blend of the 2 given Vectors.\nEach component of vector a is blended with its equivalent in vector b.\n"
+  example: []
+  syntax:
+    content: public static float3 Lerp(float3 a, float3 b, float3 blend)
+    parameters:
+    - id: a
+      type: Fusee.Math.Core.float3
+      description: First input vector
+    - id: b
+      type: Fusee.Math.Core.float3
+      description: Second input vector
+    - id: blend
+      type: Fusee.Math.Core.float3
+      description: The blend factor. a when blend=0, b when blend=1.
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Shared Function Lerp(a As float3, b As float3, blend As float3) As float3
+  overload: Fusee.Math.Core.float3.Lerp*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: Fusee.Math.Core.float3.Barycentric(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single,System.Single)
   commentId: M:Fusee.Math.Core.float3.Barycentric(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single,System.Single)
   id: Barycentric(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single,System.Single)
@@ -1698,9 +2122,13 @@ items:
   fullName: Fusee.Math.Core.float3.Barycentric(Fusee.Math.Core.float3, Fusee.Math.Core.float3, Fusee.Math.Core.float3, System.Single, System.Single)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Barycentric
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 649
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 719
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1747,9 +2175,13 @@ items:
   fullName: Fusee.Math.Core.float3.GetBarycentric(Fusee.Math.Core.float3, Fusee.Math.Core.float3, Fusee.Math.Core.float3, Fusee.Math.Core.float3, out System.Single, out System.Single)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: GetBarycentric
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 663
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 733
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1799,9 +2231,13 @@ items:
   fullName: Fusee.Math.Core.float3.CalculateAngle(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: CalculateAngle
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 693
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 763
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1840,9 +2276,13 @@ items:
   fullName: Fusee.Math.Core.float3.Rotate(Fusee.Math.Core.float3, Fusee.Math.Core.float3, System.Boolean)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Rotate
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 721
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 791
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1883,9 +2323,13 @@ items:
   fullName: Fusee.Math.Core.float3.Rotate(Fusee.Math.Core.Quaternion, Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Rotate
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 749
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 819
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1911,6 +2355,338 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Fusee.Math.Core.float3.SRgbFromLinearColor(Fusee.Math.Core.float3)
+  commentId: M:Fusee.Math.Core.float3.SRgbFromLinearColor(Fusee.Math.Core.float3)
+  id: SRgbFromLinearColor(Fusee.Math.Core.float3)
+  parent: Fusee.Math.Core.float3
+  langs:
+  - csharp
+  - vb
+  name: SRgbFromLinearColor(float3)
+  nameWithType: float3.SRgbFromLinearColor(float3)
+  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor(Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: SRgbFromLinearColor
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 838
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts a color value from linear to sRgb space.\n"
+  example: []
+  syntax:
+    content: public static float3 SRgbFromLinearColor(float3 linearColor)
+    parameters:
+    - id: linearColor
+      type: Fusee.Math.Core.float3
+      description: The linear color value as <xref href="Fusee.Math.Core.float3" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Shared Function SRgbFromLinearColor(linearColor As float3) As float3
+  overload: Fusee.Math.Core.float3.SRgbFromLinearColor*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32)
+  commentId: M:Fusee.Math.Core.float3.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32)
+  id: SRgbFromLinearColor(System.Int32,System.Int32,System.Int32)
+  parent: Fusee.Math.Core.float3
+  langs:
+  - csharp
+  - vb
+  name: SRgbFromLinearColor(Int32, Int32, Int32)
+  nameWithType: float3.SRgbFromLinearColor(Int32, Int32, Int32)
+  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor(System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: SRgbFromLinearColor
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 854
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts a color value from linear to sRgb space.\n"
+  example: []
+  syntax:
+    content: public static float3 SRgbFromLinearColor(int r, int g, int b)
+    parameters:
+    - id: r
+      type: System.Int32
+      description: The red color value in range 0 - 255.
+    - id: g
+      type: System.Int32
+      description: The green color value in range 0 - 255.
+    - id: b
+      type: System.Int32
+      description: The blue color value in range 0 - 255.
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Shared Function SRgbFromLinearColor(r As Integer, g As Integer, b As Integer) As float3
+  overload: Fusee.Math.Core.float3.SRgbFromLinearColor*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3.SRgbFromLinearColor(System.String)
+  commentId: M:Fusee.Math.Core.float3.SRgbFromLinearColor(System.String)
+  id: SRgbFromLinearColor(System.String)
+  parent: Fusee.Math.Core.float3
+  langs:
+  - csharp
+  - vb
+  name: SRgbFromLinearColor(String)
+  nameWithType: float3.SRgbFromLinearColor(String)
+  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: SRgbFromLinearColor
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 864
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts a color value from linear to sRgb space.\n"
+  example: []
+  syntax:
+    content: public static float3 SRgbFromLinearColor(string hex)
+    parameters:
+    - id: hex
+      type: System.String
+      description: The color value as hex code in form of a &quot;FFFFFF&quot; string.
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Shared Function SRgbFromLinearColor(hex As String) As float3
+  overload: Fusee.Math.Core.float3.SRgbFromLinearColor*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3.SRgbFromLinearColor(System.UInt32)
+  commentId: M:Fusee.Math.Core.float3.SRgbFromLinearColor(System.UInt32)
+  id: SRgbFromLinearColor(System.UInt32)
+  parent: Fusee.Math.Core.float3
+  langs:
+  - csharp
+  - vb
+  name: SRgbFromLinearColor(UInt32)
+  nameWithType: float3.SRgbFromLinearColor(UInt32)
+  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor(System.UInt32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: SRgbFromLinearColor
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 874
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts a color value from linear to sRgb space.\n"
+  example: []
+  syntax:
+    content: public static float3 SRgbFromLinearColor(uint col)
+    parameters:
+    - id: col
+      type: System.UInt32
+      description: The color value as uint.
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Shared Function SRgbFromLinearColor(col As UInteger) As float3
+  overload: Fusee.Math.Core.float3.SRgbFromLinearColor*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3.LinearColorFromSRgb(Fusee.Math.Core.float3)
+  commentId: M:Fusee.Math.Core.float3.LinearColorFromSRgb(Fusee.Math.Core.float3)
+  id: LinearColorFromSRgb(Fusee.Math.Core.float3)
+  parent: Fusee.Math.Core.float3
+  langs:
+  - csharp
+  - vb
+  name: LinearColorFromSRgb(float3)
+  nameWithType: float3.LinearColorFromSRgb(float3)
+  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb(Fusee.Math.Core.float3)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: LinearColorFromSRgb
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 887
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts a color value from sRgb to linear space.\n"
+  example: []
+  syntax:
+    content: public static float3 LinearColorFromSRgb(float3 sRGBCol)
+    parameters:
+    - id: sRGBCol
+      type: Fusee.Math.Core.float3
+      description: The sRgb color value as <xref href="Fusee.Math.Core.float3" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Shared Function LinearColorFromSRgb(sRGBCol As float3) As float3
+  overload: Fusee.Math.Core.float3.LinearColorFromSRgb*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32)
+  commentId: M:Fusee.Math.Core.float3.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32)
+  id: LinearColorFromSRgb(System.Int32,System.Int32,System.Int32)
+  parent: Fusee.Math.Core.float3
+  langs:
+  - csharp
+  - vb
+  name: LinearColorFromSRgb(Int32, Int32, Int32)
+  nameWithType: float3.LinearColorFromSRgb(Int32, Int32, Int32)
+  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb(System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: LinearColorFromSRgb
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 903
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts a color value from sRgb to linear space.\n"
+  example: []
+  syntax:
+    content: public static float3 LinearColorFromSRgb(int r, int g, int b)
+    parameters:
+    - id: r
+      type: System.Int32
+      description: The red color value in range 0 - 255.
+    - id: g
+      type: System.Int32
+      description: The green color value in range 0 - 255.
+    - id: b
+      type: System.Int32
+      description: The blue color value in range 0 - 255.
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Shared Function LinearColorFromSRgb(r As Integer, g As Integer, b As Integer) As float3
+  overload: Fusee.Math.Core.float3.LinearColorFromSRgb*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3.LinearColorFromSRgb(System.String)
+  commentId: M:Fusee.Math.Core.float3.LinearColorFromSRgb(System.String)
+  id: LinearColorFromSRgb(System.String)
+  parent: Fusee.Math.Core.float3
+  langs:
+  - csharp
+  - vb
+  name: LinearColorFromSRgb(String)
+  nameWithType: float3.LinearColorFromSRgb(String)
+  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: LinearColorFromSRgb
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 913
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts a color value from sRgb to linear space.\n"
+  example: []
+  syntax:
+    content: public static float3 LinearColorFromSRgb(string hex)
+    parameters:
+    - id: hex
+      type: System.String
+      description: The color value as hex code in form of a &quot;FFFFFF&quot; string.
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Shared Function LinearColorFromSRgb(hex As String) As float3
+  overload: Fusee.Math.Core.float3.LinearColorFromSRgb*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float3.LinearColorFromSRgb(System.UInt32)
+  commentId: M:Fusee.Math.Core.float3.LinearColorFromSRgb(System.UInt32)
+  id: LinearColorFromSRgb(System.UInt32)
+  parent: Fusee.Math.Core.float3
+  langs:
+  - csharp
+  - vb
+  name: LinearColorFromSRgb(UInt32)
+  nameWithType: float3.LinearColorFromSRgb(UInt32)
+  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb(System.UInt32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: LinearColorFromSRgb
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 923
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts a color value from sRgb to linear space.\n"
+  example: []
+  syntax:
+    content: public static float3 LinearColorFromSRgb(uint col)
+    parameters:
+    - id: col
+      type: System.UInt32
+      description: The color value as uint.
+    return:
+      type: Fusee.Math.Core.float3
+    content.vb: Public Shared Function LinearColorFromSRgb(col As UInteger) As float3
+  overload: Fusee.Math.Core.float3.LinearColorFromSRgb*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: Fusee.Math.Core.float3.xy
   commentId: P:Fusee.Math.Core.float3.xy
   id: xy
@@ -1923,9 +2699,13 @@ items:
   fullName: Fusee.Math.Core.float3.xy
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: xy
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 769
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 941
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1956,9 +2736,13 @@ items:
   fullName: Fusee.Math.Core.float3.xz
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: xz
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 774
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 946
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1989,9 +2773,13 @@ items:
   fullName: Fusee.Math.Core.float3.yx
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: yx
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 779
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 951
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2022,9 +2810,13 @@ items:
   fullName: Fusee.Math.Core.float3.yz
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: yz
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 784
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 956
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2055,9 +2847,13 @@ items:
   fullName: Fusee.Math.Core.float3.zx
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: zx
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 789
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 961
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2088,9 +2884,13 @@ items:
   fullName: Fusee.Math.Core.float3.zy
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: zy
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 794
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 966
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2121,9 +2921,13 @@ items:
   fullName: Fusee.Math.Core.float3.xyz
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: xyz
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 799
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 971
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2154,9 +2958,13 @@ items:
   fullName: Fusee.Math.Core.float3.xzy
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: xzy
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 804
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 976
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2187,9 +2995,13 @@ items:
   fullName: Fusee.Math.Core.float3.yzx
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: yzx
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 809
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 981
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2220,9 +3032,13 @@ items:
   fullName: Fusee.Math.Core.float3.yxz
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: yxz
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 814
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 986
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2253,9 +3069,13 @@ items:
   fullName: Fusee.Math.Core.float3.zxy
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: zxy
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 819
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 991
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2286,9 +3106,13 @@ items:
   fullName: Fusee.Math.Core.float3.zyx
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: zyx
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 824
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 996
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2319,9 +3143,13 @@ items:
   fullName: Fusee.Math.Core.float3.Addition(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Addition
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 838
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1010
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2359,9 +3187,13 @@ items:
   fullName: Fusee.Math.Core.float3.Addition(Fusee.Math.Core.float3, System.Single)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Addition
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 851
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1023
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2399,9 +3231,13 @@ items:
   fullName: Fusee.Math.Core.float3.Subtraction(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Subtraction
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 864
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1036
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2439,9 +3275,13 @@ items:
   fullName: Fusee.Math.Core.float3.Subtraction(Fusee.Math.Core.float3, System.Single)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Subtraction
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 877
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1049
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2479,9 +3319,13 @@ items:
   fullName: Fusee.Math.Core.float3.UnaryNegation(Fusee.Math.Core.float3)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_UnaryNegation
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 889
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1061
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2516,9 +3360,13 @@ items:
   fullName: Fusee.Math.Core.float3.Multiply(Fusee.Math.Core.float3, System.Single)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Multiply
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 905
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1077
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2556,9 +3404,13 @@ items:
   fullName: Fusee.Math.Core.float3.Multiply(System.Single, Fusee.Math.Core.float3)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Multiply
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 918
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1090
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2596,9 +3448,13 @@ items:
   fullName: Fusee.Math.Core.float3.Multiply(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Multiply
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 929
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1101
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2636,9 +3492,13 @@ items:
   fullName: Fusee.Math.Core.float3.Division(Fusee.Math.Core.float3, System.Single)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Division
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 942
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1114
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2676,9 +3536,13 @@ items:
   fullName: Fusee.Math.Core.float3.Equality(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Equality
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 955
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1127
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2716,9 +3580,13 @@ items:
   fullName: Fusee.Math.Core.float3.Inequality(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Inequality
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 968
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1140
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2756,9 +3624,13 @@ items:
   fullName: Fusee.Math.Core.float3.Explicit(Fusee.Math.Core.double3 to Fusee.Math.Core.float3)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Explicit
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 978
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1150
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2796,9 +3668,13 @@ items:
   fullName: Fusee.Math.Core.float3.ToString()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ToString
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 995
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1167
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2830,9 +3706,13 @@ items:
   fullName: Fusee.Math.Core.float3.ToString(System.IFormatProvider)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ToString
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 1007
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1179
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2865,9 +3745,13 @@ items:
   fullName: Fusee.Math.Core.float3.GetHashCode()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: GetHashCode
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 1032
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1204
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2899,9 +3783,13 @@ items:
   fullName: Fusee.Math.Core.float3.Equals(System.Object)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Equals
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 1048
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1220
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2937,9 +3825,13 @@ items:
   fullName: Fusee.Math.Core.float3.r
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: r
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 1065
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1237
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2970,9 +3862,13 @@ items:
   fullName: Fusee.Math.Core.float3.g
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: g
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 1074
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1246
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -3003,9 +3899,13 @@ items:
   fullName: Fusee.Math.Core.float3.b
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: b
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 1083
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1255
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -3036,9 +3936,13 @@ items:
   fullName: Fusee.Math.Core.float3.Equals(Fusee.Math.Core.float3)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Equals
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 1102
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1274
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -3073,9 +3977,13 @@ items:
   fullName: Fusee.Math.Core.float3.ParseConverter
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ParseConverter
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 1118
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1290
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -3109,9 +4017,13 @@ items:
   fullName: Fusee.Math.Core.float3.Parse(System.String, System.IFormatProvider)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float3.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Parse
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float3.cs
-    startLine: 1126
+    path: src/Fusee/src/Math/Core/float3.cs
+    startLine: 1298
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -3456,6 +4368,16 @@ references:
   name: NormalizeFast
   nameWithType: float3.NormalizeFast
   fullName: Fusee.Math.Core.float3.NormalizeFast
+- uid: Fusee.Math.Core.float3.LinearColorFromSRgb*
+  commentId: Overload:Fusee.Math.Core.float3.LinearColorFromSRgb
+  name: LinearColorFromSRgb
+  nameWithType: float3.LinearColorFromSRgb
+  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb
+- uid: Fusee.Math.Core.float3.SRgbFromLinearColor*
+  commentId: Overload:Fusee.Math.Core.float3.SRgbFromLinearColor
+  name: SRgbFromLinearColor
+  nameWithType: float3.SRgbFromLinearColor
+  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor
 - uid: Fusee.Math.Core.float3.ToArray*
   commentId: Overload:Fusee.Math.Core.float3.ToArray
   name: ToArray
@@ -3598,6 +4520,19 @@ references:
   name: Cross
   nameWithType: float3.Cross
   fullName: Fusee.Math.Core.float3.Cross
+- uid: Fusee.Math.Core.M.Step(System.Single,System.Single)
+  commentId: M:Fusee.Math.Core.M.Step(System.Single,System.Single)
+  isExternal: true
+- uid: Fusee.Math.Core.float3.Step*
+  commentId: Overload:Fusee.Math.Core.float3.Step
+  name: Step
+  nameWithType: float3.Step
+  fullName: Fusee.Math.Core.float3.Step
+- uid: Fusee.Math.Core.float3.Pow*
+  commentId: Overload:Fusee.Math.Core.float3.Pow
+  name: Pow
+  nameWithType: float3.Pow
+  fullName: Fusee.Math.Core.float3.Pow
 - uid: Fusee.Math.Core.float3.Lerp*
   commentId: Overload:Fusee.Math.Core.float3.Lerp
   name: Lerp
@@ -3629,6 +4564,20 @@ references:
   name: Quaternion
   nameWithType: Quaternion
   fullName: Fusee.Math.Core.Quaternion
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
 - uid: Fusee.Math.Core.float3.xy*
   commentId: Overload:Fusee.Math.Core.float3.xy
   name: xy
@@ -3732,13 +4681,6 @@ references:
   nameWithType.vb: float3.Narrowing
   fullName.vb: Fusee.Math.Core.float3.Narrowing
   name.vb: Narrowing
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
 - uid: System.ValueType.ToString
   commentId: M:System.ValueType.ToString
   parent: System.ValueType

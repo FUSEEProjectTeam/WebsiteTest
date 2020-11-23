@@ -15,8 +15,12 @@ items:
   fullName: Fusee.Xene.ViseratorExtensions
   type: Class
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Viserator.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ViseratorExtensions
-    path: C:\Users\test\Documents\fusee\Fusee\src\Xene\Viserator.cs
+    path: src/Fusee/src/Xene/Viserator.cs
     startLine: 8
   assemblies:
   - Fusee.Xene
@@ -56,8 +60,12 @@ items:
   fullName: Fusee.Xene.ViseratorExtensions.Viserate<TViserator, TResult, TNode, TComponent>(TNode)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Viserator.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Viserate
-    path: C:\Users\test\Documents\fusee\Fusee\src\Xene\Viserator.cs
+    path: src/Fusee/src/Xene/Viserator.cs
     startLine: 37
   assemblies:
   - Fusee.Xene
@@ -67,9 +75,7 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TResult> Viserate<TViserator, TResult, TNode, TComponent>(this TNode root)
-
           where TViserator : ViseratorBase<TResult, TNode, TComponent>, new()
-
           where TNode : class, INode where TComponent : class, IComponent
     parameters:
     - id: root
@@ -114,8 +120,12 @@ items:
   fullName: Fusee.Xene.ViseratorExtensions.Viserate<TViserator, TResult, TNode, TComponent>(System.Collections.Generic.IEnumerable<TNode>)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Xene/Viserator.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Viserate
-    path: C:\Users\test\Documents\fusee\Fusee\src\Xene\Viserator.cs
+    path: src/Fusee/src/Xene/Viserator.cs
     startLine: 54
   assemblies:
   - Fusee.Xene
@@ -125,9 +135,7 @@ items:
   syntax:
     content: >-
       public static IEnumerable<TResult> Viserate<TViserator, TResult, TNode, TComponent>(this IEnumerable<TNode> rootList)
-
           where TViserator : ViseratorBase<TResult, TNode, TComponent>, new()
-
           where TNode : class, INode where TComponent : class, IComponent
     parameters:
     - id: rootList

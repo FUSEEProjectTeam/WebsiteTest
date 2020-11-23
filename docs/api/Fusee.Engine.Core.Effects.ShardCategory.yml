@@ -11,6 +11,7 @@ items:
   - Fusee.Engine.Core.Effects.ShardCategory.Method
   - Fusee.Engine.Core.Effects.ShardCategory.Property
   - Fusee.Engine.Core.Effects.ShardCategory.Struct
+  - Fusee.Engine.Core.Effects.ShardCategory.SurfOut
   - Fusee.Engine.Core.Effects.ShardCategory.Uniform
   langs:
   - csharp
@@ -20,8 +21,12 @@ items:
   fullName: Fusee.Engine.Core.Effects.ShardCategory
   type: Enum
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Effects/Attributes.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ShardCategory
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    path: src/Fusee/src/Engine/Core/Effects/Attributes.cs
     startLine: 66
   assemblies:
   - Fusee.Engine.Core
@@ -59,8 +64,12 @@ items:
   fullName: Fusee.Engine.Core.Effects.ShardCategory.Header
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Effects/Attributes.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Header
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    path: src/Fusee/src/Engine/Core/Effects/Attributes.cs
     startLine: 72
   assemblies:
   - Fusee.Engine.Core
@@ -89,8 +98,12 @@ items:
   fullName: Fusee.Engine.Core.Effects.ShardCategory.Struct
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Effects/Attributes.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Struct
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    path: src/Fusee/src/Engine/Core/Effects/Attributes.cs
     startLine: 77
   assemblies:
   - Fusee.Engine.Core
@@ -119,8 +132,12 @@ items:
   fullName: Fusee.Engine.Core.Effects.ShardCategory.Uniform
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Effects/Attributes.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Uniform
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    path: src/Fusee/src/Engine/Core/Effects/Attributes.cs
     startLine: 82
   assemblies:
   - Fusee.Engine.Core
@@ -149,8 +166,12 @@ items:
   fullName: Fusee.Engine.Core.Effects.ShardCategory.Property
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Effects/Attributes.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Property
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    path: src/Fusee/src/Engine/Core/Effects/Attributes.cs
     startLine: 87
   assemblies:
   - Fusee.Engine.Core
@@ -179,8 +200,12 @@ items:
   fullName: Fusee.Engine.Core.Effects.ShardCategory.Method
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Effects/Attributes.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Method
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
+    path: src/Fusee/src/Engine/Core/Effects/Attributes.cs
     startLine: 92
   assemblies:
   - Fusee.Engine.Core
@@ -189,6 +214,40 @@ items:
   example: []
   syntax:
     content: Method = 16
+    return:
+      type: Fusee.Engine.Core.Effects.ShardCategory
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Fusee.Engine.Core.Effects.ShardCategory.SurfOut
+  commentId: F:Fusee.Engine.Core.Effects.ShardCategory.SurfOut
+  id: SurfOut
+  parent: Fusee.Engine.Core.Effects.ShardCategory
+  langs:
+  - csharp
+  - vb
+  name: SurfOut
+  nameWithType: ShardCategory.SurfOut
+  fullName: Fusee.Engine.Core.Effects.ShardCategory.SurfOut
+  type: Field
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Effects/Attributes.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: SurfOut
+    path: src/Fusee/src/Engine/Core/Effects/Attributes.cs
+    startLine: 97
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.Effects
+  summary: "\nThe shader shard the surface output method of the source shader.\n"
+  example: []
+  syntax:
+    content: SurfOut = 32
     return:
       type: Fusee.Engine.Core.Effects.ShardCategory
   modifiers.csharp:
@@ -209,16 +268,20 @@ items:
   fullName: Fusee.Engine.Core.Effects.ShardCategory.Main
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Effects/Attributes.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Main
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
-    startLine: 97
+    path: src/Fusee/src/Engine/Core/Effects/Attributes.cs
+    startLine: 102
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.Effects
   summary: "\nThe shader shard is, or is part of, the main method of the source shader.\n"
   example: []
   syntax:
-    content: Main = 31
+    content: Main = 63
     return:
       type: Fusee.Engine.Core.Effects.ShardCategory
   modifiers.csharp:
@@ -239,16 +302,20 @@ items:
   fullName: Fusee.Engine.Core.Effects.ShardCategory.Matrix
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/Effects/Attributes.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Matrix
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\Effects\Attributes.cs
-    startLine: 103
+    path: src/Fusee/src/Engine/Core/Effects/Attributes.cs
+    startLine: 108
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.Effects
   summary: "\nDescribes a matrix, like the mvp matrix. \nThose are uniforms in the shader code but should not be properties of a <xref href=\"Fusee.Engine.Core.Effects.SurfaceEffect\" data-throw-if-not-resolved=\"false\"></xref> because they will be updated by the SceneRenderer.\n"
   example: []
   syntax:
-    content: Matrix = 62
+    content: Matrix = 127
     return:
       type: Fusee.Engine.Core.Effects.ShardCategory
   modifiers.csharp:

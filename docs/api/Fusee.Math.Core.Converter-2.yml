@@ -13,8 +13,12 @@ items:
   fullName: Fusee.Math.Core.Converter<TInput, TOutput>
   type: Delegate
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/M.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Converter
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\M.cs
+    path: src/Fusee/src/Math/Core/M.cs
     startLine: 14
   assemblies:
   - Fusee.Math.Core
@@ -64,10 +68,12 @@ references:
   nameWithType: TOutput
   fullName: TOutput
 - uid: TInput
+  commentId: '!:TInput'
   name: TInput
   nameWithType: TInput
   fullName: TInput
 - uid: TOutput
+  commentId: '!:TOutput'
   name: TOutput
   nameWithType: TOutput
   fullName: TOutput

@@ -86,6 +86,10 @@
     name: FontImp
   - uid: Fusee.Base.Imp.Android.IOImp
     name: IOImp
+  - uid: Fusee.Base.Imp.Android.Resource
+    name: Resource
+  - uid: Fusee.Base.Imp.Android.Resource.Attribute
+    name: Resource.Attribute
 - uid: Fusee.Base.Imp.Desktop
   name: Fusee.Base.Imp.Desktop
   items:
@@ -340,8 +344,6 @@
     name.vb: Bucket(Of T)
   - uid: Fusee.Engine.Core.CapsuleShape
     name: CapsuleShape
-  - uid: Fusee.Engine.Core.Circle
-    name: Circle
   - uid: Fusee.Engine.Core.CollisionShape
     name: CollisionShape
   - uid: Fusee.Engine.Core.CompoundShape
@@ -354,8 +356,6 @@
     name: ConvexHullShape
   - uid: Fusee.Engine.Core.CreatorFunc
     name: CreatorFunc
-  - uid: Fusee.Engine.Core.Cube
-    name: Cube
   - uid: Fusee.Engine.Core.CylinderShape
     name: CylinderShape
   - uid: Fusee.Engine.Core.DeviceConnectionArgs
@@ -386,10 +386,6 @@
     name: GlyphOnMap
   - uid: Fusee.Engine.Core.HingeConstraint
     name: HingeConstraint
-  - uid: Fusee.Engine.Core.Icosahedron
-    name: Icosahedron
-  - uid: Fusee.Engine.Core.Icosphere
-    name: Icosphere
   - uid: Fusee.Engine.Core.Input
     name: Input
   - uid: Fusee.Engine.Core.InputDevice
@@ -402,8 +398,6 @@
     name: KeyboardDevice
   - uid: Fusee.Engine.Core.LightResult
     name: LightResult
-  - uid: Fusee.Engine.Core.Line
-    name: Line
   - uid: Fusee.Engine.Core.MakeEffect
     name: MakeEffect
   - uid: Fusee.Engine.Core.MatchFunc
@@ -420,8 +414,6 @@
     name: MultiSphereShape
   - uid: Fusee.Engine.Core.Network
     name: Network
-  - uid: Fusee.Engine.Core.NineSlicePlane
-    name: NineSlicePlane
   - uid: Fusee.Engine.Core.OBBCalculator
     name: OBBCalculator
   - uid: Fusee.Engine.Core.OBBCalculator.OBBState
@@ -433,8 +425,6 @@
     name: ParticleEmitter
   - uid: Fusee.Engine.Core.PickResult
     name: PickResult
-  - uid: Fusee.Engine.Core.Plane
-    name: Plane
   - uid: Fusee.Engine.Core.Point2PointConstraint
     name: Point2PointConstraint
   - uid: Fusee.Engine.Core.RenderCanvas
@@ -453,8 +443,6 @@
     name: RenderTarget
   - uid: Fusee.Engine.Core.RigidBody
     name: RigidBody
-  - uid: Fusee.Engine.Core.Rocket
-    name: Rocket
   - uid: Fusee.Engine.Core.ScenePicker
     name: ScenePicker
   - uid: Fusee.Engine.Core.ScenePicker.PickerState
@@ -463,14 +451,10 @@
     name: SceneRendererDeferred
   - uid: Fusee.Engine.Core.SceneRendererForward
     name: SceneRendererForward
-  - uid: Fusee.Engine.Core.ShaderCodeBuilder
-    name: ShaderCodeBuilder
   - uid: Fusee.Engine.Core.SixDOFDevice
     name: SixDOFDevice
   - uid: Fusee.Engine.Core.SliderConstraint
     name: SliderConstraint
-  - uid: Fusee.Engine.Core.Sphere
-    name: Sphere
   - uid: Fusee.Engine.Core.SphereShape
     name: SphereShape
   - uid: Fusee.Engine.Core.SSAOHelper
@@ -491,8 +475,6 @@
     name: VideoManager
   - uid: Fusee.Engine.Core.VideoStream
     name: VideoStream
-  - uid: Fusee.Engine.Core.WireframeCube
-    name: WireframeCube
   - uid: Fusee.Engine.Core.WritableArrayTexture
     name: WritableArrayTexture
   - uid: Fusee.Engine.Core.WritableCubeMap
@@ -605,16 +587,6 @@
     name: CodeComponent.InteractionHandler
   - uid: Fusee.Engine.Core.Scene.CustomCameraUpdate
     name: CustomCameraUpdate
-  - uid: Fusee.Engine.Core.Scene.EffectParameterDeclaration
-    name: EffectParameterDeclaration
-  - uid: Fusee.Engine.Core.Scene.EffectPassDeclaration
-    name: EffectPassDeclaration
-  - uid: Fusee.Engine.Core.Scene.EffectPassDeclarationProto
-    name: EffectPassDeclarationProto
-  - uid: Fusee.Engine.Core.Scene.HorizontalTextAlignment
-    name: HorizontalTextAlignment
-  - uid: Fusee.Engine.Core.Scene.IEffectPassDeclarationBase
-    name: IEffectPassDeclarationBase
   - uid: Fusee.Engine.Core.Scene.LerpType
     name: LerpType
   - uid: Fusee.Engine.Core.Scene.Light
@@ -643,10 +615,6 @@
     name: SceneHeader
   - uid: Fusee.Engine.Core.Scene.SceneNode
     name: SceneNode
-  - uid: Fusee.Engine.Core.Scene.ShaderEffect
-    name: ShaderEffect
-  - uid: Fusee.Engine.Core.Scene.ShaderEffectProtoPixel
-    name: ShaderEffectProtoPixel
   - uid: Fusee.Engine.Core.Scene.Transform
     name: Transform
   - uid: Fusee.Engine.Core.Scene.TypeId
@@ -655,8 +623,6 @@
     name: VertexWeight
   - uid: Fusee.Engine.Core.Scene.VertexWeightList
     name: VertexWeightList
-  - uid: Fusee.Engine.Core.Scene.VerticalTextAlignment
-    name: VerticalTextAlignment
   - uid: Fusee.Engine.Core.Scene.Weight
     name: Weight
   - uid: Fusee.Engine.Core.Scene.XForm
@@ -666,32 +632,14 @@
 - uid: Fusee.Engine.Core.ShaderShards
   name: Fusee.Engine.Core.ShaderShards
   items:
-  - uid: Fusee.Engine.Core.ShaderShards.AttributeLocations
-    name: AttributeLocations
   - uid: Fusee.Engine.Core.ShaderShards.Header
     name: Header
-  - uid: Fusee.Engine.Core.ShaderShards.HeaderShard
-    name: HeaderShard
   - uid: Fusee.Engine.Core.ShaderShards.Include
     name: Include
-  - uid: Fusee.Engine.Core.ShaderShards.Includes
-    name: Includes
   - uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
     name: LightingSetupFlags
   - uid: Fusee.Engine.Core.ShaderShards.LightingSetupShards
     name: LightingSetupShards
-  - uid: Fusee.Engine.Core.ShaderShards.MaterialProps
-    name: MaterialProps
-  - uid: Fusee.Engine.Core.ShaderShards.MaterialType
-    name: MaterialType
-  - uid: Fusee.Engine.Core.ShaderShards.MaterialValues
-    name: MaterialValues
-  - uid: Fusee.Engine.Core.ShaderShards.MeshProps
-    name: MeshProps
-  - uid: Fusee.Engine.Core.ShaderShards.ShaderEffectProps
-    name: ShaderEffectProps
-  - uid: Fusee.Engine.Core.ShaderShards.ShaderShardUtil
-    name: ShaderShardUtil
   - uid: Fusee.Engine.Core.ShaderShards.SurfaceOut
     name: SurfaceOut
   - uid: Fusee.Engine.Core.ShaderShards.UniformNameDeclarations
@@ -703,29 +651,19 @@
   items:
   - uid: Fusee.Engine.Core.ShaderShards.Fragment.FragMain
     name: FragMain
-  - uid: Fusee.Engine.Core.ShaderShards.Fragment.FragMainShard
-    name: FragMainShard
   - uid: Fusee.Engine.Core.ShaderShards.Fragment.FragProperties
     name: FragProperties
-  - uid: Fusee.Engine.Core.ShaderShards.Fragment.FragPropertiesShard
-    name: FragPropertiesShard
   - uid: Fusee.Engine.Core.ShaderShards.Fragment.FragShards
     name: FragShards
   - uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
     name: Lighting
-  - uid: Fusee.Engine.Core.ShaderShards.Fragment.LightingShard
-    name: LightingShard
 - uid: Fusee.Engine.Core.ShaderShards.Vertex
   name: Fusee.Engine.Core.ShaderShards.Vertex
   items:
   - uid: Fusee.Engine.Core.ShaderShards.Vertex.VertMain
     name: VertMain
-  - uid: Fusee.Engine.Core.ShaderShards.Vertex.VertMainShard
-    name: VertMainShard
   - uid: Fusee.Engine.Core.ShaderShards.Vertex.VertProperties
     name: VertProperties
-  - uid: Fusee.Engine.Core.ShaderShards.Vertex.VertPropertiesShard
-    name: VertPropertiesShard
   - uid: Fusee.Engine.Core.ShaderShards.Vertex.VertShards
     name: VertShards
 - uid: Fusee.Engine.GUI
@@ -768,6 +706,10 @@
     name: RenderCanvasInputDriverImp
   - uid: Fusee.Engine.Imp.Graphics.Android.RenderContextImp
     name: RenderContextImp
+  - uid: Fusee.Engine.Imp.Graphics.Android.Resource
+    name: Resource
+  - uid: Fusee.Engine.Imp.Graphics.Android.Resource.Attribute
+    name: Resource.Attribute
   - uid: Fusee.Engine.Imp.Graphics.Android.ShaderHandleImp
     name: ShaderHandleImp
   - uid: Fusee.Engine.Imp.Graphics.Android.ShaderParam
@@ -1044,14 +986,10 @@
     name: FusHorizontalTextAlignment
   - uid: Fusee.Serialization.V1.FusLight
     name: FusLight
-  - uid: Fusee.Serialization.V1.FusMaterial
-    name: FusMaterial
   - uid: Fusee.Serialization.V1.FusMaterialBase
     name: FusMaterialBase
   - uid: Fusee.Serialization.V1.FusMaterialBRDF
     name: FusMaterialBRDF
-  - uid: Fusee.Serialization.V1.FusMaterialPBR
-    name: FusMaterialPBR
   - uid: Fusee.Serialization.V1.FusMaterialStandard
     name: FusMaterialStandard
   - uid: Fusee.Serialization.V1.FusMesh
@@ -1074,32 +1012,22 @@
     name: FusXForm
   - uid: Fusee.Serialization.V1.FusXFormText
     name: FusXFormText
-  - uid: Fusee.Serialization.V1.HorizontalTextAlignment
-    name: HorizontalTextAlignment
   - uid: Fusee.Serialization.V1.JointWeightColumn
     name: JointWeightColumn
   - uid: Fusee.Serialization.V1.LerpType
     name: LerpType
-  - uid: Fusee.Serialization.V1.MatChannelContainer
-    name: MatChannelContainer
   - uid: Fusee.Serialization.V1.NormapMapChannel
     name: NormapMapChannel
-  - uid: Fusee.Serialization.V1.NormapMapChannelContainer
-    name: NormapMapChannelContainer
   - uid: Fusee.Serialization.V1.ProjectionMethod
     name: ProjectionMethod
   - uid: Fusee.Serialization.V1.SpecularChannel
     name: SpecularChannel
-  - uid: Fusee.Serialization.V1.SpecularChannelContainer
-    name: SpecularChannelContainer
   - uid: Fusee.Serialization.V1.TypeId
     name: TypeId
   - uid: Fusee.Serialization.V1.VertexWeight
     name: VertexWeight
   - uid: Fusee.Serialization.V1.VertexWeightList
     name: VertexWeightList
-  - uid: Fusee.Serialization.V1.VerticalTextAlignment
-    name: VerticalTextAlignment
 - uid: Fusee.Test.Render.Desktop
   name: Fusee.Test.Render.Desktop
   items:

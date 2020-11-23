@@ -5,11 +5,11 @@ items:
   id: RenderTests
   parent: Fusee.Test.Render.Desktop
   children:
-  - Fusee.Test.Render.Desktop.RenderTests.#ctor(ITestOutputHelper)
+  - Fusee.Test.Render.Desktop.RenderTests.#ctor(Xunit.Abstractions.ITestOutputHelper)
   - Fusee.Test.Render.Desktop.RenderTests.AdvancedUITest
-  - Fusee.Test.Render.Desktop.RenderTests.BumpMappingTest
   - Fusee.Test.Render.Desktop.RenderTests.GeometryEditingTest
   - Fusee.Test.Render.Desktop.RenderTests.MeshingAroundTest
+  - Fusee.Test.Render.Desktop.RenderTests.NormalMappingTest
   - Fusee.Test.Render.Desktop.RenderTests.PickingTest
   - Fusee.Test.Render.Desktop.RenderTests.SimpleTest
   - Fusee.Test.Render.Desktop.RenderTests.ThreeDFontTest
@@ -22,8 +22,12 @@ items:
   fullName: Fusee.Test.Render.Desktop.RenderTests
   type: Class
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: RenderTests
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Render\Desktop\RenderTests.cs
+    path: src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
     startLine: 6
   assemblies:
   - Fusee.Test.Render.Desktop
@@ -47,20 +51,24 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Fusee.Test.Render.Desktop.RenderTests.#ctor(ITestOutputHelper)
-  commentId: M:Fusee.Test.Render.Desktop.RenderTests.#ctor(ITestOutputHelper)
-  id: '#ctor(ITestOutputHelper)'
+- uid: Fusee.Test.Render.Desktop.RenderTests.#ctor(Xunit.Abstractions.ITestOutputHelper)
+  commentId: M:Fusee.Test.Render.Desktop.RenderTests.#ctor(Xunit.Abstractions.ITestOutputHelper)
+  id: '#ctor(Xunit.Abstractions.ITestOutputHelper)'
   parent: Fusee.Test.Render.Desktop.RenderTests
   langs:
   - csharp
   - vb
   name: RenderTests(ITestOutputHelper)
   nameWithType: RenderTests.RenderTests(ITestOutputHelper)
-  fullName: Fusee.Test.Render.Desktop.RenderTests.RenderTests(ITestOutputHelper)
+  fullName: Fusee.Test.Render.Desktop.RenderTests.RenderTests(Xunit.Abstractions.ITestOutputHelper)
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Render\Desktop\RenderTests.cs
+    path: src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
     startLine: 10
   assemblies:
   - Fusee.Test.Render.Desktop
@@ -69,7 +77,7 @@ items:
     content: public RenderTests(ITestOutputHelper output)
     parameters:
     - id: output
-      type: ITestOutputHelper
+      type: Xunit.Abstractions.ITestOutputHelper
     content.vb: Public Sub New(output As ITestOutputHelper)
   overload: Fusee.Test.Render.Desktop.RenderTests.#ctor*
   modifiers.csharp:
@@ -88,42 +96,70 @@ items:
   fullName: Fusee.Test.Render.Desktop.RenderTests.AdvancedUITest()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: AdvancedUITest
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Render\Desktop\RenderTests.cs
+    path: src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
     startLine: 15
   assemblies:
   - Fusee.Test.Render.Desktop
   namespace: Fusee.Test.Render.Desktop
   syntax:
-    content: public void AdvancedUITest()
-    content.vb: Public Sub AdvancedUITest
+    content: >-
+      [Fact]
+
+      public void AdvancedUITest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub AdvancedUITest
   overload: Fusee.Test.Render.Desktop.RenderTests.AdvancedUITest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Fusee.Test.Render.Desktop.RenderTests.BumpMappingTest
-  commentId: M:Fusee.Test.Render.Desktop.RenderTests.BumpMappingTest
-  id: BumpMappingTest
+- uid: Fusee.Test.Render.Desktop.RenderTests.NormalMappingTest
+  commentId: M:Fusee.Test.Render.Desktop.RenderTests.NormalMappingTest
+  id: NormalMappingTest
   parent: Fusee.Test.Render.Desktop.RenderTests
   langs:
   - csharp
   - vb
-  name: BumpMappingTest()
-  nameWithType: RenderTests.BumpMappingTest()
-  fullName: Fusee.Test.Render.Desktop.RenderTests.BumpMappingTest()
+  name: NormalMappingTest()
+  nameWithType: RenderTests.NormalMappingTest()
+  fullName: Fusee.Test.Render.Desktop.RenderTests.NormalMappingTest()
   type: Method
   source:
-    id: BumpMappingTest
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Render\Desktop\RenderTests.cs
+    remote:
+      path: src/DocFX/src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: NormalMappingTest
+    path: src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
     startLine: 45
   assemblies:
   - Fusee.Test.Render.Desktop
   namespace: Fusee.Test.Render.Desktop
   syntax:
-    content: public void BumpMappingTest()
-    content.vb: Public Sub BumpMappingTest
-  overload: Fusee.Test.Render.Desktop.RenderTests.BumpMappingTest*
+    content: >-
+      [Fact]
+
+      public void NormalMappingTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub NormalMappingTest
+  overload: Fusee.Test.Render.Desktop.RenderTests.NormalMappingTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -140,16 +176,30 @@ items:
   fullName: Fusee.Test.Render.Desktop.RenderTests.GeometryEditingTest()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: GeometryEditingTest
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Render\Desktop\RenderTests.cs
+    path: src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
     startLine: 60
   assemblies:
   - Fusee.Test.Render.Desktop
   namespace: Fusee.Test.Render.Desktop
   syntax:
-    content: public void GeometryEditingTest()
-    content.vb: Public Sub GeometryEditingTest
+    content: >-
+      [Fact]
+
+      public void GeometryEditingTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GeometryEditingTest
   overload: Fusee.Test.Render.Desktop.RenderTests.GeometryEditingTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -166,16 +216,30 @@ items:
   fullName: Fusee.Test.Render.Desktop.RenderTests.MeshingAroundTest()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: MeshingAroundTest
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Render\Desktop\RenderTests.cs
+    path: src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
     startLine: 75
   assemblies:
   - Fusee.Test.Render.Desktop
   namespace: Fusee.Test.Render.Desktop
   syntax:
-    content: public void MeshingAroundTest()
-    content.vb: Public Sub MeshingAroundTest
+    content: >-
+      [Fact]
+
+      public void MeshingAroundTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub MeshingAroundTest
   overload: Fusee.Test.Render.Desktop.RenderTests.MeshingAroundTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -192,16 +256,30 @@ items:
   fullName: Fusee.Test.Render.Desktop.RenderTests.PickingTest()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: PickingTest
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Render\Desktop\RenderTests.cs
+    path: src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
     startLine: 90
   assemblies:
   - Fusee.Test.Render.Desktop
   namespace: Fusee.Test.Render.Desktop
   syntax:
-    content: public void PickingTest()
-    content.vb: Public Sub PickingTest
+    content: >-
+      [Fact]
+
+      public void PickingTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub PickingTest
   overload: Fusee.Test.Render.Desktop.RenderTests.PickingTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -218,16 +296,30 @@ items:
   fullName: Fusee.Test.Render.Desktop.RenderTests.SimpleTest()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: SimpleTest
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Render\Desktop\RenderTests.cs
+    path: src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
     startLine: 105
   assemblies:
   - Fusee.Test.Render.Desktop
   namespace: Fusee.Test.Render.Desktop
   syntax:
-    content: public void SimpleTest()
-    content.vb: Public Sub SimpleTest
+    content: >-
+      [Fact]
+
+      public void SimpleTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SimpleTest
   overload: Fusee.Test.Render.Desktop.RenderTests.SimpleTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -244,16 +336,30 @@ items:
   fullName: Fusee.Test.Render.Desktop.RenderTests.ThreeDFontTest()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ThreeDFontTest
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Render\Desktop\RenderTests.cs
+    path: src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
     startLine: 135
   assemblies:
   - Fusee.Test.Render.Desktop
   namespace: Fusee.Test.Render.Desktop
   syntax:
-    content: public void ThreeDFontTest()
-    content.vb: Public Sub ThreeDFontTest
+    content: >-
+      [Fact]
+
+      public void ThreeDFontTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub ThreeDFontTest
   overload: Fusee.Test.Render.Desktop.RenderTests.ThreeDFontTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -270,16 +376,30 @@ items:
   fullName: Fusee.Test.Render.Desktop.RenderTests.UITest()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: UITest
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Render\Desktop\RenderTests.cs
+    path: src/Fusee/src/Tests/Render/Desktop/RenderTests.cs
     startLine: 150
   assemblies:
   - Fusee.Test.Render.Desktop
   namespace: Fusee.Test.Render.Desktop
   syntax:
-    content: public void UITest()
-    content.vb: Public Sub UITest
+    content: >-
+      [Fact]
+
+      public void UITest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub UITest
   overload: Fusee.Test.Render.Desktop.RenderTests.UITest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -587,22 +707,29 @@ references:
   name: RenderTests
   nameWithType: RenderTests.RenderTests
   fullName: Fusee.Test.Render.Desktop.RenderTests.RenderTests
-- uid: ITestOutputHelper
-  commentId: '!:ITestOutputHelper'
+- uid: Xunit.Abstractions.ITestOutputHelper
+  commentId: T:Xunit.Abstractions.ITestOutputHelper
+  parent: Xunit.Abstractions
   isExternal: true
   name: ITestOutputHelper
   nameWithType: ITestOutputHelper
-  fullName: ITestOutputHelper
+  fullName: Xunit.Abstractions.ITestOutputHelper
+- uid: Xunit.Abstractions
+  commentId: N:Xunit.Abstractions
+  isExternal: true
+  name: Xunit.Abstractions
+  nameWithType: Xunit.Abstractions
+  fullName: Xunit.Abstractions
 - uid: Fusee.Test.Render.Desktop.RenderTests.AdvancedUITest*
   commentId: Overload:Fusee.Test.Render.Desktop.RenderTests.AdvancedUITest
   name: AdvancedUITest
   nameWithType: RenderTests.AdvancedUITest
   fullName: Fusee.Test.Render.Desktop.RenderTests.AdvancedUITest
-- uid: Fusee.Test.Render.Desktop.RenderTests.BumpMappingTest*
-  commentId: Overload:Fusee.Test.Render.Desktop.RenderTests.BumpMappingTest
-  name: BumpMappingTest
-  nameWithType: RenderTests.BumpMappingTest
-  fullName: Fusee.Test.Render.Desktop.RenderTests.BumpMappingTest
+- uid: Fusee.Test.Render.Desktop.RenderTests.NormalMappingTest*
+  commentId: Overload:Fusee.Test.Render.Desktop.RenderTests.NormalMappingTest
+  name: NormalMappingTest
+  nameWithType: RenderTests.NormalMappingTest
+  fullName: Fusee.Test.Render.Desktop.RenderTests.NormalMappingTest
 - uid: Fusee.Test.Render.Desktop.RenderTests.GeometryEditingTest*
   commentId: Overload:Fusee.Test.Render.Desktop.RenderTests.GeometryEditingTest
   name: GeometryEditingTest

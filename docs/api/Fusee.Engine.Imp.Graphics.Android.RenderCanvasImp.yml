@@ -5,7 +5,7 @@ items:
   id: RenderCanvasImp
   parent: Fusee.Engine.Imp.Graphics.Android
   children:
-  - Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor(Context,IAttributeSet,Action)
+  - Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Action)
   - Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.Caption
   - Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.CloseGameWindow
   - Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.DeltaTime
@@ -41,8 +41,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp
   type: Class
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: RenderCanvasImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 17
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -50,17 +54,22 @@ items:
   summary: "\nThis is a default render canvas implementation creating its own rendering window.\n"
   example: []
   syntax:
-    content: 'public class RenderCanvasImp : object, IRenderCanvasImp'
+    content: 'public class RenderCanvasImp : IRenderCanvasImp'
     content.vb: >-
       Public Class RenderCanvasImp
-
-          Inherits Object
-
           Implements IRenderCanvasImp
   inheritance:
   - System.Object
   implements:
   - Fusee.Engine.Common.IRenderCanvasImp
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   modifiers.csharp:
   - public
   - class
@@ -79,8 +88,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.Width
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Width
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 27
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -115,8 +128,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.Height
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Height
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 42
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -151,8 +168,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.Caption
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Caption
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 59
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -187,8 +208,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.DeltaTime
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: DeltaTime
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 76
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -223,8 +248,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.VerticalSync
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: VerticalSync
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 93
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -259,8 +288,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.Fullscreen
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Fullscreen
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 105
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -295,8 +328,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.Focused
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Focused
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 118
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -329,8 +366,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.VideoWallMode
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: VideoWallMode
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 126
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -362,8 +403,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.TryptMonitorSetupVertical
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: TryptMonitorSetupVertical
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 136
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -395,8 +440,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.TryptMonitorSetupHorizontal
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: TryptMonitorSetupHorizontal
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 146
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -428,8 +477,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.View
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: View
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 159
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -440,7 +493,7 @@ items:
     content: public View View { get; }
     parameters: []
     return:
-      type: View
+      type: Android.Views.View
       description: "\nThe view.\n"
     content.vb: Public ReadOnly Property View As View
   overload: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.View*
@@ -450,20 +503,24 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor(Context,IAttributeSet,Action)
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor(Context,IAttributeSet,Action)
-  id: '#ctor(Context,IAttributeSet,Action)'
+- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Action)
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Action)
+  id: '#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Action)'
   parent: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp
   langs:
   - csharp
   - vb
   name: RenderCanvasImp(Context, IAttributeSet, Action)
   nameWithType: RenderCanvasImp.RenderCanvasImp(Context, IAttributeSet, Action)
-  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.RenderCanvasImp(Context, IAttributeSet, Action)
+  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.RenderCanvasImp(Android.Content.Context, Android.Util.IAttributeSet, System.Action)
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 170
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -474,11 +531,11 @@ items:
     content: public RenderCanvasImp(Context context, IAttributeSet attrs, Action run)
     parameters:
     - id: context
-      type: Context
+      type: Android.Content.Context
     - id: attrs
-      type: IAttributeSet
+      type: Android.Util.IAttributeSet
     - id: run
-      type: Action
+      type: System.Action
     content.vb: Public Sub New(context As Context, attrs As IAttributeSet, run As Action)
   overload: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor*
   modifiers.csharp:
@@ -497,8 +554,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.Dispose()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Dispose
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 178
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -525,8 +586,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.VideoWall(System.Int32, System.Int32, System.Boolean, System.Boolean)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: VideoWall
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 194
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -566,8 +631,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.SetWindowSize(System.Int32, System.Int32, System.Int32, System.Int32, System.Boolean)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: SetWindowSize
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 206
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -575,7 +644,7 @@ items:
   summary: "\nSets the size of the output window for desktop development.\n"
   example: []
   syntax:
-    content: public void SetWindowSize(int width, int height, int posx = null, int posy = null, bool borderHidden = false)
+    content: public void SetWindowSize(int width, int height, int posx = -1, int posy = -1, bool borderHidden = false)
     parameters:
     - id: width
       type: System.Int32
@@ -592,7 +661,7 @@ items:
     - id: borderHidden
       type: System.Boolean
       description: Show the window border or not.
-    content.vb: Public Sub SetWindowSize(width As Integer, height As Integer, posx As Integer = Nothing, posy As Integer = Nothing, borderHidden As Boolean = False)
+    content.vb: Public Sub SetWindowSize(width As Integer, height As Integer, posx As Integer = -1, posy As Integer = -1, borderHidden As Boolean = False)
   overload: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.SetWindowSize*
   implements:
   - Fusee.Engine.Common.IRenderCanvasImp.SetWindowSize(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)
@@ -612,8 +681,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.CloseGameWindow()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: CloseGameWindow
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 213
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -642,8 +715,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.Present()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Present
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 221
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -672,8 +749,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.SetCursor(Fusee.Engine.Common.CursorType)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: SetCursor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 230
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -706,8 +787,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.OpenLink(System.String)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: OpenLink
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 239
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -740,8 +825,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.Run()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Run
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 252
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -770,8 +859,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.Init
   type: Event
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Init
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 268
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -781,8 +874,10 @@ items:
   syntax:
     content: public event EventHandler<InitEventArgs> Init
     return:
-      type: EventHandler{Fusee.Engine.Common.InitEventArgs}
+      type: System.EventHandler{Fusee.Engine.Common.InitEventArgs}
     content.vb: Public Event Init As EventHandler(Of InitEventArgs)
+  implements:
+  - Fusee.Engine.Common.IRenderCanvasImp.Init
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -799,8 +894,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.UnLoad
   type: Event
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: UnLoad
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 273
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -810,8 +909,10 @@ items:
   syntax:
     content: public event EventHandler<InitEventArgs> UnLoad
     return:
-      type: EventHandler{Fusee.Engine.Common.InitEventArgs}
+      type: System.EventHandler{Fusee.Engine.Common.InitEventArgs}
     content.vb: Public Event UnLoad As EventHandler(Of InitEventArgs)
+  implements:
+  - Fusee.Engine.Common.IRenderCanvasImp.UnLoad
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -828,8 +929,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.Render
   type: Event
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Render
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 278
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -839,8 +944,10 @@ items:
   syntax:
     content: public event EventHandler<RenderEventArgs> Render
     return:
-      type: EventHandler{Fusee.Engine.Common.RenderEventArgs}
+      type: System.EventHandler{Fusee.Engine.Common.RenderEventArgs}
     content.vb: Public Event Render As EventHandler(Of RenderEventArgs)
+  implements:
+  - Fusee.Engine.Common.IRenderCanvasImp.Render
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -857,8 +964,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.Resize
   type: Event
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Resize
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 283
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -868,8 +979,10 @@ items:
   syntax:
     content: public event EventHandler<ResizeEventArgs> Resize
     return:
-      type: EventHandler{Fusee.Engine.Common.ResizeEventArgs}
+      type: System.EventHandler{Fusee.Engine.Common.ResizeEventArgs}
     content.vb: Public Event Resize As EventHandler(Of ResizeEventArgs)
+  implements:
+  - Fusee.Engine.Common.IRenderCanvasImp.Resize
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -886,8 +999,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.DoInit()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: DoInit
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 292
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -914,8 +1031,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.DoUnLoad()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: DoUnLoad
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 301
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -942,8 +1063,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.DoRender()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: DoRender
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 310
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -970,8 +1095,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.DoResize(System.Int32, System.Int32)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: DoResize
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\RenderCanvasImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/RenderCanvasImp.cs
     startLine: 319
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -1010,6 +1139,285 @@ references:
   name: IRenderCanvasImp
   nameWithType: IRenderCanvasImp
   fullName: Fusee.Engine.Common.IRenderCanvasImp
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -1140,11 +1548,19 @@ references:
   name: View
   nameWithType: RenderCanvasImp.View
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.View
-- uid: View
+- uid: Android.Views.View
+  commentId: T:Android.Views.View
+  parent: Android.Views
   isExternal: true
   name: View
   nameWithType: View
-  fullName: View
+  fullName: Android.Views.View
+- uid: Android.Views
+  commentId: N:Android.Views
+  isExternal: true
+  name: Android.Views
+  nameWithType: Android.Views
+  fullName: Android.Views
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp
   commentId: T:Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp
   parent: Fusee.Engine.Imp.Graphics.Android
@@ -1156,21 +1572,39 @@ references:
   name: RenderCanvasImp
   nameWithType: RenderCanvasImp.RenderCanvasImp
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.RenderCanvasImp
-- uid: Context
+- uid: Android.Content.Context
+  commentId: T:Android.Content.Context
+  parent: Android.Content
   isExternal: true
   name: Context
   nameWithType: Context
-  fullName: Context
-- uid: IAttributeSet
+  fullName: Android.Content.Context
+- uid: Android.Util.IAttributeSet
+  commentId: T:Android.Util.IAttributeSet
+  parent: Android.Util
   isExternal: true
   name: IAttributeSet
   nameWithType: IAttributeSet
-  fullName: IAttributeSet
-- uid: Action
+  fullName: Android.Util.IAttributeSet
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
   isExternal: true
   name: Action
   nameWithType: Action
-  fullName: Action
+  fullName: System.Action
+- uid: Android.Content
+  commentId: N:Android.Content
+  isExternal: true
+  name: Android.Content
+  nameWithType: Android.Content
+  fullName: Android.Content
+- uid: Android.Util
+  commentId: N:Android.Util
+  isExternal: true
+  name: Android.Util
+  nameWithType: Android.Util
+  fullName: Android.Util
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.Dispose*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.Dispose
   name: Dispose
@@ -1479,20 +1913,27 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: EventHandler{Fusee.Engine.Common.InitEventArgs}
-  commentId: '!:EventHandler{Fusee.Engine.Common.InitEventArgs}'
-  definition: EventHandler`1
+- uid: Fusee.Engine.Common.IRenderCanvasImp.Init
+  commentId: E:Fusee.Engine.Common.IRenderCanvasImp.Init
+  parent: Fusee.Engine.Common.IRenderCanvasImp
+  name: Init
+  nameWithType: IRenderCanvasImp.Init
+  fullName: Fusee.Engine.Common.IRenderCanvasImp.Init
+- uid: System.EventHandler{Fusee.Engine.Common.InitEventArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Common.InitEventArgs}
+  parent: System
+  definition: System.EventHandler`1
   name: EventHandler<InitEventArgs>
   nameWithType: EventHandler<InitEventArgs>
-  fullName: EventHandler<Fusee.Engine.Common.InitEventArgs>
+  fullName: System.EventHandler<Fusee.Engine.Common.InitEventArgs>
   nameWithType.vb: EventHandler(Of InitEventArgs)
-  fullName.vb: EventHandler(Of Fusee.Engine.Common.InitEventArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Common.InitEventArgs)
   name.vb: EventHandler(Of InitEventArgs)
   spec.csharp:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: <
     nameWithType: <
@@ -1505,10 +1946,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -1520,58 +1961,72 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: EventHandler`1
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
   isExternal: true
-  name: EventHandler<>
-  nameWithType: EventHandler<>
-  fullName: EventHandler<>
-  nameWithType.vb: EventHandler(Of )
-  fullName.vb: EventHandler(Of )
-  name.vb: EventHandler(Of )
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
   spec.csharp:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
   - name: )
     nameWithType: )
     fullName: )
-- uid: EventHandler{Fusee.Engine.Common.RenderEventArgs}
-  commentId: '!:EventHandler{Fusee.Engine.Common.RenderEventArgs}'
-  definition: EventHandler`1
+- uid: Fusee.Engine.Common.IRenderCanvasImp.UnLoad
+  commentId: E:Fusee.Engine.Common.IRenderCanvasImp.UnLoad
+  parent: Fusee.Engine.Common.IRenderCanvasImp
+  name: UnLoad
+  nameWithType: IRenderCanvasImp.UnLoad
+  fullName: Fusee.Engine.Common.IRenderCanvasImp.UnLoad
+- uid: Fusee.Engine.Common.IRenderCanvasImp.Render
+  commentId: E:Fusee.Engine.Common.IRenderCanvasImp.Render
+  parent: Fusee.Engine.Common.IRenderCanvasImp
+  name: Render
+  nameWithType: IRenderCanvasImp.Render
+  fullName: Fusee.Engine.Common.IRenderCanvasImp.Render
+- uid: System.EventHandler{Fusee.Engine.Common.RenderEventArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Common.RenderEventArgs}
+  parent: System
+  definition: System.EventHandler`1
   name: EventHandler<RenderEventArgs>
   nameWithType: EventHandler<RenderEventArgs>
-  fullName: EventHandler<Fusee.Engine.Common.RenderEventArgs>
+  fullName: System.EventHandler<Fusee.Engine.Common.RenderEventArgs>
   nameWithType.vb: EventHandler(Of RenderEventArgs)
-  fullName.vb: EventHandler(Of Fusee.Engine.Common.RenderEventArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Common.RenderEventArgs)
   name.vb: EventHandler(Of RenderEventArgs)
   spec.csharp:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: <
     nameWithType: <
@@ -1584,10 +2039,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -1599,20 +2054,27 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: EventHandler{Fusee.Engine.Common.ResizeEventArgs}
-  commentId: '!:EventHandler{Fusee.Engine.Common.ResizeEventArgs}'
-  definition: EventHandler`1
+- uid: Fusee.Engine.Common.IRenderCanvasImp.Resize
+  commentId: E:Fusee.Engine.Common.IRenderCanvasImp.Resize
+  parent: Fusee.Engine.Common.IRenderCanvasImp
+  name: Resize
+  nameWithType: IRenderCanvasImp.Resize
+  fullName: Fusee.Engine.Common.IRenderCanvasImp.Resize
+- uid: System.EventHandler{Fusee.Engine.Common.ResizeEventArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Common.ResizeEventArgs}
+  parent: System
+  definition: System.EventHandler`1
   name: EventHandler<ResizeEventArgs>
   nameWithType: EventHandler<ResizeEventArgs>
-  fullName: EventHandler<Fusee.Engine.Common.ResizeEventArgs>
+  fullName: System.EventHandler<Fusee.Engine.Common.ResizeEventArgs>
   nameWithType.vb: EventHandler(Of ResizeEventArgs)
-  fullName.vb: EventHandler(Of Fusee.Engine.Common.ResizeEventArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Common.ResizeEventArgs)
   name.vb: EventHandler(Of ResizeEventArgs)
   spec.csharp:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: <
     nameWithType: <
@@ -1625,10 +2087,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '

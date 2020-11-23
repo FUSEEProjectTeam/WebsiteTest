@@ -10,6 +10,7 @@ items:
   - Fusee.Math.Core.float4.#ctor(Fusee.Math.Core.float3)
   - Fusee.Math.Core.float4.#ctor(Fusee.Math.Core.float3,System.Single)
   - Fusee.Math.Core.float4.#ctor(Fusee.Math.Core.float4)
+  - Fusee.Math.Core.float4.#ctor(System.Single)
   - Fusee.Math.Core.float4.#ctor(System.Single,System.Single,System.Single,System.Single)
   - Fusee.Math.Core.float4.a
   - Fusee.Math.Core.float4.Add(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
@@ -27,7 +28,13 @@ items:
   - Fusee.Math.Core.float4.Length
   - Fusee.Math.Core.float4.Length1
   - Fusee.Math.Core.float4.LengthSquared
+  - Fusee.Math.Core.float4.Lerp(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Math.Core.float4)
   - Fusee.Math.Core.float4.Lerp(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single)
+  - Fusee.Math.Core.float4.LinearColorFromSRgb
+  - Fusee.Math.Core.float4.LinearColorFromSRgb(Fusee.Math.Core.float4)
+  - Fusee.Math.Core.float4.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Fusee.Math.Core.float4.LinearColorFromSRgb(System.String)
+  - Fusee.Math.Core.float4.LinearColorFromSRgb(System.UInt32)
   - Fusee.Math.Core.float4.Max(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
   - Fusee.Math.Core.float4.Min(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
   - Fusee.Math.Core.float4.Multiply(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
@@ -51,11 +58,18 @@ items:
   - Fusee.Math.Core.float4.op_UnaryNegation(Fusee.Math.Core.float4)
   - Fusee.Math.Core.float4.Parse(System.String,System.IFormatProvider)
   - Fusee.Math.Core.float4.ParseConverter
+  - Fusee.Math.Core.float4.Pow(Fusee.Math.Core.float4,System.Single)
   - Fusee.Math.Core.float4.r
   - Fusee.Math.Core.float4.rg
   - Fusee.Math.Core.float4.rgb
   - Fusee.Math.Core.float4.Round
   - Fusee.Math.Core.float4.Round(Fusee.Math.Core.float4)
+  - Fusee.Math.Core.float4.SRgbFromLinearColor
+  - Fusee.Math.Core.float4.SRgbFromLinearColor(Fusee.Math.Core.float4)
+  - Fusee.Math.Core.float4.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Fusee.Math.Core.float4.SRgbFromLinearColor(System.String)
+  - Fusee.Math.Core.float4.SRgbFromLinearColor(System.UInt32)
+  - Fusee.Math.Core.float4.Step(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
   - Fusee.Math.Core.float4.Subtract(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
   - Fusee.Math.Core.float4.ToArray
   - Fusee.Math.Core.float4.ToString
@@ -79,8 +93,12 @@ items:
   fullName: Fusee.Math.Core.float4
   type: Struct
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: float4
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
+    path: src/Fusee/src/Math/Core/float4.cs
     startLine: 11
   assemblies:
   - Fusee.Math.Core
@@ -97,7 +115,6 @@ items:
       <ProtoContract>
 
       Public Structure float4
-
           Implements IEquatable(Of float4)
   implements:
   - System.IEquatable{Fusee.Math.Core.float4}
@@ -127,8 +144,12 @@ items:
   fullName: Fusee.Math.Core.float4.x
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: x
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
+    path: src/Fusee/src/Math/Core/float4.cs
     startLine: 21
   assemblies:
   - Fusee.Math.Core
@@ -168,8 +189,12 @@ items:
   fullName: Fusee.Math.Core.float4.y
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: y
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
+    path: src/Fusee/src/Math/Core/float4.cs
     startLine: 27
   assemblies:
   - Fusee.Math.Core
@@ -209,8 +234,12 @@ items:
   fullName: Fusee.Math.Core.float4.z
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: z
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
+    path: src/Fusee/src/Math/Core/float4.cs
     startLine: 33
   assemblies:
   - Fusee.Math.Core
@@ -250,8 +279,12 @@ items:
   fullName: Fusee.Math.Core.float4.w
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: w
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
+    path: src/Fusee/src/Math/Core/float4.cs
     startLine: 39
   assemblies:
   - Fusee.Math.Core
@@ -291,8 +324,12 @@ items:
   fullName: Fusee.Math.Core.float4.UnitX
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: UnitX
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
+    path: src/Fusee/src/Math/Core/float4.cs
     startLine: 44
   assemblies:
   - Fusee.Math.Core
@@ -322,8 +359,12 @@ items:
   fullName: Fusee.Math.Core.float4.UnitY
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: UnitY
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
+    path: src/Fusee/src/Math/Core/float4.cs
     startLine: 49
   assemblies:
   - Fusee.Math.Core
@@ -353,8 +394,12 @@ items:
   fullName: Fusee.Math.Core.float4.UnitZ
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: UnitZ
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
+    path: src/Fusee/src/Math/Core/float4.cs
     startLine: 54
   assemblies:
   - Fusee.Math.Core
@@ -384,8 +429,12 @@ items:
   fullName: Fusee.Math.Core.float4.UnitW
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: UnitW
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
+    path: src/Fusee/src/Math/Core/float4.cs
     startLine: 59
   assemblies:
   - Fusee.Math.Core
@@ -415,8 +464,12 @@ items:
   fullName: Fusee.Math.Core.float4.Zero
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Zero
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
+    path: src/Fusee/src/Math/Core/float4.cs
     startLine: 64
   assemblies:
   - Fusee.Math.Core
@@ -446,8 +499,12 @@ items:
   fullName: Fusee.Math.Core.float4.One
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: One
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
+    path: src/Fusee/src/Math/Core/float4.cs
     startLine: 69
   assemblies:
   - Fusee.Math.Core
@@ -467,6 +524,42 @@ items:
   - Public
   - Shared
   - ReadOnly
+- uid: Fusee.Math.Core.float4.#ctor(System.Single)
+  commentId: M:Fusee.Math.Core.float4.#ctor(System.Single)
+  id: '#ctor(System.Single)'
+  parent: Fusee.Math.Core.float4
+  langs:
+  - csharp
+  - vb
+  name: float4(Single)
+  nameWithType: float4.float4(Single)
+  fullName: Fusee.Math.Core.float4.float4(System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: .ctor
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 84
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConstructs a new float4.\n"
+  example: []
+  syntax:
+    content: public float4(float val)
+    parameters:
+    - id: val
+      type: System.Single
+      description: This value will be set for the x, y, z and w component.
+    content.vb: Public Sub New(val As Single)
+  overload: Fusee.Math.Core.float4.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Fusee.Math.Core.float4.#ctor(System.Single,System.Single,System.Single,System.Single)
   commentId: M:Fusee.Math.Core.float4.#ctor(System.Single,System.Single,System.Single,System.Single)
   id: '#ctor(System.Single,System.Single,System.Single,System.Single)'
@@ -479,9 +572,13 @@ items:
   fullName: Fusee.Math.Core.float4.float4(System.Single, System.Single, System.Single, System.Single)
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 87
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 99
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -520,9 +617,13 @@ items:
   fullName: Fusee.Math.Core.float4.float4(Fusee.Math.Core.float2)
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 99
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 111
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -552,9 +653,13 @@ items:
   fullName: Fusee.Math.Core.float4.float4(Fusee.Math.Core.float3)
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 111
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 123
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -584,9 +689,13 @@ items:
   fullName: Fusee.Math.Core.float4.float4(Fusee.Math.Core.float3, System.Single)
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 124
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 136
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -619,9 +728,13 @@ items:
   fullName: Fusee.Math.Core.float4.float4(Fusee.Math.Core.float4)
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 136
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 148
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -651,9 +764,13 @@ items:
   fullName: Fusee.Math.Core.float4.float4(Fusee.Math.Core.double4)
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 148
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 160
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -683,9 +800,13 @@ items:
   fullName: Fusee.Math.Core.float4.Item[System.Int32]
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: this[]
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 167
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 179
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -723,9 +844,13 @@ items:
   fullName: Fusee.Math.Core.float4.Length
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Length
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 225
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 237
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -759,9 +884,13 @@ items:
   fullName: Fusee.Math.Core.float4.Length1
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Length1
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 238
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 250
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -795,9 +924,13 @@ items:
   fullName: Fusee.Math.Core.float4.LengthSquared
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: LengthSquared
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 255
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 267
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -832,9 +965,13 @@ items:
   fullName: Fusee.Math.Core.float4.Normalize()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Normalize
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 270
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 282
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -862,9 +999,13 @@ items:
   fullName: Fusee.Math.Core.float4.Normalize1()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Normalize1
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 282
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 294
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -892,9 +1033,13 @@ items:
   fullName: Fusee.Math.Core.float4.NormalizeFast()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: NormalizeFast
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 294
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 306
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -922,9 +1067,13 @@ items:
   fullName: Fusee.Math.Core.float4.ToArray()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ToArray
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 307
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 319
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -953,9 +1102,13 @@ items:
   fullName: Fusee.Math.Core.float4.Round()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Round
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 319
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 331
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -967,6 +1120,76 @@ items:
       type: Fusee.Math.Core.float4
     content.vb: Public Function Round As float4
   overload: Fusee.Math.Core.float4.Round*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float4.LinearColorFromSRgb
+  commentId: M:Fusee.Math.Core.float4.LinearColorFromSRgb
+  id: LinearColorFromSRgb
+  parent: Fusee.Math.Core.float4
+  langs:
+  - csharp
+  - vb
+  name: LinearColorFromSRgb()
+  nameWithType: float4.LinearColorFromSRgb()
+  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: LinearColorFromSRgb
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 342
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts this float4 - which is interpreted as a color - from sRgb space to linear color space.       \n"
+  example: []
+  syntax:
+    content: public float4 LinearColorFromSRgb()
+    return:
+      type: Fusee.Math.Core.float4
+      description: ''
+    content.vb: Public Function LinearColorFromSRgb As float4
+  overload: Fusee.Math.Core.float4.LinearColorFromSRgb*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Fusee.Math.Core.float4.SRgbFromLinearColor
+  commentId: M:Fusee.Math.Core.float4.SRgbFromLinearColor
+  id: SRgbFromLinearColor
+  parent: Fusee.Math.Core.float4
+  langs:
+  - csharp
+  - vb
+  name: SRgbFromLinearColor()
+  nameWithType: float4.SRgbFromLinearColor()
+  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: SRgbFromLinearColor
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 351
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts this float4 - which is interpreted as a color - from linear color space to sRgb space.\n"
+  example: []
+  syntax:
+    content: public float4 SRgbFromLinearColor()
+    return:
+      type: Fusee.Math.Core.float4
+      description: ''
+    content.vb: Public Function SRgbFromLinearColor As float4
+  overload: Fusee.Math.Core.float4.SRgbFromLinearColor*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -983,9 +1206,13 @@ items:
   fullName: Fusee.Math.Core.float4.Add(Fusee.Math.Core.float4, Fusee.Math.Core.float4)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Add
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 338
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 368
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1023,9 +1250,13 @@ items:
   fullName: Fusee.Math.Core.float4.Subtract(Fusee.Math.Core.float4, Fusee.Math.Core.float4)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Subtract
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 354
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 384
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1063,9 +1294,13 @@ items:
   fullName: Fusee.Math.Core.float4.Multiply(Fusee.Math.Core.float4, System.Single)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Multiply
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 370
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 400
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1103,9 +1338,13 @@ items:
   fullName: Fusee.Math.Core.float4.Multiply(Fusee.Math.Core.float4, Fusee.Math.Core.float4)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Multiply
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 382
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 412
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1143,9 +1382,13 @@ items:
   fullName: Fusee.Math.Core.float4.Divide(Fusee.Math.Core.float4, System.Single)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Divide
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 398
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 428
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1183,9 +1426,13 @@ items:
   fullName: Fusee.Math.Core.float4.Divide(Fusee.Math.Core.float4, Fusee.Math.Core.float4)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Divide
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 410
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 440
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1223,9 +1470,13 @@ items:
   fullName: Fusee.Math.Core.float4.Min(Fusee.Math.Core.float4, Fusee.Math.Core.float4)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Min
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 426
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 456
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1263,9 +1514,13 @@ items:
   fullName: Fusee.Math.Core.float4.Max(Fusee.Math.Core.float4, Fusee.Math.Core.float4)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Max
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 445
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 475
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1303,9 +1558,13 @@ items:
   fullName: Fusee.Math.Core.float4.Clamp(Fusee.Math.Core.float4, Fusee.Math.Core.float4, Fusee.Math.Core.float4)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Clamp
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 465
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 495
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1346,9 +1605,13 @@ items:
   fullName: Fusee.Math.Core.float4.Normalize(Fusee.Math.Core.float4)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Normalize
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 483
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 513
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1383,9 +1646,13 @@ items:
   fullName: Fusee.Math.Core.float4.Normalize1(Fusee.Math.Core.float4)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Normalize1
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 502
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 532
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1420,9 +1687,13 @@ items:
   fullName: Fusee.Math.Core.float4.NormalizeFast(Fusee.Math.Core.float4)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: NormalizeFast
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 521
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 551
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1457,9 +1728,13 @@ items:
   fullName: Fusee.Math.Core.float4.Dot(Fusee.Math.Core.float4, Fusee.Math.Core.float4)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Dot
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 541
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 571
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1485,6 +1760,93 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Fusee.Math.Core.float4.Step(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
+  commentId: M:Fusee.Math.Core.float4.Step(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
+  id: Step(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
+  parent: Fusee.Math.Core.float4
+  langs:
+  - csharp
+  - vb
+  name: Step(float4, float4)
+  nameWithType: float4.Step(float4, float4)
+  fullName: Fusee.Math.Core.float4.Step(Fusee.Math.Core.float4, Fusee.Math.Core.float4)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: Step
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 583
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nPerforms <xref href=\"Fusee.Math.Core.M.Step(System.Single%2cSystem.Single)\" data-throw-if-not-resolved=\"false\"></xref> for each component of the input vectors.\n"
+  example: []
+  syntax:
+    content: public static float4 Step(float4 edge, float4 val)
+    parameters:
+    - id: edge
+      type: Fusee.Math.Core.float4
+      description: Specifies the location of the edge of the step function.
+    - id: val
+      type: Fusee.Math.Core.float4
+      description: Specifies the value to be used to generate the step function.
+    return:
+      type: Fusee.Math.Core.float4
+    content.vb: Public Shared Function Step(edge As float4, val As float4) As float4
+  overload: Fusee.Math.Core.float4.Step*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float4.Pow(Fusee.Math.Core.float4,System.Single)
+  commentId: M:Fusee.Math.Core.float4.Pow(Fusee.Math.Core.float4,System.Single)
+  id: Pow(Fusee.Math.Core.float4,System.Single)
+  parent: Fusee.Math.Core.float4
+  langs:
+  - csharp
+  - vb
+  name: Pow(float4, Single)
+  nameWithType: float4.Pow(float4, Single)
+  fullName: Fusee.Math.Core.float4.Pow(Fusee.Math.Core.float4, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: Pow
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 594
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns a float4 where all components are raised to the specified power.\n"
+  example: []
+  syntax:
+    content: public static float4 Pow(float4 val, float exp)
+    parameters:
+    - id: val
+      type: Fusee.Math.Core.float4
+      description: The float4 to be raised to a power.
+    - id: exp
+      type: System.Single
+      description: A float that specifies a power.
+    return:
+      type: Fusee.Math.Core.float4
+      description: ''
+    content.vb: Public Shared Function Pow(val As float4, exp As Single) As float4
+  overload: Fusee.Math.Core.float4.Pow*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: Fusee.Math.Core.float4.Lerp(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single)
   commentId: M:Fusee.Math.Core.float4.Lerp(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single)
   id: Lerp(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single)
@@ -1497,9 +1859,13 @@ items:
   fullName: Fusee.Math.Core.float4.Lerp(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Lerp
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 557
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 608
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1528,6 +1894,52 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Fusee.Math.Core.float4.Lerp(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Math.Core.float4)
+  commentId: M:Fusee.Math.Core.float4.Lerp(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Math.Core.float4)
+  id: Lerp(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Math.Core.float4)
+  parent: Fusee.Math.Core.float4
+  langs:
+  - csharp
+  - vb
+  name: Lerp(float4, float4, float4)
+  nameWithType: float4.Lerp(float4, float4, float4)
+  fullName: Fusee.Math.Core.float4.Lerp(Fusee.Math.Core.float4, Fusee.Math.Core.float4, Fusee.Math.Core.float4)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: Lerp
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 624
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nReturns a new Vector that is the linear blend of the 2 given Vectors.\nEach component of vector a is blended with its equivalent in vector b.\n"
+  example: []
+  syntax:
+    content: public static float4 Lerp(float4 a, float4 b, float4 blend)
+    parameters:
+    - id: a
+      type: Fusee.Math.Core.float4
+      description: First input vector
+    - id: b
+      type: Fusee.Math.Core.float4
+      description: Second input vector
+    - id: blend
+      type: Fusee.Math.Core.float4
+      description: The blend factor. a when blend=0, b when blend=1.
+    return:
+      type: Fusee.Math.Core.float4
+    content.vb: Public Shared Function Lerp(a As float4, b As float4, blend As float4) As float4
+  overload: Fusee.Math.Core.float4.Lerp*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: Fusee.Math.Core.float4.BaryCentric(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single)
   commentId: M:Fusee.Math.Core.float4.BaryCentric(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single)
   id: BaryCentric(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single)
@@ -1540,9 +1952,13 @@ items:
   fullName: Fusee.Math.Core.float4.BaryCentric(Fusee.Math.Core.float4, Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, System.Single)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: BaryCentric
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 579
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 646
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1589,9 +2005,13 @@ items:
   fullName: Fusee.Math.Core.float4.Round(Fusee.Math.Core.float4)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Round
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 593
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 660
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1614,6 +2034,344 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Fusee.Math.Core.float4.SRgbFromLinearColor(Fusee.Math.Core.float4)
+  commentId: M:Fusee.Math.Core.float4.SRgbFromLinearColor(Fusee.Math.Core.float4)
+  id: SRgbFromLinearColor(Fusee.Math.Core.float4)
+  parent: Fusee.Math.Core.float4
+  langs:
+  - csharp
+  - vb
+  name: SRgbFromLinearColor(float4)
+  nameWithType: float4.SRgbFromLinearColor(float4)
+  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor(Fusee.Math.Core.float4)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: SRgbFromLinearColor
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 676
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts a color value from linear to sRgb space.\n"
+  example: []
+  syntax:
+    content: public static float4 SRgbFromLinearColor(float4 sRGBCol)
+    parameters:
+    - id: sRGBCol
+      type: Fusee.Math.Core.float4
+      description: The linear color value as <xref href="Fusee.Math.Core.float4" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: Fusee.Math.Core.float4
+    content.vb: Public Shared Function SRgbFromLinearColor(sRGBCol As float4) As float4
+  overload: Fusee.Math.Core.float4.SRgbFromLinearColor*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float4.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Fusee.Math.Core.float4.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: SRgbFromLinearColor(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Fusee.Math.Core.float4
+  langs:
+  - csharp
+  - vb
+  name: SRgbFromLinearColor(Int32, Int32, Int32, Int32)
+  nameWithType: float4.SRgbFromLinearColor(Int32, Int32, Int32, Int32)
+  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor(System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: SRgbFromLinearColor
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 688
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts a color value from linear to sRgb space.\n"
+  example: []
+  syntax:
+    content: public static float4 SRgbFromLinearColor(int r, int g, int b, int a)
+    parameters:
+    - id: r
+      type: System.Int32
+      description: The red color value in range 0 - 255.
+    - id: g
+      type: System.Int32
+      description: The green color value in range 0 - 255.
+    - id: b
+      type: System.Int32
+      description: The blue color value in range 0 - 255.
+    - id: a
+      type: System.Int32
+      description: The alpha value in range 0 - 255.
+    return:
+      type: Fusee.Math.Core.float4
+    content.vb: Public Shared Function SRgbFromLinearColor(r As Integer, g As Integer, b As Integer, a As Integer) As float4
+  overload: Fusee.Math.Core.float4.SRgbFromLinearColor*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float4.SRgbFromLinearColor(System.String)
+  commentId: M:Fusee.Math.Core.float4.SRgbFromLinearColor(System.String)
+  id: SRgbFromLinearColor(System.String)
+  parent: Fusee.Math.Core.float4
+  langs:
+  - csharp
+  - vb
+  name: SRgbFromLinearColor(String)
+  nameWithType: float4.SRgbFromLinearColor(String)
+  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: SRgbFromLinearColor
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 697
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts a color value from linear to sRgb space.\n"
+  example: []
+  syntax:
+    content: public static float4 SRgbFromLinearColor(string hex)
+    parameters:
+    - id: hex
+      type: System.String
+      description: The color value as hex code in form of a &quot;FFFFFFFF&quot; string.
+    return:
+      type: Fusee.Math.Core.float4
+    content.vb: Public Shared Function SRgbFromLinearColor(hex As String) As float4
+  overload: Fusee.Math.Core.float4.SRgbFromLinearColor*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float4.SRgbFromLinearColor(System.UInt32)
+  commentId: M:Fusee.Math.Core.float4.SRgbFromLinearColor(System.UInt32)
+  id: SRgbFromLinearColor(System.UInt32)
+  parent: Fusee.Math.Core.float4
+  langs:
+  - csharp
+  - vb
+  name: SRgbFromLinearColor(UInt32)
+  nameWithType: float4.SRgbFromLinearColor(UInt32)
+  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor(System.UInt32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: SRgbFromLinearColor
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 707
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts a color value from linear to sRgb space.\n"
+  example: []
+  syntax:
+    content: public static float4 SRgbFromLinearColor(uint col)
+    parameters:
+    - id: col
+      type: System.UInt32
+      description: The color value as uint.
+    return:
+      type: Fusee.Math.Core.float4
+    content.vb: Public Shared Function SRgbFromLinearColor(col As UInteger) As float4
+  overload: Fusee.Math.Core.float4.SRgbFromLinearColor*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float4.LinearColorFromSRgb(Fusee.Math.Core.float4)
+  commentId: M:Fusee.Math.Core.float4.LinearColorFromSRgb(Fusee.Math.Core.float4)
+  id: LinearColorFromSRgb(Fusee.Math.Core.float4)
+  parent: Fusee.Math.Core.float4
+  langs:
+  - csharp
+  - vb
+  name: LinearColorFromSRgb(float4)
+  nameWithType: float4.LinearColorFromSRgb(float4)
+  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb(Fusee.Math.Core.float4)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: LinearColorFromSRgb
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 720
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts a color value from sRgb to linear space.\n"
+  example: []
+  syntax:
+    content: public static float4 LinearColorFromSRgb(float4 sRGBCol)
+    parameters:
+    - id: sRGBCol
+      type: Fusee.Math.Core.float4
+      description: The sRgb color value as <xref href="Fusee.Math.Core.float4" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: Fusee.Math.Core.float4
+    content.vb: Public Shared Function LinearColorFromSRgb(sRGBCol As float4) As float4
+  overload: Fusee.Math.Core.float4.LinearColorFromSRgb*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float4.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Fusee.Math.Core.float4.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: LinearColorFromSRgb(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Fusee.Math.Core.float4
+  langs:
+  - csharp
+  - vb
+  name: LinearColorFromSRgb(Int32, Int32, Int32, Int32)
+  nameWithType: float4.LinearColorFromSRgb(Int32, Int32, Int32, Int32)
+  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb(System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: LinearColorFromSRgb
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 732
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts a color value from sRgb to linear space.\n"
+  example: []
+  syntax:
+    content: public static float4 LinearColorFromSRgb(int r, int g, int b, int a)
+    parameters:
+    - id: r
+      type: System.Int32
+      description: The red color value in range 0 - 255.
+    - id: g
+      type: System.Int32
+      description: The green color value in range 0 - 255.
+    - id: b
+      type: System.Int32
+      description: The blue color value in range 0 - 255.
+    - id: a
+      type: System.Int32
+      description: The alpha value in range 0 - 255.
+    return:
+      type: Fusee.Math.Core.float4
+    content.vb: Public Shared Function LinearColorFromSRgb(r As Integer, g As Integer, b As Integer, a As Integer) As float4
+  overload: Fusee.Math.Core.float4.LinearColorFromSRgb*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float4.LinearColorFromSRgb(System.String)
+  commentId: M:Fusee.Math.Core.float4.LinearColorFromSRgb(System.String)
+  id: LinearColorFromSRgb(System.String)
+  parent: Fusee.Math.Core.float4
+  langs:
+  - csharp
+  - vb
+  name: LinearColorFromSRgb(String)
+  nameWithType: float4.LinearColorFromSRgb(String)
+  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: LinearColorFromSRgb
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 741
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts a color value from sRgb to linear space.\n"
+  example: []
+  syntax:
+    content: public static float4 LinearColorFromSRgb(string hex)
+    parameters:
+    - id: hex
+      type: System.String
+      description: The color value as hex code in form of a &quot;FFFFFFFF&quot; string.
+    return:
+      type: Fusee.Math.Core.float4
+    content.vb: Public Shared Function LinearColorFromSRgb(hex As String) As float4
+  overload: Fusee.Math.Core.float4.LinearColorFromSRgb*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Math.Core.float4.LinearColorFromSRgb(System.UInt32)
+  commentId: M:Fusee.Math.Core.float4.LinearColorFromSRgb(System.UInt32)
+  id: LinearColorFromSRgb(System.UInt32)
+  parent: Fusee.Math.Core.float4
+  langs:
+  - csharp
+  - vb
+  name: LinearColorFromSRgb(UInt32)
+  nameWithType: float4.LinearColorFromSRgb(UInt32)
+  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb(System.UInt32)
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: LinearColorFromSRgb
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 751
+  assemblies:
+  - Fusee.Math.Core
+  namespace: Fusee.Math.Core
+  summary: "\nConverts a color value from sRgb to linear space.\n"
+  example: []
+  syntax:
+    content: public static float4 LinearColorFromSRgb(uint col)
+    parameters:
+    - id: col
+      type: System.UInt32
+      description: The color value as uint.
+    return:
+      type: Fusee.Math.Core.float4
+    content.vb: Public Shared Function LinearColorFromSRgb(col As UInteger) As float4
+  overload: Fusee.Math.Core.float4.LinearColorFromSRgb*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: Fusee.Math.Core.float4.xy
   commentId: P:Fusee.Math.Core.float4.xy
   id: xy
@@ -1626,9 +2384,13 @@ items:
   fullName: Fusee.Math.Core.float4.xy
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: xy
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 610
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 769
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1659,9 +2421,13 @@ items:
   fullName: Fusee.Math.Core.float4.xyz
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: xyz
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 615
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 774
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1692,9 +2458,13 @@ items:
   fullName: Fusee.Math.Core.float4.Addition(Fusee.Math.Core.float4, Fusee.Math.Core.float4)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Addition
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 627
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 786
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1732,9 +2502,13 @@ items:
   fullName: Fusee.Math.Core.float4.Subtraction(Fusee.Math.Core.float4, Fusee.Math.Core.float4)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Subtraction
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 638
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 797
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1772,9 +2546,13 @@ items:
   fullName: Fusee.Math.Core.float4.UnaryNegation(Fusee.Math.Core.float4)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_UnaryNegation
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 648
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 807
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1809,9 +2587,13 @@ items:
   fullName: Fusee.Math.Core.float4.Multiply(Fusee.Math.Core.float4, System.Single)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Multiply
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 663
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 822
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1849,9 +2631,13 @@ items:
   fullName: Fusee.Math.Core.float4.Multiply(Fusee.Math.Core.float4, Fusee.Math.Core.float4)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Multiply
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 674
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 833
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1889,9 +2675,13 @@ items:
   fullName: Fusee.Math.Core.float4.Multiply(System.Single, Fusee.Math.Core.float4)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Multiply
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 685
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 844
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1929,9 +2719,13 @@ items:
   fullName: Fusee.Math.Core.float4.Division(Fusee.Math.Core.float4, System.Single)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Division
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 696
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 855
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -1969,9 +2763,13 @@ items:
   fullName: Fusee.Math.Core.float4.Equality(Fusee.Math.Core.float4, Fusee.Math.Core.float4)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Equality
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 707
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 866
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2009,9 +2807,13 @@ items:
   fullName: Fusee.Math.Core.float4.Inequality(Fusee.Math.Core.float4, Fusee.Math.Core.float4)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Inequality
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 718
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 877
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2049,9 +2851,13 @@ items:
   fullName: Fusee.Math.Core.float4.Explicit(Fusee.Math.Core.double4 to Fusee.Math.Core.float4)
   type: Operator
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: op_Explicit
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 728
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 887
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2089,9 +2895,13 @@ items:
   fullName: Fusee.Math.Core.float4.ToString()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ToString
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 771
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 930
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2123,9 +2933,13 @@ items:
   fullName: Fusee.Math.Core.float4.ToString(System.IFormatProvider)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ToString
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 783
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 942
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2158,9 +2972,13 @@ items:
   fullName: Fusee.Math.Core.float4.GetHashCode()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: GetHashCode
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 806
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 965
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2192,9 +3010,13 @@ items:
   fullName: Fusee.Math.Core.float4.Equals(System.Object)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Equals
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 820
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 979
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2230,9 +3052,13 @@ items:
   fullName: Fusee.Math.Core.float4.r
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: r
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 837
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 996
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2263,9 +3089,13 @@ items:
   fullName: Fusee.Math.Core.float4.g
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: g
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 846
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 1005
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2296,9 +3126,13 @@ items:
   fullName: Fusee.Math.Core.float4.b
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: b
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 855
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 1014
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2329,9 +3163,13 @@ items:
   fullName: Fusee.Math.Core.float4.rg
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: rg
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 864
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 1023
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2362,9 +3200,13 @@ items:
   fullName: Fusee.Math.Core.float4.rgb
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: rgb
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 873
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 1032
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2395,9 +3237,13 @@ items:
   fullName: Fusee.Math.Core.float4.a
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: a
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 882
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 1041
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2428,9 +3274,13 @@ items:
   fullName: Fusee.Math.Core.float4.Equals(Fusee.Math.Core.float4)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Equals
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 897
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 1056
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2465,9 +3315,13 @@ items:
   fullName: Fusee.Math.Core.float4.ParseConverter
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ParseConverter
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 914
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 1073
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2501,9 +3355,13 @@ items:
   fullName: Fusee.Math.Core.float4.Parse(System.String, System.IFormatProvider)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Math/Core/float4.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Parse
-    path: C:\Users\test\Documents\fusee\Fusee\src\Math\Core\float4.cs
-    startLine: 922
+    path: src/Fusee/src/Math/Core/float4.cs
+    startLine: 1081
   assemblies:
   - Fusee.Math.Core
   namespace: Fusee.Math.Core
@@ -2894,6 +3752,16 @@ references:
   name: Round
   nameWithType: float4.Round
   fullName: Fusee.Math.Core.float4.Round
+- uid: Fusee.Math.Core.float4.LinearColorFromSRgb*
+  commentId: Overload:Fusee.Math.Core.float4.LinearColorFromSRgb
+  name: LinearColorFromSRgb
+  nameWithType: float4.LinearColorFromSRgb
+  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb
+- uid: Fusee.Math.Core.float4.SRgbFromLinearColor*
+  commentId: Overload:Fusee.Math.Core.float4.SRgbFromLinearColor
+  name: SRgbFromLinearColor
+  nameWithType: float4.SRgbFromLinearColor
+  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor
 - uid: Fusee.Math.Core.float4.Add*
   commentId: Overload:Fusee.Math.Core.float4.Add
   name: Add
@@ -2934,6 +3802,19 @@ references:
   name: Dot
   nameWithType: float4.Dot
   fullName: Fusee.Math.Core.float4.Dot
+- uid: Fusee.Math.Core.M.Step(System.Single,System.Single)
+  commentId: M:Fusee.Math.Core.M.Step(System.Single,System.Single)
+  isExternal: true
+- uid: Fusee.Math.Core.float4.Step*
+  commentId: Overload:Fusee.Math.Core.float4.Step
+  name: Step
+  nameWithType: float4.Step
+  fullName: Fusee.Math.Core.float4.Step
+- uid: Fusee.Math.Core.float4.Pow*
+  commentId: Overload:Fusee.Math.Core.float4.Pow
+  name: Pow
+  nameWithType: float4.Pow
+  fullName: Fusee.Math.Core.float4.Pow
 - uid: Fusee.Math.Core.float4.Lerp*
   commentId: Overload:Fusee.Math.Core.float4.Lerp
   name: Lerp
@@ -2944,6 +3825,20 @@ references:
   name: BaryCentric
   nameWithType: float4.BaryCentric
   fullName: Fusee.Math.Core.float4.BaryCentric
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
 - uid: Fusee.Math.Core.float4.xy*
   commentId: Overload:Fusee.Math.Core.float4.xy
   name: xy
@@ -3004,13 +3899,6 @@ references:
   nameWithType.vb: float4.Narrowing
   fullName.vb: Fusee.Math.Core.float4.Narrowing
   name.vb: Narrowing
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
 - uid: System.ValueType.ToString
   commentId: M:System.ValueType.ToString
   parent: System.ValueType

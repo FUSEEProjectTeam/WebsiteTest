@@ -14,8 +14,12 @@ items:
   fullName: Fusee.Test.Serialization.V1.SimpleSerialization
   type: Class
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Tests/Serialization/Fusee.Serialization.Test/SimpleSerialization.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: SimpleSerialization
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleSerialization.cs
+    path: src/Fusee/src/Tests/Serialization/Fusee.Serialization.Test/SimpleSerialization.cs
     startLine: 10
   assemblies:
   - Fusee.Test.Serialization.V1
@@ -51,16 +55,30 @@ items:
   fullName: Fusee.Test.Serialization.V1.SimpleSerialization.V1_SimpleScene()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Tests/Serialization/Fusee.Serialization.Test/SimpleSerialization.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: V1_SimpleScene
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleSerialization.cs
+    path: src/Fusee/src/Tests/Serialization/Fusee.Serialization.Test/SimpleSerialization.cs
     startLine: 12
   assemblies:
   - Fusee.Test.Serialization.V1
   namespace: Fusee.Test.Serialization.V1
   syntax:
-    content: public void V1_SimpleScene()
-    content.vb: Public Sub V1_SimpleScene
+    content: >-
+      [Fact]
+
+      public void V1_SimpleScene()
+    content.vb: >-
+      <Fact>
+
+      Public Sub V1_SimpleScene
   overload: Fusee.Test.Serialization.V1.SimpleSerialization.V1_SimpleScene*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   modifiers.vb:

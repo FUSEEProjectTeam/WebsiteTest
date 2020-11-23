@@ -5,7 +5,7 @@ items:
   id: TouchDeviceImp
   parent: Fusee.Engine.Imp.Graphics.Android
   children:
-  - Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.#ctor(View)
+  - Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.#ctor(Android.Views.View)
   - Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.AxesCount
   - Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.AxisImpDesc
   - Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.AxisValueChanged
@@ -25,8 +25,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp
   type: Class
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: TouchDeviceImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 135
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -34,37 +38,46 @@ items:
   summary: "\nTouch input device implementation for the Android platform using a View&apos;s Touch events .\n"
   example: []
   syntax:
-    content: 'public class TouchDeviceImp : object, IInputDeviceImp'
+    content: 'public class TouchDeviceImp : IInputDeviceImp'
     content.vb: >-
       Public Class TouchDeviceImp
-
-          Inherits Object
-
           Implements IInputDeviceImp
   inheritance:
   - System.Object
   implements:
   - Fusee.Engine.Common.IInputDeviceImp
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.ReferenceEquals(System.Object,System.Object)
   modifiers.csharp:
   - public
   - class
   modifiers.vb:
   - Public
   - Class
-- uid: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.#ctor(View)
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.#ctor(View)
-  id: '#ctor(View)'
+- uid: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.#ctor(Android.Views.View)
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.#ctor(Android.Views.View)
+  id: '#ctor(Android.Views.View)'
   parent: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp
   langs:
   - csharp
   - vb
   name: TouchDeviceImp(View)
   nameWithType: TouchDeviceImp.TouchDeviceImp(View)
-  fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.TouchDeviceImp(View)
+  fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.TouchDeviceImp(Android.Views.View)
   type: Constructor
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: .ctor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 333
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -75,7 +88,7 @@ items:
     content: public TouchDeviceImp(View view)
     parameters:
     - id: view
-      type: View
+      type: Android.Views.View
       description: >-
         The game window to hook on to revive
 
@@ -98,8 +111,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.Desc
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Desc
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 462
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -133,8 +150,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.Id
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Id
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 468
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -168,8 +189,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.AxisValueChanged
   type: Event
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: AxisValueChanged
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 474
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -179,8 +204,10 @@ items:
   syntax:
     content: public event EventHandler<AxisValueChangedArgs> AxisValueChanged
     return:
-      type: EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}
+      type: System.EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}
     content.vb: Public Event AxisValueChanged As EventHandler(Of AxisValueChangedArgs)
+  implements:
+  - Fusee.Engine.Common.IInputDeviceImp.AxisValueChanged
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -197,8 +224,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.ButtonValueChanged
   type: Event
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ButtonValueChanged
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 478
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -208,11 +239,13 @@ items:
   syntax:
     content: public event EventHandler<ButtonValueChangedArgs> ButtonValueChanged
     return:
-      type: EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}
+      type: System.EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}
     content.vb: Public Event ButtonValueChanged As EventHandler(Of ButtonValueChangedArgs)
   see:
   - linkId: Fusee.Engine.Common.ButtonImpDescription.PollButton
     commentId: F:Fusee.Engine.Common.ButtonImpDescription.PollButton
+  implements:
+  - Fusee.Engine.Common.IInputDeviceImp.ButtonValueChanged
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -229,8 +262,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.Category
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Category
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 483
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -264,8 +301,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.AxesCount
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: AxesCount
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 493
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -300,8 +341,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.AxisImpDesc
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: AxisImpDesc
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 498
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -312,9 +357,11 @@ items:
     content: public IEnumerable<AxisImpDescription> AxisImpDesc { get; }
     parameters: []
     return:
-      type: IEnumerable{Fusee.Engine.Common.AxisImpDescription}
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.AxisImpDescription}
     content.vb: Public ReadOnly Property AxisImpDesc As IEnumerable(Of AxisImpDescription)
   overload: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.AxisImpDesc*
+  implements:
+  - Fusee.Engine.Common.IInputDeviceImp.AxisImpDesc
   modifiers.csharp:
   - public
   - get
@@ -333,8 +380,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.GetAxis(System.Int32)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: GetAxis
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 506
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -370,8 +421,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.ButtonCount
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ButtonCount
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 535
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -406,8 +461,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.ButtonImpDesc
   type: Property
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ButtonImpDesc
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 543
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -418,10 +477,12 @@ items:
     content: public IEnumerable<ButtonImpDescription> ButtonImpDesc { get; }
     parameters: []
     return:
-      type: IEnumerable{Fusee.Engine.Common.ButtonImpDescription}
+      type: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.ButtonImpDescription}
       description: "\nThe button imp description.\n"
     content.vb: Public ReadOnly Property ButtonImpDesc As IEnumerable(Of ButtonImpDescription)
   overload: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.ButtonImpDesc*
+  implements:
+  - Fusee.Engine.Common.IInputDeviceImp.ButtonImpDesc
   modifiers.csharp:
   - public
   - get
@@ -440,8 +501,12 @@ items:
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.GetButton(System.Int32)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: GetButton
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: src/Fusee/src/Engine/Imp/Graphics/Android/InputImp.cs
     startLine: 550
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -484,6 +549,285 @@ references:
   name: IInputDeviceImp
   nameWithType: IInputDeviceImp
   fullName: Fusee.Engine.Common.IInputDeviceImp
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -505,11 +849,19 @@ references:
   name: TouchDeviceImp
   nameWithType: TouchDeviceImp.TouchDeviceImp
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.TouchDeviceImp
-- uid: View
+- uid: Android.Views.View
+  commentId: T:Android.Views.View
+  parent: Android.Views
   isExternal: true
   name: View
   nameWithType: View
-  fullName: View
+  fullName: Android.Views.View
+- uid: Android.Views
+  commentId: N:Android.Views
+  isExternal: true
+  name: Android.Views
+  nameWithType: Android.Views
+  fullName: Android.Views
 - uid: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.Desc*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.Desc
   name: Desc
@@ -542,20 +894,27 @@ references:
 - uid: Fusee.Engine.Common.AxisImpDescription.PollAxis
   commentId: F:Fusee.Engine.Common.AxisImpDescription.PollAxis
   isExternal: true
-- uid: EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}
-  commentId: '!:EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}'
-  definition: EventHandler`1
+- uid: Fusee.Engine.Common.IInputDeviceImp.AxisValueChanged
+  commentId: E:Fusee.Engine.Common.IInputDeviceImp.AxisValueChanged
+  parent: Fusee.Engine.Common.IInputDeviceImp
+  name: AxisValueChanged
+  nameWithType: IInputDeviceImp.AxisValueChanged
+  fullName: Fusee.Engine.Common.IInputDeviceImp.AxisValueChanged
+- uid: System.EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Common.AxisValueChangedArgs}
+  parent: System
+  definition: System.EventHandler`1
   name: EventHandler<AxisValueChangedArgs>
   nameWithType: EventHandler<AxisValueChangedArgs>
-  fullName: EventHandler<Fusee.Engine.Common.AxisValueChangedArgs>
+  fullName: System.EventHandler<Fusee.Engine.Common.AxisValueChangedArgs>
   nameWithType.vb: EventHandler(Of AxisValueChangedArgs)
-  fullName.vb: EventHandler(Of Fusee.Engine.Common.AxisValueChangedArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Common.AxisValueChangedArgs)
   name.vb: EventHandler(Of AxisValueChangedArgs)
   spec.csharp:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: <
     nameWithType: <
@@ -568,10 +927,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -583,61 +942,69 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: EventHandler`1
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
   isExternal: true
-  name: EventHandler<>
-  nameWithType: EventHandler<>
-  fullName: EventHandler<>
-  nameWithType.vb: EventHandler(Of )
-  fullName.vb: EventHandler(Of )
-  name.vb: EventHandler(Of )
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
   spec.csharp:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
   - name: )
     nameWithType: )
     fullName: )
 - uid: Fusee.Engine.Common.ButtonImpDescription.PollButton
   commentId: F:Fusee.Engine.Common.ButtonImpDescription.PollButton
   isExternal: true
-- uid: EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}
-  commentId: '!:EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}'
-  definition: EventHandler`1
+- uid: Fusee.Engine.Common.IInputDeviceImp.ButtonValueChanged
+  commentId: E:Fusee.Engine.Common.IInputDeviceImp.ButtonValueChanged
+  parent: Fusee.Engine.Common.IInputDeviceImp
+  name: ButtonValueChanged
+  nameWithType: IInputDeviceImp.ButtonValueChanged
+  fullName: Fusee.Engine.Common.IInputDeviceImp.ButtonValueChanged
+- uid: System.EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}
+  commentId: T:System.EventHandler{Fusee.Engine.Common.ButtonValueChangedArgs}
+  parent: System
+  definition: System.EventHandler`1
   name: EventHandler<ButtonValueChangedArgs>
   nameWithType: EventHandler<ButtonValueChangedArgs>
-  fullName: EventHandler<Fusee.Engine.Common.ButtonValueChangedArgs>
+  fullName: System.EventHandler<Fusee.Engine.Common.ButtonValueChangedArgs>
   nameWithType.vb: EventHandler(Of ButtonValueChangedArgs)
-  fullName.vb: EventHandler(Of Fusee.Engine.Common.ButtonValueChangedArgs)
+  fullName.vb: System.EventHandler(Of Fusee.Engine.Common.ButtonValueChangedArgs)
   name.vb: EventHandler(Of ButtonValueChangedArgs)
   spec.csharp:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: <
     nameWithType: <
@@ -650,10 +1017,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: EventHandler`1
+  - uid: System.EventHandler`1
     name: EventHandler
     nameWithType: EventHandler
-    fullName: EventHandler
+    fullName: System.EventHandler
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -708,20 +1075,27 @@ references:
   name: AxisImpDesc
   nameWithType: TouchDeviceImp.AxisImpDesc
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.AxisImpDesc
-- uid: IEnumerable{Fusee.Engine.Common.AxisImpDescription}
-  commentId: '!:IEnumerable{Fusee.Engine.Common.AxisImpDescription}'
-  definition: IEnumerable`1
+- uid: Fusee.Engine.Common.IInputDeviceImp.AxisImpDesc
+  commentId: P:Fusee.Engine.Common.IInputDeviceImp.AxisImpDesc
+  parent: Fusee.Engine.Common.IInputDeviceImp
+  name: AxisImpDesc
+  nameWithType: IInputDeviceImp.AxisImpDesc
+  fullName: Fusee.Engine.Common.IInputDeviceImp.AxisImpDesc
+- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.AxisImpDescription}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Engine.Common.AxisImpDescription}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
   name: IEnumerable<AxisImpDescription>
   nameWithType: IEnumerable<AxisImpDescription>
-  fullName: IEnumerable<Fusee.Engine.Common.AxisImpDescription>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Engine.Common.AxisImpDescription>
   nameWithType.vb: IEnumerable(Of AxisImpDescription)
-  fullName.vb: IEnumerable(Of Fusee.Engine.Common.AxisImpDescription)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Engine.Common.AxisImpDescription)
   name.vb: IEnumerable(Of AxisImpDescription)
   spec.csharp:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: <
     nameWithType: <
@@ -734,10 +1108,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -749,44 +1123,51 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: IEnumerable`1
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
   isExternal: true
-  name: IEnumerable<>
-  nameWithType: IEnumerable<>
-  fullName: IEnumerable<>
-  nameWithType.vb: IEnumerable(Of )
-  fullName.vb: IEnumerable(Of )
-  name.vb: IEnumerable(Of )
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
   spec.csharp:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
+    nameWithType: T
+    fullName: T
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: ''
-    nameWithType: ''
-    fullName: ''
+  - name: T
+    nameWithType: T
+    fullName: T
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
 - uid: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.GetAxis*
   commentId: Overload:Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.GetAxis
   name: GetAxis
@@ -854,20 +1235,27 @@ references:
   name: ButtonImpDesc
   nameWithType: TouchDeviceImp.ButtonImpDesc
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.ButtonImpDesc
-- uid: IEnumerable{Fusee.Engine.Common.ButtonImpDescription}
-  commentId: '!:IEnumerable{Fusee.Engine.Common.ButtonImpDescription}'
-  definition: IEnumerable`1
+- uid: Fusee.Engine.Common.IInputDeviceImp.ButtonImpDesc
+  commentId: P:Fusee.Engine.Common.IInputDeviceImp.ButtonImpDesc
+  parent: Fusee.Engine.Common.IInputDeviceImp
+  name: ButtonImpDesc
+  nameWithType: IInputDeviceImp.ButtonImpDesc
+  fullName: Fusee.Engine.Common.IInputDeviceImp.ButtonImpDesc
+- uid: System.Collections.Generic.IEnumerable{Fusee.Engine.Common.ButtonImpDescription}
+  commentId: T:System.Collections.Generic.IEnumerable{Fusee.Engine.Common.ButtonImpDescription}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
   name: IEnumerable<ButtonImpDescription>
   nameWithType: IEnumerable<ButtonImpDescription>
-  fullName: IEnumerable<Fusee.Engine.Common.ButtonImpDescription>
+  fullName: System.Collections.Generic.IEnumerable<Fusee.Engine.Common.ButtonImpDescription>
   nameWithType.vb: IEnumerable(Of ButtonImpDescription)
-  fullName.vb: IEnumerable(Of Fusee.Engine.Common.ButtonImpDescription)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Fusee.Engine.Common.ButtonImpDescription)
   name.vb: IEnumerable(Of ButtonImpDescription)
   spec.csharp:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: <
     nameWithType: <
@@ -880,10 +1268,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: IEnumerable`1
+  - uid: System.Collections.Generic.IEnumerable`1
     name: IEnumerable
     nameWithType: IEnumerable
-    fullName: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '

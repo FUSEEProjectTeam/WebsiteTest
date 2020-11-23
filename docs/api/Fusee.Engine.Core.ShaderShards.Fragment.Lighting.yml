@@ -12,7 +12,11 @@ items:
   - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationPointComponent
   - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFDiffuseComponent
   - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFSpecularComponent
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB
   - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB
+  - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection
   - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.LightStructDeclaration
   - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.NumberOfLightsForward
   - Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculation
@@ -27,8 +31,12 @@ items:
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
   type: Class
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: Lighting
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
     startLine: 12
   assemblies:
   - Fusee.Engine.Core
@@ -67,8 +75,12 @@ items:
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.NumberOfLightsForward
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: NumberOfLightsForward
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
     startLine: 15
   assemblies:
   - Fusee.Engine.Core
@@ -97,8 +109,12 @@ items:
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.LightStructDeclaration
   type: Field
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: LightStructDeclaration
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
     startLine: 21
   assemblies:
   - Fusee.Engine.Core
@@ -117,6 +133,43 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods
+  id: ColorManagementMethods
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: ColorManagementMethods()
+  nameWithType: Lighting.ColorManagementMethods()
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: ColorManagementMethods
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+    startLine: 48
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nContains all methods for color management (gamma and from and to sRGB).\n"
+  example: []
+  syntax:
+    content: public static string ColorManagementMethods()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function ColorManagementMethods As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AssembleLightingMethods(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
   commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AssembleLightingMethods(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
   id: AssembleLightingMethods(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
@@ -129,9 +182,13 @@ items:
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AssembleLightingMethods(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: AssembleLightingMethods
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
-    startLine: 48
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+    startLine: 64
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards.Fragment
@@ -165,9 +222,13 @@ items:
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: DiffuseComponent
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
-    startLine: 92
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+    startLine: 108
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards.Fragment
@@ -197,9 +258,13 @@ items:
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFDiffuseComponent()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: BRDFDiffuseComponent
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
-    startLine: 109
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+    startLine: 125
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards.Fragment
@@ -229,9 +294,13 @@ items:
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.SpecularComponent()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: SpecularComponent
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
-    startLine: 144
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+    startLine: 159
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards.Fragment
@@ -261,9 +330,13 @@ items:
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFSpecularComponent()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: BRDFSpecularComponent
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
-    startLine: 171
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+    startLine: 186
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards.Fragment
@@ -293,9 +366,13 @@ items:
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationPointComponent()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: AttenuationPointComponent
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
-    startLine: 218
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+    startLine: 233
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards.Fragment
@@ -326,9 +403,13 @@ items:
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationConeComponent()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: AttenuationConeComponent
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
-    startLine: 235
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+    startLine: 250
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards.Fragment
@@ -359,9 +440,13 @@ items:
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightForward(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ApplyLightForward
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
-    startLine: 346
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+    startLine: 361
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards.Fragment
@@ -394,9 +479,13 @@ items:
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ApplyLightDeferred(Fusee.Engine.Core.Scene.Light, System.Boolean, System.Int32, System.Boolean)
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ApplyLightDeferred
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
-    startLine: 430
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+    startLine: 445
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards.Fragment
@@ -423,6 +512,114 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB
+  id: EncodeSRGB
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: EncodeSRGB()
+  nameWithType: Lighting.EncodeSRGB()
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: EncodeSRGB
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+    startLine: 643
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nConverts a color from linear space to sRGB.\n"
+  example: []
+  syntax:
+    content: public static string EncodeSRGB()
+    return:
+      type: System.String
+    content.vb: Public Shared Function EncodeSRGB As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB
+  id: DecodeSRGB
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: DecodeSRGB()
+  nameWithType: Lighting.DecodeSRGB()
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: DecodeSRGB
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+    startLine: 663
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nConverts a color from sRGB to linear space.\n"
+  example: []
+  syntax:
+    content: public static string DecodeSRGB()
+    return:
+      type: System.String
+    content.vb: Public Shared Function DecodeSRGB As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection
+  id: GammaCorrection
+  parent: Fusee.Engine.Core.ShaderShards.Fragment.Lighting
+  langs:
+  - csharp
+  - vb
+  name: GammaCorrection()
+  nameWithType: Lighting.GammaCorrection()
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection()
+  type: Method
+  source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
+    id: GammaCorrection
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+    startLine: 683
+  assemblies:
+  - Fusee.Engine.Core
+  namespace: Fusee.Engine.Core.ShaderShards.Fragment
+  summary: "\nMethod for gamma correction.\n"
+  example: []
+  syntax:
+    content: public static string GammaCorrection()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GammaCorrection As String
+  overload: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculation
   commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculation
   id: ShadowCalculation
@@ -435,9 +632,13 @@ items:
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculation()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ShadowCalculation
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
-    startLine: 628
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+    startLine: 699
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards.Fragment
@@ -468,9 +669,13 @@ items:
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCascaded()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ShadowCalculationCascaded
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
-    startLine: 679
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+    startLine: 750
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards.Fragment
@@ -501,9 +706,13 @@ items:
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculationCubeMap()
   type: Method
   source:
+    remote:
+      path: src/DocFX/src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+      branch: master
+      repo: git@github.com:FUSEEProjectTeam/WebsiteTest.git
     id: ShadowCalculationCubeMap
-    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Core\ShaderShards\Fragment\Lighting.cs
-    startLine: 728
+    path: src/Fusee/src/Engine/Core/ShaderShards/Fragment/Lighting.cs
+    startLine: 799
   assemblies:
   - Fusee.Engine.Core
   namespace: Fusee.Engine.Core.ShaderShards.Fragment
@@ -834,6 +1043,11 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods
+  name: ColorManagementMethods
+  nameWithType: Lighting.ColorManagementMethods
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods
 - uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags
   commentId: T:Fusee.Engine.Core.ShaderShards.LightingSetupFlags
   parent: Fusee.Engine.Core.ShaderShards
@@ -908,6 +1122,21 @@ references:
   name: Fusee.Engine.Core.Scene
   nameWithType: Fusee.Engine.Core.Scene
   fullName: Fusee.Engine.Core.Scene
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB
+  name: EncodeSRGB
+  nameWithType: Lighting.EncodeSRGB
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB
+  name: DecodeSRGB
+  nameWithType: Lighting.DecodeSRGB
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection*
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection
+  name: GammaCorrection
+  nameWithType: Lighting.GammaCorrection
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection
 - uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculation*
   commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculation
   name: ShadowCalculation
