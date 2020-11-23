@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>FUSEE Xene </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="FUSEE Xene ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="fusee-xene">FUSEE Xene</h1>
+
+<h2 id="scene-graphs">Scene Graphs</h2>
+<p>A major concept in all 3D graphics systems is the scene graph, object hierarchy, scene tree or however a specific system calls it. The common feature of all approaches is to keep the scene data in a tree-like structure. The use of such hierarchical scenes is to group objects together with properties such as colors, position, orientation etc. being shared among the grouped objects. Certain properties, especially transformation (position, orientation, scale) are not only shared among siblings but additionally cumulated from parent to child (e.g. a child's position is relative to its parent's position).</p>
+<p>FUSEE's Xene system can be seen as a tool box with building blocks to create various scene graph implementations. The simplest scene graph implementation is just made up of a hierarchy of scene nodes where each node may contain 0 or more children - also scene nodes. In addition each node may contain zero or more lower-level building blocks, called components. The contents a node consists of can be organized in re-usable component types.</p>
+<h2 id="traversing-a-scene-graph">Traversing a scene graph</h2>
+<p>Traversing such a structure is simply an in-order traversal of all nodes. Each visited node is traversed by traversing its components and afterwards recursively traversing its children.</p>
+<p>Various component types may exist like geometry, transformation, material, etc. In more advanced implementations also a set of special-purpose node types may exist. Such node types might expose their user data in two ways: One way allows high-level program access to its innards using fields and properties, another way exposes the same data as lower-level components to allow backward-compatibility with already implemented use cases.</p>
+<h3 id="categories-of-scene-graph-traversal">Categories of scene graph traversal</h3>
+<p>At least three categories of traversing such structures exist:</p>
+<ol>
+<li><p>Find operations - the easiest form of traversal. No state needs to be tracked. A simple predicate is checked on each item (node or component). If the predicate is matched by the element, the element is added to the seach result list.</p>
+</li>
+<li><p>Classical Visitor Pattern - All nodes and components are traversed in-order and -depending on their respective type- individual actions are performed. The result of a visitor operation is a set of side effects. Very often while traversing some state needs to be maintained keeping track of the overall traversal state. When side effects (such as rendering) are triggered during traversal, information from the state can be accessed.</p>
+</li>
+<li><p>Transformation Operations - Can be seen as something in-between the two previous categories. Visitor patterns for different use cases often share two common circumstances:</p>
+<ul>
+<li>The way how State is maintained (typically in stacks of individual
+values keeping track of information retrieved from tree elements).</li>
+<li>The generated Side-Effect (rather the result) is a list of data items resulting from data from individual nodes and cumulated state data.</li>
+</ul>
+</li>
+</ol>
+<h3 id="introducing-the-viserator-pattern">Introducing the Viserator Pattern</h3>
+<p>Fusee Xene contains building blocks and pre-fabricated functionality for all three scene graph traversal categories. The third use-case is handled by Xene with a class called <em><strong>Viserator</strong></em>.</p>
+<p>A Viserator is a scene visitor which returns an enumerator of a user defined type. The Viserator class serves as a base class
+for use-cases where traversing a node-component-graph should yield a list (enumerator) of results.</p>
+<p>Very often you want to traverse a node-component-graph while maintaining a traversal state keeping track of
+individual values and their changes while traversing. At certain points during the traversal a result arises that
+should be promoted to the outside of the traversal. Typically the result is derived from the state at a certain
+time during traversal and some additional information of the tree object currently visited.</p>
+<p>To implement your own Viserator you should consider which state information the Viserator must keep track of.
+Either you assemble your own State type by deriving from VisitorState or choose to use one of the standard state types like <code>StandardState</code>. Then you need to derive your own class from Viserator{TItem,TState} with the TState replaced by your choice of State and TItem replaced by the type of the items you want your Viserator to yield during the traversal.</p>
+<p>The word Viserator is a combination of a visitor and enumerator. Look up &quot;to viscerate&quot; in a dictionary and
+judge for yourself if a Viserator's operation resembles disemboweling the innards of a tree structure.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/WebsiteTest/blob/master/src/DocFX/wiki/FUSEE-Xene.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/../images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

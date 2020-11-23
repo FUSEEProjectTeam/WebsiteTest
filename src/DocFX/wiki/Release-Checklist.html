@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<ul>
+<li>Create new release branch <code>git checkout -b release/v[x.y.z]</code></li>
+<li>Update version number (Use the <code>UpdateVersionNumber.cmd</code> to open up all files)
+<ul>
+<li>Engine: <code>\Directory.Build.props</code> (Version, AssemblyVersion, FileVersion, PackageVersion)</li>
+<li>Blender plugin: <code>\src\Tools\BlenderScripts\addons\io_export_fus\__init__.py</code> (&quot;version&quot;)</li>
+<li>Dotnet template: <code>\dis\DnTemplate\template\Fusee_App.csproj</code> (PackageReference Fusee.Desktop)</li>
+<li>Visual Studio template:
+<ul>
+<li><code>\dis\VSTemplate\VSIX\Properties\AssemblyInfo.cs</code> (AssemblyVersion, AssemblyFileVersion)</li>
+<li><code>\dis\VSTemplate\VSTemplate\Properties\AssemblyInfo.cs</code> (AssemblyVersion, AssemblyFileVersion)</li>
+<li><code>\dis\VSTemplate\VSTemplate\[Android,Core,Desktop]\[Android,Core,Desktop].csproj</code> (PackageReference Fusee.[Android,Core,Desktop])</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Everything below has to start over whenever a bug is discovered and fixed in the release process</strong></p>
+<ul>
+<li>Build NuGet packages
+<ul>
+<li>Execute <code>BuildNuget.cmd</code></li>
+<li>Check the log for errors</li>
+<li>Verify that all packages are present in <code>\bin\Release\nuget</code> (nupkg: 19, snupkg: 15)</li>
+<li>Note: if you are rebuilding the same version number again after something below failed you MUST delete them in <code>%USERPROFILE%\.nuget\packages</code>.</li>
+</ul>
+</li>
+<li>Build Visual Studio template
+<ul>
+<li>VSIX Project in <code>\dis\VSTemplate\VSTemplate.sln</code></li>
+<li>Copy <code>\dis\VSTemplate\VSIX\bin\Debug\Fusee.Template.VS.vsix</code> somewhere nice</li>
+<li>Copy <code>\dis\VSTemplate\VSTemplate\bin\Debug\ProjectTemplates\CSharp\1033\Fusee.Template.VS.zip</code> somewhere nice</li>
+</ul>
+</li>
+<li>Uninstall previous Fusee tools and templates
+<ul>
+<li><code>dotnet tool uninstall -g Fusee.Tools.CmdLine</code></li>
+<li><code>dotnet new -u Fusee.Template.dotnet</code></li>
+<li>Uninstall Fusee.Template.VS extension in Visual Studio</li>
+</ul>
+</li>
+<li>Install new Fusee tools and templates
+<ul>
+<li><code>dotnet tool install -g Fusee.Tools.CmdLine --add-source bin\Release\nuget\</code></li>
+<li><code>dotnet new -i Fusee.Template.dotnet --nuget-source [abolutepathtofusee]\bin\Release\nuget\</code></li>
+<li>Copy Fusee.Template.VS.zip to <code>%USERPROFILE%\Documents\Visual Studio 2019\Templates\ProjectTemplates</code></li>
+</ul>
+</li>
+<li>Test Fusee.Tools.CmdLine
+<ul>
+<li>Run <code>fusee player</code></li>
+<li>Run <code>fusee install</code></li>
+<li>Check if plugin version in Blender is correct and plugin can be activated</li>
+<li>Check if an exported fus-file from Blender can be opened by double-click and displays correctly</li>
+</ul>
+</li>
+<li>Test Fusee.Template.dotnet
+<ul>
+<li>Run <code>dotnet new fusee</code> in a temporary directory</li>
+<li>Run <code>dotnet restore -s [abolutepathtofusee]\bin\Release\nuget</code></li>
+<li>Check if project works in Visual Studio Code.</li>
+</ul>
+</li>
+<li>Test Fusee.Template.VS
+<ul>
+<li>Create an new Fusee project with Visual Studio</li>
+<li>Add <code>[abolutepathtofusee]\bin\Release\nuget</code> as a local package source (<a href="https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources">https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources</a>)</li>
+<li>Check if Project works</li>
+<li>Remove the local package source!</li>
+</ul>
+</li>
+<li>Release (after pull request if accepted and merged)
+<ul>
+<li>Merge release commit into develop</li>
+<li>Create git tag at the merge commit in master (v[x.y.z])</li>
+<li>Create GitHub release and attach all NuGet packages, Fusee.Template.VS.zip and Fusee.Template.VS.vsix</li>
+<li>Upload all NuGet packages to nuget.org</li>
+</ul>
+</li>
+<li>Pet a cat 😸</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/WebsiteTest/blob/master/src/DocFX/wiki/Release-Checklist.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/../images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

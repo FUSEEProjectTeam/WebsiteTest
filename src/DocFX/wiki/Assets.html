@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Assets </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Assets ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<blockquote>
+<p>⚠️ <strong>Pre-Release Content</strong></p>
+</blockquote>
+<h1 id="assets">Assets</h1>
+<p>All Fusee assets should be stored within a folder named <code>Assets</code> usually inside the <code>Core</code> project folder. On build, all assets are being collected and copied to the correct output folder.</p>
+<h2 id="load-an-asset">Load an asset</h2>
+<p>There are several flavors to load an asset from code. For the simplest case Fusee provides the static method</p>
+<pre><code class="lang-csharp">T AssetStorage.Load&lt;T&gt;(string id);
+</code></pre>
+<p>which freezes the main thread and therefore the program until the asset is present; after this, the asset is usable right away.</p>
+<p>A little more enhanced is the possibility to load assets via the <code>async/await</code> pattern, where the asset loading is executed in a different thread and does therefore not block anything.</p>
+<p>Fusee provides the static method</p>
+<pre><code class="lang-csharp">Task&lt;T&gt; AssetStorage.LoadAsync&lt;T&gt;(string id);
+</code></pre>
+<p>which returns an awaitable <code>Task</code> which, on <code>await</code> delegates the current method into the background until the <code>Task</code> and therefore the asset loading is completed. Any potential commands after the call to <code>await</code>, of the now recurring method, are executed after this and the result is returned to the main thread. Note: one has to label the method in which the <code>await</code> call should be executed with the keyword <code>async</code>.</p>
+<p>A full example could look like this:</p>
+<pre><code class="lang-csharp">async void Init()
+{
+    var sceneLoaderTask =
+    AssetStorage.LoadAsync&lt;SceneContainer&gt;(&quot;FuseeRocket.fus&quot;);
+
+    var scene = await sceneLoaderTask;
+    scene.Children[0].GetComponent&lt;Transform&gt;().x += 10;
+}
+</code></pre>
+<p>If one has to load a lot of files at once Fusee provides the user furthermore with the following method:</p>
+<pre><code class="lang-csharp">Task&lt;T[]&gt; AssetStorage.GetAssetsAsync&lt;T&gt;(IEnumerable&lt;string&gt; ids);
+</code></pre>
+<h2 id="check-status-of-assets">Check status of assets</h2>
+<p>When using the <code>async/await</code> pattern, a user usually wants to check if all files the <code>AssetStorage</code> should load are present:</p>
+<pre><code class="lang-csharp">bool AssetsStorage.AllAssetsFinishedLoading { get; }
+</code></pre>
+<p>Furthermore, the method</p>
+<pre><code class="lang-csharp">bool AssetStorage.IsAssetPresent(string id);
+</code></pre>
+<p>helps to check if an asset is enqueued for loading or already present.</p>
+<p>Attention, this is independent of any failed or success state!</p>
+<p>For this use the method</p>
+<pre><code class="lang-csharp">bool AssetStorage.IsAssetLoaded(string id)
+</code></pre>
+<p>which returns <code>true</code> only upon a successful and complete load.</p>
+<h2 id="implementing-an-asset-decoder">Implementing an asset decoder</h2>
+<p>For convenience, Fusee already implements the file handling logic for a few selected file types (images, text, fonts, SceneContainer) within the examples. Usually, this is done once per build target (Desktop, Android, etc.) via the creation of an <code>AssetHandler</code> in which the information on how to decode and handle a filetype is deposited. All <code>AssetHandler</code>s are then registered at a <code>FileAssetProvider</code> which itself is registered at the <code>AssetStorage</code>,  eventually.
+The <code>FileAssetStorage</code> is platform-specific, too, and provides the logic on how to read a file from the build target's file storage.</p>
+<p>A full example could look like this</p>
+<pre><code class="lang-csharp">// Create an AssetHandler to load text files
+var assetHandler = new AssetHandler
+{
+    // we want to return a string type
+    ReturnedType = typeof(String),
+    // implement the blocking decoder method
+    Decoder = (string id, object storage) =&gt;
+    {
+        var stream = (Stream)storage;
+        Console.WriteLine(&quot;Hello from AH!&quot;);
+        return storage.ReadToEnd();
+    },
+    // implement the async non-blocking decoder method
+    DecoderAsync = (string id, object storage) =&gt;
+    {
+       var stream = (Stream)storage;
+       return storage.ReadToEndAsync();
+    },
+    // is the file there, then try to load and handle it
+    Checker = id =&gt; File.Exists(id)
+});
+
+// create platform specific FileAssetProvider
+// this one looks for assets in the folder &quot;Assets&quot;
+var fap = new Fusee.Base.Imp.Desktop.FileAssetProvider(&quot;Assets&quot;);
+
+// register our handler
+fap.RegisterTypeHandler(assetHandler);
+
+// register the provider
+AssetStorage.RegisterProvider(fap);
+
+// a call to Get&lt;string&gt; now selects our self-written asset handler as encoder
+var t = AssetStorage.Get&lt;string&gt;(&quot;hello.txt&quot;);
+Console.WriteLine(t);
+
+//
+//  Output:
+//  ---------
+//  Hello from AH!
+//  [Content of hello.txt]
+//
+
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/WebsiteTest/blob/master/src/DocFX/wiki/Assets.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/../images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

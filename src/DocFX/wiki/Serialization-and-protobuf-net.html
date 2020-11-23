@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Serialization </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Serialization ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="serialization">Serialization</h1>
+
+<p>Serialization is the automatic process of transforming data structures or objects into a format that Fusee can store and reconstruct. For this Fusee uses <code>Google's Protocol Buffers</code> (<a href="https://github.com/protocolbuffers/protobuf">protobuf</a>). This is a data format for serialization which utilizes an interface description language that describes the structure of data.
+This description is generated automatically, through class annotations, from protobuf-net, with the help of annotations; for more information see engine developer section.</p>
+<h2 id="protobuf-net">protobuf-net</h2>
+<p>Fusee uses protobuf-net in a modified version where all dependencies to <code>System.ServiceModel</code> and <code>System.ServiceModel.Primitives</code> are removed.  The fork can be found here: <a href="https://github.com/FUSEEProjectTeam/protobuf-net-fusee">https://github.com/FUSEEProjectTeam/protobuf-net-fusee</a>. This is necessary as we use <a href="https://github.com/mono/linker">mono linker</a> for our Webassembly builds which throws an exception when these references are being traversed.</p>
+<p>All serializable classes can be found within <code>Fusee.Serialization</code> and <code>Fusee.Math</code>.</p>
+<h2 id="conversion-from-fusfile-to-fuseecorescene-and-vice-versa">Conversion from <code>FusFile</code> to <code>Fusee.Core.Scene</code> and vice versa</h2>
+<p>All data within the V1 serialization needs to be converted from the &quot;low-level&quot; <code>FusFile</code> to the &quot;high-level&quot; <code>Fusee.Core.Scene</code> before being usable within Fusee.</p>
+<p>To convert a serialized <code>FusFile</code> to a <code>Fusee.Core.Scene.SceneContainer</code> one can use the static method:</p>
+<pre><code class="lang-csharp">FusSceneConverter.ConvertFrom(FusFile fus)
+</code></pre>
+<p>For converting a &quot;high-level&quot; <code>SceneContainer</code> to a serializable <code>FusFile</code> the method:</p>
+<pre><code class="lang-csharp">FusFile FusSceneConverter.ConvertTo(SceneContainer sc)
+</code></pre>
+<p>exists.</p>
+<h2 id="read-files-generated-by-the-fusee-blender-exporter">Read files generated by the Fusee Blender exporter</h2>
+<p>Files generated with the help of Fusee's Blender exporter are composed of &quot;low-level&quot; classes which needs to be converted first. This is implemented within the <code>AssetStorage.Get(Async)&lt;T&gt;</code> logic. For example:</p>
+<pre><code class="lang-csharp">// open file
+var fs = File.OpenRead(&quot;myFusFile.fus&quot;);
+var lowLevelScene = ProtoBuf.Serializer.Deserialize&lt;FusFile&gt;(fs);
+var scene = FusSceneConverter.ConvertFrom(lowLevelScene);
+</code></pre>
+<h2 id="-engine-developer">👷 Engine Developer</h2>
+<h3 id="adding-a-new-serializable-class-to-fuseeserialization">Adding a new serializable class to <code>Fusee.Serialization</code></h3>
+<ul>
+<li>Add class to <code>Fusee.Serialization</code></li>
+<li>Let the class inherit from <code>FusComponent</code></li>
+<li>Annotate the class with the <code>[ProtoContract]</code> keyword</li>
+<li>Annotate each class member which should be serializable with <code>[ProtoMember(NUMBER)]</code>, make sure <code>NUMBER</code> is a unique number, start with 1, e. g.: <code>[ProtoMember(1)]</code>.</li>
+<li>Go to <code>FusComponent</code> and let this class know of the new inheritance by adding <code>[ProtoInclude(1xx, typeof(Name_of_your_class))]</code>. Increase the counting accordingly.</li>
+<li>Add and implement both new visitors inside <code>FusSceneConverter</code></li>
+<li>Add &quot;high-level&quot; class to <code>Fusee.Core.Scene</code></li>
+<li>Write tests for your conversion inside <code>Fusee.Test.Serialization.V?</code></li>
+</ul>
+<h4 id="example">Example</h4>
+<pre><code class="lang-csharp">
+    /// Fusee.Serialization.V?.MyNewClass.cs
+    [ProtoContract]
+    public class MyNewClass : FusComponent
+    {
+        [ProtoMember(1)]
+        public int Counter;
+    }
+
+    /// Inside FusComponent.cs
+    [ProtoContract]
+    [ProtoInclude(100, typeof(FusTransform))]
+    /// [...]
+    [ProtoInclude(197, typeof(MyNewClass))]
+
+    public class FusComponent : IComponent
+    {
+       /// [...]
+    }
+
+    /// Inside FusSceneConverter.cs
+    [VisitMethod]
+    public void ConvMyNewClass(MyNewClass mnc)
+    {
+        /// conversion logic
+    }
+
+</code></pre>
+<p>For inheritance and other advanced concepts study the existing classes and/or visit the <a href="https://code.google.com/archive/p/protobuf-net/wikis">protobuf-net wiki</a>.</p>
+<h3 id="conceptual-changes-from-v080-onward">Conceptual changes from v0.8.0 onward</h3>
+<p>This paragraph describes the transition from the &quot;old&quot; (no version) FUSEE serialization scheme to the new one (V1).</p>
+<p>The &quot;old&quot; serialization utilizes &quot;container&quot; classes and derivatives decorated for serialization with Protobuf .NET's <code>[ProtoContract]</code> etc. attributes while at the same time using these classes directly at run-time as scene graph building blocks.</p>
+<p>Since Protobuf .NET version 3.* protobuf does not support references within serializable properties. Allowing components within multiple nodes requires this feature. Besides at several places, it was necessary to implement between scene graph building blocks used in serialization different from those used during traversal.</p>
+<p>From V1 on, FUSEE's serialization is completely separated from scene graph building blocks in <code>Fusee.Engine</code>. As a result, <code>Fusee.Xene</code> was completely freed from all references and thus neither references <code>Fusee.Serialization</code> nor <code>Fusee.Engine</code>.</p>
+<h4 id="newmodified-files">New/modified Files</h4>
+<p>Files added to <code>Engine.Core.Scene</code></p>
+<ul>
+<li>SceneNode.cs</li>
+<li>SceneComponent.cs</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&quot;Old&quot; Serialization</th>
+<th>V1 Serialization</th>
+<th><code>Engine.Core.Scene</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SceneContainer</code></td>
+<td><code>FusScene</code></td>
+<td><code>SceneContainer</code></td>
+</tr>
+<tr>
+<td><code>SceneNodeContainer</code></td>
+<td><code>FusNode</code></td>
+<td><code>SceneNode</code></td>
+</tr>
+<tr>
+<td><code>SceneComponentContainer</code></td>
+<td><code>FusComponent</code></td>
+<td><code>SceneComponent</code></td>
+</tr>
+<tr>
+<td><code>TransformComponent</code></td>
+<td><code>FusTransform</code></td>
+<td><code>Transform</code></td>
+</tr>
+<tr>
+<td><code>Mesh</code></td>
+<td><code>FusMesh</code></td>
+<td><code>Mesh</code></td>
+</tr>
+<tr>
+<td><code>LightComponent</code></td>
+<td><code>FusLight</code></td>
+<td><code>Light</code></td>
+</tr>
+<tr>
+<td><code>AnimationComponent</code></td>
+<td><code>FusAnimation</code></td>
+<td><code>Animation</code></td>
+</tr>
+<tr>
+<td><code>BoneComponent</code></td>
+<td><code>FusBone</code></td>
+<td><code>Bone</code></td>
+</tr>
+<tr>
+<td><code>CanvasTransformComponent</code></td>
+<td><code>FusCanvasTransform</code></td>
+<td><code>CanvasTransform</code></td>
+</tr>
+<tr>
+<td><code>RectTransformComponent</code></td>
+<td><code>FusRectTransform</code></td>
+<td><code>RectTransform</code></td>
+</tr>
+<tr>
+<td><code>XFormComponent</code></td>
+<td><code>FusXForm</code></td>
+<td><code>XForm</code></td>
+</tr>
+<tr>
+<td><code>XFormTextComponent</code></td>
+<td><code>FusXFormText</code></td>
+<td><code>XFormText</code></td>
+</tr>
+<tr>
+<td><code>PtOctantComponent</code>  (File: OctantComponent.cs)</td>
+<td><code>FusOctant</code> (dummy implementation)</td>
+<td><code>Octant</code></td>
+</tr>
+<tr>
+<td><code>AnimationComponent</code></td>
+<td><code>FusAnimation</code></td>
+<td><code>Animation</code></td>
+</tr>
+<tr>
+<td><code>AnimationTrackComponent</code></td>
+<td><code>FusAnimationTrack</code></td>
+<td><code>AnimationTrack</code></td>
+</tr>
+<tr>
+<td><code>MaterialComponent</code></td>
+<td><code>FusMaterialComponent</code></td>
+<td><code>Material</code></td>
+</tr>
+<tr>
+<td><code>MaterialPBRComponent</code></td>
+<td><code>FusMaterialPBRComponent</code></td>
+<td><code>MaterialPBR</code></td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/WebsiteTest/blob/master/src/DocFX/wiki/Serialization-and-protobuf-net.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/../images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
