@@ -17,11 +17,15 @@ Before following the FUSEE installation instructions on this page, make sure all
 
 `dotnet tool install -g Fusee.Tools.CmdLine`
 
+`dotnet new -i Fusee.Template.dotnet`
+
 On HFU Pcs you in addition have to `set PATH=%PATH%;%USERPROFILE%\.dotnet\tools`
 
 ## Uninstalling
 
 `dotnet tool uninstall -g Fusee.Tools.CmdLine`
+
+`dotnet new -u Fusee.Template.dotnet`
 
 ## Updating
 
