@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AABBf </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="AABBf ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="aabbf">AABBf</h1>
+
+<p>Work in progress</p>
+<p>The Axis-Aligned Bounding Box (float) is an efficient tool for collision detection.
+A Bounding Box forms itself out of the minimal and the maximal x, y, z coordinates of an object.
+The min and max values of a cube in the center of a scene may look like this:</p>
+<pre><code class="lang-C#">min = (-1, -1, -1); 
+max = (1, 1, 1);
+</code></pre>
+<p>A Bounding Box draws a cuboid as tightly as possible around the targeted object.
+A sphere with radius 1 would have the same Bounding Box as the cube in the example above.</p>
+<p><img src="Images/AABBf/formingAABB.jpeg" alt="minimum and maximum values visualized"></p>
+<p>The Axis-Aligned Bounding Box is as the name suggests &quot;axis-aligned&quot;, which means the Bounding Boxes are not able to rotate and if its object rotates the AABB has to be recalculated and may end up in a bad approximation of its former shape.
+Therefore the AABB is most useful when the objects principal axes are roughly aligned with the scenes coordinate system.</p>
+<p><img src="Images/AABBf/rotatingObject.jpeg" alt="rotating an object in a scene visualized"></p>
+<p>When two Bounding Boxes are tested for a collision, the minimum values of one box are compared to the maximum of the other and vice versa (A.min.y &amp; B.max.y,..., A.max.z &amp; B.min.z,...). So if a minimum value is greater than a maximum value / a maximum value is lesser than a minimum value, a collision occurs.</p>
+<h3 id="components">Components</h3>
+<p>For an overview of the components [https://fusee3d.org/api/Fusee.Math.Core.AABBf.html.](click here to visit the API documentation).</p>
+<h3 id="building-your-own-bounding-box">Building your own Bounding Box</h3>
+<h5 id="you-can-use-the-constructor-aabbf-to-build-your-own-bounding-box">You can use the constructor 'AABBf' to build your own Bounding Box:</h5>
+<pre><code class="lang-C#">_min = new float3(-1, -1, -1);
+_max = new float3(1, 1, 1):
+
+AABBf bb1 = new AABBf
+(
+    _min,
+    _max 
+);
+</code></pre>
+<h5 id="there-is-also-a-way-to-get-the-bounding-box-of-an-asset-or-object-in-the-scene">There is also a way to get the Bounding Box of an Asset or Object in the scene:</h5>
+<pre><code class="lang-C#">private Transform SphereTrans;
+private Mesh SphereMesh;
+
+SphereMesh = Scene.Children.FindNodes(node =&gt;node.Name == &quot;Sphere&quot;)?.FirstOrDefault()?.GetMesh();
+bb2 = SphereMesh.BoundingBox;
+</code></pre>
+<h5 id="if-at-least-one-of-your-objects-moves-you-can-multiplicate-it-with-the-matrix-of-the-moving-object">If (at least) one of your objects moves you can multiplicate it with the Matrix of the moving Object:</h5>
+<pre><code class="lang-C#">AABBf movingBb = bb2 * SphereTrans.Matrix();
+</code></pre>
+<h5 id="now-if-you-want-to-check-for-a-collision-between-these-two-bounding-boxes-you-can-use-the-intersect-method">Now if you want to check for a collision between these two Bounding Boxes, you can use the Intersect Method:</h5>
+<pre><code class="lang-C#">if(bb1.Intersects(bb2))
+{
+    Console.WriteLine(&quot;Oh? You're intersecting me?&quot;);
+}
+</code></pre>
+<h5 id="you-can-use-the-same-method-for-checking-if-a-bounding-box-collides-with-a-specific-point-or-coordinate-in-the-scene">You can use the same method for checking if a Bounding Box collides with a specific point or coordinate in the scene:</h5>
+<pre><code class="lang-C#">float3 point = new float(1, 2, 3);
+if(bb1.Intersects(point))
+{
+    Console.WriteLine(&quot;We hit 'im, boys&quot;);
+}
+</code></pre>
+<h6 id="checking-different-bounding-box-collisions">Checking different bounding box collisions</h6>
+<p><img src="Images/AABBf/IntersectVisuals.jpeg" alt="Intersection detection"></p>
+<h5 id="maybe-you-want-to-draw-one-bounding-box-around-two-existing-objects">Maybe you want to draw one Bounding box around two existing objects:</h5>
+<pre><code class="lang-C#">    AABBf twoGether4ever = AABBf.Union(bb1, bb2);
+</code></pre>
+<h5 id="examples-for-a-bounding-box-being-drawn-around-two-pre-existing-ones">Examples for a Bounding Box being drawn around two pre-existing ones</h5>
+<p><img src="Images/AABBf/Union.png" alt="Union AABB"></p>
+<h5 id="sometimes-you-may-want-to-know-if-an-object-enters-the-visible-area-of-your-scene">Sometimes you may want to know if an object enters the visible area of your scene:</h5>
+<pre><code class="lang-C#">Frustum frustum = new Frustum();
+frustum.CalculateFrustumPlanes(RC.View);
+
+if(bb1.InsideOrIntersectingFrustum(frustum) == true)
+{
+    StartDoingSomething();
+}
+</code></pre>
+<p><img src="Images/AABBf/Frustum.png" alt="Frustum Intersection"></p>
+<h5 id="you-can-do-the-same-for-just-one-direction-or-with-any-plane-in-general">You can do the same for just one direction (or with any plane in general):</h5>
+<pre><code class="lang-C#">PlaneF planeLeft = new PlaneF();
+if(bb1.InsideOrIntersectingPlane(planeLeft))
+{
+    if(planeLeft.SignedDistanceFromPoint(bb1.Center) &lt;= 0)
+    {
+        Console.WriteLine(&quot;Hello&quot;);
+    }
+    else
+    {
+        Console.WriteLine(&quot;Byee&quot;);
+    }
+};
+</code></pre>
+<h5 id="plane-intersection">Plane Intersection</h5>
+<p><img src="Images/AABBf/Plane.png" alt="Plane Intersection"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/Fusee.wiki/blob/master/Axis-Aligned-Bounding-Box.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

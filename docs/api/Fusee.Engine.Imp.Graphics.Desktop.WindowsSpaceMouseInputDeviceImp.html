@@ -1,0 +1,807 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WindowsSpaceMouseInputDeviceImp
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WindowsSpaceMouseInputDeviceImp
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp">
+  
+  
+  <h1 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp" class="text-break">Class WindowsSpaceMouseInputDeviceImp
+  </h1>
+  <div class="markdown level0 summary"><p>SMI input device implementation for the Windows platform. This implementation directly
+sniffs at the render window's message pump (identified by the <see cref="!:GameWindow"></see> parameter passed
+to the constructor) to receive
+<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/hh454904(v=vs.85).aspx">WM_POINTER</a> messages.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">WindowsSpaceMouseInputDeviceImp</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Fusee.Engine.Common.IInputDeviceImp.html">IInputDeviceImp</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.Imp.Graphics.Desktop.html">Fusee.Engine.Imp.Graphics.Desktop</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Engine.Imp.Graphics.Desktop.dll</h6>
+  <h5 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WindowsSpaceMouseInputDeviceImp : IInputDeviceImp</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__ctor_GameWindow_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.%23ctor(GameWindow)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L246">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__ctor_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__ctor_GameWindow_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(GameWindow)">WindowsSpaceMouseInputDeviceImp(GameWindow)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.html">WindowsSpaceMouseInputDeviceImp</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WindowsSpaceMouseInputDeviceImp(GameWindow gameWindow)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameWindow</span></td>
+        <td><span class="parametername">gameWindow</span></td>
+        <td><p>The game window to hook on to receive
+<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/hh454904(v=vs.85).aspx">WM_POINTER</a> messages.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__RX.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._RX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L344">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__RX" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._RX">_RX</h4>
+  <div class="markdown level1 summary"><p>Descriptions of the available axes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AxisImpDescription _RX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.AxisImpDescription.html">AxisImpDescription</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__RY.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._RY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L344">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__RY" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._RY">_RY</h4>
+  <div class="markdown level1 summary"><p>Descriptions of the available axes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AxisImpDescription _RY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.AxisImpDescription.html">AxisImpDescription</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__RZ.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._RZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L344">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__RZ" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._RZ">_RZ</h4>
+  <div class="markdown level1 summary"><p>Descriptions of the available axes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AxisImpDescription _RZ</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.AxisImpDescription.html">AxisImpDescription</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__TX.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._TX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L344">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__TX" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._TX">_TX</h4>
+  <div class="markdown level1 summary"><p>Descriptions of the available axes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AxisImpDescription _TX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.AxisImpDescription.html">AxisImpDescription</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__TY.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._TY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L344">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__TY" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._TY">_TY</h4>
+  <div class="markdown level1 summary"><p>Descriptions of the available axes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AxisImpDescription _TY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.AxisImpDescription.html">AxisImpDescription</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__TZ.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._TZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L344">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__TZ" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp._TZ">_TZ</h4>
+  <div class="markdown level1 summary"><p>Descriptions of the available axes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AxisImpDescription _TZ</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.AxisImpDescription.html">AxisImpDescription</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_AxesCount.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.AxesCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L364">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_AxesCount_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.AxesCount*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_AxesCount" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.AxesCount">AxesCount</h4>
+  <div class="markdown level1 summary"><p>Returns the number of Axes this device implements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AxesCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_AxisImpDesc.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.AxisImpDesc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L369">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_AxisImpDesc_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.AxisImpDesc*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_AxisImpDesc" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.AxisImpDesc">AxisImpDesc</h4>
+  <div class="markdown level1 summary"><p>Returns the descriptions for all axes of this device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;AxisImpDescription&gt; AxisImpDesc { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Common.AxisImpDescription.html">AxisImpDescription</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_ButtonCount.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.ButtonCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L385">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_ButtonCount_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.ButtonCount*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_ButtonCount" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.ButtonCount">ButtonCount</h4>
+  <div class="markdown level1 summary"><p>This device does not reveal any Buttons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ButtonCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_ButtonImpDesc.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.ButtonImpDesc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L391">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_ButtonImpDesc_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.ButtonImpDesc*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_ButtonImpDesc" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.ButtonImpDesc">ButtonImpDesc</h4>
+  <div class="markdown level1 summary"><p>Buttons are handled by the 3D Connexion interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ButtonImpDescription&gt; ButtonImpDesc { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Common.ButtonImpDescription.html">ButtonImpDescription</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_Category.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.Category%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L359">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_Category_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.Category*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_Category" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.Category">Category</h4>
+  <div class="markdown level1 summary"><p>Returns the Category this device belongs in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeviceCategory Category { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.DeviceCategory.html">DeviceCategory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_Desc.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.Desc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L354">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_Desc_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.Desc*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_Desc" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.Desc">Desc</h4>
+  <div class="markdown level1 summary"><p>Returns the description of this implementation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Desc { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_Id.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L349">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_Id_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.Id*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_Id" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Returns the name of the device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_GetAxis_System_Int32_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.GetAxis(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L439">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_GetAxis_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.GetAxis*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_GetAxis_System_Int32_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.GetAxis(System.Int32)">GetAxis(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the current value of the axis {AxisID}.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetAxis(int iAxisId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">iAxisId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_GetButton_System_Int32_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.GetButton(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L450">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_GetButton_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.GetButton*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_GetButton_System_Int32_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.GetButton(System.Int32)">GetButton(Int32)</h4>
+  <div class="markdown level1 summary"><p>Button are handled by the 3DX interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetButton(int iButtonId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">iButtonId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_HandleMotion_System_Object_Fusee_Engine_Imp_Graphics_Desktop__3DconnexionDriver_MotionEventArgs_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.HandleMotion(System.Object%2CFusee.Engine.Imp.Graphics.Desktop._3DconnexionDriver.MotionEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L410">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_HandleMotion_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.HandleMotion*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_HandleMotion_System_Object_Fusee_Engine_Imp_Graphics_Desktop__3DconnexionDriver_MotionEventArgs_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.HandleMotion(System.Object,Fusee.Engine.Imp.Graphics.Desktop._3DconnexionDriver.MotionEventArgs)">HandleMotion(Object, MotionEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Event to listen to get the SDOF motion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HandleMotion(object sender, MotionEventArgs args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Fusee.Engine.Imp.Graphics.Desktop._3DconnexionDriver.MotionEventArgs</span></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_AxisValueChanged.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.AxisValueChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L403">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_AxisValueChanged" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.AxisValueChanged">AxisValueChanged</h4>
+  <div class="markdown level1 summary"><p>All axes are event based.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;AxisValueChangedArgs&gt; AxisValueChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Fusee.Engine.Common.AxisValueChangedArgs.html">AxisValueChangedArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_ButtonValueChanged.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.ButtonValueChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L432">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp_ButtonValueChanged" data-uid="Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.ButtonValueChanged">ButtonValueChanged</h4>
+  <div class="markdown level1 summary"><p>This device does not implement any Buttons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ButtonValueChangedArgs&gt; ButtonValueChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Fusee.Engine.Common.ButtonValueChangedArgs.html">ButtonValueChangedArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Fusee.Engine.Common.IInputDeviceImp.html">IInputDeviceImp</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp.md&amp;value=---%0Auid%3A%20Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Imp/Graphics/Desktop/WindowsSpaceMouseDeviceImp.cs/#L143" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

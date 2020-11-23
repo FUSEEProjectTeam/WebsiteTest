@@ -1,0 +1,1151 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SceneRendererForward
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SceneRendererForward
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Core.SceneRendererForward">
+  
+  
+  <h1 id="Fusee_Engine_Core_SceneRendererForward" data-uid="Fusee.Engine.Core.SceneRendererForward" class="text-break">Class SceneRendererForward
+  </h1>
+  <div class="markdown level0 summary"><p>Use a Scene Renderer to traverse a scene hierarchy (made out of scene nodes and s) in order
+to have each visited element contribute to the result rendered against a given render context.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Fusee.Xene.Visitor-2.html">Visitor</a>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a>, <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a>&gt;</div>
+    <div class="level2"><span class="xref">SceneRendererForward</span></div>
+      <div class="level3"><a class="xref" href="Fusee.Engine.Core.SceneRendererDeferred.html">SceneRendererDeferred</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_Traverse__0_">Visitor&lt;SceneNode, SceneComponent&gt;.Traverse(SceneNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_Traverse_System_Collections_Generic_IEnumerable__0__">Visitor&lt;SceneNode, SceneComponent&gt;.Traverse(IEnumerable&lt;SceneNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_InitState">Visitor&lt;SceneNode, SceneComponent&gt;.InitState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_PushState">Visitor&lt;SceneNode, SceneComponent&gt;.PushState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_PopState">Visitor&lt;SceneNode, SceneComponent&gt;.PopState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_CurrentNode">Visitor&lt;SceneNode, SceneComponent&gt;.CurrentNode</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_CurrentComponent">Visitor&lt;SceneNode, SceneComponent&gt;.CurrentComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_YieldOnCurrentNode">Visitor&lt;SceneNode, SceneComponent&gt;.YieldOnCurrentNode</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_YieldOnCurrentComponent">Visitor&lt;SceneNode, SceneComponent&gt;.YieldOnCurrentComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_YieldEnumeration">Visitor&lt;SceneNode, SceneComponent&gt;.YieldEnumeration</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_EnumInit_System_Collections_Generic_IEnumerator__0__">Visitor&lt;SceneNode, SceneComponent&gt;.EnumInit(IEnumerator&lt;SceneNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_EnumMoveNext">Visitor&lt;SceneNode, SceneComponent&gt;.EnumMoveNext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_EnumMoveNextNoComponent">Visitor&lt;SceneNode, SceneComponent&gt;.EnumMoveNextNoComponent()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.Core.html">Fusee.Engine.Core</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Engine.Core.dll</h6>
+  <h5 id="Fusee_Engine_Core_SceneRendererForward_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SceneRendererForward : Visitor&lt;SceneNode, SceneComponent&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward__ctor_Fusee_Engine_Core_Scene_SceneContainer_Fusee_Engine_Core_Scene_RenderLayers_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.%23ctor(Fusee.Engine.Core.Scene.SceneContainer%2CFusee.Engine.Core.Scene.RenderLayers)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L139">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward__ctor_" data-uid="Fusee.Engine.Core.SceneRendererForward.#ctor*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward__ctor_Fusee_Engine_Core_Scene_SceneContainer_Fusee_Engine_Core_Scene_RenderLayers_" data-uid="Fusee.Engine.Core.SceneRendererForward.#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Core.Scene.RenderLayers)">SceneRendererForward(SceneContainer, RenderLayers)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of type SceneRendererForward.
+This scene renderer is used for forward rendering.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneRendererForward(SceneContainer sc, RenderLayers renderLayer = RenderLayers.All | RenderLayers.Default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a></td>
+        <td><span class="parametername">sc</span></td>
+        <td><p>The <a class="xref" href="Fusee.Engine.Core.Scene.html">Fusee.Engine.Core.Scene</a> containing the scene that is rendered.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.RenderLayers.html">RenderLayers</a></td>
+        <td><span class="parametername">renderLayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward__animation.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward._animation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L74">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward__animation" data-uid="Fusee.Engine.Core.SceneRendererForward._animation">_animation</h4>
+  <div class="markdown level1 summary"><p>Manages animations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Animation _animation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Xirkit.Animation.html">Animation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward__boneMap.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward._boneMap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L69">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward__boneMap" data-uid="Fusee.Engine.Core.SceneRendererForward._boneMap">_boneMap</h4>
+  <div class="markdown level1 summary"><p>Caches SceneNodes and their model matrices. Used when visiting a <a class="xref" href="Fusee.Engine.Core.Scene.Bone.html">Bone</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;SceneNode, float4x4&gt; _boneMap</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a>, <a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward__lightResults.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward._lightResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L94">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward__lightResults" data-uid="Fusee.Engine.Core.SceneRendererForward._lightResults">_lightResults</h4>
+  <div class="markdown level1 summary"><p>List of <a class="xref" href="Fusee.Engine.Core.LightResult.html">LightResult</a>, created by the <span class="xref">Fusee.Engine.Core.PrePassVisitor</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;Tuple&lt;SceneNode, LightResult&gt;&gt; _lightResults</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Tuple</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a>, <a class="xref" href="Fusee.Engine.Core.LightResult.html">LightResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward__rc.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward._rc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L84">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward__rc" data-uid="Fusee.Engine.Core.SceneRendererForward._rc">_rc</h4>
+  <div class="markdown level1 summary"><p>The RenderContext, used to render the scene. This will be ignored if cameras are used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RenderContext _rc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward__sc.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward._sc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L79">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward__sc" data-uid="Fusee.Engine.Core.SceneRendererForward._sc">_sc</h4>
+  <div class="markdown level1 summary"><p>The Scene, containing the scene that gets rendered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SceneContainer _sc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward__state.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward._state%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L89">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward__state" data-uid="Fusee.Engine.Core.SceneRendererForward._state">_state</h4>
+  <div class="markdown level1 summary"><p>Holds the status of the model matrices and other information we need while traversing up and down the scene graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RendererState _state</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.RendererState.html">RendererState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_DoFrumstumCulling.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.DoFrumstumCulling%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L32">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_DoFrumstumCulling" data-uid="Fusee.Engine.Core.SceneRendererForward.DoFrumstumCulling">DoFrumstumCulling</h4>
+  <div class="markdown level1 summary"><p>Enables or disables Frustum Culling.
+If we render with one or more cameras this value will be overwritten by <a class="xref" href="Fusee.Engine.Core.Scene.Camera.html#Fusee_Engine_Core_Scene_Camera_FrustumCullingOn">FrustumCullingOn</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DoFrumstumCulling</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_HasNumberOfLightsChanged.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.HasNumberOfLightsChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L26">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_HasNumberOfLightsChanged" data-uid="Fusee.Engine.Core.SceneRendererForward.HasNumberOfLightsChanged">HasNumberOfLightsChanged</h4>
+  <div class="markdown level1 summary"><p>Is set to true if a light was added or removed from the scene.
+///</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool HasNumberOfLightsChanged</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_LightViseratorResults.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.LightViseratorResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L42">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_LightViseratorResults_" data-uid="Fusee.Engine.Core.SceneRendererForward.LightViseratorResults*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_LightViseratorResults" data-uid="Fusee.Engine.Core.SceneRendererForward.LightViseratorResults">LightViseratorResults</h4>
+  <div class="markdown level1 summary"><p>Light results, collected from the scene in the <span class="xref">Fusee.Engine.Core.PrePassVisitor</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Tuple&lt;SceneNode, LightResult&gt;&gt; LightViseratorResults { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Tuple</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a>, <a class="xref" href="Fusee.Engine.Core.LightResult.html">LightResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_RenderLayer.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.RenderLayer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L37">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_RenderLayer_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderLayer*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderLayer" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderLayer">RenderLayer</h4>
+  <div class="markdown level1 summary"><p>The RenderLayer this renderer should render.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderLayers RenderLayer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.RenderLayers.html">RenderLayers</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_AccumulateLight.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.AccumulateLight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L346">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_AccumulateLight_" data-uid="Fusee.Engine.Core.SceneRendererForward.AccumulateLight*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_AccumulateLight" data-uid="Fusee.Engine.Core.SceneRendererForward.AccumulateLight">AccumulateLight()</h4>
+  <div class="markdown level1 summary"><p>Viserates the Light and caches them in a dedicated field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AccumulateLight()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_AddWeightToMesh_Fusee_Engine_Core_Scene_Mesh_Fusee_Engine_Core_Scene_Weight_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.AddWeightToMesh(Fusee.Engine.Core.Scene.Mesh%2CFusee.Engine.Core.Scene.Weight)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L722">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_AddWeightToMesh_" data-uid="Fusee.Engine.Core.SceneRendererForward.AddWeightToMesh*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_AddWeightToMesh_Fusee_Engine_Core_Scene_Mesh_Fusee_Engine_Core_Scene_Weight_" data-uid="Fusee.Engine.Core.SceneRendererForward.AddWeightToMesh(Fusee.Engine.Core.Scene.Mesh,Fusee.Engine.Core.Scene.Weight)">AddWeightToMesh(Mesh, Weight)</h4>
+  <div class="markdown level1 summary"><p>Adds bone indices and bone weights from a <a class="xref" href="Fusee.Engine.Core.Scene.Weight.html">Weight</a> to a mesh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddWeightToMesh(Mesh mesh, Weight wc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a></td>
+        <td><span class="parametername">mesh</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Weight.html">Weight</a></td>
+        <td><span class="parametername">wc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_Animate.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.Animate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L252">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_Animate_" data-uid="Fusee.Engine.Core.SceneRendererForward.Animate*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_Animate" data-uid="Fusee.Engine.Core.SceneRendererForward.Animate">Animate()</h4>
+  <div class="markdown level1 summary"><p>Handles animations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Animate()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_InitAnimations_Fusee_Engine_Core_Scene_SceneContainer_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.InitAnimations(Fusee.Engine.Core.Scene.SceneContainer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L151">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_InitAnimations_" data-uid="Fusee.Engine.Core.SceneRendererForward.InitAnimations*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_InitAnimations_Fusee_Engine_Core_Scene_SceneContainer_" data-uid="Fusee.Engine.Core.SceneRendererForward.InitAnimations(Fusee.Engine.Core.Scene.SceneContainer)">InitAnimations(SceneContainer)</h4>
+  <div class="markdown level1 summary"><p>Initializes animations, given as <a class="xref" href="Fusee.Xirkit.Animation.html">Animation</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitAnimations(SceneContainer sc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a></td>
+        <td><span class="parametername">sc</span></td>
+        <td><p>The Scene, containing the Animations.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_InitState.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.InitState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L783">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_InitState_" data-uid="Fusee.Engine.Core.SceneRendererForward.InitState*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_InitState" data-uid="Fusee.Engine.Core.SceneRendererForward.InitState">InitState()</h4>
+  <div class="markdown level1 summary"><p>Sets the initial values in the <a class="xref" href="Fusee.Engine.Core.RendererState.html">RendererState</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InitState()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Fusee.Xene.Visitor&lt;Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent&gt;.InitState()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_PopState.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.PopState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L806">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_PopState_" data-uid="Fusee.Engine.Core.SceneRendererForward.PopState*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_PopState" data-uid="Fusee.Engine.Core.SceneRendererForward.PopState">PopState()</h4>
+  <div class="markdown level1 summary"><p>Pops from the RenderState and sets the Model and View matrices in the RenderContext.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void PopState()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Fusee.Xene.Visitor&lt;Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent&gt;.PopState()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_PushState.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.PushState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L798">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_PushState_" data-uid="Fusee.Engine.Core.SceneRendererForward.PushState*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_PushState" data-uid="Fusee.Engine.Core.SceneRendererForward.PushState">PushState()</h4>
+  <div class="markdown level1 summary"><p>Pushes into the RenderState.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void PushState()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Fusee.Xene.Visitor&lt;Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent&gt;.PushState()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_Render_Fusee_Engine_Core_RenderContext_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.Render(Fusee.Engine.Core.RenderContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L283">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_Render_" data-uid="Fusee.Engine.Core.SceneRendererForward.Render*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_Render_Fusee_Engine_Core_RenderContext_" data-uid="Fusee.Engine.Core.SceneRendererForward.Render(Fusee.Engine.Core.RenderContext)">Render(RenderContext)</h4>
+  <div class="markdown level1 summary"><p>Renders the scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Render(RenderContext rc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a></td>
+        <td><span class="parametername">rc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_RenderBone_Fusee_Engine_Core_Scene_Bone_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.RenderBone(Fusee.Engine.Core.Scene.Bone)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L370">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_RenderBone_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderBone*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderBone_Fusee_Engine_Core_Scene_Bone_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderBone(Fusee.Engine.Core.Scene.Bone)">RenderBone(Bone)</h4>
+  <div class="markdown level1 summary"><p>Renders the Bone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderBone(Bone bone)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Bone.html">Bone</a></td>
+        <td><span class="parametername">bone</span></td>
+        <td><p>The bone.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_RenderCanvasTransform_Fusee_Engine_Core_Scene_CanvasTransform_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.RenderCanvasTransform(Fusee.Engine.Core.Scene.CanvasTransform)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L408">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_RenderCanvasTransform_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderCanvasTransform*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderCanvasTransform_Fusee_Engine_Core_Scene_CanvasTransform_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderCanvasTransform(Fusee.Engine.Core.Scene.CanvasTransform)">RenderCanvasTransform(CanvasTransform)</h4>
+  <div class="markdown level1 summary"><p>Sets the state of the model matrices and UiRects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderCanvasTransform(CanvasTransform ctc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.CanvasTransform.html">CanvasTransform</a></td>
+        <td><span class="parametername">ctc</span></td>
+        <td><p>The CanvasTransform.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_RenderEffect_Fusee_Engine_Core_Effects_Effect_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.RenderEffect(Fusee.Engine.Core.Effects.Effect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L671">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_RenderEffect_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderEffect*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderEffect_Fusee_Engine_Core_Effects_Effect_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderEffect(Fusee.Engine.Core.Effects.Effect)">RenderEffect(Effect)</h4>
+  <div class="markdown level1 summary"><p>If a ShaderEffect is visited the ShaderEffect of the <a class="xref" href="Fusee.Engine.Core.RendererState.html">RendererState</a> is updated and the effect is set in the <a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderEffect(Effect effect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Effects.Effect.html">Effect</a></td>
+        <td><span class="parametername">effect</span></td>
+        <td><p>The <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html">Effect</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_RenderMesh_Fusee_Engine_Core_Scene_Mesh_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.RenderMesh(Fusee.Engine.Core.Scene.Mesh)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L688">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_RenderMesh_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderMesh*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderMesh_Fusee_Engine_Core_Scene_Mesh_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderMesh(Fusee.Engine.Core.Scene.Mesh)">RenderMesh(Mesh)</h4>
+  <div class="markdown level1 summary"><p>If a Mesh is visited and it has a <a class="xref" href="Fusee.Engine.Core.Scene.Weight.html">Weight</a> the BoneIndices and  BoneWeights get set,
+the shader parameters for all lights in the scene are updated and the geometry is passed to be pushed through the rendering pipeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderMesh(Mesh mesh)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a></td>
+        <td><span class="parametername">mesh</span></td>
+        <td><p>The Mesh.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_RenderPtOctant_Fusee_Engine_Core_Scene_Octant_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.RenderPtOctant(Fusee.Engine.Core.Scene.Octant)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L660">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_RenderPtOctant_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderPtOctant*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderPtOctant_Fusee_Engine_Core_Scene_Octant_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderPtOctant(Fusee.Engine.Core.Scene.Octant)">RenderPtOctant(Octant)</h4>
+  <div class="markdown level1 summary"><p>If a PtOctant is visited the level of this octant is set in the shader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderPtOctant(Octant ptOctant)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Octant.html">Octant</a></td>
+        <td><span class="parametername">ptOctant</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_RenderRectTransform_Fusee_Engine_Core_Scene_RectTransform_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.RenderRectTransform(Fusee.Engine.Core.Scene.RectTransform)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L483">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_RenderRectTransform_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderRectTransform*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderRectTransform_Fusee_Engine_Core_Scene_RectTransform_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderRectTransform(Fusee.Engine.Core.Scene.RectTransform)">RenderRectTransform(RectTransform)</h4>
+  <div class="markdown level1 summary"><p>If a RectTransform is visited the model matrix and MinMaxRect get updated in the <a class="xref" href="Fusee.Engine.Core.RendererState.html">RendererState</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderRectTransform(RectTransform rtc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.RectTransform.html">RectTransform</a></td>
+        <td><span class="parametername">rtc</span></td>
+        <td><p>The XForm.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_RenderRenderLayer_Fusee_Engine_Core_Scene_RenderLayer_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer(Fusee.Engine.Core.Scene.RenderLayer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L360">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_RenderRenderLayer_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderRenderLayer_Fusee_Engine_Core_Scene_RenderLayer_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderRenderLayer(Fusee.Engine.Core.Scene.RenderLayer)">RenderRenderLayer(RenderLayer)</h4>
+  <div class="markdown level1 summary"><p>Renders the RenderLayer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderRenderLayer(RenderLayer renderLayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.RenderLayer.html">RenderLayer</a></td>
+        <td><span class="parametername">renderLayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_RenderTransform_Fusee_Engine_Core_Scene_Transform_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.RenderTransform(Fusee.Engine.Core.Scene.Transform)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L649">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_RenderTransform_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderTransform*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderTransform_Fusee_Engine_Core_Scene_Transform_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderTransform(Fusee.Engine.Core.Scene.Transform)">RenderTransform(Transform)</h4>
+  <div class="markdown level1 summary"><p>If a Transform is visited the model matrix of the <a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a> and <a class="xref" href="Fusee.Engine.Core.RendererState.html">RendererState</a> is updated.
+It additionally updates the view matrix of the RenderContext.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderTransform(Transform transform)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Transform.html">Transform</a></td>
+        <td><span class="parametername">transform</span></td>
+        <td><p>The Transform.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_RenderWeight_Fusee_Engine_Core_Scene_Weight_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.RenderWeight(Fusee.Engine.Core.Scene.Weight)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L390">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_RenderWeight_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderWeight*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderWeight_Fusee_Engine_Core_Scene_Weight_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderWeight(Fusee.Engine.Core.Scene.Weight)">RenderWeight(Weight)</h4>
+  <div class="markdown level1 summary"><p>Renders the weight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderWeight(Weight weight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Weight.html">Weight</a></td>
+        <td><span class="parametername">weight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_RenderXForm_Fusee_Engine_Core_Scene_XForm_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.RenderXForm(Fusee.Engine.Core.Scene.XForm)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L520">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_RenderXForm_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderXForm*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderXForm_Fusee_Engine_Core_Scene_XForm_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderXForm(Fusee.Engine.Core.Scene.XForm)">RenderXForm(XForm)</h4>
+  <div class="markdown level1 summary"><p>If a XForm is visited the model matrix gets updated in the <a class="xref" href="Fusee.Engine.Core.RendererState.html">RendererState</a> and set in the <a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderXForm(XForm xfc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.XForm.html">XForm</a></td>
+        <td><span class="parametername">xfc</span></td>
+        <td><p>The XForm.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_RenderXFormText_Fusee_Engine_Core_Scene_XFormText_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.RenderXFormText(Fusee.Engine.Core.Scene.XFormText)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L548">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_RenderXFormText_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderXFormText*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderXFormText_Fusee_Engine_Core_Scene_XFormText_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderXFormText(Fusee.Engine.Core.Scene.XFormText)">RenderXFormText(XFormText)</h4>
+  <div class="markdown level1 summary"><p>If a XFormText is visited the model matrix gets updated in the <a class="xref" href="Fusee.Engine.Core.RendererState.html">RendererState</a> and set in the <a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderXFormText(XFormText xfc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.XFormText.html">XFormText</a></td>
+        <td><span class="parametername">xfc</span></td>
+        <td><p>The XFormText.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward_SetContext_Fusee_Engine_Core_RenderContext_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward.SetContext(Fusee.Engine.Core.RenderContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L265">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_SceneRendererForward_SetContext_" data-uid="Fusee.Engine.Core.SceneRendererForward.SetContext*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_SetContext_Fusee_Engine_Core_RenderContext_" data-uid="Fusee.Engine.Core.SceneRendererForward.SetContext(Fusee.Engine.Core.RenderContext)">SetContext(RenderContext)</h4>
+  <div class="markdown level1 summary"><p>Sets the render context for the given scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetContext(RenderContext rc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a></td>
+        <td><span class="parametername">rc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_SceneRendererForward.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.SceneRendererForward%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/SceneRendererForward.cs/#L21" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

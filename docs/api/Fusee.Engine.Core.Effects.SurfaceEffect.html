@@ -1,0 +1,764 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SurfaceEffect
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SurfaceEffect
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect">
+  
+  
+  <h1 id="Fusee_Engine_Core_Effects_SurfaceEffect" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect" class="text-break">Class SurfaceEffect
+  </h1>
+  <div class="markdown level0 summary"><p>A surface effect contains information to build a shader program</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a></div>
+    <div class="level2"><a class="xref" href="Fusee.Engine.Core.Effects.Effect.html">Effect</a></div>
+    <div class="level3"><span class="xref">SurfaceEffect</span></div>
+      <div class="level4"><a class="xref" href="Fusee.Engine.Core.Effects.DefaultSurfaceEffect.html">DefaultSurfaceEffect</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_ParamDecl">Effect.ParamDecl</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_RendererStates">Effect.RendererStates</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_EffectChanged">Effect.EffectChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_EffectManagerEventArgs">Effect.EffectManagerEventArgs</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_SessionUniqueIdentifier">Effect.SessionUniqueIdentifier</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_SetFxParam__1_System_String___0_">Effect.SetFxParam&lt;T&gt;(String, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_GetFxParam__1_System_String_">Effect.GetFxParam&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html#Fusee_Engine_Core_Scene_SceneComponent_Name">SceneComponent.Name</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.Core.Effects.html">Fusee.Engine.Core.Effects</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Engine.Core.dll</h6>
+  <h5 id="Fusee_Engine_Core_Effects_SurfaceEffect_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SurfaceEffect : Effect, IComponent</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect__ctor_Fusee_Engine_Core_ShaderShards_LightingSetupFlags_Fusee_Engine_Core_Effects_ColorInput_Fusee_Engine_Core_RenderStateSet_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.%23ctor(Fusee.Engine.Core.ShaderShards.LightingSetupFlags%2CFusee.Engine.Core.Effects.ColorInput%2CFusee.Engine.Core.RenderStateSet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L129">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_Effects_SurfaceEffect__ctor_" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.#ctor*"></a>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect__ctor_Fusee_Engine_Core_ShaderShards_LightingSetupFlags_Fusee_Engine_Core_Effects_ColorInput_Fusee_Engine_Core_RenderStateSet_" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.#ctor(Fusee.Engine.Core.ShaderShards.LightingSetupFlags,Fusee.Engine.Core.Effects.ColorInput,Fusee.Engine.Core.RenderStateSet)">SurfaceEffect(LightingSetupFlags, ColorInput, RenderStateSet)</h4>
+  <div class="markdown level1 summary"><p>Creates a new Instance of type SurfaceEffect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceEffect(LightingSetupFlags lightingSetup, ColorInput surfaceInput, RenderStateSet renderStateSet = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.ShaderShards.LightingSetupFlags.html">LightingSetupFlags</a></td>
+        <td><span class="parametername">lightingSetup</span></td>
+        <td><p>The <a class="xref" href="Fusee.Engine.Core.ShaderShards.LightingSetupFlags.html">LightingSetupFlags</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Effects.ColorInput.html">ColorInput</a></td>
+        <td><span class="parametername">surfaceInput</span></td>
+        <td><p><a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceInput">SurfaceInput</a>. Provides the values used to modify the <a class="xref" href="Fusee.Engine.Core.ShaderShards.SurfaceOut.html">SurfaceOut</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.RenderStateSet.html">RenderStateSet</a></td>
+        <td><span class="parametername">renderStateSet</span></td>
+        <td><p>Optional. If no <a class="xref" href="Fusee.Engine.Core.RenderStateSet.html">RenderStateSet</a> is given a default one will be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_LightingSetup.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.LightingSetup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L48">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_LightingSetup" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.LightingSetup">LightingSetup</h4>
+  <div class="markdown level1 summary"><p>See <a class="xref" href="Fusee.Engine.Core.ShaderShards.LightingSetupFlags.html">LightingSetupFlags</a>.
+These flags are used to gather the appropriate lighting methods and shader parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LightingSetupFlags LightingSetup</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.ShaderShards.LightingSetupFlags.html">LightingSetupFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_Pi.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.Pi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L32">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_Pi" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.Pi">Pi</h4>
+  <div class="markdown level1 summary"><p>The shader shard containing the definition of PI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Pi</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_Precision.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.Precision%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L39">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_Precision" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.Precision">Precision</h4>
+  <div class="markdown level1 summary"><p>The shader shard containing the float precision.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Precision</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceOutput.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceOutput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L66">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceOutput" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceOutput">SurfaceOutput</h4>
+  <div class="markdown level1 summary"><p>Struct declaration in the shader code that provides the values for the position calculation
+of the vertex shader and lighting calculation of the fragment shader.
+Values of this struct can be modified by the user using <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_SurfOutFragMethod">SurfOutFragMethod</a> (fragment shader).
+The value is filled in the constructor using the chosen lighting setup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SurfaceOutput</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_SurfOutFragMethod.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.SurfOutFragMethod%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L87">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_SurfOutFragMethod" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.SurfOutFragMethod">SurfOutFragMethod</h4>
+  <div class="markdown level1 summary"><p>Shader Shard Method to modify the <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceOutput">SurfaceOutput</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SurfOutFragMethod</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_SurfOutVertMethod.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.SurfOutVertMethod%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L94">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_SurfOutVertMethod" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.SurfOutVertMethod">SurfOutVertMethod</h4>
+  <div class="markdown level1 summary"><p>Shader Shard Method to modify the <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceOutput">SurfaceOutput</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SurfOutVertMethod</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_SurfVaryingFrag.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.SurfVaryingFrag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L73">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_SurfVaryingFrag" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.SurfVaryingFrag">SurfVaryingFrag</h4>
+  <div class="markdown level1 summary"><p>Fragment shader &quot;in&quot; declaration of the <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceOutput">SurfaceOutput</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SurfVaryingFrag</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_SurfVaryingVert.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.SurfVaryingVert%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L80">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_SurfVaryingVert" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.SurfVaryingVert">SurfVaryingVert</h4>
+  <div class="markdown level1 summary"><p>Vertex shader &quot;out&quot; declaration of the <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceOutput">SurfaceOutput</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SurfVaryingVert</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_TBNIn.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.TBNIn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L107">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_TBNIn" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.TBNIn">TBNIn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TBNIn</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_TBNOut.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.TBNOut%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L111">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_TBNOut" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.TBNOut">TBNOut</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TBNOut</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_UvIn.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.UvIn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L99">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_UvIn" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.UvIn">UvIn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string UvIn</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_UvOut.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.UvOut%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L103">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_UvOut" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.UvOut">UvOut</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string UvOut</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_Version.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L25">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_Version" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.Version">Version</h4>
+  <div class="markdown level1 summary"><p>The shader shard containing the shader version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Version</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_VertIn.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.VertIn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L119">View Source</a>
+  </span>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_VertIn" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.VertIn">VertIn</h4>
+  <div class="markdown level1 summary"><p>The shader shard containing &quot;fu&quot; variables (in and out parameters) like fuVertex, fuNormal etc.
+The value is filled in the constructor using the chosen lighting setup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string VertIn</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceInput.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceInput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L54">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceInput_" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceInput*"></a>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceInput" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.SurfaceInput">SurfaceInput</h4>
+  <div class="markdown level1 summary"><p>User-defined input struct. Must derive from <a class="xref" href="Fusee.Engine.Core.Effects.ColorInput.html">ColorInput</a>.
+Used in the <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_SurfOutFragMethod">SurfOutFragMethod</a> to modify the parameters of the chosen <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceOutput">SurfaceOutput</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ColorInput SurfaceInput { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Effects.ColorInput.html">ColorInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_HandleFieldsAndProps.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.HandleFieldsAndProps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L170">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_Effects_SurfaceEffect_HandleFieldsAndProps_" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.HandleFieldsAndProps*"></a>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_HandleFieldsAndProps" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.HandleFieldsAndProps">HandleFieldsAndProps()</h4>
+  <div class="markdown level1 summary"><p>Reads all Fields an Properties from this type and builds <a class="xref" href="Fusee.Engine.Core.Effects.IFxParamDeclaration.html">IFxParamDeclaration</a>s and shader code snippets from them.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void HandleFieldsAndProps()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect_PropertyChangedHandler_System_Object_Fusee_Engine_Core_Effects_SurfaceEffectEventArgs_System_String_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect.PropertyChangedHandler(System.Object%2CFusee.Engine.Core.Effects.SurfaceEffectEventArgs%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L604">View Source</a>
+  </span>
+  <a id="Fusee_Engine_Core_Effects_SurfaceEffect_PropertyChangedHandler_" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.PropertyChangedHandler*"></a>
+  <h4 id="Fusee_Engine_Core_Effects_SurfaceEffect_PropertyChangedHandler_System_Object_Fusee_Engine_Core_Effects_SurfaceEffectEventArgs_System_String_" data-uid="Fusee.Engine.Core.Effects.SurfaceEffect.PropertyChangedHandler(System.Object,Fusee.Engine.Core.Effects.SurfaceEffectEventArgs,System.String)">PropertyChangedHandler(Object, SurfaceEffectEventArgs, String)</h4>
+  <div class="markdown level1 summary"><p>Event Handler that is called on <a class="xref" href="Fusee.Engine.Core.Effects.INotifyInputChange.html#Fusee_Engine_Core_Effects_INotifyInputChange_PropertyChanged">PropertyChanged</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void PropertyChangedHandler(object sender, SurfaceEffectEventArgs args, string memberName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectEventArgs.html">SurfaceEffectEventArgs</a></td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The event arguments.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>The name of the member which this event originated from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_SurfaceEffect.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.SurfaceEffect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffect.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
