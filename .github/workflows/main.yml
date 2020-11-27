@@ -24,8 +24,15 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        
       - name: Checkout submodules
         run: git submodule update --init --recursive
-      # Runs a single command using the runners shell
-      - name: build.cmd
-        run: call build.cmd
+        
+      - name: Update submodules
+        run: git submodule update --recursive --remote
+
+      - name: Create wiki toy.yml from _Sidebar.md
+        run: bin\GitHubWikiSidbarToDocFX\GitHubWikiSidbarToDocFX.exe docfx_project\wiki\_Sidebar.md docfx_project\wiki
+
+      - name: Build website
+        run: bin\DocFX\docfx.exe docfx_project\docfx.json
