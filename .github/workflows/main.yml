@@ -33,7 +33,7 @@ jobs:
 
       - name: Clearing docs directory
         run: |
-          rd /s /q docs
+          Remove-Item 'docs' -Recurse
           mkdir docs
 
       - name: Create wiki toc.yml from _Sidebar.md
