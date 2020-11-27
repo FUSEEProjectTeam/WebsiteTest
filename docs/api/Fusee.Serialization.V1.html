@@ -142,6 +142,17 @@ This base material does not contain any information about specular reflection ca
 geometry is rendered with the specifies material.
 The BRDF material contains information needed for a physically-based lighting calculation using a bidirectional reflectance distribution function.</p>
 </section>
+      <h4><a class="xref" href="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html">FusMaterialDiffuseBRDF</a></h4>
+      <section><p>Material definition. If contained within a node, the node's (and potentially child node's)
+geometry is rendered with the specifies material.
+Used to add Lambertian or Oren-Nayar diffuse reflection.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Serialization.V1.FusMaterialGlossyBRDF.html">FusMaterialGlossyBRDF</a></h4>
+      <section><p>Material definition. If contained within a node, the node's (and potentially child node's)
+geometry is rendered with the specifies material.
+Used to add reflection with microfacet distribution, used for materials such as metal or mirrors.
+NOTE: At the moment FUSEE lacks an implementation of the reflection calculation.</p>
+</section>
       <h4><a class="xref" href="Fusee.Serialization.V1.FusMaterialStandard.html">FusMaterialStandard</a></h4>
       <section><p>Material definition. If contained within a node, the node's (and potentially child node's)
 geometry is rendered with the specified material.
@@ -196,6 +207,9 @@ controlling the geometry.</p>
   </h3>
       <h4><a class="xref" href="Fusee.Serialization.V1.CanvasRenderMode.html">CanvasRenderMode</a></h4>
       <section><p>The available render modes.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Serialization.V1.Distribution.html">Distribution</a></h4>
+      <section><p>The available microfacet distribution functions.</p>
 </section>
       <h4><a class="xref" href="Fusee.Serialization.V1.FusHorizontalTextAlignment.html">FusHorizontalTextAlignment</a></h4>
       <section><p>Defines the alignment in y direction.</p>

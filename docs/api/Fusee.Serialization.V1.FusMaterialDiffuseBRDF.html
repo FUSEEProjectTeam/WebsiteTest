@@ -1,0 +1,482 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FusMaterialDiffuseBRDF
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FusMaterialDiffuseBRDF
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.Serialization.V1.FusMaterialDiffuseBRDF">
+  
+  
+  <h1 id="Fusee_Serialization_V1_FusMaterialDiffuseBRDF" data-uid="Fusee.Serialization.V1.FusMaterialDiffuseBRDF" class="text-break">Class FusMaterialDiffuseBRDF
+  </h1>
+  <div class="markdown level0 summary"><p>Material definition. If contained within a node, the node's (and potentially child node's)
+geometry is rendered with the specifies material.
+Used to add Lambertian or Oren-Nayar diffuse reflection.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Fusee.Serialization.V1.FusComponent.html">FusComponent</a></div>
+    <div class="level2"><a class="xref" href="Fusee.Serialization.V1.FusMaterialBase.html">FusMaterialBase</a></div>
+    <div class="level3"><span class="xref">FusMaterialDiffuseBRDF</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Fusee.Serialization.V1.FusMaterialBase.html">FusMaterialBase</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html">FusMaterialDiffuseBRDF</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Fusee.Serialization.V1.FusMaterialBase.html#Fusee_Serialization_V1_FusMaterialBase_HasAlbedoChannel">FusMaterialBase.HasAlbedoChannel</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Serialization.V1.FusMaterialBase.html#Fusee_Serialization_V1_FusMaterialBase_Albedo">FusMaterialBase.Albedo</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Serialization.V1.FusMaterialBase.html#Fusee_Serialization_V1_FusMaterialBase_HasEmissiveChannel">FusMaterialBase.HasEmissiveChannel</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Serialization.V1.FusMaterialBase.html#Fusee_Serialization_V1_FusMaterialBase_Emissive">FusMaterialBase.Emissive</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Serialization.V1.FusMaterialBase.html#Fusee_Serialization_V1_FusMaterialBase_HasNormalMapChannel">FusMaterialBase.HasNormalMapChannel</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Serialization.V1.FusMaterialBase.html#Fusee_Serialization_V1_FusMaterialBase_NormalMap">FusMaterialBase.NormalMap</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Serialization.V1.FusMaterialBase.html#Fusee_Serialization_V1_FusMaterialBase_Equals_Fusee_Serialization_V1_FusMaterialBase_">FusMaterialBase.Equals(FusMaterialBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Serialization.V1.FusComponent.html#Fusee_Serialization_V1_FusComponent_Name">FusComponent.Name</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Serialization.V1.html">Fusee.Serialization.V1</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Serialization.dll</h6>
+  <h5 id="Fusee_Serialization_V1_FusMaterialDiffuseBRDF_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FusMaterialDiffuseBRDF : FusMaterialBase, IComponent, IEquatable&lt;FusMaterialBase&gt;, IEquatable&lt;FusMaterialDiffuseBRDF&gt;</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Roughness.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Roughness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialDiffuseBRDF.cs/#L19">View Source</a>
+  </span>
+  <h4 id="Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Roughness" data-uid="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Roughness">Roughness</h4>
+  <div class="markdown level1 summary"><p>Specifies microfacet roughness of the surface for diffuse and specular reflection.
+0.0 gives standard Lambertian reflection, higher values activate the Oren-Nayar calculation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Roughness</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Equals_Fusee_Serialization_V1_FusMaterialDiffuseBRDF_.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equals(Fusee.Serialization.V1.FusMaterialDiffuseBRDF)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialDiffuseBRDF.cs/#L65">View Source</a>
+  </span>
+  <a id="Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Equals_" data-uid="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equals*"></a>
+  <h4 id="Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Equals_Fusee_Serialization_V1_FusMaterialDiffuseBRDF_" data-uid="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equals(Fusee.Serialization.V1.FusMaterialDiffuseBRDF)">Equals(FusMaterialDiffuseBRDF)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the NormapMapChannel is equal to another one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(FusMaterialDiffuseBRDF other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html">FusMaterialDiffuseBRDF</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The NormapMapChannel to compare with this one.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the current NormapMapChannel is equal to the other; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialDiffuseBRDF.cs/#L82">View Source</a>
+  </span>
+  <a id="Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Equals_" data-uid="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equals*"></a>
+  <h4 id="Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Equals_System_Object_" data-uid="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to compare to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the instances are equal; false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Fusee.Serialization.V1.FusMaterialBase.html#Fusee_Serialization_V1_FusMaterialBase_Equals_System_Object_">FusMaterialBase.Equals(Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialDiffuseBRDF_GetHashCode.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialDiffuseBRDF.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialDiffuseBRDF.cs/#L94">View Source</a>
+  </span>
+  <a id="Fusee_Serialization_V1_FusMaterialDiffuseBRDF_GetHashCode_" data-uid="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.GetHashCode*"></a>
+  <h4 id="Fusee_Serialization_V1_FusMaterialDiffuseBRDF_GetHashCode" data-uid="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Returns the hash for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Fusee.Serialization.V1.FusMaterialBase.html#Fusee_Serialization_V1_FusMaterialBase_GetHashCode">FusMaterialBase.GetHashCode()</a></div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialDiffuseBRDF_op_Equality_Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Fusee_Serialization_V1_FusMaterialDiffuseBRDF_.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialDiffuseBRDF.op_Equality(Fusee.Serialization.V1.FusMaterialDiffuseBRDF%2CFusee.Serialization.V1.FusMaterialDiffuseBRDF)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialDiffuseBRDF.cs/#L31">View Source</a>
+  </span>
+  <a id="Fusee_Serialization_V1_FusMaterialDiffuseBRDF_op_Equality_" data-uid="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.op_Equality*"></a>
+  <h4 id="Fusee_Serialization_V1_FusMaterialDiffuseBRDF_op_Equality_Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Fusee_Serialization_V1_FusMaterialDiffuseBRDF_" data-uid="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.op_Equality(Fusee.Serialization.V1.FusMaterialDiffuseBRDF,Fusee.Serialization.V1.FusMaterialDiffuseBRDF)">Equality(FusMaterialDiffuseBRDF, FusMaterialDiffuseBRDF)</h4>
+  <div class="markdown level1 summary"><p>Compares two instances for equality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(FusMaterialDiffuseBRDF lhs, FusMaterialDiffuseBRDF rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html">FusMaterialDiffuseBRDF</a></td>
+        <td><span class="parametername">lhs</span></td>
+        <td><p>The first instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html">FusMaterialDiffuseBRDF</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The second instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if left does equal right; false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialDiffuseBRDF_op_Inequality_Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Fusee_Serialization_V1_FusMaterialDiffuseBRDF_.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialDiffuseBRDF.op_Inequality(Fusee.Serialization.V1.FusMaterialDiffuseBRDF%2CFusee.Serialization.V1.FusMaterialDiffuseBRDF)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialDiffuseBRDF.cs/#L53">View Source</a>
+  </span>
+  <a id="Fusee_Serialization_V1_FusMaterialDiffuseBRDF_op_Inequality_" data-uid="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.op_Inequality*"></a>
+  <h4 id="Fusee_Serialization_V1_FusMaterialDiffuseBRDF_op_Inequality_Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Fusee_Serialization_V1_FusMaterialDiffuseBRDF_" data-uid="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.op_Inequality(Fusee.Serialization.V1.FusMaterialDiffuseBRDF,Fusee.Serialization.V1.FusMaterialDiffuseBRDF)">Inequality(FusMaterialDiffuseBRDF, FusMaterialDiffuseBRDF)</h4>
+  <div class="markdown level1 summary"><p>Compares two instances for inequality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(FusMaterialDiffuseBRDF lhs, FusMaterialDiffuseBRDF rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html">FusMaterialDiffuseBRDF</a></td>
+        <td><span class="parametername">lhs</span></td>
+        <td><p>The first instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html">FusMaterialDiffuseBRDF</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>The second instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if left does not equal right; false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialDiffuseBRDF.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialDiffuseBRDF%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialDiffuseBRDF.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

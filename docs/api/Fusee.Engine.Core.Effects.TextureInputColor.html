@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class TextureInputUnlit
+    <title>Class TextureInputColor
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class TextureInputUnlit
+    <meta name="title" content="Class TextureInputColor
    ">
     <meta name="generator" content="docfx 2.56.5.0">
     
@@ -68,10 +68,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Core.Effects.TextureInputUnlit">
+            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Core.Effects.TextureInputColor">
   
   
-  <h1 id="Fusee_Engine_Core_Effects_TextureInputUnlit" data-uid="Fusee.Engine.Core.Effects.TextureInputUnlit" class="text-break">Class TextureInputUnlit
+  <h1 id="Fusee_Engine_Core_Effects_TextureInputColor" data-uid="Fusee.Engine.Core.Effects.TextureInputColor" class="text-break">Class TextureInputColor
   </h1>
   <div class="markdown level0 summary"><p>Class that can be used to collect properties that will serve as uniforms for a specific lighting setup.
 In this case for specular lighting with strength and shininess.</p>
@@ -81,7 +81,8 @@ In this case for specular lighting with strength and shininess.</p>
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="Fusee.Engine.Core.Effects.ColorInput.html">ColorInput</a></div>
-    <div class="level2"><span class="xref">TextureInputUnlit</span></div>
+    <div class="level2"><a class="xref" href="Fusee.Engine.Core.Effects.TextureInputColorUnlit.html">TextureInputColorUnlit</a></div>
+    <div class="level3"><span class="xref">TextureInputColor</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -90,10 +91,19 @@ In this case for specular lighting with strength and shininess.</p>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.TextureInputColorUnlit.html#Fusee_Engine_Core_Effects_TextureInputColorUnlit_AlbedoMix">TextureInputColorUnlit.AlbedoMix</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.TextureInputColorUnlit.html#Fusee_Engine_Core_Effects_TextureInputColorUnlit_AlbedoTex">TextureInputColorUnlit.AlbedoTex</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.TextureInputColorUnlit.html#Fusee_Engine_Core_Effects_TextureInputColorUnlit_TexTiles">TextureInputColorUnlit.TexTiles</a>
+    </div>
+    <div>
       <a class="xref" href="Fusee.Engine.Core.Effects.ColorInput.html#Fusee_Engine_Core_Effects_ColorInput_Albedo">ColorInput.Albedo</a>
     </div>
     <div>
-      <a class="xref" href="Fusee.Engine.Core.Effects.ColorInput.html#Fusee_Engine_Core_Effects_ColorInput_Emission">ColorInput.Emission</a>
+      <a class="xref" href="Fusee.Engine.Core.Effects.ColorInput.html#Fusee_Engine_Core_Effects_ColorInput_Roughness">ColorInput.Roughness</a>
     </div>
     <div>
       <a class="xref" href="Fusee.Engine.Core.Effects.ColorInput.html#Fusee_Engine_Core_Effects_ColorInput_PropertyChanged">ColorInput.PropertyChanged</a>
@@ -125,27 +135,27 @@ In this case for specular lighting with strength and shininess.</p>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.Core.Effects.html">Fusee.Engine.Core.Effects</a></h6>
   <h6><strong>Assembly</strong>: Fusee.Engine.Core.dll</h6>
-  <h5 id="Fusee_Engine_Core_Effects_TextureInputUnlit_syntax">Syntax</h5>
+  <h5 id="Fusee_Engine_Core_Effects_TextureInputColor_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TextureInputUnlit : ColorInput, INotifyInputChange</code></pre>
+    <pre><code class="lang-csharp hljs">public class TextureInputColor : TextureInputColorUnlit, INotifyInputChange</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_TextureInputUnlit_AlbedoMix.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoMix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Engine_Core_Effects_TextureInputColor_NormalMappingStrength.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.TextureInputColor.NormalMappingStrength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffectInput.cs/#L338">View Source</a>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Engine/Core/Effects/SurfaceEffectInput.cs/#L432">View Source</a>
   </span>
-  <a id="Fusee_Engine_Core_Effects_TextureInputUnlit_AlbedoMix_" data-uid="Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoMix*"></a>
-  <h4 id="Fusee_Engine_Core_Effects_TextureInputUnlit_AlbedoMix" data-uid="Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoMix">AlbedoMix</h4>
-  <div class="markdown level1 summary"><p>The mix between albedo texture and albedo color.</p>
+  <a id="Fusee_Engine_Core_Effects_TextureInputColor_NormalMappingStrength_" data-uid="Fusee.Engine.Core.Effects.TextureInputColor.NormalMappingStrength*"></a>
+  <h4 id="Fusee_Engine_Core_Effects_TextureInputColor_NormalMappingStrength" data-uid="Fusee.Engine.Core.Effects.TextureInputColor.NormalMappingStrength">NormalMappingStrength</h4>
+  <div class="markdown level1 summary"><p>The normal texture.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float AlbedoMix { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float NormalMappingStrength { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -164,19 +174,19 @@ In this case for specular lighting with strength and shininess.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_TextureInputUnlit_AlbedoTex.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoTex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Engine_Core_Effects_TextureInputColor_NormalTex.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.TextureInputColor.NormalTex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffectInput.cs/#L355">View Source</a>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Engine/Core/Effects/SurfaceEffectInput.cs/#L415">View Source</a>
   </span>
-  <a id="Fusee_Engine_Core_Effects_TextureInputUnlit_AlbedoTex_" data-uid="Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoTex*"></a>
-  <h4 id="Fusee_Engine_Core_Effects_TextureInputUnlit_AlbedoTex" data-uid="Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoTex">AlbedoTex</h4>
-  <div class="markdown level1 summary"><p>The albedo texture.</p>
+  <a id="Fusee_Engine_Core_Effects_TextureInputColor_NormalTex_" data-uid="Fusee.Engine.Core.Effects.TextureInputColor.NormalTex*"></a>
+  <h4 id="Fusee_Engine_Core_Effects_TextureInputColor_NormalTex" data-uid="Fusee.Engine.Core.Effects.TextureInputColor.NormalTex">NormalTex</h4>
+  <div class="markdown level1 summary"><p>The normal texture.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Texture AlbedoTex { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Texture NormalTex { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -193,37 +203,6 @@ In this case for specular lighting with strength and shininess.</p>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_TextureInputUnlit_TexTiles.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.TextureInputUnlit.TexTiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffectInput.cs/#L372">View Source</a>
-  </span>
-  <a id="Fusee_Engine_Core_Effects_TextureInputUnlit_TexTiles_" data-uid="Fusee.Engine.Core.Effects.TextureInputUnlit.TexTiles*"></a>
-  <h4 id="Fusee_Engine_Core_Effects_TextureInputUnlit_TexTiles" data-uid="Fusee.Engine.Core.Effects.TextureInputUnlit.TexTiles">TexTiles</h4>
-  <div class="markdown level1 summary"><p>The normal texture.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float2 TexTiles { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.float2.html">float2</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Fusee.Engine.Core.Effects.INotifyInputChange.html">INotifyInputChange</a>
@@ -236,10 +215,10 @@ In this case for specular lighting with strength and shininess.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_Effects_TextureInputUnlit.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.TextureInputUnlit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Engine_Core_Effects_TextureInputColor.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.Effects.TextureInputColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffectInput.cs/#L333" class="contribution-link">View Source</a>
+                    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Engine/Core/Effects/SurfaceEffectInput.cs/#L410" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

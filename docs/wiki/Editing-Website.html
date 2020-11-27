@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>What is DocFX </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="What is DocFX ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="what-is-docfx">What is DocFX</h3>
+
+<p>DocFX is an API documentation generator for .NET, which currently supports C#, VB and F#. It generates API reference documentation from triple-slash comments in your source code. It also allows you to use Markdown files to create additional topics such as tutorials and how-tos, and to customize the generated reference documentation. DocFX builds a static HTML website from your source code and Markdown files, which can be easily hosted on any web server (for example, github.io). Also, DocFX provides you the flexibility to customize the layout and style of your website through templates.</p>
+<h3 id="install-docfx">Install DocFX</h3>
+<p>GitHub: download and unzip <code>docfx.zip</code> from <a href="https://github.com/dotnet/docfx/releases">https://github.com/dotnet/docfx/releases</a>, extract it to a local folder, and add it to PATH so you can run it anywhere.</p>
+<p>NuGet: <code>nuget install docfx.console</code> docfx.exe is under folder docfx.console/tools/</p>
+<h3 id="edit-the-page">Edit the page</h3>
+<p>Cloning the website repository</p>
+<p>All editing takes place in the src -&gt; DocFX folder.</p>
+<h3 id="renew-the-api">Renew the API</h3>
+<p>insert the new Fusee version in the src folder</p>
+<h3 id="renew-the-wiki">Renew the wiki</h3>
+<p>Download <a href="https://github.com/FUSEEProjectTeam/GitHubWikiSidbarToDocFX">https://github.com/FUSEEProjectTeam/GitHubWikiSidbarToDocFX</a></p>
+<p>Add new entries to the wiki folder</p>
+<p>Build GitHubWikiSidbarToDocFX by going into the folder and executing the dotnet build command</p>
+<p>The EXE should now be found under bin -&gt; Debug -&gt; netcoreapp3.0</p>
+<p>Insert the wiki _Sidebar.md into this folder and run the exe</p>
+<p>toc.yml was created, check the toc.yml with <a href="https://yamlchecker.com/">https://yamlchecker.com/</a> if there are errors in it.</p>
+<p>If everything is correct, add the toc.yml to the wiki folder as well.</p>
+<h3 id="change-the-css-of-the-page">Change the CSS of the page</h3>
+<p>templates -&gt; default -&gt; styles edit the main.css</p>
+<p>If you are looking for a specific class, the CSS class is found using the browser's inspector.</p>
+<h3 id="editing-the-content-in-the-template">Editing the content in the template</h3>
+<p>open templates -&gt; default -&gt; partials folder</p>
+<p>here you can find all templates e.g. the footer or the navbar
+these .partial are written in HTML and can be edited.</p>
+<h3 id="website-build">Website build</h3>
+<p>In the root directory execute the build.cmd and let it run</p>
+<p>Go to the docs folder and enter the docfx serve command</p>
+<p>Page is now running locally under localhost: 8080</p>
+<h3 id="website-push">Website push</h3>
+<p>If everything works and looks good, just push the website in the repository.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/Fusee.wiki/blob/440de88c69fc257c6cf3ff978412aacf8338ed62/Editing-Website.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
